@@ -1,0 +1,30 @@
+# Environment & config files with secrets
+.env
+.env.*
+config.php
+wp-config.php
+configuration.php
+
+# cPanel-specific
+.htpasswd
+.cpanel/
+.cpaddons/
+cpanel3-skel/
+.well-known/
+cgi-bin/
+error_log
+*.log
+*.bak
+
+# Temp & cache
+tmp/
+cache/
+
+# OS junk
+.DS_Store
+__MACOSX/
+Thumbs.db
+
+# Dependencies
+node_modules/
+vendor/
