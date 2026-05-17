@@ -43,6 +43,15 @@ class FormModule
 	}
 
 	/**
+	 * Get orders log file in jsonl format
+	 * @return string
+	 */
+	public static function getLogFileJsonl()
+	{
+		return dirname(__FILE__) . '/forms.jsonl.log';
+	}
+
+	/**
 	 * Parse request to perform special actions
 	 * @param SiteRequestInfo $requestInfo
 	 * @return array{hr_out: string|null, requestHandled: bool}

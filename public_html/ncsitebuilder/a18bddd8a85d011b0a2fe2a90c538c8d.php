@@ -1,33 +1,45 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
 	<script type="text/javascript">
 			</script>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title><?php echo htmlspecialchars((isset($seoTitle) && $seoTitle !== "") ? $seoTitle : "SkipSchoolMakeMoney: Follow a Vision | George Dreemer"); ?></title>
 	<base href="{{base_url}}" />
-	<?php echo isset($sitemapUrls) ? generateCanonicalUrl($sitemapUrls) : ""; ?>	
+	<?php echo isset($sitemapUrls) ? (generateCanonicalUrl($sitemapUrls)."\n") : ""; ?>	
 	
 						<meta name="viewport" content="width=device-width, initial-scale=1" />
 					<meta name="description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "Explore the innovative strategies behind George Dreemer’s SkipSchoolMakeMoney, a pioneering clothing brand that blends fashion with bold entrepreneurial spirit."); ?>" />
 			<meta name="keywords" content="<?php echo htmlspecialchars((isset($seoKeywords) && $seoKeywords !== "") ? $seoKeywords : "george dreemer,george dreemer skipschoolmakemoney,george dreemer clothing brand,george dreemer ssmm,george dreemer portfolio,george dreemer founder of ssmm,george dreemer founder of skipschoolmakemoney,who is the owner of skipschoolmakemoney,who created skipschoolmakemoney,what is skipschoolmakemoney,what happened to skipschoolmakemoney"); ?>" />
-		
+			
 	<!-- Facebook Open Graph -->
 		<meta property="og:title" content="<?php echo htmlspecialchars((isset($seoTitle) && $seoTitle !== "") ? $seoTitle : "SkipSchoolMakeMoney: Follow a Vision | George Dreemer"); ?>" />
 			<meta property="og:description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "Explore the innovative strategies behind George Dreemer’s SkipSchoolMakeMoney, a pioneering clothing brand that blends fashion with bold entrepreneurial spirit."); ?>" />
 			<meta property="og:image" content="<?php echo htmlspecialchars((isset($seoImage) && $seoImage !== "") ? "{{base_url}}".$seoImage : "{{base_url}}gallery_gen/6c19d6d7cc66a81540163b842eea8913_fit.png"); ?>" />
 			<meta property="og:type" content="article" />
-			<meta property="og:url" content="{{curr_url}}" />
+			<meta property="og:url" content="__wb_curr_url__" />
 		<!-- Facebook Open Graph end -->
 
 		<meta name="generator" content="Website Builder" />
-			<script src="js/common-bundle.js?ts=20241023171611" type="text/javascript"></script>
-	<script src="js/a18bddd8a85d011b0a2fe2a90c538c8d-bundle.js?ts=20241023171611" type="text/javascript"></script>
-	<link href="css/common-bundle.css?ts=20241023171611" rel="stylesheet" type="text/css" />
+			<script src="js/common-bundle.js?ts=20260517161935" type="text/javascript"></script>
+	<script src="js/a18bddd8a85d011b0a2fe2a90c538c8d-bundle.js?ts=20260517161935" type="text/javascript"></script>
+	<link href="css/common-bundle.css?ts=20260517161935" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic,cyrillic-ext,latin,latin-ext,vietnamese" rel="stylesheet" type="text/css" />
-	<link href="css/a18bddd8a85d011b0a2fe2a90c538c8d-bundle.css?ts=20241023171611" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
-	<ga-code/><link rel="shortcut icon" href="gallery/favicons/favicon.ico" type="image/x-icon">
+	<link href="css/a18bddd8a85d011b0a2fe2a90c538c8d-bundle.css?ts=20260517161935" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
+	<ga-code/><link rel="shortcut icon" href="gallery/favicons/favicon.ico" type="image/x-icon"><meta name="google-site-verification" content="" /><script type="text/javascript">
+  (function (f, b) { if (!b.__SV) { var e, g, i, h; window.mixpanel = b; b._i = []; b.init = function (e, f, c) { function g(a, d) { var b = d.split("."); 2 == b.length && ((a = a[b[0]]), (d = b[1])); a[d] = function () { a.push([d].concat(Array.prototype.slice.call(arguments, 0))); }; } var a = b; "undefined" !== typeof c ? (a = b[c] = []) : (c = "mixpanel"); a.people = a.people || []; a.toString = function (a) { var d = "mixpanel"; "mixpanel" !== c && (d += "." + c); a || (d += " (stub)"); return d; }; a.people.toString = function () { return a.toString(1) + ".people (stub)"; }; i = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split( " "); for (h = 0; h < i.length; h++) g(a, i[h]); var j = "set set_once union unset remove delete".split(" "); a.get_group = function () { function b(c) { d[c] = function () { call2_args = arguments; call2 = [c].concat(Array.prototype.slice.call(call2_args, 0)); a.push([e, call2]); }; } for ( var d = {}, e = ["get_group"].concat( Array.prototype.slice.call(arguments, 0)), c = 0; c < j.length; c++) b(j[c]); return d; }; b._i.push([e, f, c]); }; b.__SV = 1.2; e = f.createElement("script"); e.type = "text/javascript"; e.async = !0; e.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; g = f.getElementsByTagName("script")[0]; g.parentNode.insertBefore(e, g); } })(document, window.mixpanel || []);
+ 
+// Near entry of your product, init Mixpanel
+mixpanel.init("", {
+  api_host: "https://api-eu.mixpanel.com",
+  debug: true,
+  track_pageview: true,
+  persistence: "localStorage",
+  record_sessions_percent: 100, //records 100% of all sessions
+  record_heatmap_data: true,
+});
+</script>
 	<script type="text/javascript">
 	window.useTrailingSlashes = false;
 	window.disableRightClick = false;
@@ -62,7 +74,89 @@
 </head>
 
 
-<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a18bddd8a85d011b0a2fe2a90c538c8d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e441b349dafe2e726f5f746" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a190ffbacdf50074287cce61ed4aae0e" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffbace03000769e1586d252b6f8e" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1729692973"></a></div></div></div><div id="a190ffbace1500afe7431d8cbcff8171" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffbace1e00d63e8c95c1c09a4509" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1729692973"></a></div></div></div></div></div><div id="a190ffbace3000211f700bf74a207b5a" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><a class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><ul class="hmenu" dir="ltr"><li class=""><a href="{{base_url}}">Home</a></li><li class=""><a>Work</a><ul><li class=""><a href="https://www.datasafari.co" target="_blank">DataSafari</a></li><li class="wb_this_page_menu_item"><a href="skipschoolmakemoney">SSMM</a></li><li class=""><a href="thoughtbubble">thoughtbubble</a></li><li class=""><a href="dreemcorp">DREEMCORP</a></li></ul></li><li class=""><a>Education</a><ul><li class=""><a href="academic-portfolio">Academic Portfolio</a></li><li class=""><a>Recognitions</a></li></ul></li><li class=""><a href="blog">Blog</a></li><li class=""><a href="#contacts">Contact</a></li></ul><div class="clearfix"></div></div></div></div><div id="a18bddd77e441c676f07d6c1ed2746e4" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e441d26252a8a27e0cc089b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e441e59875ef302d40c9902" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/52c0651d75306a87ff391018120335f7_888x294_fit.png?ts=1729692973"></div></div></div></div></div></div></div><div id="a18bddd77e441f478049d63bfea38afb" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1729692973"></div></div></div></div></div></div></div><div id="wb_main_a18bddd8a85d011b0a2fe2a90c538c8d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e442164b378541ef7369b53" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e44222024d1f31d71127fc0" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e442321b84483063ff44e26" class="wb_element" data-plugin="Button"><a class="wb_button" href="https://skipschoolmakemoney.com" title="Link to official SkipSchoolMakeMoney website." target="_blank"><span>Official SSMM Site</span></a></div><div id="a18bddd77e4424d62fd925163a4d82d0" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">EXPERIENCE </span></strong><span style="color:rgba(0,0,0,1);">AT A GLANCE</span></h1>
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a18bddd8a85d011b0a2fe2a90c538c8d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e441b349dafe2e726f5f746" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a190ffbacdf50074287cce61ed4aae0e" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffbace03000769e1586d252b6f8e" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1779023980"></a></div></div></div><div id="a190ffbace1500afe7431d8cbcff8171" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffbace1e00d63e8c95c1c09a4509" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1779023980"></a></div></div></div></div></div><div id="a190ffbace3000211f700bf74a207b5a" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+	'type' => 'hmenu',
+	'dir' => 'ltr',
+	'items' => array(
+		(object) array(
+			'id' => 1,
+			'href' => '{{base_url}}',
+			'name' => 'Home',
+			'class' => '',
+			'children' => array()
+		),
+		(object) array(
+			'id' => null,
+			'name' => 'Work',
+			'class' => '',
+			'children' => array(
+				(object) array(
+					'id' => 4,
+					'href' => 'https://www.datasafari.co',
+					'target' => '_blank',
+					'name' => 'DataSafari',
+					'class' => '',
+					'children' => array()
+				),
+				(object) array(
+					'id' => 5,
+					'href' => 'skipschoolmakemoney',
+					'name' => 'SSMM',
+					'class' => 'wb_this_page_menu_item active',
+					'children' => array()
+				),
+				(object) array(
+					'id' => 6,
+					'href' => 'thoughtbubble',
+					'name' => 'thoughtbubble',
+					'class' => '',
+					'children' => array()
+				),
+				(object) array(
+					'id' => 7,
+					'href' => 'dreemcorp',
+					'name' => 'DREEMCORP',
+					'class' => '',
+					'children' => array()
+				)
+			)
+		),
+		(object) array(
+			'id' => null,
+			'name' => 'Education',
+			'class' => '',
+			'children' => array(
+				(object) array(
+					'id' => 8,
+					'href' => 'academic-portfolio',
+					'name' => 'Academic Portfolio',
+					'class' => '',
+					'children' => array()
+				),
+				(object) array(
+					'id' => null,
+					'name' => 'Recognitions',
+					'class' => '',
+					'children' => array()
+				)
+			)
+		),
+		(object) array(
+			'id' => 2,
+			'href' => 'blog',
+			'name' => 'Blog',
+			'class' => '',
+			'children' => array()
+		),
+		(object) array(
+			'id' => 3,
+			'href' => '#contacts',
+			'name' => 'Contact',
+			'class' => '',
+			'children' => array()
+		)
+	)
+)); ?><div class="clearfix"></div></div></div></div><div id="a18bddd77e441c676f07d6c1ed2746e4" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e441d26252a8a27e0cc089b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e441e59875ef302d40c9902" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/52c0651d75306a87ff391018120335f7_888x294_fit.png?ts=1779023981"></div></div></div></div></div></div></div><div id="a18bddd77e441f478049d63bfea38afb" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1779023981"></div></div></div></div></div></div></div><div id="wb_main_a18bddd8a85d011b0a2fe2a90c538c8d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e442164b378541ef7369b53" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e44222024d1f31d71127fc0" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e442321b84483063ff44e26" class="wb_element" data-plugin="Button"><a class="wb_button" href="https://skipschoolmakemoney.com" title="Link to official SkipSchoolMakeMoney website." target="_blank"><span>Official SSMM Site</span></a></div><div id="a18bddd77e4424d62fd925163a4d82d0" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">EXPERIENCE </span></strong><span style="color:rgba(0,0,0,1);">AT A GLANCE</span></h1>
 </div><div id="a18bddd77e4425459fb150f008c3f24d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4426739f98fcf5a059f89b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e44276894cfb6b833a8c852" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e44282d5ea6cc9f5f366517" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e442a6da76e3915bea7025a" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2">Business Operation</h2>
 </div></div></div><div id="a18bddd77e442bdf676e69a9c06aed24" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom15" style="text-align: center;">Starting as my college project in late 2016, by the time of its peak, the brand reached hundreds of orders per collection, generating thousands in revenue and a cult-like following spanning over three continents.<br>
 To make this a reality, I manufactured clothing on both the West and East coast, later including the UK and China.</p>
@@ -86,7 +180,7 @@ To make this a reality, I manufactured clothing on both the West and East coas
 </div></div></div><div id="a18bddd77e450cc151fc5b5d90993e37" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e450dd281910397a8750972" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e450f07e2a5ed7441a6dbc4" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2">Communication</h2>
 </div></div></div><div id="a18bddd77e451007c51ac2aad77a8598" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom15" style="text-align: center;">I have had the privilege to work with talented musicians, influencers, content creators, photographers and other creatives. The likes of Lil Peep, Pouya, Fat Nick, MikeyTM,  Emanuel, Luca, FruityPoppin, Layla, BigBabyGucci &amp; many more wonderful people. These connections put SSMM on the map of underground streetwear in the 2016-19 era.</p>
 </div></div></div></div></div><div id="a18bddd77e45114f466142e04e78a099" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">ABILITIES </span></strong><span style="color:rgba(0,0,0,1);">AT A GLANCE</span></h1>
-</div><div id="a18bddd77e45126409a0e8f6e9162289" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4513d3d55c2552b1e10b26" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/4210010f5275fb3fb35f78c97319fea1_1580x868_fit.png?ts=1729692974"></div></div></div></div></div><div id="a18bddd77e45148a7fa51519adcf7826" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e45150bc8c7118411b59dd0" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">SSMM </span></strong><span style="color:rgba(0,0,0,1);">IN SHORT</span></h1>
+</div><div id="a18bddd77e45126409a0e8f6e9162289" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4513d3d55c2552b1e10b26" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/4210010f5275fb3fb35f78c97319fea1_1580x868_fit.png?ts=1779023982"></div></div></div></div></div><div id="a18bddd77e45148a7fa51519adcf7826" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e45150bc8c7118411b59dd0" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">SSMM </span></strong><span style="color:rgba(0,0,0,1);">IN SHORT</span></h1>
 </div><div id="a18bddd77e4516d548f5f4f956f4b1d0" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3" style="text-align: center;"><span style="color:#050505;"><span class="wb-stl-special"><span style="font-size: 16px;">From a brand born during my evening shifts at the Hampshire College media lab to attracting funding, an entrepreneurial award and thousands in revenue &amp; supporters, SSMM is the brand that succeeded against all odds. Over the course of 3 years, SSMM spread from a few states, to getting orders from Canada, Europe, Brazil, the UK, Russia, Australia and China. I expanded from local screen printing production in MA to multiple logistics paths serving 3 continents.</span></span></span></h3>
 </div><div id="a18bddd77e451797fd9a0da53a52d606" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">VISUAL PORTFOLIO*</span></strong></h1>
 </div><div id="a18bddd77e4518f566c07ce60eb1459f" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4519da45c10400bd000bfc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e451ab6862662417e77ce00" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom19" style="text-align: center;"><span style="color:rgba(110,110,110,0.66);">For the best experience, please view the portfolio on the<br>
@@ -96,7 +190,7 @@ official SSMM site's history page: </span><strong><a href="https://www.skipscho
 
 <p class="wb-stl-custom19" style="text-align: center;"><span style="color:rgba(110,110,110,0.66);">*All materials conceptualized and created by George Dreemer,  unless mentioned otherwise.</span></p>
 </div><div id="a18bddd77e451bb90c7e763257098202" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e451c76bad155452c7f5a6e" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div></div></div><div id="a18bddd77e451d2da8f5e13cfdb92fc4" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e451e83c725efcf1a6fb773" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom19" style="text-align: center;"><em>"Take a trip through SkipSchoolMakeMoney's history - collections, photoshoots, videoshoots, collaborations, fan photos and memes. Starting with my most recent work."</em></p>
-</div><div id="a18bddd77e451fbe77eb8d5ce06e3217" class="wb_element" data-plugin="CustomHtml" style=" overflow: hidden;"><div style="width: 100%; height: 100%; overflow-y: auto;"><!-- PAGE 1 -->
+</div><div id="a18bddd77e451fbe77eb8d5ce06e3217" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><!-- PAGE 1 -->
 
 <br>
 <h2 style="text-align: center; padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">'DREEMISLE'</h2>
@@ -394,7 +488,89 @@ html, body {
    overflow-x: hidden;
 }
 </style>
-</div></div></div></div></div></div><div id="a18bddd77e45218d158cecdb47eb5e23" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1729692974"></div></div></div></div></div><div id="wb_footer_a18bddd8a85d011b0a2fe2a90c538c8d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><a class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><ul class="hmenu" dir="ltr"><li class=""><a href="{{base_url}}">Home</a></li><li class=""><a>Education</a><ul><li class=""><a href="academic-portfolio">Academic Portfolio</a></li><li class=""><a>Recognitions</a></li></ul></li><li class=""><a>Work</a><ul><li class=""><a href="https://www.datasafari.dev" target="_blank">DataSafari</a></li><li class="wb_this_page_menu_item"><a href="skipschoolmakemoney">SSMM</a></li><li class=""><a href="thoughtbubble">thoughtbubble</a></li><li class=""><a href="dreemcorp">DREEMCORP</a></li></ul></li><li class=""><a href="blog">Blog</a></li><li class=""><a href="#contacts">Contact</a></li></ul><div class="clearfix"></div></div></div></div><div id="a18bddd77e4a2c6aeed0be64266481ff" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2d6f09a042a1d1d71e54" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2e5b543facb3feeac864" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2fe57f7708250a5f3d45" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: right;">Thank you for taking the time to check out my portfolio.<br>
+</div></div></div></div></div></div><div id="a18bddd77e45218d158cecdb47eb5e23" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1779023982"></div></div></div></div></div><div id="wb_footer_a18bddd8a85d011b0a2fe2a90c538c8d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+	'type' => 'hmenu',
+	'dir' => 'ltr',
+	'items' => array(
+		(object) array(
+			'id' => 9,
+			'href' => '{{base_url}}',
+			'name' => 'Home',
+			'class' => '',
+			'children' => array()
+		),
+		(object) array(
+			'id' => null,
+			'name' => 'Education',
+			'class' => '',
+			'children' => array(
+				(object) array(
+					'id' => 12,
+					'href' => 'academic-portfolio',
+					'name' => 'Academic Portfolio',
+					'class' => '',
+					'children' => array()
+				),
+				(object) array(
+					'id' => null,
+					'name' => 'Recognitions',
+					'class' => '',
+					'children' => array()
+				)
+			)
+		),
+		(object) array(
+			'id' => null,
+			'name' => 'Work',
+			'class' => '',
+			'children' => array(
+				(object) array(
+					'id' => 13,
+					'href' => 'https://www.datasafari.dev',
+					'target' => '_blank',
+					'name' => 'DataSafari',
+					'class' => '',
+					'children' => array()
+				),
+				(object) array(
+					'id' => 14,
+					'href' => 'skipschoolmakemoney',
+					'name' => 'SSMM',
+					'class' => 'wb_this_page_menu_item active',
+					'children' => array()
+				),
+				(object) array(
+					'id' => 15,
+					'href' => 'thoughtbubble',
+					'name' => 'thoughtbubble',
+					'class' => '',
+					'children' => array()
+				),
+				(object) array(
+					'id' => 16,
+					'href' => 'dreemcorp',
+					'name' => 'DREEMCORP',
+					'class' => '',
+					'children' => array()
+				)
+			)
+		),
+		(object) array(
+			'id' => 10,
+			'href' => 'blog',
+			'name' => 'Blog',
+			'class' => '',
+			'children' => array()
+		),
+		(object) array(
+			'id' => 11,
+			'href' => '#contacts',
+			'name' => 'Contact',
+			'class' => '',
+			'children' => array()
+		)
+	)
+)); ?><div class="clearfix"></div></div></div></div><div id="a18bddd77e4a2c6aeed0be64266481ff" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2d6f09a042a1d1d71e54" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2e5b543facb3feeac864" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2fe57f7708250a5f3d45" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: right;">Thank you for taking the time to check out my portfolio.<br>
 - George</p>
 </div><div id="a19128c48c8900fe1aac133c014f46be" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: right;">Thank you for taking the time to check out my portfolio.<br>
 - George</p>
@@ -414,7 +590,7 @@ html, body {
 
 <p class="wb-stl-footer" style="text-align: center;"><a data-_="Link" href="anabolickmusick.com" target="_blank" title="anabolic musick's official website">anabolickmusick.com</a></p>
 </div><div id="a18bddd77e4a320a360cd08aa5891d23" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: center;"><span style="color:rgba(255,255,255,1);">© 2024 <a href="https://www.georgedreemer.com">G</a><a href="https://www.dreemer.xyz">eorge Dreemer</a></span></p>
-</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1729692974"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script type="text/javascript">
+</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1779023982"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script type="text/javascript">
 			$(function() {
 				var footer = $(".wb_footer");
 				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");

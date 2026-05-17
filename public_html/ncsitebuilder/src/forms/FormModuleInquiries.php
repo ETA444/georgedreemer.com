@@ -243,6 +243,7 @@ class FormModuleInquiries
 		try {
 			self::fixLogFile();
 			$itemsFile = FormModule::getLogFile();
+			$parsed = [];
 			if (is_file($itemsFile)) {
 				$contents = '';
 				if (($fh = @fopen($itemsFile, 'r')) !== false) {
@@ -251,25 +252,32 @@ class FormModuleInquiries
 					}
 					fclose($fh);
 				} else {
-					/* file_put_contents(__DIR__.'/store_errors.log', print_r(array(
-						'date' => date('Y-m-d H:i:s'),
-						'method' => 'FormModuleOrder::readLogFile',
-						'function' => 'fopen'
-					), true)."\n\n", FILE_APPEND); */
 					throw new ErrorException('Error: Failed reading log file');
 				}
 				$parsed = json_decode($contents, true);
 				if ($parsed === null) {
-					/* file_put_contents(__DIR__.'/store_errors.log', print_r(array(
-						'date' => date('Y-m-d H:i:s'),
-						'method' => 'FormModuleOrder::readLogFile',
-						'function' => 'json_decode',
-						'content' => $contents
-					), true)."\n\n", FILE_APPEND); */
 					throw new ErrorException('Error: Failed parsing orders log file');
 				}
-				return $parsed;
 			}
+			$itemsFile = FormModule::getLogFileJsonl();
+			if (is_file($itemsFile)) {
+				if (($fh = @fopen($itemsFile, 'r')) !== false) {
+					while (!feof($fh)) {
+						$contents = fgets($fh);
+						if ($contents !== false) {
+							$contents = json_decode($contents, true);
+							if ($contents === null) {
+								throw new ErrorException('Error: Failed parsing orders log file');
+							}
+							$parsed[] = $contents;
+						}
+					}
+					fclose($fh);
+				} else {
+					throw new ErrorException('Error: Failed reading log file');
+				}
+			}
+			return $parsed;
 		} catch (ErrorException $ex) {
 			error_log($ex->getMessage());
 		}
@@ -279,27 +287,24 @@ class FormModuleInquiries
 	private static function writeLogFile($arr)
 	{
 		try {
-			$itemsFile = FormModule::getLogFile();
-			$json = json_encode($arr);
-			if ($json === null || $json === false) {
-				/* file_put_contents(__DIR__.'/store_errors.log', print_r(array(
-					'date' => date('Y-m-d H:i:s'),
-					'method' => 'FormModuleInquiries::writeLogFile',
-					'function' => 'json_encode',
-					'content' => print_r($arr, true)
-				), true)."\n\n", FILE_APPEND); */
-				throw new ErrorException('Error: Failed encoding orders log file');
-			} else if (($fh = fopen($itemsFile, 'w')) !== false) {
-				fwrite($fh, $json);
+			$itemsFile = FormModule::getLogFileJsonl();
+			if (($fh = fopen($itemsFile, 'w')) !== false) {
+				foreach ($arr as $f) {
+					$json = json_encode($f);
+					if ($json === null || $json === false) {
+						throw new ErrorException('Error: Failed encoding orders log file');
+					}
+					fwrite($fh, $json .  PHP_EOL);
+				}
 				fclose($fh);
+
+
+				$itemsFile = FormModule::getLogFile();
+				if (is_file($itemsFile)) { // @note: backup old log file
+					rename($itemsFile, $itemsFile . '.bak');
+				}
 				return true;
 			} else {
-				/* file_put_contents(__DIR__.'/store_errors.log', print_r(array(
-					'date' => date('Y-m-d H:i:s'),
-					'method' => 'FormModuleInquiries::writeLogFile',
-					'function' => 'fopen',
-					'content' => print_r($arr, true)
-				), true)."\n\n", FILE_APPEND); */
 				throw new ErrorException('Error: Failed writing log file');
 			}
 		} catch (ErrorException $ex) {

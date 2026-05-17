@@ -114,8 +114,8 @@ class FormNavigation
 	 */
 	public function getQueryParam($key, $default = null)
 	{
-		if (isset($_GET[$key])) {
-			return $_GET[$key];
+		if (!is_null(_get($key))) {
+			return _get($key);
 		}
 		return $default;
 	}
@@ -126,7 +126,7 @@ class FormNavigation
 	 */
 	public function getQueryParams()
 	{
-		return $_GET;
+		return _get();
 	}
 
 	/**
@@ -219,7 +219,7 @@ class FormNavigation
 			. (($catPart && !$item) ? "{$catPart}/" : '')
 			. ($item ? (tr_($item->alias) ? tr_($item->alias) : ('store-item-' . $item->id)) : '');
 		$paramsArray = array();
-		if ($qsa) $paramsArray = array_merge($paramsArray, $_GET);
+		if ($qsa) $paramsArray = array_merge($paramsArray, _get());
 		if (is_array($params)) $paramsArray = array_merge($paramsArray, $params);
 		if (!empty($paramsArray)) $url .= (preg_match('#\?#', $url) ? '&' : '?') . http_build_query($paramsArray);
 		return $url;

@@ -1,32 +1,44 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
 	<script type="text/javascript">
 			</script>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title><?php echo htmlspecialchars((isset($seoTitle) && $seoTitle !== "") ? $seoTitle : "thoughtbubble: Knowledge. Social. | George Dreemer"); ?></title>
 	<base href="{{base_url}}" />
-	<?php echo isset($sitemapUrls) ? generateCanonicalUrl($sitemapUrls) : ""; ?>	
+	<?php echo isset($sitemapUrls) ? (generateCanonicalUrl($sitemapUrls)."\n") : ""; ?>	
 	
 						<meta name="viewport" content="width=device-width, initial-scale=1" />
 					<meta name="description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "Get a glimpse of thoughtbubble, Nikolay Stanchev & George Dreemer’s innovative social network startup designed to redefine how we connect and share ideas in the digital age. Where everything is about entertainment, thoughtbubble was about knowledge."); ?>" />
 			<meta name="keywords" content="<?php echo htmlspecialchars((isset($seoKeywords) && $seoKeywords !== "") ? $seoKeywords : "george dreemer,george dreemer thoughtbubble,george dreemer social network,george dreemer thoughtbubble founder,george dreemer portfolio,george dreemer founder of thoughtbubble,who is the owner of thoughtbubble,who created thoughtbubble,what is thoughtbubble,what happened to thoughtbubble,who is the founder of thoughtbubble,thoughtbubble social network,who made thoughtbubble,what was thoughtbubble about,who coded thoughtbubble"); ?>" />
-		
+			
 	<!-- Facebook Open Graph -->
 		<meta property="og:title" content="<?php echo htmlspecialchars((isset($seoTitle) && $seoTitle !== "") ? $seoTitle : "thoughtbubble: Knowledge. Social. | George Dreemer"); ?>" />
 			<meta property="og:description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "Get a glimpse of thoughtbubble, Nikolay Stanchev & George Dreemer’s innovative social network startup designed to redefine how we connect and share ideas in the digital age. Where everything is about entertainment, thoughtbubble was about knowledge."); ?>" />
 			<meta property="og:image" content="<?php echo htmlspecialchars((isset($seoImage) && $seoImage !== "") ? "{{base_url}}".$seoImage : "{{base_url}}gallery_gen/945da99cffdfe12977d4a22950c0674b_fit.png"); ?>" />
 			<meta property="og:type" content="article" />
-			<meta property="og:url" content="{{curr_url}}" />
+			<meta property="og:url" content="__wb_curr_url__" />
 		<!-- Facebook Open Graph end -->
 
 		<meta name="generator" content="Website Builder" />
-			<script src="js/common-bundle.js?ts=20241023171611" type="text/javascript"></script>
-	<script src="js/a18bddd8a85d05531bf2b97cfabf9ffd-bundle.js?ts=20241023171611" type="text/javascript"></script>
-	<link href="css/common-bundle.css?ts=20241023171611" rel="stylesheet" type="text/css" />
+			<script src="js/common-bundle.js?ts=20260517161935" type="text/javascript"></script>
+	<script src="js/a18bddd8a85d05531bf2b97cfabf9ffd-bundle.js?ts=20260517161935" type="text/javascript"></script>
+	<link href="css/common-bundle.css?ts=20260517161935" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese" rel="stylesheet" type="text/css" />
-	<link href="css/a18bddd8a85d05531bf2b97cfabf9ffd-bundle.css?ts=20241023171611" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
-	<ga-code/><link rel="shortcut icon" href="gallery/favicons/favicon.ico" type="image/x-icon">
+	<link href="css/a18bddd8a85d05531bf2b97cfabf9ffd-bundle.css?ts=20260517161935" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
+	<ga-code/><link rel="shortcut icon" href="gallery/favicons/favicon.ico" type="image/x-icon"><meta name="google-site-verification" content="" /><script type="text/javascript">
+  (function (f, b) { if (!b.__SV) { var e, g, i, h; window.mixpanel = b; b._i = []; b.init = function (e, f, c) { function g(a, d) { var b = d.split("."); 2 == b.length && ((a = a[b[0]]), (d = b[1])); a[d] = function () { a.push([d].concat(Array.prototype.slice.call(arguments, 0))); }; } var a = b; "undefined" !== typeof c ? (a = b[c] = []) : (c = "mixpanel"); a.people = a.people || []; a.toString = function (a) { var d = "mixpanel"; "mixpanel" !== c && (d += "." + c); a || (d += " (stub)"); return d; }; a.people.toString = function () { return a.toString(1) + ".people (stub)"; }; i = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split( " "); for (h = 0; h < i.length; h++) g(a, i[h]); var j = "set set_once union unset remove delete".split(" "); a.get_group = function () { function b(c) { d[c] = function () { call2_args = arguments; call2 = [c].concat(Array.prototype.slice.call(call2_args, 0)); a.push([e, call2]); }; } for ( var d = {}, e = ["get_group"].concat( Array.prototype.slice.call(arguments, 0)), c = 0; c < j.length; c++) b(j[c]); return d; }; b._i.push([e, f, c]); }; b.__SV = 1.2; e = f.createElement("script"); e.type = "text/javascript"; e.async = !0; e.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; g = f.getElementsByTagName("script")[0]; g.parentNode.insertBefore(e, g); } })(document, window.mixpanel || []);
+ 
+// Near entry of your product, init Mixpanel
+mixpanel.init("", {
+  api_host: "https://api-eu.mixpanel.com",
+  debug: true,
+  track_pageview: true,
+  persistence: "localStorage",
+  record_sessions_percent: 100, //records 100% of all sessions
+  record_heatmap_data: true,
+});
+</script>
 	<script type="text/javascript">
 	window.useTrailingSlashes = false;
 	window.disableRightClick = false;
@@ -61,7 +73,89 @@
 </head>
 
 
-<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e430a4143ca9337839c74f6" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a190ffad0b3e00c9cfe515ee38fb5f8c" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffad0b4c00b2f9f83b0f0bfac1e1" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1729692980"></a></div></div></div><div id="a190ffad0b6300a7ab401fb62000cfae" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffad0b6d007e8c311f4f42ffc0a3" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1729692980"></a></div></div></div></div></div><div id="a19127dc957400c0691f8985137b6c6f" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><a class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><ul class="hmenu" dir="ltr"><li class=""><a href="{{base_url}}">Home</a></li><li class=""><a>Work</a><ul><li class=""><a href="https://www.datasafari.co" target="_blank">DataSafari</a></li><li class=""><a href="skipschoolmakemoney">SSMM</a></li><li class="wb_this_page_menu_item"><a href="thoughtbubble">thoughtbubble</a></li><li class=""><a href="dreemcorp">DREEMCORP</a></li></ul></li><li class=""><a>Education</a><ul><li class=""><a href="academic-portfolio">Academic Portfolio</a></li><li class=""><a>Recognitions</a></li></ul></li><li class=""><a href="blog">Blog</a></li><li class=""><a href="#contacts">Contact</a></li></ul><div class="clearfix"></div></div></div></div><div id="a18bddd77e430b4ce3e980126becfd36" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e430ced1f7965df7ab4bca9" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e430d9c3ad526ddc7851ded" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/45c15836b7ad0337f52eaea0cd1bf4c3_666x162_fit.gif?ts=1729692980"></div></div></div></div></div></div></div><div id="a18bddd77e430eec23ab9fd8533ca3f7" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1729692980"></div></div></div></div></div></div></div><div id="wb_main_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e431021805b130efd5852ff" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4311c2292e3c538023e395" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4312885d3f8bd14a2543d4" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">EXPERIENCE </span></strong><span style="color:rgba(0,0,0,1);">AT A GLANCE</span></h1>
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e430a4143ca9337839c74f6" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a190ffad0b3e00c9cfe515ee38fb5f8c" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffad0b4c00b2f9f83b0f0bfac1e1" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1779023991"></a></div></div></div><div id="a190ffad0b6300a7ab401fb62000cfae" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffad0b6d007e8c311f4f42ffc0a3" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1779023991"></a></div></div></div></div></div><div id="a19127dc957400c0691f8985137b6c6f" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+	'type' => 'hmenu',
+	'dir' => 'ltr',
+	'items' => array(
+		(object) array(
+			'id' => 1,
+			'href' => '{{base_url}}',
+			'name' => 'Home',
+			'class' => '',
+			'children' => array()
+		),
+		(object) array(
+			'id' => null,
+			'name' => 'Work',
+			'class' => '',
+			'children' => array(
+				(object) array(
+					'id' => 4,
+					'href' => 'https://www.datasafari.co',
+					'target' => '_blank',
+					'name' => 'DataSafari',
+					'class' => '',
+					'children' => array()
+				),
+				(object) array(
+					'id' => 5,
+					'href' => 'skipschoolmakemoney',
+					'name' => 'SSMM',
+					'class' => '',
+					'children' => array()
+				),
+				(object) array(
+					'id' => 6,
+					'href' => 'thoughtbubble',
+					'name' => 'thoughtbubble',
+					'class' => 'wb_this_page_menu_item active',
+					'children' => array()
+				),
+				(object) array(
+					'id' => 7,
+					'href' => 'dreemcorp',
+					'name' => 'DREEMCORP',
+					'class' => '',
+					'children' => array()
+				)
+			)
+		),
+		(object) array(
+			'id' => null,
+			'name' => 'Education',
+			'class' => '',
+			'children' => array(
+				(object) array(
+					'id' => 8,
+					'href' => 'academic-portfolio',
+					'name' => 'Academic Portfolio',
+					'class' => '',
+					'children' => array()
+				),
+				(object) array(
+					'id' => null,
+					'name' => 'Recognitions',
+					'class' => '',
+					'children' => array()
+				)
+			)
+		),
+		(object) array(
+			'id' => 2,
+			'href' => 'blog',
+			'name' => 'Blog',
+			'class' => '',
+			'children' => array()
+		),
+		(object) array(
+			'id' => 3,
+			'href' => '#contacts',
+			'name' => 'Contact',
+			'class' => '',
+			'children' => array()
+		)
+	)
+)); ?><div class="clearfix"></div></div></div></div><div id="a18bddd77e430b4ce3e980126becfd36" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e430ced1f7965df7ab4bca9" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e430d9c3ad526ddc7851ded" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/45c15836b7ad0337f52eaea0cd1bf4c3_666x162_fit.gif?ts=1779023991"></div></div></div></div></div></div></div><div id="a18bddd77e430eec23ab9fd8533ca3f7" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1779023991"></div></div></div></div></div></div></div><div id="wb_main_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e431021805b130efd5852ff" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4311c2292e3c538023e395" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4312885d3f8bd14a2543d4" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">EXPERIENCE </span></strong><span style="color:rgba(0,0,0,1);">AT A GLANCE</span></h1>
 </div><div id="a18bddd77e4313c70a08a410f8b33da9" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-normal" style="text-align: center;"><span style="color:#000000;">Nikolay and George had the idea of starting a social network in their senior year of high school. Naive, but ambitious and hard-working, they managed to program, from near-scratch, a fully functioning social network in a year, then launch and fund it in the next.</span></p>
 </div><div id="a18bddd77e4314a00d1c1f8d108b20fa" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e431527f5ff677b3dfb8c28" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e43166e59b1b26adc755ee4" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4317e3e011f423de6b6816" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4319e69de67432a847549d" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2"><font color="#000000">Web Development</font></h2>
 </div></div></div><div id="a18bddd77e431a4c0a1a66a6537f5b23" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom15" style="text-align: center;">I was in charge of back-end development, programming in PHP, Javascript and SQL. I created all of the platform's systems, such as liking, pinning, commenting, sharing, notifications, loging in, posting text/photo/video, post editing, hashtag and category system, profile page customization and account settings, and a feedback system.</p>
@@ -76,7 +170,7 @@
 </div></div></div><div id="a18bddd77e43305ab55960256886d27e" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e43312c43a2f0162befbfd0" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e43339f1a6b9b263e06f66e" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2">Frontmanning</h2>
 </div></div></div><div id="a18bddd77e4334ae21bdf8c3e7d02c09" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom15" style="text-align: center;">I participated in multiple pitching, shark tank and other entrepreneurial events. We attracted funding from local investors in Bulgaria and at the peak of the platform hit ~900 users, mostly located in the USA.</p>
 </div></div></div></div></div><div id="a18bddd77e433519778958b88d666a26" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">ABILITIES </span></strong><span style="color:rgba(0,0,0,1);">AT A GLANCE</span></h1>
-</div><div id="a18bddd77e43363a71618371cbbc516f" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4337d9d0e141069050b8eb" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/927b1a82de6f0b3761409cad7d09168b_fit.png?ts=1729692980"></div></div></div></div></div><div id="a18bddd77e4338763bf75c744a36460c" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e433993280c017caecd69d3" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">THOUGHTBUBBLE </span></strong><span style="color:rgba(0,0,0,1);">IN SHORT</span></h1>
+</div><div id="a18bddd77e43363a71618371cbbc516f" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4337d9d0e141069050b8eb" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/927b1a82de6f0b3761409cad7d09168b_fit.png?ts=1779023991"></div></div></div></div></div><div id="a18bddd77e4338763bf75c744a36460c" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e433993280c017caecd69d3" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">THOUGHTBUBBLE </span></strong><span style="color:rgba(0,0,0,1);">IN SHORT</span></h1>
 </div></div></div><div id="a18bddd77e433a1a7e9ad3f60acbbf30" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3" style="text-align: center;"><font color="#050505"><span style="font-size: 16px; font-weight: 400;"><span style="color:#050505;"><strong><span style="color:#45c5ff;">thoughbubble</span> </strong></span>was a social platform directed at the wave of self-improvers at the time. We saw a niche with the rise of gurus such as Tai Lopez, Gary Vaynerchuk, and their respective fandoms. In particular, the interest in a social network without the clutter of cat pictures and vacation photos, just pure information. Our users shared insights from books, quotes that inspired them and other self-improvement content. Our mission was to create a place where your feed teaches and inspires you.</span></font></h3>
 </div><div id="a18bddd77e433b0466f4a5bdd359322a" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4400f13820dd887b5a17a2" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2" style="text-align: center;"><font color="#000000">GRAPHICS</font></h2>
 </div><div id="a18bddd77e4401aa020a8968fd3b1f10" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-custom11"><font color="#474747"><b>Unfortunately, due to changing machines multiple times<br>
@@ -84,24 +178,106 @@
 and corrupted backups </b></font><font color="#474747"><b>there are little to no visuals. </b></font></h1>
 </div><div id="a18bddd77e440203d2ac208a1a40ba8e" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3" style="text-align: center;">BETA Icon Set</h3>
 </div><div id="a18bddd77e440324d3b942f7ea35acd1" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-custom11"><font color="#474747"><b>This was not the final version.</b></font></h1>
-</div><div id="a18bddd77e4404a744579b1ff9e3e753" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/9c80130246e3505168786dadd43b327d_1263x625_0x0_1266x625_crop.png?ts=1729692980"></div></div></div><div id="a18bddd77e44059cf022c18b933324b0" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/c372814cff6d0593743741610dbefa5e_fit.png?ts=1729692980"></div></div></div><div id="a18bddd77e4406766c97eb25e71abfd1" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3" style="text-align: center;">Closed Alpha &amp; Beta UI Design Screenshots</h3>
+</div><div id="a18bddd77e4404a744579b1ff9e3e753" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/9c80130246e3505168786dadd43b327d_1263x625_0x0_1266x625_crop.png?ts=1779023992"></div></div></div><div id="a18bddd77e44059cf022c18b933324b0" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/c372814cff6d0593743741610dbefa5e_fit.png?ts=1779023992"></div></div></div><div id="a18bddd77e4406766c97eb25e71abfd1" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3" style="text-align: center;">Closed Alpha &amp; Beta UI Design Screenshots</h3>
 </div><div id="a18bddd77e4407c371a3b6ea444782fd" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-custom11"><font color="#474747"><b>These were not the final versions.</b></font></h1>
 </div><div id="a18bddd77e4408e3cf9b473ae73d52f7" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom9"><font color="#474747"><b>Login Screen</b></font></p>
 </div><div id="a18bddd77e4409ac23909b76ca44d337" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-custom11"><font color="#474747"><b>ALPHA Version - big throwback</b></font></h1>
-</div><div id="a18bddd77e440a0f21ab55b04e32995c" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/Screenshot%202015-03-28%2019.43.27-min-ts1668459228.png?ts=1729692980"></div></div></div><div id="a18bddd77e440ba9400ecaea971c694e" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom9"><font color="#474747"><b>Feed </b></font></p>
+</div><div id="a18bddd77e440a0f21ab55b04e32995c" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/Screenshot%202015-03-28%2019.43.27-min-ts1668459228.png?ts=1779023992"></div></div></div><div id="a18bddd77e440ba9400ecaea971c694e" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom9"><font color="#474747"><b>Feed </b></font></p>
 </div><div id="a18bddd77e440c2c5c217884f81e3054" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-custom11"><font color="#474747"><b>CLOSED BETA Version</b></font></h1>
-</div><div id="a18bddd77e440d5483b2a2b517afb9a7" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/b8b5c446bb82ffcfdcf294ed96fb6dd6_fit.png?ts=1729692980"></div></div></div><div id="a18bddd77e440eb88321d137ae0cecac" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/ad285ff45fcfa33672e0c7a217978a25_fit.png?ts=1729692981"></div></div></div><div id="a18bddd77e440f04b335eaf1bac58f56" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-custom11" style="text-align: center;"><font color="#474747"><b>I could not source pictures of the Settings, Profile, Notifications dropdown,<br>
+</div><div id="a18bddd77e440d5483b2a2b517afb9a7" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/b8b5c446bb82ffcfdcf294ed96fb6dd6_fit.png?ts=1779023992"></div></div></div><div id="a18bddd77e440eb88321d137ae0cecac" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/ad285ff45fcfa33672e0c7a217978a25_fit.png?ts=1779023992"></div></div></div><div id="a18bddd77e440f04b335eaf1bac58f56" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-custom11" style="text-align: center;"><font color="#474747"><b>I could not source pictures of the Settings, Profile, Notifications dropdown,<br>
 <br>
 Post settings, Followers or Feedback pages.</b></font></h1>
 </div><div id="a18bddd77e4410d82cd80755c142a168" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3" style="text-align: center;">Major Updates / Versions</h3>
 </div><div id="a18bddd77e4411150dc548ae3c0380f5" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-custom11" style="text-align: center;"><font color="#474747"><b>We pushed out a total of 76 major updates.</b></font></h1>
-</div><div id="a18bddd77e44128fd9eb91be9ae3da8e" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/ddf3b7912818f6c33702bd2652a4f3f0_fit.png?ts=1729692981"></div></div></div></div></div><div id="a18bddd77e4413fe9f00d279b79d962b" class="wb_element" data-plugin="CustomHtml" style=" overflow: hidden;"><div style="width: 100%; height: 100%; overflow-y: auto;"><style>
+</div><div id="a18bddd77e44128fd9eb91be9ae3da8e" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/ddf3b7912818f6c33702bd2652a4f3f0_fit.png?ts=1779023992"></div></div></div></div></div><div id="a18bddd77e4413fe9f00d279b79d962b" class="wb_element" data-plugin="CustomHtml" style=" overflow: hidden;"><div style="width: 100%; height: 100%; overflow-y: auto;"><style>
 html, body {
    max-width: 100%;
    overflow-x: hidden;
 }
 </style>
-</div></div></div></div></div></div><div id="a18bddd77e4414ec349812801c161a50" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1729692981"></div></div></div></div></div><div id="wb_footer_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><a class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><ul class="hmenu" dir="ltr"><li class=""><a href="{{base_url}}">Home</a></li><li class=""><a>Education</a><ul><li class=""><a href="academic-portfolio">Academic Portfolio</a></li><li class=""><a>Recognitions</a></li></ul></li><li class=""><a>Work</a><ul><li class=""><a href="https://www.datasafari.dev" target="_blank">DataSafari</a></li><li class=""><a href="skipschoolmakemoney">SSMM</a></li><li class="wb_this_page_menu_item"><a href="thoughtbubble">thoughtbubble</a></li><li class=""><a href="dreemcorp">DREEMCORP</a></li></ul></li><li class=""><a href="blog">Blog</a></li><li class=""><a href="#contacts">Contact</a></li></ul><div class="clearfix"></div></div></div></div><div id="a18bddd77e4a2c6aeed0be64266481ff" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2d6f09a042a1d1d71e54" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2e5b543facb3feeac864" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2fe57f7708250a5f3d45" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: right;">Thank you for taking the time to check out my portfolio.<br>
+</div></div></div></div></div></div><div id="a18bddd77e4414ec349812801c161a50" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1779023992"></div></div></div></div></div><div id="wb_footer_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+	'type' => 'hmenu',
+	'dir' => 'ltr',
+	'items' => array(
+		(object) array(
+			'id' => 9,
+			'href' => '{{base_url}}',
+			'name' => 'Home',
+			'class' => '',
+			'children' => array()
+		),
+		(object) array(
+			'id' => null,
+			'name' => 'Education',
+			'class' => '',
+			'children' => array(
+				(object) array(
+					'id' => 12,
+					'href' => 'academic-portfolio',
+					'name' => 'Academic Portfolio',
+					'class' => '',
+					'children' => array()
+				),
+				(object) array(
+					'id' => null,
+					'name' => 'Recognitions',
+					'class' => '',
+					'children' => array()
+				)
+			)
+		),
+		(object) array(
+			'id' => null,
+			'name' => 'Work',
+			'class' => '',
+			'children' => array(
+				(object) array(
+					'id' => 13,
+					'href' => 'https://www.datasafari.dev',
+					'target' => '_blank',
+					'name' => 'DataSafari',
+					'class' => '',
+					'children' => array()
+				),
+				(object) array(
+					'id' => 14,
+					'href' => 'skipschoolmakemoney',
+					'name' => 'SSMM',
+					'class' => '',
+					'children' => array()
+				),
+				(object) array(
+					'id' => 15,
+					'href' => 'thoughtbubble',
+					'name' => 'thoughtbubble',
+					'class' => 'wb_this_page_menu_item active',
+					'children' => array()
+				),
+				(object) array(
+					'id' => 16,
+					'href' => 'dreemcorp',
+					'name' => 'DREEMCORP',
+					'class' => '',
+					'children' => array()
+				)
+			)
+		),
+		(object) array(
+			'id' => 10,
+			'href' => 'blog',
+			'name' => 'Blog',
+			'class' => '',
+			'children' => array()
+		),
+		(object) array(
+			'id' => 11,
+			'href' => '#contacts',
+			'name' => 'Contact',
+			'class' => '',
+			'children' => array()
+		)
+	)
+)); ?><div class="clearfix"></div></div></div></div><div id="a18bddd77e4a2c6aeed0be64266481ff" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2d6f09a042a1d1d71e54" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2e5b543facb3feeac864" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2fe57f7708250a5f3d45" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: right;">Thank you for taking the time to check out my portfolio.<br>
 - George</p>
 </div><div id="a19128c48c8900fe1aac133c014f46be" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: right;">Thank you for taking the time to check out my portfolio.<br>
 - George</p>
@@ -121,7 +297,7 @@ html, body {
 
 <p class="wb-stl-footer" style="text-align: center;"><a data-_="Link" href="anabolickmusick.com" target="_blank" title="anabolic musick's official website">anabolickmusick.com</a></p>
 </div><div id="a18bddd77e4a320a360cd08aa5891d23" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: center;"><span style="color:rgba(255,255,255,1);">© 2024 <a href="https://www.georgedreemer.com">G</a><a href="https://www.dreemer.xyz">eorge Dreemer</a></span></p>
-</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1729692981"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script type="text/javascript">
+</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1779023992"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script type="text/javascript">
 			$(function() {
 				var footer = $(".wb_footer");
 				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");

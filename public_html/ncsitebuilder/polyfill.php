@@ -33,3 +33,48 @@ if (!function_exists('json_decode')) {
 		return $_json_service->encodeUnsafe($data);
 	}
 }
+
+if (false && !function_exists('escapeshellarg')) {
+	/**
+	 * @see https://stackoverflow.com/questions/58519037/how-do-i-use-escapeshellarg-on-windows-but-aimed-for-linux-and-vice-versa
+	 */
+	function escapeshellarg($input, $os_mode = 0) {
+		$target_os_windows = 1;
+		$target_os_unix = 2;
+		if (false !== strpos($input, "\x00")) {
+			throw new \UnexpectedValueException(__FUNCTION__ . '(): Argument #1 ($input) must not contain any null bytes');
+		}
+		if ($os_mode == 0) {
+			$os_mode = $target_os_unix;
+			if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN')
+				$os_mode = $target_os_windows;
+		}
+		$maxlen = 4096;
+		if ($os_mode === $target_os_windows) $maxlen = 8192;
+		if (strlen($input) > $maxlen - 2) return "";
+
+		if ($os_mode === $target_os_windows) {
+			$output =
+				str_replace(['"', '%', '!'],
+							[' ', ' ', ' '],
+							$input);
+			# https://bugs.php.net/bug.php?id=69646
+			if (substr($output, -1) === "\\") {
+				$k = 0; $n = strlen($output) - 1;
+				for (; $n >= 0 && substr($output, $n, 1) === "\\"; $n--, $k++);
+				if ($k % 2) $output .= "\\";
+			}
+			$output = "\"$output\"";
+		} else {
+			$output = str_replace("'", "'\''", $input);
+			$output = "'$output'";
+		}
+		if (strlen($output) > $maxlen) return "";
+		return $output;
+	}
+}
+if (false && !function_exists('escapeshellcmd')) {
+	function escapeshellcmd($command) {
+		return $command;
+	}
+}

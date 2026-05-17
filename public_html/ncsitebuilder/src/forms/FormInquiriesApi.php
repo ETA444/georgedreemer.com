@@ -49,22 +49,35 @@ class FormInquiriesApi
 		return array(null, $actionHandled);
 	}
 
+	protected function formsUuidsAction(FormNavigation $request)
+	{
+		$data = $this->getBuilderRequestData($request, 'forms-uuids');
+
+		$result = [];
+		$list = FormModuleInquiries::findAll();
+		foreach ($list as $idx => $li) {
+			$result[$li->getFormId()] = $li->getFormId();
+		}
+
+		FormModule::respondWithJson(array("ok" => true, "list" => array_keys($result)));
+	}
+
 	protected function formsLogAction(FormNavigation $request)
 	{
 		$data = $this->getBuilderRequestData($request, 'forms-log');
 
-		if (isset($data->formUuid) && $data->formUuid) {
+		if (isset($data->formUuid) && $data->formUuid != 'all') {
 			$formId = $data->formUuid;
-
 			$list = FormModuleInquiries::findByFormId($formId);
-			foreach ($list as $idx => $li) {
-				$list[$idx] = $li->jsonSerialize();
-			}
-
-			FormModule::respondWithJson(array("ok" => true, "list" => $list));
 		} else {
-			FormModule::respondWithJson(array("error" => array("code" => 1, "message" => "Bad request")));
+			$list = FormModuleInquiries::findAll();
 		}
+
+		foreach ($list as $idx => $li) {
+			$list[$idx] = $li->jsonSerialize();
+		}
+
+		FormModule::respondWithJson(array("ok" => true, "list" => $list));
 	}
 
 	protected function removeInquiryAction(FormNavigation $request)

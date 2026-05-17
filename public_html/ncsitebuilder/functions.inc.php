@@ -15,7 +15,7 @@ function getRequestUri($baseUrl) {
 	}
 	
 	// Note: fix issue with MS IIS server.
-	if ($ru == '/index.php' && !isset($_GET['route'])) $ru = '/';
+	if ($ru == '/index.php' && is_null(_get('route'))) $ru = '/';
 	$ru = preg_replace('#'.preg_quote($nh).'#i', '', $ru, 1);
 	list($ru) = explode('?', $ru, 2);
 	return $ru;
@@ -23,8 +23,8 @@ function getRequestUri($baseUrl) {
 
 function parse_uri(SiteInfo $siteInfo, SiteRequestInfo $requestInfo) {
 	$ru = $requestInfo->requestUri;
-	if (isset($_GET['route'])) {
-		$ru = trim($_GET['route']);
+	if (!is_null(_get('route'))) {
+		$ru = trim(_get('route'));
 	}
 	$ru = preg_split('#[\ \t]*[/]+[\ \t]*#i', $ru, -1, PREG_SPLIT_NO_EMPTY);
 	$ru = array_map('trim', $ru);
@@ -186,10 +186,6 @@ function getCurrUrl($cutQuery = false, $forceProto = null) {
 	}
 	$url .= '/';
 	list($uri) = explode('?', (isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : ''), 2);
-	if (!$cutQuery) {
-		$qs = getQueryString();
-		$uri .= $qs ? '?'.$qs : '';
-	}
 	if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] == 'GET') {
 		$hasTrailingSlash = (substr(ltrim($uri, '/'), -1) == '/');
 		if ($uri != '/' && $hasTrailingSlash && !SiteModule::$siteInfo->useTrailingSlashes) {
@@ -198,28 +194,31 @@ function getCurrUrl($cutQuery = false, $forceProto = null) {
 			$uri = $uri.'/';
 		}
 	}
+	if (!$cutQuery) {
+		$qs = getQueryString();
+		$uri .= $qs ? '?'.$qs : '';
+	}
 	return $url . ltrim($uri, '/');
 }
 
-function generateCanonicalUrl($sitemapUrls)
-{
+function generateCanonicalUrl($sitemapUrls) {
 	$canonical = getCurrentCanonicalUrl($sitemapUrls);
 	if ($canonical) {
-		return '<link rel="canonical" href="' . $canonical . '" />';
+		return '<link rel="canonical" href="'.htmlspecialchars($canonical).'" />';
 	}
 
 	return '';
 }
 
-function getCurrentCanonicalUrl($sitemapUrls)
-{
+function getCurrentCanonicalUrl($sitemapUrls) {
 	$result = '';
 
 	$url = getCurrUrl(true);
 
 	$parsedUrl = parse_url($url);
-	$components = isset($parsedUrl['path']) ? $parsedUrl['path'] : $url;
+	$components = urldecode(isset($parsedUrl['path']) ? $parsedUrl['path'] : $url);
 	$components = array_filter(explode('/', $components), function($p) { return trim($p) != ''; });
+	if (empty($components)) $components[] = '';
 
 	$sitemapUrls = array_flip(array_map(function ($url) {
 		$parsedUrl = parse_url($url);
@@ -228,7 +227,12 @@ function getCurrentCanonicalUrl($sitemapUrls)
 
 	$lim = count($components);
 	for ($i = 0; $i < $lim; $i++) {
-		$item = '/' . implode('/', $components) . (SiteModule::$siteInfo->useTrailingSlashes ? '/' : '');
+		$componentsString = implode('/', $components);
+		if ($componentsString) {
+			$item = '/' . $componentsString . (SiteModule::$siteInfo->useTrailingSlashes ? '/' : '');
+		} else {
+			$item = '/';
+		}
 
 		if (isset($sitemapUrls[$item])) {
 			$isHttps = isHttps();
@@ -249,7 +253,6 @@ function getOrigin() {
 	$parts = parse_url($baseUrl);
 	return $parts['scheme'].'://'.$parts['host'].
 			((isset($parts['port']) && $parts['port']) ? ':'.$parts['port'] : '').'/';
-			
 }
 
 function getBaseUrl() {
@@ -402,7 +405,7 @@ function trLangs_($value) {
 	if (is_array($value)) {
 		$langs = array_keys($value);
 	} else if (is_object($value)) {
-		$langs = get_object_vars($value);
+		$langs = array_keys(get_object_vars($value));
 	} else {
 		$langs = array();
 	}
@@ -437,16 +440,19 @@ function sessionOrGlobalVar($key) {
 }
 
 function getServerPort() {
-	$port = (isset($_SERVER['HTTP_X_FORWARDED_PORT']) && is_numeric($_SERVER['HTTP_X_FORWARDED_PORT']))
-		? intval($_SERVER['HTTP_X_FORWARDED_PORT'])
+	$port = (isset($_SERVER['SERVER_PORT']) && is_numeric($_SERVER['SERVER_PORT']))
+		? intval($_SERVER['SERVER_PORT'])
 		: 0;
-	if (!$port && isset($_SERVER['SERVER_PORT']) && is_numeric($_SERVER['SERVER_PORT'])) {
-		$port = intval($_SERVER['SERVER_PORT']);
-	}
-	return $port;
+	$remoteAddr = (isset($_SERVER['REMOTE_ADDR']) && is_string($_SERVER['REMOTE_ADDR'])) ? $_SERVER['REMOTE_ADDR'] : '';
+	if ($remoteAddr != '127.0.0.1' && $remoteAddr != '::1') return $port;
+
+	return (isset($_SERVER['HTTP_X_FORWARDED_PORT']) && is_numeric($_SERVER['HTTP_X_FORWARDED_PORT']))
+		? intval($_SERVER['HTTP_X_FORWARDED_PORT'])
+		: $port;
 }
 
 function getRemoteAddr() {
+	global $isB2C;
 	$remoteAddr = (isset($_SERVER['REMOTE_ADDR']) && is_string($_SERVER['REMOTE_ADDR'])) ? $_SERVER['REMOTE_ADDR'] : '';
 	if ($remoteAddr != '127.0.0.1' && $remoteAddr != '::1') return $remoteAddr;
 	
@@ -454,7 +460,21 @@ function getRemoteAddr() {
 		? $_SERVER['HTTP_X_FORWARDED_FOR']
 		: '';
 	$ips = explode(',', trim($forwarded, " \t\r\n\0\x0B,"));
-	return ($ip = trim($ips[count($ips) - 1])) ? $ip : $remoteAddr;
+	if ($isB2C) {
+		// By config, B2C websites should always have only one 'forwarded' IP.
+		// If there are more, then it could have been added by hacker, and their IP will go first.
+		// To avoid taking hacker's IP, we always take the last one.
+		// IMPORTANT: If B2C config changes, then it's important to update this logic accordingly.
+		return ($ip = trim($ips[count($ips) - 1])) ? $ip : $remoteAddr;
+	}
+	// By default, take the first IP (here we cannot check if hacker adds their own IP).
+	foreach ($ips as $ip) {
+		$ip = trim($ip);
+		if (!empty($ip) && preg_match('/^[0-9a-fA-F\.:]+$/', $ip)) {
+			return $ip;
+		}
+	}
+	return $remoteAddr;
 }
 
 function isHttps() {
@@ -485,535 +505,710 @@ function handleForms($page_id, SiteInfo $siteInfo) {
 		|| !(isset($forms[$page_id][$post['wb_form_id']]) || isset($forms['blog'][$post['wb_form_id']]) || isset($forms['store'][$post['wb_form_id']]))
 		|| !(isset($forms[$page_id][$post['wb_form_id']]['fields']) || isset($forms['blog'][$post['wb_form_id']]['fields']) || isset($forms['store'][$post['wb_form_id']]['fields']))
 		|| isset($post['forms'])
-		|| isset($_GET['forms'])
+		|| !is_null(_get('forms'))
 	) return;
 
-	$form = isset($forms[$page_id][$post['wb_form_id']])
-		? $forms[$page_id][$post['wb_form_id']] : (isset($forms['store'][$post['wb_form_id']])
-			? $forms['store'][$post['wb_form_id']] : (isset($forms['blog'][$post['wb_form_id']])
-				? $forms['blog'][$post['wb_form_id']] : null));
-	if (!$form) return;
-	
-	$formSendType = isset($form['formSendType']) ? $form['formSendType'] : 'email';
-	$apiPostUrl = (isset($form['postUrl']) && $form['postUrl']) ? $form['postUrl'] : null;
-	$webhookUrl = (isset($form['webhookUrl']) && $form['webhookUrl']) ? $form['webhookUrl'] : null;
-	$brandId = (isset($form['brandId']) && $form['brandId']) ? $form['brandId'] : null;
-	$telegramApiToken = (isset($form['telegramApiToken']) && $form['telegramApiToken']) ? $form['telegramApiToken'] : null;
-	$telegramChatId = (isset($form['telegramChatId']) && $form['telegramChatId']) ? $form['telegramChatId'] : null;
-	
-	try {
-		global $wb_form_send_state, $wb_form_send_success, $wb_form_id, $formErrors, $wb_form_popup_mode, $wb_target_origin;
-		
+	$secure_token = isset($post['secure_token']) ? $post['secure_token'] : '';
+	$secure_token = explode(':', $secure_token);
+	$secure_token_id = isset($secure_token[0]) ? $secure_token[0] : '';
+	$secure_token = isset($secure_token[1]) ? $secure_token[1] : '';
+	unset($post['secure_token']);
+	if (session_id() && $secure_token_id && isset($_SESSION['wb_form_secure_token_' . $secure_token_id]) && $_SESSION['wb_form_secure_token_' . $secure_token_id] === $secure_token) {
+		$form = isset($forms[$page_id][$post['wb_form_id']])
+			? $forms[$page_id][$post['wb_form_id']] : (isset($forms['store'][$post['wb_form_id']])
+				? $forms['store'][$post['wb_form_id']] : (isset($forms['blog'][$post['wb_form_id']])
+					? $forms['blog'][$post['wb_form_id']] : null));
+		if (!$form) return;
+
+		$formSendType = isset($form['formSendType']) ? $form['formSendType'] : 'email';
+		$apiPostUrl = (isset($form['postUrl']) && $form['postUrl']) ? $form['postUrl'] : null;
+		$webhookUrl = (isset($form['webhookUrl']) && $form['webhookUrl']) ? $form['webhookUrl'] : null;
+		$brandId = (isset($form['brandId']) && $form['brandId']) ? $form['brandId'] : null;
+		$telegramApiToken = (isset($form['telegramApiToken']) && $form['telegramApiToken']) ? trim($form['telegramApiToken']) : null;
+		$telegramChatId = (isset($form['telegramChatId']) && $form['telegramChatId']) ? trim($form['telegramChatId']) : null;
+
+		try {
+			global $wb_form_send_state, $wb_form_send_success, $wb_form_reaccept_cookie, $wb_form_id, $formErrors, $wb_form_popup_mode, $wb_target_origin;
+
+			$formErrors = new stdClass();
+			$wb_form_reaccept_cookie = false;
+			$wb_form_send_state = false;
+			$wb_form_send_success = false;
+			$wb_form_id = $post['wb_form_id'];
+			$wb_form_popup_mode = (isset($post['wb_popup_mode']) && $post['wb_popup_mode'] == 1);
+			$wb_target_origin = getOrigin();
+
+			$wb_form_sending_failed = SiteModule::__('Form sending failed');
+
+			if (isset($form['recVersion']) && ($form['recVersion'] == 'v2' || $form['recVersion'] == 'v3')) {
+				if (isset($form['recSiteKey']) && $form['recSiteKey'] && isset($form['recSecretKey']) && $form['recSecretKey']) {
+					if (isset($post['cookieDontAllow']) && $post['cookieDontAllow'] == '1') {
+						$wb_form_reaccept_cookie = true;
+						throw new ErrorException(SiteModule::__('Please accept cookie consent to submit the form'));
+					}
+					// reCAPTCHA is enabled
+					$recResp = (isset($post['g-recaptcha-response']) ? $post['g-recaptcha-response'] : '');
+					$remoteAddr = getRemoteAddr();
+					$respStr = $recResp ? _http_get('https://www.google.com/recaptcha/api/siteverify', array(
+						'secret' => $form['recSecretKey'],
+						'response' => $recResp,
+						'remoteip' => $remoteAddr ? $remoteAddr : null
+					)) : null;
+					$resp = $respStr ? json_decode($respStr) : null;
+					if (!$resp || !isset($resp->success) || !$resp->success) {
+						throw new ErrorException(SiteModule::__('Form was not sent, are you a robot?'));
+					}
+				}
+			} elseif (isset($form['recVersion']) && $form['recVersion'] == 'yandex') {
+				if (isset($form['recSiteKey']) && $form['recSiteKey']) {
+					$recResp = (isset($post['smart-token']) ? $post['smart-token'] : '');
+					$remoteAddr = getRemoteAddr();
+
+					$ch = curl_init("https://smartcaptcha.yandexcloud.net/validate");
+					$args = [
+						"secret" => $form['recSecretKey'],
+						"token" => $recResp,
+						"ip" => $remoteAddr ? $remoteAddr : null,
+					];
+					curl_setopt($ch, CURLOPT_TIMEOUT, 1);
+					curl_setopt($ch, CURLOPT_POST, true);
+					curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($args));
+					curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+					$server_output = curl_exec($ch);
+					$httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+					$errcode = curl_errno($ch);
+					$errmsg = curl_error($ch);
+					curl_close($ch);
+
+					if ($httpcode !== 200) {
+						if ($errcode > 0) {
+							error_log("[Form captcha error]: hcpatcha error: curl error ($errcode)" . ($errmsg ? ": $errmsg" : ''));
+						} else {
+							error_log("[Form captcha error]: hcaptcha error: http code ($httpcode)" . ($server_output ? ": $server_output" : ''));
+						}
+						throw new ErrorException(SiteModule::__('Form was not sent, are you a robot?') . ' (2)');
+					}
+
+					$resp = json_decode($server_output);
+					if ($resp->status !== "ok") {
+						throw new ErrorException(SiteModule::__('Form was not sent, are you a robot?'));
+					}
+				}
+			} elseif (isset($form['recVersion']) && $form['recVersion'] == 'hcaptcha') {
+				if (isset($form['recSiteKey']) && $form['recSiteKey']) {
+					$recResp = (isset($post['h-captcha-response']) ? $post['h-captcha-response'] : '');
+					$remoteAddr = getRemoteAddr();
+
+					$ch = curl_init("https://api.hcaptcha.com/siteverify");
+					$args = [
+						"secret" => $form['recSecretKey'],
+						"response" => $recResp,
+						"remoteip" => $remoteAddr ? $remoteAddr : null,
+					];
+					curl_setopt($ch, CURLOPT_TIMEOUT, 1);
+					curl_setopt($ch, CURLOPT_POST, true);
+					curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($args));
+					curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+					$server_output = curl_exec($ch);
+					$httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+					$errcode = curl_errno($ch);
+					$errmsg = curl_error($ch);
+					curl_close($ch);
+
+					if ($httpcode !== 200) {
+						if ($errcode > 0) {
+							error_log("[Form captcha error]: hcpatcha error: curl error ($errcode)" . ($errmsg ? ": $errmsg" : ''));
+						} else {
+							error_log("[Form captcha error]: hcaptcha error: http code ($httpcode)" . ($server_output ? ": $server_output" : ''));
+						}
+						throw new ErrorException(SiteModule::__('Form was not sent, are you a robot?') . ' (2)');
+					}
+
+					$resp = json_decode($server_output);
+					if ($resp->success !== true && $resp->success !== 'true') {
+						throw new ErrorException(SiteModule::__('Form was not sent, are you a robot?'));
+					}
+				}
+			}
+
+			$attachmentsDir = dirname(__FILE__) . DIRECTORY_SEPARATOR . "forms_attachments";
+
+			$fields = $form['fields'];
+			if (isset($form['useGclidCapture']) && $form['useGclidCapture'] && !is_null(_get('gclid'))) {
+				$idx = count($fields);
+				$fields[$idx] = [
+					"fidx" => $idx,
+					"name" => "gclid",
+					"default" => htmlspecialchars(_get('gclid')),
+					"type" => "hidden",
+					"required" => false,
+					"enabled" => true,
+					"settings" => [],
+				];
+				$data[$idx] = htmlspecialchars(_get('gclid'));
+			}
+
+			$email_list = array_map('trim', preg_split('#[;,]#', $form['email'], -1, PREG_SPLIT_NO_EMPTY));
+			$mail_to = array();
+			foreach ($email_list as $eml) {
+				if (($m = is_mail($eml))) {
+					$mail_to[] = $m;
+				}
+			}
+			$mail_from = reset($mail_to);
+			$mail_from_name = null;
+
+			$fileSizeTotal = 0;
+			$data = array();
+			foreach ($fields as $fKey => $field) {
+				$idx = $field['fidx'];
+				if (isset($field['enabled']) && (!$field['enabled'])) continue;
+				$fieldName = "wb_input_$idx";
+				$required = isset($field["required"]) ? $field["required"] : ($field["type"] != "file");
+
+				if (!$field['name'] && $field["type"] !== "checkbox" && $formSendType !== 'telegram') {
+					$fields[$fKey]['name'] = SiteModule::__('Empty');
+				}
+
+				if ($field["type"] === "file") {
+					if (!isset($_FILES[$fieldName]))
+						continue;
+					$err = null;
+					foreach ($_FILES[$fieldName]["tmp_name"] as $fileIdx => $fileTmpName) {
+						if (!$fileTmpName)
+							continue;
+						$fileName = $_FILES[$fieldName]["name"][$fileIdx];
+						$fileSize = $_FILES[$fieldName]["size"][$fileIdx];
+						$fileError = $_FILES[$fieldName]["error"][$fileIdx];
+						$maxFileSizeTotalMB = isset($field["settings"]["fileMaxSize"]) ? intval($field["settings"]["fileMaxSize"]) : 0;
+						if (!$maxFileSizeTotalMB)
+							$maxFileSizeTotalMB = 2;
+						$maxFileSizeTotal = $maxFileSizeTotalMB * 1024 * 1024;
+
+						if ($fileSize > $maxFileSizeTotal || $fileError == UPLOAD_ERR_INI_SIZE || $fileError == UPLOAD_ERR_FORM_SIZE) {
+							if (!$err)
+								$err = "";
+							$err .= sprintf(SiteModule::__('File %s is too big'), '"' . $fileName . '"') . "\n";
+						} else if ($fileError != 0) {
+							if (!$err)
+								$err = "";
+							$err .= sprintf(SiteModule::__('File %s could not be uploaded for sending'), '"' . $fileName . '"') . "\n";
+						} else {
+							$fileSizeTotal += $fileSize;
+						}
+					}
+					if ($err) throw new ErrorException($err);
+					// if( $fileSizeTotal > $maxFileSizeTotal ) {
+					// throw new ErrorException(sprintf(SiteModule::__("Total size of attachments must not exceed %s MB"), $maxFileSizeTotalMB));
+					// }
+					if (!$fileSizeTotal && $required)
+						$formErrors->required[] = $fieldName;
+					if ($fileSizeTotal) @set_time_limit(180);
+				} else if ($field["type"] == "hidden") {
+					$data[$idx] = tr_($field['default']);
+					if (isset($post[$fieldName])) {
+						$data[$idx] = $post[$fieldName];
+					}
+				} else if ($field["type"] == "range") {
+					$data[$idx] = array("from" => tr_($field['default']), "to" => tr_($field['default']));
+					if (isset($post[$fieldName])) {
+						$data[$idx] = $post[$fieldName];
+					}
+					if ((!$data[$idx] || empty($data[$idx]["from"]) || empty($data[$idx]["to"])) && $required)
+						$formErrors->required[] = $fieldName;
+				} else if ($field["type"] == "checkbox") {
+					$options = isset($field["settings"]["options"]) ? $field["settings"]["options"] : array();
+					foreach ($options as &$item) {
+						$item = html_entity_decode((string)tr_($item));
+					}
+					unset($item);
+
+					if (empty($post[$fieldName]) || count($options) == 1) {
+						$fields[$fKey]['name'] = $fields[$fKey]['name'] ? $fields[$fKey]['name'] : $options[0];
+						$data[$idx] = !empty($post[$fieldName]) ? true : false;
+					} elseif (!isset($post[$fieldName])) {
+						$data[$idx] = false;
+					} elseif (is_array($post[$fieldName])) {
+						$newValue = array();
+						foreach ($post[$fieldName] as $item) {
+							if (isset($options[$item])) {
+								$newValue[] = $options[$item];
+							}
+						}
+						$data[$idx] = $newValue;
+					} else {
+						$data[$idx] = true;
+					}
+					$fields[$fKey]['name'] = $fields[$fKey]['name'] ? $fields[$fKey]['name'] : SiteModule::__('Empty');
+
+					if ((!$data[$idx] || empty($data[$idx])) && $required)
+						$formErrors->required[] = $fieldName;
+				} else if ($field["type"] == "radiobox") {
+					if (!isset($post[$fieldName])) {
+						if ($required)
+							$formErrors->required[] = $fieldName;
+						$data[$idx] = false;
+					} else {
+						$options = isset($field["settings"]["options"]) ? $field["settings"]["options"] : array();
+						foreach ($options as &$item) {
+							$item = html_entity_decode(tr_($item));
+						}
+
+						$data[$idx] = isset($options[$post[$fieldName]]) ? $options[$post[$fieldName]] : false;
+					}
+				} else {
+					if (!isset($post[$fieldName])) {
+						error_log("[Form error]: Field $fieldName is not present");
+						throw new ErrorException($wb_form_sending_failed . " (6): " . sprintf(SiteModule::__('Field %s is not present'), $fieldName));
+					}
+					$max_len = ($field["type"] == "textarea") ? 65536 : 1024; // 65 kilobytes max for textarea and 1024 for other
+					$valueRaw = $post[$fieldName];
+					if (empty($valueRaw) && strlen($valueRaw) == 0 && $required) {
+						if (!isset($formErrors->required)) $formErrors->required = array();
+						$formErrors->required[] = $fieldName;
+						$data[$idx] = $value = "";
+					} else {
+						$value = (strlen($valueRaw) > 0) ? substr(htmlspecialchars($valueRaw), 0, $max_len) : htmlspecialchars($valueRaw);
+						if ($field["type"] == "select") {
+							$options = isset($field["settings"]["options"]) ? $field["settings"]["options"] : array();
+							$optIdx = array_search($valueRaw, array_map(function($o) { return tr_($o); }, $options));
+							if ($optIdx === false && is_numeric($valueRaw) && isset($options[$valueRaw])) $optIdx = intval($valueRaw);
+							if ($optIdx === false) $optIdx = 0;
+							foreach ($options as &$item) {
+								$item = html_entity_decode(tr_($item) ?: '');
+							}
+							$data[$idx] = trim($options[$optIdx]);
+						} else
+							$data[$idx] = $value;
+					}
+					if (($eml = is_mail($value))) $mail_from = $eml;
+				}
+			}
+
+			if (isset($post['object']) && $post['object'])
+				$data['object'] = $post['object'];
+
+			$formErrors_t = (array)$formErrors;
+			if (!empty($formErrors_t)) {
+				throw new ErrorException($wb_form_sending_failed . ' (7)');
+			}
+
+			$attachmentsLogDir = dirname(__FILE__) . DIRECTORY_SEPARATOR . "forms_log_attachments";
+			FormModule::logForm($attachmentsLogDir, $page_id, $post['wb_form_uuid'], $fields, $data);
+
+			if ($formSendType == 'url' || $formSendType == 'telegram') {
+				if (!class_exists('NetUtil')) {
+					$netUtilFile = __DIR__ . '/src/NetUtil.php';
+					if (is_file($netUtilFile)) require_once $netUtilFile;
+				}
+				if (!class_exists('NetUtil')) {
+					throw new ErrorException($wb_form_sending_failed . ' (9)');
+				}
+			}
+
+			if ($formSendType == 'url') {
+				$postData = array();
+				foreach ($fields as $idx => $field) {
+					$fieldName = "wb_input_$idx";
+					if ($field["type"] === "file") {
+						if (!isset($_FILES[$fieldName]))
+							continue;
+						foreach ($_FILES[$fieldName]["tmp_name"] as $fileIdx => $fileTmpName) {
+							if (!$fileTmpName)
+								continue;
+							$fileName = $_FILES[$fieldName]["name"][$fileIdx];
+							$fileType = $_FILES[$fieldName]["type"][$fileIdx];
+							if (class_exists('CURLFile')) {
+								$postData["file_$fileIdx"] = new CURLFile($fileTmpName, $fileType, $fileName);
+							} else {
+								$postData["file_$fileIdx"] = '@' . $fileTmpName . ';filename=' . $fileName . ';type=' . $fileType;
+							}
+						}
+					} elseif (is_array($data[$idx])) {
+						$name = tr_($field["name"]);
+						$value = $data[$idx];
+						if ($field["name"] === '' && $field["type"] === 'checkbox') {
+							$postData = array_merge($postData, array_fill_keys(array_values($value), true));
+						} else {
+							$postData[$name] = implode(',', $value);
+						}
+					} else {
+						$name = tr_($field["name"]);
+						$value = $data[$idx];
+						$postData[$name] = $value;
+					}
+				}
+
+				if ($apiPostUrl) {
+					try {
+						$resp = NetUtil::request($apiPostUrl, $postData, NetUtil::METHOD_POST, array('Content-type: multipart/form-data'),
+							array(NetUtil::OPT_PARAMS_AS_ARRAY => true, NetUtil::OPT_IGNORE_STATUS_CODE => true));
+						$error = null;
+					} catch (ErrorException $ex) {
+						$resp = null;
+						$error = $ex->getMessage();
+					}
+					if (isset($resp->statusCode) && $resp->statusCode >= 200 && $resp->statusCode < 300) {
+						$wb_form_send_state = empty($form['sentMessage']) ? 'Form was sent.' : tr_($form['sentMessage']);
+						$wb_form_send_success = true;
+					} else {
+						$statusCode = $resp ? $resp->statusCode : 0;
+						error_log('[Form sending error]: Failed to submit to URL: response code(' . $statusCode . ')' . ($error ? ': ' . $error : ''));
+						throw new ErrorException($wb_form_sending_failed . ' (8)' . ($error ? ': ' . $error : ''));
+					}
+				}
+				if ($webhookUrl) {
+					if ($brandId) $postData['_brandId_'] = $brandId;
+					$postData['_fromUrl_'] = getCurrUrl();
+					try {
+						$resp = NetUtil::request($apiPostUrl, $postData, NetUtil::METHOD_POST, array('Content-type: multipart/form-data'),
+							array(NetUtil::OPT_PARAMS_AS_ARRAY => true, NetUtil::OPT_IGNORE_STATUS_CODE => true));
+					} catch (ErrorException $ex) {
+					}
+				}
+			} elseif ($formSendType == 'telegram') {
+				$allowed_types = array('input', 'number', 'phone', 'email', 'textarea', 'checkbox', 'date', 'radiobox', 'select', 'hidden', 'range');
+
+				$messageData = [];
+				foreach ($fields as $idx => $field) {
+					$name = '';
+					$fieldName = "wb_input_$idx";
+					if (in_array($field['type'], $allowed_types)) {
+						if (isset($post[$fieldName]) || $field['type'] == 'checkbox') {
+							if ($field['type'] == 'range') {
+								$value = $post[$fieldName]['from'] . ' - ' . $post[$fieldName]['to'];
+							} elseif ($field['type'] == 'checkbox') {
+								if (empty($post[$fieldName]) || count($field['settings']['options']) == 1) {
+									$name = !$field['name'] ? $field['settings']['options'][0] : '';
+									$value = !empty($post[$fieldName]) ? SiteModule::__('Yes') : SiteModule::__('No');
+								} else {
+									$value = [];
+									foreach ($post[$fieldName] as $val) {
+										$value[] = SiteModule::__(tr_($field['settings']['options'][$val]));
+									}
+									$value = implode(', ', $value);
+								}
+							} elseif ($field['type'] == 'radiobox' || $field['type'] == 'select') {
+								$options = array_map(function ($item) {
+									return tr_($item);
+								}, (isset($field['settings']['options']) && is_array($field['settings']['options'])) ? $field['settings']['options'] : []);
+								$trval = in_array($post[$fieldName], $options) ? $post[$fieldName] : '';
+								if (!is_string($trval)) $trval = '';
+								$value = $trval;
+							} elseif ($field['type'] == 'checkbox') {
+								$value = "\n" . trim($post[$fieldName]);
+							} else {
+								$value = trim($post[$fieldName]);
+							}
+							$name = $name ? $name : (!$field['name'] ? SiteModule::__('Empty') : tr_($field['name']));
+							$messageData[] = '<b>' . SiteModule::__(trim(strip_tags($name))) . ':</b>' . "\n" . $value;
+						}
+					}
+				}
+
+				$message = implode("\n", $messageData);
+
+				$url = 'https://api.telegram.org/bot' . $telegramApiToken . '/sendMessage';
+				$postData = array(
+					'chat_id' => $telegramChatId,
+					'text' => $message,
+					'parse_mode' => 'HTML'
+				);
+
+				try {
+					$resp = NetUtil::request($url, $postData, NetUtil::METHOD_POST, array('Content-type: multipart/form-data'),
+						array(NetUtil::OPT_PARAMS_AS_ARRAY => true, NetUtil::OPT_IGNORE_STATUS_CODE => true));
+
+					$body = json_decode($resp->body);
+					if ($resp->statusCode != 200) {
+						$error = $body->description;
+						throw new ErrorException($error);
+					} elseif (isset($body->ok) && $body->ok) {
+						$wb_form_send_state = empty($form['sentMessage']) ? 'Form was sent.' : tr_($form['sentMessage']);
+						$wb_form_send_success = true;
+					}
+				} catch (ErrorException $ex) {
+					$error = $ex->getMessage();
+					error_log("[Form telegram error]: {$error}");
+					throw new ErrorException(SiteModule::__('Telegram error') . ': ' . $error);
+				}
+
+				if (count($_FILES)) {
+					if (!file_exists($attachmentsDir)) {
+						if (!mkdir($attachmentsDir, 0700)) {
+							error_log('[Form error]: Failed to create a directory for attachments');
+							throw new ErrorException($wb_form_sending_failed . ' (1): ' . SiteModule::__('Failed to create a directory for attachments'));
+						}
+					}
+
+					foreach ($_FILES as $name => $file) {
+						if (strpos($name, 'wb_input_') === false) {
+							continue;
+						}
+
+						for ($i = 0; $i < count($file['name']); $i++) {
+
+							if ($file['error'][$i] !== UPLOAD_ERR_OK) {
+								continue;
+							}
+
+							$uploadedFilename = $attachmentsDir . DIRECTORY_SEPARATOR . basename($file['name'][$i]);
+							move_uploaded_file($file['tmp_name'][$i], $uploadedFilename);
+
+							if (strpos($file['type'][$i], 'image') !== false) {
+								$url = 'https://api.telegram.org/bot' . $telegramApiToken . '/sendPhoto';
+								$postData = array(
+									'chat_id' => $telegramChatId,
+									'photo' => new CURLFile($uploadedFilename, $file['type'][$i], $file['name'][$i])
+								);
+							} elseif (strpos($file['type'][$i], 'audio') !== false) {
+								$url = 'https://api.telegram.org/bot' . $telegramApiToken . '/sendAudio';
+								$postData = array(
+									'chat_id' => $telegramChatId,
+									'audio' => new CURLFile($uploadedFilename, $file['type'][$i], $file['name'][$i])
+								);
+							} elseif (strpos($file['type'][$i], 'video') !== false) {
+								$url = 'https://api.telegram.org/bot' . $telegramApiToken . '/sendVideo';
+								$postData = array(
+									'chat_id' => $telegramChatId,
+									'video' => new CURLFile($uploadedFilename, $file['type'][$i], $file['name'][$i])
+								);
+							} else {
+								$url = 'https://api.telegram.org/bot' . $telegramApiToken . '/sendDocument';
+								$postData = array(
+									'chat_id' => $telegramChatId,
+									'document' => new CURLFile($uploadedFilename, $file['type'][$i], $file['name'][$i])
+								);
+							}
+
+							try {
+								$resp = NetUtil::request($url, $postData, NetUtil::METHOD_POST, array('Content-type: multipart/form-data'),
+									array(NetUtil::OPT_PARAMS_AS_ARRAY => true, NetUtil::OPT_IGNORE_STATUS_CODE => true));
+
+								unlink($uploadedFilename);
+
+								$body = json_decode($resp->body);
+								if ($resp->statusCode != 200) {
+									$error = $body->description;
+									throw new ErrorException($error);
+								}
+							} catch (ErrorException $ex) {
+								$error = $ex->getMessage();
+								error_log("[Form telegram error]: {$error}");
+							}
+						}
+					}
+				}
+			} else {
+				if (!$mail_from) $mail_from = reset($mail_to);
+
+				if (empty($mail_to)) {
+					error_log('[Form configuration error]: receiver not specified');
+					throw new ErrorException($wb_form_sending_failed . ' (5): ' . SiteModule::__('Receiver not specified'));
+				}
+
+				if ($siteInfo->disableFormSending) {
+					//				throw new ErrorException(SiteModule::__('Form sending from preview is not available'));
+				}
+				requirePHPMailer();
+				$mailer = new PHPMailer();
+				$mailer->setLanguage(getPreferredLang());
+
+				// cleanup old attachments that were not removed due to unknown reasons
+				if (is_dir($attachmentsDir)) {
+					$dir = opendir($attachmentsDir);
+					if ($dir) {
+						while ($f = readdir($dir)) {
+							if ($f == "." || $f == ".." || $f == ".htaccess")
+								continue;
+							$fp = $attachmentsDir . DIRECTORY_SEPARATOR . $f;
+							if (!is_file($fp))
+								continue;
+							if (filemtime($fp) < time() - 86400)
+								unlink($fp);
+						}
+						closedir($dir);
+					}
+				}
+
+				$movedFiles = array();
+				foreach ($fields as $field) {
+					$idx = $field['fidx'];
+					$fieldName = "wb_input_$idx";
+					if ($field["type"] === "file") {
+						if (!isset($_FILES[$fieldName]))
+							continue;
+						if (!file_exists($attachmentsDir)) {
+							if (!mkdir($attachmentsDir, 0700)) {
+								error_log('[Form error]: Failed to create a directory for attachments');
+								throw new ErrorException($wb_form_sending_failed . ' (1): ' . SiteModule::__('Failed to create a directory for attachments'));
+							}
+						}
+						if (!is_dir($attachmentsDir)) {
+							error_log('[Form error]: Attachments inode on the server is not a directory');
+							throw new ErrorException($wb_form_sending_failed . ' (2): ' . SiteModule::__('Attachments inode on the server is not a directory'));
+						}
+						foreach ($_FILES[$fieldName]["tmp_name"] as $fileIdx => $fileTmpName) {
+							if (!$fileTmpName)
+								continue;
+							$fileName = $_FILES[$fieldName]["name"][$fileIdx];
+							$tmpCopyName = $attachmentsDir . DIRECTORY_SEPARATOR . basename($fileTmpName);
+							if (!move_uploaded_file($fileTmpName, $tmpCopyName)) {
+								foreach ($movedFiles as $tmpCopyName)
+									unlink($tmpCopyName);
+								error_log('[Form error]: Failed to move uploaded file to attachments directory');
+								throw new ErrorException($wb_form_sending_failed . ' (3): ' . SiteModule::__('Failed to move uploaded file to attachments directory'));
+							}
+							$movedFiles[] = $tmpCopyName;
+							$secureFileName = $fileName;
+							$secureFileName = preg_replace("#[\\\\/<>\\?;:,=]+#isu", "_", $secureFileName);
+							$secureFileName = preg_replace("#\\.\\.+#isu", ".", $secureFileName);
+							$mailer->addAttachment($tmpCopyName, $secureFileName, "base64");
+						}
+					}
+				}
+
+				if (isset($form['smtpEnable']) && $form['smtpEnable'] && isset($form['smtpHost']) && $form['smtpHost']) {
+					/* $mailer->Debugoutput = function($string) {
+						file_put_contents(__DIR__.'/smtp-debug.log', $string."\n", FILE_APPEND);
+					};
+					$mailer->SMTPDebug = 4; */
+					$mailer->isSMTP();
+					$mailer->Host = ((isset($form['smtpHost']) && $form['smtpHost']) ? $form['smtpHost'] : 'localhost');
+					$mailer->Port = ((isset($form['smtpPort']) && intval($form['smtpPort'])) ? intval($form['smtpPort']) : 25);
+					$mailer->SMTPSecure = ((isset($form['smtpEncryption']) && $form['smtpEncryption']) ? $form['smtpEncryption'] : '');
+					$mailer->SMTPAutoTLS = false;
+					if (isset($form['smtpUsername']) && $form['smtpUsername'] && isset($form['smtpPassword']) && $form['smtpPassword']) {
+						$mailer->SMTPAuth = true;
+						$mailer->Username = ((isset($form['smtpUsername']) && $form['smtpUsername']) ? $form['smtpUsername'] : '');
+						$mailer->Password = ((isset($form['smtpPassword']) && $form['smtpPassword']) ? $form['smtpPassword'] : '');
+					}
+					$mailer->SMTPOptions = array('ssl' => array(
+						'verify_peer' => false,
+						'verify_peer_name' => false,
+						'allow_self_signed' => true
+					));
+				}
+
+				$style = "* { font: 12px Arial; }\nstrong { font-weight: bold; }";
+
+				$toHasGmail = false;
+				foreach ($mail_to as $eml) {
+					if (strpos($eml, 'gmail.com') !== false) $toHasGmail = true;
+					$mailer->AddAddress($eml);
+				}
+
+				$sender_email = (isset($form['emailFrom']) && $form['emailFrom']) ? trim($form['emailFrom']) : ('no-reply@' . $siteInfo->domain);
+				$sender_name = $mail_from_name;
+				if (preg_match('#^([^<]+|)<([^>]+)>$#', $sender_email, $m)) {
+					if (trim($m[1])) $sender_name = trim($m[1]);
+					$sender_email = trim($m[2]);
+				} else if (preg_match('#^<([^>]+)>(.+|)$#', $sender_email, $m)) {
+					if (trim($m[2])) $sender_name = trim($m[2]);
+					$sender_email = trim($m[1]);
+				}
+				$mailer->SetFrom($sender_email, ($sender_name ?: ''));
+				if (strpos($mail_from, 'gmail.com') === false || !$toHasGmail) {
+					// do not add "Reply-To" header if both Receiver and ReplyTo are Gmail
+					// form sending fails in such case.
+					$mailer->addReplyTo($mail_from, $mail_from_name ? $mail_from_name : '');
+				}
+
+				$mailer->CharSet = 'utf-8';
+				$message = '';
+				if (isset($form['object']) && $form['object']) {
+					if (isset($form['objectRenderer']) && $form['objectRenderer'] && is_callable($form['objectRenderer'])) {
+						$objectStr = call_user_func((strpos($form['objectRenderer'], '::') ? explode('::', $form['objectRenderer']) : $form['objectRenderer']), $form, $data);
+					} else {
+						$objectStr = '<p><strong>' . htmlspecialchars($form['object']) . '</strong></p>';
+					}
+					if ($objectStr) $message .= $objectStr;
+				}
+				$message .= '<table cellspacing="0" cellpadding="5">';
+				foreach ($fields as $idx => $field) {
+					if ($field["type"] === "file")
+						continue;
+					$name = tr_($field["name"]);
+					$value = $data[$idx];
+					$escapeName = function ($name) {
+						return trim(strip_tags($name));
+					};
+					$escapeVal = function ($value) {
+						if (is_array($value)) $value = implode(PHP_EOL, $value);
+						return trim(nl2br($value));
+					};
+					$td = function ($content) {
+						return '<td style="vertical-align: top;">' . $content . '</td>';
+					};
+					$message .= "<tr>" . $td("<strong>{$escapeName($name)}: </strong>");
+					if ($field["type"] == "textarea")
+						$message .= $td('<div style="max-width: 400px;">' . $escapeVal($value) . '</div>') . "</tr>\n";
+					else if ($field["type"] == "checkbox") {
+						if (is_array($value)) {
+							$message .= $td($escapeVal($value)) . "</tr>\n";
+						} else {
+							$message .= $td($value ? tr_('Yes') : tr_('No')) . "</tr>\n";
+						}
+					} else if ($field["type"] == "range") {
+						$message .= $td($escapeVal($value["from"]) . ' - ' . $escapeVal($value["to"])) . "</tr>\n";
+					} else
+						$message .= $td($escapeVal($value)) . "</tr>\n";
+					$message .= "</tr>\n";
+				}
+				$message .= '</table>';
+				// echo $message; exit;
+
+				$html =
+					'<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+		<html>
+			<head>
+				<title>' . $form["subject"] . '</title>
+				<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+				' . ($style ? "<style><!--\n$style\n--></style>\n\t\t" : "") . '</head>
+			<body>' . $message . '</body>
+		</html>';
+				$mailer->MsgHTML($html);
+				$mailer->AltBody = preg_replace('/[\r\n]{3,9}/', "\n\n", str_replace('&nbsp;', '', strip_tags(str_replace("</tr>", "</tr>\n", $message))));
+				$mailer->Subject = $form["subject"];
+				ob_start();
+				$res = $mailer->Send();
+				$wb_form_send_success = $res;
+				ob_get_clean();
+				if ($res) {
+					$wb_form_send_state = empty($form['sentMessage']) ? '' : tr_($form['sentMessage']);
+				} else {
+					if ($mailer->ErrorInfo) error_log('[Form sending error]: ' . $mailer->ErrorInfo);
+					throw new ErrorException($wb_form_sending_failed . ' (4): ' . $mailer->ErrorInfo);
+				}
+				if (isset($form['loggingHandler']) && $form['loggingHandler'] && is_callable($form['loggingHandler'])) {
+					call_user_func((strpos($form['loggingHandler'], '::') ? explode('::', $form['loggingHandler']) : $form['loggingHandler']), $form, $data, $res);
+				}
+				foreach ($movedFiles as $tmpCopyName)
+					unlink($tmpCopyName);
+			}
+		} catch (ErrorException $ex) {
+			if (!$wb_form_send_state) {
+				$wb_form_send_state = $ex->getMessage();
+				$formErrors->any = true; // set values to fields back in case of error
+			}
+			$wb_form_send_success = false;
+		}
+	} else {
 		$formErrors = new stdClass();
+		$wb_form_reaccept_cookie = false;
 		$wb_form_send_state = false;
 		$wb_form_send_success = false;
 		$wb_form_id = $post['wb_form_id'];
 		$wb_form_popup_mode = (isset($post['wb_popup_mode']) && $post['wb_popup_mode'] == 1);
 		$wb_target_origin = getOrigin();
-		
-		$wb_form_sending_failed = SiteModule::__('Form sending failed');
 
-		if (isset($form['recSiteKey']) && $form['recSiteKey'] && isset($form['recSecretKey']) && $form['recSecretKey']) {
-			// reCAPTCHA is enabled
-			$recResp = (isset($post['g-recaptcha-response']) ? $post['g-recaptcha-response'] : '');
-			$remoteAddr = getRemoteAddr();
-			$respStr = $recResp ? _http_get('https://www.google.com/recaptcha/api/siteverify', array(
-				'secret' => $form['recSecretKey'],
-				'response' => $recResp,
-				'remoteip' => $remoteAddr ? $remoteAddr : null
-			)) : null;
-			$resp = $respStr ? json_decode($respStr) : null;
-			if (!$resp || !isset($resp->success) || !$resp->success) {
-				throw new ErrorException(SiteModule::__('Form was not sent, are you a robot?'));
-			}
-		}
-
-		$attachmentsDir = dirname(__FILE__) . DIRECTORY_SEPARATOR . "forms_attachments";
-
-		$fields = $form['fields'];
-		if (isset($form['useGclidCapture']) && $form['useGclidCapture'] && isset($_GET['gclid'])) {
-			$idx = count($fields);
-			$fields[$idx] = [
-				"fidx" => $idx,
-				"name" => "gclid",
-				"default" => htmlspecialchars($_GET['gclid']),
-				"type" => "hidden",
-				"required" => false,
-				"enabled" => true,
-				"settings" => [],
-			];
-			$data[$idx] = htmlspecialchars($_GET['gclid']);
-		}
-
-		$email_list = array_map('trim', preg_split('#[;,]#', $form['email'], -1, PREG_SPLIT_NO_EMPTY));
-		$mail_to = array();
-		foreach ($email_list as $eml) {
-			if (($m = is_mail($eml))) { $mail_to[] = $m; }
-		}
-		$mail_from = reset($mail_to);
-		$mail_from_name = null;
-
-		$fileSizeTotal = 0;
-		$data = Array();
-		foreach($fields as $field) {
-			$idx = $field['fidx'];
-			if (isset($field['enabled']) && (!$field['enabled'])) continue;
-			$fieldName = "wb_input_$idx";
-			$required = isset($field["required"]) ? $field["required"] : ($field["type"] != "file");
-			if( $field["type"] === "file" ) {
-				if( !isset($_FILES[$fieldName]) )
-					continue;
-				$err = null;
-				foreach( $_FILES[$fieldName]["tmp_name"] as $fileIdx => $fileTmpName) {
-					if( !$fileTmpName )
-						continue;
-					$fileName = $_FILES[$fieldName]["name"][$fileIdx];
-					$fileSize = $_FILES[$fieldName]["size"][$fileIdx];
-					$fileError = $_FILES[$fieldName]["error"][$fileIdx];
-					$maxFileSizeTotalMB = isset($field["settings"]["fileMaxSize"]) ? intval($field["settings"]["fileMaxSize"]) : 0;
-					if( !$maxFileSizeTotalMB )
-						$maxFileSizeTotalMB = 2;
-					$maxFileSizeTotal = $maxFileSizeTotalMB * 1024 * 1024;
-
-					if( $fileSize > $maxFileSizeTotal || $fileError == UPLOAD_ERR_INI_SIZE || $fileError == UPLOAD_ERR_FORM_SIZE ) {
-						if( !$err )
-							$err = "";
-						$err .= sprintf(SiteModule::__('File %s is too big'), '"'.$fileName.'"')."\n";
-					}
-					else if( $fileError != 0 ) {
-						if( !$err )
-							$err = "";
-						$err .= sprintf(SiteModule::__('File %s could not be uploaded for sending'), '"'.$fileName.'"')."\n";
-					}
-					else {
-						$fileSizeTotal += $fileSize;
-					}
-				}
-				if ($err) throw new ErrorException($err);
-				// if( $fileSizeTotal > $maxFileSizeTotal ) {
-					// throw new ErrorException(sprintf(SiteModule::__("Total size of attachments must not exceed %s MB"), $maxFileSizeTotalMB));
-				// }
-				if( !$fileSizeTotal && $required )
-					$formErrors->required[] = $fieldName;
-				if ($fileSizeTotal) @set_time_limit(180);
-			}
-			else if( $field["type"] == "hidden" ) {
-				$data[$idx] = tr_($field['default']);
-				if (isset($post[$fieldName])) {
-					$data[$idx] = $post[$fieldName];
-				}
-			}
-			else if( $field["type"] == "range" ) {
-				$data[$idx] = array("from" => tr_($field['default']), "to" => tr_($field['default']));
-				if (isset($post[$fieldName])) {
-					$data[$idx] = $post[$fieldName];
-				}
-				if( (!$data[$idx] || empty($data[$idx]["from"]) || empty($data[$idx]["to"])) && $required )
-					$formErrors->required[] = $fieldName;
-			}
-			else if( $field["type"] == "checkbox" ) {
-				$options = isset($field["settings"]["options"]) ? $field["settings"]["options"] : array();
-				foreach ($options as &$item) {
-					$item = html_entity_decode((string)tr_($item));
-				}
-				unset($item);
-
-				if (!isset($post[$fieldName])) {
-					$data[$idx] = false;
-				} elseif (is_array($post[$fieldName])) {
-					$newValue = array();
-					foreach ($post[$fieldName] as $item) {
-						if (isset($options[$item])) {
-							$newValue[] = $options[$item];
-						}
-					}
-					$data[$idx] = $newValue;
-				}
-				else {
-					$data[$idx] = true;
-				}
-
-				if( (!$data[$idx] || empty($data[$idx])) && $required )
-					$formErrors->required[] = $fieldName;
-			}
-			else if( $field["type"] == "radiobox" ) {
-				if (!isset($post[$fieldName])) {
-					if( $required )
-						$formErrors->required[] = $fieldName;
-					$data[$idx] = false;
-				}
-				else {
-					$options = isset($field["settings"]["options"]) ? $field["settings"]["options"] : array();
-					foreach ($options as &$item) {
-						$item = html_entity_decode(tr_($item));
-					}
-
-					$data[$idx] = isset($options[$post[$fieldName]]) ? $options[$post[$fieldName]] : false;
-				}
-			}
-			else {
-				if (!isset($post[$fieldName])) {
-					error_log("[Form error]: Field $fieldName is not present");
-					throw new ErrorException($wb_form_sending_failed." (6): ".sprintf(SiteModule::__('Field %s is not present'), $fieldName));
-				}
-				$max_len = ($field["type"]=="textarea")?65536:1024; // 65 kilobytes max for textarea and 1024 for other
-				$valueRaw = $post[$fieldName];
-				if (empty($valueRaw) && strlen($valueRaw) == 0 && $required) {
-					if (!isset($formErrors->required)) $formErrors->required = array();
-					$formErrors->required[] = $fieldName;
-					$data[$idx] = $value = "";
-				}
-				else {
-					$value = (strlen($valueRaw) > 0) ? substr(htmlspecialchars($valueRaw), 0, $max_len) : htmlspecialchars($valueRaw);
-					if ($field["type"] == "select") {
-						$options = isset($field["settings"]["options"]) ? $field["settings"]["options"] : array();
-						foreach ($options as &$item) {
-							$item = html_entity_decode(tr_($item) ?: '');
-						}
-						$data[$idx] = trim(isset($options[intval($value)]) ? $options[intval($value)] : '');
-					} else
-						$data[$idx] = $value;
-				}
-				if (($eml = is_mail($value))) $mail_from = $eml;
-			}
-		}
-
-		if (isset($post['object']) && $post['object'])
-			$data['object'] = $post['object'];
-
-		$formErrors_t = (array) $formErrors;
-		if (!empty($formErrors_t)) {
-			throw new ErrorException($wb_form_sending_failed.' (7)');
-		}
-
-		$attachmentsLogDir = dirname(__FILE__) . DIRECTORY_SEPARATOR . "forms_log_attachments";
-		FormModule::logForm($attachmentsLogDir, $page_id, $post['wb_form_uuid'], $fields, $data);
-		
-		if ($formSendType == 'url' || $formSendType == 'telegram') {
-			if (!class_exists('NetUtil')) {
-				$netUtilFile = __DIR__.'/src/NetUtil.php';
-				if (is_file($netUtilFile)) require_once $netUtilFile;
-			}
-			if (!class_exists('NetUtil')) {
-				throw new ErrorException($wb_form_sending_failed.' (9)');
-			}
-		}
-
-		if ($formSendType == 'url') {
-			$postData = array();
-			foreach ($fields as $idx => $field) {
-				$fieldName = "wb_input_$idx";
-				if( $field["type"] === "file" ) {
-					if( !isset($_FILES[$fieldName]) )
-						continue;
-					foreach( $_FILES[$fieldName]["tmp_name"] as $fileIdx => $fileTmpName) {
-						if( !$fileTmpName )
-							continue;
-						$fileName = $_FILES[$fieldName]["name"][$fileIdx];
-						$fileType = $_FILES[$fieldName]["type"][$fileIdx];
-						if (class_exists('CURLFile')) {
-							$postData["file_$fileIdx"] = new CURLFile($fileTmpName, $fileType, $fileName);
-						} else {
-							$postData["file_$fileIdx"] = '@'.$fileTmpName.';filename='.$fileName.';type='.$fileType;
-						}
-					}
-				} elseif( is_array($data[$idx]) ) {
-					$name = tr_($field["name"]);
-					$value = $data[$idx];
-					if ($field["name"] === '' && $field["type"] === 'checkbox') {
-						$postData = array_merge($postData, array_fill_keys(array_values($value), true));
-					} else {
-						$postData[$name] = implode(',', $value);
-					}
-				} else {
-					$name = tr_($field["name"]);
-					$value = $data[$idx];
-					$postData[$name] = $value;
-				}
-			}
-
-			if ($apiPostUrl) {
-				try {
-					$resp = NetUtil::request($apiPostUrl, $postData, NetUtil::METHOD_POST, array('Content-type: multipart/form-data'),
-							array(NetUtil::OPT_PARAMS_AS_ARRAY => true, NetUtil::OPT_IGNORE_STATUS_CODE => true));
-					$error = null;
-				} catch (ErrorException $ex) {
-					$resp = null;
-					$error = $ex->getMessage();
-				}
-				if (isset($resp->statusCode) && $resp->statusCode >= 200 && $resp->statusCode < 300) {
-					$wb_form_send_state = empty($form['sentMessage']) ? 'Form was sent.' : tr_($form['sentMessage']);
-					$wb_form_send_success = true;
-				} else {
-					$statusCode = $resp ? $resp->statusCode : 0;
-					error_log('[Form sending error]: Failed to submit to URL: response code('.$statusCode.')'.($error ? ': '.$error : ''));
-					throw new ErrorException($wb_form_sending_failed.' (8)'.($error ? ': '.$error : ''));
-				}
-			}
-			if ($webhookUrl) {
-				if ($brandId) $postData['_brandId_'] = $brandId;
-				$postData['_fromUrl_'] = getCurrUrl();
-				try {
-					$resp = NetUtil::request($apiPostUrl, $postData, NetUtil::METHOD_POST, array('Content-type: multipart/form-data'),
-							array(NetUtil::OPT_PARAMS_AS_ARRAY => true, NetUtil::OPT_IGNORE_STATUS_CODE => true));
-				} catch (ErrorException $ex) {}
-			}
-		}
-		elseif ($formSendType == 'telegram') {
-			$allowed_types = array('input', 'number', 'phone', 'email', 'textarea', 'checkbox', 'date', 'radiobox', 'select', 'hidden', 'range');
-
-			$messageData = [];
-			foreach ($fields as $idx => $field) {
-				$fieldName = "wb_input_$idx";
-				if (in_array($field['type'], $allowed_types)) {
-					if (isset($post[$fieldName])) {
-						if ($field['type'] == 'range') {
-							$value = $post[$fieldName]['from'] . ' - ' . $post[$fieldName]['to'];
-						}
-						elseif ($field['type'] == 'checkbox') {
-							$value = !empty($post[$fieldName]) ? SiteModule::__('Yes') : SiteModule::__('No');
-						}
-						elseif ($field['type'] == 'radiobox' || $field['type'] == 'select') {
-							$value = SiteModule::__($field['settings']['options'][$post[$fieldName]]);
-						}
-						elseif ($field['type'] == 'checkbox') {
-							$value = "\n" . trim($post[$fieldName]);
-						}
-						else {
-							$value = trim($post[$fieldName]);
-						}
-						$name = tr_($field['name']);
-						$messageData[] = '<b>' . SiteModule::__(trim(strip_tags($name))) . ':</b>' . "\n" . $value;
-					}
-				}
-			}
-
-			$message = implode("\n", $messageData);
-
-			$url = 'https://api.telegram.org/bot' . $telegramApiToken . '/sendMessage';
-			$postData = array(
-				'chat_id' => $telegramChatId,
-				'text' => $message,
-				'parse_mode' => 'HTML'
-			);
-
-			try {
-				$resp = NetUtil::request($url, $postData, NetUtil::METHOD_POST, array('Content-type: multipart/form-data'),
-								array(NetUtil::OPT_PARAMS_AS_ARRAY => true, NetUtil::OPT_IGNORE_STATUS_CODE => true));
-
-				$body = json_decode($resp->body);
-				if ($resp->statusCode != 200) {
-					$error = $body->description;
-					throw new ErrorException($error);
-				}
-				elseif (isset($body->ok) && $body->ok) {
-					$wb_form_send_state = empty($form['sentMessage']) ? 'Form was sent.' : tr_($form['sentMessage']);
-					$wb_form_send_success = true;
-				}
-			}
-			catch (ErrorException $ex) {
-				$error = $ex->getMessage();
-				error_log("[Form telegram error]: {$error}");
-				throw new ErrorException(SiteModule::__('Telegram error') . ': ' . $error);
-			}
-		}
-		else {
-			if (!$mail_from) $mail_from = reset($mail_to);
-
-			if (empty($mail_to)) {
-				error_log('[Form configuration error]: receiver not specified');
-				throw new ErrorException($wb_form_sending_failed.' (5): '.SiteModule::__('Receiver not specified'));
-			}
-
-			if ($siteInfo->disableFormSending) {
-//				throw new ErrorException(SiteModule::__('Form sending from preview is not available'));
-			}
-			requirePHPMailer();
-			$mailer = new PHPMailer();
-			$mailer->setLanguage(getPreferredLang());
-
-			// cleanup old attachments that were not removed due to unknown reasons
-			if( is_dir($attachmentsDir) ) {
-				$dir = opendir($attachmentsDir);
-				if( $dir ) {
-					while( $f = readdir($dir) ) {
-						if( $f == "." || $f == ".." || $f == ".htaccess" )
-							continue;
-						$fp = $attachmentsDir . DIRECTORY_SEPARATOR . $f;
-						if( !is_file($fp) )
-							continue;
-						if( filemtime($fp) < time() - 86400 )
-							unlink($fp);
-					}
-					closedir($dir);
-				}
-			}
-
-			$movedFiles = array();
-			foreach($fields as $field) {
-				$idx = $field['fidx'];
-				$fieldName = "wb_input_$idx";
-				if( $field["type"] === "file" ) {
-					if( !isset($_FILES[$fieldName]) )
-						continue;
-					if( !file_exists($attachmentsDir) ) {
-						if( !mkdir($attachmentsDir, 0700) ) {
-							error_log('[Form error]: Failed to create a directory for attachments');
-							throw new ErrorException($wb_form_sending_failed.' (1): '.SiteModule::__('Failed to create a directory for attachments'));
-						}
-					}
-					if( !is_dir($attachmentsDir) ) {
-						error_log('[Form error]: Attachments inode on the server is not a directory');
-						throw new ErrorException($wb_form_sending_failed.' (2): '.SiteModule::__('Attachments inode on the server is not a directory'));
-					}
-					foreach( $_FILES[$fieldName]["tmp_name"] as $fileIdx => $fileTmpName) {
-						if( !$fileTmpName )
-							continue;
-						$fileName = $_FILES[$fieldName]["name"][$fileIdx];
-						$tmpCopyName = $attachmentsDir . DIRECTORY_SEPARATOR . basename($fileTmpName);
-						if( !move_uploaded_file($fileTmpName, $tmpCopyName) ) {
-							foreach( $movedFiles as $tmpCopyName )
-								unlink($tmpCopyName);
-							error_log('[Form error]: Failed to move uploaded file to attachments directory');
-							throw new ErrorException($wb_form_sending_failed.' (3): '.SiteModule::__('Failed to move uploaded file to attachments directory'));
-						}
-						$movedFiles[] = $tmpCopyName;
-						$secureFileName = $fileName;
-						$secureFileName = preg_replace("#[\\\\/<>\\?;:,=]+#isu", "_", $secureFileName);
-						$secureFileName = preg_replace("#\\.\\.+#isu", ".", $secureFileName);
-						$mailer->addAttachment($tmpCopyName, $secureFileName, "base64");
-					}
-				}
-			}
-
-			if (isset($form['smtpEnable']) && $form['smtpEnable'] && isset($form['smtpHost']) && $form['smtpHost']) {
-				/* $mailer->Debugoutput = function($string) {
-					file_put_contents(__DIR__.'/smtp-debug.log', $string."\n", FILE_APPEND);
-				};
-				$mailer->SMTPDebug = 4; */
-				$mailer->isSMTP();
-				$mailer->Host = ((isset($form['smtpHost']) && $form['smtpHost']) ? $form['smtpHost'] : 'localhost');
-				$mailer->Port = ((isset($form['smtpPort']) && intval($form['smtpPort'])) ? intval($form['smtpPort']) : 25);
-				$mailer->SMTPSecure = ((isset($form['smtpEncryption']) && $form['smtpEncryption']) ? $form['smtpEncryption'] : '');
-				$mailer->SMTPAutoTLS = false;
-				if (isset($form['smtpUsername']) && $form['smtpUsername'] && isset($form['smtpPassword']) && $form['smtpPassword']) {
-					$mailer->SMTPAuth = true;
-					$mailer->Username = ((isset($form['smtpUsername']) && $form['smtpUsername']) ? $form['smtpUsername'] : '');
-					$mailer->Password = ((isset($form['smtpPassword']) && $form['smtpPassword']) ? $form['smtpPassword'] : '');
-				}
-				$mailer->SMTPOptions = array('ssl' => array(
-					'verify_peer' => false,
-					'verify_peer_name' => false,
-					'allow_self_signed' => true
-				));
-			}
-
-			$style = "* { font: 12px Arial; }\nstrong { font-weight: bold; }";
-			
-			$toHasGmail = false;
-			foreach ($mail_to as $eml) {
-				if (strpos($eml, 'gmail.com') !== false) $toHasGmail = true;
-				$mailer->AddAddress($eml);
-			}
-
-			$sender_email = (isset($form['emailFrom']) && $form['emailFrom']) ? trim($form['emailFrom']) : ('no-reply@'.$siteInfo->domain);
-			$sender_name = $mail_from_name;
-			if (preg_match('#^([^<]+|)<([^>]+)>$#', $sender_email, $m)) {
-				if (trim($m[1])) $sender_name = trim($m[1]);
-				$sender_email = trim($m[2]);
-			} else if (preg_match('#^<([^>]+)>(.+|)$#', $sender_email, $m)) {
-				if (trim($m[2])) $sender_name = trim($m[2]);
-				$sender_email = trim($m[1]);
-			}
-			$mailer->SetFrom($sender_email, ($sender_name ?: ''));
-			if (strpos($mail_from, 'gmail.com') === false || !$toHasGmail) {
-				// do not add "Reply-To" header if both Receiver and ReplyTo are Gmail
-				// form sending fails in such case.
-				$mailer->addReplyTo($mail_from, $mail_from_name ? $mail_from_name : '');
-			}
-
-			$mailer->CharSet = 'utf-8';
-			$message = '';
-			if (isset($form['object']) && $form['object']) {
-				if (isset($form['objectRenderer']) && $form['objectRenderer'] && is_callable($form['objectRenderer'])) {
-					$objectStr = call_user_func((strpos($form['objectRenderer'], '::') ? explode('::', $form['objectRenderer']) : $form['objectRenderer']), $form, $data);
-				} else {
-					$objectStr = '<p><strong>'.htmlspecialchars($form['object']).'</strong></p>';
-				}
-				if ($objectStr) $message .= $objectStr;
-			}
-			$message .= '<table cellspacing="0" cellpadding="5">';
-			foreach ($fields as $idx => $field) {
-				if ($field["type"] === "file")
-					continue;
-				$name = tr_($field["name"]);
-				$value = $data[$idx];
-				$escapeName = function($name) {
-					return trim(strip_tags($name));
-				};
-				$escapeVal = function($value) {
-					if (is_array($value)) $value = implode(PHP_EOL, $value);
-					return trim(nl2br($value));
-				};
-				$td = function($content) {
-					return '<td style="vertical-align: top;">'.$content.'</td>';
-				};
-				$message .= "<tr>".$td("<strong>{$escapeName($name)}: </strong>");
-				if ($field["type"] == "textarea")
-					$message .= $td('<div style="max-width: 400px;">'.$escapeVal($value).'</div>')."</tr>\n";
-				else if ($field["type"] == "checkbox") {
-					if( is_array($value) ) {
-						$message .= $td($escapeVal($value))."</tr>\n";
-					} else {
-						$message .= $td($value ? tr_('Yes') : tr_('No'))."</tr>\n";
-					}
-				}
-				else if ($field["type"] == "range") {
-					$message .= $td($escapeVal($value["from"]) . ' - ' . $escapeVal($value["to"]))."</tr>\n";
-				}
-				else
-					$message .= $td($escapeVal($value))."</tr>\n";
-				$message .= "</tr>\n";
-			}
-			$message .= '</table>';
-			// echo $message; exit;
-
-			$html =
-	'<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-	<html>
-		<head>
-			<title>' . $form["subject"] . '</title>
-			<meta http-equiv=Content-Type content="text/html; charset=utf-8">
-			' . ($style?"<style><!--\n$style\n--></style>\n\t\t":"") . '</head>
-		<body>' . $message . '</body>
-	</html>';
-			$mailer->MsgHTML($html);
-			$mailer->AltBody = preg_replace('/[\r\n]{3,9}/', "\n\n", str_replace('&nbsp;', '', strip_tags(str_replace("</tr>", "</tr>\n", $message))));
-			$mailer->Subject = $form["subject"];
-			ob_start();
-			$res = $mailer->Send();
-			$wb_form_send_success = $res;
-			ob_get_clean();
-			if ($res) {
-				$wb_form_send_state = empty($form['sentMessage']) ? '' : tr_($form['sentMessage']);
-			} else {
-				if ($mailer->ErrorInfo) error_log('[Form sending error]: '.$mailer->ErrorInfo);
-				throw new ErrorException($wb_form_sending_failed.' (4): '.$mailer->ErrorInfo);
-			}
-			if (isset($form['loggingHandler']) && $form['loggingHandler'] && is_callable($form['loggingHandler'])) {
-				call_user_func((strpos($form['loggingHandler'], '::') ? explode('::', $form['loggingHandler']) : $form['loggingHandler']), $form, $data, $res);
-			}
-			foreach( $movedFiles as $tmpCopyName )
-				unlink($tmpCopyName);
-		}
-	} catch (ErrorException $ex) {
-		if (!$wb_form_send_state) {
-			$wb_form_send_state = $ex->getMessage();
-			$formErrors->any = true; // set values to fields back in case of error
-		}
+		$wb_form_send_state = SiteModule::__('There was a problem submitting your form. This can happen when you leave a page open for a long time. Please refresh and try again.');
+		$formErrors->any = true; // set values to fields back in case of error
 		$wb_form_send_success = false;
 	}
-	
+
 	if (session_id()) {
 		$_SESSION['post'] = $post;
 		$_SESSION['formErrors'] = $formErrors;
@@ -1022,23 +1217,25 @@ function handleForms($page_id, SiteInfo $siteInfo) {
 		$_SESSION['wb_form_popup_mode'] = $wb_form_popup_mode;
 		$_SESSION['wb_target_origin'] = $wb_target_origin;
 		$_SESSION['wb_form_send_state'] = $wb_form_send_state;
+		$_SESSION['wb_form_reaccept_cookie'] = $wb_form_reaccept_cookie;
 		if ($wb_form_send_success) {
 			if ( isset($form['redirectUrl']) && !is_null($form['redirectUrl'])) {
-				if ($form['redirectUrl'] == '{{base_url}}') {
+				$redirectUrl = tr_($form['redirectUrl']);
+				if ($redirectUrl == '{{base_url}}') {
 					$url = getBaseUrl();
-				} else if (preg_match('#^https?://#i', $form['redirectUrl'])) {
-					$url = $form['redirectUrl'];
-				} elseif (preg_match('#^wb_popup:#i', $form['redirectUrl'])) {
+				} else if (is_string($redirectUrl) && preg_match('#^https?://#i', $redirectUrl)) {
+					$url = $redirectUrl;
+				} elseif (is_string($redirectUrl) && preg_match('#^wb_popup:#i', $redirectUrl)) {
 					$parseUrl = parse_url(getCurrUrl());
-					$parseUrl['query'] = (isset($parseUrl['query']) ? $parseUrl['query'] : '') . '&wbPopupOpen=' . urlencode($form['redirectUrl']);
+					$parseUrl['query'] = (isset($parseUrl['query']) ? $parseUrl['query'] : '') . '&wbPopupOpen=' . urlencode($redirectUrl);
 					$parseUrl['query'] = ltrim($parseUrl['query'], '&');
 					$url = unparse_url($parseUrl);
-//					$url .= '?wbPopupOpen=' . urlencode($form['redirectUrl']);
-					$popupQuery = 'wbPopupOpen=' . urlencode($form['redirectUrl']);
+//					$url .= '?wbPopupOpen=' . urlencode($redirectUrl);
+					$popupQuery = 'wbPopupOpen=' . urlencode($redirectUrl);
 				} else {
-					$url = getBaseUrl() . $form['redirectUrl'];
+					$url = getBaseUrl() . $redirectUrl;
 				}
-				if (isset($_GET['wbPopupMode']) && (int)$_GET['wbPopupMode'] == 1) {
+				if (!is_null(_get('wbPopupMode')) && (int)_get('wbPopupMode') == 1) {
 					if (isset($popupQuery)) {
 						// @note: when we have popup with form and redirecting to another popup then need set "wbPopupOpen" for parent location
 						// else we redirecting to popup page without popup
@@ -1050,7 +1247,7 @@ function handleForms($page_id, SiteInfo $siteInfo) {
 				} else {
 					header('Location: ' . $url);
 				}
-			} else if (isset($_GET['wbPopupMode']) && (int)$_GET['wbPopupMode'] == 1) {
+			} else if (!is_null(_get('wbPopupMode')) && (int)_get('wbPopupMode') == 1) {
 				echo '<script> window.parent.location.reload(); </script>';
 				exit();
 			} else {
@@ -1204,7 +1401,7 @@ function translitToLatin($text) {
 
 		'Ә' => 'A','ә' => 'a', 'Ғ' => 'G','ғ' => 'g', 'Қ' => 'K','қ' => 'k',
 		'Ң' => 'N','ң' => 'n', 'Ө' => 'O','ө' => 'o', 'Ұ' => 'U','ұ' => 'u',
-		'Ү' => 'U','ү' => 'u', 'І' => 'Y','і' => 'y', 'Һ' => 'H','һ' => 'h', 
+		'Ү' => 'U','ү' => 'u', 'І' => 'Y','і' => 'y', 'Һ' => 'H','һ' => 'h',
 
 
 		'À' => 'a', 'Ô' => 'o', 'Ď' => 'd', 'Ë' => 'e', 'Ơ' => 'o',
@@ -1234,80 +1431,72 @@ function checkSiteRedirects(SiteInfo $siteInfo, SiteRequestInfo $requestInfo, ar
 		return;
 	}
 
-	$requestUri = trim($requestInfo->requestUri, '/');
-	$requestQuery = array();
-	if (count($_GET)) {
-		foreach ($_GET as $key => $val) {
-			$requestQuery[] = $key . '=' . $val;
-		}
-	}
+	$baseUrl = getBaseUrl();
+	$currUri = ltrim($requestInfo->requestUri, '/');
+	$currQs = _get();
 
 	$defLang = ($siteInfo->defLang ? $siteInfo->defLang : null);
 
-	$redirectTo = null;
+	$hasMbstring = function_exists('mb_strpos');
+
+	$matches = [];
 	foreach ($redirectItems as $item) {
 		$item = (array)$item;
-		$from = trim(str_replace(['"', "'"], '', $item['fromUrl']), '/');
-		$from = explode('?', $from);
-
-		$url = parse_url($from[0]);
-		if (!isset($url['path'])) {
-			continue;
-		}
-
-		$fromUrl = trim($url['path'], '/');
-
-		$fromQuery = isset($from[1]) ? explode('&', $from[1]) : array();
-		$commonQuery = array_intersect($requestQuery, $fromQuery);
-
-		$toUrl = (array)$item['toUrl'];
-
 		if (!$item['enabled']) {
 			continue;
 		}
-
-		$isRequestRedirect = ($item['exact'] && $fromUrl == $requestUri) || 
-			(!$item['exact'] && strpos($requestUri . '/', $fromUrl . '/' ) === 0) || 
-			($requestUri == '' && $requestUri == $fromUrl) || (!$item['exact'] && $fromUrl === '');
-
-		$isQueryRedirect = (!count($fromQuery) && !count($requestQuery)) ||
-			($item['exact'] && count($fromQuery) && count($commonQuery) === count($fromQuery) && count($commonQuery) === count($requestQuery)) || 
-			(!$item['exact'] && count($requestQuery) && count($commonQuery) >= count($fromQuery));
-
-		if ($isRequestRedirect && $isQueryRedirect) {
-			if ($toUrl['type'] == 'page') {
-				if ($item['exact'] || $requestUri == '') {
-					$redirectTo = getBaseUrl() . getPageUri($toUrl['url'], $defLang, $siteInfo) . (isset($toUrl['anchor']) ? '#' . $toUrl['anchor'] : '');
-				}
-				else {
-					$toUrl = getPageUri($toUrl['url'], $defLang, $siteInfo);
-					if ($fromUrl !== '') {
-						$redirectTo = getBaseUrl() . str_replace($fromUrl . '/', $toUrl, $requestUri . '/') . (isset($toUrl['anchor']) ? '#' . $toUrl['anchor'] : '');
-					}
-					else {
-						$redirectTo = getBaseUrl() . $toUrl . (isset($toUrl['anchor']) ? '#' . $toUrl['anchor'] : '');
-					}
-				}
-				if ($redirectTo !== null && !$item['exact'] && count($requestQuery)) {
-					$redirectQuery = array_diff($requestQuery, $fromQuery);
-					if (count($redirectQuery)) {
-						$redirectTo .= '?' . implode('&', $redirectQuery);
-					}
-				}
-			}
-			elseif ($toUrl['type'] == 'url') {
-				$redirectTo = $toUrl['url'];
-			}
-			elseif ($toUrl['type'] == 'file') {
-				$scheme = parse_url($toUrl['url'], PHP_URL_SCHEME);
-				$redirectTo = $scheme ? $toUrl['url'] : getBaseUrl() . $toUrl['url'];
-			}
-			break;
+		$fromUriRaw = ltrim(trim($item['fromUrl'], " \n\r\t\v\0'\""), '/');
+		$pp = explode('?', $fromUriRaw, 2);
+		$fromUri = $pp[0];
+		$fromQs = [];
+		if (isset($pp[1]) && $pp[1]) {
+			parse_str($pp[1], $fromQs);
 		}
+		$partialMatch = ($hasMbstring && mb_strpos($currUri, $fromUri) === 0
+				|| !$hasMbstring && strpos($currUri, $fromUri) === 0);
+		$exactMatch = rtrim($currUri, '/') == rtrim($fromUri, '/');
+		$exact = $item['exact'];
+		if (!$partialMatch || ($exact && !$exactMatch)) {
+			continue;
+		}
+
+		$to = (array)$item['toUrl'];
+		$toUrl = $to['url'];
+		$toType = $to['type'];
+		$toAnchor = (isset($to['anchor']) && is_string($to['anchor'])) ? $to['anchor'] : '';
+		$toQs = array_merge_recursive($currQs, $fromQs);
+
+		$redirUrl = null;
+		if ($toType == 'page') {
+			$pageUri = getPageUri($toUrl, $defLang, $siteInfo);
+			$redirUrl = $baseUrl . $pageUri
+				.(empty($toQs) ? '' : '?'.http_build_query($toQs))
+				.($toAnchor ? "#{$toAnchor}" : '');
+		}
+		else if ($toType == 'url') {
+			$redirUrl = $toUrl;
+		}
+		else if ($toType == 'file') {
+			$redirUrl = preg_match('#^https?:\/\/#i', $toUrl)
+				? $toUrl
+				: $baseUrl . '/' . ltrim($toUrl, '/');
+		}
+		if ($redirUrl) $matches[$fromUri] = $redirUrl;
+	}
+	if (empty($matches)) {
+		return;
 	}
 
-	if ($redirectTo !== null && trim(getBaseUrl() . $requestUri, '/') . ($_SERVER['QUERY_STRING'] ? '/?' . $_SERVER['QUERY_STRING'] : '')  !== trim($redirectTo, '/')) {
-		header('Location: '. $redirectTo, true, 301);
+	uksort($matches, function($a, $b) use($hasMbstring) {
+		$al = $hasMbstring ? mb_strlen($a) : strlen($a);
+		$bl = $hasMbstring ? mb_strlen($b) : strlen($b);
+		if ($al == $bl) return 0;
+		return $al > $bl ? -1 : 1;
+	});
+	$url = reset($matches);
+
+	if ($url && $url != getCurrUrl()) {
+		header('Location: '. $url, true, 301);
 		exit();
 	}
 }
@@ -1319,12 +1508,68 @@ function isSitemapUrl(SiteRequestInfo $requestInfo)
 
 function genSitemap()
 {
-	$file = __DIR__.'/sitemap.txt';
+	$file = __DIR__.'/sitemap_template';
 	$xml = is_file($file) ? file_get_contents($file) : '';
 	if ($xml) {
 		$xml = str_replace('{{base_url}}', getBaseUrl(), $xml);
 		header('Content-Type: application/xml; charset=UTF-8');
 		echo $xml;
 		exit();
+	}
+}
+
+class GetHelper {
+	private static $get = null;
+
+	public static function init($data) {
+		self::$get = $data;
+	}
+
+	public static function set($key, $val) {
+		if (self::$get === null) {
+			self::$get = [];
+		}
+		self::$get[$key] = $val;
+	}
+
+	public static function getGet() {
+		return self::$get;
+	}
+}
+
+function _get($key = null) {
+	if (GetHelper::getGet() === null) {
+		GetHelper::init([]);
+		if (empty($_GET) && isset($_SERVER['REQUEST_URI'])) {
+			$uri_parts = explode('?', $_SERVER['REQUEST_URI'], 2);
+			if (isset($uri_parts[1]) && $uri_parts[1] !== '') {
+				parse_str($uri_parts[1], $get_params);
+				foreach ($get_params as $k => $v) {
+					GetHelper::set($k, $v);
+				}
+			}
+		}
+		else {
+			GetHelper::init($_GET);
+		}
+	}
+	$data = GetHelper::getGet();
+
+	return !$key ? $data : (isset($data[$key]) ? $data[$key] : null);
+}
+
+function replaceLangAlternates(\SiteInfo $siteInfo, &$out, array $langs, $pageId) {
+	$storeItem = class_exists('StoreModule') ? StoreModule::resolveItemByRequest(StoreModule::$storeNav) : null;
+	$blogItem = class_exists('BlogModule') ? BlogModule::resolveItemByRequest(BlogModule::$blogNav) : null;
+	foreach ($langs as $ln => $default) {
+		$pageUri = getPageUri($pageId, $ln, $siteInfo);
+		if ($storeItem && isset($storeItem->alias) && isset($storeItem->alias->$ln)) {
+			$pageUri = rtrim($pageUri, '/') .'/'. $storeItem->alias->$ln . ($siteInfo->useTrailingSlashes ? '/' : '');
+		}
+		elseif ($blogItem && isset($blogItem->alias) && isset($blogItem->alias->$ln)) {
+			$pageUri = rtrim($pageUri, '/') .'/'. $blogItem->alias->$ln . ($siteInfo->useTrailingSlashes ? '/' : '');
+		}
+		$out = str_replace('{{lang_'.$ln.'}}', $pageUri, $out);
+		$out = str_replace(urlencode('{{lang_'.$ln.'}}'), $pageUri, $out);
 	}
 }

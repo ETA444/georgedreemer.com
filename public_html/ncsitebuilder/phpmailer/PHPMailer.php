@@ -1707,7 +1707,7 @@ class PHPMailer
             $sendmailFmt = '%s -oi -t';
         }
 
-        $sendmail = sprintf($sendmailFmt, escapeshellcmd($this->Sendmail), $this->Sender);
+        $sendmail = sprintf($sendmailFmt, (function_exists('escapeshellcmd') ? escapeshellcmd($this->Sendmail) : $this->Sendmail), $this->Sender);
         $this->edebug('Sendmail path: ' . $this->Sendmail);
         $this->edebug('Sendmail command: ' . $sendmail);
         $this->edebug('Envelope sender: ' . $this->Sender);
@@ -1779,10 +1779,12 @@ class PHPMailer
      */
     protected static function isShellSafe($string)
     {
+        $escapeshellcmdString = function_exists('escapeshellcmd') ? escapeshellcmd($string) : $string;
+        $escapeshellargString = function_exists('escapeshellarg') ? escapeshellarg($string) : "\"$string\"";
         //Future-proof
         if (
-            escapeshellcmd($string) !== $string
-            || !in_array(escapeshellarg($string), ["'$string'", "\"$string\""])
+            $escapeshellcmdString !== $string
+            || !in_array($escapeshellargString, ["'$string'", "\"$string\""])
         ) {
             return false;
         }

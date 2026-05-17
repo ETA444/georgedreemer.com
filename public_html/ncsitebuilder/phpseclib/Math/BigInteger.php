@@ -284,10 +284,11 @@ class BigInteger
 
             // avoid generating errors (even with suppression) when phpinfo() is disabled (common in production systems)
             if (strpos(ini_get('disable_functions'), 'phpinfo') === false) {
-                ob_start();
+                /*ob_start();
                 @phpinfo();
                 $content = ob_get_contents();
-                ob_end_clean();
+                ob_end_clean();*/
+                $content = defined('OPENSSL_VERSION_TEXT') ? OPENSSL_VERSION_TEXT : '';
 
                 preg_match_all('#OpenSSL (Header|Library) Version(.*)#im', $content, $matches);
 
