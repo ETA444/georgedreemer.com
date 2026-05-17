@@ -46,7 +46,7 @@
 		),
 		array(
 			'id' => 'a18bddd8a85d044c01bbabaae5d84e6b',
-			'alias' => 'academic-portfolio',
+			'alias' => 'stack',
 			'file' => 'a18bddd8a85d044c01bbabaae5d84e6b.php',
 			'controllers' => array(),
 			'type' => 0
@@ -137,14 +137,14 @@
 	$langs = null;
 	$def_lang = null;
 	$base_lang = 'en';
-	$site_id = 'f91715b3';
+	$site_id = 'd13ef480';
 	${'sitemapUrls'} = array(
 		'https://georgedreemer.com/',
 		'https://georgedreemer.com/skipschoolmakemoney',
 		'https://georgedreemer.com/dreemcorp',
 		'https://georgedreemer.com/hobbies',
 		'https://georgedreemer.com/thoughtbubble',
-		'https://georgedreemer.com/academic-portfolio',
+		'https://georgedreemer.com/stack',
 		'https://georgedreemer.com/blog',
 		'https://georgedreemer.com/blog/datasafari/introduction'
 	);

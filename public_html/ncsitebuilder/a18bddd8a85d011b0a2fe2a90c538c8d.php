@@ -4,30 +4,56 @@
 	<script type="text/javascript">
 			</script>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title><?php echo htmlspecialchars((isset($seoTitle) && $seoTitle !== "") ? $seoTitle : "SkipSchoolMakeMoney: Follow a Vision | George Dreemer"); ?></title>
+	<title><?php echo htmlspecialchars((isset($seoTitle) && $seoTitle !== "") ? $seoTitle : "SkipSchoolMakeMoney — Streetwear Brand · George Dreemer"); ?></title>
 	<base href="{{base_url}}" />
 	<?php echo isset($sitemapUrls) ? (generateCanonicalUrl($sitemapUrls)."\n") : ""; ?>	
 	
 						<meta name="viewport" content="width=device-width, initial-scale=1" />
-					<meta name="description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "Explore the innovative strategies behind George Dreemer’s SkipSchoolMakeMoney, a pioneering clothing brand that blends fashion with bold entrepreneurial spirit."); ?>" />
-			<meta name="keywords" content="<?php echo htmlspecialchars((isset($seoKeywords) && $seoKeywords !== "") ? $seoKeywords : "george dreemer,george dreemer skipschoolmakemoney,george dreemer clothing brand,george dreemer ssmm,george dreemer portfolio,george dreemer founder of ssmm,george dreemer founder of skipschoolmakemoney,who is the owner of skipschoolmakemoney,who created skipschoolmakemoney,what is skipschoolmakemoney,what happened to skipschoolmakemoney"); ?>" />
-			
+					<meta name="description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "SkipSchoolMakeMoney (SSMM) was a streetwear brand founded by George Dreemer in 2016 — growing to 12,000+ followers, 20+ collections, and orders across three continents. Collaborators included Lil Peep, Pouya, and Fat Nick."); ?>" />
+			<meta name="keywords" content="<?php echo htmlspecialchars((isset($seoKeywords) && $seoKeywords !== "") ? $seoKeywords : "skipschoolmakemoney,ssmm,george dreemer clothing brand,george dreemer streetwear,george dreemer ssmm,skip school make money,lil peep ssmm,pouya ssmm,underground streetwear 2016 2017 2018,george dreemer entrepreneur,george dreemer fashion,ssmm history,george dreemer hampshire college"); ?>" />
+				<meta property="og:site_name" content="George Dreemer — Data Scientist, Developer & Entrepreneur">
+	
 	<!-- Facebook Open Graph -->
-		<meta property="og:title" content="<?php echo htmlspecialchars((isset($seoTitle) && $seoTitle !== "") ? $seoTitle : "SkipSchoolMakeMoney: Follow a Vision | George Dreemer"); ?>" />
-			<meta property="og:description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "Explore the innovative strategies behind George Dreemer’s SkipSchoolMakeMoney, a pioneering clothing brand that blends fashion with bold entrepreneurial spirit."); ?>" />
-			<meta property="og:image" content="<?php echo htmlspecialchars((isset($seoImage) && $seoImage !== "") ? "{{base_url}}".$seoImage : "{{base_url}}gallery_gen/6c19d6d7cc66a81540163b842eea8913_fit.png"); ?>" />
-			<meta property="og:type" content="article" />
-			<meta property="og:url" content="__wb_curr_url__" />
-		<!-- Facebook Open Graph end -->
+			<meta property="og:description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "SkipSchoolMakeMoney (SSMM) was a streetwear brand founded by George Dreemer in 2016 — growing to 12,000+ followers, 20+ collections, and orders across three continents. Collaborators included Lil Peep, Pouya, and Fat Nick."); ?>" />
+					<!-- Facebook Open Graph end -->
 
 		<meta name="generator" content="Website Builder" />
-			<script src="js/common-bundle.js?ts=20260517162254" type="text/javascript"></script>
-	<script src="js/a18bddd8a85d011b0a2fe2a90c538c8d-bundle.js?ts=20260517162254" type="text/javascript"></script>
-	<link href="css/common-bundle.css?ts=20260517162254" rel="stylesheet" type="text/css" />
+			<script src="js/common-bundle.js?ts=20260517200729" type="text/javascript"></script>
+	<script src="js/a18bddd8a85d011b0a2fe2a90c538c8d-bundle.js?ts=20260517200729" type="text/javascript"></script>
+	<link href="css/common-bundle.css?ts=20260517200729" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic,cyrillic-ext,latin,latin-ext,vietnamese" rel="stylesheet" type="text/css" />
-	<link href="css/a18bddd8a85d011b0a2fe2a90c538c8d-bundle.css?ts=20260517162254" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
-	<ga-code/><link rel="shortcut icon" href="gallery/favicons/favicon.ico" type="image/x-icon"><meta name="google-site-verification" content="" /><script type="text/javascript">
+	<link href="css/a18bddd8a85d011b0a2fe2a90c538c8d-bundle.css?ts=20260517200729" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
+	<ga-code/><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     SECTION 1 — GLOBAL
+     Settings → Meta Tags (site-wide, always present)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<meta name="author" content="George Dreemer">
+<meta name="robots" content="index, follow">
+<meta name="subject" content="Personal portfolio and brand hub of George Dreemer">
+<meta name="classification" content="Portfolio">
+<meta name="category" content="Technology, Data Science, Entrepreneurship">
+<meta name="coverage" content="Worldwide">
+<meta name="distribution" content="Global">
+<meta name="rating" content="General">
+<meta name="revisit-after" content="7 days">
+<meta name="language" content="English">
+<meta name="theme-color" content="#000000">
+<meta name="color-scheme" content="dark light">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="George Dreemer">
+<meta property="og:locale" content="en_US">
+<meta property="profile:first_name" content="George">
+<meta property="profile:last_name" content="Dreemer">
+<meta property="profile:username" content="georgedreemer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@444eta">
+<meta name="twitter:creator" content="@444eta">
+<meta name="twitter:label1" content="Ventures">
+<meta name="twitter:data1" content="DataSafari · CryptoPandemic · DREEMCORP">
+<meta name="twitter:label2" content="Based in">
+<meta name="twitter:data2" content="Europe → Dubai"><link rel="shortcut icon" href="gallery/favicons/favicon.ico" type="image/x-icon"><meta name="google-site-verification" content="" /><script type="text/javascript">
   (function (f, b) { if (!b.__SV) { var e, g, i, h; window.mixpanel = b; b._i = []; b.init = function (e, f, c) { function g(a, d) { var b = d.split("."); 2 == b.length && ((a = a[b[0]]), (d = b[1])); a[d] = function () { a.push([d].concat(Array.prototype.slice.call(arguments, 0))); }; } var a = b; "undefined" !== typeof c ? (a = b[c] = []) : (c = "mixpanel"); a.people = a.people || []; a.toString = function (a) { var d = "mixpanel"; "mixpanel" !== c && (d += "." + c); a || (d += " (stub)"); return d; }; a.people.toString = function () { return a.toString(1) + ".people (stub)"; }; i = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split( " "); for (h = 0; h < i.length; h++) g(a, i[h]); var j = "set set_once union unset remove delete".split(" "); a.get_group = function () { function b(c) { d[c] = function () { call2_args = arguments; call2 = [c].concat(Array.prototype.slice.call(call2_args, 0)); a.push([e, call2]); }; } for ( var d = {}, e = ["get_group"].concat( Array.prototype.slice.call(arguments, 0)), c = 0; c < j.length; c++) b(j[c]); return d; }; b._i.push([e, f, c]); }; b.__SV = 1.2; e = f.createElement("script"); e.type = "text/javascript"; e.async = !0; e.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; g = f.getElementsByTagName("script")[0]; g.parentNode.insertBefore(e, g); } })(document, window.mixpanel || []);
  
 // Near entry of your product, init Mixpanel
@@ -45,7 +71,17 @@ mixpanel.init("", {
 	window.disableRightClick = false;
 	window.currLang = 'en';
 </script>
-	<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>	
+	<!-- [ SKIPSCHOOLMAKEMONEY ] -->
+<link rel="canonical" href="https://georgedreemer.com/skipschoolmakemoney">
+<meta property="og:url" content="https://georgedreemer.com/skipschoolmakemoney">
+<meta property="og:title" content="SkipSchoolMakeMoney — Streetwear Brand Story · George Dreemer">
+<meta property="og:description"
+    content="SkipSchoolMakeMoney (SSMM) was a streetwear brand founded by George Dreemer in 2016 — growing to 12,000+ followers, 20+ collections, and orders across three continents. Collaborators included Lil Peep, Pouya, and Fat Nick.">
+<meta property="og:image" content="https://georgedreemer.com/ncsitebuilder/gallery/dxyz-ssmm-thumb.png">
+<meta name="twitter:title" content="SkipSchoolMakeMoney — Streetwear Brand Story · George Dreemer">
+<meta name="twitter:description"
+    content="SkipSchoolMakeMoney (SSMM) was a streetwear brand founded by George Dreemer in 2016 — growing to 12,000+ followers, 20+ collections, and orders across three continents. Collaborators included Lil Peep, Pouya, and Fat Nick.">
+<meta name="twitter:image" content="https://georgedreemer.com/ncsitebuilder/gallery/dxyz-ssmm-thumb.png">	
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.min.js"></script>
 	<![endif]-->
@@ -74,7 +110,7 @@ mixpanel.init("", {
 </head>
 
 
-<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a18bddd8a85d011b0a2fe2a90c538c8d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e441b349dafe2e726f5f746" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a190ffbacdf50074287cce61ed4aae0e" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffbace03000769e1586d252b6f8e" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1779024178"></a></div></div></div><div id="a190ffbace1500afe7431d8cbcff8171" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffbace1e00d63e8c95c1c09a4509" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1779024178"></a></div></div></div></div></div><div id="a190ffbace3000211f700bf74a207b5a" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a18bddd8a85d011b0a2fe2a90c538c8d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e441b349dafe2e726f5f746" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a190ffbacdf50074287cce61ed4aae0e" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffbace03000769e1586d252b6f8e" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1779037651"></a></div></div></div><div id="a190ffbace1500afe7431d8cbcff8171" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffbace1e00d63e8c95c1c09a4509" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1779037651"></a></div></div></div></div></div><div id="a190ffbace3000211f700bf74a207b5a" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -128,7 +164,7 @@ mixpanel.init("", {
 			'children' => array(
 				(object) array(
 					'id' => 8,
-					'href' => 'academic-portfolio',
+					'href' => 'stack',
 					'name' => 'Academic Portfolio',
 					'class' => '',
 					'children' => array()
@@ -156,7 +192,7 @@ mixpanel.init("", {
 			'children' => array()
 		)
 	)
-)); ?><div class="clearfix"></div></div></div></div><div id="a18bddd77e441c676f07d6c1ed2746e4" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e441d26252a8a27e0cc089b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e441e59875ef302d40c9902" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/52c0651d75306a87ff391018120335f7_888x294_fit.png?ts=1779024178"></div></div></div></div></div></div></div><div id="a18bddd77e441f478049d63bfea38afb" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1779024178"></div></div></div></div></div></div></div><div id="wb_main_a18bddd8a85d011b0a2fe2a90c538c8d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e442164b378541ef7369b53" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e44222024d1f31d71127fc0" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e442321b84483063ff44e26" class="wb_element" data-plugin="Button"><a class="wb_button" href="https://skipschoolmakemoney.com" title="Link to official SkipSchoolMakeMoney website." target="_blank"><span>Official SSMM Site</span></a></div><div id="a18bddd77e4424d62fd925163a4d82d0" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">EXPERIENCE </span></strong><span style="color:rgba(0,0,0,1);">AT A GLANCE</span></h1>
+)); ?><div class="clearfix"></div></div></div></div><div id="a18bddd77e441c676f07d6c1ed2746e4" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e441d26252a8a27e0cc089b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e441e59875ef302d40c9902" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/52c0651d75306a87ff391018120335f7_888x294_fit.png?ts=1779037651"></div></div></div></div></div></div></div><div id="a18bddd77e441f478049d63bfea38afb" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1779037651"></div></div></div></div></div></div></div><div id="wb_main_a18bddd8a85d011b0a2fe2a90c538c8d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e442164b378541ef7369b53" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e44222024d1f31d71127fc0" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e442321b84483063ff44e26" class="wb_element" data-plugin="Button"><a class="wb_button" href="https://skipschoolmakemoney.com" title="Link to official SkipSchoolMakeMoney website." target="_blank"><span>Official SSMM Site</span></a></div><div id="a18bddd77e4424d62fd925163a4d82d0" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">EXPERIENCE </span></strong><span style="color:rgba(0,0,0,1);">AT A GLANCE</span></h1>
 </div><div id="a18bddd77e4425459fb150f008c3f24d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4426739f98fcf5a059f89b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e44276894cfb6b833a8c852" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e44282d5ea6cc9f5f366517" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e442a6da76e3915bea7025a" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2">Business Operation</h2>
 </div></div></div><div id="a18bddd77e442bdf676e69a9c06aed24" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom15" style="text-align: center;">Starting as my college project in late 2016, by the time of its peak, the brand reached hundreds of orders per collection, generating thousands in revenue and a cult-like following spanning over three continents.<br>
 To make this a reality, I manufactured clothing on both the West and East coast, later including the UK and China.</p>
@@ -180,7 +216,7 @@ To make this a reality, I manufactured clothing on both the West and East coas
 </div></div></div><div id="a18bddd77e450cc151fc5b5d90993e37" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e450dd281910397a8750972" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e450f07e2a5ed7441a6dbc4" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2">Communication</h2>
 </div></div></div><div id="a18bddd77e451007c51ac2aad77a8598" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom15" style="text-align: center;">I have had the privilege to work with talented musicians, influencers, content creators, photographers and other creatives. The likes of Lil Peep, Pouya, Fat Nick, MikeyTM,  Emanuel, Luca, FruityPoppin, Layla, BigBabyGucci &amp; many more wonderful people. These connections put SSMM on the map of underground streetwear in the 2016-19 era.</p>
 </div></div></div></div></div><div id="a18bddd77e45114f466142e04e78a099" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">ABILITIES </span></strong><span style="color:rgba(0,0,0,1);">AT A GLANCE</span></h1>
-</div><div id="a18bddd77e45126409a0e8f6e9162289" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4513d3d55c2552b1e10b26" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/4210010f5275fb3fb35f78c97319fea1_1580x868_fit.png?ts=1779024178"></div></div></div></div></div><div id="a18bddd77e45148a7fa51519adcf7826" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e45150bc8c7118411b59dd0" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">SSMM </span></strong><span style="color:rgba(0,0,0,1);">IN SHORT</span></h1>
+</div><div id="a18bddd77e45126409a0e8f6e9162289" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4513d3d55c2552b1e10b26" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/4210010f5275fb3fb35f78c97319fea1_1580x868_fit.png?ts=1779037651"></div></div></div></div></div><div id="a18bddd77e45148a7fa51519adcf7826" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e45150bc8c7118411b59dd0" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">SSMM </span></strong><span style="color:rgba(0,0,0,1);">IN SHORT</span></h1>
 </div><div id="a18bddd77e4516d548f5f4f956f4b1d0" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3" style="text-align: center;"><span style="color:#050505;"><span class="wb-stl-special"><span style="font-size: 16px;">From a brand born during my evening shifts at the Hampshire College media lab to attracting funding, an entrepreneurial award and thousands in revenue &amp; supporters, SSMM is the brand that succeeded against all odds. Over the course of 3 years, SSMM spread from a few states, to getting orders from Canada, Europe, Brazil, the UK, Russia, Australia and China. I expanded from local screen printing production in MA to multiple logistics paths serving 3 continents.</span></span></span></h3>
 </div><div id="a18bddd77e451797fd9a0da53a52d606" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">VISUAL PORTFOLIO*</span></strong></h1>
 </div><div id="a18bddd77e4518f566c07ce60eb1459f" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4519da45c10400bd000bfc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e451ab6862662417e77ce00" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom19" style="text-align: center;"><span style="color:rgba(110,110,110,0.66);">For the best experience, please view the portfolio on the<br>
@@ -488,7 +524,7 @@ html, body {
    overflow-x: hidden;
 }
 </style>
-</div></div></div></div></div></div><div id="a18bddd77e45218d158cecdb47eb5e23" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1779024178"></div></div></div></div></div><div id="wb_footer_a18bddd8a85d011b0a2fe2a90c538c8d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+</div></div></div></div></div></div><div id="a18bddd77e45218d158cecdb47eb5e23" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1779037651"></div></div></div></div></div><div id="wb_footer_a18bddd8a85d011b0a2fe2a90c538c8d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -506,7 +542,7 @@ html, body {
 			'children' => array(
 				(object) array(
 					'id' => 12,
-					'href' => 'academic-portfolio',
+					'href' => 'stack',
 					'name' => 'Academic Portfolio',
 					'class' => '',
 					'children' => array()
@@ -590,7 +626,7 @@ html, body {
 
 <p class="wb-stl-footer" style="text-align: center;"><a data-_="Link" href="anabolickmusick.com" target="_blank" title="anabolic musick's official website">anabolickmusick.com</a></p>
 </div><div id="a18bddd77e4a320a360cd08aa5891d23" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: center;"><span style="color:rgba(255,255,255,1);">© 2024 <a href="https://www.georgedreemer.com">G</a><a href="https://www.dreemer.xyz">eorge Dreemer</a></span></p>
-</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1779024178"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script type="text/javascript">
+</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1779037651"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script type="text/javascript">
 			$(function() {
 				var footer = $(".wb_footer");
 				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
