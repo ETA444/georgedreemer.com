@@ -21,11 +21,11 @@
 		<!-- Facebook Open Graph end -->
 
 		<meta name="generator" content="Website Builder" />
-			<script src="js/common-bundle.js?ts=20260519171032" type="text/javascript"></script>
-	<script src="js/a18bddd8a85d031c03b1af770b1fc6b6-bundle.js?ts=20260519171032" type="text/javascript"></script>
-	<link href="css/common-bundle.css?ts=20260519171032" rel="stylesheet" type="text/css" />
+			<script src="js/common-bundle.js?ts=20260519175446" type="text/javascript"></script>
+	<script src="js/a18bddd8a85d031c03b1af770b1fc6b6-bundle.js?ts=20260519175446" type="text/javascript"></script>
+	<link href="css/common-bundle.css?ts=20260519175446" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese" rel="stylesheet" type="text/css" />
-	<link href="css/a18bddd8a85d031c03b1af770b1fc6b6-bundle.css?ts=20260519171032" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
+	<link href="css/a18bddd8a85d031c03b1af770b1fc6b6-bundle.css?ts=20260519175446" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
 	<ga-code/><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
      SECTION 1 — GLOBAL
      Settings → Meta Tags (site-wide, always present)
@@ -90,7 +90,7 @@
 </head>
 
 
-<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a18bddd8a85d031c03b1af770b1fc6b6" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a190ff9a75bd006535f30bae8f7a5fb3" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ff9a75c7004b85ad46f6381c8f92" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1779199841"></a></div></div></div><div id="a19127dc9573005e8e6aca4e62dfd5f3" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a18bddd8a85d031c03b1af770b1fc6b6" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a190ff9a75bd006535f30bae8f7a5fb3" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ff9a75c7004b85ad46f6381c8f92" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1779202488"></a></div></div></div><div id="a19127dc9573005e8e6aca4e62dfd5f3" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -172,8 +172,8 @@
 			'children' => array()
 		)
 	)
-)); ?><div class="clearfix"></div></div><div id="a190ff9a75d900ff8bb2aa997a3fd336" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ff9a75e4006d58f4b6126b9f5e2c" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1779199841"></a></div></div></div></div></div></div></div><div id="a18bddd77e4528391a507ebb03f90443" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e45295446d8685894f587a8" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e452a3bff60b0a016d13373" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e452b003991029eb4348e97" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><span style="color:#ffffff;"><strong>HOBBY PROJECTS</strong></span></h1>
-</div></div></div></div></div><div id="a18bddd77e452c6b499af980f5063770" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1779199841"></div></div></div></div></div></div></div><div id="wb_main_a18bddd8a85d031c03b1af770b1fc6b6" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e452ea7bd5a92bf1e673f67" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e452f7807f45362e3d350ec" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e453059956c650c33181da3" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3" style="text-align: center;">In my spare time, I like to embark on creative journeys, just for the sake of the process. Not as a means to an end.</h3>
+)); ?><div class="clearfix"></div></div><div id="a190ff9a75d900ff8bb2aa997a3fd336" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ff9a75e4006d58f4b6126b9f5e2c" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1779202488"></a></div></div></div></div></div></div></div><div id="a18bddd77e4528391a507ebb03f90443" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e45295446d8685894f587a8" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e452a3bff60b0a016d13373" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e452b003991029eb4348e97" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><span style="color:#ffffff;"><strong>HOBBY PROJECTS</strong></span></h1>
+</div></div></div></div></div><div id="a18bddd77e452c6b499af980f5063770" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1779202488"></div></div></div></div></div></div></div><div id="wb_main_a18bddd8a85d031c03b1af770b1fc6b6" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e452ea7bd5a92bf1e673f67" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e452f7807f45362e3d350ec" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e453059956c650c33181da3" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3" style="text-align: center;">In my spare time, I like to embark on creative journeys, just for the sake of the process. Not as a means to an end.</h3>
 </div><div id="a18bddd77e4531257ba2b18b25feede1" class="wb_element" data-plugin="CustomHtml" style=" overflow: hidden;"><div style="width: 100%; height: 100%; overflow-y: auto;"><style>
 html, body {
    max-width: 100%;
@@ -194,7 +194,7 @@ html, body {
 </div></div></div><div id="a18bddd77e4616b42ddaf28ebf872da1" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4617d56ff5fd8f66a2050a" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4619c3edc264d0bfc90fcd" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2">Discord Servers</h2>
 </div></div></div><div id="a18bddd77e461a1f4ce7611540fe1625" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom15" style="text-align: center;">A friend and I had beta-tested a Discord server for the brand, back in 2018, when that was atypical for clothing brands to have. Ever since then I have been wanting to create another Discord community. During my ASMR experiment on TikTok, I noticed that the community on the platform exists but creators hadn't bonded together in a communal space. So I attempted to create an engagement group for them.</p>
 </div></div></div></div></div><div id="a18bddd77e461bddf7650033e2690af2" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">ABILITIES </span></strong><span style="color:rgba(0,0,0,1);">AT A GLANCE</span></h1>
-</div><div id="a18bddd77e461c8f1165171af29cdedb" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e461d7cbbb99ff252c7288f" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/e577818cacaf88fe0f656816906c4bc6_1580x536_fit.png?ts=1779199841"></div></div></div></div></div><div id="a18bddd77e461ebc4d7d1b9f250d9faa" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e461f78a6f9db7dfdf5623e" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">VISUAL PORTFOLIO</span></strong></h1>
+</div><div id="a18bddd77e461c8f1165171af29cdedb" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e461d7cbbb99ff252c7288f" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/e577818cacaf88fe0f656816906c4bc6_1580x536_fit.png?ts=1779202488"></div></div></div></div></div><div id="a18bddd77e461ebc4d7d1b9f250d9faa" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e461f78a6f9db7dfdf5623e" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">VISUAL PORTFOLIO</span></strong></h1>
 </div></div></div><div id="a18bddd77e46205b04f5ac2a52e77a49" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e462118c3dce956d0f9c425" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">Tingle Cartel<br>
 (Discord Server)</span></strong></h2>
 </div><div id="a18bddd77e4622ced2646e085ed926ab" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-custom11" style="text-align: center;"><strong><span style="color:rgba(71,71,71,1);">Community for TikTok ASMRtists to connect &amp; grow.</span></strong></h1>
@@ -207,7 +207,7 @@ html, body {
 
 <h1 class="wb-stl-custom11" style="text-align: center;"><span style="color:rgba(71,71,71,1);">Jen (co-founder) &amp; Ici (administrator).</span></h1>
 </div><div id="a18bddd77e46230764c53eec6f86ce1e" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3" style="text-align: center;">Profile Pictures</h3>
-</div><div id="a18bddd77e4624bd70053f7f110362d4" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e46258a2884ae0f49d42cc1" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/d7c9e7fca32017809279e769cbecd0c8_fit.png?ts=1779199841"><script type="text/javascript">
+</div><div id="a18bddd77e4624bd70053f7f110362d4" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e46258a2884ae0f49d42cc1" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/d7c9e7fca32017809279e769cbecd0c8_fit.png?ts=1779202488"><script type="text/javascript">
 					$("#a18bddd77e46258a2884ae0f49d42cc1").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -238,7 +238,7 @@ html, body {
 							img.src = "gallery\/tc-logo-static-discord-min-ts1662308743.png";
 						}
 					});
-				</script></div></div></div><div id="a18bddd77e4626d58d0c5da94c755b3e" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/tc-logo-animated-GIF-min-ts1662308887.gif?ts=1779199841"><script type="text/javascript">
+				</script></div></div></div><div id="a18bddd77e4626d58d0c5da94c755b3e" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/tc-logo-animated-GIF-min-ts1662308887.gif?ts=1779202488"><script type="text/javascript">
 					$("#a18bddd77e4626d58d0c5da94c755b3e").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -290,7 +290,7 @@ logistics network to produce, store and ship the shoe.</strong></span><br>
 
 <h1 class="wb-stl-custom11" style="text-align: center;"><span style="color:rgba(71,71,71,1);">Charlie (cofounder).</span></h1>
 </div><div id="a18bddd77e462ea14255d29d159240fd" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3" style="text-align: center;">Profile Pictures</h3>
-</div><div id="a18bddd77e462fcad7fa812535b2c85f" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/ec39d38d2d44d05cf09ad02b0d7a8c0e_fit.png?ts=1779199842"><script type="text/javascript">
+</div><div id="a18bddd77e462fcad7fa812535b2c85f" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/ec39d38d2d44d05cf09ad02b0d7a8c0e_fit.png?ts=1779202488"><script type="text/javascript">
 					$("#a18bddd77e462fcad7fa812535b2c85f").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -323,7 +323,7 @@ logistics network to produce, store and ship the shoe.</strong></span><br>
 					});
 				</script></div></div></div><div id="a18bddd77e4630923f5f232bd0c08161" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3" style="text-align: center;">Example<br>
 (AI Original -&gt; Final NFT)</h3>
-</div><div id="a18bddd77e46314baf7f6390987cd8a2" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e46324db3742fc803af85ea" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/407ad13bdee132ef83ef833114328e65_fit.png?ts=1779199842"><script type="text/javascript">
+</div><div id="a18bddd77e46314baf7f6390987cd8a2" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e46324db3742fc803af85ea" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/407ad13bdee132ef83ef833114328e65_fit.png?ts=1779202488"><script type="text/javascript">
 					$("#a18bddd77e46324db3742fc803af85ea").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -354,7 +354,7 @@ logistics network to produce, store and ship the shoe.</strong></span><br>
 							img.src = "gallery\/2 Space Sock-min-min-ts1662312786.png";
 						}
 					});
-				</script></div></div></div><div id="a18bddd77e4633b11a30d7e00fc0251b" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/1f0513bcee37402832c89e6fa021e304_fit.png?ts=1779199842"><script type="text/javascript">
+				</script></div></div></div><div id="a18bddd77e4633b11a30d7e00fc0251b" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/1f0513bcee37402832c89e6fa021e304_fit.png?ts=1779202488"><script type="text/javascript">
 					$("#a18bddd77e4633b11a30d7e00fc0251b").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -399,7 +399,7 @@ logistics network to produce, store and ship the shoe.</strong></span><br>
 
 <h1 class="wb-stl-custom11" style="text-align: center;"><font color="#474747"><b>*Covers not included, most channels have their content wiped.</b></font></h1>
 </div><div id="a18bddd77e4701f7bbd9ac6bcda03ef3" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3" style="text-align: center;">Logo's / Profile Pictures</h3>
-</div><div id="a18bddd77e47026eb722906b0fd403ad" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4703c23062e5b3f2bbdca3" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/493f45b4de65007563fa988988e30ee5_288x288_fit.png?ts=1779199842"><script type="text/javascript">
+</div><div id="a18bddd77e47026eb722906b0fd403ad" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4703c23062e5b3f2bbdca3" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/493f45b4de65007563fa988988e30ee5_288x288_fit.png?ts=1779202488"><script type="text/javascript">
 					$("#a18bddd77e4703c23062e5b3f2bbdca3").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -430,7 +430,7 @@ logistics network to produce, store and ship the shoe.</strong></span><br>
 							img.src = "gallery\/cp-branding-cover-min-ts1668701719.png";
 						}
 					});
-				</script></div></div></div><div id="a18bddd77e4704da9f1696885fb85ef7" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/215d30237491a10ca618705204dcfe53_288x288_fit.png?ts=1779199842"><script type="text/javascript">
+				</script></div></div></div><div id="a18bddd77e4704da9f1696885fb85ef7" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/215d30237491a10ca618705204dcfe53_288x288_fit.png?ts=1779202488"><script type="text/javascript">
 					$("#a18bddd77e4704da9f1696885fb85ef7").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -461,7 +461,7 @@ logistics network to produce, store and ship the shoe.</strong></span><br>
 							img.src = "gallery\/abg-pfp 2 - alt-min-ts1668701716.png";
 						}
 					});
-				</script></div></div></div><div id="a18bddd77e47057026d5d7efb607759d" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/030a6c4a33639db71be8bae24549bede_288x288_fit.png?ts=1779199842"><script type="text/javascript">
+				</script></div></div></div><div id="a18bddd77e47057026d5d7efb607759d" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/030a6c4a33639db71be8bae24549bede_288x288_fit.png?ts=1779202488"><script type="text/javascript">
 					$("#a18bddd77e47057026d5d7efb607759d").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -492,7 +492,7 @@ logistics network to produce, store and ship the shoe.</strong></span><br>
 							img.src = "gallery\/abg-pfp 1-min-ts1668701715.png";
 						}
 					});
-				</script></div></div></div><div id="a18bddd77e4706cdf63d5be7112cac77" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/e41e19307c84285057b8b281e35ec7b2_288x288_fit.png?ts=1779199843"><script type="text/javascript">
+				</script></div></div></div><div id="a18bddd77e4706cdf63d5be7112cac77" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/e41e19307c84285057b8b281e35ec7b2_288x288_fit.png?ts=1779202488"><script type="text/javascript">
 					$("#a18bddd77e4706cdf63d5be7112cac77").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -523,7 +523,7 @@ logistics network to produce, store and ship the shoe.</strong></span><br>
 							img.src = "gallery\/internetscrapyard-pfp-min-ts1668701722.png";
 						}
 					});
-				</script></div></div></div><div id="a18bddd77e4707decd2aeb0d595c8871" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/ad351235de13cf5ae46fc90c7c97710a_288x288_fit.png?ts=1779199843"><script type="text/javascript">
+				</script></div></div></div><div id="a18bddd77e4707decd2aeb0d595c8871" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/ad351235de13cf5ae46fc90c7c97710a_288x288_fit.png?ts=1779202488"><script type="text/javascript">
 					$("#a18bddd77e4707decd2aeb0d595c8871").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -554,7 +554,7 @@ logistics network to produce, store and ship the shoe.</strong></span><br>
 							img.src = "gallery\/sa-pfp2-min-ts1668701724.png";
 						}
 					});
-				</script></div></div></div><div id="a18bddd77e4708f5cc8e332ee717c61a" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/0bdef8b6a22ff82739f7ca3b4010e191_288x288_fit.png?ts=1779199844"><script type="text/javascript">
+				</script></div></div></div><div id="a18bddd77e4708f5cc8e332ee717c61a" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/0bdef8b6a22ff82739f7ca3b4010e191_288x288_fit.png?ts=1779202488"><script type="text/javascript">
 					$("#a18bddd77e4708f5cc8e332ee717c61a").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -585,7 +585,7 @@ logistics network to produce, store and ship the shoe.</strong></span><br>
 							img.src = "gallery\/cda-pfp-ver1-min-ts1668701718.png";
 						}
 					});
-				</script></div></div></div><div id="a18bddd77e4709463fa7e852dac28627" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/adc88cf5e71a7bd62534487d61232fab_288x288_fit.png?ts=1779199844"><script type="text/javascript">
+				</script></div></div></div><div id="a18bddd77e4709463fa7e852dac28627" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/adc88cf5e71a7bd62534487d61232fab_288x288_fit.png?ts=1779202488"><script type="text/javascript">
 					$("#a18bddd77e4709463fa7e852dac28627").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -616,7 +616,7 @@ logistics network to produce, store and ship the shoe.</strong></span><br>
 							img.src = "gallery\/pb-pfp-min-ts1668702347.png";
 						}
 					});
-				</script></div></div></div><div id="a18bddd77e470ad738c114e583c07517" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/dfbfdf38dda1d0582163362c3b2a84c0_288x288_fit.png?ts=1779199844"><script type="text/javascript">
+				</script></div></div></div><div id="a18bddd77e470ad738c114e583c07517" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/dfbfdf38dda1d0582163362c3b2a84c0_288x288_fit.png?ts=1779202488"><script type="text/javascript">
 					$("#a18bddd77e470ad738c114e583c07517").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -647,7 +647,7 @@ logistics network to produce, store and ship the shoe.</strong></span><br>
 							img.src = "gallery\/ss-pfp-min-ts1668701726.png";
 						}
 					});
-				</script></div></div></div><div id="a18bddd77e470b49b17cd06f40453ece" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/2a70af8bde27cfe58ce3ba4977800756_288x288_fit.png?ts=1779199845"><script type="text/javascript">
+				</script></div></div></div><div id="a18bddd77e470b49b17cd06f40453ece" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/2a70af8bde27cfe58ce3ba4977800756_288x288_fit.png?ts=1779202488"><script type="text/javascript">
 					$("#a18bddd77e470b49b17cd06f40453ece").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -678,7 +678,7 @@ logistics network to produce, store and ship the shoe.</strong></span><br>
 							img.src = "gallery\/chynapanda-ver2-min-ts1668702346.png";
 						}
 					});
-				</script></div></div></div><div id="a18bddd77e470c0e530230daf97eb628" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/1ed192df34859ed17fc6b94f2adb7d39_288x288_fit.png?ts=1779199845"><script type="text/javascript">
+				</script></div></div></div><div id="a18bddd77e470c0e530230daf97eb628" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/1ed192df34859ed17fc6b94f2adb7d39_288x288_fit.png?ts=1779202488"><script type="text/javascript">
 					$("#a18bddd77e470c0e530230daf97eb628").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -709,7 +709,7 @@ logistics network to produce, store and ship the shoe.</strong></span><br>
 							img.src = "gallery\/internetscrapyard-pfp2-min-ts1668701720.png";
 						}
 					});
-				</script></div></div></div><div id="a18bddd77e470d67fa5d226bfc59aa1b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"></div></div></div></div><div id="a18bddd77e470e3f2a215ddae5e1b94f" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e470f18f43850562875be60" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/cp-branding-cover-min-ts1668701719.png?ts=1779199845"><script type="text/javascript">
+				</script></div></div></div><div id="a18bddd77e470d67fa5d226bfc59aa1b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"></div></div></div></div><div id="a18bddd77e470e3f2a215ddae5e1b94f" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e470f18f43850562875be60" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/cp-branding-cover-min-ts1668701719.png?ts=1779202488"><script type="text/javascript">
 					$("#a18bddd77e470f18f43850562875be60").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -740,7 +740,7 @@ logistics network to produce, store and ship the shoe.</strong></span><br>
 							img.src = "gallery\/cp-branding-cover-min-ts1668701719.png";
 						}
 					});
-				</script></div></div></div><div id="a18bddd77e4710531849e489e96b73a0" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/ad351235de13cf5ae46fc90c7c97710a_fit.png?ts=1779199845"><script type="text/javascript">
+				</script></div></div></div><div id="a18bddd77e4710531849e489e96b73a0" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/ad351235de13cf5ae46fc90c7c97710a_fit.png?ts=1779202488"><script type="text/javascript">
 					$("#a18bddd77e4710531849e489e96b73a0").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -771,7 +771,7 @@ logistics network to produce, store and ship the shoe.</strong></span><br>
 							img.src = "gallery\/sa-pfp2-min-ts1668701724.png";
 						}
 					});
-				</script></div></div></div><div id="a18bddd77e4711627656f4d8f0df177a" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4712c7fbc791ae304c03ec" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/030a6c4a33639db71be8bae24549bede_fit.png?ts=1779199845"><script type="text/javascript">
+				</script></div></div></div><div id="a18bddd77e4711627656f4d8f0df177a" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4712c7fbc791ae304c03ec" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/030a6c4a33639db71be8bae24549bede_fit.png?ts=1779202488"><script type="text/javascript">
 					$("#a18bddd77e4712c7fbc791ae304c03ec").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -802,7 +802,7 @@ logistics network to produce, store and ship the shoe.</strong></span><br>
 							img.src = "gallery\/abg-pfp 1-min-ts1668701715.png";
 						}
 					});
-				</script></div></div></div><div id="a18bddd77e47134e20603bd646214fa8" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/215d30237491a10ca618705204dcfe53_fit.png?ts=1779199845"><script type="text/javascript">
+				</script></div></div></div><div id="a18bddd77e47134e20603bd646214fa8" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/215d30237491a10ca618705204dcfe53_fit.png?ts=1779202488"><script type="text/javascript">
 					$("#a18bddd77e47134e20603bd646214fa8").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -833,7 +833,7 @@ logistics network to produce, store and ship the shoe.</strong></span><br>
 							img.src = "gallery\/abg-pfp 2 - alt-min-ts1668701716.png";
 						}
 					});
-				</script></div></div></div><div id="a18bddd77e4714e4252513173de1813d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4715596392edd9ad786bf7" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/0bdef8b6a22ff82739f7ca3b4010e191_fit.png?ts=1779199845"><script type="text/javascript">
+				</script></div></div></div><div id="a18bddd77e4714e4252513173de1813d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4715596392edd9ad786bf7" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/0bdef8b6a22ff82739f7ca3b4010e191_fit.png?ts=1779202488"><script type="text/javascript">
 					$("#a18bddd77e4715596392edd9ad786bf7").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -864,7 +864,7 @@ logistics network to produce, store and ship the shoe.</strong></span><br>
 							img.src = "gallery\/cda-pfp-ver1-min-ts1668701718.png";
 						}
 					});
-				</script></div></div></div><div id="a18bddd77e47169415ef7121f875622a" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/dfbfdf38dda1d0582163362c3b2a84c0_fit.png?ts=1779199845"><script type="text/javascript">
+				</script></div></div></div><div id="a18bddd77e47169415ef7121f875622a" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/dfbfdf38dda1d0582163362c3b2a84c0_fit.png?ts=1779202488"><script type="text/javascript">
 					$("#a18bddd77e47169415ef7121f875622a").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -895,7 +895,7 @@ logistics network to produce, store and ship the shoe.</strong></span><br>
 							img.src = "gallery\/ss-pfp-min-ts1668701726.png";
 						}
 					});
-				</script></div></div></div><div id="a18bddd77e4717bd4e364eb508e88db4" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e47189019aa796b5dccce9d" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/adc88cf5e71a7bd62534487d61232fab_fit.png?ts=1779199845"><script type="text/javascript">
+				</script></div></div></div><div id="a18bddd77e4717bd4e364eb508e88db4" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e47189019aa796b5dccce9d" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/adc88cf5e71a7bd62534487d61232fab_fit.png?ts=1779202488"><script type="text/javascript">
 					$("#a18bddd77e47189019aa796b5dccce9d").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -926,7 +926,7 @@ logistics network to produce, store and ship the shoe.</strong></span><br>
 							img.src = "gallery\/pb-pfp-min-ts1668702347.png";
 						}
 					});
-				</script></div></div></div><div id="a18bddd77e47196767746f66162379ec" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/e41e19307c84285057b8b281e35ec7b2_fit.png?ts=1779199845"><script type="text/javascript">
+				</script></div></div></div><div id="a18bddd77e47196767746f66162379ec" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/e41e19307c84285057b8b281e35ec7b2_fit.png?ts=1779202488"><script type="text/javascript">
 					$("#a18bddd77e47196767746f66162379ec").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -957,7 +957,7 @@ logistics network to produce, store and ship the shoe.</strong></span><br>
 							img.src = "gallery\/internetscrapyard-pfp-min-ts1668701722.png";
 						}
 					});
-				</script></div></div></div><div id="a18bddd77e471a600d59a8948656388d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e471b1d75b432960fee2ae2" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/1ed192df34859ed17fc6b94f2adb7d39_fit.png?ts=1779199845"><script type="text/javascript">
+				</script></div></div></div><div id="a18bddd77e471a600d59a8948656388d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e471b1d75b432960fee2ae2" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/1ed192df34859ed17fc6b94f2adb7d39_fit.png?ts=1779202488"><script type="text/javascript">
 					$("#a18bddd77e471b1d75b432960fee2ae2").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -988,7 +988,7 @@ logistics network to produce, store and ship the shoe.</strong></span><br>
 							img.src = "gallery\/internetscrapyard-pfp2-min-ts1668701720.png";
 						}
 					});
-				</script></div></div></div><div id="a18bddd77e471c4bc59a18da100fd718" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/2a70af8bde27cfe58ce3ba4977800756_fit.png?ts=1779199845"><script type="text/javascript">
+				</script></div></div></div><div id="a18bddd77e471c4bc59a18da100fd718" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/2a70af8bde27cfe58ce3ba4977800756_fit.png?ts=1779202488"><script type="text/javascript">
 					$("#a18bddd77e471c4bc59a18da100fd718").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -1020,7 +1020,7 @@ logistics network to produce, store and ship the shoe.</strong></span><br>
 						}
 					});
 				</script></div></div></div></div></div></div></div><div id="a18bddd77e471dfaa9591e1c37e7cd02" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"></div></div></div></div></div></div></div></div></div></div><div id="a18bddd77e471ee772ba1c1353d5330e" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3" style="text-align: center;">Video Outro's</h3>
-</div><div id="a18bddd77e471fba2b2511305ed04a73" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/dpjCwqt94uY?controls=0" frameborder="0"></iframe></div><div id="a18bddd77e47207e7c3eca0997dfa30e" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/CgeiICEtx8c?controls=0" frameborder="0"></iframe></div><div id="a18bddd77e47215196d9b02e26ca95e1" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/N72-RHIsmCU?controls=0" frameborder="0"></iframe></div><div id="a18bddd77e4722fe7a242da7dd4c4eac" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/qs-e5H2tjwA?controls=0" frameborder="0"></iframe></div><div id="a18bddd77e4723c5d071d2288d525f88" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/qH8qu--nC2M?controls=0" frameborder="0"></iframe></div><div id="a18bddd77e4724775f3e2ade270578cd" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/fJHEl5cQRyw?controls=0" frameborder="0"></iframe></div><div id="a18bddd77e4725d0e9a080e743291cd4" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/pPsB5d6yNHc?controls=0" frameborder="0"></iframe></div></div></div></div></div><div id="a18bddd77e4726e508413531cc9cefbf" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1779199845"></div></div></div></div></div><div id="wb_footer_a18bddd8a85d031c03b1af770b1fc6b6" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+</div><div id="a18bddd77e471fba2b2511305ed04a73" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/dpjCwqt94uY?controls=0" frameborder="0"></iframe></div><div id="a18bddd77e47207e7c3eca0997dfa30e" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/CgeiICEtx8c?controls=0" frameborder="0"></iframe></div><div id="a18bddd77e47215196d9b02e26ca95e1" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/N72-RHIsmCU?controls=0" frameborder="0"></iframe></div><div id="a18bddd77e4722fe7a242da7dd4c4eac" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/qs-e5H2tjwA?controls=0" frameborder="0"></iframe></div><div id="a18bddd77e4723c5d071d2288d525f88" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/qH8qu--nC2M?controls=0" frameborder="0"></iframe></div><div id="a18bddd77e4724775f3e2ade270578cd" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/fJHEl5cQRyw?controls=0" frameborder="0"></iframe></div><div id="a18bddd77e4725d0e9a080e743291cd4" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/pPsB5d6yNHc?controls=0" frameborder="0"></iframe></div></div></div></div></div><div id="a18bddd77e4726e508413531cc9cefbf" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1779202488"></div></div></div></div></div><div id="wb_footer_a18bddd8a85d031c03b1af770b1fc6b6" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -1122,7 +1122,7 @@ logistics network to produce, store and ship the shoe.</strong></span><br>
 
 <p class="wb-stl-footer" style="text-align: center;"><a data-_="Link" href="anabolickmusick.com" target="_blank" title="anabolic musick's official website">anabolickmusick.com</a></p>
 </div><div id="a18bddd77e4a320a360cd08aa5891d23" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: center;"><span style="color:rgba(255,255,255,1);">© 2024 <a href="https://www.georgedreemer.com">G</a><a href="https://www.dreemer.xyz">eorge Dreemer</a></span></p>
-</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1779199845"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script type="text/javascript">
+</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1779202488"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script type="text/javascript">
 			$(function() {
 				var footer = $(".wb_footer");
 				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
