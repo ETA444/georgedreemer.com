@@ -1,0 +1,113 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://georgedreemer.com/#person",
+      "name": "George Dreemer",
+      "url": "https://georgedreemer.com",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://georgedreemer.com/ncsitebuilder/gallery/dxyz-main.png",
+        "width": 1200,
+        "height": 630
+      },
+      "description": "Data scientist, developer, and entrepreneur. Creator of DataSafari, founder of CryptoPandemic. MSc in Marketing Analytics & Data Science, University of Groningen.",
+      "jobTitle": "Data Scientist & Developer",
+      "knowsAbout": [
+        "Data Science",
+        "Machine Learning",
+        "Python",
+        "Data Engineering",
+        "Web3 Marketing",
+        "Solana Analytics",
+        "Open Source Software",
+        "Entrepreneurship",
+        "Creative Direction"
+      ],
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "University of Groningen",
+          "url": "https://www.rug.nl",
+          "description": "MSc in Marketing Analytics & Data Science"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Hampshire College",
+          "url": "https://www.hampshire.edu",
+          "description": "BA in Entrepreneurship & Interdisciplinary Studies"
+        }
+      ],
+      "sameAs": [
+        "https://github.com/ETA444",
+        "https://www.linkedin.com/in/georgedreemer",
+        "https://x.com/444eta",
+        "https://dreemcorp.com",
+        "https://datasafari.dev",
+        "https://cryptopandemic.com"
+      ],
+      "founder": [
+        {
+          "@type": "Organization",
+          "name": "DREEMCORP",
+          "url": "https://dreemcorp.com",
+          "description": "Creative studio and venture lab behind DataSafari, CryptoPandemic, and SkipSchoolMakeMoney."
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "DataSafari",
+          "url": "https://datasafari.dev",
+          "applicationCategory": "DeveloperApplication",
+          "operatingSystem": "Python",
+          "description": "Open-source Python library that collapses complex data science workflows into clean, powerful one-liners."
+        },
+        {
+          "@type": "Organization",
+          "name": "CryptoPandemic",
+          "url": "https://cryptopandemic.com",
+          "description": "Web3 marketing and analytics agency specializing in Solana projects."
+        },
+        {
+          "@type": "Organization",
+          "name": "SkipSchoolMakeMoney",
+          "url": "https://skipschoolmakemoney.com",
+          "description": "Streetwear brand founded in 2016, growing to 12,000+ followers and 20+ collections across three continents."
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://georgedreemer.com/#website",
+      "url": "https://georgedreemer.com",
+      "name": "George Dreemer",
+      "description": "Personal portfolio and brand hub of George Dreemer — data scientist, developer, and entrepreneur.",
+      "publisher": {
+        "@id": "https://georgedreemer.com/#person"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://georgedreemer.com/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://georgedreemer.com/#webpage",
+      "url": "https://georgedreemer.com",
+      "name": "George Dreemer — Data Scientist, Developer & Entrepreneur",
+      "description": "Data scientist, developer, and entrepreneur. Creator of DataSafari, founder of CryptoPandemic. MSc in Marketing Analytics & Data Science, University of Groningen.",
+      "isPartOf": {
+        "@id": "https://georgedreemer.com/#website"
+      },
+      "about": {
+        "@id": "https://georgedreemer.com/#person"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}

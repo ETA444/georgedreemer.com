@@ -137,7 +137,7 @@
 	$langs = null;
 	$def_lang = null;
 	$base_lang = 'en';
-	$site_id = 'd13ef480';
+	$site_id = '94f1f8f7';
 	${'sitemapUrls'} = array(
 		'https://georgedreemer.com/',
 		'https://georgedreemer.com/skipschoolmakemoney',
