@@ -1213,25 +1213,30 @@
   </main>
 
   <script>
-    // Accordion — multi-tab, one open at a time
+    // Accordion
     document.querySelectorAll('.story-accordion__trigger').forEach(btn => {
       btn.addEventListener('click', () => {
         const isOpen = btn.getAttribute('aria-expanded') === 'true';
         const panel = document.getElementById(btn.getAttribute('aria-controls'));
-        // close all in this accordion
         btn.closest('.story-accordion').querySelectorAll('.story-accordion__trigger').forEach(b => {
           b.setAttribute('aria-expanded', 'false');
           document.getElementById(b.getAttribute('aria-controls')).setAttribute('aria-hidden', 'true');
         });
-        // open clicked if it was closed
         if (!isOpen) {
           btn.setAttribute('aria-expanded', 'true');
           panel.setAttribute('aria-hidden', 'false');
         }
       });
     });
-    // Lucide icons
-    if (typeof lucide !== 'undefined') lucide.createIcons();
+
+    // Lucide — wait for the script to be ready before calling createIcons
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    } else {
+      document.querySelector('script[src*="lucide"]').addEventListener('load', () => {
+        lucide.createIcons();
+      });
+    }
   </script>
 </body>
 
