@@ -1,290 +1,1023 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GD — Experience Template Elements</title>
+  <title>GD — Experience Template Elements v3</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap"
+    rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
   <style>
     :root {
-      --font-body:"Nunito","Helvetica Neue",sans-serif;
-      --font-display:"Playfair Display",Georgia,serif;
-      --color-bg:#ffffff;
-      --color-surface:#f8f7f4;
-      --color-surface-2:#f0ede8;
-      --color-border:rgba(0,0,0,0.10);
-      --color-divider:rgba(0,0,0,0.07);
-      --color-text:#1a1814;
-      --color-text-muted:#5a5750;
-      --color-text-faint:#9a9590;
-      --color-accent:#bf7bff;
-      --color-accent-dim:rgba(191,123,255,0.12);
-      --space-1:.25rem;--space-2:.5rem;--space-3:.75rem;--space-4:1rem;
-      --space-5:1.25rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;--space-12:3rem;
-      --text-xs:clamp(0.75rem,0.7rem + 0.2vw,0.875rem);
-      --text-sm:clamp(0.875rem,0.82rem + 0.28vw,1rem);
-      --text-base:clamp(1rem,0.95rem + 0.22vw,1.125rem);
-      --text-lg:clamp(1.125rem,1rem + 0.6vw,1.4rem);
-      --radius-sm:.25rem;--radius-md:.5rem;--radius-lg:.875rem;--radius-full:9999px;
-      --shadow-sm:0 1px 3px rgba(0,0,0,0.07),0 1px 2px rgba(0,0,0,0.05);
-      --shadow-md:0 4px 14px rgba(0,0,0,0.08),0 2px 6px rgba(0,0,0,0.05);
-      --transition:180ms cubic-bezier(0.16,1,0.3,1);
+      --font-body: "Nunito", "Helvetica Neue", sans-serif;
+      --font-display: "Playfair Display", Georgia, serif;
+      --color-bg: #ffffff;
+      --color-surface: #f8f7f4;
+      --color-surface-2: #f0ede8;
+      --color-border: rgba(0, 0, 0, 0.10);
+      --color-divider: rgba(0, 0, 0, 0.07);
+      --color-text: #1a1814;
+      --color-text-muted: #5a5750;
+      --color-text-faint: #9a9590;
+      --color-accent: #bf7bff;
+      --color-accent-dim: rgba(191, 123, 255, 0.12);
+      --space-1: .25rem;
+      --space-2: .5rem;
+      --space-3: .75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --text-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.82rem + 0.28vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.22vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.6vw, 1.4rem);
+      --radius-sm: .25rem;
+      --radius-md: .5rem;
+      --radius-lg: .875rem;
+      --radius-full: 9999px;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.05);
+      --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
     }
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-    html{-webkit-font-smoothing:antialiased;scroll-behavior:smooth;}
-    body{font-family:var(--font-body);font-size:var(--text-base);font-weight:300;color:var(--color-text);background:var(--color-bg);line-height:1.65;}
-    img{display:block;max-width:100%;height:auto;}
-    a{color:inherit;text-decoration:none;}
-    .preview-page{max-width:860px;margin-inline:auto;padding:var(--space-10) var(--space-6);display:flex;flex-direction:column;gap:var(--space-12);}
-    .preview-label{font-size:var(--text-xs);font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent);margin-bottom:var(--space-4);}
-    /* E1: SECTION LABEL */
-    .section-label{display:flex;align-items:center;gap:var(--space-4);margin-bottom:var(--space-6);}
-    .section-label__text{font-size:var(--text-xs);font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--color-text-muted);white-space:nowrap;}
-    .section-label__line{flex:1;height:1px;background:var(--color-divider);}
-    /* E2: CONTEXT BLOCK */
-    .context-block{border-left:2px solid var(--color-accent);padding-left:var(--space-5);}
-    .context-block p{font-size:var(--text-base);font-weight:300;color:var(--color-text-muted);line-height:1.75;max-width:68ch;}
-    .context-block p+p{margin-top:var(--space-3);}
-    /* E3: SNAPSHOT CARD */
-    .snapshot-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-6) var(--space-8);display:grid;grid-template-columns:repeat(auto-fill,minmax(min(200px,100%),1fr));gap:var(--space-5) var(--space-8);}
-    .snapshot-item__key{font-size:var(--text-xs);font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--color-text-faint);margin-bottom:var(--space-1);}
-    .snapshot-item__value{font-size:var(--text-sm);font-weight:400;color:var(--color-text);line-height:1.4;}
-    .snapshot-item__value a{color:var(--color-accent);border-bottom:1px solid var(--color-accent-dim);transition:border-color var(--transition);}
-    .snapshot-item__value a:hover{border-color:var(--color-accent);}
-    .status-badge{display:inline-flex;align-items:center;gap:var(--space-1);font-size:var(--text-xs);font-weight:600;padding:2px 10px;border-radius:var(--radius-full);background:var(--color-surface-2);color:var(--color-text-muted);}
-    .status-badge::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.5;}
-    .status-badge--past{color:var(--color-text-faint);}
-    .status-badge--active{color:#3a9e6f;}
-    /* E4: STACK GRID */
-    .stack-grid{display:flex;flex-direction:column;gap:var(--space-5);}
-    .stack-group__label{font-size:var(--text-xs);font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--color-text-faint);margin-bottom:var(--space-3);}
-    .stack-group__items{display:flex;flex-wrap:wrap;gap:var(--space-2);}
-    .stack-badge{display:inline-flex;align-items:center;gap:var(--space-2);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-full);padding:var(--space-1) var(--space-4) var(--space-1) var(--space-2);transition:background var(--transition),box-shadow var(--transition);cursor:default;}
-    .stack-badge:hover{background:var(--color-surface-2);box-shadow:var(--shadow-sm);}
-    .stack-badge img{width:18px;height:18px;object-fit:contain;opacity:.80;}
-    .stack-badge__name{font-size:var(--text-xs);font-weight:600;color:var(--color-text);letter-spacing:.01em;}
-    .stack-badge__since{font-size:10px;font-weight:400;color:var(--color-text-faint);margin-left:var(--space-1);}
-    /* E5: ABILITY GRID */
-    .ability-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr));gap:var(--space-4);}
-    .ability-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-5);display:flex;flex-direction:column;gap:var(--space-3);transition:box-shadow var(--transition),background var(--transition);}
-    .ability-card:hover{box-shadow:var(--shadow-md);background:var(--color-surface-2);}
-    .ability-card__icon{width:36px;height:36px;display:flex;align-items:center;justify-content:center;color:var(--color-text-muted);flex-shrink:0;}
-    .ability-card__icon svg{width:20px;height:20px;stroke-width:1.5;}
-    .ability-card__title{font-size:var(--text-sm);font-weight:700;color:var(--color-text);line-height:1.3;}
-    .ability-card__desc{font-size:var(--text-xs);font-weight:300;color:var(--color-text-muted);line-height:1.6;flex:1;}
-    .ability-card__tags{display:flex;flex-wrap:wrap;gap:var(--space-1);margin-top:auto;}
-    .ability-tag{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--color-accent);background:var(--color-accent-dim);border-radius:var(--radius-full);padding:2px 8px;}
-    /* E6: EVIDENCE GRID */
-    .evidence-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(280px,100%),1fr));gap:var(--space-4);}
-    .evidence-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);overflow:hidden;transition:box-shadow var(--transition);}
-    .evidence-card:hover{box-shadow:var(--shadow-md);}
-    .evidence-card__code{width:100%;aspect-ratio:16/9;background:#1a1814;display:flex;align-items:flex-start;padding:var(--space-4);font-family:"Courier New",monospace;font-size:11px;color:#c9c4bc;line-height:1.6;overflow:hidden;}
-    .evidence-card__code pre{margin:0;}
-    .token-keyword{color:#bf7bff;}
-    .token-func{color:#79d4b8;}
-    .token-string{color:#f4c67e;}
-    .token-comment{color:#5a5650;}
-    .evidence-card__body{padding:var(--space-4) var(--space-5);}
-    .evidence-card__title{font-size:var(--text-sm);font-weight:700;color:var(--color-text);margin-bottom:var(--space-2);}
-    .evidence-card__bullets{list-style:none;display:flex;flex-direction:column;gap:var(--space-1);}
-    .evidence-card__bullets li{font-size:var(--text-xs);font-weight:300;color:var(--color-text-muted);line-height:1.5;padding-left:var(--space-4);position:relative;}
-    .evidence-card__bullets li::before{content:"--";position:absolute;left:0;color:var(--color-text-faint);}
-    /* E7: ACCORDION */
-    .story-accordion{border:1px solid var(--color-border);border-radius:var(--radius-lg);overflow:hidden;}
-    .story-accordion__trigger{width:100%;display:flex;align-items:center;justify-content:space-between;padding:var(--space-5) var(--space-6);background:var(--color-surface);border:none;cursor:pointer;gap:var(--space-4);transition:background var(--transition);}
-    .story-accordion__trigger:hover{background:var(--color-surface-2);}
-    .story-accordion__trigger-label{font-size:var(--text-sm);font-weight:700;color:var(--color-text);letter-spacing:.02em;text-align:left;}
-    .story-accordion__chevron{width:18px;height:18px;color:var(--color-text-muted);transition:transform var(--transition);flex-shrink:0;}
-    .story-accordion__trigger[aria-expanded="true"] .story-accordion__chevron{transform:rotate(180deg);}
-    .story-accordion__body{display:grid;grid-template-rows:0fr;transition:grid-template-rows 380ms cubic-bezier(0.16,1,0.3,1);background:var(--color-bg);}
-    .story-accordion__body[aria-hidden="false"]{grid-template-rows:1fr;}
-    .story-accordion__inner{overflow:hidden;}
-    .story-accordion__content{padding:var(--space-6) var(--space-6) var(--space-8);font-size:var(--text-sm);font-weight:300;color:var(--color-text-muted);line-height:1.8;max-width:70ch;}
-    .story-accordion__content p+p{margin-top:var(--space-4);}
-    .story-accordion__content strong{font-weight:600;color:var(--color-text);}
-    /* SCROLL REVEAL */
-    @supports(animation-timeline:scroll()){
-      .fade-in{opacity:0;animation:reveal-fade linear both;animation-timeline:view();animation-range:entry 0% entry 80%;}
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    @keyframes reveal-fade{to{opacity:1;}}
-    @media(prefers-reduced-motion:reduce){.fade-in{opacity:1;animation:none;}}
-    /* RESPONSIVE */
-    @media(max-width:600px){
-      .preview-page{padding:var(--space-6) var(--space-4);gap:var(--space-8);}
-      .snapshot-card{padding:var(--space-5);}
-      .ability-grid{grid-template-columns:1fr;}
-      .evidence-grid{grid-template-columns:1fr;}
+
+    html {
+      -webkit-font-smoothing: antialiased;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      font-weight: 300;
+      color: var(--color-text);
+      background: var(--color-bg);
+      line-height: 1.65;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .preview-page {
+      max-width: 860px;
+      margin-inline: auto;
+      padding: var(--space-10) var(--space-6);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-12);
+    }
+
+    .preview-label {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      margin-bottom: var(--space-4);
+    }
+
+    /* ── E1: SECTION LABEL ─────────────────────────────────── */
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+      margin-bottom: var(--space-6);
+    }
+
+    .section-label__text {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      white-space: nowrap;
+    }
+
+    .section-label__line {
+      flex: 1;
+      height: 1px;
+      background: var(--color-divider);
+    }
+
+    /* ── E2: CONTEXT BLOCK ─────────────────────────────────── */
+    .context-block {
+      border-left: 2px solid var(--color-accent);
+      padding-left: var(--space-5);
+    }
+
+    .context-block p {
+      font-size: var(--text-base);
+      font-weight: 300;
+      color: var(--color-text-muted);
+      line-height: 1.75;
+      max-width: 68ch;
+    }
+
+    .context-block p+p {
+      margin-top: var(--space-3);
+    }
+
+    /* ── E3: SNAPSHOT CARD ─────────────────────────────────── */
+    .snapshot-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6) var(--space-8);
+    }
+
+    .snapshot-card__meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(180px, 100%), 1fr));
+      gap: var(--space-5) var(--space-8);
+      margin-bottom: var(--space-6);
+    }
+
+    .snapshot-card__divider {
+      height: 1px;
+      background: var(--color-divider);
+      margin-bottom: var(--space-6);
+    }
+
+    .snapshot-item__key {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--color-text-faint);
+      margin-bottom: var(--space-1);
+    }
+
+    .snapshot-item__value {
+      font-size: var(--text-sm);
+      font-weight: 400;
+      color: var(--color-text);
+      line-height: 1.4;
+    }
+
+    .snapshot-item__value a {
+      color: var(--color-accent);
+      border-bottom: 1px solid var(--color-accent-dim);
+      transition: border-color var(--transition);
+    }
+
+    .snapshot-item__value a:hover {
+      border-color: var(--color-accent);
+    }
+
+    /* Achievement chips */
+    .snapshot-card__achievements-label {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--color-text-faint);
+      margin-bottom: var(--space-3);
+    }
+
+    .snapshot-card__chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+    }
+
+    .achievement-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-full);
+      padding: var(--space-1) var(--space-4) var(--space-1) var(--space-3);
+      font-size: var(--text-xs);
+      font-weight: 400;
+      color: var(--color-text-muted);
+      line-height: 1.4;
+    }
+
+    .achievement-chip__dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--color-accent);
+      opacity: .7;
+      flex-shrink: 0;
+    }
+
+    /* ── E4: STACK GRID ────────────────────────────────────── */
+    .stack-grid {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-5);
+    }
+
+    .stack-group__label {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--color-text-faint);
+      margin-bottom: var(--space-3);
+    }
+
+    .stack-group__items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+    }
+
+    .stack-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-full);
+      padding: var(--space-1) var(--space-4) var(--space-1) var(--space-2);
+      transition: background var(--transition), box-shadow var(--transition);
+      cursor: default;
+    }
+
+    .stack-badge:hover {
+      background: var(--color-surface-2);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .stack-badge img {
+      width: 18px;
+      height: 18px;
+      object-fit: contain;
+      opacity: .80;
+    }
+
+    .stack-badge__name {
+      font-size: var(--text-xs);
+      font-weight: 600;
+      color: var(--color-text);
+      letter-spacing: .01em;
+    }
+
+    /* text-only badge (human languages, certifications) */
+    .stack-badge--text {
+      padding: var(--space-1) var(--space-4);
+    }
+
+    /* ── E5: ABILITY GRID ──────────────────────────────────── */
+    .ability-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
+      gap: var(--space-4);
+    }
+
+    .ability-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+      transition: box-shadow var(--transition), background var(--transition);
+    }
+
+    .ability-card:hover {
+      box-shadow: var(--shadow-md);
+      background: var(--color-surface-2);
+    }
+
+    .ability-card__icon {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-text-muted);
+      flex-shrink: 0;
+    }
+
+    .ability-card__icon svg {
+      width: 20px;
+      height: 20px;
+      stroke-width: 1.5;
+    }
+
+    .ability-card__title {
+      font-size: var(--text-sm);
+      font-weight: 700;
+      color: var(--color-text);
+      line-height: 1.3;
+    }
+
+    .ability-card__desc {
+      font-size: var(--text-xs);
+      font-weight: 300;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+      flex: 1;
+    }
+
+    .ability-card__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-1);
+      margin-top: auto;
+    }
+
+    .ability-tag {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      background: var(--color-accent-dim);
+      border-radius: var(--radius-full);
+      padding: 2px 8px;
+    }
+
+    /* ── E6: EVIDENCE GRID ─────────────────────────────────── */
+    .evidence-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
+      gap: var(--space-4);
+    }
+
+    .evidence-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: box-shadow var(--transition);
+    }
+
+    .evidence-card:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    /* variant: code */
+    .evidence-card__code {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: #1a1814;
+      display: flex;
+      align-items: flex-start;
+      padding: var(--space-4);
+      font-family: "Courier New", monospace;
+      font-size: 11px;
+      color: #c9c4bc;
+      line-height: 1.6;
+      overflow: hidden;
+    }
+
+    .evidence-card__code pre {
+      margin: 0;
+    }
+
+    .token-keyword {
+      color: #bf7bff;
+    }
+
+    .token-func {
+      color: #79d4b8;
+    }
+
+    .token-string {
+      color: #f4c67e;
+    }
+
+    .token-comment {
+      color: #5a5650;
+    }
+
+    /* variant: image */
+    .evidence-card__thumb {
+      width: 100%;
+      aspect-ratio: 16/9;
+      overflow: hidden;
+      background: var(--color-surface-2);
+    }
+
+    .evidence-card__thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 420ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .evidence-card:hover .evidence-card__thumb img {
+      transform: scale(1.03);
+    }
+
+    /* variant: video */
+    .evidence-card__video {
+      width: 100%;
+      aspect-ratio: 16/9;
+      overflow: hidden;
+      background: #1a1814;
+      position: relative;
+    }
+
+    .evidence-card__video video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* variant: metric/stat */
+    .evidence-card__metric {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: var(--color-surface-2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-2);
+      padding: var(--space-6);
+    }
+
+    .metric-number {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 600;
+      color: var(--color-text);
+      line-height: 1;
+      letter-spacing: -.02em;
+    }
+
+    .metric-number span {
+      color: var(--color-accent);
+    }
+
+    .metric-label {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+    }
+
+    .metric-sublabel {
+      font-size: var(--text-xs);
+      font-weight: 300;
+      color: var(--color-text-faint);
+      text-align: center;
+      max-width: 22ch;
+    }
+
+    /* shared body */
+    .evidence-card__body {
+      padding: var(--space-4) var(--space-5);
+    }
+
+    .evidence-card__title {
+      font-size: var(--text-sm);
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: var(--space-2);
+    }
+
+    .evidence-card__bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-1);
+    }
+
+    .evidence-card__bullets li {
+      font-size: var(--text-xs);
+      font-weight: 300;
+      color: var(--color-text-muted);
+      line-height: 1.5;
+      padding-left: var(--space-4);
+      position: relative;
+    }
+
+    .evidence-card__bullets li::before {
+      content: "--";
+      position: absolute;
+      left: 0;
+      color: var(--color-text-faint);
+    }
+
+    /* ── E7: FULL STORY ACCORDION ──────────────────────────── */
+    .story-accordion {
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+
+    .story-accordion__item+.story-accordion__item {
+      border-top: 1px solid var(--color-divider);
+    }
+
+    .story-accordion__trigger {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: var(--space-5) var(--space-6);
+      background: var(--color-surface);
+      border: none;
+      cursor: pointer;
+      gap: var(--space-4);
+      transition: background var(--transition);
+    }
+
+    .story-accordion__trigger:hover {
+      background: var(--color-surface-2);
+    }
+
+    .story-accordion__trigger-label {
+      font-size: var(--text-sm);
+      font-weight: 700;
+      color: var(--color-text);
+      letter-spacing: .02em;
+      text-align: left;
+    }
+
+    .story-accordion__chevron {
+      width: 18px;
+      height: 18px;
+      color: var(--color-text-muted);
+      transition: transform var(--transition);
+      flex-shrink: 0;
+    }
+
+    .story-accordion__trigger[aria-expanded="true"] .story-accordion__chevron {
+      transform: rotate(180deg);
+    }
+
+    .story-accordion__body {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 380ms cubic-bezier(0.16, 1, 0.3, 1);
+      background: var(--color-bg);
+    }
+
+    .story-accordion__body[aria-hidden="false"] {
+      grid-template-rows: 1fr;
+    }
+
+    .story-accordion__inner {
+      overflow: hidden;
+    }
+
+    .story-accordion__content {
+      padding: var(--space-6) var(--space-6) var(--space-8);
+      font-size: var(--text-sm);
+      font-weight: 300;
+      color: var(--color-text-muted);
+      line-height: 1.8;
+      max-width: 70ch;
+    }
+
+    .story-accordion__content p+p {
+      margin-top: var(--space-4);
+    }
+
+    .story-accordion__content strong {
+      font-weight: 600;
+      color: var(--color-text);
+    }
+
+    /* ── SCROLL REVEAL ─────────────────────────────────────── */
+    @supports(animation-timeline:scroll()) {
+      .fade-in {
+        opacity: 0;
+        animation: reveal-fade linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 80%;
+      }
+    }
+
+    @keyframes reveal-fade {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      .fade-in {
+        opacity: 1;
+        animation: none;
+      }
+    }
+
+    /* ── RESPONSIVE ────────────────────────────────────────── */
+    @media(max-width:600px) {
+      .preview-page {
+        padding: var(--space-6) var(--space-4);
+        gap: var(--space-8);
+      }
+
+      .snapshot-card {
+        padding: var(--space-5);
+      }
+
+      .ability-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .evidence-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
+
 <body>
-<main class="preview-page" role="main">
+  <main class="preview-page" role="main">
 
-  <!-- ============================================================
+    <!-- ============================================================
        ELEMENT 1 — SECTION LABEL / DIVIDER
-       Drop one before each section. Change the text inside
-       .section-label__text (e.g. "Stack", "Abilities", "Evidence").
+       ─────────────────────────────────────────────────────────
+       PURPOSE   : Visual divider before each named section.
+       USAGE     : Drop one <div class="section-label"> before
+                   every section block. Change the text inside
+                   .section-label__text to match the section.
+       ORDER ON PAGE (use in this sequence every time):
+         1. Context     ← no label needed, it comes right after the page title
+         2. Snapshot    ← no label, it is its own card
+         3. [STACK]
+         4. [ABILITIES]
+         5. [EVIDENCE]
+         6. [THE FULL STORY]
   ============================================================ -->
-  <section aria-label="Element 1: Section Label">
-    <p class="preview-label">Element 1 — Section Label / Divider</p>
-    <div class="section-label"><span class="section-label__text">Stack</span><span class="section-label__line" aria-hidden="true"></span></div>
-    <div class="section-label"><span class="section-label__text">Abilities</span><span class="section-label__line" aria-hidden="true"></span></div>
-    <div class="section-label"><span class="section-label__text">Evidence</span><span class="section-label__line" aria-hidden="true"></span></div>
-  </section>
+    <section aria-label="Element 1: Section Label">
+      <p class="preview-label">Element 1 — Section Label / Divider</p>
+      <div class="section-label"><span class="section-label__text">Stack</span><span class="section-label__line"
+          aria-hidden="true"></span></div>
+      <div class="section-label"><span class="section-label__text">Abilities</span><span class="section-label__line"
+          aria-hidden="true"></span></div>
+      <div class="section-label"><span class="section-label__text">Works</span><span class="section-label__line"
+          aria-hidden="true"></span></div>
+      <div class="section-label"><span class="section-label__text">The Full Story</span><span
+          class="section-label__line" aria-hidden="true"></span></div>
+    </section>
 
-  <!-- ============================================================
+
+    <!-- ============================================================
        ELEMENT 2 — CONTEXT PARAGRAPH BLOCK
-       Top of every experience page, before the snapshot card.
-       Replace the paragraph text with the project context.
+       ─────────────────────────────────────────────────────────
+       PURPOSE   : Wikipedia-style intro. Answers "what is X?"
+                   before shifting to what George did there.
+       USAGE     : First block on every experience page, before
+                   the snapshot card. 2–3 sentences max.
+                   Keep it about the venture, not about George.
   ============================================================ -->
-  <section aria-label="Element 2: Context Block">
-    <p class="preview-label">Element 2 — Context Paragraph Block</p>
-    <div class="context-block">
-      <p>thoughtbubble was a knowledge-first social network co-founded by George Dreemer and Nikolay Stanchev between 2014 and 2016 in the United States. It was designed to shift social media away from entertainment toward sharing ideas, insights, and self-improvement content.</p>
-      <p>The platform grew to around 900 registered users and offered a full social experience — posts, comments, likes, pins, notifications, and customisable profiles — built entirely from scratch by a two-person team.</p>
-    </div>
-  </section>
+    <section aria-label="Element 2: Context Block">
+      <p class="preview-label">Element 2 — Context Paragraph Block</p>
+      <div class="context-block">
+        <p>thoughtbubble was a knowledge-first social network co-founded by George Dreemer and Nikolay Stanchev between
+          2014 and 2016 in the United States. It was designed to shift social media away from entertainment toward
+          sharing ideas, insights, and self-improvement content.</p>
+        <p>The platform grew to around 900 registered users and offered a full social experience — posts, comments,
+          likes, pins, notifications, and customisable profiles — built entirely from scratch by a two-person team while
+          still in high school.</p>
+      </div>
+    </section>
 
-  <!-- ============================================================
+
+    <!-- ============================================================
        ELEMENT 3 — SNAPSHOT CARD
-       Directly after the context block on every experience page.
-       Fill each .snapshot-item with the experience metadata.
+       ─────────────────────────────────────────────────────────
+       PURPOSE   : Fast-scan metadata + multiple achievements.
+                   A busy recruiter glances here first.
+       USAGE     : Right after the context block. Fill .snapshot-item
+                   fields; add as many .achievement-chip items as
+                   needed. No "Status" field — the year covers it
+                   (past year = inactive; "Present" = active).
+       ACHIEVEMENTS: Keep each chip to one punchy stat or win.
+                   Aim for 4–7 chips. Anything over ~10 gets noisy.
   ============================================================ -->
-  <section aria-label="Element 3: Snapshot Card">
-    <p class="preview-label">Element 3 — Snapshot Card</p>
-    <div class="snapshot-card">
-      <div class="snapshot-item">
-        <p class="snapshot-item__key">Role</p>
-        <p class="snapshot-item__value">Co-Founder &amp; Full-Stack Developer</p>
+    <section aria-label="Element 3: Snapshot Card">
+      <p class="preview-label">Element 3 — Snapshot Card</p>
+      <div class="snapshot-card">
+        <div class="snapshot-card__meta">
+          <div class="snapshot-item">
+            <p class="snapshot-item__key">Role</p>
+            <p class="snapshot-item__value">Co-Founder &amp; Full-Stack Developer</p>
+          </div>
+          <div class="snapshot-item">
+            <p class="snapshot-item__key">Type</p>
+            <p class="snapshot-item__value">Social Network Startup</p>
+          </div>
+          <div class="snapshot-item">
+            <p class="snapshot-item__key">Timeframe</p>
+            <p class="snapshot-item__value">2014 – 2016</p>
+          </div>
+          <div class="snapshot-item">
+            <p class="snapshot-item__key">Location</p>
+            <p class="snapshot-item__value">Amherst, MA — United States</p>
+          </div>
+          <div class="snapshot-item">
+            <p class="snapshot-item__key">Links</p>
+            <p class="snapshot-item__value">
+              <a href="https://www.georgedreemer.com/thoughtbubble" target="_blank"
+                rel="noopener noreferrer">georgedreemer.com/thoughtbubble</a>
+            </p>
+          </div>
+        </div>
+        <div class="snapshot-card__divider"></div>
+        <p class="snapshot-card__achievements-label">Achievements</p>
+        <div class="snapshot-card__chips">
+          <span class="achievement-chip"><span class="achievement-chip__dot"></span>~900 registered users on a live
+            platform</span>
+          <span class="achievement-chip"><span class="achievement-chip__dot"></span>Built full social platform from
+            scratch at 16</span>
+          <span class="achievement-chip"><span class="achievement-chip__dot"></span>Custom comments, likes &amp;
+            notification engine</span>
+          <span class="achievement-chip"><span class="achievement-chip__dot"></span>End-to-end: schema design →
+            deployment</span>
+          <span class="achievement-chip"><span class="achievement-chip__dot"></span>Pitched at UMass Amherst Shark Tank
+            event</span>
+          <span class="achievement-chip"><span class="achievement-chip__dot"></span>Co-founded &amp; led a 2-person
+            engineering team</span>
+        </div>
       </div>
-      <div class="snapshot-item">
-        <p class="snapshot-item__key">Type</p>
-        <p class="snapshot-item__value">Social Network Startup</p>
-      </div>
-      <div class="snapshot-item">
-        <p class="snapshot-item__key">Timeframe</p>
-        <p class="snapshot-item__value">2014 – 2016</p>
-      </div>
-      <div class="snapshot-item">
-        <p class="snapshot-item__key">Location</p>
-        <p class="snapshot-item__value">Amherst, MA — United States</p>
-      </div>
-      <div class="snapshot-item">
-        <p class="snapshot-item__key">Status</p>
-        <p class="snapshot-item__value"><span class="status-badge status-badge--past">Past venture</span></p>
-      </div>
-      <div class="snapshot-item">
-        <p class="snapshot-item__key">Key outcome</p>
-        <p class="snapshot-item__value">~900 registered users · full platform shipped from scratch</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============================================================
+
+    <!-- ============================================================
        ELEMENT 4 — STACK BADGE GRID
-       After snapshot card. Add/remove .stack-group blocks per page.
-       Logo source: https://cdn.simpleicons.org/{icon-name}/{hex-color}
+       ─────────────────────────────────────────────────────────
+       PURPOSE   : Hard skills used ON THIS PROJECT, grouped by
+                   category. No "since" labels here — those go on
+                   the homepage global stack overview only.
+       USAGE     : Add/remove .stack-group blocks per page.
+                   Icon source: https://cdn.simpleicons.org/{name}/{hex}
+                   For tools with no SimpleIcons logo, use
+                   .stack-badge--text (no img needed).
+       BELOW     : Full cross-project stack shown as reference.
+                   Comment out categories not used on this page.
   ============================================================ -->
-  <section aria-label="Element 4: Stack Badge Grid">
-    <p class="preview-label">Element 4 — Stack Badge Grid</p>
-    <div class="section-label"><span class="section-label__text">Stack</span><span class="section-label__line" aria-hidden="true"></span></div>
-    <div class="stack-grid">
-      <div class="stack-group">
-        <p class="stack-group__label">Backend</p>
-        <div class="stack-group__items">
-          <span class="stack-badge"><img src="https://cdn.simpleicons.org/php/777bb4" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">PHP</span><span class="stack-badge__since">since 2014</span></span>
-          <span class="stack-badge"><img src="https://cdn.simpleicons.org/mysql/4479a1" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">MySQL</span><span class="stack-badge__since">since 2014</span></span>
-          <span class="stack-badge"><img src="https://cdn.simpleicons.org/apache/d22128" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Apache</span></span>
-          <span class="stack-badge"><img src="https://cdn.simpleicons.org/cpanel/ff6c2c" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">cPanel</span></span>
-        </div>
-      </div>
-      <div class="stack-group">
-        <p class="stack-group__label">Frontend</p>
-        <div class="stack-group__items">
-          <span class="stack-badge"><img src="https://cdn.simpleicons.org/javascript/f7df1e" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">JavaScript</span><span class="stack-badge__since">since 2014</span></span>
-          <span class="stack-badge"><img src="https://cdn.simpleicons.org/html5/e34f26" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">HTML &amp; CSS</span></span>
-          <span class="stack-badge"><img src="https://cdn.simpleicons.org/jquery/0769ad" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">jQuery</span></span>
-        </div>
-      </div>
-      <div class="stack-group">
-        <p class="stack-group__label">Tools</p>
-        <div class="stack-group__items">
-          <span class="stack-badge"><img src="https://cdn.simpleicons.org/git/f05032" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Git</span></span>
-          <span class="stack-badge"><img src="https://cdn.simpleicons.org/filezilla/bf0000" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">FileZilla</span></span>
-        </div>
-      </div>
-    </div>
-  </section>
+    <section aria-label="Element 4: Stack Badge Grid">
+      <p class="preview-label">Element 4 — Stack Badge Grid (full reference)</p>
+      <div class="section-label"><span class="section-label__text">Stack</span><span class="section-label__line"
+          aria-hidden="true"></span></div>
+      <div class="stack-grid">
 
-  <!-- ============================================================
+        <div class="stack-group">
+          <p class="stack-group__label">Languages</p>
+          <div class="stack-group__items">
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/python/3776ab" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Python</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/r/276dc3" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">R</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/php/777bb4" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">PHP</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/javascript/f7df1e" alt="" width="18"
+                height="18" loading="lazy"><span class="stack-badge__name">JavaScript</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/typescript/3178c6" alt="" width="18"
+                height="18" loading="lazy"><span class="stack-badge__name">TypeScript</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/html5/e34f26" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">HTML</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/css3/1572b6" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">CSS</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/gnubash/4eaa25" alt="" width="18"
+                height="18" loading="lazy"><span class="stack-badge__name">Bash / Zsh</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/ruby/cc342d" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Ruby</span></span>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <p class="stack-group__label">Data &amp; ML</p>
+          <div class="stack-group__items">
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/pandas/150458" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">pandas</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/numpy/013243" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">NumPy</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/scikitlearn/f7931e" alt="" width="18"
+                height="18" loading="lazy"><span class="stack-badge__name">scikit-learn</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/jupyter/f37626" alt="" width="18"
+                height="18" loading="lazy"><span class="stack-badge__name">Jupyter</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/plotly/3f4f75" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Plotly</span></span>
+            <span class="stack-badge--text stack-badge"><span class="stack-badge__name">DataSafari</span></span>
+            <span class="stack-badge--text stack-badge"><span class="stack-badge__name">EDA / Stats</span></span>
+            <span class="stack-badge--text stack-badge"><span class="stack-badge__name">Hypothesis Testing</span></span>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <p class="stack-group__label">Databases</p>
+          <div class="stack-group__items">
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/mysql/4479a1" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">MySQL</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/postgresql/4169e1" alt="" width="18"
+                height="18" loading="lazy"><span class="stack-badge__name">PostgreSQL</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/sqlite/003b57" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">SQLite</span></span>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <p class="stack-group__label">Backend &amp; Infra</p>
+          <div class="stack-group__items">
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/nodedotjs/5fa04e" alt="" width="18"
+                height="18" loading="lazy"><span class="stack-badge__name">Node.js</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/apache/d22128" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Apache</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/cpanel/ff6c2c" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">cPanel</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/namecheap/de3723" alt="" width="18"
+                height="18" loading="lazy"><span class="stack-badge__name">Namecheap</span></span>
+            <span class="stack-badge--text stack-badge"><span class="stack-badge__name">DNS / Hosting</span></span>
+            <span class="stack-badge--text stack-badge"><span class="stack-badge__name">Basic DevOps</span></span>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <p class="stack-group__label">Tools &amp; Workflow</p>
+          <div class="stack-group__items">
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/git/f05032" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Git</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/github/181717" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">GitHub</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/visualstudiocode/007acc" alt="" width="18"
+                height="18" loading="lazy"><span class="stack-badge__name">VS Code</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/rstudio/75aadb" alt="" width="18"
+                height="18" loading="lazy"><span class="stack-badge__name">RStudio</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/filezilla/bf0000" alt="" width="18"
+                height="18" loading="lazy"><span class="stack-badge__name">FileZilla</span></span>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <p class="stack-group__label">Design &amp; Creative</p>
+          <div class="stack-group__items">
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/figma/f24e1e" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Figma</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/adobeillustrator/ff9a00" alt="" width="18"
+                height="18" loading="lazy"><span class="stack-badge__name">Illustrator</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/adobephotoshop/31a8ff" alt="" width="18"
+                height="18" loading="lazy"><span class="stack-badge__name">Photoshop</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/adobepremierepro/9999ff" alt="" width="18"
+                height="18" loading="lazy"><span class="stack-badge__name">Premiere Pro</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/davinciresolve/233a51" alt="" width="18"
+                height="18" loading="lazy"><span class="stack-badge__name">DaVinci Resolve</span></span>
+            <span class="stack-badge--text stack-badge"><span class="stack-badge__name">Brand Identity</span></span>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <p class="stack-group__label">Web3 &amp; Crypto</p>
+          <div class="stack-group__items">
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/solana/9945ff" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Solana</span></span>
+            <span class="stack-badge--text stack-badge"><span class="stack-badge__name">On-chain Analytics</span></span>
+            <span class="stack-badge--text stack-badge"><span class="stack-badge__name">Web3 Marketing</span></span>
+            <span class="stack-badge--text stack-badge"><span class="stack-badge__name">Token Economics</span></span>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <p class="stack-group__label">Certifications &amp; Education</p>
+          <div class="stack-group__items">
+            <span class="stack-badge--text stack-badge"><span class="stack-badge__name">MSc Marketing Analytics &amp;
+                Data Science — RUG</span></span>
+            <span class="stack-badge--text stack-badge"><span class="stack-badge__name">DataCamp Associate Data
+                Scientist in Python</span></span>
+            <span class="stack-badge--text stack-badge"><span class="stack-badge__name">DataCamp Professional Data
+                Scientist in Python</span></span>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <p class="stack-group__label">Human Languages</p>
+          <div class="stack-group__items">
+            <span class="stack-badge--text stack-badge"><span class="stack-badge__name">English — Fluent
+                (native-level)</span></span>
+            <span class="stack-badge--text stack-badge"><span class="stack-badge__name">Dutch —
+                Conversational</span></span>
+            <span class="stack-badge--text stack-badge"><span class="stack-badge__name">Greek — Native</span></span>
+            <span class="stack-badge--text stack-badge"><span class="stack-badge__name">Hebrew — Basic</span></span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
        ELEMENT 5 — ABILITY CARD GRID (MMO Skill Tree)
-       One .ability-card per thing you did/built/solved.
-       Change icon (data-lucide="..."), title, desc, tags per card.
-       Full icon list: https://lucide.dev/icons/
+       ─────────────────────────────────────────────────────────
+       PURPOSE   : One card per concrete thing George did/built/solved.
+                   Answers "what did he actually do here?"
+       USAGE     : Add one .ability-card per ability. Change:
+                   – data-lucide="..." (icon): https://lucide.dev/icons/
+                   – .ability-card__title
+                   – .ability-card__desc (impact-first, action verbs)
+                   – .ability-tag items (the stack pieces used for this)
+       NOTE      : Pitching / public speaking / Shark Tank to be added
+                   on the real thoughtbubble page.
   ============================================================ -->
-  <section aria-label="Element 5: Ability Card Grid">
-    <p class="preview-label">Element 5 — Ability Card Grid</p>
-    <div class="section-label"><span class="section-label__text">Abilities</span><span class="section-label__line" aria-hidden="true"></span></div>
-    <div class="ability-grid">
-      <article class="ability-card fade-in">
-        <div class="ability-card__icon" aria-hidden="true"><i data-lucide="code-2"></i></div>
-        <h3 class="ability-card__title">Full-Stack Feature Delivery</h3>
-        <p class="ability-card__desc">Designed, built, and shipped features end-to-end — data model, PHP backend, JS-powered UI — without infrastructure support, as a teenager.</p>
-        <div class="ability-card__tags"><span class="ability-tag">PHP</span><span class="ability-tag">MySQL</span><span class="ability-tag">JS</span></div>
-      </article>
-      <article class="ability-card fade-in">
-        <div class="ability-card__icon" aria-hidden="true"><i data-lucide="message-circle"></i></div>
-        <h3 class="ability-card__title">Custom Social Interaction Systems</h3>
-        <p class="ability-card__desc">Built a complete comments and likes engine from scratch — schema, endpoints, live UI — before off-the-shelf solutions were mainstream.</p>
-        <div class="ability-card__tags"><span class="ability-tag">PHP</span><span class="ability-tag">MySQL</span><span class="ability-tag">AJAX</span></div>
-      </article>
-      <article class="ability-card fade-in">
-        <div class="ability-card__icon" aria-hidden="true"><i data-lucide="bell"></i></div>
-        <h3 class="ability-card__title">Real-Time Notification Engine</h3>
-        <p class="ability-card__desc">Architected a fan-out notification system surfacing relevant activity per user, with live badge counts — built entirely in PHP and MySQL.</p>
-        <div class="ability-card__tags"><span class="ability-tag">PHP</span><span class="ability-tag">MySQL</span></div>
-      </article>
-      <article class="ability-card fade-in">
-        <div class="ability-card__icon" aria-hidden="true"><i data-lucide="user-circle"></i></div>
-        <h3 class="ability-card__title">User Auth &amp; Profile Systems</h3>
-        <p class="ability-card__desc">Designed secure registration, login, session management, and fully customisable profiles — handling real users on a live production platform.</p>
-        <div class="ability-card__tags"><span class="ability-tag">PHP</span><span class="ability-tag">Security</span></div>
-      </article>
-      <article class="ability-card fade-in">
-        <div class="ability-card__icon" aria-hidden="true"><i data-lucide="lightbulb"></i></div>
-        <h3 class="ability-card__title">Product Strategy &amp; UX Design</h3>
-        <p class="ability-card__desc">Translated the "social media that makes you smarter" concept into concrete UX decisions, feed logic, and feature prioritisation at 16 years old.</p>
-        <div class="ability-card__tags"><span class="ability-tag">UX</span><span class="ability-tag">Product</span></div>
-      </article>
-      <article class="ability-card fade-in">
-        <div class="ability-card__icon" aria-hidden="true"><i data-lucide="server"></i></div>
-        <h3 class="ability-card__title">Server Deployment &amp; Hosting</h3>
-        <p class="ability-card__desc">Managed the full deployment pipeline on cPanel/Apache — DNS, file transfer, and production environment maintenance for a live user base.</p>
-        <div class="ability-card__tags"><span class="ability-tag">Apache</span><span class="ability-tag">cPanel</span><span class="ability-tag">DevOps</span></div>
-      </article>
-    </div>
-  </section>
+    <section aria-label="Element 5: Ability Card Grid">
+      <p class="preview-label">Element 5 — Ability Card Grid</p>
+      <div class="section-label"><span class="section-label__text">Abilities</span><span class="section-label__line"
+          aria-hidden="true"></span></div>
+      <div class="ability-grid">
+        <article class="ability-card fade-in">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="code-2"></i></div>
+          <h3 class="ability-card__title">Full-Stack Feature Delivery</h3>
+          <p class="ability-card__desc">Designed, built, and shipped features end-to-end — data model, PHP backend,
+            JS-powered UI — without infrastructure support, as a teenager.</p>
+          <div class="ability-card__tags"><span class="ability-tag">PHP</span><span
+              class="ability-tag">MySQL</span><span class="ability-tag">JS</span></div>
+        </article>
+        <article class="ability-card fade-in">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="message-circle"></i></div>
+          <h3 class="ability-card__title">Custom Social Interaction Systems</h3>
+          <p class="ability-card__desc">Built a complete comments and likes engine from scratch — schema, endpoints,
+            live UI — before off-the-shelf solutions were mainstream.</p>
+          <div class="ability-card__tags"><span class="ability-tag">PHP</span><span
+              class="ability-tag">MySQL</span><span class="ability-tag">AJAX</span></div>
+        </article>
+        <article class="ability-card fade-in">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="bell"></i></div>
+          <h3 class="ability-card__title">Real-Time Notification Engine</h3>
+          <p class="ability-card__desc">Architected a fan-out notification system surfacing relevant activity per user,
+            with live badge counts — built entirely in PHP and MySQL.</p>
+          <div class="ability-card__tags"><span class="ability-tag">PHP</span><span class="ability-tag">MySQL</span>
+          </div>
+        </article>
+        <article class="ability-card fade-in">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="user-circle"></i></div>
+          <h3 class="ability-card__title">User Auth &amp; Profile Systems</h3>
+          <p class="ability-card__desc">Designed secure registration, login, session management, and fully customisable
+            profiles — handling real users on a live production platform.</p>
+          <div class="ability-card__tags"><span class="ability-tag">PHP</span><span class="ability-tag">Security</span>
+          </div>
+        </article>
+        <article class="ability-card fade-in">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="lightbulb"></i></div>
+          <h3 class="ability-card__title">Product Strategy &amp; UX Design</h3>
+          <p class="ability-card__desc">Translated the "social media that makes you smarter" concept into concrete UX
+            decisions, feed logic, and feature prioritisation at 16 years old.</p>
+          <div class="ability-card__tags"><span class="ability-tag">UX</span><span class="ability-tag">Product</span>
+          </div>
+        </article>
+        <article class="ability-card fade-in">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="server"></i></div>
+          <h3 class="ability-card__title">Server Deployment &amp; Hosting</h3>
+          <p class="ability-card__desc">Managed the full deployment pipeline on cPanel/Apache — DNS, file transfer, and
+            production environment maintenance for a live user base.</p>
+          <div class="ability-card__tags"><span class="ability-tag">Apache</span><span
+              class="ability-tag">cPanel</span><span class="ability-tag">DevOps</span></div>
+        </article>
+      </div>
+    </section>
 
-  <!-- ============================================================
-       ELEMENT 6 — EVIDENCE CARD GRID
-       Each card = one concrete artefact or example of work.
-       For code/data pages: use .evidence-card__code with <pre>.
-       For visual/design pages (SSMM, DREEMCORP): replace
-       .evidence-card__code with:
-         <div class="evidence-card__thumb">
-           <img src="YOUR_IMAGE" alt="..." width="..." height="..." loading="lazy">
-         </div>
+
+
+
+    <!-- ============================================================
+       ELEMENT 6 — EVIDENCE CARD GRID  (4 variant types)
+       ─────────────────────────────────────────────────────────
+       PURPOSE   : Concrete artefacts proving the abilities above.
+       VARIANTS  :
+         A. Code    — .evidence-card__code + <pre>  (dark terminal)
+         B. Image   — .evidence-card__thumb + <img> (zoom on hover)
+         C. Video   — .evidence-card__video + <video autoplay muted loop playsinline>
+         D. Metric  — .evidence-card__metric        (big number, no media file needed)
+       USAGE     : Mix variants freely in the same .evidence-grid.
+                   For SSMM/DREEMCORP use B (image) as the primary type.
+                   For DataSafari/thoughtbubble use A (code) as the primary type.
   ============================================================ -->
-  <section aria-label="Element 6: Evidence Card Grid">
-    <p class="preview-label">Element 6 — Evidence Card Grid</p>
-    <div class="section-label"><span class="section-label__text">Evidence</span><span class="section-label__line" aria-hidden="true"></span></div>
-    <div class="evidence-grid">
-      <article class="evidence-card">
-        <div class="evidence-card__code" aria-hidden="true">
-<pre><span class="token-comment">// comment_system.php</span>
+    <section aria-label="Element 6: Evidence Card Grid">
+      <p class="preview-label">Element 6 — Evidence Card Grid (all 4 variants)</p>
+      <div class="section-label"><span class="section-label__text">Evidence</span><span class="section-label__line"
+          aria-hidden="true"></span></div>
+      <div class="evidence-grid">
+
+        <!-- VARIANT A: Code block -->
+        <article class="evidence-card">
+          <div class="evidence-card__code" aria-hidden="true">
+            <pre><span class="token-comment">// comment_system.php</span>
 <span class="token-keyword">function</span> <span class="token-func">post_comment</span>($uid,$pid,$body){
   $s=$db->prepare(
     <span class="token-string">"INSERT INTO comments
@@ -294,102 +1027,212 @@
   $s->execute([$uid,$pid,$body]);
   <span class="token-func">notify_author</span>($pid,$uid);
 }</pre>
-        </div>
-        <div class="evidence-card__body">
-          <h4 class="evidence-card__title">Custom Comment System</h4>
-          <ul class="evidence-card__bullets">
-            <li>Full CRUD from scratch: create, edit, delete, threaded display</li>
-            <li>Triggers notification engine on every submit</li>
-          </ul>
-        </div>
-      </article>
-      <article class="evidence-card">
-        <div class="evidence-card__code" aria-hidden="true">
-<pre><span class="token-comment">// like_engine.php</span>
-<span class="token-keyword">function</span> <span class="token-func">toggle_like</span>($uid,$pid){
-  $exists=<span class="token-func">get_like</span>($uid,$pid);
-  <span class="token-keyword">if</span>($exists){
-    <span class="token-func">remove_like</span>($uid,$pid);
-    <span class="token-keyword">return</span> <span class="token-string">"unliked"</span>;
-  }
-  <span class="token-func">add_like</span>($uid,$pid);
-  <span class="token-keyword">return</span> <span class="token-string">"liked"</span>;
-}</pre>
-        </div>
-        <div class="evidence-card__body">
-          <h4 class="evidence-card__title">Like &amp; Engagement Engine</h4>
-          <ul class="evidence-card__bullets">
-            <li>Toggle like/unlike with optimistic UI update via AJAX</li>
-            <li>Live like counts, no page reload</li>
-          </ul>
-        </div>
-      </article>
-      <article class="evidence-card">
-        <div class="evidence-card__code" aria-hidden="true">
-<pre><span class="token-comment">// notification.php</span>
-<span class="token-keyword">function</span> <span class="token-func">notify_author</span>($pid,$actor){
-  $author=<span class="token-func">get_post_author</span>($pid);
-  <span class="token-keyword">if</span>($author!==$actor){
-    <span class="token-func">insert_notification</span>([
-      <span class="token-string">"recipient"</span>=&gt;$author,
-      <span class="token-string">"type"</span>=&gt;<span class="token-string">"comment"</span>,
-      <span class="token-string">"actor"</span>=&gt;$actor,
-      <span class="token-string">"ref"</span>=&gt;$pid,
-    ]);
-  }
-}</pre>
-        </div>
-        <div class="evidence-card__body">
-          <h4 class="evidence-card__title">Notification Engine</h4>
-          <ul class="evidence-card__bullets">
-            <li>Fan-out on write: author notified on comment or like</li>
-            <li>Per-user feed with real-time badge count</li>
-          </ul>
-        </div>
-      </article>
-    </div>
-  </section>
+          </div>
+          <div class="evidence-card__body">
+            <h4 class="evidence-card__title">Custom Comment System</h4>
+            <ul class="evidence-card__bullets">
+              <li>Full CRUD: create, edit, delete, threaded display</li>
+              <li>Triggers notification engine on every submit</li>
+            </ul>
+          </div>
+        </article>
 
-  <!-- ============================================================
-       ELEMENT 7 — FULL STORY ACCORDION
-       Bottom of every experience page.
-       Replace the paragraphs inside .story-accordion__content
-       with the narrative for that project.
+        <!-- VARIANT B: Image with zoom -->
+        <article class="evidence-card">
+          <div class="evidence-card__thumb">
+            <img src="https://picsum.photos/seed/thoughtbubble-ui/560/315" alt="thoughtbubble platform screenshot"
+              width="560" height="315" loading="lazy">
+          </div>
+          <div class="evidence-card__body">
+            <h4 class="evidence-card__title">Platform UI — Feed &amp; Profiles</h4>
+            <ul class="evidence-card__bullets">
+              <li>Fully custom-designed feed without any UI framework</li>
+              <li>Responsive profile pages with user-editable content</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- VARIANT C: Auto-play muted video -->
+        <article class="evidence-card">
+          <div class="evidence-card__video">
+            <video autoplay muted loop playsinline aria-label="Demo: live like toggle with AJAX">
+              <!--
+              Replace src with the real video file path, e.g.:
+              <source src="/assets/tb-like-demo.mp4" type="video/mp4">
+              Until then the black background is the placeholder.
+            -->
+            </video>
+          </div>
+          <div class="evidence-card__body">
+            <h4 class="evidence-card__title">Live Like Toggle — AJAX Demo</h4>
+            <ul class="evidence-card__bullets">
+              <li>Optimistic UI update: no page reload on like/unlike</li>
+              <li>Real-time counter synced to MySQL via AJAX endpoint</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- VARIANT D: Metric / stat card -->
+        <article class="evidence-card">
+          <div class="evidence-card__metric">
+            <p class="metric-number">~<span>900</span></p>
+            <p class="metric-label">Registered Users</p>
+            <p class="metric-sublabel">On a self-hosted, fully custom-built platform — no off-the-shelf SaaS</p>
+          </div>
+          <div class="evidence-card__body">
+            <h4 class="evidence-card__title">Organic Growth — Zero Ad Spend</h4>
+            <ul class="evidence-card__bullets">
+              <li>Growth driven entirely through word-of-mouth and direct outreach</li>
+              <li>Users joined while the platform was still in active development</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+       ELEMENT 7 — FULL STORY ACCORDION (multi-tab narrative)
+       ─────────────────────────────────────────────────────────
+       PURPOSE   : Deep-dive narrative for the serious headhunter
+                   and AI scrapers. Each tab tells one arc of the
+                   story — what it was, how it was built, what was
+                   learned, what came next.
+       USAGE     : Add as many .story-accordion__item blocks as needed.
+                   Suggested arc titles per page:
+                     — "The Idea"
+                     — "What I Built"
+                     — "What I Learned"
+                     — "What Came Next"
+                   First tab opens by default (aria-expanded="true").
+       SEO NOTE  : The full text here is indexed by search engines
+                   and read by AI agents. Write it properly.
   ============================================================ -->
-  <section aria-label="Element 7: Full Story Accordion">
-    <p class="preview-label">Element 7 — Full Story Accordion</p>
-    <div class="story-accordion">
-      <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-body" id="story-trigger">
-        <span class="story-accordion__trigger-label">The Full Story — thoughtbubble, 2014–2016</span>
-        <svg class="story-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
-      </button>
-      <div class="story-accordion__body" id="story-body" role="region" aria-labelledby="story-trigger" aria-hidden="true">
-        <div class="story-accordion__inner">
-          <div class="story-accordion__content">
-            <p>thoughtbubble started with a simple but ambitious question: what if your social feed made you smarter instead of just killing time? George was 16, living between the Netherlands and the United States, genuinely frustrated with where social media was heading. He and co-founder Nikolay Stanchev decided to build the alternative themselves.</p>
-            <p>George took full ownership of the engineering. <strong>He built the entire backend in PHP and MySQL</strong> — every feature from scratch: user registration and login, content posting, a full commenting system, a like engine, pins, a notification system, and customisable profiles. This was not a WordPress install or a template; it was a custom codebase running on Apache, managed through cPanel.</p>
-            <p>One of the most technically demanding features was the <strong>real-time notification engine</strong>. Every comment or like triggered a notification to the right user, tracked per recipient, and surfaced in a live badge count — fan-out on write, built before George had any formal computer science education.</p>
-            <p>thoughtbubble reached <strong>~900 registered users</strong> and proved that the product concept had genuine traction. It was eventually wound down, but the experience gave George something no course could: the ability to own an entire technical stack, ship to real users, and solve infrastructure problems under pressure — all before his 18th birthday.</p>
+    <section aria-label="Element 7: Full Story Accordion">
+      <p class="preview-label">Element 7 — Full Story Accordion</p>
+      <div class="section-label"><span class="section-label__text">The Full Story</span><span class="section-label__line"
+          aria-hidden="true"></span></div>
+      <div class="story-accordion" role="list">
+
+        <!-- Tab 1: The Idea — open by default -->
+        <div class="story-accordion__item" role="listitem">
+          <button class="story-accordion__trigger" aria-expanded="true" aria-controls="story-panel-1">
+            <span class="story-accordion__trigger-label">The Idea</span>
+            <svg class="story-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="story-accordion__body" id="story-panel-1" aria-hidden="false">
+            <div class="story-accordion__inner">
+              <div class="story-accordion__content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                  ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                  laborum.</p>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- Tab 2: What I Built -->
+        <div class="story-accordion__item" role="listitem">
+          <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-2">
+            <span class="story-accordion__trigger-label">What I Built</span>
+            <svg class="story-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="story-accordion__body" id="story-panel-2" aria-hidden="true">
+            <div class="story-accordion__inner">
+              <div class="story-accordion__content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                  ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                  laborum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: What I Learned -->
+        <div class="story-accordion__item" role="listitem">
+          <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-3">
+            <span class="story-accordion__trigger-label">What I Learned</span>
+            <svg class="story-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="story-accordion__body" id="story-panel-3" aria-hidden="true">
+            <div class="story-accordion__inner">
+              <div class="story-accordion__content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                  ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                  laborum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4: What Came Next -->
+        <div class="story-accordion__item" role="listitem">
+          <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-4">
+            <span class="story-accordion__trigger-label">What Came Next</span>
+            <svg class="story-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="story-accordion__body" id="story-panel-4" aria-hidden="true">
+            <div class="story-accordion__inner">
+              <div class="story-accordion__content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                  ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                  laborum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </div>
-  </section>
+    </section>
 
-</main>
+  </main>
 
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    if (window.lucide) lucide.createIcons();
-    document.querySelectorAll(".story-accordion__trigger").forEach(trigger => {
-      trigger.addEventListener("click", () => {
-        const expanded = trigger.getAttribute("aria-expanded") === "true";
-        const body = document.getElementById(trigger.getAttribute("aria-controls"));
-        trigger.setAttribute("aria-expanded", String(!expanded));
-        body.setAttribute("aria-hidden", String(expanded));
+  <script>
+    // Accordion — multi-tab, one open at a time
+    document.querySelectorAll('.story-accordion__trigger').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const isOpen = btn.getAttribute('aria-expanded') === 'true';
+        const panel = document.getElementById(btn.getAttribute('aria-controls'));
+        // close all in this accordion
+        btn.closest('.story-accordion').querySelectorAll('.story-accordion__trigger').forEach(b => {
+          b.setAttribute('aria-expanded', 'false');
+          document.getElementById(b.getAttribute('aria-controls')).setAttribute('aria-hidden', 'true');
+        });
+        // open clicked if it was closed
+        if (!isOpen) {
+          btn.setAttribute('aria-expanded', 'true');
+          panel.setAttribute('aria-hidden', 'false');
+        }
       });
     });
-  });
-</script>
+    // Lucide icons
+    if (typeof lucide !== 'undefined') lucide.createIcons();
+  </script>
 </body>
+
 </html>
