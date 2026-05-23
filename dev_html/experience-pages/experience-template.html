@@ -762,19 +762,29 @@
 
 
     <!-- ============================================================
-           ELEMENT 4 — STACK BADGE GRID
-           ─────────────────────────────────────────────────────────
-           PURPOSE   : Hard skills used ON THIS PROJECT, grouped by
-                       category. No "since" labels here — those go on
-                       the homepage global stack overview only.
-           USAGE     : Add/remove .stack-group blocks per page.
-                       Icon source: https://cdn.simpleicons.org/{name}/{hex}
-                       For tools with no SimpleIcons logo, use
-                       .stack-badge--text (no img needed).
-           BELOW     : Full cross-project stack shown as reference.
-                       Comment out categories not used on this page.
+          ELEMENT 4 — STACK BADGE GRID
+          ─────────────────────────────────────────────────────────
+          PURPOSE   : Hard skills used ON THIS PROJECT, grouped by
+                      category. No "since" labels here — those go on
+                      the homepage global stack overview only.
+          USAGE     : Add/remove .stack-group blocks per page.
+                      Icon source: https://cdn.simpleicons.org/{name}/{hex}
+                      For tools with no SimpleIcons logo, use
+                      .stack-badge--text (no img needed).
+
+          TAXONOMY PHILOSOPHY (applies site-wide):
+            Languages          — things you write (syntax)
+            Libraries          — things you import/require
+            Databases          — storage engines (not the SQL language)
+            Dev Tools & IDEs   — things you open and run
+            Platforms & Infra  — things you deploy to or operate
+            Web & Commerce     — CMS / e-commerce platforms
+            Design & Creative  — visual production tools
+            AI & Automation    — emerging toolchain
+            Productivity       — office/collaboration suites
       ============================================================ -->
     <section aria-label="Stack">
+      <p class="preview-label">Element 4 — Stack Badge Grid (full reference)</p>
       <div class="section-label">
         <span class="section-label__text">Stack</span>
         <span class="section-label__line" aria-hidden="true"></span>
@@ -782,9 +792,15 @@
 
       <div class="stack-grid">
 
-        <!-- ── Programming Languages ─────────────────────────── -->
+        <!-- ── Languages ─────────────────────────────────────── -->
+        <!--
+              Includes both general-purpose and domain-specific languages.
+              SQL variants listed here as languages; their engines (MySQL,
+              PostgreSQL etc.) appear in Databases. Stata listed here as a
+              language — its IDE aspect is implicit (same logic as R/RStudio).
+            -->
         <div class="stack-group">
-          <p class="stack-group__label">Programming Languages</p>
+          <p class="stack-group__label">Languages</p>
           <div class="stack-group__items">
             <span class="stack-badge"><img src="https://cdn.simpleicons.org/python/3776ab" alt="" width="18" height="18"
                 loading="lazy"><span class="stack-badge__name">Python</span></span>
@@ -804,7 +820,12 @@
                 loading="lazy"><span class="stack-badge__name">Bash / Zsh</span></span>
             <span class="stack-badge"><img src="https://cdn.simpleicons.org/ruby/cc342d" alt="" width="18" height="18"
                 loading="lazy"><span class="stack-badge__name">Ruby</span></span>
-            <!-- Stata: no SimpleIcons entry — styled text mark -->
+            <!-- SQL as a language; MySQL/PostgreSQL/etc. engines are in Databases -->
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/mysql/4479a1" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">SQL</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/postgresql/4169e1" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">PostgreSQL</span></span>
+            <!-- Stata: no SimpleIcons entry — styled text mark; language + IDE in one -->
             <span class="stack-badge stack-badge--text">
               <span class="stack-badge__mark" style="background:#1a4e8a;" aria-hidden="true">St</span>
               <span class="stack-badge__name">Stata</span>
@@ -812,9 +833,15 @@
           </div>
         </div>
 
-        <!-- ── Data & ML ──────────────────────────────────────── -->
+        <!-- ── Libraries & Frameworks ────────────────────────── -->
+        <!--
+              Things you import or require — not independently runnable.
+              Python-centric here; JS/Ruby libs can be added per page.
+              Not exhaustive by design — listing every library is noise.
+              Curate to what's most signal for the role this page targets.
+            -->
         <div class="stack-group">
-          <p class="stack-group__label">Data &amp; ML</p>
+          <p class="stack-group__label">Libraries &amp; Frameworks</p>
           <div class="stack-group__items">
             <span class="stack-badge"><img src="https://cdn.simpleicons.org/pandas/150458" alt="" width="18" height="18"
                 loading="lazy"><span class="stack-badge__name">pandas</span></span>
@@ -822,17 +849,26 @@
                 loading="lazy"><span class="stack-badge__name">NumPy</span></span>
             <span class="stack-badge"><img src="https://cdn.simpleicons.org/scikitlearn/f7931e" alt="" width="18"
                 height="18" loading="lazy"><span class="stack-badge__name">scikit-learn</span></span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/jupyter/f37626" alt="" width="18" height="18"
-                loading="lazy"><span class="stack-badge__name">Jupyter</span></span>
             <span class="stack-badge"><img src="https://cdn.simpleicons.org/plotly/3f4f75" alt="" width="18" height="18"
                 loading="lazy"><span class="stack-badge__name">Plotly</span></span>
-            <!-- KNIME: exists on SimpleIcons ✅ -->
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/knime/fdd700" alt="" width="18" height="18"
-                loading="lazy"><span class="stack-badge__name">KNIME</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/huggingface/ffd21e" alt="" width="18"
+                height="18" loading="lazy"><span class="stack-badge__name">HuggingFace</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/pytest/0a9edc" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">pytest</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/sphinx/000000" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Sphinx</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/pypi/3775a9" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">PyPI</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/poetry/60a5fa" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Poetry</span></span>
           </div>
         </div>
 
         <!-- ── Databases ──────────────────────────────────────── -->
+        <!--
+              Storage engines only — not the SQL language itself.
+              The "SQL" language badge lives in Languages above.
+            -->
         <div class="stack-group">
           <p class="stack-group__label">Databases</p>
           <div class="stack-group__items">
@@ -842,65 +878,104 @@
                 loading="lazy"><span class="stack-badge__name">PostgreSQL</span></span>
             <span class="stack-badge"><img src="https://cdn.simpleicons.org/sqlite/003b57" alt="" width="18" height="18"
                 loading="lazy"><span class="stack-badge__name">SQLite</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/mongodb/47a248" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">MongoDB</span></span>
           </div>
         </div>
 
-        <!-- ── Backend & Infra ────────────────────────────────── -->
+        <!-- ── Dev Tools & IDEs ───────────────────────────────── -->
+        <!--
+              Things you open and run: editors, notebooks, workflow tools,
+              version control, package managers, registry tools.
+              KNIME is a visual workflow IDE — belongs here, not Libraries.
+              Jupyter listed here (it's an environment you open, not an import).
+            -->
         <div class="stack-group">
-          <p class="stack-group__label">Backend &amp; Infra</p>
+          <p class="stack-group__label">Dev Tools &amp; IDEs</p>
           <div class="stack-group__items">
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/nodedotjs/5fa04e" alt="" width="18" height="18"
-                loading="lazy"><span class="stack-badge__name">Node.js</span></span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/apache/d22128" alt="" width="18" height="18"
-                loading="lazy"><span class="stack-badge__name">Apache</span></span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/cpanel/ff6c2c" alt="" width="18" height="18"
-                loading="lazy"><span class="stack-badge__name">cPanel</span></span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/namecheap/de3723" alt="" width="18" height="18"
-                loading="lazy"><span class="stack-badge__name">Namecheap</span></span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/cloudflare/f38020" alt="" width="18" height="18"
-                loading="lazy"><span class="stack-badge__name">Cloudflare</span></span>
-          </div>
-        </div>
-
-        <!-- ── Tools & Workflow ───────────────────────────────── -->
-        <div class="stack-group">
-          <p class="stack-group__label">Tools &amp; Workflow</p>
-          <div class="stack-group__items">
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/git/f05032" alt="" width="18" height="18"
-                loading="lazy"><span class="stack-badge__name">Git</span></span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/github/181717" alt="" width="18" height="18"
-                loading="lazy"><span class="stack-badge__name">GitHub</span></span>
-            <!-- VS Code: correct slug is "visualstudiocode" -->
             <span class="stack-badge"><img src="https://cdn.simpleicons.org/visualstudiocode/007acc" alt="" width="18"
                 height="18" loading="lazy"><span class="stack-badge__name">VS Code</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/jupyter/f37626" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Jupyter</span></span>
             <span class="stack-badge"><img src="https://cdn.simpleicons.org/rstudioide" alt="" width="18" height="18"
                 loading="lazy"><span class="stack-badge__name">RStudio</span></span>
             <span class="stack-badge"><img src="https://cdn.simpleicons.org/jetbrains" alt="" width="18" height="18"
                 loading="lazy"><span class="stack-badge__name">DataSpell</span></span>
             <span class="stack-badge"><img src="https://cdn.simpleicons.org/pycharm" alt="" width="18" height="18"
                 loading="lazy"><span class="stack-badge__name">PyCharm</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/knime/fdd700" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">KNIME</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/git/f05032" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Git</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/github/181717" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">GitHub</span></span>
+          </div>
+        </div>
+
+        <!-- ── Platforms & Infra ──────────────────────────────── -->
+        <!--
+              Things you deploy to or operate: servers, CDN, DNS,
+              cloud platforms, automation runtimes.
+            -->
+        <div class="stack-group">
+          <p class="stack-group__label">Platforms &amp; Infra</p>
+          <div class="stack-group__items">
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/apache/d22128" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Apache</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/nodedotjs/5fa04e" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Node.js</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/cpanel/ff6c2c" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">cPanel</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/namecheap/de3723" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Namecheap</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/cloudflare/f38020" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Cloudflare</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/microsoftazure/0089d6" alt="" width="18"
+                height="18" loading="lazy"><span class="stack-badge__name">Azure</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/n8n/ea4b71" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">n8n</span></span>
+          </div>
+        </div>
+
+        <!-- ── Web & Commerce ─────────────────────────────────── -->
+        <!--
+              CMS and e-commerce platforms — distinct from Infra because
+              a recruiter (especially in marketing/growth roles) reads these
+              as a separate, commercially-relevant skill cluster.
+            -->
+        <div class="stack-group">
+          <p class="stack-group__label">Web &amp; Commerce</p>
+          <div class="stack-group__items">
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/shopify/96bf48" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Shopify</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/squarespace/000000" alt="" width="18"
+                height="18" loading="lazy"><span class="stack-badge__name">Squarespace</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/woocommerce/96588a" alt="" width="18"
+                height="18" loading="lazy"><span class="stack-badge__name">WooCommerce</span></span>
           </div>
         </div>
 
         <!-- ── Design & Creative ──────────────────────────────── -->
         <!--
-              Adobe Illustrator / Photoshop / After Effects / Audition / Dreamweaver
-              are NOT on SimpleIcons. Solution: inline SVG data URIs matching the
-              official Adobe app icon letterforms + brand background colors.
-              Zero external requests, always renders.
+              Adobe Illustrator / Photoshop / After Effects / Audition /
+              Dreamweaver / Premiere Pro are NOT on SimpleIcons.
+              Inline SVG data URIs used — zero external requests.
 
               Colors:
-                Illustrator  — bg #330000, glyph #FF9A00  (Ai)
-                Photoshop    — bg #001E36, glyph #31A8FF  (Ps)
+                Illustrator   — bg #330000, glyph #FF9A00  (Ai)
+                Photoshop     — bg #001E36, glyph #31A8FF  (Ps)
                 After Effects — bg #00005B, glyph #9999FF  (Ae)
-                Audition     — bg #00005B, glyph #00E4BB  (Au) ← teal, not purple
-                Dreamweaver  — bg #072B35, glyph #35FA00  (Dw) ← green on dark teal
+                Audition      — bg #00005B, glyph #00E4BB  (Au)
+                Dreamweaver   — bg #072B35, glyph #35FA00  (Dw)
+                Premiere Pro  — bg #00005B, glyph #9999FF  (Pr) ← same navy, purple
             -->
         <div class="stack-group">
           <p class="stack-group__label">Design &amp; Creative</p>
           <div class="stack-group__items">
             <span class="stack-badge"><img src="https://cdn.simpleicons.org/figma/f24e1e" alt="" width="18" height="18"
                 loading="lazy"><span class="stack-badge__name">Figma</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/canva/00c4cc" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Canva</span></span>
 
             <!-- Adobe Illustrator -->
             <span class="stack-badge">
@@ -918,6 +993,14 @@
               <span class="stack-badge__name">Photoshop</span>
             </span>
 
+            <!-- Adobe Premiere Pro — Pr, purple on dark navy -->
+            <span class="stack-badge">
+              <img
+                src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%2300005B%22/%3E%3Cpath%20d%3D%22M45%20192V85h38c10%200%2018%202.5%2024%207.5S117%20105%20117%20115c0%2010-3.5%2018-10.5%2023.5S89.5%20146%2078%20146H66v46zm21-63h16c6.5%200%2011.5-1.5%2015-4.5s5.5-7%205.5-12.5c0-5-1.5-9-4.5-11.5S92%2097%2085%2097H66zm95%2015c-3-1.5-7-2.5-11.5-2.5-2%200-3.5.5-4.5%201s-1.5%201.5-1.5%202.5c0%201%20.5%202%201.5%202.5s2.5%201.5%205%202.5c6%202.5%2010.5%205%2013.5%207.5s4.5%206%204.5%2010.5c0%207-2.5%2012-7.5%2015.5s-12%205.5-21%205.5c-4%200-8-.5-11.5-1.5s-6.5-2-9-3.5v-17c3%202%206.5%203.5%2010%204.5s7%201.5%2010%201.5c3%200%205-.5%206.5-1s2-2%202-3.5c0-1.5-.5-2.5-2-3.5s-4-2.5-8-4.5c-5.5-2.5-9.5-5-12-7.5s-3.5-6-3.5-10c0-6.5%202.5-11.5%207.5-15.5s12-6%2021-6c3.5%200%206.5.5%2010%201s5.5%201.5%208%202.5z%22%20fill%3D%22%239999FF%22/%3E%3C/svg%3E"
+                alt="Adobe Premiere Pro" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Premiere Pro</span>
+            </span>
+
             <!-- Adobe After Effects -->
             <span class="stack-badge">
               <img
@@ -926,7 +1009,7 @@
               <span class="stack-badge__name">After Effects</span>
             </span>
 
-            <!-- Adobe Audition — Au, teal on dark navy -->
+            <!-- Adobe Audition -->
             <span class="stack-badge">
               <img
                 src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%2300005B%22/%3E%3Cpath%20d%3D%22M101%20168H75.5L69%20192H47l31.5-107h21L131%20192h-22.5zm-22-17.5h17.5L88%20104zM193%20134.5c0%208.5-2.5%2015.5-7.5%2020.5s-12%207.5-21%207.5c-3%200-5.5-.5-8-1v30h-20V91c6-1%2013-1.5%2021.5-1.5%209.5%200%2016.5%202%2021.5%206.5s7.5%2011%207.5%2019.5zm-21%2010.5c4%200%207.5-1%209.5-3s3.5-5%203.5-9.5v-7.5c0-4.5-1-7.5-3-9.5s-5-3-9-3c-2%200-4%20.5-6%20.5v32z%22%20fill%3D%22%2300E4BB%22/%3E%3C/svg%3E"
@@ -934,7 +1017,7 @@
               <span class="stack-badge__name">Audition</span>
             </span>
 
-            <!-- Adobe Dreamweaver — Dw, green on dark teal -->
+            <!-- Adobe Dreamweaver -->
             <span class="stack-badge">
               <img
                 src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%23072B35%22/%3E%3Cpath%20d%3D%22M54%20192V85h30c12%200%2021%203.5%2027.5%2010.5S121%20113%20121%20126c0%2014-4%2025-12%2033s-19.5%2012-34%2012zm21-17.5h8c9%200%2016-2.5%2020.5-7.5s7-12.5%207-22.5c0-9-2-16-6-20.5s-9.5-7-17-7H75zM186%2085l-19%20107h-18l-12-65-13%2065h-18L87%2085h20l9%2062%2013-62h17l12%2062%209-62z%22%20fill%3D%22%2335FA00%22/%3E%3C/svg%3E"
@@ -944,6 +1027,66 @@
 
             <span class="stack-badge"><img src="https://cdn.simpleicons.org/davinciresolve/233a51" alt="" width="18"
                 height="18" loading="lazy"><span class="stack-badge__name">DaVinci Resolve</span></span>
+          </div>
+        </div>
+
+        <!-- ── AI & Automation ────────────────────────────────── -->
+        <!--
+              Emerging toolchain — highly relevant for Dubai ML/AI roles.
+              Separate from Libraries because these are platforms/apps
+              you operate, not packages you import.
+              Google AI Studio has no SimpleIcons entry — text mark used.
+              ComfyUI has no SimpleIcons entry — text mark used.
+              MCP (Model Context Protocol) — text mark used.
+            -->
+        <div class="stack-group">
+          <p class="stack-group__label">AI &amp; Automation</p>
+          <div class="stack-group__items">
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/huggingface/ffd21e" alt="" width="18"
+                height="18" loading="lazy"><span class="stack-badge__name">HuggingFace</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/n8n/ea4b71" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">n8n</span></span>
+
+            <!-- Google AI Studio: no SimpleIcons entry -->
+            <span class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#4285f4;" aria-hidden="true">G</span>
+              <span class="stack-badge__name">Google AI Studio</span>
+            </span>
+            <!-- ComfyUI: no SimpleIcons entry -->
+            <span class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#222;" aria-hidden="true">Cf</span>
+              <span class="stack-badge__name">ComfyUI</span>
+            </span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/modelcontextprotocol/7c3aed" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">MCP</span></span>
+          </div>
+        </div>
+
+        <!-- ── Marketing & Growth ─────────────────────────────────── -->
+        <!--
+          Tools operated for campaigns, analytics, and audience growth.
+          Distinct from Web & Commerce (build/deploy) — recruiters in
+          marketing, growth, and brand roles scan for this cluster
+          specifically.
+        -->
+        <div class="stack-group">
+          <p class="stack-group__label">Marketing &amp; Growth</p>
+          <div class="stack-group__items">
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/googleanalytics/e37400" alt="" width="18"
+                height="18" loading="lazy"><span class="stack-badge__name">Google Analytics</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/meta/0081fb" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Meta Ads</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/tiktok/000000" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">TikTok Ads</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/snapchat/000000" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Snapchat Ads</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/x/000000" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">X Ads</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/youtube/ff0000" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">YouTube Studio</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/mailchimp/000000" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Mailchimp</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/buffer/000000" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Buffer</span></span>
           </div>
         </div>
 
@@ -975,17 +1118,6 @@
         </div>
 
         <!-- ── Education & Certifications ────────────────────── -->
-        <!--
-              Uses .stack-group structure but renders credential-cards
-              instead of pill badges — a wider, taller format that gives
-              room for institution name, degree, year range, and GPA.
-              The .credential-card styles are defined in the <style>
-              block at the bottom of this element.
-
-              DataCamp logo: cdn.simpleicons.org/datacamp ✅
-              Universities: no reliable CDN logo — 🎓 emoji used instead,
-              consistent with the rest of the site's approach for missing logos.
-            -->
         <div class="stack-group stack-group--credentials">
           <p class="stack-group__label">Education &amp; Certifications</p>
           <div class="stack-group__items stack-group__items--credentials">
@@ -996,7 +1128,7 @@
                 <p class="credential-card__title">MSc Marketing Analytics &amp; Data Science</p>
                 <p class="credential-card__sub">University of Groningen · Groningen, NL</p>
                 <div class="credential-card__meta">
-                  <span class="credential-pill credential-pill--year">2022 – present</span>
+                  <span class="credential-pill credential-pill--year">2022 – 2024</span>
                   <span class="credential-pill credential-pill--gpa">GPA ~8.0 / 10</span>
                 </div>
               </div>
@@ -1040,13 +1172,15 @@
               </div>
             </div>
 
+            <!-- Ruby cert: platform login broken, omitted intentionally -->
+
             <div class="credential-card">
               <div class="credential-card__icon">📝</div>
               <div class="credential-card__body">
                 <p class="credential-card__title">TOEFL iBT</p>
                 <p class="credential-card__sub">Educational Testing Service</p>
                 <div class="credential-card__meta">
-                  <span class="credential-pill credential-pill--score">109 / 120</span>
+                  <span class="credential-pill credential-pill--score">106 / 120</span>
                   <span class="credential-pill credential-pill--cert">C2</span>
                 </div>
               </div>
@@ -1062,6 +1196,12 @@
                 </div>
               </div>
             </div>
+
+            <!--
+                  SAT scores not listed — scores unknown and SAT is not
+                  meaningful signal for tech / data science roles in Dubai.
+                  Omitted intentionally.
+                -->
 
           </div>
         </div>
@@ -1182,8 +1322,7 @@
 
     <!--
           ═══════════════════════════════════════════════════════════
-          CSS ADDITIONS — paste these into your existing stylesheet
-          alongside the existing .stack-badge rules.
+          CSS ADDITIONS — paste into your existing stylesheet.
           No existing rules are modified.
           ═══════════════════════════════════════════════════════════
         -->
@@ -1218,7 +1357,13 @@
         gap: 6px;
       }
 
-      /* ── Text-mark badge (for tools with no icon) ────────────── */
+      /* ── Text-mark badge (tools with no icon) ────────────────── */
+      .stack-badge--text {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+
       .stack-badge__mark {
         display: inline-flex;
         align-items: center;
@@ -1234,12 +1379,7 @@
         line-height: 1;
       }
 
-      /* ── Credential card ─────────────────────────────────────── */
-      /*
-            Used for Education, Certifications, Awards, and Organizations.
-            Wider format than a pill badge — accommodates institution name,
-            degree title, year range, and status pills in a scannable row.
-          */
+      /* ── Credential card grid ────────────────────────────────── */
       .stack-group--credentials .stack-group__items,
       .stack-group__items--credentials {
         display: grid;
