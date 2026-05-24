@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GD — Experience Template Elements v3</title>
+  <title>Experience Page Template</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -412,6 +412,19 @@
         font-style: italic;
         margin-top: var(--space-1);
         margin-bottom: var(--space-1);
+      }
+
+      .credential-card__link {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px solid var(--color-border);
+        transition: border-color var(--transition-interactive),
+                    color var(--transition-interactive);
+      }
+
+      .credential-card__link:hover {
+        color: var(--color-primary);
+        border-bottom-color: var(--color-primary);
       }
 
       /* ── Credential pills ────────────────────────────────────── */
@@ -837,7 +850,7 @@
          4. [ABILITIES]
          5. [EVIDENCE]
          6. [THE FULL STORY]
-  ============================================================ -->
+    ============================================================ -->
     <section aria-label="Element 1: Section Label">
       <p class="preview-label">Element 1 — Section Label / Divider</p>
       <div class="section-label"><span class="section-label__text">Stack</span><span class="section-label__line"
@@ -859,7 +872,7 @@
        USAGE     : First block on every experience page, before
                    the snapshot card. 2–3 sentences max.
                    Keep it about the venture, not about George.
-  ============================================================ -->
+    ============================================================ -->
     <section aria-label="Element 2: Context Block">
       <p class="preview-label">Element 2 — Context Paragraph Block</p>
       <div class="context-block">
@@ -884,7 +897,7 @@
                    (past year = inactive; "Present" = active).
        ACHIEVEMENTS: Keep each chip to one punchy stat or win.
                    Aim for 4–7 chips. Anything over ~10 gets noisy.
-  ============================================================ -->
+    ============================================================ -->
     <section aria-label="Element 3: Snapshot Card">
       <p class="preview-label">Element 3 — Snapshot Card</p>
       <div class="snapshot-card">
@@ -997,137 +1010,123 @@
           </div>
         </div>
 
-<!-- ── Python Libraries ──────────────────────────────── -->
-<!--
-  DS/ML Python stack. Include on: homepage overview,
-  DS role pages, datasafari project page.
--->
-<div class="stack-group">
-  <p class="stack-group__label">Python Libraries</p>
-  <div class="stack-group__items">
+        <!-- ── Python Libraries ──────────────────────────────── -->
+        <div class="stack-group">
+          <p class="stack-group__label">Python Libraries</p>
+          <div class="stack-group__items">
 
-    <!-- Core Data -->
-    <span class="stack-badge"><img src="https://cdn.simpleicons.org/pandas/150458" alt="" width="18" height="18"
-        loading="lazy"><span class="stack-badge__name">pandas</span></span>
-    <span class="stack-badge"><img src="https://cdn.simpleicons.org/numpy/013243" alt="" width="18" height="18"
-        loading="lazy"><span class="stack-badge__name">NumPy</span></span>
-    <span class="stack-badge"><img src="https://cdn.simpleicons.org/scipy/8caae6" alt="" width="18" height="18"
-        loading="lazy"><span class="stack-badge__name">SciPy</span></span>
+            <!-- Core Data -->
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/pandas/150458" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">pandas</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/numpy/013243" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">NumPy</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/scipy/8caae6" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">SciPy</span></span>
 
-    <!-- ML -->
-    <span class="stack-badge"><img src="https://cdn.simpleicons.org/scikitlearn/f7931e" alt="" width="18" height="18"
-        loading="lazy"><span class="stack-badge__name">scikit-learn</span></span>
-    <span class="stack-badge stack-badge--text">
-      <span class="stack-badge__mark" style="background:#3499cd;" aria-hidden="true">so</span>
-      <span class="stack-badge__name">scikit-optimize</span>
-    </span>
-    <span class="stack-badge stack-badge--text">
-      <span class="stack-badge__mark" style="background:#ee4c2c;" aria-hidden="true">ce</span>
-      <span class="stack-badge__name">category-encoders</span>
-    </span>
-    <span class="stack-badge"><img src="https://cdn.simpleicons.org/pytorch" alt="" width="18" height="18"
-        loading="lazy"><span class="stack-badge__name">PyTorch</span></span>
-    <span class="stack-badge"><img src="https://cdn.simpleicons.org/huggingface/ffd21e" alt="" width="18" height="18"
-        loading="lazy"><span class="stack-badge__name">HuggingFace</span></span>
+            <!-- ML -->
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/scikitlearn/f7931e" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">scikit-learn</span></span>
+            <span class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#3499cd;" aria-hidden="true">so</span>
+              <span class="stack-badge__name">scikit-optimize</span>
+            </span>
+            <span class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#ee4c2c;" aria-hidden="true">ce</span>
+              <span class="stack-badge__name">category-encoders</span>
+            </span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/pytorch" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">PyTorch</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/huggingface/ffd21e" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">HuggingFace</span></span>
 
-    <!-- Viz -->
-    <span class="stack-badge stack-badge--text">
-      <span class="stack-badge__mark" style="background:#423cb9;" aria-hidden="true">mpl</span>
-      <span class="stack-badge__name">Matplotlib</span>
-    </span>
-    <span class="stack-badge stack-badge--text">
-      <span class="stack-badge__mark" style="background:#76b7b2;" aria-hidden="true">sb</span>
-      <span class="stack-badge__name">seaborn</span>
-    </span>
-    <span class="stack-badge"><img src="https://cdn.simpleicons.org/plotly/3f4f75" alt="" width="18" height="18"
-        loading="lazy"><span class="stack-badge__name">Plotly</span></span>
+            <!-- Viz -->
+            <span class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#423cb9;" aria-hidden="true">mpl</span>
+              <span class="stack-badge__name">Matplotlib</span>
+            </span>
+            <span class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#76b7b2;" aria-hidden="true">sb</span>
+              <span class="stack-badge__name">seaborn</span>
+            </span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/plotly/3f4f75" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Plotly</span></span>
 
-    <!-- Stats -->
-    <span class="stack-badge stack-badge--text">
-      <span class="stack-badge__mark" style="background:#3a6fa0;" aria-hidden="true">sm</span>
-      <span class="stack-badge__name">statsmodels</span>
-    </span>
+            <!-- Stats -->
+            <span class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#3a6fa0;" aria-hidden="true">sm</span>
+              <span class="stack-badge__name">statsmodels</span>
+            </span>
 
-  </div>
-</div>
+          </div>
+        </div>
 
-<!-- ── R Libraries ──────────────────────────────────── -->
-<!--
-  R-based ML & stats. Include on: homepage overview,
-  DS role pages, msc_mads project page.
-  Keep separate — clearly signals bilingual DS ability.
--->
-<div class="stack-group">
-  <p class="stack-group__label">R Libraries</p>
-  <div class="stack-group__items">
+        <!-- ── R Libraries ──────────────────────────────────── -->
+        <div class="stack-group">
+          <p class="stack-group__label">R Libraries</p>
+          <div class="stack-group__items">
 
-    <span class="stack-badge stack-badge--text">
-      <span class="stack-badge__mark" style="background:#276dc3;" aria-hidden="true">R</span>
-      <span class="stack-badge__name">ggplot2</span>
-    </span>
-    <span class="stack-badge stack-badge--text">
-      <span class="stack-badge__mark" style="background:#276dc3;" aria-hidden="true">R</span>
-      <span class="stack-badge__name">dplyr</span>
-    </span>
-    <span class="stack-badge stack-badge--text">
-      <span class="stack-badge__mark" style="background:#276dc3;" aria-hidden="true">R</span>
-      <span class="stack-badge__name">caret</span>
-    </span>
-    <span class="stack-badge stack-badge--text">
-      <span class="stack-badge__mark" style="background:#276dc3;" aria-hidden="true">R</span>
-      <span class="stack-badge__name">randomForest</span>
-    </span>
-    <span class="stack-badge stack-badge--text">
-      <span class="stack-badge__mark" style="background:#276dc3;" aria-hidden="true">R</span>
-      <span class="stack-badge__name">gbm</span>
-    </span>
-    <span class="stack-badge stack-badge--text">
-      <span class="stack-badge__mark" style="background:#276dc3;" aria-hidden="true">R</span>
-      <span class="stack-badge__name">e1071</span>
-    </span>
-    <span class="stack-badge stack-badge--text">
-      <span class="stack-badge__mark" style="background:#276dc3;" aria-hidden="true">R</span>
-      <span class="stack-badge__name">neuralnet</span>
-    </span>
-    <span class="stack-badge stack-badge--text">
-      <span class="stack-badge__mark" style="background:#276dc3;" aria-hidden="true">R</span>
-      <span class="stack-badge__name">ROCR</span>
-    </span>
+            <span class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#276dc3;" aria-hidden="true">R</span>
+              <span class="stack-badge__name">ggplot2</span>
+            </span>
+            <span class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#276dc3;" aria-hidden="true">R</span>
+              <span class="stack-badge__name">dplyr</span>
+            </span>
+            <span class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#276dc3;" aria-hidden="true">R</span>
+              <span class="stack-badge__name">caret</span>
+            </span>
+            <span class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#276dc3;" aria-hidden="true">R</span>
+              <span class="stack-badge__name">randomForest</span>
+            </span>
+            <span class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#276dc3;" aria-hidden="true">R</span>
+              <span class="stack-badge__name">gbm</span>
+            </span>
+            <span class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#276dc3;" aria-hidden="true">R</span>
+              <span class="stack-badge__name">e1071</span>
+            </span>
+            <span class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#276dc3;" aria-hidden="true">R</span>
+              <span class="stack-badge__name">neuralnet</span>
+            </span>
+            <span class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#276dc3;" aria-hidden="true">R</span>
+              <span class="stack-badge__name">ROCR</span>
+            </span>
 
-  </div>
-</div>
+          </div>
+        </div>
 
-<!-- ── Dev Toolchain ────────────────────────────────── -->
-<!--
-  Package publishing & testing pipeline. Include on:
-  homepage overview, datasafari project page.
-  Usually omit on DS role pages unless role is ML Engineer.
--->
-<div class="stack-group">
-  <p class="stack-group__label">Dev Toolchain</p>
-  <div class="stack-group__items">
+        <!-- ── Dev Toolchain ────────────────────────────────── -->
+        <div class="stack-group">
+          <p class="stack-group__label">Dev Toolchain</p>
+          <div class="stack-group__items">
 
-    <span class="stack-badge"><img src="https://cdn.simpleicons.org/pytest/0a9edc" alt="" width="18" height="18"
-        loading="lazy"><span class="stack-badge__name">pytest</span></span>
-    <span class="stack-badge stack-badge--text">
-      <span class="stack-badge__mark" style="background:#da5c13;" aria-hidden="true">tx</span>
-      <span class="stack-badge__name">tox</span>
-    </span>
-    <span class="stack-badge"><img src="https://cdn.simpleicons.org/sphinx/000000" alt="" width="18" height="18"
-        loading="lazy"><span class="stack-badge__name">Sphinx</span></span>
-    <span class="stack-badge"><img src="https://cdn.simpleicons.org/readthedocs/8ca1af" alt="" width="18" height="18"
-        loading="lazy"><span class="stack-badge__name">Read the Docs</span></span>
-    <span class="stack-badge"><img src="https://cdn.simpleicons.org/pypi/3775a9" alt="" width="18" height="18"
-        loading="lazy"><span class="stack-badge__name">PyPI</span></span>
-    <span class="stack-badge"><img src="https://cdn.simpleicons.org/poetry/60a5fa" alt="" width="18" height="18"
-        loading="lazy"><span class="stack-badge__name">Poetry</span></span>
-    <span class="stack-badge"><img src="https://cdn.simpleicons.org/setuptools" alt="" width="18" height="18"
-        loading="lazy"><span class="stack-badge__name">Setuptools</span></span>
-    <span class="stack-badge"><img src="https://cdn.simpleicons.org/githubactions" alt="" width="18" height="18"
-        loading="lazy"><span class="stack-badge__name">GitHub Actions</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/pytest/0a9edc" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">pytest</span></span>
+            <span class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#da5c13;" aria-hidden="true">tx</span>
+              <span class="stack-badge__name">tox</span>
+            </span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/sphinx/000000" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Sphinx</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/readthedocs/8ca1af" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Read the Docs</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/pypi/3775a9" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">PyPI</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/poetry/60a5fa" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Poetry</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/setuptools" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">Setuptools</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/githubactions" alt="" width="18" height="18"
+                loading="lazy"><span class="stack-badge__name">GitHub Actions</span></span>
 
-  </div>
-</div>
+          </div>
+        </div>
 
         <!-- ── Databases ──────────────────────────────────────── -->
         <!--
@@ -1518,7 +1517,7 @@
               <div class="credential-card__body">
                 <p class="credential-card__title">VVM Startup Accelerator Award</p>
                 <p class="credential-card__sub">Valley Venture Mentors · Amherst, MA</p>
-                <p class="credential-card__context">Won via open competition — funded spot in Summer Accelerator Program</p>
+                <p class="credential-card__context">Won funding and a spot in Summer Accelerator Program</p>
                 <div class="credential-card__meta">
                   <span class="credential-pill credential-pill--year">2018</span>
                   <span class="credential-pill credential-pill--award">Funding &amp; Mentorship</span>
@@ -1528,8 +1527,8 @@
 
             <div class="credential-card">
               <div class="credential-card__icon credential-card__icon--svg">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
                   <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
                   <path d="M4 22h16" />
@@ -1540,7 +1539,10 @@
               </div>
               <div class="credential-card__body">
                 <p class="credential-card__title">Recognition Award of Entrepreneurial Spirit</p>
-                <p class="credential-card__sub">Grinspoon Entrepreneurship Initiative</p>
+                <p class="credential-card__sub">
+                  <a href="https://hgf.org/" target="_blank" rel="noopener noreferrer" class="credential-card__link">Grinspoon
+                    Entrepreneurship Initiative</a>
+                </p>
                 <p class="credential-card__context">Awarded for founding SSMM — apparel brand with 1000+ orders worldwide</p>
                 <div class="credential-card__meta">
                   <span class="credential-pill credential-pill--year">2017</span>
@@ -1575,38 +1577,70 @@
         </div>
 
         <!-- ── Organizations & Community ─────────────────────── -->
+        <!-- ── Organizations & Community ─────────────────────── -->
         <div class="stack-group stack-group--credentials">
           <p class="stack-group__label">Organizations &amp; Community</p>
           <div class="stack-group__items stack-group__items--credentials">
 
             <div class="credential-card">
-              <div class="credential-card__icon">🌱</div>
+              <div class="credential-card__icon credential-card__icon--svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="3" y1="22" x2="21" y2="22" />
+                  <line x1="6" y1="18" x2="6" y2="11" />
+                  <line x1="10" y1="18" x2="10" y2="11" />
+                  <line x1="14" y1="18" x2="14" y2="11" />
+                  <line x1="18" y1="18" x2="18" y2="11" />
+                  <polygon points="12 2 20 7 4 7" />
+                </svg>
+              </div>
               <div class="credential-card__body">
                 <p class="credential-card__title">Seed Fund for Innovation</p>
                 <p class="credential-card__sub">Hampshire College · Committee Member</p>
+                <p class="credential-card__context">Managed $1M fund investing in promising student &amp; alumni ventures</p>
                 <div class="credential-card__meta">
                   <span class="credential-pill credential-pill--year">2016 – 2018</span>
-                  <span class="credential-pill credential-pill--award">$1M fund</span>
+                  <span class="credential-pill credential-pill--award">$1M Fund</span>
                 </div>
               </div>
             </div>
 
             <div class="credential-card">
-              <div class="credential-card__icon">🚀</div>
+              <div class="credential-card__icon credential-card__icon--svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M2 3h20" />
+                  <path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3" />
+                  <path d="m7 21 5-5 5 5" />
+                </svg>
+              </div>
               <div class="credential-card__body">
                 <p class="credential-card__title">UMass Entrepreneurship Club</p>
                 <p class="credential-card__sub">UMass Amherst · Member</p>
+                <p class="credential-card__context">Organized events and pitch competitions for the UMass entrepreneur community
+                </p>
                 <div class="credential-card__meta">
                   <span class="credential-pill credential-pill--year">2015 – 2017</span>
+                  <span class="credential-pill credential-pill--award">Entrepreneurship</span>
                 </div>
               </div>
             </div>
 
             <div class="credential-card">
-              <div class="credential-card__icon">💡</div>
+              <div class="credential-card__icon credential-card__icon--svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path
+                    d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+                  <path d="M9 18h6" />
+                  <path d="M10 22h4" />
+                </svg>
+              </div>
               <div class="credential-card__body">
                 <p class="credential-card__title">Berthiaume Student Innovators</p>
                 <p class="credential-card__sub">UMass Amherst · Member</p>
+                <p class="credential-card__context">Core organizer of on-campus entrepreneurship events including the Innovation
+                  Challenge</p>
                 <div class="credential-card__meta">
                   <span class="credential-pill credential-pill--year">2015 – 2016</span>
                   <span class="credential-pill credential-pill--award">Innovation Challenge</span>
@@ -1615,25 +1649,44 @@
             </div>
 
             <div class="credential-card">
-              <div class="credential-card__icon">🤝</div>
+              <div class="credential-card__icon credential-card__icon--svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path
+                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                  <path
+                    d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66" />
+                  <path d="m18 15-2-2" />
+                  <path d="m15 18-2-2" />
+                </svg>
+              </div>
               <div class="credential-card__body">
                 <p class="credential-card__title">Rotaract "Plovdiv-Puldin"</p>
                 <p class="credential-card__sub">Rotary Club · Plovdiv, Bulgaria</p>
+                <p class="credential-card__context">Organized charity projects — concerts, fundraisers and a Red Cross blood
+                  donation drive</p>
                 <div class="credential-card__meta">
-                  <span class="credential-pill credential-pill--year">2013 – 2015</span>
+                  <span class="credential-pill credential-pill--year">since 2013</span>
                   <span class="credential-pill credential-pill--award">Charity &amp; Community</span>
                 </div>
               </div>
             </div>
 
             <div class="credential-card">
-              <div class="credential-card__icon">⭐</div>
+              <div class="credential-card__icon credential-card__icon--svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+              </div>
               <div class="credential-card__body">
                 <p class="credential-card__title">Giving Back</p>
-                <p class="credential-card__sub">Aloysius College · Den Haag, NL — 1 of 3 selected</p>
+                <p class="credential-card__sub">Aloysius College · Den Haag, NL</p>
+                <p class="credential-card__context">Personal mentorship + workshops with professionals across banking, law &amp; judiciary</p>
                 <div class="credential-card__meta">
                   <span class="credential-pill credential-pill--year">2011 – 2013</span>
-                  <span class="credential-pill credential-pill--award">Selective Program</span>
+                  <span class="credential-pill credential-pill--award">Highly Selective</span>
                 </div>
               </div>
             </div>
@@ -1739,15 +1792,15 @@
         <article class="evidence-card">
           <div class="evidence-card__code" aria-hidden="true">
             <pre><span class="token-comment">// comment_system.php</span>
-<span class="token-keyword">function</span> <span class="token-func">post_comment</span>($uid,$pid,$body){
-  $s=$db->prepare(
-    <span class="token-string">"INSERT INTO comments
-     (user_id,post_id,body,created_at)
-     VALUES(?,?,?,NOW())"</span>
-  );
-  $s->execute([$uid,$pid,$body]);
-  <span class="token-func">notify_author</span>($pid,$uid);
-}</pre>
+            <span class="token-keyword">function</span><span class="token-func">post_comment</span>($uid,$pid,$body){
+              $s=$db->prepare(
+                <span class="token-string">"INSERT INTO comments
+                (user_id,post_id,body,created_at)
+                VALUES(?,?,?,NOW())"</span>
+              );
+              $s->execute([$uid,$pid,$body]);
+              <span class="token-func">notify_author</span>($pid,$uid);
+            }</pre>
           </div>
           <div class="evidence-card__body">
             <h4 class="evidence-card__title">Custom Comment System</h4>
