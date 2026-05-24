@@ -1332,22 +1332,44 @@
           <div class="stack-group__items stack-group__items--credentials">
 
             <div class="credential-card">
-              <div class="credential-card__icon">🏆</div>
+              <div class="credential-card__icon credential-card__icon--svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                  <path d="M4 22h16" />
+                  <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                  <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                </svg>
+              </div>
               <div class="credential-card__body">
                 <p class="credential-card__title">VVM Startup Accelerator Award</p>
                 <p class="credential-card__sub">Valley Venture Mentors · Amherst, MA</p>
+                <p class="credential-card__context">Won via open competition — funded spot in Summer Accelerator Program</p>
                 <div class="credential-card__meta">
                   <span class="credential-pill credential-pill--year">2018</span>
-                  <span class="credential-pill credential-pill--award">Funding + Mentorship</span>
+                  <span class="credential-pill credential-pill--award">Funding &amp; Mentorship</span>
                 </div>
               </div>
             </div>
 
             <div class="credential-card">
-              <div class="credential-card__icon">🏆</div>
+              <div class="credential-card__icon credential-card__icon--svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                  <path d="M4 22h16" />
+                  <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                  <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                </svg>
+              </div>
               <div class="credential-card__body">
                 <p class="credential-card__title">Recognition Award of Entrepreneurial Spirit</p>
                 <p class="credential-card__sub">Grinspoon Entrepreneurship Initiative</p>
+                <p class="credential-card__context">Awarded for founding SSMM — apparel brand with 1000+ orders worldwide</p>
                 <div class="credential-card__meta">
                   <span class="credential-pill credential-pill--year">2017</span>
                   <span class="credential-pill credential-pill--award">Entrepreneurship</span>
@@ -1356,17 +1378,27 @@
             </div>
 
             <div class="credential-card">
-              <div class="credential-card__icon">🏆</div>
+              <div class="credential-card__icon credential-card__icon--svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                  <path d="M4 22h16" />
+                  <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                  <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                </svg>
+              </div>
               <div class="credential-card__body">
                 <p class="credential-card__title">National Essay Award — "Rescue of the Bulgarian Jews during WW II"</p>
                 <p class="credential-card__sub">Israeli-Bulgarian Institute · National Competition</p>
+                <p class="credential-card__context">National winner — invited to Israel to meet government officials</p>
                 <div class="credential-card__meta">
                   <span class="credential-pill credential-pill--year">2015</span>
                   <span class="credential-pill credential-pill--award">National Winner</span>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
 
@@ -1541,6 +1573,10 @@
         border: 1px solid rgba(0, 0, 0, 0.07);
       }
 
+      .credential-card__icon--svg {
+        color: var(--color-primary);
+      }
+
       .credential-card__body {
         flex: 1;
         min-width: 0;
@@ -1564,6 +1600,14 @@
         display: flex;
         flex-wrap: wrap;
         gap: 0.3rem;
+      }
+
+      .credential-card__context {
+        font-size: var(--text-xs);
+        color: var(--color-text-muted);
+        font-style: italic;
+        margin-top: var(--space-1);
+        margin-bottom: var(--space-1);
       }
 
       /* ── Credential pills ────────────────────────────────────── */
