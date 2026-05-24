@@ -27,8 +27,11 @@
       --color-text: #1a1814;
       --color-text-muted: #5a5750;
       --color-text-faint: #9a9590;
+
+      /* ── Accent (legacy — kept for CEFR badges and cert pills only) ── */
       --color-accent: #bf7bff;
       --color-accent-dim: rgba(191, 123, 255, 0.12);
+
       --color-primary: #01696f;
       --color-blue:    #006494;
       --color-gold:    #d19900;
@@ -102,7 +105,7 @@
       font-weight: 700;
       letter-spacing: .14em;
       text-transform: uppercase;
-      color: var(--color-accent);
+      color: var(--color-text-faint);
       margin-bottom: var(--space-4);
     }
 
@@ -131,7 +134,7 @@
 
     /* ── E2: CONTEXT BLOCK ─────────────────────────────────── */
     .context-block {
-      border-left: 2px solid var(--color-accent);
+      border-left: 2px solid var(--color-divider);
       padding-left: var(--space-5);
     }
 
@@ -151,9 +154,16 @@
     .snapshot-card {
       background: var(--color-surface);
       border: 1px solid var(--color-border);
+      border-top: 2px solid var(--color-border);
       border-radius: var(--radius-lg);
       padding: var(--space-6) var(--space-8);
     }
+
+    /* Domain top-border — mirrors E5 card system */
+    .snapshot-card[data-domain="engineering"] { border-top-color: var(--color-primary); }
+    .snapshot-card[data-domain="data"]        { border-top-color: var(--color-blue); }
+    .snapshot-card[data-domain="product"]     { border-top-color: var(--color-gold); }
+    .snapshot-card[data-domain="growth"]      { border-top-color: var(--color-orange); }
 
     .snapshot-card__meta {
       display: grid;
@@ -184,18 +194,26 @@
       line-height: 1.4;
     }
 
+    /* Prominent fields — Role and Type */
+    .snapshot-item--prominent .snapshot-item__value {
+      font-size: var(--text-base);
+      font-weight: 600;
+    }
+
+    /* Links — retired purple, now neutral underline */
     .snapshot-item__value a {
-      color: var(--color-accent);
-      border-bottom: 1px solid var(--color-accent-dim);
-      transition: border-color var(--transition);
+      color: var(--color-text);
+      border-bottom: 1px solid var(--color-border);
+      transition: border-color var(--transition), color var(--transition);
     }
 
     .snapshot-item__value a:hover {
-      border-color: var(--color-accent);
+      color: var(--color-primary);
+      border-bottom-color: var(--color-primary);
     }
 
-    /* Achievement chips */
-    .snapshot-card__achievements-label {
+    /* ── Highlights ─────────────────────────────────────────── */
+    .snapshot-card__highlights-label {
       font-size: var(--text-xs);
       font-weight: 700;
       letter-spacing: .12em;
@@ -228,10 +246,21 @@
       width: 6px;
       height: 6px;
       border-radius: 50%;
-      background: var(--color-accent);
-      opacity: .7;
       flex-shrink: 0;
+      background: var(--color-text-faint); /* fallback if no domain set */
     }
+
+    /* Domain-colored dots — same four colors, same system */
+    .achievement-chip[data-domain="engineering"] .achievement-chip__dot { background: var(--color-primary); }
+    .achievement-chip[data-domain="data"]        .achievement-chip__dot { background: var(--color-blue); }
+    .achievement-chip[data-domain="product"]     .achievement-chip__dot { background: var(--color-gold); }
+    .achievement-chip[data-domain="growth"]      .achievement-chip__dot { background: var(--color-orange); }
+
+    /* Subtle chip tint matching domain */
+    .achievement-chip[data-domain="engineering"] { border-color: color-mix(in srgb, var(--color-primary) 20%, transparent); }
+    .achievement-chip[data-domain="data"]        { border-color: color-mix(in srgb, var(--color-blue) 20%, transparent); }
+    .achievement-chip[data-domain="product"]     { border-color: color-mix(in srgb, var(--color-gold) 20%, transparent); }
+    .achievement-chip[data-domain="growth"]      { border-color: color-mix(in srgb, var(--color-orange) 20%, transparent); }
 
     /* ── E4: STACK GRID ────────────────────────────────────── */
     .stack-grid {
@@ -1016,13 +1045,7 @@
 
 
     <!-- ============================================================
-       ELEMENT 2 — CONTEXT PARAGRAPH BLOCK
-       ─────────────────────────────────────────────────────────
-       PURPOSE   : Wikipedia-style intro. Answers "what is X?"
-                   before shifting to what George did there.
-       USAGE     : First block on every experience page, before
-                   the snapshot card. 2–3 sentences max.
-                   Keep it about the venture, not about George.
+        ELEMENT 2 — CONTEXT PARAGRAPH BLOCK
     ============================================================ -->
     <section aria-label="Element 2: Context Block">
       <p class="preview-label">Element 2 — Context Paragraph Block</p>
@@ -1038,29 +1061,28 @@
 
 
     <!-- ============================================================
-       ELEMENT 3 — SNAPSHOT CARD
-       ─────────────────────────────────────────────────────────
-       PURPOSE   : Fast-scan metadata + multiple achievements.
-                   A busy recruiter glances here first.
-       USAGE     : Right after the context block. Fill .snapshot-item
-                   fields; add as many .achievement-chip items as
-                   needed. No "Status" field — the year covers it
-                   (past year = inactive; "Present" = active).
-       ACHIEVEMENTS: Keep each chip to one punchy stat or win.
-                   Aim for 4–7 chips. Anything over ~10 gets noisy.
+        ELEMENT 3 — SNAPSHOT CARD
+        Set data-domain on .snapshot-card to match the primary
+        domain of the experience — this sets the top-border color
+        and anchors the page's color identity from the first glance.
+        engineering | data | product | growth
     ============================================================ -->
     <section aria-label="Element 3: Snapshot Card">
       <p class="preview-label">Element 3 — Snapshot Card</p>
-      <div class="snapshot-card">
+      <div class="snapshot-card" data-domain="engineering">
         <div class="snapshot-card__meta">
-          <div class="snapshot-item">
+
+          <!-- Prominent fields first -->
+          <div class="snapshot-item snapshot-item--prominent">
             <p class="snapshot-item__key">Role</p>
             <p class="snapshot-item__value">Co-Founder &amp; Full-Stack Developer</p>
           </div>
-          <div class="snapshot-item">
+          <div class="snapshot-item snapshot-item--prominent">
             <p class="snapshot-item__key">Type</p>
             <p class="snapshot-item__value">Social Network Startup</p>
           </div>
+
+          <!-- Standard fields -->
           <div class="snapshot-item">
             <p class="snapshot-item__key">Timeframe</p>
             <p class="snapshot-item__value">2014 – 2016</p>
@@ -1076,16 +1098,39 @@
                 rel="noopener noreferrer">georgedreemer.com/thoughtbubble</a>
             </p>
           </div>
+
         </div>
         <div class="snapshot-card__divider"></div>
-        <p class="snapshot-card__achievements-label">Achievements</p>
+
+        <p class="snapshot-card__highlights-label">Highlights</p>
         <div class="snapshot-card__chips">
-          <span class="achievement-chip"><span class="achievement-chip__dot"></span>Lorem ipsum dolor sit amet</span>
-          <span class="achievement-chip"><span class="achievement-chip__dot"></span>Lorem ipsum dolor sit amet</span>
-          <span class="achievement-chip"><span class="achievement-chip__dot"></span>Lorem ipsum dolor sit amet</span>
-          <span class="achievement-chip"><span class="achievement-chip__dot"></span>Lorem ipsum dolor sit amet</span>
-          <span class="achievement-chip"><span class="achievement-chip__dot"></span>Lorem ipsum dolor sit amet</span>
-          <span class="achievement-chip"><span class="achievement-chip__dot"></span>Lorem ipsum dolor sit amet</span>
+
+          <!-- Engineering highlights — teal dot -->
+          <span class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Built full social platform from scratch in PHP + MySQL
+          </span>
+          <span class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Custom auth, notifications, and AJAX interactions
+          </span>
+
+          <!-- Data highlights — blue dot -->
+          <span class="achievement-chip" data-domain="data">
+            <span class="achievement-chip__dot"></span>Tracked user behaviour and growth metrics throughout
+          </span>
+
+          <!-- Product highlights — gold dot -->
+          <span class="achievement-chip" data-domain="product">
+            <span class="achievement-chip__dot"></span>Designed full UX — feed, profiles, and post system
+          </span>
+          <span class="achievement-chip" data-domain="product">
+            <span class="achievement-chip__dot"></span>Iterated on UI based on direct user feedback
+          </span>
+
+          <!-- Growth highlights — orange dot -->
+          <span class="achievement-chip" data-domain="growth">
+            <span class="achievement-chip__dot"></span>Grew to ~900 registered users with zero ad spend
+          </span>
+
         </div>
       </div>
     </section>
