@@ -621,66 +621,69 @@
     }
     .ability-legend__item--growth .ability-legend__dot { background: var(--color-orange); }
 
-    /* ── E6: EVIDENCE GRID ─────────────────────────────────── */
+    /* ── E6: WORKS GRID ──────────────────────────────────────── */
     .evidence-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
       gap: var(--space-4);
     }
 
+    /* ── Base card ───────────────────────────────────────────── */
     .evidence-card {
       background: var(--color-surface);
       border: 1px solid var(--color-border);
+      border-left: 3px solid var(--color-border);
       border-radius: var(--radius-lg);
       overflow: hidden;
       transition: box-shadow var(--transition);
-    }
-
-    .evidence-card:hover {
-      box-shadow: var(--shadow-md);
-    }
-
-    /* variant: code */
-    .evidence-card__code {
-      width: 100%;
-      aspect-ratio: 16/9;
-      background: #1a1814;
       display: flex;
-      align-items: flex-start;
-      padding: var(--space-4);
-      font-family: "Courier New", monospace;
-      font-size: 11px;
-      color: #c9c4bc;
-      line-height: 1.6;
-      overflow: hidden;
+      flex-direction: column;
     }
 
-    .evidence-card__code pre {
-      margin: 0;
+    .evidence-card:hover { box-shadow: var(--shadow-md); }
+
+    /* ── Domain left-border threading from E5 ────────────────── */
+    .evidence-card[data-domain="engineering"] { border-left-color: var(--color-primary); }
+    .evidence-card[data-domain="data"]        { border-left-color: var(--color-blue); }
+    .evidence-card[data-domain="product"]     { border-left-color: var(--color-gold); }
+    .evidence-card[data-domain="growth"]      { border-left-color: var(--color-orange); }
+
+    /* ── Domain tag pill (above title in body) ───────────────── */
+    .evidence-card__domain-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-radius: var(--radius-full);
+      margin-bottom: var(--space-2);
     }
 
-    .token-keyword {
-      color: #bf7bff;
+    .evidence-card__domain-tag-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      flex-shrink: 0;
     }
 
-    .token-func {
-      color: #79d4b8;
-    }
+    .evidence-card[data-domain="engineering"] .evidence-card__domain-tag { color: var(--color-primary); }
+    .evidence-card[data-domain="engineering"] .evidence-card__domain-tag-dot { background: var(--color-primary); }
+    .evidence-card[data-domain="data"]        .evidence-card__domain-tag { color: var(--color-blue); }
+    .evidence-card[data-domain="data"]        .evidence-card__domain-tag-dot { background: var(--color-blue); }
+    .evidence-card[data-domain="product"]     .evidence-card__domain-tag { color: var(--color-gold); }
+    .evidence-card[data-domain="product"]     .evidence-card__domain-tag-dot { background: var(--color-gold); }
+    .evidence-card[data-domain="growth"]      .evidence-card__domain-tag { color: var(--color-orange); }
+    .evidence-card[data-domain="growth"]      .evidence-card__domain-tag-dot { background: var(--color-orange); }
 
-    .token-string {
-      color: #f4c67e;
-    }
-
-    .token-comment {
-      color: #5a5650;
-    }
-
-    /* variant: image */
+    /* ── VARIANT A: Single image ─────────────────────────────── */
     .evidence-card__thumb {
       width: 100%;
       aspect-ratio: 16/9;
       overflow: hidden;
       background: var(--color-surface-2);
+      flex-shrink: 0;
     }
 
     .evidence-card__thumb img {
@@ -691,71 +694,132 @@
       transition: transform 420ms cubic-bezier(0.16, 1, 0.3, 1);
     }
 
-    .evidence-card:hover .evidence-card__thumb img {
-      transform: scale(1.03);
-    }
+    .evidence-card:hover .evidence-card__thumb img { transform: scale(1.03); }
 
-    /* variant: video */
-    .evidence-card__video {
+    /* ── VARIANT B: Slideshow ────────────────────────────────── */
+    .evidence-card__slides {
       width: 100%;
       aspect-ratio: 16/9;
       overflow: hidden;
-      background: #1a1814;
+      background: var(--color-surface-2);
       position: relative;
+      flex-shrink: 0;
     }
 
-    .evidence-card__video video {
+    .evidence-card__slides-track {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+
+    .evidence-card__slide {
+      min-width: 100%;
+      height: 100%;
+      opacity: 0;
+      position: absolute;
+      top: 0; left: 0;
+      transition: opacity 600ms cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+    }
+
+    .evidence-card__slide.is-active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .evidence-card__slide img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
     }
 
-    /* variant: metric/stat */
-    .evidence-card__metric {
+    /* Dot indicators */
+    .evidence-card__slide-dots {
+      position: absolute;
+      bottom: var(--space-2);
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 5px;
+      z-index: 2;
+    }
+
+    .evidence-card__slide-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.45);
+      transition: background var(--transition), transform var(--transition);
+      cursor: pointer;
+      border: none;
+      padding: 0;
+    }
+
+    .evidence-card__slide-dot.is-active {
+      background: #fff;
+      transform: scale(1.3);
+    }
+
+    /* Domain-colored active dot */
+    .evidence-card[data-domain="engineering"] .evidence-card__slide-dot.is-active { background: var(--color-primary); }
+    .evidence-card[data-domain="data"]        .evidence-card__slide-dot.is-active { background: var(--color-blue); }
+    .evidence-card[data-domain="product"]     .evidence-card__slide-dot.is-active { background: var(--color-gold); }
+    .evidence-card[data-domain="growth"]      .evidence-card__slide-dot.is-active { background: var(--color-orange); }
+
+    /* ── VARIANT C: Video (YouTube iframe or <video> file) ───── */
+    .evidence-card__video {
       width: 100%;
       aspect-ratio: 16/9;
-      background: var(--color-surface-2);
+      overflow: hidden;
+      background: #0e0e0e;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .evidence-card__video[data-orientation="portrait"] {
+      aspect-ratio: 9/16;
+      max-height: 480px;
+    }
+
+    .evidence-card__video iframe,
+    .evidence-card__video video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border: none;
+    }
+
+    /* Sound toggle button */
+    .evidence-card__sound-btn {
+      position: absolute;
+      bottom: var(--space-3);
+      right: var(--space-3);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.55);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: #fff;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: var(--space-2);
-      padding: var(--space-6);
+      cursor: pointer;
+      z-index: 3;
+      transition: background var(--transition);
     }
 
-    .metric-number {
-      font-family: var(--font-display);
-      font-size: clamp(2.5rem, 5vw, 4rem);
-      font-weight: 600;
-      color: var(--color-text);
-      line-height: 1;
-      letter-spacing: -.02em;
-    }
+    .evidence-card__sound-btn:hover { background: rgba(0,0,0,0.8); }
+    .evidence-card__sound-btn svg { width: 14px; height: 14px; stroke: #fff; }
 
-    .metric-number span {
-      color: var(--color-accent);
-    }
-
-    .metric-label {
-      font-size: var(--text-xs);
-      font-weight: 700;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      color: var(--color-text-muted);
-    }
-
-    .metric-sublabel {
-      font-size: var(--text-xs);
-      font-weight: 300;
-      color: var(--color-text-faint);
-      text-align: center;
-      max-width: 22ch;
-    }
-
-    /* shared body */
+    /* ── Shared card body ────────────────────────────────────── */
     .evidence-card__body {
       padding: var(--space-4) var(--space-5);
+      flex: 1;
+      display: flex;
+      flex-direction: column;
     }
 
     .evidence-card__title {
@@ -763,6 +827,7 @@
       font-weight: 700;
       color: var(--color-text);
       margin-bottom: var(--space-2);
+      line-height: 1.3;
     }
 
     .evidence-card__bullets {
@@ -770,6 +835,7 @@
       display: flex;
       flex-direction: column;
       gap: var(--space-1);
+      margin-top: auto;
     }
 
     .evidence-card__bullets li {
@@ -782,10 +848,14 @@
     }
 
     .evidence-card__bullets li::before {
-      content: "--";
+      content: "";
       position: absolute;
-      left: 0;
-      color: var(--color-text-faint);
+      left: 4px;
+      top: 6px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--color-text-faint);
     }
 
     /* ── E7: FULL STORY ACCORDION ──────────────────────────── */
@@ -1891,97 +1961,133 @@
 
 
     <!-- ============================================================
-       ELEMENT 6 — EVIDENCE CARD GRID  (4 variant types)
-       ─────────────────────────────────────────────────────────
-       PURPOSE   : Concrete artefacts proving the abilities above.
-       VARIANTS  :
-         A. Code    — .evidence-card__code + <pre>  (dark terminal)
-         B. Image   — .evidence-card__thumb + <img> (zoom on hover)
-         C. Video   — .evidence-card__video + <video autoplay muted loop playsinline>
-         D. Metric  — .evidence-card__metric        (big number, no media file needed)
-       USAGE     : Mix variants freely in the same .evidence-grid.
-                   For SSMM/DREEMCORP use B (image) as the primary type.
-                   For DataSafari/thoughtbubble use A (code) as the primary type.
-  ============================================================ -->
-    <section aria-label="Element 6: Evidence Card Grid">
-      <p class="preview-label">Element 6 — Evidence Card Grid (all 4 variants)</p>
-      <div class="section-label"><span class="section-label__text">Evidence</span><span class="section-label__line"
-          aria-hidden="true"></span></div>
+        ELEMENT 6 — WORKS CARD GRID
+        ─────────────────────────────────────────────────────────
+        PURPOSE   : Concrete artefacts proving the abilities above.
+        VARIANTS  :
+          A. Single image  — .evidence-card__thumb + <img>
+          B. Slideshow     — .evidence-card__slides (auto-advances, pauses on hover)
+          C. Video file    — .evidence-card__video + <video autoplay muted loop>
+          D. Video YouTube — .evidence-card__video + <iframe> (no chrome, muted, looped)
+        DOMAIN    : Set data-domain="engineering|data|product|growth" on
+                    .evidence-card to thread the E5 color language through.
+        PORTRAIT  : Add data-orientation="portrait" to .evidence-card__video
+                    for vertical content (Shorts, TikTok-style).
+    ============================================================ -->
+    <section aria-label="Element 6: Works Card Grid">
+      <p class="preview-label">Element 6 — Works Card Grid</p>
+      <div class="section-label">
+        <span class="section-label__text">Works</span>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
       <div class="evidence-grid">
 
-        <!-- VARIANT A: Code block -->
-        <article class="evidence-card">
-          <div class="evidence-card__code" aria-hidden="true">
-            <pre><span class="token-comment">// comment_system.php</span>
-            <span class="token-keyword">function</span><span class="token-func">post_comment</span>($uid,$pid,$body){
-              $s=$db->prepare(
-                <span class="token-string">"INSERT INTO comments
-                (user_id,post_id,body,created_at)
-                VALUES(?,?,?,NOW())"</span>
-              );
-              $s->execute([$uid,$pid,$body]);
-              <span class="token-func">notify_author</span>($pid,$uid);
-            }</pre>
-          </div>
-          <div class="evidence-card__body">
-            <h4 class="evidence-card__title">Custom Comment System</h4>
-            <ul class="evidence-card__bullets">
-              <li>Full CRUD: create, edit, delete, threaded display</li>
-              <li>Triggers notification engine on every submit</li>
-            </ul>
-          </div>
-        </article>
 
-        <!-- VARIANT B: Image with zoom -->
-        <article class="evidence-card">
+        <!-- VARIANT A: Single image -->
+        <article class="evidence-card" data-domain="product">
           <div class="evidence-card__thumb">
-            <img src="https://picsum.photos/seed/thoughtbubble-ui/560/315" alt="thoughtbubble platform screenshot"
-              width="560" height="315" loading="lazy">
+            <img src="https://picsum.photos/seed/dreemcorp-brand/560/315" alt="DREEMCORP brand identity work" width="560"
+              height="315" loading="lazy">
           </div>
           <div class="evidence-card__body">
-            <h4 class="evidence-card__title">Platform UI — Feed &amp; Profiles</h4>
+            <div class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Product &amp; Design
+            </div>
+            <h4 class="evidence-card__title">Brand Identity System</h4>
             <ul class="evidence-card__bullets">
-              <li>Fully custom-designed feed without any UI framework</li>
-              <li>Responsive profile pages with user-editable content</li>
+              <li>Full visual identity built from scratch — logo, palette, typography</li>
+              <li>Applied consistently across digital and physical touchpoints</li>
             </ul>
           </div>
         </article>
 
-        <!-- VARIANT C: Auto-play muted video -->
-        <article class="evidence-card">
+
+        <!-- VARIANT B: Slideshow (3 images, auto-advances every 4s, pauses on hover) -->
+        <article class="evidence-card" data-domain="engineering">
+          <div class="evidence-card__slides" data-slideshow>
+            <div class="evidence-card__slide is-active">
+              <img src="https://picsum.photos/seed/tb-screen-1/560/315" alt="Platform screenshot 1" loading="lazy">
+            </div>
+            <div class="evidence-card__slide">
+              <img src="https://picsum.photos/seed/tb-screen-2/560/315" alt="Platform screenshot 2" loading="lazy">
+            </div>
+            <div class="evidence-card__slide">
+              <img src="https://picsum.photos/seed/tb-screen-3/560/315" alt="Platform screenshot 3" loading="lazy">
+            </div>
+            <div class="evidence-card__slide-dots" aria-hidden="true">
+              <button class="evidence-card__slide-dot is-active"></button>
+              <button class="evidence-card__slide-dot"></button>
+              <button class="evidence-card__slide-dot"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <div class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Engineering
+            </div>
+            <h4 class="evidence-card__title">Platform UI — Feed, Profiles &amp; Posts</h4>
+            <ul class="evidence-card__bullets">
+              <li>Custom-built feed, profile pages and post system — no UI framework</li>
+              <li>Responsive across all screen sizes from day one</li>
+            </ul>
+          </div>
+        </article>
+
+
+        <!-- VARIANT C: YouTube landscape (Zyzz Trance Mix — DREEMCORP edit) -->
+        <article class="evidence-card" data-domain="growth">
           <div class="evidence-card__video">
-            <video autoplay muted loop playsinline aria-label="Demo: live like toggle with AJAX">
-              <!--
-              Replace src with the real video file path, e.g.:
-              <source src="/assets/tb-like-demo.mp4" type="video/mp4">
-              Until then the black background is the placeholder.
-            -->
-            </video>
+            <iframe
+              src="https://www.youtube.com/embed/yQDT8a8HjZ0?autoplay=1&mute=1&loop=1&playlist=yQDT8a8HjZ0&controls=0&rel=0&modestbranding=1&playsinline=1"
+              allow="autoplay; fullscreen" allowfullscreen aria-label="DREEMCORP video edit — Zyzz Trance Mix">
+            </iframe>
+            <button class="evidence-card__sound-btn" data-sound-toggle aria-label="Toggle sound">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                <line x1="23" y1="9" x2="17" y2="15" class="mute-line" />
+                <line x1="17" y1="9" x2="23" y2="15" class="mute-line" />
+              </svg>
+            </button>
           </div>
           <div class="evidence-card__body">
-            <h4 class="evidence-card__title">Live Like Toggle — AJAX Demo</h4>
+            <div class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Growth &amp; Business
+            </div>
+            <h4 class="evidence-card__title">Video Production — Music &amp; Culture Edits</h4>
             <ul class="evidence-card__bullets">
-              <li>Optimistic UI update: no page reload on like/unlike</li>
-              <li>Real-time counter synced to MySQL via AJAX endpoint</li>
+              <li>Full edit from raw footage to published YouTube content</li>
+              <li>Part of DREEMCORP's creative services portfolio</li>
             </ul>
           </div>
         </article>
 
-        <!-- VARIANT D: Metric / stat card -->
-        <article class="evidence-card">
-          <div class="evidence-card__metric">
-            <p class="metric-number">~<span>900</span></p>
-            <p class="metric-label">Registered Users</p>
-            <p class="metric-sublabel">On a self-hosted, fully custom-built platform — no off-the-shelf SaaS</p>
+
+        <!-- VARIANT D: YouTube portrait (Short — TikTok edit for Amira Tahri) -->
+        <article class="evidence-card" data-domain="growth">
+          <div class="evidence-card__video" data-orientation="portrait">
+            <iframe
+              src="https://www.youtube.com/embed/Uzs-dfv_Tps?autoplay=1&mute=1&loop=1&playlist=Uzs-dfv_Tps&controls=0&rel=0&modestbranding=1&playsinline=1"
+              allow="autoplay; fullscreen" allowfullscreen aria-label="DREEMCORP short — TikTok edit for Amira Tahri">
+            </iframe>
+            <button class="evidence-card__sound-btn" data-sound-toggle aria-label="Toggle sound">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                <line x1="23" y1="9" x2="17" y2="15" class="mute-line" />
+                <line x1="17" y1="9" x2="23" y2="15" class="mute-line" />
+              </svg>
+            </button>
           </div>
           <div class="evidence-card__body">
-            <h4 class="evidence-card__title">Organic Growth — Zero Ad Spend</h4>
+            <div class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Growth &amp; Business
+            </div>
+            <h4 class="evidence-card__title">Short-Form Content — TikTok &amp; Reels Edits</h4>
             <ul class="evidence-card__bullets">
-              <li>Growth driven entirely through word-of-mouth and direct outreach</li>
-              <li>Users joined while the platform was still in active development</li>
+              <li>Vertical-first edit optimised for TikTok and Instagram Reels</li>
+              <li>Delivered for client Amira Tahri as part of DREEMCORP services</li>
             </ul>
           </div>
         </article>
+
 
       </div>
     </section>
@@ -2132,6 +2238,49 @@
         lucide.createIcons();
       });
     }
+
+    // ── Slideshow ──────────────────────────────────────────────
+      document.querySelectorAll('[data-slideshow]').forEach(slider => {
+        const slides = slider.querySelectorAll('.evidence-card__slide');
+        const dots = slider.querySelectorAll('.evidence-card__slide-dot');
+        let current = 0;
+        let timer;
+
+        function goTo(n) {
+          slides[current].classList.remove('is-active');
+          dots[current].classList.remove('is-active');
+          current = (n + slides.length) % slides.length;
+          slides[current].classList.add('is-active');
+          dots[current].classList.add('is-active');
+        }
+
+        function start() { timer = setInterval(() => goTo(current + 1), 4000); }
+        function stop() { clearInterval(timer); }
+
+        dots.forEach((dot, i) => dot.addEventListener('click', () => { stop(); goTo(i); start(); }));
+        slider.addEventListener('mouseenter', stop);
+        slider.addEventListener('mouseleave', start);
+        start();
+      });
+
+      // ── Sound toggle (YouTube iframes) ────────────────────────
+      document.querySelectorAll('[data-sound-toggle]').forEach(btn => {
+        let muted = true;
+        const iframe = btn.closest('.evidence-card__video').querySelector('iframe');
+
+        btn.addEventListener('click', () => {
+          muted = !muted;
+          const src = iframe.src;
+          iframe.src = muted
+            ? src.replace('&mute=0', '&mute=1')
+            : src.replace('&mute=1', '&mute=0');
+          // Update icon
+          btn.querySelector('.mute-line') && (btn.querySelector('svg').innerHTML = muted
+            ? `<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15" class="mute-line"/><line x1="17" y1="9" x2="23" y2="15" class="mute-line"/>`
+            : `<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>`
+          );
+        });
+      });
   </script>
 </body>
 
