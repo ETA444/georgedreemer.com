@@ -887,14 +887,14 @@
       background: var(--color-text-faint);
     }
 
-    /* ── E7: FULL STORY ACCORDION ──────────────────────────── */
+    /* ── E7: IN DEPTH ACCORDION ────────────────────────────── */
     .story-accordion {
       border: 1px solid var(--color-border);
       border-radius: var(--radius-lg);
       overflow: hidden;
     }
 
-    .story-accordion__item+.story-accordion__item {
+    .story-accordion__item + .story-accordion__item {
       border-top: 1px solid var(--color-divider);
     }
 
@@ -915,6 +915,13 @@
       background: var(--color-surface-2);
     }
 
+    .story-accordion__trigger-left {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      min-width: 0;
+    }
+
     .story-accordion__trigger-label {
       font-size: var(--text-sm);
       font-weight: 700;
@@ -922,6 +929,34 @@
       letter-spacing: .02em;
       text-align: left;
     }
+
+    /* Domain tag on trigger — same dot+label system as E6 */
+    .story-accordion__domain-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      flex-shrink: 0;
+    }
+
+    .story-accordion__domain-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .story-accordion__item[data-domain="engineering"] .story-accordion__domain-tag { color: var(--color-primary); }
+    .story-accordion__item[data-domain="engineering"] .story-accordion__domain-dot { background: var(--color-primary); }
+    .story-accordion__item[data-domain="data"]        .story-accordion__domain-tag { color: var(--color-blue); }
+    .story-accordion__item[data-domain="data"]        .story-accordion__domain-dot { background: var(--color-blue); }
+    .story-accordion__item[data-domain="product"]     .story-accordion__domain-tag { color: var(--color-gold); }
+    .story-accordion__item[data-domain="product"]     .story-accordion__domain-dot { background: var(--color-gold); }
+    .story-accordion__item[data-domain="growth"]      .story-accordion__domain-tag { color: var(--color-orange); }
+    .story-accordion__item[data-domain="growth"]      .story-accordion__domain-dot { background: var(--color-orange); }
 
     .story-accordion__chevron {
       width: 18px;
@@ -935,16 +970,26 @@
       transform: rotate(180deg);
     }
 
+    /* Body — domain left-border threads when open */
     .story-accordion__body {
       display: grid;
       grid-template-rows: 0fr;
       transition: grid-template-rows 380ms cubic-bezier(0.16, 1, 0.3, 1);
       background: var(--color-bg);
+      border-left: 2px solid transparent;
+      transition: grid-template-rows 380ms cubic-bezier(0.16, 1, 0.3, 1),
+                  border-color 380ms cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     .story-accordion__body[aria-hidden="false"] {
       grid-template-rows: 1fr;
     }
+
+    /* Domain left-border on open panel */
+    .story-accordion__item[data-domain="engineering"] .story-accordion__body[aria-hidden="false"] { border-left-color: var(--color-primary); }
+    .story-accordion__item[data-domain="data"]        .story-accordion__body[aria-hidden="false"] { border-left-color: var(--color-blue); }
+    .story-accordion__item[data-domain="product"]     .story-accordion__body[aria-hidden="false"] { border-left-color: var(--color-gold); }
+    .story-accordion__item[data-domain="growth"]      .story-accordion__body[aria-hidden="false"] { border-left-color: var(--color-orange); }
 
     .story-accordion__inner {
       overflow: hidden;
@@ -959,13 +1004,38 @@
       max-width: 70ch;
     }
 
-    .story-accordion__content p+p {
+    .story-accordion__content p + p {
       margin-top: var(--space-4);
     }
 
     .story-accordion__content strong {
       font-weight: 600;
       color: var(--color-text);
+    }
+
+    /* Simple list support inside content */
+    .story-accordion__content ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+      margin-top: var(--space-3);
+    }
+
+    .story-accordion__content ul li {
+      padding-left: var(--space-4);
+      position: relative;
+    }
+
+    .story-accordion__content ul li::before {
+      content: "";
+      position: absolute;
+      left: 4px;
+      top: 8px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--color-text-faint);
     }
 
     /* ── SCROLL REVEAL ─────────────────────────────────────── */
@@ -1590,6 +1660,11 @@
               <span class="stack-badge__name">Russian</span>
               <span class="stack-badge__cefr">B1</span>
             </span>
+            <span class="stack-badge stack-badge--lang">
+              <span class="stack-badge__flag" aria-hidden="true">🇮🇱</span>
+              <span class="stack-badge__name">Hebrew</span>
+              <span class="stack-badge__cefr">A1</span>
+            </span>
           </div>
         </div>
 
@@ -2139,32 +2214,60 @@
 
 
     <!-- ============================================================
-       ELEMENT 7 — FULL STORY ACCORDION (multi-tab narrative)
-       ─────────────────────────────────────────────────────────
-       PURPOSE   : Deep-dive narrative for the serious headhunter
-                   and AI scrapers. Each tab tells one arc of the
-                   story — what it was, how it was built, what was
-                   learned, what came next.
-       USAGE     : Add as many .story-accordion__item blocks as needed.
-                   Suggested arc titles per page:
-                     — "The Idea"
-                     — "What I Built"
-                     — "What I Learned"
-                     — "What Came Next"
-                   First tab opens by default (aria-expanded="true").
-       SEO NOTE  : The full text here is indexed by search engines
-                   and read by AI agents. Write it properly.
-  ============================================================ -->
-    <section aria-label="Element 7: Full Story Accordion">
-      <p class="preview-label">Element 7 — Full Story Accordion</p>
-      <div class="section-label"><span class="section-label__text">The Full Story</span><span class="section-label__line"
-          aria-hidden="true"></span></div>
+         ELEMENT 7 — IN DEPTH ACCORDION
+         ─────────────────────────────────────────────────────────
+         PURPOSE   : Depth on demand. Each item expands on one aspect
+                     of the experience that couldn't fit in a chip,
+                     an ability card, or a works card. This is where
+                     a serious recruiter or headhunter gets the full
+                     picture — and where AI agents and search engines
+                     find the richest text on the page.
+
+         USAGE     : 1–4 items. No fixed arc, no prescribed titles.
+                     Write titles fresh for each experience — specific,
+                     honest, and interesting enough to click. Ask:
+                     "What would a curious, senior person actually want
+                     to know about this that isn't already on the page?"
+
+         DOMAINS   : Each item takes data-domain="engineering|data|
+                     product|growth" for color threading. Omit the
+                     attribute if the item genuinely crosses domains.
+
+         WRITING   : 2–3 short paragraphs per item. Dense, first-person,
+                     senior-voice. Not reflections — briefings. Write
+                     the way you'd answer a sharp interview question in
+                     90 seconds. Avoid:
+                       - "I learned that..."
+                       - "This taught me..."
+                       - "Looking back..."
+                     Prefer:
+                       - Specific numbers, names, constraints
+                       - What actually happened, not what it meant
+                       - One honest sentence about something that went wrong
+
+         SEO NOTE  : This is the most text-dense section on the page.
+                     Write it properly. It will be read by AI agents
+                     scraping your portfolio and by search engines
+                     indexing your experience.
+    ============================================================ -->
+    <section aria-label="Element 7: In Depth">
+      <p class="preview-label">Element 7 — In Depth</p>
+      <div class="section-label">
+        <span class="section-label__text">In Depth</span>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+
       <div class="story-accordion" role="list">
 
-        <!-- Tab 1: The Idea — open by default -->
-        <div class="story-accordion__item" role="listitem">
+        <!-- Item 1: Engineering — open by default -->
+        <div class="story-accordion__item" data-domain="engineering" role="listitem">
           <button class="story-accordion__trigger" aria-expanded="true" aria-controls="story-panel-1">
-            <span class="story-accordion__trigger-label">The Idea</span>
+            <span class="story-accordion__trigger-left">
+              <span class="story-accordion__domain-tag">
+                <span class="story-accordion__domain-dot"></span>Engineering
+              </span>
+              <span class="story-accordion__trigger-label">Built from scratch in high school</span>
+            </span>
             <svg class="story-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               aria-hidden="true">
               <polyline points="6 9 12 15 18 9" />
@@ -2173,21 +2276,28 @@
           <div class="story-accordion__body" id="story-panel-1" aria-hidden="false">
             <div class="story-accordion__inner">
               <div class="story-accordion__content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat.</p>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                  laborum.</p>
+                <p>Nikolay and I built thoughtbubble in PHP, JavaScript, and MySQL. There was no framework, no CMS, no boilerplate.
+                  Every system was written from the ground up: authentication, session management, a news feed with sorting
+                  logic, post types (text, photo, video), likes, pins, comments, hashtags, categories, notifications,
+                  profile customisation, account settings, and a user feedback pipeline. We shipped <strong>76 major
+                    updates</strong> between the closed alpha and public launch.</p>
+                <p>The infrastructure ran on shared hosting with a manually configured MySQL database. There was no version
+                  control beyond file backups, no CI, no staging environment. It was scrappy by any standard, BUT it
+                  worked, it scaled to nearly a thousand users, and every line of it was ours.</p>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Tab 2: What I Built -->
-        <div class="story-accordion__item" role="listitem">
+        <!-- Item 2: Product -->
+        <div class="story-accordion__item" data-domain="product" role="listitem">
           <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-2">
-            <span class="story-accordion__trigger-label">What I Built</span>
+            <span class="story-accordion__trigger-left">
+              <span class="story-accordion__domain-tag">
+                <span class="story-accordion__domain-dot"></span>Product
+              </span>
+              <span class="story-accordion__trigger-label">The idea that was two years early</span>
+            </span>
             <svg class="story-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               aria-hidden="true">
               <polyline points="6 9 12 15 18 9" />
@@ -2196,21 +2306,28 @@
           <div class="story-accordion__body" id="story-panel-2" aria-hidden="true">
             <div class="story-accordion__inner">
               <div class="story-accordion__content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat.</p>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                  laborum.</p>
+                <p>The pitch was simple: a social network where your feed only teaches you things. No vacation photos, no
+                  cat videos, but rather insights from books, actionable quotes, and self-improvement content. We built it in
+                  2014, being inspired by the rise of figures like Gary Vaynerchuk and Tai Lopez and the audiences forming around
+                  them, and saw a clear gap between entertainment-first platforms and the kind of content those audiences
+                  actually wanted.</p>
+                <p>What we were describing - a curated, knowledge-first feed with social mechanics - is close to what
+                  Twitter's long-form pivot, Substack, and LinkedIn's content layer eventually became. We were two teenagers with no funding and no network, so the timing didn't matter. But the product instinct was
+                  right.</p>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Tab 3: What I Learned -->
-        <div class="story-accordion__item" role="listitem">
+        <!-- Item 3: Growth -->
+        <div class="story-accordion__item" data-domain="growth" role="listitem">
           <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-3">
-            <span class="story-accordion__trigger-label">What I Learned</span>
+            <span class="story-accordion__trigger-left">
+              <span class="story-accordion__domain-tag">
+                <span class="story-accordion__domain-dot"></span>Growth
+              </span>
+              <span class="story-accordion__trigger-label">Pitching to investors while still in school</span>
+            </span>
             <svg class="story-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               aria-hidden="true">
               <polyline points="6 9 12 15 18 9" />
@@ -2219,21 +2336,26 @@
           <div class="story-accordion__body" id="story-panel-3" aria-hidden="true">
             <div class="story-accordion__inner">
               <div class="story-accordion__content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat.</p>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                  laborum.</p>
+                <p>We pitched thoughtbubble at startup competitions and shark tank-style events while finishing high school and being freshmen in college.
+                  We secured early funding from investors and used it to cover hosting, domain, and basic
+                  marketing. Growth was entirely organic - no ad budget, no influencer deals (were there "influencers" in 2014?! Haha.) We reached <strong>~900 registered
+                    users</strong>. The userbase was concentrated primarily in the United States and Western European countries, such as The Netherlands.</p>
+                <p>The experience of standing in front of a room of investors and defending a product you built yourself, with no engineering or business background, is not something a course teaches. It shaped how I think about
+                  communicating technical work to non-technical audiences — a skill I've used in every project since and especially in my work as a Data Scientist.</p>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Tab 4: What Came Next -->
-        <div class="story-accordion__item" role="listitem">
+        <!-- Item 4: optional — the IP/legal story -->
+        <div class="story-accordion__item" data-domain="product" role="listitem">
           <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-4">
-            <span class="story-accordion__trigger-label">What Came Next</span>
+            <span class="story-accordion__trigger-left">
+              <span class="story-accordion__domain-tag">
+                <span class="story-accordion__domain-dot"></span>Product
+              </span>
+              <span class="story-accordion__trigger-label">We got ripped off by a lawyer. We got the copyright anyway.</span>
+            </span>
             <svg class="story-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               aria-hidden="true">
               <polyline points="6 9 12 15 18 9" />
@@ -2242,12 +2364,13 @@
           <div class="story-accordion__body" id="story-panel-4" aria-hidden="true">
             <div class="story-accordion__inner">
               <div class="story-accordion__content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat.</p>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                  laborum.</p>
+                <p>At some point we decided thoughtbubble needed to be protected. Two teenagers, no legal background, no one
+                  in our corner - we hired a copyright lawyer who took our money, did minimal work, and left us with very
+                  little to show for it. Classic story. We pushed through it, filed properly, and got the copyright
+                  registered. It cost more than it should have and took longer than it should have.</p>
+                <p>In hindsight it was the first time I dealt with the unglamorous side of building something - the admin,
+                  the legal, the people who see inexperience as an opportunity. I would handle it very differently now.
+                  But we got the copyright.</p>
               </div>
             </div>
           </div>
