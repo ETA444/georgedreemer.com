@@ -262,7 +262,77 @@
     .achievement-chip[data-domain="product"]     { border-color: color-mix(in srgb, var(--color-gold) 20%, transparent); }
     .achievement-chip[data-domain="growth"]      { border-color: color-mix(in srgb, var(--color-orange) 20%, transparent); }
 
-    /* ── E4: STACK GRID ────────────────────────────────────── */
+    /* ── ELEMENT 4 — IN NUMBERS / STAT COUNTER ─────────────────── */
+    .stat-counter-section {
+      padding-block: var(--space-12) var(--space-10);
+    }
+
+    .stat-counter {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-6);
+      max-width: var(--content-default);
+      margin-inline: auto;
+      padding-inline: var(--space-6);
+    }
+
+    .stat-counter__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: var(--space-2);
+    }
+
+    /* The animated number — domain color threads through here */
+    .stat-counter__number {
+      font-family: var(--font-body);
+      font-size: var(--text-2xl);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      color: var(--color-text-muted);   /* default fallback */
+      transition: color 0.3s ease;
+    }
+
+    /* Domain color on the number */
+    .stat-counter__item[data-domain="engineering"] .stat-counter__number { color: var(--color-primary); }
+    .stat-counter__item[data-domain="data"]        .stat-counter__number { color: var(--color-blue); }
+    .stat-counter__item[data-domain="product"]     .stat-counter__number { color: var(--color-gold); }
+    .stat-counter__item[data-domain="growth"]      .stat-counter__number { color: var(--color-orange); }
+
+    .stat-counter__label {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      line-height: 1.4;
+      max-width: 14ch;
+    }
+
+    /* Scroll reveal — fade in as a group, no layout shift */
+    .stat-counter__item {
+      opacity: 0;
+      transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .stat-counter__item.is-visible {
+      opacity: 1;
+    }
+
+    /* Staggered delay per item */
+    .stat-counter__item:nth-child(1) { transition-delay: 0ms; }
+    .stat-counter__item:nth-child(2) { transition-delay: 80ms; }
+    .stat-counter__item:nth-child(3) { transition-delay: 160ms; }
+    .stat-counter__item:nth-child(4) { transition-delay: 240ms; }
+
+    /* Mobile — 2×2 grid */
+    @media (max-width: 640px) {
+      .stat-counter {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-8) var(--space-4);
+      }
+    }
+
+    /* ── E5: STACK GRID ────────────────────────────────────── */
     .stack-grid {
       display: flex;
       flex-direction: column;
@@ -505,7 +575,7 @@
       border: 1px solid #e8d9a8;
     }
 
-    /* ── E5: ABILITY GRID ──────────────────────────────────── */
+    /* ── E6: ABILITY GRID ──────────────────────────────────── */
     .ability-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
@@ -650,7 +720,7 @@
     }
     .ability-legend__item--growth .ability-legend__dot { background: var(--color-orange); }
 
-    /* ── E6: WORKS GRID ──────────────────────────────────────── */
+    /* ── E7: WORKS GRID ──────────────────────────────────────── */
     .evidence-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
@@ -887,7 +957,7 @@
       background: var(--color-text-faint);
     }
 
-    /* ── E7: IN DEPTH ACCORDION ────────────────────────────── */
+    /* ── E8: IN DEPTH ACCORDION ────────────────────────────── */
     .story-accordion {
       border: 1px solid var(--color-border);
       border-radius: var(--radius-lg);
@@ -1093,13 +1163,14 @@
        USAGE     : Drop one <div class="section-label"> before
                    every section block. Change the text inside
                    .section-label__text to match the section.
-       ORDER ON PAGE (use in this sequence every time):
-         1. Context     ← no label needed, it comes right after the page title
-         2. Snapshot    ← no label, it is its own card
-         3. [STACK]
-         4. [ABILITIES]
-         5. [Works]
-         6. [THE FULL STORY]
+      ORDER ON PAGE (use this sequence every time):
+      1. Context ← right after page title, no label needed
+      2. Snapshot ← no label, its own card
+      3. Numbers ← no label, stat counters animate on scroll
+      4. [STACK]
+      5. [ABILITIES]
+      6. [WORKS]
+      7. [IN DEPTH]
     ============================================================ -->
     <section aria-label="Element 1: Section Label">
       <p class="preview-label">Element 1 — Section Label / Divider</p>
@@ -1207,7 +1278,60 @@
 
 
     <!-- ============================================================
-          ELEMENT 4 — STACK BADGE GRID
+         ELEMENT 4 — IN NUMBERS / STAT COUNTER
+         ─────────────────────────────────────────────────────────
+         PURPOSE   : Animate key metrics into view on scroll.
+                     Sits between the Snapshot Card and the Stack
+                     section label — the numbers land harder once
+                     the reader has context and the snapshot card.
+         USAGE     : 3–4 stats per experience page. Edit only the
+                     data attributes on each .stat-counter item:
+                       data-target  — the final number (integer)
+                       data-prefix  — optional prefix e.g. "~"
+                       data-suffix  — optional suffix e.g. "+"
+                       data-domain  — engineering | data | product | growth
+                     Labels: edit the <span class="stat-counter__label">.
+                     Keep labels short (2–4 words max).
+         HOMEPAGE  : Same component works on the homepage — swap in
+                     site-wide numbers (total users, projects shipped,
+                     years active, etc.)
+         ANIMATION : IntersectionObserver fires once on scroll-enter.
+                     Counts from 0 to data-target over 1.2s ease-out.
+                     Respects prefers-reduced-motion — shows final
+                     value instantly if motion is reduced.
+         SEO NOTE  : Numbers are in the DOM as plain text after
+                     animation completes — fully indexed.
+     ============================================================ -->
+    <section class="stat-counter-section" aria-label="Element 4: In Numbers / Stat Counter">
+      <p class="preview-label">Element 4 — In Numbers / Stat Counter</p>
+      <div class="stat-counter">
+
+        <div class="stat-counter__item" data-target="76" data-suffix="+" data-domain="engineering">
+          <span class="stat-counter__number" aria-live="polite">0</span>
+          <span class="stat-counter__label">Major updates shipped</span>
+        </div>
+
+        <div class="stat-counter__item" data-target="900" data-prefix="~" data-domain="growth">
+          <span class="stat-counter__number" aria-live="polite">0</span>
+          <span class="stat-counter__label">Registered users</span>
+        </div>
+
+        <div class="stat-counter__item" data-target="2" data-domain="product">
+          <span class="stat-counter__number" aria-live="polite">0</span>
+          <span class="stat-counter__label">Founders, zero budget</span>
+        </div>
+
+        <div class="stat-counter__item" data-target="2" data-suffix=" yrs" data-domain="data">
+          <span class="stat-counter__number" aria-live="polite">0</span>
+          <span class="stat-counter__label">From alpha to public launch</span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+          ELEMENT 5 — STACK BADGE GRID
           ─────────────────────────────────────────────────────────
           PURPOSE   : Hard skills used ON THIS PROJECT, grouped by
                       category. No "since" labels here — those go on
@@ -1228,8 +1352,8 @@
             AI & Automation    — emerging toolchain
             Productivity       — office/collaboration suites
       ============================================================ -->
-    <section aria-label="Stack">
-      <p class="preview-label">Element 4 — Stack Badge Grid (full reference)</p>
+    <section aria-label="Element 5: Stack Badge Grid">
+      <p class="preview-label">Element 5 — Stack Badge Grid (full reference)</p>
       <div class="section-label">
         <span class="section-label__text">Stack</span>
         <span class="section-label__line" aria-hidden="true"></span>
@@ -1969,7 +2093,7 @@
     </section>
 
     <!-- ============================================================
-         ELEMENT 5 — ABILITY CARD GRID (MMO Skill Tree)
+         ELEMENT 6 — ABILITY CARD GRID (MMO Skill Tree)
          ─────────────────────────────────────────────────────────
          PURPOSE   : One card per concrete thing built/solved/shipped.
                      Answers "what did he actually do here?"
@@ -1982,8 +2106,8 @@
                      – .ability-card__desc (impact-first, action verbs)
                      – .ability-tag items (stack pieces used)
     ============================================================ -->
-    <section aria-label="Element 5: Ability Card Grid">
-      <p class="preview-label">Element 5 — Ability Card Grid</p>
+    <section aria-label="Element 6: Ability Card Grid">
+      <p class="preview-label">Element 6 — Ability Card Grid</p>
       <div class="section-label">
         <span class="section-label__text">Abilities</span>
         <span class="section-label__line" aria-hidden="true"></span>
@@ -2081,7 +2205,7 @@
 
 
     <!-- ============================================================
-        ELEMENT 6 — WORKS CARD GRID
+        ELEMENT 7 — WORKS CARD GRID
         ─────────────────────────────────────────────────────────
         PURPOSE   : Concrete artefacts proving the abilities above.
         VARIANTS  :
@@ -2094,8 +2218,8 @@
         PORTRAIT  : Add data-orientation="portrait" to .evidence-card__video
                     for vertical content (Shorts, TikTok-style).
     ============================================================ -->
-    <section aria-label="Element 6: Works Card Grid">
-      <p class="preview-label">Element 6 — Works Card Grid</p>
+    <section aria-label="Element 7: Works Card Grid">
+      <p class="preview-label">Element 7 — Works Card Grid</p>
       <div class="section-label">
         <span class="section-label__text">Works</span>
         <span class="section-label__line" aria-hidden="true"></span>
@@ -2214,7 +2338,7 @@
 
 
     <!-- ============================================================
-         ELEMENT 7 — IN DEPTH ACCORDION
+         ELEMENT 8 — IN DEPTH ACCORDION
          ─────────────────────────────────────────────────────────
          PURPOSE   : Depth on demand. Each item expands on one aspect
                      of the experience that couldn't fit in a chip,
@@ -2250,8 +2374,8 @@
                      scraping your portfolio and by search engines
                      indexing your experience.
     ============================================================ -->
-    <section aria-label="Element 7: In Depth">
-      <p class="preview-label">Element 7 — In Depth</p>
+    <section aria-label="Element 8: In Depth">
+      <p class="preview-label">Element 8 — In Depth</p>
       <div class="section-label">
         <span class="section-label__text">In Depth</span>
         <span class="section-label__line" aria-hidden="true"></span>
@@ -2449,6 +2573,52 @@
           );
         });
       });
+
+      // ── Stat counter animation ───────────────────────────────────
+        (function () {
+          const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+          function easeOut(t) {
+            return 1 - Math.pow(1 - t, 3);
+          }
+
+          function animateCounter(item) {
+            const numberEl = item.querySelector('.stat-counter__number');
+            const target = parseInt(item.dataset.target, 10);
+            const prefix = item.dataset.prefix || '';
+            const suffix = item.dataset.suffix || '';
+            const duration = 1200; // ms
+            const start = performance.now();
+
+            if (prefersReduced) {
+              numberEl.textContent = prefix + target + suffix;
+              return;
+            }
+
+            function tick(now) {
+              const elapsed = now - start;
+              const progress = Math.min(elapsed / duration, 1);
+              const value = Math.round(easeOut(progress) * target);
+              numberEl.textContent = prefix + value + suffix;
+              if (progress < 1) requestAnimationFrame(tick);
+            }
+
+            requestAnimationFrame(tick);
+          }
+
+          // IntersectionObserver — fires once per item
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (!entry.isIntersecting) return;
+              const item = entry.target;
+              item.classList.add('is-visible');
+              animateCounter(item);
+              observer.unobserve(item); // fire once only
+            });
+          }, { threshold: 0.3 });
+
+          document.querySelectorAll('.stat-counter__item').forEach(item => observer.observe(item));
+        })();
   </script>
 </body>
 
