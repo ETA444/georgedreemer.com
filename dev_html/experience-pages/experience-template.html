@@ -521,6 +521,44 @@
       margin-bottom: var(--space-1);
     }
 
+    /* ── Credential card: org description ───────────────────────── */
+    .credential-card__org-desc {
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--color-text-faint);
+      line-height: 1.5;
+      margin: 0.25rem 0 0.35rem;
+      max-width: 52ch;
+    }
+
+    /* ── Credential card: bullet learning points ─────────────────── */
+    .credential-card__bullets {
+      list-style: none;
+      padding: 0;
+      margin: 0.25rem 0 0.45rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .credential-card__bullets li {
+      font-size: 0.7rem;
+      font-weight: 400;
+      color: var(--color-text-faint);
+      line-height: 1.5;
+      padding-left: 0.9rem;
+      position: relative;
+      max-width: 52ch;
+    }
+
+    .credential-card__bullets li::before {
+      content: '·';
+      position: absolute;
+      left: 0.2rem;
+      color: var(--color-text-faint);
+      font-weight: 700;
+    }
+
     .credential-card__link {
       color: inherit;
       text-decoration: none;
@@ -1806,6 +1844,9 @@
               <div class="credential-card__body">
                 <p class="credential-card__title">MSc Marketing Analytics &amp; Data Science</p>
                 <p class="credential-card__sub">University of Groningen · 🇳🇱 Groningen, NL</p>
+                <p class="credential-card__org-desc">Dutch  research university ranked among Europe's top institutions — the
+                  MSc combined marketing strategy with statistical modelling, machine learning, and data science methods in Python, R, Stata and SQL.
+                </p>
                 <div class="credential-card__meta">
                   <span class="credential-pill credential-pill--year">2022 – 2024</span>
                   <span class="credential-pill credential-pill--gpa">GPA ~8.0 / 10</span>
@@ -1820,8 +1861,11 @@
                   alt="Hampshire College" width="25" height="25" loading="lazy">
               </div>
               <div class="credential-card__body">
-                <p class="credential-card__title">BA Marketing & Business</p>
+                <p class="credential-card__title">BA Marketing &amp; Business</p>
                 <p class="credential-card__sub">Hampshire College · 🇺🇸 Amherst, MA</p>
+                <p class="credential-card__org-desc">
+                  A selective liberal arts college in Amherst, MA, part of the Five College Consortium — George took graduate-level courses at UMass Amherst's Isenberg School of Management and Smith College alongside a self-directed curriculum built around independent research and entrepreneurial practice.
+                </p>
                 <div class="credential-card__meta">
                   <span class="credential-pill credential-pill--year">2015 – 2019</span>
                   <span class="credential-pill credential-pill--gpa">GPA 3.81 / 4.0</span>
@@ -1836,6 +1880,11 @@
               <div class="credential-card__body">
                 <p class="credential-card__title">Professional Data Scientist</p>
                 <p class="credential-card__sub">DataCamp Professional Track</p>
+                <p class="credential-card__org-desc">DataCamp's most advanced career track — covers the full data science pipeline
+                  from data wrangling and statistical analysis to machine learning and communicating insights to business
+                  stakeholders. <br><br><a
+                    href="https://www.datacamp.com/completed/statement-of-accomplishment/track/61c10c7c89eda0525178ea565d88fce131b33597"
+                    target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a></p>
                 <div class="credential-card__meta">
                   <span class="credential-pill credential-pill--cert">Python</span>
                   <span class="credential-pill credential-pill--score">R</span>
@@ -1851,6 +1900,9 @@
               <div class="credential-card__body">
                 <p class="credential-card__title">Associate Data Scientist</p>
                 <p class="credential-card__sub">DataCamp Professional Track</p>
+                <p class="credential-card__org-desc">
+                  A structured track covering Python, statistical techniques, and machine learning fundamentals — built around real-world datasets and hands-on projects across the full analytical workflow.
+                </p>
                 <div class="credential-card__meta">
                   <span class="credential-pill credential-pill--cert">Python</span>
                   <span class="credential-pill credential-pill--score">R</span>
@@ -1971,7 +2023,6 @@
           </div>
         </div>
 
-        <!-- ── Organizations & Community ─────────────────────── -->
         <!-- ── Organizations & Community ─────────────────────── -->
         <div class="stack-group stack-group--credentials">
           <p class="stack-group__label">Organizations &amp; Community</p>
