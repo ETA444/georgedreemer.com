@@ -1619,6 +1619,141 @@
       </div>
     </section>
 
+    <!-- ── E8: IN DEPTH ACCORDION ─────────────────────────────── -->
+    <section aria-label="In Depth" class="fade-in">
+      <div class="section-label">
+        <span class="section-label__text">In Depth</span>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+
+      <div class="story-accordion" role="list">
+
+        <!-- Item 1: Engineering — open by default -->
+        <div class="story-accordion__item" data-domain="engineering" role="listitem">
+          <button class="story-accordion__trigger" aria-expanded="true" aria-controls="story-panel-1">
+            <span class="story-accordion__trigger-left">
+              <span class="story-accordion__domain-tag">
+                <span class="story-accordion__domain-dot"></span>Engineering
+              </span>
+              <span class="story-accordion__trigger-label">Built from scratch in high school</span>
+            </span>
+            <svg class="story-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="story-accordion__body" id="story-panel-1" aria-hidden="false">
+            <div class="story-accordion__inner">
+              <div class="story-accordion__content">
+                <p>Nikolay and I built thoughtbubble in PHP, JavaScript, and MySQL. There was no framework, no CMS, no
+                  boilerplate. Every system was written from the ground up: authentication, session management, a news
+                  feed with sorting logic, post types (text, photo, video), likes, pins, comments, hashtags, categories,
+                  notifications, profile customisation, account settings, and a user feedback pipeline. We shipped
+                  <strong>76 major updates</strong> between the closed alpha and public launch.
+                </p>
+                <p>The infrastructure ran on shared hosting with a manually configured MySQL database. There was no
+                  version control beyond file backups, no CI, no staging environment. It was scrappy by any standard —
+                  but it worked, it scaled to nearly a thousand users, and every line of it was ours.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Product -->
+        <div class="story-accordion__item" data-domain="product" role="listitem">
+          <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-2">
+            <span class="story-accordion__trigger-left">
+              <span class="story-accordion__domain-tag">
+                <span class="story-accordion__domain-dot"></span>Product
+              </span>
+              <span class="story-accordion__trigger-label">The idea that was two years early</span>
+            </span>
+            <svg class="story-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="story-accordion__body" id="story-panel-2" aria-hidden="true">
+            <div class="story-accordion__inner">
+              <div class="story-accordion__content">
+                <p>The pitch was simple: a social network where your feed only teaches you things. No vacation photos,
+                  no cat videos — just insights from books, actionable quotes, and self-improvement content. We built it
+                  in 2014, inspired by the rise of Gary Vaynerchuk and Tai Lopez and the audiences forming around them.
+                  We saw a clear gap between entertainment-first platforms and the kind of content those audiences
+                  actually wanted.</p>
+                <p>What we were describing — a curated, knowledge-first feed with social mechanics — is close to what
+                  Twitter's long-form pivot, Substack, and LinkedIn's content layer eventually became. We were two
+                  teenagers with no funding and no network, so the timing didn't matter in the end. But the product
+                  instinct was right.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Growth -->
+        <div class="story-accordion__item" data-domain="growth" role="listitem">
+          <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-3">
+            <span class="story-accordion__trigger-left">
+              <span class="story-accordion__domain-tag">
+                <span class="story-accordion__domain-dot"></span>Growth
+              </span>
+              <span class="story-accordion__trigger-label">How we got 900 users without spending a dollar</span>
+            </span>
+            <svg class="story-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="story-accordion__body" id="story-panel-3" aria-hidden="true">
+            <div class="story-accordion__inner">
+              <div class="story-accordion__content">
+                <p>We didn't run ads. We didn't have a budget. The growth strategy was entirely manual: reach out
+                  directly to people who were already creating self-improvement content on YouTube or Instagram, show
+                  them the platform, and get them to seed it with their content. We identified early that a
+                  knowledge-first feed is only as good as the content in it — if the first 50 users post junk, the
+                  product is dead on arrival.</p>
+                <p>We tracked registrations, session counts, and engagement metrics in MySQL and used those numbers to
+                  prioritise what to build next. The most-used features got more polish. The least-used ones got cut or
+                  rethought. We didn't call it a data-driven product loop at the time, but that's exactly what it was.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Legal -->
+        <div class="story-accordion__item" data-domain="product" role="listitem">
+          <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-4">
+            <span class="story-accordion__trigger-left">
+              <span class="story-accordion__domain-tag">
+                <span class="story-accordion__domain-dot"></span>Product
+              </span>
+              <span class="story-accordion__trigger-label">We got ripped off by a lawyer. We got the copyright
+                anyway.</span>
+            </span>
+            <svg class="story-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="story-accordion__body" id="story-panel-4" aria-hidden="true">
+            <div class="story-accordion__inner">
+              <div class="story-accordion__content">
+                <p>At some point we decided thoughtbubble needed to be protected. Two teenagers, no legal background, no
+                  one in our corner — we hired a copyright lawyer who took our money, did minimal work, and left us with
+                  very little to show for it. Classic story. We pushed through it, filed properly, and got the copyright
+                  registered. It cost more than it should have and took longer than it should have.</p>
+                <p>In hindsight it was the first time I dealt with the unglamorous side of building something — the
+                  admin, the legal, the people who see inexperience as an opportunity. I would handle it very
+                  differently now. But we got the copyright.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
   <script>
