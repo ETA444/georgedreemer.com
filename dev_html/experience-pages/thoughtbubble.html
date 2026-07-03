@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>thoughtbubble — George Dreemer</title>
+  <meta name="description"
+    content="thoughtbubble was a knowledge-first social network co-founded by George Dreemer in 2014. Built from scratch in PHP and MySQL, it grew to ~900 users with zero budget.">
+  <meta property="og:title" content="thoughtbubble — George Dreemer">
+  <meta property="og:description"
+    content="A knowledge-first social network built from scratch in high school. PHP, MySQL, ~900 users, zero budget.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+  <style>
+    :root {
+      --font-body: "Nunito", "Helvetica Neue", sans-serif;
+      --font-display: "Playfair Display", Georgia, serif;
+      --color-bg: #ffffff;
+      --color-surface: #f8f7f4;
+      --color-surface-2: #f0ede8;
+      --color-border: rgba(0, 0, 0, 0.10);
+      --color-divider: rgba(0, 0, 0, 0.07);
+      --color-text: #1a1814;
+      --color-text-muted: #5a5750;
+      --color-text-faint: #9a9590;
+      --color-accent: #bf7bff;
+      --color-accent-dim: rgba(191, 123, 255, 0.12);
+      --color-primary: #01696f;
+      --color-blue: #006494;
+      --color-gold: #d19900;
+      --color-orange: #da7101;
+      --space-1: .25rem;
+      --space-2: .5rem;
+      --space-3: .75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --text-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.82rem + 0.28vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.22vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.6vw, 1.4rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+      --radius-sm: .25rem;
+      --radius-md: .5rem;
+      --radius-lg: .875rem;
+      --radius-full: 9999px;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.05);
+      --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+      --content-default: 860px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      -webkit-font-smoothing: antialiased;
+      scroll-behavior: smooth;
+      scroll-padding-top: 5rem;
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      font-weight: 300;
+      color: var(--color-text);
+      background: var(--color-bg);
+      line-height: 1.65;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      cursor: pointer;
+      background: none;
+      border: none;
+      font: inherit;
+    }
+
+    /* ── NAV ────────────────────────────────────────────────── */
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-divider);
+    }
+
+    .site-nav__inner {
+      max-width: var(--content-default);
+      margin-inline: auto;
+      padding: var(--space-3) var(--space-6);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+    }
+
+    .site-nav__back {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-size: var(--text-xs);
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      transition: color var(--transition);
+    }
+
+    .site-nav__back:hover {
+      color: var(--color-primary);
+    }
+
+    .site-nav__back svg {
+      width: 14px;
+      height: 14px;
+      stroke: currentColor;
+      stroke-width: 2;
+      transition: transform var(--transition);
+    }
+
+    .site-nav__back:hover svg {
+      transform: translateX(-3px);
+    }
+
+    .site-nav__title {
+      font-family: var(--font-display);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      color: var(--color-text);
+      letter-spacing: .01em;
+    }
+
+    /* ── PAGE LAYOUT ─────────────────────────────────────────── */
+    .experience-page {
+      max-width: var(--content-default);
+      margin-inline: auto;
+      padding: var(--space-10) var(--space-6) var(--space-16);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-12);
+    }
+
+    /* ── PAGE HEADER ─────────────────────────────────────────── */
+    .page-header {
+      padding-bottom: var(--space-8);
+      border-bottom: 1px solid var(--color-divider);
+    }
+
+    .page-header__eyebrow {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--color-primary);
+      margin-bottom: var(--space-3);
+    }
+
+    .page-header__title {
+      font-family: var(--font-display);
+      font-size: var(--text-2xl);
+      font-weight: 600;
+      line-height: 1.15;
+      color: var(--color-text);
+      margin-bottom: var(--space-4);
+      letter-spacing: -0.01em;
+    }
+
+    .page-header__subtitle {
+      font-size: var(--text-base);
+      font-weight: 300;
+      color: var(--color-text-muted);
+      max-width: 56ch;
+      line-height: 1.7;
+    }
+
+    /* ── SECTION LABEL ───────────────────────────────────────── */
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+      margin-bottom: var(--space-6);
+    }
+
+    .section-label__text {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      white-space: nowrap;
+    }
+
+    .section-label__line {
+      flex: 1;
+      height: 1px;
+      background: var(--color-divider);
+    }
+
+    /* ── CONTEXT BLOCK ───────────────────────────────────────── */
+    .context-block {
+      border-left: 2px solid var(--color-divider);
+      padding-left: var(--space-5);
+    }
+
+    .context-block p {
+      font-size: var(--text-base);
+      font-weight: 300;
+      color: var(--color-text-muted);
+      line-height: 1.75;
+      max-width: 68ch;
+    }
+
+    .context-block p+p {
+      margin-top: var(--space-3);
+    }
+
+    /* ── SNAPSHOT CARD ───────────────────────────────────────── */
+    .snapshot-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-top: 2px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6) var(--space-8);
+    }
+
+    .snapshot-card[data-domain="engineering"] {
+      border-top-color: var(--color-primary);
+    }
+
+    .snapshot-card[data-domain="data"] {
+      border-top-color: var(--color-blue);
+    }
+
+    .snapshot-card[data-domain="product"] {
+      border-top-color: var(--color-gold);
+    }
+
+    .snapshot-card[data-domain="growth"] {
+      border-top-color: var(--color-orange);
+    }
+
+    .snapshot-card__meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(180px, 100%), 1fr));
+      gap: var(--space-5) var(--space-8);
+      margin-bottom: var(--space-6);
+    }
+
+    .snapshot-card__divider {
+      height: 1px;
+      background: var(--color-divider);
+      margin-bottom: var(--space-6);
+    }
+
+    .snapshot-item__key {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--color-text-faint);
+      margin-bottom: var(--space-1);
+    }
+
+    .snapshot-item__value {
+      font-size: var(--text-sm);
+      font-weight: 400;
+      color: var(--color-text);
+      line-height: 1.4;
+    }
+
+    .snapshot-item--prominent .snapshot-item__value {
+      font-size: var(--text-base);
+      font-weight: 600;
+    }
+
+    .snapshot-item__value a {
+      color: var(--color-text);
+      border-bottom: 1px solid var(--color-border);
+      transition: border-color var(--transition), color var(--transition);
+    }
+
+    .snapshot-item__value a:hover {
+      color: var(--color-primary);
+      border-bottom-color: var(--color-primary);
+    }
+
+    .snapshot-card__highlights-label {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--color-text-faint);
+      margin-bottom: var(--space-3);
+    }
+
+    .snapshot-card__chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+    }
+
+    .achievement-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-full);
+      padding: var(--space-1) var(--space-4) var(--space-1) var(--space-3);
+      font-size: var(--text-xs);
+      font-weight: 400;
+      color: var(--color-text-muted);
+      line-height: 1.4;
+    }
+
+    .achievement-chip__dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      background: var(--color-text-faint);
+    }
+
+    .achievement-chip[data-domain="engineering"] .achievement-chip__dot {
+      background: var(--color-primary);
+    }
+
+    .achievement-chip[data-domain="data"] .achievement-chip__dot {
+      background: var(--color-blue);
+    }
+
+    .achievement-chip[data-domain="product"] .achievement-chip__dot {
+      background: var(--color-gold);
+    }
+
+    .achievement-chip[data-domain="growth"] .achievement-chip__dot {
+      background: var(--color-orange);
+    }
+
+    .achievement-chip[data-domain="engineering"] {
+      border-color: color-mix(in srgb, var(--color-primary) 20%, transparent);
+    }
+
+    .achievement-chip[data-domain="data"] {
+      border-color: color-mix(in srgb, var(--color-blue) 20%, transparent);
+    }
+
+    .achievement-chip[data-domain="product"] {
+      border-color: color-mix(in srgb, var(--color-gold) 20%, transparent);
+    }
+
+    .achievement-chip[data-domain="growth"] {
+      border-color: color-mix(in srgb, var(--color-orange) 20%, transparent);
+    }
+
+    /* ── STAT COUNTER (E4 — In Numbers) ─────────────────────── */
+    .stat-counter-section {
+      padding-block: var(--space-4);
+    }
+
+    .stat-counter {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-6);
+    }
+
+    .stat-counter__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: var(--space-2);
+      opacity: 0;
+      transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .stat-counter__item.is-visible {
+      opacity: 1;
+    }
+
+    .stat-counter__item:nth-child(1) {
+      transition-delay: 0ms;
+    }
+
+    .stat-counter__item:nth-child(2) {
+      transition-delay: 80ms;
+    }
+
+    .stat-counter__item:nth-child(3) {
+      transition-delay: 160ms;
+    }
+
+    .stat-counter__item:nth-child(4) {
+      transition-delay: 240ms;
+    }
+
+    .stat-counter__number {
+      font-family: var(--font-body);
+      font-size: var(--text-2xl);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      color: var(--color-text-muted);
+    }
+
+    .stat-counter__item[data-domain="engineering"] .stat-counter__number {
+      color: var(--color-primary);
+    }
+
+    .stat-counter__item[data-domain="data"] .stat-counter__number {
+      color: var(--color-blue);
+    }
+
+    .stat-counter__item[data-domain="product"] .stat-counter__number {
+      color: var(--color-gold);
+    }
+
+    .stat-counter__item[data-domain="growth"] .stat-counter__number {
+      color: var(--color-orange);
+    }
+
+    .stat-counter__label {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      line-height: 1.4;
+      max-width: 14ch;
+    }
+
+    @media (max-width: 640px) {
+      .stat-counter {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-8) var(--space-4);
+      }
+    }
+
+    /* ── STACK GRID ──────────────────────────────────────────── */
+    .stack-grid {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-5);
+    }
+
+    .stack-group__label {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--color-text-faint);
+      margin-bottom: var(--space-3);
+    }
+
+    .stack-group__items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+    }
+
+    .stack-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-full);
+      padding: var(--space-1) var(--space-4) var(--space-1) var(--space-2);
+      transition: background var(--transition), box-shadow var(--transition);
+      cursor: default;
+    }
+
+    .stack-badge:hover {
+      background: var(--color-surface-2);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .stack-badge img {
+      width: 18px;
+      height: 18px;
+      object-fit: contain;
+      opacity: .80;
+    }
+
+    .stack-badge__name {
+      font-size: var(--text-xs);
+      font-weight: 600;
+      color: var(--color-text);
+      letter-spacing: .01em;
+    }
+
+    .stack-badge--text {
+      padding: var(--space-1) var(--space-4);
+    }
+
+    .stack-badge__mark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 18px;
+      height: 18px;
+      border-radius: 4px;
+      font-size: 0.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #fff;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+
+    /* ── ABILITY GRID ────────────────────────────────────────── */
+    .ability-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
+      gap: var(--space-4);
+    }
+
+    .ability-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-top: 2px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+      transition: box-shadow var(--transition), background var(--transition);
+    }
+
+    .ability-card:hover {
+      box-shadow: var(--shadow-md);
+      background: var(--color-surface-2);
+    }
+
+    .ability-card__icon {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ability-card__icon svg {
+      width: 20px;
+      height: 20px;
+      stroke-width: 1.5;
+    }
+
+    .ability-card__title {
+      font-size: var(--text-sm);
+      font-weight: 700;
+      color: var(--color-text);
+      line-height: 1.3;
+    }
+
+    .ability-card__desc {
+      font-size: var(--text-xs);
+      font-weight: 300;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+      flex: 1;
+    }
+
+    .ability-card__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-1);
+      margin-top: auto;
+    }
+
+    .ability-tag {
+      display: inline-flex;
+      align-items: center;
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      background: var(--color-surface-2);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-full);
+      padding: 2px 8px;
+      letter-spacing: 0.01em;
+      white-space: nowrap;
+      line-height: 1.5;
+    }
+
+    .ability-card[data-domain="engineering"] {
+      border-top: 2px solid var(--color-primary);
+    }
+
+    .ability-card[data-domain="engineering"] .ability-card__icon {
+      color: var(--color-primary);
+    }
+
+    .ability-card[data-domain="data"] {
+      border-top: 2px solid var(--color-blue);
+    }
+
+    .ability-card[data-domain="data"] .ability-card__icon {
+      color: var(--color-blue);
+    }
+
+    .ability-card[data-domain="product"] {
+      border-top: 2px solid var(--color-gold);
+    }
+
+    .ability-card[data-domain="product"] .ability-card__icon {
+      color: var(--color-gold);
+    }
+
+    .ability-card[data-domain="growth"] {
+      border-top: 2px solid var(--color-orange);
+    }
+
+    .ability-card[data-domain="growth"] .ability-card__icon {
+      color: var(--color-orange);
+    }
+
+    /* Legend */
+    .ability-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      margin-bottom: var(--space-6);
+    }
+
+    .ability-legend__item {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-size: var(--text-xs);
+      font-weight: 500;
+      padding: var(--space-1) var(--space-3);
+      border-radius: var(--radius-full);
+      border: 1px solid transparent;
+      letter-spacing: 0.02em;
+    }
+
+    .ability-legend__dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .ability-legend__item--engineering {
+      color: var(--color-primary);
+      background: color-mix(in srgb, var(--color-primary) 10%, transparent);
+      border-color: color-mix(in srgb, var(--color-primary) 25%, transparent);
+    }
+
+    .ability-legend__item--engineering .ability-legend__dot {
+      background: var(--color-primary);
+    }
+
+    .ability-legend__item--data {
+      color: var(--color-blue);
+      background: color-mix(in srgb, var(--color-blue) 10%, transparent);
+      border-color: color-mix(in srgb, var(--color-blue) 25%, transparent);
+    }
+
+    .ability-legend__item--data .ability-legend__dot {
+      background: var(--color-blue);
+    }
+
+    .ability-legend__item--product {
+      color: var(--color-gold);
+      background: color-mix(in srgb, var(--color-gold) 10%, transparent);
+      border-color: color-mix(in srgb, var(--color-gold) 25%, transparent);
+    }
+
+    .ability-legend__item--product .ability-legend__dot {
+      background: var(--color-gold);
+    }
+
+    .ability-legend__item--growth {
+      color: var(--color-orange);
+      background: color-mix(in srgb, var(--color-orange) 10%, transparent);
+      border-color: color-mix(in srgb, var(--color-orange) 25%, transparent);
+    }
+
+    .ability-legend__item--growth .ability-legend__dot {
+      background: var(--color-orange);
+    }
+
+    /* ── WORKS / EVIDENCE GRID ───────────────────────────────── */
+    .evidence-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+      gap: var(--space-4);
+    }
+
+    .evidence-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-left: 3px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: box-shadow var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .evidence-card:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    .evidence-card[data-domain="engineering"] {
+      border-left-color: var(--color-primary);
+    }
+
+    .evidence-card[data-domain="data"] {
+      border-left-color: var(--color-blue);
+    }
+
+    .evidence-card[data-domain="product"] {
+      border-left-color: var(--color-gold);
+    }
+
+    .evidence-card[data-domain="growth"] {
+      border-left-color: var(--color-orange);
+    }
+
+    .evidence-card__domain-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-radius: var(--radius-full);
+      margin-bottom: var(--space-2);
+    }
+
+    .evidence-card__domain-tag-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .evidence-card[data-domain="engineering"] .evidence-card__domain-tag {
+      color: var(--color-primary);
+    }
+
+    .evidence-card[data-domain="engineering"] .evidence-card__domain-tag-dot {
+      background: var(--color-primary);
+    }
+
+    .evidence-card[data-domain="data"] .evidence-card__domain-tag {
+      color: var(--color-blue);
+    }
+
+    .evidence-card[data-domain="data"] .evidence-card__domain-tag-dot {
+      background: var(--color-blue);
+    }
+
+    .evidence-card[data-domain="product"] .evidence-card__domain-tag {
+      color: var(--color-gold);
+    }
+
+    .evidence-card[data-domain="product"] .evidence-card__domain-tag-dot {
+      background: var(--color-gold);
+    }
+
+    .evidence-card[data-domain="growth"] .evidence-card__domain-tag {
+      color: var(--color-orange);
+    }
+
+    .evidence-card[data-domain="growth"] .evidence-card__domain-tag-dot {
+      background: var(--color-orange);
+    }
+
+    /* Thumb (placeholder bg for now) */
+    .evidence-card__thumb {
+      width: 100%;
+      aspect-ratio: 16/9;
+      overflow: hidden;
+      background: var(--color-surface-2);
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .evidence-card__thumb--placeholder {
+      font-size: var(--text-xs);
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--color-text-faint);
+    }
+
+    /* Slideshow variant */
+    .evidence-card__slides {
+      width: 100%;
+      aspect-ratio: 16/9;
+      overflow: hidden;
+      background: var(--color-surface-2);
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .evidence-card__slide {
+      min-width: 100%;
+      height: 100%;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: opacity 600ms cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+    }
+
+    .evidence-card__slide.is-active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .evidence-card__slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .evidence-card__slide-dots {
+      position: absolute;
+      bottom: var(--space-2);
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 5px;
+      z-index: 2;
+    }
+
+    .evidence-card__slide-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.45);
+      transition: background var(--transition), transform var(--transition);
+      cursor: pointer;
+      border: none;
+      padding: 0;
+    }
+
+    .evidence-card__slide-dot.is-active {
+      background: #fff;
+      transform: scale(1.3);
+    }
+
+    .evidence-card[data-domain="engineering"] .evidence-card__slide-dot.is-active {
+      background: var(--color-primary);
+    }
+
+    .evidence-card[data-domain="product"] .evidence-card__slide-dot.is-active {
+      background: var(--color-gold);
+    }
+
+    .evidence-card[data-domain="growth"] .evidence-card__slide-dot.is-active {
+      background: var(--color-orange);
+    }
+
+    /* Card body */
+    .evidence-card__body {
+      padding: var(--space-4) var(--space-5);
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .evidence-card__title {
+      font-size: var(--text-sm);
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: var(--space-2);
+      line-height: 1.3;
+    }
+
+    .evidence-card__bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-1);
+      margin-top: auto;
+    }
+
+    .evidence-card__bullets li {
+      font-size: var(--text-xs);
+      font-weight: 300;
+      color: var(--color-text-muted);
+      line-height: 1.5;
+      padding-left: var(--space-4);
+      position: relative;
+    }
+
+    .evidence-card__bullets li::before {
+      content: "";
+      position: absolute;
+      left: 4px;
+      top: 6px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--color-text-faint);
+    }
+
+    /* ── ACCORDION (In Depth) ─────────────────────────────────── */
+    .story-accordion {
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+
+    .story-accordion__item+.story-accordion__item {
+      border-top: 1px solid var(--color-divider);
+    }
+
+    .story-accordion__trigger {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: var(--space-5) var(--space-6);
+      background: var(--color-surface);
+      border: none;
+      cursor: pointer;
+      gap: var(--space-4);
+      transition: background var(--transition);
+    }
+
+    .story-accordion__trigger:hover {
+      background: var(--color-surface-2);
+    }
+
+    .story-accordion__trigger-left {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      min-width: 0;
+    }
+
+    .story-accordion__trigger-label {
+      font-size: var(--text-sm);
+      font-weight: 700;
+      color: var(--color-text);
+      letter-spacing: .02em;
+      text-align: left;
+    }
+
+    .story-accordion__domain-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      flex-shrink: 0;
+    }
+
+    .story-accordion__domain-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .story-accordion__item[data-domain="engineering"] .story-accordion__domain-tag {
+      color: var(--color-primary);
+    }
+
+    .story-accordion__item[data-domain="engineering"] .story-accordion__domain-dot {
+      background: var(--color-primary);
+    }
+
+    .story-accordion__item[data-domain="data"] .story-accordion__domain-tag {
+      color: var(--color-blue);
+    }
+
+    .story-accordion__item[data-domain="data"] .story-accordion__domain-dot {
+      background: var(--color-blue);
+    }
+
+    .story-accordion__item[data-domain="product"] .story-accordion__domain-tag {
+      color: var(--color-gold);
+    }
+
+    .story-accordion__item[data-domain="product"] .story-accordion__domain-dot {
+      background: var(--color-gold);
+    }
+
+    .story-accordion__item[data-domain="growth"] .story-accordion__domain-tag {
+      color: var(--color-orange);
+    }
+
+    .story-accordion__item[data-domain="growth"] .story-accordion__domain-dot {
+      background: var(--color-orange);
+    }
+
+    .story-accordion__chevron {
+      width: 18px;
+      height: 18px;
+      color: var(--color-text-muted);
+      transition: transform var(--transition);
+      flex-shrink: 0;
+    }
+
+    .story-accordion__trigger[aria-expanded="true"] .story-accordion__chevron {
+      transform: rotate(180deg);
+    }
+
+    .story-accordion__body {
+      display: grid;
+      grid-template-rows: 0fr;
+      background: var(--color-bg);
+      border-left: 2px solid transparent;
+      transition: grid-template-rows 380ms cubic-bezier(0.16, 1, 0.3, 1),
+        border-color 380ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .story-accordion__body[aria-hidden="false"] {
+      grid-template-rows: 1fr;
+    }
+
+    .story-accordion__item[data-domain="engineering"] .story-accordion__body[aria-hidden="false"] {
+      border-left-color: var(--color-primary);
+    }
+
+    .story-accordion__item[data-domain="data"] .story-accordion__body[aria-hidden="false"] {
+      border-left-color: var(--color-blue);
+    }
+
+    .story-accordion__item[data-domain="product"] .story-accordion__body[aria-hidden="false"] {
+      border-left-color: var(--color-gold);
+    }
+
+    .story-accordion__item[data-domain="growth"] .story-accordion__body[aria-hidden="false"] {
+      border-left-color: var(--color-orange);
+    }
+
+    .story-accordion__inner {
+      overflow: hidden;
+    }
+
+    .story-accordion__content {
+      padding: var(--space-6) var(--space-6) var(--space-8);
+      font-size: var(--text-sm);
+      font-weight: 300;
+      color: var(--color-text-muted);
+      line-height: 1.8;
+      max-width: 70ch;
+    }
+
+    .story-accordion__content p+p {
+      margin-top: var(--space-4);
+    }
+
+    .story-accordion__content strong {
+      font-weight: 600;
+      color: var(--color-text);
+    }
+
+    .story-accordion__content ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+      margin-top: var(--space-3);
+    }
+
+    .story-accordion__content ul li {
+      padding-left: var(--space-4);
+      position: relative;
+    }
+
+    .story-accordion__content ul li::before {
+      content: "";
+      position: absolute;
+      left: 4px;
+      top: 8px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--color-text-faint);
+    }
+
+    /* ── SCROLL REVEAL ───────────────────────────────────────── */
+    @supports(animation-timeline:scroll()) {
+      .fade-in {
+        opacity: 0;
+        animation: reveal-fade linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 80%;
+      }
+    }
+
+    @keyframes reveal-fade {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      .fade-in {
+        opacity: 1;
+        animation: none;
+      }
+
+      .stat-counter__item {
+        opacity: 1;
+      }
+    }
+
+    /* ── RESPONSIVE ──────────────────────────────────────────── */
+    @media(max-width:600px) {
+      .experience-page {
+        padding: var(--space-6) var(--space-4);
+        gap: var(--space-8);
+      }
+
+      .snapshot-card {
+        padding: var(--space-5);
+      }
+
+      .ability-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .evidence-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .page-header__title {
+        font-size: clamp(1.75rem, 8vw, 2.5rem);
+      }
+
+      .site-nav__title {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ── STICKY NAV ─────────────────────────────────────────── -->
+  <nav class="site-nav" aria-label="Site navigation">
+    <div class="site-nav__inner">
+      <a href="/" class="site-nav__back" aria-label="Back to portfolio">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
+        Portfolio
+      </a>
+      <span class="site-nav__title">thoughtbubble</span>
+      <div style="width:80px"></div><!-- spacer to keep title centered -->
+    </div>
+  </nav>
+
+  <main class="experience-page" role="main">
+
+    <!-- ── PAGE HEADER ────────────────────────────────────────── -->
+    <header class="page-header">
+      <p class="page-header__eyebrow">Experience</p>
+      <h1 class="page-header__title">thoughtbubble</h1>
+      <p class="page-header__subtitle">A knowledge-first social network, built from scratch by two teenagers in a
+        high-school dorm room. PHP, MySQL, zero budget, and a genuinely original idea.</p>
+    </header>
+
+    <!-- ── E2: CONTEXT ────────────────────────────────────────── -->
+    <section aria-label="Context" class="fade-in">
+      <div class="context-block">
+        <p>thoughtbubble was a knowledge-first social network co-founded by George Dreemer and Nikolay Stanchev between
+          2014 and 2016 in the United States. It was designed to shift social media away from entertainment toward
+          sharing ideas, insights, and self-improvement content.</p>
+        <p>The platform grew to around 900 registered users and offered a full social experience — posts, comments,
+          likes, pins, notifications, and customisable profiles — built entirely from scratch by a two-person team while
+          still in high school.</p>
+      </div>
+    </section>
+
+    <!-- ── E3: SNAPSHOT CARD ──────────────────────────────────── -->
+    <section aria-label="Snapshot" class="fade-in">
+      <div class="snapshot-card" data-domain="engineering">
+        <div class="snapshot-card__meta">
+
+          <div class="snapshot-item snapshot-item--prominent">
+            <p class="snapshot-item__key">Role</p>
+            <p class="snapshot-item__value">Co-Founder &amp; Full-Stack Developer</p>
+          </div>
+          <div class="snapshot-item snapshot-item--prominent">
+            <p class="snapshot-item__key">Type</p>
+            <p class="snapshot-item__value">Social Network Startup</p>
+          </div>
+          <div class="snapshot-item">
+            <p class="snapshot-item__key">Timeframe</p>
+            <p class="snapshot-item__value">2014 – 2016</p>
+          </div>
+          <div class="snapshot-item">
+            <p class="snapshot-item__key">Location</p>
+            <p class="snapshot-item__value">Amherst, MA — United States</p>
+          </div>
+          <div class="snapshot-item">
+            <p class="snapshot-item__key">Link</p>
+            <p class="snapshot-item__value">
+              <a href="https://www.georgedreemer.com/thoughtbubble" target="_blank"
+                rel="noopener noreferrer">georgedreemer.com/thoughtbubble</a>
+            </p>
+          </div>
+
+        </div>
+        <div class="snapshot-card__divider"></div>
+
+        <p class="snapshot-card__highlights-label">Highlights</p>
+        <div class="snapshot-card__chips">
+          <span class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Built full social platform from scratch in PHP + MySQL
+          </span>
+          <span class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Custom auth, notifications, and AJAX interactions
+          </span>
+          <span class="achievement-chip" data-domain="data">
+            <span class="achievement-chip__dot"></span>Tracked user behaviour and growth metrics throughout
+          </span>
+          <span class="achievement-chip" data-domain="product">
+            <span class="achievement-chip__dot"></span>Designed full UX — feed, profiles, and post system
+          </span>
+          <span class="achievement-chip" data-domain="product">
+            <span class="achievement-chip__dot"></span>Iterated on UI based on direct user feedback
+          </span>
+          <span class="achievement-chip" data-domain="growth">
+            <span class="achievement-chip__dot"></span>Grew to ~900 registered users with zero ad spend
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── E4: IN NUMBERS ─────────────────────────────────────── -->
+    <section class="stat-counter-section" aria-label="In Numbers">
+      <div class="stat-counter">
+
+        <div class="stat-counter__item" data-target="76" data-suffix="+" data-domain="engineering">
+          <span class="stat-counter__number" aria-live="polite">0</span>
+          <span class="stat-counter__label">Major updates shipped</span>
+        </div>
+
+        <div class="stat-counter__item" data-target="900" data-prefix="~" data-domain="growth">
+          <span class="stat-counter__number" aria-live="polite">0</span>
+          <span class="stat-counter__label">Registered users</span>
+        </div>
+
+        <div class="stat-counter__item" data-target="2" data-domain="product">
+          <span class="stat-counter__number" aria-live="polite">0</span>
+          <span class="stat-counter__label">Founders, zero budget</span>
+        </div>
+
+        <div class="stat-counter__item" data-target="2" data-suffix=" yrs" data-domain="data">
+          <span class="stat-counter__number" aria-live="polite">0</span>
+          <span class="stat-counter__label">Alpha to public launch</span>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    // ── Lucide icons ──────────────────────────────────────────────
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    } else {
+      document.querySelector('script[src*="lucide"]')
+        .addEventListener('load', () => lucide.createIcons());
+    }
+
+    // ── Accordion ─────────────────────────────────────────────────
+    document.querySelectorAll('.story-accordion__trigger').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const isOpen = btn.getAttribute('aria-expanded') === 'true';
+        btn.closest('.story-accordion').querySelectorAll('.story-accordion__trigger').forEach(b => {
+          b.setAttribute('aria-expanded', 'false');
+          document.getElementById(b.getAttribute('aria-controls')).setAttribute('aria-hidden', 'true');
+        });
+        if (!isOpen) {
+          btn.setAttribute('aria-expanded', 'true');
+          document.getElementById(btn.getAttribute('aria-controls')).setAttribute('aria-hidden', 'false');
+        }
+      });
+    });
+
+    // ── Stat counter animation ────────────────────────────────────
+    (function () {
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      function easeOut(t) { return 1 - Math.pow(1 - t, 3); }
+
+      function animateCounter(item) {
+        const numberEl = item.querySelector('.stat-counter__number');
+        const target = parseInt(item.dataset.target, 10);
+        const prefix = item.dataset.prefix || '';
+        const suffix = item.dataset.suffix || '';
+        const duration = 1200;
+        const start = performance.now();
+
+        if (prefersReduced) {
+          numberEl.textContent = prefix + target + suffix;
+          return;
+        }
+
+        function tick(now) {
+          const elapsed = now - start;
+          const progress = Math.min(elapsed / duration, 1);
+          const value = Math.round(easeOut(progress) * target);
+          numberEl.textContent = prefix + value + suffix;
+          if (progress < 1) requestAnimationFrame(tick);
+        }
+
+        requestAnimationFrame(tick);
+      }
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          const item = entry.target;
+          item.classList.add('is-visible');
+          animateCounter(item);
+          observer.unobserve(item);
+        });
+      }, { threshold: 0.3 });
+
+      document.querySelectorAll('.stat-counter__item').forEach(item => observer.observe(item));
+    })();
+  </script>
+
+</body>
+
+</html>
