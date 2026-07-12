@@ -1545,73 +1545,88 @@
 
       <div class="evidence-grid">
 
+        <!-- Card 1: Social Systems (slideshow, 2 images) -->
         <div class="evidence-card" data-domain="engineering">
-          <div class="evidence-card__thumb evidence-card__thumb--placeholder">
-            <span class="evidence-card__thumb--placeholder">Platform · 2014–2016</span>
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://georgedreemer.com/public_img/thoughtbubble/thoughtbubble-feed1_alpha-min.png"
+                  alt="thoughtbubble feed with expanded side menu showing followers, settings, bug report, and log out"
+                  width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/thoughtbubble/thoughtbubble-feed2_alpha-min.png"
+                  alt="thoughtbubble feed in default view without menu expanded" width="600" height="338" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+            </div>
           </div>
           <div class="evidence-card__body">
-            <div class="evidence-card__domain-tag">
-              <span class="evidence-card__domain-tag-dot"></span>Engineering
-            </div>
-            <p class="evidence-card__title">The thoughtbubble platform</p>
+            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"></span>Engineering</span>
+            <p class="evidence-card__title">Social Systems</p>
             <ul class="evidence-card__bullets">
-              <li>Full social network built from scratch in PHP + MySQL</li>
-              <li>Posts, comments, likes, pins, hashtags, notifications</li>
-              <li>Custom auth, AJAX interactions, profile customisation</li>
-              <li>76+ major updates shipped from closed alpha to public</li>
+              <li>Built all social systems — posts, likes, comments, pins</li>
+              <li>Developed a hashtag system &amp; search for content curation &amp; discovery</li>
+              <li>Implemented real-time feed &amp; notification system for social interactions</li>
+              <li>Designed &amp; built user profiles with various customizations</li>
             </ul>
           </div>
         </div>
 
-        <div class="evidence-card" data-domain="product">
-          <div class="evidence-card__thumb evidence-card__thumb--placeholder">
-            <span class="evidence-card__thumb--placeholder">Feed Design · 2014</span>
+        <!-- Card 2: User Account Systems & Controls -->
+        <div class="evidence-card" data-domain="engineering">
+          <div class="evidence-card__thumb">
+            <img src="https://georgedreemer.com/public_img/thoughtbubble/thoughtbubble-login_alpha-min.png"
+              alt="thoughtbubble login screen with email login and Facebook login option" width="600" height="338"
+              loading="lazy">
           </div>
           <div class="evidence-card__body">
-            <div class="evidence-card__domain-tag">
-              <span class="evidence-card__domain-tag-dot"></span>Product
-            </div>
-            <p class="evidence-card__title">Knowledge-first feed UX</p>
+            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"></span>Engineering</span>
+            <p class="evidence-card__title">User Account Systems &amp; Controls</p>
             <ul class="evidence-card__bullets">
-              <li>Curated feed architecture favouring insights over noise</li>
-              <li>Multiple post types: text, image, video, quotes</li>
-              <li>Category and hashtag taxonomy for content discovery</li>
-              <li>Design iterated continuously on real user feedback</li>
+              <li>Built native registration and login system</li>
+              <li>Integrated Facebook OAuth login alongside native accounts</li>
+              <li>Developed various user control systems — settings, bug reporting, &amp; account controls</li>
+              <li>Implemented a secure session management system with hashed passwords and access control</li>
             </ul>
           </div>
         </div>
 
+        <!-- Card 3: User Feedback Analysis -->
+        <div class="evidence-card" data-domain="data">
+          <div class="evidence-card__thumb">
+            <img src="https://georgedreemer.com/public_img/thoughtbubble/thoughtbubble-iterations-min.png"
+              alt="Data analysis visualization, showing key metrics and insights" width="600" height="338" loading="lazy">
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"></span>Data</span>
+            <p class="evidence-card__title">User Feedback Analysis</p>
+            <ul class="evidence-card__bullets">
+              <li>Tracked user engagement, sign-ups, and feature usage directly via MySQL queries</li>
+              <li>Collected and reviewed user feedback to identify recurring pain points and requests</li>
+              <li>Used engagement patterns to prioritize which features to build or cut</li>
+              <li>Shipped 76+ major updates over 2 years, largely guided by this feedback loop</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 4: Pitching & Networking -->
         <div class="evidence-card" data-domain="growth">
-          <div class="evidence-card__thumb evidence-card__thumb--placeholder">
-            <span class="evidence-card__thumb--placeholder">Growth · 2015–2016</span>
+          <div class="evidence-card__thumb">
+            <img src="https://georgedreemer.com/public_img/thoughtbubble/thoughtbubble-handshake-min.jpg"
+              alt="Handshake representing investor and partner meetings" width="600" height="338" loading="lazy">
           </div>
           <div class="evidence-card__body">
-            <div class="evidence-card__domain-tag">
-              <span class="evidence-card__domain-tag-dot"></span>Growth
-            </div>
-            <p class="evidence-card__title">~900 users, zero ad spend</p>
+            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"></span>Growth</span>
+            <p class="evidence-card__title">Pitching, Networking &amp; Legal Coordination</p>
             <ul class="evidence-card__bullets">
-              <li>Grew entirely through word-of-mouth and direct outreach</li>
-              <li>Seeded initial community with high-quality content creators</li>
-              <li>Tracked sign-up and engagement metrics to guide iterations</li>
-              <li>Managed active user community and responded to feedback</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="evidence-card" data-domain="product">
-          <div class="evidence-card__thumb evidence-card__thumb--placeholder">
-            <span class="evidence-card__thumb--placeholder">Legal · 2015</span>
-          </div>
-          <div class="evidence-card__body">
-            <div class="evidence-card__domain-tag">
-              <span class="evidence-card__domain-tag-dot"></span>Product
-            </div>
-            <p class="evidence-card__title">Copyright registration</p>
-            <ul class="evidence-card__bullets">
-              <li>Navigated U.S. copyright registration process as a minor</li>
-              <li>Dealt with a lawyer who underdelivered — pushed through anyway</li>
-              <li>Successfully secured intellectual property protection</li>
+              <li>Presented the platform at local startup events &amp; shark tanks</li>
+              <li>Actively networked across regional entrepreneurship communities and mentor programs</li>
+              <li>Handled the business-facing side of the company solo while co-building the product</li>
+              <li>Coordinated the legal side of the business — secured copyright, registered entity &amp; filed necessary paperwork</li>
             </ul>
           </div>
         </div>
