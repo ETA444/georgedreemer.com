@@ -1859,25 +1859,43 @@
 
   <script>
     // ── Lucide icons ──────────────────────────────────────────────
-    if (typeof lucide !== 'undefined') {
-      lucide.createIcons();
-    } else {
-      document.querySelector('script[src*="lucide"]')
-        .addEventListener('load', () => lucide.createIcons());
-    }
+    (function () {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+        return;
+      }
+
+      const lucideScript = document.querySelector('script[src*="lucide"]');
+      if (lucideScript) {
+        lucideScript.addEventListener('load', () => {
+          if (typeof lucide !== 'undefined') lucide.createIcons();
+        });
+      }
+    })();
 
     // ── Accordion ─────────────────────────────────────────────────
-    document.querySelectorAll('.story-accordion__trigger').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const isOpen = btn.getAttribute('aria-expanded') === 'true';
-        btn.closest('.story-accordion').querySelectorAll('.story-accordion__trigger').forEach(b => {
-          b.setAttribute('aria-expanded', 'false');
-          document.getElementById(b.getAttribute('aria-controls')).setAttribute('aria-hidden', 'true');
+    document.querySelectorAll('.story-accordion').forEach(accordion => {
+      const triggers = accordion.querySelectorAll('.story-accordion__trigger');
+
+      triggers.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const panelId = btn.getAttribute('aria-controls');
+          const panel = panelId ? document.getElementById(panelId) : null;
+          const isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+          triggers.forEach(otherBtn => {
+            const otherPanelId = otherBtn.getAttribute('aria-controls');
+            const otherPanel = otherPanelId ? document.getElementById(otherPanelId) : null;
+
+            otherBtn.setAttribute('aria-expanded', 'false');
+            if (otherPanel) otherPanel.setAttribute('aria-hidden', 'true');
+          });
+
+          if (!isOpen) {
+            btn.setAttribute('aria-expanded', 'true');
+            if (panel) panel.setAttribute('aria-hidden', 'false');
+          }
         });
-        if (!isOpen) {
-          btn.setAttribute('aria-expanded', 'true');
-          document.getElementById(btn.getAttribute('aria-controls')).setAttribute('aria-hidden', 'false');
-        }
       });
     });
 
@@ -1885,7 +1903,9 @@
     (function () {
       const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-      function easeOut(t) { return 1 - Math.pow(1 - t, 3); }
+      function easeOut(t) {
+        return 1 - Math.pow(1 - t, 3);
+      }
 
       function animateCounter(item) {
         const numberEl = item.querySelector('.stat-counter__number');
@@ -1894,6 +1914,8 @@
         const suffix = item.dataset.suffix || '';
         const duration = 1200;
         const start = performance.now();
+
+        if (!numberEl || Number.isNaN(target)) return;
 
         if (prefersReduced) {
           numberEl.textContent = prefix + target + suffix;
@@ -1905,15 +1927,30 @@
           const progress = Math.min(elapsed / duration, 1);
           const value = Math.round(easeOut(progress) * target);
           numberEl.textContent = prefix + value + suffix;
-          if (progress < 1) requestAnimationFrame(tick);
+
+          if (progress < 1) {
+            requestAnimationFrame(tick);
+          }
         }
 
         requestAnimationFrame(tick);
       }
 
+      const items = document.querySelectorAll('.stat-counter__item');
+      if (!items.length) return;
+
+      if (!('IntersectionObserver' in window)) {
+        items.forEach(item => {
+          item.classList.add('is-visible');
+          animateCounter(item);
+        });
+        return;
+      }
+
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (!entry.isIntersecting) return;
+
           const item = entry.target;
           item.classList.add('is-visible');
           animateCounter(item);
@@ -1921,7 +1958,7 @@
         });
       }, { threshold: 0.3 });
 
-      document.querySelectorAll('.stat-counter__item').forEach(item => observer.observe(item));
+      items.forEach(item => observer.observe(item));
     })();
   </script>
 
