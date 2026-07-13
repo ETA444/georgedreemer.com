@@ -174,8 +174,10 @@
 
     /* ── PAGE HEADER ─────────────────────────────────────────── */
     .page-header {
-      padding-bottom: var(--space-8);
-      border-bottom: 1px solid var(--color-divider);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .page-header__eyebrow {
@@ -233,20 +235,56 @@
 
     /* ── CONTEXT BLOCK ───────────────────────────────────────── */
     .context-block {
-      border-left: 2px solid var(--color-divider);
-      padding-left: var(--space-5);
+      border-left: none;
+      padding-left: 0;
+      margin-inline: auto;
+      position: relative;
+      padding-top: var(--space-10);
+    }
+
+    .context-block::before {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 3px;
+      background: var(--color-primary);
+      margin-bottom: var(--space-5);
     }
 
     .context-block p {
-      font-size: var(--text-base);
+      font-size: var(--text-lg);
       font-weight: 300;
-      color: var(--color-text-muted);
-      line-height: 1.75;
-      max-width: 68ch;
+      color: var(--color-text);
+      line-height: 1.7;
     }
 
-    .context-block p+p {
-      margin-top: var(--space-3);
+    .context-block p:first-of-type {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: var(--text-xl);
+      color: var(--color-text);
+      line-height: 1.4;
+    }
+
+    .context-block p:not(:first-of-type) {
+      font-size: var(--text-lg);
+      font-weight: 300;
+      color: var(--color-text);
+      line-height: 1.7;
+      max-width: 70ch;
+      padding-top: var(--space-4);
+    }
+
+    .context-block p:last-of-type {
+      color: var(--color-text-muted);
+      padding: 0;
+      max-width: 67ch;
+    }
+
+    .context-block p + p {
+      margin-top: var(--space-4);
+      font-size: var(--text-base);
+      color: var(--color-text-muted);
     }
 
     /* ── SNAPSHOT CARD ───────────────────────────────────────── */
@@ -1250,27 +1288,20 @@
 
   <main class="experience-page" role="main">
 
-    <!-- ── PAGE HEADER ────────────────────────────────────────── -->
-    <header class="page-header">
-      <p class="page-header__eyebrow">Experience</p>
-      <h1 class="page-header__title">thoughtbubble</h1>
-      <p class="page-header__subtitle">A knowledge-first social network, built from scratch by two seniors in high
-        school. Just a love for web development, zero budget, launched in the USA and expanded to reach 900+ users
-        across the world.</p>
-    </header>
-
-    <!-- ── E2: CONTEXT ────────────────────────────────────────── -->
+    <!-- ── E1: CONTEXT ────────────────────────────────────────── -->
     <section aria-label="Context" class="fade-in">
       <div class="context-block">
-        <p>thoughtbubble was a knowledge-first social network developed by George Dreemer and Nikolay Stanchev between
-          Bulgaria and the United States. It was designed to shift social media away from entertainment toward sharing
+        <p>A knowledge-first social network, built from scratch by two seniors in high
+        school. Just a love for web development, zero budget, launched in the USA and expanded to reach 900+ users
+        across the world.</p>
+        <p>thoughtbubble was designed to shift social media away from entertainment toward sharing
           ideas, insights, and self-improvement content.</p>
-        <p>The platform was developed from scratch in under a year to reach alpha, it grew to around 900+ registered
-          users with secured funding and a unique community of early adopters.</p>
+        <p>We built it to alpha in under a year, hand-coding every layer ourselves — custom authentication, MySQL architecture,
+        real-time notifications, and the full social product without a framework, CMS, or boilerplate.</p>
       </div>
     </section>
 
-    <!-- ── E3: SNAPSHOT CARD ──────────────────────────────────── -->
+    <!-- ── E2: SNAPSHOT CARD ──────────────────────────────────── -->
     <section aria-label="Snapshot" class="fade-in">
       <div class="snapshot-card" data-domain="engineering">
         <div class="snapshot-card__meta">
@@ -1302,7 +1333,7 @@
             server-side logic
           </span>
           <span class="achievement-chip" data-domain="engineering">
-            <span class="achievement-chip__dot"></span>Built full front-end in HTML, CSS, and Javascript — AJAX
+            <span class="achievement-chip__dot"></span>Co-built front-end in HTML, CSS, and Javascript — AJAX
             interactions, dynamic content, and responsive design
           </span>
           <span class="achievement-chip" data-domain="engineering">
@@ -1330,13 +1361,13 @@
             <span class="achievement-chip__dot"></span>Grew to 900+ registered users with zero ad spend
           </span>
           <span class="achievement-chip" data-domain="growth">
-            <span class="achievement-chip__dot"></span>Secured funding and copyright for the platform
+            <span class="achievement-chip__dot"></span>Secured copyright for the platform and managed legal procedures
           </span>
         </div>
       </div>
     </section>
 
-    <!-- ── E4: IN NUMBERS ─────────────────────────────────────── -->
+    <!-- ── E3: IN NUMBERS ─────────────────────────────────────── -->
     <section class="stat-counter-section" aria-label="In Numbers">
       <div class="stat-counter">
 
@@ -1363,7 +1394,7 @@
       </div>
     </section>
 
-    <!-- ── E5: STACK ──────────────────────────────────────────── -->
+    <!-- ── E4: STACK ──────────────────────────────────────────── -->
     <section aria-label="Stack" class="fade-in">
       <div class="section-label">
         <span class="section-label__text">Stack</span>
@@ -1431,7 +1462,7 @@
       </div>
     </section>
 
-    <!-- ── E6: ABILITIES ──────────────────────────────────────── -->
+    <!-- ── E5: ABILITIES ──────────────────────────────────────── -->
     <section aria-label="Abilities" class="fade-in">
       <div class="section-label">
         <span class="section-label__text">Abilities</span>
@@ -1597,7 +1628,7 @@
       </div>
     </section>
 
-    <!-- ── E7: WORKS ──────────────────────────────────────────── -->
+    <!-- ── E6: WORKS ──────────────────────────────────────────── -->
     <section aria-label="Works" class="fade-in">
       <div class="section-label">
         <span class="section-label__text">Works</span>
@@ -1695,7 +1726,7 @@
       </div>
     </section>
 
-    <!-- ── E8: IN DEPTH ACCORDION ─────────────────────────────── -->
+    <!-- ── E7: IN DEPTH ACCORDION ─────────────────────────────── -->
     <section aria-label="In Depth" class="fade-in">
       <div class="section-label">
         <span class="section-label__text">In Depth</span>
