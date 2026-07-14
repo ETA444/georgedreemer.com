@@ -1297,7 +1297,7 @@
         across the world.</p>
         <p>thoughtbubble was designed to shift social media away from entertainment toward sharing
           ideas, insights, and self-improvement content.</p>
-        <p>We built it to alpha in under a year, hand-coding every layer ourselves — custom authentication, MySQL architecture,
+        <p>We built it to alpha in under a year, hand-coding every layer ourselves custom authentication, MySQL architecture,
         real-time notifications, and the full social product without a framework, CMS, or boilerplate.</p>
       </div>
     </section>
@@ -1321,7 +1321,7 @@
           </div>
           <div class="snapshot-item">
             <p class="snapshot-item__key">Location</p>
-            <p class="snapshot-item__value">Amherst, MA — United States</p>
+            <p class="snapshot-item__value">Amherst, MA, United States</p>
           </div>
 
         </div>
@@ -1490,8 +1490,7 @@
             </svg>
           </div>
           <p class="ability-card__title">Full-Stack Web Development</p>
-          <p class="ability-card__desc">Designed and built every layer of the platform without a framework — routing,
-            session handling, database schema, AJAX interactions, and all front-end rendering.</p>
+          <p class="ability-card__desc">Designed and built every layer of the platform without a framework — routing, session handling, database schema, AJAX interactions, and all front-end rendering.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">PHP</span>
             <span class="ability-tag">MySQL</span>
@@ -1508,8 +1507,7 @@
             </svg>
           </div>
           <p class="ability-card__title">Auth &amp; Security Systems</p>
-          <p class="ability-card__desc">Built custom user authentication from scratch — registration, login, Facebook
-            login, session management, password hashing, and access control.</p>
+          <p class="ability-card__desc">Built custom user authentication from scratch, including the registration, native & Facebook login, session management, password hashing, and access control.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Sessions</span>
             <span class="ability-tag">PHP Auth</span>
@@ -1526,8 +1524,7 @@
             </svg>
           </div>
           <p class="ability-card__title">Real-Time Notifications</p>
-          <p class="ability-card__desc">Engineered a live notification system using AJAX polling — likes, comments,
-            follows, and system alerts delivered without a page reload.</p>
+          <p class="ability-card__desc">Engineered a live notification system using AJAX polling — likes, comments, follows, and system alerts delivered without a page reload.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">AJAX</span>
             <span class="ability-tag">PHP</span>
@@ -1543,9 +1540,7 @@
             </svg>
           </div>
           <p class="ability-card__title">Product Design &amp; UX</p>
-          <p class="ability-card__desc">Owned the full UX — from information architecture to pixel-level UI. Designed
-            the feed, post types, user profiles, settings flows, and iteratively improved them based on user feedback
-            from our early adopter community.</p>
+          <p class="ability-card__desc">Owned the full UX, from information architecture to pixel-level UI. Designed the feed, post types, user profiles, settings flows, and iteratively improved them based on user feedback from our early adopter community.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">UX Design</span>
             <span class="ability-tag">Wireframing</span>
@@ -1907,6 +1902,44 @@
         });
       }
     })();
+
+    // ── Slideshow ──────────────────────────────────────────────
+    document.querySelectorAll('.evidence-card__slides').forEach(slider => {
+      const slides = slider.querySelectorAll('.evidence-card__slide');
+      const dots = slider.querySelectorAll('.evidence-card__slide-dot');
+      if (!slides.length || !dots.length) return;
+
+      let current = 0;
+      let timer;
+
+      function goTo(n) {
+        slides[current].classList.remove('is-active');
+        dots[current].classList.remove('is-active');
+        current = (n + slides.length) % slides.length;
+        slides[current].classList.add('is-active');
+        dots[current].classList.add('is-active');
+      }
+
+      function start() {
+        if (slides.length > 1) timer = setInterval(() => goTo(current + 1), 4000);
+      }
+
+      function stop() {
+        clearInterval(timer);
+      }
+
+      dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => {
+          stop();
+          goTo(i);
+          start();
+        });
+      });
+
+      slider.addEventListener('mouseenter', stop);
+      slider.addEventListener('mouseleave', start);
+      start();
+    });
 
     // ── Accordion ─────────────────────────────────────────────────
     document.querySelectorAll('.story-accordion').forEach(accordion => {
