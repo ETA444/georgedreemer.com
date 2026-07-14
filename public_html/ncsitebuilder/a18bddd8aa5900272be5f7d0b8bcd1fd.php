@@ -22,10 +22,9 @@
 		<!-- Facebook Open Graph end -->
 
 		<meta name="generator" content="Website Builder" />
-			<script src="js/common-bundle.js?ts=20260519175446" type="text/javascript"></script>
-	<script src="js/a18bddd8aa5900272be5f7d0b8bcd1fd-bundle.js?ts=20260519175446" type="text/javascript"></script>
-	<link href="css/common-bundle.css?ts=20260519175446" rel="stylesheet" type="text/css" />
-	<link href="css/a18bddd8aa5900272be5f7d0b8bcd1fd-bundle.css?ts=20260519175446" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
+			<script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
+	<link href="css/common-bundle.css?ts=20260714174418" rel="stylesheet" type="text/css" />
+	<link href="css/a18bddd8aa5900272be5f7d0b8bcd1fd-bundle.css?ts=20260714174418" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
 	<ga-code/><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
      SECTION 1 — GLOBAL
      Settings → Meta Tags (site-wide, always present)
@@ -40,7 +39,6 @@
 <meta name="rating" content="General">
 <meta name="revisit-after" content="7 days">
 <meta name="language" content="English">
-<meta name="theme-color" content="#000000">
 <meta name="color-scheme" content="dark light">
 <meta name="format-detection" content="telephone=no">
 <meta property="og:type" content="profile">
@@ -104,5 +102,5 @@
 .image-height-mod {
 height: 100%;
 }
-</style></div>{{hr_out}}</body>
+</style></div><script src="js/common-bundle.js?ts=20260714174418" type="text/javascript"></script>{{hr_out}}</body>
 </html>

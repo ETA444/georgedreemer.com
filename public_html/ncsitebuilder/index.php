@@ -24,6 +24,13 @@
 			'type' => 0
 		),
 		array(
+			'id' => 'a18bddd8a85d05531bf2b97cfabf9ffd',
+			'alias' => 'thoughtbubble',
+			'file' => 'a18bddd8a85d05531bf2b97cfabf9ffd.php',
+			'controllers' => array(),
+			'type' => 0
+		),
+		array(
 			'id' => 'a18bddd8a85d0259fb1585dbb509cff8',
 			'alias' => 'dreemcorp',
 			'file' => 'a18bddd8a85d0259fb1585dbb509cff8.php',
@@ -34,13 +41,6 @@
 			'id' => 'a18bddd8a85d031c03b1af770b1fc6b6',
 			'alias' => 'hobbies',
 			'file' => 'a18bddd8a85d031c03b1af770b1fc6b6.php',
-			'controllers' => array(),
-			'type' => 0
-		),
-		array(
-			'id' => 'a18bddd8a85d05531bf2b97cfabf9ffd',
-			'alias' => 'thoughtbubble',
-			'file' => 'a18bddd8a85d05531bf2b97cfabf9ffd.php',
 			'controllers' => array(),
 			'type' => 0
 		),
@@ -64,15 +64,23 @@
 			'file' => 'a19104d04f1200a1171ff5a1dd1fd06a.php',
 			'controllers' => array(),
 			'type' => 0
+		),
+		array(
+			'id' => 'a19f5ae42c81009e68be5623804df9af',
+			'alias' => 'test',
+			'file' => 'a19f5ae42c81009e68be5623804df9af.php',
+			'controllers' => array(),
+			'type' => 0
 		)
 	);
 	$forms = array(
 		'a18bddd8a85d00f1870d4bc44fd15f7b' => array(
-			'0961c975' => array(
+			'a6d5703b' => array(
 				'email' => 'georgedreemer@dreemcorp.com; georgedreemer@proton.me; g.r.dreemer@gmail.com',
 				'emailFrom' => 'no-reply@georgedreemer.com',
 				'subject' => '[ ! ] GeorgeDreemer.com Message',
 				'sentMessage' => 'Thank you for your message! We will be in touch as soon as possible.',
+				'sendCopyToSender' => false,
 				'object' => '',
 				'objectRenderer' => '',
 				'loggingHandler' => '',
@@ -137,16 +145,17 @@
 	$langs = null;
 	$def_lang = null;
 	$base_lang = 'en';
-	$site_id = 'd2dfeb9f';
+	$site_id = 'af7ae0e4';
 	${'sitemapUrls'} = array(
 		'https://georgedreemer.com/',
 		'https://georgedreemer.com/skipschoolmakemoney',
+		'https://georgedreemer.com/thoughtbubble',
 		'https://georgedreemer.com/dreemcorp',
 		'https://georgedreemer.com/hobbies',
-		'https://georgedreemer.com/thoughtbubble',
 		'https://georgedreemer.com/stack',
 		'https://georgedreemer.com/blog',
-		'https://georgedreemer.com/blog/datasafari/introduction'
+		'https://georgedreemer.com/blog/datasafari/introduction',
+		'https://georgedreemer.com/test'
 	);
 	${'redirectItems'} = array();
 	$websiteUID = 'a6bf24d62389c5c29a904041a1dc6f8f9524fe4cc2e47b79f80bba06ae154069cfd05c7cbb53bf4c';

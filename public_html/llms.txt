@@ -66,10 +66,11 @@ builds systems that are repeatable and scalable.
 
 ### thoughtbubble
 - URL: https://georgedreemer.com/thoughtbubble
-- Role: Co-Founder & Developer
-- A knowledge-first social network co-founded with Nikolay Stanchev. Designed
-  to redefine online connection around ideas rather than entertainment. Fully
-  designed and coded from concept to launch.
+- Role: Co-Founder & Full-Stack Developer
+- A knowledge-first social network co-founded with Nikolay Stanchev and built
+  from scratch in high school. Designed to shift social media away from
+  entertainment toward ideas, insights, and self-improvement content; launched
+  to around 900 registered users.
 
 
 ## Education

@@ -657,8 +657,7 @@ function handleForms($page_id, SiteInfo $siteInfo) {
 					$mail_to[] = $m;
 				}
 			}
-			$mail_from = reset($mail_to);
-			$mail_from_name = null;
+			$found_email = null;
 
 			$fileSizeTotal = 0;
 			$data = array();
@@ -783,7 +782,7 @@ function handleForms($page_id, SiteInfo $siteInfo) {
 						} else
 							$data[$idx] = $value;
 					}
-					if (($eml = is_mail($value))) $mail_from = $eml;
+					if (($eml = is_mail($value))) $found_email = $eml;
 				}
 			}
 
@@ -1002,8 +1001,6 @@ function handleForms($page_id, SiteInfo $siteInfo) {
 					}
 				}
 			} else {
-				if (!$mail_from) $mail_from = reset($mail_to);
-
 				if (empty($mail_to)) {
 					error_log('[Form configuration error]: receiver not specified');
 					throw new ErrorException($wb_form_sending_failed . ' (5): ' . SiteModule::__('Receiver not specified'));
@@ -1094,14 +1091,8 @@ function handleForms($page_id, SiteInfo $siteInfo) {
 
 				$style = "* { font: 12px Arial; }\nstrong { font-weight: bold; }";
 
-				$toHasGmail = false;
-				foreach ($mail_to as $eml) {
-					if (strpos($eml, 'gmail.com') !== false) $toHasGmail = true;
-					$mailer->AddAddress($eml);
-				}
-
 				$sender_email = (isset($form['emailFrom']) && $form['emailFrom']) ? trim($form['emailFrom']) : ('no-reply@' . $siteInfo->domain);
-				$sender_name = $mail_from_name;
+				$sender_name = '';
 				if (preg_match('#^([^<]+|)<([^>]+)>$#', $sender_email, $m)) {
 					if (trim($m[1])) $sender_name = trim($m[1]);
 					$sender_email = trim($m[2]);
@@ -1110,11 +1101,6 @@ function handleForms($page_id, SiteInfo $siteInfo) {
 					$sender_email = trim($m[1]);
 				}
 				$mailer->SetFrom($sender_email, ($sender_name ?: ''));
-				if (strpos($mail_from, 'gmail.com') === false || !$toHasGmail) {
-					// do not add "Reply-To" header if both Receiver and ReplyTo are Gmail
-					// form sending fails in such case.
-					$mailer->addReplyTo($mail_from, $mail_from_name ? $mail_from_name : '');
-				}
 
 				$mailer->CharSet = 'utf-8';
 				$message = '';
@@ -1172,16 +1158,54 @@ function handleForms($page_id, SiteInfo $siteInfo) {
 				$mailer->MsgHTML($html);
 				$mailer->AltBody = preg_replace('/[\r\n]{3,9}/', "\n\n", str_replace('&nbsp;', '', strip_tags(str_replace("</tr>", "</tr>\n", $message))));
 				$mailer->Subject = $form["subject"];
-				ob_start();
-				$res = $mailer->Send();
-				$wb_form_send_success = $res;
-				ob_get_clean();
-				if ($res) {
-					$wb_form_send_state = empty($form['sentMessage']) ? '' : tr_($form['sentMessage']);
+
+				/**
+				 * @param string|string[] $to
+				 * @return ErrorException|true
+				 */
+				$send = function($to) use(&$mailer, $found_email) {
+					$mailer->clearAddresses();
+					$mailer->clearReplyTos();
+
+					if (!is_array($to)) $to = [$to];
+
+					$toHasGmail = false;
+					foreach ($to as $eml) {
+						if (strpos($eml, 'gmail.com') !== false) $toHasGmail = true;
+						$mailer->AddAddress($eml);
+					}
+					if ($found_email && !in_array($found_email, $to)
+							&& (strpos($found_email, 'gmail.com') === false || !$toHasGmail)) {
+						// do not add "Reply-To" header if both Receiver and ReplyTo are Gmail
+						// form sending fails in such case.
+						$mailer->addReplyTo($found_email);
+					}
+
+					ob_start();
+					$res = $mailer->Send();
+					ob_get_clean();
+
+					if ($res) return true;
+					return new ErrorException($mailer->ErrorInfo ? $mailer->ErrorInfo : 'unknown error');
+				};
+
+				$res = $send($mail_to);
+				if ($res instanceof ErrorException) {
+					$wb_form_send_success = false;
+					error_log('[Form sending error]: ' . $res->getMessage());
+					throw new ErrorException($wb_form_sending_failed . ' (4): ' . $res->getMessage());
 				} else {
-					if ($mailer->ErrorInfo) error_log('[Form sending error]: ' . $mailer->ErrorInfo);
-					throw new ErrorException($wb_form_sending_failed . ' (4): ' . $mailer->ErrorInfo);
+					$wb_form_send_success = true;
+					$wb_form_send_state = empty($form['sentMessage']) ? '' : tr_($form['sentMessage']);
 				}
+
+				if (isset($form['sendCopyToSender']) && $form['sendCopyToSender'] && $found_email) {
+					$res = $send($found_email);
+					if ($res instanceof ErrorException) {
+						error_log('[Form-to-sender sending error]: ' . $res->getMessage());
+					}
+				}
+				
 				if (isset($form['loggingHandler']) && $form['loggingHandler'] && is_callable($form['loggingHandler'])) {
 					call_user_func((strpos($form['loggingHandler'], '::') ? explode('::', $form['loggingHandler']) : $form['loggingHandler']), $form, $data, $res);
 				}

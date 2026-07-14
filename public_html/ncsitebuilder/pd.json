@@ -45,7 +45,6 @@
         "payfast": true,
         "assist": true,
         "2checkout": true,
-        "webmoney_widget": true,
         "paytrail": true,
         "qiwi_kz": true,
         "wp": true,
@@ -55,7 +54,6 @@
         "libelula": true,
         "expresspay": true,
         "epayco": true,
-        "ecwid": true,
         "coinpayments": true,
         "mpesa": true,
         "pagopar": true,
@@ -64,6 +62,8 @@
         "bepaid": true,
         "robokassa": true,
         "artpay": true,
+        "webmoney_widget": true,
+        "ecwid": true,
         "FacebookLike": true,
         "FacebookFans": true,
         "pinterest": true,
@@ -268,10 +268,6 @@
             "Full",
             "Commerce"
         ],
-        "webmoney_widget": [
-            "Full",
-            "Commerce"
-        ],
         "paytrail": [
             "Full",
             "Commerce"
@@ -308,10 +304,6 @@
             "Full",
             "Commerce"
         ],
-        "ecwid": [
-            "Full",
-            "Commerce"
-        ],
         "coinpayments": [
             "Full",
             "Commerce"
@@ -341,6 +333,14 @@
             "Commerce"
         ],
         "artpay": [
+            "Full",
+            "Commerce"
+        ],
+        "webmoney_widget": [
+            "Full",
+            "Commerce"
+        ],
+        "ecwid": [
             "Full",
             "Commerce"
         ],
@@ -431,5 +431,5 @@
     },
     "d": null,
     "f": 0,
-    "e": "0f09be48c67058bf63c815d209fb86b3f45ac69e"
+    "e": "3280d7753e3964aabfd6c1d05afbf8346783cf15"
 }
