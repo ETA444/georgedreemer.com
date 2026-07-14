@@ -4,18 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>thoughtbubble — Knowledge-First Social Network · George Dreemer</title>
 
-  <title>Experience Page Template</title>
+  <!-- SEO Meta Data (source: meta.html->THOUGHTBUBBLE) -->
+  <link rel="canonical" href="https://georgedreemer.com/thoughtbubble">
+  <meta property="og:url" content="https://georgedreemer.com/thoughtbubble">
+  <meta property="og:title" content="thoughtbubble — Knowledge-First Social Network · George Dreemer">
+  <meta property="og:description"
+    content="thoughtbubble was a social network built around knowledge, not entertainment — co-founded by George Dreemer and Nikolay Stanchev. A fully designed and coded startup from concept to launch.">
+  <meta property="og:image" content="https://georgedreemer.com/ncsitebuilder/gallery/dxyz-thoughtbubble-thumb.png">
+  <meta name="twitter:title" content="thoughtbubble — Knowledge-First Social Network · George Dreemer">
+  <meta name="twitter:description"
+    content="thoughtbubble was a social network built around knowledge, not entertainment — co-founded by George Dreemer and Nikolay Stanchev. A fully designed and coded startup from concept to launch.">
+  <meta name="twitter:image" content="https://georgedreemer.com/ncsitebuilder/gallery/dxyz-thoughtbubble-thumb.png">
 
+  <!-- Preconnect to Google Fonts & Pull Nunito, Playfair Display -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap"
     rel="stylesheet">
 
+  <!-- Pull Lucide icons -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
 
-  <!-- Main Styles -->
+  <!-- Main Styles-->
   <style>
     :root {
       --font-body: "Nunito", "Helvetica Neue", sans-serif;
@@ -28,15 +41,12 @@
       --color-text: #1a1814;
       --color-text-muted: #5a5750;
       --color-text-faint: #9a9590;
-
-      /* ── Accent (legacy — kept for CEFR badges and cert pills only) ── */
-      --color-accent: #bf7bff;
+      --color-accent: #bf7bff; /* legacy - kept for CEFR badges and cert pills only */
       --color-accent-dim: rgba(191, 123, 255, 0.12);
-
       --color-primary: #01696f;
-      --color-blue:    #006494;
-      --color-gold:    #d19900;
-      --color-orange:  #da7101;
+      --color-blue: #006494;
+      --color-gold: #d19900;
+      --color-orange: #da7101;
       --space-1: .25rem;
       --space-2: .5rem;
       --space-3: .75rem;
@@ -46,10 +56,13 @@
       --space-8: 2rem;
       --space-10: 2.5rem;
       --space-12: 3rem;
+      --space-16: 4rem;
       --text-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem);
       --text-sm: clamp(0.875rem, 0.82rem + 0.28vw, 1rem);
       --text-base: clamp(1rem, 0.95rem + 0.22vw, 1.125rem);
       --text-lg: clamp(1.125rem, 1rem + 0.6vw, 1.4rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
       --radius-sm: .25rem;
       --radius-md: .5rem;
       --radius-lg: .875rem;
@@ -57,6 +70,7 @@
       --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.05);
       --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.05);
       --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+      --content-default: 860px;
     }
 
     *,
@@ -70,6 +84,7 @@
     html {
       -webkit-font-smoothing: antialiased;
       scroll-behavior: smooth;
+      scroll-padding-top: 5rem;
     }
 
     body {
@@ -92,6 +107,13 @@
       text-decoration: none;
     }
 
+    button {
+      cursor: pointer;
+      background: none;
+      border: none;
+      font: inherit;
+    }
+
     .preview-page {
       max-width: 860px;
       margin-inline: auto;
@@ -110,7 +132,112 @@
       margin-bottom: var(--space-4);
     }
 
-    /* ── E1: SECTION LABEL ─────────────────────────────────── */
+    /* ── NAV ────────────────────────────────────────────────── */
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-divider);
+    }
+
+    .site-nav__inner {
+      max-width: var(--content-default);
+      margin-inline: auto;
+      padding: var(--space-3) var(--space-6);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+    }
+
+    .site-nav__back {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-size: var(--text-xs);
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      transition: color var(--transition);
+    }
+
+    .site-nav__back:hover {
+      color: var(--color-primary);
+    }
+
+    .site-nav__back svg {
+      width: 14px;
+      height: 14px;
+      stroke: currentColor;
+      stroke-width: 2;
+      transition: transform var(--transition);
+    }
+
+    .site-nav__back:hover svg {
+      transform: translateX(-3px);
+    }
+
+    .site-nav__title {
+      font-family: var(--font-display);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      color: var(--color-text);
+      letter-spacing: .01em;
+    }
+
+    /* ── PAGE LAYOUT ─────────────────────────────────────────── */
+    .experience-page {
+      max-width: var(--content-default);
+      margin-inline: auto;
+      padding: var(--space-10) var(--space-6) var(--space-16);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-12);
+    }
+
+    /* ── PAGE HEADER ─────────────────────────────────────────── */
+    .page-header {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .page-header__eyebrow {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--color-primary);
+      margin-bottom: var(--space-3);
+    }
+
+    .page-header__title {
+      font-family: var(--font-display);
+      font-size: var(--text-2xl);
+      font-weight: 600;
+      line-height: 1.15;
+      color: var(--color-text);
+      margin-bottom: var(--space-4);
+      letter-spacing: -0.01em;
+    }
+
+    .page-header__subtitle {
+      font-size: var(--text-lg);
+      font-weight: 400;
+      color: var(--color-text-muted);
+      max-width: 56ch;
+      line-height: 1.7;
+      align-self: center;
+      text-align: center;
+      padding-top: var(--space-10);
+    }
+
+    /* ── SECTION LABEL ─────────────────────────────────── */
     .section-label {
       display: flex;
       align-items: center;
@@ -133,25 +260,61 @@
       background: var(--color-divider);
     }
 
-    /* ── E2: CONTEXT BLOCK ─────────────────────────────────── */
+    /* ── E1: CONTEXT BLOCK ─────────────────────────────────── */
     .context-block {
-      border-left: 2px solid var(--color-divider);
-      padding-left: var(--space-5);
+      border-left: none;
+      padding-left: 0;
+      margin-inline: auto;
+      position: relative;
+      padding-top: var(--space-10);
+    }
+
+    .context-block::before {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 3px;
+      background: var(--color-primary);
+      margin-bottom: var(--space-5);
     }
 
     .context-block p {
-      font-size: var(--text-base);
+      font-size: var(--text-lg);
       font-weight: 300;
+      color: var(--color-text);
+      line-height: 1.7;
+    }
+
+    .context-block p:first-of-type {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: var(--text-xl);
+      color: var(--color-text);
+      line-height: 1.4;
+    }
+
+    .context-block p:not(:first-of-type) {
+      font-size: var(--text-lg);
+      font-weight: 300;
+      color: var(--color-text);
+      line-height: 1.7;
+      max-width: 70ch;
+      padding-top: var(--space-4);
+    }
+
+    .context-block p:last-of-type {
       color: var(--color-text-muted);
-      line-height: 1.75;
-      max-width: 68ch;
+      padding: 0;
+      max-width: 67ch;
     }
 
-    .context-block p+p {
-      margin-top: var(--space-3);
+    .context-block p + p {
+      margin-top: var(--space-4);
+      font-size: var(--text-base);
+      color: var(--color-text-muted);
     }
 
-    /* ── E3: SNAPSHOT CARD ─────────────────────────────────── */
+    /* ── E2: SNAPSHOT CARD ─────────────────────────────────── */
     .snapshot-card {
       background: var(--color-surface);
       border: 1px solid var(--color-border);
@@ -161,10 +324,21 @@
     }
 
     /* Domain top-border — mirrors E5 card system */
-    .snapshot-card[data-domain="engineering"] { border-top-color: var(--color-primary); }
-    .snapshot-card[data-domain="data"]        { border-top-color: var(--color-blue); }
-    .snapshot-card[data-domain="product"]     { border-top-color: var(--color-gold); }
-    .snapshot-card[data-domain="growth"]      { border-top-color: var(--color-orange); }
+    .snapshot-card[data-domain="engineering"] {
+      border-top-color: var(--color-primary);
+    }
+
+    .snapshot-card[data-domain="data"] {
+      border-top-color: var(--color-blue);
+    }
+
+    .snapshot-card[data-domain="product"] {
+      border-top-color: var(--color-gold);
+    }
+
+    .snapshot-card[data-domain="growth"] {
+      border-top-color: var(--color-orange);
+    }
 
     .snapshot-card__meta {
       display: grid;
@@ -252,29 +426,48 @@
     }
 
     /* Domain-colored dots — same four colors, same system */
-    .achievement-chip[data-domain="engineering"] .achievement-chip__dot { background: var(--color-primary); }
-    .achievement-chip[data-domain="data"]        .achievement-chip__dot { background: var(--color-blue); }
-    .achievement-chip[data-domain="product"]     .achievement-chip__dot { background: var(--color-gold); }
-    .achievement-chip[data-domain="growth"]      .achievement-chip__dot { background: var(--color-orange); }
+    .achievement-chip[data-domain="engineering"] .achievement-chip__dot {
+      background: var(--color-primary);
+    }
+
+    .achievement-chip[data-domain="data"] .achievement-chip__dot {
+      background: var(--color-blue);
+    }
+
+    .achievement-chip[data-domain="product"] .achievement-chip__dot {
+      background: var(--color-gold);
+    }
+
+    .achievement-chip[data-domain="growth"] .achievement-chip__dot {
+      background: var(--color-orange);
+    }
 
     /* Subtle chip tint matching domain */
-    .achievement-chip[data-domain="engineering"] { border-color: color-mix(in srgb, var(--color-primary) 20%, transparent); }
-    .achievement-chip[data-domain="data"]        { border-color: color-mix(in srgb, var(--color-blue) 20%, transparent); }
-    .achievement-chip[data-domain="product"]     { border-color: color-mix(in srgb, var(--color-gold) 20%, transparent); }
-    .achievement-chip[data-domain="growth"]      { border-color: color-mix(in srgb, var(--color-orange) 20%, transparent); }
+    .achievement-chip[data-domain="engineering"] {
+      border-color: color-mix(in srgb, var(--color-primary) 20%, transparent);
+    }
 
-    /* ── ELEMENT 4 — IN NUMBERS / STAT COUNTER ─────────────────── */
+    .achievement-chip[data-domain="data"] {
+      border-color: color-mix(in srgb, var(--color-blue) 20%, transparent);
+    }
+
+    .achievement-chip[data-domain="product"] {
+      border-color: color-mix(in srgb, var(--color-gold) 20%, transparent);
+    }
+
+    .achievement-chip[data-domain="growth"] {
+      border-color: color-mix(in srgb, var(--color-orange) 20%, transparent);
+    }
+
+    /* ── ELEMENT 3 — IN NUMBERS / STAT COUNTER ─────────────────── */
     .stat-counter-section {
-      padding-block: var(--space-12) var(--space-10);
+      padding-block: var(--space-4);
     }
 
     .stat-counter {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: var(--space-6);
-      max-width: var(--content-default);
-      margin-inline: auto;
-      padding-inline: var(--space-6);
     }
 
     .stat-counter__item {
@@ -283,6 +476,8 @@
       align-items: center;
       text-align: center;
       gap: var(--space-2);
+      opacity: 0;
+      transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     /* The animated number — domain color threads through here */
@@ -297,10 +492,21 @@
     }
 
     /* Domain color on the number */
-    .stat-counter__item[data-domain="engineering"] .stat-counter__number { color: var(--color-primary); }
-    .stat-counter__item[data-domain="data"]        .stat-counter__number { color: var(--color-blue); }
-    .stat-counter__item[data-domain="product"]     .stat-counter__number { color: var(--color-gold); }
-    .stat-counter__item[data-domain="growth"]      .stat-counter__number { color: var(--color-orange); }
+    .stat-counter__item[data-domain="engineering"] .stat-counter__number {
+      color: var(--color-primary);
+    }
+
+    .stat-counter__item[data-domain="data"] .stat-counter__number {
+      color: var(--color-blue);
+    }
+
+    .stat-counter__item[data-domain="product"] .stat-counter__number {
+      color: var(--color-gold);
+    }
+
+    .stat-counter__item[data-domain="growth"] .stat-counter__number {
+      color: var(--color-orange);
+    }
 
     .stat-counter__label {
       font-size: var(--text-sm);
@@ -333,7 +539,7 @@
       }
     }
 
-    /* ── E5: STACK GRID ────────────────────────────────────── */
+    /* ── E4: STACK GRID ────────────────────────────────────── */
     .stack-grid {
       display: flex;
       flex-direction: column;
@@ -613,7 +819,7 @@
       border: 1px solid #e8d9a8;
     }
 
-    /* ── E6: ABILITY GRID ──────────────────────────────────── */
+    /* ── E5: ABILITY GRID ──────────────────────────────────── */
     .ability-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
@@ -691,17 +897,37 @@
     }
 
     /* ── Domain accents ───────────────────────────────────── */
-    .ability-card[data-domain="engineering"] { border-top: 2px solid var(--color-primary); }
-    .ability-card[data-domain="engineering"] .ability-card__icon { color: var(--color-primary); }
+    .ability-card[data-domain="engineering"] {
+      border-top: 2px solid var(--color-primary);
+    }
 
-    .ability-card[data-domain="data"] { border-top: 2px solid var(--color-blue); }
-    .ability-card[data-domain="data"] .ability-card__icon { color: var(--color-blue); }
+    .ability-card[data-domain="engineering"] .ability-card__icon {
+      color: var(--color-primary);
+    }
 
-    .ability-card[data-domain="product"] { border-top: 2px solid var(--color-gold); }
-    .ability-card[data-domain="product"] .ability-card__icon { color: var(--color-gold); }
+    .ability-card[data-domain="data"] {
+      border-top: 2px solid var(--color-blue);
+    }
 
-    .ability-card[data-domain="growth"] { border-top: 2px solid var(--color-orange); }
-    .ability-card[data-domain="growth"] .ability-card__icon { color: var(--color-orange); }
+    .ability-card[data-domain="data"] .ability-card__icon {
+      color: var(--color-blue);
+    }
+
+    .ability-card[data-domain="product"] {
+      border-top: 2px solid var(--color-gold);
+    }
+
+    .ability-card[data-domain="product"] .ability-card__icon {
+      color: var(--color-gold);
+    }
+
+    .ability-card[data-domain="growth"] {
+      border-top: 2px solid var(--color-orange);
+    }
+
+    .ability-card[data-domain="growth"] .ability-card__icon {
+      color: var(--color-orange);
+    }
 
     /* ── Legend ───────────────────────────────────────────── */
     .ability-legend {
@@ -735,30 +961,42 @@
       background: color-mix(in srgb, var(--color-primary) 10%, transparent);
       border-color: color-mix(in srgb, var(--color-primary) 25%, transparent);
     }
-    .ability-legend__item--engineering .ability-legend__dot { background: var(--color-primary); }
+
+    .ability-legend__item--engineering .ability-legend__dot {
+      background: var(--color-primary);
+    }
 
     .ability-legend__item--data {
       color: var(--color-blue);
       background: color-mix(in srgb, var(--color-blue) 10%, transparent);
       border-color: color-mix(in srgb, var(--color-blue) 25%, transparent);
     }
-    .ability-legend__item--data .ability-legend__dot { background: var(--color-blue); }
+
+    .ability-legend__item--data .ability-legend__dot {
+      background: var(--color-blue);
+    }
 
     .ability-legend__item--product {
       color: var(--color-gold);
       background: color-mix(in srgb, var(--color-gold) 10%, transparent);
       border-color: color-mix(in srgb, var(--color-gold) 25%, transparent);
     }
-    .ability-legend__item--product .ability-legend__dot { background: var(--color-gold); }
+
+    .ability-legend__item--product .ability-legend__dot {
+      background: var(--color-gold);
+    }
 
     .ability-legend__item--growth {
       color: var(--color-orange);
       background: color-mix(in srgb, var(--color-orange) 10%, transparent);
       border-color: color-mix(in srgb, var(--color-orange) 25%, transparent);
     }
-    .ability-legend__item--growth .ability-legend__dot { background: var(--color-orange); }
 
-    /* ── E7: WORKS GRID ──────────────────────────────────────── */
+    .ability-legend__item--growth .ability-legend__dot {
+      background: var(--color-orange);
+    }
+
+    /* ── E6: WORKS GRID / EVIDENCE CARDS ───────────────────────────────── */
     .evidence-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
@@ -777,13 +1015,26 @@
       flex-direction: column;
     }
 
-    .evidence-card:hover { box-shadow: var(--shadow-md); }
+    .evidence-card:hover {
+      box-shadow: var(--shadow-md);
+    }
 
-    /* ── Domain left-border threading from E5 ────────────────── */
-    .evidence-card[data-domain="engineering"] { border-left-color: var(--color-primary); }
-    .evidence-card[data-domain="data"]        { border-left-color: var(--color-blue); }
-    .evidence-card[data-domain="product"]     { border-left-color: var(--color-gold); }
-    .evidence-card[data-domain="growth"]      { border-left-color: var(--color-orange); }
+    /* ── Domain left-border threading from E4 ────────────────── */
+    .evidence-card[data-domain="engineering"] {
+      border-left-color: var(--color-primary);
+    }
+
+    .evidence-card[data-domain="data"] {
+      border-left-color: var(--color-blue);
+    }
+
+    .evidence-card[data-domain="product"] {
+      border-left-color: var(--color-gold);
+    }
+
+    .evidence-card[data-domain="growth"] {
+      border-left-color: var(--color-orange);
+    }
 
     /* ── Domain tag pill (above title in body) ───────────────── */
     .evidence-card__domain-tag {
@@ -805,14 +1056,37 @@
       flex-shrink: 0;
     }
 
-    .evidence-card[data-domain="engineering"] .evidence-card__domain-tag { color: var(--color-primary); }
-    .evidence-card[data-domain="engineering"] .evidence-card__domain-tag-dot { background: var(--color-primary); }
-    .evidence-card[data-domain="data"]        .evidence-card__domain-tag { color: var(--color-blue); }
-    .evidence-card[data-domain="data"]        .evidence-card__domain-tag-dot { background: var(--color-blue); }
-    .evidence-card[data-domain="product"]     .evidence-card__domain-tag { color: var(--color-gold); }
-    .evidence-card[data-domain="product"]     .evidence-card__domain-tag-dot { background: var(--color-gold); }
-    .evidence-card[data-domain="growth"]      .evidence-card__domain-tag { color: var(--color-orange); }
-    .evidence-card[data-domain="growth"]      .evidence-card__domain-tag-dot { background: var(--color-orange); }
+    .evidence-card[data-domain="engineering"] .evidence-card__domain-tag {
+      color: var(--color-primary);
+    }
+
+    .evidence-card[data-domain="engineering"] .evidence-card__domain-tag-dot {
+      background: var(--color-primary);
+    }
+
+    .evidence-card[data-domain="data"] .evidence-card__domain-tag {
+      color: var(--color-blue);
+    }
+
+    .evidence-card[data-domain="data"] .evidence-card__domain-tag-dot {
+      background: var(--color-blue);
+    }
+
+    .evidence-card[data-domain="product"] .evidence-card__domain-tag {
+      color: var(--color-gold);
+    }
+
+    .evidence-card[data-domain="product"] .evidence-card__domain-tag-dot {
+      background: var(--color-gold);
+    }
+
+    .evidence-card[data-domain="growth"] .evidence-card__domain-tag {
+      color: var(--color-orange);
+    }
+
+    .evidence-card[data-domain="growth"] .evidence-card__domain-tag-dot {
+      background: var(--color-orange);
+    }
 
     /* ── VARIANT A: Single image ─────────────────────────────── */
     .evidence-card__thumb {
@@ -821,6 +1095,9 @@
       overflow: hidden;
       background: var(--color-surface-2);
       flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .evidence-card__thumb img {
@@ -829,6 +1106,14 @@
       object-fit: cover;
       display: block;
       transition: transform 420ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .evidence-card__thumb--placeholder {
+      font-size: var(--text-xs);
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--color-text-faint);
     }
 
     .evidence-card:hover .evidence-card__thumb img { transform: scale(1.03); }
@@ -854,7 +1139,8 @@
       height: 100%;
       opacity: 0;
       position: absolute;
-      top: 0; left: 0;
+      top: 0;
+      left: 0;
       transition: opacity 600ms cubic-bezier(0.16, 1, 0.3, 1);
       pointer-events: none;
     }
@@ -899,10 +1185,21 @@
     }
 
     /* Domain-colored active dot */
-    .evidence-card[data-domain="engineering"] .evidence-card__slide-dot.is-active { background: var(--color-primary); }
-    .evidence-card[data-domain="data"]        .evidence-card__slide-dot.is-active { background: var(--color-blue); }
-    .evidence-card[data-domain="product"]     .evidence-card__slide-dot.is-active { background: var(--color-gold); }
-    .evidence-card[data-domain="growth"]      .evidence-card__slide-dot.is-active { background: var(--color-orange); }
+    .evidence-card[data-domain="engineering"] .evidence-card__slide-dot.is-active {
+      background: var(--color-primary);
+    }
+
+    .evidence-card[data-domain="data"] .evidence-card__slide-dot.is-active {
+      background: var(--color-blue);
+    }
+
+    .evidence-card[data-domain="product"] .evidence-card__slide-dot.is-active {
+      background: var(--color-gold);
+    }
+
+    .evidence-card[data-domain="growth"] .evidence-card__slide-dot.is-active {
+      background: var(--color-orange);
+    }
 
     /* ── VARIANT C: Video (YouTube iframe or <video> file) ───── */
     .evidence-card__video {
@@ -951,7 +1248,7 @@
     .evidence-card__sound-btn:hover { background: rgba(0,0,0,0.8); }
     .evidence-card__sound-btn svg { width: 14px; height: 14px; stroke: #fff; }
 
-    /* ── Shared card body ────────────────────────────────────── */
+    /* ── Card body ────────────────────────────────────── */
     .evidence-card__body {
       padding: var(--space-4) var(--space-5);
       flex: 1;
@@ -995,7 +1292,7 @@
       background: var(--color-text-faint);
     }
 
-    /* ── E8: IN DEPTH ACCORDION ────────────────────────────── */
+    /* ── E7: IN DEPTH ACCORDION ────────────────────────────── */
     .story-accordion {
       border: 1px solid var(--color-border);
       border-radius: var(--radius-lg);
@@ -1057,14 +1354,37 @@
       flex-shrink: 0;
     }
 
-    .story-accordion__item[data-domain="engineering"] .story-accordion__domain-tag { color: var(--color-primary); }
-    .story-accordion__item[data-domain="engineering"] .story-accordion__domain-dot { background: var(--color-primary); }
-    .story-accordion__item[data-domain="data"]        .story-accordion__domain-tag { color: var(--color-blue); }
-    .story-accordion__item[data-domain="data"]        .story-accordion__domain-dot { background: var(--color-blue); }
-    .story-accordion__item[data-domain="product"]     .story-accordion__domain-tag { color: var(--color-gold); }
-    .story-accordion__item[data-domain="product"]     .story-accordion__domain-dot { background: var(--color-gold); }
-    .story-accordion__item[data-domain="growth"]      .story-accordion__domain-tag { color: var(--color-orange); }
-    .story-accordion__item[data-domain="growth"]      .story-accordion__domain-dot { background: var(--color-orange); }
+    .story-accordion__item[data-domain="engineering"] .story-accordion__domain-tag {
+      color: var(--color-primary);
+    }
+
+    .story-accordion__item[data-domain="engineering"] .story-accordion__domain-dot {
+      background: var(--color-primary);
+    }
+
+    .story-accordion__item[data-domain="data"] .story-accordion__domain-tag {
+      color: var(--color-blue);
+    }
+
+    .story-accordion__item[data-domain="data"] .story-accordion__domain-dot {
+      background: var(--color-blue);
+    }
+
+    .story-accordion__item[data-domain="product"] .story-accordion__domain-tag {
+      color: var(--color-gold);
+    }
+
+    .story-accordion__item[data-domain="product"] .story-accordion__domain-dot {
+      background: var(--color-gold);
+    }
+
+    .story-accordion__item[data-domain="growth"] .story-accordion__domain-tag {
+      color: var(--color-orange);
+    }
+
+    .story-accordion__item[data-domain="growth"] .story-accordion__domain-dot {
+      background: var(--color-orange);
+    }
 
     .story-accordion__chevron {
       width: 18px;
@@ -1094,10 +1414,21 @@
     }
 
     /* Domain left-border on open panel */
-    .story-accordion__item[data-domain="engineering"] .story-accordion__body[aria-hidden="false"] { border-left-color: var(--color-primary); }
-    .story-accordion__item[data-domain="data"]        .story-accordion__body[aria-hidden="false"] { border-left-color: var(--color-blue); }
-    .story-accordion__item[data-domain="product"]     .story-accordion__body[aria-hidden="false"] { border-left-color: var(--color-gold); }
-    .story-accordion__item[data-domain="growth"]      .story-accordion__body[aria-hidden="false"] { border-left-color: var(--color-orange); }
+    .story-accordion__item[data-domain="engineering"] .story-accordion__body[aria-hidden="false"] {
+      border-left-color: var(--color-primary);
+    }
+
+    .story-accordion__item[data-domain="data"] .story-accordion__body[aria-hidden="false"] {
+      border-left-color: var(--color-blue);
+    }
+
+    .story-accordion__item[data-domain="product"] .story-accordion__body[aria-hidden="false"] {
+      border-left-color: var(--color-gold);
+    }
+
+    .story-accordion__item[data-domain="growth"] .story-accordion__body[aria-hidden="false"] {
+      border-left-color: var(--color-orange);
+    }
 
     .story-accordion__inner {
       overflow: hidden;
@@ -1105,11 +1436,12 @@
 
     .story-accordion__content {
       padding: var(--space-6) var(--space-6) var(--space-8);
-      font-size: var(--text-sm);
+      font-size: var(--text-base);
       font-weight: 300;
-      color: var(--color-text-muted);
+      color: var(--color-text);
       line-height: 1.8;
-      max-width: 70ch;
+      max-width: 66ch;
+      margin-inline: auto;
     }
 
     .story-accordion__content p + p {
@@ -1167,6 +1499,10 @@
         opacity: 1;
         animation: none;
       }
+
+      .stat-counter__item {
+        opacity: 1;
+      }
     }
 
     /* ── RESPONSIVE ────────────────────────────────────────── */
@@ -1184,8 +1520,12 @@
         grid-template-columns: 1fr;
       }
 
-      .evidence-grid {
-        grid-template-columns: 1fr;
+      .page-header__title {
+        font-size: clamp(1.75rem, 8vw, 2.5rem);
+      }
+
+      .site-nav__title {
+        display: none;
       }
     }
   </style>
@@ -1249,10 +1589,25 @@
 </head>
 
 <body>
+
+  <!-- ── STICKY NAV ─────────────────────────────────────────── -->
+  <nav class="site-nav" aria-label="Site navigation">
+    <div class="site-nav__inner">
+      <a href="/" class="site-nav__back" aria-label="Back to portfolio">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
+        Portfolio
+      </a>
+      <span class="site-nav__title">thoughtbubble</span>
+      <div style="width:80px"></div><!-- spacer to keep title centered -->
+    </div>
+  </nav>
+
   <main class="preview-page" role="main">
 
     <!-- ============================================================
-       ELEMENT 1 — SECTION LABEL / DIVIDER
+       ELEMENT 0 — SECTION LABEL / DIVIDER
        ─────────────────────────────────────────────────────────
        PURPOSE   : Visual divider before each named section.
        USAGE     : Drop one <div class="section-label"> before
@@ -1267,8 +1622,8 @@
       6. [WORKS]
       7. [IN DEPTH]
     ============================================================ -->
-    <section aria-label="Element 1: Section Label">
-      <p class="preview-label">Element 1 — Section Label / Divider</p>
+    <section aria-label="Element 0: Section Label">
+      <p class="preview-label">Element 0 — Section Label / Divider</p>
       <div class="section-label"><span class="section-label__text">Stack</span><span class="section-label__line"
           aria-hidden="true"></span></div>
       <div class="section-label"><span class="section-label__text">Abilities</span><span class="section-label__line"
@@ -1281,30 +1636,31 @@
 
 
     <!-- ============================================================
-        ELEMENT 2 — CONTEXT PARAGRAPH BLOCK
+        ELEMENT 1 — CONTEXT BLOCK
     ============================================================ -->
-    <section aria-label="Element 2: Context Block">
-      <p class="preview-label">Element 2 — Context Paragraph Block</p>
+    <section aria-label="E1: CONTEXT BLOCK" class="fade-in">
       <div class="context-block">
-        <p>thoughtbubble was a knowledge-first social network co-founded by George Dreemer and Nikolay Stanchev between
-          2014 and 2016 in the United States. It was designed to shift social media away from entertainment toward
-          sharing ideas, insights, and self-improvement content.</p>
-        <p>The platform grew to around 900 registered users and offered a full social experience — posts, comments,
-          likes, pins, notifications, and customisable profiles — built entirely from scratch by a two-person team while
-          still in high school.</p>
+        <p>A knowledge-first social network, built from scratch by two seniors in high
+          school. Just a love for web development, zero budget, launched in the USA and expanded to reach 900+ users
+          across the world.</p>
+        <p>thoughtbubble was designed to shift social media away from entertainment toward sharing
+          ideas, insights, and self-improvement content.</p>
+        <p>We built it to alpha in under a year, hand-coding every layer ourselves custom authentication, MySQL
+          architecture,
+          real-time notifications, and the full social product without a framework, CMS, or boilerplate.</p>
       </div>
     </section>
 
 
     <!-- ============================================================
-        ELEMENT 3 — SNAPSHOT CARD
+        ELEMENT 2 — SNAPSHOT CARD
         Set data-domain on .snapshot-card to match the primary
         domain of the experience — this sets the top-border color
         and anchors the page's color identity from the first glance.
         engineering | data | product | growth
     ============================================================ -->
-    <section aria-label="Element 3: Snapshot Card">
-      <p class="preview-label">Element 3 — Snapshot Card</p>
+    <section aria-label="E2: SNAPSHOT CARD" class="fade-in">
+      <p class="preview-label">Element 2 — Snapshot Card</p>
       <div class="snapshot-card" data-domain="engineering">
         <div class="snapshot-card__meta">
 
@@ -1373,7 +1729,7 @@
 
 
     <!-- ============================================================
-         ELEMENT 4 — IN NUMBERS / STAT COUNTER
+         ELEMENT 3 — IN NUMBERS / STAT COUNTER
          ─────────────────────────────────────────────────────────
          PURPOSE   : Animate key metrics into view on scroll.
                      Sits between the Snapshot Card and the Stack
@@ -1397,8 +1753,8 @@
          SEO NOTE  : Numbers are in the DOM as plain text after
                      animation completes — fully indexed.
      ============================================================ -->
-    <section class="stat-counter-section" aria-label="Element 4: In Numbers / Stat Counter">
-      <p class="preview-label">Element 4 — In Numbers / Stat Counter</p>
+    <section class="stat-counter-section" aria-label="E3: IN NUMBERS" class="fade-in">
+      <p class="preview-label">Element 3 — In Numbers / Stat Counter</p>
       <div class="stat-counter">
 
         <div class="stat-counter__item" data-target="76" data-suffix="+" data-domain="engineering">
@@ -1426,7 +1782,7 @@
 
 
     <!-- ============================================================
-          ELEMENT 5 — STACK BADGE GRID
+          ELEMENT 4 — STACK BADGE GRID
           ─────────────────────────────────────────────────────────
           PURPOSE   : Hard skills used ON THIS PROJECT, grouped by
                       category. No "since" labels here — those go on
@@ -1447,8 +1803,8 @@
             AI & Automation    — emerging toolchain
             Productivity       — office/collaboration suites
       ============================================================ -->
-    <section aria-label="Element 5: Stack Badge Grid">
-      <p class="preview-label">Element 5 — Stack Badge Grid (full reference)</p>
+    <section aria-label="E4: STACK BADGE GRID" class="fade-in">
+      <p class="preview-label">Element 4 — Stack Badge Grid (full reference)</p>
       <div class="section-label">
         <span class="section-label__text">Stack</span>
         <span class="section-label__line" aria-hidden="true"></span>
@@ -2244,7 +2600,7 @@
     </section>
 
     <!-- ============================================================
-         ELEMENT 6 — ABILITY CARD GRID (MMO Skill Tree)
+         ELEMENT 5 — ABILITY CARD GRID
          ─────────────────────────────────────────────────────────
          PURPOSE   : One card per concrete thing built/solved/shipped.
                      Answers "what did he actually do here?"
@@ -2257,26 +2613,26 @@
                      – .ability-card__desc (impact-first, action verbs)
                      – .ability-tag items (stack pieces used)
     ============================================================ -->
-    <section aria-label="Element 6: Ability Card Grid">
-      <p class="preview-label">Element 6 — Ability Card Grid</p>
+    <section aria-label="E5: ABILITY CARD GRID" class="fade-in">
+      <p class="preview-label">Element 5 — Ability Card Grid</p>
       <div class="section-label">
         <span class="section-label__text">Abilities</span>
         <span class="section-label__line" aria-hidden="true"></span>
       </div>
 
       <!-- Legend -->
-      <div class="ability-legend" aria-label="Ability domain legend">
+      <div class="ability-legend">
         <span class="ability-legend__item ability-legend__item--engineering">
-          <span class="ability-legend__dot" aria-hidden="true"></span>Engineering
-        </span>
-        <span class="ability-legend__item ability-legend__item--data">
-          <span class="ability-legend__dot" aria-hidden="true"></span>Data &amp; Analysis
+          <span class="ability-legend__dot"></span>Engineering
         </span>
         <span class="ability-legend__item ability-legend__item--product">
-          <span class="ability-legend__dot" aria-hidden="true"></span>Product &amp; Design
+          <span class="ability-legend__dot"></span>Product
         </span>
         <span class="ability-legend__item ability-legend__item--growth">
-          <span class="ability-legend__dot" aria-hidden="true"></span>Growth &amp; Business
+          <span class="ability-legend__dot"></span>Growth
+        </span>
+        <span class="ability-legend__item ability-legend__item--data">
+          <span class="ability-legend__dot"></span>Data
         </span>
       </div>
 
@@ -2356,7 +2712,7 @@
 
 
     <!-- ============================================================
-        ELEMENT 7 — WORKS CARD GRID
+        ELEMENT 6 — WORKS CARD GRID
         ─────────────────────────────────────────────────────────
         PURPOSE   : Concrete artefacts proving the abilities above.
         VARIANTS  :
@@ -2369,63 +2725,66 @@
         PORTRAIT  : Add data-orientation="portrait" to .evidence-card__video
                     for vertical content (Shorts, TikTok-style).
     ============================================================ -->
-    <section aria-label="Element 7: Works Card Grid">
-      <p class="preview-label">Element 7 — Works Card Grid</p>
+    <section aria-label="E6: WORKS CARD GRID" class="fade-in">
+      <p class="preview-label">Element 6 — Works Card Grid</p>
       <div class="section-label">
         <span class="section-label__text">Works</span>
         <span class="section-label__line" aria-hidden="true"></span>
       </div>
+
       <div class="evidence-grid">
 
-
         <!-- VARIANT A: Single image -->
-        <article class="evidence-card" data-domain="product">
+        <div class="evidence-card" data-domain="product">
           <div class="evidence-card__thumb">
-            <img src="https://picsum.photos/seed/dreemcorp-brand/560/315" alt="DREEMCORP brand identity work" width="560"
-              height="315" loading="lazy">
+            <img src="https://picsum.photos/seed/dreemcorp-brand/560/315"
+              alt="thoughtbubble login screen with email login and Facebook login option" width="600" height="338"
+              loading="lazy">
           </div>
           <div class="evidence-card__body">
-            <div class="evidence-card__domain-tag">
-              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Product &amp; Design
-            </div>
-            <h4 class="evidence-card__title">Brand Identity System</h4>
+            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"></span>Product</span>
+            <p class="evidence-card__title">User Account Systems &amp; Controls</p>
             <ul class="evidence-card__bullets">
-              <li>Full visual identity built from scratch — logo, palette, typography</li>
-              <li>Applied consistently across digital and physical touchpoints</li>
+              <li>Built native registration and login system</li>
+              <li>Integrated Facebook OAuth login alongside native accounts</li>
+              <li>Developed various user control systems — settings, bug reporting, &amp; account controls</li>
+              <li>Implemented a secure session management system with hashed passwords and access control</li>
             </ul>
           </div>
-        </article>
+        </div>
 
 
         <!-- VARIANT B: Slideshow (3 images, auto-advances every 4s, pauses on hover) -->
-        <article class="evidence-card" data-domain="engineering">
-          <div class="evidence-card__slides" data-slideshow>
-            <div class="evidence-card__slide is-active">
-              <img src="https://picsum.photos/seed/tb-screen-1/560/315" alt="Platform screenshot 1" loading="lazy">
+        <div class="evidence-card" data-domain="engineering">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://picsum.photos/seed/tb-screen-26/560/315" alt="Platform screenshot 1" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://picsum.photos/seed/tb-screen-28/560/315" alt="Platform screenshot 2" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://picsum.photos/seed/tb-screen-42/560/315" alt="Platform screenshot 3" loading="lazy">
+              </div>
             </div>
-            <div class="evidence-card__slide">
-              <img src="https://picsum.photos/seed/tb-screen-2/560/315" alt="Platform screenshot 2" loading="lazy">
-            </div>
-            <div class="evidence-card__slide">
-              <img src="https://picsum.photos/seed/tb-screen-3/560/315" alt="Platform screenshot 3" loading="lazy">
-            </div>
-            <div class="evidence-card__slide-dots" aria-hidden="true">
-              <button class="evidence-card__slide-dot is-active"></button>
-              <button class="evidence-card__slide-dot"></button>
-              <button class="evidence-card__slide-dot"></button>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
             </div>
           </div>
           <div class="evidence-card__body">
-            <div class="evidence-card__domain-tag">
-              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Engineering
-            </div>
-            <h4 class="evidence-card__title">Platform UI — Feed, Profiles &amp; Posts</h4>
+            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"></span>Engineering</span>
+            <p class="evidence-card__title">Social Systems</p>
             <ul class="evidence-card__bullets">
-              <li>Custom-built feed, profile pages and post system — no UI framework</li>
-              <li>Responsive across all screen sizes from day one</li>
+              <li>Built all social systems — posts, likes, comments, pins</li>
+              <li>Developed a hashtag system &amp; search for content curation &amp; discovery</li>
+              <li>Implemented real-time feed &amp; notification system for social interactions</li>
+              <li>Designed &amp; built user profiles with various customizations</li>
             </ul>
           </div>
-        </article>
+        </div>
 
 
         <!-- VARIANT C: YouTube landscape (Zyzz Trance Mix — DREEMCORP edit) -->
@@ -2445,7 +2804,7 @@
           </div>
           <div class="evidence-card__body">
             <div class="evidence-card__domain-tag">
-              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Growth &amp; Business
+              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Growth
             </div>
             <h4 class="evidence-card__title">Video Production — Music &amp; Culture Edits</h4>
             <ul class="evidence-card__bullets">
@@ -2457,7 +2816,7 @@
 
 
         <!-- VARIANT D: YouTube portrait (Short — TikTok edit for Amira Tahri) -->
-        <article class="evidence-card" data-domain="growth">
+        <article class="evidence-card" data-domain="data">
           <div class="evidence-card__video" data-orientation="portrait">
             <iframe
               src="https://www.youtube.com/embed/Uzs-dfv_Tps?autoplay=1&mute=1&loop=1&playlist=Uzs-dfv_Tps&controls=0&rel=0&modestbranding=1&playsinline=1"
@@ -2473,7 +2832,7 @@
           </div>
           <div class="evidence-card__body">
             <div class="evidence-card__domain-tag">
-              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Growth &amp; Business
+              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data
             </div>
             <h4 class="evidence-card__title">Short-Form Content — TikTok &amp; Reels Edits</h4>
             <ul class="evidence-card__bullets">
@@ -2489,7 +2848,7 @@
 
 
     <!-- ============================================================
-         ELEMENT 8 — IN DEPTH ACCORDION
+         ELEMENT 7 — IN DEPTH ACCORDION
          ─────────────────────────────────────────────────────────
          PURPOSE   : Depth on demand. Each item expands on one aspect
                      of the experience that couldn't fit in a chip,
@@ -2525,8 +2884,7 @@
                      scraping your portfolio and by search engines
                      indexing your experience.
     ============================================================ -->
-    <section aria-label="Element 8: In Depth">
-      <p class="preview-label">Element 8 — In Depth</p>
+    <section aria-label="E7: IN DEPTH ACCORDION" class="fade-in">
       <div class="section-label">
         <span class="section-label__text">In Depth</span>
         <span class="section-label__line" aria-hidden="true"></span>
@@ -2551,14 +2909,29 @@
           <div class="story-accordion__body" id="story-panel-1" aria-hidden="false">
             <div class="story-accordion__inner">
               <div class="story-accordion__content">
-                <p>Nikolay and I built thoughtbubble in PHP, JavaScript, and MySQL. There was no framework, no CMS, no boilerplate.
-                  Every system was written from the ground up: authentication, session management, a news feed with sorting
-                  logic, post types (text, photo, video), likes, pins, comments, hashtags, categories, notifications,
-                  profile customisation, account settings, and a user feedback pipeline. We shipped <strong>76 major
-                    updates</strong> between the closed alpha and public launch.</p>
+                <p>Nikolay and I built thoughtbubble in PHP, JavaScript, and MySQL. There was no framework, no CMS,
+                  no boilerplate — we'd hit wall after wall and just keep watching web development videos until it clicked.
+                  I built the full back-end of thoughtbubble and co-developed the front-end, while also designing the full
+                  icon set and logo in Adobe Illustrator.</p>
+                <p>I built the back-end systems below, and co-developed the front-end and social feed logic with Nikolay:
+                </p>
+                <ul>
+                  <li>Authentication and session management</li>
+                  <li>News feed with custom sorting logic</li>
+                  <li>Post types — text, photo, video</li>
+                  <li>Likes, pins, and comments</li>
+                  <li>Hashtags and categories</li>
+                  <li>Notifications</li>
+                  <li>Profile customisation and account settings</li>
+                  <li>A user feedback pipeline</li>
+                </ul>
+                <p></p>
+                <p>We shipped 76 major updates between the closed alpha and public launch.</p>
                 <p>The infrastructure ran on shared hosting with a manually configured MySQL database. There was no version
-                  control beyond file backups, no CI, no staging environment. It was scrappy by any standard, BUT it
-                  worked, it scaled to nearly a thousand users, and every line of it was ours.</p>
+                  control
+                  beyond file backups, no CI, no staging environment. It was scrappy by any standard, but it worked.</p>
+                <p>We scaled to nearly a thousand users, and every line of it was ours. Every feature or bug fix was a
+                  new learning experience and a sleepless night.</p>
               </div>
             </div>
           </div>
@@ -2571,7 +2944,7 @@
               <span class="story-accordion__domain-tag">
                 <span class="story-accordion__domain-dot"></span>Product
               </span>
-              <span class="story-accordion__trigger-label">The idea that was two years early</span>
+              <span class="story-accordion__trigger-label">The idea that was three years early</span>
             </span>
             <svg class="story-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               aria-hidden="true">
@@ -2582,13 +2955,34 @@
             <div class="story-accordion__inner">
               <div class="story-accordion__content">
                 <p>The pitch was simple: a social network where your feed only teaches you things. No vacation photos, no
-                  cat videos, but rather insights from books, actionable quotes, and self-improvement content. We built it in
-                  2014, being inspired by the rise of figures like Gary Vaynerchuk and Tai Lopez and the audiences forming around
-                  them, and saw a clear gap between entertainment-first platforms and the kind of content those audiences
-                  actually wanted.</p>
-                <p>What we were describing - a curated, knowledge-first feed with social mechanics - is close to what
-                  Twitter's long-form pivot, Substack, and LinkedIn's content layer eventually became. We were two teenagers with no funding and no network, so the timing didn't matter. But the product instinct was
-                  right.</p>
+                  cat
+                  videos — just insights from books, actionable quotes, and self-improvement content. We built it in 2014,
+                  inspired by the rise of Gary Vaynerchuk and Tai Lopez and the audiences forming around them. People were
+                  already sharing nuggets from books, videos, and articles — but existing platforms weren't built to hold
+                  that
+                  kind of content well. We saw a clear gap: entertainment-first platforms simply weren't built to support
+                  information-rich content.</p>
+                <p>So we set out to build something different. We envisioned posts where the UI would include things like
+                  book
+                  titles, author, and reference material. A category system built around four pillars of self-improvement:
+                  health, wealth, relationships, and fulfillment. The user profile would read more like a personal
+                  development
+                  journal — with pinned posts, categorized content, and a space for reflection.</p>
+                <p>What we were describing — a curated, knowledge-first feed with social mechanics — is close to what
+                  Twitter's
+                  long-form threads, Substack, and LinkedIn's creator-focused pivot eventually became, three years after we
+                  shipped ours. We were two teenagers with no funding and no network, so the timing didn't matter in the
+                  end.
+                  But the product instinct was right.</p>
+                <p>Looking at how much that space has grown since, there's real satisfaction in knowing two teenagers with
+                  no
+                  prior experience, no funding, and no network saw it coming three years early. I sometimes wonder what we
+                  could
+                  have built with even a fraction of the resources those platforms eventually had — but that experience
+                  taught
+                  me that the desired outcome isn't always the best outcome. There's a deeper plan at work, and life had
+                  other
+                  things in store beyond scaling thoughtbubble to its full potential.</p>
               </div>
             </div>
           </div>
@@ -2601,7 +2995,7 @@
               <span class="story-accordion__domain-tag">
                 <span class="story-accordion__domain-dot"></span>Growth
               </span>
-              <span class="story-accordion__trigger-label">Pitching to investors while still in school</span>
+              <span class="story-accordion__trigger-label">How we got 900 users without spending a dollar</span>
             </span>
             <svg class="story-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               aria-hidden="true">
@@ -2611,25 +3005,29 @@
           <div class="story-accordion__body" id="story-panel-3" aria-hidden="true">
             <div class="story-accordion__inner">
               <div class="story-accordion__content">
-                <p>We pitched thoughtbubble at startup competitions and shark tank-style events while finishing high school and being freshmen in college.
-                  We secured early funding from investors and used it to cover hosting, domain, and basic
-                  marketing. Growth was entirely organic - no ad budget, no influencer deals (were there "influencers" in 2014?! Haha.) We reached <strong>~900 registered
-                    users</strong>. The userbase was concentrated primarily in the United States and Western European countries, such as The Netherlands.</p>
-                <p>The experience of standing in front of a room of investors and defending a product you built yourself, with no engineering or business background, is not something a course teaches. It shaped how I think about
-                  communicating technical work to non-technical audiences — a skill I've used in every project since and especially in my work as a Data Scientist.</p>
+                <p>We didn't run ads. We didn't have a budget. The growth strategy was entirely manual: reach out
+                  directly to people who were already creating self-improvement content on YouTube or Instagram, show
+                  them the platform, and get them to seed it with their content. We identified early that a
+                  knowledge-first feed is only as good as the content in it — if the first 50 users post junk, the
+                  product is dead on arrival.</p>
+                <p>We tracked registrations, session counts, and engagement metrics in MySQL and used those numbers to
+                  prioritise what to build next. The most-used features got more polish. The least-used ones got cut or
+                  rethought. We didn't call it a data-driven product loop at the time, but that's exactly what it was.
+                </p>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Item 4: optional — the IP/legal story -->
-        <div class="story-accordion__item" data-domain="product" role="listitem">
+        <!-- Item 4: Legal -->
+        <div class="story-accordion__item" data-domain="growth" role="listitem">
           <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-4">
             <span class="story-accordion__trigger-left">
               <span class="story-accordion__domain-tag">
-                <span class="story-accordion__domain-dot"></span>Product
+                <span class="story-accordion__domain-dot"></span>Growth
               </span>
-              <span class="story-accordion__trigger-label">We got ripped off by a lawyer. We got the copyright anyway.</span>
+              <span class="story-accordion__trigger-label">We got ripped off by a lawyer - got the copyright
+                anyway</span>
             </span>
             <svg class="story-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               aria-hidden="true">
@@ -2639,13 +3037,27 @@
           <div class="story-accordion__body" id="story-panel-4" aria-hidden="true">
             <div class="story-accordion__inner">
               <div class="story-accordion__content">
-                <p>At some point we decided thoughtbubble needed to be protected. Two teenagers, no legal background, no one
-                  in our corner - we hired a copyright lawyer who took our money, did minimal work, and left us with very
-                  little to show for it. Classic story. We pushed through it, filed properly, and got the copyright
-                  registered. It cost more than it should have and took longer than it should have.</p>
-                <p>In hindsight it was the first time I dealt with the unglamorous side of building something - the admin,
-                  the legal, the people who see inexperience as an opportunity. I would handle it very differently now.
-                  But we got the copyright.</p>
+                <p>At some point, two teenagers decided their app needed real legal protection — because apparently "two
+                  guys
+                  with a login page" doesn't hold up as a legal entity on its own. So we hired a copyright lawyer, nodded
+                  confidently at documents we barely understood, and paid real money to learn what a retainer is the hard
+                  way.
+                  He did the bare minimum, billed like he'd written us a constitution, and left us wondering if we'd just
+                  been
+                  the world's youngest, most polite scam victims.</p>
+                <p>Classic story. We pushed through it anyway, filed everything properly ourselves where we could, and got
+                  the
+                  copyright registered. It cost more than it should have and took longer than it should have — but it's
+                  ours, on
+                  paper, forever, which is more than I can say for the money we spent on that lawyer.</p>
+                <p>In hindsight, it was my first real lesson in the unglamorous side of building something — the admin, the
+                  fine
+                  print, the people who see inexperience as an opportunity rather than something to protect. Nobody warns
+                  you
+                  that "founding a startup" sometimes means arguing about an invoice with a man in a blazer. I'd handle it
+                  very
+                  differently now. But we got the copyright — and honestly, that's a better ending than most first-lawyer
+                  stories get.</p>
               </div>
             </div>
           </div>
