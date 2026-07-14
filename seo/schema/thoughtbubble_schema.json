@@ -1,0 +1,80 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://georgedreemer.com/thoughtbubble#webpage",
+      "url": "https://georgedreemer.com/thoughtbubble",
+      "name": "thoughtbubble — Knowledge-First Social Network",
+      "description": "thoughtbubble was a knowledge-first social network co-founded by George Dreemer and Nikolay Stanchev, built from scratch in high school and launched to around 900 registered users.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://georgedreemer.com/#website",
+        "url": "https://georgedreemer.com",
+        "name": "George Dreemer"
+      },
+      "about": {
+        "@id": "https://georgedreemer.com/thoughtbubble#project"
+      },
+      "mainEntity": {
+        "@id": "https://georgedreemer.com/thoughtbubble#project"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://georgedreemer.com/ncsitebuilder/gallery/dxyz-thoughtbubble-thumb.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://georgedreemer.com/thoughtbubble#project",
+      "name": "thoughtbubble",
+      "alternateName": "thoughtbubble social network",
+      "url": "https://georgedreemer.com/thoughtbubble",
+      "description": "A knowledge-first social network co-founded by George Dreemer and Nikolay Stanchev, designed and built from scratch in high school.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://georgedreemer.com/ncsitebuilder/gallery/dxyz-thoughtbubble-thumb.png",
+        "width": 1200,
+        "height": 630
+      },
+      "genre": [
+        "Social network",
+        "Knowledge-sharing platform",
+        "Portfolio project",
+        "Startup project"
+      ],
+      "keywords": [
+        "thoughtbubble",
+        "knowledge-first social network",
+        "George Dreemer",
+        "Nikolay Stanchev",
+        "startup",
+        "full-stack development",
+        "social platform"
+      ],
+      "creator": [
+        {
+          "@type": "Person",
+          "@id": "https://georgedreemer.com/#person",
+          "name": "George Dreemer",
+          "url": "https://georgedreemer.com"
+        },
+        {
+          "@type": "Person",
+          "name": "Nikolay Stanchev"
+        }
+      ],
+      "author": {
+        "@type": "Person",
+        "@id": "https://georgedreemer.com/#person",
+        "name": "George Dreemer",
+        "url": "https://georgedreemer.com"
+      },
+      "dateModified": "2026-07-14",
+      "inLanguage": "en-US"
+    }
+  ]
+}
