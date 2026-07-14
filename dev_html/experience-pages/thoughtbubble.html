@@ -4,19 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>thoughtbubble — George Dreemer</title>
-  <meta name="description"
-    content="thoughtbubble was a knowledge-first social network co-founded by George Dreemer in 2014. Built from scratch in PHP and MySQL, it grew to ~900 users with zero budget.">
-  <meta property="og:title" content="thoughtbubble — George Dreemer">
-  <meta property="og:description"
-    content="A knowledge-first social network built from scratch in high school. PHP, MySQL, ~900 users, zero budget.">
-  <meta property="og:type" content="website">
+  <title>thoughtbubble — Knowledge-First Social Network · George Dreemer</title>
 
+  <!-- SEO Meta Data (source: meta.html->THOUGHTBUBBLE) -->
+  <link rel="canonical" href="https://georgedreemer.com/thoughtbubble">
+  <meta property="og:url" content="https://georgedreemer.com/thoughtbubble">
+  <meta property="og:title" content="thoughtbubble — Knowledge-First Social Network · George Dreemer">
+  <meta property="og:description"
+    content="thoughtbubble was a social network built around knowledge, not entertainment — co-founded by George Dreemer and Nikolay Stanchev. A fully designed and coded startup from concept to launch.">
+  <meta property="og:image" content="https://georgedreemer.com/ncsitebuilder/gallery/dxyz-thoughtbubble-thumb.png">
+  <meta name="twitter:title" content="thoughtbubble — Knowledge-First Social Network · George Dreemer">
+  <meta name="twitter:description"
+    content="thoughtbubble was a social network built around knowledge, not entertainment — co-founded by George Dreemer and Nikolay Stanchev. A fully designed and coded startup from concept to launch.">
+  <meta name="twitter:image" content="https://georgedreemer.com/ncsitebuilder/gallery/dxyz-thoughtbubble-thumb.png">
+
+  <!-- Preconnect to Google Fonts & Pull Nunito, Playfair Display -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Pull Lucide icons -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
 
   <!-- Main Styles-->
@@ -32,7 +39,7 @@
       --color-text: #1a1814;
       --color-text-muted: #5a5750;
       --color-text-faint: #9a9590;
-      --color-accent: #bf7bff;
+      --color-accent: #bf7bff; /* legacy - kept for CEFR badges and cert pills only */
       --color-accent-dim: rgba(191, 123, 255, 0.12);
       --color-primary: #01696f;
       --color-blue: #006494;
@@ -103,6 +110,24 @@
       background: none;
       border: none;
       font: inherit;
+    }
+
+    .preview-page {
+      max-width: 860px;
+      margin-inline: auto;
+      padding: var(--space-10) var(--space-6);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-12);
+    }
+
+    .preview-label {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--color-text-faint);
+      margin-bottom: var(--space-4);
     }
 
     /* ── NAV ────────────────────────────────────────────────── */
@@ -210,7 +235,7 @@
       padding-top: var(--space-10);
     }
 
-    /* ── SECTION LABEL ───────────────────────────────────────── */
+    /* ── SECTION LABEL ─────────────────────────────────── */
     .section-label {
       display: flex;
       align-items: center;
@@ -233,7 +258,7 @@
       background: var(--color-divider);
     }
 
-    /* ── CONTEXT BLOCK ───────────────────────────────────────── */
+    /* ── E1: CONTEXT BLOCK ─────────────────────────────────── */
     .context-block {
       border-left: none;
       padding-left: 0;
@@ -287,7 +312,7 @@
       color: var(--color-text-muted);
     }
 
-    /* ── SNAPSHOT CARD ───────────────────────────────────────── */
+    /* ── E2: SNAPSHOT CARD ─────────────────────────────────── */
     .snapshot-card {
       background: var(--color-surface);
       border: 1px solid var(--color-border);
@@ -296,6 +321,7 @@
       padding: var(--space-6) var(--space-8);
     }
 
+    /* Domain top-border — mirrors E5 card system */
     .snapshot-card[data-domain="engineering"] {
       border-top-color: var(--color-primary);
     }
@@ -341,11 +367,13 @@
       line-height: 1.4;
     }
 
+    /* Prominent fields — Role and Type */
     .snapshot-item--prominent .snapshot-item__value {
       font-size: var(--text-base);
       font-weight: 600;
     }
 
+    /* Links — retired purple, now neutral underline */
     .snapshot-item__value a {
       color: var(--color-text);
       border-bottom: 1px solid var(--color-border);
@@ -357,6 +385,7 @@
       border-bottom-color: var(--color-primary);
     }
 
+    /* ── Highlights ─────────────────────────────────────────── */
     .snapshot-card__highlights-label {
       font-size: var(--text-xs);
       font-weight: 700;
@@ -394,6 +423,7 @@
       background: var(--color-text-faint);
     }
 
+    /* Domain-colored dots — same four colors, same system */
     .achievement-chip[data-domain="engineering"] .achievement-chip__dot {
       background: var(--color-primary);
     }
@@ -410,6 +440,7 @@
       background: var(--color-orange);
     }
 
+    /* Subtle chip tint matching domain */
     .achievement-chip[data-domain="engineering"] {
       border-color: color-mix(in srgb, var(--color-primary) 20%, transparent);
     }
@@ -426,7 +457,7 @@
       border-color: color-mix(in srgb, var(--color-orange) 20%, transparent);
     }
 
-    /* ── STAT COUNTER (E4 — In Numbers) ─────────────────────── */
+    /* ── ELEMENT 3 — IN NUMBERS / STAT COUNTER ─────────────────── */
     .stat-counter-section {
       padding-block: var(--space-4);
     }
@@ -467,15 +498,18 @@
       transition-delay: 240ms;
     }
 
+    /* The animated number — domain color threads through here */
     .stat-counter__number {
       font-family: var(--font-body);
       font-size: var(--text-2xl);
       font-weight: 700;
       line-height: 1;
       letter-spacing: -0.02em;
-      color: var(--color-text-muted);
+      color: var(--color-text-muted);   /* default fallback */
+      transition: color 0.3s ease;
     }
 
+    /* Domain color on the number */
     .stat-counter__item[data-domain="engineering"] .stat-counter__number {
       color: var(--color-primary);
     }
@@ -499,6 +533,23 @@
       max-width: 14ch;
     }
 
+    /* Scroll reveal — fade in as a group, no layout shift */
+    .stat-counter__item {
+      opacity: 0;
+      transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .stat-counter__item.is-visible {
+      opacity: 1;
+    }
+
+    /* Staggered delay per item */
+    .stat-counter__item:nth-child(1) { transition-delay: 0ms; }
+    .stat-counter__item:nth-child(2) { transition-delay: 80ms; }
+    .stat-counter__item:nth-child(3) { transition-delay: 160ms; }
+    .stat-counter__item:nth-child(4) { transition-delay: 240ms; }
+
+    /* Mobile — 2×2 grid */
     @media (max-width: 640px) {
       .stat-counter {
         grid-template-columns: repeat(2, 1fr);
@@ -506,7 +557,7 @@
       }
     }
 
-    /* ── STACK GRID ──────────────────────────────────────────── */
+    /* ── E4: STACK BADGE GRID ────────────────────────────────────── */
     .stack-grid {
       display: flex;
       flex-direction: column;
@@ -559,8 +610,46 @@
       letter-spacing: .01em;
     }
 
+    /* text-only badge (human languages, certifications) */
     .stack-badge--text {
       padding: var(--space-1) var(--space-4);
+    }
+
+    /* ── Language badge: flag ────────────────────────────────── */
+    .stack-badge__flag {
+      font-size: 1rem;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    /* ── Language badge: CEFR pill ───────────────────────────── */
+    .stack-badge__cefr {
+      display: inline-flex;
+      align-items: center;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      line-height: 1.6;
+      color: #bf7bff;
+      background: rgba(191, 123, 255, 0.10);
+      border: 1px solid rgba(191, 123, 255, 0.30);
+      flex-shrink: 0;
+      margin-left: auto;
+    }
+
+    /* ── Language badge: layout ──────────────────────────────── */
+    .stack-badge--lang {
+      min-width: 11rem;
+      gap: 6px;
+    }
+
+    /* ── Text-mark badge (tools with no icon) ────────────────── */
+    .stack-badge--text {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
     }
 
     .stack-badge__mark {
@@ -578,7 +667,177 @@
       line-height: 1;
     }
 
-    /* ── ABILITY GRID ────────────────────────────────────────── */
+    /* ── Credential card grid ────────────────────────────────── */
+    .stack-group--credentials .stack-group__items,
+    .stack-group__items--credentials {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 0.75rem;
+    }
+
+    .credential-card {
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.07);
+      border-radius: 10px;
+      padding: 0.9rem 1rem;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+      transition: box-shadow 150ms ease, transform 150ms ease;
+    }
+
+    .credential-card:hover {
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.09);
+      transform: translateY(-2px);
+    }
+
+    .credential-card__icon {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.15rem;
+      background: #f5f3ee;
+    }
+
+    .credential-card__icon--img {
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.07);
+    }
+
+    .credential-card__icon--svg {
+      color: var(--color-primary);
+    }
+
+    .credential-card__body {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .credential-card__title {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      line-height: 1.3;
+      margin: 0 0 0.2rem;
+    }
+
+    .credential-card__sub {
+      font-size: 0.68rem;
+      color: #888;
+      margin: 0 0 0.4rem;
+    }
+
+    .credential-card__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+    }
+
+    .credential-card__context {
+      font-size: var(--text-xs);
+      color: var(--color-text-muted);
+      font-style: italic;
+      margin-top: var(--space-1);
+      margin-bottom: var(--space-1);
+    }
+
+    /* ── Credential card: org description ───────────────────────── */
+    .credential-card__org-desc {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--color-text-faint);
+      line-height: 1.5;
+      margin: 0.25rem 0 0.35rem;
+      max-width: 52ch;
+    }
+
+    /* ── Credential card: bullet learning points ─────────────────── */
+    .credential-card__bullets {
+      list-style: none;
+      padding: 0;
+      margin: 0.25rem 0 0.45rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .credential-card__bullets li {
+      font-size: 0.75rem;
+      color: var(--color-text-faint);
+      line-height: 1.5;
+      padding-left: 0.9rem;
+      position: relative;
+      max-width: 52ch;
+    }
+
+    .credential-card__bullets li::before {
+      content: '·';
+      position: absolute;
+      left: 0.2rem;
+      color: var(--color-text-faint);
+      font-weight: 700;
+    }
+
+    .credential-card__link {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid var(--color-border);
+      transition: border-color var(--transition-interactive),
+                  color var(--transition-interactive);
+    }
+
+    .credential-card__link:hover {
+      color: var(--color-primary);
+      border-bottom-color: var(--color-primary);
+    }
+
+    /* ── Credential pills ────────────────────────────────────── */
+    .credential-pill {
+      display: inline-block;
+      font-size: 0.6rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      line-height: 1.5;
+    }
+
+    .credential-pill--year {
+      background: #f5f3ee;
+      color: #888;
+      border: 1px solid #e0ddd8;
+    }
+
+    .credential-pill--gpa {
+      background: #f0f7f0;
+      color: #3a7a3a;
+      border: 1px solid #c6e0c6;
+    }
+
+    .credential-pill--score {
+      background: #f0f4ff;
+      color: #4a6fc4;
+      border: 1px solid #c6d4f0;
+    }
+
+    .credential-pill--cert {
+      background: rgba(191, 123, 255, 0.10);
+      color: #bf7bff;
+      border: 1px solid rgba(191, 123, 255, 0.30);
+    }
+
+    .credential-pill--award {
+      background: #fdf8ee;
+      color: #a07820;
+      border: 1px solid #e8d9a8;
+    }
+
+    /* ── E5: ABILITY CARD GRID ────────────────────────────────────────── */
     .ability-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
@@ -608,6 +867,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-shrink: 0;
     }
 
     .ability-card__icon svg {
@@ -643,8 +903,9 @@
       align-items: center;
       font-size: 10px;
       font-weight: 600;
+      font-family: var(--font-body, sans-serif);
       color: var(--color-text-muted);
-      background: var(--color-surface-2);
+      background: var(--color-surface-2, #f0ede8);
       border: 1px solid var(--color-border);
       border-radius: var(--radius-full);
       padding: 2px 8px;
@@ -653,6 +914,7 @@
       line-height: 1.5;
     }
 
+    /* ── Domain accents ───────────────────────────────────── */
     .ability-card[data-domain="engineering"] {
       border-top: 2px solid var(--color-primary);
     }
@@ -685,7 +947,7 @@
       color: var(--color-orange);
     }
 
-    /* Legend */
+    /* ── Legend ───────────────────────────────────────────── */
     .ability-legend {
       display: flex;
       flex-wrap: wrap;
@@ -752,13 +1014,14 @@
       background: var(--color-orange);
     }
 
-    /* ── WORKS / EVIDENCE GRID ───────────────────────────────── */
+    /* ── E6: WORKS GRID / EVIDENCE CARDS ───────────────────────────────── */
     .evidence-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
       gap: var(--space-4);
     }
 
+    /* ── Base card ───────────────────────────────────────────── */
     .evidence-card {
       background: var(--color-surface);
       border: 1px solid var(--color-border);
@@ -774,6 +1037,7 @@
       box-shadow: var(--shadow-md);
     }
 
+    /* ── Domain left-border threading from E4 ────────────────── */
     .evidence-card[data-domain="engineering"] {
       border-left-color: var(--color-primary);
     }
@@ -790,6 +1054,7 @@
       border-left-color: var(--color-orange);
     }
 
+    /* ── Domain tag pill (above title in body) ───────────────── */
     .evidence-card__domain-tag {
       display: inline-flex;
       align-items: center;
@@ -841,7 +1106,7 @@
       background: var(--color-orange);
     }
 
-    /* Thumb (placeholder bg for now) */
+    /* ── VARIANT A: Single image ─────────────────────────────── */
     .evidence-card__thumb {
       width: 100%;
       aspect-ratio: 16/9;
@@ -853,6 +1118,14 @@
       justify-content: center;
     }
 
+    .evidence-card__thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 420ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
     .evidence-card__thumb--placeholder {
       font-size: var(--text-xs);
       font-weight: 600;
@@ -861,7 +1134,9 @@
       color: var(--color-text-faint);
     }
 
-    /* Slideshow variant */
+    .evidence-card:hover .evidence-card__thumb img { transform: scale(1.03); }
+
+    /* ── VARIANT B: Slideshow ────────────────────────────────── */
     .evidence-card__slides {
       width: 100%;
       aspect-ratio: 16/9;
@@ -869,6 +1144,12 @@
       background: var(--color-surface-2);
       position: relative;
       flex-shrink: 0;
+    }
+
+    .evidence-card__slides-track {
+      display: flex;
+      width: 100%;
+      height: 100%;
     }
 
     .evidence-card__slide {
@@ -894,6 +1175,7 @@
       display: block;
     }
 
+    /* Dot indicators */
     .evidence-card__slide-dots {
       position: absolute;
       bottom: var(--space-2);
@@ -920,8 +1202,13 @@
       transform: scale(1.3);
     }
 
+    /* Domain-colored active dot */
     .evidence-card[data-domain="engineering"] .evidence-card__slide-dot.is-active {
       background: var(--color-primary);
+    }
+
+    .evidence-card[data-domain="data"] .evidence-card__slide-dot.is-active {
+      background: var(--color-blue);
     }
 
     .evidence-card[data-domain="product"] .evidence-card__slide-dot.is-active {
@@ -932,7 +1219,54 @@
       background: var(--color-orange);
     }
 
-    /* Card body */
+    /* ── VARIANT C: Video (YouTube iframe or <video> file) ───── */
+    .evidence-card__video {
+      width: 100%;
+      aspect-ratio: 16/9;
+      overflow: hidden;
+      background: #0e0e0e;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .evidence-card__video[data-orientation="portrait"] {
+      aspect-ratio: 9/16;
+      max-height: 480px;
+    }
+
+    .evidence-card__video iframe,
+    .evidence-card__video video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border: none;
+    }
+
+    /* Sound toggle button */
+    .evidence-card__sound-btn {
+      position: absolute;
+      bottom: var(--space-3);
+      right: var(--space-3);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.55);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 3;
+      transition: background var(--transition);
+    }
+
+    .evidence-card__sound-btn:hover { background: rgba(0,0,0,0.8); }
+    .evidence-card__sound-btn svg { width: 14px; height: 14px; stroke: #fff; }
+
+    /* ── Card body ────────────────────────────────────── */
     .evidence-card__body {
       padding: var(--space-4) var(--space-5);
       flex: 1;
@@ -976,7 +1310,7 @@
       background: var(--color-text-faint);
     }
 
-    /* ── ACCORDION (In Depth) ─────────────────────────────────── */
+    /* ── E7: IN DEPTH ACCORDION ─────────────────────────────────── */
     .story-accordion {
       border: 1px solid var(--color-border);
       border-radius: var(--radius-lg);
@@ -1019,6 +1353,7 @@
       text-align: left;
     }
 
+    /* Domain tag on trigger — same dot+label system as E6 */
     .story-accordion__domain-tag {
       display: inline-flex;
       align-items: center;
@@ -1081,19 +1416,22 @@
       transform: rotate(180deg);
     }
 
+    /* Body — domain left-border threads when open */
     .story-accordion__body {
       display: grid;
       grid-template-rows: 0fr;
+      transition: grid-template-rows 380ms cubic-bezier(0.16, 1, 0.3, 1);
       background: var(--color-bg);
       border-left: 2px solid transparent;
       transition: grid-template-rows 380ms cubic-bezier(0.16, 1, 0.3, 1),
-        border-color 380ms cubic-bezier(0.16, 1, 0.3, 1);
+                  border-color 380ms cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     .story-accordion__body[aria-hidden="false"] {
       grid-template-rows: 1fr;
     }
 
+    /* Domain left-border on open panel */
     .story-accordion__item[data-domain="engineering"] .story-accordion__body[aria-hidden="false"] {
       border-left-color: var(--color-primary);
     }
@@ -1133,6 +1471,7 @@
       color: var(--color-text);
     }
 
+    /* Simple list support inside content */
     .story-accordion__content ul {
       list-style: none;
       display: flex;
@@ -1196,10 +1535,6 @@
       }
 
       .ability-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .evidence-grid {
         grid-template-columns: 1fr;
       }
 
@@ -1289,8 +1624,10 @@
 
   <main class="experience-page" role="main">
 
-    <!-- ── E1: CONTEXT ────────────────────────────────────────── -->
-    <section aria-label="Context" class="fade-in">
+    <!-- ============================================================
+        ELEMENT 1 — CONTEXT BLOCK
+    ============================================================ -->
+    <section aria-label="E1: CONTEXT BLOCK" class="fade-in">
       <div class="context-block">
         <p>A knowledge-first social network, built from scratch by two seniors in high
         school. Just a love for web development, zero budget, launched in the USA and expanded to reach 900+ users
@@ -1302,8 +1639,10 @@
       </div>
     </section>
 
-    <!-- ── E2: SNAPSHOT CARD ──────────────────────────────────── -->
-    <section aria-label="Snapshot" class="fade-in">
+    <!-- ============================================================
+        ELEMENT 2 — SNAPSHOT CARD
+    ============================================================ -->
+    <section aria-label="E2: SNAPSHOT CARD" class="fade-in">
       <div class="snapshot-card" data-domain="engineering">
         <div class="snapshot-card__meta">
 
@@ -1368,8 +1707,10 @@
       </div>
     </section>
 
-    <!-- ── E3: IN NUMBERS ─────────────────────────────────────── -->
-    <section class="stat-counter-section" aria-label="In Numbers">
+    <!-- ============================================================
+        ELEMENT 3 — IN NUMBERS / STAT COUNTER
+    ============================================================ -->
+    <section class="stat-counter-section" aria-label="E3: IN NUMBERS" class="fade-in">
       <div class="stat-counter">
 
         <div class="stat-counter__item" data-target="76" data-suffix="+" data-domain="engineering">
@@ -1395,8 +1736,10 @@
       </div>
     </section>
 
-    <!-- ── E4: STACK ──────────────────────────────────────────── -->
-    <section aria-label="Stack" class="fade-in">
+    <!-- ============================================================
+        ELEMENT 4 — STACK BADGE GRID
+    ============================================================ -->
+    <section aria-label="E4: STACK BADGE GRID" class="fade-in">
       <div class="section-label">
         <span class="section-label__text">Stack</span>
         <span class="section-label__line" aria-hidden="true"></span>
@@ -1463,21 +1806,29 @@
       </div>
     </section>
 
-    <!-- ── E5: ABILITIES ──────────────────────────────────────── -->
-    <section aria-label="Abilities" class="fade-in">
+    <!-- ============================================================
+        ELEMENT 5 — ABILITY CARD GRID
+    ============================================================ -->
+    <section aria-label="E5: ABILITY CARD GRID" class="fade-in">
       <div class="section-label">
         <span class="section-label__text">Abilities</span>
         <span class="section-label__line" aria-hidden="true"></span>
       </div>
 
+      <!-- Legend -->
       <div class="ability-legend">
-        <span class="ability-legend__item ability-legend__item--engineering"><span
-            class="ability-legend__dot"></span>Engineering</span>
-        <span class="ability-legend__item ability-legend__item--product"><span
-            class="ability-legend__dot"></span>Product</span>
-        <span class="ability-legend__item ability-legend__item--growth"><span
-            class="ability-legend__dot"></span>Growth</span>
-        <span class="ability-legend__item ability-legend__item--data"><span class="ability-legend__dot"></span>Data</span>
+        <span class="ability-legend__item ability-legend__item--engineering">
+          <span class="ability-legend__dot"></span>Engineering
+        </span>
+        <span class="ability-legend__item ability-legend__item--product">
+          <span class="ability-legend__dot"></span>Product
+        </span>
+        <span class="ability-legend__item ability-legend__item--growth">
+          <span class="ability-legend__dot"></span>Growth
+        </span>
+        <span class="ability-legend__item ability-legend__item--data">
+          <span class="ability-legend__dot"></span>Data
+        </span>
       </div>
 
       <div class="ability-grid">
@@ -1624,8 +1975,10 @@
       </div>
     </section>
 
-    <!-- ── E6: WORKS ──────────────────────────────────────────── -->
-    <section aria-label="Works" class="fade-in">
+    <!-- ============================================================
+        ELEMENT 6 — WORKS CARD GRID
+    ============================================================ -->
+    <section aria-label="E6: WORKS CARD GRID" class="fade-in">
       <div class="section-label">
         <span class="section-label__text">Works</span>
         <span class="section-label__line" aria-hidden="true"></span>
@@ -1722,8 +2075,10 @@
       </div>
     </section>
 
-    <!-- ── E7: IN DEPTH ACCORDION ─────────────────────────────── -->
-    <section aria-label="In Depth" class="fade-in">
+    <!-- ============================================================
+        ELEMENT 7 — IN DEPTH ACCORDION
+    ============================================================ -->
+    <section aria-label="E7: IN DEPTH ACCORDION" class="fade-in">
       <div class="section-label">
         <span class="section-label__text">In Depth</span>
         <span class="section-label__line" aria-hidden="true"></span>
@@ -1939,6 +2294,29 @@
       slider.addEventListener('mouseenter', stop);
       slider.addEventListener('mouseleave', start);
       start();
+    });
+
+
+    // ── Sound toggle (YouTube iframes) ─────────────────────────
+    document.querySelectorAll('[data-sound-toggle]').forEach(btn => {
+      let muted = true;
+      const iframe = btn.closest('.evidence-card__video')?.querySelector('iframe');
+      if (!iframe) return;
+
+      btn.addEventListener('click', () => {
+        muted = !muted;
+        const src = iframe.src;
+        iframe.src = muted
+          ? src.replace('&mute=0', '&mute=1')
+          : src.replace('&mute=1', '&mute=0');
+
+        const svg = btn.querySelector('svg');
+        if (!svg) return;
+
+        svg.innerHTML = muted
+          ? `<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15" class="mute-line"/><line x1="17" y1="9" x2="23" y2="15" class="mute-line"/>`
+          : `<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>`;
+      });
     });
 
     // ── Accordion ─────────────────────────────────────────────────
