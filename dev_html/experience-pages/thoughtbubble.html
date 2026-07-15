@@ -1311,6 +1311,7 @@
       background: #0e0e0e;
       position: relative;
       flex-shrink: 0;
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
     }
 
     .evidence-card__video[data-orientation="portrait"] {
@@ -2122,9 +2123,18 @@
 
         <!-- Card 3: User Feedback Analysis -->
         <div class="evidence-card" data-domain="data">
-          <div class="evidence-card__thumb">
-            <img src="https://georgedreemer.com/public_img/thoughtbubble/thoughtbubble-iterations-min.png"
-              alt="Data analysis visualization, showing key metrics and insights" width="600" height="338" loading="lazy">
+          <div class="evidence-card__video">
+            <video autoplay muted loop playsinline>
+              <source src="https://georgedreemer.com/public_img/thoughtbubble/thoughtbubble-iterations-loop.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <button class="evidence-card__sound-btn" data-sound-toggle aria-label="Toggle sound">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                <line x1="23" y1="9" x2="17" y2="15" class="mute-line" />
+                <line x1="17" y1="9" x2="23" y2="15" class="mute-line" />
+              </svg>
+            </button>
           </div>
           <div class="evidence-card__body">
             <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"></span>Data</span>
@@ -2141,8 +2151,8 @@
         <!-- Card 4: Pitching & Networking -->
         <div class="evidence-card" data-domain="growth">
           <div class="evidence-card__thumb">
-            <img src="https://georgedreemer.com/public_img/thoughtbubble/thoughtbubble-handshake-min.jpg"
-              alt="Handshake representing investor and partner meetings" width="600" height="338" loading="lazy">
+            <img src="https://georgedreemer.com/public_img/thoughtbubble/thoughtbubble-lawyerdesk-min.png"
+              alt="Thoughtbubble copyright paperwork scatted on the desk" width="600" height="338" loading="lazy">
           </div>
           <div class="evidence-card__body">
             <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"></span>Growth</span>
