@@ -23,8 +23,8 @@
 
 		<meta name="generator" content="Website Builder" />
 			<script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
-	<link href="css/common-bundle.css?ts=20260714174418" rel="stylesheet" type="text/css" />
-	<link href="css/a18bddd8aa5900272be5f7d0b8bcd1fd-bundle.css?ts=20260714174418" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
+	<link href="css/common-bundle.css?ts=20260715131403" rel="stylesheet" type="text/css" />
+	<link href="css/a18bddd8aa5900272be5f7d0b8bcd1fd-bundle.css?ts=20260715131403" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
 	<ga-code/><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
      SECTION 1 — GLOBAL
      Settings → Meta Tags (site-wide, always present)
@@ -102,5 +102,5 @@
 .image-height-mod {
 height: 100%;
 }
-</style></div><script src="js/common-bundle.js?ts=20260714174418" type="text/javascript"></script>{{hr_out}}</body>
+</style></div><script src="js/common-bundle.js?ts=20260715131403" type="text/javascript"></script>{{hr_out}}</body>
 </html>

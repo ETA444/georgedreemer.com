@@ -19,9 +19,9 @@
 
 		<meta name="generator" content="Website Builder" />
 			<script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
-	<link href="css/common-bundle.css?ts=20260714174418" rel="stylesheet" type="text/css" />
+	<link href="css/common-bundle.css?ts=20260715131403" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese" rel="stylesheet" type="text/css" />
-	<link href="css/a18bddd8a85d05531bf2b97cfabf9ffd-bundle.css?ts=20260714174418" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
+	<link href="css/a18bddd8a85d05531bf2b97cfabf9ffd-bundle.css?ts=20260715131403" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
 	<ga-code/><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
      SECTION 1 — GLOBAL
      Settings → Meta Tags (site-wide, always present)
@@ -1363,6 +1363,7 @@ button {
   background: #0e0e0e;
   position: relative;
   flex-shrink: 0;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
 }
 
 .evidence-card__video[data-orientation="portrait"] {
@@ -1768,7 +1769,7 @@ body {
 </head>
 
 
-<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e430a4143ca9337839c74f6" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a190ffad0b3e00c9cfe515ee38fb5f8c" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffad0b4c00b2f9f83b0f0bfac1e1" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1784040259"></a></div></div></div><div id="a190ffad0b6300a7ab401fb62000cfae" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffad0b6d007e8c311f4f42ffc0a3" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1784040259"></a></div></div></div></div></div><div id="a19127dc957400c0691f8985137b6c6f" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e430a4143ca9337839c74f6" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a190ffad0b3e00c9cfe515ee38fb5f8c" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffad0b4c00b2f9f83b0f0bfac1e1" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1784110448"></a></div></div></div><div id="a190ffad0b6300a7ab401fb62000cfae" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffad0b6d007e8c311f4f42ffc0a3" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1784110448"></a></div></div></div></div></div><div id="a19127dc957400c0691f8985137b6c6f" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -1850,7 +1851,7 @@ body {
 			'children' => array()
 		)
 	)
-)); ?><div class="clearfix"></div></div></div></div><div id="a18bddd77e430b4ce3e980126becfd36" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e430ced1f7965df7ab4bca9" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e430d9c3ad526ddc7851ded" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/thoughtbubble-logo%201.svg?ts=1784040259"></div></div></div></div></div></div></div><div id="a18bddd77e430eec23ab9fd8533ca3f7" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1784040259"></div></div></div></div></div></div></div><div id="wb_main_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a19f60e67d0200c8d407b5be07be8bdd" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><main class="experience-page" role="main">
+)); ?><div class="clearfix"></div></div></div></div><div id="a18bddd77e430b4ce3e980126becfd36" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e430ced1f7965df7ab4bca9" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e430d9c3ad526ddc7851ded" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/thoughtbubble-logo%201.svg?ts=1784110448"></div></div></div></div></div></div></div><div id="a18bddd77e430eec23ab9fd8533ca3f7" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1784110448"></div></div></div></div></div></div></div><div id="wb_main_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a19f60e67d0200c8d407b5be07be8bdd" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><main class="experience-page" role="main">
     
     <!-- ============================================================
         ELEMENT 1 — CONTEXT BLOCK
@@ -2249,8 +2250,18 @@ body {
     
         <!-- Card 3: User Feedback Analysis -->
         <div class="evidence-card" data-domain="data">
-          <div class="evidence-card__thumb">
-            <img src="https://georgedreemer.com/public_img/thoughtbubble/thoughtbubble-iterations-min.png" alt="Data analysis visualization, showing key metrics and insights" width="600" height="338" loading="lazy">
+          <div class="evidence-card__video">
+            <video autoplay muted loop playsinline>
+              <source src="https://georgedreemer.com/public_img/thoughtbubble/thoughtbubble-iterations-loop.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </source></video>
+            <button class="evidence-card__sound-btn" data-sound-toggle aria-label="Toggle sound">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <line x1="23" y1="9" x2="17" y2="15" class="mute-line"></line>
+                <line x1="17" y1="9" x2="23" y2="15" class="mute-line"></line>
+              </svg>
+            </button>
           </div>
           <div class="evidence-card__body">
             <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"></span>Data</span>
@@ -2267,7 +2278,7 @@ body {
         <!-- Card 4: Pitching & Networking -->
         <div class="evidence-card" data-domain="growth">
           <div class="evidence-card__thumb">
-            <img src="https://georgedreemer.com/public_img/thoughtbubble/thoughtbubble-handshake-min.jpg" alt="Handshake representing investor and partner meetings" width="600" height="338" loading="lazy">
+            <img src="https://georgedreemer.com/public_img/thoughtbubble/thoughtbubble-lawyerdesk-min.png" alt="Thoughtbubble copyright paperwork scatted on the desk" width="600" height="338" loading="lazy">
           </div>
           <div class="evidence-card__body">
             <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"></span>Growth</span>
@@ -2451,7 +2462,7 @@ html, body {
    overflow-x: hidden;
 }
 </style>
-</div></div><div id="a18bddd77e4414ec349812801c161a50" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1784040259"></div></div></div></div></div><div id="wb_footer_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+</div></div><div id="a18bddd77e4414ec349812801c161a50" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1784110448"></div></div></div></div></div><div id="wb_footer_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -2553,7 +2564,7 @@ html, body {
 
 <p class="wb-stl-footer" style="text-align: center;"><a data-_="Link" href="anabolickmusick.com" target="_blank" title="anabolic musick's official website">anabolickmusick.com</a></p>
 </div><div id="a18bddd77e4a320a360cd08aa5891d23" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: center;"><span style="color:rgba(255,255,255,1);">© 2024 <a href="https://www.georgedreemer.com">G</a><a href="https://www.dreemer.xyz">eorge Dreemer</a></span></p>
-</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1784040259"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script type="text/javascript">
+</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1784110448"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script type="text/javascript">
 			$(function() {
 				var footer = $(".wb_footer");
 				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
@@ -2731,5 +2742,5 @@ document.querySelectorAll('.story-accordion').forEach(accordion => {
 
   items.forEach(item => observer.observe(item));
 })();
-</script></div><script src="js/common-bundle.js?ts=20260714174418" type="text/javascript"></script>{{hr_out}}</body>
+</script></div><script src="js/common-bundle.js?ts=20260715131403" type="text/javascript"></script>{{hr_out}}</body>
 </html>
