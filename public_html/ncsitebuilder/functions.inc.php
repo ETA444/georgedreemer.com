@@ -2,6 +2,28 @@
 
 use PHPMailer\PHPMailer\PHPMailer;
 
+/**
+ * Wrap inline <script> tags in _spDefer.add() callbacks so they execute
+ * only after jQuery has loaded at the bottom of the page.
+ *
+ * External scripts (those with a src attribute) are passed through unchanged.
+ * 
+ * @param string $output
+ * @return string
+ */
+function _spDefer_wrap_scripts($output) {
+	return preg_replace_callback(
+		'%<script\b((?:(?!src=)[^>])*)>(.*?)</script>%is',
+		function($m) {
+			if (strpos($m[1], 'type="application/ld+json"') !== false) return $m[0];
+			if (strpos($m[2], '_spDefer.done(') !== false) return $m[0];
+			if (strpos($m[2], 'window._spDefer') !== false) return $m[0];
+			return '<script>window._spDefer.add(function() {' . $m[2] . '});</script>';
+		},
+		$output
+	);
+}
+
 function getRequestUri($baseUrl) {
 	$nh = preg_replace('#/\./#', '/', $baseUrl);
 	$nh = preg_replace('#^http[s]*://[^/]+/#i', '/', $nh);

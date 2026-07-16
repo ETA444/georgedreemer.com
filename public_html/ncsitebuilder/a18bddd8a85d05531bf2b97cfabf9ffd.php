@@ -2,8 +2,22 @@
 <html lang="en">
 <head>
 	<script type="text/javascript">
-			</script>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	window._spDefer = {
+		queue: [],
+		ready: false,
+		add: function(fn) {
+			if (this.ready) { fn(); }
+			else { this.queue.push(fn); }
+		},
+		done: function() {
+			this.ready = true;
+			var fns = this.queue;
+			this.queue = [];
+			for (var i = 0; i < fns.length; i++) { fns[i](); }
+		}
+	};
+	</script>
+			<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title><?php echo htmlspecialchars((isset($seoTitle) && $seoTitle !== "") ? $seoTitle : "thoughtbubble — Knowledge-First Social Network · George Dreemer"); ?></title>
 	<base href="{{base_url}}" />
 	<?php echo isset($sitemapUrls) ? (generateCanonicalUrl($sitemapUrls)."\n") : ""; ?>	
@@ -18,10 +32,9 @@
 					<!-- Facebook Open Graph end -->
 
 		<meta name="generator" content="Website Builder" />
-			<script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
-	<link href="css/common-bundle.css?ts=20260715131403" rel="stylesheet" type="text/css" />
+			<link href="css/common-bundle.css?ts=20260716130414" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese" rel="stylesheet" type="text/css" />
-	<link href="css/a18bddd8a85d05531bf2b97cfabf9ffd-bundle.css?ts=20260715131403" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
+	<link href="css/a18bddd8a85d05531bf2b97cfabf9ffd-bundle.css?ts=20260716130414" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
 	<ga-code/><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
      SECTION 1 — GLOBAL
      Settings → Meta Tags (site-wide, always present)
@@ -1746,7 +1759,7 @@ body {
 	<![endif]-->
 
 		<script type="text/javascript">
-		$(function () {
+		window._spDefer.add(function() {
 <?php $wb_form_send_success = popSessionOrGlobalVar("wb_form_send_success"); ?>
 <?php if (($wb_form_send_state = popSessionOrGlobalVar("wb_form_send_state"))) { ?>
 	<?php if (($wb_form_popup_mode = popSessionOrGlobalVar("wb_form_popup_mode")) && (isset($wbPopupMode) && $wbPopupMode)) { ?>
@@ -1769,7 +1782,7 @@ body {
 </head>
 
 
-<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e430a4143ca9337839c74f6" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a190ffad0b3e00c9cfe515ee38fb5f8c" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffad0b4c00b2f9f83b0f0bfac1e1" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1784110448"></a></div></div></div><div id="a190ffad0b6300a7ab401fb62000cfae" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffad0b6d007e8c311f4f42ffc0a3" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1784110448"></a></div></div></div></div></div><div id="a19127dc957400c0691f8985137b6c6f" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e430a4143ca9337839c74f6" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a190ffad0b3e00c9cfe515ee38fb5f8c" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffad0b4c00b2f9f83b0f0bfac1e1" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1784196256"></a></div></div></div><div id="a190ffad0b6300a7ab401fb62000cfae" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffad0b6d007e8c311f4f42ffc0a3" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1784196256"></a></div></div></div></div></div><div id="a19127dc957400c0691f8985137b6c6f" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -1851,7 +1864,7 @@ body {
 			'children' => array()
 		)
 	)
-)); ?><div class="clearfix"></div></div></div></div><div id="a18bddd77e430b4ce3e980126becfd36" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e430ced1f7965df7ab4bca9" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e430d9c3ad526ddc7851ded" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/thoughtbubble-logo%201.svg?ts=1784110448"></div></div></div></div></div></div></div><div id="a18bddd77e430eec23ab9fd8533ca3f7" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1784110448"></div></div></div></div></div></div></div><div id="wb_main_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a19f60e67d0200c8d407b5be07be8bdd" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><main class="experience-page" role="main">
+)); ?><div class="clearfix"></div></div></div></div><div id="a18bddd77e430b4ce3e980126becfd36" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e430ced1f7965df7ab4bca9" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e430d9c3ad526ddc7851ded" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/thoughtbubble-logo%201.svg?ts=1784196256"></div></div></div></div></div></div></div><div id="a18bddd77e430eec23ab9fd8533ca3f7" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1784196256"></div></div></div></div></div></div></div><div id="wb_main_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a19f60e67d0200c8d407b5be07be8bdd" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><main class="experience-page" role="main">
     
     <!-- ============================================================
         ELEMENT 1 — CONTEXT BLOCK
@@ -2031,7 +2044,7 @@ body {
         <span class="section-label__text">Abilities</span>
         <span class="section-label__line" aria-hidden="true"></span>
       </div>
-    
+
       <!-- Legend -->
       <div class="ability-legend">
         <span class="ability-legend__item ability-legend__item--engineering">
@@ -2047,9 +2060,9 @@ body {
           <span class="ability-legend__dot"></span>Data
         </span>
       </div>
-    
+
       <div class="ability-grid">
-    
+
         <div class="ability-card" data-domain="engineering">
           <div class="ability-card__icon">
             <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
@@ -2060,13 +2073,12 @@ body {
           <p class="ability-card__title">Full-Stack Web Development</p>
           <p class="ability-card__desc">Designed and built every layer of the platform without a framework — routing, session handling, database schema, AJAX interactions, and all front-end rendering.</p>
           <div class="ability-card__tags">
-            <span class="ability-tag">PHP</span>
-            <span class="ability-tag">MySQL</span>
-            <span class="ability-tag">JavaScript</span>
-            <span class="ability-tag">HTML/CSS</span>
+            <span class="ability-tag">Back-End Architecture</span>
+            <span class="ability-tag">Front-End Engineering</span>
+            <span class="ability-tag">Database-Driven Development</span>
           </div>
         </div>
-    
+
         <div class="ability-card" data-domain="engineering">
           <div class="ability-card__icon">
             <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
@@ -2077,12 +2089,12 @@ body {
           <p class="ability-card__title">Auth &amp; Security Systems</p>
           <p class="ability-card__desc">Built custom user authentication from scratch, including the registration, native &amp; Facebook login, session management, password hashing, and access control.</p>
           <div class="ability-card__tags">
-            <span class="ability-tag">Sessions</span>
-            <span class="ability-tag">PHP Auth</span>
-            <span class="ability-tag">MySQL</span>
+            <span class="ability-tag">Authentication Engineering</span>
+            <span class="ability-tag">Session Management</span>
+            <span class="ability-tag">Access Control</span>
           </div>
         </div>
-    
+
         <div class="ability-card" data-domain="engineering">
           <div class="ability-card__icon">
             <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
@@ -2094,12 +2106,12 @@ body {
           <p class="ability-card__title">Real-Time Notifications</p>
           <p class="ability-card__desc">Engineered a live notification system using AJAX polling — likes, comments, follows, and system alerts delivered without a page reload.</p>
           <div class="ability-card__tags">
-            <span class="ability-tag">AJAX</span>
-            <span class="ability-tag">PHP</span>
-            <span class="ability-tag">MySQL</span>
+            <span class="ability-tag">Asynchronous UX Flows</span>
+            <span class="ability-tag">Event-Driven Logic</span>
+            <span class="ability-tag">Notification Systems</span>
           </div>
         </div>
-    
+
         <div class="ability-card" data-domain="product">
           <div class="ability-card__icon">
             <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
@@ -2111,11 +2123,11 @@ body {
           <p class="ability-card__desc">Owned the full UX, from information architecture to pixel-level UI. Designed the feed, post types, user profiles, settings flows, and iteratively improved them based on user feedback from our early adopter community.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">UX Design</span>
-            <span class="ability-tag">Wireframing</span>
-            <span class="ability-tag">Iteration</span>
+            <span class="ability-tag">Interface Architecture</span>
+            <span class="ability-tag">Feedback-Driven Iteration</span>
           </div>
         </div>
-    
+
         <div class="ability-card" data-domain="product">
           <div class="ability-card__icon">
             <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
@@ -2130,9 +2142,10 @@ body {
           <div class="ability-card__tags">
             <span class="ability-tag">Product Strategy</span>
             <span class="ability-tag">Market Positioning</span>
+            <span class="ability-tag">Category Insight</span>
           </div>
         </div>
-    
+
         <div class="ability-card" data-domain="growth">
           <div class="ability-card__icon">
             <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
@@ -2147,12 +2160,12 @@ body {
             outreach, with zero paid advertising. Learned early that product quality and community seeding beat any ad
             budget.</p>
           <div class="ability-card__tags">
-            <span class="ability-tag">Community Building</span>
-            <span class="ability-tag">Organic Growth</span>
-            <span class="ability-tag">Zero budget</span>
+            <span class="ability-tag">Community Seeding</span>
+            <span class="ability-tag">Organic Growth Strategy</span>
+            <span class="ability-tag">Creator Outreach</span>
           </div>
         </div>
-    
+
         <div class="ability-card" data-domain="data">
           <div class="ability-card__icon">
             <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
@@ -2165,12 +2178,12 @@ body {
           <p class="ability-card__desc">Instrumented the platform to track user sign-ups, engagement rates, post
             frequency — the first time I built a product loop from data to decision.</p>
           <div class="ability-card__tags">
-            <span class="ability-tag">MySQL Analytics</span>
-            <span class="ability-tag">User Metrics</span>
-            <span class="ability-tag">Retention</span>
+            <span class="ability-tag">Product Analytics</span>
+            <span class="ability-tag">Behavior Tracking</span>
+            <span class="ability-tag">Retention Strategy</span>
           </div>
         </div>
-    
+
         <div class="ability-card" data-domain="engineering">
           <div class="ability-card__icon">
             <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
@@ -2183,12 +2196,12 @@ body {
           <p class="ability-card__desc">Designed a relational MySQL schema capable of supporting users, posts, comments,
             likes, pins, notifications, hashtags, and categories simultaneously.</p>
           <div class="ability-card__tags">
-            <span class="ability-tag">MySQL</span>
-            <span class="ability-tag">Schema Design</span>
-            <span class="ability-tag">Relational DB</span>
+            <span class="ability-tag">Relational Schema Design</span>
+            <span class="ability-tag">Data Modeling</span>
+            <span class="ability-tag">Scalable Content Structures</span>
           </div>
         </div>
-    
+
       </div>
     </section>
     
@@ -2462,7 +2475,7 @@ html, body {
    overflow-x: hidden;
 }
 </style>
-</div></div><div id="a18bddd77e4414ec349812801c161a50" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1784110448"></div></div></div></div></div><div id="wb_footer_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+</div></div><div id="a18bddd77e4414ec349812801c161a50" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1784196256"></div></div></div></div></div><div id="wb_footer_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -2564,7 +2577,7 @@ html, body {
 
 <p class="wb-stl-footer" style="text-align: center;"><a data-_="Link" href="anabolickmusick.com" target="_blank" title="anabolic musick's official website">anabolickmusick.com</a></p>
 </div><div id="a18bddd77e4a320a360cd08aa5891d23" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: center;"><span style="color:rgba(255,255,255,1);">© 2024 <a href="https://www.georgedreemer.com">G</a><a href="https://www.dreemer.xyz">eorge Dreemer</a></span></p>
-</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1784110448"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script type="text/javascript">
+</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1784196256"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
 			$(function() {
 				var footer = $(".wb_footer");
 				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
@@ -2574,11 +2587,11 @@ html, body {
 					footer.css({height: ""});
 				}
 			});
-			</script></div></div></div><style>
+			});</script></div></div></div><style>
 .image-height-mod {
 height: 100%;
 }
-</style><script>
+</style><script>window._spDefer.add(function() {
 // ── Lucide icons ──────────────────────────────────────────────
 (function () {
   if (typeof lucide !== 'undefined') {
@@ -2742,5 +2755,11 @@ document.querySelectorAll('.story-accordion').forEach(accordion => {
 
   items.forEach(item => observer.observe(item));
 })();
-</script></div><script src="js/common-bundle.js?ts=20260715131403" type="text/javascript"></script>{{hr_out}}</body>
+});</script></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
+	<script src="js/common-bundle.js?ts=20260716130414" type="text/javascript" defer></script>{{hr_out}}<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        window._spDefer.done();
+    });
+</script>
+</body>
 </html>

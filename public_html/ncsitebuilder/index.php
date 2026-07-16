@@ -145,7 +145,7 @@
 	$langs = null;
 	$def_lang = null;
 	$base_lang = 'en';
-	$site_id = '71ac396f';
+	$site_id = '5521c597';
 	${'sitemapUrls'} = array(
 		'https://georgedreemer.com/',
 		'https://georgedreemer.com/skipschoolmakemoney',
@@ -340,6 +340,7 @@ class MenuElement {
 			ob_start();
 			include $fl;
 			$out = ob_get_clean();
+			$out = function_exists('_spDefer_wrap_scripts') ? _spDefer_wrap_scripts($out) : $out;
 			$ga_out = '';
 			if ($lang && $langs) {
 				replaceLangAlternates($siteInfo, $out, $langs, $page['id']);

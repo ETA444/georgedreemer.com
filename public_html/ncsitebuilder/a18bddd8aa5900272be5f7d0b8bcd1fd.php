@@ -2,8 +2,22 @@
 <html lang="en">
 <head>
 	<script type="text/javascript">
-			</script>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	window._spDefer = {
+		queue: [],
+		ready: false,
+		add: function(fn) {
+			if (this.ready) { fn(); }
+			else { this.queue.push(fn); }
+		},
+		done: function() {
+			this.ready = true;
+			var fns = this.queue;
+			this.queue = [];
+			for (var i = 0; i < fns.length; i++) { fns[i](); }
+		}
+	};
+	</script>
+			<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title><?php echo htmlspecialchars((isset($seoTitle) && $seoTitle !== "") ? $seoTitle : "Custom 404 page"); ?></title>
 	<base href="{{base_url}}" />
 	<?php echo isset($sitemapUrls) ? (generateCanonicalUrl($sitemapUrls)."\n") : ""; ?>	
@@ -22,9 +36,8 @@
 		<!-- Facebook Open Graph end -->
 
 		<meta name="generator" content="Website Builder" />
-			<script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
-	<link href="css/common-bundle.css?ts=20260715131403" rel="stylesheet" type="text/css" />
-	<link href="css/a18bddd8aa5900272be5f7d0b8bcd1fd-bundle.css?ts=20260715131403" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
+			<link href="css/common-bundle.css?ts=20260716130414" rel="stylesheet" type="text/css" />
+	<link href="css/a18bddd8aa5900272be5f7d0b8bcd1fd-bundle.css?ts=20260716130414" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
 	<ga-code/><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
      SECTION 1 — GLOBAL
      Settings → Meta Tags (site-wide, always present)
@@ -65,7 +78,7 @@
 	<![endif]-->
 
 		<script type="text/javascript">
-		$(function () {
+		window._spDefer.add(function() {
 <?php $wb_form_send_success = popSessionOrGlobalVar("wb_form_send_success"); ?>
 <?php if (($wb_form_send_state = popSessionOrGlobalVar("wb_form_send_state"))) { ?>
 	<?php if (($wb_form_popup_mode = popSessionOrGlobalVar("wb_form_popup_mode")) && (isset($wbPopupMode) && $wbPopupMode)) { ?>
@@ -88,7 +101,7 @@
 </head>
 
 
-<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a18bddd8aa5900272be5f7d0b8bcd1fd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"></div></div><div id="wb_main_a18bddd8aa5900272be5f7d0b8bcd1fd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"></div></div><div id="wb_footer_a18bddd8aa5900272be5f7d0b8bcd1fd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script type="text/javascript">
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a18bddd8aa5900272be5f7d0b8bcd1fd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"></div></div><div id="wb_main_a18bddd8aa5900272be5f7d0b8bcd1fd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"></div></div><div id="wb_footer_a18bddd8aa5900272be5f7d0b8bcd1fd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
 			$(function() {
 				var footer = $(".wb_footer");
 				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
@@ -98,9 +111,15 @@
 					footer.css({height: ""});
 				}
 			});
-			</script></div></div></div><style>
+			});</script></div></div></div><style>
 .image-height-mod {
 height: 100%;
 }
-</style></div><script src="js/common-bundle.js?ts=20260715131403" type="text/javascript"></script>{{hr_out}}</body>
+</style></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
+	<script src="js/common-bundle.js?ts=20260716130414" type="text/javascript" defer></script>{{hr_out}}<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        window._spDefer.done();
+    });
+</script>
+</body>
 </html>
