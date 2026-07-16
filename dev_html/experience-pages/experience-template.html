@@ -1611,23 +1611,45 @@
   <main class="preview-page" role="main">
 
     <!-- ============================================================
-       ELEMENT 0 — SECTION LABEL / DIVIDER
-       ─────────────────────────────────────────────────────────
-       PURPOSE   : Visual divider before each named section.
-       USAGE     : Drop one <div class="section-label"> before
-                   every section block. Change the text inside
-                   .section-label__text to match the section.
-      ORDER ON PAGE (use this sequence every time):
-      1. Context ← right after page title, no label needed
-      2. Snapshot ← no label, its own card
-      3. Numbers ← no label, stat counters animate on scroll
-      4. [STACK]
-      5. [ABILITIES]
-      6. [WORKS]
-      7. [IN DEPTH]
+         ELEMENT 0 — SECTIONS OVERVIEW
+         ─────────────────────────────────────────────────────────
+         PURPOSE : Master index for this template. Read this first
+                   if you're rebuilding a page or auditing an existing
+                   one from a fresh context.
+
+         ORDER ON PAGE (always this sequence):
+           1. Context      — 3 short paragraphs: what it is (p1),
+                              why it matters / positioning (p2),
+                              how it was built / proof of substance (p3)
+           2. Snapshot      — role, type, timeframe, location, links,
+                              + domain-tagged achievement chips
+           3. In Numbers    — no section label, 3–4 stat counters,
+                              animate 0→target on scroll
+           4. Stack         — tech/tool badges grouped by taxonomy
+           5. Abilities     — filterable skill cards, tagged by domain
+           6. Works          — evidence grid, filterable by domain
+           7. In-Depth      — accordion, 1–4 items, richest text on page
+
+         CROSS-SECTION RULES (apply everywhere):
+           - DOMAIN COLOR SYSTEM: every domain-taggable element uses
+             data-domain="engineering|product|growth|data" and threads
+             the same 4-color system (primary=engineering, gold=product,
+             orange=growth, blue=data) via border-top/left, dot, or text
+             color. Never introduce a 5th domain or new color without
+             updating the CSS custom properties for all components.
+           - PILLS/TAGS PHILOSOPHY (the breakthrough — apply site-wide):
+             Tags on ability cards must describe TRANSFERABLE ABILITIES,
+             not tools/languages/outputs. "PHP" and "MySQL" belong in the
+             Stack section, not in an ability-tag. Good tag: "Authentication
+             Engineering". Bad tag: "PHP Auth". Ask: "does this tag read
+             like a skill I could put on a CV line, independent of which
+             tool I used?" If not, rewrite it. Aim for 2–3 tags per card.
+           - VOICE: first-person, senior, concrete. No "I learned that...",
+             "this taught me...", "looking back...". State what happened,
+             with numbers/names/constraints, not what it meant.
     ============================================================ -->
-    <section aria-label="Element 0: Section Label">
-      <p class="preview-label">Element 0 — Section Label / Divider</p>
+    <section aria-label="Element 0: Sections Overview">
+      <p class="preview-label">Element 0 — Sections Overview</p>
       <div class="section-label"><span class="section-label__text">Stack</span><span class="section-label__line"
           aria-hidden="true"></span></div>
       <div class="section-label"><span class="section-label__text">Abilities</span><span class="section-label__line"
@@ -1640,7 +1662,32 @@
 
 
     <!-- ============================================================
-        ELEMENT 1 — CONTEXT BLOCK
+         ELEMENT 1 — CONTEXT BLOCK
+         ─────────────────────────────────────────────────────────
+         PURPOSE : First thing a recruiter reads. Must work as a
+                   60-second standalone pitch even if they read nothing
+                   else on the page.
+
+         STRUCTURE (exactly 3 paragraphs, no more, no less):
+           p1 — THE HOOK. What it is, in one dense sentence. Should
+                contain: who built it, under what constraints (age,
+                budget, timeframe), and the outcome/scale. This is the
+                sentence that also becomes the meta description / OG tag.
+           p2 — THE WHY. Positioning / problem it solved / who it was
+                for. Keep to ONE sentence unless there's a genuinely
+                new fact to add — don't pad p2 just to make it look
+                balanced with p1/p3. If the single sentence already
+                fully explains what the thing is, leave it alone.
+           p3 — THE PROOF. How it was actually built — mirrors the
+                "built from scratch" energy but should lean on SPECIFIC
+                technical substance (architecture, systems, constraints
+                overcome) rather than restating scale/funding numbers
+                already covered elsewhere (Snapshot, Numbers). This is
+                where "no framework, no CMS, hand-built X/Y/Z" language
+                lives. Avoid repeating stats already shown in E3.
+
+         STYLE: p1 renders larger/display-weight (first-of-type CSS
+                hook) — write it knowing it will look like a headline.
     ============================================================ -->
     <section aria-label="E1: CONTEXT BLOCK" class="fade-in">
       <div class="context-block">
@@ -1657,11 +1704,23 @@
 
 
     <!-- ============================================================
-        ELEMENT 2 — SNAPSHOT CARD
-        Set data-domain on .snapshot-card to match the primary
-        domain of the experience — this sets the top-border color
-        and anchors the page's color identity from the first glance.
-        engineering | data | product | growth
+         ELEMENT 2 — SNAPSHOT CARD
+         ─────────────────────────────────────────────────────────
+         PURPOSE : Scannable facts block. A recruiter should be able
+                   to get role/type/timeframe/location in under 3
+                   seconds without reading prose.
+
+         STRUCTURE:
+           - Meta grid: Role, Type, Timeframe, Location (+ optional
+             links). Role and Type get `.snapshot-item--prominent`.
+           - Divider, then Highlights: a wrapped row of achievement
+             chips, each `data-domain`-tagged and dot-colored.
+
+         CHIP WRITING RULE: each chip is ONE concrete achievement
+         ("Built full back-end in PHP, MySQL — database, API, and
+         server-side logic"), not a category label. Order chips
+         engineering → data → product → growth to match domain
+         reading order used everywhere else on the page.
     ============================================================ -->
     <section aria-label="E2: SNAPSHOT CARD" class="fade-in">
       <p class="preview-label">Element 2 — Snapshot Card</p>
@@ -1742,28 +1801,21 @@
     <!-- ============================================================
          ELEMENT 3 — IN NUMBERS / STAT COUNTER
          ─────────────────────────────────────────────────────────
-         PURPOSE   : Animate key metrics into view on scroll.
-                     Sits between the Snapshot Card and the Stack
-                     section label — the numbers land harder once
-                     the reader has context and the snapshot card.
-         USAGE     : 3–4 stats per experience page. Edit only the
-                     data attributes on each .stat-counter item:
-                       data-target  — the final number (integer)
-                       data-prefix  — optional prefix e.g. "~"
-                       data-suffix  — optional suffix e.g. "+"
-                       data-domain  — engineering | data | product | growth
-                     Labels: edit the <span class="stat-counter__label">.
-                     Keep labels short (2–4 words max).
-         HOMEPAGE  : Same component works on the homepage — swap in
-                     site-wide numbers (total users, projects shipped,
-                     years active, etc.)
-         ANIMATION : IntersectionObserver fires once on scroll-enter.
-                     Counts from 0 to data-target over 1.2s ease-out.
-                     Respects prefers-reduced-motion — shows final
-                     value instantly if motion is reduced.
-         SEO NOTE  : Numbers are in the DOM as plain text after
-                     animation completes — fully indexed.
-     ============================================================ -->
+         PURPOSE : Visual proof of scale/effort via animated counters.
+                   No section-label heading — this section is meant to
+                   feel like a continuation of the Snapshot, not a new
+                   topic.
+
+         STRUCTURE: 3–4 stat-counter items. Each needs data-target
+         (required), optional data-prefix/data-suffix, and a
+         data-domain for color-threading the number. Counters animate
+         0 → target via IntersectionObserver + easeOut, respecting
+         prefers-reduced-motion (renders static target immediately).
+
+         CHOOSING STATS: pick numbers that are surprising or hard-won
+         — updates shipped, users acquired, years in operation, team
+         size. Avoid vanity metrics with no context (e.g. raw "views").
+    ============================================================ -->
     <section class="stat-counter-section" aria-label="E3: IN NUMBERS" class="fade-in">
       <p class="preview-label">Element 3 — In Numbers / Stat Counter</p>
       <div class="stat-counter">
@@ -1793,27 +1845,30 @@
 
 
     <!-- ============================================================
-          ELEMENT 4 — STACK BADGE GRID
-          ─────────────────────────────────────────────────────────
-          PURPOSE   : Hard skills used ON THIS PROJECT, grouped by
-                      category. No "since" labels here — those go on
-                      the homepage global stack overview only.
-          USAGE     : Add/remove .stack-group blocks per page.
-                      Icon source: https://cdn.simpleicons.org/{name}/{hex}
-                      For tools with no SimpleIcons logo, use
-                      .stack-badge--text (no img needed).
+         ELEMENT 4 — STACK BADGE GRID
+         ─────────────────────────────────────────────────────────
+         PURPOSE : Quick tech/tool reference. This is the ONLY section
+                   where raw tools, languages, and platforms belong —
+                   Abilities (E5) should never restate what's here.
 
-          TAXONOMY PHILOSOPHY (applies site-wide):
-            Languages          — things you write (syntax)
-            Libraries          — things you import/require
-            Databases          — storage engines (not the SQL language)
-            Dev Tools & IDEs   — things you open and run
-            Platforms & Infra  — things you deploy to or operate
-            Web & Commerce     — CMS / e-commerce platforms
-            Design & Creative  — visual production tools
-            AI & Automation    — emerging toolchain
-            Productivity       — office/collaboration suites
-      ============================================================ -->
+         TAXONOMY PHILOSOPHY (site-wide, do not invent new categories
+         without updating this list):
+           Languages          — things you write (syntax)
+           Libraries          — things you import/require
+           Databases          — storage engines (not the SQL language)
+           Dev Tools & IDEs   — things you open and run
+           Platforms & Infra  — things you deploy to or operate
+           Web & Commerce     — CMS / e-commerce platforms
+           Design & Creative  — visual production tools
+           AI & Automation    — emerging toolchain
+           Productivity       — office/collaboration suites
+
+         BADGE FORMAT: `.stack-badge` with a real icon (Simple Icons
+         CDN preferred: cdn.simpleicons.org/{brand}/{hex}) + name span.
+         For tools without a Simple Icons entry, use `.stack-badge--text`
+         with a colored monogram mark (`.stack-badgemark`) instead of
+         a placeholder icon.
+    ============================================================ -->
     <section aria-label="E4: STACK BADGE GRID" class="fade-in">
       <p class="preview-label">Element 4 — Stack Badge Grid (full reference)</p>
       <div class="section-label">
@@ -2613,16 +2668,35 @@
     <!-- ============================================================
          ELEMENT 5 — ABILITY CARD GRID
          ─────────────────────────────────────────────────────────
-         PURPOSE   : One card per concrete thing built/solved/shipped.
-                     Answers "what did he actually do here?"
-         DOMAINS   : engineering | data | product | growth
-                     Each maps to a design system color token.
-         USAGE     : Add one .ability-card per ability. Set:
-                     – data-domain="..." (see legend above grid)
-                     – data-lucide="..." icon: https://lucide.dev/icons/
-                     – .ability-card__title
-                     – .ability-card__desc (impact-first, action verbs)
-                     – .ability-tag items (stack pieces used)
+         PURPOSE : The core "what I can do" section. Filterable by
+                   domain via the legend. This is where transferable
+                   skill framing matters most on the whole page.
+
+         LEGEND: always 4 items, fixed order — Engineering, Product,
+         Growth, Data — matching the domain color system in E0.
+
+         CARD ANATOMY (fixed): icon (outline SVG, 24x24 viewBox,
+         stroke-based, no fill) → title (specific, not generic — "Auth
+         & Security Systems" not "Backend Work") → 1–2 sentence
+         description (what you actually built/did, concrete nouns) →
+         2–3 tags.
+
+         TAG RULE (THE BREAKTHROUGH — read this before writing tags):
+           Tags must name a TRANSFERABLE ABILITY, not a tool, language,
+           or vague concept. Test each tag by asking "would this read
+           naturally on a CV skills line, independent of the specific
+           tech stack used?"
+             GOOD : "Authentication Engineering", "Event-Driven Logic",
+                    "Relational Schema Design", "Community Seeding"
+             BAD  : "PHP", "MySQL", "AJAX", "Zero budget", "Iteration"
+           Tools/languages go in E4 (Stack), not here. If you catch
+           yourself writing a language or product name as a tag,
+           rewrite it as the capability it demonstrates.
+
+         DOMAIN ASSIGNMENT: one card can only carry one data-domain —
+         pick the domain the skill is MOST associated with, even if
+         it touches others (e.g. "Product Vision & Positioning" is
+         product, not growth, even though it affects growth outcomes).
     ============================================================ -->
     <section aria-label="E5: ABILITY CARD GRID" class="fade-in">
       <p class="preview-label">Element 5 — Ability Card Grid</p>
@@ -2723,18 +2797,34 @@
 
 
     <!-- ============================================================
-        ELEMENT 6 — WORKS CARD GRID
-        ─────────────────────────────────────────────────────────
-        PURPOSE   : Concrete artefacts proving the abilities above.
-        VARIANTS  :
-          A. Single image  — .evidence-card__thumb + <img>
-          B. Slideshow     — .evidence-card__slides (auto-advances, pauses on hover)
-          C. Video file    — .evidence-card__video + <video autoplay muted loop>
-          D. Video YouTube — .evidence-card__video + <iframe> (no chrome, muted, looped)
-        DOMAIN    : Set data-domain="engineering|data|product|growth" on
-                    .evidence-card to thread the E5 color language through.
-        PORTRAIT  : Add data-orientation="portrait" to .evidence-card__video
-                    for vertical content (Shorts, TikTok-style).
+         ELEMENT 6 — WORKS CARD GRID
+         ─────────────────────────────────────────────────────────
+         PURPOSE : Visual evidence — screenshots/video of the actual
+                   thing, paired with what it demonstrates. This is
+                   the "don't just take my word for it" section.
+
+         VARIANTS (choose per card based on available media):
+           A. Single image  — .evidence-card__thumb + <img>
+           B. Slideshow      — .evidence-card__slides (auto-advances,
+                                pauses on hover, dot navigation)
+           C. Video file*    — .evidence-card__video + <video autoplay
+                                muted loop>
+           D. Video YouTube* — .evidence-card__video + <iframe> (no
+                                chrome, muted, looped)
+           * Portrait video: add data-orientation="portrait" to
+             .evidence-card__video for vertical content (Shorts,
+             TikTok-style).
+
+         CARD ANATOMY: media block → domain tag (dot + label, same
+         4-domain system) → title (specific to the sub-system shown,
+         not the whole project) → 3–4 bullet points, each a concrete
+         action/output (not a restated ability-card tag).
+
+         CARD SELECTION: pick 3–5 cards that together cover ALL four
+         domains at least once. Prefer cards with real visual proof
+         (screenshots/video) over text-only claims — if you have no
+         media for a domain, consider covering it in Abilities/In-Depth
+         instead of forcing a thumb-less Works card.
     ============================================================ -->
     <section aria-label="E6: WORKS CARD GRID" class="fade-in">
       <p class="preview-label">Element 6 — Works Card Grid</p>
@@ -2888,39 +2978,44 @@
     <!-- ============================================================
          ELEMENT 7 — IN DEPTH ACCORDION
          ─────────────────────────────────────────────────────────
-         PURPOSE   : Depth on demand. Each item expands on one aspect
-                     of the experience that couldn't fit in a chip,
-                     an ability card, or a works card. This is where
-                     a serious recruiter or headhunter gets the full
-                     picture — and where AI agents and search engines
-                     find the richest text on the page.
+         PURPOSE : Depth on demand. Each item expands on one aspect
+                   of the experience that couldn't fit in a chip, an
+                   ability card, or a works card. This is where a
+                   serious recruiter or headhunter gets the full
+                   picture — and where AI agents and search engines
+                   find the richest text on the page.
 
-         USAGE     : 1–4 items. No fixed arc, no prescribed titles.
-                     Write titles fresh for each experience — specific,
-                     honest, and interesting enough to click. Ask:
-                     "What would a curious, senior person actually want
-                     to know about this that isn't already on the page?"
+         USAGE: 1–4 items. No fixed arc, no prescribed titles. Write
+         titles fresh for each experience — specific, honest, and
+         interesting enough to click. Ask: "What would a curious,
+         senior person actually want to know about this that isn't
+         already on the page?" First item defaults open
+         (aria-expanded="true"); it should usually be the engineering
+         "how it was actually built" item.
 
-         DOMAINS   : Each item takes data-domain="engineering|data|
-                     product|growth" for color threading. Omit the
-                     attribute if the item genuinely crosses domains.
+         DOMAINS: each item takes data-domain="engineering|data|
+         product|growth" for color threading. Omit the attribute if
+         the item genuinely crosses domains.
 
-         WRITING   : 2–3 short paragraphs per item. Dense, first-person,
-                     senior-voice. Not reflections — briefings. Write
-                     the way you'd answer a sharp interview question in
-                     90 seconds. Avoid:
-                       - "I learned that..."
-                       - "This taught me..."
-                       - "Looking back..."
-                     Prefer:
-                       - Specific numbers, names, constraints
-                       - What actually happened, not what it meant
-                       - One honest sentence about something that went wrong
+         WRITING: 2–4 short paragraphs per item (bulleted lists okay
+         inside for system inventories). Dense, first-person,
+         senior-voice. Not reflections — briefings. Write the way
+         you'd answer a sharp interview question in 90 seconds.
+           AVOID:
+             - "I learned that..."
+             - "This taught me..."
+             - "Looking back..."
+           PREFER:
+             - Specific numbers, names, constraints
+             - What actually happened, not what it meant
+             - One honest sentence about something that went wrong
+           A single moment of vulnerability/humor per item (e.g. the
+           lawyer story) is good — it reads as senior self-awareness,
+           not weakness. Don't overdo it beyond one per item.
 
-         SEO NOTE  : This is the most text-dense section on the page.
-                     Write it properly. It will be read by AI agents
-                     scraping your portfolio and by search engines
-                     indexing your experience.
+         SEO NOTE: this is the most text-dense section on the page.
+         Write it properly. It will be read by AI agents scraping
+         your portfolio and by search engines indexing your experience.
     ============================================================ -->
     <section aria-label="E7: IN DEPTH ACCORDION" class="fade-in">
       <div class="section-label">
