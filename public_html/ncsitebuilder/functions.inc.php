@@ -15,6 +15,7 @@ function _spDefer_wrap_scripts($output) {
 	return preg_replace_callback(
 		'%<script\b((?:(?!src=)[^>])*)>(.*?)</script>%is',
 		function($m) {
+			if (strpos($m[0], 'data-custom-script="true"') !== false) return $m[0];
 			if (strpos($m[1], 'type="application/ld+json"') !== false) return $m[0];
 			if (strpos($m[2], '_spDefer.done(') !== false) return $m[0];
 			if (strpos($m[2], 'window._spDefer') !== false) return $m[0];
