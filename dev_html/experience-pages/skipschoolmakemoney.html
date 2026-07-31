@@ -1585,6 +1585,21 @@
       background: var(--color-text-faint);
     }
 
+    .story-accordion__gallery {
+      display: flex;
+      gap: var(--space-4);
+      margin-top: var(--space-4);
+      overflow-x: auto;
+      scroll-snap-type: x proximity;
+    }
+
+    .story-accordion__gallery img {
+      flex: 0 0 auto;
+      border-radius: var(--radius-md);
+      scroll-snap-align: start;
+      object-fit: cover;
+    }
+
     /* ── SCROLL REVEAL ───────────────────────────────────────── */
     @supports(animation-timeline:scroll()) {
       .fade-in {
@@ -2542,6 +2557,71 @@
 
       </div>
     </section>
+
+    <!-- ============================================================
+        ELEMENT 7 — IN DEPTH ACCORDION (SSMM)
+    ============================================================ -->
+    <section aria-label="E7: IN DEPTH ACCORDION" class="fade-in">
+      <div class="section-label">
+        <span class="section-label__text">In Depth</span>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+
+      <div class="story-accordion" role="list">
+
+        <!-- Item 1: Growth — origin of meme marketing -->
+        <div class="story-accordion__item" data-domain="growth" role="listitem">
+          <button class="story-accordion__trigger" aria-expanded="true" aria-controls="story-panel-1">
+            <span class="story-accordion__trigger-left">
+              <span class="story-accordion__domain-tag">
+                <span class="story-accordion__domain-dot"></span>Growth
+              </span>
+              <span class="story-accordion__trigger-label">The Graduation Photo that Started a Movement</span>
+            </span>
+            <svg class="story-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="story-accordion__body" id="story-panel-1" aria-hidden="false">
+            <div class="story-accordion__inner">
+              <div class="story-accordion__content">
+                <p>One of our earliest supporters wore an SSMM hoodie under his graduation gown and took his entire set of
+                  graduation photos in it — cap, gown, tassel, and a brand nobody had heard of hiding underneath. Someone
+                  posted the photos with the caption "this boy got a bright future ahead of him," and within days it was
+                  circulating across dozens of meme pages, splitting comment sections between people laughing and people
+                  genuinely offended on the kid's behalf.</p>
+                <p></p>
+                <div class="story-accordion__gallery">
+                  <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_originals_1.jpg"
+                    alt="SkipSchoolMakeMoney Fan wears SSMM Internet Tour Crewneck at his Graduation - photo meme that helped start SSMM meme marketing"
+                    width="100%" height="200" loading="lazy">
+                </div>
+                <p></p>
+                <p>That single post did something I didn't fully understand until later: it turned SSMM into a meme format
+                  rather than just a brand people wore. A second person wore SSMM in his yearbook photos, which spawned its
+                  own meme. Someone else wrapped their newborn baby brother in an SSMM hoodie and posted it, and the
+                  internet did the rest. I didn't write a single one of these memes — the audience did, on their own,
+                  unprompted.</p>
+                <p></p>
+                <div class="story-accordion__gallery">
+                  <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_originals_2.jpg"
+                    alt="SkipSchoolMakeMoney Fan wears SSMM Internet Tour Crewneck at his Graduation - photo meme that helped start SSMM meme marketing"
+                    width="100%" height="200" loading="lazy">
+                </div>
+                <p></p>
+                <p>Looking back, this is where the meme marketing engine actually started. Not from a campaign I planned,
+                  but from fans finding ways to insert the brand into their own lives that were funnier and more absurd than
+                  anything I could have scripted. Every future giveaway and meme push was really just me trying to feed that
+                  same energy back to the community that had already proven it existed.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
 
   </main>
 
