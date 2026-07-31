@@ -1482,6 +1482,21 @@
       background: var(--color-text-faint);
     }
 
+    .story-accordion__gallery {
+      display: flex;
+      gap: var(--space-4);
+      margin-top: var(--space-4);
+      overflow-x: auto;
+      scroll-snap-type: x proximity;
+    }
+
+    .story-accordion__gallery img {
+      flex: 0 0 auto;
+      border-radius: var(--radius-md);
+      scroll-snap-align: start;
+      object-fit: cover;
+    }
+
     /* ── SCROLL REVEAL ─────────────────────────────────────── */
     @supports(animation-timeline:scroll()) {
       .fade-in {
