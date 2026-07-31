@@ -1,0 +1,85 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://georgedreemer.com/skipschoolmakemoney#webpage",
+      "url": "https://georgedreemer.com/skipschoolmakemoney",
+      "name": "SkipSchoolMakeMoney — Streetwear Brand",
+      "description": "SkipSchoolMakeMoney (SSMM) was a streetwear brand founded and run solo by George Dreemer from 2016 to 2020, growing to 12,000+ Instagram followers, 20+ collections, and orders across three continents.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://georgedreemer.com/#website",
+        "url": "https://georgedreemer.com",
+        "name": "George Dreemer"
+      },
+      "about": {
+        "@id": "https://georgedreemer.com/skipschoolmakemoney#project"
+      },
+      "mainEntity": {
+        "@id": "https://georgedreemer.com/skipschoolmakemoney#project"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://georgedreemer.com/ncsitebuilder/gallery/dxyz-ssmm-thumb.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://georgedreemer.com/skipschoolmakemoney#project",
+      "name": "SkipSchoolMakeMoney",
+      "alternateName": "SSMM",
+      "url": "https://georgedreemer.com/skipschoolmakemoney",
+      "description": "An underground streetwear brand founded and solo-operated by George Dreemer, spanning design, manufacturing, e-commerce, and viral marketing across three continents.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://georgedreemer.com/ncsitebuilder/gallery/dxyz-ssmm-thumb.png",
+        "width": 1200,
+        "height": 630
+      },
+      "genre": [
+        "Streetwear brand",
+        "Fashion label",
+        "E-commerce brand",
+        "Portfolio project",
+        "Entrepreneurship project"
+      ],
+      "keywords": [
+        "SkipSchoolMakeMoney",
+        "SSMM",
+        "George Dreemer",
+        "streetwear brand",
+        "underground streetwear",
+        "meme marketing",
+        "Clout Cards",
+        "Lil Peep",
+        "Pouya",
+        "Fat Nick",
+        "Shopify",
+        "e-commerce",
+        "brand founder"
+      ],
+      "creator": {
+        "@type": "Person",
+        "@id": "https://georgedreemer.com/#person",
+        "name": "George Dreemer",
+        "url": "https://georgedreemer.com"
+      },
+      "author": {
+        "@type": "Person",
+        "@id": "https://georgedreemer.com/#person",
+        "name": "George Dreemer",
+        "url": "https://georgedreemer.com"
+      },
+      "sameAs": [
+        "https://www.skipschoolmakemoney.com",
+        "https://www.instagram.com/skipschoolmakemoney"
+      ],
+      "dateModified": "2026-07-31",
+      "inLanguage": "en-US"
+    }
+  ]
+}
