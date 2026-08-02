@@ -24,7 +24,7 @@
 	
 						<meta name="viewport" content="width=device-width, initial-scale=1" />
 					<meta name="description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "SkipSchoolMakeMoney (SSMM) was a streetwear brand founded by George Dreemer in 2016 — growing to 12,000+ followers, 20+ collections, and orders across three continents. Collaborators included Lil Peep, Pouya, and Fat Nick."); ?>" />
-			<meta name="keywords" content="<?php echo htmlspecialchars((isset($seoKeywords) && $seoKeywords !== "") ? $seoKeywords : "skipschoolmakemoney,ssmm,george dreemer clothing brand,george dreemer streetwear,george dreemer ssmm,skip school make money,lil peep ssmm,pouya ssmm,underground streetwear 2016 2017 2018,george dreemer entrepreneur,george dreemer fashion,ssmm history,george dreemer hampshire college"); ?>" />
+			<meta name="keywords" content="<?php echo htmlspecialchars((isset($seoKeywords) && $seoKeywords !== "") ? $seoKeywords : "SkipSchoolMakeMoney,SSMM,George Dreemer,streetwear brand,underground streetwear,meme marketing,Clout Cards,Shopify store,brand founder,e-commerce entrepreneur,self-taught entrepreneur"); ?>" />
 				<meta property="og:site_name" content="George Dreemer — Data Scientist, Developer & Entrepreneur">
 	
 	<!-- Facebook Open Graph -->
@@ -32,10 +32,9 @@
 					<!-- Facebook Open Graph end -->
 
 		<meta name="generator" content="Website Builder" />
-			<link href="css/common-bundle.css?ts=20260731192341" rel="stylesheet" type="text/css" />
+			<link href="css/common-bundle.css?ts=20260802133603" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese" rel="stylesheet" type="text/css" />
-	<link href="https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic,cyrillic-ext,latin,latin-ext,vietnamese" rel="stylesheet" type="text/css" />
-	<link href="css/a18bddd8a85d011b0a2fe2a90c538c8d-bundle.css?ts=20260731192341" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
+	<link href="css/a18bddd8a85d011b0a2fe2a90c538c8d-bundle.css?ts=20260802133603" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
 	<ga-code/><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
      SECTION 1 — GLOBAL
      Settings → Meta Tags (site-wide, always present)
@@ -70,17 +69,1722 @@
 	window.disableRightClick = false;
 	window.currLang = 'en';
 </script>
-	<!-- [ SKIPSCHOOLMAKEMONEY ] -->
+	<title>SkipSchoolMakeMoney — Streetwear Brand · George Dreemer</title>
+
+<!-- SEO Meta Data (source: seo/meta.html) -->
+<meta name="description"
+content="SkipSchoolMakeMoney (SSMM) was a streetwear brand founded by George Dreemer in 2016 — growing to 12,000+ followers, 20+ collections, and orders across three continents. Collaborators included Lil Peep, Pouya, and Fat Nick.">
+<meta name="keywords"
+content="SkipSchoolMakeMoney, SSMM, George Dreemer, streetwear brand, underground streetwear, meme marketing, Clout Cards, Shopify store, brand founder, e-commerce entrepreneur, self-taught entrepreneur">
 <link rel="canonical" href="https://georgedreemer.com/skipschoolmakemoney">
+<meta property="og:type" content="website">
 <meta property="og:url" content="https://georgedreemer.com/skipschoolmakemoney">
-<meta property="og:title" content="SkipSchoolMakeMoney — Streetwear Brand Story · George Dreemer">
+<meta property="og:title" content="SkipSchoolMakeMoney — Streetwear Brand · George Dreemer">
 <meta property="og:description"
-    content="SkipSchoolMakeMoney (SSMM) was a streetwear brand founded by George Dreemer in 2016 — growing to 12,000+ followers, 20+ collections, and orders across three continents. Collaborators included Lil Peep, Pouya, and Fat Nick.">
+content="SkipSchoolMakeMoney (SSMM) was a streetwear brand founded by George Dreemer in 2016 — growing to 12,000+ followers, 20+ collections, and orders across three continents. Collaborators included Lil Peep, Pouya, and Fat Nick.">
 <meta property="og:image" content="https://georgedreemer.com/ncsitebuilder/gallery/dxyz-ssmm-thumb.png">
-<meta name="twitter:title" content="SkipSchoolMakeMoney — Streetwear Brand Story · George Dreemer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SkipSchoolMakeMoney — Streetwear Brand · George Dreemer">
 <meta name="twitter:description"
-    content="SkipSchoolMakeMoney (SSMM) was a streetwear brand founded by George Dreemer in 2016 — growing to 12,000+ followers, 20+ collections, and orders across three continents. Collaborators included Lil Peep, Pouya, and Fat Nick.">
-<meta name="twitter:image" content="https://georgedreemer.com/ncsitebuilder/gallery/dxyz-ssmm-thumb.png">	
+content="SkipSchoolMakeMoney (SSMM) was a streetwear brand founded by George Dreemer in 2016 — growing to 12,000+ followers, 20+ collections, and orders across three continents. Collaborators included Lil Peep, Pouya, and Fat Nick.">
+<meta name="twitter:image" content="https://georgedreemer.com/ncsitebuilder/gallery/dxyz-ssmm-thumb.png">
+
+
+<!-- SEO Schema JSON (source: seo/schema/ssmm_schema.json) -->
+<script data-custom-script="true" type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://georgedreemer.com/skipschoolmakemoney#webpage",
+      "url": "https://georgedreemer.com/skipschoolmakemoney",
+      "name": "SkipSchoolMakeMoney — Streetwear Brand",
+      "description": "SkipSchoolMakeMoney (SSMM) was a streetwear brand founded and run solo by George Dreemer from 2016 to 2020, growing to 12,000+ Instagram followers, 20+ collections, and orders across three continents.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://georgedreemer.com/#website",
+        "url": "https://georgedreemer.com",
+        "name": "George Dreemer"
+      },
+      "about": {
+        "@id": "https://georgedreemer.com/skipschoolmakemoney#project"
+      },
+      "mainEntity": {
+        "@id": "https://georgedreemer.com/skipschoolmakemoney#project"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://georgedreemer.com/ncsitebuilder/gallery/dxyz-ssmm-thumb.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://georgedreemer.com/skipschoolmakemoney#project",
+      "name": "SkipSchoolMakeMoney",
+      "alternateName": "SSMM",
+      "url": "https://georgedreemer.com/skipschoolmakemoney",
+      "description": "An underground streetwear brand founded and solo-operated by George Dreemer, spanning design, manufacturing, e-commerce, and viral marketing across three continents.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://georgedreemer.com/ncsitebuilder/gallery/dxyz-ssmm-thumb.png",
+        "width": 1200,
+        "height": 630
+      },
+      "genre": [
+        "Streetwear brand",
+        "Fashion label",
+        "E-commerce brand",
+        "Portfolio project",
+        "Entrepreneurship project"
+      ],
+      "keywords": [
+        "SkipSchoolMakeMoney",
+        "SSMM",
+        "George Dreemer",
+        "streetwear brand",
+        "underground streetwear",
+        "meme marketing",
+        "Clout Cards",
+        "Lil Peep",
+        "Pouya",
+        "Fat Nick",
+        "Shopify",
+        "e-commerce",
+        "brand founder"
+      ],
+      "creator": {
+        "@type": "Person",
+        "@id": "https://georgedreemer.com/#person",
+        "name": "George Dreemer",
+        "url": "https://georgedreemer.com"
+      },
+      "author": {
+        "@type": "Person",
+        "@id": "https://georgedreemer.com/#person",
+        "name": "George Dreemer",
+        "url": "https://georgedreemer.com"
+      },
+      "sameAs": [
+        "https://www.skipschoolmakemoney.com",
+        "https://www.instagram.com/skipschoolmakemoney"
+      ],
+      "dateModified": "2026-07-31",
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+
+
+<!-- Preconnect to Google Fonts & Pull Nunito, Playfair Display -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Pull Lucide icons -->
+<script data-custom-script="true" src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+<!-- Pull Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- Main Styles-->
+<style>
+:root {
+  --font-body: "Nunito", "Helvetica Neue", sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --color-bg: #ffffff;
+  --color-surface: #f8f7f4;
+  --color-surface-2: #f0ede8;
+  --color-border: rgba(0, 0, 0, 0.10);
+  --color-divider: rgba(0, 0, 0, 0.07);
+  --color-text: #1a1814;
+  --color-text-muted: #5a5750;
+  --color-text-faint: #9a9590;
+  --color-accent: #bf7bff; /* legacy - kept for CEFR badges and cert pills only */
+  --color-accent-dim: rgba(191, 123, 255, 0.12);
+  --color-primary: #01696f;
+  --color-blue: #006494;
+  --color-gold: #d19900;
+  --color-orange: #da7101;
+  --space-1: .25rem;
+  --space-2: .5rem;
+  --space-3: .75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --text-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.82rem + 0.28vw, 1rem);
+  --text-base: clamp(1rem, 0.95rem + 0.22vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1rem + 0.6vw, 1.4rem);
+  --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+  --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+  --radius-sm: .25rem;
+  --radius-md: .5rem;
+  --radius-lg: .875rem;
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.05);
+  --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  --content-default: 860px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 300;
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.65;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+.preview-page {
+  max-width: 860px;
+  margin-inline: auto;
+  padding: var(--space-10) var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.preview-label {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+  margin-bottom: var(--space-4);
+}
+
+/* ── NAV ────────────────────────────────────────────────── */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.site-nav__inner {
+  max-width: var(--content-default);
+  margin-inline: auto;
+  padding: var(--space-3) var(--space-6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.site-nav__back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  transition: color var(--transition);
+}
+
+.site-nav__back:hover {
+  color: var(--color-primary);
+}
+
+.site-nav__back svg {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  stroke-width: 2;
+  transition: transform var(--transition);
+}
+
+.site-nav__back:hover svg {
+  transform: translateX(-3px);
+}
+
+.site-nav__title {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text);
+  letter-spacing: .01em;
+}
+
+/* ── PAGE LAYOUT ─────────────────────────────────────────── */
+.experience-page {
+  max-width: var(--content-default);
+  margin-inline: auto;
+  padding: var(--space-10) var(--space-6) var(--space-16);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+/* ── PAGE HEADER ─────────────────────────────────────────── */
+.page-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-header__eyebrow {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: var(--space-3);
+}
+
+.page-header__title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--color-text);
+  margin-bottom: var(--space-4);
+  letter-spacing: -0.01em;
+}
+
+.page-header__subtitle {
+  font-size: var(--text-lg);
+  font-weight: 400;
+  color: var(--color-text-muted);
+  max-width: 56ch;
+  line-height: 1.7;
+  align-self: center;
+  text-align: center;
+  padding-top: var(--space-10);
+}
+
+/* ── SECTION LABEL ─────────────────────────────────── */
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.section-label__text {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.section-label__line {
+  flex: 1;
+  height: 1px;
+  background: var(--color-divider);
+}
+
+/* ── E1: CONTEXT BLOCK ─────────────────────────────────── */
+.context-block {
+  border-left: none;
+  padding-left: 0;
+  margin-inline: auto;
+  position: relative;
+  padding-top: var(--space-10);
+}
+
+.context-block::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 3px;
+  background: var(--color-gold);
+  margin-bottom: var(--space-5);
+}
+
+.context-block p {
+  font-size: var(--text-lg);
+  font-weight: 300;
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+.context-block p:first-of-type {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--text-xl);
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+.context-block p:not(:first-of-type) {
+  font-size: var(--text-lg);
+  font-weight: 300;
+  color: var(--color-text);
+  line-height: 1.7;
+  max-width: 70ch;
+  padding-top: var(--space-4);
+}
+
+.context-block p:last-of-type {
+  color: var(--color-text-muted);
+  padding: 0;
+  max-width: 67ch;
+}
+
+.context-block p + p {
+  margin-top: var(--space-4);
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+}
+
+/* ── E2: SNAPSHOT CARD ─────────────────────────────────── */
+.snapshot-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-top: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6) var(--space-8);
+}
+
+/* Domain top-border — mirrors E5 card system */
+.snapshot-card[data-domain="engineering"] {
+  border-top-color: var(--color-primary);
+}
+
+.snapshot-card[data-domain="data"] {
+  border-top-color: var(--color-blue);
+}
+
+.snapshot-card[data-domain="product"] {
+  border-top-color: var(--color-gold);
+}
+
+.snapshot-card[data-domain="growth"] {
+  border-top-color: var(--color-orange);
+}
+
+.snapshot-card__meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(180px, 100%), 1fr));
+  gap: var(--space-5) var(--space-8);
+  margin-bottom: var(--space-6);
+}
+
+.snapshot-card__divider {
+  height: 1px;
+  background: var(--color-divider);
+  margin-bottom: var(--space-6);
+}
+
+.snapshot-item__key {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+  margin-bottom: var(--space-1);
+}
+
+.snapshot-item__value {
+  font-size: var(--text-sm);
+  font-weight: 400;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+/* Prominent fields — Role and Type */
+.snapshot-item--prominent .snapshot-item__value {
+  font-size: var(--text-base);
+  font-weight: 600;
+}
+
+/* Links — retired purple, now neutral underline */
+.snapshot-item__value a {
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+  transition: border-color var(--transition), color var(--transition);
+}
+
+.snapshot-item__value a:hover {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+/* ── Highlights ─────────────────────────────────────────── */
+.snapshot-card__highlights-label {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+  margin-bottom: var(--space-3);
+}
+
+.snapshot-card__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.achievement-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  padding: var(--space-1) var(--space-4) var(--space-1) var(--space-3);
+  font-size: var(--text-xs);
+  font-weight: 400;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+.achievement-chip__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: var(--color-text-faint);
+}
+
+/* Domain-colored dots — same four colors, same system */
+.achievement-chip[data-domain="engineering"] .achievement-chip__dot {
+  background: var(--color-primary);
+}
+
+.achievement-chip[data-domain="data"] .achievement-chip__dot {
+  background: var(--color-blue);
+}
+
+.achievement-chip[data-domain="product"] .achievement-chip__dot {
+  background: var(--color-gold);
+}
+
+.achievement-chip[data-domain="growth"] .achievement-chip__dot {
+  background: var(--color-orange);
+}
+
+/* Subtle chip tint matching domain */
+.achievement-chip[data-domain="engineering"] {
+  border-color: color-mix(in srgb, var(--color-primary) 20%, transparent);
+}
+
+.achievement-chip[data-domain="data"] {
+  border-color: color-mix(in srgb, var(--color-blue) 20%, transparent);
+}
+
+.achievement-chip[data-domain="product"] {
+  border-color: color-mix(in srgb, var(--color-gold) 20%, transparent);
+}
+
+.achievement-chip[data-domain="growth"] {
+  border-color: color-mix(in srgb, var(--color-orange) 20%, transparent);
+}
+
+/* ── ELEMENT 3 — IN NUMBERS / STAT COUNTER ─────────────────── */
+.stat-counter-section {
+  padding-block: var(--space-4);
+}
+
+.stat-counter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+}
+
+.stat-counter__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-2);
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stat-counter__item.is-visible {
+  opacity: 1;
+}
+
+.stat-counter__item:nth-child(1) {
+  transition-delay: 0ms;
+}
+
+.stat-counter__item:nth-child(2) {
+  transition-delay: 80ms;
+}
+
+.stat-counter__item:nth-child(3) {
+  transition-delay: 160ms;
+}
+
+.stat-counter__item:nth-child(4) {
+  transition-delay: 240ms;
+}
+
+/* The animated number — domain color threads through here */
+.stat-counter__number {
+  font-family: var(--font-body);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--color-text-muted);   /* default fallback */
+  transition: color 0.3s ease;
+}
+
+/* Domain color on the number */
+.stat-counter__item[data-domain="engineering"] .stat-counter__number {
+  color: var(--color-primary);
+}
+
+.stat-counter__item[data-domain="data"] .stat-counter__number {
+  color: var(--color-blue);
+}
+
+.stat-counter__item[data-domain="product"] .stat-counter__number {
+  color: var(--color-gold);
+}
+
+.stat-counter__item[data-domain="growth"] .stat-counter__number {
+  color: var(--color-orange);
+}
+
+.stat-counter__label {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.4;
+  max-width: 14ch;
+}
+
+/* Scroll reveal — fade in as a group, no layout shift */
+.stat-counter__item {
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stat-counter__item.is-visible {
+  opacity: 1;
+}
+
+/* Staggered delay per item */
+.stat-counter__item:nth-child(1) { transition-delay: 0ms; }
+.stat-counter__item:nth-child(2) { transition-delay: 80ms; }
+.stat-counter__item:nth-child(3) { transition-delay: 160ms; }
+.stat-counter__item:nth-child(4) { transition-delay: 240ms; }
+
+/* Mobile — 2×2 grid */
+@media (max-width: 640px) {
+  .stat-counter {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-8) var(--space-4);
+  }
+}
+
+/* ── E4: STACK BADGE GRID ────────────────────────────────────── */
+.stack-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.stack-group__label {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+  margin-bottom: var(--space-3);
+}
+
+.stack-group__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.stack-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  padding: var(--space-1) var(--space-4) var(--space-1) var(--space-2);
+  transition: background var(--transition), box-shadow var(--transition);
+  cursor: default;
+}
+
+.stack-badge:hover {
+  background: var(--color-surface-2);
+  box-shadow: var(--shadow-sm);
+}
+
+.stack-badge img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  opacity: .80;
+}
+
+.stack-badge__name {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-text);
+  letter-spacing: .01em;
+}
+
+/* text-only badge (human languages, certifications) */
+.stack-badge--text {
+  padding: var(--space-1) var(--space-4);
+}
+
+/* ── Language badge: flag ────────────────────────────────── */
+.stack-badge__flag {
+  font-size: 1rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/* ── Language badge: CEFR pill ───────────────────────────── */
+.stack-badge__cefr {
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.6;
+  color: #bf7bff;
+  background: rgba(191, 123, 255, 0.10);
+  border: 1px solid rgba(191, 123, 255, 0.30);
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+/* ── Language badge: layout ──────────────────────────────── */
+.stack-badge--lang {
+  min-width: 11rem;
+  gap: 6px;
+}
+
+/* ── Text-mark badge (tools with no icon) ────────────────── */
+.stack-badge--text {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stack-badge__mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #fff;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+/* ── Credential card grid ────────────────────────────────── */
+.stack-group--credentials .stack-group__items,
+.stack-group__items--credentials {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.75rem;
+}
+
+.credential-card {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 150ms ease, transform 150ms ease;
+}
+
+.credential-card:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.09);
+  transform: translateY(-2px);
+}
+
+.credential-card__icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  background: #f5f3ee;
+}
+
+.credential-card__icon--img {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.credential-card__icon--svg {
+  color: var(--color-primary);
+}
+
+.credential-card__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.credential-card__title {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.3;
+  margin: 0 0 0.2rem;
+}
+
+.credential-card__sub {
+  font-size: 0.68rem;
+  color: #888;
+  margin: 0 0 0.4rem;
+}
+
+.credential-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.credential-card__context {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-top: var(--space-1);
+  margin-bottom: var(--space-1);
+}
+
+/* ── Credential card: org description ───────────────────────── */
+.credential-card__org-desc {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-text-faint);
+  line-height: 1.5;
+  margin: 0.25rem 0 0.35rem;
+  max-width: 52ch;
+}
+
+/* ── Credential card: bullet learning points ─────────────────── */
+.credential-card__bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0.25rem 0 0.45rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.credential-card__bullets li {
+  font-size: 0.75rem;
+  color: var(--color-text-faint);
+  line-height: 1.5;
+  padding-left: 0.9rem;
+  position: relative;
+  max-width: 52ch;
+}
+
+.credential-card__bullets li::before {
+  content: '·';
+  position: absolute;
+  left: 0.2rem;
+  color: var(--color-text-faint);
+  font-weight: 700;
+}
+
+.credential-card__link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-border);
+  transition: border-color var(--transition-interactive),
+              color var(--transition-interactive);
+}
+
+.credential-card__link:hover {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+/* ── Credential pills ────────────────────────────────────── */
+.credential-pill {
+  display: inline-block;
+  font-size: 0.6rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+.credential-pill--year {
+  background: #f5f3ee;
+  color: #888;
+  border: 1px solid #e0ddd8;
+}
+
+.credential-pill--gpa {
+  background: #f0f7f0;
+  color: #3a7a3a;
+  border: 1px solid #c6e0c6;
+}
+
+.credential-pill--score {
+  background: #f0f4ff;
+  color: #4a6fc4;
+  border: 1px solid #c6d4f0;
+}
+
+.credential-pill--cert {
+  background: rgba(191, 123, 255, 0.10);
+  color: #bf7bff;
+  border: 1px solid rgba(191, 123, 255, 0.30);
+}
+
+.credential-pill--award {
+  background: #fdf8ee;
+  color: #a07820;
+  border: 1px solid #e8d9a8;
+}
+
+/* ── E5: ABILITY CARD GRID ────────────────────────────────────────── */
+.ability-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
+  gap: var(--space-4);
+}
+
+.ability-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-top: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  transition: box-shadow var(--transition), background var(--transition);
+}
+
+.ability-card:hover {
+  box-shadow: var(--shadow-md);
+  background: var(--color-surface-2);
+}
+
+.ability-card__icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ability-card__icon svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.5;
+}
+
+.ability-card__title {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.3;
+}
+
+.ability-card__desc {
+  font-size: var(--text-xs);
+  font-weight: 300;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.ability-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin-top: auto;
+}
+
+.ability-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 600;
+  font-family: var(--font-body, sans-serif);
+  color: var(--color-text-muted);
+  background: var(--color-surface-2, #f0ede8);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  padding: 2px 8px;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  line-height: 1.5;
+}
+
+/* ── Domain accents ───────────────────────────────────── */
+.ability-card[data-domain="engineering"] {
+  border-top: 2px solid var(--color-primary);
+}
+
+.ability-card[data-domain="engineering"] .ability-card__icon {
+  color: var(--color-primary);
+}
+
+.ability-card[data-domain="data"] {
+  border-top: 2px solid var(--color-blue);
+}
+
+.ability-card[data-domain="data"] .ability-card__icon {
+  color: var(--color-blue);
+}
+
+.ability-card[data-domain="product"] {
+  border-top: 2px solid var(--color-gold);
+}
+
+.ability-card[data-domain="product"] .ability-card__icon {
+  color: var(--color-gold);
+}
+
+.ability-card[data-domain="growth"] {
+  border-top: 2px solid var(--color-orange);
+}
+
+.ability-card[data-domain="growth"] .ability-card__icon {
+  color: var(--color-orange);
+}
+
+/* ── Legend ───────────────────────────────────────────── */
+.ability-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.ability-legend__item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  border: 1px solid transparent;
+  letter-spacing: 0.02em;
+}
+
+.ability-legend__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.ability-legend__item--engineering {
+  color: var(--color-primary);
+  background: color-mix(in srgb, var(--color-primary) 10%, transparent);
+  border-color: color-mix(in srgb, var(--color-primary) 25%, transparent);
+}
+
+.ability-legend__item--engineering .ability-legend__dot {
+  background: var(--color-primary);
+}
+
+.ability-legend__item--data {
+  color: var(--color-blue);
+  background: color-mix(in srgb, var(--color-blue) 10%, transparent);
+  border-color: color-mix(in srgb, var(--color-blue) 25%, transparent);
+}
+
+.ability-legend__item--data .ability-legend__dot {
+  background: var(--color-blue);
+}
+
+.ability-legend__item--product {
+  color: var(--color-gold);
+  background: color-mix(in srgb, var(--color-gold) 10%, transparent);
+  border-color: color-mix(in srgb, var(--color-gold) 25%, transparent);
+}
+
+.ability-legend__item--product .ability-legend__dot {
+  background: var(--color-gold);
+}
+
+.ability-legend__item--growth {
+  color: var(--color-orange);
+  background: color-mix(in srgb, var(--color-orange) 10%, transparent);
+  border-color: color-mix(in srgb, var(--color-orange) 25%, transparent);
+}
+
+.ability-legend__item--growth .ability-legend__dot {
+  background: var(--color-orange);
+}
+
+/* ── E6: WORKS GRID / EVIDENCE CARDS ───────────────────────────────── */
+.evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  gap: var(--space-4);
+}
+
+/* ── Base card ───────────────────────────────────────────── */
+.evidence-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: box-shadow var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.evidence-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* ── Domain left-border threading from E4 ────────────────── */
+.evidence-card[data-domain="engineering"] {
+  border-left-color: var(--color-primary);
+}
+
+.evidence-card[data-domain="data"] {
+  border-left-color: var(--color-blue);
+}
+
+.evidence-card[data-domain="product"] {
+  border-left-color: var(--color-gold);
+}
+
+.evidence-card[data-domain="growth"] {
+  border-left-color: var(--color-orange);
+}
+
+/* ── Domain tag pill (above title in body) ───────────────── */
+.evidence-card__domain-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-2);
+}
+
+.evidence-card__domain-tag-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.evidence-card[data-domain="engineering"] .evidence-card__domain-tag {
+  color: var(--color-primary);
+}
+
+.evidence-card[data-domain="engineering"] .evidence-card__domain-tag-dot {
+  background: var(--color-primary);
+}
+
+.evidence-card[data-domain="data"] .evidence-card__domain-tag {
+  color: var(--color-blue);
+}
+
+.evidence-card[data-domain="data"] .evidence-card__domain-tag-dot {
+  background: var(--color-blue);
+}
+
+.evidence-card[data-domain="product"] .evidence-card__domain-tag {
+  color: var(--color-gold);
+}
+
+.evidence-card[data-domain="product"] .evidence-card__domain-tag-dot {
+  background: var(--color-gold);
+}
+
+.evidence-card[data-domain="growth"] .evidence-card__domain-tag {
+  color: var(--color-orange);
+}
+
+.evidence-card[data-domain="growth"] .evidence-card__domain-tag-dot {
+  background: var(--color-orange);
+}
+
+/* ── VARIANT A: Single image ─────────────────────────────── */
+.evidence-card__thumb {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  background: var(--color-surface-2);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.evidence-card__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 420ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.evidence-card__thumb--placeholder {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+}
+
+.evidence-card:hover .evidence-card__thumb img { transform: scale(1.03); }
+
+/* ── VARIANT B: Slideshow ────────────────────────────────── */
+.evidence-card__slides {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  background: var(--color-surface-2);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.evidence-card__slides-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.evidence-card__slide {
+  min-width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 600ms cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.evidence-card__slide.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.evidence-card__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Dot indicators */
+.evidence-card__slide-dots {
+  position: absolute;
+  bottom: var(--space-2);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+  z-index: 2;
+}
+
+.evidence-card__slide-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.45);
+  transition: background var(--transition), transform var(--transition);
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+.evidence-card__slide-dot.is-active {
+  background: #fff;
+  transform: scale(1.3);
+}
+
+/* Domain-colored active dot */
+.evidence-card[data-domain="engineering"] .evidence-card__slide-dot.is-active {
+  background: var(--color-primary);
+}
+
+.evidence-card[data-domain="data"] .evidence-card__slide-dot.is-active {
+  background: var(--color-blue);
+}
+
+.evidence-card[data-domain="product"] .evidence-card__slide-dot.is-active {
+  background: var(--color-gold);
+}
+
+.evidence-card[data-domain="growth"] .evidence-card__slide-dot.is-active {
+  background: var(--color-orange);
+}
+
+/* ── VARIANT C: Video (YouTube iframe or <video> file) ───── */
+.evidence-card__video {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  background: #0e0e0e;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.evidence-card__video[data-orientation="portrait"] {
+  aspect-ratio: 9/16;
+  max-height: 480px;
+}
+
+.evidence-card__video iframe,
+.evidence-card__video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border: none;
+}
+
+/* Sound toggle button */
+.evidence-card__sound-btn {
+  position: absolute;
+  bottom: var(--space-3);
+  right: var(--space-3);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 3;
+  transition: background var(--transition);
+}
+
+.evidence-card__sound-btn:hover { background: rgba(0,0,0,0.8); }
+.evidence-card__sound-btn svg { width: 14px; height: 14px; stroke: #fff; }
+
+/* ── Card body ────────────────────────────────────── */
+.evidence-card__body {
+  padding: var(--space-4) var(--space-5);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.evidence-card__title {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: var(--space-2);
+  line-height: 1.3;
+}
+
+.evidence-card__bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  margin-top: auto;
+}
+
+.evidence-card__bullets li {
+  font-size: var(--text-xs);
+  font-weight: 300;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  padding-left: var(--space-4);
+  position: relative;
+}
+
+.evidence-card__bullets li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 6px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--color-text-faint);
+}
+
+/* ── E7: IN DEPTH ACCORDION ─────────────────────────────────── */
+.story-accordion {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.story-accordion__item+.story-accordion__item {
+  border-top: 1px solid var(--color-divider);
+}
+
+.story-accordion__trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-5) var(--space-6);
+  background: var(--color-surface);
+  border: none;
+  cursor: pointer;
+  gap: var(--space-4);
+  transition: background var(--transition);
+}
+
+.story-accordion__trigger:hover {
+  background: var(--color-surface-2);
+}
+
+.story-accordion__trigger-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-width: 0;
+}
+
+.story-accordion__trigger-label {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: .02em;
+  text-align: left;
+}
+
+/* Domain tag on trigger — same dot+label system as E6 */
+.story-accordion__domain-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.story-accordion__domain-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.story-accordion__item[data-domain="engineering"] .story-accordion__domain-tag {
+  color: var(--color-primary);
+}
+
+.story-accordion__item[data-domain="engineering"] .story-accordion__domain-dot {
+  background: var(--color-primary);
+}
+
+.story-accordion__item[data-domain="data"] .story-accordion__domain-tag {
+  color: var(--color-blue);
+}
+
+.story-accordion__item[data-domain="data"] .story-accordion__domain-dot {
+  background: var(--color-blue);
+}
+
+.story-accordion__item[data-domain="product"] .story-accordion__domain-tag {
+  color: var(--color-gold);
+}
+
+.story-accordion__item[data-domain="product"] .story-accordion__domain-dot {
+  background: var(--color-gold);
+}
+
+.story-accordion__item[data-domain="growth"] .story-accordion__domain-tag {
+  color: var(--color-orange);
+}
+
+.story-accordion__item[data-domain="growth"] .story-accordion__domain-dot {
+  background: var(--color-orange);
+}
+
+.story-accordion__chevron {
+  width: 18px;
+  height: 18px;
+  color: var(--color-text-muted);
+  transition: transform var(--transition);
+  flex-shrink: 0;
+}
+
+.story-accordion__trigger[aria-expanded="true"] .story-accordion__chevron {
+  transform: rotate(180deg);
+}
+
+/* Body — domain left-border threads when open */
+.story-accordion__body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 380ms cubic-bezier(0.16, 1, 0.3, 1);
+  background: var(--color-bg);
+  border-left: 2px solid transparent;
+  transition: grid-template-rows 380ms cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 380ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.story-accordion__body[aria-hidden="false"] {
+  grid-template-rows: 1fr;
+}
+
+/* Domain left-border on open panel */
+.story-accordion__item[data-domain="engineering"] .story-accordion__body[aria-hidden="false"] {
+  border-left-color: var(--color-primary);
+}
+
+.story-accordion__item[data-domain="data"] .story-accordion__body[aria-hidden="false"] {
+  border-left-color: var(--color-blue);
+}
+
+.story-accordion__item[data-domain="product"] .story-accordion__body[aria-hidden="false"] {
+  border-left-color: var(--color-gold);
+}
+
+.story-accordion__item[data-domain="growth"] .story-accordion__body[aria-hidden="false"] {
+  border-left-color: var(--color-orange);
+}
+
+.story-accordion__inner {
+  overflow: hidden;
+}
+
+.story-accordion__content {
+  padding: var(--space-6) var(--space-6) var(--space-8);
+  font-size: var(--text-base);
+  font-weight: 300;
+  color: var(--color-text);
+  line-height: 1.8;
+  max-width: 66ch;
+  margin-inline: auto;
+}
+
+.story-accordion__content p+p {
+  margin-top: var(--space-4);
+}
+
+.story-accordion__content strong {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+/* Simple list support inside content */
+.story-accordion__content ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.story-accordion__content ul li {
+  padding-left: var(--space-4);
+  position: relative;
+}
+
+.story-accordion__content ul li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 8px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--color-text-faint);
+}
+
+.story-accordion__gallery {
+  display: flex;
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+}
+
+.story-accordion__gallery img {
+  flex: 0 0 auto;
+  border-radius: var(--radius-md);
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+/* ── SCROLL REVEAL ───────────────────────────────────────── */
+@supports(animation-timeline:scroll()) {
+  .fade-in {
+    opacity: 0;
+    animation: reveal-fade linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 80%;
+  }
+}
+
+@keyframes reveal-fade {
+  to {
+    opacity: 1;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .fade-in {
+    opacity: 1;
+    animation: none;
+  }
+
+  .stat-counter__item {
+    opacity: 1;
+  }
+}
+
+/* ── RESPONSIVE ──────────────────────────────────────────── */
+@media(max-width:600px) {
+  .experience-page {
+    padding: var(--space-6) var(--space-4);
+    gap: var(--space-8);
+  }
+
+  .snapshot-card {
+    padding: var(--space-5);
+  }
+
+  .ability-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-header__title {
+    font-size: clamp(1.75rem, 8vw, 2.5rem);
+  }
+
+  .site-nav__title {
+    display: none;
+  }
+}
+</style>
+
+<!-- Builder-specific Style Fixes/Overrides -->
+<style>
+html {
+  font-size: 100% !important;
+}
+
+body {
+  font-size: 16px !important;
+}
+
+.experience-page {
+  max-width: 1100px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 24px 96px !important;
+}
+
+.stat-counter {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 24px !important;
+}
+
+.stat-counter__number {
+  font-size: clamp(2rem, 5vw, 4rem) !important;
+  line-height: 1 !important;
+}
+
+.stat-counter__label {
+  margin-top: 10px;
+}
+
+.evidence-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 24px !important;
+}
+
+@media (max-width: 900px) {
+  .stat-counter {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .evidence-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .experience-page {
+    padding: 0 16px 72px !important;
+  }
+
+  .stat-counter {
+    grid-template-columns: 1fr !important;
+  }
+}
+</style>	
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.min.js"></script>
 	<![endif]-->
@@ -109,7 +1813,7 @@
 </head>
 
 
-<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a18bddd8a85d011b0a2fe2a90c538c8d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e441b349dafe2e726f5f746" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a190ffbacdf50074287cce61ed4aae0e" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffbace03000769e1586d252b6f8e" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1785515024"></a></div></div></div><div id="a190ffbace1500afe7431d8cbcff8171" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffbace1e00d63e8c95c1c09a4509" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1785515024"></a></div></div></div></div></div><div id="a190ffbace3000211f700bf74a207b5a" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a18bddd8a85d011b0a2fe2a90c538c8d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e441b349dafe2e726f5f746" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a190ffbacdf50074287cce61ed4aae0e" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffbace03000769e1586d252b6f8e" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1785666966"></a></div></div></div><div id="a190ffbace1500afe7431d8cbcff8171" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffbace1e00d63e8c95c1c09a4509" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1785666966"></a></div></div></div></div></div><div id="a190ffbace3000211f700bf74a207b5a" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -191,339 +1895,934 @@
 			'children' => array()
 		)
 	)
-)); ?><div class="clearfix"></div></div></div></div><div id="a18bddd77e441c676f07d6c1ed2746e4" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e441d26252a8a27e0cc089b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e441e59875ef302d40c9902" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/52c0651d75306a87ff391018120335f7_888x294_fit.png?ts=1785515024"></div></div></div></div></div></div></div><div id="a18bddd77e441f478049d63bfea38afb" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1785515024"></div></div></div></div></div></div></div><div id="wb_main_a18bddd8a85d011b0a2fe2a90c538c8d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e442164b378541ef7369b53" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e44222024d1f31d71127fc0" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e442321b84483063ff44e26" class="wb_element" data-plugin="Button"><a class="wb_button" href="https://skipschoolmakemoney.com" title="Link to official SkipSchoolMakeMoney website." target="_blank"><span>Official SSMM Site</span></a></div><div id="a18bddd77e4424d62fd925163a4d82d0" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">EXPERIENCE </span></strong><span style="color:rgba(0,0,0,1);">AT A GLANCE</span></h1>
-</div><div id="a18bddd77e4425459fb150f008c3f24d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4426739f98fcf5a059f89b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e44276894cfb6b833a8c852" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e44282d5ea6cc9f5f366517" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e442a6da76e3915bea7025a" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2">Business Operation</h2>
-</div></div></div><div id="a18bddd77e442bdf676e69a9c06aed24" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom15" style="text-align: center;">Starting as my college project in late 2016, by the time of its peak, the brand reached hundreds of orders per collection, generating thousands in revenue and a cult-like following spanning over three continents.<br>
-To make this a reality, I manufactured clothing on both the West and East coast, later including the UK and China.</p>
-</div></div></div><div id="a18bddd77e442c2891eab082c96bd968" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e442dabd8aa07a7ea954386" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e442f04806daa43e3d17d14" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2">Marketing &amp; PR</h2>
-</div></div></div><div id="a18bddd77e443070eeff8de5c93f6839" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom15" style="text-align: center;">I pioneering multiple viral Instagram strategies and grew SSMM to 12.000+ followers at its peak. I employed meme &amp; influencer marketing, as well as did frequent giveaways. Resulting in hundreds to thousands of comments per post and thousands of likes. I also had ads running on Instagram, Meta, Twitter, YouTube and Snapchat.</p>
-</div></div></div><div id="a18bddd77e44316e4f39b95e89b031d6" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4432885be6c52abaf71638" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e443451f658aed71321704c" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2">Fashion &amp; Visuals</h2>
-</div></div></div><div id="a18bddd77e4435019eb70b651287b463" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom15" style="text-align: center;">I started out with creating one simple front and back logo. Over the brand's lifetime I created and released over 20 collections, amounting to several hundred designs.</p>
-
-<p class="wb-stl-custom15" style="text-align: center;">To market these I curated photoshoots with photographers worldwide, including USA (CA, NY, VA...), Canada, The Netherlands, France, UK, Bulgaria &amp; China.</p>
-</div></div></div><div id="a18bddd77e44366cb4a54c9b5c0b52e1" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e443792db6f7a7b4dd1a923" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e443983b4abb8f0f0892e1b" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2">Communication</h2>
-</div></div></div><div id="a18bddd77e443a58545c755b60d527f3" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom15" style="text-align: center;">I have had the privilege to work with talented musicians, influencers, content creators, photographers and other creatives. The likes of Lil Peep, Pouya, Fat Nick, MikeyTM,  Emanuel, Luca, FruityPoppin, Layla, BigBabyGucci &amp; many more wonderful people. These connections put SSMM on the map of underground streetwear in the 2016-19 era.</p>
-</div></div></div></div></div></div></div><div id="a18bddd77e443b0583e23e81635436bc" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e443caf7b358531407f774f" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e443d782f1ee0f2aaf5f91e" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e45006ac89584239c45ab4d" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2">Business Operation</h2>
-</div></div></div><div id="a18bddd77e450102d3067f2c50b3e7fc" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom15" style="text-align: center;">Starting as my college project in late 2016, by the time of its peak, the brand reached hundreds of orders per collection, generating thousands in revenue and a cult-like following spanning over three continents.<br>
-To make this a reality, I manufactured clothing on both the West and East coast, later including the UK and China.</p>
-</div></div></div><div id="a18bddd77e45023f1718a489e278116e" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4503d094d3fd7e74ba196d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4505c7405d17f94984cc4a" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2">Marketing &amp; PR</h2>
-</div></div></div><div id="a18bddd77e45065f53bcbb0775165508" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom15" style="text-align: center;">I pioneering multiple viral Instagram strategies and grew SSMM to 12.000+ followers at its peak. I employed meme &amp; influencer marketing, as well as did frequent giveaways. Resulting in hundreds to thousands of comments per post and thousands of likes. I also had ads running on Instagram, Meta, Twitter, YouTube and Snapchat.</p>
-</div></div></div><div id="a18bddd77e4507c3d7e3f7fd4cd8f58b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e45086d8b244a0d80f4c783" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e450a09ac1cfd42336bd73b" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2">Fashion &amp; Visuals</h2>
-</div></div></div><div id="a18bddd77e450baf7216b4b380f99f63" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom15" style="text-align: center;">I started out with creating one simple front and back logo. Over the brand's lifetime I created and released over 20 collections, amounting to several hundred designs.</p>
-
-<p class="wb-stl-custom15" style="text-align: center;">To market these I curated photoshoots with photographers worldwide, including USA (CA, NY, VA...), Canada, The Netherlands, France, UK, Bulgaria &amp; China.</p>
-</div></div></div><div id="a18bddd77e450cc151fc5b5d90993e37" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e450dd281910397a8750972" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e450f07e2a5ed7441a6dbc4" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2">Communication</h2>
-</div></div></div><div id="a18bddd77e451007c51ac2aad77a8598" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom15" style="text-align: center;">I have had the privilege to work with talented musicians, influencers, content creators, photographers and other creatives. The likes of Lil Peep, Pouya, Fat Nick, MikeyTM,  Emanuel, Luca, FruityPoppin, Layla, BigBabyGucci &amp; many more wonderful people. These connections put SSMM on the map of underground streetwear in the 2016-19 era.</p>
-</div></div></div></div></div><div id="a18bddd77e45114f466142e04e78a099" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">ABILITIES </span></strong><span style="color:rgba(0,0,0,1);">AT A GLANCE</span></h1>
-</div><div id="a18bddd77e45126409a0e8f6e9162289" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4513d3d55c2552b1e10b26" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/4210010f5275fb3fb35f78c97319fea1_1580x868_fit.png?ts=1785515024"></div></div></div></div></div><div id="a18bddd77e45148a7fa51519adcf7826" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e45150bc8c7118411b59dd0" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">SSMM </span></strong><span style="color:rgba(0,0,0,1);">IN SHORT</span></h1>
-</div><div id="a18bddd77e4516d548f5f4f956f4b1d0" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3" style="text-align: center;"><span style="color:#050505;"><span class="wb-stl-special"><span style="font-size: 16px;">From a brand born during my evening shifts at the Hampshire College media lab to attracting funding, an entrepreneurial award and thousands in revenue &amp; supporters, SSMM is the brand that succeeded against all odds. Over the course of 3 years, SSMM spread from a few states, to getting orders from Canada, Europe, Brazil, the UK, Russia, Australia and China. I expanded from local screen printing production in MA to multiple logistics paths serving 3 continents.</span></span></span></h3>
-</div><div id="a18bddd77e451797fd9a0da53a52d606" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">VISUAL PORTFOLIO*</span></strong></h1>
-</div><div id="a18bddd77e4518f566c07ce60eb1459f" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4519da45c10400bd000bfc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e451ab6862662417e77ce00" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom19" style="text-align: center;"><span style="color:rgba(110,110,110,0.66);">For the best experience, please view the portfolio on the<br>
-official SSMM site's history page: </span><strong><a href="https://www.skipschoolmakemoney.com/pages/history-1"><span style="color:rgba(169,111,224,1);">SkipSchoolMakeMoney History</span></a></strong><span style="color:rgba(110,110,110,0.66);">.</span></p>
-
-<p class="wb-stl-custom19" style="text-align: center;"> </p>
-
-<p class="wb-stl-custom19" style="text-align: center;"><span style="color:rgba(110,110,110,0.66);">*All materials conceptualized and created by George Dreemer,  unless mentioned otherwise.</span></p>
-</div><div id="a18bddd77e451bb90c7e763257098202" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e451c76bad155452c7f5a6e" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div></div></div><div id="a18bddd77e451d2da8f5e13cfdb92fc4" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e451e83c725efcf1a6fb773" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom19" style="text-align: center;"><em>"Take a trip through SkipSchoolMakeMoney's history - collections, photoshoots, videoshoots, collaborations, fan photos and memes. Starting with my most recent work."</em></p>
-</div><div id="a18bddd77e451fbe77eb8d5ce06e3217" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><!-- PAGE 1 -->
-
-<br>
-<h2 style="text-align: center; padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">'DREEMISLE'</h2>
-<h3 style="text-align: center;">Showcase</h3>
-<iframe src="https://albumizr.com/a/F2WP" scrolling="no" frameborder="0" allowfullscreen width="100%" height="550"></iframe>
-<br>
-<div align="center">
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CAS7taxHdm7/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CAS7taxHdm7/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewbox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CAS7taxHdm7/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Purp (@purploulou)</a></p></div></blockquote> <script data-custom-script="true" async src="//www.instagram.com/embed.js"></script>
-</div>
-
-<br>
-<h2 style="text-align: center; padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">'OUTSIDER'</h2>
-<h3 style="text-align: center;">Showcase+Lookbook</h3>
-<iframe src="https://albumizr.com/a/QjEf" scrolling="no" frameborder="0" allowfullscreen width="100%" height="550"></iframe>
-<br>
-
-<br>
-<h2 style="text-align: center;  padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">'DRMR DROP' <br>(part 1-3)</h2>
-<h4 style="text-align: center; padding-bottom: 15px;"><span style="font-family: inherit; font-size: 14px; color: #999999;">ASCENSION IN PROGRESS.</span></h4>
-<h3 style="text-align: center;">Video Ad</h3>
-<div align="center">
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BvaBTEkA1kP/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BvaBTEkA1kP/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewbox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BvaBTEkA1kP/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a></p></div></blockquote></div> <script data-custom-script="true" async src="//www.instagram.com/embed.js"></script>
-<br>
-<h3 style="text-align: center;">Showcase</h3>
-<div align="center">
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BvXZiZ6gVcm/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BvXZiZ6gVcm/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewbox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BvXZiZ6gVcm/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a></p></div></blockquote> <script data-custom-script="true" async src="//www.instagram.com/embed.js"></script>
-</div>
-<iframe src="https://albumizr.com/a/Bvbi" scrolling="no" frameborder="0" allowfullscreen width="100%" height="550"></iframe>
-<br>
-<div align="center">
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BrQzoZgHMCc/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BrQzoZgHMCc/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewbox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BrQzoZgHMCc/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Luca Schaefer-Charlton (@mostlyluca)</a></p></div></blockquote> <script data-custom-script="true" async src="//www.instagram.com/embed.js"></script>
-</div>
-<br>
-<h2 style="text-align: center; padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">'(G)RATEFUL'</h2>
-<h3 style="text-align: center;">Showcase</h3>
-<iframe src="https://albumizr.com/a/dNlh" scrolling="no" frameborder="0" allowfullscreen width="100%" height="550"></iframe>
-<br>
-<h3 style="text-align: center;">Lookbook</h3>
-<iframe src="https://albumizr.com/a/Owth" scrolling="no" frameborder="0" allowfullscreen="" width="100%" height="550"></iframe>
-<br>
-
-<br>
-<h2 style="text-align: center;  padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">'(G)OOFY'</h2>
-<h4 style="text-align: center; padding-bottom: 15px;"><span style="font-family: inherit; font-size: 14px; color: #999999;">THIS MINI-COLLECTION WAS ONLY AVAILABLE TO #IVCLUB MEMBERS.</span></h4>
-<h3 style="text-align: center;">Showcase</h3>
-<iframe src="https://albumizr.com/a/BAcV" scrolling="no" frameborder="0" allowfullscreen="" width="100%" height="550"></iframe>
-<br>
-
-<br>
-<h2 style="text-align: center;  padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">'BAD INFLUENCE'</h2>
-<h4 style="text-align: center; padding-bottom: 15px;"><span style="font-family: inherit; font-size: 14px; color: #999999;">THIS MINI-COLLECTION WAS ONLY AVAILABLE TO #IVCLUB MEMBERS.</span></h4>
-<h3 style="text-align: center;">Showcase</h3>
-<iframe src="https://albumizr.com/a/64pf" scrolling="no" frameborder="0" allowfullscreen="" width="100%" height="550"></iframe>
-<br>
-
-<br>
-<h2 style="text-align: center;  padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">'COLOR CONNOISSEUR <br> (part 1-3)'</h2>
-<h4 style="text-align: center; padding-bottom: 15px;"><span style="font-family: inherit; font-size: 14px; color: #999999;">THESE MINI-COLLECTIONS WERE ONLY AVAILABLE TO #IVCLUB MEMBERS.</span></h4>
-<h3 style="text-align: center;">Showcase</h3>
-<iframe src="https://albumizr.com/a/pQQV" scrolling="no" frameborder="0" allowfullscreen="" width="100%" height="550"></iframe>
-<br>
-
-<br>
-<h2 style="text-align: center;  padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">'SUPER SALE'</h2>
-<h4 style="text-align: center; padding-bottom: 15px;"><span style="font-family: inherit; font-size: 14px; color: #999999;">PROMOTIONAL WAREHOUSE SALE EVENT.</span></h4>
-<h3 style="text-align: center;">Showcase</h3>
-<iframe src="https://albumizr.com/a/-TJt" scrolling="no" frameborder="0" allowfullscreen="" width="100%" height="550"></iframe>
-<br>
-
-<br>
-<h2 style="text-align: center;  padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">'DREEMLAND'</h2>
-<h4 style="text-align: center; padding-bottom: 15px;"><span style="font-family: inherit; font-size: 14px; color: #999999;">A WORLD OF REALISTIC EXPECTATIONS &amp; UNREALISTIC RESULTS.</span></h4>
-<h3 style="text-align: center;">Lookbook</h3>
-
-<div align="center">
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BmWaOtflhVd/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BmWaOtflhVd/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewbox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BmWaOtflhVd/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a></p></div></blockquote> <script data-custom-script="true" async src="//www.instagram.com/embed.js"></script>
-</div>
-<br>
-<iframe src="https://albumizr.com/a/y3CK" scrolling="no" frameborder="0" allowfullscreen="" width="100%" height="550"></iframe>
-<br>
-<h3 style="text-align: center;">Showcase</h3>
-<div align="center">
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/Bno7-yRFQFZ/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/Bno7-yRFQFZ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewbox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/Bno7-yRFQFZ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a></p></div></blockquote> <script data-custom-script="true" async src="//www.instagram.com/embed.js"></script>
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BmEfHpBF0q2/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BmEfHpBF0q2/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewbox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BmEfHpBF0q2/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a></p></div></blockquote> <script data-custom-script="true" async src="//www.instagram.com/embed.js"></script>
-
-</div>
-<br>
-
-
-
-
-
-
-
-
-
-
-
-<!-- PAGE 2 -->
-
-
-<br>
-<!--div class="shg-c" id="s-7b5860b3-f01c-47eb-94d3-7e7468100faf">
-<div class="shg-rich-text shg-theme-text-content">
-<p style="text-align: center; padding-bottom: 15px;"><span style="font-family: inherit; font-size: 14px; color: #000000;">Note: Instagram embedded posts load better on Desktop.</span></p>
-</div>
-</div-->
-
-<h2 style="text-align: center;  padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">'DROP4'</h2>
-<h4 style="text-align: center; padding-bottom: 15px;"><span style="font-family: inherit; font-size: 14px; color: #999999;">OUR 4TH OFFICIAL FULL RELEASE.</span></h4>
-<h3 style="text-align: center;">Showcase</h3>
-<iframe src="https://albumizr.com/a/0HuK" scrolling="no" frameborder="0" allowfullscreen="" width="100%" height="550"></iframe>
-<br>
-<div align="center">
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BeoGFN3h-Hk/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BeoGFN3h-Hk/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewbox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BeoGFN3h-Hk/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a></p></div></blockquote> <script data-custom-script="true" async src="//www.instagram.com/embed.js"></script>
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BgRiuS8Adlv/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BgRiuS8Adlv/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewbox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BgRiuS8Adlv/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a></p></div></blockquote> <script data-custom-script="true" async src="//www.instagram.com/embed.js"></script>
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/Bev6JSRhvTp/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/Bev6JSRhvTp/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewbox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/Bev6JSRhvTp/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a></p></div></blockquote> <script data-custom-script="true" async src="//www.instagram.com/embed.js"></script>
-</div>
-
-
-<br>
-<h2 style="text-align: center;  padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">'DROP3.5'</h2>
-<h4 style="text-align: center; padding-bottom: 15px;"><span style="font-family: inherit; font-size: 14px; color: #999999;">HAT ONLY DROP.</span></h4>
-<h3 style="text-align: center;">Showcase</h3>
-<div align="center">
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BdlHzylBnyy/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BdlHzylBnyy/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewbox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BdlHzylBnyy/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a></p></div></blockquote> <script data-custom-script="true" async src="//www.instagram.com/embed.js"></script>
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BeOPzeBBjST/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BeOPzeBBjST/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewbox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BeOPzeBBjST/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a></p></div></blockquote> <script data-custom-script="true" async src="//www.instagram.com/embed.js"></script>
-</div>
-<br>
-<h2 style="text-align: center;  padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">'DROP3'</h2>
-<h4 style="text-align: center; padding-bottom: 15px;"><span style="font-family: inherit; font-size: 14px; color: #999999;">OUR 3RD OFFICIAL FULL RELEASE.</span></h4>
-<h3 style="text-align: center;">Showcase</h3>
-<div align="center">
-<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BcpuXuNB7Dd/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BcpuXuNB7Dd/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewbox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BcpuXuNB7Dd/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a></p></div></blockquote> <script data-custom-script="true" async src="//www.instagram.com/embed.js"></script>
-</div>
-<br>
-<h3 style="text-align: center;">Lookbook 1 <br> 'OTHERWORLDLY ENERGY'</h3>
-<iframe src="https://albumizr.com/a/Sng6" scrolling="no" frameborder="0" allowfullscreen="" width="100%" height="550"></iframe>
-<br>
-<h3 style="text-align: center;">Lookbook 2 <br> 'CXLTURES'</h3>
-<iframe src="https://albumizr.com/a/nD-Q" scrolling="no" frameborder="0" allowfullscreen="" width="100%" height="550"></iframe>
-<br>
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- PAGE 3 -->
-
-
-<br>
-<h2 style="text-align: center;  padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">'CLOUT NETWORK'</h2>
-<h4 style="text-align: center; padding-bottom: 15px;"><span style="font-family: inherit; font-size: 14px; color: #999999;">THE SSMM CLOUT NETWORK WAS A COLLECTIVE OF CREATIVES, WHOSE PERSONALITIES WERE PROMOTED THROUGH 'CLOUT CARDS'. 5-PACKS OF CLOUT CARDS WERE GIVEN AWAY FOR FREE IN EVERY ORDER. THE CARDS WERE INSPIRED BY YUGIOH! CARDS AND CREATED BY GEORGE DREEMER. THEY FEATURED A FRONT SIDE WHERE THE CREATOR IS PRESENTED INCLUDING A SATIRICAL SPECIAL POWER DESCRIPTION, THE CREATOR TYPE AND SOCIAL MEDIA.</span></h4>
-<h3 style="text-align: center;">Season 1</h3>
-<div align="center">
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BZjsrEghRjG/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BZjsrEghRjG/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewbox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BZjsrEghRjG/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a></p></div></blockquote> <script data-custom-script="true" async src="//www.instagram.com/embed.js"></script>
-</div>
-<br>
-<h3 style="text-align: center;">More Pictures</h3>
-<iframe src="https://albumizr.com/a/5vVU" scrolling="no" frameborder="0" allowfullscreen="" width="100%" height="550"></iframe>
-<br>
-<h2 style="text-align: center;  padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">PHOTO /W LAYLA (@TOOPOOR)</h2>
-<div align="center">
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BaHgM8nh5Pp/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BaHgM8nh5Pp/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewbox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BaHgM8nh5Pp/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a></p></div></blockquote> <script data-custom-script="true" async src="//www.instagram.com/embed.js"></script>
-</div>
-<br>
-<h2 style="text-align: center;  padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">PHOTO /W FAT NICK, POUYA <br> AND GHOSTEMANE</h2>
-<div align="center">
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BS4HPQzhaa3/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BS4HPQzhaa3/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewbox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BS4HPQzhaa3/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a></p></div></blockquote> <script data-custom-script="true" async src="//www.instagram.com/embed.js"></script>
-</div>
-<br>
-<h2 style="text-align: center;  padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">PHOTO /W SLIM JIMMY AND SWAE LEE</h2>
-<div align="center">
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BQYtvXbAi8E/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BQYtvXbAi8E/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewbox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BQYtvXbAi8E/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a></p></div></blockquote> <script data-custom-script="true" async src="//www.instagram.com/embed.js"></script>
-</div>
-<br>
-<h2 style="text-align: center;  padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">'HIDDEN POTENTIAL'</h2>
-<h4 style="text-align: center; padding-bottom: 15px;"><span style="font-family: inherit; font-size: 14px; color: #999999;">LIMITED TIME RELEASE.</span></h4>
-<h3 style="text-align: center;">Showcase</h3>
-<div align="center">
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BZ9Qw4Mhf5X/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BZ9Qw4Mhf5X/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewbox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BZ9Qw4Mhf5X/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a></p></div></blockquote> <script data-custom-script="true" async src="//www.instagram.com/embed.js"></script>
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BZl5723hZPZ/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BZl5723hZPZ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewbox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BZl5723hZPZ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a></p></div></blockquote> <script data-custom-script="true" async src="//www.instagram.com/embed.js"></script>
-</div>
-<br>
-<h3 style="text-align: center;">Lookbook</h3>
-<iframe src="https://albumizr.com/a/iByb" scrolling="no" frameborder="0" allowfullscreen="" width="100%" height="550"></iframe>
-<br>
-<h3 style="text-align: center;">Spot in Music Video</h3>
-<h4 style="text-align: center; padding-bottom: 15px;"><span style="font-family: inherit; font-size: 14px; color: #999999;">Orange HP tee in music video by Hogue Cinematics for Lil Johnnie.</span></h4>
-<div align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Z4YanvX8DPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-
-<br>
-<h2 style="text-align: center;  padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">'FREAKY FRED'</h2>
-<h4 style="text-align: center; padding-bottom: 15px;"><span style="font-family: inherit; font-size: 14px; color: #999999;">LIMITED TIME MINI-RELEASE FOR SELECT FANS.</span></h4>
-<h3 style="text-align: center;">Showcase</h3>
-<iframe src="https://albumizr.com/a/j8JZ" scrolling="no" frameborder="0" allowfullscreen="" width="100%" height="550"></iframe>
-<br>
-
-
-<br>
-<h2 style="text-align: center;  padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">MEME PROMO WAVES</h2>
-<h4 style="text-align: center; padding-bottom: 15px;"><span style="font-family: inherit; font-size: 14px; color: #999999;">BETWEEN 2017-19, GEORGE INCORPORATED A NEW MARKETING STRATEGY PROMOTING ON MEME PAGES, SOME WITH UPWARDS OF 3 MILLION FOLLOWERS. THIS RESULTED IN A GROWTH SPURT FROM 3-4k FOLLOWERS TO 14k FOLLOWERS IN OUR PEAK.</span></h4>
-<h3 style="text-align: center;">Examples</h3>
-<iframe src="https://albumizr.com/a/ryp2" scrolling="no" frameborder="0" allowfullscreen="" width="100%" height="550"></iframe>
-<br>
-
-<br>
-<h2 style="text-align: center;  padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">'SkipSchoolMakeMemes'</h2>
-<h4 style="text-align: center; padding-bottom: 15px;"><span style="font-family: inherit; font-size: 14px; color: #999999;">STARTING AS AN INSIDE JOKE, THE MOTTO SKIP SCHOOL MAKE MEMES MADE IT TO AN OFFICIAL LIMITED TIME RELEASE. IT WAS ONLY MADE AVAILABLE TO SELECT LONG-TIME CUSTOMERS.</span></h4>
-<h3 style="text-align: center;">Showcase</h3>
-<iframe src="https://albumizr.com/a/uGLD" scrolling="no" frameborder="0" allowfullscreen="" width="100%" height="550"></iframe>
-<br>
-
-<br>
-<h2 style="text-align: center;  padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">'INTERNET TOUR' <br> EVENT</h2>
-<h4 style="text-align: center; padding-bottom: 15px;"><span style="font-family: inherit; font-size: 14px; color: #999999;">WE WANTED TO SHOW LOVE TO ALL THE PLACES OUR FANS CAME FROM. TO PAY HOMEAGE TO THEIR HOMETOWNS, WE ASKED FANS TO POST THEIR TOWN AND DEPENDING ON WHO GOT THE MOST UPVOTES, THEY GOT THEIR TOWN REPRESENTED ON THIS LIMITED EDITION APPAREL.</span></h4>
-<h3 style="text-align: center;">Showcase</h3>
-<iframe src="https://albumizr.com/a/McKw" scrolling="no" frameborder="0" allowfullscreen="" width="100%" height="550"></iframe>
-<br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- PAGE 4 -->
-
-
-<br>
-<h2 style="text-align: center;  padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">'DROP IV'</h2>
-<h4 style="text-align: center; padding-bottom: 15px;"><span style="font-family: inherit; font-size: 14px; color: #999999;">OUR SECOND OFFICIAL FULL RELEASE, IT IS ALSO OUR FIRST DESTINATION PHOTOSHOOT (NYC). FURTHERMORE IT IS THE FIRST TIME GEORGE TOOK AND ATTEMPTED TO STANDARDIZE PRODUCT PICTURES FOR THE WEBSITE. FINALLY, IT IS THE FIRST TIME WE OFFERED WORLDWIDE SHIPPING, AS AT THE TIME, BESIDE IN THE USA, WERE ALSO GROWING IN THE UK AND CANADA.</span></h4>
-<h3 style="text-align: center;">Showcase</h3>
-<iframe src="https://albumizr.com/a/GSk-" scrolling="no" frameborder="0" allowfullscreen="" width="100%" height="550"></iframe>
-<br>
-<h3 style="text-align: center;">Lookbook</h3>
-<iframe src="https://albumizr.com/a/Fidk" scrolling="no" frameborder="0" allowfullscreen="" width="100%" height="550"></iframe>
-<br>
-
-<br>
-<h2 style="text-align: center;  padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">'THE 1ST SUMMER' <br> EVENT</h2>
-<h4 style="text-align: center; padding-bottom: 15px;"><span style="font-family: inherit; font-size: 14px; color: #999999;">WE WANTED TO SHOW LOVE TO OUR FANS THAT SUPPORTED US FROM THE START. WE WERE 6 MONTHS IN AND IT WAS OUR FIRST SUMMER, THE REST IS HISTORY...</span></h4>
-<h3 style="text-align: center;">Showcase</h3>
-<iframe src="https://albumizr.com/a/tv-o" scrolling="no" frameborder="0" allowfullscreen="" width="100%" height="550"></iframe>
-<br>
-
-<br>
-<h2 style="text-align: center;  padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">'[RELENTLESS]'</h2>
-<h4 style="text-align: center; padding-bottom: 15px;"><span style="font-family: inherit; font-size: 14px; color: #999999;">RELENTLESS. REGARDLESS.</span></h4>
-<h3 style="text-align: center;">Showcase/Lookbook</h3>
-<iframe src="https://albumizr.com/a/DFeJ" scrolling="no" frameborder="0" allowfullscreen="" width="100%" height="550"></iframe>
-<br>
-
-
-<br>
-<h2 style="text-align: center;  padding-bottom: 15px; font-size: 26px; font-weight: bold; margin-top: 10px;">'drop_1</h2>
-<h4 style="text-align: center; padding-bottom: 15px;"><span style="font-family: inherit; font-size: 14px; color: #999999;">THE SEED.</span></h4>
-<h3 style="text-align: center;">Showcase</h3>
-<iframe src="https://albumizr.com/a/Le6Z" scrolling="no" frameborder="0" allowfullscreen="" width="100%" height="550"></iframe>
-<br>
-<h3 style="text-align: center;">Lookbook 1</h3>
-<iframe src="https://albumizr.com/a/ZnSZ" scrolling="no" frameborder="0" allowfullscreen="" width="100%" height="550"></iframe>
-<br>
-<h3 style="text-align: center;">Lookbook 2</h3>
-<iframe src="https://albumizr.com/a/fZgJ" scrolling="no" frameborder="0" allowfullscreen="" width="100%" height="550"></iframe>
-<br>
-
-
-
-
-
-
-
-
-</div></div></div></div><div id="a18bddd77e45200423f268bc1162b54d" class="wb_element" data-plugin="CustomHtml" style=" overflow: hidden;"><div style="width: 100%; height: 100%; overflow-y: auto;"><style>
-html, body {
-   max-width: 100%;
-   overflow-x: hidden;
-}
-</style>
-</div></div></div></div></div></div><div id="a18bddd77e45218d158cecdb47eb5e23" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1785515024"></div></div></div></div></div><div id="wb_footer_a18bddd8a85d011b0a2fe2a90c538c8d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+)); ?><div class="clearfix"></div></div></div></div><div id="a18bddd77e441c676f07d6c1ed2746e4" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e441d26252a8a27e0cc089b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e441e59875ef302d40c9902" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/52c0651d75306a87ff391018120335f7_888x294_fit.png?ts=1785666966"></div></div></div></div></div></div></div><div id="a18bddd77e441f478049d63bfea38afb" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1785666967"></div></div></div></div></div></div></div><div id="wb_main_a18bddd8a85d011b0a2fe2a90c538c8d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a19fc204e5f60000bbc681546bd54931" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><main class="experience-page" role="main">
+
+    <!-- ============================================================
+        ELEMENT 1 — CONTEXT BLOCK
+    ============================================================ -->
+    <section aria-label="E1: CONTEXT BLOCK" class="fade-in">
+      <div class="context-block">
+        <p>SkipSchoolMakeMoney (SSMM) was a streetwear brand born out of evening shifts at the
+          Hampshire College media lab — no funding, no team, no formula. Over three years it grew
+          from one hand-drawn logo into a cult-like following spanning three continents &amp; hundreds of
+          orders per collection.</p>
+        <p>SSMM was never just a clothing line. It was underground streetwear built on story,
+          community, and relentless self-taught hustle — design, manufacturing, marketing, and
+          logistics, all run by one person with a vision.</p>
+        <p>George designed and released 20+ collections, pioneered viral marketing methods amassing 12,000+ followers, and managed manufacturing pipelines spanning the US, UK, and China — earning
+          recognition awards from startup accelerators and putting SSMM on the map of underground
+          streetwear, music and meme culture.</p>
+      </div>
+    </section>
+    
+    <!-- ============================================================
+        ELEMENT 2 — SNAPSHOT CARD
+    ============================================================ -->
+    <section aria-label="E2: SNAPSHOT CARD" class="fade-in">
+      <div class="snapshot-card" data-domain="growth">
+        <div class="snapshot-card__meta">
+    
+          <div class="snapshot-item snapshot-item--prominent">
+            <p class="snapshot-item__key">Role</p>
+            <p class="snapshot-item__value">Founder, Designer &amp; Operator</p>
+          </div>
+          <div class="snapshot-item snapshot-item--prominent">
+            <p class="snapshot-item__key">Type</p>
+            <p class="snapshot-item__value">Streetwear Apparel Brand</p>
+          </div>
+          <div class="snapshot-item">
+            <p class="snapshot-item__key">Timeframe</p>
+            <p class="snapshot-item__value">2016 – 2020</p>
+          </div>
+          <div class="snapshot-item">
+            <p class="snapshot-item__key">Location</p>
+            <p class="snapshot-item__value">Amherst, MA, United States</p>
+          </div>
+          <div class="snapshot-item">
+            <p class="snapshot-item__key">Links</p>
+            <p class="snapshot-item__value">
+              <a href="https://www.skipschoolmakemoney.com" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-globe2"></i> Official Webstore
+              </a>
+            </p>
+            <p style="padding-bottom: 10px;"></p>
+            <p class="snapshot-item__value">
+              <a href="https://www.instagram.com/skipschoolmakemoney" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-instagram"></i> Instagram Page
+              </a>
+            </p>
+          </div>
+    
+        </div>
+        <div class="snapshot-card__divider"></div>
+    
+        <p class="snapshot-card__highlights-label">Highlights</p>
+        <div class="snapshot-card__chips">
+          <span class="achievement-chip" data-domain="product">
+            <span class="achievement-chip__dot"></span>Designed 20+ collections, amounting to 200+ individual designs
+          </span>
+          <span class="achievement-chip" data-domain="product">
+            <span class="achievement-chip__dot"></span>Directed 25+ photo &amp; video shoots across 6 countries —  collaborating with photographers, models, and musicians
+          </span>
+          <span class="achievement-chip" data-domain="growth">
+            <span class="achievement-chip__dot"></span>Grew Instagram to 12,000+ followers at peak, driving 100s comments and 1000s of likes/post
+          </span>
+          <span class="achievement-chip" data-domain="growth">
+            <span class="achievement-chip__dot"></span>Pioneered guerilla Instagram growth strategies — including meme marketing, viral giveaways and influencer collaborations
+          </span>
+          <span class="achievement-chip" data-domain="growth">
+            <span class="achievement-chip__dot"></span>Ran paid ad campaigns across Instagram, Twitter, YouTube, and Snapchat
+          </span>
+          <span class="achievement-chip" data-domain="growth">
+            <span class="achievement-chip__dot"></span>Built and grew multiple Mailchimp mailing lists to 1000s of subscribers
+          </span>
+          <span class="achievement-chip" data-domain="growth">
+            <span class="achievement-chip__dot"></span>Negotiated promotional deals with influencers, media, and creators
+          </span>
+          <span class="achievement-chip" data-domain="product">
+            <span class="achievement-chip__dot"></span>Managed manufacturing across the US West and East coasts, later expanding to the UK and China
+          </span>
+          <span class="achievement-chip" data-domain="product">
+            <span class="achievement-chip__dot"></span>Organized supply chain, packaging, and shipping to serve customers across 3 continents
+          </span>
+          <span class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Built 3 complete redesigns of the Shopify storefront end-to-end
+          </span>
+          <span class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Built 2 complete redesigns of the Squarespace storefront end-to-end
+          </span>
+          <span class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Integrated manufacturing and shipping APIs to automate order fulfillment and tracking
+          </span>
+          <span class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Streamlined customer communications for abandoned carts, post-purchase follow-ups, and product launches
+          </span>
+          <span class="achievement-chip" data-domain="data">
+            <span class="achievement-chip__dot"></span>Set up and maintained Shopify, Mailchimp, and Google Analytics for marketing, sales, and analytics
+          </span>
+          <span class="achievement-chip" data-domain="growth">
+            <span class="achievement-chip__dot"></span>Won the VVM Startup Accelerator Award, earning funding, mentorship, and resources
+          </span>
+          <span class="achievement-chip" data-domain="growth">
+            <span class="achievement-chip__dot"></span>Won the Grinspoon Recognition Award for Entrepreneurial Spirit
+          </span>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ============================================================
+        ELEMENT 3 — IN NUMBERS / STAT COUNTER
+    ============================================================ -->
+    <section class="stat-counter-section" aria-label="E3: IN NUMBERS">
+      <div class="stat-counter">
+    
+        <div class="stat-counter__item" data-target="200" data-suffix="+" data-domain="product">
+          <span class="stat-counter__number" aria-live="polite">0</span>
+          <span class="stat-counter__label">Designs released</span>
+        </div>
+    
+        <div class="stat-counter__item" data-target="12" data-suffix="K+" data-domain="growth">
+          <span class="stat-counter__number" aria-live="polite">0</span>
+          <span class="stat-counter__label">Instagram followers at peak</span>
+        </div>
+    
+        <div class="stat-counter__item" data-target="100" data-suffix="K+" data-domain="growth">
+          <span class="stat-counter__number" aria-live="polite">0</span>
+          <span class="stat-counter__label">Engagements generated</span>
+        </div>
+    
+        <div class="stat-counter__item" data-target="1000" data-suffix="+" data-domain="engineering">
+          <span class="stat-counter__number" aria-live="polite">0</span>
+          <span class="stat-counter__label">Orders fulfilled</span>
+        </div>
+    
+      </div>
+    </section>
+    
+    <!-- ============================================================
+        ELEMENT 4 — STACK BADGE GRID
+    ============================================================ -->
+    <section aria-label="E4: STACK BADGE GRID" class="fade-in">
+      <div class="section-label">
+        <span class="section-label__text">Stack</span>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+      <div class="stack-grid">
+    
+        <!-- Design & Creative -->
+        <div class="stack-group">
+          <p class="stack-group__label">Design &amp; Creative</p>
+          <div class="stack-group__items">
+            <span class="stack-badge"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Crect%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%224%22%20fill%3D%22%23330000%22%2F%3E%3Ctext%20x%3D%225%22%20y%3D%2216%22%20font-size%3D%2210%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%23FF9A00%22%3EAi%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Adobe Illustrator" width="18" height="18" loading="lazy"><span class="stack-badge__name">Illustrator</span></span>
+            <span class="stack-badge"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Crect%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%224%22%20fill%3D%22%23001E36%22%2F%3E%3Ctext%20x%3D%225%22%20y%3D%2216%22%20font-size%3D%2210%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%2331A8FF%22%3EPs%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Adobe Photoshop" width="18" height="18" loading="lazy"><span class="stack-badge__name">Photoshop</span></span>
+            <span class="stack-badge"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Crect%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%224%22%20fill%3D%22%2300005B%22%2F%3E%3Ctext%20x%3D%225%22%20y%3D%2216%22%20font-size%3D%2210%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%239999FF%22%3EAe%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Adobe After Effects" width="18" height="18" loading="lazy"><span class="stack-badge__name">After Effects</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/davinciresolve" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">DaVinci Resolve</span></span>
+            <span class="stack-badge">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%2300005B%22/%3E%3Ctext%20x%3D%2252%22%20y%3D%22164%22%20font-size%3D%22104%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%239999FF%22%3EPr%3C/text%3E%3C/svg%3E" alt="Adobe Premiere Pro" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Premiere Pro</span>
+            </span>
+            <span class="stack-badge"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Crect%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%224%22%20fill%3D%22%2300005B%22%2F%3E%3Ctext%20x%3D%225%22%20y%3D%2216%22%20font-size%3D%2210%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%239999FF%22%3EAu%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Adobe Audition" width="18" height="18" loading="lazy"><span class="stack-badge__name">Audition</span></span>
+          </div>
+        </div>
+    
+        <!-- Marketing & Growth -->
+        <div class="stack-group">
+          <p class="stack-group__label">Marketing &amp; Growth</p>
+          <div class="stack-group__items">
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/googleanalytics/e37400" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Google Analytics</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/meta/0081fb" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Meta Ads</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/snapchat" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Snapchat Ads</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/x/000000" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Twitter Ads</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/youtube/ff0000" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">YouTube Studio</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/tiktok/000000" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">TikTok Ads (Beta)</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/mailchimp/000000" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Mailchimp</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/buffer/000000" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Buffer</span></span>
+          </div>
+        </div>
+    
+        <!-- Web & Commerce -->
+        <div class="stack-group">
+          <p class="stack-group__label">Web &amp; Commerce</p>
+          <div class="stack-group__items">
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/shopify/96bf48" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Shopify</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/squarespace/000000" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Squarespace</span></span>
+          </div>
+        </div>
+    
+        <!-- Languages -->
+        <div class="stack-group">
+          <p class="stack-group__label">Languages</p>
+          <div class="stack-group__items">
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/html5/e34f26" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">HTML</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/css/1572b6" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">CSS</span></span>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    
+    <!-- ============================================================
+         ELEMENT 5 — ABILITY CARD GRID
+    ============================================================ -->
+    <section aria-label="E5: ABILITY CARD GRID" class="fade-in">
+      <div class="section-label">
+        <span class="section-label__text">Abilities</span>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+    
+      <div class="ability-legend">
+        <span class="ability-legend__item ability-legend__item--engineering">
+          <span class="ability-legend__dot"></span>Engineering
+        </span>
+        <span class="ability-legend__item ability-legend__item--product">
+          <span class="ability-legend__dot"></span>Product
+        </span>
+        <span class="ability-legend__item ability-legend__item--growth">
+          <span class="ability-legend__dot"></span>Growth
+        </span>
+        <span class="ability-legend__item ability-legend__item--data">
+          <span class="ability-legend__dot"></span>Data
+        </span>
+      </div>
+    
+      <div class="ability-grid">
+    
+        <div class="ability-card fade-in" data-domain="product">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="shirt"></i></div>
+          <h3 class="ability-card__title">Brand &amp; Collection Design</h3>
+          <p class="ability-card__desc">Built the SSMM identity from a single front-and-back logo into a full underground
+            streetwear universe, designing and releasing 20+ collections that grew into several hundred individual graphics,
+            garments, and visual concepts. Every drop had to feel culturally sharp, visually distinct, and native to the
+            world of underground fashion, music, and meme culture.</p>
+          <div class="ability-card__tags">
+            <span class="ability-tag">Apparel Graphic Design</span>
+            <span class="ability-tag">Collection Development</span>
+            <span class="ability-tag">Production Coordination</span>
+          </div>
+        </div>
+    
+        <div class="ability-card fade-in" data-domain="growth">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="trending-up"></i></div>
+          <h3 class="ability-card__title">Viral Growth &amp; Audience Building</h3>
+          <p class="ability-card__desc">Grew SSMM to 12,000+ Instagram followers at peak by pioneering aggressive organic
+            growth strategies built on meme marketing, giveaways, influencer collaborations, and constant experimentation
+            with what actually triggered engagement. The result was a highly active audience that drove hundreds to
+            thousands of comments per post, thousands of likes, and real demand across multiple drops.</p>
+          <div class="ability-card__tags">
+            <span class="ability-tag">Organic Growth Strategy</span>
+            <span class="ability-tag">Meme &amp; Culture Marketing</span>
+            <span class="ability-tag">Campaign Automation</span>
+          </div>
+        </div>
+    
+        <div class="ability-card fade-in" data-domain="growth">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="megaphone"></i></div>
+          <h3 class="ability-card__title">Influencer, Music &amp; Culture Positioning</h3>
+          <p class="ability-card__desc">Built relationships across the underground creative scene, working with musicians,
+            influencers, photographers, and content creators whose audiences aligned with the brand’s identity.
+            Collaborations and organic placements with names like Lil Peep, Pouya, Fat Nick, CA$HRINA, Lil Johnnie, and others
+            helped position SSMM inside the cultural conversation rather than outside it as just another apparel shop.</p>
+          <div class="ability-card__tags">
+            <span class="ability-tag">Influencer Outreach</span>
+            <span class="ability-tag">Partnership Development</span>
+            <span class="ability-tag">Cultural Positioning</span>
+          </div>
+        </div>
+    
+        <div class="ability-card fade-in" data-domain="product">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="camera"></i></div>
+          <h3 class="ability-card__title">Creative Direction &amp; Content Production</h3>
+          <p class="ability-card__desc">Directed 25+ photo and video shoots across six countries, coordinating
+            photographers, models, locations, styling, and deliverables to give each collection a world around it. This
+            turned SSMM from a product catalog into a lifestyle brand with visuals strong enough to travel across feeds,
+            campaigns, and fan communities.</p>
+          <div class="ability-card__tags">
+            <span class="ability-tag">Production Coordination</span>
+            <span class="ability-tag">Photo &amp; Video Editing</span>
+            <span class="ability-tag">Product Photography</span>
+            <span class="ability-tag">Campaign Asset Production</span>
+          </div>
+        </div>
+    
+        <div class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="shopping-bag"></i></div>
+          <h3 class="ability-card__title">Storefronts, Fulfillment &amp; Commerce Ops</h3>
+          <p class="ability-card__desc">Built and rebuilt the storefront stack across Squarespace and Shopify, creating five
+            end-to-end site redesigns while handling the operational layer behind the scenes. On the back end, I coordinated
+            manufacturing across the US East and West coasts before expanding into the UK and China, and managed packaging,
+            shipping, and customer fulfillment for orders reaching three continents.</p>
+          <div class="ability-card__tags">
+            <span class="ability-tag">E-commerce Operations</span>
+            <span class="ability-tag">Fulfillment Coordination</span>
+            <span class="ability-tag">Customer Experience Management</span>
+          </div>
+        </div>
+    
+        <div class="ability-card fade-in" data-domain="data">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="bar-chart-3"></i></div>
+          <h3 class="ability-card__title">Campaign Tracking &amp; Iteration</h3>
+          <p class="ability-card__desc">Used platform analytics, mailing lists, storefront behavior, and campaign feedback
+            loops to make SSMM more intelligent over time — what to launch, how to message it, where to push it, and what
+            audiences were responding. That included maintaining Shopify, Mailchimp, and Google Analytics as the decision
+            layer behind launches, promotions, post-purchase communication, and customer retention.</p>
+          <div class="ability-card__tags">
+            <span class="ability-tag">Performance Analytics</span>
+            <span class="ability-tag">Feedback Loop Optimization</span>
+            <span class="ability-tag">Campaign Strategy</span>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    
+    <!-- ============================================================
+        ELEMENT 6 — WORKS CARD GRID
+    ============================================================ -->
+    <section aria-label="E6: WORKS CARD GRID" class="fade-in">
+      <div class="section-label">
+        <span class="section-label__text">Works</span>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+    
+      <div class="evidence-grid">
+    
+        <!-- Card 1 — Product / collections -->
+        <div class="evidence-card" data-domain="product">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_1.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_2.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_12.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_6.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_15.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_16.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_9.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_10.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_11.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_3.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_7.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_8.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_14.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_13.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 4"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 5"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 6"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 7"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 8"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 9"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 10"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 11"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 12"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 13"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 14"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Product
+            </span>
+            <p class="evidence-card__title">Collection Design System</p>
+            <ul class="evidence-card__bullets">
+              <li>Designed and released 20 collections, amounting to roughly 200 individual designs across the brand's lifetime</li>
+              <li>Built SSMM from a single logo into a full underground streetwear identity with recurring visual language and drop narratives</li>
+              <li>Created apparel graphics, product concepts, and release themes tailored to underground fashion, music, and meme culture</li>
+              <li>Turned each drop into a distinct world rather than a disconnected set of garments</li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Card 2 — Product / creative direction -->
+        <div class="evidence-card" data-domain="product">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_10.jpg" alt="SkipSchoolMakeMoney photoshoot sample from Dreemland - Realistic Expectation, Unrealistic Results" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_11.jpg" alt="SkipSchoolMakeMoney photoshoot sample from Dreemland - Realistic Expectation, Unrealistic Results" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_8.jpg" alt="SkipSchoolMakeMoney photoshoot sample from Cxltures Photoshoot in Virginia" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_9.jpg" alt="SkipSchoolMakeMoney photoshoot sample from Cxltures Photoshoot in Virginia" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_6.jpg" alt="SkipSchoolMakeMoney photoshoot sample from Hidden Potential collection in Bulgaria" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_5.jpg" alt="SkipSchoolMakeMoney photoshoot sample from New York City photoshoot" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_4.jpg" alt="SkipSchoolMakeMoney photoshoot sample from New York City photoshoot" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_3.jpg" alt="SkipSchoolMakeMoney photoshoot sample from New York City photoshoot" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_1.jpg" alt="SkipSchoolMakeMoney photoshoot sample from Drop_1 Photoshoot shot by Dominic Sanchez in Amherst, MA, modeled by Yichao" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_2.jpg" alt="SkipSchoolMakeMoney photoshoot sample from Drop_1 Photoshoot shot by Dominic Sanchez in Massachusetts, modeled by Yichao" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_7.jpg" alt="SkipSchoolMakeMoney photoshoot sample from Drop_1 Photoshoot shot by Emanuelfromjanuary in California" width="600" height="338" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 4"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 5"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 6"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 7"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 8"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 9"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 10"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 11"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Product
+            </span>
+            <p class="evidence-card__title">Lookbooks, Shoots &amp; Visual Worldbuilding</p>
+            <ul class="evidence-card__bullets">
+              <li>Directed 25 photo and video shoots across 6 countries with photographers, models, musicians, and local creatives</li>
+              <li>Built campaign visuals that made SSMM feel like a lifestyle brand, not just an online store</li>
+              <li>Coordinated locations, styling, deliverables, and creative direction across international collaborators</li>
+              <li>Created assets strong enough to carry launches across feeds, ads, website pages, and fan reposts</li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Card 3 — Growth / meme marketing -->
+        <div class="evidence-card" data-domain="growth">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_6.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_1.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_9.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_2.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_11.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_3.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_10.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_4.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_5.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_8.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 4"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 5"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 6"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 7"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 8"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 9"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 10"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Growth
+            </span>
+            <p class="evidence-card__title">Meme Marketing &amp; Viral Growth Loops</p>
+            <ul class="evidence-card__bullets">
+              <li>Pioneered guerrilla Instagram growth strategies built on meme pages, giveaways, and high-frequency experimentation</li>
+              <li>Helped drive the brand from a few thousand followers to a peak above 12,000 on Instagram</li>
+              <li>Generated hundreds to thousands of comments per post and thousands of likes through culturally native content</li>
+              <li>Used fan participation and internet in-jokes as part of the actual brand engine, not just as promotion</li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Card 4 — Growth / influencer positioning -->
+        <div class="evidence-card" data-domain="growth">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_1.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Clout Cards, the baseball cards of rap culture - featuring rappers, musicians and influencers" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_2.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Clout Cards, the baseball cards of rap culture - featuring rappers, musicians and influencers" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-celebs_3.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Celebrities, showcasing various celebrities from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_3.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Clout Cards, the baseball cards of rap culture - featuring rappers, musicians and influencers" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-celebs_1.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Celebrities, showcasing various celebrities from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_4.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Clout Cards, the baseball cards of rap culture - featuring rappers, musicians and influencers" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_5.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Clout Cards, the baseball cards of rap culture - featuring rappers, musicians and influencers" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-celebs_2.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Celebrities, showcasing various celebrities from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_6.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Clout Cards, the baseball cards of rap culture - featuring rappers, musicians and influencers" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_7.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Clout Cards, the baseball cards of rap culture - featuring rappers, musicians and influencers" width="600" height="338" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 4"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 5"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 6"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 7"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 8"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 9"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 10"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Growth
+            </span>
+            <p class="evidence-card__title">Influencer &amp; Music-Culture Positioning</p>
+            <ul class="evidence-card__bullets">
+              <li>Built relationships with musicians, influencers, photographers, and creators whose audiences matched the SSMM identity</li>
+              <li>Negotiated promotional deals and organic placements with names including Lil Peep, Pouya, Fat Nick, and others</li>
+              <li>Positioned SSMM inside the 2016–19 underground streetwear conversation rather than outside it as a generic apparel shop</li>
+              <li>Used collaborations as trust-transfer mechanisms that moved both awareness and demand</li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Card 5 — Engineering / storefronts -->
+        <div class="evidence-card" data-domain="engineering">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-website_1.jpg" alt="SkipSchoolMakeMoney Shopify and Squarespace storefront design and e-commerce setup" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-website_3.jpg" alt="SkipSchoolMakeMoney Shopify and Squarespace storefront design and e-commerce setup" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-website_2.jpg" alt="SkipSchoolMakeMoney Shopify and Squarespace storefront design and e-commerce setup" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-website_4.jpg" alt="SkipSchoolMakeMoney Shopify and Squarespace storefront design and e-commerce setup" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-website_5.jpg" alt="SkipSchoolMakeMoney Shopify and Squarespace storefront design and e-commerce setup" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-website_6.jpg" alt="SkipSchoolMakeMoney Shopify and Squarespace storefront design and e-commerce setup" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-website_7.jpg" alt="SkipSchoolMakeMoney Shopify and Squarespace storefront design and e-commerce setup" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-website_8.jpg" alt="SkipSchoolMakeMoney Shopify and Squarespace storefront design and e-commerce setup" width="600" height="338" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 4"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 5"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 6"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 7"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 8"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Engineering
+            </span>
+            <p class="evidence-card__title">Storefront Builds &amp; Commerce Stack</p>
+            <ul class="evidence-card__bullets">
+              <li>Built 3 full Shopify redesigns and 2 complete Squarespace redesigns end-to-end</li>
+              <li>Created and managed the custom SSMM webstore as the operational center for launches, sales, and customer experience</li>
+              <li>Integrated e-commerce flows to support launches, cart recovery, post-purchase communication, and order tracking</li>
+              <li>Handled the technical layer of making a culture brand actually transact cleanly online</li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Card 6 — Engineering / operations -->
+        <div class="evidence-card" data-domain="engineering">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-shipping_1.jpg" alt="SkipSchoolMakeMoney manufacturing, packaging, shipping, and fulfillment operations extended across three continents, with manufacturing partners in the US, UK, and China" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-shipping_2.jpg" alt="SkipSchoolMakeMoney manufacturing, packaging, shipping, and fulfillment operations extended across three continents, with manufacturing partners in the US, UK, and China" width="600" height="338" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Engineering
+            </span>
+            <p class="evidence-card__title">Manufacturing, Fulfillment &amp; Logistics</p>
+            <ul class="evidence-card__bullets">
+              <li>Managed production across the US West Coast and East Coast before expanding manufacturing relationships into
+                the UK and China</li>
+              <li>Organized packaging, shipping, and customer fulfillment for roughly 1,000 orders worldwide</li>
+              <li>Built supply paths capable of serving customers across North America, Europe, and beyond</li>
+              <li>Translated a one-person brand into repeatable real-world operations across multiple production partners</li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Card 7 — Data -->
+        <div class="evidence-card" data-domain="data">
+          <div class="evidence-card__video">
+            <iframe src="https://www.youtube.com/embed/IrQYk78ExIY?si=57HdRotiCbDuZPu3&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;controls=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" title="SkipSchoolMakeMoney x YLLW Productions Collection Promo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <button class="evidence-card__sound-btn" data-sound-toggle aria-label="Toggle sound">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <line x1="23" y1="9" x2="17" y2="15" class="mute-line"></line>
+                <line x1="17" y1="9" x2="23" y2="15" class="mute-line"></line>
+              </svg>
+            </button>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Data
+            </span>
+            <p class="evidence-card__title">Analytics, CRM &amp; Launch Optimisation</p>
+            <ul class="evidence-card__bullets">
+              <li>Maintained Shopify, Mailchimp, and Google Analytics as the decision layer behind launches, promotions, and retention</li>
+              <li>Built and grew multiple mailing lists to thousands of subscribers</li>
+              <li>Tracked storefront behaviour, campaign response, and customer signals to refine messaging, timing, and offer structure</li>
+              <li>Used analytics to make launches smarter over time instead of relying on instinct alone</li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Card 8 — Growth / credibility -->
+        <div class="evidence-card" data-domain="growth">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-awards_1.jpg" alt="SkipSchoolMakeMoney entrepreneurial awards, startup recognition, and accelerator acceptance" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-awards_2.jpg" alt="SkipSchoolMakeMoney entrepreneurial awards, startup recognition, and accelerator acceptance" width="600" height="338" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Growth
+            </span>
+            <p class="evidence-card__title">Awards, Funding &amp; External Validation</p>
+            <ul class="evidence-card__bullets">
+              <li>Won the VVM Startup Accelerator Award, earning funding, mentorship, and business resources</li>
+              <li>Received the Grinspoon Recognition Award for Entrepreneurial Spirit</li>
+              <li>Used external validation to strengthen brand credibility beyond the immediate streetwear niche</li>
+              <li>Proved the project had enough commercial and cultural traction to be taken seriously by startup institutions</li>
+            </ul>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    
+    <!-- ============================================================
+        ELEMENT 7 — IN DEPTH ACCORDION
+    ============================================================ -->
+    <section aria-label="E7: IN DEPTH ACCORDION" class="fade-in">
+      <div class="section-label">
+        <span class="section-label__text">In Depth</span>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+    
+      <div class="story-accordion" role="list">
+    
+        <!-- Item 1: Growth — origin of meme marketing -->
+        <div class="story-accordion__item" data-domain="growth" role="listitem">
+          <button class="story-accordion__trigger" aria-expanded="true" aria-controls="story-panel-1">
+            <span class="story-accordion__trigger-left">
+              <span class="story-accordion__domain-tag">
+                <span class="story-accordion__domain-dot"></span>Growth
+              </span>
+              <span class="story-accordion__trigger-label">The Graduation Photo that Started a Movement</span>
+            </span>
+            <svg class="story-accordion__chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="story-accordion__body" id="story-panel-1" aria-hidden="false">
+            <div class="story-accordion__inner">
+              <div class="story-accordion__content">
+                <p>One of our earliest supporters wore an SSMM hoodie under his graduation gown and took his entire set of
+                  graduation photos in it — cap, gown, tassel, and a brand nobody had heard of hiding underneath. Someone
+                  posted the photos with the caption "this boy got a bright future ahead of him," and within days it was
+                  circulating across dozens of meme pages, splitting comment sections between people laughing and people
+                  genuinely offended on the kid's behalf.</p>
+                <p></p>
+                <div class="story-accordion__gallery">
+                  <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_originals_1.jpg" alt="SkipSchoolMakeMoney Fan wears SSMM Internet Tour Crewneck at his Graduation - photo meme that helped start SSMM meme marketing" width="100%" height="200" loading="lazy">
+                </div>
+                <p></p>
+                <p>That single post did something I didn't fully understand until later: it turned SSMM into a meme format
+                  rather than just a brand people wore. A second person wore SSMM in his yearbook photos, which spawned its
+                  own meme. Someone else wrapped their newborn baby brother in an SSMM hoodie and posted it, and the
+                  internet did the rest. I didn't write a single one of these memes — the audience did, on their own,
+                  unprompted.</p>
+                <p></p>
+                <div class="story-accordion__gallery">
+                  <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_originals_2.jpg" alt="SkipSchoolMakeMoney Fan wears SSMM Internet Tour Crewneck at his Graduation - photo meme that helped start SSMM meme marketing" width="100%" height="200" loading="lazy">
+                </div>
+                <p></p>
+                <p>Looking back, this is where the meme marketing engine actually started. Not from a campaign I planned,
+                  but from fans finding ways to insert the brand into their own lives that were funnier and more absurd than
+                  anything I could have scripted. Every future giveaway and meme push was really just me trying to feed that
+                  same energy back to the community that had already proven it existed.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Item 2: Product — Clout Cards -->
+        <div class="story-accordion__item" data-domain="product" role="listitem">
+          <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-2">
+            <span class="story-accordion__trigger-left">
+              <span class="story-accordion__domain-tag">
+                <span class="story-accordion__domain-dot"></span>Product
+              </span>
+              <span class="story-accordion__trigger-label">Baseball Cards for the Internet Age</span>
+            </span>
+            <svg class="story-accordion__chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="story-accordion__body" id="story-panel-2" aria-hidden="true">
+            <div class="story-accordion__inner">
+              <div class="story-accordion__content">
+                <p>Around SSMM's second year, at the peak of its run, I'd had the chance to meet and work with a growing
+                  list of names in the underground scene — Pouya, Fat Nick, Ghostemane, Lil Peep, TooPoor (Layla), Rae
+                  Sremmurd, and others. Somewhere in the middle of all that, an old childhood obsession resurfaced: I used
+                  to collect Yu-Gi-Oh cards, and something about the format stuck with me long after I'd stopped playing.
+                </p>
+                <p></p>
+                <div class="story-accordion__gallery">
+                  <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_1.jpg" alt="SkipSchoolMakeMoney Clout Cards - The Baseball Cards of Internet Culture" width="100%" height="200" loading="lazy">
+                </div>
+                <p></p>
+                <p>I pitched an idea to our biggest supporters: free "Clout Card" booster packs inside every order. Each
+                  card followed the classic trading-card layout — a candid or funny photo of a rapper, musician, or
+                  influencer on the front, with a set of "superpowers" underneath describing, in a hyperbolic and slightly
+                  sarcastic tone, what that person was actually known for in real life.</p>
+                <p></p>
+                <div class="story-accordion__gallery">
+                  <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_2.jpg" alt="SkipSchoolMakeMoney Clout Card featuring Lil Peep" width="47%" height="200" loading="lazy">
+                  <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_3.jpg" alt="SkipSchoolMakeMoney Clout Card featuring Matt Ox" width="47%" height="200" loading="lazy">
+                </div>
+                <p></p>
+                <p>What started as a joke between a handful of superfans grew into a full set — cards for the artists above,
+                  plus names like Gary Vee, Tai Lopez, and Ice Poseidon, and eventually cards for people inside the SSMM
+                  universe itself: our photographers, our models, and the meme pages that had helped build the brand's early
+                  audience. It turned every order into a small collectible moment, gave fans a reason to talk to each other
+                  about who they'd pulled, and folded the brand's own community into the same mythology as the celebrities
+                  it referenced.</p>
+                <p></p>
+                <div class="story-accordion__gallery">
+                  <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_6.jpg" alt="SkipSchoolMakeMoney Clout Card featuring Pouya" width="47%" height="200" loading="lazy">
+                  <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_5.jpg" alt="SkipSchoolMakeMoney Clout Card featuring Tai Lopez and Gary Vaynerchuk" width="47%" height="200" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Item 3: Growth — the missed meeting -->
+        <div class="story-accordion__item" data-domain="growth" role="listitem">
+          <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-3">
+            <span class="story-accordion__trigger-left">
+              <span class="story-accordion__domain-tag">
+                <span class="story-accordion__domain-dot"></span>Growth
+              </span>
+              <span class="story-accordion__trigger-label">The Meeting I Missed to a Flat Tire</span>
+            </span>
+            <svg class="story-accordion__chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="story-accordion__body" id="story-panel-3" aria-hidden="true">
+            <div class="story-accordion__inner">
+              <div class="story-accordion__content">
+                <p>Not every connection worked out, and this one still stings. I'd lined up a meeting with Tycho Burwell, a
+                  director who went on to shoot music videos for artists like Nettspend and Trippie Redd. On the drive down,
+                  I got a flat tire — and because I was a teenager in the US without a phone plan, I had no way to call
+                  Tycho to explain, and no way to call my insurance for help either.</p>
+                <p>A state trooper happened to stop, realized how far over my head I was, and helped me change the tire
+                  himself. He was kind about it, but he also told me straight: don't push on to New York on a spare, turn
+                  around and go home. So I did — heartbroken, because there was no way to salvage the meeting from the side
+                  of a highway with no working phone.</p>
+                <p>Tycho took the no-show personally, and understandably so from where he was sitting — we never spoke
+                  again. It's a small story in the grand scheme of the brand, but it's an honest one: running something
+                  alone means the gap between "almost" and "actually" sometimes comes down to things completely outside your
+                  control, like a tire and a phone plan you couldn't yet afford.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Item 4: Product — NYC photoshoot -->
+        <div class="story-accordion__item" data-domain="product" role="listitem">
+          <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-4">
+            <span class="story-accordion__trigger-left">
+              <span class="story-accordion__domain-tag">
+                <span class="story-accordion__domain-dot"></span>Product
+              </span>
+              <span class="story-accordion__trigger-label">Alone in Times Square with Two Suitcases Full of Clothes</span>
+            </span>
+            <svg class="story-accordion__chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="story-accordion__body" id="story-panel-4" aria-hidden="true">
+            <div class="story-accordion__inner">
+              <div class="story-accordion__content">
+                <p>My first solo trip to New York City was for a photoshoot. I'd had my driver's license for barely a year,
+                  I'd been in the US for less than two, and I drove three and a half hours from a small college town
+                  straight into Times Square traffic with two suitcases full of clothes in the back seat. I found street
+                  parking on a busy Brooklyn block — next to a fire hydrant, because it was the only open spot. Only
+                  later did I find out why fire hydrant spots aren't taken once I saw the ticket.</p>
+                <p>No food, no water, no local contacts, and a budget too tight to absorb surprises. But I met Alexis Conti,
+                  the photographer, and her model — who turned out to be an incredible musician in his own right. Alexis was
+                  great friends and the photographer for rising NYC rapper CASHRINA. So, I was quietly
+                  starstruck the entire shoot while trying to act like directing a shoot in Times Square was a completely
+                  normal Tuesday for me.</p>
+                <p>Despite every logistical thing working against it, the shoot itself was one of the best days of the
+                  brand's run. The photos from that day are still some of the strongest in SSMM's entire catalog — proof
+                  that resourcefulness and a good eye can outperform budget, connections, and experience combined.</p>
+                <div class="story-accordion__gallery">
+                  <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_3.jpg" alt="SkipSchoolMakeMoney New York City photoshoot" width="280" height="200" loading="lazy">
+                  <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_4.jpg" alt="SkipSchoolMakeMoney New York City photoshoot" width="280" height="200" loading="lazy">
+                  <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_5.jpg" alt="SkipSchoolMakeMoney New York City photoshoot" width="280" height="200" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+
+
+</main></div></div><div id="a18bddd77e45218d158cecdb47eb5e23" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1785666967"></div></div></div></div></div><div id="wb_footer_a18bddd8a85d011b0a2fe2a90c538c8d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -625,7 +2924,7 @@ html, body {
 
 <p class="wb-stl-footer" style="text-align: center;"><a data-_="Link" href="anabolickmusick.com" target="_blank" title="anabolic musick's official website">anabolickmusick.com</a></p>
 </div><div id="a18bddd77e4a320a360cd08aa5891d23" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: center;"><span style="color:rgba(255,255,255,1);">© 2024 <a href="https://www.georgedreemer.com">G</a><a href="https://www.dreemer.xyz">eorge Dreemer</a></span></p>
-</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1785515024"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
+</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1785666967"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
 			$(function() {
 				var footer = $(".wb_footer");
 				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
@@ -639,8 +2938,172 @@ html, body {
 .image-height-mod {
 height: 100%;
 }
-</style></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
-	<script src="js/common-bundle.js?ts=20260731192341" type="text/javascript" defer></script>{{hr_out}}<script>
+</style><script data-custom-script="true">
+    // ── Lucide icons ──────────────────────────────────────────────
+    (function () {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+        return;
+      }
+
+      const lucideScript = document.querySelector('script[src*="lucide"]');
+      if (lucideScript) {
+        lucideScript.addEventListener('load', () => {
+          if (typeof lucide !== 'undefined') lucide.createIcons();
+        });
+      }
+    })();
+
+    // ── Slideshow ──────────────────────────────────────────────
+    document.querySelectorAll('.evidence-card__slides').forEach(slider => {
+      const slides = slider.querySelectorAll('.evidence-card__slide');
+      const dots = slider.querySelectorAll('.evidence-card__slide-dot');
+      if (!slides.length || !dots.length) return;
+
+      let current = 0;
+      let timer;
+
+      function goTo(n) {
+        slides[current].classList.remove('is-active');
+        dots[current].classList.remove('is-active');
+        current = (n + slides.length) % slides.length;
+        slides[current].classList.add('is-active');
+        dots[current].classList.add('is-active');
+      }
+
+      function start() {
+        if (slides.length > 1) timer = setInterval(() => goTo(current + 1), 4000);
+      }
+
+      function stop() {
+        clearInterval(timer);
+      }
+
+      dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => {
+          stop();
+          goTo(i);
+          start();
+        });
+      });
+
+      slider.addEventListener('mouseenter', stop);
+      slider.addEventListener('mouseleave', start);
+      start();
+    });
+
+
+    // ── Sound toggle (YouTube iframes) ─────────────────────────
+    document.querySelectorAll('[data-sound-toggle]').forEach(btn => {
+      let muted = true;
+      const iframe = btn.closest('.evidence-card__video')?.querySelector('iframe');
+      if (!iframe) return;
+
+      btn.addEventListener('click', () => {
+        muted = !muted;
+        const src = iframe.src;
+        iframe.src = muted
+          ? src.replace('&mute=0', '&mute=1')
+          : src.replace('&mute=1', '&mute=0');
+
+        const svg = btn.querySelector('svg');
+        if (!svg) return;
+
+        svg.innerHTML = muted
+          ? `<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15" class="mute-line"/><line x1="17" y1="9" x2="23" y2="15" class="mute-line"/>`
+          : `<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>`;
+      });
+    });
+
+    // ── Accordion ─────────────────────────────────────────────────
+    document.querySelectorAll('.story-accordion').forEach(accordion => {
+      const triggers = accordion.querySelectorAll('.story-accordion__trigger');
+
+      triggers.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const panelId = btn.getAttribute('aria-controls');
+          const panel = panelId ? document.getElementById(panelId) : null;
+          const isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+          triggers.forEach(otherBtn => {
+            const otherPanelId = otherBtn.getAttribute('aria-controls');
+            const otherPanel = otherPanelId ? document.getElementById(otherPanelId) : null;
+
+            otherBtn.setAttribute('aria-expanded', 'false');
+            if (otherPanel) otherPanel.setAttribute('aria-hidden', 'true');
+          });
+
+          if (!isOpen) {
+            btn.setAttribute('aria-expanded', 'true');
+            if (panel) panel.setAttribute('aria-hidden', 'false');
+          }
+        });
+      });
+    });
+
+    // ── Stat counter animation ────────────────────────────────────
+    (function () {
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      function easeOut(t) {
+        return 1 - Math.pow(1 - t, 3);
+      }
+
+      function animateCounter(item) {
+        const numberEl = item.querySelector('.stat-counter__number');
+        const target = parseInt(item.dataset.target, 10);
+        const prefix = item.dataset.prefix || '';
+        const suffix = item.dataset.suffix || '';
+        const duration = 1200;
+        const start = performance.now();
+
+        if (!numberEl || Number.isNaN(target)) return;
+
+        if (prefersReduced) {
+          numberEl.textContent = prefix + target + suffix;
+          return;
+        }
+
+        function tick(now) {
+          const elapsed = now - start;
+          const progress = Math.min(elapsed / duration, 1);
+          const value = Math.round(easeOut(progress) * target);
+          numberEl.textContent = prefix + value + suffix;
+
+          if (progress < 1) {
+            requestAnimationFrame(tick);
+          }
+        }
+
+        requestAnimationFrame(tick);
+      }
+
+      const items = document.querySelectorAll('.stat-counter__item');
+      if (!items.length) return;
+
+      if (!('IntersectionObserver' in window)) {
+        items.forEach(item => {
+          item.classList.add('is-visible');
+          animateCounter(item);
+        });
+        return;
+      }
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+
+          const item = entry.target;
+          item.classList.add('is-visible');
+          animateCounter(item);
+          observer.unobserve(item);
+        });
+      }, { threshold: 0.3 });
+
+      items.forEach(item => observer.observe(item));
+    })();
+</script></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
+	<script src="js/common-bundle.js?ts=20260802133603" type="text/javascript" defer></script>{{hr_out}}<script>
     document.addEventListener('DOMContentLoaded', function () {
         window._spDefer.done();
     });

@@ -71,6 +71,13 @@
 			'file' => 'a19f5ae42c81009e68be5623804df9af.php',
 			'controllers' => array(),
 			'type' => 0
+		),
+		array(
+			'id' => 'a19fc1fe9132006814d8c14872db06eb',
+			'alias' => 'OLD-skipschoolmakemoney',
+			'file' => 'a19fc1fe9132006814d8c14872db06eb.php',
+			'controllers' => array(),
+			'type' => 0
 		)
 	);
 	$forms = array(
@@ -145,7 +152,7 @@
 	$langs = null;
 	$def_lang = null;
 	$base_lang = 'en';
-	$site_id = 'd5f4545a';
+	$site_id = 'b66c425e';
 	${'sitemapUrls'} = array(
 		'https://georgedreemer.com/',
 		'https://georgedreemer.com/skipschoolmakemoney',
