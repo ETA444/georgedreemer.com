@@ -44,12 +44,11 @@
       --color-text: #1a1814;
       --color-text-muted: #5a5750;
       --color-text-faint: #9a9590;
-      --color-accent: #bf7bff; /* legacy - kept for CEFR badges and cert pills only */
-      --color-accent-dim: rgba(191, 123, 255, 0.12);
-      --color-primary: #01696f;
-      --color-blue: #006494;
-      --color-gold: #d19900;
-      --color-orange: #da7101;
+      --color-primary: #c80d00; /* primary color is the brand color if applicable default: #01696f */
+      --color-domain-engineering: #014a6f;
+      --color-domain-data: #00a59a;
+      --color-domain-product: #d19900;
+      --color-domain-growth: #ca5100;
       --space-1: .25rem;
       --space-2: .5rem;
       --space-3: .75rem;
@@ -324,24 +323,26 @@
       border-top: 2px solid var(--color-border);
       border-radius: var(--radius-lg);
       padding: var(--space-6) var(--space-8);
-    }
-
-    /* Domain top-border — mirrors E5 card system */
-    .snapshot-card[data-domain="engineering"] {
       border-top-color: var(--color-primary);
     }
 
+    /* Domain top-border — mirrors E5 card system
+    .snapshot-card[data-domain="engineering"] {
+      border-top-color: var(--color-domain-engineering);
+    }
+
     .snapshot-card[data-domain="data"] {
-      border-top-color: var(--color-blue);
+      border-top-color: var(--color-domain-data);
     }
 
     .snapshot-card[data-domain="product"] {
-      border-top-color: var(--color-gold);
+      border-top-color: var(--color-domain-product);
     }
 
     .snapshot-card[data-domain="growth"] {
-      border-top-color: var(--color-orange);
+      border-top-color: var(--color-domain-growth);
     }
+    */
 
     .snapshot-card__meta {
       display: grid;
@@ -378,7 +379,7 @@
       font-weight: 600;
     }
 
-    /* Links — retired purple, now neutral underline */
+    /* Links */
     .snapshot-item__value a {
       color: var(--color-text);
       border-bottom: 1px solid var(--color-border);
@@ -425,41 +426,42 @@
       height: 6px;
       border-radius: 50%;
       flex-shrink: 0;
-      background: var(--color-text-faint); /* fallback if no domain set */
+      background: var(--color-primary); /* fallback if no domain set */
     }
 
     /* Domain-colored dots — same four colors, same system */
     .achievement-chip[data-domain="engineering"] .achievement-chip__dot {
-      background: var(--color-primary);
+      background: var(--color-domain-engineering);
     }
 
     .achievement-chip[data-domain="data"] .achievement-chip__dot {
-      background: var(--color-blue);
+      background: var(--color-domain-data);
     }
 
     .achievement-chip[data-domain="product"] .achievement-chip__dot {
-      background: var(--color-gold);
+      background: var(--color-domain-product);
     }
 
     .achievement-chip[data-domain="growth"] .achievement-chip__dot {
-      background: var(--color-orange);
+      background: var(--color-domain-growth);
     }
+
 
     /* Subtle chip tint matching domain */
     .achievement-chip[data-domain="engineering"] {
-      border-color: color-mix(in srgb, var(--color-primary) 20%, transparent);
+      border-color: color-mix(in srgb, var(--color-domain-engineering) 20%, transparent);
     }
 
     .achievement-chip[data-domain="data"] {
-      border-color: color-mix(in srgb, var(--color-blue) 20%, transparent);
+      border-color: color-mix(in srgb, var(--color-domain-data) 20%, transparent);
     }
 
     .achievement-chip[data-domain="product"] {
-      border-color: color-mix(in srgb, var(--color-gold) 20%, transparent);
+      border-color: color-mix(in srgb, var(--color-domain-product) 20%, transparent);
     }
 
     .achievement-chip[data-domain="growth"] {
-      border-color: color-mix(in srgb, var(--color-orange) 20%, transparent);
+      border-color: color-mix(in srgb, var(--color-domain-growth) 20%, transparent);
     }
 
     /* ── ELEMENT 3 — IN NUMBERS / STAT COUNTER ─────────────────── */
@@ -496,19 +498,19 @@
 
     /* Domain color on the number */
     .stat-counter__item[data-domain="engineering"] .stat-counter__number {
-      color: var(--color-primary);
+      color: var(--color-domain-engineering);
     }
 
     .stat-counter__item[data-domain="data"] .stat-counter__number {
-      color: var(--color-blue);
+      color: var(--color-domain-data);
     }
 
     .stat-counter__item[data-domain="product"] .stat-counter__number {
-      color: var(--color-gold);
+      color: var(--color-domain-product);
     }
 
     .stat-counter__item[data-domain="growth"] .stat-counter__number {
-      color: var(--color-orange);
+      color: var(--color-domain-growth);
     }
 
     .stat-counter__label {
@@ -901,35 +903,35 @@
 
     /* ── Domain accents ───────────────────────────────────── */
     .ability-card[data-domain="engineering"] {
-      border-top: 2px solid var(--color-primary);
+      border-top: 2px solid var(--color-domain-engineering);
     }
 
     .ability-card[data-domain="engineering"] .ability-card__icon {
-      color: var(--color-primary);
+      color: var(--color-domain-engineering);
     }
 
     .ability-card[data-domain="data"] {
-      border-top: 2px solid var(--color-blue);
+      border-top: 2px solid var(--color-domain-data);
     }
 
     .ability-card[data-domain="data"] .ability-card__icon {
-      color: var(--color-blue);
+      color: var(--color-domain-data);
     }
 
     .ability-card[data-domain="product"] {
-      border-top: 2px solid var(--color-gold);
+      border-top: 2px solid var(--color-domain-product);
     }
 
     .ability-card[data-domain="product"] .ability-card__icon {
-      color: var(--color-gold);
+      color: var(--color-domain-product);
     }
 
     .ability-card[data-domain="growth"] {
-      border-top: 2px solid var(--color-orange);
+      border-top: 2px solid var(--color-domain-growth);
     }
 
     .ability-card[data-domain="growth"] .ability-card__icon {
-      color: var(--color-orange);
+      color: var(--color-domain-growth);
     }
 
     /* ── Legend ───────────────────────────────────────────── */
@@ -960,43 +962,43 @@
     }
 
     .ability-legend__item--engineering {
-      color: var(--color-primary);
-      background: color-mix(in srgb, var(--color-primary) 10%, transparent);
-      border-color: color-mix(in srgb, var(--color-primary) 25%, transparent);
+      color: var(--color-domain-engineering);
+      background: color-mix(in srgb, var(--color-domain-engineering) 10%, transparent);
+      border-color: color-mix(in srgb, var(--color-domain-engineering) 25%, transparent);
     }
 
     .ability-legend__item--engineering .ability-legend__dot {
-      background: var(--color-primary);
+      background: var(--color-domain-engineering);
     }
 
     .ability-legend__item--data {
-      color: var(--color-blue);
-      background: color-mix(in srgb, var(--color-blue) 10%, transparent);
-      border-color: color-mix(in srgb, var(--color-blue) 25%, transparent);
+      color: var(--color-domain-data);
+      background: color-mix(in srgb, var(--color-domain-data) 10%, transparent);
+      border-color: color-mix(in srgb, var(--color-domain-data) 25%, transparent);
     }
 
     .ability-legend__item--data .ability-legend__dot {
-      background: var(--color-blue);
+      background: var(--color-domain-data);
     }
 
     .ability-legend__item--product {
-      color: var(--color-gold);
-      background: color-mix(in srgb, var(--color-gold) 10%, transparent);
-      border-color: color-mix(in srgb, var(--color-gold) 25%, transparent);
+      color: var(--color-domain-product);
+      background: color-mix(in srgb, var(--color-domain-product) 10%, transparent);
+      border-color: color-mix(in srgb, var(--color-domain-product) 25%, transparent);
     }
 
     .ability-legend__item--product .ability-legend__dot {
-      background: var(--color-gold);
+      background: var(--color-domain-product);
     }
 
     .ability-legend__item--growth {
-      color: var(--color-orange);
-      background: color-mix(in srgb, var(--color-orange) 10%, transparent);
-      border-color: color-mix(in srgb, var(--color-orange) 25%, transparent);
+      color: var(--color-domain-growth);
+      background: color-mix(in srgb, var(--color-domain-growth) 10%, transparent);
+      border-color: color-mix(in srgb, var(--color-domain-growth) 25%, transparent);
     }
 
     .ability-legend__item--growth .ability-legend__dot {
-      background: var(--color-orange);
+      background: var(--color-domain-growth);
     }
 
     /* ── E6: WORKS GRID / EVIDENCE CARDS ───────────────────────────────── */
@@ -1024,19 +1026,19 @@
 
     /* ── Domain left-border threading from E4 ────────────────── */
     .evidence-card[data-domain="engineering"] {
-      border-left-color: var(--color-primary);
+      border-left-color: var(--color-domain-engineering);
     }
 
     .evidence-card[data-domain="data"] {
-      border-left-color: var(--color-blue);
+      border-left-color: var(--color-domain-data);
     }
 
     .evidence-card[data-domain="product"] {
-      border-left-color: var(--color-gold);
+      border-left-color: var(--color-domain-product);
     }
 
     .evidence-card[data-domain="growth"] {
-      border-left-color: var(--color-orange);
+      border-left-color: var(--color-domain-growth);
     }
 
     /* ── Domain tag pill (above title in body) ───────────────── */
@@ -1060,35 +1062,35 @@
     }
 
     .evidence-card[data-domain="engineering"] .evidence-card__domain-tag {
-      color: var(--color-primary);
+      color: var(--color-domain-engineering);
     }
 
     .evidence-card[data-domain="engineering"] .evidence-card__domain-tag-dot {
-      background: var(--color-primary);
+      background: var(--color-domain-engineering);
     }
 
     .evidence-card[data-domain="data"] .evidence-card__domain-tag {
-      color: var(--color-blue);
+      color: var(--color-domain-data);
     }
 
     .evidence-card[data-domain="data"] .evidence-card__domain-tag-dot {
-      background: var(--color-blue);
+      background: var(--color-domain-data);
     }
 
     .evidence-card[data-domain="product"] .evidence-card__domain-tag {
-      color: var(--color-gold);
+      color: var(--color-domain-product);
     }
 
     .evidence-card[data-domain="product"] .evidence-card__domain-tag-dot {
-      background: var(--color-gold);
+      background: var(--color-domain-product);
     }
 
     .evidence-card[data-domain="growth"] .evidence-card__domain-tag {
-      color: var(--color-orange);
+      color: var(--color-domain-growth);
     }
 
     .evidence-card[data-domain="growth"] .evidence-card__domain-tag-dot {
-      background: var(--color-orange);
+      background: var(--color-domain-growth);
     }
 
     /* ── VARIANT A: Single image ─────────────────────────────── */
@@ -1189,19 +1191,19 @@
 
     /* Domain-colored active dot */
     .evidence-card[data-domain="engineering"] .evidence-card__slide-dot.is-active {
-      background: var(--color-primary);
+      background: var(--color-domain-engineering);
     }
 
     .evidence-card[data-domain="data"] .evidence-card__slide-dot.is-active {
-      background: var(--color-blue);
+      background: var(--color-domain-data);
     }
 
     .evidence-card[data-domain="product"] .evidence-card__slide-dot.is-active {
-      background: var(--color-gold);
+      background: var(--color-domain-product);
     }
 
     .evidence-card[data-domain="growth"] .evidence-card__slide-dot.is-active {
-      background: var(--color-orange);
+      background: var(--color-domain-growth);
     }
 
     /* ── VARIANT C: Video (YouTube iframe or <video> file) ───── */
@@ -1359,35 +1361,35 @@
     }
 
     .story-accordion__item[data-domain="engineering"] .story-accordion__domain-tag {
-      color: var(--color-primary);
+      color: var(--color-domain-engineering);
     }
 
     .story-accordion__item[data-domain="engineering"] .story-accordion__domain-dot {
-      background: var(--color-primary);
+      background: var(--color-domain-engineering);
     }
 
     .story-accordion__item[data-domain="data"] .story-accordion__domain-tag {
-      color: var(--color-blue);
+      color: var(--color-domain-data);
     }
 
     .story-accordion__item[data-domain="data"] .story-accordion__domain-dot {
-      background: var(--color-blue);
+      background: var(--color-domain-data);
     }
 
     .story-accordion__item[data-domain="product"] .story-accordion__domain-tag {
-      color: var(--color-gold);
+      color: var(--color-domain-product);
     }
 
     .story-accordion__item[data-domain="product"] .story-accordion__domain-dot {
-      background: var(--color-gold);
+      background: var(--color-domain-product);
     }
 
     .story-accordion__item[data-domain="growth"] .story-accordion__domain-tag {
-      color: var(--color-orange);
+      color: var(--color-domain-growth);
     }
 
     .story-accordion__item[data-domain="growth"] .story-accordion__domain-dot {
-      background: var(--color-orange);
+      background: var(--color-domain-growth);
     }
 
     .story-accordion__chevron {
@@ -1419,19 +1421,19 @@
 
     /* Domain left-border on open panel */
     .story-accordion__item[data-domain="engineering"] .story-accordion__body[aria-hidden="false"] {
-      border-left-color: var(--color-primary);
+      border-left-color: var(--color-domain-engineering);
     }
 
     .story-accordion__item[data-domain="data"] .story-accordion__body[aria-hidden="false"] {
-      border-left-color: var(--color-blue);
+      border-left-color: var(--color-domain-data);
     }
 
     .story-accordion__item[data-domain="product"] .story-accordion__body[aria-hidden="false"] {
-      border-left-color: var(--color-gold);
+      border-left-color: var(--color-domain-product);
     }
 
     .story-accordion__item[data-domain="growth"] .story-accordion__body[aria-hidden="false"] {
-      border-left-color: var(--color-orange);
+      border-left-color: var(--color-domain-growth);
     }
 
     .story-accordion__inner {
@@ -1645,7 +1647,6 @@
         </p>
       </div>
     </section>
-
 
   </main>
 
