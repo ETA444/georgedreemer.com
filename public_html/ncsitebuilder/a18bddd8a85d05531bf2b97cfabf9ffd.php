@@ -32,9 +32,9 @@
 					<!-- Facebook Open Graph end -->
 
 		<meta name="generator" content="Website Builder" />
-			<link href="css/common-bundle.css?ts=20260802133603" rel="stylesheet" type="text/css" />
+			<link href="css/common-bundle.css?ts=20260803145129" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese" rel="stylesheet" type="text/css" />
-	<link href="css/a18bddd8a85d05531bf2b97cfabf9ffd-bundle.css?ts=20260802133603" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
+	<link href="css/a18bddd8a85d05531bf2b97cfabf9ffd-bundle.css?ts=20260803145129" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
 	<ga-code/><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
      SECTION 1 — GLOBAL
      Settings → Meta Tags (site-wide, always present)
@@ -194,12 +194,11 @@
   --color-text: #1a1814;
   --color-text-muted: #5a5750;
   --color-text-faint: #9a9590;
-  --color-accent: #bf7bff; /* legacy - kept for CEFR badges and cert pills only */
-  --color-accent-dim: rgba(191, 123, 255, 0.12);
-  --color-primary: #01696f;
-  --color-blue: #006494;
-  --color-gold: #d19900;
-  --color-orange: #da7101;
+  --color-primary: #1db3bb; /* primary color is the brand color if applicable default: #01696f */
+  --color-domain-engineering: #014a6f;
+  --color-domain-data: #00a59a;
+  --color-domain-product: #d19900;
+  --color-domain-growth: #ca5100;
   --space-1: .25rem;
   --space-2: .5rem;
   --space-3: .75rem;
@@ -474,24 +473,26 @@ button {
   border-top: 2px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: var(--space-6) var(--space-8);
-}
-
-/* Domain top-border — mirrors E5 card system */
-.snapshot-card[data-domain="engineering"] {
   border-top-color: var(--color-primary);
 }
 
+/* Domain top-border — mirrors E5 card system
+.snapshot-card[data-domain="engineering"] {
+  border-top-color: var(--color-domain-engineering);
+}
+
 .snapshot-card[data-domain="data"] {
-  border-top-color: var(--color-blue);
+  border-top-color: var(--color-domain-data);
 }
 
 .snapshot-card[data-domain="product"] {
-  border-top-color: var(--color-gold);
+  border-top-color: var(--color-domain-product);
 }
 
 .snapshot-card[data-domain="growth"] {
-  border-top-color: var(--color-orange);
+  border-top-color: var(--color-domain-growth);
 }
+*/
 
 .snapshot-card__meta {
   display: grid;
@@ -528,7 +529,7 @@ button {
   font-weight: 600;
 }
 
-/* Links — retired purple, now neutral underline */
+/* Links */
 .snapshot-item__value a {
   color: var(--color-text);
   border-bottom: 1px solid var(--color-border);
@@ -575,41 +576,42 @@ button {
   height: 6px;
   border-radius: 50%;
   flex-shrink: 0;
-  background: var(--color-text-faint);
+  background: var(--color-primary); /* fallback if no domain set */
 }
 
 /* Domain-colored dots — same four colors, same system */
 .achievement-chip[data-domain="engineering"] .achievement-chip__dot {
-  background: var(--color-primary);
+  background: var(--color-domain-engineering);
 }
 
 .achievement-chip[data-domain="data"] .achievement-chip__dot {
-  background: var(--color-blue);
+  background: var(--color-domain-data);
 }
 
 .achievement-chip[data-domain="product"] .achievement-chip__dot {
-  background: var(--color-gold);
+  background: var(--color-domain-product);
 }
 
 .achievement-chip[data-domain="growth"] .achievement-chip__dot {
-  background: var(--color-orange);
+  background: var(--color-domain-growth);
 }
+
 
 /* Subtle chip tint matching domain */
 .achievement-chip[data-domain="engineering"] {
-  border-color: color-mix(in srgb, var(--color-primary) 20%, transparent);
+  border-color: color-mix(in srgb, var(--color-domain-engineering) 20%, transparent);
 }
 
 .achievement-chip[data-domain="data"] {
-  border-color: color-mix(in srgb, var(--color-blue) 20%, transparent);
+  border-color: color-mix(in srgb, var(--color-domain-data) 20%, transparent);
 }
 
 .achievement-chip[data-domain="product"] {
-  border-color: color-mix(in srgb, var(--color-gold) 20%, transparent);
+  border-color: color-mix(in srgb, var(--color-domain-product) 20%, transparent);
 }
 
 .achievement-chip[data-domain="growth"] {
-  border-color: color-mix(in srgb, var(--color-orange) 20%, transparent);
+  border-color: color-mix(in srgb, var(--color-domain-growth) 20%, transparent);
 }
 
 /* ── ELEMENT 3 — IN NUMBERS / STAT COUNTER ─────────────────── */
@@ -633,26 +635,6 @@ button {
   transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.stat-counter__item.is-visible {
-  opacity: 1;
-}
-
-.stat-counter__item:nth-child(1) {
-  transition-delay: 0ms;
-}
-
-.stat-counter__item:nth-child(2) {
-  transition-delay: 80ms;
-}
-
-.stat-counter__item:nth-child(3) {
-  transition-delay: 160ms;
-}
-
-.stat-counter__item:nth-child(4) {
-  transition-delay: 240ms;
-}
-
 /* The animated number — domain color threads through here */
 .stat-counter__number {
   font-family: var(--font-body);
@@ -666,19 +648,19 @@ button {
 
 /* Domain color on the number */
 .stat-counter__item[data-domain="engineering"] .stat-counter__number {
-  color: var(--color-primary);
+  color: var(--color-domain-engineering);
 }
 
 .stat-counter__item[data-domain="data"] .stat-counter__number {
-  color: var(--color-blue);
+  color: var(--color-domain-data);
 }
 
 .stat-counter__item[data-domain="product"] .stat-counter__number {
-  color: var(--color-gold);
+  color: var(--color-domain-product);
 }
 
 .stat-counter__item[data-domain="growth"] .stat-counter__number {
-  color: var(--color-orange);
+  color: var(--color-domain-growth);
 }
 
 .stat-counter__label {
@@ -712,7 +694,7 @@ button {
   }
 }
 
-/* ── E4: STACK BADGE GRID ────────────────────────────────────── */
+/* ── E4: STACK GRID ────────────────────────────────────── */
 .stack-grid {
   display: flex;
   flex-direction: column;
@@ -992,7 +974,7 @@ button {
   border: 1px solid #e8d9a8;
 }
 
-/* ── E5: ABILITY CARD GRID ────────────────────────────────────────── */
+/* ── E5: ABILITY GRID ──────────────────────────────────── */
 .ability-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
@@ -1071,35 +1053,35 @@ button {
 
 /* ── Domain accents ───────────────────────────────────── */
 .ability-card[data-domain="engineering"] {
-  border-top: 2px solid var(--color-primary);
+  border-top: 2px solid var(--color-domain-engineering);
 }
 
 .ability-card[data-domain="engineering"] .ability-card__icon {
-  color: var(--color-primary);
+  color: var(--color-domain-engineering);
 }
 
 .ability-card[data-domain="data"] {
-  border-top: 2px solid var(--color-blue);
+  border-top: 2px solid var(--color-domain-data);
 }
 
 .ability-card[data-domain="data"] .ability-card__icon {
-  color: var(--color-blue);
+  color: var(--color-domain-data);
 }
 
 .ability-card[data-domain="product"] {
-  border-top: 2px solid var(--color-gold);
+  border-top: 2px solid var(--color-domain-product);
 }
 
 .ability-card[data-domain="product"] .ability-card__icon {
-  color: var(--color-gold);
+  color: var(--color-domain-product);
 }
 
 .ability-card[data-domain="growth"] {
-  border-top: 2px solid var(--color-orange);
+  border-top: 2px solid var(--color-domain-growth);
 }
 
 .ability-card[data-domain="growth"] .ability-card__icon {
-  color: var(--color-orange);
+  color: var(--color-domain-growth);
 }
 
 /* ── Legend ───────────────────────────────────────────── */
@@ -1130,43 +1112,43 @@ button {
 }
 
 .ability-legend__item--engineering {
-  color: var(--color-primary);
-  background: color-mix(in srgb, var(--color-primary) 10%, transparent);
-  border-color: color-mix(in srgb, var(--color-primary) 25%, transparent);
+  color: var(--color-domain-engineering);
+  background: color-mix(in srgb, var(--color-domain-engineering) 10%, transparent);
+  border-color: color-mix(in srgb, var(--color-domain-engineering) 25%, transparent);
 }
 
 .ability-legend__item--engineering .ability-legend__dot {
-  background: var(--color-primary);
+  background: var(--color-domain-engineering);
 }
 
 .ability-legend__item--data {
-  color: var(--color-blue);
-  background: color-mix(in srgb, var(--color-blue) 10%, transparent);
-  border-color: color-mix(in srgb, var(--color-blue) 25%, transparent);
+  color: var(--color-domain-data);
+  background: color-mix(in srgb, var(--color-domain-data) 10%, transparent);
+  border-color: color-mix(in srgb, var(--color-domain-data) 25%, transparent);
 }
 
 .ability-legend__item--data .ability-legend__dot {
-  background: var(--color-blue);
+  background: var(--color-domain-data);
 }
 
 .ability-legend__item--product {
-  color: var(--color-gold);
-  background: color-mix(in srgb, var(--color-gold) 10%, transparent);
-  border-color: color-mix(in srgb, var(--color-gold) 25%, transparent);
+  color: var(--color-domain-product);
+  background: color-mix(in srgb, var(--color-domain-product) 10%, transparent);
+  border-color: color-mix(in srgb, var(--color-domain-product) 25%, transparent);
 }
 
 .ability-legend__item--product .ability-legend__dot {
-  background: var(--color-gold);
+  background: var(--color-domain-product);
 }
 
 .ability-legend__item--growth {
-  color: var(--color-orange);
-  background: color-mix(in srgb, var(--color-orange) 10%, transparent);
-  border-color: color-mix(in srgb, var(--color-orange) 25%, transparent);
+  color: var(--color-domain-growth);
+  background: color-mix(in srgb, var(--color-domain-growth) 10%, transparent);
+  border-color: color-mix(in srgb, var(--color-domain-growth) 25%, transparent);
 }
 
 .ability-legend__item--growth .ability-legend__dot {
-  background: var(--color-orange);
+  background: var(--color-domain-growth);
 }
 
 /* ── E6: WORKS GRID / EVIDENCE CARDS ───────────────────────────────── */
@@ -1194,19 +1176,19 @@ button {
 
 /* ── Domain left-border threading from E4 ────────────────── */
 .evidence-card[data-domain="engineering"] {
-  border-left-color: var(--color-primary);
+  border-left-color: var(--color-domain-engineering);
 }
 
 .evidence-card[data-domain="data"] {
-  border-left-color: var(--color-blue);
+  border-left-color: var(--color-domain-data);
 }
 
 .evidence-card[data-domain="product"] {
-  border-left-color: var(--color-gold);
+  border-left-color: var(--color-domain-product);
 }
 
 .evidence-card[data-domain="growth"] {
-  border-left-color: var(--color-orange);
+  border-left-color: var(--color-domain-growth);
 }
 
 /* ── Domain tag pill (above title in body) ───────────────── */
@@ -1230,35 +1212,35 @@ button {
 }
 
 .evidence-card[data-domain="engineering"] .evidence-card__domain-tag {
-  color: var(--color-primary);
+  color: var(--color-domain-engineering);
 }
 
 .evidence-card[data-domain="engineering"] .evidence-card__domain-tag-dot {
-  background: var(--color-primary);
+  background: var(--color-domain-engineering);
 }
 
 .evidence-card[data-domain="data"] .evidence-card__domain-tag {
-  color: var(--color-blue);
+  color: var(--color-domain-data);
 }
 
 .evidence-card[data-domain="data"] .evidence-card__domain-tag-dot {
-  background: var(--color-blue);
+  background: var(--color-domain-data);
 }
 
 .evidence-card[data-domain="product"] .evidence-card__domain-tag {
-  color: var(--color-gold);
+  color: var(--color-domain-product);
 }
 
 .evidence-card[data-domain="product"] .evidence-card__domain-tag-dot {
-  background: var(--color-gold);
+  background: var(--color-domain-product);
 }
 
 .evidence-card[data-domain="growth"] .evidence-card__domain-tag {
-  color: var(--color-orange);
+  color: var(--color-domain-growth);
 }
 
 .evidence-card[data-domain="growth"] .evidence-card__domain-tag-dot {
-  background: var(--color-orange);
+  background: var(--color-domain-growth);
 }
 
 /* ── VARIANT A: Single image ─────────────────────────────── */
@@ -1345,7 +1327,7 @@ button {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.45);
+  background: rgba(255,255,255,0.45);
   transition: background var(--transition), transform var(--transition);
   cursor: pointer;
   border: none;
@@ -1359,19 +1341,19 @@ button {
 
 /* Domain-colored active dot */
 .evidence-card[data-domain="engineering"] .evidence-card__slide-dot.is-active {
-  background: var(--color-primary);
+  background: var(--color-domain-engineering);
 }
 
 .evidence-card[data-domain="data"] .evidence-card__slide-dot.is-active {
-  background: var(--color-blue);
+  background: var(--color-domain-data);
 }
 
 .evidence-card[data-domain="product"] .evidence-card__slide-dot.is-active {
-  background: var(--color-gold);
+  background: var(--color-domain-product);
 }
 
 .evidence-card[data-domain="growth"] .evidence-card__slide-dot.is-active {
-  background: var(--color-orange);
+  background: var(--color-domain-growth);
 }
 
 /* ── VARIANT C: Video (YouTube iframe or <video> file) ───── */
@@ -1466,14 +1448,14 @@ button {
   background: var(--color-text-faint);
 }
 
-/* ── E7: IN DEPTH ACCORDION ─────────────────────────────────── */
+/* ── E7: IN DEPTH ACCORDION ────────────────────────────── */
 .story-accordion {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   overflow: hidden;
 }
 
-.story-accordion__item+.story-accordion__item {
+.story-accordion__item + .story-accordion__item {
   border-top: 1px solid var(--color-divider);
 }
 
@@ -1529,35 +1511,35 @@ button {
 }
 
 .story-accordion__item[data-domain="engineering"] .story-accordion__domain-tag {
-  color: var(--color-primary);
+  color: var(--color-domain-engineering);
 }
 
 .story-accordion__item[data-domain="engineering"] .story-accordion__domain-dot {
-  background: var(--color-primary);
+  background: var(--color-domain-engineering);
 }
 
 .story-accordion__item[data-domain="data"] .story-accordion__domain-tag {
-  color: var(--color-blue);
+  color: var(--color-domain-data);
 }
 
 .story-accordion__item[data-domain="data"] .story-accordion__domain-dot {
-  background: var(--color-blue);
+  background: var(--color-domain-data);
 }
 
 .story-accordion__item[data-domain="product"] .story-accordion__domain-tag {
-  color: var(--color-gold);
+  color: var(--color-domain-product);
 }
 
 .story-accordion__item[data-domain="product"] .story-accordion__domain-dot {
-  background: var(--color-gold);
+  background: var(--color-domain-product);
 }
 
 .story-accordion__item[data-domain="growth"] .story-accordion__domain-tag {
-  color: var(--color-orange);
+  color: var(--color-domain-growth);
 }
 
 .story-accordion__item[data-domain="growth"] .story-accordion__domain-dot {
-  background: var(--color-orange);
+  background: var(--color-domain-growth);
 }
 
 .story-accordion__chevron {
@@ -1589,19 +1571,19 @@ button {
 
 /* Domain left-border on open panel */
 .story-accordion__item[data-domain="engineering"] .story-accordion__body[aria-hidden="false"] {
-  border-left-color: var(--color-primary);
+  border-left-color: var(--color-domain-engineering);
 }
 
 .story-accordion__item[data-domain="data"] .story-accordion__body[aria-hidden="false"] {
-  border-left-color: var(--color-blue);
+  border-left-color: var(--color-domain-data);
 }
 
 .story-accordion__item[data-domain="product"] .story-accordion__body[aria-hidden="false"] {
-  border-left-color: var(--color-gold);
+  border-left-color: var(--color-domain-product);
 }
 
 .story-accordion__item[data-domain="growth"] .story-accordion__body[aria-hidden="false"] {
-  border-left-color: var(--color-orange);
+  border-left-color: var(--color-domain-growth);
 }
 
 .story-accordion__inner {
@@ -1618,7 +1600,7 @@ button {
   margin-inline: auto;
 }
 
-.story-accordion__content p+p {
+.story-accordion__content p + p {
   margin-top: var(--space-4);
 }
 
@@ -1667,7 +1649,7 @@ button {
   object-fit: cover;
 }
 
-/* ── SCROLL REVEAL ───────────────────────────────────────── */
+/* ── SCROLL REVEAL ─────────────────────────────────────── */
 @supports(animation-timeline:scroll()) {
   .fade-in {
     opacity: 0;
@@ -1694,9 +1676,9 @@ button {
   }
 }
 
-/* ── RESPONSIVE ──────────────────────────────────────────── */
+/* ── RESPONSIVE ────────────────────────────────────────── */
 @media(max-width:600px) {
-  .experience-page {
+  .preview-page {
     padding: var(--space-6) var(--space-4);
     gap: var(--space-8);
   }
@@ -1803,7 +1785,7 @@ body {
 </head>
 
 
-<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e430a4143ca9337839c74f6" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a190ffad0b3e00c9cfe515ee38fb5f8c" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffad0b4c00b2f9f83b0f0bfac1e1" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1785666967"></a></div></div></div><div id="a190ffad0b6300a7ab401fb62000cfae" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffad0b6d007e8c311f4f42ffc0a3" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1785666967"></a></div></div></div></div></div><div id="a19127dc957400c0691f8985137b6c6f" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e430a4143ca9337839c74f6" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a190ffad0b3e00c9cfe515ee38fb5f8c" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffad0b4c00b2f9f83b0f0bfac1e1" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1785757891"></a></div></div></div><div id="a190ffad0b6300a7ab401fb62000cfae" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffad0b6d007e8c311f4f42ffc0a3" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1785757891"></a></div></div></div></div></div><div id="a19127dc957400c0691f8985137b6c6f" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -1885,7 +1867,7 @@ body {
 			'children' => array()
 		)
 	)
-)); ?><div class="clearfix"></div></div></div></div><div id="a18bddd77e430b4ce3e980126becfd36" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e430ced1f7965df7ab4bca9" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e430d9c3ad526ddc7851ded" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/thoughtbubble-logo%201.svg?ts=1785666967"></div></div></div></div></div></div></div><div id="a18bddd77e430eec23ab9fd8533ca3f7" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1785666967"></div></div></div></div></div></div></div><div id="wb_main_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a19f60e67d0200c8d407b5be07be8bdd" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><main class="experience-page" role="main">
+)); ?><div class="clearfix"></div></div></div></div><div id="a18bddd77e430b4ce3e980126becfd36" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e430ced1f7965df7ab4bca9" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e430d9c3ad526ddc7851ded" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/thoughtbubble-logo%201.svg?ts=1785757891"></div></div></div></div></div></div></div><div id="a18bddd77e430eec23ab9fd8533ca3f7" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1785757891"></div></div></div></div></div></div></div><div id="wb_main_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a19f60e67d0200c8d407b5be07be8bdd" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><main class="experience-page" role="main">
     
     <!-- ============================================================
         ELEMENT 1 — CONTEXT BLOCK
@@ -2496,7 +2478,7 @@ html, body {
    overflow-x: hidden;
 }
 </style>
-</div></div><div id="a18bddd77e4414ec349812801c161a50" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1785666967"></div></div></div></div></div><div id="wb_footer_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+</div></div><div id="a18bddd77e4414ec349812801c161a50" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1785757891"></div></div></div></div></div><div id="wb_footer_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -2598,7 +2580,7 @@ html, body {
 
 <p class="wb-stl-footer" style="text-align: center;"><a data-_="Link" href="anabolickmusick.com" target="_blank" title="anabolic musick's official website">anabolickmusick.com</a></p>
 </div><div id="a18bddd77e4a320a360cd08aa5891d23" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: center;"><span style="color:rgba(255,255,255,1);">© 2024 <a href="https://www.georgedreemer.com">G</a><a href="https://www.dreemer.xyz">eorge Dreemer</a></span></p>
-</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1785666967"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
+</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1785757891"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
 			$(function() {
 				var footer = $(".wb_footer");
 				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
@@ -2777,7 +2759,7 @@ document.querySelectorAll('.story-accordion').forEach(accordion => {
   items.forEach(item => observer.observe(item));
 })();
 </script></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
-	<script src="js/common-bundle.js?ts=20260802133603" type="text/javascript" defer></script>{{hr_out}}<script>
+	<script src="js/common-bundle.js?ts=20260803145129" type="text/javascript" defer></script>{{hr_out}}<script>
     document.addEventListener('DOMContentLoaded', function () {
         window._spDefer.done();
     });
