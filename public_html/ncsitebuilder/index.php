@@ -152,13 +152,12 @@
 	$langs = null;
 	$def_lang = null;
 	$base_lang = 'en';
-	$site_id = '78fb5fb8';
+	$site_id = 'ade620eb';
 	${'sitemapUrls'} = array(
 		'https://georgedreemer.com/',
 		'https://georgedreemer.com/skipschoolmakemoney',
 		'https://georgedreemer.com/thoughtbubble',
 		'https://georgedreemer.com/dreemcorp',
-		'https://georgedreemer.com/hobbies',
 		'https://georgedreemer.com/stack',
 		'https://georgedreemer.com/blog',
 		'https://georgedreemer.com/blog/datasafari/introduction',
