@@ -1502,7 +1502,7 @@
       object-fit: cover;
     }
 
-    /* ── E7: INSTAGRAM SCROLLER ─────────────────────────────────── */
+    /* ── E8: INSTAGRAM SCROLLER ─────────────────────────────────── */
     .ig-scroller {
       position: relative;
     }
@@ -1512,8 +1512,8 @@
       gap: var(--space-4);
       overflow-x: auto;
       scroll-snap-type: x mandatory;
-      padding: var(--space-2) var(--space-4) var(--space-6);
-      margin-inline: calc(-1 * var(--space-4));
+      scroll-padding-inline: var(--space-4);
+      padding: var(--space-2) var(--space-4) var(--space-1);
       scrollbar-width: none;
       -webkit-overflow-scrolling: touch;
     }
@@ -1528,7 +1528,7 @@
       position: absolute;
       top: 0;
       bottom: var(--space-6);
-      width: var(--space-8);
+      width: var(--space-4);
       pointer-events: none;
       z-index: 2;
     }
@@ -1557,6 +1557,7 @@
       overflow: hidden;
       border: 1px solid var(--color-border);
       transition: box-shadow var(--transition);
+      min-height: 260px;
     }
 
     .ig-scroller__embed:hover {
@@ -1580,7 +1581,7 @@
 
     .ig-scroller__nav {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       gap: var(--space-2);
       margin-top: var(--space-2);
     }
@@ -1614,7 +1615,6 @@
         display: none;
       }
     }
-
 
     /* ── SCROLL REVEAL ─────────────────────────────────────── */
     @supports(animation-timeline:scroll()) {
@@ -3346,7 +3346,7 @@
          ─────────────────────────────────────────────────────────
          PURPOSE : A great place to add visual context and social proof. If you have a strong Instagram presence, this is a good place to show it. If you don't, consider leaving this element out — it can look like filler if the content isn't strong.
     ============================================================ -->
-    <section aria-label="E7: INSTAGRAM SCROLLER" class="fade-in">
+    <section aria-label="E8: INSTAGRAM SCROLLER" class="fade-in">
       <div class="section-label">
         <span class="section-label__text">On Instagram</span>
         <span class="section-label__line" aria-hidden="true"></span>
@@ -3357,7 +3357,7 @@
 
           <div class="ig-scroller__item">
             <div class="ig-scroller__embed">
-              <blockquote class="instagram-media" data-instgrm-captioned
+              <blockquote class="instagram-media"
                 data-instgrm-permalink="https://www.instagram.com/p/COfy4XHBOa0/?utm_source=ig_embed&amp;utm_campaign=loading"
                 data-instgrm-version="14"
                 style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
@@ -3388,12 +3388,48 @@
                 </div>
               </blockquote>
             </div>
-            <p class="ig-scroller__caption">Immersive Studios × Ta Joela — celebrity workout collaboration ad</p>
+            <p class="ig-scroller__caption">Immersive Studios × Ta Joela — celebrity workout class ad, shot by Younes Belguebli in The Hague</p>
           </div>
 
           <div class="ig-scroller__item">
             <div class="ig-scroller__embed">
-              <blockquote class="instagram-media" data-instgrm-captioned
+              <blockquote class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/reel/CLw5XlfJbhQ/?utm_source=ig_embed&amp;utm_campaign=loading"
+                data-instgrm-version="14"
+                style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a
+                    href="https://www.instagram.com/reel/CLw5XlfJbhQ/?utm_source=ig_embed&amp;utm_campaign=loading"
+                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                    target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div
+                        style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div
+                          style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p
+                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/reel/CLw5XlfJbhQ/?utm_source=ig_embed&amp;utm_campaign=loading"
+                      style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                      target="_blank">A post shared by AMIRA TAHRI🇳🇱🇲🇦 (@amiratahriofficial)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <p class="ig-scroller__caption">Amira Tahri — Instagram reel edit</p>
+          </div>
+
+          <div class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media"
                 data-instgrm-permalink="https://www.instagram.com/p/CPJfbcdh2ad/?utm_source=ig_embed&amp;utm_campaign=loading"
                 data-instgrm-version="14"
                 style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
@@ -3424,48 +3460,12 @@
                 </div>
               </blockquote>
             </div>
-            <p class="ig-scroller__caption">Immersive Studios — gym booty class promo</p>
+            <p class="ig-scroller__caption">Immersive Studios — gym booty class promo, shot by Younes Belguebli in The Hague</p>
           </div>
 
           <div class="ig-scroller__item">
             <div class="ig-scroller__embed">
-              <blockquote class="instagram-media" data-instgrm-captioned
-                data-instgrm-permalink="https://www.instagram.com/reel/CLw5XlfJbhQ/?utm_source=ig_embed&amp;utm_campaign=loading"
-                data-instgrm-version="14"
-                style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
-                <div style="padding:16px;"> <a
-                    href="https://www.instagram.com/reel/CLw5XlfJbhQ/?utm_source=ig_embed&amp;utm_campaign=loading"
-                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
-                    target="_blank">
-                    <div style=" display: flex; flex-direction: row; align-items: center;">
-                      <div
-                        style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
-                      </div>
-                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
-                        <div
-                          style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
-                        </div>
-                        <div
-                          style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
-                        </div>
-                      </div>
-                    </div>
-                    <div style="padding: 19% 0;"></div>
-                  </a>
-                  <p
-                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
-                    <a href="https://www.instagram.com/reel/CLw5XlfJbhQ/?utm_source=ig_embed&amp;utm_campaign=loading"
-                      style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
-                      target="_blank">A post shared by AMIRA TAHRI🇳🇱🇲🇦 (@amiratahriofficial)</a></p>
-                </div>
-              </blockquote>
-            </div>
-            <p class="ig-scroller__caption">Amira Tahri — Instagram reel edit</p>
-          </div>
-
-          <div class="ig-scroller__item">
-            <div class="ig-scroller__embed">
-              <blockquote class="instagram-media" data-instgrm-captioned
+              <blockquote class="instagram-media"
                 data-instgrm-permalink="https://www.instagram.com/p/CPpvicZllW0/?utm_source=ig_embed&amp;utm_campaign=loading"
                 data-instgrm-version="14"
                 style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
@@ -3496,12 +3496,12 @@
                 </div>
               </blockquote>
             </div>
-            <p class="ig-scroller__caption">FitnessFloors.nl × SinCity Boxing Amsterdam — build-out ad</p>
+            <p class="ig-scroller__caption">FitnessFloors.nl × SinCity Boxing Amsterdam — gym build-out promo, shot by Younes Belguebli</p>
           </div>
 
           <div class="ig-scroller__item">
             <div class="ig-scroller__embed">
-              <blockquote class="instagram-media" data-instgrm-captioned
+              <blockquote class="instagram-media"
                 data-instgrm-permalink="https://www.instagram.com/p/COpu2ygDhkx/?utm_source=ig_embed&amp;utm_campaign=loading"
                 data-instgrm-version="14"
                 style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
@@ -3532,7 +3532,7 @@
                 </div>
               </blockquote>
             </div>
-            <p class="ig-scroller__caption">BerraCuts Barbershop, Den Haag — promo ad</p>
+            <p class="ig-scroller__caption">BerraCuts Barbershop, Den Haag — promo ad, visited by rapper Frenna, shot by Younes Belguebli</p>
           </div>
 
         </div>
