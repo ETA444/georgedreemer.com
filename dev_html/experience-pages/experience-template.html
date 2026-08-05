@@ -1616,6 +1616,202 @@
       }
     }
 
+    /* ── E9: CONTENT ARCHIVE — YOUTUBE CHANNEL SCROLLERS ─────────────── */
+    .content-archive__channel {
+      margin-bottom: var(--space-10);
+    }
+
+    .content-archive__channel:last-child {
+      margin-bottom: 0;
+    }
+
+    .content-archive__channel-label {
+      display: flex;
+      align-items: baseline;
+      gap: var(--space-3);
+      margin-bottom: var(--space-3);
+    }
+
+    .content-archive__channel-name {
+      font-size: var(--text-sm);
+      font-weight: 700;
+      color: var(--color-text);
+      letter-spacing: .01em;
+    }
+
+    .content-archive__channel-meta {
+      font-size: var(--text-xs);
+      color: var(--color-text-faint);
+      font-weight: 500;
+    }
+
+    .yt-scroller {
+      position: relative;
+    }
+
+    .yt-scroller__track {
+      display: flex;
+      gap: var(--space-4);
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-padding-inline: var(--space-4);
+      padding: var(--space-2) var(--space-4) var(--space-1);
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .yt-scroller__track::-webkit-scrollbar {
+      display: none;
+    }
+
+    .yt-scroller::before,
+    .yt-scroller::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: var(--space-6);
+      width: var(--space-4);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .yt-scroller::before {
+      left: 0;
+      background: linear-gradient(to right, var(--color-bg), transparent);
+    }
+
+    .yt-scroller::after {
+      right: 0;
+      background: linear-gradient(to left, var(--color-bg), transparent);
+    }
+
+    .yt-scroller__item {
+      flex: 0 0 auto;
+      width: min(320px, 80vw);
+      scroll-snap-align: start;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+    }
+
+    .yt-scroller__item[data-orientation="portrait"] {
+      width: min(200px, 60vw);
+    }
+
+    .yt-scroller__embed {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16/9;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      background: #0e0e0e;
+      transition: box-shadow var(--transition);
+    }
+
+    .yt-scroller__item[data-orientation="portrait"] .yt-scroller__embed {
+      aspect-ratio: 9/16;
+    }
+
+    .yt-scroller__embed:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    .yt-scroller__embed iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    .yt-scroller__thumb-btn {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      padding: 0;
+      border: 0;
+    }
+
+    .yt-scroller__thumb-btn img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .yt-scroller__play-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.55);
+      backdrop-filter: blur(2px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background var(--transition), transform var(--transition);
+    }
+
+    .yt-scroller__thumb-btn:hover .yt-scroller__play-icon {
+      background: var(--color-primary);
+      transform: translate(-50%, -50%) scale(1.08);
+    }
+
+    .yt-scroller__play-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: #fff;
+      margin-left: 3px;
+    }
+
+    .yt-scroller__caption {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      padding-inline: var(--space-1);
+    }
+
+    .yt-scroller__nav {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-2);
+      margin-top: var(--space-2);
+    }
+
+    .yt-scroller__nav-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--color-border);
+      background: var(--color-surface);
+      color: var(--color-text);
+      cursor: pointer;
+      transition: background var(--transition), border-color var(--transition);
+    }
+
+    .yt-scroller__nav-btn:hover {
+      background: var(--color-surface-2);
+      border-color: var(--color-primary);
+    }
+
+    .yt-scroller__nav-btn svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    @media (hover: none) {
+      .yt-scroller__nav {
+        display: none;
+      }
+    }
+
     /* ── SCROLL REVEAL ─────────────────────────────────────── */
     @supports(animation-timeline:scroll()) {
       .fade-in {
@@ -3552,6 +3748,130 @@
       </div>
     </section>
 
+    <!-- ============================================================
+            ELEMENT 9 — CONTENT ARCHIVE
+            ─────────────────────────────────────────────────────────
+            PURPOSE : A great place to add visual context and social proof. If you have a strong YouTube presence, this is a good place to show it. If you don't, consider leaving this element out — it can look like filler if the content isn't strong.
+    ============================================================ -->
+    <section aria-label="E9: CONTENT ARCHIVE" class="fade-in">
+      <div class="section-label">
+        <span class="section-label__text">Content Archive</span>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+
+      <!-- ── Channel: Amira Tahri ────────────────────────────────── -->
+      <div class="content-archive__channel">
+        <div class="content-archive__channel-label">
+          <span class="content-archive__channel-name">Amira Tahri</span>
+          <span class="content-archive__channel-meta">Vlogs &amp; Shorts</span>
+        </div>
+
+        <div class="yt-scroller">
+          <div class="yt-scroller__track" data-yt-track>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="VbYZxelf_XA"
+                  data-yt-title="Vlog: Amira Tahri collaborates with Dutch Performante"
+                  aria-label="Play vlog: Amira Tahri collaborates with Dutch Performante">
+                  <img src="https://img.youtube.com/vi/VbYZxelf_XA/hqdefault.jpg"
+                    alt="Amira Tahri vlog with Dutch Performante" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Vlog with Dutch Performante</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="9KyOwCLUeoM"
+                  data-yt-title="Vlog: Amira Tahri collaborates with Numidia"
+                  aria-label="Play vlog: Amira Tahri collaborates with Numidia">
+                  <img src="https://img.youtube.com/vi/9KyOwCLUeoM/hqdefault.jpg" alt="Amira Tahri vlog with Numidia"
+                    width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Vlog with Numidia</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="E7td0FRqj2Q"
+                  data-yt-title="Vlog edited for Amira Tahri's collaboration with Najib Amhali — filmed by Younes Belguebli at Immersive Studios in The Hague, Netherlands"
+                  aria-label="Play vlog: Amira Tahri collaborates with Najib Amhali">
+                  <img src="https://img.youtube.com/vi/E7td0FRqj2Q/hqdefault.jpg" alt="Amira Tahri vlog with Najib Amhali"
+                    width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Vlog with Najib Amhali</p>
+            </div>
+
+            <div class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="6HkURhlXpQc"
+                  data-yt-title="Short: promo for Amira Tahri x Dutch Performante vlog"
+                  aria-label="Play short: promo for Dutch Performante vlog">
+                  <img src="https://img.youtube.com/vi/6HkURhlXpQc/hqdefault.jpg"
+                    alt="Amira Tahri short promoting the Dutch Performante vlog" width="270" height="480" loading="lazy"
+                    decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Promo short — Dutch Performante</p>
+            </div>
+
+            <div class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="_B-E_FRqaU0"
+                  data-yt-title="Short: Amira Tahri boxing" aria-label="Play short: Amira Tahri boxing">
+                  <img src="https://img.youtube.com/vi/_B-E_FRqaU0/hqdefault.jpg" alt="Amira Tahri boxing short" width="270"
+                    height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Boxing short</p>
+            </div>
+
+          </div>
+
+          <div class="yt-scroller__nav">
+            <button class="yt-scroller__nav-btn" data-yt-prev aria-label="Scroll to previous video">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
+            </button>
+            <button class="yt-scroller__nav-btn" data-yt-next aria-label="Scroll to next video">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
   </main>
 
@@ -3733,6 +4053,39 @@
           track.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
         });
       });
+
+      // ── YouTube Content Archive: click-to-load + nav ────────────────
+        document.querySelectorAll('[data-yt-thumb]').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const embed = btn.closest('.yt-scroller__embed');
+            const videoId = btn.dataset.ytId;
+            const title = btn.dataset.ytTitle || 'YouTube video';
+            const iframe = document.createElement('iframe');
+            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+            iframe.title = title;
+            iframe.setAttribute('aria-label', title);
+            iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+            iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+            iframe.setAttribute('allowfullscreen', '');
+            embed.innerHTML = '';
+            embed.appendChild(iframe);
+          });
+        });
+
+        document.querySelectorAll('[data-yt-track]').forEach(track => {
+          const section = track.closest('.yt-scroller');
+          const prevBtn = section.querySelector('[data-yt-prev]');
+          const nextBtn = section.querySelector('[data-yt-next]');
+          const scrollAmount = () => track.querySelector('.yt-scroller__item')?.offsetWidth + 16 || 320;
+
+          prevBtn?.addEventListener('click', () => {
+            track.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
+          });
+          nextBtn?.addEventListener('click', () => {
+            track.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
+          });
+        });
+
 
   </script>
 
