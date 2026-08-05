@@ -1628,8 +1628,22 @@
     .content-archive__channel-label {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       gap: var(--space-3);
       margin-bottom: var(--space-3);
+    }
+
+    .content-archive__channel-label-left {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      min-width: 0;
+    }
+
+    .content-archive__channel-nav {
+      display: flex;
+      gap: var(--space-2);
+      flex-shrink: 0;
     }
 
     .content-archive__channel-pfp {
@@ -1678,7 +1692,7 @@
       content: "";
       position: absolute;
       top: 0;
-      bottom: var(--space-6);
+      bottom: 0;
       width: var(--space-4);
       pointer-events: none;
       z-index: 2;
@@ -1696,7 +1710,8 @@
 
     .yt-scroller__item {
       flex: 0 0 auto;
-      width: min(320px, 80vw);
+      --yt-h: clamp(150px, 16vw, 190px);
+      width: calc(var(--yt-h) * 16 / 9);
       scroll-snap-align: start;
       display: flex;
       flex-direction: column;
@@ -1704,22 +1719,18 @@
     }
 
     .yt-scroller__item[data-orientation="portrait"] {
-      width: min(200px, 60vw);
+      width: calc(var(--yt-h) * 9 / 16);
     }
 
     .yt-scroller__embed {
       position: relative;
       width: 100%;
-      aspect-ratio: 16/9;
+      height: var(--yt-h);
       border-radius: var(--radius-lg);
       overflow: hidden;
       border: 1px solid var(--color-border);
       background: #0e0e0e;
       transition: box-shadow var(--transition);
-    }
-
-    .yt-scroller__item[data-orientation="portrait"] .yt-scroller__embed {
-      aspect-ratio: 9/16;
     }
 
     .yt-scroller__embed:hover {
@@ -1778,18 +1789,10 @@
       display: block;
     }
 
-
     .yt-scroller__caption {
       font-size: var(--text-sm);
       color: var(--color-text-muted);
       padding-inline: var(--space-1);
-    }
-
-    .yt-scroller__nav {
-      display: flex;
-      justify-content: center;
-      gap: var(--space-2);
-      margin-top: var(--space-2);
     }
 
     .yt-scroller__nav-btn {
@@ -1816,11 +1819,22 @@
       height: 20px;
     }
 
+    .content-archive__channel-nav .yt-scroller__nav-btn {
+      width: 32px;
+      height: 32px;
+    }
+
+    .content-archive__channel-nav .yt-scroller__nav-btn svg {
+      width: 16px;
+      height: 16px;
+    }
+
     @media (hover: none) {
-      .yt-scroller__nav {
+      .content-archive__channel-nav {
         display: none;
       }
     }
+
 
     /* ── SCROLL REVEAL ─────────────────────────────────────── */
     @supports(animation-timeline:scroll()) {
@@ -3772,10 +3786,24 @@
       <!-- ── Channel: Amira Tahri ────────────────────────────────── -->
       <div class="content-archive__channel">
         <div class="content-archive__channel-label">
-          <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_1.jpg" alt="Amira Tahri"
-            class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
-          <span class="content-archive__channel-name">Amira Tahri</span>
-          <span class="content-archive__channel-meta">Vlogs &amp; Shorts</span>
+          <div class="content-archive__channel-label-left">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_1.jpg" alt="Amira Tahri"
+              class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <span class="content-archive__channel-name">Amira Tahri</span>
+            <span class="content-archive__channel-meta">Vlogs &amp; Shorts</span>
+          </div>
+          <div class="content-archive__channel-nav">
+            <button class="yt-scroller__nav-btn" data-yt-prev aria-label="Scroll to previous video">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
+            </button>
+            <button class="yt-scroller__nav-btn" data-yt-next aria-label="Scroll to next video">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+            </button>
+          </div>
         </div>
 
         <div class="yt-scroller">
@@ -3865,23 +3893,10 @@
               </div>
               <p class="yt-scroller__caption">Boxing short</p>
             </div>
-
-          </div>
-
-          <div class="yt-scroller__nav">
-            <button class="yt-scroller__nav-btn" data-yt-prev aria-label="Scroll to previous video">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <polyline points="15 18 9 12 15 6" />
-              </svg>
-            </button>
-            <button class="yt-scroller__nav-btn" data-yt-next aria-label="Scroll to next video">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <polyline points="9 18 15 12 9 6" />
-              </svg>
-            </button>
           </div>
         </div>
       </div>
+
     </section>
 
 
@@ -4085,9 +4100,9 @@
         });
 
         document.querySelectorAll('[data-yt-track]').forEach(track => {
-          const section = track.closest('.yt-scroller');
-          const prevBtn = section.querySelector('[data-yt-prev]');
-          const nextBtn = section.querySelector('[data-yt-next]');
+          const channel = track.closest('.content-archive__channel');
+          const prevBtn = channel.querySelector('[data-yt-prev]');
+          const nextBtn = channel.querySelector('[data-yt-next]');
           const scrollAmount = () => track.querySelector('.yt-scroller__item')?.offsetWidth + 16 || 320;
 
           prevBtn?.addEventListener('click', () => {
@@ -4097,7 +4112,6 @@
             track.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
           });
         });
-
 
   </script>
 
