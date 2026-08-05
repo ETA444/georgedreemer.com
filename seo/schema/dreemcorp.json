@@ -1,0 +1,99 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://georgedreemer.com/dreemcorp#webpage",
+      "url": "https://georgedreemer.com/dreemcorp",
+      "name": "DREEMCORP — Creative Studio & Venture Lab",
+      "description": "DREEMCORP is George Dreemer's creative studio and venture lab, producing video, content, and creative direction for artists, athletes, and brands.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://georgedreemer.com/#website",
+        "url": "https://georgedreemer.com",
+        "name": "George Dreemer"
+      },
+      "about": {
+        "@id": "https://georgedreemer.com/dreemcorp#organization"
+      },
+      "mainEntity": {
+        "@id": "https://georgedreemer.com/dreemcorp#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://dreemcorp.com/images/landing/og-image.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://georgedreemer.com/dreemcorp#organization",
+      "name": "DREEMCORP",
+      "alternateName": "DREEMCORP Creative Studio",
+      "url": "https://georgedreemer.com/dreemcorp",
+      "description": "A creative studio and venture lab founded by George Dreemer, delivering video editing, content strategy, and creative direction for musicians, athletes, and brands — and the umbrella for visual ventures including anabolic musick and CoolSouls.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dreemcorp.com/images/landing/og-image.png",
+        "width": 1200,
+        "height": 630
+      },
+      "slogan": "Creatio perpetua",
+      "foundingDate": "2020",
+      "genre": [
+        "Creative studio",
+        "Venture lab",
+        "Video production",
+        "Content strategy",
+        "Portfolio project"
+      ],
+      "keywords": [
+        "DREEMCORP",
+        "George Dreemer",
+        "creative studio",
+        "venture lab",
+        "video editing",
+        "content strategy",
+        "Amira Tahri",
+        "Najib Amhali",
+        "Nabil Haryouli",
+        "Immersive Studios",
+        "anabolic musick",
+        "CoolSouls"
+      ],
+      "founder": {
+        "@type": "Person",
+        "@id": "https://georgedreemer.com/#person",
+        "name": "George Dreemer",
+        "url": "https://georgedreemer.com"
+      },
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Video Editing & Long-Form Content Production"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Social Media & Content Strategy"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Brand & Creative Direction"
+          }
+        }
+      ],
+      "dateModified": "2026-08-05",
+      "inLanguage": "en-US"
+    }
+  ]
+}
