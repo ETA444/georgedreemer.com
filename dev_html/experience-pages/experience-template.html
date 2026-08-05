@@ -1835,7 +1835,6 @@
       }
     }
 
-
     /* ── SCROLL REVEAL ─────────────────────────────────────── */
     @supports(animation-timeline:scroll()) {
       .fade-in {
@@ -2014,7 +2013,6 @@
           class="section-label__line" aria-hidden="true"></span></div>
     </section>
 
-
     <!-- ============================================================
          ELEMENT 1 — CONTEXT BLOCK
          ─────────────────────────────────────────────────────────
@@ -2055,7 +2053,6 @@
           real-time notifications, and the full social product without a framework, CMS, or boilerplate.</p>
       </div>
     </section>
-
 
     <!-- ============================================================
          ELEMENT 2 — SNAPSHOT CARD
@@ -2151,7 +2148,6 @@
       </div>
     </section>
 
-
     <!-- ============================================================
          ELEMENT 3 — IN NUMBERS / STAT COUNTER
          ─────────────────────────────────────────────────────────
@@ -2196,7 +2192,6 @@
 
       </div>
     </section>
-
 
     <!-- ============================================================
          ELEMENT 4 — STACK BADGE GRID
@@ -3149,7 +3144,6 @@
       </div>
     </section>
 
-
     <!-- ============================================================
          ELEMENT 6 — WORKS CARD GRID
          ─────────────────────────────────────────────────────────
@@ -3335,7 +3329,6 @@
 
       </div>
     </section>
-
 
     <!-- ============================================================
          ELEMENT 7 — IN DEPTH ACCORDION
@@ -4322,7 +4315,6 @@
 
     </section>
 
-
   </main>
 
   <script>
@@ -4490,51 +4482,51 @@
     })();
 
     // ── Instagram scroller nav ──────────────────────────────────
-      document.querySelectorAll('[data-ig-track]').forEach(track => {
-        const section = track.closest('.ig-scroller');
-        const prevBtn = section.querySelector('[data-ig-prev]');
-        const nextBtn = section.querySelector('[data-ig-next]');
-        const scrollAmount = () => track.querySelector('.ig-scroller__item')?.offsetWidth + 16 || 360;
+    document.querySelectorAll('[data-ig-track]').forEach(track => {
+      const section = track.closest('.ig-scroller');
+      const prevBtn = section.querySelector('[data-ig-prev]');
+      const nextBtn = section.querySelector('[data-ig-next]');
+      const scrollAmount = () => track.querySelector('.ig-scroller__item')?.offsetWidth + 16 || 360;
 
-        prevBtn?.addEventListener('click', () => {
-          track.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
-        });
-        nextBtn?.addEventListener('click', () => {
-          track.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
-        });
+      prevBtn?.addEventListener('click', () => {
+        track.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
       });
+      nextBtn?.addEventListener('click', () => {
+        track.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
+      });
+    });
 
-      // ── YouTube Content Archive: click-to-load + nav ────────────────
-        document.querySelectorAll('[data-yt-thumb]').forEach(btn => {
-          btn.addEventListener('click', () => {
-            const embed = btn.closest('.yt-scroller__embed');
-            const videoId = btn.dataset.ytId;
-            const title = btn.dataset.ytTitle || 'YouTube video';
-            const iframe = document.createElement('iframe');
-            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`;
-            iframe.title = title;
-            iframe.setAttribute('aria-label', title);
-            iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
-            iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
-            iframe.setAttribute('allowfullscreen', '');
-            embed.innerHTML = '';
-            embed.appendChild(iframe);
-          });
-        });
+    // ── YouTube Content Archive: click-to-load + nav ────────────────
+    document.querySelectorAll('[data-yt-thumb]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const embed = btn.closest('.yt-scroller__embed');
+        const videoId = btn.dataset.ytId;
+        const title = btn.dataset.ytTitle || 'YouTube video';
+        const iframe = document.createElement('iframe');
+        iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+        iframe.title = title;
+        iframe.setAttribute('aria-label', title);
+        iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+        iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+        iframe.setAttribute('allowfullscreen', '');
+        embed.innerHTML = '';
+        embed.appendChild(iframe);
+      });
+    });
 
-        document.querySelectorAll('[data-yt-track]').forEach(track => {
-          const channel = track.closest('.content-archive__channel');
-          const prevBtn = channel.querySelector('[data-yt-prev]');
-          const nextBtn = channel.querySelector('[data-yt-next]');
-          const scrollAmount = () => track.querySelector('.yt-scroller__item')?.offsetWidth + 16 || 320;
+    document.querySelectorAll('[data-yt-track]').forEach(track => {
+      const channel = track.closest('.content-archive__channel');
+      const prevBtn = channel.querySelector('[data-yt-prev]');
+      const nextBtn = channel.querySelector('[data-yt-next]');
+      const scrollAmount = () => track.querySelector('.yt-scroller__item')?.offsetWidth + 16 || 320;
 
-          prevBtn?.addEventListener('click', () => {
-            track.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
-          });
-          nextBtn?.addEventListener('click', () => {
-            track.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
-          });
-        });
+      prevBtn?.addEventListener('click', () => {
+        track.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
+      });
+      nextBtn?.addEventListener('click', () => {
+        track.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
+      });
+    });
 
   </script>
 
