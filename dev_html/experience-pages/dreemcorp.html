@@ -1944,6 +1944,68 @@
       }
     }
 
+    /* Square-format items (shorts YouTube tags as vertical but actual frame is 1:1) */
+    .yt-scroller__item[data-orientation="square"] {
+      width: var(--yt-h);
+    }
+
+    /* Locked / private teaser variant — thumbnail visible, no public playback */
+    .yt-scroller__thumb-btn--locked {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .yt-scroller__thumb-btn--locked img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: grayscale(0.35) brightness(0.55);
+      transition: filter var(--transition);
+    }
+
+    .yt-scroller__thumb-btn--locked:hover img {
+      filter: grayscale(0.2) brightness(0.45);
+    }
+
+    .yt-scroller__lock-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(2px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background var(--transition), transform var(--transition);
+    }
+
+    .yt-scroller__thumb-btn--locked:hover .yt-scroller__lock-icon {
+      background: rgba(0, 0, 0, 0.85);
+      transform: translate(-50%, -50%) scale(1.08);
+    }
+
+    .yt-scroller__lock-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: #fff;
+      display: block;
+    }
+
+    .yt-scroller__caption--locked {
+      color: var(--color-text-faint);
+      font-style: italic;
+    }
+
     /* ── SCROLL REVEAL ─────────────────────────────────────── */
     @supports(animation-timeline:scroll()) {
       .fade-in {
