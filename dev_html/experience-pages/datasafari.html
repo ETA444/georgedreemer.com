@@ -2379,7 +2379,7 @@
     </section>
 
     <!-- ============================================================
-            ELEMENT 5 — ABILITY CARD GRID
+        ELEMENT 5 — ABILITY CARD GRID
     ============================================================ -->
     <section aria-label="E5: ABILITY CARD GRID" class="fade-in">
       <div class="section-label">
@@ -2405,344 +2405,176 @@
 
       <div class="ability-grid">
 
-        <!-- ── ENGINEERING ──────────────────────────────────── -->
-
-        <!-- E1: Python Library Architecture -->
-        <div class="ability-card" data-domain="engineering" style="border-top-color: var(--color-domain-engineering);">
-          <div class="ability-card__icon" style="color: var(--color-domain-engineering);">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <rect x="2" y="3" width="20" height="14" rx="2" />
-              <line x1="8" y1="21" x2="16" y2="21" />
-              <line x1="12" y1="17" x2="12" y2="21" />
-              <polyline points="6 8 10 12 6 16" />
-              <line x1="13" y1="16" x2="18" y2="16" />
-            </svg>
-          </div>
-          <p class="ability-card__title">Python Library Architecture</p>
-          <p class="ability-card__desc">Designed datasafari from scratch as a four-subpackage system — Explorers,
-            Transformers, Evaluators, Predictors — reflecting the natural data science workflow. Built a consistent public
-            API with a one-liner philosophy: any complex operation callable from a single function with sensible defaults
-            and full customisation depth.</p>
+        <!-- 1 · Python Library Architecture · Engineering -->
+        <div class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="layers"></i></div>
+          <h3 class="ability-card__title">Python Library Architecture</h3>
+          <p class="ability-card__desc">Designed datasafari from scratch as a four-subpackage system — Explorers, Transformers, Evaluators, Predictors — reflecting the natural data science workflow. Built a consistent public API with a one-liner philosophy: any complex operation callable from a single function with sensible defaults and full customisation depth.</p>
           <div class="ability-card__tags">
-            <span class="ability-tag" data-domain="engineering">Package Architecture</span>
-            <span class="ability-tag" data-domain="engineering">API Design</span>
-            <span class="ability-tag" data-domain="engineering">Open-Source Engineering</span>
+            <span class="ability-tag">Package Architecture</span>
+            <span class="ability-tag">API Design</span>
+            <span class="ability-tag">Open-Source Engineering</span>
           </div>
         </div>
 
-        <!-- E2: OSS Release Engineering -->
-        <div class="ability-card" data-domain="engineering" style="border-top-color: var(--color-domain-engineering);">
-          <div class="ability-card__icon" style="color: var(--color-domain-engineering);">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path
-                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-              <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
-              <line x1="12" y1="22.08" x2="12" y2="12" />
-            </svg>
-          </div>
-          <p class="ability-card__title">OSS Release Engineering</p>
-          <p class="ability-card__desc">Managed the full open-source release lifecycle — from project scaffolding with
-            Poetry and Setuptools to versioned PyPI distribution. Configured pyproject.toml, package metadata, dependency
-            management, and produced reproducible builds that users can install with a single
-            <code>pip install datasafari</code>.</p>
+        <!-- 2 · OSS Release Engineering · Engineering -->
+        <div class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="package"></i></div>
+          <h3 class="ability-card__title">OSS Release Engineering</h3>
+          <p class="ability-card__desc">Managed the full open-source release lifecycle — from project scaffolding with Poetry and Setuptools to versioned PyPI distribution. Configured pyproject.toml, package metadata, and dependency management, producing reproducible builds that users can install with a single <code>pip install datasafari</code>.</p>
           <div class="ability-card__tags">
-            <span class="ability-tag" data-domain="engineering">Release Management</span>
-            <span class="ability-tag" data-domain="engineering">Dependency Management</span>
-            <span class="ability-tag" data-domain="engineering">Distribution Engineering</span>
+            <span class="ability-tag">Release Management</span>
+            <span class="ability-tag">Dependency Management</span>
+            <span class="ability-tag">Distribution Engineering</span>
           </div>
         </div>
 
-        <!-- E3: Automated Test Suite Design -->
-        <div class="ability-card" data-domain="engineering" style="border-top-color: var(--color-domain-engineering);">
-          <div class="ability-card__icon" style="color: var(--color-domain-engineering);">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <polyline points="9 11 12 14 22 4" />
-              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
-            </svg>
-          </div>
-          <p class="ability-card__title">Automated Test Suite Design</p>
-          <p class="ability-card__desc">Built a 300+ test suite with pytest covering edge cases, input validation, and
-            statistical output correctness across all subpackages. Configured tox to run tests against multiple Python
-            environments in a single command — ensuring datasafari works for the widest possible user base before any
-            release is published.</p>
+        <!-- 3 · Automated Test Suite Design · Engineering -->
+        <div class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="check-square"></i></div>
+          <h3 class="ability-card__title">Automated Test Suite Design</h3>
+          <p class="ability-card__desc">Built a 300+ test suite covering edge cases, input validation, and statistical output correctness across all subpackages. Configured tox to run tests against multiple Python environments in a single command — ensuring datasafari works for the widest possible user base before any release is published.</p>
           <div class="ability-card__tags">
-            <span class="ability-tag" data-domain="engineering">Test Engineering</span>
-            <span class="ability-tag" data-domain="engineering">Quality Assurance</span>
-            <span class="ability-tag" data-domain="engineering">Multi-Environment Testing</span>
+            <span class="ability-tag">Test Engineering</span>
+            <span class="ability-tag">Quality Assurance</span>
+            <span class="ability-tag">Multi-Environment Testing</span>
           </div>
         </div>
 
-        <!-- E4: CI/CD Pipeline Construction -->
-        <div class="ability-card" data-domain="engineering" style="border-top-color: var(--color-domain-engineering);">
-          <div class="ability-card__icon" style="color: var(--color-domain-engineering);">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <circle cx="12" cy="12" r="3" />
-              <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
-              <path d="M4.93 4.93a10 10 0 0 0 0 14.14" />
-              <line x1="12" y1="2" x2="12" y2="5" />
-              <line x1="12" y1="19" x2="12" y2="22" />
-              <line x1="2" y1="12" x2="5" y2="12" />
-              <line x1="19" y1="12" x2="22" y2="12" />
-            </svg>
-          </div>
-          <p class="ability-card__title">CI/CD Pipeline Construction</p>
-          <p class="ability-card__desc">Designed and built a 12-step GitHub Actions pipeline that runs automatically on
-            every push — executing lint checks, the full test matrix via tox, and conditional PyPI publish on tagged
-            releases. Closed 136 issues through the lifecycle of the project, with each fix validated through the pipeline
-            before merge.</p>
+        <!-- 4 · CI/CD Pipeline Construction · Engineering -->
+        <div class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="git-merge"></i></div>
+          <h3 class="ability-card__title">CI/CD Pipeline Construction</h3>
+          <p class="ability-card__desc">Designed and built a 12-step GitHub Actions pipeline that runs automatically on every push — executing lint checks, the full test matrix via tox, and conditional PyPI publish on tagged releases. Closed 136 issues through the lifecycle of the project, with each fix validated through the pipeline before merge.</p>
           <div class="ability-card__tags">
-            <span class="ability-tag" data-domain="engineering">Continuous Integration</span>
-            <span class="ability-tag" data-domain="engineering">Automated Deployment</span>
-            <span class="ability-tag" data-domain="engineering">Pipeline Design</span>
+            <span class="ability-tag">Continuous Integration</span>
+            <span class="ability-tag">Automated Deployment</span>
+            <span class="ability-tag">Pipeline Design</span>
           </div>
         </div>
 
-        <!-- E5: Technical Documentation Engineering -->
-        <div class="ability-card" data-domain="engineering" style="border-top-color: var(--color-domain-engineering);">
-          <div class="ability-card__icon" style="color: var(--color-domain-engineering);">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-              <polyline points="14 2 14 8 20 8" />
-              <line x1="16" y1="13" x2="8" y2="13" />
-              <line x1="16" y1="17" x2="8" y2="17" />
-              <polyline points="10 9 9 9 8 9" />
-            </svg>
-          </div>
-          <p class="ability-card__title">Technical Documentation Engineering</p>
-          <p class="ability-card__desc">Built the complete datasafari documentation system — Sphinx source authoring,
-            automated build pipeline through Read the Docs, and a custom-designed public site at datasafari.dev. Wrote every
-            page of the docs: installation guides, function references, usage examples, and conceptual explanations for each
-            of the 10 core modules.</p>
+        <!-- 5 · Technical Documentation Engineering · Engineering -->
+        <div class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="file-text"></i></div>
+          <h3 class="ability-card__title">Technical Documentation Engineering</h3>
+          <p class="ability-card__desc">Built the complete datasafari documentation system — Sphinx source authoring, automated build pipeline through Read the Docs, and a custom-designed public site at datasafari.dev. Wrote every page of the docs: installation guides, function references, usage examples, and conceptual explanations for each of the 10 core modules.</p>
           <div class="ability-card__tags">
-            <span class="ability-tag" data-domain="engineering">Documentation Systems</span>
-            <span class="ability-tag" data-domain="engineering">Technical Writing</span>
-            <span class="ability-tag" data-domain="engineering">Developer Experience</span>
+            <span class="ability-tag">Documentation Systems</span>
+            <span class="ability-tag">Technical Writing</span>
+            <span class="ability-tag">Developer Experience</span>
           </div>
         </div>
 
-        <!-- ── DATA ──────────────────────────────────────────── -->
-
-        <!-- D1: Exploratory Data Analysis Systems -->
-        <div class="ability-card" data-domain="data" style="border-top-color: var(--color-domain-data);">
-          <div class="ability-card__icon" style="color: var(--color-domain-data);">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <circle cx="11" cy="11" r="8" />
-              <line x1="21" y1="21" x2="16.65" y2="16.65" />
-              <line x1="11" y1="8" x2="11" y2="14" />
-              <line x1="8" y1="11" x2="14" y2="11" />
-            </svg>
-          </div>
-          <p class="ability-card__title">Exploratory Data Analysis Systems</p>
-          <p class="ability-card__desc">Designed and implemented the full Explorers subpackage — <code>explore_df()</code>
-            for dataset-level profiling, <code>explore_num()</code> for numerical deep-dives (outlier detection via Z-score,
-            IQR, and Mahalanobis distance; normality, skewness, kurtosis, correlation, and multicollinearity), and
-            <code>explore_cat()</code> for categorical profiling including Shannon entropy to quantify data diversity.</p>
+        <!-- 6 · Exploratory Data Analysis Systems · Data -->
+        <div class="ability-card fade-in" data-domain="data">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="search"></i></div>
+          <h3 class="ability-card__title">Exploratory Data Analysis Systems</h3>
+          <p class="ability-card__desc">Designed and implemented the full Explorers subpackage — <code>explore_df()</code> for dataset-level profiling, <code>explore_num()</code> for numerical deep-dives (outlier detection via Z-score, IQR, and Mahalanobis distance; normality, skewness, kurtosis, correlation, and multicollinearity), and <code>explore_cat()</code> for categorical profiling including Shannon entropy to quantify data diversity.</p>
           <div class="ability-card__tags">
-            <span class="ability-tag" data-domain="data">Exploratory Analysis</span>
-            <span class="ability-tag" data-domain="data">Outlier Detection</span>
-            <span class="ability-tag" data-domain="data">Statistical Profiling</span>
+            <span class="ability-tag">Exploratory Analysis</span>
+            <span class="ability-tag">Outlier Detection</span>
+            <span class="ability-tag">Statistical Profiling</span>
           </div>
         </div>
 
-        <!-- D2: Statistical Assumption Verification -->
-        <div class="ability-card" data-domain="data" style="border-top-color: var(--color-domain-data);">
-          <div class="ability-card__icon" style="color: var(--color-domain-data);">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-              <polyline points="22 4 12 14.01 9 11.01" />
-            </svg>
-          </div>
-          <p class="ability-card__title">Statistical Assumption Verification</p>
-          <p class="ability-card__desc">Built the Evaluators subpackage to automate the pre-analysis assumption-checking
-            that data scientists typically handle manually. <code>evaluate_normality()</code> selects between Shapiro-Wilk,
-            Anderson-Darling, and other tests based on sample characteristics; <code>evaluate_variance()</code> applies
-            Levene's, Bartlett's, or Fligner's test dynamically; <code>evaluate_contingency_table()</code> checks Chi-square
-            suitability conditions automatically.</p>
+        <!-- 7 · Statistical Assumption Verification · Data -->
+        <div class="ability-card fade-in" data-domain="data">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="shield-check"></i></div>
+          <h3 class="ability-card__title">Statistical Assumption Verification</h3>
+          <p class="ability-card__desc">Built the Evaluators subpackage to automate the pre-analysis assumption-checking that data scientists typically handle manually. <code>evaluate_normality()</code> selects between Shapiro-Wilk, Anderson-Darling, and other tests based on sample characteristics; <code>evaluate_variance()</code> applies Levene's, Bartlett's, or Fligner's test dynamically; <code>evaluate_contingency_table()</code> checks Chi-square suitability conditions automatically.</p>
           <div class="ability-card__tags">
-            <span class="ability-tag" data-domain="data">Assumption Testing</span>
-            <span class="ability-tag" data-domain="data">Statistical Inference</span>
-            <span class="ability-tag" data-domain="data">Dynamic Test Selection</span>
+            <span class="ability-tag">Assumption Testing</span>
+            <span class="ability-tag">Statistical Inference</span>
+            <span class="ability-tag">Dynamic Test Selection</span>
           </div>
         </div>
 
-        <!-- D3: Automated Hypothesis Testing -->
-        <div class="ability-card" data-domain="data" style="border-top-color: var(--color-domain-data);">
-          <div class="ability-card__icon" style="color: var(--color-domain-data);">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <line x1="18" y1="20" x2="18" y2="10" />
-              <line x1="12" y1="20" x2="12" y2="4" />
-              <line x1="6" y1="20" x2="6" y2="14" />
-              <line x1="2" y1="20" x2="22" y2="20" />
-            </svg>
-          </div>
-          <p class="ability-card__title">Automated Hypothesis Testing</p>
-          <p class="ability-card__desc"><code>predict_hypothesis()</code> takes a DataFrame, a grouping variable, and a
-            target variable — and autonomously selects and executes the correct statistical test. The function detects
-            variable types, verifies normality and variance homogeneity, chooses between Chi-square, Fisher's exact, t-test,
-            ANOVA, Mann-Whitney, Kruskal-Wallis, and others, then outputs test statistics, p-values, and a plain-language
-            interpretation.</p>
+        <!-- 8 · Automated Hypothesis Testing · Data -->
+        <div class="ability-card fade-in" data-domain="data">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="bar-chart-2"></i></div>
+          <h3 class="ability-card__title">Automated Hypothesis Testing</h3>
+          <p class="ability-card__desc"><code>predict_hypothesis()</code> takes a DataFrame, a grouping variable, and a target variable — and autonomously selects and executes the correct statistical test. The function detects variable types, verifies normality and variance homogeneity, chooses between Chi-square, Fisher's exact, t-test, ANOVA, Mann-Whitney, Kruskal-Wallis, and others, then outputs test statistics, p-values, and a plain-language interpretation.</p>
           <div class="ability-card__tags">
-            <span class="ability-tag" data-domain="data">Hypothesis Testing</span>
-            <span class="ability-tag" data-domain="data">Automated Inference</span>
-            <span class="ability-tag" data-domain="data">Statistical Interpretation</span>
+            <span class="ability-tag">Hypothesis Testing</span>
+            <span class="ability-tag">Automated Inference</span>
+            <span class="ability-tag">Statistical Interpretation</span>
           </div>
         </div>
 
-        <!-- D4: End-to-End ML Pipeline Automation -->
-        <div class="ability-card" data-domain="data" style="border-top-color: var(--color-domain-data);">
-          <div class="ability-card__icon" style="color: var(--color-domain-data);">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <ellipse cx="12" cy="5" rx="9" ry="3" />
-              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
-              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
-            </svg>
-          </div>
-          <p class="ability-card__title">End-to-End ML Pipeline Automation</p>
-          <p class="ability-card__desc"><code>predict_ml()</code> orchestrates the complete machine learning workflow in one
-            call — automatic preprocessing (scaling, encoding, vectorisation), multi-model evaluation using a
-            user-configurable composite score weighted across multiple metrics, and automated hyperparameter tuning via grid
-            search, random search, or Bayesian optimisation. Returns ranked, tuned models with full performance breakdowns.
-          </p>
+        <!-- 9 · End-to-End ML Pipeline Automation · Data -->
+        <div class="ability-card fade-in" data-domain="data">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="cpu"></i></div>
+          <h3 class="ability-card__title">End-to-End ML Pipeline Automation</h3>
+          <p class="ability-card__desc"><code>predict_ml()</code> orchestrates the complete machine learning workflow in one call — automatic preprocessing (scaling, encoding, vectorisation), multi-model evaluation using a user-configurable composite score weighted across multiple metrics, and automated hyperparameter tuning via grid search, random search, or Bayesian optimisation. Returns ranked, tuned models with full performance breakdowns.</p>
           <div class="ability-card__tags">
-            <span class="ability-tag" data-domain="data">ML Pipeline Design</span>
-            <span class="ability-tag" data-domain="data">Hyperparameter Optimisation</span>
-            <span class="ability-tag" data-domain="data">Model Selection</span>
+            <span class="ability-tag">ML Pipeline Design</span>
+            <span class="ability-tag">Hyperparameter Optimisation</span>
+            <span class="ability-tag">Model Selection</span>
           </div>
         </div>
 
-        <!-- D5: Data Transformation Engineering -->
-        <div class="ability-card" data-domain="data" style="border-top-color: var(--color-domain-data);">
-          <div class="ability-card__icon" style="color: var(--color-domain-data);">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <polyline points="17 1 21 5 17 9" />
-              <path d="M3 11V9a4 4 0 0 1 4-4h14" />
-              <polyline points="7 23 3 19 7 15" />
-              <path d="M21 13v2a4 4 0 0 1-4 4H3" />
-            </svg>
-          </div>
-          <p class="ability-card__title">Data Transformation Engineering</p>
-          <p class="ability-card__desc">Implemented the Transformers subpackage to handle the full data preparation stage.
-            <code>transform_num()</code> covers standardisation, min-max scaling, log and power transforms, winsorisation,
-            and interaction term creation. <code>transform_cat()</code> handles label encoding, one-hot encoding, target
-            encoding, and ML-based category cleaning — all chainable and parameterised for reproducible pipelines.</p>
+        <!-- 10 · Data Transformation Engineering · Data -->
+        <div class="ability-card fade-in" data-domain="data">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="shuffle"></i></div>
+          <h3 class="ability-card__title">Data Transformation Engineering</h3>
+          <p class="ability-card__desc">Implemented the Transformers subpackage to handle the full data preparation stage. <code>transform_num()</code> covers standardisation, min-max scaling, log and power transforms, winsorisation, and interaction term creation. <code>transform_cat()</code> handles label encoding, one-hot encoding, target encoding, and ML-based category cleaning — all chainable and parameterised for reproducible pipelines.</p>
           <div class="ability-card__tags">
-            <span class="ability-tag" data-domain="data">Feature Engineering</span>
-            <span class="ability-tag" data-domain="data">Data Cleaning</span>
-            <span class="ability-tag" data-domain="data">Preprocessing Pipeline Design</span>
+            <span class="ability-tag">Feature Engineering</span>
+            <span class="ability-tag">Data Cleaning</span>
+            <span class="ability-tag">Preprocessing Pipeline Design</span>
           </div>
         </div>
 
-        <!-- ── PRODUCT ────────────────────────────────────────── -->
-
-        <!-- P1: Developer API & UX Design -->
-        <div class="ability-card" data-domain="product" style="border-top-color: var(--color-domain-product);">
-          <div class="ability-card__icon" style="color: var(--color-domain-product);">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M12 20h9" />
-              <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
-            </svg>
-          </div>
-          <p class="ability-card__title">Developer API &amp; UX Design</p>
-          <p class="ability-card__desc">Built datasafari around a deliberate developer experience philosophy — consistent
-            naming across all 10 functions, predictable argument patterns, and sensible defaults that make the library
-            immediately usable to a data scientist who has never read the docs. Complex workflows like full ML pipelines and
-            hypothesis testing are exposed as single function calls, hiding implementation complexity behind a clean
-            interface.</p>
+        <!-- 11 · Developer API & UX Design · Product -->
+        <div class="ability-card fade-in" data-domain="product">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="pen-tool"></i></div>
+          <h3 class="ability-card__title">Developer API &amp; UX Design</h3>
+          <p class="ability-card__desc">Built datasafari around a deliberate developer experience philosophy — consistent naming across all 10 functions, predictable argument patterns, and sensible defaults that make the library immediately usable without reading the docs. Complex workflows like full ML pipelines and hypothesis testing are exposed as single function calls, hiding implementation complexity behind a clean interface.</p>
           <div class="ability-card__tags">
-            <span class="ability-tag" data-domain="product">Interface Design</span>
-            <span class="ability-tag" data-domain="product">Developer Experience</span>
-            <span class="ability-tag" data-domain="product">Abstraction Design</span>
+            <span class="ability-tag">Interface Design</span>
+            <span class="ability-tag">Developer Experience</span>
+            <span class="ability-tag">Abstraction Design</span>
           </div>
         </div>
 
-        <!-- P2: Documentation Site Development -->
-        <div class="ability-card" data-domain="product" style="border-top-color: var(--color-domain-product);">
-          <div class="ability-card__icon" style="color: var(--color-domain-product);">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-              <line x1="3" y1="9" x2="21" y2="9" />
-              <line x1="9" y1="21" x2="9" y2="9" />
-            </svg>
-          </div>
-          <p class="ability-card__title">Documentation Site Development</p>
-          <p class="ability-card__desc">Designed and hand-coded datasafari.dev — the public documentation and landing site
-            for the library. Built with custom HTML, CSS, and JavaScript, the site presents the library's philosophy,
-            quick-start guides, and full API reference in a clean, readable format. Integrated with Sphinx and Read the Docs
-            for automated doc generation, while the landing experience was crafted entirely from scratch.</p>
+        <!-- 12 · Documentation Site Development · Product -->
+        <div class="ability-card fade-in" data-domain="product">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="layout"></i></div>
+          <h3 class="ability-card__title">Documentation Site Development</h3>
+          <p class="ability-card__desc">Designed and hand-coded datasafari.dev — the public documentation and landing site for the library. Built with custom HTML, CSS, and JavaScript, the site presents the library's philosophy, quick-start guides, and full API reference in a clean, readable format. Integrated with Sphinx and Read the Docs for automated doc generation, while the landing experience was crafted entirely from scratch.</p>
           <div class="ability-card__tags">
-            <span class="ability-tag" data-domain="product">Web Development</span>
-            <span class="ability-tag" data-domain="product">Information Architecture</span>
-            <span class="ability-tag" data-domain="product">Content Strategy</span>
+            <span class="ability-tag">Web Development</span>
+            <span class="ability-tag">Information Architecture</span>
+            <span class="ability-tag">Content Strategy</span>
           </div>
         </div>
 
-        <!-- P3: Open-Source Product Lifecycle Management -->
-        <div class="ability-card" data-domain="product" style="border-top-color: var(--color-domain-product);">
-          <div class="ability-card__icon" style="color: var(--color-domain-product);">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <line x1="8" y1="6" x2="21" y2="6" />
-              <line x1="8" y1="12" x2="21" y2="12" />
-              <line x1="8" y1="18" x2="21" y2="18" />
-              <line x1="3" y1="6" x2="3.01" y2="6" />
-              <line x1="3" y1="12" x2="3.01" y2="12" />
-              <line x1="3" y1="18" x2="3.01" y2="18" />
-            </svg>
-          </div>
-          <p class="ability-card__title">Open-Source Product Lifecycle Management</p>
-          <p class="ability-card__desc">Managed datasafari as a solo product owner — from initial concept and roadmap to
-            versioned releases, issue tracking (136 closed issues), and ongoing maintenance. Handled the full triangle of
-            engineering quality, user-facing documentation, and public discoverability. Built systems that made the project
-            sustainable and reproducible, not just functional at a single point in time.</p>
+        <!-- 13 · Open-Source Product Lifecycle Management · Product -->
+        <div class="ability-card fade-in" data-domain="product">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="list-checks"></i></div>
+          <h3 class="ability-card__title">Open-Source Product Lifecycle Management</h3>
+          <p class="ability-card__desc">Managed datasafari as a solo product owner — from initial concept and roadmap to versioned releases, issue tracking (136 closed issues), and ongoing maintenance. Handled the full triangle of engineering quality, user-facing documentation, and public discoverability, building systems that made the project sustainable and reproducible beyond any single release.</p>
           <div class="ability-card__tags">
-            <span class="ability-tag" data-domain="product">Product Ownership</span>
-            <span class="ability-tag" data-domain="product">Roadmap Execution</span>
-            <span class="ability-tag" data-domain="product">Solo Founding</span>
+            <span class="ability-tag">Product Ownership</span>
+            <span class="ability-tag">Roadmap Execution</span>
+            <span class="ability-tag">Solo Founding</span>
           </div>
         </div>
 
-        <!-- ── DESIGN ─────────────────────────────────────────── -->
-
-        <!-- Des1: Brand Identity & Visual Systems -->
-        <div class="ability-card" data-domain="design" style="border-top-color: var(--color-domain-design);">
-          <div class="ability-card__icon" style="color: var(--color-domain-design);">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <circle cx="13.5" cy="6.5" r=".5" />
-              <circle cx="17.5" cy="10.5" r=".5" />
-              <circle cx="8.5" cy="7.5" r=".5" />
-              <circle cx="6.5" cy="12.5" r=".5" />
-              <path
-                d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z" />
-            </svg>
-          </div>
-          <p class="ability-card__title">Brand Identity &amp; Visual Systems</p>
-          <p class="ability-card__desc">Created the complete visual identity for datasafari — including the logo, banner
-            artwork, icon set, and all graphic assets used across the library's GitHub presence, PyPI page, and
-            documentation site. Designed in Adobe Illustrator and Photoshop, then integrated into Sphinx and the custom web
-            frontend. Every visual touchpoint a user encounters when discovering datasafari was designed by George.</p>
+        <!-- 14 · Brand Identity & Visual Systems · Growth -->
+        <div class="ability-card fade-in" data-domain="growth">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="feather"></i></div>
+          <h3 class="ability-card__title">Brand Identity &amp; Visual Systems</h3>
+          <p class="ability-card__desc">Created the complete visual identity for datasafari — logo, banner artwork, icon set, and all graphic assets used across the GitHub presence, PyPI page, and documentation site. Every visual touchpoint a user encounters when discovering datasafari was designed by George, giving an independent open-source library a coherent, professional brand from day one.</p>
           <div class="ability-card__tags">
-            <span class="ability-tag" data-domain="design">Brand Design</span>
-            <span class="ability-tag" data-domain="design">Visual Identity</span>
-            <span class="ability-tag" data-domain="design">Graphic Asset Production</span>
+            <span class="ability-tag">Brand Design</span>
+            <span class="ability-tag">Visual Identity</span>
+            <span class="ability-tag">Graphic Asset Production</span>
           </div>
         </div>
 
-      </div><!-- /.ability-grid -->
+      </div>
     </section>
-
 
     <!-- ============================================================
             ELEMENT 6 — WORKS CARD GRID
