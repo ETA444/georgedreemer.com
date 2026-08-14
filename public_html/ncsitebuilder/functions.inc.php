@@ -126,17 +126,16 @@ function parse_uri(SiteInfo $siteInfo, SiteRequestInfo $requestInfo) {
 		array_unshift($ruBakOther, array_pop($ruBak));
 	}
 	
-	$hasMbstring = function_exists('mb_strtolower');
 	foreach ($siteInfo->pages as $idx => $pi) {
 		if (is_array($pi['alias'])) {
 			if ($lang && isset($pi['alias'][$lang]) && ($lnAlias = $pi['alias'][$lang])) {
-				if ($hasMbstring && mb_strtolower($ru_) == mb_strtolower($lnAlias) || !$hasMbstring && strtolower($ru_) == strtolower($lnAlias)) {
+				if (mbStrtolower($ru_) == mbStrtolower($lnAlias)) {
 					header('Location: '.getBaseUrl() . getPageUri($pi['id'], $lang, $siteInfo), true, 301);
 					exit();
 				}
 			}
 		} else {
-			if ($hasMbstring && mb_strtolower($ru_) == mb_strtolower($pi['alias']) || !$hasMbstring && strtolower($ru_) == strtolower($pi['alias'])) {
+			if (mbStrtolower($ru_) == mbStrtolower($pi['alias'])) {
 				header('Location: '.getBaseUrl() . getPageUri($pi['id'], $lang, $siteInfo), true, 301);
 				exit();
 			}
@@ -151,6 +150,76 @@ function parse_uri(SiteInfo $siteInfo, SiteRequestInfo $requestInfo) {
 	}
 	
 	return array(-1, $lang, array_merge(array($ru_), $ru), null);
+}
+
+/**
+ * @param string $string
+ * @param ?string $encoding
+ * @return string
+ */
+function mbStrtolower($string, $encoding = null) {
+	return function_exists('mb_strtolower')
+		? mb_strtolower($string, $encoding)
+		: strtolower($string);
+}
+
+/**
+ * @param string $string
+ * @param ?string $encoding
+ * @return string
+ */
+function mbStrtoupper($string, $encoding = null) {
+	return function_exists('mb_strtoupper')
+		? mb_strtoupper($string, $encoding)
+		: strtoupper($string);
+}
+
+/**
+ * @param string $text
+ * @param ?string $encoding
+ * @return int
+ */
+function mbStrlen($text, $encoding = null) {
+	return function_exists('mb_strlen')
+		? mb_strlen($text, $encoding)
+		: strlen($text);
+}
+
+/**
+ * @param string $haystack
+ * @param string $needle
+ * @param int $offset
+ * @param ?string $encoding
+ * @return int
+ */
+function mbStrpos($haystack, $needle, $offset = 0, $encoding = null) {
+	return function_exists('mb_strpos')
+		? mb_strpos($haystack, $needle, $offset, $encoding)
+		: strpos($haystack, $needle, $offset);
+}
+
+/**
+ * @param string $string
+ * @param int $start
+ * @param ?int $length
+ * @param ?string $encoding
+ * @return int
+ */
+function mbSubstr($string, $start, $length = null, $encoding = null) {
+	return function_exists('mb_substr')
+		? mb_substr($string, $start, $length, $encoding)
+		: substr($string, $start, $length);
+}
+
+/**
+ * @param string $string
+ * @param ?string $encoding
+ * @return int
+ */
+function mbUcfirst($string, $encoding = null) {
+	return function_exists('mb_ucfirst')
+		? mb_ucfirst($string, $encoding)
+		: ucfirst($string);
 }
 
 function handleTrailingSlashRedirect(SiteInfo $siteInfo, SiteRequestInfo $requestInfo, array $disableNoSlashUrls) {
@@ -1030,7 +1099,7 @@ function handleForms($page_id, SiteInfo $siteInfo) {
 				}
 
 				if ($siteInfo->disableFormSending) {
-					//				throw new ErrorException(SiteModule::__('Form sending from preview is not available'));
+					throw new ErrorException(SiteModule::__('Form sending from preview is not available'));
 				}
 				requirePHPMailer();
 				$mailer = new PHPMailer();
@@ -1406,12 +1475,11 @@ function unparse_url($parsed_url) {
 }
 
 function simplifyText($text) {
-	$mb = function_exists('mb_strtolower');
-	$textLen = ($mb ? mb_strlen($text) : strlen($text));
-	$textLow = ($mb ? mb_strtolower($text) : strtolower($text));
+	$textLen = mbStrlen($text);
+	$textLow = mbStrtolower($text);
 //		$res = @iconv('utf-8', 'cp1252//TRANSLIT//IGNORE', $textLow);
 	$res = translitToLatin($textLow);
-	$resLen = ($mb ? mb_strlen($res) : strlen($res));
+	$resLen = mbStrlen($res);
 	return ($resLen/2 < $textLen) ? $textLow : $res;
 }
 
@@ -1484,8 +1552,6 @@ function checkSiteRedirects(SiteInfo $siteInfo, SiteRequestInfo $requestInfo, ar
 
 	$defLang = ($siteInfo->defLang ? $siteInfo->defLang : null);
 
-	$hasMbstring = function_exists('mb_strpos');
-
 	$matches = [];
 	foreach ($redirectItems as $item) {
 		$item = (array)$item;
@@ -1499,8 +1565,7 @@ function checkSiteRedirects(SiteInfo $siteInfo, SiteRequestInfo $requestInfo, ar
 		if (isset($pp[1]) && $pp[1]) {
 			parse_str($pp[1], $fromQs);
 		}
-		$partialMatch = ($hasMbstring && mb_strpos($currUri, $fromUri) === 0
-				|| !$hasMbstring && strpos($currUri, $fromUri) === 0);
+		$partialMatch = mbStrpos($currUri, $fromUri) === 0;
 		$exactMatch = rtrim($currUri, '/') == rtrim($fromUri, '/');
 		$exact = $item['exact'];
 		if (!$partialMatch || ($exact && !$exactMatch)) {
@@ -1535,8 +1600,8 @@ function checkSiteRedirects(SiteInfo $siteInfo, SiteRequestInfo $requestInfo, ar
 	}
 
 	uksort($matches, function($a, $b) use($hasMbstring) {
-		$al = $hasMbstring ? mb_strlen($a) : strlen($a);
-		$bl = $hasMbstring ? mb_strlen($b) : strlen($b);
+		$al = mbStrlen($a);
+		$bl = mbStrlen($b);
 		if ($al == $bl) return 0;
 		return $al > $bl ? -1 : 1;
 	});

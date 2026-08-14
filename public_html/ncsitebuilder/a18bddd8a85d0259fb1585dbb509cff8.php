@@ -23,18 +23,18 @@
 	<?php echo isset($sitemapUrls) ? (generateCanonicalUrl($sitemapUrls)."\n") : ""; ?>	
 	
 						<meta name="viewport" content="width=device-width, initial-scale=1" />
-					<meta name="description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "DREEMCORP is George Dreemer's creative studio and venture lab — the seat behind DataSafari, CryptoPandemic, and SkipSchoolMakeMoney. Clients include Amira Tahri, Najib Amhali, and Immersive Studios."); ?>" />
-			<meta name="keywords" content="<?php echo htmlspecialchars((isset($seoKeywords) && $seoKeywords !== "") ? $seoKeywords : "dreemcorp,george dreemer dreemcorp,george dreemer creative studio,george dreemer venture lab,george dreemer portfolio,amira tahri,najib amhali,immersive studios,berracuts,tajoela,92minerals,alistair overeem,dutch performante,numidia,coolsools,social media agency,video editing portfolio,personal branding,content creation,george dreemer founder"); ?>" />
+					<meta name="description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "DREEMCORP is George Dreemer's creative studio and venture lab, producing video, content, and creative direction for artists, athletes, and brands. Clients include Amira Tahri, Najib Amhali, Nabil Haryouli, and Immersive Studios."); ?>" />
+			<meta name="keywords" content="<?php echo htmlspecialchars((isset($seoKeywords) && $seoKeywords !== "") ? $seoKeywords : "dreemcorp,george dreemer dreemcorp,george dreemer creative studio,george dreemer venture lab,george dreemer portfolio,amira tahri,najib amhali,nabil haryouli,immersive studios,berracuts,tajoela,92minerals,alistair overeem,dutch performante,numidia,coolsouls,anabolic musick,social media agency,video editing portfolio,personal branding,content creation,george dreemer founder"); ?>" />
 				<meta property="og:site_name" content="George Dreemer — Data Scientist, Developer & Entrepreneur">
 	
 	<!-- Facebook Open Graph -->
-			<meta property="og:description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "DREEMCORP is George Dreemer's creative studio and venture lab — the seat behind DataSafari, CryptoPandemic, and SkipSchoolMakeMoney. Clients include Amira Tahri, Najib Amhali, and Immersive Studios."); ?>" />
+			<meta property="og:description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "DREEMCORP is George Dreemer's creative studio and venture lab, producing video, content, and creative direction for artists, athletes, and brands. Clients include Amira Tahri, Najib Amhali, Nabil Haryouli, and Immersive Studios."); ?>" />
 					<!-- Facebook Open Graph end -->
 
 		<meta name="generator" content="Website Builder" />
-			<link href="css/common-bundle.css?ts=20260804193722" rel="stylesheet" type="text/css" />
+			<link href="css/common-bundle.css?ts=20260813152319" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese" rel="stylesheet" type="text/css" />
-	<link href="css/a18bddd8a85d0259fb1585dbb509cff8-bundle.css?ts=20260804193722" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
+	<link href="css/a18bddd8a85d0259fb1585dbb509cff8-bundle.css?ts=20260813152319" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
 	<ga-code/><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
      SECTION 1 — GLOBAL
      Settings → Meta Tags (site-wide, always present)
@@ -69,17 +69,2116 @@
 	window.disableRightClick = false;
 	window.currLang = 'en';
 </script>
-	<!-- [ DREEMCORP ] -->
+	<title>DREEMCORP — Creative Studio & Venture Lab · George Dreemer</title>
+
+<!-- SEO Meta Data (source: meta.html) -->
+<meta name="description"
+content="DREEMCORP is George Dreemer's creative studio and venture lab, producing video, content, and creative direction for artists, athletes, and brands. Clients include Amira Tahri, Najib Amhali, Nabil Haryouli, and Immersive Studios.">
+<meta name="keywords"
+content="dreemcorp, george dreemer dreemcorp, george dreemer creative studio, george dreemer venture lab, george dreemer portfolio, amira tahri, najib amhali, nabil haryouli, immersive studios, berracuts, tajoela, 92minerals, alistair overeem, dutch performante, numidia, coolsouls, anabolic musick, social media agency, video editing portfolio, personal branding, content creation, george dreemer founder">
 <link rel="canonical" href="https://georgedreemer.com/dreemcorp">
+<meta property="og:type" content="website">
 <meta property="og:url" content="https://georgedreemer.com/dreemcorp">
 <meta property="og:title" content="DREEMCORP — Creative Studio & Venture Lab · George Dreemer">
 <meta property="og:description"
-    content="DREEMCORP is George Dreemer's creative studio and venture lab — the seat behind DataSafari, CryptoPandemic, and SkipSchoolMakeMoney. Clients include Amira Tahri, Najib Amhali, and Immersive Studios.">
+content="DREEMCORP is George Dreemer's creative studio and venture lab — the seat behind DataSafari, CryptoPandemic, and SkipSchoolMakeMoney. Clients include Amira Tahri, Najib Amhali, and Immersive Studios.">
 <meta property="og:image" content="https://dreemcorp.com/images/landing/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="DREEMCORP — Creative Studio & Venture Lab · George Dreemer">
 <meta name="twitter:description"
-    content="DREEMCORP is George Dreemer's creative studio and venture lab — the seat behind DataSafari, CryptoPandemic, and SkipSchoolMakeMoney. Clients include Amira Tahri, Najib Amhali, and Immersive Studios.">
-<meta name="twitter:image" content="https://dreemcorp.com/images/landing/og-image.png">	
+content="DREEMCORP is George Dreemer's creative studio and venture lab — the seat behind DataSafari, CryptoPandemic, and SkipSchoolMakeMoney. Clients include Amira Tahri, Najib Amhali, and Immersive Studios.">
+<meta name="twitter:image" content="https://dreemcorp.com/images/landing/og-image.png">
+
+<!-- SEO Schema JSON (source: seo/schema/dreemcorp_schema.json) -->
+<script data-custom-script="true" type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://georgedreemer.com/dreemcorp#webpage",
+      "url": "https://georgedreemer.com/dreemcorp",
+      "name": "DREEMCORP — Creative Studio & Venture Lab",
+      "description": "DREEMCORP is George Dreemer's creative studio and venture lab, producing video, content, and creative direction for artists, athletes, and brands.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://georgedreemer.com/#website",
+        "url": "https://georgedreemer.com",
+        "name": "George Dreemer"
+      },
+      "about": {
+        "@id": "https://georgedreemer.com/dreemcorp#organization"
+      },
+      "mainEntity": {
+        "@id": "https://georgedreemer.com/dreemcorp#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://dreemcorp.com/images/landing/og-image.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://georgedreemer.com/dreemcorp#organization",
+      "name": "DREEMCORP",
+      "alternateName": "DREEMCORP Creative Studio",
+      "url": "https://georgedreemer.com/dreemcorp",
+      "description": "A creative studio and venture lab founded by George Dreemer, delivering video editing, content strategy, and creative direction for musicians, athletes, and brands — and the umbrella for visual ventures including anabolic musick and CoolSouls.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dreemcorp.com/images/landing/og-image.png",
+        "width": 1200,
+        "height": 630
+      },
+      "slogan": "Creatio perpetua",
+      "foundingDate": "2020",
+      "genre": [
+        "Creative studio",
+        "Venture lab",
+        "Video production",
+        "Content strategy",
+        "Portfolio project"
+      ],
+      "keywords": [
+        "DREEMCORP",
+        "George Dreemer",
+        "creative studio",
+        "venture lab",
+        "video editing",
+        "content strategy",
+        "Amira Tahri",
+        "Najib Amhali",
+        "Nabil Haryouli",
+        "Immersive Studios",
+        "anabolic musick",
+        "CoolSouls"
+      ],
+      "founder": {
+        "@type": "Person",
+        "@id": "https://georgedreemer.com/#person",
+        "name": "George Dreemer",
+        "url": "https://georgedreemer.com"
+      },
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Video Editing & Long-Form Content Production"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Social Media & Content Strategy"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Brand & Creative Direction"
+          }
+        }
+      ],
+      "dateModified": "2026-08-05",
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+
+<!-- Preconnect to Google Fonts & Pull Nunito, Playfair Display -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap"
+rel="stylesheet">
+
+<!-- Pull Lucide icons -->
+<script data-custom-script="true" src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+<!-- Pull Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- Instagram Embed Instance -->
+<script data-custom-script="true" async src="https://www.instagram.com/embed.js"></script>
+
+<!-- Main Styles-->
+<style>
+:root {
+  --font-body: "Nunito", "Helvetica Neue", sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --color-bg: #ffffff;
+  --color-surface: #f8f7f4;
+  --color-surface-2: #f0ede8;
+  --color-border: rgba(0, 0, 0, 0.10);
+  --color-divider: rgba(0, 0, 0, 0.07);
+  --color-text: #1a1814;
+  --color-text-muted: #5a5750;
+  --color-text-faint: #9a9590;
+  --color-primary: #c80d00; /* primary color is the brand color if applicable default: #01696f */
+  --color-domain-engineering: #014a6f;
+  --color-domain-data: #00a59a;
+  --color-domain-product: #d19900;
+  --color-domain-growth: #ca5100;
+  --space-1: .25rem;
+  --space-2: .5rem;
+  --space-3: .75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --text-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.82rem + 0.28vw, 1rem);
+  --text-base: clamp(1rem, 0.95rem + 0.22vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1rem + 0.6vw, 1.4rem);
+  --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+  --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+  --radius-sm: .25rem;
+  --radius-md: .5rem;
+  --radius-lg: .875rem;
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.05);
+  --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  --content-default: 860px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 300;
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.65;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+.preview-page {
+  max-width: 860px;
+  margin-inline: auto;
+  padding: var(--space-10) var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.preview-label {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+  margin-bottom: var(--space-4);
+}
+
+/* ── NAV ────────────────────────────────────────────────── */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.site-nav__inner {
+  max-width: var(--content-default);
+  margin-inline: auto;
+  padding: var(--space-3) var(--space-6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.site-nav__back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  transition: color var(--transition);
+}
+
+.site-nav__back:hover {
+  color: var(--color-primary);
+}
+
+.site-nav__back svg {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  stroke-width: 2;
+  transition: transform var(--transition);
+}
+
+.site-nav__back:hover svg {
+  transform: translateX(-3px);
+}
+
+.site-nav__title {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text);
+  letter-spacing: .01em;
+}
+
+/* ── PAGE LAYOUT ─────────────────────────────────────────── */
+.experience-page {
+  max-width: var(--content-default);
+  margin-inline: auto;
+  padding: var(--space-10) var(--space-6) var(--space-16);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+/* ── PAGE HEADER ─────────────────────────────────────────── */
+.page-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-header__eyebrow {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: var(--space-3);
+}
+
+.page-header__title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--color-text);
+  margin-bottom: var(--space-4);
+  letter-spacing: -0.01em;
+}
+
+.page-header__subtitle {
+  font-size: var(--text-lg);
+  font-weight: 400;
+  color: var(--color-text-muted);
+  max-width: 56ch;
+  line-height: 1.7;
+  align-self: center;
+  text-align: center;
+  padding-top: var(--space-10);
+}
+
+/* ── SECTION LABEL ─────────────────────────────────── */
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.section-label__text {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.section-label__line {
+  flex: 1;
+  height: 1px;
+  background: var(--color-divider);
+}
+
+/* ── E1: CONTEXT BLOCK ─────────────────────────────────── */
+.context-block {
+  border-left: none;
+  padding-left: 0;
+  margin-inline: auto;
+  position: relative;
+  padding-top: var(--space-10);
+}
+
+.context-block::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 3px;
+  background: var(--color-primary);
+  margin-bottom: var(--space-5);
+}
+
+.context-block p {
+  font-size: var(--text-lg);
+  font-weight: 300;
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+.context-block p:first-of-type {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--text-xl);
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+.context-block p:not(:first-of-type) {
+  font-size: var(--text-lg);
+  font-weight: 300;
+  color: var(--color-text);
+  line-height: 1.7;
+  max-width: 70ch;
+  padding-top: var(--space-4);
+}
+
+.context-block p:last-of-type {
+  color: var(--color-text-muted);
+  padding: 0;
+  max-width: 67ch;
+}
+
+.context-block p + p {
+  margin-top: var(--space-4);
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+}
+
+/* ── E2: SNAPSHOT CARD ─────────────────────────────────── */
+.snapshot-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-top: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6) var(--space-8);
+  border-top-color: var(--color-primary);
+}
+
+/* Domain top-border — mirrors E5 card system
+.snapshot-card[data-domain="engineering"] {
+  border-top-color: var(--color-domain-engineering);
+}
+
+.snapshot-card[data-domain="data"] {
+  border-top-color: var(--color-domain-data);
+}
+
+.snapshot-card[data-domain="product"] {
+  border-top-color: var(--color-domain-product);
+}
+
+.snapshot-card[data-domain="growth"] {
+  border-top-color: var(--color-domain-growth);
+}
+*/
+
+.snapshot-card__meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(180px, 100%), 1fr));
+  gap: var(--space-5) var(--space-8);
+  margin-bottom: var(--space-6);
+}
+
+.snapshot-card__divider {
+  height: 1px;
+  background: var(--color-divider);
+  margin-bottom: var(--space-6);
+}
+
+.snapshot-item__key {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+  margin-bottom: var(--space-1);
+}
+
+.snapshot-item__value {
+  font-size: var(--text-sm);
+  font-weight: 400;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+/* Prominent fields — Role and Type */
+.snapshot-item--prominent .snapshot-item__value {
+  font-size: var(--text-base);
+  font-weight: 600;
+}
+
+/* Links */
+.snapshot-item__value a {
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+  transition: border-color var(--transition), color var(--transition);
+}
+
+.snapshot-item__value a:hover {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+/* ── Highlights ─────────────────────────────────────────── */
+.snapshot-card__highlights-label {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+  margin-bottom: var(--space-3);
+}
+
+.snapshot-card__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.achievement-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  padding: var(--space-1) var(--space-4) var(--space-1) var(--space-3);
+  font-size: var(--text-xs);
+  font-weight: 400;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+.achievement-chip__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: var(--color-primary); /* fallback if no domain set */
+}
+
+/* Domain-colored dots — same four colors, same system */
+.achievement-chip[data-domain="engineering"] .achievement-chip__dot {
+  background: var(--color-domain-engineering);
+}
+
+.achievement-chip[data-domain="data"] .achievement-chip__dot {
+  background: var(--color-domain-data);
+}
+
+.achievement-chip[data-domain="product"] .achievement-chip__dot {
+  background: var(--color-domain-product);
+}
+
+.achievement-chip[data-domain="growth"] .achievement-chip__dot {
+  background: var(--color-domain-growth);
+}
+
+
+/* Subtle chip tint matching domain */
+.achievement-chip[data-domain="engineering"] {
+  border-color: color-mix(in srgb, var(--color-domain-engineering) 20%, transparent);
+}
+
+.achievement-chip[data-domain="data"] {
+  border-color: color-mix(in srgb, var(--color-domain-data) 20%, transparent);
+}
+
+.achievement-chip[data-domain="product"] {
+  border-color: color-mix(in srgb, var(--color-domain-product) 20%, transparent);
+}
+
+.achievement-chip[data-domain="growth"] {
+  border-color: color-mix(in srgb, var(--color-domain-growth) 20%, transparent);
+}
+
+/* ── ELEMENT 3 — IN NUMBERS / STAT COUNTER ─────────────────── */
+.stat-counter-section {
+  padding-block: var(--space-4);
+}
+
+.stat-counter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+}
+
+.stat-counter__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-2);
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* The animated number — domain color threads through here */
+.stat-counter__number {
+  font-family: var(--font-body);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--color-text-muted);   /* default fallback */
+  transition: color 0.3s ease;
+}
+
+/* Domain color on the number */
+.stat-counter__item[data-domain="engineering"] .stat-counter__number {
+  color: var(--color-domain-engineering);
+}
+
+.stat-counter__item[data-domain="data"] .stat-counter__number {
+  color: var(--color-domain-data);
+}
+
+.stat-counter__item[data-domain="product"] .stat-counter__number {
+  color: var(--color-domain-product);
+}
+
+.stat-counter__item[data-domain="growth"] .stat-counter__number {
+  color: var(--color-domain-growth);
+}
+
+.stat-counter__label {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.4;
+  max-width: 14ch;
+}
+
+/* Scroll reveal — fade in as a group, no layout shift */
+.stat-counter__item {
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stat-counter__item.is-visible {
+  opacity: 1;
+}
+
+/* Staggered delay per item */
+.stat-counter__item:nth-child(1) { transition-delay: 0ms; }
+.stat-counter__item:nth-child(2) { transition-delay: 80ms; }
+.stat-counter__item:nth-child(3) { transition-delay: 160ms; }
+.stat-counter__item:nth-child(4) { transition-delay: 240ms; }
+
+/* Mobile — 2×2 grid */
+@media (max-width: 640px) {
+  .stat-counter {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-8) var(--space-4);
+  }
+}
+
+/* ── E4: STACK GRID ────────────────────────────────────── */
+.stack-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.stack-group__label {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+  margin-bottom: var(--space-3);
+}
+
+.stack-group__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.stack-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  padding: var(--space-1) var(--space-4) var(--space-1) var(--space-2);
+  transition: background var(--transition), box-shadow var(--transition);
+  cursor: default;
+}
+
+.stack-badge:hover {
+  background: var(--color-surface-2);
+  box-shadow: var(--shadow-sm);
+}
+
+.stack-badge img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  opacity: .80;
+}
+
+.stack-badge__name {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-text);
+  letter-spacing: .01em;
+}
+
+/* text-only badge (human languages, certifications) */
+.stack-badge--text {
+  padding: var(--space-1) var(--space-4);
+}
+
+/* ── Language badge: flag ────────────────────────────────── */
+.stack-badge__flag {
+  font-size: 1rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/* ── Language badge: CEFR pill ───────────────────────────── */
+.stack-badge__cefr {
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.6;
+  color: #bf7bff;
+  background: rgba(191, 123, 255, 0.10);
+  border: 1px solid rgba(191, 123, 255, 0.30);
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+/* ── Language badge: layout ──────────────────────────────── */
+.stack-badge--lang {
+  min-width: 11rem;
+  gap: 6px;
+}
+
+/* ── Text-mark badge (tools with no icon) ────────────────── */
+.stack-badge--text {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stack-badge__mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #fff;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+/* ── Credential card grid ────────────────────────────────── */
+.stack-group--credentials .stack-group__items,
+.stack-group__items--credentials {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.75rem;
+}
+
+.credential-card {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 150ms ease, transform 150ms ease;
+}
+
+.credential-card:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.09);
+  transform: translateY(-2px);
+}
+
+.credential-card__icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  background: #f5f3ee;
+}
+
+.credential-card__icon--img {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.credential-card__icon--svg {
+  color: var(--color-primary);
+}
+
+.credential-card__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.credential-card__title {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.3;
+  margin: 0 0 0.2rem;
+}
+
+.credential-card__sub {
+  font-size: 0.68rem;
+  color: #888;
+  margin: 0 0 0.4rem;
+}
+
+.credential-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.credential-card__context {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-top: var(--space-1);
+  margin-bottom: var(--space-1);
+}
+
+/* ── Credential card: org description ───────────────────────── */
+.credential-card__org-desc {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-text-faint);
+  line-height: 1.5;
+  margin: 0.25rem 0 0.35rem;
+  max-width: 52ch;
+}
+
+/* ── Credential card: bullet learning points ─────────────────── */
+.credential-card__bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0.25rem 0 0.45rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.credential-card__bullets li {
+  font-size: 0.75rem;
+  color: var(--color-text-faint);
+  line-height: 1.5;
+  padding-left: 0.9rem;
+  position: relative;
+  max-width: 52ch;
+}
+
+.credential-card__bullets li::before {
+  content: '·';
+  position: absolute;
+  left: 0.2rem;
+  color: var(--color-text-faint);
+  font-weight: 700;
+}
+
+.credential-card__link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-border);
+  transition: border-color var(--transition-interactive),
+              color var(--transition-interactive);
+}
+
+.credential-card__link:hover {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+/* ── Credential pills ────────────────────────────────────── */
+.credential-pill {
+  display: inline-block;
+  font-size: 0.6rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+.credential-pill--year {
+  background: #f5f3ee;
+  color: #888;
+  border: 1px solid #e0ddd8;
+}
+
+.credential-pill--gpa {
+  background: #f0f7f0;
+  color: #3a7a3a;
+  border: 1px solid #c6e0c6;
+}
+
+.credential-pill--score {
+  background: #f0f4ff;
+  color: #4a6fc4;
+  border: 1px solid #c6d4f0;
+}
+
+.credential-pill--cert {
+  background: rgba(191, 123, 255, 0.10);
+  color: #bf7bff;
+  border: 1px solid rgba(191, 123, 255, 0.30);
+}
+
+.credential-pill--award {
+  background: #fdf8ee;
+  color: #a07820;
+  border: 1px solid #e8d9a8;
+}
+
+/* ── E5: ABILITY GRID ──────────────────────────────────── */
+.ability-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
+  gap: var(--space-4);
+}
+
+.ability-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-top: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  transition: box-shadow var(--transition), background var(--transition);
+}
+
+.ability-card:hover {
+  box-shadow: var(--shadow-md);
+  background: var(--color-surface-2);
+}
+
+.ability-card__icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ability-card__icon svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.5;
+}
+
+.ability-card__title {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.3;
+}
+
+.ability-card__desc {
+  font-size: var(--text-xs);
+  font-weight: 300;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.ability-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin-top: auto;
+}
+
+.ability-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 600;
+  font-family: var(--font-body, sans-serif);
+  color: var(--color-text-muted);
+  background: var(--color-surface-2, #f0ede8);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  padding: 2px 8px;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  line-height: 1.5;
+}
+
+/* ── Domain accents ───────────────────────────────────── */
+.ability-card[data-domain="engineering"] {
+  border-top: 2px solid var(--color-domain-engineering);
+}
+
+.ability-card[data-domain="engineering"] .ability-card__icon {
+  color: var(--color-domain-engineering);
+}
+
+.ability-card[data-domain="data"] {
+  border-top: 2px solid var(--color-domain-data);
+}
+
+.ability-card[data-domain="data"] .ability-card__icon {
+  color: var(--color-domain-data);
+}
+
+.ability-card[data-domain="product"] {
+  border-top: 2px solid var(--color-domain-product);
+}
+
+.ability-card[data-domain="product"] .ability-card__icon {
+  color: var(--color-domain-product);
+}
+
+.ability-card[data-domain="growth"] {
+  border-top: 2px solid var(--color-domain-growth);
+}
+
+.ability-card[data-domain="growth"] .ability-card__icon {
+  color: var(--color-domain-growth);
+}
+
+/* ── Legend ───────────────────────────────────────────── */
+.ability-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.ability-legend__item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  border: 1px solid transparent;
+  letter-spacing: 0.02em;
+}
+
+.ability-legend__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.ability-legend__item--engineering {
+  color: var(--color-domain-engineering);
+  background: color-mix(in srgb, var(--color-domain-engineering) 10%, transparent);
+  border-color: color-mix(in srgb, var(--color-domain-engineering) 25%, transparent);
+}
+
+.ability-legend__item--engineering .ability-legend__dot {
+  background: var(--color-domain-engineering);
+}
+
+.ability-legend__item--data {
+  color: var(--color-domain-data);
+  background: color-mix(in srgb, var(--color-domain-data) 10%, transparent);
+  border-color: color-mix(in srgb, var(--color-domain-data) 25%, transparent);
+}
+
+.ability-legend__item--data .ability-legend__dot {
+  background: var(--color-domain-data);
+}
+
+.ability-legend__item--product {
+  color: var(--color-domain-product);
+  background: color-mix(in srgb, var(--color-domain-product) 10%, transparent);
+  border-color: color-mix(in srgb, var(--color-domain-product) 25%, transparent);
+}
+
+.ability-legend__item--product .ability-legend__dot {
+  background: var(--color-domain-product);
+}
+
+.ability-legend__item--growth {
+  color: var(--color-domain-growth);
+  background: color-mix(in srgb, var(--color-domain-growth) 10%, transparent);
+  border-color: color-mix(in srgb, var(--color-domain-growth) 25%, transparent);
+}
+
+.ability-legend__item--growth .ability-legend__dot {
+  background: var(--color-domain-growth);
+}
+
+/* ── E6: WORKS GRID / EVIDENCE CARDS ───────────────────────────────── */
+.evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  gap: var(--space-4);
+}
+
+/* ── Base card ───────────────────────────────────────────── */
+.evidence-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: box-shadow var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.evidence-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* ── Domain left-border threading from E4 ────────────────── */
+.evidence-card[data-domain="engineering"] {
+  border-left-color: var(--color-domain-engineering);
+}
+
+.evidence-card[data-domain="data"] {
+  border-left-color: var(--color-domain-data);
+}
+
+.evidence-card[data-domain="product"] {
+  border-left-color: var(--color-domain-product);
+}
+
+.evidence-card[data-domain="growth"] {
+  border-left-color: var(--color-domain-growth);
+}
+
+/* ── Domain tag pill (above title in body) ───────────────── */
+.evidence-card__domain-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-2);
+}
+
+.evidence-card__domain-tag-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.evidence-card[data-domain="engineering"] .evidence-card__domain-tag {
+  color: var(--color-domain-engineering);
+}
+
+.evidence-card[data-domain="engineering"] .evidence-card__domain-tag-dot {
+  background: var(--color-domain-engineering);
+}
+
+.evidence-card[data-domain="data"] .evidence-card__domain-tag {
+  color: var(--color-domain-data);
+}
+
+.evidence-card[data-domain="data"] .evidence-card__domain-tag-dot {
+  background: var(--color-domain-data);
+}
+
+.evidence-card[data-domain="product"] .evidence-card__domain-tag {
+  color: var(--color-domain-product);
+}
+
+.evidence-card[data-domain="product"] .evidence-card__domain-tag-dot {
+  background: var(--color-domain-product);
+}
+
+.evidence-card[data-domain="growth"] .evidence-card__domain-tag {
+  color: var(--color-domain-growth);
+}
+
+.evidence-card[data-domain="growth"] .evidence-card__domain-tag-dot {
+  background: var(--color-domain-growth);
+}
+
+/* ── VARIANT A: Single image ─────────────────────────────── */
+.evidence-card__thumb {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  background: var(--color-surface-2);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.evidence-card__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 420ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.evidence-card__thumb--placeholder {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+}
+
+.evidence-card:hover .evidence-card__thumb img { transform: scale(1.03); }
+
+/* ── VARIANT B: Slideshow ────────────────────────────────── */
+.evidence-card__slides {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  background: var(--color-surface-2);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.evidence-card__slides-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.evidence-card__slide {
+  min-width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 600ms cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.evidence-card__slide.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.evidence-card__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Dot indicators */
+.evidence-card__slide-dots {
+  position: absolute;
+  bottom: var(--space-2);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+  z-index: 2;
+}
+
+.evidence-card__slide-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.45);
+  transition: background var(--transition), transform var(--transition);
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+.evidence-card__slide-dot.is-active {
+  background: #fff;
+  transform: scale(1.3);
+}
+
+/* Domain-colored active dot */
+.evidence-card[data-domain="engineering"] .evidence-card__slide-dot.is-active {
+  background: var(--color-domain-engineering);
+}
+
+.evidence-card[data-domain="data"] .evidence-card__slide-dot.is-active {
+  background: var(--color-domain-data);
+}
+
+.evidence-card[data-domain="product"] .evidence-card__slide-dot.is-active {
+  background: var(--color-domain-product);
+}
+
+.evidence-card[data-domain="growth"] .evidence-card__slide-dot.is-active {
+  background: var(--color-domain-growth);
+}
+
+/* ── VARIANT C: Video (YouTube iframe or <video> file) ───── */
+.evidence-card__video {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  background: #0e0e0e;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.evidence-card__video[data-orientation="portrait"] {
+  aspect-ratio: 9/16;
+  max-height: 480px;
+}
+
+.evidence-card__video iframe,
+.evidence-card__video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border: none;
+}
+
+/* Sound toggle button */
+.evidence-card__sound-btn {
+  position: absolute;
+  bottom: var(--space-3);
+  right: var(--space-3);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 3;
+  transition: background var(--transition);
+}
+
+.evidence-card__sound-btn:hover { background: rgba(0,0,0,0.8); }
+.evidence-card__sound-btn svg { width: 14px; height: 14px; stroke: #fff; }
+
+/* ── Card body ────────────────────────────────────── */
+.evidence-card__body {
+  padding: var(--space-4) var(--space-5);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.evidence-card__title {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: var(--space-2);
+  line-height: 1.3;
+}
+
+.evidence-card__bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  margin-top: auto;
+}
+
+.evidence-card__bullets li {
+  font-size: var(--text-xs);
+  font-weight: 300;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  padding-left: var(--space-4);
+  position: relative;
+}
+
+.evidence-card__bullets li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 6px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--color-text-faint);
+}
+
+/* ── E7: IN DEPTH ACCORDION ────────────────────────────── */
+.story-accordion {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.story-accordion__item + .story-accordion__item {
+  border-top: 1px solid var(--color-divider);
+}
+
+.story-accordion__trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-5) var(--space-6);
+  background: var(--color-surface);
+  border: none;
+  cursor: pointer;
+  gap: var(--space-4);
+  transition: background var(--transition);
+}
+
+.story-accordion__trigger:hover {
+  background: var(--color-surface-2);
+}
+
+.story-accordion__trigger-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-width: 0;
+}
+
+.story-accordion__trigger-label {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: .02em;
+  text-align: left;
+}
+
+/* Domain tag on trigger — same dot+label system as E6 */
+.story-accordion__domain-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.story-accordion__domain-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.story-accordion__item[data-domain="engineering"] .story-accordion__domain-tag {
+  color: var(--color-domain-engineering);
+}
+
+.story-accordion__item[data-domain="engineering"] .story-accordion__domain-dot {
+  background: var(--color-domain-engineering);
+}
+
+.story-accordion__item[data-domain="data"] .story-accordion__domain-tag {
+  color: var(--color-domain-data);
+}
+
+.story-accordion__item[data-domain="data"] .story-accordion__domain-dot {
+  background: var(--color-domain-data);
+}
+
+.story-accordion__item[data-domain="product"] .story-accordion__domain-tag {
+  color: var(--color-domain-product);
+}
+
+.story-accordion__item[data-domain="product"] .story-accordion__domain-dot {
+  background: var(--color-domain-product);
+}
+
+.story-accordion__item[data-domain="growth"] .story-accordion__domain-tag {
+  color: var(--color-domain-growth);
+}
+
+.story-accordion__item[data-domain="growth"] .story-accordion__domain-dot {
+  background: var(--color-domain-growth);
+}
+
+.story-accordion__chevron {
+  width: 18px;
+  height: 18px;
+  color: var(--color-text-muted);
+  transition: transform var(--transition);
+  flex-shrink: 0;
+}
+
+.story-accordion__trigger[aria-expanded="true"] .story-accordion__chevron {
+  transform: rotate(180deg);
+}
+
+/* Body — domain left-border threads when open */
+.story-accordion__body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 380ms cubic-bezier(0.16, 1, 0.3, 1);
+  background: var(--color-bg);
+  border-left: 2px solid transparent;
+  transition: grid-template-rows 380ms cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 380ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.story-accordion__body[aria-hidden="false"] {
+  grid-template-rows: 1fr;
+}
+
+/* Domain left-border on open panel */
+.story-accordion__item[data-domain="engineering"] .story-accordion__body[aria-hidden="false"] {
+  border-left-color: var(--color-domain-engineering);
+}
+
+.story-accordion__item[data-domain="data"] .story-accordion__body[aria-hidden="false"] {
+  border-left-color: var(--color-domain-data);
+}
+
+.story-accordion__item[data-domain="product"] .story-accordion__body[aria-hidden="false"] {
+  border-left-color: var(--color-domain-product);
+}
+
+.story-accordion__item[data-domain="growth"] .story-accordion__body[aria-hidden="false"] {
+  border-left-color: var(--color-domain-growth);
+}
+
+.story-accordion__inner {
+  overflow: hidden;
+}
+
+.story-accordion__content {
+  padding: var(--space-6) var(--space-6) var(--space-8);
+  font-size: var(--text-base);
+  font-weight: 300;
+  color: var(--color-text);
+  line-height: 1.8;
+  max-width: 66ch;
+  margin-inline: auto;
+}
+
+.story-accordion__content p + p {
+  margin-top: var(--space-4);
+}
+
+.story-accordion__content strong {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+/* Simple list support inside content */
+.story-accordion__content ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.story-accordion__content ul li {
+  padding-left: var(--space-4);
+  position: relative;
+}
+
+.story-accordion__content ul li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 8px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--color-text-faint);
+}
+
+.story-accordion__gallery {
+  display: flex;
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+}
+
+.story-accordion__gallery img {
+  flex: 0 0 auto;
+  border-radius: var(--radius-md);
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+/* ── E8: INSTAGRAM SCROLLER ─────────────────────────────────── */
+.ig-scroller {
+  position: relative;
+}
+
+.ig-scroller__track {
+  display: flex;
+  gap: var(--space-4);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--space-4);
+  padding: var(--space-2) var(--space-4) var(--space-1);
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ig-scroller__track::-webkit-scrollbar {
+  display: none;
+}
+
+.ig-scroller::before,
+.ig-scroller::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: var(--space-6);
+  width: var(--space-4);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.ig-scroller::before {
+  left: 0;
+  background: linear-gradient(to right, var(--color-bg), transparent);
+}
+
+.ig-scroller::after {
+  right: 0;
+  background: linear-gradient(to left, var(--color-bg), transparent);
+}
+
+.ig-scroller__item {
+  flex: 0 0 auto;
+  width: min(360px, 85vw);
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.ig-scroller__embed {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  transition: box-shadow var(--transition);
+  min-height: 260px;
+}
+
+.ig-scroller__embed:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.ig-scroller__embed .instagram-media {
+  margin: 0 !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.ig-scroller__caption {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  padding-inline: var(--space-1);
+}
+
+.ig-scroller__nav {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.ig-scroller__nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background var(--transition), border-color var(--transition);
+}
+
+.ig-scroller__nav-btn:hover {
+  background: var(--color-surface-2);
+  border-color: var(--color-primary);
+}
+
+.ig-scroller__nav-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (hover: none) {
+  .ig-scroller__nav {
+    display: none;
+  }
+}
+
+/* ── E9: CONTENT ARCHIVE — YOUTUBE CHANNEL SCROLLERS ─────────────── */
+.content-archive__channel {
+  margin-bottom: var(--space-10);
+}
+
+.content-archive__channel:last-child {
+  margin-bottom: 0;
+}
+
+.content-archive__channel-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.content-archive__channel-label-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-width: 0;
+}
+
+.content-archive__channel-nav {
+  display: flex;
+  gap: var(--space-2);
+  flex-shrink: 0;
+}
+
+.content-archive__channel-pfp {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid var(--color-border);
+}
+
+.content-archive__channel-name {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: .01em;
+}
+
+.content-archive__channel-meta {
+  font-size: var(--text-xs);
+  color: var(--color-text-faint);
+  font-weight: 500;
+}
+
+.yt-scroller {
+  position: relative;
+}
+
+.yt-scroller__track {
+  display: flex;
+  gap: var(--space-4);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--space-4);
+  padding: var(--space-2) var(--space-4) var(--space-1);
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.yt-scroller__track::-webkit-scrollbar {
+  display: none;
+}
+
+.yt-scroller::before,
+.yt-scroller::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: var(--space-4);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.yt-scroller::before {
+  left: 0;
+  background: linear-gradient(to right, var(--color-bg), transparent);
+}
+
+.yt-scroller::after {
+  right: 0;
+  background: linear-gradient(to left, var(--color-bg), transparent);
+}
+
+.yt-scroller__item {
+  flex: 0 0 auto;
+  --yt-h: clamp(150px, 16vw, 190px);
+  width: calc(var(--yt-h) * 16 / 9);
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.yt-scroller__item[data-orientation="portrait"] {
+  width: calc(var(--yt-h) * 9 / 16);
+}
+
+.yt-scroller__embed {
+  position: relative;
+  width: 100%;
+  height: var(--yt-h);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: #0e0e0e;
+  transition: box-shadow var(--transition);
+}
+
+.yt-scroller__embed:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.yt-scroller__embed iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.yt-scroller__thumb-btn {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+}
+
+.yt-scroller__thumb-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.yt-scroller__play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.yt-scroller__thumb-btn:hover .yt-scroller__play-icon {
+  background: rgba(0, 0, 0, 0.85);
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
+.yt-scroller__play-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  display: block;
+}
+
+.yt-scroller__caption {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  padding-inline: var(--space-1);
+}
+
+.yt-scroller__nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background var(--transition), border-color var(--transition);
+}
+
+.yt-scroller__nav-btn:hover {
+  background: var(--color-surface-2);
+  border-color: var(--color-primary);
+}
+
+.yt-scroller__nav-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.content-archive__channel-nav .yt-scroller__nav-btn {
+  width: 32px;
+  height: 32px;
+}
+
+.content-archive__channel-nav .yt-scroller__nav-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+@media (hover: none) {
+  .content-archive__channel-nav {
+    display: none;
+  }
+}
+
+/* Square-format items (shorts YouTube tags as vertical but actual frame is 1:1) */
+.yt-scroller__item[data-orientation="square"] {
+  width: var(--yt-h);
+}
+
+/* Locked / private teaser variant — thumbnail visible, no public playback */
+.yt-scroller__thumb-btn--locked {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.yt-scroller__thumb-btn--locked img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(0.35) brightness(0.55);
+  transition: filter var(--transition);
+}
+
+.yt-scroller__thumb-btn--locked:hover img {
+  filter: grayscale(0.2) brightness(0.45);
+}
+
+.yt-scroller__lock-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.yt-scroller__thumb-btn--locked:hover .yt-scroller__lock-icon {
+  background: rgba(0, 0, 0, 0.85);
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
+.yt-scroller__lock-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  display: block;
+}
+
+.yt-scroller__caption--locked {
+  color: var(--color-text-faint);
+  font-style: italic;
+}
+
+/* ── SCROLL REVEAL ─────────────────────────────────────── */
+@supports(animation-timeline:scroll()) {
+  .fade-in {
+    opacity: 0;
+    animation: reveal-fade linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 80%;
+  }
+}
+
+@keyframes reveal-fade {
+  to {
+    opacity: 1;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .fade-in {
+    opacity: 1;
+    animation: none;
+  }
+
+  .stat-counter__item {
+    opacity: 1;
+  }
+}
+
+/* ── RESPONSIVE ────────────────────────────────────────── */
+@media(max-width:600px) {
+  .preview-page {
+    padding: var(--space-6) var(--space-4);
+    gap: var(--space-8);
+  }
+
+  .snapshot-card {
+    padding: var(--space-5);
+  }
+
+  .ability-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-header__title {
+    font-size: clamp(1.75rem, 8vw, 2.5rem);
+  }
+
+  .site-nav__title {
+    display: none;
+  }
+}
+</style>
+
+<!-- Builder-specific Style Fixes/Overrides -->
+<style>
+html {
+  font-size: 100% !important;
+}
+
+body {
+  font-size: 16px !important;
+}
+
+.experience-page {
+  max-width: 1100px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 24px 96px !important;
+}
+
+.stat-counter {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 24px !important;
+}
+
+.stat-counter__number {
+  font-size: clamp(2rem, 5vw, 4rem) !important;
+  line-height: 1 !important;
+}
+
+.stat-counter__label {
+  margin-top: 10px;
+}
+
+.evidence-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 24px !important;
+}
+
+@media (max-width: 900px) {
+  .stat-counter {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .evidence-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .experience-page {
+    padding: 0 16px 72px !important;
+  }
+
+  .stat-counter {
+    grid-template-columns: 1fr !important;
+  }
+}
+</style>	
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.min.js"></script>
 	<![endif]-->
@@ -108,7 +2207,7 @@
 </head>
 
 
-<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a18bddd8a85d0259fb1585dbb509cff8" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e41008b9f2b2135191fe2b8" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a190ffc65f050099dde2a549cd23275c" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffc65f120088a7db44ab9902c25d" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1785861445"></a></div></div></div><div id="a190ffc65f2a00ae90455118243745c2" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffc65f350085077a2dd8f2f5d6c8" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1785861445"></a></div></div></div></div></div><div id="a19127dc957200cf4b59e37dbc6db4c5" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a18bddd8a85d0259fb1585dbb509cff8" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e41008b9f2b2135191fe2b8" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a190ffc65f050099dde2a549cd23275c" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffc65f120088a7db44ab9902c25d" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1786623801"></a></div></div></div><div id="a190ffc65f2a00ae90455118243745c2" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffc65f350085077a2dd8f2f5d6c8" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1786623801"></a></div></div></div></div></div><div id="a19127dc957200cf4b59e37dbc6db4c5" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -190,187 +2289,1699 @@
 			'children' => array()
 		)
 	)
-)); ?><div class="clearfix"></div></div></div></div><div id="a18bddd77e41011a36c87f4c78fe86c7" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e41023aa5feaee335f02928" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4103c49bf902bb39b00279" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><span style="color:#ffffff;"><strong>YBI MEDIA+DREEMCORP</strong></span></h1>
-</div></div></div></div></div><div id="a18bddd77e4104c7533e77d5ab204e8b" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1785861445"></div></div></div></div></div></div></div><div id="wb_main_a18bddd8a85d0259fb1585dbb509cff8" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4106a6da01016ade60bba6" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e41071c7164cf5eee4b366e" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e41081b51a68641f3044389" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">EXPERIENCE </span></strong><span style="color:rgba(0,0,0,1);">AT A GLANCE</span></h1>
-</div><div id="a18bddd77e41093c473602946aeaed71" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e410a37d55b4dab5e51d01b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e410bb87438c085d7298ef4" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e410c260572ffd9eed63832" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e410e230eb5f9c8f374834e" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2"><span style="color:rgba(0,0,0,1);">Service</span></h2>
-</div></div></div><div id="a18bddd77e410f4d22f93b9338cad3a8" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom15" style="text-align: center;"><span style="color:rgba(0,0,0,1);">Working with the talented Younes Belguebli, I was able to create and curate social media content for incredible people and companies, such as Dennis Toppin, Amira Tahri, Najib Amhali, CoolSouls, TaJoela and many more. I had the privelege and pleasure to edit videos and photos, as well as create visuals for many amazing clients.</span></p>
-</div></div></div><div id="a18bddd77e4110cf70e008fffcf62d1a" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4111423313b28c01cb858e" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e41138cff50c732c3a608e6" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2"><span style="color:rgba(255,255,255,1);">Video &amp; Graphics</span></h2>
-</div></div></div><div id="a18bddd77e41144bc0654eefd0756ec6" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom15" style="text-align: center;"><span style="color:rgba(255,255,255,1);">Due to the diverse nature of content, I was able to innovate in my approach of video transitions and long form editing. Often getting footage that is hours long with the goal to scout the best moments into a cohesive story, with exciting custom-made transitions and fitting color correction. Most of all I am proud of the custom transitions I created.</span></p>
-</div></div></div><div id="a18bddd77e411575380e36a3e8902bcc" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4116d7ef49b16e816c7276" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e41183d846abbde3d808102" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2">Personal Branding</h2>
-</div></div></div><div id="a18bddd77e4119d0a9730e032725e899" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom15" style="text-align: center;">In certain cases I was tasked with creating a consistent branding image of a client, such as with the creation of, The Wonder Girl, aka Amira Tahri's YouTube channel! Exciting projects like this motivated me to push the limits of my capabilities to create captivating outros, logo's, covers, which all have a familiar pattern to them for a cohesive online persona. </p>
-</div></div></div></div></div></div></div><div id="a18bddd77e411a0a54f4cf6b4a06d721" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e411b7d69e1ef48460c5de8" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e411cf447cd8cd76ac80c65" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e411e4840947832f40c079a" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2"><span style="color:rgba(0,0,0,1);">Service</span></h2>
-</div></div></div><div id="a18bddd77e411f525759c1137660873b" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom15" style="text-align: center;"><span style="color:rgba(0,0,0,1);">Working with the talented Younes Belguebli, I was able to create and curate social media content for incredible people and companies, such as Dennis Toppin, Amira Tahri, Najib Amhali, CoolSouls, TaJoela and many more. I had the privelege and pleasure to edit videos and photos, as well as create visuals for many amazing clients.</span></p>
-</div></div></div><div id="a18bddd77e41209bf140015cac68168c" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e41217c95c600705452e4eb" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4123c732593d0c2093d5d1" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2"><span style="color:rgba(255,255,255,1);">Video</span></h2>
-</div></div></div><div id="a18bddd77e4124c284039dbccd9e3cba" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom15" style="text-align: center;"><span style="color:rgba(255,255,255,1);">Due to the diverse nature of content, I was able to innovate in my approach of video transitions and long form editing. Often getting footage that is hours long with the goal to scout the best moments into a cohesive story, with exciting custom-made transitions and fitting color correction. Most of all I am proud of the custom transitions I created.</span></p>
-</div></div></div><div id="a18bddd77e4125382459b99c2b7d09f0" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e412628319d963157e36e83" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4128f35727b9477701dcd3" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2">Persona Branding</h2>
-</div></div></div><div id="a18bddd77e4129a3d8efdbac947d5cac" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom15" style="text-align: center;">In certain cases I was tasked with creating a consistent branding image of a client, such as with the creation of, The Wonder Girl, aka Amira Tahri's YouTube channel! Exciting projects like this motivated me to push the limits of my capabilities to create captivating outros, logo's, covers, which all have a familiar pattern to them for a cohesive online persona. </p>
-</div></div></div></div></div><div id="a18bddd77e412aa5abe3ac4cf611c3c2" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">ABILITIES </span></strong><span style="color:rgba(0,0,0,1);">AT A GLANCE</span></h1>
-</div><div id="a18bddd77e412b48d19c50103ee4cd56" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e412c7319c0f817bd8dfcd1" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/b313435b82b6c85dbc96f0322aca03d2_1580x322_fit.png?ts=1785861445"></div></div></div></div></div><div id="a18bddd77e412defd545388db97487af" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e412e400e001469e07037ac" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">VISUAL PORTFOLIO</span></strong></h1>
-</div></div></div><div id="a18bddd77e412fad7e3a21317b233d2d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e41304713c9b4a943518508" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">Amira Tahri</span></strong></h2>
-</div><div id="a18bddd77e41316b3fde718f33719128" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3" style="text-align: center;">YouTube Branding Pack: Profile Picture, Cover &amp; Outro</h3>
-</div><div id="a18bddd77e4200f1ad4082e5ff0ff6f4" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4201cbd2fc8a72c84db740" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/613b45efa1b796c22d9b594032f9e554_fit.png?ts=1785861445"><script>window._spDefer.add(function() {
-					$("#a18bddd77e4201cbd2fc8a72c84db740").on("click touchstart touchend touchmove", function(e) {
-						if (e.type === "touchstart") {
-							$(this).data("pswpDisabled", false);
-						} else if (e.type === "touchmove") {
-							$(this).data("pswpDisabled", true);
-						}
-						if ((e.type === "click" || e.type === "touchend") && !$(this).data("pswpDisabled")) {
-							if ($(this).data("clicked")) { return; }
-							$(this).data("clicked", true);
-							var img = new Image();
-							img.onload = function() {
-								var lightBox = new window.PhotoSwipeLightbox({
-									appendToEl: $('.wb_pswp').get(0),
-									bgOpacity: 1,
-									dataSource: [{
-										src: this.src,
-										width: this.width,
-										height: this.height,
-										msrc: this.src
-									}],
-									pswpModule: window.PhotoSwipe,
-									index: 0,
-								});
-								lightBox.init();
-								lightBox.loadAndOpen(0);
-								$("#a18bddd77e4201cbd2fc8a72c84db740").data("clicked", false);
-							};
-							img.src = "gallery\/at-pfp-alt-showcase-ts1662224568.png";
-						}
-					});
-				});</script></div></div></div><div id="a18bddd77e42022b604e6de2659ddc4f" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/376fea7faf8578a921b97aaa21b20c54_1580x888_fit.png?ts=1785861445"><script>window._spDefer.add(function() {
-					$("#a18bddd77e42022b604e6de2659ddc4f").on("click touchstart touchend touchmove", function(e) {
-						if (e.type === "touchstart") {
-							$(this).data("pswpDisabled", false);
-						} else if (e.type === "touchmove") {
-							$(this).data("pswpDisabled", true);
-						}
-						if ((e.type === "click" || e.type === "touchend") && !$(this).data("pswpDisabled")) {
-							if ($(this).data("clicked")) { return; }
-							$(this).data("clicked", true);
-							var img = new Image();
-							img.onload = function() {
-								var lightBox = new window.PhotoSwipeLightbox({
-									appendToEl: $('.wb_pswp').get(0),
-									bgOpacity: 1,
-									dataSource: [{
-										src: this.src,
-										width: this.width,
-										height: this.height,
-										msrc: this.src
-									}],
-									pswpModule: window.PhotoSwipe,
-									index: 0,
-								});
-								lightBox.init();
-								lightBox.loadAndOpen(0);
-								$("#a18bddd77e42022b604e6de2659ddc4f").data("clicked", false);
-							};
-							img.src = "gallery\/at-cover1shadow+socialmedia-min (1)-ts1662224566.png";
-						}
-					});
-				});</script></div></div></div></div></div><div id="a18bddd77e42033decdbede8510b3e79" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/6a3b76c160d80c7d5c8c4b43a4c7fa6f_fit.png?ts=1785861445"><script>window._spDefer.add(function() {
-					$("#a18bddd77e42033decdbede8510b3e79").on("click touchstart touchend touchmove", function(e) {
-						if (e.type === "touchstart") {
-							$(this).data("pswpDisabled", false);
-						} else if (e.type === "touchmove") {
-							$(this).data("pswpDisabled", true);
-						}
-						if ((e.type === "click" || e.type === "touchend") && !$(this).data("pswpDisabled")) {
-							if ($(this).data("clicked")) { return; }
-							$(this).data("clicked", true);
-							var img = new Image();
-							img.onload = function() {
-								var lightBox = new window.PhotoSwipeLightbox({
-									appendToEl: $('.wb_pswp').get(0),
-									bgOpacity: 1,
-									dataSource: [{
-										src: this.src,
-										width: this.width,
-										height: this.height,
-										msrc: this.src
-									}],
-									pswpModule: window.PhotoSwipe,
-									index: 0,
-								});
-								lightBox.init();
-								lightBox.loadAndOpen(0);
-								$("#a18bddd77e42033decdbede8510b3e79").data("clicked", false);
-							};
-							img.src = "gallery\/dxyz-ybisc-at-bpw-min-ts1662224964.png";
-						}
-					});
-				});</script></div></div></div><div id="a18bddd77e42049e9ebff3ec1db49c46" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/GBXdeckga3Y?controls=1" frameborder="0"></iframe></div><div id="a18bddd77e42053921f5ae59d860747d" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3" style="text-align: center;">YouTube (Long form):<br>
-Cutting, Editing, Color Correction &amp; SFX.</h3>
-</div><div id="a18bddd77e420653af8d680f1756fe00" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-custom11" style="text-align: center;"><span style="color:rgba(71,71,71,1);">Shot by Younes Belguebli of YBI MEDIA.</span></h1>
-</div><div id="a18bddd77e42077155f8c084d9d0a181" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h4 class="wb-stl-custom10" style="text-align: center;">Amira Tahri x Najib Amhali</h4>
-</div><div id="a18bddd77e4208c456d404adc0fe5db5" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/CwlsSpUbkAY?controls=1" frameborder="0"></iframe></div><div id="a18bddd77e420982b3fdeefb370d6001" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h4 class="wb-stl-custom10" style="text-align: center;">Amira Tahri x Numidia</h4>
-</div><div id="a18bddd77e420ac3e46af3836b7d1e54" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/eMF4sVCBfhI?controls=1" frameborder="0"></iframe></div><div id="a18bddd77e420b24b55b7fa8db747a35" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h4 class="wb-stl-custom10" style="text-align: center;">Amira Tahri x DutchPerformante</h4>
-</div><div id="a18bddd77e420cb7cc4c56c0b3502b31" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/OX_D6qf0a_I?controls=1" frameborder="0"></iframe></div><div id="a18bddd77e420d559c54c17e823ce50e" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3" style="text-align: center;">TikTok/IG Reels (Short form):<br>
-Cutting, Editing, Color Correction &amp; SFX.</h3>
-</div><div id="a18bddd77e420e53c2bfb501158336ca" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-custom11" style="text-align: center;"><span style="color:rgba(71,71,71,1);">Shot by Younes Belguebli of YBI MEDIA.</span></h1>
-</div><div id="a18bddd77e420f8d28ad25b24c897b13" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><div align="center">
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/CLw5XlfJbhQ/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/CLw5XlfJbhQ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewbox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/CLw5XlfJbhQ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by AMIRA TAHRI🇳🇱🇲🇦 (@amiratahriofficial)</a></p></div></blockquote> <script data-custom-script="true" async src="//www.instagram.com/embed.js"></script>
-</div></div></div><div id="a18bddd77e4210ba77f5b3c2a54e97b4" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/Uzs-dfv_Tps?controls=1" frameborder="0"></iframe></div><div id="a18bddd77e421101445337a2a3517ece" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/_B-E_FRqaU0?controls=1" frameborder="0"></iframe></div><div id="a18bddd77e4212e6a4001d7e6497d408" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h4 class="wb-stl-custom10" style="text-align: center;">Amira Tahri x DutchPerformante</h4>
-</div><div id="a18bddd77e4213de4691d27718931dfa" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/6HkURhlXpQc?controls=1" frameborder="0"></iframe></div><div id="a18bddd77e42148933fb780cb69f24a3" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/mVRCOktSokY?controls=1" frameborder="0"></iframe></div><div id="a18bddd77e42153cf86ce7ba84bcb2e9" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">Immersive Studios</span></strong></h2>
-</div><div id="a18bddd77e4216439cd2c42b441f216a" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3" style="text-align: center;">Instagram (Short form):<br>
-Cutting, Editing, Color Correction &amp; SFX.</h3>
-</div><div id="a18bddd77e4217e8f6f285e970929a99" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-custom11" style="text-align: center;"><span style="color:rgba(71,71,71,1);">Shot by Younes Belguebli of YBI MEDIA.</span></h1>
-</div><div id="a18bddd77e4218b6e2c3778148613a22" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h4 class="wb-stl-custom10" style="text-align: center;">Immersive Studios x Ta Joela</h4>
-</div><div id="a18bddd77e421921d674599a2f70af7d" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-custom11" style="text-align: center;"><span style="color:rgba(71,71,71,1);">Fun Fact: George's first time implementing handmade transitions!<br>
-<br>
-Such as the EQUALITE logo in one frame into another.</span></h1>
-</div><div id="a18bddd77e421a25e41e09835ebc88fc" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><div align="center">
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/COfy4XHBOa0/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/COfy4XHBOa0/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewbox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/COfy4XHBOa0/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Immersive Studio’s (@immersive.studios)</a></p></div></blockquote> <script data-custom-script="true" async src="//www.instagram.com/embed.js"></script>
-</div></div></div><div id="a18bddd77e421b2b30c823df7ae31977" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h4 class="wb-stl-custom10" style="text-align: center;">Immersive Studios Booty Class AD</h4>
-</div><div id="a18bddd77e421cf09e37deb7f6dd740e" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><div align="center">
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CPJfbcdh2ad/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CPJfbcdh2ad/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewbox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CPJfbcdh2ad/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Immersive Studio’s (@immersive.studios)</a></p></div></blockquote> <script data-custom-script="true" async src="//www.instagram.com/embed.js"></script>
-</div></div></div><div id="a18bddd77e421d59763d26639ab57ef0" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2" style="text-align: center;"><font color="#000000">CoolSouls</font></h2>
-</div><div id="a18bddd77e421e0d9113c77732fc800b" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3" style="text-align: center;">TikTok (Short form):<br>
-Cutting, Editing, Color Correction &amp; SFX.</h3>
-</div><div id="a18bddd77e421f169b9b720813a54367" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-custom11" style="text-align: center;"><span style="color:rgba(71,71,71,1);">Shot by George Dreemer of DREEMCORP.</span></h1>
-</div><div id="a18bddd77e4220a2e6ea59ea2ebfb9dd" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h4 class="wb-stl-custom10" style="text-align: center;">Photoshoot BTS</h4>
-</div><div id="a18bddd77e42213c6ec47e16bcbbb241" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/A5b2Tu-CbDU?controls=1" frameborder="0"></iframe></div><div id="a18bddd77e42225fa076c9c953c4b251" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/Xp_beKsBz_g?controls=1" frameborder="0"></iframe></div><div id="a18bddd77e42239d65e83d75a34cd5fb" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/rB6t9efuKr8?controls=1" frameborder="0"></iframe></div><div id="a18bddd77e4224f756dcf93f8566d412" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/A9TuOx51EK8?controls=1" frameborder="0"></iframe></div><div id="a18bddd77e4225cda2263f0a75b6d326" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/DQESdVCpVnA?controls=1" frameborder="0"></iframe></div><div id="a18bddd77e4226160f016b3947fd0ac4" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/olmoByPT39w?controls=1" frameborder="0"></iframe></div><div id="a18bddd77e42272f64cca50c2ad86837" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2" style="text-align: center;"><font color="#000000">92Minerals</font></h2>
-</div><div id="a18bddd77e4228ddc2faf10672c6aa9c" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3" style="text-align: center;">Instagram (Short form):<br>
-Cutting, Editing, Color Correction &amp; SFX.</h3>
-</div><div id="a18bddd77e4229b759194396ed58fb7c" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-custom11" style="text-align: center;"><span style="color:rgba(71,71,71,1);">Shot by Younes Belguebli of YBI MEDIA.</span></h1>
-</div><div id="a18bddd77e422a961750fbe8da8ace8b" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h4 class="wb-stl-custom10" style="text-align: center;">92Minerals x Ertugrul Bayrak<br>
-"Ramadan Special" AD</h4>
-</div><div id="a18bddd77e422bf38361bb6fd27f0bb6" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><div align="center">
+)); ?><div class="clearfix"></div></div></div></div><div id="a18bddd77e41011a36c87f4c78fe86c7" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a19ffac6591c00c9d09a1d240072e2e3" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a19ffac6591f00fd418cde5ef567efa2" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/ec1014aa839dd637b067b486b890e402_fit.png?ts=1786623801"></div></div></div></div></div></div></div></div></div></div></div><div id="wb_main_a18bddd8a85d0259fb1585dbb509cff8" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4104c7533e77d5ab204e8b" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1786623801"></div></div></div><div id="a19ffac4e8b100f447acd45d0d2a0dd8" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><main class="preview-page" role="main">
 
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CNmFkKVlOY5/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CNmFkKVlOY5/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewbox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CNmFkKVlOY5/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Sea Moss, Chaga (SUPERFOOD) (@92.minerals)</a></p></div></blockquote> <script data-custom-script="true" async src="//www.instagram.com/embed.js"></script>
+    <!-- ============================================================
+        ELEMENT 1 — CONTEXT BLOCK
+    ============================================================ -->
+    <section aria-label="E1: CONTEXT BLOCK" class="fade-in">
+      <div class="context-block">
+        <p>
+          DREEMCORP is a creative studio specialized in photo and video editing, graphic design, personal
+          branding, and social media strategy. George has worked with 12+ clients and brands and
+          completed 100+ creative and marketing assignments.
+        </p>
+        <p>
+          The content across clients has been diverse, ranging from long-form YouTube edits to short-form TikTok
+          and Instagram content, and from brand identity packages to social media strategy and consulting. Some
+          of the clients include entertainers and athletes such as Najib Amhali, Amira Tahri, Alistair Overeem,
+          and Frenna, alongside consumer brands like 92Minerals, Immersive Studios, and CoolSouls.
+        </p>
+        <p>
+          Across all platforms, these creations have reached 1M+ views and 100K+ likes and comments. George had
+          the pleasure of working alongside visionary Younes Belguebli of YBI Media, an award-winning marketing
+          and media agency in the Netherlands.
+        </p>
+      </div>
+    </section>
 
-</div></div></div><div id="a18bddd77e422f535693ea770e629b87" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2" style="text-align: center;"><font color="#000000">Nabil Haryouli</font></h2>
-</div><div id="a18bddd77e4230081969b9051e02b8c1" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3" style="text-align: center;">IG Reels (Short form):<br>
-Cutting, Editing, Color Correction &amp; SFX.</h3>
-</div><div id="a18bddd77e42319196836f78c5a80dae" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-custom11" style="text-align: center;"><span style="color:rgba(71,71,71,1);">Shot by Younes Belguebli of YBI MEDIA.</span></h1>
-</div><div id="a18bddd77e4232a05917b4fecc72f7c2" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/eayZttGY4E0?controls=1" frameborder="0"></iframe></div><div id="a18bddd77e4233c42a7b0f3df831d0ba" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/toM1KkRnVyI?controls=1" frameborder="0"></iframe></div><div id="a18bddd77e42343866caea4cf9d9f7c6" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/uP59xbGe4Pw?controls=1" frameborder="0"></iframe></div><div id="a18bddd77e42353080a1ddf697d4ab20" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2" style="text-align: center;"><font color="#000000">BerraCuts Barbershop</font></h2>
-</div><div id="a18bddd77e42363ab32f98b2b0a63c55" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3" style="text-align: center;">Instagram (Short form):<br>
-Cutting, Editing, Color Correction &amp; SFX.</h3>
-</div><div id="a18bddd77e42376f2cb732d2a54f3571" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-custom11" style="text-align: center;"><span style="color:rgba(71,71,71,1);">Shot by Younes Belguebli of YBI MEDIA.</span></h1>
-</div><div id="a18bddd77e4238f1f5d988f2532bf02a" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h4 class="wb-stl-custom10" style="text-align: center;">Video AD</h4>
-</div><div id="a18bddd77e42391bf0a819b2bfc6bd81" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><div align="center">
+    <!-- ============================================================
+        ELEMENT 2 — SNAPSHOT CARD
+    ============================================================ -->
+    <section aria-label="E2: SNAPSHOT CARD" class="fade-in">
+      <div class="snapshot-card" data-domain="engineering">
+        <div class="snapshot-card__meta">
+          <!-- Prominent fields first -->
+          <div class="snapshot-item snapshot-item--prominent">
+            <p class="snapshot-item__key">Role</p>
+            <p class="snapshot-item__value">Founder &amp; Creative Director</p>
+          </div>
+          <div class="snapshot-item snapshot-item--prominent">
+            <p class="snapshot-item__key">Type</p>
+            <p class="snapshot-item__value">Creative Studio &amp; Venture Lab</p>
+          </div>
+          <!-- Standard fields -->
+          <div class="snapshot-item">
+            <p class="snapshot-item__key">Founded</p>
+            <p class="snapshot-item__value">2020</p>
+          </div>
+          <div class="snapshot-item">
+            <p class="snapshot-item__key">Location</p>
+            <p class="snapshot-item__value">Europe / Online</p>
+          </div>
+          <div class="snapshot-item">
+            <p class="snapshot-item__key">Links</p>
+            <p class="snapshot-item__value">
+              <a href="https://www.dreemcorp.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-globe2"></i>
+                Direct Contact</a>
+            </p>
+            <p style="padding-bottom: 10px;"></p>
+            <p class="snapshot-item__value">
+              <a href="https://www.youtube.com/@dreemcorp" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i> Video Archive</a>
+            </p>
+          </div>
+        </div>
+        <div class="snapshot-card__divider"></div>
+        <p class="snapshot-card__highlights-label">Highlights</p>
+        <div class="snapshot-card__chips">
+          <!-- Engineering highlights -->
+          <span class="achievement-chip" data-domain="engineering"><span class="achievement-chip__dot"></span>Edited
+            long-form YouTube vlogs, pacing shots and story beats for viewer retention</span>
+          <span class="achievement-chip" data-domain="engineering"><span class="achievement-chip__dot"></span>Edited
+            short-form Reels &amp; TikToks with custom transitions, color correction &amp; SFX</span>
+          <span class="achievement-chip" data-domain="engineering"><span class="achievement-chip__dot"></span>Cut
+            promotional and commercial spots for consumer brands</span>
+          <span class="achievement-chip" data-domain="engineering"><span class="achievement-chip__dot"></span>Produced music
+            visualizers with custom animation and SFX</span>
+          <span class="achievement-chip" data-domain="engineering"><span class="achievement-chip__dot"></span>Mixed and
+            mastered audio for vlogs and music content in Adobe Audition</span>
+          <!-- Product highlights -->
+          <span class="achievement-chip" data-domain="product"><span class="achievement-chip__dot"></span>Designed full
+            personal-branding packages — profile art, channel covers &amp; outros — for clients like Amira Tahri</span>
+          <span class="achievement-chip" data-domain="product"><span class="achievement-chip__dot"></span>Designed logos and
+            brand assets in Adobe Illustrator</span>
+          <!-- Growth highlights -->
+          <span class="achievement-chip" data-domain="growth"><span class="achievement-chip__dot"></span>Delivered content
+            for 12+ clients &amp; brands, including Najib Amhali, Amira Tahri, Alistair Overeem &amp; Frenna</span>
+          <span class="achievement-chip" data-domain="growth"><span class="achievement-chip__dot"></span>Helped launch and
+            shape the early content strategy of multiple client YouTube channels</span>
+        </div>
+      </div>
+    </section>
 
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/COpu2ygDhkx/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/COpu2ygDhkx/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewbox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/COpu2ygDhkx/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by ʙᴇʀʀᴀᴄᴜᴛs ʙᴀʀʙᴇʀsʜᴏᴘ 📍 (@berracuts.barbershop)</a></p></div></blockquote> <script data-custom-script="true" async src="//www.instagram.com/embed.js"></script>
+    <!-- ============================================================
+            ELEMENT 3 — IN NUMBERS / STAT COUNTER
+    ============================================================ -->
+    <section class="stat-counter-section" aria-label="E3: IN NUMBERS">
+      <div class="stat-counter">
+        <div class="stat-counter__item" data-target="12" data-suffix="+" data-domain="product">
+          <span class="stat-counter__number" aria-live="polite">0</span>
+          <span class="stat-counter__label">Clients &amp; Brands served</span>
+        </div>
+        <div class="stat-counter__item" data-target="100" data-suffix="+" data-domain="product">
+          <span class="stat-counter__number" aria-live="polite">0</span>
+          <span class="stat-counter__label">Creative &amp; Marketing works</span>
+        </div>
+        <div class="stat-counter__item" data-target="1" data-suffix="M+" data-domain="growth">
+          <span class="stat-counter__number" aria-live="polite">0</span>
+          <span class="stat-counter__label">Views</span>
+        </div>
+        <div class="stat-counter__item" data-target="100" data-suffix="K+" data-domain="growth">
+          <span class="stat-counter__number" aria-live="polite">0</span>
+          <span class="stat-counter__label">Likes &amp; Comments</span>
+        </div>
+      </div>
+    </section>
 
-</div></div></div><div id="a18bddd77e423aa03da5923412b3933b" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-heading2" style="text-align: center;"><font color="#000000">FitnessFloors.nl</font></h2>
-</div><div id="a18bddd77e423b5408b4db7a608e9234" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3" style="text-align: center;">Instagram (Short form):<br>
-Cutting, Editing, Color Correction &amp; SFX.</h3>
-</div><div id="a18bddd77e423cebf51dac4ad7265121" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-custom11" style="text-align: center;"><span style="color:rgba(71,71,71,1);">Shot by Younes Belguebli of YBI MEDIA.</span></h1>
-</div><div id="a18bddd77e4300f9289db9dcb4986772" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h4 class="wb-stl-custom10" style="text-align: center;">FitnessFloors.nl x SinCity Gym<br>
-Video AD</h4>
-</div><div id="a18bddd77e4301c2bf371b199fdf9628" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><div align="center">
+    <!-- ============================================================
+            ELEMENT 4 — STACK BADGE GRID
+    ============================================================ -->
+    <section aria-label="E4: STACK BADGE GRID" class="fade-in">
+      <div class="section-label">
+        <span class="section-label__text">Stack</span>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+      <div class="stack-grid">
+        <!-- Video & Editing -->
+        <div class="stack-group">
+          <p class="stack-group__label">Video &amp; Editing</p>
+          <div class="stack-group__items">
+            <span class="stack-badge"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Crect%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%224%22%20fill%3D%22%2300005B%22%2F%3E%3Ctext%20x%3D%225%22%20y%3D%2216%22%20font-size%3D%2210%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%239999FF%22%3EPr%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Adobe Premiere Pro" width="18" height="18" loading="lazy"><span class="stack-badge__name">Premiere Pro</span></span>
+            <span class="stack-badge"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Crect%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%224%22%20fill%3D%22%2300005B%22%2F%3E%3Ctext%20x%3D%225%22%20y%3D%2216%22%20font-size%3D%2210%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%239999FF%22%3EAe%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Adobe After Effects" width="18" height="18" loading="lazy"><span class="stack-badge__name">After Effects</span></span>
+            <span class="stack-badge"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Crect%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%224%22%20fill%3D%22%2300005B%22%2F%3E%3Ctext%20x%3D%225%22%20y%3D%2216%22%20font-size%3D%2210%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%2300E4BB%22%3EAu%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Adobe Audition" width="18" height="18" loading="lazy"><span class="stack-badge__name">Audition</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/davinciresolve" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">DaVinci Resolve</span></span>
+          </div>
+        </div>
+        <!-- Design & Creative -->
+        <div class="stack-group">
+          <p class="stack-group__label">Design &amp; Creative</p>
+          <div class="stack-group__items">
+            <span class="stack-badge"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Crect%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%224%22%20fill%3D%22%23330000%22%2F%3E%3Ctext%20x%3D%225%22%20y%3D%2216%22%20font-size%3D%2210%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%23FF9A00%22%3EAi%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Adobe Illustrator" width="18" height="18" loading="lazy"><span class="stack-badge__name">Illustrator</span></span>
+            <span class="stack-badge"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Crect%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%224%22%20fill%3D%22%23001E36%22%2F%3E%3Ctext%20x%3D%225%22%20y%3D%2216%22%20font-size%3D%2210%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%2331A8FF%22%3EPs%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Adobe Photoshop" width="18" height="18" loading="lazy"><span class="stack-badge__name">Photoshop</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/calibreweb/07B9CE" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Canva</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/picsart" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Picsart</span></span>
+          </div>
+        </div>
+        <!-- Platforms & Distribution -->
+        <div class="stack-group">
+          <p class="stack-group__label">Platforms &amp; Distribution</p>
+          <div class="stack-group__items">
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/youtube/FF0000" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">YouTube</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/instagram" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Instagram</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/tiktok" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">TikTok</span></span>
+          </div>
+        </div>
+        <!-- Marketing & Growth -->
+        <div class="stack-group">
+          <p class="stack-group__label">Marketing &amp; Growth</p>
+          <div class="stack-group__items">
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/googleanalytics/E37400" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Google Analytics</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/meta/0081FB" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Meta Ads</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/tiktok/000000" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">TikTok Ads</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/youtube/FF0000" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">YouTube Studio</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/mailchimp/000000" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Mailchimp</span></span>
+            <span class="stack-badge"><img src="https://cdn.simpleicons.org/buffer/000000" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Buffer</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CPpvicZllW0/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CPpvicZllW0/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewbox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CPpvicZllW0/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Fitnessfloor.nl (@fitnessfloor.nl)</a></p></div></blockquote> <script data-custom-script="true" async src="//www.instagram.com/embed.js"></script>
+    <!-- ============================================================
+            ELEMENT 5 — ABILITY CARD GRID
+    ============================================================ -->
+    <section aria-label="E5: ABILITY CARD GRID" class="fade-in">
+      <div class="section-label">
+        <span class="section-label__text">Abilities</span>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+      <!-- Legend -->
+      <div class="ability-legend">
+        <span class="ability-legend__item ability-legend__item--engineering"><span class="ability-legend__dot"></span>Engineering</span>
+        <span class="ability-legend__item ability-legend__item--product"><span class="ability-legend__dot"></span>Product</span>
+        <span class="ability-legend__item ability-legend__item--growth"><span class="ability-legend__dot"></span>Growth</span>
+        <span class="ability-legend__item ability-legend__item--data"><span class="ability-legend__dot"></span>Data</span>
+      </div>
+      <div class="ability-grid">
 
-</div></div></div></div></div><div id="a18bddd77e4302540cbd295033e47fcd" class="wb_element" data-plugin="CustomHtml" style=" overflow: hidden;"><div style="width: 100%; height: 100%; overflow-y: auto;"><style>
-html, body {
-   max-width: 100%;
-   overflow-x: hidden;
-}
-</style>
-</div></div></div></div></div></div><div id="a18bddd77e43032e7a30f27773715fc7" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1785861445"></div></div></div></div></div><div id="wb_footer_a18bddd8a85d0259fb1585dbb509cff8" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+        <!-- ENGINEERING -->
+        <div class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="scissors"></i></div>
+          <h3 class="ability-card__title">High-Volume Footage Triage</h3>
+          <p class="ability-card__desc">Cut raw multicam footage — often 6+ hours per project — down to a single 15–20 minute narrative, managing 700+ individual timeline edits along the way.</p>
+          <div class="ability-card__tags">
+            <span class="ability-tag">Non-Linear Editing</span>
+            <span class="ability-tag">Footage Triage</span>
+            <span class="ability-tag">Timeline Management</span>
+          </div>
+        </div>
+
+        <div class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="audio-lines"></i></div>
+          <h3 class="ability-card__title">Audio Post-Production</h3>
+          <p class="ability-card__desc">Cleaned dialogue, balanced music beds, and layered SFX across every delivery — leveling, noise reduction, and mixing done by ear, not preset.</p>
+          <div class="ability-card__tags">
+            <span class="ability-tag">Audio Mixing</span>
+            <span class="ability-tag">Noise Reduction</span>
+            <span class="ability-tag">Sound Design</span>
+          </div>
+        </div>
+
+        <div class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="sliders-horizontal"></i></div>
+          <h3 class="ability-card__title">Color Correction &amp; Grading</h3>
+          <p class="ability-card__desc">Matched exposure and white balance across mixed-lighting, multicam footage, then graded for a consistent visual tone across an entire edit.</p>
+          <div class="ability-card__tags">
+            <span class="ability-tag">Color Correction</span>
+            <span class="ability-tag">Color Grading</span>
+            <span class="ability-tag">Visual Consistency</span>
+          </div>
+        </div>
+
+        <div class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="file-cog"></i></div>
+          <h3 class="ability-card__title">Codec &amp; Export Pipeline Management</h3>
+          <p class="ability-card__desc">Handled footage across mixed codecs, frame rates, and resolutions, then exported per-platform deliverables tuned for bitrate, aspect ratio, and compression artifacts.</p>
+          <div class="ability-card__tags">
+            <span class="ability-tag">Video Encoding</span>
+            <span class="ability-tag">Format Optimization</span>
+            <span class="ability-tag">Export Pipeline Management</span>
+          </div>
+        </div>
+
+        <div class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="wand-2"></i></div>
+          <h3 class="ability-card__title">Custom Motion &amp; Transitions</h3>
+          <p class="ability-card__desc">Hand-built transitions, motion graphics, and title cards from scratch instead of templated presets — designed frame-by-frame to match each project's tone.</p>
+          <div class="ability-card__tags">
+            <span class="ability-tag">Motion Design</span>
+            <span class="ability-tag">Custom Transitions</span>
+            <span class="ability-tag">Visual Branding</span>
+          </div>
+        </div>
+
+        <!-- PRODUCT -->
+        <div class="ability-card fade-in" data-domain="product">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="book-open"></i></div>
+          <h3 class="ability-card__title">Narrative Structuring from Raw Footage</h3>
+          <p class="ability-card__desc">Built pacing, sequencing, and emotional arc from unscripted raw footage with no shot list or story outline provided — the story was found, not handed over.</p>
+          <div class="ability-card__tags">
+            <span class="ability-tag">Story Structuring</span>
+            <span class="ability-tag">Narrative Pacing</span>
+            <span class="ability-tag">Creative Direction</span>
+          </div>
+        </div>
+
+        <div class="ability-card fade-in" data-domain="product">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="layout-template"></i></div>
+          <h3 class="ability-card__title">Branding Packages &amp; Visual Identity</h3>
+          <p class="ability-card__desc">Designed full branding packages — thumbnails, caption styling, lower thirds, and channel-consistent visual language — beyond the edit itself.</p>
+          <div class="ability-card__tags">
+            <span class="ability-tag">Brand Visual Systems</span>
+            <span class="ability-tag">Thumbnail Design</span>
+            <span class="ability-tag">Caption Design</span>
+          </div>
+        </div>
+
+        <!-- GROWTH -->
+        <div class="ability-card fade-in" data-domain="growth">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="smartphone"></i></div>
+          <h3 class="ability-card__title">Multi-Platform Content Adaptation</h3>
+          <p class="ability-card__desc">Recut a single footage set into long-form YouTube, vertical Shorts, Reels, and TikTok — each edited for that platform's native pacing, not resized from one master cut.</p>
+          <div class="ability-card__tags">
+            <span class="ability-tag">Multi-Platform Editing</span>
+            <span class="ability-tag">Vertical-First Editing</span>
+            <span class="ability-tag">Platform Optimization</span>
+          </div>
+        </div>
+
+        <div class="ability-card fade-in" data-domain="growth">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="briefcase"></i></div>
+          <h3 class="ability-card__title">Creative Delivery at Scale</h3>
+          <p class="ability-card__desc">Delivered 100+ creative assignments across 12+ clients — musicians, athletes, and brands — managing client feedback loops and deadlines end to end.</p>
+          <div class="ability-card__tags">
+            <span class="ability-tag">Client Delivery</span>
+            <span class="ability-tag">Production Pipeline Management</span>
+            <span class="ability-tag">Deadline Management</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+            ELEMENT 6 — WORKS CARD GRID
+    ============================================================ -->
+    <section aria-label="E6: WORKS CARD GRID" class="fade-in">
+      <div class="section-label">
+        <span class="section-label__text">Works</span>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+
+      <div class="evidence-grid">
+
+        <!-- Card 1: Long-Form YouTube Editing (YouTube video card) -->
+        <div class="evidence-card" data-domain="engineering">
+          <div class="evidence-card__video">
+            <iframe src="https://www.youtube.com/embed/CwlsSpUbkAY?si=UbPPjiDIHqoxJYcH&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=CwlsSpUbkAY&amp;controls=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" title="Vlog edited for Amira Tahri's collaboration with Najib Amhali - filmed by Younes Belguebli at Immersive Studios in The Hague, Netherlands" aria-label="Vlog edited for Amira Tahri's collaboration with Najib Amhali - filmed by Younes Belguebli at Immersive Studios in The Hague, Netherlands" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <button class="evidence-card__sound-btn" data-sound-toggle aria-label="Toggle sound">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <line x1="23" y1="9" x2="17" y2="15" class="mute-line"></line>
+                <line x1="17" y1="9" x2="23" y2="15" class="mute-line"></line>
+              </svg>
+            </button>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"></span>Engineering</span>
+            <p class="evidence-card__title">Long-Form YouTube Editing</p>
+            <ul class="evidence-card__bullets">
+              <li>Cut multi-hour raw footage into cohesive long-form vlogs for Amira Tahri, including this collab with comedian Najib Amhali, Dutch Performante &amp; Numidia</li>
+              <li>Built custom transitions from scratch, as well as used established plugins, such as those by MotionBro</li>
+              <li>Handled color correction and SFX across every long-form delivery</li>
+              <li>Mixed and mastered audio for consistent and easy to understand speech, as well as music to keep pace and engagement</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 2: Short-Form Reels & TikTok (portrait YouTube/short video card) -->
+        <div class="evidence-card" data-domain="engineering">
+          <div class="evidence-card__video" data-orientation="portrait">
+            <iframe src="https://www.youtube.com/embed/Xp_beKsBz_g?si=iASrW1ZJ7NYm1loH&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=Xp_beKsBz_g&amp;controls=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" title="Short-form video showing BTS and promotional content for CoolSouls clothing brand in Sofia, Bulgaria" aria-label="Short-form video showing BTS and promotional content for CoolSouls clothing brand in Sofia, Bulgaria" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <button class="evidence-card__sound-btn" data-sound-toggle aria-label="Toggle sound">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <line x1="23" y1="9" x2="17" y2="15" class="mute-line"></line>
+                <line x1="17" y1="9" x2="23" y2="15" class="mute-line"></line>
+              </svg>
+            </button>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"></span>Engineering</span>
+            <p class="evidence-card__title">Short-Form Reels &amp; TikTok Editing</p>
+            <ul class="evidence-card__bullets">
+              <li>Shot and edited photoshoot BTS for CoolSouls</li>
+              <li>Edited short-form pieces for Nabil Haryouli</li>
+              <li>Produced a run of shorts for Amira Tahri — some as vlog excerpts,
+                others standalone with custom SFX</li>
+              <li>Fast-turnaround color correction and SFX tuned for vertical, sub-60-second formats</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 3: Personal & Social Media Branding -->
+        <div class="evidence-card" data-domain="product">
+          <div class="evidence-card__video">
+            <iframe src="https://www.youtube.com/embed/GBXdeckga3Y?si=OkyW3L9R_x_LFXfR&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=GBXdeckga3Y&amp;controls=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" title="Video outro edited for Amira Tahri's YouTube Channel" aria-label="Video outro edited for Amira Tahri's YouTube Channel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <button class="evidence-card__sound-btn" data-sound-toggle aria-label="Toggle sound">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <line x1="23" y1="9" x2="17" y2="15" class="mute-line"></line>
+                <line x1="17" y1="9" x2="23" y2="15" class="mute-line"></line>
+              </svg>
+            </button>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"></span>Product</span>
+            <p class="evidence-card__title">Personal &amp; Social Media Branding</p>
+            <ul class="evidence-card__bullets">
+              <li>Designed a full personal-branding package for Amira Tahri — profile pictures, channel cover, and animated intro/outro
+              </li>
+              <li>Extended the same visual identity across YouTube, Instagram, and TikTok for a consistent cross-platform
+                presence</li>
+              <li>Built a recognizable branding pattern — color, logo, motion &amp; messaging</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 4: Commercial & Brand Ad Spots (slideshow of IG ad screenshots) -->
+        <div class="evidence-card" data-domain="growth">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ads_1.jpg" alt="Immersive Studios x Ta Joela celebrity workout collaboration, shot by Younes Belguebli in Immersive Studio Gym in The Hague, The Netherlands" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ads_2.jpg" alt="Immersive Studios Leg workout class ad, shot by Younes Belguebli in Immersive Studio Gym in The Hague, The Netherlands" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ads_3.jpg" alt="Fitnessfloors.nl showcase building process of Sin City Boxing Gym's interior, shot by Younes Belguebli in Amsterdam, The Netherlands" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ads_4.jpg" alt="BerraCuts Barbershop promotional video visited by rapper Frenna, shot by Younes Belguebli in The Hague, The Netherlands" width="600" height="338" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 4"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"></span>Growth</span>
+            <p class="evidence-card__title">Commercial &amp; Brand Ad Spots</p>
+            <ul class="evidence-card__bullets">
+              <li>Edited an ad for 92Minerals x Ertugrul Bayrak's "Ramadan Special" product promo</li>
+              <li>Created various video ads for Immersive Studios for workout classes, including the collaboration with TaJoela</li>
+              <li>Edited a video ad for BerraCuts Barbershop of The Hague</li>
+              <li>Edited a video ad for FitnessFloors.nl x SinCity Boxing Amsterdam</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 5: Music Visualizers (anabolic musick) -->
+        <div class="evidence-card" data-domain="engineering">
+          <div class="evidence-card__video" data-orientation="landscape">
+            <iframe src="https://www.youtube.com/embed/yQDT8a8HjZ0?si=D6tLZir_YnX2gVug&amp;start=83&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=yQDT8a8HjZ0&amp;controls=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" title="Music visualizers for anabolic musick channel, produced by George Dreemer, music by Tevvez" aria-label="Music visualizers for anabolic musick channel, produced by George Dreemer, music by Tevvez" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <button class="evidence-card__sound-btn" data-sound-toggle aria-label="Toggle sound">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <line x1="23" y1="9" x2="17" y2="15" class="mute-line"></line>
+                <line x1="17" y1="9" x2="23" y2="15" class="mute-line"></line>
+              </svg>
+            </button>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"></span>Engineering</span>
+            <p class="evidence-card__title">Animated Visualizers &amp; Audio Mixing</p>
+            <ul class="evidence-card__bullets">
+              <li>Produced custom animated visualizers for the anabolic musick channel</li>
+              <li>Synced motion graphics and SFX to track structure and beat timing</li>
+              <li>Curated and mixed audio tracks from Epidemic Sound into themed playlists</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 6: Full YouTube Channel Build-->
+        <div class="evidence-card" data-domain="growth">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_1.png" alt="Rich Piana music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_2.jpg" alt="OAF1 music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_3.jpg" alt="Zyzz and Tevvez music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_4.png" alt="Primeagen Drum and Bass music mix for coding thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_5.png" alt="DJ Trumpstep Donald Trump Dubstep music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_6.png" alt="Steve Jobs music mix for coding thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_7.png" alt="Elon Musk Downtempo music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_8.png" alt="Storror Parkour Drum and Bass music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_9.png" alt="Zyzz Trance gym music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_10.png" alt="Connor Murphy Trance gym music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_11.png" alt="Dark Metal gym music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_12.png" alt="Heavy metal gym music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_13.png" alt="Dubstep gym music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_14.png" alt="Chestbrah vocal trance gym music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_15.png" alt="2hollis music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_16.png" alt="TrenTwins heavy metal gym music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 4"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 5"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 6"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 7"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 8"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 9"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 10"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 11"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 12"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 13"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 14"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 15"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 16"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"></span>Growth</span>
+            <p class="evidence-card__title">YouTube Channel Development</p>
+            <ul class="evidence-card__bullets">
+              <li>Built the anabolic musick channel from scratch — branding, upload structure, and content strategy</li>
+              <li>Wrote consistent titles, descriptions, and keyword tags across every upload for discoverability</li>
+              <li>Edited eye-catching thumbnails with consistent branding and messaging</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+            ELEMENT 8 — INSTAGRAM SCROLLER
+    ============================================================ -->
+    <section aria-label="E8: INSTAGRAM SCROLLER" class="fade-in">
+      <div class="section-label">
+        <span class="section-label__text">On Instagram</span>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+
+      <div class="ig-scroller">
+        <div class="ig-scroller__track" data-ig-track>
+
+          <div class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/COfy4XHBOa0/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/COfy4XHBOa0/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/p/COfy4XHBOa0/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Immersive Studio's (@immersive.studios)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <p class="ig-scroller__caption">Immersive Studios × Ta Joela — celebrity workout class ad, shot by Younes
+              Belguebli in The Hague</p>
+          </div>
+
+          <div class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/CLw5XlfJbhQ/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/reel/CLw5XlfJbhQ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/reel/CLw5XlfJbhQ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by AMIRA TAHRI🇳🇱🇲🇦 (@amiratahriofficial)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <p class="ig-scroller__caption">Amira Tahri — Instagram reel edit</p>
+          </div>
+
+          <div class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CPJfbcdh2ad/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/CPJfbcdh2ad/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/p/CPJfbcdh2ad/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Immersive Studio's (@immersive.studios)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <p class="ig-scroller__caption">Immersive Studios — gym booty class promo, shot by Younes Belguebli in The Hague
+            </p>
+          </div>
+
+          <div class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CPpvicZllW0/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/CPpvicZllW0/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/p/CPpvicZllW0/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Fitnessfloor.nl (@fitnessfloor.nl)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <p class="ig-scroller__caption">FitnessFloors.nl × SinCity Boxing Amsterdam — gym build-out promo, shot by
+              Younes Belguebli</p>
+          </div>
+
+          <div class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/COpu2ygDhkx/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/COpu2ygDhkx/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/p/COpu2ygDhkx/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by ʙᴇʀʀᴀᴄᴜᴛs ʙᴀʀʙᴇʀsʜᴏᴘ 📍 (@berracuts.barbershop)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <p class="ig-scroller__caption">BerraCuts Barbershop, Den Haag — promo ad, visited by rapper Frenna, shot by
+              Younes Belguebli</p>
+          </div>
+
+        </div>
+
+        <div class="ig-scroller__nav">
+          <button class="ig-scroller__nav-btn" data-ig-prev aria-label="Scroll to previous post">
+            <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="ig-scroller__nav-btn" data-ig-next aria-label="Scroll to next post">
+            <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+            ELEMENT 9 — CONTENT ARCHIVE
+    ============================================================ -->
+    <section aria-label="E9: CONTENT ARCHIVE" class="fade-in">
+      <div class="section-label">
+        <span class="section-label__text">Content Archive</span>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+
+      <!-- ── Channel: Amira Tahri ────────────────────────────────── -->
+      <div class="content-archive__channel">
+        <div class="content-archive__channel-label">
+          <div class="content-archive__channel-label-left">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_1.jpg" alt="Amira Tahri" class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <span class="content-archive__channel-name">Amira Tahri</span>
+            <span class="content-archive__channel-meta">Vlogs &amp; Shorts</span>
+          </div>
+          <div class="content-archive__channel-nav">
+            <button class="yt-scroller__nav-btn" data-yt-prev aria-label="Scroll to previous video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="yt-scroller__nav-btn" data-yt-next aria-label="Scroll to next video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="yt-scroller">
+          <div class="yt-scroller__track" data-yt-track>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="VbYZxelf_XA" data-yt-title="Vlog: Amira Tahri collaborates with Dutch Performante" aria-label="Play vlog: Amira Tahri collaborates with Dutch Performante">
+                  <img src="https://img.youtube.com/vi/VbYZxelf_XA/hqdefault.jpg" alt="Amira Tahri vlog with Dutch Performante" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Vlog with Dutch Performante</p>
+            </div>
+
+            <div class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="6HkURhlXpQc" data-yt-title="Short: promo for Amira Tahri x Dutch Performante vlog" aria-label="Play short: promo for Dutch Performante vlog">
+                  <img src="https://img.youtube.com/vi/6HkURhlXpQc/hqdefault.jpg" alt="Amira Tahri short promoting the Dutch Performante vlog" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Sparring with Dutch Performante</p>
+            </div>
+
+            <div class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="mVRCOktSokY" data-yt-title="Short: Amira Tahri sparring with Dutch Performante" aria-label="Play short: Amira Tahri spars with Dutch Performante on the beach">
+                  <img src="https://img.youtube.com/vi/mVRCOktSokY/hqdefault.jpg" alt="Amira Tahri sparring with Dutch Performante on the beach" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Amira shadow boxing</p>
+            </div>
+
+            <div class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="dIOPWXdkieI" data-yt-title="Short: Amira Tahri skit with Dutch Performante" aria-label="Play short: Amira Tahri skit with Dutch Performante">
+                  <img src="https://img.youtube.com/vi/dIOPWXdkieI/hqdefault.jpg" alt="Amira Tahri comedy skit with Dutch Performante in The Hague" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Skit with Dutch Performante</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="9KyOwCLUeoM" data-yt-title="Vlog: Amira Tahri collaborates with Numidia" aria-label="Play vlog: Amira Tahri collaborates with Numidia">
+                  <img src="https://img.youtube.com/vi/9KyOwCLUeoM/hqdefault.jpg" alt="Amira Tahri vlog with Numidia" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Vlog with Numidia</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="E7td0FRqj2Q" data-yt-title="Vlog edited for Amira Tahri's collaboration with Najib Amhali — filmed by Younes Belguebli at Immersive Studios in The Hague, Netherlands" aria-label="Play vlog: Amira Tahri collaborates with Najib Amhali">
+                  <img src="https://img.youtube.com/vi/E7td0FRqj2Q/hqdefault.jpg" alt="Amira Tahri vlog with Najib Amhali" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Vlog with Najib Amhali</p>
+            </div>
+
+            <div class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="_B-E_FRqaU0" data-yt-title="Short: Amira Tahri boxing" aria-label="Play short: Amira Tahri boxing">
+                  <img src="https://img.youtube.com/vi/_B-E_FRqaU0/hqdefault.jpg" alt="Amira Tahri boxing short" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Boxing short</p>
+            </div>
+
+            <div class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="gB9fIiprCKM" data-yt-title="Short: Amira Tahri HIIT on the beach" aria-label="Play short: Amira Tahri HIIT on the beach in The Hague">
+                  <img src="https://img.youtube.com/vi/gB9fIiprCKM/hqdefault.jpg" alt="Amira Tahri doing HIIT training on the beach in The Hague" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">HIIT on the beach</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="GBXdeckga3Y" data-yt-title="Amira Tahri channel Intro/Outro" aria-label="Play video: Amira Tahri channel intro and outro">
+                  <img src="https://img.youtube.com/vi/GBXdeckga3Y/hqdefault.jpg" alt="Amira Tahri channel intro and outro thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Channel intro/outro</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Channel: CoolSouls ───────────────────────────────────── -->
+      <div class="content-archive__channel">
+        <div class="content-archive__channel-label">
+          <div class="content-archive__channel-label-left">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_2.jpg" alt="CoolSouls Logo" class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <span class="content-archive__channel-name">CoolSouls</span>
+            <span class="content-archive__channel-meta">Shorts</span>
+          </div>
+          <div class="content-archive__channel-nav">
+            <button class="yt-scroller__nav-btn" data-yt-prev aria-label="Scroll to previous video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="yt-scroller__nav-btn" data-yt-next aria-label="Scroll to next video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="yt-scroller">
+          <div class="yt-scroller__track" data-yt-track>
+
+            <div class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="olmoByPT39w" data-yt-title="Short: CoolSouls behind the scenes 1" aria-label="Play short: CoolSouls behind the scenes, part one">
+                  <img src="https://img.youtube.com/vi/olmoByPT39w/hqdefault.jpg" alt="CoolSouls behind the scenes, part one" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Photoshoot BTS I</p>
+            </div>
+
+            <div class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="A9TuOx51EK8" data-yt-title="Short: CoolSouls behind the scenes 2" aria-label="Play short: CoolSouls behind the scenes, part two">
+                  <img src="https://img.youtube.com/vi/A9TuOx51EK8/hqdefault.jpg" alt="CoolSouls behind the scenes, part two" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Photoshoot BTS II</p>
+            </div>
+
+            <div class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="A5b2Tu-CbDU" data-yt-title="Short: CoolSouls behind the scenes 3" aria-label="Play short: CoolSouls behind the scenes, part three">
+                  <img src="https://img.youtube.com/vi/A5b2Tu-CbDU/hqdefault.jpg" alt="CoolSouls behind the scenes, part three" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Photoshoot BTS III</p>
+            </div>
+
+            <div class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="rB6t9efuKr8" data-yt-title="Short: CoolSouls behind the scenes 4" aria-label="Play short: CoolSouls behind the scenes, part four">
+                  <img src="https://img.youtube.com/vi/rB6t9efuKr8/hqdefault.jpg" alt="CoolSouls behind the scenes, part four" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Photoshoot BTS IV</p>
+            </div>
+
+            <div class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="U856jwnmAOo" data-yt-title="Short: CoolSouls behind the scenes 5" aria-label="Play short: CoolSouls behind the scenes, part five">
+                  <img src="https://img.youtube.com/vi/U856jwnmAOo/hqdefault.jpg" alt="CoolSouls behind the scenes, part five" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Photoshoot BTS V</p>
+            </div>
+
+            <div class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="DQESdVCpVnA" data-yt-title="Short: CoolSouls behind the scenes 6" aria-label="Play short: CoolSouls behind the scenes, part six">
+                  <img src="https://img.youtube.com/vi/DQESdVCpVnA/hqdefault.jpg" alt="CoolSouls behind the scenes, part six" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Photoshoot BTS VI</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Channel: anabolic musick ─────────────────────────────── -->
+      <div class="content-archive__channel">
+        <div class="content-archive__channel-label">
+          <div class="content-archive__channel-label-left">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_4.jpg" alt="anabolic musick" class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <span class="content-archive__channel-name">anabolic musick</span>
+            <span class="content-archive__channel-meta">Music Visualizers</span>
+          </div>
+          <div class="content-archive__channel-nav">
+            <button class="yt-scroller__nav-btn" data-yt-prev aria-label="Scroll to previous video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="yt-scroller__nav-btn" data-yt-next aria-label="Scroll to next video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="yt-scroller">
+          <div class="yt-scroller__track" data-yt-track>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="yQDT8a8HjZ0" data-yt-title="anabolic musick: Zyzz trance mix" aria-label="Play mix: Zyzz trance mix">
+                  <img src="https://img.youtube.com/vi/yQDT8a8HjZ0/hqdefault.jpg" alt="Zyzz trance mix thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Zyzz Tribute Mix (feat. Tevvez &amp; Chestbrah)</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="LTU_wIIHy-8" data-yt-title="anabolic musick: oaf1 mix" aria-label="Play mix: oaf1 mix">
+                  <img src="https://img.youtube.com/vi/LTU_wIIHy-8/hqdefault.jpg" alt="oaf1 mix thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">oaf1 Discography Mix (2020-21)</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="QML-X13cgh0" data-yt-title="anabolic musick: ThePrimeagen drum and bass mix" aria-label="Play mix: ThePrimeagen drum and bass mix">
+                  <img src="https://img.youtube.com/vi/QML-X13cgh0/hqdefault.jpg" alt="ThePrimeagen drum and bass mix thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">ThePrimeagen Coding Mix (Drum and Bass)</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="o5bzZIuGoqk" data-yt-title="anabolic musick: 2hollis mix" aria-label="Play mix: 2hollis mix">
+                  <img src="https://img.youtube.com/vi/o5bzZIuGoqk/hqdefault.jpg" alt="2hollis mix thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">2hollis Deleted Discography Mix</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="yParcfawsEw" data-yt-title="anabolic musick: Tren Twins heavy metal mix" aria-label="Play mix: Tren Twins heavy metal mix">
+                  <img src="https://img.youtube.com/vi/yParcfawsEw/hqdefault.jpg" alt="Tren Twins heavy metal mix thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Tren Twins Tribute Mix (Heavy Metal)</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="YwlVN5BpU2I" data-yt-title="anabolic musick: Donald Trump dubstep mix" aria-label="Play mix: Donald Trump dubstep mix">
+                  <img src="https://img.youtube.com/vi/YwlVN5BpU2I/hqdefault.jpg" alt="Donald Trump dubstep mix thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Donald Trump Meme Mix (Dubstep)</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="umXcc1_57vc" data-yt-title="anabolic musick: Steve Jobs coding mix" aria-label="Play mix: Steve Jobs coding mix">
+                  <img src="https://img.youtube.com/vi/umXcc1_57vc/hqdefault.jpg" alt="Steve Jobs coding mix thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Steve Jobs Tribute (Coding Mix)</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="61ERSDD8QVk" data-yt-title="anabolic musick: Terry Davis psytrance mix" aria-label="Play mix: Terry Davis psytrance mix">
+                  <img src="https://img.youtube.com/vi/61ERSDD8QVk/hqdefault.jpg" alt="Terry Davis psytrance mix thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Terry Davis Tribute (Psytrance Mix)</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="cA9kj1LJM-0" data-yt-title="anabolic musick: STORROR parkour drum and bass mix" aria-label="Play mix: STORROR parkour drum and bass mix">
+                  <img src="https://img.youtube.com/vi/cA9kj1LJM-0/hqdefault.jpg" alt="STORROR parkour drum and bass mix thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">STORROR Tribute (Drum &amp; Bass Mix)</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="bPcj8SLzxV0" data-yt-title="anabolic musick: Elon Musk Mars gym mix" aria-label="Play mix: Elon Musk Mars gym mix">
+                  <img src="https://img.youtube.com/vi/bPcj8SLzxV0/hqdefault.jpg" alt="Elon Musk Mars gym mix thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Elon Musk Tribute (Downtempo Mix)</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="GzdN91wSiUY" data-yt-title="anabolic musick: Anabolic Aliens Club dubstep mix" aria-label="Play mix: Anabolic Aliens Club dubstep mix">
+                  <img src="https://img.youtube.com/vi/GzdN91wSiUY/hqdefault.jpg" alt="Anabolic Aliens Club dubstep mix thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Anabolic Aliens Club Meme (Dubstep Mix)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Channel: Nabil Haryouli ──────────────────────────────── -->
+      <div class="content-archive__channel">
+        <div class="content-archive__channel-label">
+          <div class="content-archive__channel-label-left">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_3.jpg" alt="Nabil Haryouli" class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <span class="content-archive__channel-name">Nabil Haryouli</span>
+            <span class="content-archive__channel-meta">Shorts</span>
+          </div>
+          <div class="content-archive__channel-nav">
+            <button class="yt-scroller__nav-btn" data-yt-prev aria-label="Scroll to previous video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="yt-scroller__nav-btn" data-yt-next aria-label="Scroll to next video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="yt-scroller">
+          <div class="yt-scroller__track" data-yt-track>
+
+            <div class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="toM1KkRnVyI" data-yt-title="Short: Nabil Haryouli gym workout" aria-label="Play short: Nabil Haryouli gym workout">
+                  <img src="https://img.youtube.com/vi/toM1KkRnVyI/hqdefault.jpg" alt="Nabil Haryouli working out at the gym" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Gym workout</p>
+            </div>
+
+            <div class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="uP59xbGe4Pw" data-yt-title="Short: Nabil Haryouli outdoor workout" aria-label="Play short: Nabil Haryouli outdoor workout">
+                  <img src="https://img.youtube.com/vi/uP59xbGe4Pw/hqdefault.jpg" alt="Nabil Haryouli outdoor workout" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Outdoor workout</p>
+            </div>
+
+            <div class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="eayZttGY4E0" data-yt-title="Short: Nabil Haryouli outdoor workout 2" aria-label="Play short: Nabil Haryouli outdoor workout, part two">
+                  <img src="https://img.youtube.com/vi/eayZttGY4E0/hqdefault.jpg" alt="Nabil Haryouli outdoor workout, second short" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Outdoor workout II</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Channel: Various YouTube Channels ──────────────────────────────── -->
+      <div class="content-archive__channel">
+        <div class="content-archive__channel-label">
+          <div class="content-archive__channel-label-left">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_5.jpg" alt="YouTube Logo" class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <!-- img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_12.jpg" alt="CryptoPandemic Logo"
+              class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_15.jpg" alt="The Chyna Plug Logo"
+              class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_13.jpg" alt="China Dash Authority Logo"
+              class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_11.jpg" alt="Spooli Snail Logo"
+              class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_14.jpg" alt="Internet Scrapyard Logo"
+              class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async" -->
+            <span class="content-archive__channel-name">Various Channels</span>
+            <span class="content-archive__channel-meta">Outros</span>
+          </div>
+          <div class="content-archive__channel-nav">
+            <button class="yt-scroller__nav-btn" data-yt-prev aria-label="Scroll to previous video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="yt-scroller__nav-btn" data-yt-next aria-label="Scroll to next video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="yt-scroller">
+          <div class="yt-scroller__track" data-yt-track>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="dpjCwqt94uY" data-yt-title="Channel outro edited for CryptoPandemic" aria-label="Play video: channel outro edited for CryptoPandemic">
+                  <img src="https://img.youtube.com/vi/dpjCwqt94uY/hqdefault.jpg" alt="CryptoPandemic channel outro thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">CryptoPandemic outro</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="N72-RHIsmCU" data-yt-title="Channel outro edited for the Chyna Plug" aria-label="Play video: channel outro edited for the Chyna Plug">
+                  <img src="https://img.youtube.com/vi/N72-RHIsmCU/hqdefault.jpg" alt="The Chyna Plug channel outro thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">The Chyna Plug outro</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="qs-e5H2tjwA" data-yt-title="Channel outro edited for China Dash Authority" aria-label="Play video: channel outro edited for China Dash Authority">
+                  <img src="https://img.youtube.com/vi/qs-e5H2tjwA/hqdefault.jpg" alt="China Dash Authority channel outro thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">China Dash Authority outro</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="CgeiICEtx8c" data-yt-title="Channel outro edited for Spooli Snail" aria-label="Play video: channel outro edited for Spooli Snail">
+                  <img src="https://img.youtube.com/vi/CgeiICEtx8c/hqdefault.jpg" alt="Spooli Snail channel outro thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Spooli Snail outro</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="fJHEl5cQRyw" data-yt-title="Channel outro edited for Internet Scrapyard" aria-label="Play video: channel outro edited for Internet Scrapyard">
+                  <img src="https://img.youtube.com/vi/fJHEl5cQRyw/hqdefault.jpg" alt="Internet Scrapyard channel outro thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Internet Scrapyard outro</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Channel: Immersive Studios ──────────────────────────────── -->
+      <div class="content-archive__channel">
+        <div class="content-archive__channel-label">
+          <div class="content-archive__channel-label-left">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_6.jpg" alt="Immersive Studios Logo" class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <span class="content-archive__channel-name">Immersive Studios</span>
+            <span class="content-archive__channel-meta">Commercials</span>
+          </div>
+          <div class="content-archive__channel-nav">
+            <button class="yt-scroller__nav-btn" data-yt-prev aria-label="Scroll to previous video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="yt-scroller__nav-btn" data-yt-next aria-label="Scroll to next video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="yt-scroller">
+          <div class="yt-scroller__track" data-yt-track>
+
+            <div class="yt-scroller__item" data-orientation="square">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="AZBxop0x4FE" data-yt-title="Commercial for Immersive Studios' Booty Class" aria-label="Play video: commercial for Immersive Studios' Booty Class">
+                  <img src="https://img.youtube.com/vi/AZBxop0x4FE/hqdefault.jpg" alt="Immersive Studios Booty Class commercial thumbnail" width="360" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Booty Class Commercial</p>
+            </div>
+
+            <div class="yt-scroller__item" data-orientation="square">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="-_EuJxBtrtk" data-yt-title="Song promo for TaJoel — DRILLUH, filmed at Immersive Studios" aria-label="Play video: song promo for Dutch rapper TaJoel, DRILLUH, filmed at Immersive Studios">
+                  <img src="https://img.youtube.com/vi/-_EuJxBtrtk/hqdefault.jpg" alt="TaJoel DRILLUH song promo thumbnail, filmed at Immersive Studios" width="360" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">TaJoela — DRILLUH Song Promo</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Channel: 92Minerals ──────────────────────────────── -->
+      <div class="content-archive__channel">
+        <div class="content-archive__channel-label">
+          <div class="content-archive__channel-label-left">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_7.jpg" alt="92Minerals Logo" class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <span class="content-archive__channel-name">92Minerals</span>
+            <span class="content-archive__channel-meta">Commercials</span>
+          </div>
+          <div class="content-archive__channel-nav">
+            <button class="yt-scroller__nav-btn" data-yt-prev aria-label="Scroll to previous video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="yt-scroller__nav-btn" data-yt-next aria-label="Scroll to next video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="yt-scroller">
+          <div class="yt-scroller__track" data-yt-track>
+
+            <div class="yt-scroller__item" data-orientation="square">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="w7ov-Z2OCRU" data-yt-title="92Minerals Ramadan commercial" aria-label="Play video: 92Minerals Ramadan commercial">
+                  <img src="https://img.youtube.com/vi/w7ov-Z2OCRU/hqdefault.jpg" alt="92Minerals Ramadan commercial thumbnail" width="360" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Ramadan Commercial</p>
+            </div>
+
+            <div class="yt-scroller__item" data-orientation="square">
+              <div class="yt-scroller__embed">
+                <a class="yt-scroller__thumb-btn yt-scroller__thumb-btn--locked" href="mailto:penpal@dreemcorp.com?subject=Private%20request%3A%2092Minerals%20x%20Alistair%20Overeem%20commercial" aria-label="Request private access: 92Minerals commercial featuring Alistair Overeem">
+                  <img src="https://img.youtube.com/vi/vNHPIawLlMY/hqdefault.jpg" alt="92Minerals commercial featuring Alistair Overeem, private on request" width="360" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__lock-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="5" y="11" width="14" height="9" rx="1.5"></rect>
+                      <path d="M8 11V7a4 4 0 0 1 8 0v4"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <p class="yt-scroller__caption yt-scroller__caption--locked">Commercial with Alistair Overeem (private)</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Channel: Sully Bull ──────────────────────────────── -->
+      <div class="content-archive__channel">
+        <div class="content-archive__channel-label">
+          <div class="content-archive__channel-label-left">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_8.jpg" alt="Sully Bull" class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <span class="content-archive__channel-name">Sully Bull</span>
+            <span class="content-archive__channel-meta">Vlogs</span>
+          </div>
+          <div class="content-archive__channel-nav">
+            <button class="yt-scroller__nav-btn" data-yt-prev aria-label="Scroll to previous video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="yt-scroller__nav-btn" data-yt-next aria-label="Scroll to next video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="yt-scroller">
+          <div class="yt-scroller__track" data-yt-track>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <a class="yt-scroller__thumb-btn yt-scroller__thumb-btn--locked" href="mailto:penpal@dreemcorp.com?subject=Private%20request%3A%20Sully%20Bull%20vlog%201" aria-label="Request private access: day in the life of Sully Bull, pro MMA fighter">
+                  <img src="https://img.youtube.com/vi/twFlIjWJ2nI/hqdefault.jpg" alt="Day in the life of Sully Bull, pro MMA fighter, private on request" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__lock-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="5" y="11" width="14" height="9" rx="1.5"></rect>
+                      <path d="M8 11V7a4 4 0 0 1 8 0v4"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <p class="yt-scroller__caption yt-scroller__caption--locked">Day in the life I (private)</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <a class="yt-scroller__thumb-btn yt-scroller__thumb-btn--locked" href="mailto:penpal@dreemcorp.com?subject=Private%20request%3A%20Sully%20Bull%20vlog%202" aria-label="Request private access: day in the life of Sully Bull, pro MMA fighter, part two">
+                  <img src="https://img.youtube.com/vi/-nw1YmcociY/hqdefault.jpg" alt="Day in the life of Sully Bull, pro MMA fighter, part two, private on request" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__lock-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="5" y="11" width="14" height="9" rx="1.5"></rect>
+                      <path d="M8 11V7a4 4 0 0 1 8 0v4"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <p class="yt-scroller__caption yt-scroller__caption--locked">Day in the life II (private)</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Channel: Various Company Clients ──────────────────────────────── -->
+      <div class="content-archive__channel">
+        <div class="content-archive__channel-label">
+          <div class="content-archive__channel-label-left">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_9.jpg" alt="Fitness Floors Logo" class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_10.jpg" alt="Berra Cuts Logo" class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <span class="content-archive__channel-name">Various Companies</span>
+            <span class="content-archive__channel-meta">Commercials</span>
+          </div>
+          <div class="content-archive__channel-nav">
+            <button class="yt-scroller__nav-btn" data-yt-prev aria-label="Scroll to previous video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="yt-scroller__nav-btn" data-yt-next aria-label="Scroll to next video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="yt-scroller">
+          <div class="yt-scroller__track" data-yt-track>
+
+            <div class="yt-scroller__item" data-orientation="square">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="ulO26FwMECg" data-yt-title="Fitness Floor NL builds SinCity Boxing Amsterdam" aria-label="Play video: Fitness Floor NL builds SinCity Boxing Amsterdam commercial">
+                  <img src="https://img.youtube.com/vi/ulO26FwMECg/hqdefault.jpg" alt="Fitness Floor NL builds SinCity Boxing Amsterdam commercial thumbnail" width="360" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Fitness Floor NL × SinCity Boxing</p>
+            </div>
+
+            <div class="yt-scroller__item" data-orientation="square">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="dhKtYCcr9TA" data-yt-title="Commercial for Berra Cuts Barbershop featuring Frenna" aria-label="Play video: commercial for Berra Cuts Barbershop in The Hague, featuring Frenna">
+                  <img src="https://img.youtube.com/vi/dhKtYCcr9TA/hqdefault.jpg" alt="Berra Cuts Barbershop commercial featuring Frenna, thumbnail" width="360" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Berra Cuts ft. Frenna</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Channel: China Dash Authority ──────────────────────────────── -->
+      <div class="content-archive__channel">
+        <div class="content-archive__channel-label">
+          <div class="content-archive__channel-label-left">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_13.jpg" alt="China Dash Authority Logo" class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <span class="content-archive__channel-name">China Dash Authority</span>
+            <span class="content-archive__channel-meta">Various Content</span>
+          </div>
+          <div class="content-archive__channel-nav">
+            <button class="yt-scroller__nav-btn" data-yt-prev aria-label="Scroll to previous video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="yt-scroller__nav-btn" data-yt-next aria-label="Scroll to next video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="yt-scroller">
+          <div class="yt-scroller__track" data-yt-track>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="ATv2jctxLcs" data-yt-title="Child on a Scooter Falls Under Oncoming Car" aria-label="Play video: Child on a Scooter Falls Under Oncoming Car">
+                  <img src="https://img.youtube.com/vi/ATv2jctxLcs/hqdefault.jpg" alt="Dashcam footage: child on a scooter falls under an oncoming car" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Scooter fall, oncoming car</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="UTeAxXBMQ8o" data-yt-title="BMW effortlessly withstands impact and flips car on the highway" aria-label="Play video: BMW withstands impact and flips car on the highway">
+                  <img src="https://img.youtube.com/vi/UTeAxXBMQ8o/hqdefault.jpg" alt="Dashcam footage: BMW withstands impact and flips another car on the highway" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">BMW flips highway crash</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="DCyKmvOaOa8" data-yt-title="Big truck runs over a scooter rider in front of a cop" aria-label="Play video: big truck runs over a scooter rider in front of a cop">
+                  <img src="https://img.youtube.com/vi/DCyKmvOaOa8/hqdefault.jpg" alt="Dashcam footage: truck runs over a scooter rider in front of a police officer" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Truck vs. scooter, cop nearby</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="IubslcZ_DvM" data-yt-title="Car goes straight through residential pedestrian walkway" aria-label="Play video: car goes straight through residential pedestrian walkway">
+                  <img src="https://img.youtube.com/vi/IubslcZ_DvM/hqdefault.jpg" alt="Dashcam footage: car drives through a residential pedestrian walkway" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Car through pedestrian walkway</p>
+            </div>
+
+            <div class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="uuVk2EBOQrQ" data-yt-title="Unseen Footage From Flood in Zhengzhou China" aria-label="Play short: unseen footage from the flood in Zhengzhou, China">
+                  <img src="https://img.youtube.com/vi/uuVk2EBOQrQ/hqdefault.jpg" alt="Unseen footage from the flood in Zhengzhou, China" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Zhengzhou flood I</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="mohDKDOgIeU" data-yt-title="His daughter fell from the back of his scooter at an intersection, see how he reacted..." aria-label="Play video: his daughter fell from the back of his scooter at an intersection">
+                  <img src="https://img.youtube.com/vi/mohDKDOgIeU/hqdefault.jpg" alt="Dashcam footage: daughter falls from the back of a scooter at an intersection" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Daughter falls, scooter intersection</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="Oap_ULZ47tg" data-yt-title="How to create a deadly accident on a mostly empty intersection..." aria-label="Play video: how to create a deadly accident on a mostly empty intersection">
+                  <img src="https://img.youtube.com/vi/Oap_ULZ47tg/hqdefault.jpg" alt="Dashcam footage: deadly accident on a mostly empty intersection" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Deadly empty-intersection accident</p>
+            </div>
+
+            <div class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="8Zd8HxY5gW0" data-yt-title="Footage From Inside The Metro During Zhengzhou Flood" aria-label="Play short: footage from inside the metro during the Zhengzhou flood">
+                  <img src="https://img.youtube.com/vi/8Zd8HxY5gW0/hqdefault.jpg" alt="Footage from inside the metro during the Zhengzhou flood" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Zhengzhou flood II</p>
+            </div>
+
+            <div class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="ILOVS6ZahI0" data-yt-title="Clueless Driver Hits Cyclists In a Bike Race" aria-label="Play video: clueless driver hits cyclists in a bike race">
+                  <img src="https://img.youtube.com/vi/ILOVS6ZahI0/hqdefault.jpg" alt="Dashcam footage: clueless driver hits cyclists in a bike race" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Driver hits bike race</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+</main></div></div><div id="a18bddd77e43032e7a30f27773715fc7" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1786623801"></div></div></div></div></div><div id="wb_footer_a18bddd8a85d0259fb1585dbb509cff8" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -472,7 +4083,7 @@ html, body {
 
 <p class="wb-stl-footer" style="text-align: center;"><a data-_="Link" href="anabolickmusick.com" target="_blank" title="anabolic musick's official website">anabolickmusick.com</a></p>
 </div><div id="a18bddd77e4a320a360cd08aa5891d23" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: center;"><span style="color:rgba(255,255,255,1);">© 2024 <a href="https://www.georgedreemer.com">G</a><a href="https://www.dreemer.xyz">eorge Dreemer</a></span></p>
-</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1785861445"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
+</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1786623801"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
 			$(function() {
 				var footer = $(".wb_footer");
 				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
@@ -486,12 +4097,218 @@ html, body {
 .image-height-mod {
 height: 100%;
 }
-</style>
-<div class="wb_pswp" tabindex="-1" role="dialog" aria-hidden="true">
-</div>
-</div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
-	<script src="js/common-bundle.js?ts=20260804193722" type="text/javascript" defer></script>
-	<script src="js/a18bddd8a85d0259fb1585dbb509cff8-bundle.js?ts=20260804193722" type="text/javascript" defer></script>{{hr_out}}<script>
+</style><script data-custom-script="true">
+    // ── Lucide icons ──────────────────────────────────────────────
+    (function () {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+        return;
+      }
+    
+      const lucideScript = document.querySelector('script[src*="lucide"]');
+      if (lucideScript) {
+        lucideScript.addEventListener('load', () => {
+          if (typeof lucide !== 'undefined') lucide.createIcons();
+        });
+      }
+    })();
+    
+    // ── Slideshow ──────────────────────────────────────────────
+    document.querySelectorAll('.evidence-card__slides').forEach(slider => {
+      const slides = slider.querySelectorAll('.evidence-card__slide');
+      const dots = slider.querySelectorAll('.evidence-card__slide-dot');
+      if (!slides.length || !dots.length) return;
+    
+      let current = 0;
+      let timer;
+    
+      function goTo(n) {
+        slides[current].classList.remove('is-active');
+        dots[current].classList.remove('is-active');
+        current = (n + slides.length) % slides.length;
+        slides[current].classList.add('is-active');
+        dots[current].classList.add('is-active');
+      }
+    
+      function start() {
+        if (slides.length > 1) timer = setInterval(() => goTo(current + 1), 4000);
+      }
+    
+      function stop() {
+        clearInterval(timer);
+      }
+    
+      dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => {
+          stop();
+          goTo(i);
+          start();
+        });
+      });
+    
+      slider.addEventListener('mouseenter', stop);
+      slider.addEventListener('mouseleave', start);
+      start();
+    });
+    
+    // ── Sound toggle (YouTube iframes) ─────────────────────────
+    document.querySelectorAll('[data-sound-toggle]').forEach(btn => {
+      let muted = true;
+      const iframe = btn.closest('.evidence-card__video')?.querySelector('iframe');
+      if (!iframe) return;
+    
+      btn.addEventListener('click', () => {
+        muted = !muted;
+        const src = iframe.src;
+        iframe.src = muted
+          ? src.replace('&mute=0', '&mute=1')
+          : src.replace('&mute=1', '&mute=0');
+    
+        const svg = btn.querySelector('svg');
+        if (!svg) return;
+    
+        svg.innerHTML = muted
+          ? `<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15" class="mute-line"/><line x1="17" y1="9" x2="23" y2="15" class="mute-line"/>`
+          : `<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>`;
+      });
+    });
+    
+    // ── Accordion ─────────────────────────────────────────────────
+    document.querySelectorAll('.story-accordion').forEach(accordion => {
+      const triggers = accordion.querySelectorAll('.story-accordion__trigger');
+    
+      triggers.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const panelId = btn.getAttribute('aria-controls');
+          const panel = panelId ? document.getElementById(panelId) : null;
+          const isOpen = btn.getAttribute('aria-expanded') === 'true';
+    
+          triggers.forEach(otherBtn => {
+            const otherPanelId = otherBtn.getAttribute('aria-controls');
+            const otherPanel = otherPanelId ? document.getElementById(otherPanelId) : null;
+    
+            otherBtn.setAttribute('aria-expanded', 'false');
+            if (otherPanel) otherPanel.setAttribute('aria-hidden', 'true');
+          });
+    
+          if (!isOpen) {
+            btn.setAttribute('aria-expanded', 'true');
+            if (panel) panel.setAttribute('aria-hidden', 'false');
+          }
+        });
+      });
+    });
+    
+    // ── Stat counter animation ────────────────────────────────────
+    (function () {
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    
+      function easeOut(t) {
+        return 1 - Math.pow(1 - t, 3);
+      }
+    
+      function animateCounter(item) {
+        const numberEl = item.querySelector('.stat-counter__number');
+        const target = parseInt(item.dataset.target, 10);
+        const prefix = item.dataset.prefix || '';
+        const suffix = item.dataset.suffix || '';
+        const duration = 1200;
+        const start = performance.now();
+    
+        if (!numberEl || Number.isNaN(target)) return;
+    
+        if (prefersReduced) {
+          numberEl.textContent = prefix + target + suffix;
+          return;
+        }
+    
+        function tick(now) {
+          const elapsed = now - start;
+          const progress = Math.min(elapsed / duration, 1);
+          const value = Math.round(easeOut(progress) * target);
+          numberEl.textContent = prefix + value + suffix;
+    
+          if (progress < 1) {
+            requestAnimationFrame(tick);
+          }
+        }
+    
+        requestAnimationFrame(tick);
+      }
+    
+      const items = document.querySelectorAll('.stat-counter__item');
+      if (!items.length) return;
+    
+      if (!('IntersectionObserver' in window)) {
+        items.forEach(item => {
+          item.classList.add('is-visible');
+          animateCounter(item);
+        });
+        return;
+      }
+    
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+    
+          const item = entry.target;
+          item.classList.add('is-visible');
+          animateCounter(item);
+          observer.unobserve(item);
+        });
+      }, { threshold: 0.3 });
+    
+      items.forEach(item => observer.observe(item));
+    })();
+    
+    // ── Instagram scroller nav ──────────────────────────────────
+    document.querySelectorAll('[data-ig-track]').forEach(track => {
+      const section = track.closest('.ig-scroller');
+      const prevBtn = section.querySelector('[data-ig-prev]');
+      const nextBtn = section.querySelector('[data-ig-next]');
+      const scrollAmount = () => track.querySelector('.ig-scroller__item')?.offsetWidth + 16 || 360;
+    
+      prevBtn?.addEventListener('click', () => {
+        track.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
+      });
+      nextBtn?.addEventListener('click', () => {
+        track.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
+      });
+    });
+    
+    // ── YouTube Content Archive: click-to-load + nav ────────────────
+    document.querySelectorAll('[data-yt-thumb]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const embed = btn.closest('.yt-scroller__embed');
+        const videoId = btn.dataset.ytId;
+        const title = btn.dataset.ytTitle || 'YouTube video';
+        const iframe = document.createElement('iframe');
+        iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+        iframe.title = title;
+        iframe.setAttribute('aria-label', title);
+        iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+        iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+        iframe.setAttribute('allowfullscreen', '');
+        embed.innerHTML = '';
+        embed.appendChild(iframe);
+      });
+    });
+    
+    document.querySelectorAll('[data-yt-track]').forEach(track => {
+      const channel = track.closest('.content-archive__channel');
+      const prevBtn = channel.querySelector('[data-yt-prev]');
+      const nextBtn = channel.querySelector('[data-yt-next]');
+      const scrollAmount = () => track.querySelector('.yt-scroller__item')?.offsetWidth + 16 || 320;
+    
+      prevBtn?.addEventListener('click', () => {
+        track.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
+      });
+      nextBtn?.addEventListener('click', () => {
+        track.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
+      });
+    });
+</script></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
+	<script src="js/common-bundle.js?ts=20260813152319" type="text/javascript" defer></script>{{hr_out}}<script>
     document.addEventListener('DOMContentLoaded', function () {
         window._spDefer.done();
     });

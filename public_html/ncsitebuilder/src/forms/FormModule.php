@@ -133,7 +133,7 @@ class FormModule
 						$fileName = $_FILES[$fieldName]["name"][$fileIdx];
 						$ext = pathinfo($fileName, PATHINFO_EXTENSION);
 						if (is_string($ext) && $ext) {
-							$ext = mb_strtolower($ext);
+							$ext = mbStrtolower($ext);
 							if (in_array($ext, ['php', 'php3', 'php4', 'php5', 'php7', 'phtml', 'phps', 'aspx', 'ascx', 'ashx', 'asmx', 'asp', 'config', 'jsp', 'jspx', 'do', 'action', 'cgi', 'pl', 'py', 'rb', 'sh', 'cfm', 'cfc', 'js', 'exe', 'dll', 'elf'])) {
 								continue;
 							}
