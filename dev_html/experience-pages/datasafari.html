@@ -2591,7 +2591,234 @@
     <!-- ============================================================
             ELEMENT 6 — WORKS CARD GRID
     ============================================================ -->
+    <section aria-label="E6 Works Card Grid" class="fade-in">
 
+      <div class="section-label">
+        <span class="section-label__text">Works</span>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+
+      <div class="evidence-grid">
+
+        <!-- ─── CARD 1 · Engineering · CI/CD Pipeline Architecture ─── -->
+        <div class="evidence-card" data-domain="engineering">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="[TO-DO-CICD-YAML-SCREENSHOT]"
+                    alt="GitHub Actions workflow YAML showing 12-step pipeline definition"
+                    loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="[TO-DO-ACTIONS-RUN-SCREENSHOT]"
+                    alt="GitHub Actions run page with all 12 steps passing in green"
+                    loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="[TO-DO-MATRIX-RESULT-SCREENSHOT]"
+                    alt="CI matrix result grid showing parallel runs across Python 3.9 through 3.12"
+                    loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <div class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Engineering
+            </div>
+            <h4 class="evidence-card__title">CI/CD Pipeline Architecture</h4>
+            <ul class="evidence-card__bullets">
+              <li>Built a 12-step GitHub Actions pipeline — lint, test matrix, security scan, and conditional PyPI publish on tagged releases</li>
+              <li>Configured tox to run the full pytest suite in parallel across Python 3.9, 3.10, 3.11, and 3.12 on every push</li>
+              <li>Automated Sphinx docs build and live deployment to datasafari.dev via rsync over SSH, triggered on every merge to main</li>
+              <li>Closed 136 GitHub issues over the development lifecycle, each fix validated through the pipeline before merge</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ─── CARD 2 · Engineering · Test Suite & Quality Gates ─── -->
+        <div class="evidence-card" data-domain="engineering">
+          <div class="evidence-card__thumb">
+            <img src="[TO-DO-PYTEST-SUMMARY-SCREENSHOT]"
+                alt="Terminal output showing pytest run: 250+ tests passed"
+                loading="lazy">
+          </div>
+          <div class="evidence-card__body">
+            <div class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Engineering
+            </div>
+            <h4 class="evidence-card__title">Test Suite & Quality Gates</h4>
+            <ul class="evidence-card__bullets">
+              <li>Wrote 250+ pytest tests across 11 test files, covering edge cases, input validation, and statistical output correctness for all four subpackages</li>
+              <li>Integrated Bandit for static security scanning and SafetyCLI for dependency vulnerability auditing — both run automatically on every push</li>
+              <li>Configured tox to enforce test-passing across all supported Python versions before any release is tagged</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ─── CARD 3 · Data · Automated EDA Output ─── -->
+        <div class="evidence-card" data-domain="data">
+          <div class="evidence-card__thumb">
+            <img src="[TO-DO-EXPLORE-NUM-OUTPUT-SCREENSHOT]"
+                alt="Jupyter notebook showing explore_num() call and its multi-section plain-English report output"
+                loading="lazy">
+          </div>
+          <div class="evidence-card__body">
+            <div class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data
+            </div>
+            <h4 class="evidence-card__title">Automated EDA — <code>explore_num()</code></h4>
+            <ul class="evidence-card__bullets">
+              <li>Single function call produces full numerical profiling: outlier detection via Z-score, IQR, and Mahalanobis distance, normality testing, skewness, kurtosis, and multicollinearity</li>
+              <li>Output is a structured plain-English report with findings and actionable recommendations — not raw numbers</li>
+              <li>Automatically selects the correct statistical method based on sample size and data characteristics at runtime</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ─── CARD 4 · Data · predict_ml — Full ML Pipeline ─── -->
+        <div class="evidence-card" data-domain="data">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="[TO-DO-PREDICTML-RANKED-TABLE-SCREENSHOT]"
+                    alt="predict_ml output showing ranked model comparison table with composite scores"
+                    loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="[TO-DO-HYPERPARAMETER-TUNING-OUTPUT-SCREENSHOT]"
+                    alt="Hyperparameter tuning results showing best parameters found via Bayesian search"
+                    loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="[TO-DO-PREDICTML-RECOMMENDATION-OUTPUT-SCREENSHOT]"
+                    alt="predict_ml plain-language model recommendation section"
+                    loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <div class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data
+            </div>
+            <h4 class="evidence-card__title">End-to-End ML Pipeline — <code>predict_ml()</code></h4>
+            <ul class="evidence-card__bullets">
+              <li>One call handles preprocessing, multi-model training, composite-score-based evaluation weighted across user-configurable metrics, and ranked output</li>
+              <li>Automated hyperparameter tuning via grid search, random search, or Bayesian optimisation — user selects strategy, library handles execution</li>
+              <li>10 pipeline decisions automated per ML run: encoding, scaling, model selection, tuning strategy, evaluation weighting, and recommendation generation</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ─── CARD 5 · Engineering · 4-Subpackage API Architecture ─── -->
+        <div class="evidence-card" data-domain="engineering">
+          <div class="evidence-card__thumb">
+            <img src="[TO-DO-REPO-FILE-TREE-SCREENSHOT]"
+                alt="VS Code Explorer showing datasafari repository file tree with four subpackage directories"
+                loading="lazy">
+          </div>
+          <div class="evidence-card__body">
+            <div class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Engineering
+            </div>
+            <h4 class="evidence-card__title">4-Subpackage Library Architecture</h4>
+            <ul class="evidence-card__bullets">
+              <li>Designed the full package structure from scratch: <code>explorer/</code>, <code>transformer/</code>, <code>evaluator/</code>, <code>predictor/</code> — each a self-contained module with its own public API surface</li>
+              <li>Every public function follows a consistent interface contract: DataFrame in, structured report out — one-liner by design, full depth available via parameters</li>
+              <li>Configured Poetry, Setuptools, and <code>pyproject.toml</code> for reproducible builds and one-command PyPI distribution</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ─── CARD 6 · Product · Documentation Site ─── -->
+        <div class="evidence-card" data-domain="product">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="[TO-DO-DATASAFARI-DEV-LANDING-SCREENSHOT]"
+                    alt="datasafari.dev landing page hero section"
+                    loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="[TO-DO-DOCS-FUNCTION-REFERENCE-SCREENSHOT]"
+                    alt="datasafari.dev/docs function reference page for explore_num"
+                    loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="[TO-DO-DOCS-QUICKSTART-SCREENSHOT]"
+                    alt="datasafari.dev/docs quick-start guide page"
+                    loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <div class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Product
+            </div>
+            <h4 class="evidence-card__title">Documentation Site — datasafari.dev</h4>
+            <ul class="evidence-card__bullets">
+              <li>Hand-coded the full landing site at datasafari.dev — custom HTML, CSS, and JavaScript, designed from scratch to communicate the library's philosophy and quick-start path</li>
+              <li>Authored every page of the Sphinx-generated API docs: installation guides, function references, usage examples, and conceptual explanations for all 11 modules</li>
+              <li>Integrated automated docs build and live-server deployment into the CI/CD pipeline — docs update on every push to main without manual intervention</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ─── CARD 7 · Growth · Brand Identity & Open-Source Presence ─── -->
+        <div class="evidence-card" data-domain="growth">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="[TO-DO-GITHUB-REPO-BANNER-SCREENSHOT]"
+                    alt="DataSafari GitHub repository header with banner artwork and repo stats"
+                    loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="[TO-DO-PYPI-PAGE-SCREENSHOT]"
+                    alt="DataSafari PyPI project page showing package metadata and install command"
+                    loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="[TO-DO-DATASAFARI-LOGO-ARTWORK]"
+                    alt="DataSafari logo and brand artwork on clean background"
+                    loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <div class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Growth
+            </div>
+            <h4 class="evidence-card__title">Brand Identity & Open-Source Presence</h4>
+            <ul class="evidence-card__bullets">
+              <li>Created the complete DataSafari visual identity from scratch: logo, banner artwork, icon set, and all graphic assets across GitHub, PyPI, and the documentation site</li>
+              <li>Published to PyPI with automated versioning and structured release notes — publicly installable via <code>pip install datasafari</code></li>
+              <li>Maintained a professional open-source presence: README, changelog, issue labels, and a coherent brand that makes a solo-built library read as a production-grade tool</li>
+            </ul>
+          </div>
+        </div>
+
+      </div><!-- /.evidence-grid -->
+    </section>
 
     <!-- ============================================================
             ELEMENT 8 — INSTAGRAM SCROLLER
