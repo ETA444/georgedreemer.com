@@ -2025,8 +2025,8 @@
     <section aria-label="E1 Context Block" class="fade-in">
       <div class="context-block">
         <p>DataSafari is a data science and ML Python library that compresses the full data science workflow into a clean one-liner API — so anyone can unlock the power of Python data science without spending hours context-switching between disconnected tools.</p>
-        <p>George built DataSafari because the data science workflow is fragmented by default: analysts context-switch across ten separate libraries — pandas, sklearn, scipy, statsmodels, and more — just to move from raw data to a trained model. One function call should be enough to explore, clean, test assumptions, and run a model.</p>
-        <p>The library is structured across four subpackages — Explorer, Transformer, Evaluator, Predictor — mirroring the natural stages of any data workflow, each function handling its stage with automatic statistical method selection, dynamic assumption validation, and composite-score-based model evaluation built in. Each function returns a plain-language report with its findings and actionable recommendations, so results are interpretable, not just computed.</p>
+        <p>George built DataSafari to solve a specific problem he watched play out at university: data science curricula built around Stata, R, and SPSS — tools with decades of academic inertia — while Python's better-maintained, faster, and more capable ecosystem went largely untaught. The researcher who understands their domain deeply but doesn't want to spend two hours reading Scipy docs to run a single test was the exact person the existing tooling failed. DataSafari is the attempt to fix that: one import, one function call, one plain-English report.</p>
+        <p>The library spans four subpackages — Explorer, Transformer, Evaluator, Predictor — mirroring the natural stages of any data workflow. Every function handles its stage end-to-end: automatic statistical method selection, dynamic assumption validation, composite-score model evaluation. Each call returns a plain-language report with findings and actionable recommendations — results that are interpretable, not just computed.</p>
       </div>
     </section>
 
@@ -2082,81 +2082,62 @@
 
         <p class="snapshot-card__highlights-label">Highlights</p>
         <div class="snapshot-card__chips">
-          <!-- Engineering chips -->
+
+          <!-- Architecture — the what -->
           <span class="achievement-chip" data-domain="engineering">
-            <span class="achievement-chip__dot"></span>Architected 4-subpackage API from scratch: Explorer · Transformer ·
-            Evaluator · Predictor
-          </span>
-          <span class="achievement-chip" data-domain="engineering">
-            <span class="achievement-chip__dot"></span>Built full GitHub Actions CI/CD pipeline: lint · test · security scan ·
-            build · docs deploy · publish
-          </span>
-          <span class="achievement-chip" data-domain="engineering">
-            <span class="achievement-chip__dot"></span>Configured CI matrix to run across Python 3.9, 3.10, 3.11 &amp; 3.12 in
-            parallel
-          </span>
-          <span class="achievement-chip" data-domain="engineering">
-            <span class="achievement-chip__dot"></span>Tracked and closed 136 GitHub issues across the full development
-            lifecycle
-          </span>
-          <span class="achievement-chip" data-domain="engineering">
-            <span class="achievement-chip__dot"></span>Packaged and published to PyPI via an automated Poetry + Twine pipeline
-          </span>
-          <span class="achievement-chip" data-domain="engineering">
-            <span class="achievement-chip__dot"></span>Engineered 250+ pytest tests across 11 test files covering all 4
-            subpackages
-          </span>
-          <span class="achievement-chip" data-domain="engineering">
-            <span class="achievement-chip__dot"></span>Secured codebase with Bandit static scanning and SafetyCLI dependency
-            auditing
-          </span>
-          <span class="achievement-chip" data-domain="engineering">
-            <span class="achievement-chip__dot"></span>Automated Sphinx docs build and live-server deployment via rsync over SSH
-            on every push
+            <span class="achievement-chip__dot"></span>Architected 4-subpackage API from scratch: Explorer · Transformer · Evaluator · Predictor
           </span>
 
-          <!-- Data chips -->
+          <!-- Data science depth — the substance -->
           <span class="achievement-chip" data-domain="data">
-            <span class="achievement-chip__dot"></span>Shipped 11 production API functions with full NumPy docstrings and return value contracts
+            <span class="achievement-chip__dot"></span>Unified 10 scientific libraries — NumPy, pandas, scikit-learn, scipy, statsmodels &amp; more — into a single one-liner workflow
           </span>
           <span class="achievement-chip" data-domain="data">
-            <span class="achievement-chip__dot"></span>Built automated EDA suite in Explorer — structure, categoricals, and numerics each in one call
+            <span class="achievement-chip__dot"></span>Implemented automatic statistical test routing in predict_hypothesis() — detects variable types, checks assumptions, selects and runs the correct test
+          </span>
+          <span class="achievement-chip" data-domain="data">
+            <span class="achievement-chip__dot"></span>Built composite-score ML model evaluation engine with automated hyperparameter tuning in predict_ml()
           </span>
           <span class="achievement-chip" data-domain="data">
             <span class="achievement-chip__dot"></span>Implemented statistical assumption checking across normality, variance, dtype, and contingency in Evaluator
           </span>
           <span class="achievement-chip" data-domain="data">
-            <span class="achievement-chip__dot"></span>Implemented automatic statistical test routing in predict_hypothesis()
-          </span>
-          <span class="achievement-chip" data-domain="data">
-            <span class="achievement-chip__dot"></span>Built composite-score ML model evaluation engine in predict_ml()
-          </span>
-          <span class="achievement-chip" data-domain="data">
-            <span class="achievement-chip__dot"></span>Built automated hyperparameter tuning with grid, random, and Bayesian search in predict_ml()
-          </span>
-          <span class="achievement-chip" data-domain="data">
-            <span class="achievement-chip__dot"></span>Unified 10 scientific libraries — NumPy, pandas, scikit-learn, scipy, statsmodels &amp; more — into a single workflow
-          </span>
-          <span class="achievement-chip" data-domain="data">
-            <span class="achievement-chip__dot"></span>Designed multi-method outlier detection covering Z-score, IQR &amp; Mahalanobis distance
-          </span>
-          <span class="achievement-chip" data-domain="data">
-            <span class="achievement-chip__dot"></span>Integrated ML-based categorical encoding via category-encoders and python-Levenshtein
+            <span class="achievement-chip__dot"></span>Designed multi-method outlier detection covering Z-score, IQR &amp; Mahalanobis distance in Explorer
           </span>
 
-          <!-- Product chips -->
+          <!-- Engineering craft — the how -->
+          <span class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Engineered 250+ pytest tests across 11 test files covering all 4 subpackages
+          </span>
+          <span class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Built full GitHub Actions CI/CD pipeline: lint · test · security scan · build · docs deploy · publish
+          </span>
+          <span class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Configured CI matrix to run across Python 3.9, 3.10, 3.11 &amp; 3.12 in parallel
+          </span>
+          <span class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Secured codebase with Bandit static scanning and SafetyCLI dependency auditing
+          </span>
+          <span class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Tracked and closed 136 GitHub issues across the full development lifecycle
+          </span>
+
+          <!-- Product delivery — the finish -->
+          <span class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Packaged and published to PyPI via an automated Poetry + Twine pipeline
+          </span>
           <span class="achievement-chip" data-domain="product">
-            <span class="achievement-chip__dot"></span>Authored full Sphinx documentation site with custom Furo theme at
-            datasafari.dev/docs
+            <span class="achievement-chip__dot"></span>Automated Sphinx docs build and live-server deployment via rsync over SSH on every push
+          </span>
+          <span class="achievement-chip" data-domain="product">
+            <span class="achievement-chip__dot"></span>Authored full Sphinx documentation site with custom Furo theme at datasafari.dev/docs
           </span>
           <span class="achievement-chip" data-domain="product">
             <span class="achievement-chip__dot"></span>Designed and launched dedicated product website at datasafari.dev
           </span>
-          <span class="achievement-chip" data-domain="product">
-            <span class="achievement-chip__dot"></span>Published to PyPI with automated versioning and release notes
-          </span>
 
         </div>
+
       </div>
     </section>
 
@@ -2433,7 +2414,7 @@
         <div class="ability-card fade-in" data-domain="engineering">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="check-square"></i></div>
           <h3 class="ability-card__title">Automated Test Suite Design</h3>
-          <p class="ability-card__desc">Built a test suite of more than 300 tests covering edge cases, input validation, and statistical output correctness across all subpackages. Configured tox to run the suite across multiple Python environments, helping datasafari work for as many users as possible.</p>
+          <p class="ability-card__desc">Built a test suite of more than 250 tests covering edge cases, input validation, and statistical output correctness across all subpackages. Configured tox to run the suite across multiple Python environments, helping datasafari work for as many users as possible.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Test Engineering</span>
             <span class="ability-tag">Quality Assurance</span>
@@ -2457,7 +2438,7 @@
         <div class="ability-card fade-in" data-domain="engineering">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="file-text"></i></div>
           <h3 class="ability-card__title">Technical Documentation Engineering</h3>
-          <p class="ability-card__desc">Built the complete datasafari documentation system, including Sphinx source authoring, an automated build pipeline through Read the Docs, and a custom public site at datasafari.dev. Wrote every page of the documentation: installation guides, function references, usage examples, and conceptual explanations for each of the 10 core modules.</p>
+          <p class="ability-card__desc">Built the complete datasafari documentation system, including Sphinx source authoring, an automated build pipeline, and a custom public site at datasafari.dev. Wrote every page of the documentation: installation guides, function references, usage examples, and conceptual explanations for all 11 modules.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Documentation Systems</span>
             <span class="ability-tag">Technical Writing</span>
@@ -2469,7 +2450,7 @@
         <div class="ability-card fade-in" data-domain="engineering">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="shield"></i></div>
           <h3 class="ability-card__title">Defensive Python & Input Validation</h3>
-          <p class="ability-card__desc">Implemented rigorous input validation and error handling across all 10 public functions — each accepting DataFrames, column names, and optional parameter combinations that could fail silently in naive code. Built branching logic that detects data types, sample sizes, and edge cases at runtime, routing to the correct algorithm path and raising informative, actionable errors when inputs are malformed.</p>
+          <p class="ability-card__desc">Implemented rigorous input validation and error handling across all 11 public functions. Each accepts DataFrames, column names, and optional parameter combinations that can fail silently in naive code. I built runtime branching logic to detect data types, sample sizes, and edge cases, then route execution to the correct algorithm path. Every error message is written for the caller, not the developer. In an API, the message <em>is</em> the UI &amp; UX together.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Defensive Programming</span>
             <span class="ability-tag">Runtime Type Handling</span>
@@ -2541,7 +2522,7 @@
         <div class="ability-card fade-in" data-domain="product">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="pen-tool"></i></div>
           <h3 class="ability-card__title">Developer API &amp; UX Design</h3>
-          <p class="ability-card__desc">Built datasafari around a deliberate developer experience philosophy — consistent naming across all 10 functions, predictable argument patterns, and sensible defaults that make the library immediately usable without reading the docs. Complex workflows like full ML pipelines and hypothesis testing are exposed as single function calls, hiding implementation complexity behind a clean interface.</p>
+          <p class="ability-card__desc">Built datasafari around a deliberate developer experience philosophy — consistent naming across all 11 functions, predictable argument patterns, and sensible defaults that make the library immediately usable without reading the docs. Complex workflows like full ML pipelines and hypothesis testing are exposed as single function calls, hiding implementation complexity behind a clean interface.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Interface Design</span>
             <span class="ability-tag">Developer Experience</span>
