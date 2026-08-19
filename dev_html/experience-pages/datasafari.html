@@ -2409,7 +2409,7 @@
         <div class="ability-card fade-in" data-domain="engineering">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="layers"></i></div>
           <h3 class="ability-card__title">Python Library Architecture</h3>
-          <p class="ability-card__desc">Designed the library from scratch as a 4-subpackage system — Explorers, Transformers, Evaluators, Predictors — reflecting the natural data science workflow. Built a consistent public API with a one-liner philosophy: any complex operation callable from a single function with sensible defaults and full customization depth.</p>
+          <p class="ability-card__desc">Designed the library from scratch as a four-subpackage system: Explorers, Transformers, Evaluators, and Predictors. The structure reflects the natural data science workflow. Built a consistent public API around a one-liner philosophy, making complex operations available through a single function with sensible defaults and room for deep customisation.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Package Architecture</span>
             <span class="ability-tag">API Design</span>
@@ -2421,7 +2421,7 @@
         <div class="ability-card fade-in" data-domain="engineering">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="package"></i></div>
           <h3 class="ability-card__title">OSS Release Engineering</h3>
-          <p class="ability-card__desc">Managed the full open-source release lifecycle — from project scaffolding with Poetry and Setuptools to versioned PyPI distribution. Configured pyproject.toml, package metadata, and dependency management, producing reproducible builds that users can install with a single pip command.</p>
+          <p class="ability-card__desc">Managed the full open-source release lifecycle, from project scaffolding with Poetry and Setuptools to versioned PyPI distribution. Configured <code>pyproject.toml</code>, package metadata, and dependencies to produce reproducible builds that users can install with a single pip command.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Release Management</span>
             <span class="ability-tag">Dependency Management</span>
@@ -2433,7 +2433,7 @@
         <div class="ability-card fade-in" data-domain="engineering">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="check-square"></i></div>
           <h3 class="ability-card__title">Automated Test Suite Design</h3>
-          <p class="ability-card__desc">Built a 300+ test suite covering edge cases, input validation, and statistical output correctness across all subpackages. Configured tox to run tests against multiple Python environments, ensuring datasafari works for the widest possible user base.</p>
+          <p class="ability-card__desc">Built a test suite of more than 300 tests covering edge cases, input validation, and statistical output correctness across all subpackages. Configured tox to run the suite across multiple Python environments, helping datasafari work for as many users as possible.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Test Engineering</span>
             <span class="ability-tag">Quality Assurance</span>
@@ -2445,7 +2445,7 @@
         <div class="ability-card fade-in" data-domain="engineering">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="git-merge"></i></div>
           <h3 class="ability-card__title">CI/CD Pipeline Construction</h3>
-          <p class="ability-card__desc">Designed and built a 12-step GitHub Actions pipeline that runs automatically on every push — executing lint checks, the full test matrix via tox, and conditional PyPI publish on tagged releases. Closed 136 issues through the lifecycle of the project, with each fix validated through the pipeline before merge.</p>
+          <p class="ability-card__desc">Designed and built a 12-step GitHub Actions pipeline that runs automatically on every push. It performs lint checks, runs the full tox test matrix, and publishes to PyPI when a release is tagged. Closed 136 issues over the life of the project, validating every fix through the pipeline before merge.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Continuous Integration</span>
             <span class="ability-tag">Automated Deployment</span>
@@ -2457,7 +2457,7 @@
         <div class="ability-card fade-in" data-domain="engineering">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="file-text"></i></div>
           <h3 class="ability-card__title">Technical Documentation Engineering</h3>
-          <p class="ability-card__desc">Built the complete datasafari documentation system — Sphinx source authoring, automated build pipeline through Read the Docs, and a custom-designed public site at datasafari.dev. Wrote every page of the docs: installation guides, function references, usage examples, and conceptual explanations for each of the 10 core modules.</p>
+          <p class="ability-card__desc">Built the complete datasafari documentation system, including Sphinx source authoring, an automated build pipeline through Read the Docs, and a custom public site at datasafari.dev. Wrote every page of the documentation: installation guides, function references, usage examples, and conceptual explanations for each of the 10 core modules.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Documentation Systems</span>
             <span class="ability-tag">Technical Writing</span>
@@ -2481,7 +2481,7 @@
         <div class="ability-card fade-in" data-domain="data">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="search"></i></div>
           <h3 class="ability-card__title">Exploratory Data Analysis Systems</h3>
-          <p class="ability-card__desc">Designed and implemented the full Explorers subpackage — <code>explore_df()</code> for dataset-level profiling, <code>explore_num()</code> for numerical deep-dives (outlier detection via Z-score, IQR, and Mahalanobis distance; normality, skewness, kurtosis, correlation, and multicollinearity), and <code>explore_cat()</code> for categorical profiling including Shannon entropy to quantify data diversity.</p>
+          <p class="ability-card__desc">Designed and implemented the full Explorers subpackage. <code>explore_df()</code> profiles datasets, <code>explore_num()</code> performs numerical analysis including outlier detection via Z-score, IQR, and Mahalanobis distance, and <code>explore_cat()</code> profiles categorical data, including Shannon entropy to quantify diversity.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Exploratory Analysis</span>
             <span class="ability-tag">Outlier Detection</span>
@@ -2493,7 +2493,7 @@
         <div class="ability-card fade-in" data-domain="data">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="shield-check"></i></div>
           <h3 class="ability-card__title">Statistical Assumption Verification</h3>
-          <p class="ability-card__desc">Built the Evaluators subpackage to automate the pre-analysis assumption-checking that data scientists typically handle manually. <code>evaluate_normality()</code> selects between Shapiro-Wilk, Anderson-Darling, and other tests based on sample characteristics; <code>evaluate_variance()</code> applies Levene's, Bartlett's, or Fligner's test dynamically; <code>evaluate_contingency_table()</code> checks Chi-square suitability conditions automatically.</p>
+          <p class="ability-card__desc">Built the Evaluators subpackage to automate the assumption checks that data scientists typically perform before analysis. <code>evaluate_normality()</code> selects an appropriate test, such as Shapiro-Wilk or Anderson-Darling, based on the sample; <code>evaluate_variance()</code> dynamically applies Levene's, Bartlett's, or Fligner's test; and <code>evaluate_contingency_table()</code> checks whether Chi-square conditions are met.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Assumption Testing</span>
             <span class="ability-tag">Statistical Inference</span>
@@ -2565,7 +2565,7 @@
         <div class="ability-card fade-in" data-domain="product">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="list-checks"></i></div>
           <h3 class="ability-card__title">Open-Source Product Lifecycle Management</h3>
-          <p class="ability-card__desc">Managed datasafari as a solo product owner — from initial concept and roadmap to versioned releases, issue tracking (136 closed issues), and ongoing maintenance. Handled the full triangle of engineering quality, user-facing documentation, and public discoverability, building systems that made the project sustainable and reproducible beyond any single release.</p>
+          <p class="ability-card__desc">Managed datasafari as a solo product owner, from its initial concept and roadmap through versioned releases, issue tracking, and ongoing maintenance. Closed 136 issues while balancing engineering quality, user-facing documentation, and public discoverability. Built systems that kept the project sustainable and reproducible beyond any single release.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Product Ownership</span>
             <span class="ability-tag">Roadmap Execution</span>
@@ -2577,7 +2577,7 @@
         <div class="ability-card fade-in" data-domain="growth">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="feather"></i></div>
           <h3 class="ability-card__title">Brand Identity &amp; Visual Systems</h3>
-          <p class="ability-card__desc">Created the complete visual identity for datasafari — logo, banner artwork, icon set, and all graphic assets used across the GitHub presence, PyPI page, and documentation site. Every visual touchpoint a user encounters when discovering datasafari was designed by George, giving an independent open-source library a coherent, professional brand from day one.</p>
+          <p class="ability-card__desc">Created the complete visual identity for datasafari, including the logo, banner artwork, icon set, and graphic assets used across GitHub, PyPI, and the documentation site. Designed every visual touchpoint a user encounters when discovering the library, giving an independent open-source project a coherent, professional brand from day one.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Brand Design</span>
             <span class="ability-tag">Visual Identity</span>
@@ -2626,7 +2626,7 @@
             </div>
             <h4 class="evidence-card__title">CI/CD Pipeline Architecture</h4>
             <ul class="evidence-card__bullets">
-              <li>Built a 12-step GitHub Actions pipeline — lint, test matrix, security scan, and conditional PyPI publish on tagged releases</li>
+              <li>Built a 12-step GitHub Actions pipeline covering linting, the test matrix, security scanning, and conditional PyPI publishing on tagged releases</li>
               <li>Configured tox to run the full pytest suite in parallel across Python 3.9, 3.10, 3.11, and 3.12 on every push</li>
               <li>Automated Sphinx docs build and live deployment to datasafari.dev via rsync over SSH, triggered on every merge to main</li>
               <li>Closed 136 GitHub issues over the development lifecycle, each fix validated through the pipeline before merge</li>
@@ -2944,9 +2944,9 @@
           <div class="story-accordion__body" id="story-panel-1" aria-hidden="false">
             <div class="story-accordion__inner">
               <div class="story-accordion__content">
-                <p>At RUG, the standard data science curriculum ran on Stata, R, and SPSS. These tools have decades of academic inertia behind them, not because they're necessarily better, but because professors mastered them before Python became a serious data science platform and haven't had time to switch. As a result, students graduate knowing tools that industry has largely moved beyond, while Python's ecosystem, which is better maintained, faster, free, and far more capable, goes untaught because professors and other staff in the department have so much work on their hands that a full curriculum redesign is not feasible.</p>
+                <p>At RUG, the standard data science curriculum ran on Stata, R, and SPSS. These tools have decades of academic inertia behind them, not necessarily because they are better, but because professors mastered them before Python became a serious data science platform and have not had time to switch. As a result, students graduate knowing tools that industry has largely moved beyond, while Python's better-maintained, faster, free, and more capable ecosystem goes untaught. Professors and other departmental staff have too much on their hands for a full curriculum redesign.</p>
                 <p>DataSafari started as a direct response to that gap. The hypothesis was simple: bring Python's best statistical and ML libraries together under a single interface that requires no configuration and produces plain-English output. That removes the adoption barrier for the person who most needs it: a researcher who knows their field, understands what a normality test is, but doesn't want to spend two hours reading <code>scipy.stats</code> documentation to run one. One import, one function call, and one readable report.</p>
-                <p>The iPhone analogy is imperfect but directionally right. R is like Android: powerful, flexible, and beloved by people willing to configure it. DataSafari attempts to build an iOS-like layer on top of Python's underlying ecosystem.</p>
+                <p>The iPhone analogy is imperfect but directionally useful. R is like Android: powerful, flexible, and beloved by people willing to configure it. DataSafari aims to provide an iOS-like layer on top of Python's underlying ecosystem.</p>
                 <p>That philosophy drove every product decision. It's why <code>method='all'</code> is the default rather than a required argument. It's why output is printed in plain English with interpretive tips instead of being returned as a raw matrix. It's why the function names are verbs such as <code>explore</code>, <code>transform</code>, <code>evaluate</code>, and <code>predict</code>. They describe what the user wants to do, not what the statistics are called. The target user was never a Python expert. It was someone who needed to do real data science work without letting the tooling become the hardest part of the day.</p>
               </div>
             </div>
@@ -3017,7 +3017,7 @@
           <div class="story-accordion__body" id="story-panel-4" aria-hidden="true">
             <div class="story-accordion__inner">
               <div class="story-accordion__content">
-                <p>The actual data science code, including the statistical methods, ML pipeline, and EDA logic, represents perhaps 20% of what it took to ship DataSafari. The other 80% consists of infrastructure decisions that tutorials rarely cover and that took weeks of research to get right.</p>
+                <p>The data science code, including the statistical methods, ML pipeline, and EDA logic, represents perhaps 20% of what it took to ship DataSafari. The other 80% consists of infrastructure decisions that tutorials rarely cover and that took weeks of research to get right.</p>
                 <p>The production configuration alone spans a dozen files beyond the package source itself:</p>
                 <ul>
                   <li><code>pyproject.toml:</code> unified build, dependency, and tool configuration via Poetry and Setuptools</li>
@@ -3026,7 +3026,7 @@
                   <li><code>setup.cfg</code> and <code>MANIFEST.in:</code> package inclusion rules to control exactly what ends up in the wheel and sdist</li>
                   <li><code>pyproject.toml:</code> Bandit config block, with the static security scan tuned to ignore specific false-positive patterns in the codebase</li>
                   <li><code>LICENSE:</code> GPL-3.0, chosen deliberately: use it freely, but derivatives stay open</li>
-                  <li><code>Sphinx' conf.py:</code> the full documentation build configuration, Napoleon extension for Google-style docstrings, Furo theme, cross-reference resolution</li>
+                  <li><code>Sphinx's conf.py:</code> the full documentation build configuration, including the Napoleon extension for Google-style docstrings, the Furo theme, and cross-reference resolution</li>
                 </ul>
                 <p></p>
                 <p>Every one of those files required learning a tool I hadn't used before, reading its documentation, making it work with the others, and then making the entire stack reproducible in GitHub Actions. The CI pipeline didn't run cleanly on the first push or even the tenth. Over the development lifecycle, 136 issues were filed and closed, most of them documenting this kind of integration friction and its solution.</p>
