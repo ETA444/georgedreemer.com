@@ -2908,7 +2908,7 @@
             <h4 class="evidence-card__title">Brand Identity & Open-Source Presence</h4>
             <ul class="evidence-card__bullets">
               <li>Created the complete DataSafari visual identity from scratch: logo, banner artwork, icon set, and all graphic assets across GitHub, PyPI, and the documentation site</li>
-              <li>Published to PyPI with automated versioning and structured release notes — publicly installable via <code>pip install datasafari</code></li>
+              <li>Published to PyPI with automated versioning and structured release notes, making the library publicly installable via <code>pip install datasafari</code></li>
               <li>Maintained a professional open-source presence: README, changelog, issue labels, and a coherent brand that makes a solo-built library read as a production-grade tool</li>
             </ul>
           </div>
@@ -2944,52 +2944,18 @@
           <div class="story-accordion__body" id="story-panel-1" aria-hidden="false">
             <div class="story-accordion__inner">
               <div class="story-accordion__content">
-                <p>At RUG, the standard data science curriculum ran on Stata, R, and SPSS. These are tools with decades of academic inertia behind them — not because they're better, but because professors mastered them before Python existed as a serious data science platform, and they haven't had time to switch. The result is that students graduate knowing tools that industry has largely moved past, while the Python ecosystem — better-maintained, faster, free, and orders of magnitude more capable — goes untaught because nobody in the department has bandwidth to redesign a curriculum around it.</p>
-                <p>DataSafari started as a direct response to that gap. The hypothesis was simple: if you can bring Python's best statistical and ML libraries together under a single interface that requires no configuration and outputs plain English, you remove the adoption barrier for the exact person who most needs it — the researcher who knows their domain deeply, understands what a normality test is, but doesn't want to spend two hours reading <code>scipy.stats</code> documentation to run one. One import, one function call, one readable report. The iPhone analogy is imperfect but directionally right: R is the Android — powerful, flexible, beloved by people willing to configure it. DataSafari is the attempt to build the iOS layer on top of Python's hardware.</p>
-                <p>That philosophy drove every product decision. It's why <code>method='all'</code> is the default and not a required argument. It's why output is printed in plain English with interpretive tips rather than returned as a raw matrix. It's why the function names are verbs — <code>explore</code>, <code>transform</code>, <code>evaluate</code>, <code>predict</code> — that describe what the user wants to do, not what the statistics are called. The target user was never a Python expert. It was someone who needed to do real data science work and didn't want the tooling to be the hardest part of their day.</p>
+                <p>At RUG, the standard data science curriculum ran on Stata, R, and SPSS. These tools have decades of academic inertia behind them, not because they're necessarily better, but because professors mastered them before Python became a serious data science platform and haven't had time to switch. As a result, students graduate knowing tools that industry has largely moved beyond, while Python's ecosystem, which is better maintained, faster, free, and far more capable, goes untaught because professors and other staff in the department have so much work on their hands that a full curriculum redesign is not feasible.</p>
+                <p>DataSafari started as a direct response to that gap. The hypothesis was simple: bring Python's best statistical and ML libraries together under a single interface that requires no configuration and produces plain-English output. That removes the adoption barrier for the person who most needs it: a researcher who knows their field, understands what a normality test is, but doesn't want to spend two hours reading <code>scipy.stats</code> documentation to run one. One import, one function call, and one readable report.</p>
+                <p>The iPhone analogy is imperfect but directionally right. R is like Android: powerful, flexible, and beloved by people willing to configure it. DataSafari attempts to build an iOS-like layer on top of Python's underlying ecosystem.</p>
+                <p>That philosophy drove every product decision. It's why <code>method='all'</code> is the default rather than a required argument. It's why output is printed in plain English with interpretive tips instead of being returned as a raw matrix. It's why the function names are verbs such as <code>explore</code>, <code>transform</code>, <code>evaluate</code>, and <code>predict</code>. They describe what the user wants to do, not what the statistics are called. The target user was never a Python expert. It was someone who needed to do real data science work without letting the tooling become the hardest part of the day.</p>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Item 2 · Engineering · The Hidden 80% -->
+        <!-- Item 2 · Engineering · Input Engineering -->
         <div class="story-accordion__item" data-domain="engineering" role="listitem">
           <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-2">
-            <span class="story-accordion__trigger-left">
-              <span class="story-accordion__domain-tag">
-                <span class="story-accordion__domain-dot"></span>Engineering
-              </span>
-              <span class="story-accordion__trigger-label">The Hidden 80%: What It Actually Takes to Ship a Python Package</span>
-            </span>
-            <svg class="story-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
-          </button>
-          <div class="story-accordion__body" id="story-panel-2" aria-hidden="true">
-            <div class="story-accordion__inner">
-              <div class="story-accordion__content">
-                <p>The actual data science code — the statistical methods, the ML pipeline, the EDA logic — is maybe 20% of what it took to ship DataSafari. The other 80% is a long list of infrastructure decisions that nobody shows you in a tutorial and that took weeks of research to get right.</p>
-                <p>The production configuration alone spans a dozen files beyond the package source itself:</p>
-                <ul>
-                  <li><code>pyproject.toml:</code> unified build, dependency, and tool configuration via Poetry and Setuptools</li>
-                  <li><code>bumpversion.cfg:</code> automated semantic versioning with bump2version, wired to the CI pipeline to auto-increment on tagged releases</li>
-                  <li><code>tox.ini:</code> multi-environment test runner across Python 3.9 to 3.12, so no version-specific regression ships undetected</li>
-                  <li><code>setup.cfg</code> and <code>MANIFEST.in:</code> package inclusion rules to control exactly what ends up in the wheel and sdist</li>
-                  <li><code>pyproject.toml:</code> Bandit config block — static security scan tuned to ignore specific false-positive patterns in the codebase</li>
-                  <li><code>LICENSE:</code> GPL-3.0, chosen deliberately: use it freely, but derivatives stay open</li>
-                  <li><code>Sphinx' conf.py:</code> the full documentation build configuration, Napoleon extension for Google-style docstrings, Furo theme, cross-reference resolution</li>
-                </ul>
-                <p></p>
-                <p>Every one of those files required understanding a tool I hadn't used before, reading its docs, making it work with the others, and then making the whole stack reproducible inside GitHub Actions. The CI pipeline didn't run clean on the first push — or the tenth. 136 issues were filed and closed over the development lifecycle, most of them exactly this kind of integration friction turned into a tracked problem with a written solution.</p>
-                <p>Plus, don't get me started on docs and how there is a layer of hidden docs only users would actually see, namely all the <code>docstrings</code>. Every public function in DataSafari has a complete docstring — typed parameters, return types, raised exceptions, and a working code example that produces real output. That's 20+ functions, including the non-public facing ones, documented to the standard where <code>help(ds.explore_num)</code> gives a new user everything they need to use it correctly without opening a browser. Writing that documentation took longer than writing some of the functions themselves.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 3 · Engineering · Input Engineering -->
-        <div class="story-accordion__item" data-domain="engineering" role="listitem">
-          <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-3">
             <span class="story-accordion__trigger-left">
               <span class="story-accordion__domain-tag">
                 <span class="story-accordion__domain-dot"></span>Engineering
@@ -3000,20 +2966,20 @@
               <polyline points="6 9 12 15 18 9" />
             </svg>
           </button>
-          <div class="story-accordion__body" id="story-panel-3" aria-hidden="true">
+          <div class="story-accordion__body" id="story-panel-2" aria-hidden="true">
             <div class="story-accordion__inner">
               <div class="story-accordion__content">
-                <p>The hardest design constraint in DataSafari was self-imposed: a user should be able to call any function with just a DataFrame and a column list and get something genuinely useful back. No configuration required, no statistical knowledge assumed, no output format to parse. The library decides the rest.</p>
+                <p>The hardest design constraint in DataSafari was self-imposed: a user should be able to call any function with just a DataFrame and a column list and get something genuinely useful back. No configuration, statistical expertise, or output parsing should be required. The library decides the rest.</p>
                 <p>Making that work means every function carries a significant amount of internal decision-making that the user never sees. <code>explore_num()</code> takes a single <code>method</code> parameter that defaults to <code>'all'</code> — which means it runs correlation analysis, distribution analysis, three separate outlier detection algorithms (Z-score, IQR, and Mahalanobis distance), and a multicollinearity check in one call. The user passed two arguments. The library ran seven analyses and printed a structured plain-English report. That ratio — minimal input to maximal output — is the whole product.</p>
-                <p>But the API was also designed to never trap an expert. Every function offers a full parameter surface for users who want to go deeper: <code>method='outliers_iqr'</code> to isolate a single analysis, <code>output='return'</code> to get structured DataFrames instead of printed text, <code>threshold_z=2</code> to tighten the Z-score cutoff for a stricter outlier definition. The one-liner is the entry point; the parameters are the escape hatches. Designing that layering — where simple stays simple and complex stays possible — required thinking through every plausible user intent before writing a single line of logic, and then writing the logic to serve all of them without collision.</p>
+                <p>But the API was also designed not to limit experts. Every function offers a full set of parameters for users who want to go deeper: <code>method='outliers_iqr'</code> to isolate a single analysis, <code>output='return'</code> to get structured DataFrames instead of printed text, and <code>threshold_z=2</code> to tighten the Z-score cutoff for a stricter definition of an outlier. The one-liner is the entry point; the parameters are the escape hatches. Designing that layered experience, where simple stays simple and complexity remains possible, required thinking through every plausible user intent before writing a single line of logic, then ensuring the implementation served them all without conflict.</p>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Item 4 · Engineering · Error Handling as UX -->
+        <!-- Item 3 · Engineering · Error Handling as UX -->
         <div class="story-accordion__item" data-domain="engineering" role="listitem">
-          <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-4">
+          <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-3">
             <span class="story-accordion__trigger-left">
               <span class="story-accordion__domain-tag">
                 <span class="story-accordion__domain-dot"></span>Engineering
@@ -3024,12 +2990,47 @@
               <polyline points="6 9 12 15 18 9" />
             </svg>
           </button>
-          <div class="story-accordion__body" id="story-panel-4" aria-hidden="true">
+          <div class="story-accordion__body" id="story-panel-3" aria-hidden="true">
             <div class="story-accordion__inner">
               <div class="story-accordion__content">
                 <p>A Python traceback is the last thing a researcher wants to see at 11pm before a deadline. Every public function in DataSafari raises structured, specific errors before it does any computation — and the error messages are written for the person calling the function, not for the developer who wrote it.</p>
                 <p>The error handling layer sits entirely above the statistical logic. Before <code>explore_num()</code> touches a single column, it checks: is <code>df</code> actually a DataFrame? Is <code>numerical_variables</code> a list? Are the strings in that list real column names that exist in <code>df</code>? Are those columns actually numerical? Is the list non-empty? Is the DataFrame non-empty? Is <code>method</code> one of the seven valid options? Is <code>output</code> one of the two valid options? Is <code>threshold_z</code> a number? That's nine distinct failure modes caught and surfaced with a clear message and a correct-usage example — before a single line of analysis runs. Every one of those checks exists because someone, at some point during development and testing, made exactly that mistake.</p>
                 <p>The discipline behind this is that a library function has no UI. The error message <em>is</em> the UI. If a user passes a string where a list is expected and gets back <code>TypeError: 'str' object is not iterable</code>, that's a failed product moment — they have to reverse-engineer what went wrong from a generic Python exception. If they get back <code>"explore_num(): The numerical_variables parameter must be a list of variable names. Example: var_list = ['var1', 'var2', 'var3']"</code>, they fix it in ten seconds and move on. That difference is entirely a writing problem, not a coding one, and it took as much time to get right as the statistical methods themselves.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 · Engineering · The Hidden 80% -->
+        <div class="story-accordion__item" data-domain="engineering" role="listitem">
+          <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-4">
+            <span class="story-accordion__trigger-left">
+              <span class="story-accordion__domain-tag">
+                <span class="story-accordion__domain-dot"></span>Engineering
+              </span>
+              <span class="story-accordion__trigger-label">The Hidden 80%: What It Actually Takes to Ship a Python Package</span>
+            </span>
+            <svg class="story-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="story-accordion__body" id="story-panel-4" aria-hidden="true">
+            <div class="story-accordion__inner">
+              <div class="story-accordion__content">
+                <p>The actual data science code, including the statistical methods, ML pipeline, and EDA logic, represents perhaps 20% of what it took to ship DataSafari. The other 80% consists of infrastructure decisions that tutorials rarely cover and that took weeks of research to get right.</p>
+                <p>The production configuration alone spans a dozen files beyond the package source itself:</p>
+                <ul>
+                  <li><code>pyproject.toml:</code> unified build, dependency, and tool configuration via Poetry and Setuptools</li>
+                  <li><code>bumpversion.cfg:</code> automated semantic versioning with bump2version, wired to the CI pipeline to auto-increment on tagged releases</li>
+                  <li><code>tox.ini:</code> multi-environment test runner across Python 3.9 to 3.12, so no version-specific regression ships undetected</li>
+                  <li><code>setup.cfg</code> and <code>MANIFEST.in:</code> package inclusion rules to control exactly what ends up in the wheel and sdist</li>
+                  <li><code>pyproject.toml:</code> Bandit config block, with the static security scan tuned to ignore specific false-positive patterns in the codebase</li>
+                  <li><code>LICENSE:</code> GPL-3.0, chosen deliberately: use it freely, but derivatives stay open</li>
+                  <li><code>Sphinx' conf.py:</code> the full documentation build configuration, Napoleon extension for Google-style docstrings, Furo theme, cross-reference resolution</li>
+                </ul>
+                <p></p>
+                <p>Every one of those files required learning a tool I hadn't used before, reading its documentation, making it work with the others, and then making the entire stack reproducible in GitHub Actions. The CI pipeline didn't run cleanly on the first push or even the tenth. Over the development lifecycle, 136 issues were filed and closed, most of them documenting this kind of integration friction and its solution.</p>
+                <p>Documentation was another substantial layer of the work, especially the documentation users encounter inside the library: the <code>docstrings</code>. Every public function in DataSafari has a complete docstring with typed parameters, return types, raised exceptions, and a working code example that produces real output. More than 20 functions, including non-public ones, are documented to the point that <code>help(ds.explore_num)</code> gives a new user everything needed to use the function correctly without opening a browser. Writing that documentation took longer than writing some of the functions themselves.</p>
               </div>
             </div>
           </div>
