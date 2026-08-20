@@ -162,10 +162,14 @@ class FormModule
 				}
 			}
 		}
-		FormModuleInquiries::create($pageId, $formId)
-			->setFields($fields)
-			->setDateTime(date('Y-m-d H:i:s'))
-			->save();
+		try {
+			FormModuleInquiries::create($pageId, $formId)
+				->setFields($fields)
+				->setDateTime(date('Y-m-d H:i:s'))
+				->save();
+		} catch (ErrorException $ex) {
+			error_log("[Form error]: Failed to create inquiry: {$ex->getMessage()}");
+		}
 	}
 
 	private static function exitWithError($error)

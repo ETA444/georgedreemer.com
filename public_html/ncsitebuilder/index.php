@@ -17,13 +17,6 @@
 			'type' => 0
 		),
 		array(
-			'id' => 'a18bddd8a85d011b0a2fe2a90c538c8d',
-			'alias' => 'skipschoolmakemoney',
-			'file' => 'a18bddd8a85d011b0a2fe2a90c538c8d.php',
-			'controllers' => array(),
-			'type' => 0
-		),
-		array(
 			'id' => 'a18bddd8a85d05531bf2b97cfabf9ffd',
 			'alias' => 'thoughtbubble',
 			'file' => 'a18bddd8a85d05531bf2b97cfabf9ffd.php',
@@ -31,9 +24,23 @@
 			'type' => 0
 		),
 		array(
+			'id' => 'a18bddd8a85d011b0a2fe2a90c538c8d',
+			'alias' => 'skipschoolmakemoney',
+			'file' => 'a18bddd8a85d011b0a2fe2a90c538c8d.php',
+			'controllers' => array(),
+			'type' => 0
+		),
+		array(
 			'id' => 'a18bddd8a85d0259fb1585dbb509cff8',
 			'alias' => 'dreemcorp',
 			'file' => 'a18bddd8a85d0259fb1585dbb509cff8.php',
+			'controllers' => array(),
+			'type' => 0
+		),
+		array(
+			'id' => 'a1a01e5f44000071bc973da1ec13cbfc',
+			'alias' => 'datasafari',
+			'file' => 'a1a01e5f44000071bc973da1ec13cbfc.php',
 			'controllers' => array(),
 			'type' => 0
 		),
@@ -152,12 +159,13 @@
 	$langs = null;
 	$def_lang = null;
 	$base_lang = 'en';
-	$site_id = 'ea453802';
+	$site_id = '78e86077';
 	${'sitemapUrls'} = array(
 		'https://georgedreemer.com/',
-		'https://georgedreemer.com/skipschoolmakemoney',
 		'https://georgedreemer.com/thoughtbubble',
+		'https://georgedreemer.com/skipschoolmakemoney',
 		'https://georgedreemer.com/dreemcorp',
+		'https://georgedreemer.com/datasafari',
 		'https://georgedreemer.com/stack',
 		'https://georgedreemer.com/blog',
 		'https://georgedreemer.com/blog/datasafari/introduction',

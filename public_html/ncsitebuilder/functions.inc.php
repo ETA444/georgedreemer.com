@@ -158,6 +158,7 @@ function parse_uri(SiteInfo $siteInfo, SiteRequestInfo $requestInfo) {
  * @return string
  */
 function mbStrtolower($string, $encoding = null) {
+	if ($encoding === null) $encoding = 'UTF-8'; // fix for PHP7
 	return function_exists('mb_strtolower')
 		? mb_strtolower($string, $encoding)
 		: strtolower($string);
@@ -169,6 +170,7 @@ function mbStrtolower($string, $encoding = null) {
  * @return string
  */
 function mbStrtoupper($string, $encoding = null) {
+	if ($encoding === null) $encoding = 'UTF-8'; // fix for PHP7
 	return function_exists('mb_strtoupper')
 		? mb_strtoupper($string, $encoding)
 		: strtoupper($string);
@@ -180,6 +182,7 @@ function mbStrtoupper($string, $encoding = null) {
  * @return int
  */
 function mbStrlen($text, $encoding = null) {
+	if ($encoding === null) $encoding = 'UTF-8'; // fix for PHP7
 	return function_exists('mb_strlen')
 		? mb_strlen($text, $encoding)
 		: strlen($text);
@@ -193,6 +196,7 @@ function mbStrlen($text, $encoding = null) {
  * @return int
  */
 function mbStrpos($haystack, $needle, $offset = 0, $encoding = null) {
+	if ($encoding === null) $encoding = 'UTF-8'; // fix for PHP7
 	return function_exists('mb_strpos')
 		? mb_strpos($haystack, $needle, $offset, $encoding)
 		: strpos($haystack, $needle, $offset);
@@ -206,6 +210,7 @@ function mbStrpos($haystack, $needle, $offset = 0, $encoding = null) {
  * @return int
  */
 function mbSubstr($string, $start, $length = null, $encoding = null) {
+	if ($encoding === null) $encoding = 'UTF-8'; // fix for PHP7
 	return function_exists('mb_substr')
 		? mb_substr($string, $start, $length, $encoding)
 		: substr($string, $start, $length);
@@ -675,11 +680,11 @@ function handleForms($page_id, SiteInfo $siteInfo) {
 
 					if ($httpcode !== 200) {
 						if ($errcode > 0) {
-							error_log("[Form captcha error]: hcpatcha error: curl error ($errcode)" . ($errmsg ? ": $errmsg" : ''));
+							$alert = "yandex error: curl error ($errcode)" . ($errmsg ? ": $errmsg" : '');
 						} else {
-							error_log("[Form captcha error]: hcaptcha error: http code ($httpcode)" . ($server_output ? ": $server_output" : ''));
+							$alert = "yandex error: http code ($httpcode)" . ($server_output ? ": $server_output" : '');
 						}
-						throw new ErrorException(SiteModule::__('Form was not sent, are you a robot?') . ' (2)');
+						throw new ExceptionWithInfo($wb_form_sending_failed, $alert);
 					}
 
 					$resp = json_decode($server_output);
@@ -711,11 +716,11 @@ function handleForms($page_id, SiteInfo $siteInfo) {
 
 					if ($httpcode !== 200) {
 						if ($errcode > 0) {
-							error_log("[Form captcha error]: hcpatcha error: curl error ($errcode)" . ($errmsg ? ": $errmsg" : ''));
+							$alert = "hcpatcha error: curl error ($errcode)" . ($errmsg ? ": $errmsg" : '');
 						} else {
-							error_log("[Form captcha error]: hcaptcha error: http code ($httpcode)" . ($server_output ? ": $server_output" : ''));
+							$alert = "haptcha error: http code ($httpcode)" . ($server_output ? ": $server_output" : '');
 						}
-						throw new ErrorException(SiteModule::__('Form was not sent, are you a robot?') . ' (2)');
+						throw new ExceptionWithInfo($wb_form_sending_failed, $alert);
 					}
 
 					$resp = json_decode($server_output);
@@ -851,8 +856,7 @@ function handleForms($page_id, SiteInfo $siteInfo) {
 					}
 				} else {
 					if (!isset($post[$fieldName])) {
-						error_log("[Form error]: Field $fieldName is not present");
-						throw new ErrorException($wb_form_sending_failed . " (6): " . sprintf(SiteModule::__('Field %s is not present'), $fieldName));
+						throw new ExceptionWithInfo($wb_form_sending_failed, sprintf(SiteModule::__('Field %s is not present'), $fieldName));
 					}
 					$max_len = ($field["type"] == "textarea") ? 65536 : 1024; // 65 kilobytes max for textarea and 1024 for other
 					$valueRaw = $post[$fieldName];
@@ -946,8 +950,8 @@ function handleForms($page_id, SiteInfo $siteInfo) {
 						$wb_form_send_success = true;
 					} else {
 						$statusCode = $resp ? $resp->statusCode : 0;
-						error_log('[Form sending error]: Failed to submit to URL: response code(' . $statusCode . ')' . ($error ? ': ' . $error : ''));
-						throw new ErrorException($wb_form_sending_failed . ' (8)' . ($error ? ': ' . $error : ''));
+						$alert = 'Failed to submit to URL: response code(' . $statusCode . ')' . ($error ? ': ' . $error : '');
+						throw new ExceptionWithInfo($wb_form_sending_failed, $alert);
 					}
 				}
 				if ($webhookUrl) {
@@ -957,6 +961,7 @@ function handleForms($page_id, SiteInfo $siteInfo) {
 						$resp = NetUtil::request($apiPostUrl, $postData, NetUtil::METHOD_POST, array('Content-type: multipart/form-data'),
 							array(NetUtil::OPT_PARAMS_AS_ARRAY => true, NetUtil::OPT_IGNORE_STATUS_CODE => true));
 					} catch (ErrorException $ex) {
+						// do nothing
 					}
 				}
 			} elseif ($formSendType == 'telegram') {
@@ -1022,15 +1027,13 @@ function handleForms($page_id, SiteInfo $siteInfo) {
 					}
 				} catch (ErrorException $ex) {
 					$error = $ex->getMessage();
-					error_log("[Form telegram error]: {$error}");
-					throw new ErrorException(SiteModule::__('Telegram error') . ': ' . $error);
+					throw new ExceptionWithInfo(SiteModule::__('Telegram error') . ': ' . $error);
 				}
 
 				if (count($_FILES)) {
 					if (!file_exists($attachmentsDir)) {
 						if (!mkdir($attachmentsDir, 0700)) {
-							error_log('[Form error]: Failed to create a directory for attachments');
-							throw new ErrorException($wb_form_sending_failed . ' (1): ' . SiteModule::__('Failed to create a directory for attachments'));
+							throw new ExceptionWithInfo($wb_form_sending_failed, SiteModule::__('Failed to create a directory for attachments'));
 						}
 					}
 
@@ -1086,16 +1089,15 @@ function handleForms($page_id, SiteInfo $siteInfo) {
 									throw new ErrorException($error);
 								}
 							} catch (ErrorException $ex) {
-								$error = $ex->getMessage();
-								error_log("[Form telegram error]: {$error}");
+								$alert = SiteModule::__('Telegram error') . ': ' . $ex->getMessage();
+								throw new ExceptionWithInfo($wb_form_sending_failed, $alert);
 							}
 						}
 					}
 				}
 			} else {
 				if (empty($mail_to)) {
-					error_log('[Form configuration error]: receiver not specified');
-					throw new ErrorException($wb_form_sending_failed . ' (5): ' . SiteModule::__('Receiver not specified'));
+					throw new ExceptionWithInfo($wb_form_sending_failed, SiteModule::__('Receiver not specified'));
 				}
 
 				if ($siteInfo->disableFormSending) {
@@ -1131,13 +1133,11 @@ function handleForms($page_id, SiteInfo $siteInfo) {
 							continue;
 						if (!file_exists($attachmentsDir)) {
 							if (!mkdir($attachmentsDir, 0700)) {
-								error_log('[Form error]: Failed to create a directory for attachments');
-								throw new ErrorException($wb_form_sending_failed . ' (1): ' . SiteModule::__('Failed to create a directory for attachments'));
+								throw new ExceptionWithInfo($wb_form_sending_failed, SiteModule::__('Failed to create a directory for attachments'));
 							}
 						}
 						if (!is_dir($attachmentsDir)) {
-							error_log('[Form error]: Attachments inode on the server is not a directory');
-							throw new ErrorException($wb_form_sending_failed . ' (2): ' . SiteModule::__('Attachments inode on the server is not a directory'));
+							throw new ExceptionWithInfo($wb_form_sending_failed, SiteModule::__('Attachments inode on the server is not a directory'));
 						}
 						foreach ($_FILES[$fieldName]["tmp_name"] as $fileIdx => $fileTmpName) {
 							if (!$fileTmpName)
@@ -1147,8 +1147,7 @@ function handleForms($page_id, SiteInfo $siteInfo) {
 							if (!move_uploaded_file($fileTmpName, $tmpCopyName)) {
 								foreach ($movedFiles as $tmpCopyName)
 									unlink($tmpCopyName);
-								error_log('[Form error]: Failed to move uploaded file to attachments directory');
-								throw new ErrorException($wb_form_sending_failed . ' (3): ' . SiteModule::__('Failed to move uploaded file to attachments directory'));
+								throw new ExceptionWithInfo($wb_form_sending_failed, SiteModule::__('Failed to move uploaded file to attachments directory'));
 							}
 							$movedFiles[] = $tmpCopyName;
 							$secureFileName = $fileName;
@@ -1284,8 +1283,7 @@ function handleForms($page_id, SiteInfo $siteInfo) {
 				$res = $send($mail_to);
 				if ($res instanceof ErrorException) {
 					$wb_form_send_success = false;
-					error_log('[Form sending error]: ' . $res->getMessage());
-					throw new ErrorException($wb_form_sending_failed . ' (4): ' . $res->getMessage());
+					throw new ExceptionWithInfo($wb_form_sending_failed, $res->getMessage());
 				} else {
 					$wb_form_send_success = true;
 					$wb_form_send_state = empty($form['sentMessage']) ? '' : tr_($form['sentMessage']);
@@ -1304,9 +1302,12 @@ function handleForms($page_id, SiteInfo $siteInfo) {
 				foreach ($movedFiles as $tmpCopyName)
 					unlink($tmpCopyName);
 			}
-		} catch (ErrorException $ex) {
+		} catch (Exception $ex) {
 			if (!$wb_form_send_state) {
 				$wb_form_send_state = $ex->getMessage();
+				if (($ex instanceof ExceptionWithInfo) && $ex->getInfo()) {
+					$wb_form_send_state .= '<br><span style="font-size: .65em;">'.$ex->getInfo().'</span>';
+				}
 				$formErrors->any = true; // set values to fields back in case of error
 			}
 			$wb_form_send_success = false;
@@ -1599,7 +1600,7 @@ function checkSiteRedirects(SiteInfo $siteInfo, SiteRequestInfo $requestInfo, ar
 		return;
 	}
 
-	uksort($matches, function($a, $b) use($hasMbstring) {
+	uksort($matches, function($a, $b) {
 		$al = mbStrlen($a);
 		$bl = mbStrlen($b);
 		if ($al == $bl) return 0;
@@ -1683,5 +1684,25 @@ function replaceLangAlternates(\SiteInfo $siteInfo, &$out, array $langs, $pageId
 		}
 		$out = str_replace('{{lang_'.$ln.'}}', $pageUri, $out);
 		$out = str_replace(urlencode('{{lang_'.$ln.'}}'), $pageUri, $out);
+	}
+}
+
+class ExceptionWithInfo extends Exception {
+	/** @var string */
+	private $info = "";
+
+	/**
+	 * @param string $message
+	 * @param string $info
+	 * @param int $code
+	 * @param Exception|Throwable|null $previous
+	 */
+	public function __construct($message = "", $info = "", $code = 0, $previous = null) {
+		parent::__construct($message, $code, $previous);
+		$this->info = $info;
+	}
+
+	public function getInfo() {
+		return $this->info;
 	}
 }

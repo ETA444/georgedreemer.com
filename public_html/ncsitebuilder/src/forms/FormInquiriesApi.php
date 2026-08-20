@@ -51,56 +51,67 @@ class FormInquiriesApi
 
 	protected function formsUuidsAction(FormNavigation $request)
 	{
-		$data = $this->getBuilderRequestData($request, 'forms-uuids');
-
-		$result = [];
-		$list = FormModuleInquiries::findAll();
-		foreach ($list as $idx => $li) {
-			$result[$li->getFormId()] = $li->getFormId();
+		try {
+			$data = $this->getBuilderRequestData($request, 'forms-uuids');
+			$result = [];
+			$list = FormModuleInquiries::findAll();
+			foreach ($list as $idx => $li) {
+				$result[$li->getFormId()] = $li->getFormId();
+			}
+			$resp = ["ok" => true, "list" => array_keys($result)];
+		} catch (ErrorException $ex) {
+			$resp = ['error' => $ex->getMessage()];
 		}
-
-		FormModule::respondWithJson(array("ok" => true, "list" => array_keys($result)));
+		FormModule::respondWithJson($resp);
 	}
 
 	protected function formsLogAction(FormNavigation $request)
 	{
-		$data = $this->getBuilderRequestData($request, 'forms-log');
-
-		if (isset($data->formUuid) && $data->formUuid != 'all') {
-			$formId = $data->formUuid;
-			$list = FormModuleInquiries::findByFormId($formId);
-		} else {
-			$list = FormModuleInquiries::findAll();
+		try {
+			$data = $this->getBuilderRequestData($request, 'forms-log');
+			if (isset($data->formUuid) && $data->formUuid != 'all') {
+				$formId = $data->formUuid;
+				$list = FormModuleInquiries::findByFormId($formId);
+			} else {
+				$list = FormModuleInquiries::findAll();
+			}
+			foreach ($list as $idx => $li) {
+				$list[$idx] = $li->jsonSerialize();
+			}
+			$resp = ["ok" => true, "list" => $list];
+		} catch (ErrorException $ex) {
+			$resp = ['error' => $ex->getMessage()];
 		}
-
-		foreach ($list as $idx => $li) {
-			$list[$idx] = $li->jsonSerialize();
-		}
-
-		FormModule::respondWithJson(array("ok" => true, "list" => $list));
+		FormModule::respondWithJson($resp);
 	}
 
 	protected function removeInquiryAction(FormNavigation $request)
 	{
-		$data = $this->getBuilderRequestData($request, 'remove-inquiry', array("id"));
-
-		$inquiry = FormModuleInquiries::findById($data->id);
-		if ($inquiry) {
-			$inquiry->delete();
+		try {
+			$data = $this->getBuilderRequestData($request, 'remove-inquiry', array("id"));
+			$inquiry = FormModuleInquiries::findById($data->id);
+			if ($inquiry) {
+				$inquiry->delete();
+			}
+			$resp = ['ok' => true];
+		} catch (ErrorException $ex) {
+			$resp = ['error' => $ex->getMessage()];
 		}
-
-		FormModule::respondWithJson(array("ok" => true));
+		FormModule::respondWithJson($resp);
 	}
 
 	protected function removeAllInquiryAction(FormNavigation $request)
 	{
-		$data = $this->getBuilderRequestData($request, 'remove-all-inquiry', array('formUuid'));
-
-		$deleteCount = FormModuleInquiries::deleteByFilter([
-			FormModuleInquiries::FILTER_FORM_ID => $data->formUuid,
-		]);
-
-		FormModule::respondWithJson(array("ok" => $deleteCount !== null, "count" => $deleteCount));
+		try {
+			$data = $this->getBuilderRequestData($request, 'remove-all-inquiry', array('formUuid'));
+			$deleteCount = FormModuleInquiries::deleteByFilter([
+				FormModuleInquiries::FILTER_FORM_ID => $data->formUuid,
+			]);
+			$resp = ["ok" => true, "count" => $deleteCount];
+		} catch (ErrorException $ex) {
+			$resp = ['error' => $ex->getMessage()];
+		}
+		FormModule::respondWithJson($resp);
 	}
 
 	private function publicDecrypt($encData)

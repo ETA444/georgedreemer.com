@@ -101,6 +101,10 @@ class FormModuleInquiries
 		return $this;
 	}
 
+	/**
+	 * @return int|string
+	 * @throws ErrorException
+	 */
 	public function save()
 	{
 		self::lockLogFile(true);
@@ -119,11 +123,15 @@ class FormModuleInquiries
 			$listArr[] = $thisArr;
 			$this->id = $newId;
 		}
-		$result = (self::writeLogFile($listArr)) ? $this->id : null;
+		self::writeLogFile($listArr);
 		self::unlockLogFile();
-		return $result;
+		return $this->id;
 	}
 
+	/**
+	 * @return bool true if was found and deleted
+	 * @throws ErrorException
+	 */
 	public function delete()
 	{
 		$deleted = false;
@@ -137,13 +145,19 @@ class FormModuleInquiries
 					break;
 				}
 			}
-			if ($deleted)
-				$result = (self::writeLogFile($listArr)) ? $this->id : null;
+			if ($deleted) {
+				self::writeLogFile($listArr);
+			}
 			self::unlockLogFile();
 		}
 		return $deleted;
 	}
 
+	/**
+	 * @param array $filter
+	 * @return int number of deleted records
+	 * @throws ErrorException
+	 */
 	public static function deleteByFilter(array $filter = array())
 	{
 		$deleted = 0;
@@ -170,14 +184,17 @@ class FormModuleInquiries
 		}
 		$listArr = array_filter($listArr);
 		if ($deleted) {
-			if (!self::writeLogFile($listArr)) {
-				$deleted = null;
-			}
+			self::writeLogFile($listArr);
 		}
 		self::unlockLogFile();
 		return $deleted;
 	}
 
+	/**
+	 * @param ?array[] &$listArr
+	 * @return int
+	 * @throws ErrorException
+	 */
 	private static function getNewId(&$listArr = null)
 	{
 		if (!$listArr) $listArr = self::readLogFile();
@@ -190,7 +207,10 @@ class FormModuleInquiries
 		return (++$max);
 	}
 
-	/** @return self[] */
+	/**
+	 * @return self[]
+	 * @throws ErrorException
+	 */
 	public static function findByFormId($formId)
 	{
 		if (!$formId) return null;
@@ -198,7 +218,10 @@ class FormModuleInquiries
 		return $list;
 	}
 
-	/** @return self */
+	/**
+	 * @return self
+	 * @throws ErrorException
+	 */
 	public static function findById($id)
 	{
 		if (!$id) return null;
@@ -206,7 +229,10 @@ class FormModuleInquiries
 		return array_shift($list);
 	}
 
-	/** @return self[] */
+	/**
+	 * @return self[]
+	 * @throws ErrorException
+	 */
 	public static function findAll(array $filter = array(), $limit = null)
 	{
 		$list = array();
@@ -238,79 +264,76 @@ class FormModuleInquiries
 		return $list;
 	}
 
+	/**
+	 * @return array[]
+	 * @throws ErrorException 
+	 */
 	private static function readLogFile()
 	{
-		try {
-			self::fixLogFile();
-			$itemsFile = FormModule::getLogFile();
-			$parsed = [];
-			if (is_file($itemsFile)) {
-				$contents = '';
-				if (($fh = @fopen($itemsFile, 'r')) !== false) {
-					while (!feof($fh)) {
-						$contents .= fread($fh, 2048);
-					}
-					fclose($fh);
-				} else {
-					throw new ErrorException('Error: Failed reading log file');
-				}
-				$parsed = json_decode($contents, true);
-				if ($parsed === null) {
-					throw new ErrorException('Error: Failed parsing orders log file');
-				}
-			}
-			$itemsFile = FormModule::getLogFileJsonl();
-			if (is_file($itemsFile)) {
-				if (($fh = @fopen($itemsFile, 'r')) !== false) {
-					while (!feof($fh)) {
-						$contents = fgets($fh);
-						if ($contents !== false) {
-							$contents = json_decode($contents, true);
-							if ($contents === null) {
-								throw new ErrorException('Error: Failed parsing orders log file');
-							}
-							$parsed[] = $contents;
-						}
-					}
-					fclose($fh);
-				} else {
-					throw new ErrorException('Error: Failed reading log file');
-				}
-			}
-			return $parsed;
-		} catch (ErrorException $ex) {
-			error_log($ex->getMessage());
-		}
-		return array();
-	}
-
-	private static function writeLogFile($arr)
-	{
-		try {
-			$itemsFile = FormModule::getLogFileJsonl();
-			if (($fh = fopen($itemsFile, 'w')) !== false) {
-				foreach ($arr as $f) {
-					$json = json_encode($f);
-					if ($json === null || $json === false) {
-						throw new ErrorException('Error: Failed encoding orders log file');
-					}
-					fwrite($fh, $json .  PHP_EOL);
+		self::fixLogFile();
+		$itemsFile = FormModule::getLogFile();
+		$parsed = [];
+		if (is_file($itemsFile)) {
+			$contents = '';
+			if (($fh = @fopen($itemsFile, 'r')) !== false) {
+				while (!feof($fh)) {
+					$contents .= fread($fh, 2048);
 				}
 				fclose($fh);
-
-
-				$itemsFile = FormModule::getLogFile();
-				if (is_file($itemsFile)) { // @note: backup old log file
-					rename($itemsFile, $itemsFile . '.bak');
-				}
-				return true;
 			} else {
-				throw new ErrorException('Error: Failed writing log file');
+				throw new ErrorException('failed reading log file');
 			}
-		} catch (ErrorException $ex) {
-			error_log($ex->getMessage());
+			$parsed = json_decode($contents, true);
+			if ($parsed === null) {
+				throw new ErrorException('failed parsing orders log file');
+			}
 		}
-		return false;
+		$itemsFile = FormModule::getLogFileJsonl();
+		if (is_file($itemsFile)) {
+			if (($fh = @fopen($itemsFile, 'r')) !== false) {
+				while (!feof($fh)) {
+					$contents = fgets($fh);
+					if ($contents !== false) {
+						$contents = json_decode($contents, true);
+						if ($contents === null) {
+							throw new ErrorException('failed parsing orders log file');
+						}
+						$parsed[] = $contents;
+					}
+				}
+				fclose($fh);
+			} else {
+				throw new ErrorException('failed reading log file');
+			}
+		}
+		return $parsed;
+	}
+
+	/**
+	 * @param array[] $arr
+	 * @return bool
+	 * @throws ErrorException
+	 */
+	private static function writeLogFile($arr)
+	{
+		$itemsFile = FormModule::getLogFileJsonl();
+		if (($fh = fopen($itemsFile, 'w')) !== false) {
+			foreach ($arr as $f) {
+				$json = json_encode($f);
+				if ($json === null || $json === false) {
+					throw new ErrorException('failed encoding orders log file');
+				}
+				fwrite($fh, $json .  PHP_EOL);
+			}
+			fclose($fh);
+
+			$itemsFile = FormModule::getLogFile();
+			if (is_file($itemsFile)) { // @note: backup old log file
+				rename($itemsFile, $itemsFile . '.bak');
+			}
+		} else {
+			throw new ErrorException('failed writing log file');
+		}
 	}
 
 	public function fromJson($data)
