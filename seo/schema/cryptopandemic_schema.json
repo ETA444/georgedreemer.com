@@ -5,8 +5,8 @@
       "@type": "WebPage",
       "@id": "https://georgedreemer.com/cryptopandemic#webpage",
       "url": "https://georgedreemer.com/cryptopandemic",
-      "name": "CryptoPandemic — Web3 Brand Studio",
-      "description": "CryptoPandemic is George Dreemer's Web3 brand studio on Solana, fusing on-chain & social  analytics, social media analytics and animated storytelling & branding.",
+      "name": "CryptoPandemic — Viral Web3 Marketing & On-Chain Analytics",
+      "description": "CryptoPandemic is George Dreemer's Web3 brand studio engineering contagious crypto experiences — on-chain analytics fused with cryptoon storytelling. Drove BULLISH to a $13M peak market cap on Solana.",
       "isPartOf": {
         "@type": "WebSite",
         "@id": "https://georgedreemer.com/#website",
@@ -21,7 +21,7 @@
       },
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "url": "https://georgedreemer.com/ncsitebuilder/gallery/dxyz-cryptopandemic-thumb.png",
+        "url": "https://cryptopandemic.com/images/landing/og-image.png",
         "width": 1200,
         "height": 630
       },
@@ -33,10 +33,11 @@
       "name": "CryptoPandemic",
       "alternateName": "CryptoPandemic Web3 Brand Studio",
       "url": "https://georgedreemer.com/cryptopandemic",
-      "description": "A Web3 brand studio founded by George Dreemer that fuses cold on-chain analytics with warm creative storytelling. On-chain data reveals who a project's holders are and what moves them; the creative work responds through a crypto cartoon series ('cryptoons') and full visual identity built around the people already in the community. First applied to BULLISH on Solana, driving a market cap move from $6-7M to a $13M peak, 5K daily mentions across Crypto Twitter, and 250K cross-platform content impressions.",
+      "description": "A Web3 brand studio founded by George Dreemer that engineers contagious crypto experiences by fusing cold on-chain analytics with warm creative storytelling. On-chain data reveals who a project's holders are and what moves them; the creative work responds through a crypto cartoon series ('cryptoons') and full visual identity built around the people already in the community. First applied to BULLISH on Solana, driving a market cap move from $6-7M to a $13M peak, 5K daily mentions across Crypto Twitter, and 250K cross-platform content impressions.",
+      "slogan": "We don't help projects grow. We make them spread.",
       "image": {
         "@type": "ImageObject",
-        "url": "https://georgedreemer.com/ncsitebuilder/gallery/dxyz-cryptopandemic-thumb.png",
+        "url": "https://cryptopandemic.com/images/landing/og-image.png",
         "width": 1200,
         "height": 630
       },
@@ -44,6 +45,7 @@
       "genre": [
         "Web3 brand studio",
         "Crypto marketing",
+        "Viral marketing",
         "On-chain analytics",
         "Creative direction",
         "Portfolio project"
@@ -51,18 +53,19 @@
       "keywords": [
         "CryptoPandemic",
         "George Dreemer",
-        "Web3 brand studio",
-        "on-chain analytics",
-        "holder profiling",
+        "Web3 marketing",
+        "Solana marketing",
+        "crypto marketing agency",
+        "blockchain analytics",
+        "Web3 design",
+        "on-chain strategy",
+        "Solana growth",
+        "brand identity Web3",
+        "crypto brand strategy",
         "cryptoons",
-        "crypto cartoon series",
+        "holder profiling",
         "BULLISH",
-        "Solana",
-        "meme coin marketing",
-        "crypto content strategy",
-        "AI content pipeline",
-        "brand engine",
-        "Crypto Twitter growth"
+        "AI content pipeline"
       ],
       "founder": {
         "@type": "Person",
