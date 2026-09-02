@@ -1,0 +1,117 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://georgedreemer.com/cryptopandemic#webpage",
+      "url": "https://georgedreemer.com/cryptopandemic",
+      "name": "CryptoPandemic — Web3 Brand Studio",
+      "description": "CryptoPandemic is George Dreemer's Web3 brand studio on Solana, fusing on-chain & social  analytics, social media analytics and animated storytelling & branding.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://georgedreemer.com/#website",
+        "url": "https://georgedreemer.com",
+        "name": "George Dreemer"
+      },
+      "about": {
+        "@id": "https://georgedreemer.com/cryptopandemic#organization"
+      },
+      "mainEntity": {
+        "@id": "https://georgedreemer.com/cryptopandemic#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://georgedreemer.com/ncsitebuilder/gallery/dxyz-cryptopandemic-thumb.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://georgedreemer.com/cryptopandemic#organization",
+      "name": "CryptoPandemic",
+      "alternateName": "CryptoPandemic Web3 Brand Studio",
+      "url": "https://georgedreemer.com/cryptopandemic",
+      "description": "A Web3 brand studio founded by George Dreemer that fuses cold on-chain analytics with warm creative storytelling. On-chain data reveals who a project's holders are and what moves them; the creative work responds through a crypto cartoon series ('cryptoons') and full visual identity built around the people already in the community. First applied to BULLISH on Solana, driving a market cap move from $6-7M to a $13M peak, 5K daily mentions across Crypto Twitter, and 250K cross-platform content impressions.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://georgedreemer.com/ncsitebuilder/gallery/dxyz-cryptopandemic-thumb.png",
+        "width": 1200,
+        "height": 630
+      },
+      "foundingDate": "2026",
+      "genre": [
+        "Web3 brand studio",
+        "Crypto marketing",
+        "On-chain analytics",
+        "Creative direction",
+        "Portfolio project"
+      ],
+      "keywords": [
+        "CryptoPandemic",
+        "George Dreemer",
+        "Web3 brand studio",
+        "on-chain analytics",
+        "holder profiling",
+        "cryptoons",
+        "crypto cartoon series",
+        "BULLISH",
+        "Solana",
+        "meme coin marketing",
+        "crypto content strategy",
+        "AI content pipeline",
+        "brand engine",
+        "Crypto Twitter growth"
+      ],
+      "founder": {
+        "@type": "Person",
+        "@id": "https://georgedreemer.com/#person",
+        "name": "George Dreemer",
+        "url": "https://georgedreemer.com"
+      },
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "On-Chain Research & Holder Profiling"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Cryptoon Animated Storytelling"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Content Engineering & Production"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Community Brand Tools"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Web3 Brand Strategy & Execution"
+          }
+        }
+      ],
+      "sameAs": [
+        "https://cryptopandemic.com"
+      ],
+      "dateModified": "2026-09-02",
+      "inLanguage": "en-US"
+    }
+  ]
+}
