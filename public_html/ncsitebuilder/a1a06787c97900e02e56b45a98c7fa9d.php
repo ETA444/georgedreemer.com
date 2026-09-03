@@ -18,23 +18,21 @@
 	};
 	</script>
 			<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title><?php echo htmlspecialchars((isset($seoTitle) && $seoTitle !== "") ? $seoTitle : "DataSafari — Data Science Python Library · George Dreemer"); ?></title>
+	<title><?php echo htmlspecialchars((isset($seoTitle) && $seoTitle !== "") ? $seoTitle : "CryptoPandemic — Viral Web3 Marketing & On-Chain Analytics · George Dreemer"); ?></title>
 	<base href="{{base_url}}" />
 	<?php echo isset($sitemapUrls) ? (generateCanonicalUrl($sitemapUrls)."\n") : ""; ?>	
 	
 						<meta name="viewport" content="width=device-width, initial-scale=1" />
-					<meta name="description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "DataSafari is a Python library by George Dreemer that simplifies complex data science tasks — compressing the full data workflow into a one-liner API across 11 functions, 4 subpackages, and 250+ tests. Available on PyPI."); ?>" />
-			<meta name="keywords" content="<?php echo htmlspecialchars((isset($seoKeywords) && $seoKeywords !== "") ? $seoKeywords : "DataSafari,datasafari,George Dreemer,Python library,data science library,machine learning library,automated EDA,hypothesis testing,ML pipeline,data science workflow,data transformation,PyPI package,open source Python,scikit-learn,pandas,scipy,statsmodels"); ?>" />
-				<meta property="og:site_name" content="George Dreemer — Data Scientist, Developer & Entrepreneur">
+					<meta name="description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "CryptoPandemic is George Dreemer's Web3 brand studio engineering contagious crypto experiences — on-chain analytics fused with cryptoon storytelling. Drove BULLISH to a \$13M peak market cap on Solana."); ?>" />
+					<meta property="og:site_name" content="George Dreemer — Data Scientist, Developer & Entrepreneur">
 	
 	<!-- Facebook Open Graph -->
-			<meta property="og:description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "DataSafari is a Python library by George Dreemer that simplifies complex data science tasks — compressing the full data workflow into a one-liner API across 11 functions, 4 subpackages, and 250+ tests. Available on PyPI."); ?>" />
-					<!-- Facebook Open Graph end -->
+						<!-- Facebook Open Graph end -->
 
 		<meta name="generator" content="Website Builder" />
 			<link href="css/common-bundle.css?ts=20260903181636" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese" rel="stylesheet" type="text/css" />
-	<link href="css/a1a01e5f44000071bc973da1ec13cbfc-bundle.css?ts=20260903181636" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
+	<link href="css/a1a06787c97900e02e56b45a98c7fa9d-bundle.css?ts=20260903181636" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
 	<ga-code/><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
      SECTION 1 — GLOBAL
      Settings → Meta Tags (site-wide, always present)
@@ -69,116 +67,146 @@
 	window.disableRightClick = false;
 	window.currLang = 'en';
 </script>
-	<!-- SEO Meta Data (source: meta.html) -->
-<title>DataSafari — Data Science Python Library · George Dreemer</title>
+	<title>CryptoPandemic — Viral Web3 Marketing & On-Chain Analytics · George Dreemer</title>
+
+<!-- SEO Meta Data — source: meta.html -->
 <meta name="description"
-content="DataSafari is a Python library by George Dreemer that simplifies complex data science tasks — compressing the full data workflow into a one-liner API across 11 functions, 4 subpackages, and 250+ tests. Available on PyPI.">
-<meta name="keywords"
-content="DataSafari, datasafari, George Dreemer, Python library, data science library, machine learning library, automated EDA, hypothesis testing, ML pipeline, data science workflow, data transformation, PyPI package, open source Python, scikit-learn, pandas, scipy, statsmodels">
-<link rel="canonical" href="https://georgedreemer.com/datasafari">
+  content="CryptoPandemic is George Dreemer's Web3 brand studio engineering contagious crypto experiences — on-chain analytics fused with cryptoon storytelling. Drove BULLISH to a $13M peak market cap on Solana.">
+<meta name="keywords" content="cryptopandemic, george dreemer cryptopandemic, web3 marketing, solana marketing, crypto marketing agency, blockchain analytics, web3 design, on-chain strategy, solana growth, brand identity web3, crypto brand strategy, holder profiling, cryptoons, crypto cartoon series, bullish solana, ai content pipeline, meme coin marketing, crypto twitter growth, founder creative director">
+
+<link rel="canonical" href="https://georgedreemer.com/cryptopandemic">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://georgedreemer.com/datasafari">
-<meta property="og:title" content="DataSafari — Data Science Python Library · George Dreemer">
-<meta property="og:description"
-content="DataSafari is a Python library by George Dreemer that simplifies complex data science tasks — compressing the full data workflow into a one-liner API across 11 functions, 4 subpackages, and 250+ tests. Available on PyPI.">
-<meta property="og:image" content="https://datasafari.dev/ncsitebuilder/gallery/ds-branding-thumb-main-web.png">
+<meta property="og:url" content="https://georgedreemer.com/cryptopandemic">
+<meta property="og:title" content="CryptoPandemic — Viral Web3 Marketing & Analytics on Solana">
+<meta property="og:description" content="CryptoPandemic engineers contagious Web3 experiences — from brand identity to on-chain strategy. We don't help projects grow. We make them spread. Drove BULLISH to a $13M peak on Solana.">
+<meta property="og:image" content="https://cryptopandemic.com/images/landing/og-image.png">
+
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="DataSafari — Data Science Python Library · George Dreemer">
-<meta name="twitter:description"
-content="DataSafari is a Python library by George Dreemer that simplifies complex data science tasks — compressing the full data workflow into a one-liner API across 11 functions, 4 subpackages, and 250+ tests. Available on PyPI.">
-<meta name="twitter:image" content="https://datasafari.dev/ncsitebuilder/gallery/ds-branding-thumb-main-web.png">
+<meta name="twitter:title" content="CryptoPandemic — Viral Web3 Marketing & Analytics on Solana">
+<meta name="twitter:description" content="CryptoPandemic engineers contagious Web3 experiences. We don't help projects grow. We make them spread.">
+<meta name="twitter:image" content="https://cryptopandemic.com/images/landing/og-image.png">
 
 <!-- SEO Schema JSON -->
 <script data-custom-script="true" type="application/ld+json">
 {
-"@context": "https://schema.org",
-"@graph": [
-  {
-    "@type": "WebPage",
-    "@id": "https://georgedreemer.com/datasafari#webpage",
-    "url": "https://georgedreemer.com/datasafari",
-    "name": "DataSafari — Data Science Python Library",
-    "description": "DataSafari is a Python library by George Dreemer that simplifies complex data science tasks, compressing the full data workflow into a one-liner API across 11 functions and 4 subpackages. Available on PyPI.",
-    "isPartOf": {
-      "@type": "WebSite",
-      "@id": "https://georgedreemer.com/#website",
-      "url": "https://georgedreemer.com",
-      "name": "George Dreemer"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://georgedreemer.com/cryptopandemic#webpage",
+      "url": "https://georgedreemer.com/cryptopandemic",
+      "name": "CryptoPandemic — Viral Web3 Marketing & On-Chain Analytics",
+      "description": "CryptoPandemic is George Dreemer's Web3 brand studio engineering contagious crypto experiences — on-chain analytics fused with cryptoon storytelling. Drove BULLISH to a $13M peak market cap on Solana.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://georgedreemer.com/#website",
+        "url": "https://georgedreemer.com",
+        "name": "George Dreemer"
+      },
+      "about": {
+        "@id": "https://georgedreemer.com/cryptopandemic#organization"
+      },
+      "mainEntity": {
+        "@id": "https://georgedreemer.com/cryptopandemic#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://cryptopandemic.com/images/landing/og-image.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "en-US"
     },
-    "about": { "@id": "https://georgedreemer.com/datasafari#project" },
-    "mainEntity": { "@id": "https://georgedreemer.com/datasafari#project" },
-    "primaryImageOfPage": {
-      "@type": "ImageObject",
-      "url": "https://datasafari.dev/ncsitebuilder/gallery/ds-branding-thumb-main-web.png",
-      "width": 1200,
-      "height": 630
-    },
-    "inLanguage": "en-US"
-  },
-  {
-    "@type": "SoftwareSourceCode",
-    "@id": "https://georgedreemer.com/datasafari#project",
-    "name": "DataSafari",
-    "url": "https://georgedreemer.com/datasafari",
-    "description": "An open-source Python library that simplifies complex data science tasks — compressing the full data workflow (exploration, transformation, evaluation, and prediction) into a clean one-liner API. Built and maintained solo by George Dreemer.",
-    "image": {
-      "@type": "ImageObject",
-      "url": "https://datasafari.dev/ncsitebuilder/gallery/ds-branding-thumb-main-web.png",
-      "width": 1200,
-      "height": 630
-    },
-    "programmingLanguage": "Python",
-    "runtimePlatform": "Python 3.9, 3.10, 3.11, 3.12",
-    "codeRepository": "https://github.com/ETA444/datasafari",
-    "downloadUrl": "https://pypi.org/project/datasafari/",
-    "keywords": [
-      "DataSafari",
-      "George Dreemer",
-      "Python library",
-      "data science",
-      "machine learning",
-      "automated EDA",
-      "hypothesis testing",
-      "ML pipeline automation",
-      "data science workflow",
-      "data transformation",
-      "scikit-learn",
-      "pandas",
-      "scipy",
-      "statsmodels",
-      "PyPI",
-      "open source",
-      "one-liner API"
-    ],
-    "genre": [
-      "Data science library",
-      "Machine learning library",
-      "Open-source Python package",
-      "Portfolio project",
-      "Engineering project"
-    ],
-    "creator": {
-      "@type": "Person",
-      "@id": "https://georgedreemer.com/#person",
-      "name": "George Dreemer",
-      "url": "https://georgedreemer.com"
-    },
-    "author": {
-      "@type": "Person",
-      "@id": "https://georgedreemer.com/#person",
-      "name": "George Dreemer",
-      "url": "https://georgedreemer.com"
-    },
-    "sameAs": [
-      "https://datasafari.dev",
-      "https://datasafari.dev/docs",
-      "https://github.com/ETA444/datasafari",
-      "https://pypi.org/project/datasafari/"
-    ],
-    "dateModified": "2026-08-19",
-    "inLanguage": "en-US"
-  }
-]
+    {
+      "@type": "Organization",
+      "@id": "https://georgedreemer.com/cryptopandemic#organization",
+      "name": "CryptoPandemic",
+      "alternateName": "CryptoPandemic Web3 Brand Studio",
+      "url": "https://georgedreemer.com/cryptopandemic",
+      "description": "A Web3 brand studio founded by George Dreemer that engineers contagious crypto experiences by fusing cold on-chain analytics with warm creative storytelling. On-chain data reveals who a project's holders are and what moves them; the creative work responds through a crypto cartoon series ('cryptoons') and full visual identity built around the people already in the community. First applied to BULLISH on Solana, driving a market cap move from $6-7M to a $13M peak, 5K daily mentions across Crypto Twitter, and 250K cross-platform content impressions.",
+      "slogan": "We don't help projects grow. We make them spread.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptopandemic.com/images/landing/og-image.png",
+        "width": 1200,
+        "height": 630
+      },
+      "foundingDate": "2026",
+      "genre": [
+        "Web3 brand studio",
+        "Crypto marketing",
+        "Viral marketing",
+        "On-chain analytics",
+        "Creative direction",
+        "Portfolio project"
+      ],
+      "keywords": [
+        "CryptoPandemic",
+        "George Dreemer",
+        "Web3 marketing",
+        "Solana marketing",
+        "crypto marketing agency",
+        "blockchain analytics",
+        "Web3 design",
+        "on-chain strategy",
+        "Solana growth",
+        "brand identity Web3",
+        "crypto brand strategy",
+        "cryptoons",
+        "holder profiling",
+        "BULLISH",
+        "AI content pipeline"
+      ],
+      "founder": {
+        "@type": "Person",
+        "@id": "https://georgedreemer.com/#person",
+        "name": "George Dreemer",
+        "url": "https://georgedreemer.com"
+      },
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "On-Chain Research & Holder Profiling"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Cryptoon Animated Storytelling"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Content Engineering & Production"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Community Brand Tools"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Web3 Brand Strategy & Execution"
+          }
+        }
+      ],
+      "sameAs": [
+        "https://cryptopandemic.com"
+      ],
+      "dateModified": "2026-09-02",
+      "inLanguage": "en-US"
+    }
+  ]
 }
 </script>
 
@@ -211,7 +239,7 @@ rel="stylesheet">
   --color-text: #1a1814;
   --color-text-muted: #5a5750;
   --color-text-faint: #9a9590;
-  --color-primary: #4a1fae; /* primary color is the brand color if applicable default: #01696f */
+  --color-primary: #be44ff; /* primary color is the brand color if applicable default: #01696f */
   --color-domain-engineering: #014a6f;
   --color-domain-data: #00a59a;
   --color-domain-product: #d19900;
@@ -2197,7 +2225,7 @@ body {
 </head>
 
 
-<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a1a01e5f44000071bc973da1ec13cbfc" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a01e5f499800f0cd3f9f8cb8c2d331" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a01e5f499901a1e0f365241477c5ba" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a01e5f49990293f1447872abde585d" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1788448598"></a></div></div></div><div id="a1a01e5f499a019f20587af60a556477" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a01e5f499903512f3c09b8f4af547b" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1788448598"></a></div></div></div></div></div><div id="a1a01e5f499d00b18166029b14485d60" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a1a06787c97900e02e56b45a98c7fa9d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a06787cd43002a3e0987ec22c0e7e8" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a06787cd4302f2b9bd4d33903966ef" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a06787cd43036f40a669605694470a" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1788448598"></a></div></div></div><div id="a1a06787cd4403c38d3f700fdf76c2a3" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a06787cd4304a9b550abac5cf2bec8" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1788448598"></a></div></div></div></div></div><div id="a1a06787cd5500c6e59d1e9556ababf3" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -2279,172 +2307,117 @@ body {
 			'children' => array()
 		)
 	)
-)); ?><div class="clearfix"></div></div></div></div><div id="a1a01e5f499a00adaf4b031f17d99ade" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a01e5f4999040dcefc7cf2ca8a5a85" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a01e5f499905aaa5135d88c99ca67e" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/6460cebc12e7dc68f373f0c06858517e_fit.png?ts=1788448598"></div></div></div></div></div></div></div></div></div></div></div><div id="wb_main_a1a01e5f44000071bc973da1ec13cbfc" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a01e5f499900621f8f575873cb25ef" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1788448598"></div></div></div><div id="a1a01e5f499b007ba31af7cab22afea1" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><main class="preview-page" role="main">
-
+)); ?><div class="clearfix"></div></div></div></div><div id="a1a06787cd44026b1f3ae74006f2742d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a06787cd4305ccf715ad0b2f236273" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a06787cd44006ae7a1b642f0afce92" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/95860ffc37c3f86f21a70afe843cf1cb_fit.png?ts=1788448598"></div></div></div></div></div></div></div></div></div></div></div><div id="wb_main_a1a06787c97900e02e56b45a98c7fa9d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a06787cd4301cf802e520e4bc3c1cd" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1788448598"></div></div></div><div id="a1a06787cd45000b58eb93e0c6c0a7ee" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><main class="preview-page" role="main">
+    
     <!-- ============================================================
         ELEMENT 1 — CONTEXT BLOCK
     ============================================================ -->
     <section aria-label="E1 Context Block" class="fade-in">
       <div class="context-block">
-        <p>DataSafari is a Python library that simplifies complex data science tasks — compressing exploration, transformation, evaluation, and prediction into a single one-liner API. One import. One function call. One plain-English report.</p>
-        <p>George built DataSafari to solve a specific problem he watched play out at university: data science curricula built around Stata, R, and SPSS — tools with decades of academic inertia — while Python's better-maintained, faster, and more capable ecosystem went largely untaught. The researcher who understands their domain deeply but doesn't want to spend two hours reading Scipy docs to run a single test was the exact person the existing tooling failed. DataSafari is the attempt to fix that: one import, one function call, one plain-English report.</p>
-        <p>The library spans four subpackages — Explorer, Transformer, Evaluator, Predictor — mirroring the natural stages of any data workflow. Every function handles its stage end-to-end: automatic statistical method selection, dynamic assumption validation, composite-score model evaluation. Each call returns a plain-language report with findings and actionable recommendations — results that are interpretable, not just computed.</p>
+        <p>CryptoPandemic is a Web3 brand engine built on one conviction: the projects that spread are not the ones with the best technology. They are the ones with the strongest story, the sharpest identity, and content that moves at the speed of the culture.</p>
+        <p>CryptoPandemic brings together two seemingly opposite forces: cold on-chain analytics and warm creative storytelling. The on-chain data acts as the "KYC", revealing exactly who your holders are, which coins they move, and what makes them act. The creative work responds to that data through a crypto cartoon series and visual identity built around the people already in your corner.</p>
+        <p>The approach was first applied to $BULLISH on Solana — crypto cartoon series, AI-generated content pipelines, 360° brand execution, on-chain market research — all deployed in tandem. The result was a market cap move from ~$6–7M to a peak of ~$13M, 5K+ daily mentions across Crypto Twitter, and 250K+ impressions across content.</p>
       </div>
     </section>
     
     <!-- ============================================================
         ELEMENT 2 — SNAPSHOT CARD
     ============================================================ -->
-    <section aria-label="E2 Snapshot Card" class="fade-in">
-      <div class="snapshot-card" data-domain="engineering">
+    <section aria-label="E2: SNAPSHOT CARD" class="fade-in">
+      <div class="snapshot-card" data-domain="growth">
         <div class="snapshot-card__meta">
-          <!-- Prominent fields first -->
+    
           <div class="snapshot-item snapshot-item--prominent">
             <p class="snapshot-item__key">Role</p>
-            <p class="snapshot-item__value">Creator &amp; Maintainer</p>
+            <p class="snapshot-item__value">Founder &amp; Creative Director</p>
           </div>
           <div class="snapshot-item snapshot-item--prominent">
             <p class="snapshot-item__key">Type</p>
-            <p class="snapshot-item__value">Data Science Python Library</p>
+            <p class="snapshot-item__value">Web3 Brand Studio</p>
           </div>
-          <!-- Standard fields -->
           <div class="snapshot-item">
-            <p class="snapshot-item__key">Developed</p>
-            <p class="snapshot-item__value">2023-2025</p>
+            <p class="snapshot-item__key">Founded</p>
+            <p class="snapshot-item__value">2026</p>
           </div>
           <div class="snapshot-item">
             <p class="snapshot-item__key">Links</p>
             <p class="snapshot-item__value">
-              <a href="https://datasafari.dev" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-globe"></i> Website
-              </a>
-            </p>
-            <p style="padding-bottom: 6px"></p>
-            <p class="snapshot-item__value">
-              <a href="https://datasafari.dev/docs" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-book"></i> Docs
-              </a>
-            </p>
-            <p style="padding-bottom: 6px"></p>
-            <p class="snapshot-item__value">
-              <a href="https://github.com/ETA444/datasafari" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-github"></i> GitHub
-              </a>
-            </p>
-            <p style="padding-bottom: 6px"></p>
-            <p class="snapshot-item__value">
-              <a href="https://pypi.org/project/datasafari/" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-box-seam"></i> PyPI
+              <a href="https://cryptopandemic.com" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-globe2"></i> cryptopandemic.com
               </a>
             </p>
           </div>
-        </div>
     
+        </div>
         <div class="snapshot-card__divider"></div>
     
         <p class="snapshot-card__highlights-label">Highlights</p>
+    
         <div class="snapshot-card__chips">
-    
-          <!-- Architecture — the what -->
-          <span class="achievement-chip" data-domain="engineering">
-            <span class="achievement-chip__dot"></span>Architected 4-subpackage API from scratch: Explorer · Transformer · Evaluator · Predictor
-          </span>
-    
-          <!-- Data science depth — the substance -->
+          <!-- Data -->
           <span class="achievement-chip" data-domain="data">
-            <span class="achievement-chip__dot"></span>Unified 10 scientific libraries — NumPy, pandas, scikit-learn, scipy, statsmodels &amp; more — into a single one-liner workflow
+            <span class="achievement-chip__dot"></span>Profiled on-chain holder behaviour to identify the most effective branding styles and content formats
           </span>
           <span class="achievement-chip" data-domain="data">
-            <span class="achievement-chip__dot"></span>Implemented automatic statistical test routing in predict_hypothesis() — detects variable types, checks assumptions, selects and runs the correct test
-          </span>
-          <span class="achievement-chip" data-domain="data">
-            <span class="achievement-chip__dot"></span>Built composite-score ML model evaluation engine with automated hyperparameter tuning in predict_ml()
-          </span>
-          <span class="achievement-chip" data-domain="data">
-            <span class="achievement-chip__dot"></span>Implemented statistical assumption checking across normality, variance, dtype, and contingency in Evaluator
-          </span>
-          <span class="achievement-chip" data-domain="data">
-            <span class="achievement-chip__dot"></span>Designed multi-method outlier detection covering Z-score, IQR &amp; Mahalanobis distance in Explorer
+            <span class="achievement-chip__dot"></span>Tracked X sentiment and news cycles to time and shape cryptoon storylines
           </span>
     
-          <!-- Engineering craft — the how -->
-          <span class="achievement-chip" data-domain="engineering">
-            <span class="achievement-chip__dot"></span>Engineered 250+ pytest tests across 11 test files covering all 4 subpackages
-          </span>
-          <span class="achievement-chip" data-domain="engineering">
-            <span class="achievement-chip__dot"></span>Built full GitHub Actions CI/CD pipeline: lint · test · security scan · build · docs deploy · publish
-          </span>
-          <span class="achievement-chip" data-domain="engineering">
-            <span class="achievement-chip__dot"></span>Configured CI matrix to run across Python 3.9, 3.10, 3.11 &amp; 3.12 in parallel
-          </span>
-          <span class="achievement-chip" data-domain="engineering">
-            <span class="achievement-chip__dot"></span>Secured codebase with Bandit static scanning and SafetyCLI dependency auditing
-          </span>
-          <span class="achievement-chip" data-domain="engineering">
-            <span class="achievement-chip__dot"></span>Tracked and closed 136 GitHub issues across the full development lifecycle
-          </span>
-    
-          <!-- Product delivery — the finish -->
-          <span class="achievement-chip" data-domain="engineering">
-            <span class="achievement-chip__dot"></span>Packaged and published to PyPI via an automated Poetry + Twine pipeline
+          <!-- Product -->
+          <span class="achievement-chip" data-domain="product">
+            <span class="achievement-chip__dot"></span>Coined the "cryptoon" format — narrative-driven crypto animations built on sentiment and on-chain data
           </span>
           <span class="achievement-chip" data-domain="product">
-            <span class="achievement-chip__dot"></span>Automated Sphinx docs build and live-server deployment via rsync over SSH on every push
-          </span>
-          <span class="achievement-chip" data-domain="product">
-            <span class="achievement-chip__dot"></span>Authored full Sphinx documentation site with custom Furo theme at datasafari.dev/docs
-          </span>
-          <span class="achievement-chip" data-domain="product">
-            <span class="achievement-chip__dot"></span>Designed and launched dedicated product website at datasafari.dev
+            <span class="achievement-chip__dot"></span>Created 50+ branded assets adopted by the community across X, Telegram, and Discord
           </span>
     
+          <!-- Growth -->
+          <span class="achievement-chip" data-domain="growth">
+            <span class="achievement-chip__dot"></span>Drove Bullish from ~$6M to $13M peak market cap through coordinated cryptoon drops and brand strategy
+          </span>
+          <span class="achievement-chip" data-domain="growth">
+            <span class="achievement-chip__dot"></span>Drove 250K+ cross-platform impressions and 5K+ daily mentions
+          </span>
+    
+          <!-- Engineering -->
+          <span class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Built AI-generative content pipelines and brand tools using Google AI Studio
+          </span>
         </div>
     
       </div>
     </section>
     
     <!-- ============================================================
-        ELEMENT 3 — IN NUMBERS / STAT COUNTER
+        ELEMENT 3 — IN-NUMBERS
     ============================================================ -->
     <section class="stat-counter-section fade-in" aria-label="E3 In Numbers">
       <div class="stat-counter">
-        <div class="stat-counter__item" data-target="11" data-domain="data">
+    
+        <div class="stat-counter__item" data-target="5" data-prefix="~$" data-suffix="M" data-domain="growth">
           <span class="stat-counter__number" aria-live="polite">0</span>
-          <span class="stat-counter__label">Functions shipped</span>
+          <span class="stat-counter__label">Estimated $BULLISH market cap uplift</span>
         </div>
-        <div class="stat-counter__item" data-target="10" data-domain="data">
+    
+        <div class="stat-counter__item" data-target="250" data-suffix="K+" data-domain="growth">
           <span class="stat-counter__number" aria-live="polite">0</span>
-          <span class="stat-counter__label">Libraries unified into one API</span>
+          <span class="stat-counter__label">Content impressions</span>
         </div>
-        <div class="stat-counter__item" data-target="7" data-domain="data">
+    
+        <div class="stat-counter__item" data-target="5" data-suffix="K+" data-domain="data">
           <span class="stat-counter__number" aria-live="polite">0</span>
-          <span class="stat-counter__label">Decisions automated per hypothesis test</span>
+          <span class="stat-counter__label">Daily mentions</span>
         </div>
-        <div class="stat-counter__item" data-target="10" data-suffix="+" data-domain="data">
+    
+        <div class="stat-counter__item" data-target="50" data-suffix="+" data-domain="product">
           <span class="stat-counter__number" aria-live="polite">0</span>
-          <span class="stat-counter__label">Pipeline decisions automated per ML run</span>
+          <span class="stat-counter__label">Branded assets created</span>
         </div>
-        <div class="stat-counter__item" data-target="666" data-domain="engineering">
-          <span class="stat-counter__number" aria-live="polite">0</span>
-          <span class="stat-counter__label">Commits pushed</span>
-        </div>
-        <div class="stat-counter__item" data-target="12" data-domain="engineering">
-          <span class="stat-counter__number" aria-live="polite">0</span>
-          <span class="stat-counter__label">Automated steps per CI run</span>
-        </div>
-        <div class="stat-counter__item" data-target="250" data-suffix="+" data-domain="engineering">
-          <span class="stat-counter__number" aria-live="polite">0</span>
-          <span class="stat-counter__label">Pytest tests written</span>
-        </div>
-        <div class="stat-counter__item" data-target="136" data-domain="engineering">
-          <span class="stat-counter__number" aria-live="polite">0</span>
-          <span class="stat-counter__label">Issues closed</span>
-        </div>
+    
       </div>
     </section>
     
     <!-- ============================================================
-            ELEMENT 4 — STACK BADGE GRID
+        ELEMENT 4 — STACK BADGE GRID
     ============================================================ -->
     <section aria-label="E4: STACK BADGE GRID" class="fade-in">
       <div class="section-label">
@@ -2458,83 +2431,152 @@ body {
         <div class="stack-group">
           <p class="stack-group__label">Languages</p>
           <div class="stack-group__items">
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/python/3776ab" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Python</span></span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/html5/e34f26" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">HTML</span></span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/css/1572b6" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">CSS</span></span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/gnubash/4eaa25" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Bash / Zsh</span></span>
+            <span class="stack-badge">
+              <img src="https://cdn.simpleicons.org/javascript/f7df1e" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">JavaScript</span>
+            </span>
+            <span class="stack-badge">
+              <img src="https://cdn.simpleicons.org/html5/e34f26" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">HTML</span>
+            </span>
+            <span class="stack-badge">
+              <img src="https://cdn.simpleicons.org/css/1572b6" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">CSS</span>
+            </span>
+            <span class="stack-badge">
+              <img src="https://cdn.simpleicons.org/python/3776ab" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Python</span>
+            </span>
           </div>
         </div>
     
-        <!-- ── Python Libraries ──────────────────────────────── -->
+        <!-- ── AI & Automation ────────────────────────────────── -->
         <div class="stack-group">
-          <p class="stack-group__label">Python Libraries</p>
+          <p class="stack-group__label">AI &amp; Automation</p>
+          <div class="stack-group__items">
+            <span class="stack-badge">
+              <img src="https://cdn.simpleicons.org/huggingface/ffd21e" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">HuggingFace</span>
+            </span>
+            <span class="stack-badge">
+              <img src="https://cdn.simpleicons.org/n8n/ea4b71" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">n8n</span>
+            </span>
+    
+            <span class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#4285f4;" aria-hidden="true">G</span>
+              <span class="stack-badge__name">Google AI Studio</span>
+            </span>
+    
+            <span class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#222;" aria-hidden="true">
+                <svg width="84" height="84" viewbox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="84" height="84" fill="#172DD7"></rect>
+                  <path d="M28.5899 69.2727C27.3242 69.2727 26.303 68.8023 25.637 67.9128C24.9524 66.9989 24.774 65.723 25.1471 64.4133L26.6455 59.1518C26.765 58.7329 26.6818 58.2821 26.4212 57.9336C26.1606 57.5858 25.7529 57.381 25.3198 57.381H21.0116C19.7453 57.381 18.724 56.9112 18.0583 56.0218C17.3738 55.1072 17.1953 53.8314 17.5687 52.5216L22.7163 34.5286L23.2847 32.5517C24.0487 29.869 26.8349 27.6888 29.4966 27.6888H34.6517C35.2668 27.6888 35.8079 27.2787 35.9773 26.6835L37.6821 20.6987C38.4453 18.0187 41.2316 15.8385 43.8933 15.8385L54.9181 15.8189L62.9891 15.8182C64.2551 15.8182 65.2763 16.288 65.942 17.1774C66.6265 18.0913 66.805 19.3672 66.4319 20.6769L64.124 28.7803C63.3611 31.4595 60.5748 33.6391 57.9131 33.6391L46.8637 33.6601H41.7104C41.0959 33.6601 40.5555 34.0695 40.3851 34.6641L36.0883 49.6722C35.9681 50.0919 36.0513 50.5441 36.3126 50.8925C36.5732 51.2403 36.9809 51.445 37.4136 51.445L44.7152 51.4308H52.7622C54.0282 51.4308 55.0494 51.9006 55.7151 52.7901C56.3996 53.7046 56.5781 54.9805 56.2047 56.2902L53.8969 64.3923C53.1339 67.0722 50.3476 69.2517 47.686 69.2517L36.6369 69.2727H28.5899Z" fill="#F0FF41"></path>
+                </svg>
+              </span>
+              <span class="stack-badge__name">ComfyUI</span>
+            </span>
+          </div>
+        </div>
+    
+        <!-- ── Design & Creative ──────────────────────────────── -->
+        <div class="stack-group">
+          <p class="stack-group__label">Design &amp; Creative</p>
           <div class="stack-group__items">
     
-            <!-- Core Data -->
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/pandas/150458" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">pandas</span></span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/numpy/013243" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">NumPy</span></span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/scipy/8caae6" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">SciPy</span></span>
-    
-            <!-- ML -->
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/scikitlearn/f7931e" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">scikit-learn</span></span>
-            <span class="stack-badge stack-badge--text">
-              <span class="stack-badge__mark" style="background:#3499cd;" aria-hidden="true">so</span>
-              <span class="stack-badge__name">scikit-optimize</span>
-            </span>
-            <span class="stack-badge stack-badge--text">
-              <span class="stack-badge__mark" style="background:#ee4c2c;" aria-hidden="true">ce</span>
-              <span class="stack-badge__name">category-encoders</span>
-            </span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/pytorch" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">PyTorch</span></span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/huggingface/ffd21e" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">HuggingFace</span></span>
-    
-            <!-- Viz -->
-            <span class="stack-badge stack-badge--text">
-              <span class="stack-badge__mark" style="background:#423cb9;" aria-hidden="true">mpl</span>
-              <span class="stack-badge__name">Matplotlib</span>
-            </span>
-            <span class="stack-badge stack-badge--text">
-              <span class="stack-badge__mark" style="background:#76b7b2;" aria-hidden="true">sb</span>
-              <span class="stack-badge__name">seaborn</span>
-            </span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/plotly/3f4f75" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Plotly</span></span>
-    
-            <!-- Stats -->
-            <span class="stack-badge stack-badge--text">
-              <span class="stack-badge__mark" style="background:#3a6fa0;" aria-hidden="true">sm</span>
-              <span class="stack-badge__name">statsmodels</span>
+            <span class="stack-badge">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%23330000%22/%3E%3Ctext%20x%3D%2252%22%20y%3D%22164%22%20font-size%3D%22104%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%23FF9A00%22%3EAi%3C/text%3E%3C/svg%3E" alt="Adobe Illustrator" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Illustrator</span>
             </span>
     
+            <span class="stack-badge">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%23001E36%22/%3E%3Ctext%20x%3D%2252%22%20y%3D%22164%22%20font-size%3D%22104%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%2331A8FF%22%3EPs%3C/text%3E%3C/svg%3E" alt="Adobe Photoshop" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Photoshop</span>
+            </span>
+    
+            <span class="stack-badge">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%2300005B%22/%3E%3Ctext%20x%3D%2252%22%20y%3D%22164%22%20font-size%3D%22104%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%239999FF%22%3EPr%3C/text%3E%3C/svg%3E" alt="Adobe Premiere Pro" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Premiere Pro</span>
+            </span>
+    
+            <span class="stack-badge">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%2300005B%22/%3E%3Ctext%20x%3D%2252%22%20y%3D%22164%22%20font-size%3D%22104%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%239999FF%22%3EAe%3C/text%3E%3C/svg%3E" alt="Adobe After Effects" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">After Effects</span>
+            </span>
+    
+            <span class="stack-badge">
+              <img src="https://cdn.simpleicons.org/davinciresolve" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">DaVinci Resolve</span>
+            </span>
+    
+            <span class="stack-badge">
+              <img src="https://cdn.simpleicons.org/figma" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Figma</span>
+            </span>
           </div>
         </div>
     
-        <!-- ── Dev Toolchain ────────────────────────────────── -->
-        <!--
-              Full OSS library release pipeline: pytest + tox for testing,
-              Sphinx + Read the Docs for documentation, Poetry + Setuptools
-              for packaging, PyPI for distribution, GitHub Actions for CI/CD.
-            -->
+        <!-- ── Web3 & On-Chain ───────────────────────────────── -->
         <div class="stack-group">
-          <p class="stack-group__label">Dev Toolchain</p>
+          <p class="stack-group__label">Web3 &amp; On-Chain</p>
           <div class="stack-group__items">
-    
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/pytest/0a9edc" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">pytest</span></span>
-            <span class="stack-badge stack-badge--text">
-              <span class="stack-badge__mark" style="background:#da5c13;" aria-hidden="true">tx</span>
-              <span class="stack-badge__name">tox</span>
+            <span class="stack-badge">
+              <img src="https://cdn.simpleicons.org/solana/9945ff" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Solana</span>
             </span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/sphinx/000000" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Sphinx</span></span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/readthedocs/8ca1af" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Read the Docs</span></span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/pypi/3775a9" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">PyPI</span></span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/poetry/60a5fa" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Poetry</span></span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/setuptools" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Setuptools</span></span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/githubactions" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">GitHub Actions</span></span>
+    
+            <span class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#21d727; color:#ffffff;" aria-hidden="true">P</span>
+              <span class="stack-badge__name">Pump.fun</span>
+            </span>
+    
+            <span class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#8dc63f; color:#111111;" aria-hidden="true">CG</span>
+              <span class="stack-badge__name">CoinGecko</span>
+            </span>
+    
+            <span class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#00d4ff; color:#111111;" aria-hidden="true">Dx</span>
+              <span class="stack-badge__name">DexScreener</span>
+            </span>
           </div>
         </div>
     
-        <!-- ── Dev Tools & IDEs ───────────────────────────────── -->
+        <!-- ── Marketing & Growth ─────────────────────────────── -->
         <div class="stack-group">
-          <p class="stack-group__label">Dev Tools &amp; IDEs</p>
+          <p class="stack-group__label">Marketing &amp; Growth</p>
+          <div class="stack-group__items">
+            <span class="stack-badge">
+              <img src="https://cdn.simpleicons.org/x/000000" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">X</span>
+            </span>
+            <span class="stack-badge">
+              <img src="https://cdn.simpleicons.org/tiktok/000000" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">TikTok</span>
+            </span>
+            <span class="stack-badge">
+              <img src="https://cdn.simpleicons.org/youtube/ff0000" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">YouTube Studio</span>
+            </span>
+            <span class="stack-badge">
+              <img src="https://cdn.simpleicons.org/buffer/000000" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Buffer</span>
+            </span>
+            <span class="stack-badge">
+              <img src="https://cdn.simpleicons.org/telegram" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Telegram</span>
+            </span>
+            <span class="stack-badge">
+              <img src="https://cdn.simpleicons.org/discord" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Discord</span>
+            </span>
+          </div>
+        </div>
+    
+        <!-- ── Dev Tools ──────────────────────────────────────── -->
+        <div class="stack-group">
+          <p class="stack-group__label">Dev Tools</p>
           <div class="stack-group__items">
             <span class="stack-badge stack-badge--text">
               <span class="stack-badge__mark" style="background:#FFFFFF00;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="2500" height="1995" viewbox="0 0 59.242 47.271">
@@ -2542,51 +2584,17 @@ body {
                 </svg></span>
               <span class="stack-badge__name">VS Code</span>
             </span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/jupyter/f37626" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Jupyter</span></span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/jetbrains" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">DataSpell</span></span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/git/f05032" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Git</span></span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/github/181717" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">GitHub</span></span>
-          </div>
-        </div>
-    
-        <!-- ── Platforms & Infra ──────────────────────────────── -->
-        <!--
-              datasafari.dev is hosted and served via Cloudflare CDN;
-              Namecheap + cPanel manage the domain and hosting respectively.
-            -->
-        <div class="stack-group">
-          <p class="stack-group__label">Platforms &amp; Infra</p>
-          <div class="stack-group__items">
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/cpanel/ff6c2c" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">cPanel</span></span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/namecheap/de3723" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Namecheap</span></span>
-            <span class="stack-badge"><img src="https://cdn.simpleicons.org/cloudflare/f38020" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Cloudflare</span></span>
-          </div>
-        </div>
-    
-        <!-- ── Design & Creative ──────────────────────────────── -->
-        <!--
-              George designed all brand identity and graphic assets for
-              datasafari — logo, visual language, documentation site UI.
-              Figma for wireframing/UI; Illustrator + Photoshop for assets.
-            -->
-        <div class="stack-group">
-          <p class="stack-group__label">Design &amp; Creative</p>
-          <div class="stack-group__items">
-    
-            <!-- Adobe Illustrator -->
             <span class="stack-badge">
-              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%23330000%22/%3E%3Ctext%20x%3D%2252%22%20y%3D%22164%22%20font-size%3D%22104%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%23FF9A00%22%3EAi%3C/text%3E%3C/svg%3E" alt="Adobe Illustrator" width="18" height="18" loading="lazy">
-              <span class="stack-badge__name">Illustrator</span>
+              <img src="https://cdn.simpleicons.org/git/f05032" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Git</span>
             </span>
-    
-            <!-- Adobe Photoshop -->
             <span class="stack-badge">
-              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%23001E36%22/%3E%3Ctext%20x%3D%2252%22%20y%3D%22164%22%20font-size%3D%22104%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%2331A8FF%22%3EPs%3C/text%3E%3C/svg%3E" alt="Adobe Photoshop" width="18" height="18" loading="lazy">
-              <span class="stack-badge__name">Photoshop</span>
+              <img src="https://cdn.simpleicons.org/github/181717" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">GitHub</span>
             </span>
-    
           </div>
         </div>
+    
       </div>
     </section>
     
@@ -2599,7 +2607,6 @@ body {
         <span class="section-label__line" aria-hidden="true"></span>
       </div>
     
-      <!-- Legend -->
       <div class="ability-legend">
         <span class="ability-legend__item ability-legend__item--engineering">
           <span class="ability-legend__dot"></span>Engineering
@@ -2617,183 +2624,176 @@ body {
     
       <div class="ability-grid">
     
-        <!-- 1 · Python Library Architecture · Engineering -->
+        <!-- ── DATA ── -->
+        <div class="ability-card fade-in" data-domain="data">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="users"></i></div>
+          <h3 class="ability-card__title">Holder Portfolio Profiling</h3>
+          <p class="ability-card__desc">Analysed on-chain wallet data to understand what else a project's
+            holders own, building profiles of their wider crypto interests, cultural references, and community
+            affiliations. These profiles inform branding and content decisions. The aim is not to copy adjacent
+            projects, but to help the coin speak a language its holders already understand. Culture fit, not
+            culture theft.</p>
+          <div class="ability-card__tags">
+            <span class="ability-tag">Wallet Behaviour Profiling</span>
+            <span class="ability-tag">Community Culture Mapping</span>
+            <span class="ability-tag">Insight-Led Brand Strategy</span>
+          </div>
+        </div>
+    
+        <div class="ability-card fade-in" data-domain="data">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="line-chart"></i></div>
+          <h3 class="ability-card__title">On-Chain Market Attribution</h3>
+          <p class="ability-card__desc">Tracked project performance with on-chain analytics tools to connect
+            creative output with market movement. This made it possible to identify when the needle moved, why
+            it moved, and which content contributed to the shift. It closes a feedback loop that many Web3
+            creative teams leave open by measuring how content affects the chart, not just the timeline.</p>
+          <div class="ability-card__tags">
+            <span class="ability-tag">Market Movement Analysis</span>
+            <span class="ability-tag">Content-to-Chart Attribution</span>
+            <span class="ability-tag">Performance Measurement</span>
+          </div>
+        </div>
+    
+        <div class="ability-card fade-in" data-domain="data">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="bar-chart-3"></i></div>
+          <h3 class="ability-card__title">Content Performance Analytics</h3>
+          <p class="ability-card__desc">Used platform analytics across X, TikTok, and Instagram to track
+            impressions, engagement rate, share velocity, and audience growth, then fed those signals into the
+            next content cycle. In a fast-moving environment where a post has a half-life of hours, understanding
+            what performed and why is what separates a studio that compounds its reach from one that stays flat.</p>
+          <div class="ability-card__tags">
+            <span class="ability-tag">Engagement Analysis</span>
+            <span class="ability-tag">Reach Optimisation</span>
+            <span class="ability-tag">Data-Driven Iteration</span>
+          </div>
+        </div>
+    
+        <div class="ability-card fade-in" data-domain="data">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="book-open"></i></div>
+          <h3 class="ability-card__title">Sentiment-Anchored Story Strategy</h3>
+          <p class="ability-card__desc">Built content strategy around a character who lives inside the holder's
+            world. It is not a mascot disconnected from reality, but a character whose storylines come directly
+            from live X sentiment, news cycles, and on-chain talking points. If the community is discussing Fed
+            rate hikes, that week's cryptoon reflects it. Culture relevance is engineered, not guessed.</p>
+          <div class="ability-card__tags">
+            <span class="ability-tag">Real-Time Sentiment Scripting</span>
+            <span class="ability-tag">Character-Led Narrative Design</span>
+            <span class="ability-tag">Content Series Architecture</span>
+          </div>
+        </div>
+    
+        <!-- ── ENGINEERING ── -->
         <div class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="wand-2"></i></div>
+          <h3 class="ability-card__title">AI-Generative Content Pipelines</h3>
+          <p class="ability-card__desc">Built production-ready generative pipelines for crypto-native visual
+            content, combining speed with consistent creative direction. Each workflow is tailored to a coin's
+            identity, including its ticker, mascot, and lore, so the output feels made for that project rather
+            than like a generic AI pass.</p>
+          <div class="ability-card__tags">
+            <span class="ability-tag">Generative Workflow Design</span>
+            <span class="ability-tag">Brand-Consistent AI Output</span>
+            <span class="ability-tag">Visual Pipeline Architecture</span>
+          </div>
+        </div>
+    
+        <div class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="film"></i></div>
+          <h3 class="ability-card__title">Cryptoon Production &amp; Motion Design</h3>
+          <p class="ability-card__desc">Coined and developed the cryptoon format: short animated films where the storyline is built from the world the holder already lives in. The character’s arc is mapped against live community sentiment, cultural references pulled from holder portfolio data, and the news cycle the audience is actually following. The result is a character who feels like part of the holder’s world.</p>
+          <div class="ability-card__tags">
+            <span class="ability-tag">Motion Graphics &amp; Animation</span>
+            <span class="ability-tag">Cinematic Editing</span>
+            <span class="ability-tag">Narrative Sequencing</span>
+          </div>
+        </div>
+    
+        <div class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="code-2"></i></div>
+          <h3 class="ability-card__title">Brand Tool Engineering</h3>
+          <p class="ability-card__desc">Designed the architecture for community-facing brand tools: AI-powered
+            experiences that define a coin's visual style and let holders create on-brand content themselves.
+            This compounds reach without compounding spend. Built with HTML, CSS, JavaScript, Python, and AI API
+            integrations.</p>
+          <div class="ability-card__tags">
+            <span class="ability-tag">Full-Stack Web Development</span>
+            <span class="ability-tag">AI API Integration</span>
+            <span class="ability-tag">Community Tool Design</span>
+          </div>
+        </div>
+    
+        <!-- ── PRODUCT ── -->
+        <div class="ability-card fade-in" data-domain="product">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="layers"></i></div>
-          <h3 class="ability-card__title">Python Library Architecture</h3>
-          <p class="ability-card__desc">Designed the library from scratch as a four-subpackage system: Explorers, Transformers, Evaluators, and Predictors. The structure reflects the natural data science workflow. Built a consistent public API around a one-liner philosophy, making complex operations available through a single function with sensible defaults and room for deep customisation.</p>
+          <h3 class="ability-card__title">Meme Coin Brand Architecture</h3>
+          <p class="ability-card__desc">Built complete brand systems for meme coin projects, covering visual
+            identity, character lore, content tone, and community language from the ground up. In a market where
+            hundreds of coins launch every week, a coherent brand is the only durable moat. The work for Bullish,
+            from the first edit to the graphic asset library deployed across CT replies, shows what a complete
+            Web3 brand system looks like in practice.</p>
           <div class="ability-card__tags">
-            <span class="ability-tag">Package Architecture</span>
-            <span class="ability-tag">API Design</span>
-            <span class="ability-tag">Open-Source Engineering</span>
+            <span class="ability-tag">Visual Identity Design</span>
+            <span class="ability-tag">Character &amp; Lore Development</span>
+            <span class="ability-tag">Web3 Brand Strategy</span>
           </div>
         </div>
     
-        <!-- 2 · OSS Release Engineering · Engineering -->
-        <div class="ability-card fade-in" data-domain="engineering">
-          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="package"></i></div>
-          <h3 class="ability-card__title">OSS Release Engineering</h3>
-          <p class="ability-card__desc">Managed the full open-source release lifecycle, from project scaffolding with Poetry and Setuptools to versioned PyPI distribution. Configured <code>pyproject.toml</code>, package metadata, and dependencies to produce reproducible builds that users can install with a single pip command.</p>
-          <div class="ability-card__tags">
-            <span class="ability-tag">Release Management</span>
-            <span class="ability-tag">Dependency Management</span>
-            <span class="ability-tag">Distribution Engineering</span>
-          </div>
-        </div>
-    
-        <!-- 3 · Automated Test Suite Design · Engineering -->
-        <div class="ability-card fade-in" data-domain="engineering">
-          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="check-square"></i></div>
-          <h3 class="ability-card__title">Automated Test Suite Design</h3>
-          <p class="ability-card__desc">Built a test suite of more than 250 tests covering edge cases, input validation, and statistical output correctness across all subpackages. Configured tox to run the suite across multiple Python environments, helping datasafari work for as many users as possible.</p>
-          <div class="ability-card__tags">
-            <span class="ability-tag">Test Engineering</span>
-            <span class="ability-tag">Quality Assurance</span>
-            <span class="ability-tag">Multi-Environment Testing</span>
-          </div>
-        </div>
-    
-        <!-- 4 · CI/CD Pipeline Construction · Engineering -->
-        <div class="ability-card fade-in" data-domain="engineering">
-          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="git-merge"></i></div>
-          <h3 class="ability-card__title">CI/CD Pipeline Construction</h3>
-          <p class="ability-card__desc">Designed and built a 12-step GitHub Actions pipeline that runs automatically on every push. It performs lint checks, runs the full tox test matrix, and publishes to PyPI when a release is tagged. Closed 136 issues over the life of the project, validating every fix through the pipeline before merge.</p>
-          <div class="ability-card__tags">
-            <span class="ability-tag">Continuous Integration</span>
-            <span class="ability-tag">Automated Deployment</span>
-            <span class="ability-tag">Pipeline Design</span>
-          </div>
-        </div>
-    
-        <!-- 5 · Technical Documentation Engineering · Engineering -->
-        <div class="ability-card fade-in" data-domain="engineering">
-          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="file-text"></i></div>
-          <h3 class="ability-card__title">Technical Documentation Engineering</h3>
-          <p class="ability-card__desc">Built the complete datasafari documentation system, including Sphinx source authoring, an automated build pipeline, and a custom public site at datasafari.dev. Wrote every page of the documentation: installation guides, function references, usage examples, and conceptual explanations for all 11 modules.</p>
-          <div class="ability-card__tags">
-            <span class="ability-tag">Documentation Systems</span>
-            <span class="ability-tag">Technical Writing</span>
-            <span class="ability-tag">Developer Experience</span>
-          </div>
-        </div>
-    
-        <!-- 6 · Defensive Python & Input Validation · Engineering -->
-        <div class="ability-card fade-in" data-domain="engineering">
-          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="shield"></i></div>
-          <h3 class="ability-card__title">Defensive Python &amp; Input Validation</h3>
-          <p class="ability-card__desc">Implemented rigorous input validation and error handling across all 11 public functions. Each accepts DataFrames, column names, and optional parameter combinations that can fail silently in naive code. I built runtime branching logic to detect data types, sample sizes, and edge cases, then route execution to the correct algorithm path. Every error message is written for the caller, not the developer. In an API, the message <em>is</em> the UI &amp; UX together.</p>
-          <div class="ability-card__tags">
-            <span class="ability-tag">Defensive Programming</span>
-            <span class="ability-tag">Runtime Type Handling</span>
-            <span class="ability-tag">Error Design</span>
-          </div>
-        </div>
-    
-        <!-- 7 · Exploratory Data Analysis Systems · Data -->
-        <div class="ability-card fade-in" data-domain="data">
-          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="search"></i></div>
-          <h3 class="ability-card__title">Exploratory Data Analysis Systems</h3>
-          <p class="ability-card__desc">Designed and implemented the full Explorers subpackage. <code>explore_df()</code> profiles datasets, <code>explore_num()</code> performs numerical analysis including outlier detection via Z-score, IQR, and Mahalanobis distance, and <code>explore_cat()</code> profiles categorical data, including Shannon entropy to quantify diversity.</p>
-          <div class="ability-card__tags">
-            <span class="ability-tag">Exploratory Analysis</span>
-            <span class="ability-tag">Outlier Detection</span>
-            <span class="ability-tag">Statistical Profiling</span>
-          </div>
-        </div>
-    
-        <!-- 8 · Statistical Assumption Verification · Data -->
-        <div class="ability-card fade-in" data-domain="data">
-          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="shield-check"></i></div>
-          <h3 class="ability-card__title">Statistical Assumption Verification</h3>
-          <p class="ability-card__desc">Built the Evaluators subpackage to automate the assumption checks that data scientists typically perform before analysis. <code>evaluate_normality()</code> selects an appropriate test, such as Shapiro-Wilk or Anderson-Darling, based on the sample; <code>evaluate_variance()</code> dynamically applies Levene's, Bartlett's, or Fligner's test; and <code>evaluate_contingency_table()</code> checks whether Chi-square conditions are met.</p>
-          <div class="ability-card__tags">
-            <span class="ability-tag">Assumption Testing</span>
-            <span class="ability-tag">Statistical Inference</span>
-            <span class="ability-tag">Dynamic Test Selection</span>
-          </div>
-        </div>
-    
-        <!-- 9 · Automated Hypothesis Testing · Data -->
-        <div class="ability-card fade-in" data-domain="data">
-          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="bar-chart-2"></i></div>
-          <h3 class="ability-card__title">Automated Hypothesis Testing</h3>
-          <p class="ability-card__desc"><code>predict_hypothesis()</code> takes a DataFrame, a grouping variable, and a target variable — and autonomously selects and executes the correct statistical test. The function detects variable types, verifies normality and variance homogeneity, chooses between Chi-square, Fisher's exact, t-test, ANOVA, Mann-Whitney, Kruskal-Wallis, and others, then outputs test statistics, p-values, and a plain-language interpretation.</p>
-          <div class="ability-card__tags">
-            <span class="ability-tag">Hypothesis Testing</span>
-            <span class="ability-tag">Automated Inference</span>
-            <span class="ability-tag">Statistical Interpretation</span>
-          </div>
-        </div>
-    
-        <!-- 10 · End-to-End ML Pipeline Automation · Data -->
-        <div class="ability-card fade-in" data-domain="data">
-          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="cpu"></i></div>
-          <h3 class="ability-card__title">End-to-End ML Pipeline Automation</h3>
-          <p class="ability-card__desc"><code>predict_ml()</code> orchestrates the complete machine learning workflow in one call — automatic preprocessing (scaling, encoding, vectorisation), multi-model evaluation using a user-configurable composite score weighted across multiple metrics, and automated hyperparameter tuning via grid search, random search, or Bayesian optimisation. Returns ranked, tuned models with full performance breakdowns.</p>
-          <div class="ability-card__tags">
-            <span class="ability-tag">ML Pipeline Design</span>
-            <span class="ability-tag">Hyperparameter Optimisation</span>
-            <span class="ability-tag">Model Selection</span>
-          </div>
-        </div>
-    
-        <!-- 11 · Data Transformation Engineering · Data -->
-        <div class="ability-card fade-in" data-domain="data">
-          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="shuffle"></i></div>
-          <h3 class="ability-card__title">Data Transformation Engineering</h3>
-          <p class="ability-card__desc">Implemented the Transformers subpackage to handle the full data preparation stage. <code>transform_num()</code> covers standardisation, min-max scaling, log and power transforms, winsorisation, and interaction term creation. <code>transform_cat()</code> handles label encoding, one-hot encoding, target encoding, and ML-based category cleaning — all chainable and parameterised for reproducible pipelines.</p>
-          <div class="ability-card__tags">
-            <span class="ability-tag">Feature Engineering</span>
-            <span class="ability-tag">Data Cleaning</span>
-            <span class="ability-tag">Preprocessing Pipeline Design</span>
-          </div>
-        </div>
-    
-        <!-- 12 · Developer API & UX Design · Product -->
         <div class="ability-card fade-in" data-domain="product">
-          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="pen-tool"></i></div>
-          <h3 class="ability-card__title">Developer API &amp; UX Design</h3>
-          <p class="ability-card__desc">Built datasafari around a deliberate developer experience philosophy — consistent naming across all 11 functions, predictable argument patterns, and sensible defaults that make the library immediately usable without reading the docs. Complex workflows like full ML pipelines and hypothesis testing are exposed as single function calls, hiding implementation complexity behind a clean interface.</p>
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="layout-template"></i></div>
+          <h3 class="ability-card__title">Bag Worker Asset Systems</h3>
+          <p class="ability-card__desc">Produced libraries of on-brand graphic assets, including stickers,
+            reaction images, reply cards, and banner sets. These were built for bag workers to pick up and deploy
+            across X, Telegram, and Discord. A coin without a proper asset system is cooked: holders want to shill
+            but have nothing to post. Hundreds of Bullish assets were actively used across CT threads, driving
+            awareness at scale with zero distribution budget.</p>
           <div class="ability-card__tags">
-            <span class="ability-tag">Interface Design</span>
-            <span class="ability-tag">Developer Experience</span>
-            <span class="ability-tag">Abstraction Design</span>
+            <span class="ability-tag">Community Asset Production</span>
+            <span class="ability-tag">Bag Worker Enablement</span>
+            <span class="ability-tag">Viral-Ready Graphic Design</span>
           </div>
         </div>
     
-        <!-- 13 · Documentation Site Development · Product -->
-        <div class="ability-card fade-in" data-domain="product">
-          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="layout"></i></div>
-          <h3 class="ability-card__title">Documentation Site Development</h3>
-          <p class="ability-card__desc">Designed and hand-coded datasafari.dev — the public documentation and landing site for the library. Built with custom HTML, CSS, and JavaScript, the site presents the library's philosophy, quick-start guides, and full API reference in a clean, readable format. Integrated with Sphinx and Read the Docs for automated doc generation, while the landing experience was crafted entirely from scratch.</p>
-          <div class="ability-card__tags">
-            <span class="ability-tag">Web Development</span>
-            <span class="ability-tag">Information Architecture</span>
-            <span class="ability-tag">Content Strategy</span>
-          </div>
-        </div>
-    
-        <!-- 14 · Open-Source Product Lifecycle Management · Product -->
-        <div class="ability-card fade-in" data-domain="product">
-          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="list-checks"></i></div>
-          <h3 class="ability-card__title">Open-Source Product Lifecycle Management</h3>
-          <p class="ability-card__desc">Managed datasafari as a solo product owner, from its initial concept and roadmap through versioned releases, issue tracking, and ongoing maintenance. Closed 136 issues while balancing engineering quality, user-facing documentation, and public discoverability. Built systems that kept the project sustainable and reproducible beyond any single release.</p>
-          <div class="ability-card__tags">
-            <span class="ability-tag">Product Ownership</span>
-            <span class="ability-tag">Roadmap Execution</span>
-            <span class="ability-tag">Solo Founding</span>
-          </div>
-        </div>
-    
-        <!-- 15 · Brand Identity & Visual Systems · Growth -->
+        <!-- ── GROWTH ── -->
         <div class="ability-card fade-in" data-domain="growth">
-          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="feather"></i></div>
-          <h3 class="ability-card__title">Brand Identity &amp; Visual Systems</h3>
-          <p class="ability-card__desc">Created the complete visual identity for datasafari, including the logo, banner artwork, icon set, and graphic assets used across GitHub, PyPI, and the documentation site. Designed every visual touchpoint a user encounters when discovering the library, giving an independent open-source project a coherent, professional brand from day one.</p>
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="trending-up"></i></div>
+          <h3 class="ability-card__title">Sentiment Manufacturing</h3>
+          <p class="ability-card__desc">The skill is not simply posting content. It is engineering content that
+            shifts how a community feels about a coin at the moment it matters. During the period of active
+            production, Bullish's market cap moved from roughly $6M to $13M. In meme coin markets, sentiment is
+            price. Manufacturing the right sentiment at the right time is a lever with a measurable output on
+            the chart.</p>
           <div class="ability-card__tags">
-            <span class="ability-tag">Brand Design</span>
-            <span class="ability-tag">Visual Identity</span>
-            <span class="ability-tag">Graphic Asset Production</span>
+            <span class="ability-tag">CT Sentiment Engineering</span>
+            <span class="ability-tag">Narrative-Driven Market Influence</span>
+            <span class="ability-tag">Coordinated Campaign Timing</span>
+          </div>
+        </div>
+    
+        <div class="ability-card fade-in" data-domain="growth">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="megaphone"></i></div>
+          <h3 class="ability-card__title">Crypto-Native Community Building</h3>
+          <p class="ability-card__desc">Built and activated communities across X, Telegram, and Discord by
+            finding the right early members, sharing content at the right cadence, and creating moments that make
+            a group feel like a movement. One hundred passionate bag workers will outperform any overpaid KOL. The
+            goal is always to build a community that markets itself.</p>
+          <div class="ability-card__tags">
+            <span class="ability-tag">Community Seeding &amp; Activation</span>
+            <span class="ability-tag">Organic Amplification</span>
+            <span class="ability-tag">Retention-Focused Growth</span>
+          </div>
+        </div>
+    
+        <div class="ability-card fade-in" data-domain="growth">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="scissors"></i></div>
+          <h3 class="ability-card__title">Cross-Platform Content Editing</h3>
+          <p class="ability-card__desc">Took long-form source material, including full cryptoon episodes, brand
+            sessions, and raw footage, and cut it into platform-native formats for X clips, TikTok, Instagram
+            Reels, and YouTube Shorts. Each edit is re-paced, re-hooked, and restructured for the platform's
+            specific audience behaviour.</p>
+          <div class="ability-card__tags">
+            <span class="ability-tag">Long-Form to Short-Form Editing</span>
+            <span class="ability-tag">Platform-Native Formatting</span>
+            <span class="ability-tag">Organic Distribution Strategy</span>
           </div>
         </div>
     
@@ -2803,8 +2803,7 @@ body {
     <!-- ============================================================
         ELEMENT 6 — WORKS CARD GRID
     ============================================================ -->
-    <section aria-label="E6 Works Card Grid" class="fade-in">
-    
+    <section aria-label="E6: WORKS CARD GRID" class="fade-in">
       <div class="section-label">
         <span class="section-label__text">Works</span>
         <span class="section-label__line" aria-hidden="true"></span>
@@ -2812,200 +2811,182 @@ body {
     
       <div class="evidence-grid">
     
-        <!-- ─── CARD 1 · Engineering · CI/CD Pipeline Architecture ─── -->
-        <div class="evidence-card" data-domain="engineering">
+        <!-- ─────────────────────────────────────────────────────────
+            CARD 1 — On-Chain Research System
+        ───────────────────────────────────────────────────────────── -->
+        <div class="evidence-card" data-domain="data">
           <div class="evidence-card__slides">
             <div class="evidence-card__slides-track">
               <div class="evidence-card__slide is-active">
-                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-lib_cioverview.jpg" alt="GitHub Actions showing full CI/CD pipeline overview" loading="lazy">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-ocrs_1.png" alt="Step 1 — Project to holder mapping: who holds $BULLISH and what does that tell us" width="560" height="315" loading="lazy">
               </div>
               <div class="evidence-card__slide">
-                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-lib_cibuild.jpg" alt="GitHub Actions showing build process steps" loading="lazy">
-              </div>
-            </div>
-            <div class="evidence-card__slide-dots">
-              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
-              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
-            </div>
-          </div>
-          <div class="evidence-card__body">
-            <div class="evidence-card__domain-tag">
-              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Engineering
-            </div>
-            <h4 class="evidence-card__title">CI/CD Pipeline Architecture</h4>
-            <ul class="evidence-card__bullets">
-              <li>Built a 12-step GitHub Actions pipeline covering linting, the test matrix, security scanning, and conditional PyPI publishing on tagged releases</li>
-              <li>Configured tox to run the full pytest suite in parallel across Python 3.9, 3.10, 3.11, and 3.12 on every push</li>
-              <li>Automated Sphinx docs build and live deployment to datasafari.dev via rsync over SSH, triggered on every merge to main</li>
-              <li>Closed 136 GitHub issues over the development lifecycle, each fix validated through the pipeline before merge</li>
-            </ul>
-          </div>
-        </div>
-    
-        <!-- ─── CARD 2 · Engineering · GitHub Issue & Milestone System ─── -->
-        <div class="evidence-card" data-domain="engineering">
-          <div class="evidence-card__slides">
-            <div class="evidence-card__slides-track">
-              <div class="evidence-card__slide is-active">
-                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-github_1.jpg" alt="DataSafari GitHub issues list showing 136 issues with labels, milestones, and status tags across the development lifecycle" loading="lazy">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-ocrs_2.png" alt="Step 2 — Holder to portfolio mapping: decoding culture through what holders also hold" width="560" height="315" loading="lazy">
               </div>
               <div class="evidence-card__slide">
-                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-github_2.jpg" alt="DataSafari GitHub milestones page showing structured development phases with issue counts and completion progress" loading="lazy">
-              </div>
-              <div class="evidence-card__slide">
-                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-github_3.jpg" alt="DataSafari GitHub issue showing detailed problem description with context, expected behaviour, and reproduction steps" loading="lazy">
-              </div>
-              <div class="evidence-card__slide">
-                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-github_4.jpg" alt="DataSafari GitHub issue showing solution description with implementation notes and closing commit reference" loading="lazy">
-              </div>
-              <div class="evidence-card__slide">
-                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-github_5.jpg" alt="DataSafari GitHub labels page showing full tagging taxonomy: bug, enhancement, documentation, and domain labels" loading="lazy">
-              </div>
-              <div class="evidence-card__slide">
-                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-github_6.jpg" alt="DataSafari GitHub showing issue linked to milestone and pull request with full traceability" loading="lazy">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-ocrs_3.png" alt="Step 3 — Peer project intelligence: building profiles of the ecosystem we live in" width="560" height="315" loading="lazy">
               </div>
             </div>
             <div class="evidence-card__slide-dots">
               <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
               <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
               <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
-              <button class="evidence-card__slide-dot" aria-label="Show slide 4"></button>
-              <button class="evidence-card__slide-dot" aria-label="Show slide 5"></button>
-              <button class="evidence-card__slide-dot" aria-label="Show slide 6"></button>
             </div>
           </div>
           <div class="evidence-card__body">
-            <div class="evidence-card__domain-tag">
-              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Engineering
-            </div>
-            <h4 class="evidence-card__title">Issue Tracking &amp; Milestone System</h4>
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Data
+            </span>
+            <p class="evidence-card__title">On-Chain Research System</p>
             <ul class="evidence-card__bullets">
-              <li>Filed and closed 136 GitHub issues across the full development lifecycle — each with a structured problem
-                description, reproduction context, and a written solution note on close</li>
-              <li>Organised work into versioned milestones mapping issues to release targets, giving every fix a traceable path
-                from report to merged commit</li>
-              <li>Built a full label taxonomy — bug type, domain, priority, and status — so the issue board reads as a
-                professional engineering backlog, not a personal to-do list</li>
+              <li>Mapped holder wallets and behavior to understand their affiliations, culture, and communities</li>
+              <li>Profiled what holders own across the ecosystem to reveal our audience's shared narrative and visual language</li>
+              <li>Profiled peer projects, including their branding, communities, and positioning, so we understand the ecosystem we operate in</li>
+              <li>Compared content releases with chart movements to identify what creates real growth</li>
             </ul>
           </div>
         </div>
     
-        <!-- ─── CARD 3 · Engineering · Test Suite & Quality Gates ─── -->
-        <div class="evidence-card" data-domain="engineering">
-          <div class="evidence-card__thumb">
-            <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-lib_pytest.jpg" alt="Terminal output showing pytest run: 250+ tests passed" loading="lazy">
-          </div>
-          <div class="evidence-card__body">
-            <div class="evidence-card__domain-tag">
-              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Engineering
-            </div>
-            <h4 class="evidence-card__title">Test Suite &amp; Quality Gates</h4>
-            <ul class="evidence-card__bullets">
-              <li>Wrote 250+ pytest tests across 11 test files, covering edge cases, input validation, and statistical output correctness for all four subpackages</li>
-              <li>Integrated Bandit for static security scanning and SafetyCLI for dependency vulnerability auditing — both run automatically on every push</li>
-              <li>Configured tox to enforce test-passing across all supported Python versions before any release is tagged</li>
-            </ul>
-          </div>
-        </div>
     
-        <!-- ─── CARD 4 · Engineering · 4-Subpackage API Architecture ─── -->
-        <div class="evidence-card" data-domain="engineering">
-          <div class="evidence-card__thumb">
-            <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-lib_subpackages.jpg" alt="DataSafari library structure showing four subpackages: explorer, transformer, evaluator, predictor" loading="lazy">
-          </div>
-          <div class="evidence-card__body">
-            <div class="evidence-card__domain-tag">
-              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Engineering
-            </div>
-            <h4 class="evidence-card__title">4-Subpackage Library Architecture</h4>
-            <ul class="evidence-card__bullets">
-              <li>Designed the full package structure from scratch: <code>explorer/</code>, <code>transformer/</code>, <code>evaluator/</code>, <code>predictor/</code> — each a self-contained module with its own public API surface</li>
-              <li>Every public function follows a consistent interface contract: DataFrame in, structured report out — one-liner by design, full depth available via parameters</li>
-              <li>Configured Poetry, Setuptools, and <code>pyproject.toml</code> for reproducible builds and one-command PyPI distribution</li>
-            </ul>
-          </div>
-        </div>
-    
-        <!-- ─── CARD 5 · Data · Automated EDA Output ─── -->
-        <div class="evidence-card" data-domain="data">
-          <div class="evidence-card__thumb">
-            <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-lib_explorenum.jpg" alt="explore_num output showing structured report with outlier detection, normality testing, and multicollinearity analysis" loading="lazy">
-          </div>
-          <div class="evidence-card__body">
-            <div class="evidence-card__domain-tag">
-              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data
-            </div>
-            <h4 class="evidence-card__title">Automated EDA — <code>explore_num()</code></h4>
-            <ul class="evidence-card__bullets">
-              <li>Single function call produces full numerical profiling: outlier detection via Z-score, IQR, and Mahalanobis distance, normality testing, skewness, kurtosis, and multicollinearity</li>
-              <li>Output is a structured plain-English report with findings and actionable recommendations — not raw numbers</li>
-              <li>Automatically selects the correct statistical method based on sample size and data characteristics at runtime</li>
-            </ul>
-          </div>
-        </div>
-    
-        <!-- ─── CARD 6 · Data · predict_ml — Full ML Pipeline ─── -->
+        <!-- ─────────────────────────────────────────────────────────
+            CARD 2 — Analytics-defined Storytelling
+        ───────────────────────────────────────────────────────────── -->
         <div class="evidence-card" data-domain="data">
           <div class="evidence-card__slides">
-            <div class="evidence-card__thumb">
-              <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-lib_predictml.jpg" alt="predict_ml output showing ranked model comparison table with composite scores" loading="lazy">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-cryptoons_1.png" alt="Concept visual showing on-chain data, sentiment signals, and news cycles distilled into a cryptoon storyline" width="560" height="315" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-cryptoons_2.png" alt="Defining facts: using sentiment data, meme velocity, narrative shifts and talking points to define our script" width="560" height="315" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-cryptoons_3.png" alt="Turning the script into a storyboard of scenes and then animating them" width="560" height="315" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
             </div>
           </div>
           <div class="evidence-card__body">
-            <div class="evidence-card__domain-tag">
-              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data
-            </div>
-            <h4 class="evidence-card__title">End-to-End ML Pipeline — <code>predict_ml()</code></h4>
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Data
+            </span>
+            <p class="evidence-card__title">Cryptoons: Analytics-defined Storytelling</p>
             <ul class="evidence-card__bullets">
-              <li>One call handles preprocessing, multi-model training, composite-score-based evaluation weighted across user-configurable metrics, and ranked output</li>
-              <li>Automated hyperparameter tuning via grid search, random search, or Bayesian optimisation — user selects strategy, library handles execution</li>
-              <li>10 pipeline decisions automated per ML run: encoding, scaling, model selection, tuning strategy, evaluation weighting, and recommendation generation</li>
+              <li>Created cryptoons - short animated films shaped by holder wallet profiling, X sentiment and news narratives</li>
+              <li>Profiled on-chain wallet data to understand what holders own, which communities they move in, and which cultural references resonate with them</li>
+              <li>Tracked X sentiment and news cycles to shape the world of our characters in a way that matches the world of the holders</li>
             </ul>
           </div>
         </div>
     
-        <!-- ─── CARD 7 · Product · Website & Documentation ─── -->
+        <!-- ─────────────────────────────────────────────────────────
+            CARD 3 — Content Engineering & Production
+        ───────────────────────────────────────────────────────────── -->
+        <div class="evidence-card" data-domain="engineering">
+          <div class="evidence-card__video">
+            <iframe src="https://www.youtube.com/embed/ITv25lqWsAE?si=rQK1-IZKlyPGAMch&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=ITv25lqWsAE&amp;controls=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" title="Bullish Degen Cryptoon Episode 1 by Crypto Pandemic" aria-label="Bullish Degen Cryptoon Episode 1 by Crypto Pandemic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <button class="evidence-card__sound-btn" data-sound-toggle aria-label="Toggle sound">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <line x1="23" y1="9" x2="17" y2="15" class="mute-line"></line>
+                <line x1="17" y1="9" x2="23" y2="15" class="mute-line"></line>
+              </svg>
+            </button>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Engineering
+            </span>
+            <p class="evidence-card__title">Content Engineering &amp; Production</p>
+            <ul class="evidence-card__bullets">
+              <li>Built AI workflows for consistent characters, scenes, and visual style — each tailored to the coin’s identity so the output felt native, not generated</li>
+              <li>Edited in After Effects with a focus on cinematic pacing with custom soundtrack, color-editing, transitions and voice-acting</li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- ─────────────────────────────────────────────────────────
+            CARD 4 — Community Brand Tools
+        ───────────────────────────────────────────────────────────── -->
+        <div class="evidence-card" data-domain="engineering">
+          <div class="evidence-card__thumb">
+            <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-cbt_1.png" alt="CryptoPandemic brand tool concept — community meme generator with brand-governed parameters" width="560" height="315" loading="lazy">
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Engineering
+            </span>
+            <p class="evidence-card__title">Community Brand Tools</p>
+            <ul class="evidence-card__bullets">
+              <li>Designed AI-powered, brand-governed generators that let holders create on-brand content within clear creative parameters. Reach compounds while spend does not</li>
+              <li>Turned the holder base into a content engine. One hundred passionate bag workers can outperform any overpaid KOL</li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- ─────────────────────────────────────────────────────────
+            CARD 5 — Market Cap and Social Uplift
+        ───────────────────────────────────────────────────────────── -->
+        <div class="evidence-card" data-domain="growth">
+          <div class="evidence-card__thumb">
+            <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-chart_1.png" alt="$BULLISH market cap chart showing growth from ~$6M to ~$13M peak during CryptoPandemic campaign period" width="560" height="315" loading="lazy">
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Growth
+            </span>
+            <p class="evidence-card__title">Market Cap and Social Uplift</p>
+            <ul class="evidence-card__bullets">
+              <li>Documented an estimated $5M increase in $BULLISH market cap during the active production period</li>
+              <li>Drove more than 250K cross-platform impressions and engagements during the campaign</li>
+              <li>Recorded more than 5K daily mentions on X at the campaign's peak</li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- ─────────────────────────────────────────────────────────
+            CARD 6 — Bag Worker Asset System
+        ───────────────────────────────────────────────────────────── -->
         <div class="evidence-card" data-domain="product">
           <div class="evidence-card__slides">
             <div class="evidence-card__slides-track">
               <div class="evidence-card__slide is-active">
-                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-website_1.jpg" alt="DataSafari website landing page at datasafari.dev showing slogan, code animation and branding artwork" loading="lazy">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_1.png" alt="Bullish x Avici Finance collaboration branded graphics" width="560" height="315" loading="lazy">
               </div>
               <div class="evidence-card__slide">
-                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-website_5.jpg" alt="DataSafari website showing package philosophy with clear parallel between data science workflow and library subpackage structure" loading="lazy">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_2.png" alt="Bullish gold price crash meme" width="560" height="315" loading="lazy">
               </div>
               <div class="evidence-card__slide">
-                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-website_2.jpg" alt="DataSafari website showing installation instructions" loading="lazy">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_3.png" alt="Bullish x Kraken collaboration branded graphics" width="560" height="315" loading="lazy">
               </div>
               <div class="evidence-card__slide">
-                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-website_3.jpg" alt="DataSafari website showing simple usage example and documentation prompt for further exploration" loading="lazy">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_4.png" alt="Bullish S-1 ETF Application Meme" width="560" height="315" loading="lazy">
               </div>
               <div class="evidence-card__slide">
-                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_0.jpg" alt="DataSafari documentation welcome page at datasafari.dev/docs in light mode, showing quick-start guide and function reference links" loading="lazy">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_5.png" alt="Bullish x Solana Foundation collaboration branded graphics" width="560" height="315" loading="lazy">
               </div>
               <div class="evidence-card__slide">
-                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_1.jpg" alt="DataSafari documentation welcome page at datasafari.dev/docs in dark mode, showing quick-start guide and function reference links" loading="lazy">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_6.png" alt="Bullish Everything is Fine Meme" width="560" height="315" loading="lazy">
               </div>
               <div class="evidence-card__slide">
-                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_6.jpg" alt="DataSafari documentation showing installation instructions and pip install command" loading="lazy">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_7.png" alt="Bullish x George/eta444 editor meme" width="560" height="315" loading="lazy">
               </div>
               <div class="evidence-card__slide">
-                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_2.jpg" alt="DataSafari documentation quick start guide showing explorers subpackage overview and example usage" loading="lazy">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_8.png" alt="Bullish x OnlyFans collaboration branded graphics" width="560" height="315" loading="lazy">
               </div>
               <div class="evidence-card__slide">
-                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_3.jpg" alt="DataSafari documentation quick start guide showing transformers subpackage overview and example usage" loading="lazy">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_9.png" alt="Bullish You Dropped This Crown Meme" width="560" height="315" loading="lazy">
               </div>
               <div class="evidence-card__slide">
-                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_4.jpg" alt="DataSafari documentation quick start guide showing evaluators subpackage overview and example usage" loading="lazy">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_10.png" alt="Bullish on Jetski Meme" width="560" height="315" loading="lazy">
               </div>
               <div class="evidence-card__slide">
-                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_5.jpg" alt="DataSafari documentation quick start guide showing predictors subpackage overview and example usage" loading="lazy">
-              </div>
-              <div class="evidence-card__slide">
-                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_7.jpg" alt="DataSafari quick start guide showing example usage of one-line hypothesis testing function with automatic test selection and output interpretation" loading="lazy">
-              </div>
-              <div class="evidence-card__slide">
-                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_8.jpg" alt="DataSafari quick start guide showing example usage of one-line predict_ml function with automatic preprocessing, model selection, and hyperparameter tuning" loading="lazy">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_11.png" alt="Bullish Sorcery for Green Candles Meme" width="560" height="315" loading="lazy">
               </div>
             </div>
             <div class="evidence-card__slide-dots">
@@ -3020,184 +3001,25 @@ body {
               <button class="evidence-card__slide-dot" aria-label="Show slide 9"></button>
               <button class="evidence-card__slide-dot" aria-label="Show slide 10"></button>
               <button class="evidence-card__slide-dot" aria-label="Show slide 11"></button>
-              <button class="evidence-card__slide-dot" aria-label="Show slide 12"></button>
-              <button class="evidence-card__slide-dot" aria-label="Show slide 13"></button>
             </div>
           </div>
           <div class="evidence-card__body">
-            <div class="evidence-card__domain-tag">
-              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Product
-            </div>
-            <h4 class="evidence-card__title">Website &amp; Documentation</h4>
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Product
+            </span>
+            <p class="evidence-card__title">Bag Worker Asset System</p>
             <ul class="evidence-card__bullets">
-              <li>Hand-coded the full landing site at datasafari.dev — custom HTML, CSS, and JavaScript, designed from scratch to communicate the library's philosophy and quick-start path</li>
-              <li>Authored every page of the Sphinx-generated API docs: installation guides, function references, usage examples, and conceptual explanations for all 11 modules</li>
-              <li>Integrated automated docs build and live-server deployment into the CI/CD pipeline — docs update on every push to main without manual intervention</li>
-            </ul>
-          </div>
-        </div>
-    
-        <!-- ─── CARD 8 · Growth · Brand Identity & Open-Source Presence ─── -->
-        <div class="evidence-card" data-domain="growth">
-          <div class="evidence-card__slides">
-            <div class="evidence-card__slides-track">
-              <div class="evidence-card__slide is-active">
-                <img src="https://camo.githubusercontent.com/8dd84d085f9831fccd31bebe8e468cb7eb3d767b798dd706a4c8ae9801d9838f/68747470733a2f2f7777772e646174617361666172692e6465762f646f63732f5f7374617469632f7468756d62732f64732d6272616e64696e672d7468756d622d6d61696e2d7765622e706e67" alt="DataSafari github repository banner showing logo and tagline 'Complex Workflows, Simple Solutions.' on a desert landscape background" loading="lazy">
-              </div>
-              <div class="evidence-card__slide">
-                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-branding_2.jpg" alt="DataSafari light and dark mode logo variations on clean backgrounds" loading="lazy">
-              </div>
-              <div class="evidence-card__slide">
-                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-branding_3.jpg" alt="DataSafari mini logo used for favicon and library icon, on coding background" loading="lazy">
-              </div>
-    
-            </div>
-            <div class="evidence-card__slide-dots">
-              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
-              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
-              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
-            </div>
-          </div>
-          <div class="evidence-card__body">
-            <div class="evidence-card__domain-tag">
-              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Growth
-            </div>
-            <h4 class="evidence-card__title">Brand Identity &amp; Open-Source Presence</h4>
-            <ul class="evidence-card__bullets">
-              <li>Created the complete DataSafari visual identity from scratch: logo, banner artwork, icon set, and all graphic assets across GitHub, PyPI, and the documentation site</li>
-              <li>Published to PyPI with automated versioning and structured release notes, making the library publicly installable via <code>pip install datasafari</code></li>
-              <li>Maintained a professional open-source presence: README, changelog, issue labels, and a coherent brand that makes a solo-built library read as a production-grade tool</li>
+              <li>Produced 50+ branded assets purpose-built for bag workers to deploy across X</li>
+              <li>Provided a system of visual assets for easy access and sharing, turning coin holders into content deployers</li>
+              <li>Assets were formatted for instant deploy, ready to drop into any X thread or reply</li>
             </ul>
           </div>
         </div>
     
       </div>
     </section>
-    
-    <!-- ============================================================
-        ELEMENT 7 — IN-DEPTH ACCORDION
-    ============================================================ -->
-    <section aria-label="E7: IN DEPTH ACCORDION" class="fade-in">
-      <div class="section-label">
-        <span class="section-label__text">In Depth</span>
-        <span class="section-label__line" aria-hidden="true"></span>
-      </div>
-    
-      <div class="story-accordion" role="list">
-    
-        <!-- Item 1 · Data · The Why -->
-        <div class="story-accordion__item" data-domain="data" role="listitem">
-          <button class="story-accordion__trigger" aria-expanded="true" aria-controls="story-panel-1">
-            <span class="story-accordion__trigger-left">
-              <span class="story-accordion__domain-tag">
-                <span class="story-accordion__domain-dot"></span>Data
-              </span>
-              <span class="story-accordion__trigger-label">Built for the Professor Who Doesn't Have Time to Learn Python</span>
-            </span>
-            <svg class="story-accordion__chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="false">
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-          </button>
-          <div class="story-accordion__body" id="story-panel-1" aria-hidden="false">
-            <div class="story-accordion__inner">
-              <div class="story-accordion__content">
-                <p>At RUG, the standard data science curriculum ran on Stata, R, and SPSS. These tools have decades of academic inertia behind them, not necessarily because they are better, but because professors mastered them before Python became a serious data science platform and have not had time to switch. As a result, students graduate knowing tools that industry has largely moved beyond, while Python's better-maintained, faster, free, and more capable ecosystem goes untaught. Professors and other departmental staff have too much on their hands for a full curriculum redesign.</p>
-                <p>DataSafari started as a direct response to that gap. The hypothesis was simple: bring Python's best statistical and ML libraries together under a single interface that requires no configuration and produces plain-English output. That removes the adoption barrier for the person who most needs it: a researcher who knows their field, understands what a normality test is, but doesn't want to spend two hours reading <code>scipy.stats</code> documentation to run one. One import, one function call, and one readable report.</p>
-                <p>The iPhone analogy is imperfect but directionally useful. R is like Android: powerful, flexible, and beloved by people willing to configure it. DataSafari aims to provide an iOS-like layer on top of Python's underlying ecosystem.</p>
-                <p>That philosophy drove every product decision. It's why <code>method='all'</code> is the default rather than a required argument. It's why output is printed in plain English with interpretive tips instead of being returned as a raw matrix. It's why the function names are verbs such as <code>explore</code>, <code>transform</code>, <code>evaluate</code>, and <code>predict</code>. They describe what the user wants to do, not what the statistics are called. The target user was never a Python expert. It was someone who needed to do real data science work without letting the tooling become the hardest part of the day.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-    
-        <!-- Item 2 · Engineering · Input Engineering -->
-        <div class="story-accordion__item" data-domain="engineering" role="listitem">
-          <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-2">
-            <span class="story-accordion__trigger-left">
-              <span class="story-accordion__domain-tag">
-                <span class="story-accordion__domain-dot"></span>Engineering
-              </span>
-              <span class="story-accordion__trigger-label">Input Engineering: Ask Less, Do More</span>
-            </span>
-            <svg class="story-accordion__chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-          </button>
-          <div class="story-accordion__body" id="story-panel-2" aria-hidden="true">
-            <div class="story-accordion__inner">
-              <div class="story-accordion__content">
-                <p>The hardest design constraint in DataSafari was self-imposed: a user should be able to call any function with just a DataFrame and a column list and get something genuinely useful back. No configuration, statistical expertise, or output parsing should be required. The library decides the rest.</p>
-                <p>Making that work means every function carries a significant amount of internal decision-making that the user never sees. <code>explore_num()</code> takes a single <code>method</code> parameter that defaults to <code>'all'</code> — which means it runs correlation analysis, distribution analysis, three separate outlier detection algorithms (Z-score, IQR, and Mahalanobis distance), and a multicollinearity check in one call. The user passed two arguments. The library ran seven analyses and printed a structured plain-English report. That ratio — minimal input to maximal output — is the whole product.</p>
-                <p>But the API was also designed not to limit experts. Every function offers a full set of parameters for users who want to go deeper: <code>method='outliers_iqr'</code> to isolate a single analysis, <code>output='return'</code> to get structured DataFrames instead of printed text, and <code>threshold_z=2</code> to tighten the Z-score cutoff for a stricter definition of an outlier. The one-liner is the entry point; the parameters are the escape hatches. Designing that layered experience, where simple stays simple and complexity remains possible, required thinking through every plausible user intent before writing a single line of logic, then ensuring the implementation served them all without conflict.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-    
-        <!-- Item 3 · Engineering · Error Handling as UX -->
-        <div class="story-accordion__item" data-domain="engineering" role="listitem">
-          <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-3">
-            <span class="story-accordion__trigger-left">
-              <span class="story-accordion__domain-tag">
-                <span class="story-accordion__domain-dot"></span>Engineering
-              </span>
-              <span class="story-accordion__trigger-label">Error Handling as User Experience</span>
-            </span>
-            <svg class="story-accordion__chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-          </button>
-          <div class="story-accordion__body" id="story-panel-3" aria-hidden="true">
-            <div class="story-accordion__inner">
-              <div class="story-accordion__content">
-                <p>A Python traceback is the last thing a researcher wants to see at 11pm before a deadline. Every public function in DataSafari raises structured, specific errors before it does any computation — and the error messages are written for the person calling the function, not for the developer who wrote it.</p>
-                <p>The error handling layer sits entirely above the statistical logic. Before <code>explore_num()</code> touches a single column, it checks: is <code>df</code> actually a DataFrame? Is <code>numerical_variables</code> a list? Are the strings in that list real column names that exist in <code>df</code>? Are those columns actually numerical? Is the list non-empty? Is the DataFrame non-empty? Is <code>method</code> one of the seven valid options? Is <code>output</code> one of the two valid options? Is <code>threshold_z</code> a number? That's nine distinct failure modes caught and surfaced with a clear message and a correct-usage example — before a single line of analysis runs. Every one of those checks exists because someone, at some point during development and testing, made exactly that mistake.</p>
-                <p>The discipline behind this is that a library function has no UI. The error message <em>is</em> the UI. If a user passes a string where a list is expected and gets back <code>TypeError: 'str' object is not iterable</code>, that's a failed product moment — they have to reverse-engineer what went wrong from a generic Python exception. If they get back <code>"explore_num(): The numerical_variables parameter must be a list of variable names. Example: var_list = ['var1', 'var2', 'var3']"</code>, they fix it in ten seconds and move on. That difference is entirely a writing problem, not a coding one, and it took as much time to get right as the statistical methods themselves.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-    
-        <!-- Item 4 · Engineering · The Hidden 80% -->
-        <div class="story-accordion__item" data-domain="engineering" role="listitem">
-          <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-4">
-            <span class="story-accordion__trigger-left">
-              <span class="story-accordion__domain-tag">
-                <span class="story-accordion__domain-dot"></span>Engineering
-              </span>
-              <span class="story-accordion__trigger-label">The Hidden 80%: What It Actually Takes to Ship a Python Package</span>
-            </span>
-            <svg class="story-accordion__chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-          </button>
-          <div class="story-accordion__body" id="story-panel-4" aria-hidden="true">
-            <div class="story-accordion__inner">
-              <div class="story-accordion__content">
-                <p>The data science code, including the statistical methods, ML pipeline, and EDA logic, represents perhaps 20% of what it took to ship DataSafari. The other 80% consists of infrastructure decisions that tutorials rarely cover and that took weeks of research to get right.</p>
-                <p>The production configuration alone spans a dozen files beyond the package source itself:</p>
-                <ul>
-                  <li><code>pyproject.toml:</code> unified build, dependency, and tool configuration via Poetry and Setuptools</li>
-                  <li><code>bumpversion.cfg:</code> automated semantic versioning with bump2version, wired to the CI pipeline to auto-increment on tagged releases</li>
-                  <li><code>tox.ini:</code> multi-environment test runner across Python 3.9 to 3.12, so no version-specific regression ships undetected</li>
-                  <li><code>setup.cfg</code> and <code>MANIFEST.in:</code> package inclusion rules to control exactly what ends up in the wheel and sdist</li>
-                  <li><code>pyproject.toml:</code> Bandit config block, with the static security scan tuned to ignore specific false-positive patterns in the codebase</li>
-                  <li><code>LICENSE:</code> GPL-3.0, chosen deliberately: use it freely, but derivatives stay open</li>
-                  <li><code>Sphinx's conf.py:</code> the full documentation build configuration, including the Napoleon extension for Google-style docstrings, the Furo theme, and cross-reference resolution</li>
-                </ul>
-                <p></p>
-                <p>Every one of those files required learning a tool I hadn't used before, reading its documentation, making it work with the others, and then making the entire stack reproducible in GitHub Actions. The CI pipeline didn't run cleanly on the first push or even the tenth. Over the development lifecycle, 136 issues were filed and closed, most of them documenting this kind of integration friction and its solution.</p>
-                <p>Documentation was another substantial layer of the work, especially the documentation users encounter inside the library: the <code>docstrings</code>. Every public function in DataSafari has a complete docstring with typed parameters, return types, raised exceptions, and a working code example that produces real output. More than 20 functions, including non-public ones, are documented to the point that <code>help(ds.explore_num)</code> gives a new user everything needed to use the function correctly without opening a browser. Writing that documentation took longer than writing some of the functions themselves.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-    
-      </div>
-    </section>
 
-
-</main></div></div><div id="a1a01e5f499c00d5379092847af6a6d7" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1788448598"></div></div></div></div></div><div id="wb_footer_a1a01e5f44000071bc973da1ec13cbfc" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+</main></div></div><div id="a1a06787cd450253aebf2a5b8b5bea9d" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1788448598"></div></div></div></div></div><div id="wb_footer_a1a06787c97900e02e56b45a98c7fa9d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(

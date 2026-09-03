@@ -45,6 +45,13 @@
 			'type' => 0
 		),
 		array(
+			'id' => 'a1a06787c97900e02e56b45a98c7fa9d',
+			'alias' => 'cryptopandemic',
+			'file' => 'a1a06787c97900e02e56b45a98c7fa9d.php',
+			'controllers' => array(),
+			'type' => 0
+		),
+		array(
 			'id' => 'a18bddd8a85d031c03b1af770b1fc6b6',
 			'alias' => 'hobbies',
 			'file' => 'a18bddd8a85d031c03b1af770b1fc6b6.php',
@@ -159,13 +166,14 @@
 	$langs = null;
 	$def_lang = null;
 	$base_lang = 'en';
-	$site_id = '78e86077';
+	$site_id = '11e00f62';
 	${'sitemapUrls'} = array(
 		'https://georgedreemer.com/',
 		'https://georgedreemer.com/thoughtbubble',
 		'https://georgedreemer.com/skipschoolmakemoney',
 		'https://georgedreemer.com/dreemcorp',
 		'https://georgedreemer.com/datasafari',
+		'https://georgedreemer.com/cryptopandemic',
 		'https://georgedreemer.com/stack',
 		'https://georgedreemer.com/blog',
 		'https://georgedreemer.com/blog/datasafari/introduction',
