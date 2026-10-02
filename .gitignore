@@ -28,3 +28,87 @@ Thumbs.db
 # Dependencies
 node_modules/
 vendor/
+
+cat >> .gitignore <<'EOF'
+
+# ── Graphic / creative SOURCE files (live on disk only, never committed) ──
+# GIMP
+*.xcf
+*.xcf.gz
+*.xcf.bz2
+# Adobe
+*.psd
+*.psb
+*.psdt
+*.ai
+*.indd
+*.idml
+*.aep
+*.aepx
+*.prproj
+*.prel
+*.aet
+*.xd
+*.lrcat
+*.lrcat-data
+*.lrdata/
+# Affinity
+*.afphoto
+*.afdesign
+*.afpub
+*.aftemplate
+*.afassets
+*.afbrushes
+# DaVinci Resolve
+*.drp
+*.dra
+*.drt
+*.drfx
+*.resolve
+*.resolve.lock
+*.dprj
+CacheClip/
+.gallery/
+# Other video / motion
+*.fcpbundle/
+*.imovielibrary/
+*.motn
+*.mocha
+# Figma / Sketch / Canva-style design
+*.fig
+*.sketch
+# Painting / illustration
+*.kra
+*.kra~
+*.clip
+*.procreate
+*.ora
+*.mdp
+*.sai
+*.sai2
+# 3D / VFX
+*.blend
+*.blend1
+*.c4d
+*.ma
+*.mb
+*.max
+*.zpr
+*.ztl
+*.spp
+*.sbsar
+# Fonts / vector source
+*.glyphs
+*.glyphspackage/
+*.vfb
+*.fla
+# Audio session / project files (cover art, playlists, etc.)
+*.logicx/
+*.band/
+*.als
+*.flp
+*.ptx
+*.aup3
+*.cpr
+*.rpp
+EOF
