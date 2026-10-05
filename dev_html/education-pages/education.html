@@ -7,7 +7,7 @@
     <!-- [ EDUCATION HUB ]-->
     <title>Education Hub — MSc Data Science, Degrees, Certifications & Stack · George Dreemer</title>
 
-    <!-- SEO Meta Data -->
+    <!-- SEO Meta Data (source: seo/meta.html) -->
     <meta name="description"
         content="George Dreemer's Education Hub covering his MSc in Marketing Analytics & Data Science at the University of Groningen, BA in Marketing & Business at Hampshire College, certifications, awards, community leadership, and technical stack across Python, R, SQL, machine learning, and full-stack development.">
     <meta name="keywords"
@@ -27,7 +27,7 @@
         content="George Dreemer's Education Hub: degrees, certifications, awards, community leadership, and a technical stack spanning Python, R, SQL, machine learning, and full-stack development.">
     <meta name="twitter:image" content="https://georgedreemer.com/ncsitebuilder/gallery/dxyz-academic-thumb.png">
 
-    <!-- SEO Schema JSON (source: seo/schema/education_schema.json) - NEEDS TO BE UPDATED -->
+    <!-- SEO Schema JSON (source: seo/schema/education_schema.json) -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -36,8 +36,8 @@
             "@type": ["WebPage", "ProfilePage"],
             "@id": "https://georgedreemer.com/education#webpage",
             "url": "https://georgedreemer.com/education",
-            "name": "Education & Stack — MSc Data Science & Skills · George Dreemer",
-            "description": "George Dreemer's education and technical stack. MSc in Marketing Analytics & Data Science, University of Groningen. Skills spanning Python, machine learning, data engineering, SQL, and full-stack development.",
+            "name": "Education Hub — MSc Data Science, Degrees, Certifications & Stack · George Dreemer",
+            "description": "George Dreemer's Education Hub covering his MSc in Marketing Analytics & Data Science at the University of Groningen, BA in Marketing & Business at Hampshire College, certifications, awards, community leadership, and technical stack across Python, R, SQL, machine learning, and full-stack development.",
             "isPartOf": {
                 "@type": "WebSite",
                 "@id": "https://georgedreemer.com/#website",
@@ -75,7 +75,7 @@
                 {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "Education & Stack",
+                "name": "Education Hub",
                 "item": "https://georgedreemer.com/education"
                 }
             ]
@@ -86,14 +86,23 @@
             "name": "George Dreemer",
             "url": "https://georgedreemer.com",
             "jobTitle": "Data Scientist & Developer",
-            "description": "Data scientist, developer, and entrepreneur. Creator of DataSafari, founder of CryptoPandemic. MSc in Marketing Analytics & Data Science, University of Groningen.",
-            "alumniOf": {
+            "description": "Data scientist, developer, and entrepreneur with an MSc in Marketing Analytics & Data Science from the University of Groningen and a BA in Marketing & Business from Hampshire College.",
+            "alumniOf": [
+                {
                 "@type": "CollegeOrUniversity",
                 "@id": "https://www.rug.nl/#organization",
                 "name": "University of Groningen",
                 "url": "https://www.rug.nl",
                 "sameAs": "https://en.wikipedia.org/wiki/University_of_Groningen"
-            },
+                },
+                {
+                "@type": "CollegeOrUniversity",
+                "@id": "https://www.hampshire.edu/#organization",
+                "name": "Hampshire College",
+                "url": "https://www.hampshire.edu",
+                "sameAs": "https://en.wikipedia.org/wiki/Hampshire_College"
+                }
+            ],
             "hasCredential": [
                 {
                 "@type": "EducationalOccupationalCredential",
@@ -106,7 +115,27 @@
                 },
                 {
                 "@type": "EducationalOccupationalCredential",
-                "name": "Associate Data Scientist in Python",
+                "name": "BA Marketing & Business",
+                "credentialCategory": "degree",
+                "educationalLevel": "Bachelor's degree",
+                "recognizedBy": {
+                    "@id": "https://www.hampshire.edu/#organization"
+                }
+                },
+                {
+                "@type": "EducationalOccupationalCredential",
+                "name": "Professional Data Scientist",
+                "credentialCategory": "certificate",
+                "url": "https://www.datacamp.com/completed/statement-of-accomplishment/track/61c10c7c89eda0525178ea565d88fce131b33597",
+                "recognizedBy": {
+                    "@type": "Organization",
+                    "name": "DataCamp",
+                    "url": "https://www.datacamp.com"
+                }
+                },
+                {
+                "@type": "EducationalOccupationalCredential",
+                "name": "Associate Data Scientist",
                 "credentialCategory": "certificate",
                 "url": "https://www.datacamp.com/completed/statement-of-accomplishment/track/c9819562725564e717c762be83bee6db7dc90bf4",
                 "recognizedBy": {
@@ -117,32 +146,115 @@
                 },
                 {
                 "@type": "EducationalOccupationalCredential",
-                "name": "Professional Data Scientist in Python",
-                "credentialCategory": "certificate",
-                "url": "https://www.datacamp.com/completed/statement-of-accomplishment/track/61c10c7c89eda0525178ea565d88fce131b33597",
+                "name": "TOEFL iBT",
+                "credentialCategory": "test score credential",
                 "recognizedBy": {
                     "@type": "Organization",
-                    "name": "DataCamp",
-                    "url": "https://www.datacamp.com"
+                    "name": "Educational Testing Service",
+                    "url": "https://www.ets.org"
                 }
+                },
+                {
+                "@type": "EducationalOccupationalCredential",
+                "name": "C1 Advanced (CAE)",
+                "credentialCategory": "certificate",
+                "recognizedBy": {
+                    "@type": "Organization",
+                    "name": "Cambridge Assessment English",
+                    "url": "https://www.cambridgeenglish.org"
+                }
+                }
+            ],
+            "award": [
+                "Valley Venture Mentor's Startup Accelerator Award",
+                "Harold Grinspoon Foundation's Recognition Award of Entrepreneurial Spirit",
+                "Israeli-Bulgarian Institute's National Essay Award — Rescue of the Bulgarian Jews during WW II",
+                "Rotary International's RYLA Award (RYLArian)",
+                "Rotary International's RYLA Debate Winner Award"
+            ],
+            "memberOf": [
+                {
+                "@type": "Organization",
+                "name": "Rotary International"
+                },
+                {
+                "@type": "Organization",
+                "name": "UMass Amherst Entrepreneurship Club"
+                },
+                {
+                "@type": "Organization",
+                "name": "Berthiaume Center for Entrepreneurship"
+                },
+                {
+                "@type": "Organization",
+                "name": "Seed Fund for Innovation"
+                },
+                {
+                "@type": "Organization",
+                "name": "Giving Back Den Haag"
                 }
             ],
             "knowsAbout": [
                 "Python",
+                "R",
+                "SQL",
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "PHP",
                 "Machine Learning",
                 "Data Science",
                 "Data Engineering",
-                "SQL",
-                "R",
-                "JavaScript",
                 "Marketing Analytics",
                 "Statistical Modeling",
-                "Full-Stack Web Development"
+                "Causal Inference",
+                "Churn Modeling",
+                "Text Mining",
+                "Time-Series Analysis",
+                "Cluster Analysis",
+                "Full-Stack Web Development",
+                "Stata",
+                "SPSS",
+                "Graphic Design",
+                "Video Editing",
+                "Adobe Illustrator",
+                "Adobe Photoshop",
+                "Adobe After Effects",
+                "Affinity Studio",
+                "DaVinci Resolve",
+                "ComfyUI",
+                "Stable Diffusion",
+                "Google AI Studio",
+                "MCP",
+                "n8n"
+            ],
+            "knowsLanguage": [
+                {
+                "@type": "Language",
+                "name": "English"
+                },
+                {
+                "@type": "Language",
+                "name": "Bulgarian"
+                },
+                {
+                "@type": "Language",
+                "name": "Dutch"
+                },
+                {
+                "@type": "Language",
+                "name": "Russian"
+                },
+                {
+                "@type": "Language",
+                "name": "Hebrew"
+                }
             ],
             "sameAs": [
                 "https://www.linkedin.com/in/georgedreemer",
                 "https://github.com/ETA444",
-                "https://x.com/444eta"
+                "https://x.com/444eta",
+                "https://www.dreemer.xyz"
             ]
             }
         ]
