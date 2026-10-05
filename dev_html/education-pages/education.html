@@ -29,7 +29,124 @@
 
     <!-- SEO Schema JSON (source: seo/schema/education_schema.json) - NEEDS TO BE UPDATED -->
     <script type="application/ld+json">
-
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+            "@type": ["WebPage", "ProfilePage"],
+            "@id": "https://georgedreemer.com/education#webpage",
+            "url": "https://georgedreemer.com/education",
+            "name": "Education & Stack — MSc Data Science & Skills · George Dreemer",
+            "description": "George Dreemer's education and technical stack. MSc in Marketing Analytics & Data Science, University of Groningen. Skills spanning Python, machine learning, data engineering, SQL, and full-stack development.",
+            "isPartOf": {
+                "@type": "WebSite",
+                "@id": "https://georgedreemer.com/#website",
+                "url": "https://georgedreemer.com",
+                "name": "George Dreemer"
+            },
+            "about": {
+                "@id": "https://georgedreemer.com/#person"
+            },
+            "mainEntity": {
+                "@id": "https://georgedreemer.com/#person"
+            },
+            "breadcrumb": {
+                "@id": "https://georgedreemer.com/education#breadcrumb"
+            },
+            "primaryImageOfPage": {
+                "@type": "ImageObject",
+                "url": "https://georgedreemer.com/ncsitebuilder/gallery/dxyz-academic-thumb.png",
+                "width": 1200,
+                "height": 630
+            },
+            "dateModified": "2026-10-05",
+            "inLanguage": "en-US"
+            },
+            {
+            "@type": "BreadcrumbList",
+            "@id": "https://georgedreemer.com/education#breadcrumb",
+            "itemListElement": [
+                {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "George Dreemer",
+                "item": "https://georgedreemer.com"
+                },
+                {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Education & Stack",
+                "item": "https://georgedreemer.com/education"
+                }
+            ]
+            },
+            {
+            "@type": "Person",
+            "@id": "https://georgedreemer.com/#person",
+            "name": "George Dreemer",
+            "url": "https://georgedreemer.com",
+            "jobTitle": "Data Scientist & Developer",
+            "description": "Data scientist, developer, and entrepreneur. Creator of DataSafari, founder of CryptoPandemic. MSc in Marketing Analytics & Data Science, University of Groningen.",
+            "alumniOf": {
+                "@type": "CollegeOrUniversity",
+                "@id": "https://www.rug.nl/#organization",
+                "name": "University of Groningen",
+                "url": "https://www.rug.nl",
+                "sameAs": "https://en.wikipedia.org/wiki/University_of_Groningen"
+            },
+            "hasCredential": [
+                {
+                "@type": "EducationalOccupationalCredential",
+                "name": "MSc Marketing Analytics & Data Science",
+                "credentialCategory": "degree",
+                "educationalLevel": "Master's degree",
+                "recognizedBy": {
+                    "@id": "https://www.rug.nl/#organization"
+                }
+                },
+                {
+                "@type": "EducationalOccupationalCredential",
+                "name": "Associate Data Scientist in Python",
+                "credentialCategory": "certificate",
+                "url": "https://www.datacamp.com/completed/statement-of-accomplishment/track/c9819562725564e717c762be83bee6db7dc90bf4",
+                "recognizedBy": {
+                    "@type": "Organization",
+                    "name": "DataCamp",
+                    "url": "https://www.datacamp.com"
+                }
+                },
+                {
+                "@type": "EducationalOccupationalCredential",
+                "name": "Professional Data Scientist in Python",
+                "credentialCategory": "certificate",
+                "url": "https://www.datacamp.com/completed/statement-of-accomplishment/track/61c10c7c89eda0525178ea565d88fce131b33597",
+                "recognizedBy": {
+                    "@type": "Organization",
+                    "name": "DataCamp",
+                    "url": "https://www.datacamp.com"
+                }
+                }
+            ],
+            "knowsAbout": [
+                "Python",
+                "Machine Learning",
+                "Data Science",
+                "Data Engineering",
+                "SQL",
+                "R",
+                "JavaScript",
+                "Marketing Analytics",
+                "Statistical Modeling",
+                "Full-Stack Web Development"
+            ],
+            "sameAs": [
+                "https://www.linkedin.com/in/georgedreemer",
+                "https://github.com/ETA444",
+                "https://x.com/444eta"
+            ]
+            }
+        ]
+    }
     </script>
 
     <!-- Preconnect to Google Fonts & Pull Nunito, Playfair Display -->
