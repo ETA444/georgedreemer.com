@@ -587,6 +587,27 @@ function isHttps() {
 			|| isset($_SERVER['HTTP_SSL']) && $_SERVER['HTTP_SSL']);
 }
 
+/**
+ * Check whether an uploaded file is considered dangerous (executable or
+ * server-side script) and therefore must not be stored on the server.
+ * @param string $fileName original file name (may also be just an extension)
+ * @return bool
+ */
+function isDangerousUploadedFile($fileName) {
+	$ext = pathinfo($fileName, PATHINFO_EXTENSION);
+	if (!is_string($ext) || $ext === '') {
+		return false;
+	}
+	$ext = mbStrtolower($ext);
+	return in_array($ext, array(
+		'php', 'php3', 'php4', 'php5', 'php7', 'phtml', 'phps', 'phar',
+		'aspx', 'ascx', 'ashx', 'asmx', 'asp', 'config',
+		'jsp', 'jspx', 'do', 'action',
+		'cgi', 'pl', 'py', 'rb', 'sh',
+		'cfm', 'cfc', 'js', 'exe', 'dll', 'elf',
+	));
+}
+
 function handleForms($page_id, SiteInfo $siteInfo) {
 	global $post;
 	$forms = $siteInfo->forms;
@@ -1627,6 +1648,22 @@ function genSitemap()
 		$xml = str_replace('{{base_url}}', getBaseUrl(), $xml);
 		header('Content-Type: application/xml; charset=UTF-8');
 		echo $xml;
+		exit();
+	}
+}
+
+function isSitemapXslUrl(SiteRequestInfo $requestInfo)
+{
+	return trim($requestInfo->requestUri, '/') === 'sitemap.xsl';
+}
+
+function genSitemapXsl()
+{
+	$file = __DIR__.'/sitemap.xsl';
+	$xsl = is_file($file) ? file_get_contents($file) : '';
+	if ($xsl) {
+		header('Content-Type: text/xsl; charset=UTF-8');
+		echo $xsl;
 		exit();
 	}
 }

@@ -23,18 +23,15 @@
 	<?php echo isset($sitemapUrls) ? (generateCanonicalUrl($sitemapUrls)."\n") : ""; ?>	
 	
 						<meta name="viewport" content="width=device-width, initial-scale=1" />
-					<meta name="description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "DataSafari is a Python library by George Dreemer that simplifies complex data science tasks — compressing the full data workflow into a one-liner API across 11 functions, 4 subpackages, and 250+ tests. Available on PyPI."); ?>" />
-			<meta name="keywords" content="<?php echo htmlspecialchars((isset($seoKeywords) && $seoKeywords !== "") ? $seoKeywords : "DataSafari,datasafari,George Dreemer,Python library,data science library,machine learning library,automated EDA,hypothesis testing,ML pipeline,data science workflow,data transformation,PyPI package,open source Python,scikit-learn,pandas,scipy,statsmodels"); ?>" />
-				<meta property="og:site_name" content="George Dreemer — Data Scientist, Developer & Entrepreneur">
+								<meta property="og:site_name" content="George Dreemer — Data Scientist, Developer & Entrepreneur">
 	
 	<!-- Facebook Open Graph -->
-			<meta property="og:description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "DataSafari is a Python library by George Dreemer that simplifies complex data science tasks — compressing the full data workflow into a one-liner API across 11 functions, 4 subpackages, and 250+ tests. Available on PyPI."); ?>" />
-					<!-- Facebook Open Graph end -->
+						<!-- Facebook Open Graph end -->
 
 		<meta name="generator" content="Website Builder" />
-			<link href="css/common-bundle.css?ts=20260903181636" rel="stylesheet" type="text/css" />
+			<link href="css/common-bundle.css?ts=20261005185245" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese" rel="stylesheet" type="text/css" />
-	<link href="css/a1a01e5f44000071bc973da1ec13cbfc-bundle.css?ts=20260903181636" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
+	<link href="css/a1a01e5f44000071bc973da1ec13cbfc-bundle.css?ts=20261005185245" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
 	<ga-code/><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
      SECTION 1 — GLOBAL
      Settings → Meta Tags (site-wide, always present)
@@ -71,21 +68,17 @@
 </script>
 	<!-- SEO Meta Data (source: meta.html) -->
 <title>DataSafari — Data Science Python Library · George Dreemer</title>
-<meta name="description"
-content="DataSafari is a Python library by George Dreemer that simplifies complex data science tasks — compressing the full data workflow into a one-liner API across 11 functions, 4 subpackages, and 250+ tests. Available on PyPI.">
-<meta name="keywords"
-content="DataSafari, datasafari, George Dreemer, Python library, data science library, machine learning library, automated EDA, hypothesis testing, ML pipeline, data science workflow, data transformation, PyPI package, open source Python, scikit-learn, pandas, scipy, statsmodels">
+<meta name="description" content="DataSafari is a Python library by George Dreemer that simplifies complex data science tasks — compressing the full data workflow into a one-liner API across 11 functions, 4 subpackages, and 250+ tests. Available on PyPI.">
+<meta name="keywords" content="DataSafari, datasafari, George Dreemer, Python library, data science library, machine learning library, automated EDA, hypothesis testing, ML pipeline, data science workflow, data transformation, PyPI package, open source Python, scikit-learn, pandas, scipy, statsmodels">
 <link rel="canonical" href="https://georgedreemer.com/datasafari">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://georgedreemer.com/datasafari">
 <meta property="og:title" content="DataSafari — Data Science Python Library · George Dreemer">
-<meta property="og:description"
-content="DataSafari is a Python library by George Dreemer that simplifies complex data science tasks — compressing the full data workflow into a one-liner API across 11 functions, 4 subpackages, and 250+ tests. Available on PyPI.">
+<meta property="og:description" content="DataSafari is a Python library by George Dreemer that simplifies complex data science tasks — compressing the full data workflow into a one-liner API across 11 functions, 4 subpackages, and 250+ tests. Available on PyPI.">
 <meta property="og:image" content="https://datasafari.dev/ncsitebuilder/gallery/ds-branding-thumb-main-web.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="DataSafari — Data Science Python Library · George Dreemer">
-<meta name="twitter:description"
-content="DataSafari is a Python library by George Dreemer that simplifies complex data science tasks — compressing the full data workflow into a one-liner API across 11 functions, 4 subpackages, and 250+ tests. Available on PyPI.">
+<meta name="twitter:description" content="DataSafari is a Python library by George Dreemer that simplifies complex data science tasks — compressing the full data workflow into a one-liner API across 11 functions, 4 subpackages, and 250+ tests. Available on PyPI.">
 <meta name="twitter:image" content="https://datasafari.dev/ncsitebuilder/gallery/ds-branding-thumb-main-web.png">
 
 <!-- SEO Schema JSON -->
@@ -185,9 +178,7 @@ content="DataSafari is a Python library by George Dreemer that simplifies comple
 <!-- Preconnect to Google Fonts & Pull Nunito, Playfair Display -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap"
-rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 
 <!-- Pull Lucide icons -->
 <script data-custom-script="true" src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
@@ -2197,7 +2188,7 @@ body {
 </head>
 
 
-<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a1a01e5f44000071bc973da1ec13cbfc" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a01e5f499800f0cd3f9f8cb8c2d331" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a01e5f499901a1e0f365241477c5ba" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a01e5f49990293f1447872abde585d" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1788448598"></a></div></div></div><div id="a1a01e5f499a019f20587af60a556477" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a01e5f499903512f3c09b8f4af547b" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1788448598"></a></div></div></div></div></div><div id="a1a01e5f499d00b18166029b14485d60" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a1a01e5f44000071bc973da1ec13cbfc" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a01e5f499800f0cd3f9f8cb8c2d331" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a01e5f499901a1e0f365241477c5ba" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a01e5f49990293f1447872abde585d" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1791215566"></a></div></div></div><div id="a1a01e5f499a019f20587af60a556477" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a01e5f499903512f3c09b8f4af547b" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1791215566"></a></div></div></div></div></div><div id="a1a01e5f499d00b18166029b14485d60" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -2279,7 +2270,7 @@ body {
 			'children' => array()
 		)
 	)
-)); ?><div class="clearfix"></div></div></div></div><div id="a1a01e5f499a00adaf4b031f17d99ade" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a01e5f4999040dcefc7cf2ca8a5a85" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a01e5f499905aaa5135d88c99ca67e" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/6460cebc12e7dc68f373f0c06858517e_fit.png?ts=1788448598"></div></div></div></div></div></div></div></div></div></div></div><div id="wb_main_a1a01e5f44000071bc973da1ec13cbfc" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a01e5f499900621f8f575873cb25ef" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1788448598"></div></div></div><div id="a1a01e5f499b007ba31af7cab22afea1" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><main class="preview-page" role="main">
+)); ?><div class="clearfix"></div></div></div></div><div id="a1a01e5f499a00adaf4b031f17d99ade" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a01e5f4999040dcefc7cf2ca8a5a85" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a01e5f499905aaa5135d88c99ca67e" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/6460cebc12e7dc68f373f0c06858517e_fit.png?ts=1791215566"></div></div></div></div></div></div></div></div></div></div></div><div id="wb_main_a1a01e5f44000071bc973da1ec13cbfc" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a01e5f499900621f8f575873cb25ef" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1791215566"></div></div></div><div id="a1a01e5f499b007ba31af7cab22afea1" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><main class="preview-page" role="main">
 
     <!-- ============================================================
         ELEMENT 1 — CONTEXT BLOCK
@@ -3197,7 +3188,7 @@ body {
     </section>
 
 
-</main></div></div><div id="a1a01e5f499c00d5379092847af6a6d7" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1788448598"></div></div></div></div></div><div id="wb_footer_a1a01e5f44000071bc973da1ec13cbfc" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+</main></div></div><div id="a1a01e5f499c00d5379092847af6a6d7" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1791215566"></div></div></div></div></div><div id="wb_footer_a1a01e5f44000071bc973da1ec13cbfc" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -3299,7 +3290,7 @@ body {
 
 <p class="wb-stl-footer" style="text-align: center;"><a data-_="Link" href="anabolickmusick.com" target="_blank" title="anabolic musick's official website">anabolickmusick.com</a></p>
 </div><div id="a18bddd77e4a320a360cd08aa5891d23" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: center;"><span style="color:rgba(255,255,255,1);">© 2024 <a href="https://www.georgedreemer.com">G</a><a href="https://www.dreemer.xyz">eorge Dreemer</a></span></p>
-</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1788448598"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
+</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1791215566"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
 			$(function() {
 				var footer = $(".wb_footer");
 				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
@@ -3309,7 +3300,8 @@ body {
 					footer.css({height: ""});
 				}
 			});
-			});</script></div></div></div><style>
+			});</script></div></div></div></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
+	<script src="js/common-bundle.js?ts=20261005185245" type="text/javascript" defer></script>{{hr_out}}<style>
 .image-height-mod {
 height: 100%;
 }
@@ -3524,8 +3516,7 @@ document.querySelectorAll('[data-yt-track]').forEach(track => {
   });
 });
 
-</script></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
-	<script src="js/common-bundle.js?ts=20260903181636" type="text/javascript" defer></script>{{hr_out}}<script>
+</script><script>
     document.addEventListener('DOMContentLoaded', function () {
         window._spDefer.done();
     });

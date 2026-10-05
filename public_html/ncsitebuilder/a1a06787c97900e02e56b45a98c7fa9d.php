@@ -23,16 +23,15 @@
 	<?php echo isset($sitemapUrls) ? (generateCanonicalUrl($sitemapUrls)."\n") : ""; ?>	
 	
 						<meta name="viewport" content="width=device-width, initial-scale=1" />
-					<meta name="description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "CryptoPandemic is George Dreemer's Web3 brand studio engineering contagious crypto experiences — on-chain analytics fused with cryptoon storytelling. Drove BULLISH to a \$13M peak market cap on Solana."); ?>" />
-					<meta property="og:site_name" content="George Dreemer — Data Scientist, Developer & Entrepreneur">
+								<meta property="og:site_name" content="George Dreemer — Data Scientist, Developer & Entrepreneur">
 	
 	<!-- Facebook Open Graph -->
 						<!-- Facebook Open Graph end -->
 
 		<meta name="generator" content="Website Builder" />
-			<link href="css/common-bundle.css?ts=20260903181636" rel="stylesheet" type="text/css" />
+			<link href="css/common-bundle.css?ts=20261005185245" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese" rel="stylesheet" type="text/css" />
-	<link href="css/a1a06787c97900e02e56b45a98c7fa9d-bundle.css?ts=20260903181636" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
+	<link href="css/a1a06787c97900e02e56b45a98c7fa9d-bundle.css?ts=20261005185245" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
 	<ga-code/><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
      SECTION 1 — GLOBAL
      Settings → Meta Tags (site-wide, always present)
@@ -67,22 +66,21 @@
 	window.disableRightClick = false;
 	window.currLang = 'en';
 </script>
-	<title>CryptoPandemic — Viral Web3 Marketing & On-Chain Analytics · George Dreemer</title>
+	<title>CryptoPandemic — Viral Web3 Marketing &amp; On-Chain Analytics · George Dreemer</title>
 
 <!-- SEO Meta Data — source: meta.html -->
-<meta name="description"
-  content="CryptoPandemic is George Dreemer's Web3 brand studio engineering contagious crypto experiences — on-chain analytics fused with cryptoon storytelling. Drove BULLISH to a $13M peak market cap on Solana.">
+<meta name="description" content="CryptoPandemic is George Dreemer's Web3 brand studio engineering contagious crypto experiences — on-chain analytics fused with cryptoon storytelling. Drove BULLISH to a $13M peak market cap on Solana.">
 <meta name="keywords" content="cryptopandemic, george dreemer cryptopandemic, web3 marketing, solana marketing, crypto marketing agency, blockchain analytics, web3 design, on-chain strategy, solana growth, brand identity web3, crypto brand strategy, holder profiling, cryptoons, crypto cartoon series, bullish solana, ai content pipeline, meme coin marketing, crypto twitter growth, founder creative director">
 
 <link rel="canonical" href="https://georgedreemer.com/cryptopandemic">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://georgedreemer.com/cryptopandemic">
-<meta property="og:title" content="CryptoPandemic — Viral Web3 Marketing & Analytics on Solana">
+<meta property="og:title" content="CryptoPandemic — Viral Web3 Marketing &amp; Analytics on Solana">
 <meta property="og:description" content="CryptoPandemic engineers contagious Web3 experiences — from brand identity to on-chain strategy. We don't help projects grow. We make them spread. Drove BULLISH to a $13M peak on Solana.">
 <meta property="og:image" content="https://cryptopandemic.com/images/landing/og-image.png">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="CryptoPandemic — Viral Web3 Marketing & Analytics on Solana">
+<meta name="twitter:title" content="CryptoPandemic — Viral Web3 Marketing &amp; Analytics on Solana">
 <meta name="twitter:description" content="CryptoPandemic engineers contagious Web3 experiences. We don't help projects grow. We make them spread.">
 <meta name="twitter:image" content="https://cryptopandemic.com/images/landing/og-image.png">
 
@@ -213,9 +211,7 @@
 <!-- Preconnect to Google Fonts & Pull Nunito, Playfair Display -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap"
-rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 
 <!-- Pull Lucide icons -->
 <script data-custom-script="true" src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
@@ -2225,7 +2221,7 @@ body {
 </head>
 
 
-<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a1a06787c97900e02e56b45a98c7fa9d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a06787cd43002a3e0987ec22c0e7e8" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a06787cd4302f2b9bd4d33903966ef" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a06787cd43036f40a669605694470a" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1788448598"></a></div></div></div><div id="a1a06787cd4403c38d3f700fdf76c2a3" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a06787cd4304a9b550abac5cf2bec8" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1788448598"></a></div></div></div></div></div><div id="a1a06787cd5500c6e59d1e9556ababf3" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a1a06787c97900e02e56b45a98c7fa9d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a06787cd43002a3e0987ec22c0e7e8" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a06787cd4302f2b9bd4d33903966ef" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a06787cd43036f40a669605694470a" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1791215567"></a></div></div></div><div id="a1a06787cd4403c38d3f700fdf76c2a3" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a06787cd4304a9b550abac5cf2bec8" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1791215567"></a></div></div></div></div></div><div id="a1a06787cd5500c6e59d1e9556ababf3" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -2307,7 +2303,7 @@ body {
 			'children' => array()
 		)
 	)
-)); ?><div class="clearfix"></div></div></div></div><div id="a1a06787cd44026b1f3ae74006f2742d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a06787cd4305ccf715ad0b2f236273" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a06787cd44006ae7a1b642f0afce92" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/95860ffc37c3f86f21a70afe843cf1cb_fit.png?ts=1788448598"></div></div></div></div></div></div></div></div></div></div></div><div id="wb_main_a1a06787c97900e02e56b45a98c7fa9d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a06787cd4301cf802e520e4bc3c1cd" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1788448598"></div></div></div><div id="a1a06787cd45000b58eb93e0c6c0a7ee" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><main class="preview-page" role="main">
+)); ?><div class="clearfix"></div></div></div></div><div id="a1a06787cd44026b1f3ae74006f2742d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a06787cd4305ccf715ad0b2f236273" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a06787cd44006ae7a1b642f0afce92" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/95860ffc37c3f86f21a70afe843cf1cb_fit.png?ts=1791215567"></div></div></div></div></div></div></div></div></div></div></div><div id="wb_main_a1a06787c97900e02e56b45a98c7fa9d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a06787cd4301cf802e520e4bc3c1cd" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1791215567"></div></div></div><div id="a1a06787cd45000b58eb93e0c6c0a7ee" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><main class="preview-page" role="main">
     
     <!-- ============================================================
         ELEMENT 1 — CONTEXT BLOCK
@@ -3019,7 +3015,7 @@ body {
       </div>
     </section>
 
-</main></div></div><div id="a1a06787cd450253aebf2a5b8b5bea9d" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1788448598"></div></div></div></div></div><div id="wb_footer_a1a06787c97900e02e56b45a98c7fa9d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+</main></div></div><div id="a1a06787cd450253aebf2a5b8b5bea9d" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1791215567"></div></div></div></div></div><div id="wb_footer_a1a06787c97900e02e56b45a98c7fa9d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -3121,7 +3117,7 @@ body {
 
 <p class="wb-stl-footer" style="text-align: center;"><a data-_="Link" href="anabolickmusick.com" target="_blank" title="anabolic musick's official website">anabolickmusick.com</a></p>
 </div><div id="a18bddd77e4a320a360cd08aa5891d23" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: center;"><span style="color:rgba(255,255,255,1);">© 2024 <a href="https://www.georgedreemer.com">G</a><a href="https://www.dreemer.xyz">eorge Dreemer</a></span></p>
-</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1788448598"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
+</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1791215567"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
 			$(function() {
 				var footer = $(".wb_footer");
 				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
@@ -3131,7 +3127,8 @@ body {
 					footer.css({height: ""});
 				}
 			});
-			});</script></div></div></div><style>
+			});</script></div></div></div></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
+	<script src="js/common-bundle.js?ts=20261005185245" type="text/javascript" defer></script>{{hr_out}}<style>
 .image-height-mod {
 height: 100%;
 }
@@ -3346,8 +3343,7 @@ document.querySelectorAll('[data-yt-track]').forEach(track => {
   });
 });
 
-</script></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
-	<script src="js/common-bundle.js?ts=20260903181636" type="text/javascript" defer></script>{{hr_out}}<script>
+</script><script>
     document.addEventListener('DOMContentLoaded', function () {
         window._spDefer.done();
     });

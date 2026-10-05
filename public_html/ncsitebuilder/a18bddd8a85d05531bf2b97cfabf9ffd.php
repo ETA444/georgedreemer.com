@@ -23,18 +23,15 @@
 	<?php echo isset($sitemapUrls) ? (generateCanonicalUrl($sitemapUrls)."\n") : ""; ?>	
 	
 						<meta name="viewport" content="width=device-width, initial-scale=1" />
-					<meta name="description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "thoughtbubble was a knowledge-first social network co-founded by George Dreemer and Nikolay Stanchev — designed, built, and launched from scratch in high school, growing to around 900 users."); ?>" />
-			<meta name="keywords" content="<?php echo htmlspecialchars((isset($seoKeywords) && $seoKeywords !== "") ? $seoKeywords : "thoughtbubble,george dreemer thoughtbubble,george dreemer social network,thoughtbubble social network,george dreemer startup founder,george dreemer co-founder,nikolay stanchev,thoughtbubble knowledge network,what is thoughtbubble,who made thoughtbubble,what was thoughtbubble,george dreemer portfolio,social network startup,knowledge sharing platform"); ?>" />
-				<meta property="og:site_name" content="George Dreemer — Data Scientist, Developer & Entrepreneur">
+								<meta property="og:site_name" content="George Dreemer — Data Scientist, Developer & Entrepreneur">
 	
 	<!-- Facebook Open Graph -->
-			<meta property="og:description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "thoughtbubble was a knowledge-first social network co-founded by George Dreemer and Nikolay Stanchev — designed, built, and launched from scratch in high school, growing to around 900 users."); ?>" />
-					<!-- Facebook Open Graph end -->
+						<!-- Facebook Open Graph end -->
 
 		<meta name="generator" content="Website Builder" />
-			<link href="css/common-bundle.css?ts=20260903181636" rel="stylesheet" type="text/css" />
+			<link href="css/common-bundle.css?ts=20261005185245" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese" rel="stylesheet" type="text/css" />
-	<link href="css/a18bddd8a85d05531bf2b97cfabf9ffd-bundle.css?ts=20260903181636" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
+	<link href="css/a18bddd8a85d05531bf2b97cfabf9ffd-bundle.css?ts=20261005185245" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
 	<ga-code/><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
      SECTION 1 — GLOBAL
      Settings → Meta Tags (site-wide, always present)
@@ -72,21 +69,17 @@
 	<title>thoughtbubble — Knowledge-First Social Network · George Dreemer</title>
 
 <!-- SEO Meta Data (source: seo/meta.html) -->
-<meta name="description"
-    content="How George Dreemer and Nikolay Stanchev built thoughtbubble, a knowledge-first social network designed, coded, and launched from scratch in high school — growing to around 900 registered users with no framework, funding, or team.">
-<meta name="keywords"
-    content="thoughtbubble, George Dreemer, Nikolay Stanchev, social network, knowledge-first platform, startup, full-stack development, PHP, MySQL, self-taught developer">
+<meta name="description" content="How George Dreemer and Nikolay Stanchev built thoughtbubble, a knowledge-first social network designed, coded, and launched from scratch in high school — growing to around 900 registered users with no framework, funding, or team.">
+<meta name="keywords" content="thoughtbubble, George Dreemer, Nikolay Stanchev, social network, knowledge-first platform, startup, full-stack development, PHP, MySQL, self-taught developer">
 <link rel="canonical" href="https://georgedreemer.com/thoughtbubble">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://georgedreemer.com/thoughtbubble">
 <meta property="og:title" content="thoughtbubble — Knowledge-First Social Network · George Dreemer">
-<meta property="og:description"
-    content="thoughtbubble was a knowledge-first social network co-founded by George Dreemer and Nikolay Stanchev — designed, built, and launched from scratch in high school, growing to around 900 users.">
+<meta property="og:description" content="thoughtbubble was a knowledge-first social network co-founded by George Dreemer and Nikolay Stanchev — designed, built, and launched from scratch in high school, growing to around 900 users.">
 <meta property="og:image" content="https://georgedreemer.com/ncsitebuilder/gallery/dxyz-thoughtbubble-thumb.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="thoughtbubble — Knowledge-First Social Network · George Dreemer">
-<meta name="twitter:description"
-    content="thoughtbubble was a knowledge-first social network co-founded by George Dreemer and Nikolay Stanchev — designed, built, and launched from scratch in high school, growing to around 900 users.">
+<meta name="twitter:description" content="thoughtbubble was a knowledge-first social network co-founded by George Dreemer and Nikolay Stanchev — designed, built, and launched from scratch in high school, growing to around 900 users.">
 <meta name="twitter:image" content="https://georgedreemer.com/ncsitebuilder/gallery/dxyz-thoughtbubble-thumb.png">
 
 <!-- SEO Schema JSON -->
@@ -1785,7 +1778,7 @@ body {
 </head>
 
 
-<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e430a4143ca9337839c74f6" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a190ffad0b3e00c9cfe515ee38fb5f8c" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffad0b4c00b2f9f83b0f0bfac1e1" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1788448597"></a></div></div></div><div id="a190ffad0b6300a7ab401fb62000cfae" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffad0b6d007e8c311f4f42ffc0a3" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1788448597"></a></div></div></div></div></div><div id="a19127dc957400c0691f8985137b6c6f" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e430a4143ca9337839c74f6" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a190ffad0b3e00c9cfe515ee38fb5f8c" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffad0b4c00b2f9f83b0f0bfac1e1" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1791215566"></a></div></div></div><div id="a190ffad0b6300a7ab401fb62000cfae" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffad0b6d007e8c311f4f42ffc0a3" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1791215566"></a></div></div></div></div></div><div id="a19127dc957400c0691f8985137b6c6f" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -1867,7 +1860,7 @@ body {
 			'children' => array()
 		)
 	)
-)); ?><div class="clearfix"></div></div></div></div><div id="a18bddd77e430b4ce3e980126becfd36" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e430ced1f7965df7ab4bca9" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e430d9c3ad526ddc7851ded" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/thoughtbubble-logo%201.svg?ts=1788448597"></div></div></div></div></div></div></div></div></div></div></div><div id="wb_main_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e430eec23ab9fd8533ca3f7" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1788448597"></div></div></div><div id="a19f60e67d0200c8d407b5be07be8bdd" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><main class="experience-page" role="main">
+)); ?><div class="clearfix"></div></div></div></div><div id="a18bddd77e430b4ce3e980126becfd36" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e430ced1f7965df7ab4bca9" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e430d9c3ad526ddc7851ded" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/thoughtbubble-logo%201.svg?ts=1791215566"></div></div></div></div></div></div></div></div></div></div></div><div id="wb_main_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e430eec23ab9fd8533ca3f7" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1791215566"></div></div></div><div id="a19f60e67d0200c8d407b5be07be8bdd" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><main class="experience-page" role="main">
     
     <!-- ============================================================
         ELEMENT 1 — CONTEXT BLOCK
@@ -2472,7 +2465,7 @@ body {
       </div>
     </section>
 
-</main></div></div><div id="a18bddd77e4414ec349812801c161a50" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1788448597"></div></div></div></div></div><div id="wb_footer_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+</main></div></div><div id="a18bddd77e4414ec349812801c161a50" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1791215566"></div></div></div></div></div><div id="wb_footer_a18bddd8a85d05531bf2b97cfabf9ffd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -2574,7 +2567,7 @@ body {
 
 <p class="wb-stl-footer" style="text-align: center;"><a data-_="Link" href="anabolickmusick.com" target="_blank" title="anabolic musick's official website">anabolickmusick.com</a></p>
 </div><div id="a18bddd77e4a320a360cd08aa5891d23" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: center;"><span style="color:rgba(255,255,255,1);">© 2024 <a href="https://www.georgedreemer.com">G</a><a href="https://www.dreemer.xyz">eorge Dreemer</a></span></p>
-</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1788448597"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
+</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1791215566"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
 			$(function() {
 				var footer = $(".wb_footer");
 				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
@@ -2584,7 +2577,8 @@ body {
 					footer.css({height: ""});
 				}
 			});
-			});</script></div></div></div><style>
+			});</script></div></div></div></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
+	<script src="js/common-bundle.js?ts=20261005185245" type="text/javascript" defer></script>{{hr_out}}<style>
 .image-height-mod {
 height: 100%;
 }
@@ -2752,8 +2746,7 @@ document.querySelectorAll('.story-accordion').forEach(accordion => {
 
   items.forEach(item => observer.observe(item));
 })();
-</script></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
-	<script src="js/common-bundle.js?ts=20260903181636" type="text/javascript" defer></script>{{hr_out}}<script>
+</script><script>
     document.addEventListener('DOMContentLoaded', function () {
         window._spDefer.done();
     });

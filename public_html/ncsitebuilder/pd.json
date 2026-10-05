@@ -431,5 +431,1615 @@
     },
     "d": null,
     "f": 0,
-    "e": "3280d7753e3964aabfd6c1d05afbf8346783cf15"
+    "b2b2c_light": {
+        "a": {
+            "paypal2": true,
+            "LayoutElement": true,
+            "TextArea": true,
+            "Languages": true,
+            "Picture": true,
+            "Gallery": true,
+            "Youtube": true,
+            "Video": true,
+            "instagram_video": true,
+            "facebook_video": true,
+            "rutube_video": true,
+            "vk_video": true,
+            "vimeo": true,
+            "aparat": true,
+            "spotify": true,
+            "MusicPlayer": true,
+            "GoogleMaps": true,
+            "yandex_maps": true,
+            "bing_maps": true,
+            "openstreetmap": true,
+            "Shape": true,
+            "Line": true,
+            "Button": true,
+            "Form": true,
+            "Menu": true,
+            "WB_Footer": true,
+            "LinkExchangeBadge": true,
+            "bank_transfer": true,
+            "cash_on_delivery": true
+        },
+        "b": [],
+        "c": {
+            "LayoutElement": [
+                "Free",
+                "Layout"
+            ],
+            "TextArea": [
+                "Free",
+                "Text"
+            ],
+            "Languages": [
+                "Starter",
+                "Languages"
+            ],
+            "Picture": [
+                "Free",
+                "Picture"
+            ],
+            "Gallery": [
+                "Free",
+                "Gallery"
+            ],
+            "Youtube": [
+                "Free",
+                "Media"
+            ],
+            "Video": [
+                "Free",
+                "Media"
+            ],
+            "instagram_video": [
+                "Free",
+                "Media"
+            ],
+            "facebook_video": [
+                "Free",
+                "Media"
+            ],
+            "rutube_video": [
+                "Free",
+                "Media"
+            ],
+            "vk_video": [
+                "Free",
+                "Media"
+            ],
+            "vimeo": [
+                "Free",
+                "Media"
+            ],
+            "aparat": [
+                "Free",
+                "Media"
+            ],
+            "spotify": [
+                "Free",
+                "Media"
+            ],
+            "MusicPlayer": [
+                "Free",
+                "Media"
+            ],
+            "GoogleMaps": [
+                "Starter",
+                "Maps"
+            ],
+            "yandex_maps": [
+                "Starter",
+                "Maps"
+            ],
+            "bing_maps": [
+                "Starter",
+                "Maps"
+            ],
+            "openstreetmap": [
+                "Starter",
+                "Maps"
+            ],
+            "Shape": [
+                "Free",
+                "Shape"
+            ],
+            "Line": [
+                "Free",
+                "Shape"
+            ],
+            "Button": [
+                "Starter",
+                "Button"
+            ],
+            "Form": [
+                "Starter",
+                "Form"
+            ],
+            "Blog": [
+                "Standard",
+                "Blog"
+            ],
+            "Menu": [
+                "Free",
+                "Menu"
+            ],
+            "StoreCart": [
+                "Standard",
+                "Commerce"
+            ],
+            "BookmarksShare": [
+                "Standard",
+                "Social"
+            ],
+            "BuyNow": [
+                "Standard",
+                "Commerce"
+            ],
+            "instagram": [
+                "Standard",
+                "Blocks"
+            ],
+            "Store": [
+                "Standard",
+                "Commerce"
+            ],
+            "stripe": [
+                "Standard",
+                "Commerce"
+            ],
+            "mercado": [
+                "Standard",
+                "Commerce"
+            ],
+            "alipay": [
+                "Standard",
+                "Commerce"
+            ],
+            "webmoney_button": [
+                "Standard",
+                "Commerce"
+            ],
+            "skrill": [
+                "Standard",
+                "Commerce"
+            ],
+            "mollie": [
+                "Standard",
+                "Commerce"
+            ],
+            "braintree": [
+                "Standard",
+                "Commerce"
+            ],
+            "easypay": [
+                "Standard",
+                "Commerce"
+            ],
+            "payu": [
+                "Standard",
+                "Commerce"
+            ],
+            "payumoney": [
+                "Standard",
+                "Commerce"
+            ],
+            "paysera": [
+                "Standard",
+                "Commerce"
+            ],
+            "payfast": [
+                "Standard",
+                "Commerce"
+            ],
+            "assist": [
+                "Standard",
+                "Commerce"
+            ],
+            "2checkout": [
+                "Standard",
+                "Commerce"
+            ],
+            "paytrail": [
+                "Standard",
+                "Commerce"
+            ],
+            "qiwi_kz": [
+                "Standard",
+                "Commerce"
+            ],
+            "wp": [
+                "Standard",
+                "Commerce"
+            ],
+            "klarna": [
+                "Standard",
+                "Commerce"
+            ],
+            "paymentez": [
+                "Standard",
+                "Commerce"
+            ],
+            "mellat": [
+                "Standard",
+                "Commerce"
+            ],
+            "libelula": [
+                "Standard",
+                "Commerce"
+            ],
+            "expresspay": [
+                "Standard",
+                "Commerce"
+            ],
+            "epayco": [
+                "Standard",
+                "Commerce"
+            ],
+            "coinpayments": [
+                "Standard",
+                "Commerce"
+            ],
+            "mpesa": [
+                "Standard",
+                "Commerce"
+            ],
+            "pagopar": [
+                "Standard",
+                "Commerce"
+            ],
+            "aamarpay": [
+                "Standard",
+                "Commerce"
+            ],
+            "baokim": [
+                "Standard",
+                "Commerce"
+            ],
+            "bepaid": [
+                "Standard",
+                "Commerce"
+            ],
+            "robokassa": [
+                "Standard",
+                "Commerce"
+            ],
+            "artpay": [
+                "Standard",
+                "Commerce"
+            ],
+            "webmoney_widget": [
+                "Standard",
+                "Commerce"
+            ],
+            "ecwid": [
+                "Standard",
+                "Commerce"
+            ],
+            "FacebookLike": [
+                "Standard",
+                "Social"
+            ],
+            "FacebookFans": [
+                "Standard",
+                "Social"
+            ],
+            "pinterest": [
+                "Standard",
+                "Social"
+            ],
+            "telegram_widget": [
+                "Standard",
+                "Social"
+            ],
+            "tiktok": [
+                "Standard",
+                "Social"
+            ],
+            "Twitter": [
+                "Standard",
+                "Social"
+            ],
+            "google_calendar": [
+                "Standard",
+                "Advanced"
+            ],
+            "GoogleAdSense": [
+                "Standard",
+                "Advanced"
+            ],
+            "Banner": [
+                "Standard",
+                "Advanced"
+            ],
+            "Table": [
+                "Standard",
+                "Advanced"
+            ],
+            "CustomHtml": [
+                "Standard",
+                "Advanced"
+            ],
+            "countdown": [
+                "Standard",
+                "Advanced"
+            ],
+            "count_up": [
+                "Standard",
+                "Advanced"
+            ],
+            "Accordion": [
+                "Standard",
+                "Advanced"
+            ],
+            "bookingmood": [
+                "Standard",
+                "Advanced"
+            ],
+            "bookaplace": [
+                "Standard",
+                "Advanced"
+            ],
+            "getbutton": [
+                "Standard",
+                "Advanced"
+            ],
+            "tawkto": [
+                "Standard",
+                "Advanced"
+            ],
+            "olark": [
+                "Standard",
+                "Advanced"
+            ],
+            "zopim": [
+                "Standard",
+                "Advanced"
+            ],
+            "smartarget": [
+                "Standard",
+                "Advanced"
+            ]
+        },
+        "d": "https:\/\/site.pro\/en\/faq\/5688?utm_source=b2b2c&utm_medium=free&utm_campaign=__UTM_CAMPAIGN__&utm_content=__UTM_CONTENT__",
+        "f": 5
+    },
+    "b2b2c_standard": {
+        "a": {
+            "paypal2": true,
+            "LayoutElement": true,
+            "TextArea": true,
+            "Languages": true,
+            "Picture": true,
+            "Gallery": true,
+            "Youtube": true,
+            "Video": true,
+            "instagram_video": true,
+            "facebook_video": true,
+            "rutube_video": true,
+            "vk_video": true,
+            "vimeo": true,
+            "aparat": true,
+            "spotify": true,
+            "MusicPlayer": true,
+            "GoogleMaps": true,
+            "yandex_maps": true,
+            "bing_maps": true,
+            "openstreetmap": true,
+            "Shape": true,
+            "Line": true,
+            "Button": true,
+            "Form": true,
+            "Blog": true,
+            "Menu": true,
+            "StoreCart": true,
+            "BookmarksShare": true,
+            "BuyNow": true,
+            "instagram": true,
+            "Store": true,
+            "stripe": true,
+            "mercado": true,
+            "alipay": true,
+            "webmoney_button": true,
+            "skrill": true,
+            "mollie": true,
+            "braintree": true,
+            "easypay": true,
+            "payu": true,
+            "payumoney": true,
+            "paysera": true,
+            "payfast": true,
+            "assist": true,
+            "2checkout": true,
+            "paytrail": true,
+            "qiwi_kz": true,
+            "wp": true,
+            "klarna": true,
+            "paymentez": true,
+            "mellat": true,
+            "libelula": true,
+            "expresspay": true,
+            "epayco": true,
+            "coinpayments": true,
+            "mpesa": true,
+            "pagopar": true,
+            "aamarpay": true,
+            "baokim": true,
+            "bepaid": true,
+            "robokassa": true,
+            "artpay": true,
+            "webmoney_widget": true,
+            "ecwid": true,
+            "FacebookLike": true,
+            "FacebookFans": true,
+            "pinterest": true,
+            "telegram_widget": true,
+            "tiktok": true,
+            "Twitter": true,
+            "google_calendar": true,
+            "GoogleAdSense": true,
+            "Banner": true,
+            "Table": true,
+            "CustomHtml": true,
+            "countdown": true,
+            "count_up": true,
+            "Accordion": true,
+            "bookingmood": true,
+            "bookaplace": true,
+            "getbutton": true,
+            "tawkto": true,
+            "olark": true,
+            "zopim": true,
+            "smartarget": true,
+            "WB_Footer": true,
+            "LinkExchangeBadge": true,
+            "bank_transfer": true,
+            "cash_on_delivery": true
+        },
+        "b": [],
+        "c": {
+            "LayoutElement": [
+                "Free",
+                "Layout"
+            ],
+            "TextArea": [
+                "Free",
+                "Text"
+            ],
+            "Languages": [
+                "Starter",
+                "Languages"
+            ],
+            "Picture": [
+                "Free",
+                "Picture"
+            ],
+            "Gallery": [
+                "Free",
+                "Gallery"
+            ],
+            "Youtube": [
+                "Free",
+                "Media"
+            ],
+            "Video": [
+                "Free",
+                "Media"
+            ],
+            "instagram_video": [
+                "Free",
+                "Media"
+            ],
+            "facebook_video": [
+                "Free",
+                "Media"
+            ],
+            "rutube_video": [
+                "Free",
+                "Media"
+            ],
+            "vk_video": [
+                "Free",
+                "Media"
+            ],
+            "vimeo": [
+                "Free",
+                "Media"
+            ],
+            "aparat": [
+                "Free",
+                "Media"
+            ],
+            "spotify": [
+                "Free",
+                "Media"
+            ],
+            "MusicPlayer": [
+                "Free",
+                "Media"
+            ],
+            "GoogleMaps": [
+                "Starter",
+                "Maps"
+            ],
+            "yandex_maps": [
+                "Starter",
+                "Maps"
+            ],
+            "bing_maps": [
+                "Starter",
+                "Maps"
+            ],
+            "openstreetmap": [
+                "Starter",
+                "Maps"
+            ],
+            "Shape": [
+                "Free",
+                "Shape"
+            ],
+            "Line": [
+                "Free",
+                "Shape"
+            ],
+            "Button": [
+                "Starter",
+                "Button"
+            ],
+            "Form": [
+                "Starter",
+                "Form"
+            ],
+            "Blog": [
+                "Standard",
+                "Blog"
+            ],
+            "Menu": [
+                "Free",
+                "Menu"
+            ],
+            "StoreCart": [
+                "Standard",
+                "Commerce"
+            ],
+            "BookmarksShare": [
+                "Standard",
+                "Social"
+            ],
+            "BuyNow": [
+                "Standard",
+                "Commerce"
+            ],
+            "instagram": [
+                "Standard",
+                "Blocks"
+            ],
+            "Store": [
+                "Standard",
+                "Commerce"
+            ],
+            "stripe": [
+                "Standard",
+                "Commerce"
+            ],
+            "mercado": [
+                "Standard",
+                "Commerce"
+            ],
+            "alipay": [
+                "Standard",
+                "Commerce"
+            ],
+            "webmoney_button": [
+                "Standard",
+                "Commerce"
+            ],
+            "skrill": [
+                "Standard",
+                "Commerce"
+            ],
+            "mollie": [
+                "Standard",
+                "Commerce"
+            ],
+            "braintree": [
+                "Standard",
+                "Commerce"
+            ],
+            "easypay": [
+                "Standard",
+                "Commerce"
+            ],
+            "payu": [
+                "Standard",
+                "Commerce"
+            ],
+            "payumoney": [
+                "Standard",
+                "Commerce"
+            ],
+            "paysera": [
+                "Standard",
+                "Commerce"
+            ],
+            "payfast": [
+                "Standard",
+                "Commerce"
+            ],
+            "assist": [
+                "Standard",
+                "Commerce"
+            ],
+            "2checkout": [
+                "Standard",
+                "Commerce"
+            ],
+            "paytrail": [
+                "Standard",
+                "Commerce"
+            ],
+            "qiwi_kz": [
+                "Standard",
+                "Commerce"
+            ],
+            "wp": [
+                "Standard",
+                "Commerce"
+            ],
+            "klarna": [
+                "Standard",
+                "Commerce"
+            ],
+            "paymentez": [
+                "Standard",
+                "Commerce"
+            ],
+            "mellat": [
+                "Standard",
+                "Commerce"
+            ],
+            "libelula": [
+                "Standard",
+                "Commerce"
+            ],
+            "expresspay": [
+                "Standard",
+                "Commerce"
+            ],
+            "epayco": [
+                "Standard",
+                "Commerce"
+            ],
+            "coinpayments": [
+                "Standard",
+                "Commerce"
+            ],
+            "mpesa": [
+                "Standard",
+                "Commerce"
+            ],
+            "pagopar": [
+                "Standard",
+                "Commerce"
+            ],
+            "aamarpay": [
+                "Standard",
+                "Commerce"
+            ],
+            "baokim": [
+                "Standard",
+                "Commerce"
+            ],
+            "bepaid": [
+                "Standard",
+                "Commerce"
+            ],
+            "robokassa": [
+                "Standard",
+                "Commerce"
+            ],
+            "artpay": [
+                "Standard",
+                "Commerce"
+            ],
+            "webmoney_widget": [
+                "Standard",
+                "Commerce"
+            ],
+            "ecwid": [
+                "Standard",
+                "Commerce"
+            ],
+            "FacebookLike": [
+                "Standard",
+                "Social"
+            ],
+            "FacebookFans": [
+                "Standard",
+                "Social"
+            ],
+            "pinterest": [
+                "Standard",
+                "Social"
+            ],
+            "telegram_widget": [
+                "Standard",
+                "Social"
+            ],
+            "tiktok": [
+                "Standard",
+                "Social"
+            ],
+            "Twitter": [
+                "Standard",
+                "Social"
+            ],
+            "google_calendar": [
+                "Standard",
+                "Advanced"
+            ],
+            "GoogleAdSense": [
+                "Standard",
+                "Advanced"
+            ],
+            "Banner": [
+                "Standard",
+                "Advanced"
+            ],
+            "Table": [
+                "Standard",
+                "Advanced"
+            ],
+            "CustomHtml": [
+                "Standard",
+                "Advanced"
+            ],
+            "countdown": [
+                "Standard",
+                "Advanced"
+            ],
+            "count_up": [
+                "Standard",
+                "Advanced"
+            ],
+            "Accordion": [
+                "Standard",
+                "Advanced"
+            ],
+            "bookingmood": [
+                "Standard",
+                "Advanced"
+            ],
+            "bookaplace": [
+                "Standard",
+                "Advanced"
+            ],
+            "getbutton": [
+                "Standard",
+                "Advanced"
+            ],
+            "tawkto": [
+                "Standard",
+                "Advanced"
+            ],
+            "olark": [
+                "Standard",
+                "Advanced"
+            ],
+            "zopim": [
+                "Standard",
+                "Advanced"
+            ],
+            "smartarget": [
+                "Standard",
+                "Advanced"
+            ]
+        },
+        "d": "https:\/\/site.pro\/en\/faq\/5688?utm_source=b2b2c&utm_medium=free&utm_campaign=__UTM_CAMPAIGN__&utm_content=__UTM_CONTENT__",
+        "f": 10
+    },
+    "b2b2c_full": {
+        "a": {
+            "paypal2": true,
+            "LayoutElement": true,
+            "TextArea": true,
+            "Languages": true,
+            "Picture": true,
+            "Gallery": true,
+            "Youtube": true,
+            "Video": true,
+            "instagram_video": true,
+            "facebook_video": true,
+            "rutube_video": true,
+            "vk_video": true,
+            "vimeo": true,
+            "aparat": true,
+            "spotify": true,
+            "MusicPlayer": true,
+            "GoogleMaps": true,
+            "yandex_maps": true,
+            "bing_maps": true,
+            "openstreetmap": true,
+            "Shape": true,
+            "Line": true,
+            "Button": true,
+            "Form": true,
+            "Blog": true,
+            "Menu": true,
+            "StoreCart": true,
+            "BookmarksShare": true,
+            "BuyNow": true,
+            "instagram": true,
+            "Store": true,
+            "stripe": true,
+            "mercado": true,
+            "alipay": true,
+            "webmoney_button": true,
+            "skrill": true,
+            "mollie": true,
+            "braintree": true,
+            "easypay": true,
+            "payu": true,
+            "payumoney": true,
+            "paysera": true,
+            "payfast": true,
+            "assist": true,
+            "2checkout": true,
+            "paytrail": true,
+            "qiwi_kz": true,
+            "wp": true,
+            "klarna": true,
+            "paymentez": true,
+            "mellat": true,
+            "libelula": true,
+            "expresspay": true,
+            "epayco": true,
+            "coinpayments": true,
+            "mpesa": true,
+            "pagopar": true,
+            "aamarpay": true,
+            "baokim": true,
+            "bepaid": true,
+            "robokassa": true,
+            "artpay": true,
+            "webmoney_widget": true,
+            "ecwid": true,
+            "FacebookLike": true,
+            "FacebookFans": true,
+            "pinterest": true,
+            "telegram_widget": true,
+            "tiktok": true,
+            "Twitter": true,
+            "google_calendar": true,
+            "GoogleAdSense": true,
+            "Banner": true,
+            "Table": true,
+            "CustomHtml": true,
+            "countdown": true,
+            "count_up": true,
+            "Accordion": true,
+            "bookingmood": true,
+            "bookaplace": true,
+            "getbutton": true,
+            "tawkto": true,
+            "olark": true,
+            "zopim": true,
+            "smartarget": true,
+            "WB_Footer": true,
+            "LinkExchangeBadge": true,
+            "bank_transfer": true,
+            "cash_on_delivery": true
+        },
+        "b": [],
+        "c": {
+            "LayoutElement": [
+                "Free",
+                "Layout"
+            ],
+            "TextArea": [
+                "Free",
+                "Text"
+            ],
+            "Languages": [
+                "Starter",
+                "Languages"
+            ],
+            "Picture": [
+                "Free",
+                "Picture"
+            ],
+            "Gallery": [
+                "Free",
+                "Gallery"
+            ],
+            "Youtube": [
+                "Free",
+                "Media"
+            ],
+            "Video": [
+                "Free",
+                "Media"
+            ],
+            "instagram_video": [
+                "Free",
+                "Media"
+            ],
+            "facebook_video": [
+                "Free",
+                "Media"
+            ],
+            "rutube_video": [
+                "Free",
+                "Media"
+            ],
+            "vk_video": [
+                "Free",
+                "Media"
+            ],
+            "vimeo": [
+                "Free",
+                "Media"
+            ],
+            "aparat": [
+                "Free",
+                "Media"
+            ],
+            "spotify": [
+                "Free",
+                "Media"
+            ],
+            "MusicPlayer": [
+                "Free",
+                "Media"
+            ],
+            "GoogleMaps": [
+                "Starter",
+                "Maps"
+            ],
+            "yandex_maps": [
+                "Starter",
+                "Maps"
+            ],
+            "bing_maps": [
+                "Starter",
+                "Maps"
+            ],
+            "openstreetmap": [
+                "Starter",
+                "Maps"
+            ],
+            "Shape": [
+                "Free",
+                "Shape"
+            ],
+            "Line": [
+                "Free",
+                "Shape"
+            ],
+            "Button": [
+                "Starter",
+                "Button"
+            ],
+            "Form": [
+                "Starter",
+                "Form"
+            ],
+            "Blog": [
+                "Standard",
+                "Blog"
+            ],
+            "Menu": [
+                "Free",
+                "Menu"
+            ],
+            "StoreCart": [
+                "Standard",
+                "Commerce"
+            ],
+            "BookmarksShare": [
+                "Standard",
+                "Social"
+            ],
+            "BuyNow": [
+                "Standard",
+                "Commerce"
+            ],
+            "instagram": [
+                "Standard",
+                "Blocks"
+            ],
+            "Store": [
+                "Standard",
+                "Commerce"
+            ],
+            "stripe": [
+                "Standard",
+                "Commerce"
+            ],
+            "mercado": [
+                "Standard",
+                "Commerce"
+            ],
+            "alipay": [
+                "Standard",
+                "Commerce"
+            ],
+            "webmoney_button": [
+                "Standard",
+                "Commerce"
+            ],
+            "skrill": [
+                "Standard",
+                "Commerce"
+            ],
+            "mollie": [
+                "Standard",
+                "Commerce"
+            ],
+            "braintree": [
+                "Standard",
+                "Commerce"
+            ],
+            "easypay": [
+                "Standard",
+                "Commerce"
+            ],
+            "payu": [
+                "Standard",
+                "Commerce"
+            ],
+            "payumoney": [
+                "Standard",
+                "Commerce"
+            ],
+            "paysera": [
+                "Standard",
+                "Commerce"
+            ],
+            "payfast": [
+                "Standard",
+                "Commerce"
+            ],
+            "assist": [
+                "Standard",
+                "Commerce"
+            ],
+            "2checkout": [
+                "Standard",
+                "Commerce"
+            ],
+            "paytrail": [
+                "Standard",
+                "Commerce"
+            ],
+            "qiwi_kz": [
+                "Standard",
+                "Commerce"
+            ],
+            "wp": [
+                "Standard",
+                "Commerce"
+            ],
+            "klarna": [
+                "Standard",
+                "Commerce"
+            ],
+            "paymentez": [
+                "Standard",
+                "Commerce"
+            ],
+            "mellat": [
+                "Standard",
+                "Commerce"
+            ],
+            "libelula": [
+                "Standard",
+                "Commerce"
+            ],
+            "expresspay": [
+                "Standard",
+                "Commerce"
+            ],
+            "epayco": [
+                "Standard",
+                "Commerce"
+            ],
+            "coinpayments": [
+                "Standard",
+                "Commerce"
+            ],
+            "mpesa": [
+                "Standard",
+                "Commerce"
+            ],
+            "pagopar": [
+                "Standard",
+                "Commerce"
+            ],
+            "aamarpay": [
+                "Standard",
+                "Commerce"
+            ],
+            "baokim": [
+                "Standard",
+                "Commerce"
+            ],
+            "bepaid": [
+                "Standard",
+                "Commerce"
+            ],
+            "robokassa": [
+                "Standard",
+                "Commerce"
+            ],
+            "artpay": [
+                "Standard",
+                "Commerce"
+            ],
+            "webmoney_widget": [
+                "Standard",
+                "Commerce"
+            ],
+            "ecwid": [
+                "Standard",
+                "Commerce"
+            ],
+            "FacebookLike": [
+                "Standard",
+                "Social"
+            ],
+            "FacebookFans": [
+                "Standard",
+                "Social"
+            ],
+            "pinterest": [
+                "Standard",
+                "Social"
+            ],
+            "telegram_widget": [
+                "Standard",
+                "Social"
+            ],
+            "tiktok": [
+                "Standard",
+                "Social"
+            ],
+            "Twitter": [
+                "Standard",
+                "Social"
+            ],
+            "google_calendar": [
+                "Standard",
+                "Advanced"
+            ],
+            "GoogleAdSense": [
+                "Standard",
+                "Advanced"
+            ],
+            "Banner": [
+                "Standard",
+                "Advanced"
+            ],
+            "Table": [
+                "Standard",
+                "Advanced"
+            ],
+            "CustomHtml": [
+                "Standard",
+                "Advanced"
+            ],
+            "countdown": [
+                "Standard",
+                "Advanced"
+            ],
+            "count_up": [
+                "Standard",
+                "Advanced"
+            ],
+            "Accordion": [
+                "Standard",
+                "Advanced"
+            ],
+            "bookingmood": [
+                "Standard",
+                "Advanced"
+            ],
+            "bookaplace": [
+                "Standard",
+                "Advanced"
+            ],
+            "getbutton": [
+                "Standard",
+                "Advanced"
+            ],
+            "tawkto": [
+                "Standard",
+                "Advanced"
+            ],
+            "olark": [
+                "Standard",
+                "Advanced"
+            ],
+            "zopim": [
+                "Standard",
+                "Advanced"
+            ],
+            "smartarget": [
+                "Standard",
+                "Advanced"
+            ]
+        },
+        "d": "https:\/\/site.pro\/en\/faq\/5688?utm_source=b2b2c&utm_medium=free&utm_campaign=__UTM_CAMPAIGN__&utm_content=__UTM_CONTENT__",
+        "f": 0
+    },
+    "b2b2c": {
+        "a": {
+            "paypal2": true,
+            "LayoutElement": true,
+            "TextArea": true,
+            "Languages": true,
+            "Picture": true,
+            "Gallery": true,
+            "Youtube": true,
+            "Video": true,
+            "instagram_video": true,
+            "facebook_video": true,
+            "rutube_video": true,
+            "vk_video": true,
+            "vimeo": true,
+            "aparat": true,
+            "spotify": true,
+            "MusicPlayer": true,
+            "Shape": true,
+            "Line": true,
+            "Menu": true,
+            "WB_Footer": true,
+            "LinkExchangeBadge": true,
+            "bank_transfer": true,
+            "cash_on_delivery": true
+        },
+        "b": [],
+        "c": {
+            "LayoutElement": [
+                "Free",
+                "Layout"
+            ],
+            "TextArea": [
+                "Free",
+                "Text"
+            ],
+            "Languages": [
+                "Starter",
+                "Languages"
+            ],
+            "Picture": [
+                "Free",
+                "Picture"
+            ],
+            "Gallery": [
+                "Free",
+                "Gallery"
+            ],
+            "Youtube": [
+                "Free",
+                "Media"
+            ],
+            "Video": [
+                "Free",
+                "Media"
+            ],
+            "instagram_video": [
+                "Free",
+                "Media"
+            ],
+            "facebook_video": [
+                "Free",
+                "Media"
+            ],
+            "rutube_video": [
+                "Free",
+                "Media"
+            ],
+            "vk_video": [
+                "Free",
+                "Media"
+            ],
+            "vimeo": [
+                "Free",
+                "Media"
+            ],
+            "aparat": [
+                "Free",
+                "Media"
+            ],
+            "spotify": [
+                "Free",
+                "Media"
+            ],
+            "MusicPlayer": [
+                "Free",
+                "Media"
+            ],
+            "GoogleMaps": [
+                "Starter",
+                "Maps"
+            ],
+            "yandex_maps": [
+                "Starter",
+                "Maps"
+            ],
+            "bing_maps": [
+                "Starter",
+                "Maps"
+            ],
+            "openstreetmap": [
+                "Starter",
+                "Maps"
+            ],
+            "Shape": [
+                "Free",
+                "Shape"
+            ],
+            "Line": [
+                "Free",
+                "Shape"
+            ],
+            "Button": [
+                "Starter",
+                "Button"
+            ],
+            "Form": [
+                "Starter",
+                "Form"
+            ],
+            "Blog": [
+                "Standard",
+                "Blog"
+            ],
+            "Menu": [
+                "Free",
+                "Menu"
+            ],
+            "StoreCart": [
+                "Standard",
+                "Commerce"
+            ],
+            "BookmarksShare": [
+                "Standard",
+                "Social"
+            ],
+            "BuyNow": [
+                "Standard",
+                "Commerce"
+            ],
+            "instagram": [
+                "Standard",
+                "Blocks"
+            ],
+            "Store": [
+                "Standard",
+                "Commerce"
+            ],
+            "stripe": [
+                "Standard",
+                "Commerce"
+            ],
+            "mercado": [
+                "Standard",
+                "Commerce"
+            ],
+            "alipay": [
+                "Standard",
+                "Commerce"
+            ],
+            "webmoney_button": [
+                "Standard",
+                "Commerce"
+            ],
+            "skrill": [
+                "Standard",
+                "Commerce"
+            ],
+            "mollie": [
+                "Standard",
+                "Commerce"
+            ],
+            "braintree": [
+                "Standard",
+                "Commerce"
+            ],
+            "easypay": [
+                "Standard",
+                "Commerce"
+            ],
+            "payu": [
+                "Standard",
+                "Commerce"
+            ],
+            "payumoney": [
+                "Standard",
+                "Commerce"
+            ],
+            "paysera": [
+                "Standard",
+                "Commerce"
+            ],
+            "payfast": [
+                "Standard",
+                "Commerce"
+            ],
+            "assist": [
+                "Standard",
+                "Commerce"
+            ],
+            "2checkout": [
+                "Standard",
+                "Commerce"
+            ],
+            "paytrail": [
+                "Standard",
+                "Commerce"
+            ],
+            "qiwi_kz": [
+                "Standard",
+                "Commerce"
+            ],
+            "wp": [
+                "Standard",
+                "Commerce"
+            ],
+            "klarna": [
+                "Standard",
+                "Commerce"
+            ],
+            "paymentez": [
+                "Standard",
+                "Commerce"
+            ],
+            "mellat": [
+                "Standard",
+                "Commerce"
+            ],
+            "libelula": [
+                "Standard",
+                "Commerce"
+            ],
+            "expresspay": [
+                "Standard",
+                "Commerce"
+            ],
+            "epayco": [
+                "Standard",
+                "Commerce"
+            ],
+            "coinpayments": [
+                "Standard",
+                "Commerce"
+            ],
+            "mpesa": [
+                "Standard",
+                "Commerce"
+            ],
+            "pagopar": [
+                "Standard",
+                "Commerce"
+            ],
+            "aamarpay": [
+                "Standard",
+                "Commerce"
+            ],
+            "baokim": [
+                "Standard",
+                "Commerce"
+            ],
+            "bepaid": [
+                "Standard",
+                "Commerce"
+            ],
+            "robokassa": [
+                "Standard",
+                "Commerce"
+            ],
+            "artpay": [
+                "Standard",
+                "Commerce"
+            ],
+            "webmoney_widget": [
+                "Standard",
+                "Commerce"
+            ],
+            "ecwid": [
+                "Standard",
+                "Commerce"
+            ],
+            "FacebookLike": [
+                "Standard",
+                "Social"
+            ],
+            "FacebookFans": [
+                "Standard",
+                "Social"
+            ],
+            "pinterest": [
+                "Standard",
+                "Social"
+            ],
+            "telegram_widget": [
+                "Standard",
+                "Social"
+            ],
+            "tiktok": [
+                "Standard",
+                "Social"
+            ],
+            "Twitter": [
+                "Standard",
+                "Social"
+            ],
+            "google_calendar": [
+                "Standard",
+                "Advanced"
+            ],
+            "GoogleAdSense": [
+                "Standard",
+                "Advanced"
+            ],
+            "Banner": [
+                "Standard",
+                "Advanced"
+            ],
+            "Table": [
+                "Standard",
+                "Advanced"
+            ],
+            "CustomHtml": [
+                "Standard",
+                "Advanced"
+            ],
+            "countdown": [
+                "Standard",
+                "Advanced"
+            ],
+            "count_up": [
+                "Standard",
+                "Advanced"
+            ],
+            "Accordion": [
+                "Standard",
+                "Advanced"
+            ],
+            "bookingmood": [
+                "Standard",
+                "Advanced"
+            ],
+            "bookaplace": [
+                "Standard",
+                "Advanced"
+            ],
+            "getbutton": [
+                "Standard",
+                "Advanced"
+            ],
+            "tawkto": [
+                "Standard",
+                "Advanced"
+            ],
+            "olark": [
+                "Standard",
+                "Advanced"
+            ],
+            "zopim": [
+                "Standard",
+                "Advanced"
+            ],
+            "smartarget": [
+                "Standard",
+                "Advanced"
+            ]
+        },
+        "d": "https:\/\/site.pro\/en\/faq\/5688?utm_source=b2b2c&utm_medium=free&utm_campaign=__UTM_CAMPAIGN__&utm_content=__UTM_CONTENT__",
+        "f": 3
+    },
+    "e": "9d4a6123300388abc65b852d22e94da5f6662e1e"
 }

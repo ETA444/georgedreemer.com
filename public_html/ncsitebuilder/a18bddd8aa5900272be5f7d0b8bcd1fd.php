@@ -36,8 +36,8 @@
 		<!-- Facebook Open Graph end -->
 
 		<meta name="generator" content="Website Builder" />
-			<link href="css/common-bundle.css?ts=20260903181636" rel="stylesheet" type="text/css" />
-	<link href="css/a18bddd8aa5900272be5f7d0b8bcd1fd-bundle.css?ts=20260903181636" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
+			<link href="css/common-bundle.css?ts=20261005185245" rel="stylesheet" type="text/css" />
+	<link href="css/a18bddd8aa5900272be5f7d0b8bcd1fd-bundle.css?ts=20261005185245" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
 	<ga-code/><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
      SECTION 1 — GLOBAL
      Settings → Meta Tags (site-wide, always present)
@@ -111,12 +111,12 @@
 					footer.css({height: ""});
 				}
 			});
-			});</script></div></div></div><style>
+			});</script></div></div></div></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
+	<script src="js/common-bundle.js?ts=20261005185245" type="text/javascript" defer></script>{{hr_out}}<style>
 .image-height-mod {
 height: 100%;
 }
-</style></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
-	<script src="js/common-bundle.js?ts=20260903181636" type="text/javascript" defer></script>{{hr_out}}<script>
+</style><script>
     document.addEventListener('DOMContentLoaded', function () {
         window._spDefer.done();
     });

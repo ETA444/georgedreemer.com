@@ -8,6 +8,158 @@
 	if (!@session_id()) @session_start();
 	$tz = @date_default_timezone_get(); @date_default_timezone_set($tz ? $tz : 'UTC');
 	require_once dirname(__FILE__).'/polyfill.php';
+	$siteState = (object) array(
+	'hostingPlan' => 'full',
+	'upgradeUrl' => ''
+);
+
+
+class PluginDescriptorHandler {
+	/** @var string */
+	private $path;
+	/** @var ?object{a:array<string,true>,b:array<string,true>,c:array<string,string[]>,d:string,e:string,f:int} */
+	private $data;
+
+	/** @param string $path */
+	private function __construct($path) {
+		$this->path = $path;
+	}
+
+	/** @return bool */
+	public function isValid() {
+		return is_file($this->path);
+	}
+
+	/**
+	 * @param object{hostingPlan:string,upgradeUrl:string} $siteState
+	 * @return bool
+	 */
+	public function load($siteState) {
+		/** @var ?object{b2b2c:?object,a:array<string,true>,b:array<string,true>,c:array<string,string[]>,d:string,e:string,f:int} */
+		$pd = @json_decode(@file_get_contents($this->path));
+		if (!is_object($pd)) return false;
+
+		$expectedHash = isset($pd->{'e'}) ? $pd->{'e'} : '';
+		unset($pd->{'e'});
+		$hash = sha1('sfh02a35gyhz0a33498g048qt3p048'.json_encode($pd));
+		if ($expectedHash !== $hash) return false;
+
+		if (substr($siteState->{'hostingPlan'}, 0, 7) == ':b2b2c:'
+				&& isset($pd->{'b2b2c'})
+				&& is_object($pd->{'b2b2c'})) {
+			$planId = substr($siteState->{'hostingPlan'}, 7);
+			if (isset($pd->{'b2b2c_'.$planId}) && is_object($pd->{'b2b2c_'.$planId})) {
+				$this->data = $pd->{'b2b2c_'.$planId};
+			} else {
+				$this->data = $pd->{'b2b2c'};
+			}
+		} else {
+			$this->data = $pd;
+		}
+		if (!empty($siteState->{'upgradeUrl'})) {
+			$this->data->{'d'} = $siteState->{'upgradeUrl'};
+		}
+		return true;
+	}
+
+	/** @return int */
+	public function getMaxMenuItems() {
+		return isset($this->data->{'f'}) ? $this->data->{'f'} : 0;
+	}
+
+	/**
+	 * @param string $out
+	 * @param bool $preview
+	 * @return string
+	 */
+	public function handle($out, $preview) {
+		$availablePlugins = isset($this->data->{'a'}) ? $this->data->{'a'} : null;
+		$planMap = isset($this->data->{'c'}) ? $this->data->{'c'} : ((object) array());
+		$upgradeUrl = isset($this->data->{'d'}) ? $this->data->{'d'} : '';
+
+		if (!empty($availablePlugins)) {
+			$smallPlugins = array_flip([ // this may be changed to automatic plugin element size detection in the future
+				"Line", "Button", "Menu", "Languages", "StoreCart", "BookmarksShare", "FacebookLike",
+				"2checkout", "7_connect", "alipay", "assist", "bank_transfer", "baokim", "bepaid", "braintree",
+				"BuyNow", "cash_on_delivery", "click", "coinpayments", "dragonpay", "easypay", "effect",
+				"epaybg", "epayco", "epsilon", "expresspay", "gestpay", "getbutton", "gplus_badge",
+				"gplus_like", "hipay", "yandex_kassa", "ideal_payment", "iyzico", "klama", "libelula",
+				"linepay", "liqpay", "mellat", "mercado", "mobilpay", "mollie", "mpesa", "odnoklassniki_share",
+				"olark", "pagseguro", "payfast", "paytr", "paytrail", "payu", "payumoney", "platron", "qiwi",
+				"qiwi_kz", "redsys", "robokassa", "skrill", "smartarget", "stripe", "tawkto",
+				"vkontakte_comment", "vkontakte_like", "webmoney_button", "webmoney_widget", "webpay", "wp",
+				"zopim", "pinterest", "pagopar", "cmi", "artpay",
+			]);
+			$preg_clb = function($m) use ($availablePlugins, $planMap, $upgradeUrl, $smallPlugins, $preview) {
+				$pluginId = $m[1];
+				if (empty($availablePlugins) || (isset($availablePlugins->{$pluginId}) && $availablePlugins->{$pluginId})) {
+					return $m[0];
+				}
+				$r = substr($m[0], 0, -1);
+				$outside = isset($smallPlugins[$pluginId]);
+				$parentCss = $outside ? 'overflow:visible;' : '';
+				$linkCss = $outside ? 'right:-3px;top:-3px;transform:translate(0,-100%);' : 'right:0;top:0;';
+				$linkCss .= 'font: normal 14px &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;';
+				$featureName = $pluginId;
+				$isMenuItem = ($featureName === 'Menu Items');
+				if ($isMenuItem) $pluginId = 'Menu';
+				if ($preview) {
+					$msg = htmlspecialchars(json_encode(['action' => 'showPlanUpgradeDialog', 'plugin' => $pluginId]));
+					$link = ' href="javascript:void(0)"'
+						.' onclick="'
+							.'event.stopPropagation();'
+							.'event.preventDefault();'
+							.'window.parent.postMessage('.$msg.');'
+							.'return false;'
+						.'"';
+				} else {
+					$link = empty($upgradeUrl) ? '' : (
+						' href="'.htmlspecialchars($upgradeUrl).'"'
+						.' target="_blank"'
+						.' onclick="event.stopPropagation();event.returnValue=true;return true;"'
+					);
+					$minPlan = isset($planMap->{$pluginId}[0]) ? $planMap->{$pluginId}[0] : 'Business';
+					$planName = isset($planMap->{$featureName}[1]) ? $planMap->{$featureName}[1] : $featureName;
+					$link = str_replace('__MIN_PLAN__', rawurlencode($minPlan), $link);
+					$link = str_replace('__PLAN_FEATURE__', rawurlencode($planName), $link);
+					$link = str_replace('__UTM_CAMPAIGN__', rawurlencode('plugin-'.strtolower(str_replace('_', '-', $pluginId))), $link);
+					$link = str_replace('__UTM_CONTENT__', rawurlencode($_SERVER['HTTP_HOST']), $link);
+				}
+
+				// WARNING: if modifying styles - make sure to update importer, since it identifies premium elements by "outline: 3px solid #ff7600;" style
+				$r .= ' style="outline: 3px solid #ff7600;'.$parentCss.'" >'
+					.'<a'.$link.' style="position:absolute;'.$linkCss.'z-index:1;border:1px solid #FFF;background:#ff7600;color:#FFF;padding:4px;text-decoration:none;">'
+						.($isMenuItem ? '' : '<i class="fa fa-star"></i>&nbsp;')
+						.htmlspecialchars(\SiteModule::__('This plugin requires upgrade'))
+					.'</a>'
+					.'<a'.$link.' style="position:absolute;left:0;top:0;right:0;bottom:0;z-index:1;display:block;"></a>';
+				return $r;
+			};
+			$newOut = preg_replace_callback('#<[^>]+data-plugin="([^"]+)"[^>]*>#isu', $preg_clb, $out);
+			if ($newOut === null && in_array(preg_last_error(), array(PREG_BAD_UTF8_ERROR, PREG_BAD_UTF8_OFFSET_ERROR))) {
+				// there can be regex error with 'u' flag, so we try without it
+				$out = preg_replace_callback('#<[^>]+data-plugin="([^"]+)"[^>]*>#is', $preg_clb, $out);
+			} else {
+				$out = $newOut;
+			}
+			if (!(empty($availablePlugins) || (isset($availablePlugins->{'Form'}) && $availablePlugins->{'Form'}))) {
+				$out = preg_replace('/<input type="hidden" name="wb_form_(id|uuid)"[^>]*>/isuU', '', $out);
+			}
+		}
+
+		return $out;
+	}
+
+	/**
+	 * @param string $path
+	 * @return self
+	 */
+	public static function fromPath($path) {
+		return new self($path);
+	}
+}
+
+	$pd = PluginDescriptorHandler::fromPath(dirname(__FILE__).'/pd.json');
 	$pages = array(
 		array(
 			'id' => 'a18bddd8a85d00f1870d4bc44fd15f7b',
@@ -48,6 +200,13 @@
 			'id' => 'a1a06787c97900e02e56b45a98c7fa9d',
 			'alias' => 'cryptopandemic',
 			'file' => 'a1a06787c97900e02e56b45a98c7fa9d.php',
+			'controllers' => array(),
+			'type' => 0
+		),
+		array(
+			'id' => 'a1a10ba37c9800b11f76098bcc91fa4b',
+			'alias' => 'education',
+			'file' => 'a1a10ba37c9800b11f76098bcc91fa4b.php',
 			'controllers' => array(),
 			'type' => 0
 		),
@@ -166,7 +325,7 @@
 	$langs = null;
 	$def_lang = null;
 	$base_lang = 'en';
-	$site_id = '11e00f62';
+	$site_id = 'aece9ab1';
 	${'sitemapUrls'} = array(
 		'https://georgedreemer.com/',
 		'https://georgedreemer.com/thoughtbubble',
@@ -174,6 +333,7 @@
 		'https://georgedreemer.com/dreemcorp',
 		'https://georgedreemer.com/datasafari',
 		'https://georgedreemer.com/cryptopandemic',
+		'https://georgedreemer.com/education',
 		'https://georgedreemer.com/stack',
 		'https://georgedreemer.com/blog',
 		'https://georgedreemer.com/blog/datasafari/introduction',
@@ -335,6 +495,7 @@ class MenuElement {
 	if (!$requestHandledByModule && !empty($urlArgs)) $page = null;
 	if (!$page) {
 		if (isSitemapUrl($requestInfo)) genSitemap();
+		elseif (isSitemapXslUrl($requestInfo)) genSitemapXsl();
 		if ($page404) $page = $page404;
 		elseif ($pageMaint) $page = $pageMaint;
 	} elseif ($pageMaint) $page = $pageMaint;
@@ -345,20 +506,14 @@ class MenuElement {
 	ob_start();
 	if ($page) {
 		$fl = dirname(__FILE__).'/'.$page['file'];
-		$flp = dirname(__FILE__).'/pd.json';
-		if (is_file($fl) && is_file($flp)) {
+		if (is_file($fl) && $pd->isValid()) {
 			${'seoTitle'} = $requestInfo->{'title'};
 			${'seoDescription'} = $requestInfo->{'description'};
 			${'seoKeywords'} = $requestInfo->{'keywords'};
 			${'seoImage'} = $requestInfo->{'image'};
 			if (isset($_GET['wbPopupMode']) && $_GET['wbPopupMode'] == 1) { $wbPopupMode = true; }
-			$pd = @json_decode(@file_get_contents($flp));
-			if (!is_object($pd)) die('Data is corrupted');
-			$expectedCrc = $pd->{'e'};
-			unset($pd->{'e'});
-			$crc = sha1('sfh02a35gyhz0a33498g048qt3p048' . json_encode($pd));
-			if ($expectedCrc !== $crc) die('Data is corrupted');
-			MenuElement::setMax($pd->{'f'});
+			if (!$pd->load($siteState)) die('Data is corrupted');
+			MenuElement::setMax($pd->getMaxMenuItems());
 			ob_start();
 			include $fl;
 			$out = ob_get_clean();
@@ -376,115 +531,7 @@ class MenuElement {
 			$out = str_replace('{{curr_url}}', $currUrl, $out);
 			$out = str_replace('__wb_curr_url__', htmlspecialchars($currUrl), $out);
 			$out = str_replace('{{hr_out}}', $hr_out, $out);
-			if (!empty($pd->a)) {
-			    $smallPlugins = array (
-  'Line' => 0,
-  'Button' => 1,
-  'Menu' => 2,
-  'Languages' => 3,
-  'StoreCart' => 4,
-  'BookmarksShare' => 5,
-  'FacebookLike' => 6,
-  '2checkout' => 7,
-  '7_connect' => 8,
-  'alipay' => 9,
-  'assist' => 10,
-  'bank_transfer' => 11,
-  'baokim' => 12,
-  'bepaid' => 13,
-  'braintree' => 14,
-  'BuyNow' => 15,
-  'cash_on_delivery' => 16,
-  'click' => 17,
-  'coinpayments' => 18,
-  'dragonpay' => 19,
-  'easypay' => 20,
-  'effect' => 21,
-  'epaybg' => 22,
-  'epayco' => 23,
-  'epsilon' => 24,
-  'expresspay' => 25,
-  'gestpay' => 26,
-  'getbutton' => 27,
-  'gplus_badge' => 28,
-  'gplus_like' => 29,
-  'hipay' => 30,
-  'yandex_kassa' => 31,
-  'ideal_payment' => 32,
-  'iyzico' => 33,
-  'klama' => 34,
-  'libelula' => 35,
-  'linepay' => 36,
-  'liqpay' => 37,
-  'mellat' => 38,
-  'mercado' => 39,
-  'mobilpay' => 40,
-  'mollie' => 41,
-  'mpesa' => 42,
-  'odnoklassniki_share' => 43,
-  'olark' => 44,
-  'pagseguro' => 45,
-  'payfast' => 46,
-  'paytr' => 47,
-  'paytrail' => 48,
-  'payu' => 49,
-  'payumoney' => 50,
-  'platron' => 51,
-  'qiwi' => 52,
-  'qiwi_kz' => 53,
-  'redsys' => 54,
-  'robokassa' => 55,
-  'skrill' => 56,
-  'smartarget' => 57,
-  'stripe' => 58,
-  'tawkto' => 59,
-  'vkontakte_comment' => 60,
-  'vkontakte_like' => 61,
-  'webmoney_button' => 62,
-  'webmoney_widget' => 63,
-  'webpay' => 64,
-  'wp' => 65,
-  'zopim' => 66,
-  'pinterest' => 67,
-  'pagopar' => 68,
-  'cmi' => 69,
-  'artpay' => 70,
-);
-				$preg_clb = function($m) use($pd, $smallPlugins) {
-			        if (
-			            (empty($pd->{'a'}) || (isset($pd->{'a'}->{$m[1]}) && $pd->{'a'}->{$m[1]}))
-			            && (empty($pd->{'b'}) || !isset($pd->{'b'}->{$m[1]}) || !$pd->{'b'}->{$m[1]})
-					) return $m[0];
-					$featureName = $pluginId = $m[1];
-					$isMenuItem = $featureName === 'Menu Items'; if ($isMenuItem) $pluginId = 'Menu';
-					$r = substr($m[0], 0, -1);
-					$outside = isset($smallPlugins[$pluginId]);
-					$parentCss = $outside ? 'overflow:visible;' : '';
-					$linkCss = $outside ? 'right:-3px;top:-3px;transform:translate(0,-100%);' : 'right:0;top:0;';
-					$linkCss .= 'font: normal 14px &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;';
-					$link = empty($pd->{'d'}) ? '' : (' href="' . htmlspecialchars($pd->{'d'}) . '" target="_blank" onclick="event.stopPropagation();event.returnValue=true;return true;"');
-					$minPlan = isset($pd->{'c'}->{$pluginId}[0]) ? $pd->{'c'}->{$pluginId}[0] : 'Business';
-					$link = str_replace('__MIN_PLAN__', rawurlencode($minPlan), $link);
-					$link = str_replace('__PLAN_FEATURE__', rawurlencode(isset($pd->{'c'}->{$featureName}[1]) ? $pd->{'c'}->{$featureName}[1] : $featureName), $link);
-					$link = str_replace('__UTM_CAMPAIGN__', rawurlencode('plugin-' . strtolower(str_replace('_', '-', $pluginId))), $link);
-					$link = str_replace('__UTM_CONTENT__', rawurlencode($_SERVER['HTTP_HOST']), $link);
-					$r .= ' style="outline: 3px solid #ff7600;'.$parentCss.'" >';
-					$linkText = ($isMenuItem ? '' : '<i class="fa fa-star"></i>&nbsp;') . htmlspecialchars(\SiteModule::__('This plugin requires upgrade'));
-					$r .= '<a'.$link.' style="position:absolute;'.$linkCss.'z-index:1;border:1px solid #FFF;background:#ff7600;color:#FFF;padding:4px;text-decoration:none;">'.$linkText.'</a>';
-					$r .= '<a'.$link.' style="position:absolute;left:0;top:0;right:0;bottom:0;z-index:1;display:block;"></a>';
-					return $r;
-				};
-				$prev_out = $out;
-				$out = preg_replace_callback('#<[^>]+data-plugin="([^"]+)"[^>]*>#isu', $preg_clb, $prev_out);
-				if ($out === null && in_array(preg_last_error(), array(PREG_BAD_UTF8_ERROR, PREG_BAD_UTF8_OFFSET_ERROR))) {
-					$out = preg_replace_callback('#<[^>]+data-plugin="([^"]+)"[^>]*>#is', $preg_clb, $prev_out);
-				}
-				$prev_out = null;
-		    	if (
-			        !((empty($pd->{'a'}) || (isset($pd->{'a'}->{'Form'}) && $pd->{'a'}->{'Form'}))
-			        && (empty($pd->{'b'}) || !isset($pd->{'b'}->{'Form'}) || !$pd->{'b'}->{'Form'}))
-			    ) $out = preg_replace('/<input type="hidden" name="wb_form_(id|uuid)"[^>]*>/isuU', '', $out);
-			}
+			$out = $pd->handle($out, false);
 			header('Content-type: text/html; charset=utf-8', true, $page['type'] === 2 ? 404 : ($page['type'] === 3 ? 503 : 0) );
 			echo $out;
 		}
