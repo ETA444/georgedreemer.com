@@ -2413,11 +2413,122 @@
         </div>
     </nav>
 
+    <!-- ============================================================
+            SECTIONS OVERVIEW (EDUCATION TEMPLATE)
+    ─────────────────────────────────────────────────────────────────
+            PURPOSE : Master index for this template. Read this first
+                    if you're rebuilding a page or auditing an existing
+                    one from a fresh context.
+
+            WHAT THIS PAGE IS: a FUNCTIONAL EXPOSÉ OF A DEGREE. Not a
+            reflection, not a motivation story. A recruiter who reads
+            "MSc Data Science" can only guess what it means; this page
+            removes the guessing. It answers, in order:
+            1. What is this degree?            (Context + Snapshot)
+            2. What was taught?                (Stack + Abilities)
+            3. What did I produce with it?     (Works)
+            Written in first person (my focus, my coursework, my results)
+            but NEVER "why I chose this program", "what motivated me", or
+            "what this journey taught me". Same briefing tone as the
+            experience pages.
+
+            ORDER ON PAGE (always this sequence):
+            1. Context      — 3 short paragraphs: what the degree is (p1),
+                                what it covers (p2), how it was evidenced (p3)
+            2. Snapshot     — degree, type, faculty, timeframe, location,
+                                result (GPA), links + topic list
+            [E3 — In Numbers — INTENTIONALLY OMITTED on education pages.
+            GPA lives in Snapshot; a counter row with one stat looks
+            thin. Numbering below deliberately keeps the experience
+            template's E-numbers so both templates can be cross-
+            referenced. Do NOT renumber.]
+            4. Stack        — tools/languages/libraries the degree required
+            5. Abilities    — course list, re-framed as employer-relevant
+                                skills (one course can become several cards)
+            6. Works        — theses, presentations, projects, code: what
+                                the stack and abilities translated into
+            7. In-Depth     — OPTIONAL, see E7 block. Default: omit.
+
+            PAGE ENDS AFTER E6 (or E7 if used). No thanks section, no
+            community / extracurricular section, no key-stats block. The
+            reader should leave this page for an Experience page, where
+            ventures and extracurriculars are presented properly. Do not
+            add sections "to fill space".
+
+            CROSS-SECTION RULES (apply everywhere):
+            - DOMAIN COLOR SYSTEM: same 4-domain system as the experience
+                template (data-domain="engineering|product|growth|data";
+                primary=engineering, gold=product, orange=growth, blue=data).
+                Never introduce a 5th domain or new color without updating
+                the CSS custom properties for all components.
+                EDUCATION INTERPRETATION of the 4 domains:
+                engineering — programming, software, pipelines, systems
+                data        — statistics, ML, analysis, modelling
+                product     — applied problem framing, communication,
+                                presenting, domain-facing deliverables
+                growth      — research methods, experimentation,
+                                optimisation, evaluation (use sparingly)
+                RELAXED RULE: unlike experience pages, an education page
+                does NOT have to cover all four domains. `data` and
+                `engineering` will usually dominate. Never force a card
+                into a domain to "balance" the grid.
+            - PILLS/TAGS PHILOSOPHY (site-wide): tags describe
+                TRANSFERABLE ABILITIES, not tools, languages, or course
+                codes. "scikit-learn" belongs in the Stack; "Supervised
+                Model Evaluation" is a tag. Test: "does this read like a
+                line on a CV skills section, independent of the tool?"
+            - COURSE TITLES ARE ADAPTED FOR READABILITY. Academic titles
+                get rewritten into plain, practical language. Original
+                official title may be kept as small secondary text so that
+                nothing is hidden or misrepresented.
+            - TRANSPARENCY IS THE ANGLE. Wherever possible link to the
+                real thing (public repo, slides, thesis PDF, program page).
+                Let the evidence carry the claim; don't write "unusually
+                transparent" in the copy.
+            - VOICE: first-person, senior, concrete. No "I learned
+                that...", "this taught me...", "looking back...", no
+                motivation or choice-of-institution storytelling. State
+                what the degree covered and what was built, with numbers,
+                names, constraints.
+    ================================================================ -->
     <main class="preview-page" role="main">
 
         <!-- ============================================================
-            ELEMENT 1 — CONTEXT BLOCK
-        ============================================================ -->
+             ELEMENT 1 — CONTEXT BLOCK
+             ─────────────────────────────────────────────────────────
+             PURPOSE : First thing a recruiter reads. Must work as a
+                       60-second standalone pitch even if they read nothing
+                       else on the page. After p1–p3, the reader should know
+                       what this degree IS, what it covers, and that there is
+                       real evidence behind it.
+
+             STRUCTURE (exactly 3 paragraphs, no more, no less):
+               p1 — THE HOOK. What the degree is, in one dense sentence.
+                    Should contain: program name and level, institution,
+                    duration/timeframe, the core focus, and the headline
+                    result. Becomes the meta description / OG tag.
+                    Written as a plain definition, not a story. Answers:
+                    "what is this master?"
+               p2 — THE SCOPE. What the program focuses on and what is
+                    actually learned: the 2–3 pillars of the curriculum
+                    (e.g. statistics, machine learning, data engineering)
+                    and what a graduate can DO with them. ONE sentence
+                    unless there is a genuinely new fact. Do not pad.
+                    Answers: "what is the focus, what is being learned?"
+               p3 — THE PROOF. How it was assessed and evidenced: theses,
+                    project count, public repository, presentations. Lean
+                    on specifics (primary thesis topic, secondary thesis,
+                    publicly browsable code and slides) rather than repeating
+                    what Snapshot already shows (GPA, dates, location).
+                    Answers: "is there real work behind this?"
+
+             EXPLICITLY OUT OF SCOPE: why this program, why this city or
+             institution, personal motivation, career-change narrative,
+             reflections.
+
+             STYLE: p1 renders larger/display-weight (first-of-type CSS
+                    hook) — write it knowing it will look like a headline.
+        ================================================================ -->
         <section aria-label="E1 Context Block" class="fade-in">
             <div class="context-block">
                 <p>DataSafari is a Python library that simplifies complex data science tasks — compressing exploration, transformation, evaluation, and prediction into a single one-liner API. One import. One function call. One plain-English report.</p>
@@ -2427,8 +2538,58 @@
         </section>
 
         <!-- ============================================================
-            ELEMENT 2 — SNAPSHOT CARD
-        ============================================================ -->
+             ELEMENT 2 — SNAPSHOT CARD
+             ─────────────────────────────────────────────────────────
+             PURPOSE : Scannable facts block. A recruiter should get degree,
+                       type, result, timeframe, and location in under
+                       3 seconds without reading prose, and see the breadth
+                       of the curriculum at a glance.
+
+             STRUCTURE:
+               - Meta grid (adapted from the experience Snapshot):
+                   Degree     — e.g. "Data Science" (was: Role)
+                                 → `.snapshot-item--prominent`
+                   Type       — "Master of Science (MSc)" (was: Type)
+                                 → `.snapshot-item--prominent`
+                   Result     — GPA / final grade, with the scale stated
+                                 (e.g. "8.2 / 10"). NEW item. Always include
+                                 the scale; a bare number is meaningless to
+                                 international recruiters. If the scale or
+                                 grading system is unfamiliar, add a short
+                                 plain-language equivalent in parentheses.
+                                 → `.snapshot-item--prominent` ONLY if it is
+                                   strong; otherwise a standard item.
+                   Faculty    — e.g. "Faculty of Science and Engineering".
+                                 Standard (non-prominent) item. Signals the
+                                 orientation of the degree.
+                   Timeframe  — start–end (unchanged)
+                   Location   — city, country (unchanged)
+                   Links      — link to the official program page on the
+                                 institution's site (and, if useful, the
+                                 public repo). Link text should name the
+                                 destination ("Official program page"), not
+                                 "click here".
+               - Divider, then TOPICS COVERED (replaces Highlights): a
+                 wrapped row of chips listing the main subject areas of the
+                 degree.
+
+             THESIS TITLE: deliberately NOT in Snapshot. It would break the
+             scannable grid. It lives in E1 p3 (by name) and in E6 (as the
+             lead Works card).
+
+             TOPIC CHIP RULES (differs from experience Highlight chips):
+               - Chips are SUBJECT AREAS, not achievements. Short noun
+                 phrases in plain language ("Machine Learning", "Statistical
+                 Modelling", "Data Engineering", "Time Series Analysis").
+               - Based on the REAL course list and topics of the degree,
+                 but relaxed and condensed: 6–8 chips MAX. If it starts to
+                 read like a transcript, cut it. The full curriculum lives
+                 in E5.
+               - Keep `data-domain` dots for color threading, ordered
+                 engineering → data → product → growth, same as elsewhere.
+               - Do not repeat Stack items (no tool names) and do not
+                 pre-empt E5 card titles word for word.
+        ================================================================ -->
         <section aria-label="E2 Snapshot Card" class="fade-in">
             <div class="snapshot-card" data-domain="engineering">
                 <div class="snapshot-card__meta">
@@ -2538,48 +2699,40 @@
         </section>
 
         <!-- ============================================================
-            ELEMENT 3 — IN NUMBERS / STAT COUNTER
-        ============================================================ -->
-        <section class="stat-counter-section fade-in" aria-label="E3 In Numbers">
-            <div class="stat-counter">
-                <div class="stat-counter__item" data-target="11" data-domain="data">
-                <span class="stat-counter__number" aria-live="polite">0</span>
-                <span class="stat-counter__label">Functions shipped</span>
-                </div>
-                <div class="stat-counter__item" data-target="10" data-domain="data">
-                <span class="stat-counter__number" aria-live="polite">0</span>
-                <span class="stat-counter__label">Libraries unified into one API</span>
-                </div>
-                <div class="stat-counter__item" data-target="7" data-domain="data">
-                <span class="stat-counter__number" aria-live="polite">0</span>
-                <span class="stat-counter__label">Decisions automated per hypothesis test</span>
-                </div>
-                <div class="stat-counter__item" data-target="10" data-suffix="+" data-domain="data">
-                <span class="stat-counter__number" aria-live="polite">0</span>
-                <span class="stat-counter__label">Pipeline decisions automated per ML run</span>
-                </div>
-                <div class="stat-counter__item" data-target="666" data-domain="engineering">
-                <span class="stat-counter__number" aria-live="polite">0</span>
-                <span class="stat-counter__label">Commits pushed</span>
-                </div>
-                <div class="stat-counter__item" data-target="12" data-domain="engineering">
-                <span class="stat-counter__number" aria-live="polite">0</span>
-                <span class="stat-counter__label">Automated steps per CI run</span>
-                </div>
-                <div class="stat-counter__item" data-target="250" data-suffix="+" data-domain="engineering">
-                <span class="stat-counter__number" aria-live="polite">0</span>
-                <span class="stat-counter__label">Pytest tests written</span>
-                </div>
-                <div class="stat-counter__item" data-target="136" data-domain="engineering">
-                <span class="stat-counter__number" aria-live="polite">0</span>
-                <span class="stat-counter__label">Issues closed</span>
-                </div>
-            </div>
-        </section>
+             ELEMENT 4 — STACK BADGE GRID
+             ─────────────────────────────────────────────────────────
+             PURPOSE : The hard skills the degree required in practice.
+                       Shows what it took to get through the program. This is
+                       the ONLY section where raw tools, languages, and
+                       platforms belong — Abilities (E5) must never restate
+                       what is here. Also acts as a visual rest between the
+                       text-heavy Context/Snapshot and the card grids.
 
-        <!-- ============================================================
-                ELEMENT 4 — STACK BADGE GRID
-        ============================================================ -->
+             SCOPE : Curate ONLY what was actually used during this degree
+                     (coursework, theses, projects). Do not copy the full
+                     personal stack; cross-check against the MSc repo and
+                     the course materials.
+
+             TAXONOMY PHILOSOPHY (site-wide, same as experience template,
+             do not invent new categories without updating this list):
+               Languages          — things you write (syntax)
+               Libraries          — things you import/require
+               Databases          — storage engines (not the SQL language)
+               Dev Tools & IDEs   — things you open and run
+               Platforms & Infra  — things you deploy to or operate
+               Web & Commerce     — CMS / e-commerce platforms
+               Design & Creative  — visual production tools
+               AI & Automation    — emerging toolchain
+               Productivity       — office/collaboration suites
+             Expect education pages to use mostly: Languages, Libraries,
+             Dev Tools & IDEs, Databases, AI & Automation. Omit unused
+             categories entirely.
+
+             BADGE FORMAT: `.stack-badge` with a real icon (Simple Icons
+             CDN preferred: cdn.simpleicons.org/{brand}/{hex}) + name span.
+             For tools without a Simple Icons entry, use `.stack-badge--text`
+             with a colored monogram mark (`.stack-badgemark`).
+        ================================================================ -->
         <section aria-label="E4: STACK BADGE GRID" class="fade-in">
             <div class="section-label">
                 <span class="section-label__text">Stack</span>
@@ -2756,8 +2909,58 @@
         </section>
 
         <!-- ============================================================
-            ELEMENT 5 — ABILITY CARD GRID
-        ============================================================ -->
+             ELEMENT 5 — ABILITY CARD GRID (COURSE → SKILL TRANSLATION)
+             ─────────────────────────────────────────────────────────
+             PURPOSE : The curriculum overview AND the "what I can do"
+                       section in one. Presents the course list in the spirit
+                       of a transparent track statement (an employer should
+                       see exactly what someone with this degree went
+                       through) while translating each course into practical,
+                       employer-relevant capability.
+
+             HOW COURSES BECOME CARDS:
+               - Source material: the official course list (cross-referenced
+                 with the course materials and the MSc repo).
+               - ONE COURSE MAY BECOME SEVERAL CARDS if it taught several
+                 distinct, relevant skills. TWO COURSES MAY MERGE into one
+                 card if they cover the same ability.
+               - Courses with no employer-relevant skill content may be left
+                 out of the cards; nothing is hidden because the program
+                 page is linked in Snapshot.
+               - Titles are ADAPTED for readability and practicality:
+                 "Applied Multivariate Statistical Analysis" → "Statistics
+                 for Messy, Multi-Variable Data". Keep the original course
+                 title as small secondary text under or beside the title
+                 whenever the title was changed, so it stays verifiable.
+
+             LEGEND: always 4 items, fixed order — Engineering, Product,
+             Growth, Data (see E0 for the education interpretation). Hide or
+             leave inactive any domain with zero cards rather than padding.
+
+             CARD ANATOMY (fixed): icon (outline SVG, 24x24 viewBox,
+             stroke-based, no fill) → title (specific, ability-framed) →
+             1–2 sentence description (what was actually done in the
+             course: concrete nouns, methods, a real deliverable if there
+             was one) → 2–3 tags.
+               OPTIONAL ADDITION (needs CSS, flag for dev): a small
+               "source course" line (`.ability-card__source`) holding the
+               original course title. If not built yet, put the original
+               title in parentheses at the end of the description.
+
+             TAG RULE (THE BREAKTHROUGH — read before writing tags):
+               Tags name a TRANSFERABLE ABILITY, not a tool, language,
+               course code, or vague concept. Test each tag by asking
+               "would this read naturally on a CV skills line, independent
+               of the specific tech stack used?"
+                 GOOD : "Supervised Model Evaluation", "Experimental Design",
+                        "Statistical Inference", "Data Pipeline Design"
+                 BAD  : "Python", "scikit-learn", "Week 4", "Statistics"
+               Tools go in E4 (Stack). If you catch yourself writing a
+               library or language as a tag, rewrite it as the capability.
+
+             DOMAIN ASSIGNMENT: one card carries one data-domain — the
+             domain the skill is MOST associated with.
+        ================================================================ -->
         <section aria-label="E5: ABILITY CARD GRID" class="fade-in">
             <div class="section-label">
                 <span class="section-label__text">Abilities</span>
@@ -2967,7 +3170,59 @@
 
         <!-- ============================================================
             ELEMENT 6 — WORKS CARD GRID
-        ============================================================ -->
+            ─────────────────────────────────────────────────────────
+            PURPOSE : Proof. What the stack (E4) and abilities (E5)
+                    actually translated into: theses, presentations,
+                    projects, and the code behind them. This is the
+                    "don't just take my word for it" section, and on an
+                    education page it is the strongest differentiator:
+                    the work is public, readable, and inspectable.
+
+            CARD ORDER:
+            1. PRIMARY THESIS   — lead card
+            2. SECONDARY THESIS — second card
+            3. Selected course projects / presentations — 4–6 cards
+                chosen to show the RANGE of the degree, not to list
+                everything. The full archive can be linked, not
+                reproduced.
+
+            VARIANTS (choose per card based on available media):
+            A. Single image  — .evidence-card__thumb + <img>
+            B. Slideshow      — .evidence-card__slides (auto-advances,
+                                    pauses on hover, dot navigation)
+            C. Video file*    — .evidence-card__video + <video autoplay
+                                    muted loop>
+            D. Video YouTube* — .evidence-card__video + <iframe>
+            E. Canva embed    — NEW. Presentation slides are hosted on
+                                    Canva; use Canva's embed inside the
+                                    existing media block (same aspect-ratio
+                                    wrapper as variant D, <iframe>, no
+                                    autoplay assumptions). DEV TODO: confirm
+                                    embed markup and sizing.
+            * Portrait video: add data-orientation="portrait" to
+                .evidence-card__video for vertical content.
+
+            CARD ANATOMY: media block → domain tag (dot + label, same
+            4-domain system) → title (specific to the thesis/project, not
+            the whole degree) → 3–4 bullet points, each a concrete
+            method/action/output (not a restated ability-card tag) →
+            LINKS ROW (NEW, see below).
+            Suggested bullet content for academic work: the question or
+            task, the data and method, the result, and the deliverable
+            (paper, slides, notebook).
+
+            LINKS ROW (NEW — DEV TODO, small CSS addition): a compact
+            row at the bottom of `.evidence-card__body` with 1–3 links,
+            e.g. "Source code" (public MSc GitHub repo, linked to the
+            specific folder where possible), "Slides", "Thesis PDF".
+            Must look clean and professional: text links with a small
+            icon, same styling language as the Snapshot links; external
+            links use target="_blank" rel="noopener noreferrer".
+
+            CARD SELECTION: pick 6–8 cards total. Prefer cards with real
+            visual proof (slides, figures, repo screenshots). Domain
+            coverage is relaxed here (see E0): don't force all four.
+        ================================================================ -->
         <section aria-label="E6 Works Card Grid" class="fade-in">
 
             <div class="section-label">
@@ -3288,128 +3543,6 @@
                     <li>Published to PyPI with automated versioning and structured release notes, making the library publicly installable via <code>pip install datasafari</code></li>
                     <li>Maintained a professional open-source presence: README, changelog, issue labels, and a coherent brand that makes a solo-built library read as a production-grade tool</li>
                     </ul>
-                </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- ============================================================
-            ELEMENT 7 — IN-DEPTH ACCORDION
-        ============================================================ -->
-        <section aria-label="E7: IN DEPTH ACCORDION" class="fade-in">
-            <div class="section-label">
-                <span class="section-label__text">In Depth</span>
-                <span class="section-label__line" aria-hidden="true"></span>
-            </div>
-
-            <div class="story-accordion" role="list">
-
-                <!-- Item 1 · Data · The Why -->
-                <div class="story-accordion__item" data-domain="data" role="listitem">
-                <button class="story-accordion__trigger" aria-expanded="true" aria-controls="story-panel-1">
-                    <span class="story-accordion__trigger-left">
-                    <span class="story-accordion__domain-tag">
-                        <span class="story-accordion__domain-dot"></span>Data
-                    </span>
-                    <span class="story-accordion__trigger-label">Built for the Professor Who Doesn't Have Time to Learn Python</span>
-                    </span>
-                    <svg class="story-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="false">
-                    <polyline points="6 9 12 15 18 9" />
-                    </svg>
-                </button>
-                <div class="story-accordion__body" id="story-panel-1" aria-hidden="false">
-                    <div class="story-accordion__inner">
-                    <div class="story-accordion__content">
-                        <p>At RUG, the standard data science curriculum ran on Stata, R, and SPSS. These tools have decades of academic inertia behind them, not necessarily because they are better, but because professors mastered them before Python became a serious data science platform and have not had time to switch. As a result, students graduate knowing tools that industry has largely moved beyond, while Python's better-maintained, faster, free, and more capable ecosystem goes untaught. Professors and other departmental staff have too much on their hands for a full curriculum redesign.</p>
-                        <p>DataSafari started as a direct response to that gap. The hypothesis was simple: bring Python's best statistical and ML libraries together under a single interface that requires no configuration and produces plain-English output. That removes the adoption barrier for the person who most needs it: a researcher who knows their field, understands what a normality test is, but doesn't want to spend two hours reading <code>scipy.stats</code> documentation to run one. One import, one function call, and one readable report.</p>
-                        <p>The iPhone analogy is imperfect but directionally useful. R is like Android: powerful, flexible, and beloved by people willing to configure it. DataSafari aims to provide an iOS-like layer on top of Python's underlying ecosystem.</p>
-                        <p>That philosophy drove every product decision. It's why <code>method='all'</code> is the default rather than a required argument. It's why output is printed in plain English with interpretive tips instead of being returned as a raw matrix. It's why the function names are verbs such as <code>explore</code>, <code>transform</code>, <code>evaluate</code>, and <code>predict</code>. They describe what the user wants to do, not what the statistics are called. The target user was never a Python expert. It was someone who needed to do real data science work without letting the tooling become the hardest part of the day.</p>
-                    </div>
-                    </div>
-                </div>
-                </div>
-
-                <!-- Item 2 · Engineering · Input Engineering -->
-                <div class="story-accordion__item" data-domain="engineering" role="listitem">
-                <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-2">
-                    <span class="story-accordion__trigger-left">
-                    <span class="story-accordion__domain-tag">
-                        <span class="story-accordion__domain-dot"></span>Engineering
-                    </span>
-                    <span class="story-accordion__trigger-label">Input Engineering: Ask Less, Do More</span>
-                    </span>
-                    <svg class="story-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                    <polyline points="6 9 12 15 18 9" />
-                    </svg>
-                </button>
-                <div class="story-accordion__body" id="story-panel-2" aria-hidden="true">
-                    <div class="story-accordion__inner">
-                    <div class="story-accordion__content">
-                        <p>The hardest design constraint in DataSafari was self-imposed: a user should be able to call any function with just a DataFrame and a column list and get something genuinely useful back. No configuration, statistical expertise, or output parsing should be required. The library decides the rest.</p>
-                        <p>Making that work means every function carries a significant amount of internal decision-making that the user never sees. <code>explore_num()</code> takes a single <code>method</code> parameter that defaults to <code>'all'</code> — which means it runs correlation analysis, distribution analysis, three separate outlier detection algorithms (Z-score, IQR, and Mahalanobis distance), and a multicollinearity check in one call. The user passed two arguments. The library ran seven analyses and printed a structured plain-English report. That ratio — minimal input to maximal output — is the whole product.</p>
-                        <p>But the API was also designed not to limit experts. Every function offers a full set of parameters for users who want to go deeper: <code>method='outliers_iqr'</code> to isolate a single analysis, <code>output='return'</code> to get structured DataFrames instead of printed text, and <code>threshold_z=2</code> to tighten the Z-score cutoff for a stricter definition of an outlier. The one-liner is the entry point; the parameters are the escape hatches. Designing that layered experience, where simple stays simple and complexity remains possible, required thinking through every plausible user intent before writing a single line of logic, then ensuring the implementation served them all without conflict.</p>
-                    </div>
-                    </div>
-                </div>
-                </div>
-
-                <!-- Item 3 · Engineering · Error Handling as UX -->
-                <div class="story-accordion__item" data-domain="engineering" role="listitem">
-                <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-3">
-                    <span class="story-accordion__trigger-left">
-                    <span class="story-accordion__domain-tag">
-                        <span class="story-accordion__domain-dot"></span>Engineering
-                    </span>
-                    <span class="story-accordion__trigger-label">Error Handling as User Experience</span>
-                    </span>
-                    <svg class="story-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                    <polyline points="6 9 12 15 18 9" />
-                    </svg>
-                </button>
-                <div class="story-accordion__body" id="story-panel-3" aria-hidden="true">
-                    <div class="story-accordion__inner">
-                    <div class="story-accordion__content">
-                        <p>A Python traceback is the last thing a researcher wants to see at 11pm before a deadline. Every public function in DataSafari raises structured, specific errors before it does any computation — and the error messages are written for the person calling the function, not for the developer who wrote it.</p>
-                        <p>The error handling layer sits entirely above the statistical logic. Before <code>explore_num()</code> touches a single column, it checks: is <code>df</code> actually a DataFrame? Is <code>numerical_variables</code> a list? Are the strings in that list real column names that exist in <code>df</code>? Are those columns actually numerical? Is the list non-empty? Is the DataFrame non-empty? Is <code>method</code> one of the seven valid options? Is <code>output</code> one of the two valid options? Is <code>threshold_z</code> a number? That's nine distinct failure modes caught and surfaced with a clear message and a correct-usage example — before a single line of analysis runs. Every one of those checks exists because someone, at some point during development and testing, made exactly that mistake.</p>
-                        <p>The discipline behind this is that a library function has no UI. The error message <em>is</em> the UI. If a user passes a string where a list is expected and gets back <code>TypeError: 'str' object is not iterable</code>, that's a failed product moment — they have to reverse-engineer what went wrong from a generic Python exception. If they get back <code>"explore_num(): The numerical_variables parameter must be a list of variable names. Example: var_list = ['var1', 'var2', 'var3']"</code>, they fix it in ten seconds and move on. That difference is entirely a writing problem, not a coding one, and it took as much time to get right as the statistical methods themselves.</p>
-                    </div>
-                    </div>
-                </div>
-                </div>
-
-                <!-- Item 4 · Engineering · The Hidden 80% -->
-                <div class="story-accordion__item" data-domain="engineering" role="listitem">
-                <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-4">
-                    <span class="story-accordion__trigger-left">
-                    <span class="story-accordion__domain-tag">
-                        <span class="story-accordion__domain-dot"></span>Engineering
-                    </span>
-                    <span class="story-accordion__trigger-label">The Hidden 80%: What It Actually Takes to Ship a Python Package</span>
-                    </span>
-                    <svg class="story-accordion__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                    <polyline points="6 9 12 15 18 9" />
-                    </svg>
-                </button>
-                <div class="story-accordion__body" id="story-panel-4" aria-hidden="true">
-                    <div class="story-accordion__inner">
-                    <div class="story-accordion__content">
-                        <p>The data science code, including the statistical methods, ML pipeline, and EDA logic, represents perhaps 20% of what it took to ship DataSafari. The other 80% consists of infrastructure decisions that tutorials rarely cover and that took weeks of research to get right.</p>
-                        <p>The production configuration alone spans a dozen files beyond the package source itself:</p>
-                        <ul>
-                        <li><code>pyproject.toml:</code> unified build, dependency, and tool configuration via Poetry and Setuptools</li>
-                        <li><code>bumpversion.cfg:</code> automated semantic versioning with bump2version, wired to the CI pipeline to auto-increment on tagged releases</li>
-                        <li><code>tox.ini:</code> multi-environment test runner across Python 3.9 to 3.12, so no version-specific regression ships undetected</li>
-                        <li><code>setup.cfg</code> and <code>MANIFEST.in:</code> package inclusion rules to control exactly what ends up in the wheel and sdist</li>
-                        <li><code>pyproject.toml:</code> Bandit config block, with the static security scan tuned to ignore specific false-positive patterns in the codebase</li>
-                        <li><code>LICENSE:</code> GPL-3.0, chosen deliberately: use it freely, but derivatives stay open</li>
-                        <li><code>Sphinx's conf.py:</code> the full documentation build configuration, including the Napoleon extension for Google-style docstrings, the Furo theme, and cross-reference resolution</li>
-                        </ul>
-                        <p></p>
-                        <p>Every one of those files required learning a tool I hadn't used before, reading its documentation, making it work with the others, and then making the entire stack reproducible in GitHub Actions. The CI pipeline didn't run cleanly on the first push or even the tenth. Over the development lifecycle, 136 issues were filed and closed, most of them documenting this kind of integration friction and its solution.</p>
-                        <p>Documentation was another substantial layer of the work, especially the documentation users encounter inside the library: the <code>docstrings</code>. Every public function in DataSafari has a complete docstring with typed parameters, return types, raised exceptions, and a working code example that produces real output. More than 20 functions, including non-public ones, are documented to the point that <code>help(ds.explore_num)</code> gives a new user everything needed to use the function correctly without opening a browser. Writing that documentation took longer than writing some of the functions themselves.</p>
-                    </div>
-                    </div>
                 </div>
                 </div>
 
