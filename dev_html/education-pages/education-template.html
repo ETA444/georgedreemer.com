@@ -712,6 +712,176 @@
       border-color: color-mix(in srgb, var(--color-domain-growth) 20%, transparent);
     }
 
+    /* Emphasis for the Result block */
+    .snapshot-item--result .snapshot-item__value {
+        letter-spacing: -0.02em;
+    }
+
+    /* GPA visual treatment */
+    .snapshot-item--result .snapshot-item__value {
+        display: inline-block;
+        padding: 0.18rem 0.55rem;
+        border-radius: var(--radius-full);
+        background: linear-gradient(
+            135deg,
+            color-mix(in srgb, var(--color-surface) 14%, white),
+            color-mix(in srgb, gold 16%, white)
+        );
+        border: 1px solid color-mix(in srgb, var(--color-primary) 20%, transparent);
+        font-weight: 700;
+    }
+
+    /* ── Bookmark tab ───────────────────────────── */
+    .snapshot-card {
+        position: relative;
+        margin-top: var(--space-10);
+    }
+
+    .snapshot-card__tab {
+        position: absolute;
+        left: var(--space-6);
+        bottom: 100%;
+        display: flex;
+        align-items: center;
+        gap: var(--space-3);
+        padding: var(--space-2) var(--space-5) var(--space-2) var(--space-3);
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-bottom: none;
+        border-radius: var(--radius-md) var(--radius-md) 0 0;
+        margin-bottom: 0;
+        /* sits over the card's 2px primary top border */
+        transform: translateY(-3px);
+        z-index: 1;
+    }
+
+    .snapshot-card__tab-logo {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+    }
+
+    .snapshot-card__tab-logo img {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+    }
+
+    .snapshot-card__tab-text {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.25;
+    }
+
+    .snapshot-card__tab-name {
+        font-size: var(--text-sm);
+        font-weight: 700;
+        color: var(--color-text);
+    }
+
+    /* Keep the tab from overflowing narrow screens */
+    @media (max-width: 480px) {
+        .snapshot-card__tab { left: var(--space-4); padding-right: var(--space-4); }
+    }
+
+    /* ── Rank pills (inside bookmark tab) ───────────── */
+    .snapshot-card__ranks {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: var(--space-2);
+        margin-top: var(--space-1);
+    }
+
+    .rank-pill {
+        --rank: var(--color-primary);
+        display: inline-flex;
+        align-items: center;
+        gap: var(--space-1);
+        padding: 1px var(--space-3);
+        border-radius: var(--radius-full);
+        font-size: var(--text-xs);
+        font-weight: 600;
+        line-height: 1.5;
+        white-space: nowrap;
+        color: var(--color-text);
+        border: 1px solid color-mix(in srgb, var(--rank) 35%, transparent);
+        background: color-mix(in srgb, var(--rank) 10%, var(--color-surface));
+    }
+    .rank-pill i { color: var(--rank); font-size: 0.85em; }
+    .rank-pill--world { --rank: var(--color-gold, #c9a227); }
+    .rank-pill--green { --rank: var(--color-success, #2e7d32); }
+
+    /* ── Info tooltip (reusable) ────────────────────── */
+    .snapshot-item--result { position: relative; }   /* tab is already absolute */
+
+    .info-tip {
+        position: relative;
+        display: inline-grid;
+        place-items: center;
+        margin-left: var(--space-1);
+        padding: 0;
+        color: var(--color-text-muted);
+        font-size: 15px;
+        line-height: 1;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    .info-tip::after { content: ""; position: absolute; inset: -12px; }  /* 44px touch target */
+    .info-tip:hover, .info-tip[aria-expanded="true"] { color: var(--color-primary); }
+
+    .info-tip__panel {
+        position: absolute;
+        top: calc(100% + var(--space-2));
+        left: 0;
+        z-index: 20;
+        width: min(320px, calc(100vw - var(--space-12)));
+        padding: var(--space-4);
+        background: var(--color-surface-2, var(--color-surface));
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-md);
+        font-size: var(--text-xs);
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 1.5;
+        color: var(--color-text);
+        text-align: left;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4px);
+        transition: opacity 160ms ease, transform 160ms ease, visibility 160ms;
+    }
+    .info-tip__panel::before { content: ""; position: absolute; inset: -10px 0 auto 0; height: 10px; } /* hover bridge */
+    .info-tip__panel p + p, .info-tip__panel ul + p { margin-top: var(--space-2); }
+    .info-tip__title { font-weight: 700; font-size: var(--text-sm); }
+    .info-tip__list { list-style: none; display: grid; gap: var(--space-1); margin-top: var(--space-2); }
+    .info-tip__context { color: var(--color-text); }
+    .info-tip__note { color: var(--color-text-muted); }
+    .info-tip__panel a { color: inherit; border-bottom: 1px solid var(--color-border); }
+
+    .tip-host:has(.info-tip:hover) .info-tip__panel,
+    .tip-host:has(.info-tip__panel:hover) .info-tip__panel,
+    .tip-host:has(.info-tip:focus-visible) .info-tip__panel,
+    .tip-host.is-open .info-tip__panel {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+
+    @media (max-width: 480px) {
+        .rank-pill__src { display: none; }   /* "#84 World" only on phones */
+    }
+    @media (prefers-reduced-motion: reduce) {
+        .info-tip__panel { transition: none; }
+    }
+
     /* ── ELEMENT 3 — IN NUMBERS / STAT COUNTER ─────────────────── */
     .stat-counter-section {
       padding-block: var(--space-4);
@@ -2451,178 +2621,6 @@
                - Do not repeat Stack items (no tool names) and do not
                  pre-empt E5 card titles word for word.
         ================================================================ -->
-        <style>
-            /* Slight emphasis for the Result block */
-            .snapshot-item--result .snapshot-item__value {
-                letter-spacing: -0.02em;
-            }
-
-            /* Optional GPA visual treatment */
-            .snapshot-item--result .snapshot-item__value {
-                display: inline-block;
-                padding: 0.18rem 0.55rem;
-                border-radius: var(--radius-full);
-                background: linear-gradient(
-                    135deg,
-                    color-mix(in srgb, var(--color-surface) 14%, white),
-                    color-mix(in srgb, gold 16%, white)
-                );
-                border: 1px solid color-mix(in srgb, var(--color-primary) 20%, transparent);
-                font-weight: 700;
-            }
-
-            /* ── E2: Bookmark tab ───────────────────────────── */
-            .snapshot-card {
-                position: relative;
-                margin-top: var(--space-10);
-            }
-
-            .snapshot-card__tab {
-                position: absolute;
-                left: var(--space-6);
-                bottom: 100%;
-                display: flex;
-                align-items: center;
-                gap: var(--space-3);
-                padding: var(--space-2) var(--space-5) var(--space-2) var(--space-3);
-                background: var(--color-surface);
-                border: 1px solid var(--color-border);
-                border-bottom: none;
-                border-radius: var(--radius-md) var(--radius-md) 0 0;
-                margin-bottom: 0;
-                /* sits over the card's 2px primary top border */
-                transform: translateY(-3px);
-                z-index: 1;
-            }
-
-            .snapshot-card__tab-logo {
-                width: 40px;
-                height: 40px;
-                flex-shrink: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background: #fff;
-                border: 1px solid var(--color-border);
-                border-radius: var(--radius-md);
-            }
-
-            .snapshot-card__tab-logo img {
-                width: 28px;
-                height: 28px;
-                object-fit: contain;
-            }
-
-            .snapshot-card__tab-text {
-                display: flex;
-                flex-direction: column;
-                line-height: 1.25;
-            }
-
-            .snapshot-card__tab-name {
-                font-size: var(--text-sm);
-                font-weight: 700;
-                color: var(--color-text);
-            }
-
-            /* Keep the tab from overflowing narrow screens */
-            @media (max-width: 480px) {
-                .snapshot-card__tab { left: var(--space-4); padding-right: var(--space-4); }
-            }
-
-            /* ── Rank pills (inside bookmark tab) ───────────── */
-            .snapshot-card__ranks {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                gap: var(--space-2);
-                margin-top: var(--space-1);
-            }
-
-            .rank-pill {
-                --rank: var(--color-primary);
-                display: inline-flex;
-                align-items: center;
-                gap: var(--space-1);
-                padding: 1px var(--space-3);
-                border-radius: var(--radius-full);
-                font-size: var(--text-xs);
-                font-weight: 600;
-                line-height: 1.5;
-                white-space: nowrap;
-                color: var(--color-text);
-                border: 1px solid color-mix(in srgb, var(--rank) 35%, transparent);
-                background: color-mix(in srgb, var(--rank) 10%, var(--color-surface));
-            }
-            .rank-pill i { color: var(--rank); font-size: 0.85em; }
-            .rank-pill--world { --rank: var(--color-gold, #c9a227); }
-            .rank-pill--green { --rank: var(--color-success, #2e7d32); }
-
-            /* ── Info tooltip (reusable) ────────────────────── */
-            .snapshot-item--result { position: relative; }   /* tab is already absolute */
-
-            .info-tip {
-                position: relative;
-                display: inline-grid;
-                place-items: center;
-                margin-left: var(--space-1);
-                padding: 0;
-                color: var(--color-text-muted);
-                font-size: 15px;
-                line-height: 1;
-                vertical-align: middle;
-                cursor: pointer;
-            }
-            .info-tip::after { content: ""; position: absolute; inset: -12px; }  /* 44px touch target */
-            .info-tip:hover, .info-tip[aria-expanded="true"] { color: var(--color-primary); }
-
-            .info-tip__panel {
-                position: absolute;
-                top: calc(100% + var(--space-2));
-                left: 0;
-                z-index: 20;
-                width: min(320px, calc(100vw - var(--space-12)));
-                padding: var(--space-4);
-                background: var(--color-surface-2, var(--color-surface));
-                border: 1px solid var(--color-border);
-                border-radius: var(--radius-md);
-                box-shadow: var(--shadow-md);
-                font-size: var(--text-xs);
-                font-weight: 400;
-                letter-spacing: 0;
-                line-height: 1.5;
-                color: var(--color-text);
-                text-align: left;
-                opacity: 0;
-                visibility: hidden;
-                transform: translateY(-4px);
-                transition: opacity 160ms ease, transform 160ms ease, visibility 160ms;
-            }
-            .info-tip__panel::before { content: ""; position: absolute; inset: -10px 0 auto 0; height: 10px; } /* hover bridge */
-            .info-tip__panel p + p, .info-tip__panel ul + p { margin-top: var(--space-2); }
-            .info-tip__title { font-weight: 700; font-size: var(--text-sm); }
-            .info-tip__list { list-style: none; display: grid; gap: var(--space-1); margin-top: var(--space-2); }
-            .info-tip__context { color: var(--color-text); }
-            .info-tip__note { color: var(--color-text-muted); }
-            .info-tip__panel a { color: inherit; border-bottom: 1px solid var(--color-border); }
-
-            .tip-host:has(.info-tip:hover) .info-tip__panel,
-            .tip-host:has(.info-tip__panel:hover) .info-tip__panel,
-            .tip-host:has(.info-tip:focus-visible) .info-tip__panel,
-            .tip-host.is-open .info-tip__panel {
-                opacity: 1;
-                visibility: visible;
-                transform: none;
-            }
-
-            @media (max-width: 480px) {
-                .rank-pill__src { display: none; }   /* "#84 World" only on phones */
-            }
-            @media (prefers-reduced-motion: reduce) {
-                .info-tip__panel { transition: none; }
-            }
-        </style>
-
         <section aria-label="E2 Snapshot Card" class="fade-in">
             <div class="snapshot-card" data-domain="engineering">
 
@@ -2650,8 +2648,8 @@
                                     class="rank-pill__src">&nbsp;(ARWU)</span>
                             </span>
                             <span class="rank-pill rank-pill--green">
-                                <i class="bi bi-leaf-fill" aria-hidden="true"></i>#6 Sustainability<span
-                                    class="rank-pill__src">&nbsp;(GreenMetric)</span>
+                                <i class="bi bi-leaf-fill" aria-hidden="true"></i>#46 Business<span
+                                    class="rank-pill__src">&nbsp;(ARWU)</span>
                             </span>
                             <button type="button" class="info-tip" aria-label="About these rankings" aria-expanded="false"
                                 aria-controls="tip-rank">
@@ -2700,10 +2698,12 @@
 
                         <div class="info-tip__panel" id="tip-grade">
                             <p class="info-tip__title">Dutch grading scale</p>
-                            <p>Grades run from 1 to 10, with 6 as the pass mark. Marks of 9 and 10 are rarely awarded, so an 8 is a strong result.</p>
-                            <p class="info-tip__context"><strong>Context:</strong> At Groningen only about 14% of grades awarded are an 8 and about 3% are a 9.
-                                This is an 8 average across the whole programme, not a single exam.</p>
-                            <p class="info-tip__note">University-wide figures, not specific to this programme.
+                            <p>Average grade across the whole programme. The separate thesis grade is an 8.</p>
+                            <p class="info-tip__context">
+                                <strong>Context:</strong>
+                                At UG only about 14% of single-grades awarded are an 8 and 2.7% are a 9.
+                            </p>
+                            <p class="info-tip__note">
                                 Source: <a href="https://www.rug.nl/education/student-blog/what-dutch-grades-actually-mean-24-01-2020?lang=en"
                                 target="_blank" rel="noopener noreferrer">RUG</a>.</p>
                         </div>
@@ -2728,7 +2728,7 @@
                     <div class="snapshot-item">
                         <p class="snapshot-item__key">Links</p>
                         <p class="snapshot-item__value">
-                            <a href="PASTE_OFFICIAL_PROGRAM_URL_HERE" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.rug.nl/masters/msc-marketing-marketing-analytics-and-data-science/?lang=en" target="_blank" rel="noopener noreferrer">
                                 <i class="bi bi-mortarboard"></i> Official program page
                             </a>
                         </p>
