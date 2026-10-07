@@ -2688,10 +2688,25 @@
                         <p class="snapshot-item__value">Master of Science (MSc)</p>
                     </div>
 
-                    <div class="snapshot-item snapshot-item--prominent snapshot-item--result">
+                    <div class="snapshot-item snapshot-item--prominent snapshot-item--result tip-host">
                         <p class="snapshot-item__key">Result</p>
-                        <p class="snapshot-item__value">8 / 10</p>
-                        <p class="snapshot-item__note">Dutch grading scale</p>
+                        <p class="snapshot-item__value">
+                            8 / 10
+                            <button type="button" class="info-tip" aria-label="About this grade"
+                                    aria-expanded="false" aria-controls="tip-grade">
+                                <i class="bi bi-info-circle" aria-hidden="true"></i>
+                            </button>
+                        </p>
+
+                        <div class="info-tip__panel" id="tip-grade">
+                            <p class="info-tip__title">Dutch grading scale</p>
+                            <p>Grades run from 1 to 10, with 6 as the pass mark. Marks of 9 and 10 are rarely awarded, so an 8 is a strong result.</p>
+                            <p class="info-tip__context"><strong>Context:</strong> At Groningen only about 14% of grades awarded are an 8 and about 3% are a 9.
+                                This is an 8 average across the whole programme, not a single exam.</p>
+                            <p class="info-tip__note">University-wide figures, not specific to this programme.
+                                Source: <a href="https://www.rug.nl/education/student-blog/what-dutch-grades-actually-mean-24-01-2020?lang=en"
+                                target="_blank" rel="noopener noreferrer">RUG</a>.</p>
+                        </div>
                     </div>
 
                     <!-- Standard fields -->
@@ -3830,6 +3845,23 @@
                 track.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
             });
         });
+
+        // ── Tooltip Mobile Tap Functionality ────────────────
+        (function () {
+            const closeAll = (except) => document.querySelectorAll('.tip-host.is-open').forEach(h => {
+                if (h !== except) { h.classList.remove('is-open'); h.querySelector('.info-tip')?.setAttribute('aria-expanded', 'false'); }
+            });
+            document.addEventListener('click', (e) => {
+                const btn = e.target.closest('.info-tip');
+                if (!btn) { if (!e.target.closest('.info-tip__panel')) closeAll(); return; }
+                const host = btn.closest('.tip-host');
+                closeAll(host);
+                const open = host.classList.toggle('is-open');
+                btn.setAttribute('aria-expanded', String(open));
+            });
+            document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeAll(); });
+        })();
+
 
     </script>
 
