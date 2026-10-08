@@ -1214,7 +1214,8 @@
         .stack-group--credentials .stack-group__toggle {
             margin-top: var(--space-3);
             margin-inline: auto;
-            display: inline-flex;
+            display: flex;
+            width: fit-content;
             align-items: center;
             justify-content: center;
             gap: 0.38rem;
@@ -3988,8 +3989,8 @@
                     group.classList.toggle('is-expanded', expanded);
                     button.setAttribute('aria-expanded', String(expanded));
                     button.innerHTML = expanded
-                        ? '<span class="stack-group__toggle-label">Show fewer</span><span class="stack-group__toggle-icon" aria-hidden="true">↑</span>'
-                        : `<span class="stack-group__toggle-label">Show ${hiddenCount} more</span><span class="stack-group__toggle-icon" aria-hidden="true">↓</span>`;
+                        ? '<span class="stack-group__toggle-label">Show fewer</span><span class="stack-group__toggle-icon" aria-hidden="true"></span>'
+                        : `<span class="stack-group__toggle-label">Show ${hiddenCount} more</span><span class="stack-group__toggle-icon" aria-hidden="true"></span>`;
                 };
 
                 button.addEventListener('click', function () {
