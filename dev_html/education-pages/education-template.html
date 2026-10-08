@@ -717,20 +717,6 @@
         letter-spacing: -0.02em;
     }
 
-    /* GPA visual treatment */
-    .snapshot-item--result .snapshot-item__value {
-        display: inline-block;
-        padding: 0.18rem 0.55rem;
-        border-radius: var(--radius-full);
-        background: linear-gradient(
-            135deg,
-            color-mix(in srgb, var(--color-surface) 14%, white),
-            color-mix(in srgb, gold 16%, white)
-        );
-        border: 1px solid color-mix(in srgb, var(--color-primary) 20%, transparent);
-        font-weight: 700;
-    }
-
     /* ── Bookmark tab ───────────────────────────── */
     .snapshot-card {
         position: relative;
@@ -2838,7 +2824,7 @@
 
                     <div class="snapshot-item snapshot-item--prominent snapshot-item--result tip-host">
                         <p class="snapshot-item__key">Result</p>
-                        <p class="snapshot-item__value">
+                        <p class="grade-badge">
                             8 / 10
                             <button type="button" class="info-tip" aria-label="About this grade"
                                     aria-expanded="false" aria-controls="tip-grade">
