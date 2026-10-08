@@ -31,10 +31,10 @@
 						<!-- Facebook Open Graph end -->
 
 		<meta name="generator" content="Website Builder" />
-			<link href="css/common-bundle.css?ts=20261005185245" rel="stylesheet" type="text/css" />
+			<link href="css/common-bundle.css?ts=20261008194347" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese" rel="stylesheet" type="text/css" />
-	<link href="css/a18bddd8a85d044c01bbabaae5d84e6b-bundle.css?ts=20261005185245" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
+	<link href="css/a18bddd8a85d044c01bbabaae5d84e6b-bundle.css?ts=20261008194347" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
 	<ga-code/><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
      SECTION 1 — GLOBAL
      Settings → Meta Tags (site-wide, always present)
@@ -106,7 +106,7 @@
 </head>
 
 
-<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a18bddd8a85d044c01bbabaae5d84e6b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e472dc6ad016d533b8b6047" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a190ffb17d9000982e54c586e899717d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffb17d9a00d3369767d5e4cd8ac2" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1791215567"></a></div></div></div><div id="a190ffb17db400b8b0c93e97088def79" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffb17dc200b328807ff90e29d398" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1791215567"></a></div></div></div></div></div><div id="a19127dc957500eee3b99b8af43fb89b" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a18bddd8a85d044c01bbabaae5d84e6b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e472dc6ad016d533b8b6047" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a190ffb17d9000982e54c586e899717d" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffb17d9a00d3369767d5e4cd8ac2" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1791477835"></a></div></div></div><div id="a190ffb17db400b8b0c93e97088def79" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a190ffb17dc200b328807ff90e29d398" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1791477835"></a></div></div></div></div></div><div id="a19127dc957500eee3b99b8af43fb89b" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -160,7 +160,7 @@
 			'children' => array(
 				(object) array(
 					'id' => 8,
-					'href' => 'stack',
+					'href' => 'm',
 					'name' => 'Academic Portfolio',
 					'class' => 'wb_this_page_menu_item active',
 					'children' => array()
@@ -189,98 +189,98 @@
 		)
 	)
 )); ?><div class="clearfix"></div></div></div></div><div id="a18bddd77e472e70fd2a5d7d4cd18ffc" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4800a1315b4ca9b5950777" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4801b17c5fc6640c8389b1" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><span style="color:#ffffff;"><strong>Academic Portfolio</strong></span></h1>
-</div><div id="a18bddd77e48025d41804e65690a3a37" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/07721f039aa533dc4dda5f011a7bf602_888x126_fit.png?ts=1791215567"></div></div></div></div></div></div></div><div id="a18bddd77e48033450bf75dd3a2d1a8f" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1791215567"></div></div></div></div></div></div></div><div id="wb_main_a18bddd8a85d044c01bbabaae5d84e6b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e48054604d08172174531d9" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4806240b6ebf55e615e163" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e480733149f22e4af9ac11e" class="wb_element" data-plugin="CustomHtml" style=" overflow: hidden;"><div style="width: 100%; height: 100%; overflow-y: auto;"><style>
+</div><div id="a18bddd77e48025d41804e65690a3a37" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/07721f039aa533dc4dda5f011a7bf602_888x126_fit.png?ts=1791477835"></div></div></div></div></div></div></div><div id="a18bddd77e48033450bf75dd3a2d1a8f" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1791477835"></div></div></div></div></div></div></div><div id="wb_main_a18bddd8a85d044c01bbabaae5d84e6b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e48054604d08172174531d9" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4806240b6ebf55e615e163" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e480733149f22e4af9ac11e" class="wb_element" data-plugin="CustomHtml" style=" overflow: hidden;"><div style="width: 100%; height: 100%; overflow-y: auto;"><style>
 html, body {
    max-width: 100%;
    overflow-x: hidden;
 }
 </style>
 </div></div><div id="a18bddd77e4808e00d741c57899033bd" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">ABILITIES </span></strong><span style="color:rgba(0,0,0,1);">AT A GLANCE</span></h1>
-</div><div id="a18bddd77e480925b27dd79479f0ba76" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e480a70224cd7c7d2b6488a" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/0943c920b8744ab9fb9acd6f2bf5e6c4_1580x574_fit.png?ts=1791215567"></div></div></div></div></div><div id="a18bddd77e480b94c480993cc40bf6e6" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bed1bc6ea00e848a781655ba75294" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">CONTENTS </span></strong><span style="color:rgba(0,0,0,1);">AT A GLANCE</span></h1>
+</div><div id="a18bddd77e480925b27dd79479f0ba76" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e480a70224cd7c7d2b6488a" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/0943c920b8744ab9fb9acd6f2bf5e6c4_1580x574_fit.png?ts=1791477836"></div></div></div></div></div><div id="a18bddd77e480b94c480993cc40bf6e6" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bed1bc6ea00e848a781655ba75294" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">CONTENTS </span></strong><span style="color:rgba(0,0,0,1);">AT A GLANCE</span></h1>
 </div><div id="a18bf83f0dc1000fc0d2be01f0b76428" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p style="text-align: center;"><span style="color:#828282;">(click on a section to scroll to it)</span></p>
-</div><div id="a18bed15b745007fde0e9de68cd9a39e" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3"><a data-_="Link" href="stack#theses"><span style="color:#050505;">1. MSc &amp; Pre-MSc Theses</span></a></h3>
+</div><div id="a18bed15b745007fde0e9de68cd9a39e" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h3 class="wb-stl-heading3"><a data-_="Link" href="m#theses"><span style="color:#050505;">1. MSc &amp; Pre-MSc Theses</span></a></h3>
 
 <ul>
 <li>
-<h3 class="wb-stl-heading3"><a data-_="Link" href="stack#msc-thesis"><span style="color:#050505;">MSc Thesis</span></a></h3>
+<h3 class="wb-stl-heading3"><a data-_="Link" href="m#msc-thesis"><span style="color:#050505;">MSc Thesis</span></a></h3>
 
 <ul>
 <li>
-<h3 class="wb-stl-heading3"><a data-_="Link" href="stack#thesis_defence_slides"><span style="color:#050505;">Thesis Defence Slides</span></a></h3>
+<h3 class="wb-stl-heading3"><a data-_="Link" href="m#thesis_defence_slides"><span style="color:#050505;">Thesis Defence Slides</span></a></h3>
 </li>
 <li>
-<h3 class="wb-stl-heading3"><a data-_="Link" href="stack#msc-thesis-paper"><span style="color:#050505;">Thesis Paper</span></a></h3>
+<h3 class="wb-stl-heading3"><a data-_="Link" href="m#msc-thesis-paper"><span style="color:#050505;">Thesis Paper</span></a></h3>
 </li>
 <li>
-<h3 class="wb-stl-heading3"><a data-_="Link" href="stack#msc-thesis-extra"><span style="color:#050505;">Extra: Text Mining &amp; Sentiment Analysis</span></a></h3>
+<h3 class="wb-stl-heading3"><a data-_="Link" href="m#msc-thesis-extra"><span style="color:#050505;">Extra: Text Mining &amp; Sentiment Analysis</span></a></h3>
 </li>
 </ul>
 </li>
 <li>
-<h3 class="wb-stl-heading3"><a data-_="Link" href="stack#premsc-thesis-paper"><span style="color:#050505;">Pre-MSc​ Thesis​​​​​​ Paper</span></a></h3>
+<h3 class="wb-stl-heading3"><a data-_="Link" href="m#premsc-thesis-paper"><span style="color:#050505;">Pre-MSc​ Thesis​​​​​​ Paper</span></a></h3>
 </li>
 </ul>
 
-<h3 class="wb-stl-heading3"><a data-_="Link" href="stack#analysis-result-reports"><span style="color:#050505;">2. Analysis Result Reports</span></a></h3>
+<h3 class="wb-stl-heading3"><a data-_="Link" href="m#analysis-result-reports"><span style="color:#050505;">2. Analysis Result Reports</span></a></h3>
 
 <ul>
 <li>
-<h3 class="wb-stl-heading3"><a data-_="Link" href="stack#visual-reports"><font color="#050505">Visual Reports</font></a></h3>
+<h3 class="wb-stl-heading3"><a data-_="Link" href="m#visual-reports"><font color="#050505">Visual Reports</font></a></h3>
 
 <ul>
 <li>
-<h3 class="wb-stl-heading3"><a data-_="Link" href="stack#text-mining"><font color="#050505">Text Mining, Sentiment &amp; Propensity</font></a></h3>
+<h3 class="wb-stl-heading3"><a data-_="Link" href="m#text-mining"><font color="#050505">Text Mining, Sentiment &amp; Propensity</font></a></h3>
 </li>
 <li>
-<h3 class="wb-stl-heading3"><a data-_="Link" href="stack#google-analytics"><font color="#050505">Google Analytics &amp; Exploratory Analysis (Wehkamp)</font></a></h3>
+<h3 class="wb-stl-heading3"><a data-_="Link" href="m#google-analytics"><font color="#050505">Google Analytics &amp; Exploratory Analysis (Wehkamp)</font></a></h3>
 </li>
 <li>
-<h3 class="wb-stl-heading3"><a data-_="Link" href="stack#timeseries-analysis"><span style="color:#050505;">Time-Series Analysis</span></a></h3>
+<h3 class="wb-stl-heading3"><a data-_="Link" href="m#timeseries-analysis"><span style="color:#050505;">Time-Series Analysis</span></a></h3>
 </li>
 <li>
-<h3 class="wb-stl-heading3"><span style="color:#050505;"><a data-_="Link" href="stack#cluster-analysis" title="See an example of Cluster Analysis.">Cluster Analysis</a></span></h3>
+<h3 class="wb-stl-heading3"><span style="color:#050505;"><a data-_="Link" href="m#cluster-analysis" title="See an example of Cluster Analysis.">Cluster Analysis</a></span></h3>
 </li>
 <li>
-<h3 class="wb-stl-heading3"><a data-_="Link" href="stack#factor-analysis"><span style="color:#050505;">Factor Analysis</span></a></h3>
+<h3 class="wb-stl-heading3"><a data-_="Link" href="m#factor-analysis"><span style="color:#050505;">Factor Analysis</span></a></h3>
 </li>
 <li>
-<h3 class="wb-stl-heading3"><a data-_="Link" href="stack#exploratory-analysis"><font color="#050505">Exploratory Analysis</font></a></h3>
+<h3 class="wb-stl-heading3"><a data-_="Link" href="m#exploratory-analysis"><font color="#050505">Exploratory Analysis</font></a></h3>
 </li>
 <li>
-<h3 class="wb-stl-heading3"><a data-_="Link" href="stack#retailmixtactics-analysis"><span style="color:#050505;">Retail Mix Tactics Analysis (Kruidvat)</span></a></h3>
+<h3 class="wb-stl-heading3"><a data-_="Link" href="m#retailmixtactics-analysis"><span style="color:#050505;">Retail Mix Tactics Analysis (Kruidvat)</span></a></h3>
 </li>
 <li>
-<h3 class="wb-stl-heading3"><a data-_="Link" href="stack#omnichannelstrategy-analysis"><span style="color:#050505;">Omnichannel Strategy Analysis (L'Oreal)</span></a></h3>
+<h3 class="wb-stl-heading3"><a data-_="Link" href="m#omnichannelstrategy-analysis"><span style="color:#050505;">Omnichannel Strategy Analysis (L'Oreal)</span></a></h3>
 </li>
 <li>
-<h3 class="wb-stl-heading3"><a data-_="Link" href="stack#brandextension-analysis"><span style="color:#050505;">Brand Extension Analysis (Volkswagen)</span></a></h3>
+<h3 class="wb-stl-heading3"><a data-_="Link" href="m#brandextension-analysis"><span style="color:#050505;">Brand Extension Analysis (Volkswagen)</span></a></h3>
 </li>
 </ul>
 </li>
 <li>
-<h3 class="wb-stl-heading3"><a data-_="Link" href="stack#wrtten-reports"><span style="color:#050505;">Written Reports</span></a></h3>
+<h3 class="wb-stl-heading3"><a data-_="Link" href="m#wrtten-reports"><span style="color:#050505;">Written Reports</span></a></h3>
 
 <ul>
 <li>
-<h3 class="wb-stl-heading3"><a data-_="Link" href="stack#churnprediction-modelling"><span style="color:#050505;">Churn Prediction Modelling</span></a></h3>
+<h3 class="wb-stl-heading3"><a data-_="Link" href="m#churnprediction-modelling"><span style="color:#050505;">Churn Prediction Modelling</span></a></h3>
 </li>
 <li>
-<h3 class="wb-stl-heading3"><a data-_="Link" href="stack#market-modelling1"><span style="color:#050505;">Market Modelling 1/2</span></a></h3>
+<h3 class="wb-stl-heading3"><a data-_="Link" href="m#market-modelling1"><span style="color:#050505;">Market Modelling 1/2</span></a></h3>
 </li>
 <li>
-<h3 class="wb-stl-heading3"><a data-_="Link" href="stack#market-modelling2"><span style="color:#050505;">Market Modelling 2/2</span></a></h3>
+<h3 class="wb-stl-heading3"><a data-_="Link" href="m#market-modelling2"><span style="color:#050505;">Market Modelling 2/2</span></a></h3>
 </li>
 <li>
-<h3 class="wb-stl-heading3"><a data-_="Link" href="stack#conversionrateoptimization-analysis"><span style="color:#050505;">Conversion Rate Optimization Analysis</span></a></h3>
+<h3 class="wb-stl-heading3"><a data-_="Link" href="m#conversionrateoptimization-analysis"><span style="color:#050505;">Conversion Rate Optimization Analysis</span></a></h3>
 </li>
 <li>
-<h3 class="wb-stl-heading3"><a data-_="Link" href="stack#ethical-analysis"><span style="color:#050505;">Ethical Analysis</span></a></h3>
+<h3 class="wb-stl-heading3"><a data-_="Link" href="m#ethical-analysis"><span style="color:#050505;">Ethical Analysis</span></a></h3>
 </li>
 </ul>
 </li>
 </ul>
 
-<h3 class="wb-stl-heading3"><a data-_="Link" href="stack#mads-madlad"><span style="color:#050505;">3. Extra: "MADS Madlad" Course Summaries</span></a></h3>
+<h3 class="wb-stl-heading3"><a data-_="Link" href="m#mads-madlad"><span style="color:#050505;">3. Extra: "MADS Madlad" Course Summaries</span></a></h3>
 </div><div id="a18bddd77e480cf359647ce8decb6a34" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><a name="theses" class="wb_anchor"></a><h1 class="wb-stl-heading1" style="text-align: center;"><span style="font-weight: bold; background-color: rgba(0, 0, 0, 0);"><font color="#000000">1. MSc &amp; Pre-MSc Theses</font></span></h1>
 </div><div id="a18bed35d66100ebb2624710cd1a0850" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom4">In this chapter, I showcase my MSc and Pre-MSc theses. The programming behind these can be found on my GitHub.</p>
 </div><div id="a18bed3926340059df98c5523b342cd7" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bf31ae43500a343f1a0dfbfe62682" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p style="text-align: center;"><span style="color:#828282;">(click on the document to see the next page or download it with the link)</span></p>
@@ -406,7 +406,7 @@ Investigation under a Multi-context Paradigm with DCE data.</span></span></h2>
 </div><div id="a18bf6d2feb700514e68c665a3c828bc" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p style="text-align: center;"><font color="#050505" face="Arial, Helvetica, sans-serif"><span style="font-size: 16px;">Video proposal for a brand extension to Volkswagen based on market analysis.</span></font></p>
 </div><div id="a18bddd77e482bf4b88ca810acf20a7e" class="wb_element" data-plugin="Youtube"><iframe title="YouTube video player" class="youtube-player" allowfullscreen="" data-defer-load="Youtube" data-src="//www.youtube.com/embed/fPeb4YYxt4M?controls=1" frameborder="0"></iframe></div><div id="a18bddd77e482c456170d84a99ad62d9" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p style="text-align: center;"><strong>Showcase of VW Ad Concepts</strong></p>
 </div><div id="a18bddd77e482e094c334867c5f15949" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p style="text-align: center;">(click to enlarge)</p>
-</div><div id="a18bddd77e482fad8c2da916a742f878" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/5b13cad49d65c4d7c4ed2c8bfe347b68_1120x630_fit.png?ts=1791215567"><script>window._spDefer.add(function() {
+</div><div id="a18bddd77e482fad8c2da916a742f878" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/5b13cad49d65c4d7c4ed2c8bfe347b68_1120x630_fit.png?ts=1791477836"><script>window._spDefer.add(function() {
 					$("#a18bddd77e482fad8c2da916a742f878").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -437,7 +437,7 @@ Investigation under a Multi-context Paradigm with DCE data.</span></span></h2>
 							img.src = "gallery\/vw-ad-futuristic-withmotto-min-ts1668815071.png";
 						}
 					});
-				});</script></div></div></div><div id="a18bddd77e4830664aead94145e74cf5" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/06c84e0253e763eba10de1d3ad7721f7_1120x630_fit.png?ts=1791215567"><script>window._spDefer.add(function() {
+				});</script></div></div></div><div id="a18bddd77e4830664aead94145e74cf5" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/06c84e0253e763eba10de1d3ad7721f7_1120x630_fit.png?ts=1791477837"><script>window._spDefer.add(function() {
 					$("#a18bddd77e4830664aead94145e74cf5").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -468,7 +468,7 @@ Investigation under a Multi-context Paradigm with DCE data.</span></span></h2>
 							img.src = "gallery\/vw-ad-customize-min-ts1668815062.png";
 						}
 					});
-				});</script></div></div></div><div id="a18bddd77e4831d65056f8ea46c58dc9" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/84c1e8efbf05792a4d715f5a9b543fff_1120x630_fit.png?ts=1791215567"><script>window._spDefer.add(function() {
+				});</script></div></div></div><div id="a18bddd77e4831d65056f8ea46c58dc9" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/84c1e8efbf05792a4d715f5a9b543fff_1120x630_fit.png?ts=1791477838"><script>window._spDefer.add(function() {
 					$("#a18bddd77e4831d65056f8ea46c58dc9").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -499,7 +499,7 @@ Investigation under a Multi-context Paradigm with DCE data.</span></span></h2>
 							img.src = "gallery\/vw-ad-family1-edited-min-ts1668815066.png";
 						}
 					});
-				});</script></div></div></div><div id="a18bddd77e4900079c98a04fde5eeb9b" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/d2b21675535c85221ae304aa9ce8e722_1120x630_fit.png?ts=1791215567"><script>window._spDefer.add(function() {
+				});</script></div></div></div><div id="a18bddd77e4900079c98a04fde5eeb9b" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/d2b21675535c85221ae304aa9ce8e722_1120x630_fit.png?ts=1791477839"><script>window._spDefer.add(function() {
 					$("#a18bddd77e4900079c98a04fde5eeb9b").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -530,7 +530,7 @@ Investigation under a Multi-context Paradigm with DCE data.</span></span></h2>
 							img.src = "gallery\/vw-ad-family2-edited-min-ts1668815069.png";
 						}
 					});
-				});</script></div></div></div><div id="a18bddd77e4901970a1acb338b609291" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/381e70bfe27b2afc35481c43ca774e3b_1120x630_fit.png?ts=1791215567"><script>window._spDefer.add(function() {
+				});</script></div></div></div><div id="a18bddd77e4901970a1acb338b609291" class="wb_element wb_element_picture wb-prevent-layout-click" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/381e70bfe27b2afc35481c43ca774e3b_1120x630_fit.png?ts=1791477840"><script>window._spDefer.add(function() {
 					$("#a18bddd77e4901970a1acb338b609291").on("click touchstart touchend touchmove", function(e) {
 						if (e.type === "touchstart") {
 							$(this).data("pswpDisabled", false);
@@ -670,7 +670,7 @@ Investigation under a Multi-context Paradigm with DCE data.</span></span></h2>
   </iframe>
 </div>
 <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF1AmPV-po&#x2F;view?utm_content=DAF1AmPV-po&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Companies, Brands &amp; Consumers Summary (Free Edition)</a> by MADS Madlad</div></div><div id="a18bddd77e482d91bcffa04f71980c1a" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p style="text-align: center;">(tap to enlarge)</p>
-</div></div></div></div></div></div></div><div id="a18bddd77e4904f342c58f2cda6184ba" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1791215567"></div></div></div></div></div><div id="wb_footer_a18bddd8a85d044c01bbabaae5d84e6b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+</div></div></div></div></div></div></div><div id="a18bddd77e4904f342c58f2cda6184ba" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1791477840"></div></div></div></div></div><div id="wb_footer_a18bddd8a85d044c01bbabaae5d84e6b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -688,7 +688,7 @@ Investigation under a Multi-context Paradigm with DCE data.</span></span></h2>
 			'children' => array(
 				(object) array(
 					'id' => 12,
-					'href' => 'stack',
+					'href' => 'm',
 					'name' => 'Academic Portfolio',
 					'class' => 'wb_this_page_menu_item active',
 					'children' => array()
@@ -772,7 +772,7 @@ Investigation under a Multi-context Paradigm with DCE data.</span></span></h2>
 
 <p class="wb-stl-footer" style="text-align: center;"><a data-_="Link" href="anabolickmusick.com" target="_blank" title="anabolic musick's official website">anabolickmusick.com</a></p>
 </div><div id="a18bddd77e4a320a360cd08aa5891d23" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: center;"><span style="color:rgba(255,255,255,1);">© 2024 <a href="https://www.georgedreemer.com">G</a><a href="https://www.dreemer.xyz">eorge Dreemer</a></span></p>
-</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1791215567"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
+</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1791477840"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
 			$(function() {
 				var footer = $(".wb_footer");
 				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
@@ -783,8 +783,8 @@ Investigation under a Multi-context Paradigm with DCE data.</span></span></h2>
 				}
 			});
 			});</script></div></div></div></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
-	<script src="js/common-bundle.js?ts=20261005185245" type="text/javascript" defer></script>
-	<script src="js/a18bddd8a85d044c01bbabaae5d84e6b-bundle.js?ts=20261005185245" type="text/javascript" defer></script>{{hr_out}}<style>
+	<script src="js/common-bundle.js?ts=20261008194347" type="text/javascript" defer></script>
+	<script src="js/a18bddd8a85d044c01bbabaae5d84e6b-bundle.js?ts=20261008194347" type="text/javascript" defer></script>{{hr_out}}<style>
 .image-height-mod {
 height: 100%;
 }

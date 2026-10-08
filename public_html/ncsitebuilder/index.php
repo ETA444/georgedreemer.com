@@ -219,7 +219,7 @@ class PluginDescriptorHandler {
 		),
 		array(
 			'id' => 'a18bddd8a85d044c01bbabaae5d84e6b',
-			'alias' => 'stack',
+			'alias' => 'm',
 			'file' => 'a18bddd8a85d044c01bbabaae5d84e6b.php',
 			'controllers' => array(),
 			'type' => 0
@@ -240,7 +240,7 @@ class PluginDescriptorHandler {
 		),
 		array(
 			'id' => 'a19f5ae42c81009e68be5623804df9af',
-			'alias' => 'test',
+			'alias' => 'testtt',
 			'file' => 'a19f5ae42c81009e68be5623804df9af.php',
 			'controllers' => array(),
 			'type' => 0
@@ -325,7 +325,7 @@ class PluginDescriptorHandler {
 	$langs = null;
 	$def_lang = null;
 	$base_lang = 'en';
-	$site_id = 'aece9ab1';
+	$site_id = '09d1ab1f';
 	${'sitemapUrls'} = array(
 		'https://georgedreemer.com/',
 		'https://georgedreemer.com/thoughtbubble',
@@ -334,10 +334,10 @@ class PluginDescriptorHandler {
 		'https://georgedreemer.com/datasafari',
 		'https://georgedreemer.com/cryptopandemic',
 		'https://georgedreemer.com/education',
-		'https://georgedreemer.com/stack',
+		'https://georgedreemer.com/m',
 		'https://georgedreemer.com/blog',
 		'https://georgedreemer.com/blog/datasafari/introduction',
-		'https://georgedreemer.com/test'
+		'https://georgedreemer.com/testtt'
 	);
 	${'redirectItems'} = array();
 	$websiteUID = 'a6bf24d62389c5c29a904041a1dc6f8f9524fe4cc2e47b79f80bba06ae154069cfd05c7cbb53bf4c';

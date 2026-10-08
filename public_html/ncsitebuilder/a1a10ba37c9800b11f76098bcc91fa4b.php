@@ -29,9 +29,9 @@
 						<!-- Facebook Open Graph end -->
 
 		<meta name="generator" content="Website Builder" />
-			<link href="css/common-bundle.css?ts=20261005185245" rel="stylesheet" type="text/css" />
+			<link href="css/common-bundle.css?ts=20261008194347" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese" rel="stylesheet" type="text/css" />
-	<link href="css/a1a10ba37c9800b11f76098bcc91fa4b-bundle.css?ts=20261005185245" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
+	<link href="css/a1a10ba37c9800b11f76098bcc91fa4b-bundle.css?ts=20261008194347" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
 	<ga-code/><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
      SECTION 1 — GLOBAL
      Settings → Meta Tags (site-wide, always present)
@@ -2477,7 +2477,7 @@
 </head>
 
 
-<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a1a10ba37c9800b11f76098bcc91fa4b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dc00f4f3dc0e6ba03d8656" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dc02dd12dafd3d1f30a6a2" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a10ba380dd004673614261d8107db1" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1791215567"></a></div></div></div><div id="a1a10ba380de00e978c8c7c125f749d3" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a10ba380dd01c45f700d7f8fe12965" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1791215567"></a></div></div></div></div></div><div id="a1a10ba380e0003e6e0f918efa7529ad" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a1a10ba37c9800b11f76098bcc91fa4b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dc00f4f3dc0e6ba03d8656" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dc02dd12dafd3d1f30a6a2" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a10ba380dd004673614261d8107db1" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1791477832"></a></div></div></div><div id="a1a10ba380de00e978c8c7c125f749d3" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a10ba380dd01c45f700d7f8fe12965" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1791477832"></a></div></div></div></div></div><div id="a1a10ba380e0003e6e0f918efa7529ad" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -2531,7 +2531,7 @@
 			'children' => array(
 				(object) array(
 					'id' => 8,
-					'href' => 'stack',
+					'href' => 'm',
 					'name' => 'Academic Portfolio',
 					'class' => '',
 					'children' => array()
@@ -2559,7 +2559,7 @@
 			'children' => array()
 		)
 	)
-)); ?><div class="clearfix"></div></div></div></div><div id="a1a10ba380dd0555369775120f108bad" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a10ba380dd02870c776abc253ba46f" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dd03bd75c01d7395fd7cdc" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/5e99756a27cae83cb6befdeef656e13d_fit.png?ts=1791215567"></div></div></div></div></div></div></div></div></div></div></div><div id="wb_main_a1a10ba37c9800b11f76098bcc91fa4b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dc01af20b7b8795036ef3a" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1791215567"></div></div></div><div id="a1a10ba380df004411e5d21393b5f09f" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><main class="preview-page" role="main">
+)); ?><div class="clearfix"></div></div></div></div><div id="a1a10ba380dd0555369775120f108bad" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a10ba380dd02870c776abc253ba46f" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dd03bd75c01d7395fd7cdc" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/5e99756a27cae83cb6befdeef656e13d_fit.png?ts=1791477832"></div></div></div></div></div></div></div></div></div></div></div><div id="wb_main_a1a10ba37c9800b11f76098bcc91fa4b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dc01af20b7b8795036ef3a" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1791477832"></div></div></div><div id="a1a10ba380df004411e5d21393b5f09f" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><main class="preview-page" role="main">
     <!-- ============================================================
         ELEMENT 1 — CONTEXT BLOCK
     ============================================================ -->
@@ -2636,15 +2636,17 @@
                     <p class="degree-card__desc">Data science, machine learning, and marketing analytics — from causal inference to churn modeling.</p>
 
                     <div class="degree-card__chips">
-                        <span class="degree-card__chip">Discrete Choice Modeling</span>
+                        <span class="degree-card__chip">Machine Learning</span>
+                        <span class="degree-card__chip">Statistical Learning</span>
                         <span class="degree-card__chip">Text Mining</span>
                         <span class="degree-card__chip">Time-Series Analysis</span>
-                        <span class="degree-card__chip">Cluster Analysis</span>
+                        <span class="degree-card__chip">Market Modelling</span>
+                        <span class="degree-card__chip">Data Engineering</span>
                     </div>
 
                     <div class="degree-card__meta">
                         <span class="credential-pill credential-pill--year">2022 – 2024</span>
-                        <span class="credential-pill credential-pill--gpa">GPA ~8.0 / 10</span>
+                        <span class="credential-pill credential-pill--gpa">GPA 8 / 10</span>
                     </div>
 
                     <span class="degree-card__cta">
@@ -3093,9 +3095,9 @@
                 <span class="section-label__line" aria-hidden="true"></span>
             </div>
 
-            <!-- ── Development Languages ──────────────────────────── -->
+            <!-- ── Code ──────────────────────────── -->
             <div class="stack-group">
-                <p class="stack-group__label">Development</p>
+                <p class="stack-group__label">Code</p>
                 <div class="stack-group__items">
                     <span class="stack-badge"><img src="https://cdn.simpleicons.org/python/3776ab" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Python</span></span>
                     <span class="stack-badge"><img src="https://cdn.simpleicons.org/r/276dc3" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">R</span></span>
@@ -3105,12 +3107,26 @@
                     <span class="stack-badge"><img src="https://cdn.simpleicons.org/css/1572b6" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">CSS</span></span>
                     <span class="stack-badge"><img src="https://cdn.simpleicons.org/gnubash/4eaa25" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Bash / Zsh</span></span>
                     <span class="stack-badge"><img src="https://cdn.simpleicons.org/ruby/cc342d" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Ruby</span></span>
-                    <!-- SQL as a language; MySQL/PostgreSQL/etc. engines are in Databases -->
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/mysql/4479a1" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">SQL</span></span>
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/postgresql/4169e1" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">PostgreSQL</span></span>
-                    <!-- Stata: no SimpleIcons entry — styled text mark; language + IDE in one -->
-                    <span class="stack-badge stack-badge--text">
-                        <span class="stack-badge__mark" style="background:#1a4e8a;" aria-hidden="true">St</span>
+                    <span class="stack-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                            <!-- Top ellipse (lighter) -->
+                            <ellipse cx="12" cy="6" rx="7" ry="2.5" fill="#0078d4"></ellipse>
+                            <!-- Middle band -->
+                            <path d="M5 8.5v4c0 1.38 3.13 2.5 7 2.5s7-1.12 7-2.5v-4c0 1.38-3.13 2.5-7 2.5S5 9.88 5 8.5z" fill="#005a9e"></path>
+                            <!-- Bottom band -->
+                            <path d="M5 13.5v3c0 1.38 3.13 2.5 7 2.5s7-1.12 7-2.5v-3c0 1.38-3.13 2.5-7 2.5S5 14.88 5 13.5z" fill="#00457a"></path>
+                            <!-- Side outline for depth -->
+                            <path d="M5 6.5v9c0 1.38 3.13 2.5 7 2.5s7-1.12 7-2.5v-9" fill="none" stroke="#00355a" stroke-width="1.2"></path>
+                        </svg>
+                        <span class="stack-badge__name">SQL</span>
+                    </span>
+                    <span class="stack-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                            <!-- Background rounded square -->
+                            <rect x="3" y="3" width="18" height="18" rx="4" fill="#1f5f8b"></rect>
+                            <!-- Stylized "S" made of bars -->
+                            <path d="M7 8h10a2 2 0 0 1 0 4H9a2 2 0 0 0 0 4h8" fill="none" stroke="#4dc2a8" stroke-width="2.2" stroke-linecap="round"></path>
+                        </svg>
                         <span class="stack-badge__name">Stata</span>
                     </span>
                 </div>
@@ -3225,7 +3241,7 @@
                 <p class="stack-group__label">Databases</p>
                 <div class="stack-group__items">
                     <span class="stack-badge"><img src="https://cdn.simpleicons.org/mysql/4479a1" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">MySQL</span></span>
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/postgresql/4169e1" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">PostgreSQL</span></span>
+                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/azure/0078d4" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Azure</span></span>
                     <span class="stack-badge"><img src="https://cdn.simpleicons.org/sqlite/003b57" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">SQLite</span></span>
                 </div>
             </div>
@@ -3241,7 +3257,20 @@
                         <span class="stack-badge__name">VS Code</span>
                     </span>
                     <span class="stack-badge"><img src="https://cdn.simpleicons.org/jupyter/f37626" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Jupyter</span></span>
+                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/googlecolab" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Colab</span></span>
                     <span class="stack-badge"><img src="https://cdn.simpleicons.org/rstudioide" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">RStudio</span></span>
+                    <span class="stack-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                            <!-- Background rounded square -->
+                            <rect x="3" y="3" width="18" height="18" rx="4" fill="#005eb8"></rect>
+                            <!-- Stylized "bar chart" / stats motif -->
+                            <rect x="6" y="10" width="2.6" height="6" fill="#ffffff" rx="0.6"></rect>
+                            <rect x="9.7" y="7" width="2.6" height="9" fill="#ffffff" rx="0.6"></rect>
+                            <rect x="13.4" y="12" width="2.6" height="4" fill="#ffffff" rx="0.6"></rect>
+                            <rect x="17.1" y="9" width="2.6" height="7" fill="#ffffff" rx="0.6"></rect>
+                        </svg>
+                        <span class="stack-badge__name">SPSS</span>
+                    </span>
                     <span class="stack-badge"><img src="https://cdn.simpleicons.org/jetbrains" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">DataSpell</span></span>
                     <span class="stack-badge"><img src="https://cdn.simpleicons.org/knime/fdd700" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">KNIME</span></span>
                     <span class="stack-badge"><img src="https://cdn.simpleicons.org/git/f05032" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Git</span></span>
@@ -3378,10 +3407,8 @@
                     <span class="stack-badge"><img src="https://cdn.simpleicons.org/cpanel/ff6c2c" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">cPanel</span></span>
                     <span class="stack-badge"><img src="https://cdn.simpleicons.org/namecheap/de3723" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Namecheap</span></span>
                     <span class="stack-badge"><img src="https://cdn.simpleicons.org/cloudflare/f38020" alt="" width="18" height="18" loading="lazy"><span class="stack-badge__name">Cloudflare</span></span>
-                    <span class="stack-badge stack-badge--text">
-                        <span class="stack-badge__mark" style="background:#FFFFFF00;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 59.242 47.271">
-                                <path fill="#0072c6" d="M32.368 0 14.9 15.145 0 41.895h13.437zm2.323 3.543-7.454 21.008 14.291 17.956L13.8 47.271h45.442z"></path>
-                            </svg></span>
+                    <span class="stack-badge">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="" width="18" height="18" loading="lazy">
                         <span class="stack-badge__name">Azure</span>
                     </span>
                 </div>
@@ -3501,7 +3528,7 @@
 
         </div><!-- /.stack-grid -->
     </section>
-</main></div></div><div id="a1a10ba380df02e9759bf9807cfb042f" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1791215567"></div></div></div></div></div><div id="wb_footer_a1a10ba37c9800b11f76098bcc91fa4b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+</main></div></div><div id="a1a10ba380df02e9759bf9807cfb042f" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1791477832"></div></div></div></div></div><div id="wb_footer_a1a10ba37c9800b11f76098bcc91fa4b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -3519,7 +3546,7 @@
 			'children' => array(
 				(object) array(
 					'id' => 12,
-					'href' => 'stack',
+					'href' => 'm',
 					'name' => 'Academic Portfolio',
 					'class' => '',
 					'children' => array()
@@ -3603,7 +3630,7 @@
 
 <p class="wb-stl-footer" style="text-align: center;"><a data-_="Link" href="anabolickmusick.com" target="_blank" title="anabolic musick's official website">anabolickmusick.com</a></p>
 </div><div id="a18bddd77e4a320a360cd08aa5891d23" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: center;"><span style="color:rgba(255,255,255,1);">© 2024 <a href="https://www.georgedreemer.com">G</a><a href="https://www.dreemer.xyz">eorge Dreemer</a></span></p>
-</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1791215567"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
+</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1791477832"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
 			$(function() {
 				var footer = $(".wb_footer");
 				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
@@ -3614,7 +3641,7 @@
 				}
 			});
 			});</script></div></div></div></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
-	<script src="js/common-bundle.js?ts=20261005185245" type="text/javascript" defer></script>{{hr_out}}<style>
+	<script src="js/common-bundle.js?ts=20261008194347" type="text/javascript" defer></script>{{hr_out}}<style>
 .image-height-mod {
 height: 100%;
 }
