@@ -1353,6 +1353,155 @@
       color: var(--color-domain-growth);
     }
 
+    /* ── Curriculum/Source ───── */
+    .ability-card__source {
+        margin-top: 0.35rem;
+        margin-bottom: 0.9rem;
+        color: var(--color-text-muted);
+        font-size: 0.75rem;
+        font-weight: 500;
+        line-height: 1.45;
+        letter-spacing: 0.01em;
+    }
+
+    .ability-card__source::before {
+        content: "CURRICULUM";
+        display: block;
+        margin-bottom: 0.2rem;
+        color: var(--color-text-faint);
+        font-size: 0.68rem;
+        font-weight: 700;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+    }
+
+    /* ── Curriculum lens: toggle, reveal, note (reusable) ───── */
+
+    /* Source line is hidden by default; the lens class reveals it */
+    .is-lens-hidden-default .ability-card__source,
+    .ability-grid:not(.is-lens-courses) .ability-card__source {
+    display: none;
+    }
+
+    .ability-grid.is-lens-courses .ability-card__source {
+    animation: lens-reveal 220ms cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    @keyframes lens-reveal {
+    from { opacity: 0; transform: translateY(-4px); }
+    to   { opacity: 1; transform: none; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+    .ability-grid.is-lens-courses .ability-card__source { animation: none; }
+    }
+
+    /* One course per line, badge sits right after the title */
+    .ability-card__source .course {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    padding: 2px 0;
+    color: var(--color-text-muted);
+    }
+
+    /* Switch (sits at the right end of the legend row) */
+    .lens-toggle {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-left: auto;
+    padding: var(--space-1) var(--space-3);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    font-size: var(--text-xs);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    transition: border-color var(--transition), color var(--transition);
+    }
+    .lens-toggle::after { content: ""; position: absolute; inset: -8px 0; } /* 44px touch target */
+    .lens-toggle:hover { color: var(--color-text); }
+    .lens-toggle[aria-checked="true"] {
+    color: var(--color-text);
+    border-color: color-mix(in srgb, var(--color-primary) 40%, transparent);
+    }
+
+    .lens-toggle__track {
+    position: relative;
+    width: 28px;
+    height: 16px;
+    flex-shrink: 0;
+    border-radius: var(--radius-full);
+    background: var(--color-border);
+    transition: background 160ms ease;
+    }
+    .lens-toggle__thumb {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--color-surface);
+    box-shadow: var(--shadow-sm);
+    transition: transform 160ms ease;
+    }
+    .lens-toggle[aria-checked="true"] .lens-toggle__track { background: var(--color-primary); }
+    .lens-toggle[aria-checked="true"] .lens-toggle__thumb { transform: translateX(12px); }
+
+    @media (prefers-reduced-motion: reduce) {
+    .lens-toggle__track, .lens-toggle__thumb { transition: none; }
+    }
+
+    /* Small explanatory line that appears with the lens */
+    .ability-lens-note {
+    margin: calc(var(--space-3) * -1) 0 var(--space-5);
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    line-height: 1.5;
+    }
+    .ability-lens-note i { margin-right: var(--space-1); }
+
+    /* ── Grade badge (reusable) ─────────────────────────────
+    Same visual language as the E2 Result pill.
+    Use .grade-badge--mini inline next to titles. */
+    .grade-badge {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 0.18rem 0.55rem;
+    border-radius: var(--radius-full);
+    background: linear-gradient(
+        135deg,
+        color-mix(in srgb, var(--color-surface) 14%, white),
+        color-mix(in srgb, gold 16%, white)
+    );
+    border: 1px solid color-mix(in srgb, var(--color-primary) 20%, transparent);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    color: var(--color-text);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+    }
+
+    .grade-badge--mini {
+    padding: 1px var(--space-2);
+    font-size: 11px;
+    line-height: 1.5;
+    }
+
+    /* Non-numeric results ("Pass", "Exempt") */
+    .grade-badge--text {
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    }
+
     /* ── Legend ───────────────────────────────────────────── */
     .ability-legend {
       display: flex;
@@ -3058,28 +3207,6 @@
              DOMAIN ASSIGNMENT: one card carries one data-domain — the
              domain the skill is MOST associated with.
         ================================================================ -->
-        <style>
-            .ability-card__source {
-                margin-top: 0.35rem;
-                margin-bottom: 0.9rem;
-                color: var(--color-text-muted);
-                font-size: 0.75rem;
-                font-weight: 500;
-                line-height: 1.45;
-                letter-spacing: 0.01em;
-            }
-
-            .ability-card__source::before {
-                content: "CURRICULUM";
-                display: block;
-                margin-bottom: 0.2rem;
-                color: var(--color-text-faint);
-                font-size: 0.68rem;
-                font-weight: 700;
-                letter-spacing: 0.09em;
-                text-transform: uppercase;
-            }
-        </style>
         <section aria-label="E5 Ability Card Grid" class="fade-in">
 
             <div class="section-label">
