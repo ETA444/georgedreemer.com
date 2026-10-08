@@ -3939,7 +3939,6 @@
         // ── Item Counter for Credential Sections ────────────────
         document.addEventListener('DOMContentLoaded', function () {
             const groups = document.querySelectorAll('.stack-group--credentials');
-            const mobileBreakpoint = 640;
 
             groups.forEach((group, index) => {
                 if (group.closest('.stack-group--skills')) return;
@@ -3962,7 +3961,11 @@
 
                 let expanded = false;
 
-                const getVisibleCount = () => window.innerWidth <= mobileBreakpoint ? 2 : 3;
+                const getVisibleCount = () => {
+                    const styles = window.getComputedStyle(items);
+                    const columns = styles.gridTemplateColumns.split(' ').length;
+                    return columns <= 2 ? 2 : 3;
+                };
 
                 const updateGroup = () => {
                     const visibleCount = getVisibleCount();
@@ -4000,8 +4003,6 @@
                 window.addEventListener('resize', updateGroup);
             });
         });
-
-
     </script>
 
 </body>
