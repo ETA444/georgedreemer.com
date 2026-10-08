@@ -1206,6 +1206,50 @@
             transform: translateX(3px);
         }
 
+        /* ── Credential Card Show More styling ───────────────────────────── */
+        .stack-group--credentials .credential-card.is-collapsed {
+            display: none;
+        }
+
+        .stack-group--credentials .stack-group__toggle {
+            margin-top: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            padding: 0.7rem 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.04);
+            color: inherit;
+            font: inherit;
+            line-height: 1;
+            cursor: pointer;
+            transition:
+                background 0.2s ease,
+                border-color 0.2s ease,
+                transform 0.2s ease,
+                opacity 0.2s ease;
+        }
+
+        .stack-group--credentials .stack-group__toggle:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.18);
+        }
+
+        .stack-group--credentials .stack-group__toggle:focus-visible {
+            outline: 2px solid currentColor;
+            outline-offset: 3px;
+        }
+
+        .stack-group--credentials .stack-group__toggle-icon {
+            opacity: 0.7;
+            transition: transform 0.2s ease;
+        }
+
+        .stack-group--credentials.is-expanded .stack-group__toggle-icon {
+            transform: rotate(180deg);
+        }
+
         /* ── E5: ABILITY GRID ──────────────────────────────────── */
         .ability-grid {
             display: grid;
@@ -3860,6 +3904,59 @@
                 track.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
             });
         });
+
+        // ── Item Counter for Credential Sections ────────────────
+        document.addEventListener('DOMContentLoaded', function () {
+            const groups = document.querySelectorAll('.stack-group--credentials');
+
+            groups.forEach((group, index) => {
+                if (group.closest('.stack-group--skills')) return;
+
+                const items = group.querySelector('.stack-group__items--credentials');
+                if (!items) return;
+
+                const cards = Array.from(items.querySelectorAll(':scope > .credential-card'));
+                const visibleCount = 3;
+                const hiddenCount = cards.length - visibleCount;
+
+                if (hiddenCount <= 0) return;
+
+                const hiddenCards = cards.slice(visibleCount);
+                hiddenCards.forEach(card => card.classList.add('is-collapsed'));
+
+                if (!items.id) {
+                    items.id = `stack-group-credentials-${index + 1}`;
+                }
+
+                const button = document.createElement('button');
+                button.type = 'button';
+                button.className = 'stack-group__toggle';
+                button.setAttribute('aria-expanded', 'false');
+                button.setAttribute('aria-controls', items.id);
+
+                const updateButton = (expanded) => {
+                    button.innerHTML = expanded
+                        ? '<span class="stack-group__toggle-label">Show fewer</span><span class="stack-group__toggle-icon" aria-hidden="true">⌃</span>'
+                        : `<span class="stack-group__toggle-label">Show ${hiddenCount} more</span><span class="stack-group__toggle-icon" aria-hidden="true">⌄</span>`;
+                };
+
+                updateButton(false);
+
+                button.addEventListener('click', function () {
+                    const expanded = group.classList.toggle('is-expanded');
+
+                    hiddenCards.forEach(card => {
+                        card.classList.toggle('is-collapsed', !expanded);
+                    });
+
+                    button.setAttribute('aria-expanded', String(expanded));
+                    updateButton(expanded);
+                });
+
+                group.appendChild(button);
+            });
+        });
+
 
     </script>
 
