@@ -3237,9 +3237,20 @@
                     Data
                 </span>
 
+                <button type="button" class="lens-toggle" role="switch" aria-checked="false" aria-controls="e5-ability-grid" data-lens-toggle data-lens-note="e5-lens-note">
+                    <i class="bi bi-mortarboard" aria-hidden="true"></i>
+                    <span class="lens-toggle__track" aria-hidden="true"><span class="lens-toggle__thumb"></span></span>
+                    <span class="lens-toggle__label">Show courses</span>
+                </button>
+
             </div>
 
-            <div class="ability-grid">
+            <p class="ability-lens-note" id="e5-lens-note" hidden>
+                <i class="bi bi-info-circle"></i>
+                Each ability is traced to the courses behind it. Grades use the same Dutch 10-point scale as the Result in the snapshot above.
+            </p>
+
+            <div class="ability-grid" id="e5-ability-grid">
 
                 <!-- =====================================================
                     ENGINEERING
