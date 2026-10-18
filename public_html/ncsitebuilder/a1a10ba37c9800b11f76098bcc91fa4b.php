@@ -29,9 +29,9 @@
 						<!-- Facebook Open Graph end -->
 
 		<meta name="generator" content="Website Builder" />
-			<link href="css/common-bundle.css?ts=20261008194347" rel="stylesheet" type="text/css" />
+			<link href="css/common-bundle.css?ts=20261018202413" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese" rel="stylesheet" type="text/css" />
-	<link href="css/a1a10ba37c9800b11f76098bcc91fa4b-bundle.css?ts=20261008194347" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
+	<link href="css/a1a10ba37c9800b11f76098bcc91fa4b-bundle.css?ts=20261018202413" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
 	<ga-code/><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
      SECTION 1 — GLOBAL
      Settings → Meta Tags (site-wide, always present)
@@ -1262,6 +1262,82 @@
         transform: translateX(3px);
     }
 
+    /* ── Credential Card Show More styling ───────────────────────────── */
+    .stack-group--credentials .credential-card.is-collapsed {
+        display: none;
+    }
+
+    .stack-group--credentials .stack-group__toggle {
+        margin-top: var(--space-3);
+        margin-inline: auto;
+        display: flex;
+        width: fit-content;
+        align-items: center;
+        justify-content: center;
+        gap: 0.38rem;
+        padding: 0.48rem 0.8rem;
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-full);
+        color: var(--color-text-muted);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        line-height: 1;
+        box-shadow: var(--shadow-sm);
+        transition:
+            color var(--transition),
+            background var(--transition),
+            border-color var(--transition),
+            box-shadow var(--transition),
+            transform var(--transition);
+    }
+
+    .stack-group--credentials .stack-group__toggle:hover {
+        background: var(--color-surface-2);
+        color: var(--color-primary);
+        border-color: color-mix(in srgb, var(--color-primary) 20%, var(--color-border));
+        box-shadow: var(--shadow-md);
+        transform: translateY(-1px);
+    }
+
+    .stack-group--credentials .stack-group__toggle:focus-visible {
+        outline: 2px solid color-mix(in srgb, var(--color-primary) 35%, transparent);
+        outline-offset: 3px;
+    }
+
+    .stack-group--credentials .stack-group__toggle-label {
+        white-space: nowrap;
+    }
+
+    .stack-group--credentials .stack-group__toggle-icon {
+        font-size: 0.78rem;
+        line-height: 1;
+        color: currentColor;
+        opacity: 0.72;
+        flex-shrink: 0;
+        transition:
+            transform var(--transition),
+            opacity var(--transition);
+    }
+
+    .stack-group--credentials .stack-group__toggle:hover .stack-group__toggle-icon {
+        opacity: 1;
+    }
+
+    .stack-group--credentials.is-expanded .stack-group__toggle-icon {
+        transform: rotate(180deg);
+    }
+
+    @media (max-width: 640px) {
+        .stack-group--credentials .stack-group__toggle {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+
     /* ── E5: ABILITY GRID ──────────────────────────────────── */
     .ability-grid {
         display: grid;
@@ -2477,7 +2553,7 @@
 </head>
 
 
-<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a1a10ba37c9800b11f76098bcc91fa4b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dc00f4f3dc0e6ba03d8656" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dc02dd12dafd3d1f30a6a2" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a10ba380dd004673614261d8107db1" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1791477832"></a></div></div></div><div id="a1a10ba380de00e978c8c7c125f749d3" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a10ba380dd01c45f700d7f8fe12965" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1791477832"></a></div></div></div></div></div><div id="a1a10ba380e0003e6e0f918efa7529ad" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a1a10ba37c9800b11f76098bcc91fa4b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dc00f4f3dc0e6ba03d8656" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dc02dd12dafd3d1f30a6a2" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a10ba380dd004673614261d8107db1" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1792344254"></a></div></div></div><div id="a1a10ba380de00e978c8c7c125f749d3" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a10ba380dd01c45f700d7f8fe12965" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1792344254"></a></div></div></div></div></div><div id="a1a10ba380e0003e6e0f918efa7529ad" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -2559,7 +2635,7 @@
 			'children' => array()
 		)
 	)
-)); ?><div class="clearfix"></div></div></div></div><div id="a1a10ba380dd0555369775120f108bad" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a10ba380dd02870c776abc253ba46f" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dd03bd75c01d7395fd7cdc" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/5e99756a27cae83cb6befdeef656e13d_fit.png?ts=1791477832"></div></div></div></div></div></div></div></div></div></div></div><div id="wb_main_a1a10ba37c9800b11f76098bcc91fa4b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dc01af20b7b8795036ef3a" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1791477832"></div></div></div><div id="a1a10ba380df004411e5d21393b5f09f" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><main class="preview-page" role="main">
+)); ?><div class="clearfix"></div></div></div></div><div id="a1a10ba380dd0555369775120f108bad" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a10ba380dd02870c776abc253ba46f" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dd03bd75c01d7395fd7cdc" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/5e99756a27cae83cb6befdeef656e13d_fit.png?ts=1792344254"></div></div></div></div></div></div></div></div></div></div></div><div id="wb_main_a1a10ba37c9800b11f76098bcc91fa4b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dc01af20b7b8795036ef3a" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1792344254"></div></div></div><div id="a1a10ba380df004411e5d21393b5f09f" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><main class="preview-page" role="main">
     <!-- ============================================================
         ELEMENT 1 — CONTEXT BLOCK
     ============================================================ -->
@@ -2699,6 +2775,7 @@
             <div class="stack-group stack-group--credentials">
                 <div class="stack-group__items stack-group__items--credentials">
 
+                    <!-- == DataCamp ======================================= -->
                     <div class="credential-card">
                         <div class="credential-card__icon credential-card__icon--img">
                             <img src="https://cdn.simpleicons.org/datacamp/03ef62" alt="DataCamp" width="20" height="20" loading="lazy">
@@ -2706,12 +2783,9 @@
                         <div class="credential-card__body">
                             <p class="credential-card__title">Professional Data Scientist</p>
                             <p class="credential-card__sub">DataCamp Professional Track</p>
-                            <p class="credential-card__org-desc">DataCamp's most advanced career track — covers the full
-                                data science pipeline
-                                from data wrangling and statistical analysis to machine learning and communicating insights
-                                to business
-                                stakeholders. <br><br><a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/61c10c7c89eda0525178ea565d88fce131b33597" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate
-                                    ↗</a></p>
+                            <p class="credential-card__org-desc">
+                                DataCamp's most advanced career track — covers the full data science pipeline from data wrangling and statistical analysis to machine learning and communicating insights to business stakeholders. <br><br><a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/61c10c7c89eda0525178ea565d88fce131b33597" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+                            </p>
                             <div class="credential-card__meta">
                                 <span class="credential-pill credential-pill--cert">Python</span>
                                 <span class="credential-pill credential-pill--score">R</span>
@@ -2728,9 +2802,7 @@
                             <p class="credential-card__title">Associate Data Scientist</p>
                             <p class="credential-card__sub">DataCamp Professional Track</p>
                             <p class="credential-card__org-desc">
-                                A structured track covering Python, statistical techniques, and machine learning
-                                fundamentals — built around real-world datasets and hands-on projects across the full
-                                analytical workflow.
+                                A structured track covering Python, statistical techniques, and machine learning fundamentals — built around real-world datasets and hands-on projects across the full analytical workflow.
                             </p>
                             <div class="credential-card__meta">
                                 <span class="credential-pill credential-pill--cert">Python</span>
@@ -2740,13 +2812,177 @@
                         </div>
                     </div>
 
+                    <!-- == CITI Program ======================================= -->
                     <div class="credential-card">
                         <div class="credential-card__icon credential-card__icon--img">
-                            <img src="https://www.ets.org/content/dam/ets-org/logo/toefl-logo-black.svg" alt="TOEFL" width="35" height="35" loading="lazy">
+                            <img src="https://georgedreemer.com/public_img/general/misclogos/citiprogram.svg" alt="CITI Program Official Logo" width="30" height="30" loading="lazy">
+                        </div>
+                        <div class="credential-card__body">
+                            <p class="credential-card__title">Authorship</p>
+                            <p class="credential-card__sub">CITI Program · Responsible Conduct of Research</p>
+                            <p class="credential-card__org-desc">
+                                Covers the ethical responsibilities of authors, the criteria used to decide who qualifies as an author, and how to recognise problematic authorship practices. <br><br><a href="" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+                            </p>
+                            <div class="credential-card__meta">
+                                <span class="credential-pill credential-pill--cert">RCR</span>
+                                <span class="credential-pill credential-pill--score">Publication Ethics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="credential-card">
+                        <div class="credential-card__icon credential-card__icon--img">
+                            <img src="https://georgedreemer.com/public_img/general/misclogos/citiprogram.svg" alt="CITI Program Official Logo" width="30" height="30" loading="lazy">
+                        </div>
+                        <div class="credential-card__body">
+                            <p class="credential-card__title">Conflict of Interest</p>
+                            <p class="credential-card__sub">CITI Program · Responsible Conduct of Research</p>
+                            <p class="credential-card__org-desc">
+                                Explains the types of conflicts of interest and commitment, why they undermine research, and the strategies used to manage or eliminate them. <br><br><a href="" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+                            </p>
+                            <div class="credential-card__meta">
+                                <span class="credential-pill credential-pill--cert">RCR</span>
+                                <span class="credential-pill credential-pill--score">Research Integrity</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="credential-card">
+                        <div class="credential-card__icon credential-card__icon--img">
+                            <img src="https://georgedreemer.com/public_img/general/misclogos/citiprogram.svg" alt="CITI Program Official Logo" width="30" height="30" loading="lazy">
+                        </div>
+                        <div class="credential-card__body">
+                            <p class="credential-card__title">Data Management</p>
+                            <p class="credential-card__sub">CITI Program · Responsible Conduct of Research</p>
+                            <p class="credential-card__org-desc">
+                                Covers managing data across a research project: documentation for reproducibility, plus the ethical and compliance questions around data ownership, sharing, and protection. <br><br><a href="" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+                            </p>
+                            <div class="credential-card__meta">
+                                <span class="credential-pill credential-pill--cert">RCR</span>
+                                <span class="credential-pill credential-pill--score">Reproducibility</span>
+                                <span class="credential-pill credential-pill--gpa">Data Governance</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="credential-card">
+                        <div class="credential-card__icon credential-card__icon--img">
+                            <img src="https://georgedreemer.com/public_img/general/misclogos/citiprogram.svg" alt="CITI Program Official Logo" width="30" height="30" loading="lazy">
+                        </div>
+                        <div class="credential-card__body">
+                            <p class="credential-card__title">Internet-based Research</p>
+                            <p class="credential-card__sub">CITI Program · Human-based Research</p>
+                            <p class="credential-card__org-desc">
+                                Looks at the ethical and regulatory questions raised by studying people online: consent, privacy expectations, and the risks of using web-sourced data. <br><br><a href="" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+                            </p>
+                            <div class="credential-card__meta">
+                                <span class="credential-pill credential-pill--cert">Human Research</span>
+                                <span class="credential-pill credential-pill--score">Online Data Ethics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="credential-card">
+                        <div class="credential-card__icon credential-card__icon--img">
+                            <img src="https://georgedreemer.com/public_img/general/misclogos/citiprogram.svg" alt="CITI Program Official Logo" width="30" height="30" loading="lazy">
+                        </div>
+                        <div class="credential-card__body">
+                            <p class="credential-card__title">Plagiarism</p>
+                            <p class="credential-card__sub">CITI Program · Responsible Conduct of Research</p>
+                            <p class="credential-card__org-desc">
+                                Defines plagiarism and its common forms, and shows how to credit sources properly so that others' ideas and words are never presented as your own. <br><br><a href="" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+                            </p>
+                            <div class="credential-card__meta">
+                                <span class="credential-pill credential-pill--cert">RCR</span>
+                                <span class="credential-pill credential-pill--score">Citation Practice</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="credential-card">
+                        <div class="credential-card__icon credential-card__icon--img">
+                            <img src="https://georgedreemer.com/public_img/general/misclogos/citiprogram.svg" alt="CITI Program Official Logo" width="35" height="35" loading="lazy">
+                        </div>
+                        <div class="credential-card__body">
+                            <p class="credential-card__title">Privacy and Confidentiality</p>
+                            <p class="credential-card__sub">CITI Program · Human-based Research</p>
+                            <p class="credential-card__org-desc">
+                                Defines privacy and confidentiality, identifies
+                                research methods that raise privacy concerns, and covers standard ways to protect participants' information, including relevant laws. <br><br><a href="" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+                            </p>
+                            <div class="credential-card__meta">
+                                <span class="credential-pill credential-pill--cert">Human Research</span>
+                                <span class="credential-pill credential-pill--score">Data Protection</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="credential-card">
+                        <div class="credential-card__icon credential-card__icon--img">
+                            <img src="https://georgedreemer.com/public_img/general/misclogos/citiprogram.svg" alt="CITI Program Official Logo" width="30" height="30" loading="lazy">
+                        </div>
+                        <div class="credential-card__body">
+                            <p class="credential-card__title">Research Involving Human Subjects</p>
+                            <p class="credential-card__sub">CITI Program · Responsible Conduct of Research</p>
+                            <p class="credential-card__org-desc">
+                                Introduces the ethical principles behind research with
+                                people: informed consent, weighing risks against benefits, and protecting participants. <br><br><a href="" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+                            </p>
+                            <div class="credential-card__meta">
+                                <span class="credential-pill credential-pill--cert">RCR</span>
+                                <span class="credential-pill credential-pill--score">Informed Consent</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="credential-card">
+                        <div class="credential-card__icon credential-card__icon--img">
+                            <img src="https://georgedreemer.com/public_img/general/misclogos/citiprogram.svg" alt="CITI Program Official Logo" width="30" height="30" loading="lazy">
+                        </div>
+                        <div class="credential-card__body">
+                            <p class="credential-card__title">Research Misconduct</p>
+                            <p class="credential-card__sub">CITI Program · Responsible Conduct of Research</p>
+                            <p class="credential-card__org-desc">
+                                Describes the three practices that make up research misconduct (fabrication, falsification, and plagiarism) and how allegations are handled. <br><br><a href="" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+                            </p>
+                            <div class="credential-card__meta">
+                                <span class="credential-pill credential-pill--cert">RCR</span>
+                                <span class="credential-pill credential-pill--score">Research Integrity</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- == Google ============================================= -->
+
+                    <div class="credential-card">
+                        <div class="credential-card__icon credential-card__icon--img">
+                            <img src="https://cdn.simpleicons.org/googleanalytics/E37400" alt="Google Analytics" width="20" height="20" loading="lazy">
+                        </div>
+                        <div class="credential-card__body">
+                            <p class="credential-card__title">Google Analytics for Beginners</p>
+                            <p class="credential-card__sub">Google Skillshop</p>
+                            <p class="credential-card__org-desc">
+                                Covers setting up an analytics account, reading core reports on traffic and user behaviour, and using the data to judge how a website or campaign is performing. <br><br><a href="" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+                            </p>
+                            <div class="credential-card__meta">
+                                <span class="credential-pill credential-pill--cert">Web Analytics</span>
+                                <span class="credential-pill credential-pill--score">Reporting</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- == Language ========================================== -->
+
+                    <div class="credential-card">
+                        <div class="credential-card__icon credential-card__icon--img">
+                            <img src="https://georgedreemer.com/public_img/general/misclogos/toefl.svg" alt="TOEFL Official Logo" width="35" height="35" loading="lazy">
                         </div>
                         <div class="credential-card__body">
                             <p class="credential-card__title">TOEFL iBT</p>
                             <p class="credential-card__sub">Educational Testing Service</p>
+                            <p class="credential-card__org-desc">
+                                A standardised, internationally recognised test of academic English. It measures reading, listening, speaking, and writing at university level.
+                            </p>
                             <div class="credential-card__meta">
                                 <span class="credential-pill credential-pill--score">106 / 120</span>
                                 <span class="credential-pill credential-pill--cert">C2</span>
@@ -2756,11 +2992,14 @@
 
                     <div class="credential-card">
                         <div class="credential-card__icon credential-card__icon--img">
-                            <img src="https://e7.pngegg.com/pngimages/723/635/png-clipart-cambridge-assessment-english-tkt-english-language-test-graphics-oxford-university-logo-english-text-thumbnail.png" alt="Cambridge Assessment English" width="20" height="20" loading="lazy">
+                            <img src="https://georgedreemer.com/public_img/general/misclogos/cambridgeassesmentenglish.svg" alt="Cambridge Assessment English Official Logo" width="30" height="30" loading="lazy">
                         </div>
                         <div class="credential-card__body">
                             <p class="credential-card__title">C1 Advanced (CAE)</p>
                             <p class="credential-card__sub">Cambridge Assessment English</p>
+                            <p class="credential-card__org-desc">
+                                Cambridge's advanced-level exam, showing the English needed for demanding academic study and professional work: fluent, precise, and confident in complex contexts.
+                            </p>
                             <div class="credential-card__meta">
                                 <span class="credential-pill credential-pill--cert">C1</span>
                             </div>
@@ -2780,23 +3019,16 @@
                 <div class="stack-group__items stack-group__items--credentials">
 
                     <div class="credential-card">
-                        <div class="credential-card__icon credential-card__icon--svg">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-                                <path d="M4 22h16"></path>
-                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
-                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
-                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
-                            </svg>
+                        <div class="credential-card__icon credential-card__icon--img">
+                            <img src="https://georgedreemer.com/public_img/general/misclogos/valleyventurementors.svg" alt="Valley Venture Mentors Official Logo" width="25" height="25" loading="lazy">
                         </div>
                         <div class="credential-card__body">
                             <p class="credential-card__title">VVM Startup Accelerator Award</p>
-                            <p class="credential-card__sub">Valley Venture Mentors · Amherst, MA</p>
-                            <p class="credential-card__org-desc">VVM is a Western Massachusetts nonprofit that selects
-                                high-growth startups for
-                                a competitive accelerator — pairing founders with senior mentors, investors, and early
-                                funding.</p>
+                            <p class="credential-card__sub">Valley Venture Mentors</p>
+                            <p class="credential-card__org-desc">
+                                VVM is a Western Massachusetts nonprofit that selects
+                                high-growth startups for a competitive accelerator — pairing founders with senior mentors, investors, and early funding.
+                            </p>
                             <ul class="credential-card__bullets">
                                 <li>Selected from a competitive regional applicant pool while still in college</li>
                                 <li>Received funding and a place in the Summer Accelerator cohort</li>
@@ -2810,27 +3042,17 @@
                     </div>
 
                     <div class="credential-card">
-                        <div class="credential-card__icon credential-card__icon--svg">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-                                <path d="M4 22h16"></path>
-                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
-                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
-                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
-                            </svg>
+                        <div class="credential-card__icon credential-card__icon--img">
+                            <img src="https://georgedreemer.com/public_img/general/misclogos/haroldgrinspoonfoundation.svg" alt="Harold Grinspoon Foundation Official Logo" width="30" height="30" loading="lazy">
                         </div>
                         <div class="credential-card__body">
                             <p class="credential-card__title">Recognition Award of Entrepreneurial Spirit</p>
                             <p class="credential-card__sub">
-                                <a href="https://hgf.org/" target="_blank" rel="noopener noreferrer" class="credential-card__link">Grinspoon
-                                    Entrepreneurship Initiative</a>
+                                <a href="https://hgf.org/" target="_blank" rel="noopener noreferrer" class="credential-card__link">Grinspoon Entrepreneurship Initiative</a>
                             </p>
-                            <p class="credential-card__org-desc">The Harold Grinspoon Foundation's Entrepreneurship
-                                Initiative recognises student
-                                entrepreneurs across Pioneer Valley colleges who have built real ventures with demonstrated
-                                traction — not ideas, but
-                                businesses already in motion.</p>
+                            <p class="credential-card__org-desc">
+                                The Harold Grinspoon Foundation's Entrepreneurship Initiative recognises student entrepreneurs across Pioneer Valley colleges who have built real ventures with demonstrated traction — not ideas, but businesses already in motion.
+                            </p>
                             <ul class="credential-card__bullets">
                                 <li>Recognised for founding SkipSchoolMakeMoney — a live apparel brand with 1,000+ orders
                                     shipped internationally</li>
@@ -2846,25 +3068,14 @@
                     </div>
 
                     <div class="credential-card">
-                        <div class="credential-card__icon credential-card__icon--svg">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-                                <path d="M4 22h16"></path>
-                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
-                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
-                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
-                            </svg>
+                        <div class="credential-card__icon credential-card__icon--img">
+                            <img src="https://georgedreemer.com/public_img/general/misclogos/yisrael.svg" alt="Israel Emblem" width="30" height="30" loading="lazy">
                         </div>
                         <div class="credential-card__body">
                             <p class="credential-card__title">National Essay Award — "Rescue of the Bulgarian Jews during WW
                                 II"</p>
-                            <p class="credential-card__sub">Israeli-Bulgarian Institute · National Competition</p>
-                            <p class="credential-card__org-desc">A national competition commemorating one of WWII's most
-                                remarkable acts of
-                                collective resistance — Bulgaria is one of the only Nazi-allied states that protected its
-                                entire Jewish population
-                                from deportation.</p>
+                            <p class="credential-card__sub">Israeli-Bulgarian Institute</p>
+                            <p class="credential-card__org-desc">A national competition commemorating one of WWII's most remarkable acts of collective resistance — Bulgaria is one of the only Nazi-allied states that protected its entire Jewish population from deportation.</p>
                             <ul class="credential-card__bullets">
                                 <li>Selected as national winner from entries across all Bulgarian secondary schools</li>
                                 <li>Prize: an official trip to Israel with a meeting with government officials — a
@@ -2879,19 +3090,12 @@
                     </div>
 
                     <div class="credential-card">
-                        <div class="credential-card__icon credential-card__icon--svg">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-                                <path d="M4 22h16"></path>
-                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
-                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
-                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
-                            </svg>
+                        <div class="credential-card__icon credential-card__icon--img">
+                            <img src="https://georgedreemer.com/public_img/general/misclogos/ryla.svg" alt="RYLA Rotary International Emblem" width="30" height="30" loading="lazy">
                         </div>
                         <div class="credential-card__body">
                             <p class="credential-card__title">RYLA Award (RYLArian)</p>
-                            <p class="credential-card__sub">Rotary International · Burgas, Bulgaria</p>
+                            <p class="credential-card__sub">Rotary International</p>
                             <p class="credential-card__org-desc">Rotary Youth Leadership Awards (RYLA) is an official Rotary International leadership program for participants aged 14–30 — an intensive multi-day retreat of workshops, team exercises, and leadership training, run locally by Rotary clubs and districts.</p>
                             <ul class="credential-card__bullets">
                                 <li>Nominated through Rotaract Plovdiv-Puldin to attend the District 2482 RYLA seminar in Burgas</li>
@@ -2905,15 +3109,8 @@
                     </div>
 
                     <div class="credential-card">
-                        <div class="credential-card__icon credential-card__icon--svg">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-                                <path d="M4 22h16"></path>
-                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
-                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
-                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
-                            </svg>
+                        <div class="credential-card__icon credential-card__icon--img">
+                            <img src="https://georgedreemer.com/public_img/general/misclogos/ryla.svg" alt="RYLA Rotary International Emblem" width="30" height="30" loading="lazy">
                         </div>
                         <div class="credential-card__body">
                             <p class="credential-card__title">RYLA Debate Winner Award</p>
@@ -2943,15 +3140,8 @@
                 <div class="stack-group__items stack-group__items--credentials">
 
                     <div class="credential-card">
-                        <div class="credential-card__icon credential-card__icon--svg">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <line x1="3" y1="22" x2="21" y2="22"></line>
-                                <line x1="6" y1="18" x2="6" y2="11"></line>
-                                <line x1="10" y1="18" x2="10" y2="11"></line>
-                                <line x1="14" y1="18" x2="14" y2="11"></line>
-                                <line x1="18" y1="18" x2="18" y2="11"></line>
-                                <polygon points="12 2 20 7 4 7"></polygon>
-                            </svg>
+                        <div class="credential-card__icon credential-card__icon--img">
+                            <img src="https://georgedreemer.com/public_img/general/misclogos/seedfundforinnovation.svg" alt="Seed Fund for Innovation Logo" width="25" height="25" loading="lazy">
                         </div>
                         <div class="credential-card__body">
                             <p class="credential-card__title">Seed Fund for Innovation</p>
@@ -2973,12 +3163,8 @@
                     </div>
 
                     <div class="credential-card">
-                        <div class="credential-card__icon credential-card__icon--svg">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="M2 3h20"></path>
-                                <path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"></path>
-                                <path d="m7 21 5-5 5 5"></path>
-                            </svg>
+                        <div class="credential-card__icon credential-card__icon--img">
+                            <img src="https://georgedreemer.com/public_img/general/misclogos/umassentrepreneurshipclub.svg" alt="UMass Entrepreneurship Club Logo" width="25" height="25" loading="lazy">
                         </div>
                         <div class="credential-card__body">
                             <p class="credential-card__title">UMass Entrepreneurship Club</p>
@@ -3001,12 +3187,8 @@
                     </div>
 
                     <div class="credential-card">
-                        <div class="credential-card__icon credential-card__icon--svg">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path>
-                                <path d="M9 18h6"></path>
-                                <path d="M10 22h4"></path>
-                            </svg>
+                        <div class="credential-card__icon credential-card__icon--img">
+                            <img src="https://georgedreemer.com/public_img/general/misclogos/berthiaume.svg" alt="Berthiaume Center Logo" width="25" height="25" loading="lazy">
                         </div>
                         <div class="credential-card__body">
                             <p class="credential-card__title">Berthiaume Student Innovators</p>
@@ -3030,12 +3212,8 @@
                     </div>
 
                     <div class="credential-card">
-                        <div class="credential-card__icon credential-card__icon--svg">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <circle cx="12" cy="12" r="3"></circle>
-                                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
-                                <circle cx="12" cy="12" r="7"></circle>
-                            </svg>
+                        <div class="credential-card__icon credential-card__icon--img">
+                            <img src="https://georgedreemer.com/public_img/general/misclogos/rotary.svg" alt="Rotary International Logo" width="25" height="25" loading="lazy">
                         </div>
                         <div class="credential-card__body">
                             <p class="credential-card__title">Rotaract "Plovdiv-Puldin"</p>
@@ -3060,10 +3238,8 @@
                     </div>
 
                     <div class="credential-card">
-                        <div class="credential-card__icon credential-card__icon--svg">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                            </svg>
+                        <div class="credential-card__icon credential-card__icon--img">
+                            <img src="https://georgedreemer.com/public_img/general/misclogos/givingback.svg" alt="Giving Back Nederland Logo" width="25" height="25" loading="lazy">
                         </div>
                         <div class="credential-card__body">
                             <p class="credential-card__title">Giving Back</p>
@@ -3528,7 +3704,7 @@
 
         </div><!-- /.stack-grid -->
     </section>
-</main></div></div><div id="a1a10ba380df02e9759bf9807cfb042f" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1791477832"></div></div></div></div></div><div id="wb_footer_a1a10ba37c9800b11f76098bcc91fa4b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+</main></div></div><div id="a1a10ba380df02e9759bf9807cfb042f" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1792344254"></div></div></div></div></div><div id="wb_footer_a1a10ba37c9800b11f76098bcc91fa4b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -3630,7 +3806,7 @@
 
 <p class="wb-stl-footer" style="text-align: center;"><a data-_="Link" href="anabolickmusick.com" target="_blank" title="anabolic musick's official website">anabolickmusick.com</a></p>
 </div><div id="a18bddd77e4a320a360cd08aa5891d23" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: center;"><span style="color:rgba(255,255,255,1);">© 2024 <a href="https://www.georgedreemer.com">G</a><a href="https://www.dreemer.xyz">eorge Dreemer</a></span></p>
-</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1791477832"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
+</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1792344254"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
 			$(function() {
 				var footer = $(".wb_footer");
 				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
@@ -3641,7 +3817,7 @@
 				}
 			});
 			});</script></div></div></div></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
-	<script src="js/common-bundle.js?ts=20261008194347" type="text/javascript" defer></script>{{hr_out}}<style>
+	<script src="js/common-bundle.js?ts=20261018202413" type="text/javascript" defer></script>{{hr_out}}<style>
 .image-height-mod {
 height: 100%;
 }
@@ -3856,6 +4032,73 @@ height: 100%;
         });
     });
 
+    // ── Item Counter for Credential Sections ────────────────
+    document.addEventListener('DOMContentLoaded', function () {
+        const groups = document.querySelectorAll('.stack-group--credentials');
+
+        groups.forEach((group, index) => {
+            if (group.closest('.stack-group--skills')) return;
+
+            const items = group.querySelector('.stack-group__items--credentials');
+            if (!items) return;
+
+            const cards = Array.from(items.querySelectorAll(':scope > .credential-card'));
+            if (cards.length <= 2) return;
+
+            if (!items.id) {
+                items.id = `stack-group-credentials-${index + 1}`;
+            }
+
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'stack-group__toggle';
+            button.setAttribute('aria-expanded', 'false');
+            button.setAttribute('aria-controls', items.id);
+
+            let expanded = false;
+
+            const getVisibleCount = () => {
+                const styles = window.getComputedStyle(items);
+                const columns = styles.gridTemplateColumns.split(' ').length;
+                return columns <= 2 ? 2 : 3;
+            };
+
+            const updateGroup = () => {
+                const visibleCount = getVisibleCount();
+                const hiddenCount = cards.length - visibleCount;
+
+                if (hiddenCount <= 0) {
+                    button.hidden = true;
+                    cards.forEach(card => card.classList.remove('is-collapsed'));
+                    group.classList.remove('is-expanded');
+                    return;
+                }
+
+                button.hidden = false;
+
+                cards.forEach((card, i) => {
+                    const shouldHide = !expanded && i >= visibleCount;
+                    card.classList.toggle('is-collapsed', shouldHide);
+                });
+
+                group.classList.toggle('is-expanded', expanded);
+                button.setAttribute('aria-expanded', String(expanded));
+                button.innerHTML = expanded
+                    ? '<span class="stack-group__toggle-label">Show fewer<span class="stack-group__toggle-icon" aria-hidden="true">'
+                    : `<span class="stack-group__toggle-label">Show ${hiddenCount} more<span class="stack-group__toggle-icon" aria-hidden="true">`;
+            };
+
+            button.addEventListener('click', function () {
+                expanded = !expanded;
+                updateGroup();
+            });
+
+            group.appendChild(button);
+            updateGroup();
+
+            window.addEventListener('resize', updateGroup);
+        });
+    });
 </script><script>
     document.addEventListener('DOMContentLoaded', function () {
         window._spDefer.done();
