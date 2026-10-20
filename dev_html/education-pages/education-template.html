@@ -2070,6 +2070,43 @@
         outline-offset: 3px;
     }
 
+    /* ── E6: groups, extra ratios, repo link ── */
+    .works-section .evidence-card__canva[data-orientation="portrait"]      { aspect-ratio: 17 / 22; }
+    .works-section .evidence-card__canva[data-orientation="portrait-tall"] { aspect-ratio: 8 / 11; }
+
+    .works-group + .works-group { margin-top: var(--space-12); }
+
+    .works-group__title {
+        margin: 0 0 var(--space-1);
+        font-size: var(--text-sm);
+        font-weight: 700;
+        color: var(--color-text);
+    }
+
+    .works-group__intro {
+        margin: 0 0 var(--space-4);
+        font-size: var(--text-xs);
+        line-height: 1.6;
+        color: var(--color-text-muted);
+    }
+
+    .works-repository { margin: var(--space-8) 0 0; }
+
+    .works-repository a {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--space-2);
+        min-height: 44px;
+        font-size: var(--text-xs);
+        color: var(--color-text-muted);
+        text-underline-offset: 0.2em;
+    }
+
+    .works-repository a:focus-visible {
+        outline: 2px solid var(--color-text);
+        outline-offset: 3px;
+    }
+
     @media (hover: hover) {
         .works-section .works-lens:hover,
         .works-section .evidence-card__action:hover {
@@ -4009,7 +4046,6 @@
             visual proof (slides, figures, repo screenshots). Domain
             coverage is relaxed here (see E0): don't force all four.
         ================================================================ -->
-
         <section id="masters-works" class="works-section fade-in" aria-labelledby="masters-works-heading">
 
             <div class="section-label">
@@ -4019,9 +4055,8 @@
 
             <div class="works-toolbar">
                 <p class="works-toolbar__intro">
-                    Explore the analyses, reports, and presentations behind the Masters.
+                    The reports and presentations behind the abilities above. Click a document to turn its pages.
                 </p>
-
                 <button type="button" class="works-lens" role="switch" aria-checked="false"
                         aria-controls="masters-works-grid" data-lens-toggle>
                     <span class="works-lens__track" aria-hidden="true"><span class="works-lens__thumb"></span></span>
@@ -4029,382 +4064,377 @@
                 </button>
             </div>
 
-            <div id="masters-works-grid" class="evidence-grid evidence-grid--works">
+            <div id="masters-works-grid">
 
-                <!-- 1 · CHURN -->
-                <article class="evidence-card" data-domain="data" aria-labelledby="work-churn-title">
-                    <div class="evidence-card__canva" data-orientation="landscape">
-                        <iframe src="https://www.canva.com/design/DAF05cR6CW8/view?embed"
-                                title="Churn Prediction Modelling — interactive project"
-                                width="1600" height="900" loading="eager" allow="fullscreen" allowfullscreen></iframe>
-                    </div>
-                    <div class="evidence-card__body">
-                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data</span>
-                        <h3 id="work-churn-title" class="evidence-card__title">Churn Prediction Modelling</h3>
-                        <ul class="evidence-card__bullets">
-                            <li>Investigated customer churn as a classification problem, using customer-level data to distinguish customers likely to leave from those likely to stay.</li>
-                            <li>Compared statistical classifiers with decision trees, bagging, boosting, and neural-network approaches, examining how different modelling strategies addressed the same retention problem.</li>
-                            <li>Brought model comparison and business interpretation together in an analytical report, connecting predictive performance with the practical question of identifying customers for retention attention.</li>
-                        </ul>
-                        <div class="evidence-card__courses">
-                            <p class="evidence-card__courses-label">Coursework</p>
-                            <ul class="evidence-card__course-list">
-                                <li data-course="statistical-learning">Statistical Learning in Marketing</li>
-                            </ul>
-                        </div>
-                        <div class="evidence-card__actions" role="group" aria-label="Churn Prediction Modelling resources">
-                            <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Churn%20Prediction%20Modeling.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Open report</a>
-                            <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/churn-modelling.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>R code</a>
-                        </div>
-                    </div>
-                </article>
+                <!-- ═════════ VISUAL REPORTS (landscape) ═════════ -->
+                <div class="works-group">
+                    <h3 class="works-group__title">Visual reports</h3>
+                    <p class="works-group__intro">Presentation-format reports built around data visualisation and storytelling.</p>
 
-                <!-- 2 · CLUSTER ANALYSIS -->
-                <article class="evidence-card" data-domain="data" aria-labelledby="work-cluster-title">
-                    <div class="evidence-card__canva" data-orientation="landscape">
-                        <iframe src="https://www.canva.com/design/REPLACE_CANVA_ID/view?embed"
-                                title="Consumer Preference Segmentation — interactive project"
-                                width="1600" height="900" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
-                    </div>
-                    <div class="evidence-card__body">
-                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data</span>
-                        <h3 id="work-cluster-title" class="evidence-card__title">Consumer Preference Segmentation</h3>
-                        <ul class="evidence-card__bullets">
-                            <li>Investigated differences in car-buying preferences to identify groups of consumers whose priorities were more informative than an overall market average.</li>
-                            <li>Applied hierarchical and non-hierarchical clustering, exploring how alternative grouping approaches organised consumers around their reported preferences.</li>
-                            <li>Interpreted the resulting segments in terms of consumer priorities, translating the statistical groupings into a clearer picture of differences within the market.</li>
-                        </ul>
-                        <div class="evidence-card__courses">
-                            <p class="evidence-card__courses-label">Coursework</p>
-                            <ul class="evidence-card__course-list">
-                                <li data-course="data-science-methods">Data Science Methods for MADS</li>
-                            </ul>
-                        </div>
-                        <div class="evidence-card__actions" role="group" aria-label="Consumer Preference Segmentation resources">
-                            <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Cluster%20Analysis.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Open report</a>
-                            <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/cluster-analysis.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>R code</a>
-                        </div>
-                    </div>
-                </article>
+                    <div class="evidence-grid evidence-grid--works">
 
-                <!-- 3 · CONVERSION -->
-                <article class="evidence-card" data-domain="engineering" aria-labelledby="work-conversion-title">
-                    <div class="evidence-card__canva" data-orientation="landscape">
-                        <iframe src="https://www.canva.com/design/REPLACE_CANVA_ID/view?embed"
-                                title="Retail Conversion Analysis — interactive project"
-                                width="1600" height="900" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
-                    </div>
-                    <div class="evidence-card__body">
-                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Engineering</span>
-                        <h3 id="work-conversion-title" class="evidence-card__title">Retail Conversion Analysis</h3>
-                        <ul class="evidence-card__bullets">
-                            <li>Investigated conversion within an online retailer’s product category, connecting the commercial question of purchase behaviour with the construction of an analytical dataset.</li>
-                            <li>Used SQL for relational extraction and preparation, then carried the analysis into R for modelling relationships between the available variables and conversion.</li>
-                            <li>Connected data engineering with statistical interpretation in a single project, documenting the route from source data to an analysis of potential conversion drivers.</li>
-                        </ul>
-                        <div class="evidence-card__courses">
-                            <p class="evidence-card__courses-label">Coursework</p>
-                            <ul class="evidence-card__course-list">
-                                <li data-course="data-engineering">Data Engineering for MADS</li>
-                                <li data-course="digital-marketing-analytics">Digital Marketing Analytics</li>
-                            </ul>
-                        </div>
-                        <div class="evidence-card__actions" role="group" aria-label="Retail Conversion Analysis resources">
-                            <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Conversion%20Rate%20Optimization%20Analysis.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Open report</a>
-                            <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/conversionrate-modelling.sql" target="_blank" rel="noopener noreferrer"><i class="bi bi-database" aria-hidden="true"></i>SQL</a>
-                            <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/conversionrate-modelling.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>R code</a>
-                        </div>
-                    </div>
-                </article>
+                        <!-- Text mining, sentiment & PSM -->
+                        <article class="evidence-card" data-domain="data" aria-labelledby="w-text">
+                            <div class="evidence-card__canva" data-orientation="landscape">
+                                <iframe src="https://www.canva.com/design/DAF00PgC88w/view?embed" title="Text Mining, Sentiment Analysis and Propensity Score Matching" width="1600" height="900" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
+                            </div>
+                            <div class="evidence-card__body">
+                                <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data</span>
+                                <h4 id="w-text" class="evidence-card__title">Text Mining, Sentiment Analysis &amp; Propensity Score Matching</h4>
+                                <ul class="evidence-card__bullets">
+                                    <li>Investigated how effective the communication in online marketing campaigns was, using text mining to turn campaign wording into data that could be analysed.</li>
+                                    <li>Combined traditional and machine-learning methods, adding sentiment analysis to measure the tone of the messaging.</li>
+                                    <li>Used propensity score matching to compare campaigns on a like-for-like basis, so differences in effectiveness were not read straight off raw group averages.</li>
+                                </ul>
+                                <div class="evidence-card__courses">
+                                    <p class="evidence-card__courses-label">Coursework</p>
+                                    <ul class="evidence-card__course-list">
+                                        <li data-course="digital-marketing-intelligence">Digital Marketing Intelligence</li>
+                                    </ul>
+                                </div>
+                                <div class="evidence-card__actions" role="group" aria-label="Text mining project resources">
+                                    <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Text%20mining%2C%20Sentiment%20analysis%20%26%20Propensity%20score%20matching.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                    <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/text-mining.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>R code</a>
+                                    <a class="evidence-card__action" href="https://www.canva.com/design/DAF00PgC88w/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Full screen</a>
+                                </div>
+                            </div>
+                        </article>
 
-                <!-- 4 · FACTOR ANALYSIS -->
-                <article class="evidence-card" data-domain="data" aria-labelledby="work-factor-title">
-                    <div class="evidence-card__canva" data-orientation="landscape">
-                        <iframe src="https://www.canva.com/design/REPLACE_CANVA_ID/view?embed"
-                                title="Sustainable Clothing Attitudes — interactive project"
-                                width="1600" height="900" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
-                    </div>
-                    <div class="evidence-card__body">
-                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data</span>
-                        <h3 id="work-factor-title" class="evidence-card__title">Sustainable Clothing Attitudes</h3>
-                        <ul class="evidence-card__bullets">
-                            <li>Investigated attitudes toward sustainable clothing, examining whether multiple survey responses reflected a smaller set of underlying consumer-attitude dimensions.</li>
-                            <li>Applied factor analysis to explore shared structure across the measured items, moving beyond individual question responses toward broader, interpretable constructs.</li>
-                            <li>Explained what those dimensions represented in the consumer context, connecting the statistical analysis with a more structured understanding of sustainable-clothing attitudes.</li>
-                        </ul>
-                        <div class="evidence-card__courses">
-                            <p class="evidence-card__courses-label">Coursework</p>
-                            <ul class="evidence-card__course-list">
-                                <li data-course="companies-brands-consumers">Companies, Brands, and Consumers</li>
-                            </ul>
-                        </div>
-                        <div class="evidence-card__actions" role="group" aria-label="Sustainable Clothing Attitudes resources">
-                            <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Factor%20Analysis.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Open report</a>
-                            <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/factor-analysis.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>R code</a>
-                        </div>
-                    </div>
-                </article>
+                        <!-- Wehkamp AR -->
+                        <article class="evidence-card" data-domain="growth" aria-labelledby="w-ga">
+                            <div class="evidence-card__canva" data-orientation="landscape">
+                                <iframe src="https://www.canva.com/design/DAF00O38dCQ/view?embed" title="Google Analytics and Exploratory Analysis of Wehkamp's AR app" width="1600" height="900" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
+                            </div>
+                            <div class="evidence-card__body">
+                                <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Growth</span>
+                                <h4 id="w-ga" class="evidence-card__title">Google Analytics &amp; Exploratory Analysis: Wehkamp's AR App</h4>
+                                <ul class="evidence-card__bullets">
+                                    <li>Analysed the impact of Wehkamp's augmented-reality app on its customers, asking whether people who used it behaved differently from those who did not.</li>
+                                    <li>Measured behaviour through five outcomes: repeat purchases, customer value, repurchases, revenue and transaction frequency.</li>
+                                    <li>Used exploratory analysis to judge which of those differences were worth interpreting, then presented them as a visual report.</li>
+                                </ul>
+                                <div class="evidence-card__courses">
+                                    <p class="evidence-card__courses-label">Coursework</p>
+                                    <ul class="evidence-card__course-list">
+                                        <li data-course="digital-marketing-analytics">Digital Marketing Analytics</li>
+                                    </ul>
+                                </div>
+                                <div class="evidence-card__actions" role="group" aria-label="Wehkamp AR project resources">
+                                    <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Google%20Analytics%20%26%20Exploratory%20Analysis.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                    <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/google-analytics.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>R code</a>
+                                    <a class="evidence-card__action" href="https://www.canva.com/design/DAF00O38dCQ/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Full screen</a>
+                                </div>
+                            </div>
+                        </article>
 
-                <!-- 5 · TEXT MINING / SENTIMENT / PSM -->
-                <article class="evidence-card" data-domain="data" aria-labelledby="work-text-title">
-                    <div class="evidence-card__canva" data-orientation="landscape">
-                        <iframe src="https://www.canva.com/design/REPLACE_CANVA_ID/view?embed"
-                                title="Text, Sentiment and Matched Comparisons — interactive project"
-                                width="1600" height="900" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
-                    </div>
-                    <div class="evidence-card__body">
-                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data</span>
-                        <h3 id="work-text-title" class="evidence-card__title">Text, Sentiment &amp; Matched Comparisons</h3>
-                        <ul class="evidence-card__bullets">
-                            <li>Combined text mining and sentiment analysis to examine marketing communication, converting unstructured language into features that could support systematic comparison.</li>
-                            <li>Used propensity-score matching to construct more comparable groups, addressing observed differences rather than treating an unadjusted comparison as sufficient evidence.</li>
-                            <li>Connected language analysis with the evaluation of group differences, bringing textual signals and a matching-based analytical approach together in one report.</li>
-                        </ul>
-                        <div class="evidence-card__courses">
-                            <p class="evidence-card__courses-label">Coursework</p>
-                            <ul class="evidence-card__course-list">
-                                <li data-course="digital-marketing-intelligence">Digital Marketing Intelligence</li>
-                            </ul>
-                        </div>
-                        <div class="evidence-card__actions" role="group" aria-label="Text, Sentiment and Matched Comparisons resources">
-                            <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Text%20mining%2C%20Sentiment%20analysis%20%26%20Propensity%20score%20matching.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Open report</a>
-                            <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/text-mining.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>R code</a>
-                        </div>
-                    </div>
-                </article>
+                        <!-- Time series -->
+                        <article class="evidence-card" data-domain="data" aria-labelledby="w-ts">
+                            <div class="evidence-card__canva" data-orientation="landscape">
+                                <iframe src="https://www.canva.com/design/DAF00Go7oNk/view?embed" title="Time-series Analysis of Redstar versus competitors" width="1600" height="900" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
+                            </div>
+                            <div class="evidence-card__body">
+                                <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data</span>
+                                <h4 id="w-ts" class="evidence-card__title">Time-series Analysis: Redstar vs. Competitors</h4>
+                                <ul class="evidence-card__bullets">
+                                    <li>Investigated the 4Ps of marketing (product, price, place and promotion) for Redstar against its competitors, using time-series methods.</li>
+                                    <li>Treated each element of the mix as something that moves over time, so the question became how Redstar's trajectory compared with rival brands, not just how it ranked in one period.</li>
+                                    <li>Reported the results as a visual analytical report, with the R code public alongside it.</li>
+                                </ul>
+                                <div class="evidence-card__courses">
+                                    <p class="evidence-card__courses-label">Coursework</p>
+                                    <ul class="evidence-card__course-list">
+                                        <li data-course="data-science-methods">Data Science Methods for MADS</li>
+                                    </ul>
+                                </div>
+                                <div class="evidence-card__actions" role="group" aria-label="Time-series project resources">
+                                    <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Time-series%20Analysis.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                    <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/timeseries-analysis.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>R code</a>
+                                    <a class="evidence-card__action" href="https://www.canva.com/design/DAF00Go7oNk/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Full screen</a>
+                                </div>
+                            </div>
+                        </article>
 
-                <!-- 6 · TIME SERIES -->
-                <article class="evidence-card" data-domain="data" aria-labelledby="work-timeseries-title">
-                    <div class="evidence-card__canva" data-orientation="landscape">
-                        <iframe src="https://www.canva.com/design/REPLACE_CANVA_ID/view?embed"
-                                title="Competitive Marketing Time Series — interactive project"
-                                width="1600" height="900" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
-                    </div>
-                    <div class="evidence-card__body">
-                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data</span>
-                        <h3 id="work-timeseries-title" class="evidence-card__title">Competitive Marketing Time Series</h3>
-                        <ul class="evidence-card__bullets">
-                            <li>Examined how Redstar and competing brands evolved over time, using marketing-mix observations to investigate patterns that a single-period comparison would miss.</li>
-                            <li>Organised the analysis around temporal movement and competitive context, considering how changes within a brand related to the wider market picture.</li>
-                            <li>Presented the time-series work in a visual analytical report, making the progression of marketing variables and differences between brands easier to inspect.</li>
-                        </ul>
-                        <div class="evidence-card__courses">
-                            <p class="evidence-card__courses-label">Coursework</p>
-                            <ul class="evidence-card__course-list">
-                                <li data-course="data-science-methods">Data Science Methods for MADS</li>
-                            </ul>
-                        </div>
-                        <div class="evidence-card__actions" role="group" aria-label="Competitive Marketing Time Series resources">
-                            <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Time-series%20Analysis.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Open report</a>
-                            <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/timeseries-analysis.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>R code</a>
-                        </div>
-                    </div>
-                </article>
+                        <!-- Cluster -->
+                        <article class="evidence-card" data-domain="data" aria-labelledby="w-cluster">
+                            <div class="evidence-card__canva" data-orientation="landscape">
+                                <iframe src="https://www.canva.com/design/DAF00IGcizI/view?embed" title="Cluster Analysis of car-buying preferences" width="1600" height="900" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
+                            </div>
+                            <div class="evidence-card__body">
+                                <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data</span>
+                                <h4 id="w-cluster" class="evidence-card__title">Cluster Analysis: Car-Buying Preferences</h4>
+                                <ul class="evidence-card__bullets">
+                                    <li>Investigated what consumers want when buying a car, working from survey data to find groups of buyers with similar priorities.</li>
+                                    <li>Ran both hierarchical and non-hierarchical clustering, so the segmentation could be judged across two different approaches to grouping.</li>
+                                    <li>Reported the segments in a visual report that turns the statistical output into a readable picture of how the market divides.</li>
+                                </ul>
+                                <div class="evidence-card__courses">
+                                    <p class="evidence-card__courses-label">Coursework</p>
+                                    <ul class="evidence-card__course-list">
+                                        <li data-course="companies-brands-consumers">Companies, Brands, and Consumers</li>
+                                    </ul>
+                                </div>
+                                <div class="evidence-card__actions" role="group" aria-label="Cluster analysis resources">
+                                    <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Cluster%20Analysis.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                    <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/cluster-analysis.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>R code</a>
+                                    <a class="evidence-card__action" href="https://www.canva.com/design/DAF00IGcizI/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Full screen</a>
+                                </div>
+                            </div>
+                        </article>
 
-                <!-- 7 · MARKET MODELLING I -->
-                <article class="evidence-card" data-domain="data" aria-labelledby="work-market1-title">
-                    <div class="evidence-card__canva" data-orientation="landscape">
-                        <iframe src="https://www.canva.com/design/REPLACE_CANVA_ID/view?embed"
-                                title="Market Modelling I — interactive project"
-                                width="1600" height="900" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
-                    </div>
-                    <div class="evidence-card__body">
-                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data</span>
-                        <h3 id="work-market1-title" class="evidence-card__title">Market Modelling I: Dutch Lemonade Market</h3>
-                        <ul class="evidence-card__bullets">
-                            <li>Investigated the Dutch lemonade market using observations across retailers and competing brands, examining how market and marketing variables related to commercial outcomes.</li>
-                            <li>Developed regression-based analyses to move from descriptive market patterns toward explicit models of the relationships under investigation.</li>
-                            <li>Documented the modelling in a report that connects statistical interpretation with the competitive and retail context of the category.</li>
-                        </ul>
-                        <div class="evidence-card__courses">
-                            <p class="evidence-card__courses-label">Coursework</p>
-                            <ul class="evidence-card__course-list">
-                                <li data-course="market-models">Market Models</li>
-                            </ul>
-                        </div>
-                        <div class="evidence-card__actions" role="group" aria-label="Market Modelling I resources">
-                            <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Market%20Modeling%201.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Open report</a>
-                            <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/market-modelling1.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>R code</a>
-                        </div>
-                    </div>
-                </article>
+                        <!-- Factor -->
+                        <article class="evidence-card" data-domain="data" aria-labelledby="w-factor">
+                            <div class="evidence-card__canva" data-orientation="landscape">
+                                <iframe src="https://www.canva.com/design/DAF05nELmIc/view?embed" title="Factor Analysis of attitudes towards sustainable clothing" width="1600" height="900" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
+                            </div>
+                            <div class="evidence-card__body">
+                                <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data</span>
+                                <h4 id="w-factor" class="evidence-card__title">Factor Analysis: Attitudes Towards Sustainable Clothing</h4>
+                                <ul class="evidence-card__bullets">
+                                    <li>Investigated which factors matter in people's attitudes towards sustainable clothing, starting from many separate survey questions.</li>
+                                    <li>Used factor analysis to find the smaller set of underlying dimensions those questions share, moving from individual answers to interpretable attitudes.</li>
+                                    <li>Presented the factors in a visual report that shows what each dimension represents.</li>
+                                </ul>
+                                <div class="evidence-card__courses">
+                                    <p class="evidence-card__courses-label">Coursework</p>
+                                    <ul class="evidence-card__course-list">
+                                        <li data-course="companies-brands-consumers">Companies, Brands, and Consumers</li>
+                                    </ul>
+                                </div>
+                                <div class="evidence-card__actions" role="group" aria-label="Factor analysis resources">
+                                    <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Factor%20Analysis.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                    <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/factor-analysis.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>R code</a>
+                                    <a class="evidence-card__action" href="https://www.canva.com/design/DAF05nELmIc/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Full screen</a>
+                                </div>
+                            </div>
+                        </article>
 
-                <!-- 8 · MARKET MODELLING II -->
-                <article class="evidence-card" data-domain="data" aria-labelledby="work-market2-title">
-                    <div class="evidence-card__canva" data-orientation="landscape">
-                        <iframe src="https://www.canva.com/design/REPLACE_CANVA_ID/view?embed"
-                                title="Market Modelling II — interactive project"
-                                width="1600" height="900" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
-                    </div>
-                    <div class="evidence-card__body">
-                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data</span>
-                        <h3 id="work-market2-title" class="evidence-card__title">Market Modelling II: Extended Analysis</h3>
-                        <ul class="evidence-card__bullets">
-                            <li>Extended the market-modelling work in a second analysis of the same retail and brand context, returning to the relationships between market variables and commercial outcomes.</li>
-                            <li>Continued to rely on regression-based modelling, using model results and diagnostics to judge how far the estimated relationships could be interpreted.</li>
-                            <li>Reported the analysis separately, with its own code, so each stage of the modelling can be inspected independently.</li>
-                        </ul>
-                        <div class="evidence-card__courses">
-                            <p class="evidence-card__courses-label">Coursework</p>
-                            <ul class="evidence-card__course-list">
-                                <li data-course="market-models">Market Models</li>
-                            </ul>
-                        </div>
-                        <div class="evidence-card__actions" role="group" aria-label="Market Modelling II resources">
-                            <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Market%20Modeling%202.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Open report</a>
-                            <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/market-modelling2.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>R code</a>
-                        </div>
-                    </div>
-                </article>
+                        <!-- Kruidvat -->
+                        <article class="evidence-card" data-domain="growth" aria-labelledby="w-kruidvat">
+                            <div class="evidence-card__canva" data-orientation="landscape">
+                                <iframe src="https://www.canva.com/design/DAF00P84WxU/view?embed" title="Retail Mix Tactics for Kruidvat NL" width="1600" height="900" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
+                            </div>
+                            <div class="evidence-card__body">
+                                <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Growth</span>
+                                <h4 id="w-kruidvat" class="evidence-card__title">Retail Mix Tactics: Kruidvat NL</h4>
+                                <ul class="evidence-card__bullets">
+                                    <li>Proposed a retail mix strategy for Kruidvat in the Netherlands, focused on the makeup category.</li>
+                                    <li>Grounded the proposal in both internal and external market conditions, so the recommendations follow from the retailer's situation and the wider industry.</li>
+                                    <li>Delivered the proposal as a visual report built for a business audience.</li>
+                                </ul>
+                                <div class="evidence-card__courses">
+                                    <p class="evidence-card__courses-label">Coursework</p>
+                                    <ul class="evidence-card__course-list">
+                                        <li data-course="retail-omnichannel">Retail &amp; Omnichannel Marketing</li>
+                                    </ul>
+                                </div>
+                                <div class="evidence-card__actions" role="group" aria-label="Kruidvat proposal resources">
+                                    <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Retail%20Mix%20Tactics%20for%20Kruidvat%20NL.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                    <a class="evidence-card__action" href="https://www.canva.com/design/DAF00P84WxU/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Full screen</a>
+                                </div>
+                            </div>
+                        </article>
 
-                <!-- 9 · AR / EXPLORATORY -->
-                <article class="evidence-card" data-domain="data" aria-labelledby="work-ar-title">
-                    <div class="evidence-card__canva" data-orientation="landscape">
-                        <iframe src="https://www.canva.com/design/REPLACE_CANVA_ID/view?embed"
-                                title="Augmented Reality and Customer Behaviour — interactive project"
-                                width="1600" height="900" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
-                    </div>
-                    <div class="evidence-card__body">
-                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data</span>
-                        <h3 id="work-ar-title" class="evidence-card__title">Augmented Reality &amp; Customer Behaviour</h3>
-                        <ul class="evidence-card__bullets">
-                            <li>Explored customer behaviour around Wehkamp’s augmented-reality experience, examining purchase activity rather than treating interaction with the feature as the final measure of interest.</li>
-                            <li>Investigated repeat purchases, customer value, revenue, and purchase frequency to build a multidimensional picture of behavioural differences.</li>
-                            <li>Used exploratory analysis to frame the business questions and identify patterns requiring further investigation, keeping descriptive evidence separate from claims about causation.</li>
-                        </ul>
-                        <div class="evidence-card__courses">
-                            <p class="evidence-card__courses-label">Coursework</p>
-                            <ul class="evidence-card__course-list">
-                                <li data-course="digital-marketing-analytics">Digital Marketing Analytics</li>
-                            </ul>
-                        </div>
-                        <div class="evidence-card__actions" role="group" aria-label="Augmented Reality and Customer Behaviour resources">
-                            <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Exploratory%20Analysis.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Open report</a>
-                        </div>
-                    </div>
-                </article>
+                        <!-- L'Oréal -->
+                        <article class="evidence-card" data-domain="growth" aria-labelledby="w-loreal">
+                            <div class="evidence-card__canva" data-orientation="landscape">
+                                <iframe src="https://www.canva.com/design/DAF00KtmVOo/view?embed" title="Omnichannel Strategy Proposal for L'Oréal NL" width="1600" height="900" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
+                            </div>
+                            <div class="evidence-card__body">
+                                <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Growth</span>
+                                <h4 id="w-loreal" class="evidence-card__title">Omnichannel Strategy: L'Oréal NL</h4>
+                                <ul class="evidence-card__bullets">
+                                    <li>Proposed an omnichannel strategy for L'Oréal in the Netherlands.</li>
+                                    <li>Built the proposal on two kinds of evidence: analysis of internal data and analysis of the external market.</li>
+                                    <li>Delivered the strategy as a visual report that ties the analysis to concrete recommendations.</li>
+                                </ul>
+                                <div class="evidence-card__courses">
+                                    <p class="evidence-card__courses-label">Coursework</p>
+                                    <ul class="evidence-card__course-list">
+                                        <li data-course="retail-omnichannel">Retail &amp; Omnichannel Marketing</li>
+                                    </ul>
+                                </div>
+                                <div class="evidence-card__actions" role="group" aria-label="L'Oréal proposal resources">
+                                    <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Omnichannel%20Strategy%20Proposal%20for%20L%27Oreal%20NL.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                    <a class="evidence-card__action" href="https://www.canva.com/design/DAF00KtmVOo/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Full screen</a>
+                                </div>
+                            </div>
+                        </article>
 
-                <!-- 10 · WEB ANALYTICS -->
-                <article class="evidence-card" data-domain="growth" aria-labelledby="work-ga-title">
-                    <div class="evidence-card__canva" data-orientation="landscape">
-                        <iframe src="https://www.canva.com/design/REPLACE_CANVA_ID/view?embed"
-                                title="Web Analytics and Exploratory Analysis — interactive project"
-                                width="1600" height="900" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
-                    </div>
-                    <div class="evidence-card__body">
-                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Growth</span>
-                        <h3 id="work-ga-title" class="evidence-card__title">Web Analytics &amp; Exploratory Analysis</h3>
-                        <ul class="evidence-card__bullets">
-                            <li>Examined website performance through a combined web-analytics and exploratory-analysis project, using behavioural evidence to investigate how visitors interacted with the site.</li>
-                            <li>Worked with analytics data in R, connecting the examination of website metrics with a scripted analytical workflow.</li>
-                            <li>Presented the analysis in a dedicated report, linking the interpretation of digital behaviour with the broader task of evaluating website performance.</li>
-                        </ul>
-                        <div class="evidence-card__courses">
-                            <p class="evidence-card__courses-label">Coursework</p>
-                            <ul class="evidence-card__course-list">
-                                <li data-course="digital-marketing-analytics">Digital Marketing Analytics</li>
-                            </ul>
-                        </div>
-                        <div class="evidence-card__actions" role="group" aria-label="Web Analytics and Exploratory Analysis resources">
-                            <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Google%20Analytics%20%26%20Exploratory%20Analysis.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Open report</a>
-                            <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/google-analytics.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>R code</a>
-                        </div>
-                    </div>
-                </article>
+                        <!-- Exploratory: meal kits (no code link on the old page) -->
+                        <article class="evidence-card" data-domain="growth" aria-labelledby="w-explore">
+                            <div class="evidence-card__canva" data-orientation="landscape">
+                                <iframe src="https://www.canva.com/design/DAF00D8MWFA/view?embed" title="Exploratory Analysis of consumer attitudes towards meal kits" width="1600" height="900" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
+                            </div>
+                            <div class="evidence-card__body">
+                                <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Growth</span>
+                                <h4 id="w-explore" class="evidence-card__title">Exploratory Analysis: Consumer Attitudes Towards Meal Kits</h4>
+                                <ul class="evidence-card__bullets">
+                                    <li>Investigated several aspects of consumer attitudes towards meal kits, working from survey data.</li>
+                                    <li>Used exploratory analysis to map the data before committing to any one question, surfacing the patterns that deserved a closer look.</li>
+                                    <li>Reported the results as a visual report that pairs each finding with a chart.</li>
+                                </ul>
+                                <div class="evidence-card__courses">
+                                    <p class="evidence-card__courses-label">Coursework</p>
+                                    <ul class="evidence-card__course-list">
+                                        <li data-course="companies-brands-consumers">Companies, Brands, and Consumers</li>
+                                    </ul>
+                                </div>
+                                <div class="evidence-card__actions" role="group" aria-label="Meal kit analysis resources">
+                                    <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Exploratory%20Analysis.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                    <a class="evidence-card__action" href="https://www.canva.com/design/DAF00D8MWFA/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Full screen</a>
+                                </div>
+                            </div>
+                        </article>
 
-                <!-- 11 · KRUIDVAT -->
-                <article class="evidence-card" data-domain="growth" aria-labelledby="work-kruidvat-title">
-                    <div class="evidence-card__canva" data-orientation="landscape">
-                        <iframe src="https://www.canva.com/design/REPLACE_CANVA_ID/view?embed"
-                                title="Kruidvat Retail-Mix Proposal — interactive project"
-                                width="1600" height="900" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
                     </div>
-                    <div class="evidence-card__body">
-                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Growth</span>
-                        <h3 id="work-kruidvat-title" class="evidence-card__title">Kruidvat Retail-Mix Proposal</h3>
-                        <ul class="evidence-card__bullets">
-                            <li>Developed a retail-mix proposal for Kruidvat Netherlands, examining how the retailer’s commercial choices could work together rather than as disconnected tactics.</li>
-                            <li>Considered assortment, pricing, promotion, and the customer-facing retail experience in the context of the retailer and its market.</li>
-                            <li>Translated the analysis into a structured proposal, connecting the diagnosis of the retail situation with practical recommendations for the mix.</li>
-                        </ul>
-                        <div class="evidence-card__courses">
-                            <p class="evidence-card__courses-label">Coursework</p>
-                            <ul class="evidence-card__course-list">
-                                <li data-course="retail-omnichannel">Retail &amp; Omnichannel Marketing</li>
-                            </ul>
-                        </div>
-                        <div class="evidence-card__actions" role="group" aria-label="Kruidvat Retail-Mix Proposal resources">
-                            <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Retail%20Mix%20Tactics%20for%20Kruidvat%20NL.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Open proposal</a>
-                        </div>
-                    </div>
-                </article>
+                </div>
 
-                <!-- 12 · L'ORÉAL -->
-                <article class="evidence-card" data-domain="growth" aria-labelledby="work-loreal-title">
-                    <div class="evidence-card__canva" data-orientation="landscape">
-                        <iframe src="https://www.canva.com/design/REPLACE_CANVA_ID/view?embed"
-                                title="L’Oréal Omnichannel Strategy — interactive project"
-                                width="1600" height="900" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
-                    </div>
-                    <div class="evidence-card__body">
-                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Growth</span>
-                        <h3 id="work-loreal-title" class="evidence-card__title">L’Oréal Omnichannel Strategy</h3>
-                        <ul class="evidence-card__bullets">
-                            <li>Developed an omnichannel strategy proposal for L’Oréal Netherlands, considering how different channels could contribute to a more connected customer experience.</li>
-                            <li>Combined internal and external analysis to examine channel roles and the relationship between commercial strategy and customer interactions.</li>
-                            <li>Presented a coordinated set of recommendations, treating omnichannel strategy as the alignment of channels and experiences rather than simply a presence across more touchpoints.</li>
-                        </ul>
-                        <div class="evidence-card__courses">
-                            <p class="evidence-card__courses-label">Coursework</p>
-                            <ul class="evidence-card__course-list">
-                                <li data-course="retail-omnichannel">Retail &amp; Omnichannel Marketing</li>
-                            </ul>
-                        </div>
-                        <div class="evidence-card__actions" role="group" aria-label="L’Oréal Omnichannel Strategy resources">
-                            <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Omnichannel%20Strategy%20Proposal%20for%20L%27Oreal%20NL.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Open proposal</a>
-                        </div>
-                    </div>
-                </article>
+                <!-- ═════════ WRITTEN REPORTS (portrait) ═════════ -->
+                <div class="works-group">
+                    <h3 class="works-group__title">Written reports</h3>
+                    <p class="works-group__intro">Documents showcasing academic and corporate reporting.</p>
 
-                <!-- 13 · BUSINESS ETHICS (likely a portrait document: check orientation) -->
-                <article class="evidence-card" data-domain="product" aria-labelledby="work-ethics-title">
-                    <div class="evidence-card__canva" data-orientation="landscape">
-                        <iframe src="https://www.canva.com/design/REPLACE_CANVA_ID/view?embed"
-                                title="Business Ethics: Three Applied Analyses — interactive report"
-                                width="1600" height="900" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
-                    </div>
-                    <div class="evidence-card__body">
-                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Product</span>
-                        <h3 id="work-ethics-title" class="evidence-card__title">Business Ethics: Three Applied Analyses</h3>
-                        <ul class="evidence-card__bullets">
-                            <li>Investigated food waste, salary transparency, and platform-based gig work through three applied ethical analyses, each centred on a concrete business issue.</li>
-                            <li>Used ethical theory and literature review to examine affected stakeholders, competing interests, and the obligations involved in organisational decisions.</li>
-                            <li>Developed reasoned assessments of the cases, showing how business recommendations can be evaluated for their consequences and ethical justification, not only their commercial appeal.</li>
-                        </ul>
-                        <div class="evidence-card__courses">
-                            <p class="evidence-card__courses-label">Coursework</p>
-                            <ul class="evidence-card__course-list">
-                                <li data-course="business-ethics">Business Ethics</li>
-                            </ul>
-                        </div>
-                        <div class="evidence-card__actions" role="group" aria-label="Business Ethics resources">
-                            <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Ethical%20Analysis%20Food%20Waste%2C%20Salary%20Transparency%2C%20Gig%20Work.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Open report</a>
-                        </div>
-                    </div>
-                </article>
+                    <div class="evidence-grid evidence-grid--works">
 
+                        <!-- Churn -->
+                        <article class="evidence-card" data-domain="data" aria-labelledby="w-churn">
+                            <div class="evidence-card__canva" data-orientation="portrait">
+                                <iframe src="https://www.canva.com/design/DAF05cR6CW8/view?embed" title="Churn Prediction Modelling report" width="850" height="1100" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
+                            </div>
+                            <div class="evidence-card__body">
+                                <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data</span>
+                                <h4 id="w-churn" class="evidence-card__title">Churn Prediction Modelling</h4>
+                                <ul class="evidence-card__bullets">
+                                    <li>Modelled customer churn with traditional methods and with machine learning: tree models, bagging, boosting and neural networks.</li>
+                                    <li>Put the approaches side by side on the same problem, so the report reads as a comparison of how different modelling philosophies handle churn.</li>
+                                    <li>Documented the work as a written report with the full R workflow public, so each modelling choice can be traced to code.</li>
+                                </ul>
+                                <div class="evidence-card__courses">
+                                    <p class="evidence-card__courses-label">Coursework</p>
+                                    <ul class="evidence-card__course-list">
+                                        <li data-course="statistical-learning">Statistical Learning in Marketing</li>
+                                    </ul>
+                                </div>
+                                <div class="evidence-card__actions" role="group" aria-label="Churn modelling resources">
+                                    <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Churn%20Prediction%20Modeling.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                    <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/churn-modelling.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>R code</a>
+                                    <a class="evidence-card__action" href="https://www.canva.com/design/DAF05cR6CW8/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Full screen</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Market Modelling 1 -->
+                        <article class="evidence-card" data-domain="data" aria-labelledby="w-mm1">
+                            <div class="evidence-card__canva" data-orientation="portrait">
+                                <iframe src="https://www.canva.com/design/DAF05b9VXBc/view?embed" title="Market Modelling 1 of 2 report" width="850" height="1100" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
+                            </div>
+                            <div class="evidence-card__body">
+                                <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data</span>
+                                <h4 id="w-mm1" class="evidence-card__title">Market Modelling 1/2: Dutch Lemonade Market</h4>
+                                <ul class="evidence-card__bullets">
+                                    <li>Built a regression model of the Dutch lemonade retail market, working with data from retailers such as Albert Heijn and Jumbo.</li>
+                                    <li>Covered competing brands, including Raak and Karvan Cevitam, so the model had to account for differences between brands as well as between retailers.</li>
+                                    <li>Reported it as a written report with the R code public, the first of two linked modelling assignments.</li>
+                                </ul>
+                                <div class="evidence-card__courses">
+                                    <p class="evidence-card__courses-label">Coursework</p>
+                                    <ul class="evidence-card__course-list">
+                                        <li data-course="market-models">Market Models</li>
+                                    </ul>
+                                </div>
+                                <div class="evidence-card__actions" role="group" aria-label="Market Modelling 1 resources">
+                                    <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Market%20Modeling%201.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                    <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/market-modelling1.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>R code</a>
+                                    <a class="evidence-card__action" href="https://www.canva.com/design/DAF05b9VXBc/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Full screen</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Market Modelling 2 -->
+                        <article class="evidence-card" data-domain="data" aria-labelledby="w-mm2">
+                            <div class="evidence-card__canva" data-orientation="portrait-tall">
+                                <iframe src="https://www.canva.com/design/DAF05T7o0LE/view?embed" title="Market Modelling 2 of 2 report" width="800" height="1100" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
+                            </div>
+                            <div class="evidence-card__body">
+                                <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data</span>
+                                <h4 id="w-mm2" class="evidence-card__title">Market Modelling 2/2: Dutch Lemonade Market</h4>
+                                <ul class="evidence-card__bullets">
+                                    <li>Continued the lemonade-market modelling from part one, extending the same retailer and brand context into a second written report.</li>
+                                    <li>Kept the analysis in the same regression-modelling framework, so the two reports can be read together as one body of work.</li>
+                                    <li>Published with its own R script, so part two can be inspected independently of part one.</li>
+                                </ul>
+                                <div class="evidence-card__courses">
+                                    <p class="evidence-card__courses-label">Coursework</p>
+                                    <ul class="evidence-card__course-list">
+                                        <li data-course="market-models">Market Models</li>
+                                    </ul>
+                                </div>
+                                <div class="evidence-card__actions" role="group" aria-label="Market Modelling 2 resources">
+                                    <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Market%20Modeling%202.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                    <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/market-modelling2.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>R code</a>
+                                    <a class="evidence-card__action" href="https://www.canva.com/design/DAF05T7o0LE/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Full screen</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Conversion -->
+                        <article class="evidence-card" data-domain="engineering" aria-labelledby="w-conv">
+                            <div class="evidence-card__canva" data-orientation="portrait">
+                                <iframe src="https://www.canva.com/design/DAF00GOZbvk/view?embed" title="Conversion Rate Optimization Analysis report" width="850" height="1100" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
+                            </div>
+                            <div class="evidence-card__body">
+                                <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Engineering</span>
+                                <h4 id="w-conv" class="evidence-card__title">Conversion Rate Optimization Analysis</h4>
+                                <ul class="evidence-card__bullets">
+                                    <li>Investigated what drives conversion for an online retailer's product category, starting from the question of how the data should be extracted.</li>
+                                    <li>Wrote the extraction and preparation in SQL, then carried the dataset into R to model how the available variables relate to conversion.</li>
+                                    <li>Published both layers separately, so the route from raw data to model can be followed end to end.</li>
+                                </ul>
+                                <div class="evidence-card__courses">
+                                    <p class="evidence-card__courses-label">Coursework</p>
+                                    <ul class="evidence-card__course-list">
+                                        <li data-course="data-engineering">Data Engineering for MADS</li>
+                                        <li data-course="digital-marketing-analytics">Digital Marketing Analytics</li>
+                                    </ul>
+                                </div>
+                                <div class="evidence-card__actions" role="group" aria-label="Conversion analysis resources">
+                                    <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Conversion%20Rate%20Optimization%20Analysis.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                    <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/conversionrate-modelling.sql" target="_blank" rel="noopener noreferrer"><i class="bi bi-database" aria-hidden="true"></i>SQL</a>
+                                    <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/conversionrate-modelling.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>R code</a>
+                                    <a class="evidence-card__action" href="https://www.canva.com/design/DAF00GOZbvk/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Ethics -->
+                        <article class="evidence-card" data-domain="product" aria-labelledby="w-ethics">
+                            <div class="evidence-card__canva" data-orientation="portrait">
+                                <iframe src="https://www.canva.com/design/DAF00Bs9Blc/view?embed" title="Ethical Analysis: Food Waste, Salary Transparency, Gig Work" width="850" height="1100" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
+                            </div>
+                            <div class="evidence-card__body">
+                                <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Product</span>
+                                <h4 id="w-ethics" class="evidence-card__title">Ethical Analysis: Food Waste, Salary Transparency &amp; Gig Work</h4>
+                                <ul class="evidence-card__bullets">
+                                    <li>Analysed three live business issues through an ethical lens: food waste, salary transparency and platform-based gig work.</li>
+                                    <li>Used ethical theory and the research literature to identify who is affected by each issue and where their interests conflict.</li>
+                                    <li>Argued for a defensible position on each, treating ethics as part of the business decision.</li>
+                                </ul>
+                                <div class="evidence-card__courses">
+                                    <p class="evidence-card__courses-label">Coursework</p>
+                                    <ul class="evidence-card__course-list">
+                                        <li data-course="business-ethics">Business Ethics</li>
+                                    </ul>
+                                </div>
+                                <div class="evidence-card__actions" role="group" aria-label="Ethics report resources">
+                                    <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Ethical%20Analysis%20Food%20Waste%2C%20Salary%20Transparency%2C%20Gig%20Work.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                    <a class="evidence-card__action" href="https://www.canva.com/design/DAF00Bs9Blc/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Full screen</a>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
             </div>
-
-            <p class="works-repository">
-                <a href="https://github.com/ETA444/msc_mads" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-github" aria-hidden="true"></i>Browse the full MSc project repository
-                </a>
-            </p>
-
-            <noscript>
-                <p class="works-note">The course switch requires JavaScript. All reports and code remain available through the links on each card.</p>
-            </noscript>
-
         </section>
 
 
