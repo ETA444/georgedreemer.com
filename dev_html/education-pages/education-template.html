@@ -1852,6 +1852,289 @@
       background: var(--color-text-faint);
     }
 
+    /* ── E6 extension: Canva previews, course lens, resource links ──
+    ────────────────────────────────────────────────────────────── */
+
+    /* Ensure component display declarations cannot override hidden. */
+    .works-section [hidden] {
+        display: none !important;
+    }
+
+    /* Prevent long titles, course names, or URLs widening grid tracks. */
+    .works-section .evidence-card,
+    .works-section .evidence-card__body {
+        min-width: 0;
+    }
+
+    /* ── Section controls ─────────────────────────────────────── */
+
+    .works-toolbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: var(--space-3);
+        margin-bottom: var(--space-4);
+    }
+
+    .works-toolbar__intro {
+        flex: 1 1 20rem;
+        margin: 0;
+        color: var(--color-text-muted);
+        font-size: var(--text-sm);
+        line-height: 1.6;
+    }
+
+    .works-lens {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        gap: var(--space-2);
+        min-height: 44px;
+        padding: var(--space-2) var(--space-3);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-full);
+        background: var(--color-surface);
+        color: var(--color-text);
+        font: inherit;
+        font-size: var(--text-xs);
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .works-lens__track {
+        display: inline-flex;
+        align-items: center;
+        width: 2rem;
+        height: 1.125rem;
+        padding: 2px;
+        border-radius: var(--radius-full);
+        background: var(--color-border);
+    }
+
+    .works-lens__thumb {
+        width: 0.875rem;
+        height: 0.875rem;
+        border-radius: 50%;
+        background: var(--color-text);
+        transition: transform var(--transition);
+    }
+
+    .works-lens[aria-checked="true"] .works-lens__thumb {
+        transform: translateX(0.875rem);
+    }
+
+    .works-note {
+        margin: 0 0 var(--space-4);
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        line-height: 1.6;
+    }
+
+    /* ── Canva media variant ──────────────────────────────────── */
+
+    .works-section .evidence-card__canva {
+        position: relative;
+        flex-shrink: 0;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+        border-bottom: 1px solid var(--color-border);
+        background: var(--color-surface-2);
+    }
+
+    .works-section .evidence-card__canva[data-orientation="portrait"] {
+        aspect-ratio: 210 / 297;
+    }
+
+    .works-section .evidence-card__canva iframe {
+        position: absolute;
+        inset: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+    /* Intentional pre-load state; not a simulated document thumbnail. */
+    .evidence-card__preview-cover {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: var(--space-3);
+        width: 100%;
+        height: 100%;
+        padding: var(--space-5);
+    }
+
+    .evidence-card__artifact-type {
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+
+    .evidence-card__preview-note {
+        margin: 0;
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        line-height: 1.5;
+    }
+
+    .evidence-card__preview-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-2);
+        min-height: 44px;
+        padding: var(--space-2) var(--space-3);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        background: var(--color-surface);
+        color: var(--color-text);
+        font: inherit;
+        font-size: var(--text-xs);
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    /* ── Course attribution ───────────────────────────────────── */
+
+    .works-section .evidence-card__courses {
+        display: none;
+        margin-bottom: var(--space-3);
+        padding-bottom: var(--space-3);
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .works-section .is-lens-courses .evidence-card__courses {
+        display: block;
+    }
+
+    .evidence-card__courses-label {
+        margin: 0 0 var(--space-1);
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        font-weight: 600;
+    }
+
+    .evidence-card__course-list {
+        display: grid;
+        gap: var(--space-2);
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .evidence-card__course-list li {
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+    }
+
+    .evidence-card__course-list .grade-badge {
+        margin-inline-start: var(--space-2);
+    }
+
+    /* Keep bullets beneath the title; let the resource footer align. */
+    .works-section .evidence-card__bullets {
+        margin-top: 0;
+    }
+
+    /* Raise the existing 10px domain label within this section only. */
+    .works-section .evidence-card__domain-tag {
+        font-size: var(--text-xs);
+    }
+
+    /* ── Resource footer ──────────────────────────────────────── */
+
+    .evidence-card__actions {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: var(--space-2);
+        margin-top: auto;
+        padding-top: var(--space-4);
+    }
+
+    .evidence-card__action {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-2);
+        min-height: 44px;
+        padding: var(--space-2) var(--space-3);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        background: transparent;
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        font-weight: 600;
+        line-height: 1.4;
+        text-decoration: none;
+        transition:
+            color var(--transition),
+            background var(--transition),
+            border-color var(--transition);
+    }
+
+    .evidence-card__action--primary {
+        background: var(--color-surface-2);
+        color: var(--color-text);
+    }
+
+    .works-repository {
+        margin: var(--space-4) 0 0;
+    }
+
+    .works-repository a {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--space-2);
+        min-height: 44px;
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        text-underline-offset: 0.2em;
+    }
+
+    /* ── Interaction and accessibility ────────────────────────── */
+
+    .works-lens:focus-visible,
+    .evidence-card__preview-button:focus-visible,
+    .evidence-card__action:focus-visible,
+    .works-repository a:focus-visible {
+        outline: 2px solid var(--color-text);
+        outline-offset: 3px;
+    }
+
+    @media (hover: hover) {
+        .works-lens:hover,
+        .evidence-card__preview-button:hover,
+        .evidence-card__action:hover {
+            background: var(--color-surface-2);
+            color: var(--color-text);
+            border-color: var(--color-text-muted);
+        }
+    }
+
+    .works-lens:active,
+    .evidence-card__preview-button:active,
+    .evidence-card__action:active {
+        background: var(--color-surface-2);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .works-lens__thumb,
+        .evidence-card__action {
+            transition: none;
+        }
+    }
+
     /* ── E7: IN DEPTH ACCORDION ────────────────────────────── */
     .story-accordion {
       border: 1px solid var(--color-border);
