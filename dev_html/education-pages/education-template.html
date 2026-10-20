@@ -1928,7 +1928,7 @@
         grid-template-columns:
             repeat(auto-fit, minmax(min(420px, 100%), 1fr));
         gap: var(--space-5);
-        align-items: start;
+        align-items: stretch;
     }
 
     .works-section .evidence-card,
@@ -1948,11 +1948,6 @@
         border-bottom: 1px solid var(--color-border);
     }
 
-    .works-section
-    .evidence-card__canva[data-orientation="portrait"] {
-        aspect-ratio: 210 / 297;
-    }
-
     .works-section .evidence-card__canva iframe {
         position: absolute;
         inset: 0;
@@ -1968,10 +1963,6 @@
 
     .works-section .evidence-card__body {
         gap: 0;
-    }
-
-    .works-section .evidence-card__domain-tag {
-        font-size: var(--text-xs);
     }
 
     .works-section .evidence-card__title {
@@ -2073,6 +2064,7 @@
     /* ── E6: groups, extra ratios, repo link ── */
     .works-section .evidence-card__canva[data-orientation="portrait"]      { aspect-ratio: 17 / 22; }
     .works-section .evidence-card__canva[data-orientation="portrait-tall"] { aspect-ratio: 8 / 11; }
+    .works-section .evidence-card__canva[data-orientation="portrait-patch"] { aspect-ratio: 210 / 297; }
 
     .works-group + .works-group { margin-top: var(--space-12); }
 
@@ -2105,6 +2097,28 @@
     .works-repository a:focus-visible {
         outline: 2px solid var(--color-text);
         outline-offset: 3px;
+    }
+
+    /* ── Height consistency ───────────────────────────────────── */
+
+    .works-section .evidence-card {
+        height: 100%;
+    }
+
+    /* The iframe frame is sized by aspect ratio alone, never by siblings. */
+    .works-section .evidence-card__canva {
+        flex: 0 0 auto;
+        height: auto;
+    }
+
+    /* Body fills the remaining height; links anchor to the bottom. */
+    .works-section .evidence-card__body {
+        flex: 1 1 auto;
+    }
+
+    .works-section .evidence-card__actions {
+        margin-top: auto;
+        padding-top: var(--space-4);
     }
 
     @media (hover: hover) {
@@ -4379,8 +4393,8 @@
 
                         <!-- Conversion -->
                         <article class="evidence-card" data-domain="engineering" aria-labelledby="w-conv">
-                            <div class="evidence-card__canva" data-orientation="portrait">
-                                <iframe src="https://www.canva.com/design/DAF00GOZbvk/view?embed" title="Conversion Rate Optimization Analysis report" width="850" height="1100" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
+                            <div class="evidence-card__canva" data-orientation="portrait-patch">
+                                <iframe src="https://www.canva.com/design/DAF00GOZbvk/view?embed" title="Conversion Rate Optimization Analysis report" width="800" height="1100" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
                             </div>
                             <div class="evidence-card__body">
                                 <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Engineering</span>
@@ -4408,8 +4422,8 @@
 
                         <!-- Ethics -->
                         <article class="evidence-card" data-domain="product" aria-labelledby="w-ethics">
-                            <div class="evidence-card__canva" data-orientation="portrait">
-                                <iframe src="https://www.canva.com/design/DAF00Bs9Blc/view?embed" title="Ethical Analysis: Food Waste, Salary Transparency, Gig Work" width="850" height="1100" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
+                            <div class="evidence-card__canva" data-orientation="portrait-patch">
+                                <iframe src="https://www.canva.com/design/DAF00Bs9Blc/view?embed" title="Ethical Analysis: Food Waste, Salary Transparency, Gig Work" width="800" height="1100" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
                             </div>
                             <div class="evidence-card__body">
                                 <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Product</span>
