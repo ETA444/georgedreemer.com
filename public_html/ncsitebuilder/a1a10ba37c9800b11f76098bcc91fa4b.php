@@ -29,9 +29,9 @@
 						<!-- Facebook Open Graph end -->
 
 		<meta name="generator" content="Website Builder" />
-			<link href="css/common-bundle.css?ts=20261018202413" rel="stylesheet" type="text/css" />
+			<link href="css/common-bundle.css?ts=20261020163751" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese" rel="stylesheet" type="text/css" />
-	<link href="css/a1a10ba37c9800b11f76098bcc91fa4b-bundle.css?ts=20261018202413" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
+	<link href="css/a1a10ba37c9800b11f76098bcc91fa4b-bundle.css?ts=20261020163751" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
 	<ga-code/><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
      SECTION 1 — GLOBAL
      Settings → Meta Tags (site-wide, always present)
@@ -2553,7 +2553,7 @@
 </head>
 
 
-<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a1a10ba37c9800b11f76098bcc91fa4b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dc00f4f3dc0e6ba03d8656" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dc02dd12dafd3d1f30a6a2" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a10ba380dd004673614261d8107db1" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1792344254"></a></div></div></div><div id="a1a10ba380de00e978c8c7c125f749d3" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a10ba380dd01c45f700d7f8fe12965" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1792344254"></a></div></div></div></div></div><div id="a1a10ba380e0003e6e0f918efa7529ad" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a1a10ba37c9800b11f76098bcc91fa4b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dc00f4f3dc0e6ba03d8656" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dc02dd12dafd3d1f30a6a2" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a10ba380dd004673614261d8107db1" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1792503473"></a></div></div></div><div id="a1a10ba380de00e978c8c7c125f749d3" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a10ba380dd01c45f700d7f8fe12965" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1792503473"></a></div></div></div></div></div><div id="a1a10ba380e0003e6e0f918efa7529ad" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -2635,7 +2635,7 @@
 			'children' => array()
 		)
 	)
-)); ?><div class="clearfix"></div></div></div></div><div id="a1a10ba380dd0555369775120f108bad" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a10ba380dd02870c776abc253ba46f" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dd03bd75c01d7395fd7cdc" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/5e99756a27cae83cb6befdeef656e13d_fit.png?ts=1792344254"></div></div></div></div></div></div></div></div></div></div></div><div id="wb_main_a1a10ba37c9800b11f76098bcc91fa4b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dc01af20b7b8795036ef3a" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1792344254"></div></div></div><div id="a1a10ba380df004411e5d21393b5f09f" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><main class="preview-page" role="main">
+)); ?><div class="clearfix"></div></div></div></div><div id="a1a10ba380dd0555369775120f108bad" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a10ba380dd02870c776abc253ba46f" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dd03bd75c01d7395fd7cdc" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/5e99756a27cae83cb6befdeef656e13d_fit.png?ts=1792503473"></div></div></div></div></div></div></div></div></div></div></div><div id="wb_main_a1a10ba37c9800b11f76098bcc91fa4b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dc01af20b7b8795036ef3a" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1792503473"></div></div></div><div id="a1a10ba380df004411e5d21393b5f09f" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><main class="preview-page" role="main">
     <!-- ============================================================
         ELEMENT 1 — CONTEXT BLOCK
     ============================================================ -->
@@ -2821,7 +2821,7 @@
                             <p class="credential-card__title">Authorship</p>
                             <p class="credential-card__sub">CITI Program · Responsible Conduct of Research</p>
                             <p class="credential-card__org-desc">
-                                Covers the ethical responsibilities of authors, the criteria used to decide who qualifies as an author, and how to recognise problematic authorship practices. <br><br><a href="" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+                                Covers the ethical responsibilities of authors, the criteria used to decide who qualifies as an author, and how to recognise problematic authorship practices. <br><br><a href="https://www.citiprogram.org/verify/?w84586628-0ab2-4dbe-832c-70ba821f5d03-52728905" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
                             </p>
                             <div class="credential-card__meta">
                                 <span class="credential-pill credential-pill--cert">RCR</span>
@@ -2838,7 +2838,7 @@
                             <p class="credential-card__title">Conflict of Interest</p>
                             <p class="credential-card__sub">CITI Program · Responsible Conduct of Research</p>
                             <p class="credential-card__org-desc">
-                                Explains the types of conflicts of interest and commitment, why they undermine research, and the strategies used to manage or eliminate them. <br><br><a href="" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+                                Explains the types of conflicts of interest and commitment, why they undermine research, and the strategies used to manage or eliminate them. <br><br><a href="https://www.citiprogram.org/verify/?w14878cff-9b65-49bf-a688-b19c0476c688-52728906" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
                             </p>
                             <div class="credential-card__meta">
                                 <span class="credential-pill credential-pill--cert">RCR</span>
@@ -2855,7 +2855,7 @@
                             <p class="credential-card__title">Data Management</p>
                             <p class="credential-card__sub">CITI Program · Responsible Conduct of Research</p>
                             <p class="credential-card__org-desc">
-                                Covers managing data across a research project: documentation for reproducibility, plus the ethical and compliance questions around data ownership, sharing, and protection. <br><br><a href="" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+                                Covers managing data across a research project: documentation for reproducibility, plus the ethical and compliance questions around data ownership, sharing, and protection. <br><br><a href="https://www.citiprogram.org/verify/?w29ad4803-bc39-4024-a2a0-fa4aaa18acd6-52728907" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
                             </p>
                             <div class="credential-card__meta">
                                 <span class="credential-pill credential-pill--cert">RCR</span>
@@ -2873,7 +2873,7 @@
                             <p class="credential-card__title">Internet-based Research</p>
                             <p class="credential-card__sub">CITI Program · Human-based Research</p>
                             <p class="credential-card__org-desc">
-                                Looks at the ethical and regulatory questions raised by studying people online: consent, privacy expectations, and the risks of using web-sourced data. <br><br><a href="" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+                                Looks at the ethical and regulatory questions raised by studying people online: consent, privacy expectations, and the risks of using web-sourced data. <br><br><a href="https://www.citiprogram.org/verify/?we279123e-5980-4178-9fd3-7b5c3737d613-52728904" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
                             </p>
                             <div class="credential-card__meta">
                                 <span class="credential-pill credential-pill--cert">Human Research</span>
@@ -2890,7 +2890,7 @@
                             <p class="credential-card__title">Plagiarism</p>
                             <p class="credential-card__sub">CITI Program · Responsible Conduct of Research</p>
                             <p class="credential-card__org-desc">
-                                Defines plagiarism and its common forms, and shows how to credit sources properly so that others' ideas and words are never presented as your own. <br><br><a href="" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+                                Defines plagiarism and its common forms, and shows how to credit sources properly so that others' ideas and words are never presented as your own. <br><br><a href="https://www.citiprogram.org/verify/?w6ff78328-e1a0-4901-ba3d-7f8612d49538-52728908" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
                             </p>
                             <div class="credential-card__meta">
                                 <span class="credential-pill credential-pill--cert">RCR</span>
@@ -2908,7 +2908,7 @@
                             <p class="credential-card__sub">CITI Program · Human-based Research</p>
                             <p class="credential-card__org-desc">
                                 Defines privacy and confidentiality, identifies
-                                research methods that raise privacy concerns, and covers standard ways to protect participants' information, including relevant laws. <br><br><a href="" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+                                research methods that raise privacy concerns, and covers standard ways to protect participants' information, including relevant laws. <br><br><a href="https://www.citiprogram.org/verify/?wa833454f-8bed-4edc-b389-16646b6a2353-52728903" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
                             </p>
                             <div class="credential-card__meta">
                                 <span class="credential-pill credential-pill--cert">Human Research</span>
@@ -2926,7 +2926,7 @@
                             <p class="credential-card__sub">CITI Program · Responsible Conduct of Research</p>
                             <p class="credential-card__org-desc">
                                 Introduces the ethical principles behind research with
-                                people: informed consent, weighing risks against benefits, and protecting participants. <br><br><a href="" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+                                people: informed consent, weighing risks against benefits, and protecting participants. <br><br><a href="https://www.citiprogram.org/verify/?w3d28bc48-9ceb-448d-9681-0f90ad0d1707-52728909" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
                             </p>
                             <div class="credential-card__meta">
                                 <span class="credential-pill credential-pill--cert">RCR</span>
@@ -2943,7 +2943,7 @@
                             <p class="credential-card__title">Research Misconduct</p>
                             <p class="credential-card__sub">CITI Program · Responsible Conduct of Research</p>
                             <p class="credential-card__org-desc">
-                                Describes the three practices that make up research misconduct (fabrication, falsification, and plagiarism) and how allegations are handled. <br><br><a href="" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+                                Describes the three practices that make up research misconduct (fabrication, falsification, and plagiarism) and how allegations are handled. <br><br><a href="https://www.citiprogram.org/verify/?wf5616b1b-dc18-4f4d-b670-4f655d0725a0-52728910" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
                             </p>
                             <div class="credential-card__meta">
                                 <span class="credential-pill credential-pill--cert">RCR</span>
@@ -2962,7 +2962,7 @@
                             <p class="credential-card__title">Google Analytics for Beginners</p>
                             <p class="credential-card__sub">Google Skillshop</p>
                             <p class="credential-card__org-desc">
-                                Covers setting up an analytics account, reading core reports on traffic and user behaviour, and using the data to judge how a website or campaign is performing. <br><br><a href="" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+                                Covers setting up an analytics account, reading core reports on traffic and user behaviour, and using the data to judge how a website or campaign is performing. <br><br><a href="https://georgedreemer.com/public_img/education/certifications/google/Google%20Analytics%20for%20Beginners.pdf" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
                             </p>
                             <div class="credential-card__meta">
                                 <span class="credential-pill credential-pill--cert">Web Analytics</span>
@@ -3060,6 +3060,9 @@
                                     UMass, Hampshire, Amherst,
                                     and Smith</li>
                             </ul>
+                            <p class="credential-card__org-desc">
+                                <a href="https://georgedreemer.com/public_img/education/certifications/other/harold_grinspoon_foundation-entrepreneurial_spirit-certificate.pdf" target="_blank" rel="noopener noreferrer" class="credential-card__link">View award ↗</a>
+                            </p>
                             <div class="credential-card__meta">
                                 <span class="credential-pill credential-pill--year">2017</span>
                                 <span class="credential-pill credential-pill--award">Entrepreneurship</span>
@@ -3082,6 +3085,9 @@
                                     diplomatic recognition reserved for
                                     the winning essayists</li>
                             </ul>
+                            <p class="credential-card__org-desc">
+                                <a href="https://georgedreemer.com/public_img/education/certifications/other/israel_bulgaria_institute-certificate.pdf" target="_blank" rel="noopener noreferrer" class="credential-card__link">View award ↗</a>
+                            </p>
                             <div class="credential-card__meta">
                                 <span class="credential-pill credential-pill--year">2015</span>
                                 <span class="credential-pill credential-pill--award">National Winner</span>
@@ -3101,6 +3107,9 @@
                                 <li>Nominated through Rotaract Plovdiv-Puldin to attend the District 2482 RYLA seminar in Burgas</li>
                                 <li>Completed the full leadership retreat as a "RYLArian" — one of Rotary International's most recognized youth development distinctions</li>
                             </ul>
+                            <p class="credential-card__org-desc">
+                                <a href="https://georgedreemer.com/public_img/education/certifications/rotary/rotary-rylarian-certificate.pdf" target="_blank" rel="noopener noreferrer" class="credential-card__link">View award ↗</a>
+                            </p>
                             <div class="credential-card__meta">
                                 <span class="credential-pill credential-pill--year">2015</span>
                                 <span class="credential-pill credential-pill--award">Leadership</span>
@@ -3120,6 +3129,9 @@
                                 <li>Won the debate competition among the RYLA cohort of Rotary-nominated youth from across the district</li>
                                 <li>Presented directly by Rotary Club Bourgas-Pyrgos</li>
                             </ul>
+                            <p class="credential-card__org-desc">
+                                <a href="https://georgedreemer.com/public_img/education/certifications/rotary/rotary-rylarian-certificate.pdf" target="_blank" rel="noopener noreferrer" class="credential-card__link">View award ↗</a>
+                            </p>
                             <div class="credential-card__meta">
                                 <span class="credential-pill credential-pill--year">2015</span>
                                 <span class="credential-pill credential-pill--award">Debate</span>
@@ -3141,11 +3153,37 @@
 
                     <div class="credential-card">
                         <div class="credential-card__icon credential-card__icon--img">
+                            <img src="https://georgedreemer.com/public_img/general/misclogos/rotary.svg" alt="Rotary International Logo" width="25" height="25" loading="lazy">
+                        </div>
+                        <div class="credential-card__body">
+                            <p class="credential-card__title">Rotaract "Plovdiv-Puldin"</p>
+                            <p class="credential-card__sub">Member・since 2014</p>
+                            <p class="credential-card__org-desc">Rotaract is Rotary International's global network for young professionals in over 180 countries.</p>
+                            <ul class="credential-card__bullets">
+                                <li>Joined at 17 — the youngest Rotaract member in the chapter, as most peers that age join the junior Interact programme</li>
+                                <li>Organised concerts, fundraisers, and a Red Cross blood donation drive for local causes
+                                </li>
+                            </ul><br>
+                            <p class="credential-card__org-desc">
+                                <a href="https://georgedreemer.com/public_img/education/certifications/rotary/rotary-rotaract_membership-certificate.pdf" target="_blank" rel="noopener noreferrer" class="credential-card__link">Verify membership ↗</a>
+                            </p>
+                            <!--div class="credential-card__meta">
+                                <span class="credential-pill credential-pill--year">since 2014</span>
+                                <span class="credential-pill credential-pill--award">Charity</span>
+                                <span class="credential-pill credential-pill--award">Event Coordination</span>
+                                <span class="credential-pill credential-pill--award">Community Building</span>
+                                <span class="credential-pill credential-pill--award">Leadership</span>
+                            </div-->
+                        </div>
+                    </div>
+
+                    <div class="credential-card">
+                        <div class="credential-card__icon credential-card__icon--img">
                             <img src="https://georgedreemer.com/public_img/general/misclogos/seedfundforinnovation.svg" alt="Seed Fund for Innovation Logo" width="25" height="25" loading="lazy">
                         </div>
                         <div class="credential-card__body">
                             <p class="credential-card__title">Seed Fund for Innovation</p>
-                            <p class="credential-card__sub">Hampshire College · Committee Member</p>
+                            <p class="credential-card__sub">Committee Member・2016-2018</p>
                             <p class="credential-card__org-desc">One of the few fully student-governed venture funds at a US
                                 liberal arts
                                 college — a $1M endowment managed entirely by undergraduates investing in student and alumni
@@ -3155,10 +3193,11 @@
                                 <li>Gained hands-on exposure to early-stage due diligence, founder assessment, and fund
                                     governance</li>
                             </ul>
-                            <div class="credential-card__meta">
+                            <!--div class="credential-card__meta">
                                 <span class="credential-pill credential-pill--year">2016 – 2018</span>
-                                <span class="credential-pill credential-pill--award">$1M Fund</span>
-                            </div>
+                                <span class="credential-pill credential-pill--award">Leadership</span>
+                                <span class="credential-pill credential-pill--award">Funding Allocation</span>
+                            </div-->
                         </div>
                     </div>
 
@@ -3168,7 +3207,7 @@
                         </div>
                         <div class="credential-card__body">
                             <p class="credential-card__title">UMass Entrepreneurship Club</p>
-                            <p class="credential-card__sub">UMass Amherst · Member</p>
+                            <p class="credential-card__sub">Member・2015-2017</p>
                             <p class="credential-card__org-desc">The student entrepreneurship community at UMass Amherst —
                                 one of New England's
                                 largest public research universities, with a well-connected startup ecosystem through the
@@ -3179,10 +3218,12 @@
                                     investors</li>
                                 <li>Active during the same period as founding thoughtbubble — both informed each other</li>
                             </ul>
-                            <div class="credential-card__meta">
+                            <!--div class="credential-card__meta">
                                 <span class="credential-pill credential-pill--year">2015 – 2017</span>
                                 <span class="credential-pill credential-pill--award">Entrepreneurship</span>
-                            </div>
+                                <span class="credential-pill credential-pill--award">Pitching</span>
+                                <span class="credential-pill credential-pill--award">Networking</span>
+                            </div-->
                         </div>
                     </div>
 
@@ -3192,7 +3233,7 @@
                         </div>
                         <div class="credential-card__body">
                             <p class="credential-card__title">Berthiaume Student Innovators</p>
-                            <p class="credential-card__sub">UMass Amherst · Member</p>
+                            <p class="credential-card__sub">Member・2015-2016</p>
                             <p class="credential-card__org-desc">The Berthiaume Center for Entrepreneurship is UMass
                                 Amherst's campus-wide hub
                                 for innovation and startup activity — its student innovator programme runs the flagship
@@ -3204,36 +3245,11 @@
                                 <li>Worked directly with the Berthiaume Center team to coordinate speakers, judges, and
                                     logistics</li>
                             </ul>
-                            <div class="credential-card__meta">
+                            <!--div class="credential-card__meta">
                                 <span class="credential-pill credential-pill--year">2015 – 2016</span>
-                                <span class="credential-pill credential-pill--award">Innovation Challenge</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="credential-card">
-                        <div class="credential-card__icon credential-card__icon--img">
-                            <img src="https://georgedreemer.com/public_img/general/misclogos/rotary.svg" alt="Rotary International Logo" width="25" height="25" loading="lazy">
-                        </div>
-                        <div class="credential-card__body">
-                            <p class="credential-card__title">Rotaract "Plovdiv-Puldin"</p>
-                            <p class="credential-card__sub">Rotary International · Plovdiv, Bulgaria</p>
-                            <p class="credential-card__org-desc">Rotaract is Rotary International's global network for young
-                                professionals aged
-                                18–30, active in over 180 countries — chapters operate independently on community service,
-                                leadership, and
-                                professional development.</p>
-                            <ul class="credential-card__bullets">
-                                <li>Joined at 17 — the youngest Rotaract member in the chapter, as most peers that age join
-                                    the junior Interact
-                                    programme</li>
-                                <li>Organised concerts, fundraisers, and a Red Cross blood donation drive for local causes
-                                </li>
-                            </ul>
-                            <div class="credential-card__meta">
-                                <span class="credential-pill credential-pill--year">since 2013</span>
-                                <span class="credential-pill credential-pill--award">Charity &amp; Community</span>
-                            </div>
+                                <span class="credential-pill credential-pill--award">Entrepreneurship</span>
+                                <span class="credential-pill credential-pill--award">Event Coordination</span>
+                            </div-->
                         </div>
                     </div>
 
@@ -3243,7 +3259,7 @@
                         </div>
                         <div class="credential-card__body">
                             <p class="credential-card__title">Giving Back</p>
-                            <p class="credential-card__sub">Aloysius College · Den Haag, NL</p>
+                            <p class="credential-card__sub">Mentee・2011-2013</p>
                             <p class="credential-card__org-desc">A highly selective mentorship programme at one of Den
                                 Haag's leading colleges,
                                 pairing a small cohort of students with senior professionals across Dutch banking, law, and
@@ -3254,10 +3270,11 @@
                                 <li>Received direct mentorship and attended workshops led by judges, lawyers, and banking
                                     executives</li>
                             </ul>
-                            <div class="credential-card__meta">
+                            <!--div class="credential-card__meta">
                                 <span class="credential-pill credential-pill--year">2011 – 2013</span>
-                                <span class="credential-pill credential-pill--award">Highly Selective</span>
-                            </div>
+                                <span class="credential-pill credential-pill--award">Debating</span>
+                                <span class="credential-pill credential-pill--award">Networking</span>
+                            </div-->
                         </div>
                     </div>
 
@@ -3704,7 +3721,7 @@
 
         </div><!-- /.stack-grid -->
     </section>
-</main></div></div><div id="a1a10ba380df02e9759bf9807cfb042f" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1792344254"></div></div></div></div></div><div id="wb_footer_a1a10ba37c9800b11f76098bcc91fa4b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+</main></div></div><div id="a1a10ba380df02e9759bf9807cfb042f" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1792503473"></div></div></div></div></div><div id="wb_footer_a1a10ba37c9800b11f76098bcc91fa4b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -3806,7 +3823,7 @@
 
 <p class="wb-stl-footer" style="text-align: center;"><a data-_="Link" href="anabolickmusick.com" target="_blank" title="anabolic musick's official website">anabolickmusick.com</a></p>
 </div><div id="a18bddd77e4a320a360cd08aa5891d23" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: center;"><span style="color:rgba(255,255,255,1);">© 2024 <a href="https://www.georgedreemer.com">G</a><a href="https://www.dreemer.xyz">eorge Dreemer</a></span></p>
-</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1792344254"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
+</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1792503473"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
 			$(function() {
 				var footer = $(".wb_footer");
 				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
@@ -3817,7 +3834,7 @@
 				}
 			});
 			});</script></div></div></div></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
-	<script src="js/common-bundle.js?ts=20261018202413" type="text/javascript" defer></script>{{hr_out}}<style>
+	<script src="js/common-bundle.js?ts=20261020163751" type="text/javascript" defer></script>{{hr_out}}<style>
 .image-height-mod {
 height: 100%;
 }

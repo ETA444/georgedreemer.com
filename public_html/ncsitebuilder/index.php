@@ -166,91 +166,104 @@ class PluginDescriptorHandler {
 			'alias' => '',
 			'file' => 'a18bddd8a85d00f1870d4bc44fd15f7b.php',
 			'controllers' => array(),
-			'type' => 0
+			'type' => 0,
+			'auth' => null
 		),
 		array(
 			'id' => 'a18bddd8a85d05531bf2b97cfabf9ffd',
 			'alias' => 'thoughtbubble',
 			'file' => 'a18bddd8a85d05531bf2b97cfabf9ffd.php',
 			'controllers' => array(),
-			'type' => 0
+			'type' => 0,
+			'auth' => null
 		),
 		array(
 			'id' => 'a18bddd8a85d011b0a2fe2a90c538c8d',
 			'alias' => 'skipschoolmakemoney',
 			'file' => 'a18bddd8a85d011b0a2fe2a90c538c8d.php',
 			'controllers' => array(),
-			'type' => 0
+			'type' => 0,
+			'auth' => null
 		),
 		array(
 			'id' => 'a18bddd8a85d0259fb1585dbb509cff8',
 			'alias' => 'dreemcorp',
 			'file' => 'a18bddd8a85d0259fb1585dbb509cff8.php',
 			'controllers' => array(),
-			'type' => 0
+			'type' => 0,
+			'auth' => null
 		),
 		array(
 			'id' => 'a1a01e5f44000071bc973da1ec13cbfc',
 			'alias' => 'datasafari',
 			'file' => 'a1a01e5f44000071bc973da1ec13cbfc.php',
 			'controllers' => array(),
-			'type' => 0
+			'type' => 0,
+			'auth' => null
 		),
 		array(
 			'id' => 'a1a06787c97900e02e56b45a98c7fa9d',
 			'alias' => 'cryptopandemic',
 			'file' => 'a1a06787c97900e02e56b45a98c7fa9d.php',
 			'controllers' => array(),
-			'type' => 0
+			'type' => 0,
+			'auth' => null
 		),
 		array(
 			'id' => 'a1a10ba37c9800b11f76098bcc91fa4b',
 			'alias' => 'education',
 			'file' => 'a1a10ba37c9800b11f76098bcc91fa4b.php',
 			'controllers' => array(),
-			'type' => 0
+			'type' => 0,
+			'auth' => null
 		),
 		array(
 			'id' => 'a18bddd8a85d031c03b1af770b1fc6b6',
 			'alias' => 'hobbies',
 			'file' => 'a18bddd8a85d031c03b1af770b1fc6b6.php',
 			'controllers' => array(),
-			'type' => 0
+			'type' => 0,
+			'auth' => null
 		),
 		array(
 			'id' => 'a18bddd8a85d044c01bbabaae5d84e6b',
 			'alias' => 'm',
 			'file' => 'a18bddd8a85d044c01bbabaae5d84e6b.php',
 			'controllers' => array(),
-			'type' => 0
+			'type' => 0,
+			'auth' => null
 		),
 		array(
 			'id' => 'a19104b295bb0096958c9d452e84c121',
 			'alias' => 'blog',
 			'file' => 'a19104b295bb0096958c9d452e84c121.php',
 			'controllers' => array(),
-			'type' => 0
+			'type' => 0,
+			'auth' => null
 		),
 		array(
 			'id' => 'a19104d04f1200a1171ff5a1dd1fd06a',
 			'alias' => 'blog/datasafari/introduction',
 			'file' => 'a19104d04f1200a1171ff5a1dd1fd06a.php',
 			'controllers' => array(),
-			'type' => 0
+			'type' => 0,
+			'auth' => null
 		),
 		array(
 			'id' => 'a19f5ae42c81009e68be5623804df9af',
 			'alias' => 'testtt',
 			'file' => 'a19f5ae42c81009e68be5623804df9af.php',
 			'controllers' => array(),
-			'type' => 0
+			'type' => 0,
+			'auth' => null
 		),
 		array(
 			'id' => 'a19fc1fe9132006814d8c14872db06eb',
 			'alias' => 'OLD-skipschoolmakemoney',
 			'file' => 'a19fc1fe9132006814d8c14872db06eb.php',
 			'controllers' => array(),
-			'type' => 0
+			'type' => 0,
+			'auth' => null
 		)
 	);
 	$forms = array(
@@ -325,7 +338,7 @@ class PluginDescriptorHandler {
 	$langs = null;
 	$def_lang = null;
 	$base_lang = 'en';
-	$site_id = '595db798';
+	$site_id = '4ec621db';
 	${'sitemapUrls'} = array(
 		'https://georgedreemer.com/',
 		'https://georgedreemer.com/thoughtbubble',
@@ -499,6 +512,22 @@ class MenuElement {
 		if ($page404) $page = $page404;
 		elseif ($pageMaint) $page = $pageMaint;
 	} elseif ($pageMaint) $page = $pageMaint;
+	$siteAuth = null;
+	$__wbAuth = (is_array($page) && !empty($page['auth'])) ? $page['auth'] : $siteAuth;
+	if ($__wbAuth) {
+		$__wbUser = isset($_SERVER['PHP_AUTH_USER']) ? $_SERVER['PHP_AUTH_USER'] : null;
+		$__wbPass = isset($_SERVER['PHP_AUTH_PW']) ? $_SERVER['PHP_AUTH_PW'] : null;
+		if ($__wbUser === null && !empty($_SERVER['HTTP_AUTHORIZATION']) && stripos($_SERVER['HTTP_AUTHORIZATION'], 'basic ') === 0) {
+			$__wbDecoded = base64_decode(substr($_SERVER['HTTP_AUTHORIZATION'], 6));
+			if ($__wbDecoded !== false && strpos($__wbDecoded, ':') !== false) { list($__wbUser, $__wbPass) = explode(':', $__wbDecoded, 2); }
+		}
+		if ($__wbUser === null || !hash_equals((string)$__wbAuth['login'], (string)$__wbUser) || !password_verify((string)$__wbPass, (string)$__wbAuth['hash'])) {
+			header('WWW-Authenticate: Basic realm="'.$__wbAuth['realm'].'"', true, 401);
+			header('Cache-Control: no-store');
+			echo 'Authentication required.';
+			exit();
+		}
+	}
 	if (!is_null($page)) {
 		handleComments($page['id'], $siteInfo);
 		if (isset($_POST["wb_form_id"])) handleForms($page['id'], $siteInfo);

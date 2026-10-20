@@ -12,7 +12,7 @@ use PHPMailer\PHPMailer\PHPMailer;
  * @return string
  */
 function _spDefer_wrap_scripts($output) {
-	return preg_replace_callback(
+	$result = preg_replace_callback(
 		'%<script\b((?:(?!src=)[^>])*)>(.*?)</script>%is',
 		function($m) {
 			if (strpos($m[0], 'data-custom-script="true"') !== false) return $m[0];
@@ -23,6 +23,18 @@ function _spDefer_wrap_scripts($output) {
 		},
 		$output
 	);
+	if (!is_string($output)) {
+		error_log("Warning: input to wrap regexp is not a string in ".__FILE__.":".__LINE__);
+	} else if (!is_string($result)) {
+		if (function_exists('preg_last_error_msg')) {
+			$err = "(code ".preg_last_error().") ".preg_last_error_msg();
+		} else {
+			$err = "(code ".preg_last_error().")";
+		}
+		error_log("Error: wrap regexp failed: {$err} in ".__FILE__.":".__LINE__);
+		$result = '';
+	}
+	return $result;
 }
 
 function getRequestUri($baseUrl) {
