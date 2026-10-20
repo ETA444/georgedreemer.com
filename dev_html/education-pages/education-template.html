@@ -4059,321 +4059,443 @@
                 <span class="section-label__line" aria-hidden="true"></span>
             </div>
 
-            <div class="evidence-grid">
+            <div id="masters-works-grid" class="evidence-grid">
 
-                <!-- ─── CARD 1 · Engineering · CI/CD Pipeline Architecture ─── -->
-                <div class="evidence-card" data-domain="engineering">
-                <div class="evidence-card__slides">
-                    <div class="evidence-card__slides-track">
-                    <div class="evidence-card__slide is-active">
-                        <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-lib_cioverview.jpg"
-                            alt="GitHub Actions showing full CI/CD pipeline overview"
-                            loading="lazy">
-                    </div>
-                    <div class="evidence-card__slide">
-                        <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-lib_cibuild.jpg"
-                            alt="GitHub Actions showing build process steps"
-                            loading="lazy">
-                    </div>
-                    </div>
-                    <div class="evidence-card__slide-dots">
-                    <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
-                    <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
-                    </div>
-                </div>
-                <div class="evidence-card__body">
-                    <div class="evidence-card__domain-tag">
-                    <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Engineering
-                    </div>
-                    <h4 class="evidence-card__title">CI/CD Pipeline Architecture</h4>
-                    <ul class="evidence-card__bullets">
-                    <li>Built a 12-step GitHub Actions pipeline covering linting, the test matrix, security scanning, and conditional PyPI publishing on tagged releases</li>
-                    <li>Configured tox to run the full pytest suite in parallel across Python 3.9, 3.10, 3.11, and 3.12 on every push</li>
-                    <li>Automated Sphinx docs build and live deployment to datasafari.dev via rsync over SSH, triggered on every merge to main</li>
-                    <li>Closed 136 GitHub issues over the development lifecycle, each fix validated through the pipeline before merge</li>
-                    </ul>
-                </div>
-                </div>
+                <!-- ═══ DATA ═══ -->
 
-                <!-- ─── CARD 2 · Engineering · GitHub Issue & Milestone System ─── -->
-                <div class="evidence-card" data-domain="engineering">
-                <div class="evidence-card__slides">
-                    <div class="evidence-card__slides-track">
-                    <div class="evidence-card__slide is-active">
-                        <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-github_1.jpg"
-                        alt="DataSafari GitHub issues list showing 136 issues with labels, milestones, and status tags across the development lifecycle"
-                        loading="lazy">
+                <article class="evidence-card" data-domain="data" data-work="churn-prediction" aria-labelledby="w-churn">
+                    <div class="evidence-card__canva" data-orientation="landscape">
+                        <div class="evidence-card__preview-cover">
+                            <span class="evidence-card__artifact-type">Written report</span>
+                            <button type="button" class="evidence-card__preview-button" hidden><i class="bi bi-file-earmark-text"
+                                    aria-hidden="true"></i> Load preview</button>
+                        </div>
                     </div>
-                    <div class="evidence-card__slide">
-                        <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-github_2.jpg"
-                        alt="DataSafari GitHub milestones page showing structured development phases with issue counts and completion progress"
-                        loading="lazy">
+                    <div class="evidence-card__body">
+                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"
+                                aria-hidden="true"></span>Data</span>
+                        <h3 id="w-churn" class="evidence-card__title">Churn Prediction Modelling</h3>
+                        <div class="evidence-card__courses">
+                            <p class="evidence-card__courses-label">Coursework</p>
+                            <ul class="evidence-card__course-list">
+                                <li data-course="statistical-learning">Statistical Learning in Marketing</li>
+                            </ul>
+                        </div>
+                        <ul class="evidence-card__bullets">
+                            <li>Modelled customer churn with traditional statistical methods.</li>
+                            <li>Compared them against tree models, bagging, boosting and neural networks.</li>
+                        </ul>
+                        <div class="evidence-card__actions" hidden>
+                            <a class="evidence-card__action" data-work-link="download" target="_blank" rel="noopener noreferrer"
+                                hidden><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Download</a>
+                            <a class="evidence-card__action" data-work-link="code" target="_blank" rel="noopener noreferrer"
+                                hidden><i class="bi bi-github" aria-hidden="true"></i>R Code</a>
+                        </div>
                     </div>
-                    <div class="evidence-card__slide">
-                        <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-github_3.jpg"
-                        alt="DataSafari GitHub issue showing detailed problem description with context, expected behaviour, and reproduction steps"
-                        loading="lazy">
-                    </div>
-                    <div class="evidence-card__slide">
-                        <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-github_4.jpg"
-                        alt="DataSafari GitHub issue showing solution description with implementation notes and closing commit reference"
-                        loading="lazy">
-                    </div>
-                    <div class="evidence-card__slide">
-                        <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-github_5.jpg"
-                        alt="DataSafari GitHub labels page showing full tagging taxonomy: bug, enhancement, documentation, and domain labels"
-                        loading="lazy">
-                    </div>
-                    <div class="evidence-card__slide">
-                        <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-github_6.jpg"
-                        alt="DataSafari GitHub showing issue linked to milestone and pull request with full traceability"
-                        loading="lazy">
-                    </div>
-                    </div>
-                    <div class="evidence-card__slide-dots">
-                    <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
-                    <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
-                    <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
-                    <button class="evidence-card__slide-dot" aria-label="Show slide 4"></button>
-                    <button class="evidence-card__slide-dot" aria-label="Show slide 5"></button>
-                    <button class="evidence-card__slide-dot" aria-label="Show slide 6"></button>
-                    </div>
-                </div>
-                <div class="evidence-card__body">
-                    <div class="evidence-card__domain-tag">
-                    <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Engineering
-                    </div>
-                    <h4 class="evidence-card__title">Issue Tracking & Milestone System</h4>
-                    <ul class="evidence-card__bullets">
-                    <li>Filed and closed 136 GitHub issues across the full development lifecycle — each with a structured problem
-                        description, reproduction context, and a written solution note on close</li>
-                    <li>Organised work into versioned milestones mapping issues to release targets, giving every fix a traceable path
-                        from report to merged commit</li>
-                    <li>Built a full label taxonomy — bug type, domain, priority, and status — so the issue board reads as a
-                        professional engineering backlog, not a personal to-do list</li>
-                    </ul>
-                </div>
-                </div>
+                </article>
 
-                <!-- ─── CARD 3 · Engineering · Test Suite & Quality Gates ─── -->
-                <div class="evidence-card" data-domain="engineering">
-                <div class="evidence-card__thumb">
-                    <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-lib_pytest.jpg"
-                        alt="Terminal output showing pytest run: 250+ tests passed"
-                        loading="lazy">
-                </div>
-                <div class="evidence-card__body">
-                    <div class="evidence-card__domain-tag">
-                    <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Engineering
+                <article class="evidence-card" data-domain="data" data-work="market-modelling-1" aria-labelledby="w-mm1">
+                    <div class="evidence-card__canva" data-orientation="landscape">
+                        <div class="evidence-card__preview-cover">
+                            <span class="evidence-card__artifact-type">Written report</span>
+                            <button type="button" class="evidence-card__preview-button" hidden><i class="bi bi-file-earmark-text"
+                                    aria-hidden="true"></i> Load preview</button>
+                        </div>
                     </div>
-                    <h4 class="evidence-card__title">Test Suite & Quality Gates</h4>
-                    <ul class="evidence-card__bullets">
-                    <li>Wrote 250+ pytest tests across 11 test files, covering edge cases, input validation, and statistical output correctness for all four subpackages</li>
-                    <li>Integrated Bandit for static security scanning and SafetyCLI for dependency vulnerability auditing — both run automatically on every push</li>
-                    <li>Configured tox to enforce test-passing across all supported Python versions before any release is tagged</li>
-                    </ul>
-                </div>
-                </div>
+                    <div class="evidence-card__body">
+                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"
+                                aria-hidden="true"></span>Data</span>
+                        <h3 id="w-mm1" class="evidence-card__title">Market Modelling 1/2: Dutch Lemonade Market</h3>
+                        <div class="evidence-card__courses">
+                            <p class="evidence-card__courses-label">Coursework</p>
+                            <ul class="evidence-card__course-list">
+                                <li data-course="market-models">Market Models</li>
+                            </ul>
+                        </div>
+                        <ul class="evidence-card__bullets">
+                            <li>Built a regression model of the Dutch lemonade retail market.</li>
+                            <li>Used data from multiple retailers (e.g. Albert Heijn, Jumbo) and competing brands.</li>
+                        </ul>
+                        <div class="evidence-card__actions" hidden>
+                            <a class="evidence-card__action" data-work-link="download" target="_blank" rel="noopener noreferrer"
+                                hidden><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Download</a>
+                            <a class="evidence-card__action" data-work-link="code" target="_blank" rel="noopener noreferrer"
+                                hidden><i class="bi bi-github" aria-hidden="true"></i>R Code</a>
+                        </div>
+                    </div>
+                </article>
 
-                <!-- ─── CARD 4 · Engineering · 4-Subpackage API Architecture ─── -->
-                <div class="evidence-card" data-domain="engineering">
-                <div class="evidence-card__thumb">
-                    <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-lib_subpackages.jpg"
-                        alt="DataSafari library structure showing four subpackages: explorer, transformer, evaluator, predictor"
-                        loading="lazy">
-                </div>
-                <div class="evidence-card__body">
-                    <div class="evidence-card__domain-tag">
-                    <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Engineering
+                <article class="evidence-card" data-domain="data" data-work="market-modelling-2" aria-labelledby="w-mm2">
+                    <div class="evidence-card__canva" data-orientation="landscape">
+                        <div class="evidence-card__preview-cover">
+                            <span class="evidence-card__artifact-type">Written report</span>
+                            <button type="button" class="evidence-card__preview-button" hidden><i class="bi bi-file-earmark-text"
+                                    aria-hidden="true"></i> Load preview</button>
+                        </div>
                     </div>
-                    <h4 class="evidence-card__title">4-Subpackage Library Architecture</h4>
-                    <ul class="evidence-card__bullets">
-                    <li>Designed the full package structure from scratch: <code>explorer/</code>, <code>transformer/</code>, <code>evaluator/</code>, <code>predictor/</code> — each a self-contained module with its own public API surface</li>
-                    <li>Every public function follows a consistent interface contract: DataFrame in, structured report out — one-liner by design, full depth available via parameters</li>
-                    <li>Configured Poetry, Setuptools, and <code>pyproject.toml</code> for reproducible builds and one-command PyPI distribution</li>
-                    </ul>
-                </div>
-                </div>
+                    <div class="evidence-card__body">
+                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"
+                                aria-hidden="true"></span>Data</span>
+                        <h3 id="w-mm2" class="evidence-card__title">Market Modelling 2/2</h3>
+                        <div class="evidence-card__courses">
+                            <p class="evidence-card__courses-label">Coursework</p>
+                            <ul class="evidence-card__course-list">
+                                <li data-course="market-models">Market Models</li>
+                            </ul>
+                        </div>
+                        <ul class="evidence-card__bullets">
+                            <li>Second part of the market-modelling assignment.</li>
+                            <!-- TODO: old page has no description for this one; replace with a real line. -->
+                        </ul>
+                        <div class="evidence-card__actions" hidden>
+                            <a class="evidence-card__action" data-work-link="download" target="_blank" rel="noopener noreferrer"
+                                hidden><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Download</a>
+                            <a class="evidence-card__action" data-work-link="code" target="_blank" rel="noopener noreferrer"
+                                hidden><i class="bi bi-github" aria-hidden="true"></i>R Code</a>
+                        </div>
+                    </div>
+                </article>
 
-                <!-- ─── CARD 5 · Data · Automated EDA Output ─── -->
-                <div class="evidence-card" data-domain="data">
-                <div class="evidence-card__thumb">
-                    <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-lib_explorenum.jpg"
-                        alt="explore_num output showing structured report with outlier detection, normality testing, and multicollinearity analysis"
-                        loading="lazy">
-                </div>
-                <div class="evidence-card__body">
-                    <div class="evidence-card__domain-tag">
-                    <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data
+                <article class="evidence-card" data-domain="data" data-work="text-mining-psm" aria-labelledby="w-tm">
+                    <div class="evidence-card__canva" data-orientation="landscape">
+                        <div class="evidence-card__preview-cover">
+                            <span class="evidence-card__artifact-type">Visual report</span>
+                            <button type="button" class="evidence-card__preview-button" hidden><i class="bi bi-easel"
+                                    aria-hidden="true"></i> Load preview</button>
+                        </div>
                     </div>
-                    <h4 class="evidence-card__title">Automated EDA — <code>explore_num()</code></h4>
-                    <ul class="evidence-card__bullets">
-                    <li>Single function call produces full numerical profiling: outlier detection via Z-score, IQR, and Mahalanobis distance, normality testing, skewness, kurtosis, and multicollinearity</li>
-                    <li>Output is a structured plain-English report with findings and actionable recommendations — not raw numbers</li>
-                    <li>Automatically selects the correct statistical method based on sample size and data characteristics at runtime</li>
-                    </ul>
-                </div>
-                </div>
+                    <div class="evidence-card__body">
+                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"
+                                aria-hidden="true"></span>Data</span>
+                        <h3 id="w-tm" class="evidence-card__title">Text Mining, Sentiment Analysis &amp; Propensity Score Matching
+                        </h3>
+                        <div class="evidence-card__courses">
+                            <p class="evidence-card__courses-label">Coursework</p>
+                            <ul class="evidence-card__course-list">
+                                <li data-course="digital-marketing-intelligence">Digital Marketing Intelligence</li>
+                            </ul>
+                        </div>
+                        <ul class="evidence-card__bullets">
+                            <li>Investigated the effectiveness of communication in online marketing campaigns.</li>
+                            <li>Combined traditional and machine-learning methods: text mining, sentiment analysis and matching.
+                            </li>
+                        </ul>
+                        <div class="evidence-card__actions" hidden>
+                            <a class="evidence-card__action" data-work-link="download" target="_blank" rel="noopener noreferrer"
+                                hidden><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Download</a>
+                            <a class="evidence-card__action" data-work-link="code" target="_blank" rel="noopener noreferrer"
+                                hidden><i class="bi bi-github" aria-hidden="true"></i>R Code</a>
+                        </div>
+                    </div>
+                </article>
 
-                <!-- ─── CARD 6 · Data · predict_ml — Full ML Pipeline ─── -->
-                <div class="evidence-card" data-domain="data">
-                <div class="evidence-card__slides">
-                    <div class="evidence-card__thumb">
-                    <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-lib_predictml.jpg"
-                        alt="predict_ml output showing ranked model comparison table with composite scores" loading="lazy">
+                <article class="evidence-card" data-domain="data" data-work="google-analytics" aria-labelledby="w-ga">
+                    <div class="evidence-card__canva" data-orientation="landscape">
+                        <div class="evidence-card__preview-cover">
+                            <span class="evidence-card__artifact-type">Visual report</span>
+                            <button type="button" class="evidence-card__preview-button" hidden><i class="bi bi-easel"
+                                    aria-hidden="true"></i> Load preview</button>
+                        </div>
                     </div>
-                </div>
-                <div class="evidence-card__body">
-                    <div class="evidence-card__domain-tag">
-                    <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data
+                    <div class="evidence-card__body">
+                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"
+                                aria-hidden="true"></span>Data</span>
+                        <h3 id="w-ga" class="evidence-card__title">Google Analytics &amp; Exploratory Analysis</h3>
+                        <div class="evidence-card__courses">
+                            <p class="evidence-card__courses-label">Coursework</p>
+                            <ul class="evidence-card__course-list">
+                                <li data-course="digital-marketing-analytics">Digital Marketing Analytics</li>
+                            </ul>
+                        </div>
+                        <ul class="evidence-card__bullets">
+                            <li>Analysed the impact of Wehkamp's AR app on its customers.</li>
+                            <li>Focused on repeat purchases, customer value, revenue and transaction frequency.</li>
+                        </ul>
+                        <div class="evidence-card__actions" hidden>
+                            <a class="evidence-card__action" data-work-link="download" target="_blank" rel="noopener noreferrer"
+                                hidden><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Download</a>
+                            <a class="evidence-card__action" data-work-link="code" target="_blank" rel="noopener noreferrer"
+                                hidden><i class="bi bi-github" aria-hidden="true"></i>R Code</a>
+                        </div>
                     </div>
-                    <h4 class="evidence-card__title">End-to-End ML Pipeline — <code>predict_ml()</code></h4>
-                    <ul class="evidence-card__bullets">
-                    <li>One call handles preprocessing, multi-model training, composite-score-based evaluation weighted across user-configurable metrics, and ranked output</li>
-                    <li>Automated hyperparameter tuning via grid search, random search, or Bayesian optimisation — user selects strategy, library handles execution</li>
-                    <li>10 pipeline decisions automated per ML run: encoding, scaling, model selection, tuning strategy, evaluation weighting, and recommendation generation</li>
-                    </ul>
-                </div>
-                </div>
+                </article>
 
-                <!-- ─── CARD 7 · Product · Website & Documentation ─── -->
-                <div class="evidence-card" data-domain="product">
-                <div class="evidence-card__slides">
-                    <div class="evidence-card__slides-track">
-                    <div class="evidence-card__slide is-active">
-                        <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-website_1.jpg"
-                            alt="DataSafari website landing page at datasafari.dev showing slogan, code animation and branding artwork"
-                            loading="lazy">
+                <article class="evidence-card" data-domain="data" data-work="time-series" aria-labelledby="w-ts">
+                    <div class="evidence-card__canva" data-orientation="landscape">
+                        <div class="evidence-card__preview-cover">
+                            <span class="evidence-card__artifact-type">Visual report</span>
+                            <button type="button" class="evidence-card__preview-button" hidden><i class="bi bi-easel"
+                                    aria-hidden="true"></i> Load preview</button>
+                        </div>
                     </div>
-                    <div class="evidence-card__slide">
-                        <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-website_5.jpg"
-                            alt="DataSafari website showing package philosophy with clear parallel between data science workflow and library subpackage structure"
-                            loading="lazy">
+                    <div class="evidence-card__body">
+                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"
+                                aria-hidden="true"></span>Data</span>
+                        <h3 id="w-ts" class="evidence-card__title">Time-Series Analysis: Redstar vs. Competitors</h3>
+                        <!-- CHECK mapping: data-science-methods and market-models are my inference -->
+                        <div class="evidence-card__courses">
+                            <p class="evidence-card__courses-label">Coursework</p>
+                            <ul class="evidence-card__course-list">
+                                <li data-course="data-science-methods">Data Science Methods for MADS</li>
+                                <li data-course="market-models">Market Models</li>
+                            </ul>
+                        </div>
+                        <ul class="evidence-card__bullets">
+                            <li>Reported the results of a time-series analysis of the 4Ps.</li>
+                            <li>Compared Redstar against its competitors.</li>
+                        </ul>
+                        <div class="evidence-card__actions" hidden>
+                            <a class="evidence-card__action" data-work-link="download" target="_blank" rel="noopener noreferrer"
+                                hidden><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Download</a>
+                            <a class="evidence-card__action" data-work-link="code" target="_blank" rel="noopener noreferrer"
+                                hidden><i class="bi bi-github" aria-hidden="true"></i>R Code</a>
+                        </div>
                     </div>
-                    <div class="evidence-card__slide">
-                        <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-website_2.jpg"
-                        alt="DataSafari website showing installation instructions"
-                        loading="lazy">
-                    </div>
-                    <div class="evidence-card__slide">
-                        <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-website_3.jpg"
-                            alt="DataSafari website showing simple usage example and documentation prompt for further exploration"
-                            loading="lazy">
-                    </div>
-                    <div class="evidence-card__slide">
-                        <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_0.jpg"
-                            alt="DataSafari documentation welcome page at datasafari.dev/docs in light mode, showing quick-start guide and function reference links"
-                            loading="lazy">
-                    </div>
-                    <div class="evidence-card__slide">
-                        <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_1.jpg"
-                            alt="DataSafari documentation welcome page at datasafari.dev/docs in dark mode, showing quick-start guide and function reference links"
-                            loading="lazy">
-                    </div>
-                    <div class="evidence-card__slide">
-                        <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_6.jpg"
-                        alt="DataSafari documentation showing installation instructions and pip install command" loading="lazy">
-                    </div>
-                    <div class="evidence-card__slide">
-                        <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_2.jpg"
-                            alt="DataSafari documentation quick start guide showing explorers subpackage overview and example usage"
-                            loading="lazy">
-                    </div>
-                    <div class="evidence-card__slide">
-                        <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_3.jpg"
-                            alt="DataSafari documentation quick start guide showing transformers subpackage overview and example usage"
-                            loading="lazy">
-                    </div>
-                    <div class="evidence-card__slide">
-                        <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_4.jpg"
-                            alt="DataSafari documentation quick start guide showing evaluators subpackage overview and example usage"
-                            loading="lazy">
-                    </div>
-                    <div class="evidence-card__slide">
-                        <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_5.jpg"
-                            alt="DataSafari documentation quick start guide showing predictors subpackage overview and example usage"
-                            loading="lazy">
-                    </div>
-                    <div class="evidence-card__slide">
-                        <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_7.jpg"
-                            alt="DataSafari quick start guide showing example usage of one-line hypothesis testing function with automatic test selection and output interpretation"
-                            loading="lazy">
-                    </div>
-                    <div class="evidence-card__slide">
-                        <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_8.jpg"
-                            alt="DataSafari quick start guide showing example usage of one-line predict_ml function with automatic preprocessing, model selection, and hyperparameter tuning"
-                            loading="lazy">
-                    </div>
-                    </div>
-                    <div class="evidence-card__slide-dots">
-                    <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
-                    <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
-                    <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
-                    <button class="evidence-card__slide-dot" aria-label="Show slide 4"></button>
-                    <button class="evidence-card__slide-dot" aria-label="Show slide 5"></button>
-                    <button class="evidence-card__slide-dot" aria-label="Show slide 6"></button>
-                    <button class="evidence-card__slide-dot" aria-label="Show slide 7"></button>
-                    <button class="evidence-card__slide-dot" aria-label="Show slide 8"></button>
-                    <button class="evidence-card__slide-dot" aria-label="Show slide 9"></button>
-                    <button class="evidence-card__slide-dot" aria-label="Show slide 10"></button>
-                    <button class="evidence-card__slide-dot" aria-label="Show slide 11"></button>
-                    <button class="evidence-card__slide-dot" aria-label="Show slide 12"></button>
-                    <button class="evidence-card__slide-dot" aria-label="Show slide 13"></button>
-                    </div>
-                </div>
-                <div class="evidence-card__body">
-                    <div class="evidence-card__domain-tag">
-                    <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Product
-                    </div>
-                    <h4 class="evidence-card__title">Website & Documentation</h4>
-                    <ul class="evidence-card__bullets">
-                    <li>Hand-coded the full landing site at datasafari.dev — custom HTML, CSS, and JavaScript, designed from scratch to communicate the library's philosophy and quick-start path</li>
-                    <li>Authored every page of the Sphinx-generated API docs: installation guides, function references, usage examples, and conceptual explanations for all 11 modules</li>
-                    <li>Integrated automated docs build and live-server deployment into the CI/CD pipeline — docs update on every push to main without manual intervention</li>
-                    </ul>
-                </div>
-                </div>
+                </article>
 
-                <!-- ─── CARD 8 · Growth · Brand Identity & Open-Source Presence ─── -->
-                <div class="evidence-card" data-domain="growth">
-                <div class="evidence-card__slides">
-                    <div class="evidence-card__slides-track">
-                    <div class="evidence-card__slide is-active">
-                        <img
-                        src="https://camo.githubusercontent.com/8dd84d085f9831fccd31bebe8e468cb7eb3d767b798dd706a4c8ae9801d9838f/68747470733a2f2f7777772e646174617361666172692e6465762f646f63732f5f7374617469632f7468756d62732f64732d6272616e64696e672d7468756d622d6d61696e2d7765622e706e67"
-                        alt="DataSafari github repository banner showing logo and tagline 'Complex Workflows, Simple Solutions.' on a desert landscape background"
-                        loading="lazy">
+                <article class="evidence-card" data-domain="data" data-work="cluster-analysis" aria-labelledby="w-ca">
+                    <div class="evidence-card__canva" data-orientation="landscape">
+                        <div class="evidence-card__preview-cover">
+                            <span class="evidence-card__artifact-type">Visual report</span>
+                            <button type="button" class="evidence-card__preview-button" hidden><i class="bi bi-easel"
+                                    aria-hidden="true"></i> Load preview</button>
+                        </div>
                     </div>
-                    <div class="evidence-card__slide">
-                        <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-branding_2.jpg"
-                            alt="DataSafari light and dark mode logo variations on clean backgrounds"
-                            loading="lazy">
+                    <div class="evidence-card__body">
+                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"
+                                aria-hidden="true"></span>Data</span>
+                        <h3 id="w-ca" class="evidence-card__title">Cluster Analysis: Car-Buying Preferences</h3>
+                        <!-- CHECK mapping -->
+                        <div class="evidence-card__courses">
+                            <p class="evidence-card__courses-label">Coursework</p>
+                            <ul class="evidence-card__course-list">
+                                <li data-course="data-science-methods">Data Science Methods for MADS</li>
+                            </ul>
+                        </div>
+                        <ul class="evidence-card__bullets">
+                            <li>Ran hierarchical and non-hierarchical cluster analyses on survey data.</li>
+                            <li>Investigated the car-buying preferences of consumers.</li>
+                        </ul>
+                        <div class="evidence-card__actions" hidden>
+                            <a class="evidence-card__action" data-work-link="download" target="_blank" rel="noopener noreferrer"
+                                hidden><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Download</a>
+                            <a class="evidence-card__action" data-work-link="code" target="_blank" rel="noopener noreferrer"
+                                hidden><i class="bi bi-github" aria-hidden="true"></i>R Code</a>
+                        </div>
                     </div>
-                    <div class="evidence-card__slide">
-                        <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-branding_3.jpg"
-                            alt="DataSafari mini logo used for favicon and library icon, on coding background"
-                            loading="lazy">
-                    </div>
+                </article>
 
+                <article class="evidence-card" data-domain="data" data-work="factor-analysis" aria-labelledby="w-fa">
+                    <div class="evidence-card__canva" data-orientation="landscape">
+                        <div class="evidence-card__preview-cover">
+                            <span class="evidence-card__artifact-type">Visual report</span>
+                            <button type="button" class="evidence-card__preview-button" hidden><i class="bi bi-easel"
+                                    aria-hidden="true"></i> Load preview</button>
+                        </div>
                     </div>
-                    <div class="evidence-card__slide-dots">
-                    <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
-                    <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
-                    <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
+                    <div class="evidence-card__body">
+                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"
+                                aria-hidden="true"></span>Data</span>
+                        <h3 id="w-fa" class="evidence-card__title">Factor Analysis: Attitudes to Sustainable Clothing</h3>
+                        <!-- CHECK mapping -->
+                        <div class="evidence-card__courses">
+                            <p class="evidence-card__courses-label">Coursework</p>
+                            <ul class="evidence-card__course-list">
+                                <li data-course="companies-brands-consumers">Companies, Brands, and Consumers</li>
+                            </ul>
+                        </div>
+                        <ul class="evidence-card__bullets">
+                            <li>Used factor analysis to identify the key factors in attitudes towards sustainable clothing.</li>
+                        </ul>
+                        <div class="evidence-card__actions" hidden>
+                            <a class="evidence-card__action" data-work-link="download" target="_blank" rel="noopener noreferrer"
+                                hidden><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Download</a>
+                            <a class="evidence-card__action" data-work-link="code" target="_blank" rel="noopener noreferrer"
+                                hidden><i class="bi bi-github" aria-hidden="true"></i>R Code</a>
+                        </div>
                     </div>
-                </div>
-                <div class="evidence-card__body">
-                    <div class="evidence-card__domain-tag">
-                    <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Growth
+                </article>
+
+                <article class="evidence-card" data-domain="data" data-work="meal-kits" aria-labelledby="w-mk">
+                    <div class="evidence-card__canva" data-orientation="landscape">
+                        <div class="evidence-card__preview-cover">
+                            <span class="evidence-card__artifact-type">Visual report</span>
+                            <button type="button" class="evidence-card__preview-button" hidden><i class="bi bi-easel"
+                                    aria-hidden="true"></i> Load preview</button>
+                        </div>
                     </div>
-                    <h4 class="evidence-card__title">Brand Identity & Open-Source Presence</h4>
-                    <ul class="evidence-card__bullets">
-                    <li>Created the complete DataSafari visual identity from scratch: logo, banner artwork, icon set, and all graphic assets across GitHub, PyPI, and the documentation site</li>
-                    <li>Published to PyPI with automated versioning and structured release notes, making the library publicly installable via <code>pip install datasafari</code></li>
-                    <li>Maintained a professional open-source presence: README, changelog, issue labels, and a coherent brand that makes a solo-built library read as a production-grade tool</li>
-                    </ul>
-                </div>
-                </div>
+                    <div class="evidence-card__body">
+                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"
+                                aria-hidden="true"></span>Data</span>
+                        <h3 id="w-mk" class="evidence-card__title">Exploratory Analysis: Consumer Attitudes to Meal Kits</h3>
+                        <!-- CHECK mapping: marketing-research is my inference -->
+                        <div class="evidence-card__courses">
+                            <p class="evidence-card__courses-label">Coursework</p>
+                            <ul class="evidence-card__course-list">
+                                <li data-course="marketing-research">Marketing Research for E&amp;BE</li>
+                            </ul>
+                        </div>
+                        <ul class="evidence-card__bullets">
+                            <li>Reported exploratory analyses of survey data on consumer attitudes towards meal kits.</li>
+                        </ul>
+                        <div class="evidence-card__actions" hidden>
+                            <a class="evidence-card__action" data-work-link="download" target="_blank" rel="noopener noreferrer"
+                                hidden><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Download</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ═══ ENGINEERING ═══ -->
+
+                <article class="evidence-card" data-domain="engineering" data-work="conversion-rate" aria-labelledby="w-cro">
+                    <div class="evidence-card__canva" data-orientation="landscape">
+                        <div class="evidence-card__preview-cover">
+                            <span class="evidence-card__artifact-type">Written report</span>
+                            <button type="button" class="evidence-card__preview-button" hidden><i class="bi bi-file-earmark-text"
+                                    aria-hidden="true"></i> Load preview</button>
+                        </div>
+                    </div>
+                    <div class="evidence-card__body">
+                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"
+                                aria-hidden="true"></span>Engineering</span>
+                        <h3 id="w-cro" class="evidence-card__title">Conversion Rate Optimization Analysis</h3>
+                        <div class="evidence-card__courses">
+                            <p class="evidence-card__courses-label">Coursework</p>
+                            <ul class="evidence-card__course-list">
+                                <li data-course="data-engineering">Data Engineering for MADS</li>
+                                <li data-course="digital-marketing-analytics">Digital Marketing Analytics</li>
+                            </ul>
+                        </div>
+                        <ul class="evidence-card__bullets">
+                            <li>Investigated the key drivers of conversion rate for an online retailer's product category.</li>
+                            <li>Optimised them using SQL extraction feeding R modelling.</li>
+                        </ul>
+                        <div class="evidence-card__actions" hidden>
+                            <a class="evidence-card__action" data-work-link="download" target="_blank" rel="noopener noreferrer"
+                                hidden><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Download</a>
+                            <a class="evidence-card__action" data-work-link="code" target="_blank" rel="noopener noreferrer"
+                                hidden><i class="bi bi-github" aria-hidden="true"></i>R Code</a>
+                            <a class="evidence-card__action" data-work-link="sql" target="_blank" rel="noopener noreferrer"
+                                hidden><i class="bi bi-database" aria-hidden="true"></i>SQL Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ═══ GROWTH ═══ -->
+
+                <article class="evidence-card" data-domain="growth" data-work="retail-mix" aria-labelledby="w-rm">
+                    <div class="evidence-card__canva" data-orientation="landscape">
+                        <div class="evidence-card__preview-cover">
+                            <span class="evidence-card__artifact-type">Strategy proposal</span>
+                            <button type="button" class="evidence-card__preview-button" hidden><i class="bi bi-easel"
+                                    aria-hidden="true"></i> Load preview</button>
+                        </div>
+                    </div>
+                    <div class="evidence-card__body">
+                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"
+                                aria-hidden="true"></span>Growth</span>
+                        <h3 id="w-rm" class="evidence-card__title">Retail Mix Tactics for Kruidvat NL</h3>
+                        <div class="evidence-card__courses">
+                            <p class="evidence-card__courses-label">Coursework</p>
+                            <ul class="evidence-card__course-list">
+                                <li data-course="retail-omnichannel">Retail &amp; Omnichannel Marketing</li>
+                            </ul>
+                        </div>
+                        <ul class="evidence-card__bullets">
+                            <li>Proposed a retail mix strategy for Kruidvat in the makeup industry.</li>
+                            <li>Based on internal and external market conditions.</li>
+                        </ul>
+                        <div class="evidence-card__actions" hidden>
+                            <a class="evidence-card__action" data-work-link="download" target="_blank" rel="noopener noreferrer"
+                                hidden><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Download</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="evidence-card" data-domain="growth" data-work="omnichannel" aria-labelledby="w-oc">
+                    <div class="evidence-card__canva" data-orientation="landscape">
+                        <div class="evidence-card__preview-cover">
+                            <span class="evidence-card__artifact-type">Strategy proposal</span>
+                            <button type="button" class="evidence-card__preview-button" hidden><i class="bi bi-easel"
+                                    aria-hidden="true"></i> Load preview</button>
+                        </div>
+                    </div>
+                    <div class="evidence-card__body">
+                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"
+                                aria-hidden="true"></span>Growth</span>
+                        <h3 id="w-oc" class="evidence-card__title">Omnichannel Strategy for L'Oréal NL</h3>
+                        <div class="evidence-card__courses">
+                            <p class="evidence-card__courses-label">Coursework</p>
+                            <ul class="evidence-card__course-list">
+                                <li data-course="retail-omnichannel">Retail &amp; Omnichannel Marketing</li>
+                            </ul>
+                        </div>
+                        <ul class="evidence-card__bullets">
+                            <li>Proposed an omnichannel strategy for L'Oréal.</li>
+                            <li>Built on internal data analysis and external market analysis.</li>
+                        </ul>
+                        <div class="evidence-card__actions" hidden>
+                            <a class="evidence-card__action" data-work-link="download" target="_blank" rel="noopener noreferrer"
+                                hidden><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Download</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="evidence-card" data-domain="growth" data-work="brand-extension" aria-labelledby="w-be">
+                    <div class="evidence-card__canva" data-orientation="landscape">
+                        <div class="evidence-card__preview-cover">
+                            <span class="evidence-card__artifact-type">Video proposal</span>
+                            <button type="button" class="evidence-card__preview-button" hidden><i class="bi bi-play-circle"
+                                    aria-hidden="true"></i> Load video</button>
+                        </div>
+                    </div>
+                    <div class="evidence-card__body">
+                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"
+                                aria-hidden="true"></span>Growth</span>
+                        <h3 id="w-be" class="evidence-card__title">Brand Extension Proposal for Volkswagen</h3>
+                        <div class="evidence-card__courses">
+                            <p class="evidence-card__courses-label">Coursework</p>
+                            <ul class="evidence-card__course-list">
+                                <li data-course="companies-brands-consumers">Companies, Brands, and Consumers</li>
+                            </ul>
+                        </div>
+                        <ul class="evidence-card__bullets">
+                            <li>Video proposal for a Volkswagen brand extension, based on market analysis.</li>
+                            <li>Includes a showcase of VW ad concepts.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- ═══ PRODUCT ═══ -->
+
+                <article class="evidence-card" data-domain="product" data-work="ethics" aria-labelledby="w-eth">
+                    <div class="evidence-card__canva" data-orientation="landscape">
+                        <div class="evidence-card__preview-cover">
+                            <span class="evidence-card__artifact-type">Written report</span>
+                            <button type="button" class="evidence-card__preview-button" hidden><i class="bi bi-file-earmark-text"
+                                    aria-hidden="true"></i> Load preview</button>
+                        </div>
+                    </div>
+                    <div class="evidence-card__body">
+                        <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"
+                                aria-hidden="true"></span>Product</span>
+                        <h3 id="w-eth" class="evidence-card__title">Ethical Analysis: Food Waste, Salary Transparency, Gig Work</h3>
+                        <div class="evidence-card__courses">
+                            <p class="evidence-card__courses-label">Coursework</p>
+                            <ul class="evidence-card__course-list">
+                                <li data-course="business-ethics">Business Ethics</li>
+                            </ul>
+                        </div>
+                        <ul class="evidence-card__bullets">
+                            <li>Three short papers tackling business ethics issues.</li>
+                            <li>Grounded in ethics theory and literature review.</li>
+                        </ul>
+                        <div class="evidence-card__actions" hidden>
+                            <a class="evidence-card__action" data-work-link="download" target="_blank" rel="noopener noreferrer"
+                                hidden><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>Download</a>
+                        </div>
+                    </div>
+                </article>
 
             </div>
         </section>
@@ -4592,7 +4714,7 @@
             });
         });
 
-        // ── E5 extenstion: Tooltip Mobile Tap Functionality ────────────────
+        // ── E5 extension: Tooltip Mobile Tap Functionality ────────────────
         (function () {
             const closeAll = (except) => document.querySelectorAll('.tip-host.is-open').forEach(h => {
                 if (h !== except) { h.classList.remove('is-open'); h.querySelector('.info-tip')?.setAttribute('aria-expanded', 'false'); }
