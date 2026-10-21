@@ -5273,8 +5273,8 @@
                             </div>
 
                             <div>
-                                <dt>Choice tasks</dt>
-                                <dd>16 <span>per participant</span></dd>
+                                <dt>Preference groups</dt>
+                                <dd>2 <span>model-based: 46.5% / 53.5%</span></dd>
                             </div>
 
                             <div>
@@ -5436,33 +5436,33 @@
                     <div>
                         <dt>Analytical approach</dt>
                         <dd>
-                            Using discrete-choice-experiment data supplied by
-                            Biasiotto and colleagues, I analysed responses from
-                            329 participants in Italy. A two-class latent class
-                            model examined differences in sharing preferences,
-                            complemented by a secondary conditional logit model.
-                            I also calculated average relative attribute
-                            importance to compare the influence of the five
-                            contextual attributes.
+                            Using discrete-choice-experiment data supplied by Biasiotto
+                            and colleagues, I analysed responses from 329 participants in
+                            Italy. I compared five models in Stata (three latent class
+                            specifications, a conditional logit, and a logistic regression),
+                            judged fit by AIC and log-likelihood, and interpreted a
+                            two-class latent class model as the primary analysis, with the
+                            conditional logit as a secondary check. I then calculated
+                            average relative attribute importance from the primary model.
                         </dd>
                     </div>
 
                     <div>
                         <dt>Finding &amp; relevance</dt>
                         <dd>
-                            Respondents showed an overall reluctance to share,
-                            but all five contextual attributes influenced
-                            willingness. Who would reuse the data and for what
-                            purpose mattered most, followed by information about
-                            sharing; external review was also preferred.
-                            The findings suggest priorities for data-sharing
-                            policy and service design: transparent information,
-                            clear purposes, legitimate recipients, and external
-                            oversight. These are implications from stated
-                            preferences, not evidence of increased real-world
-                            sharing.
+                            Respondents leaned toward not sharing, but context shifted
+                            that. Two preference groups (46.5% and 53.5%) ranked the five
+                            attributes identically: who reuses the data first, the purpose
+                            second, information about sharing third, review of the transfer
+                            fourth, and the original collector last. Yet they preferred
+                            different options within them; on who reuses the data, their
+                            orders were exact opposites. The results suggest one-size-fits-all
+                            rules are unlikely to fit, while transparency and some form of
+                            external review were common ground. These are stated preferences
+                            from one country and period, not observed sharing behaviour.
                         </dd>
                     </div>
+
                 </dl>
 
                 <!-- ============================================================
@@ -5722,79 +5722,278 @@
 
                     <section class="thesis-expose__section" aria-labelledby="msc-findings-heading">
                         <div class="thesis-expose__section-head">
-                            <p class="thesis-expose__eyebrow">
-                                What the analysis revealed
-                            </p>
-
+                            <p class="thesis-expose__eyebrow">What the analysis revealed</p>
                             <h4 id="msc-findings-heading">
-                                Who uses the data—and why—matters.
+                                Two groups agreed on what matters, and disagreed on what they prefer.
                             </h4>
-
                             <p>
-                                The analysis found an overall reluctance to share,
-                                but willingness depended on the surrounding context.
-                                The new data user and the purpose of reuse were
-                                the leading influences, with information and
-                                consent ranking third.
+                                Overall, respondents leaned toward not sharing. Willingness
+                                depended on the arrangement, and the five attributes did not
+                                carry equal weight.
                             </p>
                         </div>
 
-                        <div class="thesis-expose__finding">
+                        <div class="thesis-expose__ranking-block">
                             <p class="thesis-expose__finding-label">
-                                An expectation challenged
+                                Importance of the five attributes
                             </p>
 
+                            <ol class="thesis-expose__ranking">
+                                <li>New data user</li>
+                                <li>Reason for new data use</li>
+                                <li>Information &amp; consent</li>
+                                <li>External review</li>
+                                <li>Original data collector</li>
+                            </ol>
+
+                            <p class="thesis-expose__boundary">
+                                From average relative attribute importance in the primary
+                                model. Both groups share this ranking. Information about the
+                                data transfer was followed closely by review of the transfer.
+                            </p>
+
+                            <figure class="thesis-expose__table-slot">
+                                <figcaption>Insert Figure 6: average relative attribute importance.</figcaption>
+                                <div class="thesis-expose__table-placeholder">FIGURE 6 PLACEHOLDER</div>
+                            </figure>
+                        </div>
+
+                        <div class="thesis-expose__finding">
+                            <p class="thesis-expose__finding-label">An expectation challenged</p>
                             <p>
-                                I initially expected information and consent to
-                                be the most influential attribute. Instead, the
-                                reported importance ranking placed the recipient
-                                and purpose ahead of it. The result shifts the
-                                practical emphasis: explaining who will use the
-                                data and what they intend to do with it deserves
-                                attention alongside the consent mechanism.
+                                I expected information &amp; consent to be the most influential
+                                attribute and the reason for reuse to rank second. The second
+                                expectation held; the first did not. The new data user ranked
+                                first and information &amp; consent third, so who receives the
+                                data mattered more than how consent is organised.
+                            </p>
+                        </div>
+                    </section>
+
+
+                    <section class="thesis-expose__section" aria-labelledby="msc-groups-heading">
+                        <div class="thesis-expose__section-head">
+                            <p class="thesis-expose__eyebrow">Inside the two groups</p>
+                            <h4 id="msc-groups-heading">One country, two preference patterns.</h4>
+                            <p>
+                                The latent class model split respondents into two groups,
+                                46.5% and 53.5%. Pick an attribute to compare how each group
+                                ordered its levels, from highest to lowest estimated utility.
+                            </p>
+                        </div>
+
+                        <div class="thesis-expose__groups" data-group-compare>
+
+                            <fieldset class="thesis-expose__picker" data-group-picker hidden>
+                                <legend>Compare the groups on</legend>
+                                <div class="thesis-expose__segmented">
+                                    <input type="radio" id="msc-attr-recipient" name="msc-attribute" value="recipient" checked>
+                                    <label for="msc-attr-recipient">1 · New data user</label>
+
+                                    <input type="radio" id="msc-attr-reason" name="msc-attribute" value="reason">
+                                    <label for="msc-attr-reason">2 · Reason for use</label>
+
+                                    <input type="radio" id="msc-attr-consent" name="msc-attribute" value="consent">
+                                    <label for="msc-attr-consent">3 · Information &amp; consent</label>
+
+                                    <input type="radio" id="msc-attr-review" name="msc-attribute" value="review">
+                                    <label for="msc-attr-review">4 · External review</label>
+
+                                    <input type="radio" id="msc-attr-collector" name="msc-attribute" value="collector">
+                                    <label for="msc-attr-collector">5 · Original collector</label>
+                                </div>
+                            </fieldset>
+
+                            <!-- Without JavaScript, all five panels simply display in sequence. -->
+
+                            <div class="thesis-expose__group-panel" data-group-panel="recipient">
+                                <h5>New data user <span>· importance rank 1 of 5</span></h5>
+                                <div class="thesis-expose__group-columns">
+                                    <div>
+                                        <p class="thesis-expose__group-title">Group 1 <span>46.5% of respondents</span></p>
+                                        <ol class="thesis-expose__group-list">
+                                            <li>Technological company</li>
+                                            <li>National authority <span class="thesis-expose__ref">reference level</span></li>
+                                            <li>Pharmaceutical company</li>
+                                            <li>Academic research project</li>
+                                        </ol>
+                                    </div>
+                                    <div>
+                                        <p class="thesis-expose__group-title">Group 2 <span>53.5% of respondents</span></p>
+                                        <ol class="thesis-expose__group-list">
+                                            <li>Academic research project</li>
+                                            <li>Pharmaceutical company</li>
+                                            <li>National authority <span class="thesis-expose__ref">reference level</span></li>
+                                            <li>Technological company</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="thesis-expose__group-panel" data-group-panel="reason">
+                                <h5>Reason for new data use <span>· importance rank 2 of 5</span></h5>
+                                <div class="thesis-expose__group-columns">
+                                    <div>
+                                        <p class="thesis-expose__group-title">Group 1 <span>46.5% of respondents</span></p>
+                                        <ol class="thesis-expose__group-list">
+                                            <li>Investigating a policy initiative</li>
+                                            <li>Quality evaluation <span class="thesis-expose__ref">reference level</span></li>
+                                            <li>Promotion, advertising or marketing</li>
+                                            <li>Developing a new product or service</li>
+                                        </ol>
+                                    </div>
+                                    <div>
+                                        <p class="thesis-expose__group-title">Group 2 <span>53.5% of respondents</span></p>
+                                        <ol class="thesis-expose__group-list">
+                                            <li>Developing a new product or service</li>
+                                            <li>Quality evaluation <span class="thesis-expose__ref">reference level</span></li>
+                                            <li>Promotion, advertising or marketing</li>
+                                            <li>Investigating a policy initiative</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="thesis-expose__group-panel" data-group-panel="consent">
+                                <h5>Information &amp; consent <span>· importance rank 3 of 5</span></h5>
+                                <div class="thesis-expose__group-columns">
+                                    <div>
+                                        <p class="thesis-expose__group-title">Group 1 <span>46.5% of respondents</span></p>
+                                        <ol class="thesis-expose__group-list">
+                                            <li>Informed only, no consent option</li>
+                                            <li>Informed, with ability to opt in <span class="thesis-expose__ref">reference level</span>
+                                            </li>
+                                            <li>Not informed</li>
+                                            <li>Informed, with ability to opt out</li>
+                                        </ol>
+                                    </div>
+                                    <div>
+                                        <p class="thesis-expose__group-title">Group 2 <span>53.5% of respondents</span></p>
+                                        <ol class="thesis-expose__group-list">
+                                            <li>Informed, with ability to opt out</li>
+                                            <li>Informed, with ability to opt in <span class="thesis-expose__ref">reference level</span>
+                                            </li>
+                                            <li>Informed only, no consent option</li>
+                                            <li>Not informed</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="thesis-expose__group-panel" data-group-panel="review">
+                                <h5>External review <span>· importance rank 4 of 5</span></h5>
+                                <div class="thesis-expose__group-columns">
+                                    <div>
+                                        <p class="thesis-expose__group-title">Group 1 <span>46.5% of respondents</span></p>
+                                        <ol class="thesis-expose__group-list">
+                                            <li>Review of data transfer and use <span class="thesis-expose__ref">reference level</span></li>
+                                            <li>No review</li>
+                                            <li>Review of data transfer only</li>
+                                        </ol>
+                                    </div>
+                                    <div>
+                                        <p class="thesis-expose__group-title">Group 2 <span>53.5% of respondents</span></p>
+                                        <ol class="thesis-expose__group-list">
+                                            <li>Review of data transfer only</li>
+                                            <li>No review</li>
+                                            <li>Review of data transfer and use <span class="thesis-expose__ref">reference level</span></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="thesis-expose__group-panel" data-group-panel="collector">
+                                <h5>Original data collector <span>· importance rank 5 of 5</span></h5>
+                                <div class="thesis-expose__group-columns">
+                                    <div>
+                                        <p class="thesis-expose__group-title">Group 1 <span>46.5% of respondents</span></p>
+                                        <ol class="thesis-expose__group-list">
+                                            <li>Academic research project</li>
+                                            <li>Technological company</li>
+                                            <li>Healthcare provider <span class="thesis-expose__ref">reference level</span></li>
+                                        </ol>
+                                    </div>
+                                    <div>
+                                        <p class="thesis-expose__group-title">Group 2 <span>53.5% of respondents</span></p>
+                                        <ol class="thesis-expose__group-list">
+                                            <li>Healthcare provider <span class="thesis-expose__ref">reference level</span></li>
+                                            <li>Technological company</li>
+                                            <li>Academic research project</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="thesis-expose__sr-only" role="status" aria-live="polite" aria-atomic="true" data-group-status></p>
+                        </div>
+
+                        <p class="thesis-expose__boundary">
+                            Levels are ordered by each group's estimated utility. The order
+                            does not show how large the gaps are or whether neighbouring levels
+                            differ significantly; those details are in Table 4. On the original
+                            collector, the new data user and external review, the two groups'
+                            orders are exact reverses. Group 1 put technology companies first as
+                            the new data user, which runs against much earlier research but
+                            matches a Southern European subgroup in Biasiotto et al.
+                        </p>
+
+                        <figure class="thesis-expose__table-slot">
+                            <figcaption>Insert Table 4: results of the 2-class latent class model with initial values.</figcaption>
+                            <div class="thesis-expose__table-placeholder">TABLE 4 PLACEHOLDER</div>
+                        </figure>
+                    </section>
+
+
+                    <section class="thesis-expose__section" aria-labelledby="msc-implications-heading">
+                        <div class="thesis-expose__section-head">
+                            <p class="thesis-expose__eyebrow">What it suggests</p>
+                            <h4 id="msc-implications-heading">
+                                Plan for different audiences, not one average citizen.
+                            </h4>
+                            <p>
+                                The two groups' contrasting preferences sit alongside a shared
+                                emphasis on transparency and oversight.
                             </p>
                         </div>
 
                         <dl class="thesis-expose__implications">
                             <div>
-                                <dt>Make the recipient explicit</dt>
+                                <dt>Expect heterogeneity inside a country</dt>
                                 <dd>
-                                    Identify the organisation receiving the data.
-                                    The analysis indicates that the identity of
-                                    the new data user is central to the sharing
-                                    decision—not merely an administrative detail.
+                                    Within one Italian sample, two groups held contrasting
+                                    preferences on most attributes. A single average preference
+                                    would have hidden that.
                                 </dd>
                             </div>
 
                             <div>
-                                <dt>Explain the intended use</dt>
+                                <dt>Be cautious about one-size-fits-all rules</dt>
                                 <dd>
-                                    Communicate a specific purpose for reuse.
-                                    The research examined quality evaluation,
-                                    product or service development, marketing,
-                                    and policy investigation as distinct contexts.
+                                    Some results differ from larger multinational studies. That
+                                    suggests data-reuse policy may not fit every European region
+                                    equally, and that country-specific consideration and research
+                                    are worthwhile.
                                 </dd>
                             </div>
 
                             <div>
-                                <dt>Make information and oversight visible</dt>
+                                <dt>Treat transparency and review as common ground</dt>
                                 <dd>
-                                    Clearly explain the information and consent
-                                    arrangements, together with the review process.
-                                    Respondents preferred external oversight,
-                                    supporting its consideration in data-sharing
-                                    governance.
+                                    Being informed and having some form of external review
+                                    matched earlier research. In both groups, the most preferred
+                                    information arrangement was an informed one, and the most
+                                    preferred review option was some form of review. This
+                                    supports transparency, clarity of purpose and independent
+                                    oversight as institutional practice.
                                 </dd>
                             </div>
                         </dl>
 
                         <p class="thesis-expose__boundary">
                             These are research-informed considerations, not a tested
-                            interface intervention or a demonstrated increase in
-                            real-world data sharing.
+                            intervention or a demonstrated increase in real-world sharing.
                         </p>
                     </section>
-
 
                     <!-- ── 3. Progressive disclosure for technical readers ──── -->
 
@@ -5819,58 +6018,38 @@
 
                             <!-- A. Sample and preparation -->
                             <details class="thesis-expose__detail">
-                                <summary>
-                                    Sample, exclusions, and descriptive analysis
-                                </summary>
-
+                                <summary>Sample, data checks, and descriptive analysis</summary>
                                 <div class="thesis-expose__detail-body">
                                     <p>
-                                        The original fieldwork ran from April to
-                                        August 2021. There were 929 survey initiations
-                                        and 362 completed surveys; excluding completions
-                                        under five minutes left the final sample of
-                                        329 respondents.
+                                        Fieldwork ran from April to August 2021: 929 survey initiations,
+                                        362 completions, and 329 respondents after removing completions
+                                        under five minutes.
                                     </p>
-
                                     <p>
-                                        My analytical workflow included checks for
-                                        missing values and outliers, followed by
-                                        descriptive analysis in R. I profiled
-                                        demographics, health status, chronic
-                                        conditions, health-app use, health-sector
-                                        work experience, and eHealth literacy.
+                                        Before modelling I checked for missing values and outliers.
+                                        No variable had more than 3.95% missing values, and none were
+                                        independent variables. Thirty-four respondents had unusually
+                                        long completion times (over 30 minutes). I reviewed their
+                                        written feedback, found nothing abnormal, and discussed the
+                                        pattern with my supervisor. The survey software let people pause
+                                        and resume, so I did not treat the durations as a data-quality
+                                        problem.
                                     </p>
-
                                     <p>
-                                        I also created a categorical eHealth-literacy
-                                        measure from the survey responses to support
-                                        descriptive reporting.
+                                        The final sample had a mean age of 50.83 years (SD 14.55), was
+                                        53% female and 47% male, and was most often educated to
+                                        high-school level (42.1%) or master's level (about 27%).
+                                        54.6% reported no chronic condition, and 32.1% had sufficient
+                                        eHealth literacy (37.6% problematic, 30.3% inadequate).
                                     </p>
-
                                     <p class="thesis-expose__boundary">
-                                        The fieldwork, recruitment, and original
-                                        experimental design were conducted by
-                                        the source research team.
+                                        Fieldwork, recruitment and the experimental design were carried
+                                        out by the source research team.
                                     </p>
-
                                     <figure class="thesis-expose__table-slot">
-                                        <figcaption>
-                                            Insert original respondent-characteristics
-                                            table or selected descriptive figure.
+                                        <figcaption>Insert Figures 3 to 5: missing-value summary, education by gender, health-related descriptives.
                                         </figcaption>
-
-                                        <div class="thesis-expose__table-placeholder">
-                                            TABLE / FIGURE PLACEHOLDER
-                                        </div>
-
-                                        <!--
-                                            Replace the placeholder above with the
-                                            original table or figure.
-
-                                            Keep its original definitions and denominator.
-                                            Add a caption and descriptive alt text if
-                                            inserting the result as an image.
-                                        -->
+                                        <div class="thesis-expose__table-placeholder">FIGURES 3 TO 5 PLACEHOLDER</div>
                                     </figure>
                                 </div>
                             </details>
@@ -5930,175 +6109,123 @@
 
                             <!-- C. Modelling -->
                             <details class="thesis-expose__detail">
-                                <summary>
-                                    Model specifications and analytical reasoning
-                                </summary>
-
+                                <summary>Model selection and attribute importance</summary>
                                 <div class="thesis-expose__detail-body">
                                     <p>
-                                        Before modelling, I checked correlations
-                                        between the independent variables for potential
-                                        multicollinearity concerns. I then fitted
-                                        five specifications across latent class,
-                                        conditional logit, and logistic regression
-                                        approaches in Stata 17.
+                                        After checking correlations between the independent variables
+                                        for multicollinearity, I fitted five models of three types in
+                                        Stata 17: three latent class models (one class; two classes
+                                        without starting values; two classes with starting values from
+                                        the one-class model), a conditional logit, and a logistic
+                                        regression. I compared them by AIC and log-likelihood.
                                     </p>
-
-                                    <ul class="thesis-expose__list">
-                                        <li>
-                                            <strong>Latent class specifications:</strong>
-                                            a one-class model and two two-class
-                                            specifications, with and without supplied
-                                            initial coefficient estimates.
-                                        </li>
-
-                                        <li>
-                                            <strong>Primary analysis:</strong>
-                                            a two-class latent class model, allowing
-                                            different preference patterns rather than
-                                            imposing one common pattern on every
-                                            respondent.
-                                        </li>
-
-                                        <li>
-                                            <strong>Secondary analysis:</strong>
-                                            a conditional logit model, alongside the
-                                            additional logistic regression specification
-                                            explored in the modelling workflow.
-                                        </li>
-
-                                        <li>
-                                            <strong>Attribute importance:</strong>
-                                            average relative attribute importance
-                                            to compare the influence of the five
-                                            contextual attributes within the study.
-                                        </li>
-                                    </ul>
-
-                                    <p class="thesis-expose__boundary">
-                                        Latent classes describe model-based preference
-                                        patterns. They should not be presented as
-                                        directly observed personality types or
-                                        automatically generalisable market segments.
+                                    <p>
+                                        The two best-fitting models were the two-class latent class model
+                                        with starting values and the conditional logit. I treated the
+                                        former as the primary analysis and the latter as a secondary
+                                        check. A latent class model divides respondents into classes by
+                                        their expressed preferences instead of assuming one common
+                                        pattern; the conditional logit assumes a common utility function,
+                                        a limitation the latent class model addresses.
                                     </p>
-
+                                    <p>Average relative attribute importance was computed in three steps:</p>
+                                    <ol class="thesis-expose__list">
+                                        <li>For each attribute, subtract its lowest level estimate from its highest to get a range.</li>
+                                        <li>Divide each range by the largest range, giving relative importance per attribute within each class.</li>
+                                        <li>Average the values across the two classes.</li>
+                                    </ol>
                                     <figure class="thesis-expose__table-slot">
-                                        <figcaption>
-                                            Insert original model-comparison and
-                                            class-specific coefficient results.
-                                        </figcaption>
-
-                                        <div class="thesis-expose__table-placeholder">
-                                            MODEL RESULTS TABLE
-                                        </div>
-
-                                        <!--
-                                            Retain the original:
-                                              - Model/specification labels
-                                              - Reference categories
-                                              - Uncertainty/significance notes
-                                              - Class shares, if reported
-                                              - Fit statistics, if reported
-
-                                            Do not add values inferred from this
-                                            portfolio explanation.
-                                        -->
+                                        <figcaption>Insert Table 3: AIC and log-likelihood for the five models.</figcaption>
+                                        <div class="thesis-expose__table-placeholder">TABLE 3 PLACEHOLDER</div>
+                                    </figure>
+                                    <figure class="thesis-expose__table-slot">
+                                        <figcaption>Insert the latent class and conditional logit model equations.</figcaption>
+                                        <div class="thesis-expose__table-placeholder">MODEL EQUATIONS PLACEHOLDER</div>
                                     </figure>
                                 </div>
                             </details>
-
 
                             <!-- D. Result interpretation -->
                             <details class="thesis-expose__detail">
-                                <summary>
-                                    Attribute importance and hypothesis interpretation
-                                </summary>
-
+                                <summary>Primary results: the two-class model</summary>
                                 <div class="thesis-expose__detail-body">
                                     <p>
-                                        The reported findings identify the new data
-                                        user and the reason for reuse as the leading
-                                        influences, followed by information and consent.
-                                        This contrasts with the initial expectation
-                                        that information and consent would rank first.
+                                        All five attributes were statistically significant in the primary
+                                        model. Estimated group shares were 46.5% and 53.5%. Both groups
+                                        showed a general disutility for sharing, with positive rejection
+                                        intercepts of 0.48 and 0.59 (both p &lt; 0.001).
                                     </p>
+                                    <ul class="thesis-expose__list">
+                                        <li><strong>Shared ranking:</strong> both groups gave the same importance ranking: new data user, reason,
+                                            information &amp; consent, review, original collector.</li>
+                                        <li><strong>Different levels:</strong> groups differed on which level they preferred within each attribute,
+                                            and their orders were exact reverses on collector, recipient and review.</li>
+                                        <li><strong>Common features:</strong> neither group ranked opt-in consent first, and both groups' top review
+                                            option was some form of review.</li>
+                                    </ul>
+                                    <p class="thesis-expose__boundary">
+                                        Significance of individual levels within each group is reported
+                                        in Table 4. Latent classes are model-based preference patterns,
+                                        not observed personality types.
+                                    </p>
+                                </div>
+                            </details>
 
+                            <details class="thesis-expose__detail">
+                                <summary>Secondary results: the conditional logit check</summary>
+                                <div class="thesis-expose__detail-body">
                                     <p>
-                                        The thesis reports an influence from all five
-                                        contextual attributes. That statement should
-                                        not be expanded into a claim that every level,
-                                        every pairwise difference, or every class-specific
-                                        coefficient was statistically significant.
-                                        Those distinctions belong in the original
-                                        results table.
+                                        Eight of the thirteen estimated levels were significant (pseudo
+                                        R² 0.111; LR chi² 410.87, p &lt; .001). Compared with the reference
+                                        levels, and holding other variables constant:
                                     </p>
-
+                                    <ul class="thesis-expose__list">
+                                        <li><strong>Original collector:</strong> sharing was less likely when it was a technology company than a
+                                            healthcare provider; an academic project was not significant (p = 0.970).</li>
+                                        <li><strong>New data user:</strong> no level was significant.</li>
+                                        <li><strong>Reason:</strong> product or service development raised the likelihood of sharing and marketing
+                                            lowered it, relative to quality evaluation.</li>
+                                        <li><strong>Information &amp; consent:</strong> informed-only and informed-with-opt-out raised it relative
+                                            to opt-in, and not being informed lowered it.</li>
+                                        <li><strong>Review:</strong> review of transfer only raised it relative to review of transfer and use, and
+                                            no review lowered it.</li>
+                                    </ul>
                                     <p>
-                                        Relative importance is also not a sharing
-                                        probability: an attribute’s importance does
-                                        not tell a visitor what percentage of people
-                                        would accept the context they selected above.
+                                        Conditional logit coefficients give direction, not the size of
+                                        differences between levels, so this model corroborates the
+                                        latent class results without replacing them.
                                     </p>
-
                                     <figure class="thesis-expose__table-slot">
-                                        <figcaption>
-                                            Insert original relative-attribute-importance
-                                            results, preserving the model and aggregation
-                                            labels used in the thesis.
-                                        </figcaption>
-
-                                        <div class="thesis-expose__table-placeholder">
-                                            ATTRIBUTE IMPORTANCE TABLE / FIGURE
-                                        </div>
+                                        <figcaption>Insert Table 5: conditional logit results.</figcaption>
+                                        <div class="thesis-expose__table-placeholder">TABLE 5 PLACEHOLDER</div>
                                     </figure>
                                 </div>
                             </details>
 
-
-                            <!-- E. Interpretation boundaries -->
                             <details class="thesis-expose__detail">
-                                <summary>
-                                    What the findings do—and do not—establish
-                                </summary>
-
+                                <summary>Limitations and what comes next</summary>
                                 <div class="thesis-expose__detail-body">
                                     <ul class="thesis-expose__list">
-                                        <li>
-                                            <strong>Stated decisions:</strong>
-                                            the experiment measures choices in
-                                            described sharing contexts, not observed
-                                            transfers of personal health records.
-                                        </li>
-
-                                        <li>
-                                            <strong>Specific population and period:</strong>
-                                            the analysis concerns the Italian sample
-                                            and the 2021 fieldwork context. Extending
-                                            the findings to other populations or
-                                            periods requires additional evidence.
-                                        </li>
-
-                                        <li>
-                                            <strong>Governance implications:</strong>
-                                            the findings inform considerations around
-                                            recipients, purposes, information, consent,
-                                            and review. They are not a legal-compliance
-                                            assessment or proof that a particular
-                                            policy will increase sharing.
-                                        </li>
-
-                                        <li>
-                                            <strong>Model-based interpretation:</strong>
-                                            class profiles, coefficient comparisons,
-                                            and numerical importance claims should
-                                            remain tied to their reported specification
-                                            and supporting results.
-                                        </li>
+                                        <li><strong>Sample composition:</strong> education was uneven (42.1% high school, about 27% master's, other
+                                            levels around 10% or less). Earlier research links education to data-sharing attitudes, so the
+                                            preferences may mainly describe these education groups. A more balanced sample could yield more classes
+                                            or different preferences.</li>
+                                        <li><strong>Timing:</strong> fieldwork ran April to August 2021, during the COVID-19 aftermath. Earlier
+                                            research suggests the pandemic raised willingness to share, so comparisons across time periods would be
+                                            useful.</li>
+                                        <li><strong>No covariates:</strong> the latent class model includes none. Age, trust, and privacy and
+                                            technology attitudes from the survey are natural next additions. One idea is to cluster respondents on
+                                            trust and privacy attitudes and use those clusters as covariates.</li>
+                                        <li><strong>Stated choices:</strong> the experiment measures decisions in described scenarios, not real
+                                            transfers of health records.</li>
+                                        <li><strong>Scope:</strong> the findings inform governance considerations; they are not a legal-compliance
+                                            assessment or proof that a policy would increase sharing.</li>
                                     </ul>
                                 </div>
                             </details>
 
                         </div>
+
                     </section>
 
                 </div>
