@@ -2893,6 +2893,79 @@
         }
     }
 
+    /* MSc thesis: group comparison, ranking and hidden handling */
+    .thesis-expose [hidden] { display: none !important; }
+
+    .thesis-expose__ranking-block { margin-bottom: var(--space-5); }
+
+    .thesis-expose__ranking,
+    .thesis-expose__group-list {
+        display: grid;
+        gap: var(--space-2);
+        margin: 0 0 var(--space-3);
+        padding-inline-start: var(--space-6);
+        color: var(--color-text);
+        font-size: var(--text-sm);
+        line-height: 1.6;
+    }
+
+    .thesis-expose__picker { min-width: 0; margin: 0 0 var(--space-4); padding: 0; border: 0; }
+    .thesis-expose__picker legend {
+        margin-bottom: var(--space-2);
+        color: var(--color-text);
+        font-size: var(--text-sm);
+        font-weight: 700;
+    }
+
+    .thesis-expose__segmented { position: relative; display: flex; flex-wrap: wrap; gap: var(--space-2); }
+    .thesis-expose__segmented input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+    .thesis-expose__segmented label {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        padding: var(--space-2) var(--space-3);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        background: var(--color-surface);
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .thesis-expose__segmented input:checked + label {
+        background: var(--color-surface-2);
+        border-color: var(--color-text-muted);
+        color: var(--color-text);
+    }
+    .thesis-expose__segmented input:focus-visible + label {
+        outline: 2px solid var(--color-text);
+        outline-offset: 3px;
+    }
+
+    .thesis-expose__group-panel {
+        padding: var(--space-5);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-lg);
+        background: var(--color-surface);
+    }
+    .thesis-expose__group-panel + .thesis-expose__group-panel { margin-top: var(--space-3); }
+    .thesis-expose__group-panel h5 {
+        margin: 0 0 var(--space-4);
+        color: var(--color-text);
+        font-size: var(--text-sm);
+        font-weight: 700;
+    }
+    .thesis-expose__group-panel h5 span { color: var(--color-text-muted); font-weight: 400; }
+
+    .thesis-expose__group-columns { display: grid; gap: var(--space-5); }
+    .thesis-expose__group-title { margin: 0 0 var(--space-2); color: var(--color-text); font-size: var(--text-sm); font-weight: 700; }
+    .thesis-expose__group-title span { display: block; color: var(--color-text-muted); font-size: var(--text-xs); font-weight: 400; }
+    .thesis-expose__ref { color: var(--color-text-muted); font-size: var(--text-xs); }
+
+    @media (min-width: 640px) {
+        .thesis-expose__group-columns { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
     /* ── E7: IN DEPTH ACCORDION ────────────────────────────── */
     .story-accordion {
       border: 1px solid var(--color-border);
@@ -5238,7 +5311,7 @@
         <section id="masters-theses" class="theses-section" aria-labelledby="masters-theses-heading">
             <div class="section-label">
                 <h2 id="masters-theses-heading" class="section-label__text">
-                    Theses
+                    Thesis
                 </h2>
 
                 <span class="section-label__line" aria-hidden="true"></span>
@@ -5288,21 +5361,7 @@
                             </div>
                         </dl>
 
-                        <p class="thesis-expose__contribution">
-                            <strong>My contribution:</strong>
-                            I analysed an existing Italian survey and discrete-choice
-                            dataset supplied by Biasiotto and colleagues: data checks,
-                            descriptive profiling in R, preference modelling in Stata,
-                            comparison of model specifications, and interpretation of
-                            the findings for health-data governance. The original
-                            research team developed and administered the experiment.
-                        </p>
-
                     </div>
-
-                    <p class="thesis-feature__eyebrow">
-                        MSc thesis
-                    </p>
 
                     <h3 id="msc-thesis-title" class="thesis-feature__title">
                         Willingness to Share Health Data in Italy:
