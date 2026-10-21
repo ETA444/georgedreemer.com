@@ -2375,6 +2375,524 @@
         }
     }
 
+    /* ============================================================
+    E6–THESIS — ADDITIVE RESEARCH EXPOSITION
+    ============================================================ */
+
+    .thesis-expose {
+        min-width: 0;
+        color: var(--color-text);
+    }
+
+    .thesis-expose *,
+    .thesis-expose *::before,
+    .thesis-expose *::after {
+        box-sizing: border-box;
+    }
+
+    /* ── Facts strip ──────────────────────────────────────────── */
+
+    .thesis-expose__facts {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--space-4);
+        margin: 0 0 var(--space-4);
+        padding: var(--space-4);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-lg);
+        background: var(--color-surface);
+    }
+
+    .thesis-expose__facts > div {
+        min-width: 0;
+    }
+
+    .thesis-expose__facts dt {
+        margin-bottom: var(--space-1);
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        line-height: 1.5;
+    }
+
+    .thesis-expose__facts dd {
+        margin: 0;
+        color: var(--color-text);
+        font-size: var(--text-lg);
+        font-weight: 700;
+        line-height: 1.35;
+    }
+
+    .thesis-expose__facts dd span {
+        display: block;
+        margin-top: var(--space-1);
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    .thesis-expose__contribution {
+        max-width: 75ch;
+        margin: 0 0 var(--space-5);
+        color: var(--color-text-muted);
+        font-size: var(--text-sm);
+        line-height: 1.7;
+    }
+
+    .thesis-expose__contribution strong {
+        color: var(--color-text);
+        font-weight: 600;
+    }
+
+    /* ── Editorial sections ──────────────────────────────────── */
+
+    .thesis-expose__section {
+        min-width: 0;
+        margin-top: var(--space-8);
+    }
+
+    .thesis-expose__section-head {
+        margin-bottom: var(--space-4);
+    }
+
+    .thesis-expose__eyebrow {
+        margin: 0 0 var(--space-2);
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        font-weight: 600;
+        line-height: 1.5;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+
+    .thesis-expose__section-head h4 {
+        margin: 0 0 var(--space-3);
+        color: var(--color-text);
+        font-size: var(--text-lg);
+        font-weight: 700;
+        line-height: 1.35;
+        text-wrap: balance;
+    }
+
+    .thesis-expose__section-head > p:last-child {
+        max-width: 70ch;
+        margin: 0;
+        color: var(--color-text-muted);
+        font-size: var(--text-sm);
+        line-height: 1.7;
+    }
+
+    /* ── Context explorer ─────────────────────────────────────── */
+
+    .thesis-expose__explorer {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        overflow: hidden;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-lg);
+        background: var(--color-surface);
+    }
+
+    .thesis-expose__context-form {
+        min-width: 0;
+        margin: 0;
+        padding: var(--space-5);
+    }
+
+    .thesis-expose__context-form fieldset {
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    .thesis-expose__context-form legend {
+        max-width: 100%;
+        margin-bottom: var(--space-2);
+        padding: 0;
+        color: var(--color-text);
+        font-size: var(--text-sm);
+        font-weight: 700;
+        line-height: 1.5;
+    }
+
+    .thesis-expose__helper {
+        max-width: 65ch;
+        margin: 0;
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        line-height: 1.65;
+    }
+
+    .thesis-expose__fields {
+        display: grid;
+        gap: var(--space-4);
+        margin-top: var(--space-4);
+    }
+
+    .thesis-expose__field {
+        min-width: 0;
+    }
+
+    .thesis-expose__field label {
+        display: block;
+        margin-bottom: var(--space-2);
+        color: var(--color-text);
+        font-size: var(--text-xs);
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+    .thesis-expose__field select {
+        display: block;
+        width: 100%;
+        min-width: 0;
+        min-height: 44px;
+        padding: var(--space-3);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        background: var(--color-surface);
+        color: var(--color-text);
+
+        /* Keep form text comfortably readable on mobile. */
+        font: inherit;
+        font-size: max(1rem, var(--text-base));
+        line-height: 1.5;
+    }
+
+    .thesis-expose__reset {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        margin-top: var(--space-4);
+        padding: var(--space-2) var(--space-3);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        background: var(--color-surface);
+        color: var(--color-text);
+        font: inherit;
+        font-size: var(--text-xs);
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .thesis-expose__context-preview {
+        min-width: 0;
+        padding: var(--space-5);
+        border-top: 1px solid var(--color-border);
+        background: var(--color-surface-2);
+    }
+
+    .thesis-expose__preview-intro {
+        margin: 0 0 var(--space-4);
+        color: var(--color-text);
+        font-size: var(--text-sm);
+        line-height: 1.65;
+    }
+
+    .thesis-expose__context-summary {
+        display: grid;
+        gap: var(--space-3);
+        margin: 0;
+    }
+
+    .thesis-expose__context-summary > div {
+        min-width: 0;
+    }
+
+    .thesis-expose__context-summary dt {
+        margin-bottom: var(--space-1);
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        line-height: 1.5;
+    }
+
+    .thesis-expose__context-summary dd {
+        margin: 0;
+        color: var(--color-text);
+        font-size: var(--text-sm);
+        font-weight: 600;
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+    }
+
+    .thesis-expose__preview-question {
+        margin: var(--space-5) 0 var(--space-2);
+        color: var(--color-text);
+        font-size: var(--text-sm);
+        font-weight: 700;
+        line-height: 1.6;
+    }
+
+    /* ── Findings and implications ────────────────────────────── */
+
+    .thesis-expose__finding {
+        padding: var(--space-5);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-lg);
+        background: var(--color-surface-2);
+    }
+
+    .thesis-expose__finding-label {
+        margin: 0 0 var(--space-2);
+        color: var(--color-text);
+        font-size: var(--text-sm);
+        font-weight: 700;
+        line-height: 1.5;
+    }
+
+    .thesis-expose__finding > p:last-child {
+        max-width: 70ch;
+        margin: 0;
+        color: var(--color-text-muted);
+        font-size: var(--text-sm);
+        line-height: 1.7;
+    }
+
+    .thesis-expose__implications {
+        display: grid;
+        gap: var(--space-4);
+        margin: var(--space-5) 0 0;
+    }
+
+    .thesis-expose__implications > div {
+        min-width: 0;
+        padding-bottom: var(--space-4);
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .thesis-expose__implications dt {
+        margin-bottom: var(--space-2);
+        color: var(--color-text);
+        font-size: var(--text-sm);
+        font-weight: 700;
+        line-height: 1.5;
+    }
+
+    .thesis-expose__implications dd {
+        max-width: 70ch;
+        margin: 0;
+        color: var(--color-text-muted);
+        font-size: var(--text-sm);
+        line-height: 1.7;
+    }
+
+    /* ── Native disclosure panels ─────────────────────────────── */
+
+    .thesis-expose__disclosures {
+        display: grid;
+        gap: var(--space-3);
+    }
+
+    .thesis-expose__detail {
+        min-width: 0;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-lg);
+        background: var(--color-surface);
+    }
+
+    .thesis-expose__detail > summary {
+        min-height: 44px;
+        padding: var(--space-4);
+        color: var(--color-text);
+        font-size: var(--text-sm);
+        font-weight: 600;
+        line-height: 1.6;
+        cursor: pointer;
+    }
+
+    /* Keep the native disclosure marker for familiar interaction. */
+    .thesis-expose__detail > summary::marker {
+        color: var(--color-text-muted);
+    }
+
+    .thesis-expose__detail[open] > summary {
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .thesis-expose__detail-body {
+        min-width: 0;
+        padding: var(--space-4);
+    }
+
+    .thesis-expose__detail-body > p {
+        max-width: 75ch;
+        margin: 0 0 var(--space-3);
+        color: var(--color-text-muted);
+        font-size: var(--text-sm);
+        line-height: 1.7;
+    }
+
+    .thesis-expose__detail-body > :last-child {
+        margin-bottom: 0;
+    }
+
+    .thesis-expose__list {
+        display: grid;
+        gap: var(--space-3);
+        margin: 0 0 var(--space-4);
+        padding-inline-start: var(--space-5);
+    }
+
+    .thesis-expose__list li {
+        max-width: 75ch;
+        color: var(--color-text-muted);
+        font-size: var(--text-sm);
+        line-height: 1.7;
+    }
+
+    .thesis-expose__list strong {
+        color: var(--color-text);
+        font-weight: 600;
+    }
+
+    /* ── Original table / figure slots ────────────────────────── */
+
+    .thesis-expose__table-slot {
+        min-width: 0;
+        margin: var(--space-4) 0 0;
+    }
+
+    .thesis-expose__table-slot figcaption {
+        margin-bottom: var(--space-2);
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        line-height: 1.6;
+    }
+
+    .thesis-expose__table-placeholder {
+        display: grid;
+        place-items: center;
+        min-height: 8rem;
+        padding: var(--space-4);
+        border: 1px dashed var(--color-border);
+        border-radius: var(--radius-md);
+        background: var(--color-surface-2);
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    /*
+    Optional wrapper for an original HTML table:
+    <div class="thesis-expose__table-scroll"
+            role="region"
+            aria-label="Descriptive table name"
+            tabindex="0">
+        <table>...</table>
+    </div>
+    */
+    .thesis-expose__table-scroll {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .thesis-expose__table-scroll table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: var(--text-xs);
+    }
+
+    .thesis-expose__table-scroll th,
+    .thesis-expose__table-scroll td {
+        padding: var(--space-3);
+        border-bottom: 1px solid var(--color-border);
+        text-align: start;
+        vertical-align: top;
+    }
+
+    .thesis-expose__table-scroll th {
+        color: var(--color-text);
+        font-weight: 600;
+    }
+
+    .thesis-expose__table-scroll td {
+        color: var(--color-text-muted);
+    }
+
+    /* ── Interpretation notes ────────────────────────────────── */
+
+    .thesis-expose__boundary,
+    .thesis-expose__detail-body > .thesis-expose__boundary {
+        max-width: 75ch;
+        margin-top: var(--space-3);
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        line-height: 1.65;
+    }
+
+    /* Screen-reader announcement, without a visual layout shift. */
+    .thesis-expose__sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+        border: 0;
+    }
+
+    /* ── Focus and interaction ────────────────────────────────── */
+
+    .thesis-expose__field select:focus-visible,
+    .thesis-expose__reset:focus-visible,
+    .thesis-expose__detail > summary:focus-visible,
+    .thesis-expose__table-scroll:focus-visible {
+        outline: 2px solid var(--color-text);
+        outline-offset: 3px;
+    }
+
+    @media (hover: hover) {
+        .thesis-expose__reset:hover,
+        .thesis-expose__detail > summary:hover {
+            background: var(--color-surface-2);
+        }
+    }
+
+    .thesis-expose__reset:active {
+        background: var(--color-surface-2);
+    }
+
+    /* ── Responsive layout ───────────────────────────────────── */
+
+    @media (min-width: 700px) {
+        .thesis-expose__facts {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+    }
+
+    @media (min-width: 1000px) {
+        .thesis-expose__explorer {
+            grid-template-columns:
+                minmax(0, 1fr)
+                minmax(0, 1fr);
+        }
+
+        .thesis-expose__context-preview {
+            border-top: 0;
+            border-inline-start: 1px solid var(--color-border);
+        }
+    }
+
+    /* Print the deeper evidence without requiring interaction. */
+    @media print {
+        .thesis-expose__context-form {
+            display: none;
+        }
+
+        .thesis-expose__explorer {
+            display: block;
+        }
+
+        .thesis-expose__context-preview {
+            border: 0;
+        }
+    }
+
     /* ── E7: IN DEPTH ACCORDION ────────────────────────────── */
     .story-accordion {
       border: 1px solid var(--color-border);
@@ -5274,60 +5792,170 @@
 
         // ── Grades Map ────────────────
         (function () {
-                /* ── Grades: single source of truth ─────────────────────
-                   number  → shown as a numeric mini-badge (Dutch 1–10 scale)
-                   string  → shown as a text badge, e.g. "Pass"
-                   null    → no badge rendered (use until you fill it in)  */
-                const GRADES = {
-                    'data-engineering': 7,
-                    'data-science-methods': 9,
-                    'business-research-methods': 8,
-                    'marketing-research': 8,
-                    'research-paper': 8,
-                    'statistical-learning': 8,
-                    'companies-brands-consumers': 8,
-                    'digital-marketing-intelligence': 8,
-                    'digital-marketing-analytics': 8,
-                    'market-models': 8,
-                    'behavioural-decision-making': 7,
-                    'organization-theory': 7,
-                    'contemporary-theories': 6,
-                    'strategic-management': 8,
-                    'hrm': 8,
-                    'business-ethics': 8,
-                    'retail-omnichannel': 8
-                };
+            /* ── Grades: single source of truth ─────────────────────
+                number  → shown as a numeric mini-badge (Dutch 1–10 scale)
+                string  → shown as a text badge, e.g. "Pass"
+                null    → no badge rendered (use until you fill it in)  */
+            const GRADES = {
+                'data-engineering': 7,
+                'data-science-methods': 9,
+                'business-research-methods': 8,
+                'marketing-research': 8,
+                'research-paper': 8,
+                'statistical-learning': 8,
+                'companies-brands-consumers': 8,
+                'digital-marketing-intelligence': 8,
+                'digital-marketing-analytics': 8,
+                'market-models': 8,
+                'behavioural-decision-making': 7,
+                'organization-theory': 7,
+                'contemporary-theories': 6,
+                'strategic-management': 8,
+                'hrm': 8,
+                'business-ethics': 8,
+                'retail-omnichannel': 8
+            };
 
-                /* ── Render mini grade badges next to course titles ───── */
-                document.querySelectorAll('[data-course]').forEach(function (el) {
-                    const g = GRADES[el.dataset.course];
-                    if (g === null || g === undefined || g === '') return;
+            /* ── Render mini grade badges next to course titles ───── */
+            document.querySelectorAll('[data-course]').forEach(function (el) {
+                const g = GRADES[el.dataset.course];
+                if (g === null || g === undefined || g === '') return;
 
-                    const badge = document.createElement('span');
-                    const numeric = typeof g === 'number' && Number.isFinite(g);
-                    badge.className = 'grade-badge grade-badge--mini' + (numeric ? '' : ' grade-badge--text');
-                    badge.textContent = String(g);
+                const badge = document.createElement('span');
+                const numeric = typeof g === 'number' && Number.isFinite(g);
+                badge.className = 'grade-badge grade-badge--mini' + (numeric ? '' : ' grade-badge--text');
+                badge.textContent = String(g);
 
-                    const label = numeric ? 'Grade: ' + g + ' out of 10' : 'Result: ' + g;
-                    badge.setAttribute('aria-label', label);
-                    badge.title = label;
-                    el.appendChild(badge);
+                const label = numeric ? 'Grade: ' + g + ' out of 10' : 'Result: ' + g;
+                badge.setAttribute('aria-label', label);
+                badge.title = label;
+                el.appendChild(badge);
+            });
+
+            /* ── Lens toggle (generic: works for any grid on the site) ── */
+            document.querySelectorAll('[data-lens-toggle]').forEach(function (btn) {
+                const target = document.getElementById(btn.getAttribute('aria-controls'));
+                const note = btn.dataset.lensNote ? document.getElementById(btn.dataset.lensNote) : null;
+                if (!target) return;
+
+                btn.addEventListener('click', function () {
+                    const on = btn.getAttribute('aria-checked') !== 'true';
+                    btn.setAttribute('aria-checked', String(on));
+                    target.classList.toggle('is-lens-courses', on);
+                    if (note) note.hidden = !on;
                 });
+            });
+        })();
 
-                /* ── Lens toggle (generic: works for any grid on the site) ── */
-                document.querySelectorAll('[data-lens-toggle]').forEach(function (btn) {
-                    const target = document.getElementById(btn.getAttribute('aria-controls'));
-                    const note = btn.dataset.lensNote ? document.getElementById(btn.dataset.lensNote) : null;
-                    if (!target) return;
+        // ── MSc thesis: illustrative context explorer ─────────────────
+        (function () {
+            'use strict';
 
-                    btn.addEventListener('click', function () {
-                        const on = btn.getAttribute('aria-checked') !== 'true';
-                        btn.setAttribute('aria-checked', String(on));
-                        target.classList.toggle('is-lens-courses', on);
-                        if (note) note.hidden = !on;
+            function initialiseContextExplorers() {
+                document.querySelectorAll('[data-context-explorer]')
+                    .forEach(function (explorer) {
+                        if (explorer.dataset.contextReady === 'true') return;
+
+                        const form = explorer.querySelector('form');
+                        const status = explorer.querySelector(
+                            '[data-context-status]'
+                        );
+
+                        if (!form) return;
+
+                        explorer.dataset.contextReady = 'true';
+
+                        const keys = [
+                            'collector',
+                            'recipient',
+                            'purpose',
+                            'consent',
+                            'review'
+                        ];
+
+                        const fields = keys.map(function (key) {
+                            return {
+                                key: key,
+                                select: form.querySelector(
+                                    'select[name="' + key + '"]'
+                                ),
+                                output: explorer.querySelector(
+                                    '[data-context-value="' + key + '"]'
+                                )
+                            };
+                        }).filter(function (field) {
+                            return field.select && field.output;
+                        });
+
+                        function renderContext(changedSelect, isReset) {
+                            fields.forEach(function (field) {
+                                const option = field.select.selectedOptions[0];
+
+                                if (!option) return;
+
+                                field.output.textContent =
+                                    option.textContent.trim();
+                            });
+
+                            if (!status) return;
+
+                            if (isReset) {
+                                status.textContent =
+                                    'Illustrative context reset to its starting values.';
+                                return;
+                            }
+
+                            if (changedSelect) {
+                                const label = Array.from(
+                                    form.querySelectorAll('label')
+                                ).find(function (candidate) {
+                                    return candidate.htmlFor === changedSelect.id;
+                                });
+
+                                const option = changedSelect.selectedOptions[0];
+
+                                status.textContent =
+                                    (label ? label.textContent.trim() : 'Attribute') +
+                                    ' updated to ' +
+                                    (option ? option.textContent.trim() : '') +
+                                    '. Context summary updated.';
+                            }
+                        }
+
+                        form.addEventListener('change', function (event) {
+                            const select = event.target;
+
+                            if (!(select instanceof HTMLSelectElement)) return;
+
+                            renderContext(select, false);
+                        });
+
+                        form.addEventListener('reset', function () {
+                            // The native reset completes after the reset event.
+                            window.requestAnimationFrame(function () {
+                                renderContext(null, true);
+                            });
+                        });
+
+                        // Do not allow an accidental form submission to navigate.
+                        form.addEventListener('submit', function (event) {
+                            event.preventDefault();
+                        });
+
+                        renderContext(null, false);
                     });
-                });
-            })();
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener(
+                    'DOMContentLoaded',
+                    initialiseContextExplorers,
+                    { once: true }
+                );
+            } else {
+                initialiseContextExplorers();
+            }
+        })();
 
     </script>
 
