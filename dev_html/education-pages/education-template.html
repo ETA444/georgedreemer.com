@@ -2143,6 +2143,238 @@
         }
     }
 
+    /* ── E6–Theses: dedicated research showcases ──────────────────
+    ───────────────────────────────────────────────────────────── */
+
+    .theses-section {
+        margin-block: var(--space-8);
+    }
+
+    .theses-section__intro {
+        max-width: 65ch;
+        margin: 0 0 var(--space-6);
+        color: var(--color-text-muted);
+        font-size: var(--text-sm);
+        line-height: 1.65;
+    }
+
+    /* ── Thesis identity ──────────────────────────────────────── */
+
+    .thesis-feature {
+        min-width: 0;
+    }
+
+    .thesis-feature + .thesis-feature {
+        margin-top: var(--space-8);
+        padding-top: var(--space-8);
+        border-top: 1px solid var(--color-border);
+    }
+
+    .thesis-feature__header {
+        margin-bottom: var(--space-5);
+    }
+
+    .thesis-feature__eyebrow {
+        margin: 0 0 var(--space-2);
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+
+    .thesis-feature__title {
+        max-width: 50ch;
+        margin: 0 0 var(--space-3);
+        color: var(--color-text);
+        font-size: var(--text-lg);
+        font-weight: 700;
+        line-height: 1.35;
+        overflow-wrap: anywhere;
+        text-wrap: balance;
+    }
+
+    .thesis-feature__synopsis {
+        max-width: 70ch;
+        margin: 0;
+        color: var(--color-text-muted);
+        font-size: var(--text-base);
+        line-height: 1.65;
+    }
+
+    /* ── Manuscript + presentation ────────────────────────────── */
+
+    .thesis-feature__evidence {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: var(--space-4);
+        align-items: start;
+    }
+
+    .theses-section .evidence-card,
+    .theses-section .evidence-card__body {
+        min-width: 0;
+    }
+
+    /* Reuse Canva card behaviour without inheriting Works-only scope. */
+    .theses-section .evidence-card__canva {
+        position: relative;
+        flex-shrink: 0;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+        background: var(--color-surface-2);
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .theses-section
+    .evidence-card__canva[data-orientation="portrait"] {
+        aspect-ratio: 210 / 297;
+    }
+
+    .theses-section .evidence-card__video {
+        position: relative;
+        flex-shrink: 0;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+    }
+
+    /* Native viewer controls remain unobstructed. */
+    .theses-section .evidence-card__canva iframe,
+    .theses-section .evidence-card__video iframe {
+        position: absolute;
+        inset: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        border: 0;
+    }
+
+    .thesis-feature__media-note {
+        margin: 0;
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        line-height: 1.65;
+    }
+
+    /* ── Scannable research explanation ───────────────────────── */
+
+    .thesis-feature__research {
+        display: grid;
+        gap: var(--space-4);
+        margin: var(--space-5) 0 0;
+        padding: var(--space-5);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-lg);
+        background: var(--color-surface);
+    }
+
+    .thesis-feature__research > div {
+        min-width: 0;
+    }
+
+    .thesis-feature__research dt {
+        margin-bottom: var(--space-2);
+        color: var(--color-text);
+        font-size: var(--text-sm);
+        font-weight: 700;
+        line-height: 1.4;
+    }
+
+    .thesis-feature__research dd {
+        max-width: 70ch;
+        margin: 0;
+        color: var(--color-text-muted);
+        font-size: var(--text-sm);
+        line-height: 1.65;
+    }
+
+    /* ── Resource links: same language as E6 Works ─────────────── */
+
+    .theses-section .evidence-card__actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-2);
+        margin-top: var(--space-4);
+    }
+
+    .theses-section .evidence-card__action {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: var(--space-2) var(--space-3);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        background: transparent;
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        font-weight: 600;
+        line-height: 1.4;
+        text-decoration: none;
+        transition:
+            color var(--transition),
+            background var(--transition),
+            border-color var(--transition);
+    }
+
+    .theses-section .evidence-card__action--primary {
+        background: var(--color-surface-2);
+        color: var(--color-text);
+    }
+
+    .theses-section .evidence-card__action:focus-visible {
+        outline: 2px solid var(--color-text);
+        outline-offset: 3px;
+    }
+
+    @media (hover: hover) {
+        .theses-section .evidence-card__action:hover {
+            border-color: var(--color-text-muted);
+            background: var(--color-surface-2);
+            color: var(--color-text);
+        }
+    }
+
+    .theses-section .evidence-card__action:active {
+        background: var(--color-surface-2);
+        color: var(--color-text);
+    }
+
+    @media (min-width: 800px) {
+        .thesis-feature__evidence {
+            grid-template-columns:
+                minmax(0, 0.85fr)
+                minmax(0, 1.15fr);
+        }
+
+        /* A showcase with only one artifact should not leave a hole. */
+        .thesis-feature__evidence > :only-child {
+            grid-column: 1 / -1;
+            width: 100%;
+            max-width: 40rem;
+            justify-self: center;
+        }
+
+        .thesis-feature__research > div {
+            display: grid;
+            grid-template-columns: minmax(0, 10rem) minmax(0, 1fr);
+            gap: var(--space-4);
+        }
+
+        .thesis-feature__research dt {
+            margin-bottom: 0;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .theses-section .evidence-card__action {
+            transition: none;
+        }
+    }
+
     /* ── E7: IN DEPTH ACCORDION ────────────────────────────── */
     .story-accordion {
       border: 1px solid var(--color-border);
@@ -4446,6 +4678,368 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- ============================================================
+            E6–THESES — RESEARCH SHOWCASE
+            ─────────────────────────────────────────────────────────────
+
+            PURPOSE
+            Present the MSc and Pre-MSc theses as substantial research
+            projects, with accessible explanations and inspectable work.
+
+            PLACEMENT
+            After E6 Works.
+            Before the later MADS Madlad section.
+
+            STRUCTURE
+            Two stacked showcases: MSc first, then Pre-MSc.
+            Each contains:
+                - Thesis identity and plain-language synopsis
+                - Manuscript and presentation/video evidence cards
+                - Research question, approach, and finding
+                - Direct resource links
+
+            DESIGN
+            Reuse the existing evidence-card system.
+            Add only the scoped thesis layout rules below.
+            No course-lens control. No new grade-rendering mechanism.
+
+            MEDIA
+            Canva manuscripts display automatically.
+            Video is visitor-controlled: no autoplay or looping.
+            Preserve native viewer controls; no overlays intercept input.
+
+            CONTENT STATUS
+            Replace every {{TOKEN}} before publication.
+            Research findings must come from the actual thesis.
+            Omit unavailable resources instead of showing dead links.
+
+        =============================================================== -->
+
+        <section
+            id="masters-theses"
+            class="theses-section"
+            aria-labelledby="masters-theses-heading"
+        >
+            <div class="section-label">
+                <h2
+                    id="masters-theses-heading"
+                    class="section-label__text"
+                >
+                    Theses
+                </h2>
+
+                <span
+                    class="section-label__line"
+                    aria-hidden="true"
+                ></span>
+            </div>
+
+            <p class="theses-section__intro">
+                Two research projects, with the papers, presentations,
+                and analytical work available to explore.
+            </p>
+
+
+            <!-- ── MSc thesis ─────────────────────────────────────── -->
+
+            <article
+                class="thesis-feature fade-in"
+                aria-labelledby="msc-thesis-title"
+            >
+                <header class="thesis-feature__header">
+                    <p class="thesis-feature__eyebrow">
+                        MSc thesis
+                    </p>
+
+                    <h3
+                        id="msc-thesis-title"
+                        class="thesis-feature__title"
+                    >
+                        {{MSC_FORMAL_THESIS_TITLE}}
+                    </h3>
+
+                    <p class="thesis-feature__synopsis">
+                        {{MSC_PLAIN_LANGUAGE_SYNOPSIS}}
+                    </p>
+                </header>
+
+                <div class="thesis-feature__evidence">
+
+                    <!-- Manuscript: reuse the E6 Canva variant. -->
+                    <section
+                        class="evidence-card"
+                        data-domain="data"
+                        aria-labelledby="msc-paper-heading"
+                    >
+                        <div
+                            class="evidence-card__canva"
+                            data-orientation="portrait"
+                        >
+                            <iframe
+                                src="{{MSC_CANVA_MANUSCRIPT_EMBED_URL}}"
+                                title="MSc thesis — interactive manuscript"
+                                width="840"
+                                height="1188"
+                                loading="lazy"
+                                allow="fullscreen"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+
+                        <div class="evidence-card__body">
+                            <h4
+                                id="msc-paper-heading"
+                                class="evidence-card__title"
+                            >
+                                Research paper
+                            </h4>
+
+                            <p class="thesis-feature__media-note">
+                                Explore the research design, analysis,
+                                results, and discussion.
+                            </p>
+
+                            <div class="evidence-card__actions">
+                                <a
+                                    class="evidence-card__action evidence-card__action--primary"
+                                    href="{{MSC_MANUSCRIPT_PUBLIC_URL}}"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Open full paper
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!-- Presentation: native controls, no autoplay. -->
+                    <section
+                        class="evidence-card"
+                        data-domain="data"
+                        aria-labelledby="msc-presentation-heading"
+                    >
+                        <div class="evidence-card__video">
+                            <iframe
+                                src="{{MSC_PRESENTATION_VIDEO_EMBED_URL}}"
+                                title="MSc thesis — research presentation"
+                                width="1600"
+                                height="900"
+                                loading="lazy"
+                                allow="fullscreen; picture-in-picture"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+
+                        <div class="evidence-card__body">
+                            <h4
+                                id="msc-presentation-heading"
+                                class="evidence-card__title"
+                            >
+                                Research presentation
+                            </h4>
+
+                            <p class="thesis-feature__media-note">
+                                {{MSC_PRESENTATION_DESCRIPTION}}
+                            </p>
+
+                            <div class="evidence-card__actions">
+                                <a
+                                    class="evidence-card__action evidence-card__action--primary"
+                                    href="{{MSC_PRESENTATION_PUBLIC_URL}}"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Open presentation
+                                </a>
+
+                                <a
+                                    class="evidence-card__action"
+                                    href="{{MSC_SPECIFIC_ANALYSIS_CODE_URL}}"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Analysis code
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+                <dl class="thesis-feature__research">
+                    <div>
+                        <dt>Research question</dt>
+                        <dd>{{MSC_RESEARCH_QUESTION}}</dd>
+                    </div>
+
+                    <div>
+                        <dt>Analytical approach</dt>
+                        <dd>{{MSC_ANALYTICAL_APPROACH}}</dd>
+                    </div>
+
+                    <div>
+                        <dt>Finding &amp; relevance</dt>
+                        <dd>{{MSC_FINDING_AND_RELEVANCE}}</dd>
+                    </div>
+                </dl>
+            </article>
+
+
+            <!-- ── Pre-MSc thesis ─────────────────────────────────── -->
+
+            <article
+                class="thesis-feature fade-in"
+                aria-labelledby="premsc-thesis-title"
+            >
+                <header class="thesis-feature__header">
+                    <p class="thesis-feature__eyebrow">
+                        Pre-MSc thesis
+                    </p>
+
+                    <h3
+                        id="premsc-thesis-title"
+                        class="thesis-feature__title"
+                    >
+                        {{PREMSC_FORMAL_THESIS_TITLE}}
+                    </h3>
+
+                    <p class="thesis-feature__synopsis">
+                        {{PREMSC_PLAIN_LANGUAGE_SYNOPSIS}}
+                    </p>
+                </header>
+
+                <div class="thesis-feature__evidence">
+
+                    <section
+                        class="evidence-card"
+                        data-domain="data"
+                        aria-labelledby="premsc-paper-heading"
+                    >
+                        <div
+                            class="evidence-card__canva"
+                            data-orientation="portrait"
+                        >
+                            <iframe
+                                src="{{PREMSC_CANVA_MANUSCRIPT_EMBED_URL}}"
+                                title="Pre-MSc thesis — interactive manuscript"
+                                width="840"
+                                height="1188"
+                                loading="lazy"
+                                allow="fullscreen"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+
+                        <div class="evidence-card__body">
+                            <h4
+                                id="premsc-paper-heading"
+                                class="evidence-card__title"
+                            >
+                                Research paper
+                            </h4>
+
+                            <p class="thesis-feature__media-note">
+                                Explore the research and inspect the
+                                accompanying Python analysis.
+                            </p>
+
+                            <div class="evidence-card__actions">
+                                <a
+                                    class="evidence-card__action evidence-card__action--primary"
+                                    href="https://georgedreemer.com/downloads/academic/Pre-MSc%20Thesis%20Paper.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Paper PDF
+                                </a>
+
+                                <a
+                                    class="evidence-card__action"
+                                    href="https://github.com/ETA444/msc_mads/blob/main/theses/premsc-thesis.py"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Python analysis
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!--
+                        Use this Canva presentation card if slides exist.
+                        If the original source instead provides a video,
+                        use the video-card structure from the MSc above.
+                        Omit this card entirely if neither exists.
+                    -->
+                    <section
+                        class="evidence-card"
+                        data-domain="data"
+                        aria-labelledby="premsc-presentation-heading"
+                    >
+                        <div
+                            class="evidence-card__canva"
+                            data-orientation="landscape"
+                        >
+                            <iframe
+                                src="{{PREMSC_CANVA_PRESENTATION_EMBED_URL}}"
+                                title="Pre-MSc thesis — interactive presentation"
+                                width="1600"
+                                height="900"
+                                loading="lazy"
+                                allow="fullscreen"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+
+                        <div class="evidence-card__body">
+                            <h4
+                                id="premsc-presentation-heading"
+                                class="evidence-card__title"
+                            >
+                                Research presentation
+                            </h4>
+
+                            <p class="thesis-feature__media-note">
+                                {{PREMSC_PRESENTATION_DESCRIPTION}}
+                            </p>
+
+                            <div class="evidence-card__actions">
+                                <a
+                                    class="evidence-card__action evidence-card__action--primary"
+                                    href="{{PREMSC_PRESENTATION_PUBLIC_URL}}"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Open presentation
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+                <dl class="thesis-feature__research">
+                    <div>
+                        <dt>Research question</dt>
+                        <dd>{{PREMSC_RESEARCH_QUESTION}}</dd>
+                    </div>
+
+                    <div>
+                        <dt>Analytical approach</dt>
+                        <dd>{{PREMSC_ANALYTICAL_APPROACH}}</dd>
+                    </div>
+
+                    <div>
+                        <dt>Finding &amp; relevance</dt>
+                        <dd>{{PREMSC_FINDING_AND_RELEVANCE}}</dd>
+                    </div>
+                </dl>
+            </article>
+
         </section>
 
 
