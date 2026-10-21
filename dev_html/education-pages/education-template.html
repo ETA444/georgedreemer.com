@@ -6843,6 +6843,57 @@
             }
         })();
 
+        // ── MSc thesis: two-group comparison ──────────────────────────
+        (function () {
+            'use strict';
+
+            function initGroupCompare() {
+                document.querySelectorAll('[data-group-compare]').forEach(function (root) {
+                    if (root.dataset.ready === 'true') return;
+
+                    const picker = root.querySelector('[data-group-picker]');
+                    const panels = Array.from(root.querySelectorAll('[data-group-panel]'));
+                    const status = root.querySelector('[data-group-status]');
+                    if (!picker || !panels.length) return;
+
+                    root.dataset.ready = 'true';
+                    picker.hidden = false;
+
+                    function show(value, announce) {
+                        panels.forEach(function (panel) {
+                            panel.hidden = panel.dataset.groupPanel !== value;
+                        });
+                        if (!announce || !status) return;
+                        const active = panels.find(function (panel) {
+                            return panel.dataset.groupPanel === value;
+                        });
+                        const heading = active && active.querySelector('h5');
+                        status.textContent = heading ? 'Showing ' + heading.textContent.trim() + '.' : '';
+                    }
+
+                    picker.addEventListener('change', function (event) {
+                        const target = event.target;
+                        if (target instanceof HTMLInputElement && target.type === 'radio') {
+                            show(target.value, true);
+                        }
+                    });
+
+                    const checked = picker.querySelector('input:checked') || picker.querySelector('input');
+                    if (checked) {
+                        checked.checked = true;
+                        show(checked.value, false);
+                    }
+                });
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initGroupCompare, { once: true });
+            } else {
+                initGroupCompare();
+            }
+        })();
+
+
     </script>
 
 </body>
