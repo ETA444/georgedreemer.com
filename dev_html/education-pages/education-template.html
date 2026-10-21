@@ -2143,80 +2143,191 @@
         }
     }
 
-    /* ── E6–Theses: dedicated research showcases ──────────────────
-    ───────────────────────────────────────────────────────────── */
+    /* ============================================================
+    E6–THESES SECTION
+
+    Layer 1  (30-second read): header, facts, research summary
+    Layer 2  (explore):        paper, presentation, explorer, results
+    Layer 3  (on demand):      disclosures and original tables
+    ============================================================ */
 
     .theses-section {
-        margin-block: var(--space-8);
+        --thesis-accent: var(--color-domain-data, var(--color-primary));
+        --thesis-tint: color-mix(in oklab, var(--thesis-accent) 7%, var(--color-surface));
+        --thesis-tint-strong: color-mix(in oklab, var(--thesis-accent) 14%, var(--color-surface));
+        --thesis-line: color-mix(in oklab, var(--thesis-accent) 30%, var(--color-border));
+        --thesis-body: color-mix(in oklab, var(--color-text) 78%, var(--color-text-muted));
+        --thesis-pad: clamp(var(--space-4), 3vw, var(--space-6));
+
+        margin-block: var(--space-12);
     }
+
+    .theses-section [hidden],
+    .thesis-expose [hidden] { display: none !important; }
 
     .theses-section__intro {
         max-width: 65ch;
-        margin: 0 0 var(--space-6);
-        color: var(--color-text-muted);
-        font-size: var(--text-sm);
-        line-height: 1.65;
+        margin: 0 0 var(--space-8);
+        color: var(--thesis-body);
+        font-size: var(--text-base);
+        line-height: 1.7;
     }
 
-    /* ── Thesis identity ──────────────────────────────────────── */
+    /* ── Thesis container & identity ──────────────────────────── */
 
     .thesis-feature {
         min-width: 0;
+        counter-reset: expose-step;
     }
 
     .thesis-feature + .thesis-feature {
-        margin-top: var(--space-8);
-        padding-top: var(--space-8);
+        margin-top: var(--space-16);
+        padding-top: var(--space-12);
         border-top: 1px solid var(--color-border);
     }
 
     .thesis-feature__header {
-        margin-bottom: var(--space-5);
+        margin-bottom: var(--space-6);
+        padding: var(--space-6) var(--thesis-pad);
+        border: 1px solid var(--thesis-line);
+        border-radius: var(--radius-xl);
+        background: var(--thesis-tint);
     }
 
     .thesis-feature__eyebrow {
-        margin: 0 0 var(--space-2);
-        color: var(--color-text-muted);
+        display: inline-flex;
+        align-items: center;
+        gap: var(--space-2);
+        margin: 0 0 var(--space-3);
+        padding: var(--space-1) var(--space-3);
+        border-radius: var(--radius-full);
+        background: var(--color-surface);
+        color: var(--color-text);
         font-size: var(--text-xs);
         font-weight: 600;
         letter-spacing: 0.06em;
         text-transform: uppercase;
     }
 
+    .thesis-feature__eyebrow::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--thesis-accent);
+    }
+
     .thesis-feature__title {
-        max-width: 50ch;
-        margin: 0 0 var(--space-3);
+        max-width: 40ch;
+        margin: 0 0 var(--space-4);
         color: var(--color-text);
-        font-size: var(--text-lg);
+        font-size: var(--text-xl);
         font-weight: 700;
-        line-height: 1.35;
+        line-height: 1.25;
         overflow-wrap: anywhere;
         text-wrap: balance;
     }
 
     .thesis-feature__synopsis {
-        max-width: 70ch;
+        max-width: 62ch;
         margin: 0;
-        color: var(--color-text-muted);
+        color: var(--thesis-body);
         font-size: var(--text-base);
-        line-height: 1.65;
+        line-height: 1.7;
     }
 
-    /* ── Manuscript + presentation ────────────────────────────── */
+    /* ── Facts strip + contribution (Block A) ─────────────────── */
+
+    .thesis-expose {
+        min-width: 0;
+        color: var(--color-text);
+    }
+
+    .thesis-expose *,
+    .thesis-expose *::before,
+    .thesis-expose *::after { box-sizing: border-box; }
+
+    .thesis-expose__facts {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1px;                              /* 1px gaps show the divider colour */
+        margin: 0 0 var(--space-4);
+        overflow: hidden;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-lg);
+        background: var(--color-border);
+    }
+
+    .thesis-expose__facts > div {
+        min-width: 0;
+        padding: var(--space-4) var(--space-5);
+        background: var(--color-surface);
+    }
+
+    .thesis-expose__facts dt {
+        margin-bottom: var(--space-2);
+        color: var(--thesis-body);
+        font-size: var(--text-xs);
+        line-height: 1.5;
+    }
+
+    .thesis-expose__facts dd {
+        margin: 0;
+        color: var(--thesis-accent);
+        font-size: var(--text-xl);
+        font-weight: 700;
+        line-height: 1.1;
+        font-variant-numeric: tabular-nums;
+    }
+
+    .thesis-expose__facts dd span {
+        display: block;
+        margin-top: var(--space-2);
+        color: var(--thesis-body);
+        font-size: var(--text-xs);
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    .thesis-expose__contribution {
+        max-width: none;
+        margin: 0 0 var(--space-6);
+        padding: var(--space-4) var(--space-5);
+        border: 1px solid var(--thesis-line);
+        border-radius: var(--radius-lg);
+        background: var(--thesis-tint);
+        color: var(--thesis-body);
+        font-size: var(--text-sm);
+        line-height: 1.7;
+    }
+
+    .thesis-expose__contribution strong {
+        display: block;
+        margin-bottom: var(--space-1);
+        color: var(--color-text);
+        font-size: var(--text-xs);
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+
+    /* ── Paper + presentation ─────────────────────────────────── */
 
     .thesis-feature__evidence {
         display: grid;
         grid-template-columns: minmax(0, 1fr);
-        gap: var(--space-4);
+        gap: var(--space-5);
         align-items: start;
+        margin-bottom: var(--space-6);
     }
 
     .theses-section .evidence-card,
-    .theses-section .evidence-card__body {
-        min-width: 0;
-    }
+    .theses-section .evidence-card__body { min-width: 0; }
 
-    /* Reuse Canva card behaviour without inheriting Works-only scope. */
+    .theses-section .evidence-card { box-shadow: var(--shadow-sm); }
+
+    .theses-section .evidence-card__body { padding: var(--space-5); }
+
     .theses-section .evidence-card__canva {
         position: relative;
         flex-shrink: 0;
@@ -2227,8 +2338,7 @@
         border-bottom: 1px solid var(--color-border);
     }
 
-    .theses-section
-    .evidence-card__canva[data-orientation="portrait"] {
+    .theses-section .evidence-card__canva[data-orientation="portrait"] {
         aspect-ratio: 210 / 297;
     }
 
@@ -2240,7 +2350,6 @@
         overflow: hidden;
     }
 
-    /* Native viewer controls remain unobstructed. */
     .theses-section .evidence-card__canva iframe,
     .theses-section .evidence-card__video iframe {
         position: absolute;
@@ -2254,44 +2363,58 @@
 
     .thesis-feature__media-note {
         margin: 0;
-        color: var(--color-text-muted);
-        font-size: var(--text-xs);
+        color: var(--thesis-body);
+        font-size: var(--text-sm);
         line-height: 1.65;
     }
 
-    /* ── Scannable research explanation ───────────────────────── */
+    /* ── Research summary: three cards instead of one grey box ── */
 
     .thesis-feature__research {
         display: grid;
         gap: var(--space-4);
-        margin: var(--space-5) 0 0;
+        margin: 0 0 var(--space-6);
+    }
+
+    .thesis-feature__research > div {
+        min-width: 0;
         padding: var(--space-5);
         border: 1px solid var(--color-border);
         border-radius: var(--radius-lg);
         background: var(--color-surface);
     }
 
-    .thesis-feature__research > div {
-        min-width: 0;
+    .thesis-feature__research dt {
+        display: flex;
+        align-items: center;
+        gap: var(--space-2);
+        margin-bottom: var(--space-3);
+        color: var(--color-text);
+        font-size: var(--text-xs);
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        line-height: 1.4;
+        text-transform: uppercase;
     }
 
-    .thesis-feature__research dt {
-        margin-bottom: var(--space-2);
-        color: var(--color-text);
-        font-size: var(--text-sm);
-        font-weight: 700;
-        line-height: 1.4;
+    .thesis-feature__research dt::before {
+        content: "";
+        flex-shrink: 0;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--thesis-accent);
     }
 
     .thesis-feature__research dd {
-        max-width: 70ch;
+        max-width: 65ch;
         margin: 0;
-        color: var(--color-text-muted);
+        color: var(--thesis-body);
         font-size: var(--text-sm);
-        line-height: 1.65;
+        line-height: 1.7;
     }
 
-    /* ── Resource links: same language as E6 Works ─────────────── */
+    /* ── Resource links ───────────────────────────────────────── */
 
     .theses-section .evidence-card__actions {
         display: flex;
@@ -2305,180 +2428,68 @@
         align-items: center;
         justify-content: center;
         min-height: 44px;
-        padding: var(--space-2) var(--space-3);
+        padding: var(--space-2) var(--space-4);
         border: 1px solid var(--color-border);
         border-radius: var(--radius-md);
         background: transparent;
-        color: var(--color-text-muted);
+        color: var(--thesis-body);
         font-size: var(--text-xs);
         font-weight: 600;
         line-height: 1.4;
         text-decoration: none;
-        transition:
-            color var(--transition),
-            background var(--transition),
-            border-color var(--transition);
+        transition: color var(--transition), background var(--transition),
+                    border-color var(--transition);
     }
 
     .theses-section .evidence-card__action--primary {
-        background: var(--color-surface-2);
+        border-color: var(--thesis-line);
+        background: var(--thesis-tint);
         color: var(--color-text);
     }
 
-    .theses-section .evidence-card__action:focus-visible {
-        outline: 2px solid var(--color-text);
-        outline-offset: 3px;
-    }
-
-    @media (hover: hover) {
-        .theses-section .evidence-card__action:hover {
-            border-color: var(--color-text-muted);
-            background: var(--color-surface-2);
-            color: var(--color-text);
-        }
-    }
-
-    .theses-section .evidence-card__action:active {
-        background: var(--color-surface-2);
-        color: var(--color-text);
-    }
-
-    @media (min-width: 800px) {
-        .thesis-feature__evidence {
-            grid-template-columns:
-                minmax(0, 0.85fr)
-                minmax(0, 1.15fr);
-        }
-
-        /* A showcase with only one artifact should not leave a hole. */
-        .thesis-feature__evidence > :only-child {
-            grid-column: 1 / -1;
-            width: 100%;
-            max-width: 40rem;
-            justify-self: center;
-        }
-
-        .thesis-feature__research > div {
-            display: grid;
-            grid-template-columns: minmax(0, 10rem) minmax(0, 1fr);
-            gap: var(--space-4);
-        }
-
-        .thesis-feature__research dt {
-            margin-bottom: 0;
-        }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-        .theses-section .evidence-card__action {
-            transition: none;
-        }
-    }
-
-    /* ============================================================
-    E6–THESIS — ADDITIVE RESEARCH EXPOSITION
-    ============================================================ */
-
-    .thesis-expose {
-        min-width: 0;
-        color: var(--color-text);
-    }
-
-    .thesis-expose *,
-    .thesis-expose *::before,
-    .thesis-expose *::after {
-        box-sizing: border-box;
-    }
-
-    /* ── Facts strip ──────────────────────────────────────────── */
-
-    .thesis-expose__facts {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: var(--space-4);
-        margin: 0 0 var(--space-4);
-        padding: var(--space-4);
-        border: 1px solid var(--color-border);
-        border-radius: var(--radius-lg);
-        background: var(--color-surface);
-    }
-
-    .thesis-expose__facts > div {
-        min-width: 0;
-    }
-
-    .thesis-expose__facts dt {
-        margin-bottom: var(--space-1);
-        color: var(--color-text-muted);
-        font-size: var(--text-xs);
-        line-height: 1.5;
-    }
-
-    .thesis-expose__facts dd {
-        margin: 0;
-        color: var(--color-text);
-        font-size: var(--text-lg);
-        font-weight: 700;
-        line-height: 1.35;
-    }
-
-    .thesis-expose__facts dd span {
-        display: block;
-        margin-top: var(--space-1);
-        color: var(--color-text-muted);
-        font-size: var(--text-xs);
-        font-weight: 400;
-        line-height: 1.5;
-    }
-
-    .thesis-expose__contribution {
-        max-width: 75ch;
-        margin: 0 0 var(--space-5);
-        color: var(--color-text-muted);
-        font-size: var(--text-sm);
-        line-height: 1.7;
-    }
-
-    .thesis-expose__contribution strong {
-        color: var(--color-text);
-        font-weight: 600;
-    }
-
-    /* ── Editorial sections ──────────────────────────────────── */
+    /* ── Numbered sections ────────────────────────────────────── */
 
     .thesis-expose__section {
         min-width: 0;
-        margin-top: var(--space-8);
+        counter-increment: expose-step;
+        margin-top: var(--space-12);
+        padding-top: var(--space-8);
+        border-top: 1px solid var(--color-border);
     }
 
-    .thesis-expose__section-head {
-        margin-bottom: var(--space-4);
-    }
+    .thesis-expose__section-head { margin-bottom: var(--space-6); }
 
     .thesis-expose__eyebrow {
         margin: 0 0 var(--space-2);
-        color: var(--color-text-muted);
+        color: var(--color-text);
         font-size: var(--text-xs);
-        font-weight: 600;
+        font-weight: 700;
         line-height: 1.5;
         letter-spacing: 0.06em;
         text-transform: uppercase;
     }
 
+    .thesis-expose__section-head .thesis-expose__eyebrow::before {
+        content: counter(expose-step, decimal-leading-zero) "  ";
+        color: var(--thesis-accent);
+        font-variant-numeric: tabular-nums;
+    }
+
     .thesis-expose__section-head h4 {
+        max-width: 30ch;
         margin: 0 0 var(--space-3);
         color: var(--color-text);
         font-size: var(--text-lg);
         font-weight: 700;
-        line-height: 1.35;
+        line-height: 1.3;
         text-wrap: balance;
     }
 
     .thesis-expose__section-head > p:last-child {
-        max-width: 70ch;
+        max-width: 65ch;
         margin: 0;
-        color: var(--color-text-muted);
-        font-size: var(--text-sm);
+        color: var(--thesis-body);
+        font-size: var(--text-base);
         line-height: 1.7;
     }
 
@@ -2488,15 +2499,16 @@
         display: grid;
         grid-template-columns: minmax(0, 1fr);
         overflow: hidden;
-        border: 1px solid var(--color-border);
-        border-radius: var(--radius-lg);
+        border: 1px solid var(--thesis-line);
+        border-radius: var(--radius-xl);
         background: var(--color-surface);
+        box-shadow: var(--shadow-sm);
     }
 
     .thesis-expose__context-form {
         min-width: 0;
         margin: 0;
-        padding: var(--space-5);
+        padding: var(--thesis-pad);
     }
 
     .thesis-expose__context-form fieldset {
@@ -2511,15 +2523,15 @@
         margin-bottom: var(--space-2);
         padding: 0;
         color: var(--color-text);
-        font-size: var(--text-sm);
+        font-size: var(--text-base);
         font-weight: 700;
-        line-height: 1.5;
+        line-height: 1.4;
     }
 
     .thesis-expose__helper {
-        max-width: 65ch;
+        max-width: 60ch;
         margin: 0;
-        color: var(--color-text-muted);
+        color: var(--thesis-body);
         font-size: var(--text-xs);
         line-height: 1.65;
     }
@@ -2527,12 +2539,10 @@
     .thesis-expose__fields {
         display: grid;
         gap: var(--space-4);
-        margin-top: var(--space-4);
+        margin-top: var(--space-5);
     }
 
-    .thesis-expose__field {
-        min-width: 0;
-    }
+    .thesis-expose__field { min-width: 0; }
 
     .thesis-expose__field label {
         display: block;
@@ -2551,13 +2561,12 @@
         padding: var(--space-3);
         border: 1px solid var(--color-border);
         border-radius: var(--radius-md);
-        background: var(--color-surface);
+        background: var(--color-surface-2);
         color: var(--color-text);
-
-        /* Keep form text comfortably readable on mobile. */
         font: inherit;
-        font-size: max(1rem, var(--text-base));
+        font-size: max(1rem, var(--text-base));   /* avoid iOS zoom on focus */
         line-height: 1.5;
+        transition: border-color var(--transition), background var(--transition);
     }
 
     .thesis-expose__reset {
@@ -2565,23 +2574,24 @@
         align-items: center;
         justify-content: center;
         min-height: 44px;
-        margin-top: var(--space-4);
-        padding: var(--space-2) var(--space-3);
+        margin-top: var(--space-5);
+        padding: var(--space-2) var(--space-4);
         border: 1px solid var(--color-border);
         border-radius: var(--radius-md);
-        background: var(--color-surface);
-        color: var(--color-text);
+        background: transparent;
+        color: var(--thesis-body);
         font: inherit;
         font-size: var(--text-xs);
         font-weight: 600;
         cursor: pointer;
     }
 
+    /* The "result" side carries the tint, so it reads as the output */
     .thesis-expose__context-preview {
         min-width: 0;
-        padding: var(--space-5);
-        border-top: 1px solid var(--color-border);
-        background: var(--color-surface-2);
+        padding: var(--thesis-pad);
+        border-top: 1px solid var(--thesis-line);
+        background: var(--thesis-tint);
     }
 
     .thesis-expose__preview-intro {
@@ -2593,17 +2603,21 @@
 
     .thesis-expose__context-summary {
         display: grid;
-        gap: var(--space-3);
+        gap: 0;
         margin: 0;
     }
 
     .thesis-expose__context-summary > div {
         min-width: 0;
+        padding: var(--space-3) 0;
+        border-bottom: 1px dashed var(--thesis-line);
     }
+
+    .thesis-expose__context-summary > div:first-child { padding-top: 0; }
 
     .thesis-expose__context-summary dt {
         margin-bottom: var(--space-1);
-        color: var(--color-text-muted);
+        color: var(--thesis-body);
         font-size: var(--text-xs);
         line-height: 1.5;
     }
@@ -2613,53 +2627,78 @@
         color: var(--color-text);
         font-size: var(--text-sm);
         font-weight: 600;
-        line-height: 1.6;
+        line-height: 1.5;
         overflow-wrap: anywhere;
     }
 
     .thesis-expose__preview-question {
-        margin: var(--space-5) 0 var(--space-2);
+        margin: var(--space-5) 0 var(--space-3);
+        padding: var(--space-3) var(--space-4);
+        border: 1px solid var(--thesis-line);
+        border-radius: var(--radius-md);
+        background: var(--color-surface);
         color: var(--color-text);
         font-size: var(--text-sm);
         font-weight: 700;
         line-height: 1.6;
     }
 
-    /* ── Findings and implications ────────────────────────────── */
+    /* ── Findings callout and implications ────────────────────── */
 
     .thesis-expose__finding {
-        padding: var(--space-5);
-        border: 1px solid var(--color-border);
-        border-radius: var(--radius-lg);
-        background: var(--color-surface-2);
+        padding: var(--space-6) var(--thesis-pad);
+        border: 1px solid var(--thesis-line);
+        border-radius: var(--radius-xl);
+        background: var(--thesis-tint);
     }
 
     .thesis-expose__finding-label {
-        margin: 0 0 var(--space-2);
+        display: inline-block;
+        margin: 0 0 var(--space-3);
+        padding: var(--space-1) var(--space-3);
+        border-radius: var(--radius-full);
+        background: var(--color-surface);
         color: var(--color-text);
-        font-size: var(--text-sm);
+        font-size: var(--text-xs);
         font-weight: 700;
+        letter-spacing: 0.06em;
         line-height: 1.5;
+        text-transform: uppercase;
     }
 
     .thesis-expose__finding > p:last-child {
-        max-width: 70ch;
+        max-width: 62ch;
         margin: 0;
-        color: var(--color-text-muted);
-        font-size: var(--text-sm);
+        color: var(--color-text);
+        font-size: var(--text-base);
         line-height: 1.7;
     }
 
     .thesis-expose__implications {
         display: grid;
         gap: var(--space-4);
-        margin: var(--space-5) 0 0;
+        margin: var(--space-6) 0 0;
+        counter-reset: implication;
     }
 
     .thesis-expose__implications > div {
         min-width: 0;
-        padding-bottom: var(--space-4);
-        border-bottom: 1px solid var(--color-border);
+        counter-increment: implication;
+        padding: var(--space-5);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-lg);
+        background: var(--color-surface);
+    }
+
+    .thesis-expose__implications > div::before {
+        content: counter(implication);
+        content: counter(implication) / "";     /* decorative: skip for screen readers */
+        display: block;
+        margin-bottom: var(--space-3);
+        color: var(--thesis-accent);
+        font-size: var(--text-xl);
+        font-weight: 700;
+        line-height: 1;
     }
 
     .thesis-expose__implications dt {
@@ -2671,14 +2710,13 @@
     }
 
     .thesis-expose__implications dd {
-        max-width: 70ch;
         margin: 0;
-        color: var(--color-text-muted);
+        color: var(--thesis-body);
         font-size: var(--text-sm);
         line-height: 1.7;
     }
 
-    /* ── Native disclosure panels ─────────────────────────────── */
+    /* ── Disclosures: tidy accordions ─────────────────────────── */
 
     .thesis-expose__disclosures {
         display: grid;
@@ -2692,41 +2730,63 @@
         background: var(--color-surface);
     }
 
+    .thesis-expose__detail[open] {
+        border-color: var(--thesis-line);
+        box-shadow: var(--shadow-sm);
+    }
+
     .thesis-expose__detail > summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--space-4);
         min-height: 44px;
-        padding: var(--space-4);
+        padding: var(--space-4) var(--space-5);
+        border-radius: var(--radius-lg);
         color: var(--color-text);
         font-size: var(--text-sm);
         font-weight: 600;
-        line-height: 1.6;
+        line-height: 1.5;
         cursor: pointer;
+        list-style: none;
     }
 
-    /* Keep the native disclosure marker for familiar interaction. */
-    .thesis-expose__detail > summary::marker {
-        color: var(--color-text-muted);
+    .thesis-expose__detail > summary::-webkit-details-marker { display: none; }
+
+    .thesis-expose__detail > summary::after {
+        content: "";
+        flex-shrink: 0;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-right: 2px solid var(--thesis-accent);
+        border-bottom: 2px solid var(--thesis-accent);
+        transform: rotate(45deg);
+        transition: transform var(--transition);
     }
 
     .thesis-expose__detail[open] > summary {
-        border-bottom: 1px solid var(--color-border);
+        border-bottom: 1px solid var(--thesis-line);
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        background: var(--thesis-tint);
     }
+
+    .thesis-expose__detail[open] > summary::after { transform: rotate(-135deg); }
 
     .thesis-expose__detail-body {
         min-width: 0;
-        padding: var(--space-4);
+        padding: var(--space-5);
     }
 
     .thesis-expose__detail-body > p {
-        max-width: 75ch;
-        margin: 0 0 var(--space-3);
-        color: var(--color-text-muted);
+        max-width: 70ch;
+        margin: 0 0 var(--space-4);
+        color: var(--thesis-body);
         font-size: var(--text-sm);
         line-height: 1.7;
     }
 
-    .thesis-expose__detail-body > :last-child {
-        margin-bottom: 0;
-    }
+    .thesis-expose__detail-body > :last-child { margin-bottom: 0; }
 
     .thesis-expose__list {
         display: grid;
@@ -2736,11 +2796,13 @@
     }
 
     .thesis-expose__list li {
-        max-width: 75ch;
-        color: var(--color-text-muted);
+        max-width: 70ch;
+        color: var(--thesis-body);
         font-size: var(--text-sm);
         line-height: 1.7;
     }
+
+    .thesis-expose__list li::marker { color: var(--thesis-accent); }
 
     .thesis-expose__list strong {
         color: var(--color-text);
@@ -2751,48 +2813,43 @@
 
     .thesis-expose__table-slot {
         min-width: 0;
-        margin: var(--space-4) 0 0;
+        margin: var(--space-5) 0 0;
     }
 
     .thesis-expose__table-slot figcaption {
         margin-bottom: var(--space-2);
-        color: var(--color-text-muted);
+        color: var(--color-text);
         font-size: var(--text-xs);
+        font-weight: 600;
         line-height: 1.6;
     }
 
     .thesis-expose__table-placeholder {
         display: grid;
         place-items: center;
-        min-height: 8rem;
+        min-height: 10rem;
         padding: var(--space-4);
-        border: 1px dashed var(--color-border);
+        border: 1px dashed var(--thesis-line);
         border-radius: var(--radius-md);
-        background: var(--color-surface-2);
-        color: var(--color-text-muted);
+        background: var(--thesis-tint);
+        color: var(--thesis-body);
         font-size: var(--text-xs);
         line-height: 1.6;
         text-align: center;
     }
 
-    /*
-    Optional wrapper for an original HTML table:
-    <div class="thesis-expose__table-scroll"
-            role="region"
-            aria-label="Descriptive table name"
-            tabindex="0">
-        <table>...</table>
-    </div>
-    */
     .thesis-expose__table-scroll {
         max-width: 100%;
         overflow-x: auto;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
     }
 
     .thesis-expose__table-scroll table {
         width: 100%;
         border-collapse: collapse;
         font-size: var(--text-xs);
+        font-variant-numeric: tabular-nums;
     }
 
     .thesis-expose__table-scroll th,
@@ -2803,27 +2860,27 @@
         vertical-align: top;
     }
 
-    .thesis-expose__table-scroll th {
+    .thesis-expose__table-scroll thead th {
+        background: var(--thesis-tint-strong);
         color: var(--color-text);
-        font-weight: 600;
+        font-weight: 700;
     }
 
-    .thesis-expose__table-scroll td {
-        color: var(--color-text-muted);
-    }
+    .thesis-expose__table-scroll td { color: var(--thesis-body); }
 
-    /* ── Interpretation notes ────────────────────────────────── */
+    .thesis-expose__table-scroll tbody tr:nth-child(even) { background: var(--thesis-tint); }
+
+    /* ── Notes ────────────────────────────────────────────────── */
 
     .thesis-expose__boundary,
     .thesis-expose__detail-body > .thesis-expose__boundary {
-        max-width: 75ch;
-        margin-top: var(--space-3);
-        color: var(--color-text-muted);
+        max-width: 70ch;
+        margin-top: var(--space-4);
+        color: var(--thesis-body);
         font-size: var(--text-xs);
         line-height: 1.65;
     }
 
-    /* Screen-reader announcement, without a visual layout shift. */
     .thesis-expose__sr-only {
         position: absolute;
         width: 1px;
@@ -2836,67 +2893,9 @@
         border: 0;
     }
 
-    /* ── Focus and interaction ────────────────────────────────── */
+    /* ── Ranking and group comparison ─────────────────────────── */
 
-    .thesis-expose__field select:focus-visible,
-    .thesis-expose__reset:focus-visible,
-    .thesis-expose__detail > summary:focus-visible,
-    .thesis-expose__table-scroll:focus-visible {
-        outline: 2px solid var(--color-text);
-        outline-offset: 3px;
-    }
-
-    @media (hover: hover) {
-        .thesis-expose__reset:hover,
-        .thesis-expose__detail > summary:hover {
-            background: var(--color-surface-2);
-        }
-    }
-
-    .thesis-expose__reset:active {
-        background: var(--color-surface-2);
-    }
-
-    /* ── Responsive layout ───────────────────────────────────── */
-
-    @media (min-width: 700px) {
-        .thesis-expose__facts {
-            grid-template-columns: repeat(4, minmax(0, 1fr));
-        }
-    }
-
-    @media (min-width: 1000px) {
-        .thesis-expose__explorer {
-            grid-template-columns:
-                minmax(0, 1fr)
-                minmax(0, 1fr);
-        }
-
-        .thesis-expose__context-preview {
-            border-top: 0;
-            border-inline-start: 1px solid var(--color-border);
-        }
-    }
-
-    /* Print the deeper evidence without requiring interaction. */
-    @media print {
-        .thesis-expose__context-form {
-            display: none;
-        }
-
-        .thesis-expose__explorer {
-            display: block;
-        }
-
-        .thesis-expose__context-preview {
-            border: 0;
-        }
-    }
-
-    /* MSc thesis: group comparison, ranking and hidden handling */
-    .thesis-expose [hidden] { display: none !important; }
-
-    .thesis-expose__ranking-block { margin-bottom: var(--space-5); }
+    .thesis-expose__ranking-block { margin-bottom: var(--space-6); }
 
     .thesis-expose__ranking,
     .thesis-expose__group-list {
@@ -2909,7 +2908,14 @@
         line-height: 1.6;
     }
 
+    .thesis-expose__ranking li::marker,
+    .thesis-expose__group-list li::marker {
+        color: var(--thesis-accent);
+        font-weight: 700;
+    }
+
     .thesis-expose__picker { min-width: 0; margin: 0 0 var(--space-4); padding: 0; border: 0; }
+
     .thesis-expose__picker legend {
         margin-bottom: var(--space-2);
         color: var(--color-text);
@@ -2917,29 +2923,40 @@
         font-weight: 700;
     }
 
-    .thesis-expose__segmented { position: relative; display: flex; flex-wrap: wrap; gap: var(--space-2); }
-    .thesis-expose__segmented input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+    .thesis-expose__segmented {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-2);
+    }
+
+    .thesis-expose__segmented input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+    }
+
     .thesis-expose__segmented label {
         display: inline-flex;
         align-items: center;
         min-height: 44px;
-        padding: var(--space-2) var(--space-3);
+        padding: var(--space-2) var(--space-4);
         border: 1px solid var(--color-border);
-        border-radius: var(--radius-md);
+        border-radius: var(--radius-full);
         background: var(--color-surface);
-        color: var(--color-text-muted);
+        color: var(--thesis-body);
         font-size: var(--text-xs);
         font-weight: 600;
         cursor: pointer;
+        transition: background var(--transition), border-color var(--transition),
+                    color var(--transition);
     }
+
     .thesis-expose__segmented input:checked + label {
-        background: var(--color-surface-2);
-        border-color: var(--color-text-muted);
+        border-color: var(--thesis-accent);
+        background: var(--thesis-tint-strong);
         color: var(--color-text);
-    }
-    .thesis-expose__segmented input:focus-visible + label {
-        outline: 2px solid var(--color-text);
-        outline-offset: 3px;
     }
 
     .thesis-expose__group-panel {
@@ -2948,22 +2965,112 @@
         border-radius: var(--radius-lg);
         background: var(--color-surface);
     }
+
     .thesis-expose__group-panel + .thesis-expose__group-panel { margin-top: var(--space-3); }
+
     .thesis-expose__group-panel h5 {
         margin: 0 0 var(--space-4);
         color: var(--color-text);
         font-size: var(--text-sm);
         font-weight: 700;
     }
-    .thesis-expose__group-panel h5 span { color: var(--color-text-muted); font-weight: 400; }
+
+    .thesis-expose__group-panel h5 span { color: var(--thesis-body); font-weight: 400; }
 
     .thesis-expose__group-columns { display: grid; gap: var(--space-5); }
-    .thesis-expose__group-title { margin: 0 0 var(--space-2); color: var(--color-text); font-size: var(--text-sm); font-weight: 700; }
-    .thesis-expose__group-title span { display: block; color: var(--color-text-muted); font-size: var(--text-xs); font-weight: 400; }
-    .thesis-expose__ref { color: var(--color-text-muted); font-size: var(--text-xs); }
+
+    .thesis-expose__group-title {
+        margin: 0 0 var(--space-2);
+        color: var(--color-text);
+        font-size: var(--text-sm);
+        font-weight: 700;
+    }
+
+    .thesis-expose__group-title span {
+        display: block;
+        color: var(--thesis-body);
+        font-size: var(--text-xs);
+        font-weight: 400;
+    }
+
+    .thesis-expose__ref { color: var(--thesis-body); font-size: var(--text-xs); }
+
+    /* ── Focus, hover, active ─────────────────────────────────── */
+
+    .theses-section .evidence-card__action:focus-visible,
+    .thesis-expose__field select:focus-visible,
+    .thesis-expose__reset:focus-visible,
+    .thesis-expose__detail > summary:focus-visible,
+    .thesis-expose__table-scroll:focus-visible,
+    .thesis-expose__segmented input:focus-visible + label {
+        outline: 2px solid var(--color-text);
+        outline-offset: 3px;
+    }
+
+    @media (hover: hover) {
+        .theses-section .evidence-card__action:hover,
+        .thesis-expose__reset:hover,
+        .thesis-expose__segmented label:hover {
+            border-color: var(--thesis-accent);
+            background: var(--thesis-tint);
+            color: var(--color-text);
+        }
+
+        .thesis-expose__field select:hover { border-color: var(--thesis-accent); }
+
+        .thesis-expose__detail:not([open]) > summary:hover { background: var(--thesis-tint); }
+    }
+
+    .theses-section .evidence-card__action:active,
+    .thesis-expose__reset:active { background: var(--thesis-tint-strong); }
+
+    /* ── Responsive ───────────────────────────────────────────── */
 
     @media (min-width: 640px) {
         .thesis-expose__group-columns { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (min-width: 700px) {
+        .thesis-expose__facts { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    }
+
+    @media (min-width: 800px) {
+        .thesis-feature__evidence { grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); }
+
+        .thesis-feature__evidence > :only-child {
+            grid-column: 1 / -1;
+            justify-self: center;
+            width: 100%;
+            max-width: 40rem;
+        }
+    }
+
+    @media (min-width: 900px) {
+        .thesis-expose__implications { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+
+    @media (min-width: 1000px) {
+        .thesis-feature__research { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+        .thesis-expose__explorer { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+
+        .thesis-expose__context-preview {
+            border-top: 0;
+            border-inline-start: 1px solid var(--thesis-line);
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .theses-section .evidence-card__action,
+        .thesis-expose__field select,
+        .thesis-expose__segmented label,
+        .thesis-expose__detail > summary::after { transition: none; }
+    }
+
+    @media print {
+        .thesis-expose__context-form { display: none; }
+        .thesis-expose__explorer { display: block; }
+        .thesis-expose__context-preview { border: 0; }
     }
 
     /* ── E7: IN DEPTH ACCORDION ────────────────────────────── */
