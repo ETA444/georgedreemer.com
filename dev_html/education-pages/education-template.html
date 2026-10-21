@@ -2995,6 +2995,33 @@
 
     .thesis-expose__ref { color: var(--thesis-body); font-size: var(--text-xs); }
 
+    /* ── Source-document toolbar ───────────────────── */
+    .thesis-toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: var(--space-2);
+        margin: 0 0 var(--space-5);
+    }
+
+    .thesis-toolbar .evidence-card__action {
+        gap: var(--space-2);
+    }
+
+    /* Slides panel: let the embed fill the disclosure body. */
+    .thesis-defence .evidence-card__canva {
+        margin-top: var(--space-3);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+    }
+
+    @media (max-width: 480px) {
+        /* Primary action gets its own row on small screens. */
+        .thesis-toolbar .evidence-card__action--primary {
+            flex: 1 1 100%;
+        }
+    }
+
     /* ── Focus, hover, active ─────────────────────────────────── */
 
     .theses-section .evidence-card__action:focus-visible,
@@ -6410,6 +6437,22 @@
                                 </div>
                             </details>
 
+                            <details class="thesis-expose__detail thesis-defence" data-defence-slides>
+                                <summary>See the defence slides</summary>
+
+                                <div class="thesis-expose__detail-body">
+                                    <p>
+                                        The slides I used to present the research question, modelling
+                                        approach, and findings to the Committee at my Thesis Defence.
+                                    </p>
+
+                                    <div class="evidence-card__canva" data-orientation="landscape">
+                                        <iframe data-src="https://www.canva.com/design/XXXX/view?embed" title="MSc thesis — defence presentation"
+                                            width="1600" height="900" allow="fullscreen" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </details>
+
                         </div>
 
                     </section>
@@ -7020,6 +7063,22 @@
             }
         })();
 
+        // ── Defence slides: load the embed on first open ─────────────
+        (function () {
+            'use strict';
+
+            document.querySelectorAll('[data-defence-slides]').forEach(function (panel) {
+                panel.addEventListener('toggle', function () {
+                    if (!panel.open) return;
+
+                    const frame = panel.querySelector('iframe[data-src]');
+                    if (!frame) return;
+
+                    frame.src = frame.dataset.src;
+                    frame.removeAttribute('data-src');
+                });
+            });
+        })();
 
     </script>
 
