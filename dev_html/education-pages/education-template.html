@@ -5434,41 +5434,10 @@
 
             <article class="thesis-feature fade-in" aria-labelledby="msc-thesis-title">
                 <header class="thesis-feature__header">
-                    <!-- ============================================================
-                         MSc THESIS ADDITION A — RESEARCH FACTS & CONTRIBUTION
 
-                         Placement:
-                           Inside the MSc .thesis-feature article,
-                           immediately after .thesis-feature__header.
-
-                         Existing manuscript and presentation cards follow unchanged.
-                    =============================================================== -->
-
-                    <div class="thesis-expose">
-
-                        <dl class="thesis-expose__facts" aria-label="Research at a glance">
-                            <div>
-                                <dt>Participants</dt>
-                                <dd>329 <span>in Italy</span></dd>
-                            </div>
-
-                            <div>
-                                <dt>Preference groups</dt>
-                                <dd>2 <span>model-based: 46.5% / 53.5%</span></dd>
-                            </div>
-
-                            <div>
-                                <dt>Contextual attributes</dt>
-                                <dd>5 <span>examined together</span></dd>
-                            </div>
-
-                            <div>
-                                <dt>Analysis tools</dt>
-                                <dd>R <span>&amp; Stata 17</span></dd>
-                            </div>
-                        </dl>
-
-                    </div>
+                    <p class="thesis-feature__eyebrow">
+                        MSc thesis · University of Groningen · 2024 · Grade: 8 / 10
+                    </p>
 
                     <h3 id="msc-thesis-title" class="thesis-feature__title">
                         Willingness to Share Health Data in Italy:
@@ -5484,9 +5453,68 @@
                     </p>
                 </header>
 
-                <div class="thesis-feature__evidence">
+                <nav class="thesis-toolbar" aria-label="MSc thesis source documents">
+                    <a class="evidence-card__action evidence-card__action--primary" href="{{MSC_MANUSCRIPT_PUBLIC_URL}}" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="bi bi-file-earmark-text" aria-hidden="true"></i>
+                        Read the full paper
+                    </a>
 
-                    <!-- Manuscript: reuse the E6 Canva variant. -->
+                    <a class="evidence-card__action" href="{{MSC_PRESENTATION_PUBLIC_URL}}" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-easel" aria-hidden="true"></i>
+                        Defence slides
+                    </a>
+
+                    <a class="evidence-card__action" href="{{MSC_SPECIFIC_ANALYSIS_CODE_URL}}" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="bi bi-github" aria-hidden="true"></i>
+                        Analysis code
+                    </a>
+
+                    <a class="evidence-card__action" href="{{MSC_MANUSCRIPT_PDF_URL}}" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-download" aria-hidden="true"></i>
+                        PDF
+                    </a>
+                </nav>
+
+                <div class="thesis-expose">
+                    <dl class="thesis-expose__facts" aria-label="Research at a glance">
+                        <div>
+                            <dt>Participants</dt>
+                            <dd>329 <span>in Italy</span></dd>
+                        </div>
+
+                        <div>
+                            <dt>Latent preference groups</dt>
+                            <dd>2 <span>46.5% / 53.5% of respondents</span></dd>
+                        </div>
+
+                        <div>
+                            <dt>Contextual attributes</dt>
+                            <dd>5 <span>examined together</span></dd>
+                        </div>
+
+                        <div>
+                            <dt>Analysis tools</dt>
+                            <dd>R <span>&amp; Stata 17</span></dd>
+                        </div>
+                    </dl>
+
+                    <!--p class="thesis-expose__contribution">
+                        <strong>My analytical contribution:</strong>
+                        I prepared and checked the supplied Italian DCE dataset, profiled
+                        the sample in R, estimated and compared five preference models in
+                        Stata 17, selected the two-class latent class model as the primary
+                        analysis using fit criteria, calculated attribute importance, and
+                        translated the findings into recommendations for health-data
+                        governance. The source research team designed and administered
+                        the original experiment.
+                    </p-->
+
+                </div>
+
+                <!--div class="thesis-feature__evidence">
+
                     <section
                         class="evidence-card"
                         data-domain="data"
@@ -5497,8 +5525,8 @@
                             data-orientation="portrait"
                         >
                             <iframe
-                                src="{{MSC_CANVA_MANUSCRIPT_EMBED_URL}}"
-                                title="MSc thesis — interactive manuscript"
+                                src="https://www.canva.com/design/XXXX/view?embed"
+                                title="MSc thesis — full manuscript"
                                 width="840"
                                 height="1188"
                                 loading="lazy"
@@ -5531,23 +5559,13 @@
                         </div>
                     </section>
 
+                    <section class="evidence-card" data-domain="data" aria-labelledby="msc-presentation-heading">
 
-                    <!-- Presentation: native controls, no autoplay. -->
-                    <section
-                        class="evidence-card"
-                        data-domain="data"
-                        aria-labelledby="msc-presentation-heading"
-                    >
-                        <div class="evidence-card__video">
-                            <iframe
-                                src="{{MSC_PRESENTATION_VIDEO_EMBED_URL}}"
-                                title="MSc thesis — research presentation"
-                                width="1600"
-                                height="900"
-                                loading="lazy"
-                                allow="fullscreen; picture-in-picture"
-                                allowfullscreen
-                            ></iframe>
+                        <div class="evidence-card__canva" data-orientation="landscape">
+                            <iframe src="https://www.canva.com/design/XXXX/view?embed"
+                                    title="MSc thesis — defence presentation"
+                                    width="1600" height="900" loading="lazy"
+                                    allow="fullscreen" allowfullscreen></iframe>
                         </div>
 
                         <div class="evidence-card__body">
@@ -5583,7 +5601,7 @@
                         </div>
                     </section>
 
-                </div>
+                </div-->
 
                 <dl class="thesis-feature__research">
                     <div>
@@ -5622,7 +5640,7 @@
                             second, information about sharing third, review of the transfer
                             fourth, and the original collector last. Yet they preferred
                             different options within them; on who reuses the data, their
-                            orders were exact opposites. The results suggest one-size-fits-all
+                            orders were contrasting. The results suggest one-size-fits-all
                             rules are unlikely to fit, while transparency and some form of
                             external review were common ground. These are stated preferences
                             from one country and period, not observed sharing behaviour.
@@ -5913,9 +5931,10 @@
                             </ol>
 
                             <p class="thesis-expose__boundary">
-                                From average relative attribute importance in the primary
-                                model. Both groups share this ranking. Information about the
-                                data transfer was followed closely by review of the transfer.
+                                Ranking based on average relative attribute importance in the
+                                primary two-class latent class model. Both modelled groups shared
+                                the same attribute-importance order, while differing in their
+                                preferred levels within several attributes.
                             </p>
 
                             <figure class="thesis-expose__table-slot">
@@ -5940,7 +5959,7 @@
                     <section class="thesis-expose__section" aria-labelledby="msc-groups-heading">
                         <div class="thesis-expose__section-head">
                             <p class="thesis-expose__eyebrow">Inside the two groups</p>
-                            <h4 id="msc-groups-heading">One country, two preference patterns.</h4>
+                            <h4 id="msc-groups-heading">One country, two contrasting preference patterns.</h4>
                             <p>
                                 The latent class model split respondents into two groups,
                                 46.5% and 53.5%. Pick an attribute to compare how each group
@@ -6094,13 +6113,14 @@
                         </div>
 
                         <p class="thesis-expose__boundary">
-                            Levels are ordered by each group's estimated utility. The order
+                            Levels are ordered by each group’s estimated utility. The order
                             does not show how large the gaps are or whether neighbouring levels
-                            differ significantly; those details are in Table 4. On the original
-                            collector, the new data user and external review, the two groups'
-                            orders are exact reverses. Group 1 put technology companies first as
-                            the new data user, which runs against much earlier research but
-                            matches a Southern European subgroup in Biasiotto et al.
+                            differ significantly; those details are in Table 4. For the original
+                            collector, new data user, and external review attributes, the groups
+                            displayed substantially contrasting orderings. Group 1 placed
+                            technological companies first as the new data user, a pattern that
+                            differs from much earlier research but resembles a Southern European
+                            subgroup reported by Biasiotto et al.
                         </p>
 
                         <figure class="thesis-expose__table-slot">
