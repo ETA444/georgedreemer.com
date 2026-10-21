@@ -5235,51 +5235,86 @@
 
         =============================================================== -->
 
-        <section
-            id="masters-theses"
-            class="theses-section"
-            aria-labelledby="masters-theses-heading"
-        >
+        <section id="masters-theses" class="theses-section" aria-labelledby="masters-theses-heading">
             <div class="section-label">
-                <h2
-                    id="masters-theses-heading"
-                    class="section-label__text"
-                >
+                <h2 id="masters-theses-heading" class="section-label__text">
                     Theses
                 </h2>
 
-                <span
-                    class="section-label__line"
-                    aria-hidden="true"
-                ></span>
+                <span class="section-label__line" aria-hidden="true"></span>
             </div>
 
-            <p class="theses-section__intro">
+            <!--p class="theses-section__intro">
                 Two research projects, with the papers, presentations,
                 and analytical work available to explore.
-            </p>
+            </p-->
 
 
             <!-- ── MSc thesis ─────────────────────────────────────── -->
 
-            <article
-                class="thesis-feature fade-in"
-                aria-labelledby="msc-thesis-title"
-            >
+            <article class="thesis-feature fade-in" aria-labelledby="msc-thesis-title">
                 <header class="thesis-feature__header">
+                    <!-- ============================================================
+                         MSc THESIS ADDITION A — RESEARCH FACTS & CONTRIBUTION
+
+                         Placement:
+                           Inside the MSc .thesis-feature article,
+                           immediately after .thesis-feature__header.
+
+                         Existing manuscript and presentation cards follow unchanged.
+                    =============================================================== -->
+
+                    <div class="thesis-expose">
+
+                        <dl class="thesis-expose__facts" aria-label="Research at a glance">
+                            <div>
+                                <dt>Participants</dt>
+                                <dd>329 <span>in Italy</span></dd>
+                            </div>
+
+                            <div>
+                                <dt>Choice tasks</dt>
+                                <dd>16 <span>per participant</span></dd>
+                            </div>
+
+                            <div>
+                                <dt>Contextual attributes</dt>
+                                <dd>5 <span>examined together</span></dd>
+                            </div>
+
+                            <div>
+                                <dt>Analysis tools</dt>
+                                <dd>R <span>&amp; Stata 17</span></dd>
+                            </div>
+                        </dl>
+
+                        <p class="thesis-expose__contribution">
+                            <strong>My contribution:</strong>
+                            I analysed an existing Italian survey and discrete-choice
+                            dataset supplied by Biasiotto and colleagues: data checks,
+                            descriptive profiling in R, preference modelling in Stata,
+                            comparison of model specifications, and interpretation of
+                            the findings for health-data governance. The original
+                            research team developed and administered the experiment.
+                        </p>
+
+                    </div>
+
                     <p class="thesis-feature__eyebrow">
                         MSc thesis
                     </p>
 
-                    <h3
-                        id="msc-thesis-title"
-                        class="thesis-feature__title"
-                    >
-                        {{MSC_FORMAL_THESIS_TITLE}}
+                    <h3 id="msc-thesis-title" class="thesis-feature__title">
+                        Willingness to Share Health Data in Italy:
+                        Investigation under a Multi-context Paradigm with DCE Data
                     </h3>
 
                     <p class="thesis-feature__synopsis">
-                        {{MSC_PLAIN_LANGUAGE_SYNOPSIS}}
+                        What makes people willing to share their health data beyond
+                        its original use? I analysed choices from 329 respondents
+                        in Italy to understand how the organisations involved,
+                        the intended use, consent arrangements, and external
+                        oversight shape that decision.
                     </p>
                 </header>
 
@@ -5307,16 +5342,14 @@
                         </div>
 
                         <div class="evidence-card__body">
-                            <h4
-                                id="msc-paper-heading"
-                                class="evidence-card__title"
-                            >
+                            <h4 id="msc-paper-heading" class="evidence-card__title">
                                 Research paper
                             </h4>
 
                             <p class="thesis-feature__media-note">
-                                Explore the research design, analysis,
-                                results, and discussion.
+                                Explore the research framework, discrete-choice methodology,
+                                preference models, and recommendations for the secondary
+                                use of health data.
                             </p>
 
                             <div class="evidence-card__actions">
@@ -5352,15 +5385,14 @@
                         </div>
 
                         <div class="evidence-card__body">
-                            <h4
-                                id="msc-presentation-heading"
-                                class="evidence-card__title"
-                            >
+                            <h4 id="msc-presentation-heading" class="evidence-card__title">
                                 Research presentation
                             </h4>
 
                             <p class="thesis-feature__media-note">
-                                {{MSC_PRESENTATION_DESCRIPTION}}
+                                Follow the research question, modelling approach, and findings
+                                on how recipients, purposes, consent arrangements, and oversight
+                                influence willingness to share health data.
                             </p>
 
                             <div class="evidence-card__actions">
@@ -5390,19 +5422,687 @@
                 <dl class="thesis-feature__research">
                     <div>
                         <dt>Research question</dt>
-                        <dd>{{MSC_RESEARCH_QUESTION}}</dd>
+                        <dd>
+                            How do different data-sharing arrangements influence
+                            willingness to allow the secondary use of health data?
+                            I examined five contextual attributes together:
+                            the original data collector, the new data user,
+                            the purpose of reuse, information and consent
+                            arrangements, and the presence of an external
+                            review process.
+                        </dd>
                     </div>
 
                     <div>
                         <dt>Analytical approach</dt>
-                        <dd>{{MSC_ANALYTICAL_APPROACH}}</dd>
+                        <dd>
+                            Using discrete-choice-experiment data supplied by
+                            Biasiotto and colleagues, I analysed responses from
+                            329 participants in Italy. A two-class latent class
+                            model examined differences in sharing preferences,
+                            complemented by a secondary conditional logit model.
+                            I also calculated average relative attribute
+                            importance to compare the influence of the five
+                            contextual attributes.
+                        </dd>
                     </div>
 
                     <div>
                         <dt>Finding &amp; relevance</dt>
-                        <dd>{{MSC_FINDING_AND_RELEVANCE}}</dd>
+                        <dd>
+                            Respondents showed an overall reluctance to share,
+                            but all five contextual attributes influenced
+                            willingness. Who would reuse the data and for what
+                            purpose mattered most, followed by information about
+                            sharing; external review was also preferred.
+                            The findings suggest priorities for data-sharing
+                            policy and service design: transparent information,
+                            clear purposes, legitimate recipients, and external
+                            oversight. These are implications from stated
+                            preferences, not evidence of increased real-world
+                            sharing.
+                        </dd>
                     </div>
                 </dl>
+
+                <!-- ============================================================
+                     MSc THESIS ADDITION B — INTERACTIVE RESEARCH EXPOSITION
+
+                     Placement:
+                       Inside the MSc .thesis-feature article,
+                       after the existing .thesis-feature__research block.
+
+                     Preserves:
+                       - Existing thesis identity and synopsis
+                       - Existing Canva manuscript
+                       - Existing presentation / video
+                       - Existing research question, approach, and finding
+                       - Existing resource links
+
+                     Adds:
+                       - Interactive explanation of the five contextual attributes
+                       - Findings translated into governance considerations
+                       - Progressive disclosure of analytical decisions
+                       - Explicit interpretation boundaries
+                       - Original-results-table insertion points
+
+                     Integrity:
+                       The explorer is an educational reconstruction.
+                       It does not reproduce an administered task, collect responses,
+                       calculate utilities, or predict willingness to share.
+
+                     Table placeholders:
+                       Replace each editorial slot with the corresponding original
+                       table or figure. Do not manufacture missing values.
+                =============================================================== -->
+
+                <div class="thesis-expose">
+
+                    <!-- ── 1. Understand the research by exploring a context ── -->
+
+                    <section class="thesis-expose__section" aria-labelledby="msc-context-heading">
+                        <div class="thesis-expose__section-head">
+                            <p class="thesis-expose__eyebrow">
+                                Inside the experiment
+                            </p>
+
+                            <h4 id="msc-context-heading">
+                                Same health data. Different sharing context.
+                            </h4>
+
+                            <p>
+                                A willingness-to-share decision involves more than
+                                the data itself. Change who collected it, who wants
+                                to reuse it, why, and under which safeguards.
+                                These were the five contextual attributes examined
+                                together in the research.
+                            </p>
+                        </div>
+
+                        <div class="thesis-expose__explorer" data-context-explorer>
+                            <form class="thesis-expose__context-form" aria-label="Explore an illustrative health-data-sharing context">
+                                <fieldset>
+                                    <legend>Build a sharing context</legend>
+
+                                    <p class="thesis-expose__helper">
+                                        Choose an option for each attribute.
+                                        The context summary updates automatically.
+                                    </p>
+
+                                    <div class="thesis-expose__fields">
+
+                                        <div class="thesis-expose__field">
+                                            <label for="msc-context-collector">
+                                                Original data collector
+                                            </label>
+
+                                            <select id="msc-context-collector" name="collector">
+                                                <option value="healthcare">
+                                                    Healthcare provider
+                                                </option>
+                                                <option value="technology">
+                                                    Technological company
+                                                </option>
+                                                <option value="academic">
+                                                    Academic research project
+                                                </option>
+                                            </select>
+                                        </div>
+
+                                        <div class="thesis-expose__field">
+                                            <label for="msc-context-recipient">
+                                                New data user
+                                            </label>
+
+                                            <select id="msc-context-recipient" name="recipient">
+                                                <option value="authority">
+                                                    National authority
+                                                </option>
+                                                <option value="technology">
+                                                    Technological company
+                                                </option>
+                                                <option value="pharmaceutical">
+                                                    Pharmaceutical company
+                                                </option>
+                                                <option value="academic">
+                                                    Academic research project
+                                                </option>
+                                            </select>
+                                        </div>
+
+                                        <div class="thesis-expose__field">
+                                            <label for="msc-context-purpose">
+                                                Purpose of reuse
+                                            </label>
+
+                                            <select id="msc-context-purpose" name="purpose">
+                                                <option value="quality">
+                                                    Quality evaluation
+                                                </option>
+                                                <option value="development">
+                                                    Development of a new product or service
+                                                </option>
+                                                <option value="marketing">
+                                                    Promotion, advertising, or marketing
+                                                </option>
+                                                <option value="policy">
+                                                    Investigation of a policy initiative
+                                                </option>
+                                            </select>
+                                        </div>
+
+                                        <div class="thesis-expose__field">
+                                            <label for="msc-context-consent">
+                                                Information and consent
+                                            </label>
+
+                                            <select id="msc-context-consent" name="consent">
+                                                <option value="opt-in">
+                                                    Informed, with ability to opt in
+                                                </option>
+                                                <option value="opt-out">
+                                                    Informed, with ability to opt out
+                                                </option>
+                                                <option value="information-only">
+                                                    Informed, without a consent option
+                                                </option>
+                                                <option value="not-informed">
+                                                    Not informed
+                                                </option>
+                                            </select>
+                                        </div>
+
+                                        <div class="thesis-expose__field">
+                                            <label for="msc-context-review">
+                                                External review
+                                            </label>
+
+                                            <select id="msc-context-review" name="review">
+                                                <option value="transfer-and-use">
+                                                    Review of data transfer and use
+                                                </option>
+                                                <option value="transfer-only">
+                                                    Review of data transfer only
+                                                </option>
+                                                <option value="none">
+                                                    No review
+                                                </option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+
+                                    <button type="reset" class="thesis-expose__reset">
+                                        Reset context
+                                    </button>
+                                </fieldset>
+                            </form>
+
+                            <div class="thesis-expose__context-preview">
+                                <p class="thesis-expose__eyebrow">
+                                    Illustrative context
+                                </p>
+
+                                <p class="thesis-expose__preview-intro">
+                                    Imagine your health data being reused
+                                    under these arrangements:
+                                </p>
+
+                                <dl class="thesis-expose__context-summary">
+                                    <div>
+                                        <dt>Originally collected by</dt>
+                                        <dd data-context-value="collector">
+                                            Healthcare provider
+                                        </dd>
+                                    </div>
+
+                                    <div>
+                                        <dt>Reused by</dt>
+                                        <dd data-context-value="recipient">
+                                            National authority
+                                        </dd>
+                                    </div>
+
+                                    <div>
+                                        <dt>Used for</dt>
+                                        <dd data-context-value="purpose">
+                                            Quality evaluation
+                                        </dd>
+                                    </div>
+
+                                    <div>
+                                        <dt>Information and consent</dt>
+                                        <dd data-context-value="consent">
+                                            Informed, with ability to opt in
+                                        </dd>
+                                    </div>
+
+                                    <div>
+                                        <dt>External review</dt>
+                                        <dd data-context-value="review">
+                                            Review of data transfer and use
+                                        </dd>
+                                    </div>
+                                </dl>
+
+                                <p class="thesis-expose__preview-question">
+                                    Would these arrangements change your
+                                    willingness to share?
+                                </p>
+
+                                <p class="thesis-expose__helper">
+                                    The study asked participants to accept or reject
+                                    sharing across varying contexts. This explorer
+                                    illustrates the attributes; it does not record
+                                    your answer or estimate a sharing probability.
+                                </p>
+
+                                <p class="thesis-expose__sr-only" role="status" aria-live="polite" aria-atomic="true"
+                                    data-context-status></p>
+                            </div>
+                        </div>
+
+                        <p class="thesis-expose__boundary">
+                            Educational reconstruction using the study’s attribute
+                            levels—not a reproduction of an original choice task.
+                            Combinations selected here are not necessarily among
+                            the scenarios administered in the study.
+                        </p>
+
+                        <noscript>
+                            <p class="thesis-expose__boundary">
+                                The example context is shown above. JavaScript enables
+                                automatic updates when you change an attribute.
+                            </p>
+                        </noscript>
+                    </section>
+
+
+                    <!-- ── 2. Findings that deserve more than one sentence ──── -->
+
+                    <section class="thesis-expose__section" aria-labelledby="msc-findings-heading">
+                        <div class="thesis-expose__section-head">
+                            <p class="thesis-expose__eyebrow">
+                                What the analysis revealed
+                            </p>
+
+                            <h4 id="msc-findings-heading">
+                                Who uses the data—and why—matters.
+                            </h4>
+
+                            <p>
+                                The analysis found an overall reluctance to share,
+                                but willingness depended on the surrounding context.
+                                The new data user and the purpose of reuse were
+                                the leading influences, with information and
+                                consent ranking third.
+                            </p>
+                        </div>
+
+                        <div class="thesis-expose__finding">
+                            <p class="thesis-expose__finding-label">
+                                An expectation challenged
+                            </p>
+
+                            <p>
+                                I initially expected information and consent to
+                                be the most influential attribute. Instead, the
+                                reported importance ranking placed the recipient
+                                and purpose ahead of it. The result shifts the
+                                practical emphasis: explaining who will use the
+                                data and what they intend to do with it deserves
+                                attention alongside the consent mechanism.
+                            </p>
+                        </div>
+
+                        <dl class="thesis-expose__implications">
+                            <div>
+                                <dt>Make the recipient explicit</dt>
+                                <dd>
+                                    Identify the organisation receiving the data.
+                                    The analysis indicates that the identity of
+                                    the new data user is central to the sharing
+                                    decision—not merely an administrative detail.
+                                </dd>
+                            </div>
+
+                            <div>
+                                <dt>Explain the intended use</dt>
+                                <dd>
+                                    Communicate a specific purpose for reuse.
+                                    The research examined quality evaluation,
+                                    product or service development, marketing,
+                                    and policy investigation as distinct contexts.
+                                </dd>
+                            </div>
+
+                            <div>
+                                <dt>Make information and oversight visible</dt>
+                                <dd>
+                                    Clearly explain the information and consent
+                                    arrangements, together with the review process.
+                                    Respondents preferred external oversight,
+                                    supporting its consideration in data-sharing
+                                    governance.
+                                </dd>
+                            </div>
+                        </dl>
+
+                        <p class="thesis-expose__boundary">
+                            These are research-informed considerations, not a tested
+                            interface intervention or a demonstrated increase in
+                            real-world data sharing.
+                        </p>
+                    </section>
+
+
+                    <!-- ── 3. Progressive disclosure for technical readers ──── -->
+
+                    <section class="thesis-expose__section" aria-labelledby="msc-evidence-heading">
+                        <div class="thesis-expose__section-head">
+                            <p class="thesis-expose__eyebrow">
+                                For a closer look
+                            </p>
+
+                            <h4 id="msc-evidence-heading">
+                                Research decisions and supporting evidence
+                            </h4>
+
+                            <p>
+                                Explore how the sample was prepared, how the
+                                preference models were specified, and where
+                                the interpretation needs care.
+                            </p>
+                        </div>
+
+                        <div class="thesis-expose__disclosures">
+
+                            <!-- A. Sample and preparation -->
+                            <details class="thesis-expose__detail">
+                                <summary>
+                                    Sample, exclusions, and descriptive analysis
+                                </summary>
+
+                                <div class="thesis-expose__detail-body">
+                                    <p>
+                                        The original fieldwork ran from April to
+                                        August 2021. There were 929 survey initiations
+                                        and 362 completed surveys; excluding completions
+                                        under five minutes left the final sample of
+                                        329 respondents.
+                                    </p>
+
+                                    <p>
+                                        My analytical workflow included checks for
+                                        missing values and outliers, followed by
+                                        descriptive analysis in R. I profiled
+                                        demographics, health status, chronic
+                                        conditions, health-app use, health-sector
+                                        work experience, and eHealth literacy.
+                                    </p>
+
+                                    <p>
+                                        I also created a categorical eHealth-literacy
+                                        measure from the survey responses to support
+                                        descriptive reporting.
+                                    </p>
+
+                                    <p class="thesis-expose__boundary">
+                                        The fieldwork, recruitment, and original
+                                        experimental design were conducted by
+                                        the source research team.
+                                    </p>
+
+                                    <figure class="thesis-expose__table-slot">
+                                        <figcaption>
+                                            Insert original respondent-characteristics
+                                            table or selected descriptive figure.
+                                        </figcaption>
+
+                                        <div class="thesis-expose__table-placeholder">
+                                            TABLE / FIGURE PLACEHOLDER
+                                        </div>
+
+                                        <!--
+                                            Replace the placeholder above with the
+                                            original table or figure.
+
+                                            Keep its original definitions and denominator.
+                                            Add a caption and descriptive alt text if
+                                            inserting the result as an image.
+                                        -->
+                                    </figure>
+                                </div>
+                            </details>
+
+
+                            <!-- B. Experiment -->
+                            <details class="thesis-expose__detail">
+                                <summary>
+                                    How the choice experiment worked
+                                </summary>
+
+                                <div class="thesis-expose__detail-body">
+                                    <p>
+                                        The source experiment used 32 unique choice
+                                        tasks, arranged into four blocks of eight.
+                                        Each participant completed two sets of eight
+                                        decisions, covering two assigned health-information
+                                        themes from lifestyle, physical health,
+                                        mental health, and genetic information.
+                                    </p>
+
+                                    <p>
+                                        Each task presented a sharing context.
+                                        Participants decided whether to accept or
+                                        reject sharing under those arrangements,
+                                        rather than selecting a favourite organisation
+                                        or purpose in isolation.
+                                    </p>
+
+                                    <p>
+                                        This structure enabled the analysis to examine
+                                        contextual trade-offs across the five attributes.
+                                        The health-information themes are part of the
+                                        experimental setting; they are not an additional
+                                        attribute in the five-factor explorer above.
+                                    </p>
+
+                                    <p class="thesis-expose__boundary">
+                                        Sixteen decisions per participant are repeated
+                                        observations from the same people—not sixteen
+                                        independent respondents.
+                                    </p>
+
+                                    <figure class="thesis-expose__table-slot">
+                                        <figcaption>
+                                            Insert the original example choice task
+                                            from the thesis.
+                                        </figcaption>
+
+                                        <div class="thesis-expose__table-placeholder">
+                                            ORIGINAL CHOICE-TASK FIGURE
+                                        </div>
+                                    </figure>
+                                </div>
+                            </details>
+
+
+                            <!-- C. Modelling -->
+                            <details class="thesis-expose__detail">
+                                <summary>
+                                    Model specifications and analytical reasoning
+                                </summary>
+
+                                <div class="thesis-expose__detail-body">
+                                    <p>
+                                        Before modelling, I checked correlations
+                                        between the independent variables for potential
+                                        multicollinearity concerns. I then fitted
+                                        five specifications across latent class,
+                                        conditional logit, and logistic regression
+                                        approaches in Stata 17.
+                                    </p>
+
+                                    <ul class="thesis-expose__list">
+                                        <li>
+                                            <strong>Latent class specifications:</strong>
+                                            a one-class model and two two-class
+                                            specifications, with and without supplied
+                                            initial coefficient estimates.
+                                        </li>
+
+                                        <li>
+                                            <strong>Primary analysis:</strong>
+                                            a two-class latent class model, allowing
+                                            different preference patterns rather than
+                                            imposing one common pattern on every
+                                            respondent.
+                                        </li>
+
+                                        <li>
+                                            <strong>Secondary analysis:</strong>
+                                            a conditional logit model, alongside the
+                                            additional logistic regression specification
+                                            explored in the modelling workflow.
+                                        </li>
+
+                                        <li>
+                                            <strong>Attribute importance:</strong>
+                                            average relative attribute importance
+                                            to compare the influence of the five
+                                            contextual attributes within the study.
+                                        </li>
+                                    </ul>
+
+                                    <p class="thesis-expose__boundary">
+                                        Latent classes describe model-based preference
+                                        patterns. They should not be presented as
+                                        directly observed personality types or
+                                        automatically generalisable market segments.
+                                    </p>
+
+                                    <figure class="thesis-expose__table-slot">
+                                        <figcaption>
+                                            Insert original model-comparison and
+                                            class-specific coefficient results.
+                                        </figcaption>
+
+                                        <div class="thesis-expose__table-placeholder">
+                                            MODEL RESULTS TABLE
+                                        </div>
+
+                                        <!--
+                                            Retain the original:
+                                              - Model/specification labels
+                                              - Reference categories
+                                              - Uncertainty/significance notes
+                                              - Class shares, if reported
+                                              - Fit statistics, if reported
+
+                                            Do not add values inferred from this
+                                            portfolio explanation.
+                                        -->
+                                    </figure>
+                                </div>
+                            </details>
+
+
+                            <!-- D. Result interpretation -->
+                            <details class="thesis-expose__detail">
+                                <summary>
+                                    Attribute importance and hypothesis interpretation
+                                </summary>
+
+                                <div class="thesis-expose__detail-body">
+                                    <p>
+                                        The reported findings identify the new data
+                                        user and the reason for reuse as the leading
+                                        influences, followed by information and consent.
+                                        This contrasts with the initial expectation
+                                        that information and consent would rank first.
+                                    </p>
+
+                                    <p>
+                                        The thesis reports an influence from all five
+                                        contextual attributes. That statement should
+                                        not be expanded into a claim that every level,
+                                        every pairwise difference, or every class-specific
+                                        coefficient was statistically significant.
+                                        Those distinctions belong in the original
+                                        results table.
+                                    </p>
+
+                                    <p>
+                                        Relative importance is also not a sharing
+                                        probability: an attribute’s importance does
+                                        not tell a visitor what percentage of people
+                                        would accept the context they selected above.
+                                    </p>
+
+                                    <figure class="thesis-expose__table-slot">
+                                        <figcaption>
+                                            Insert original relative-attribute-importance
+                                            results, preserving the model and aggregation
+                                            labels used in the thesis.
+                                        </figcaption>
+
+                                        <div class="thesis-expose__table-placeholder">
+                                            ATTRIBUTE IMPORTANCE TABLE / FIGURE
+                                        </div>
+                                    </figure>
+                                </div>
+                            </details>
+
+
+                            <!-- E. Interpretation boundaries -->
+                            <details class="thesis-expose__detail">
+                                <summary>
+                                    What the findings do—and do not—establish
+                                </summary>
+
+                                <div class="thesis-expose__detail-body">
+                                    <ul class="thesis-expose__list">
+                                        <li>
+                                            <strong>Stated decisions:</strong>
+                                            the experiment measures choices in
+                                            described sharing contexts, not observed
+                                            transfers of personal health records.
+                                        </li>
+
+                                        <li>
+                                            <strong>Specific population and period:</strong>
+                                            the analysis concerns the Italian sample
+                                            and the 2021 fieldwork context. Extending
+                                            the findings to other populations or
+                                            periods requires additional evidence.
+                                        </li>
+
+                                        <li>
+                                            <strong>Governance implications:</strong>
+                                            the findings inform considerations around
+                                            recipients, purposes, information, consent,
+                                            and review. They are not a legal-compliance
+                                            assessment or proof that a particular
+                                            policy will increase sharing.
+                                        </li>
+
+                                        <li>
+                                            <strong>Model-based interpretation:</strong>
+                                            class profiles, coefficient comparisons,
+                                            and numerical importance claims should
+                                            remain tied to their reported specification
+                                            and supporting results.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </details>
+
+                        </div>
+                    </section>
+
+                </div>
+
             </article>
 
 
