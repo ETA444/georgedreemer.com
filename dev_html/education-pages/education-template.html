@@ -3010,6 +3010,119 @@
 
     .thesis-expose__table-scroll tbody tr:nth-child(even) { background: var(--thesis-tint); }
 
+    /* ── Figure images: labels, framing, responsive behaviour ───── */
+
+    .thesis-expose__table-slot figcaption {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: var(--space-1) var(--space-2);
+    }
+
+    .thesis-expose__figure-label {
+        color: var(--color-text);
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
+    .thesis-expose__figure-title {
+        color: var(--color-text);
+        font-weight: 600;
+    }
+
+    /* White backing keeps transparent-background PNGs readable in dark mode. */
+    .thesis-expose__figure-media {
+        max-width: 100%;
+        overflow-x: auto;
+        padding: var(--space-3);
+        border: 1px solid var(--thesis-line, var(--color-border));
+        border-radius: var(--radius-md);
+        background: #fff;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Natural size, never upscaled, shrinks to fit narrow containers. */
+    .thesis-expose__figure-media img {
+        display: block;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin-inline: auto;
+    }
+
+    /* Wide tables and equations: keep text legible and scroll sideways. */
+    .thesis-expose__table-slot--scroll .thesis-expose__figure-media img {
+        max-width: none;
+        min-width: var(--figure-min, 40rem);
+    }
+
+    .thesis-expose__figure-hint {
+        display: none;
+        margin: var(--space-2) 0 0;
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        line-height: 1.5;
+    }
+
+    @media (max-width: 52rem) {
+        .thesis-expose__table-slot--scroll .thesis-expose__figure-hint {
+            display: block;
+        }
+    }
+
+    .thesis-expose__figure-note {
+        max-width: 70ch;
+        margin: var(--space-3) 0 0;
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        line-height: 1.65;
+    }
+
+    .thesis-expose__figure-link {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        margin-top: var(--space-1);
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        font-weight: 600;
+        text-underline-offset: 0.2em;
+    }
+
+    .thesis-expose__figure-stack {
+        display: grid;
+        gap: var(--space-5);
+        margin-top: var(--space-5);
+    }
+
+    .thesis-expose__figure-stack > .thesis-expose__table-slot {
+        margin-top: 0;
+    }
+
+    .thesis-expose__figure-error {
+        margin: 0;
+        padding: var(--space-4);
+        color: #444;
+        font-size: var(--text-xs);
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    .thesis-expose__figure-media:focus-visible,
+    .thesis-expose__figure-link:focus-visible {
+        outline: 2px solid var(--color-text);
+        outline-offset: 3px;
+    }
+
+    @media (hover: hover) {
+        .thesis-expose__figure-link:hover { color: var(--color-text); }
+    }
+
+    /* Optional: soften glare of the white frame in dark mode.
+    [data-theme="dark"] .thesis-expose__figure-media img { filter: brightness(0.92); }
+    */
+
     /* ── Notes ────────────────────────────────────────────────── */
 
     .thesis-expose__boundary,
