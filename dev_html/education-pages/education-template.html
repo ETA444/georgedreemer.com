@@ -3051,12 +3051,6 @@
         margin-inline: auto;
     }
 
-    /* Wide tables and equations: keep text legible and scroll sideways. */
-    .thesis-expose__table-slot--scroll .thesis-expose__figure-media img {
-        max-width: none;
-        min-width: var(--figure-min, 40rem);
-    }
-
     .thesis-expose__figure-hint {
         display: none;
         margin: var(--space-2) 0 0;
@@ -6232,7 +6226,7 @@
                                 </figcaption>
                                 <div class="thesis-expose__figure-media">
                                     <img src="https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure6.png"
-                                        alt="Figure 6. Average relative importance of the five contextual attributes." width="{{W}}" height="{{H}}"
+                                        alt="Figure 6. Average relative importance of the five contextual attributes." width="1734px" height="896px"
                                         loading="lazy" decoding="async">
                                 </div>
                                 <p class="thesis-expose__figure-note">
@@ -6425,9 +6419,19 @@
                             subgroup reported by Biasiotto et al.
                         </p>
 
-                        <figure class="thesis-expose__table-slot">
-                            <figcaption>Insert Table 4: results of the 2-class latent class model with initial values.</figcaption>
-                            <div class="thesis-expose__table-placeholder">TABLE 4 PLACEHOLDER - https://georgedreemer.com/public_img/education/mscthesis/mscthesis-table4.png</div>
+                        <!-- ═══ TABLE 4 · 2-class latent class model (scroll variant) ═══ -->
+                        <figure class="thesis-expose__table-slot thesis-expose__table-slot--scroll" style="--figure-min: 42rem">
+                            <figcaption id="msc-tab-4-cap">
+                                <span class="thesis-expose__figure-label">Table 4</span>
+                                <span class="thesis-expose__figure-title">2-class latent class model with initial values</span>
+                            </figcaption>
+                            <div class="thesis-expose__figure-media" role="region" aria-labelledby="msc-tab-4-cap" tabindex="0">
+                                <img src="https://georgedreemer.com/public_img/education/mscthesis/mscthesis-table4.png" alt="Table 4. Results of the 2-class latent class model estimated with initial values." width="929px" height="1194px" loading="lazy" decoding="async">
+                            </div>
+                            <p class="thesis-expose__figure-hint">Scroll sideways to see the full table.</p>
+                            <a class="thesis-expose__figure-link" target="_blank" rel="noopener noreferrer"
+                                href="https://georgedreemer.com/public_img/education/mscthesis/mscthesis-table4.png"
+                                aria-label="Open Table 4, latent class model results, at full size">Open full size ↗</a>
                         </figure>
                     </section>
 
