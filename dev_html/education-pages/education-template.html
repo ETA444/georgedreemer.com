@@ -7340,6 +7340,23 @@
             });
         })();
 
+        // ── Thesis figures: graceful fallback if an image fails to load ──
+        (function () {
+            'use strict';
+            document.querySelectorAll('.thesis-expose__figure-media img').forEach(function (img) {
+                img.addEventListener('error', function () {
+                    const media = img.closest('.thesis-expose__figure-media');
+                    if (!media) return;
+                    const msg = document.createElement('p');
+                    msg.className = 'thesis-expose__figure-error';
+                    msg.textContent =
+                        'This figure could not be loaded. Use the link below to open it directly.';
+                    media.replaceChildren(msg);
+                }, { once: true });
+            });
+        })();
+
+
     </script>
 
 </body>
