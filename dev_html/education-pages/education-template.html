@@ -5241,51 +5241,6 @@
                     "don't just take my word for it" section, and on an
                     education page it is the strongest differentiator:
                     the work is public, readable, and inspectable.
-
-            CARD ORDER:
-            1. PRIMARY THESIS   — lead card
-            2. SECONDARY THESIS — second card
-            3. Selected course projects / presentations — 4–6 cards
-                chosen to show the RANGE of the degree, not to list
-                everything. The full archive can be linked, not
-                reproduced.
-
-            VARIANTS (choose per card based on available media):
-            A. Single image  — .evidence-card__thumb + <img>
-            B. Slideshow      — .evidence-card__slides (auto-advances,
-                                    pauses on hover, dot navigation)
-            C. Video file*    — .evidence-card__video + <video autoplay
-                                    muted loop>
-            D. Video YouTube* — .evidence-card__video + <iframe>
-            E. Canva embed    — NEW. Presentation slides are hosted on
-                                    Canva; use Canva's embed inside the
-                                    existing media block (same aspect-ratio
-                                    wrapper as variant D, <iframe>, no
-                                    autoplay assumptions). DEV TODO: confirm
-                                    embed markup and sizing.
-            * Portrait video: add data-orientation="portrait" to
-                .evidence-card__video for vertical content.
-
-            CARD ANATOMY: media block → domain tag (dot + label, same
-            4-domain system) → title (specific to the thesis/project, not
-            the whole degree) → 3–4 bullet points, each a concrete
-            method/action/output (not a restated ability-card tag) →
-            LINKS ROW (NEW, see below).
-            Suggested bullet content for academic work: the question or
-            task, the data and method, the result, and the deliverable
-            (paper, slides, notebook).
-
-            LINKS ROW (NEW — DEV TODO, small CSS addition): a compact
-            row at the bottom of `.evidence-card__body` with 1–3 links,
-            e.g. "Source code" (public MSc GitHub repo, linked to the
-            specific folder where possible), "Slides", "Thesis PDF".
-            Must look clean and professional: text links with a small
-            icon, same styling language as the Snapshot links; external
-            links use target="_blank" rel="noopener noreferrer".
-
-            CARD SELECTION: pick 6–8 cards total. Prefer cards with real
-            visual proof (slides, figures, repo screenshots). Domain
-            coverage is relaxed here (see E0): don't force all four.
         ================================================================ -->
         <section id="masters-works" class="works-section fade-in" aria-labelledby="masters-works-heading">
 
@@ -5726,7 +5681,6 @@
         <!-- ============================================================
             E6–THESES — RESEARCH SHOWCASE
         =============================================================== -->
-
         <section id="masters-theses" class="theses-section" aria-labelledby="masters-theses-heading">
             <div class="section-label">
                 <h2 id="masters-theses-heading" class="section-label__text">
@@ -6887,7 +6841,411 @@
 
         </section>
 
+        <!-- ============================================================
+             MADS MADLAD — STUDY MATERIALS & MICRO-PUBLISHING
 
+             PURPOSE
+               A lighter closing section that demonstrates substantial
+               technical writing, document design, and commercial initiative.
+
+             STRUCTURE
+               Introduction → catalogue statistics → storefronts
+               → horizontal shelf of seven free editions.
+
+             CONTENT
+               Catalogue totals and marketplace statistics supplied by
+               George; snapshot dated October 2026.
+               Catalogue totals describe all materials, not only the
+               seven free editions displayed here.
+
+             INTERACTION
+               Native horizontal scrolling, visible scrollbar,
+               optional previous/next controls, keyboard navigation.
+               Canva viewers remain directly interactive.
+               No autoplay, drag overlay, or click-to-load gate.
+
+             DEPENDENCIES
+               Existing site design tokens and Bootstrap Icons.
+               All custom styling is scoped to .mm-section.
+        =============================================================== -->
+        <section id="mads-madlad" class="mm-section" aria-labelledby="mm-heading">
+            <div class="section-label">
+                <h2 id="mm-heading" class="section-label__text">
+                    MADS Madlad
+                </h2>
+                <span class="section-label__line" aria-hidden="true"></span>
+            </div>
+
+            <!-- ── Identity, introduction, and catalogue scale ─────── -->
+            <div class="mm-intro">
+                <div class="mm-intro__copy">
+
+                    <div class="mm-identity">
+                        <span class="mm-avatar" aria-hidden="true">
+                            <span>MM</span>
+                            <img src="https://www.stuvia.com/avatars/user_avatar_1359896_63dfb2e8523fe.png" alt="" width="64"
+                                height="64" loading="lazy" decoding="async">
+                        </span>
+
+                        <div>
+                            <p class="mm-identity__name">MADS Madlad</p>
+                            <p class="mm-identity__tagline">
+                                Premium study materials
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="mm-intro__headline">
+                        The name is a joke. The page count isn’t.
+                    </p>
+
+                    <p class="mm-intro__text">
+                        During my MSc, I took “write a summary” rather
+                        literally. The result was MADS Madlad: a catalogue
+                        of detailed course summaries that turned my study
+                        process into a small publishing venture.
+                    </p>
+
+                    <p class="mm-intro__text">
+                        The notes outlasted the exams. Students are still
+                        buying them through Stuvia and Knoowy, years after
+                        I finished the programme.
+                    </p>
+
+                </div>
+
+                <dl class="mm-stats" aria-label="Full study-material catalogue">
+                    <div>
+                        <dt>Pages written</dt>
+                        <dd>1,594</dd>
+                    </div>
+                    <div>
+                        <dt>Documents created</dt>
+                        <dd>22</dd>
+                    </div>
+                </dl>
+            </div>
+
+
+            <!-- ── Storefronts: concrete evidence, not an invented rank ── -->
+
+            <div class="mm-storefronts">
+
+                <a class="mm-storefront" href="https://www.stuvia.com/user/madsmadlad" target="_blank" rel="noopener noreferrer"
+                    aria-label="Visit the MADS Madlad storefront on Stuvia">
+                    <div class="mm-storefront__header">
+                        <h3 class="mm-storefront__name">Stuvia</h3>
+
+                        <span class="mm-medal">
+                            <i class="bi bi-award" aria-hidden="true"></i>
+                            Bronze medal
+                        </span>
+                    </div>
+
+                    <dl class="mm-storefront__metrics">
+                        <div>
+                            <dt>Documents sold</dt>
+                            <dd>37</dd>
+                        </div>
+                        <div>
+                            <dt>Reputation</dt>
+                            <dd>89<span>/100</span></dd>
+                        </div>
+                    </dl>
+
+                    <span class="mm-storefront__footer">
+                        Explore the storefront
+                        <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                    </span>
+                </a>
+
+                <a class="mm-storefront" href="https://knoowy.nl/user/132765/madsmadlad" target="_blank"
+                    rel="noopener noreferrer" aria-label="Visit the MADS Madlad storefront on Knoowy">
+                    <div class="mm-storefront__header">
+                        <h3 class="mm-storefront__name">Knoowy</h3>
+                        <span class="mm-storefront__handle">@madsmadlad</span>
+                    </div>
+
+                    <dl class="mm-storefront__metrics">
+                        <div>
+                            <dt>Documents sold</dt>
+                            <dd>19</dd>
+                        </div>
+                    </dl>
+
+                    <span class="mm-storefront__footer">
+                        Explore the storefront
+                        <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                    </span>
+                </a>
+
+            </div>
+
+            <p class="mm-snapshot">
+                Catalogue and marketplace snapshot:
+                <time datetime="2026-10">October 2026</time>.
+            </p>
+
+
+            <!-- ── Sample shelf ────────────────────────────────────── -->
+
+            <div class="mm-library" data-mm-library>
+
+                <div class="mm-library__header">
+                    <div>
+                        <h3 id="mm-library-heading" class="mm-library__title">
+                            Browse the free editions
+                        </h3>
+
+                        <p id="mm-library-help" class="mm-library__intro">
+                            Seven samples from the catalogue. Browse inside
+                            each document, open it full size, or read the PDF.
+                            Full editions are available through the storefronts.
+                        </p>
+                    </div>
+
+                    <!-- Hidden without JS; native scrolling still works. -->
+                    <div class="mm-library__controls" role="group" aria-label="Browse summary samples" data-mm-controls hidden>
+                        <button type="button" class="mm-library__arrow" aria-label="Previous summaries"
+                            aria-controls="mm-summary-rail" data-mm-prev>
+                            <i class="bi bi-arrow-left" aria-hidden="true"></i>
+                        </button>
+
+                        <button type="button" class="mm-library__arrow" aria-label="Next summaries"
+                            aria-controls="mm-summary-rail" data-mm-next>
+                            <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <p class="mm-library__hint">
+                    Scroll sideways to explore the shelf.
+                </p>
+
+                <div id="mm-summary-rail" class="mm-rail" role="region" aria-labelledby="mm-library-heading"
+                    aria-describedby="mm-library-help" tabindex="0" data-mm-rail>
+
+                    <!-- 1 · Data Science Methods -->
+                    <article class="mm-doc" aria-labelledby="mm-doc-dsmm">
+                        <div class="mm-doc__preview">
+                            <iframe src="https://www.canva.com/design/DAF1AmW5MZc/view?embed"
+                                title="Data Science Methods — free edition" width="840" height="1188" loading="lazy"
+                                allow="fullscreen" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="mm-doc__body">
+                            <p class="mm-doc__edition">Free edition · 01 / 07</p>
+                            <h4 id="mm-doc-dsmm" class="mm-doc__title">
+                                Data Science Methods
+                            </h4>
+
+                            <div class="mm-doc__actions" role="group" aria-label="Data Science Methods sample resources">
+                                <a href="https://georgedreemer.com/downloads/academic/madsmadlad/MM-DSMM-FreeEdition.pdf"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>
+                                    PDF
+                                </a>
+                                <a href="https://www.canva.com/design/DAF1AmW5MZc/view" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>
+                                    Enlarge
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- 2 · Market Models -->
+                    <article class="mm-doc" aria-labelledby="mm-doc-mm">
+                        <div class="mm-doc__preview">
+                            <iframe src="https://www.canva.com/design/DAF1Ai3jqeI/view?embed"
+                                title="Market Models — free edition" width="840" height="1188" loading="lazy" allow="fullscreen"
+                                allowfullscreen></iframe>
+                        </div>
+
+                        <div class="mm-doc__body">
+                            <p class="mm-doc__edition">Free edition · 02 / 07</p>
+                            <h4 id="mm-doc-mm" class="mm-doc__title">
+                                Market Models
+                            </h4>
+
+                            <div class="mm-doc__actions" role="group" aria-label="Market Models sample resources">
+                                <a href="https://georgedreemer.com/downloads/academic/madsmadlad/MM-MM-FreeEdition.pdf"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>
+                                    PDF
+                                </a>
+                                <a href="https://www.canva.com/design/DAF1Ai3jqeI/view" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>
+                                    Enlarge
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- 3 · Digital Marketing Intelligence -->
+                    <article class="mm-doc" aria-labelledby="mm-doc-dmi">
+                        <div class="mm-doc__preview">
+                            <iframe src="https://www.canva.com/design/DAF1AtUOMXM/view?embed"
+                                title="Digital Marketing Intelligence — free edition" width="840" height="1188" loading="lazy"
+                                allow="fullscreen" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="mm-doc__body">
+                            <p class="mm-doc__edition">Free edition · 03 / 07</p>
+                            <h4 id="mm-doc-dmi" class="mm-doc__title">
+                                Digital Marketing Intelligence
+                            </h4>
+
+                            <div class="mm-doc__actions" role="group"
+                                aria-label="Digital Marketing Intelligence sample resources">
+                                <a href="https://georgedreemer.com/downloads/academic/madsmadlad/MM-DMI-FreeEdition.pdf"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>
+                                    PDF
+                                </a>
+                                <a href="https://www.canva.com/design/DAF1AtUOMXM/view" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>
+                                    Enlarge
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- 4 · Retail & Omnichannel Marketing -->
+                    <article class="mm-doc" aria-labelledby="mm-doc-rom">
+                        <div class="mm-doc__preview">
+                            <iframe src="https://www.canva.com/design/DAF1AofYEL4/view?embed"
+                                title="Retail and Omnichannel Marketing — free edition" width="840" height="1188" loading="lazy"
+                                allow="fullscreen" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="mm-doc__body">
+                            <p class="mm-doc__edition">Free edition · 04 / 07</p>
+                            <h4 id="mm-doc-rom" class="mm-doc__title">
+                                Retail &amp; Omnichannel Marketing
+                            </h4>
+
+                            <div class="mm-doc__actions" role="group"
+                                aria-label="Retail and Omnichannel Marketing sample resources">
+                                <a href="https://georgedreemer.com/downloads/academic/madsmadlad/MM-ROM-FreeEdition.pdf"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>
+                                    PDF
+                                </a>
+                                <a href="https://www.canva.com/design/DAF1AofYEL4/view" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>
+                                    Enlarge
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- 5 · Data Engineering -->
+                    <article class="mm-doc" aria-labelledby="mm-doc-dem">
+                        <div class="mm-doc__preview">
+                            <iframe src="https://www.canva.com/design/DAF1AqBQB9M/view?embed"
+                                title="Data Engineering — free edition" width="840" height="1188" loading="lazy"
+                                allow="fullscreen" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="mm-doc__body">
+                            <p class="mm-doc__edition">Free edition · 05 / 07</p>
+                            <h4 id="mm-doc-dem" class="mm-doc__title">
+                                Data Engineering
+                            </h4>
+
+                            <div class="mm-doc__actions" role="group" aria-label="Data Engineering sample resources">
+                                <a href="https://georgedreemer.com/downloads/academic/madsmadlad/MM-DEM-FreeEdition.pdf"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>
+                                    PDF
+                                </a>
+                                <a href="https://www.canva.com/design/DAF1AqBQB9M/view" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>
+                                    Enlarge
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- 6 · Statistical Learning in Marketing -->
+                    <article class="mm-doc" aria-labelledby="mm-doc-slm">
+                        <div class="mm-doc__preview">
+                            <iframe src="https://www.canva.com/design/DAF1AiFrKpc/view?embed"
+                                title="Statistical Learning in Marketing — free edition" width="840" height="1188"
+                                loading="lazy" allow="fullscreen" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="mm-doc__body">
+                            <p class="mm-doc__edition">Free edition · 06 / 07</p>
+                            <h4 id="mm-doc-slm" class="mm-doc__title">
+                                Statistical Learning in Marketing
+                            </h4>
+
+                            <div class="mm-doc__actions" role="group"
+                                aria-label="Statistical Learning in Marketing sample resources">
+                                <a href="https://georgedreemer.com/downloads/academic/madsmadlad/MM-SLM-FreeEdition.pdf"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>
+                                    PDF
+                                </a>
+                                <a href="https://www.canva.com/design/DAF1AiFrKpc/view" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>
+                                    Enlarge
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- 7 · Companies, Brands & Consumers -->
+                    <article class="mm-doc" aria-labelledby="mm-doc-cbc">
+                        <div class="mm-doc__preview">
+                            <iframe src="https://www.canva.com/design/DAF1AmPV-po/view?embed"
+                                title="Companies, Brands and Consumers — free edition" width="840" height="1188" loading="lazy"
+                                allow="fullscreen" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="mm-doc__body">
+                            <p class="mm-doc__edition">Free edition · 07 / 07</p>
+                            <h4 id="mm-doc-cbc" class="mm-doc__title">
+                                Companies, Brands &amp; Consumers
+                            </h4>
+
+                            <div class="mm-doc__actions" role="group"
+                                aria-label="Companies, Brands and Consumers sample resources">
+                                <a href="https://georgedreemer.com/downloads/academic/madsmadlad/MM-CBC-FreeEdition.pdf"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>
+                                    PDF
+                                </a>
+                                <a href="https://www.canva.com/design/DAF1AmPV-po/view" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>
+                                    Enlarge
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <p class="mm-library__footnote">
+                    Free editions are samples, not the complete paid documents.
+                </p>
+
+            </div>
+        </section>
     </main>
 
     <script>
