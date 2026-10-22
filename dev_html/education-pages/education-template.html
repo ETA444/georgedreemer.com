@@ -3889,6 +3889,196 @@
         }
     }
 
+    /* ============================================================
+    MADS MADLAD — BURGUNDY COLOUR PASS (append after existing .mm-* CSS)
+    Palette: deep burgundy brand colour, tinted surfaces, bronze medal accent.
+    Change the variables below to retune the whole section.
+    ============================================================ */
+
+    .mm-section {
+        --mm-ink:       #7a1530;  /* burgundy text and numbers */
+        --mm-deep:      #6b1128;  /* solid storefront cards */
+        --mm-btn:       #7a1530;  /* solid buttons */
+        --mm-btn-hover: #5e0f26;
+        --mm-tint:      #fbf1f3;  /* panel background */
+        --mm-line:      #e8c3cc;  /* soft burgundy borders */
+        --mm-bronze:    #ffe0b3;  /* medal text on deep burgundy */
+    }
+
+    /* ── Section label ─────────────────────────────────────────── */
+    .mm-section .section-label__text { color: var(--mm-ink); }
+    .mm-section .section-label__line {
+        background: var(--mm-line);
+        border-color: var(--mm-line);
+    }
+
+    /* ── Intro panel ───────────────────────────────────────────── */
+    .mm-section .mm-intro {
+        padding: var(--space-5);
+        border: 1px solid var(--mm-line);
+        border-radius: var(--radius-xl);
+        background: var(--mm-tint);
+    }
+
+    .mm-section .mm-avatar {
+        border-color: var(--mm-ink);
+        background: var(--mm-deep);
+        color: #fff;
+    }
+
+    .mm-section .mm-identity__name { color: var(--mm-ink); }
+
+    .mm-section .mm-intro__headline {
+        color: var(--mm-ink);
+        font-size: var(--text-xl);
+        letter-spacing: -0.01em;
+    }
+
+    /* Stats: white cards with a burgundy top edge */
+    .mm-section .mm-stats {
+        padding: 0;
+        border: 0;
+        background: transparent;
+    }
+
+    .mm-section .mm-stats > div {
+        padding: var(--space-4);
+        border: 1px solid var(--mm-line);
+        border-radius: var(--radius-lg);
+        background: var(--color-surface);
+        box-shadow: inset 0 3px 0 var(--mm-ink);
+    }
+
+    .mm-section .mm-stats dd {
+        color: var(--mm-ink);
+        font-size: var(--text-2xl);
+    }
+
+    /* ── Storefronts: solid burgundy cards ─────────────────────── */
+    .mm-section .mm-storefront {
+        border-color: transparent;
+        background: var(--mm-deep);
+        color: #fff;
+    }
+
+    .mm-section .mm-storefront__name,
+    .mm-section .mm-storefront__metrics dd { color: #fff; }
+
+    .mm-section .mm-storefront__metrics dd span,
+    .mm-section .mm-storefront__metrics dt,
+    .mm-section .mm-storefront__handle { color: rgba(255, 255, 255, 0.78); }
+
+    .mm-section .mm-medal {
+        border-color: rgba(255, 255, 255, 0.28);
+        background: rgba(255, 255, 255, 0.12);
+        color: var(--mm-bronze);
+    }
+
+    .mm-section .mm-storefront__footer {
+        border-top-color: rgba(255, 255, 255, 0.22);
+        color: #fff;
+    }
+
+    .mm-section .mm-snapshot { color: var(--mm-ink); opacity: 0.85; }
+
+    /* ── Library ───────────────────────────────────────────────── */
+    .mm-section .mm-library__title { color: var(--mm-ink); }
+
+    .mm-section .mm-library__arrow {
+        border-color: var(--mm-ink);
+        background: transparent;
+        color: var(--mm-ink);
+    }
+
+    /* Shelf band: gives the rail its own tinted surface */
+    .mm-section .mm-rail {
+        padding: var(--space-4);
+        border-radius: var(--radius-xl);
+        scrollbar-color: var(--mm-ink) transparent;
+    }
+
+    .mm-section .mm-doc {
+        border-color: var(--mm-line);
+        background: var(--color-surface);
+    }
+
+    .mm-section .mm-doc__preview { border-bottom-color: var(--mm-line); }
+
+    .mm-section .mm-doc__edition {
+        color: var(--mm-ink);
+        font-weight: 600;
+        letter-spacing: 0.04em;
+    }
+
+    /* PDF is the primary action (first link); Enlarge is outlined */
+    .mm-section .mm-doc__actions a {
+        border-color: var(--mm-ink);
+        background: transparent;
+        color: var(--mm-ink);
+    }
+
+    .mm-section .mm-doc__actions a:first-child {
+        border-color: var(--mm-btn);
+        background: var(--mm-btn);
+        color: #fff;
+    }
+
+    /* ── Focus + interaction ───────────────────────────────────── */
+    .mm-section .mm-storefront:focus-visible,
+    .mm-section .mm-library__arrow:focus-visible,
+    .mm-section .mm-rail:focus-visible,
+    .mm-section .mm-doc__actions a:focus-visible {
+        outline-color: var(--mm-ink);
+    }
+
+    @media (hover: hover) {
+        .mm-section .mm-storefront:hover {
+            border-color: transparent;
+            background: var(--mm-deep);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        .mm-section .mm-library__arrow:not(:disabled):hover {
+            background: var(--mm-btn);
+            color: #fff;
+        }
+
+        .mm-section .mm-doc__actions a:hover {
+            background: var(--mm-tint);
+            color: var(--mm-ink);
+        }
+
+        .mm-section .mm-doc__actions a:first-child:hover {
+            background: var(--mm-btn-hover);
+            color: #fff;
+        }
+    }
+
+    .mm-section .mm-storefront:active { background: var(--mm-deep); }
+    .mm-section .mm-doc__actions a:first-child:active {
+        background: var(--mm-btn-hover);
+        color: #fff;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+        .mm-section .mm-storefront {
+            transition:
+                transform 180ms ease,
+                box-shadow 180ms ease;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .mm-section .mm-storefront:hover { transform: none; }
+    }
+
+    /* Small screens: lighter panel padding */
+    @media (max-width: 40rem) {
+        .mm-section .mm-intro { padding: var(--space-4); }
+        .mm-section .mm-rail  { padding: var(--space-3); }
+    }
+
     /* ── E7: IN DEPTH ACCORDION ────────────────────────────── */
     .story-accordion {
       border: 1px solid var(--color-border);
