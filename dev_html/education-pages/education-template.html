@@ -3371,6 +3371,524 @@
         .thesis-expose__context-preview { border: 0; }
     }
 
+    /* ============================================================
+    MADS MADLAD — CLOSING PUBLISHING SHOWCASE
+    ============================================================ */
+
+    .mm-section {
+        min-width: 0;
+        max-width: 100%;
+        margin-block: var(--space-8);
+    }
+
+    .mm-section *,
+    .mm-section *::before,
+    .mm-section *::after {
+        box-sizing: border-box;
+    }
+
+    .mm-section [hidden] {
+        display: none !important;
+    }
+
+    /* ── Introduction ─────────────────────────────────────────── */
+
+    .mm-intro {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: var(--space-5);
+        margin-bottom: var(--space-5);
+    }
+
+    .mm-intro__copy {
+        min-width: 0;
+    }
+
+    .mm-identity {
+        display: flex;
+        align-items: center;
+        gap: var(--space-3);
+        margin-bottom: var(--space-4);
+    }
+
+    .mm-avatar {
+        position: relative;
+        display: grid;
+        place-items: center;
+        flex: 0 0 var(--space-16);
+        width: var(--space-16);
+        height: var(--space-16);
+        overflow: hidden;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-lg);
+        background: var(--color-surface-2);
+        color: var(--color-text);
+        font-size: var(--text-sm);
+        font-weight: 700;
+    }
+
+    .mm-avatar img {
+        position: absolute;
+        inset: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .mm-identity__name {
+        margin: 0;
+        color: var(--color-text);
+        font-size: var(--text-sm);
+        font-weight: 700;
+        line-height: 1.5;
+    }
+
+    .mm-identity__tagline {
+        margin: var(--space-1) 0 0;
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        line-height: 1.5;
+    }
+
+    .mm-intro__headline {
+        max-width: 40ch;
+        margin: 0 0 var(--space-3);
+        color: var(--color-text);
+        font-size: var(--text-lg);
+        font-weight: 700;
+        line-height: 1.35;
+        text-wrap: balance;
+    }
+
+    .mm-intro__text {
+        max-width: 68ch;
+        margin: 0;
+        color: var(--color-text-muted);
+        font-size: var(--text-sm);
+        line-height: 1.7;
+    }
+
+    .mm-intro__text + .mm-intro__text {
+        margin-top: var(--space-3);
+    }
+
+    /* ── Catalogue statistics ──────────────────────────────────── */
+
+    .mm-stats {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-self: start;
+        gap: var(--space-4);
+        margin: 0;
+        padding: var(--space-5);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-lg);
+        background: var(--color-surface-2);
+    }
+
+    .mm-stats > div {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        gap: var(--space-2);
+    }
+
+    .mm-stats dt {
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        line-height: 1.5;
+    }
+
+    .mm-stats dd {
+        order: -1;
+        margin: 0;
+        color: var(--color-text);
+        font-size: var(--text-xl);
+        font-weight: 700;
+        font-variant-numeric: tabular-nums;
+        line-height: 1.2;
+        letter-spacing: -0.03em;
+    }
+
+    /* ── Storefront cards ──────────────────────────────────────── */
+
+    .mm-storefronts {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: var(--space-4);
+    }
+
+    .mm-storefront {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        padding: var(--space-5);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-lg);
+        background: var(--color-surface);
+        color: var(--color-text);
+        text-decoration: none;
+        transition:
+            background var(--transition, 180ms ease),
+            border-color var(--transition, 180ms ease),
+            box-shadow var(--transition, 180ms ease);
+    }
+
+    .mm-storefront__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: var(--space-2);
+    }
+
+    .mm-storefront__name {
+        margin: 0;
+        color: var(--color-text);
+        font-size: var(--text-lg);
+        font-weight: 700;
+        line-height: 1.4;
+    }
+
+    .mm-medal {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--space-1);
+        padding: var(--space-1) var(--space-2);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-full);
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+    .mm-storefront__handle {
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        line-height: 1.5;
+    }
+
+    .mm-storefront__metrics {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-6);
+        margin: var(--space-5) 0;
+    }
+
+    .mm-storefront__metrics > div {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-1);
+    }
+
+    .mm-storefront__metrics dt {
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        line-height: 1.5;
+    }
+
+    .mm-storefront__metrics dd {
+        order: -1;
+        margin: 0;
+        color: var(--color-text);
+        font-size: var(--text-xl);
+        font-weight: 700;
+        font-variant-numeric: tabular-nums;
+        line-height: 1.2;
+        letter-spacing: -0.03em;
+    }
+
+    .mm-storefront__metrics dd span {
+        color: var(--color-text-muted);
+        font-size: var(--text-sm);
+        font-weight: 400;
+        letter-spacing: 0;
+    }
+
+    .mm-storefront__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--space-3);
+        margin-top: auto;
+        padding-top: var(--space-3);
+        border-top: 1px solid var(--color-border);
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+    .mm-snapshot {
+        margin: var(--space-2) 0 0;
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        line-height: 1.6;
+    }
+
+    /* ── Library heading and controls ──────────────────────────── */
+
+    .mm-library {
+        min-width: 0;
+        margin-top: var(--space-6);
+    }
+
+    .mm-library__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: var(--space-3);
+        margin-bottom: var(--space-2);
+    }
+
+    .mm-library__header > div:first-child {
+        flex: 1 1 20rem;
+        min-width: 0;
+    }
+
+    .mm-library__title {
+        margin: 0 0 var(--space-2);
+        color: var(--color-text);
+        font-size: var(--text-lg);
+        font-weight: 700;
+        line-height: 1.4;
+    }
+
+    .mm-library__intro {
+        max-width: 68ch;
+        margin: 0;
+        color: var(--color-text-muted);
+        font-size: var(--text-sm);
+        line-height: 1.65;
+    }
+
+    .mm-library__controls {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        gap: var(--space-2);
+    }
+
+    .mm-library__arrow {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        padding: var(--space-2);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-full);
+        background: var(--color-surface);
+        color: var(--color-text);
+        font: inherit;
+        font-size: var(--text-sm);
+        cursor: pointer;
+    }
+
+    .mm-library__arrow:disabled {
+        opacity: 0.4;
+        cursor: default;
+    }
+
+    .mm-library__hint,
+    .mm-library__footnote {
+        margin: 0;
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        line-height: 1.6;
+    }
+
+    .mm-library__hint {
+        margin-bottom: var(--space-3);
+    }
+
+    .mm-library__footnote {
+        margin-top: var(--space-2);
+    }
+
+    /* ── Horizontal shelf ──────────────────────────────────────── */
+
+    .mm-rail {
+        display: grid;
+        grid-auto-flow: column;
+
+        /*
+        Compact portrait cards.
+        On narrow screens, leave a glimpse of the next card.
+        */
+        grid-auto-columns: min(19rem, calc(100% - var(--space-5)));
+
+        align-items: stretch;
+        gap: var(--space-4);
+        min-width: 0;
+        max-width: 100%;
+        overflow-x: auto;
+        padding: var(--space-1) var(--space-1) var(--space-4);
+
+        scroll-snap-type: x proximity;
+        scroll-padding-inline: var(--space-1);
+        overscroll-behavior-x: contain;
+
+        /* Keep the native scrollbar as a visible browsing cue. */
+        scrollbar-width: thin;
+        scrollbar-color: var(--color-border) transparent;
+    }
+
+    .mm-doc {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        overflow: hidden;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-lg);
+        background: var(--color-surface);
+        scroll-snap-align: start;
+    }
+
+    .mm-doc__preview {
+        position: relative;
+        flex-shrink: 0;
+        width: 100%;
+        aspect-ratio: 210 / 297;
+        overflow: hidden;
+        border-bottom: 1px solid var(--color-border);
+        background: var(--color-surface-2);
+    }
+
+    .mm-doc__preview iframe {
+        position: absolute;
+        inset: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        margin: 0;
+        border: 0;
+    }
+
+    .mm-doc__body {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        min-width: 0;
+        padding: var(--space-4);
+    }
+
+    .mm-doc__edition {
+        margin: 0 0 var(--space-2);
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        line-height: 1.5;
+    }
+
+    .mm-doc__title {
+        margin: 0 0 var(--space-3);
+        color: var(--color-text);
+        font-size: var(--text-sm);
+        font-weight: 700;
+        line-height: 1.45;
+        overflow-wrap: anywhere;
+    }
+
+    .mm-doc__actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-2);
+        margin-top: auto;
+    }
+
+    .mm-doc__actions a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-2);
+        min-height: 44px;
+        padding: var(--space-2) var(--space-3);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        background: transparent;
+        color: var(--color-text-muted);
+        font-size: var(--text-xs);
+        font-weight: 600;
+        line-height: 1.4;
+        text-decoration: none;
+    }
+
+    /* ── Focus and interaction ─────────────────────────────────── */
+
+    .mm-storefront:focus-visible,
+    .mm-library__arrow:focus-visible,
+    .mm-rail:focus-visible,
+    .mm-doc__actions a:focus-visible {
+        outline: 2px solid var(--color-text);
+        outline-offset: 3px;
+    }
+
+    @media (hover: hover) {
+        .mm-storefront:hover {
+            border-color: var(--color-text-muted);
+            background: var(--color-surface-2);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .mm-library__arrow:not(:disabled):hover,
+        .mm-doc__actions a:hover {
+            background: var(--color-surface-2);
+            color: var(--color-text);
+        }
+    }
+
+    .mm-storefront:active,
+    .mm-library__arrow:not(:disabled):active,
+    .mm-doc__actions a:active {
+        background: var(--color-surface-2);
+    }
+
+    /* ── Responsive expansion ──────────────────────────────────── */
+
+    @media (min-width: 40rem) {
+        .mm-storefronts {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    @media (min-width: 60rem) {
+        .mm-intro {
+            grid-template-columns: minmax(0, 1fr) minmax(15rem, 0.5fr);
+            align-items: center;
+            gap: var(--space-6);
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .mm-storefront {
+            transition: none;
+        }
+
+        .mm-rail {
+            scroll-behavior: auto;
+        }
+    }
+
+    /* Print a document list rather than a clipped horizontal shelf. */
+    @media print {
+        .mm-library__controls,
+        .mm-library__hint,
+        .mm-doc__preview {
+            display: none !important;
+        }
+
+        .mm-rail {
+            display: grid;
+            grid-auto-flow: row;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            overflow: visible;
+        }
+    }
+
     /* ── E7: IN DEPTH ACCORDION ────────────────────────────── */
     .story-accordion {
       border: 1px solid var(--color-border);
