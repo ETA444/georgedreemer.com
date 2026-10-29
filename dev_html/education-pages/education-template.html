@@ -3951,7 +3951,6 @@
 
     .mm-section .mm-stats dd {
         color: var(--mm-ink);
-        font-size: var(--text-2xl);
     }
 
     /* ── Storefronts: solid burgundy cards ─────────────────────── */
@@ -4917,7 +4916,7 @@
              STYLE: p1 renders larger/display-weight (first-of-type CSS
                     hook) — write it knowing it will look like a headline.
         ================================================================ -->
-        <section aria-label="E1 Context Block" class="fade-in">
+        <section id="intro" data-nav="intro" aria-label="Intro" class="fade-in">
             <div class="context-block">
                 <p>
                     My MSc in Marketing Analytics & Data Science at the University of Groningen was a graduate program focused on applied statistics, machine learning, data science, and data engineering.
@@ -4984,7 +4983,7 @@
                - Do not repeat Stack items (no tool names) and do not
                  pre-empt E5 card titles word for word.
         ================================================================ -->
-        <section aria-label="E2 Snapshot Card" class="fade-in">
+        <section id="snapshot" data-nav="snapshot" aria-label="Snapshot" class="fade-in">
             <div class="snapshot-card" data-domain="engineering">
 
                 <div class="snapshot-card__tab">
@@ -5179,7 +5178,7 @@
              For tools without a Simple Icons entry, use `.stack-badge--text`
              with a colored monogram mark (`.stack-badgemark`).
         ================================================================ -->
-        <section aria-label="E4: STACK BADGE GRID" class="fade-in">
+        <section id="tools" data-nav="tools" aria-label="Tools" class="fade-in">
             <div class="section-label">
                 <span class="section-label__text">Tools</span>
                 <span class="section-label__line" aria-hidden="true"></span>
@@ -5420,7 +5419,7 @@
              DOMAIN ASSIGNMENT: one card carries one data-domain — the
              domain the skill is MOST associated with.
         ================================================================ -->
-        <section aria-label="E5 Ability Card Grid" class="fade-in">
+        <section id="abilities" data-nav="abilities" aria-label="Abilities" class="fade-in">
 
             <div class="section-label">
                 <span class="section-label__text">Abilities</span>
@@ -5950,7 +5949,7 @@
                     education page it is the strongest differentiator:
                     the work is public, readable, and inspectable.
         ================================================================ -->
-        <section id="masters-works" class="works-section fade-in" aria-labelledby="masters-works-heading">
+        <section id="works" data-nav="works" aria-label="Works" class="works-section fade-in">
 
             <div class="section-label">
                 <h2 id="masters-works-heading" class="section-label__text">Works</h2>
@@ -6389,7 +6388,7 @@
         <!-- ============================================================
             E6–THESES — RESEARCH SHOWCASE
         =============================================================== -->
-        <section id="masters-theses" class="theses-section" aria-labelledby="masters-theses-heading">
+        <section id="thesis" data-nav="thesis" aria-label="Thesis" class="theses-section">
             <div class="section-label">
                 <h2 id="masters-theses-heading" class="section-label__text">
                     Thesis
@@ -7576,7 +7575,7 @@
                Existing site design tokens and Bootstrap Icons.
                All custom styling is scoped to .mm-section.
         =============================================================== -->
-        <section id="mads-madlad" class="mm-section" aria-labelledby="mm-heading">
+        <section id="mads-madlad" data-nav="mads-madlad" aria-label="MADS Madlad" class="mm-section fade-in">
             <div class="section-label">
                 <h2 id="mm-heading" class="section-label__text">
                     MADS Madlad
@@ -7653,7 +7652,7 @@
                     <dl class="mm-storefront__metrics">
                         <div>
                             <dt>Documents sold</dt>
-                            <dd>37</dd>
+                            <dd>35+</dd>
                         </div>
                         <div>
                             <dt>Reputation</dt>
@@ -7677,7 +7676,7 @@
                     <dl class="mm-storefront__metrics">
                         <div>
                             <dt>Documents sold</dt>
-                            <dd>19</dd>
+                            <dd>20+</dd>
                         </div>
                     </dl>
 
@@ -7691,7 +7690,7 @@
 
             <p class="mm-snapshot">
                 Catalogue and marketplace snapshot:
-                <time datetime="2026-10">October 2026</time>.
+                <time datetime="2026-10">November 2026</time>.
             </p>
 
 
