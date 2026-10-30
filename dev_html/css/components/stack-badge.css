@@ -11,7 +11,7 @@
     letter-spacing: .12em;
     text-transform: uppercase;
     color: var(--color-text-faint);
-    margin-bottom: var(--space-3);
+    margin-top: var(--space-3) .75rem;
 }
 
 .stack-group__items {
