@@ -7,6 +7,13 @@
     gap: var(--space-12);
 }
 
+@media(max-width:600px) {
+    .main-content {
+        padding: var(--space-6) var(--space-4);
+        gap: var(--space-8);
+    }
+}
+
 /* NC Site Builder Injection */
 /* note: this injection is designed to fix issues caused by Namecheap Sitebuilder */
 @media (max-width: 560px) {
