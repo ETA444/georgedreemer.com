@@ -147,26 +147,12 @@
 
 <body>
 
-  <!-- ── STICKY NAV ─────────────────────────────────────────── -->
-  <nav class="site-nav" aria-label="Site navigation">
-    <div class="site-nav__inner">
-      <a href="/" class="site-nav__back" aria-label="Back to portfolio">
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <polyline points="15 18 9 12 15 6" />
-        </svg>
-        Portfolio
-      </a>
-      <span class="site-nav__title">thoughtbubble</span>
-      <div style="width:80px"></div><!-- spacer to keep title centered -->
-    </div>
-  </nav>
-
   <main class="main-content" role="main" data-page="exp-thoughtbubble">
 
     <!-- ============================================================
         ELEMENT 1 — CONTEXT BLOCK
     ============================================================ -->
-    <section aria-label="E1: CONTEXT BLOCK" class="fade-in">
+    <section id="intro" data-nav="Intro" aria-label="Intro" class="fade-in">
       <div class="context-block">
         <p>A knowledge-first social network, built from scratch by two seniors in high
         school. Just a love for web development, zero budget, launched in the USA and expanded to reach 900+ users
@@ -181,7 +167,7 @@
     <!-- ============================================================
         ELEMENT 2 — SNAPSHOT CARD
     ============================================================ -->
-    <section aria-label="E2: SNAPSHOT CARD" class="fade-in">
+    <section aria-label="Intro" class="fade-in">
       <div class="snapshot-card" data-domain="engineering">
         <div class="snapshot-card__meta">
 
@@ -249,7 +235,7 @@
     <!-- ============================================================
         ELEMENT 3 — IN NUMBERS / STAT COUNTER
     ============================================================ -->
-    <section class="stat-counter-section" aria-label="E3: IN NUMBERS">
+    <section aria-label="Intro" class="stat-counter-section fade-in">
       <div class="stat-counter">
 
         <div class="stat-counter__item" data-target="76" data-suffix="+" data-domain="engineering">
@@ -278,7 +264,7 @@
     <!-- ============================================================
         ELEMENT 4 — STACK BADGE GRID
     ============================================================ -->
-    <section aria-label="E4: STACK BADGE GRID" class="fade-in">
+    <section id="stack" data-nav="Stack" aria-label="Stack" class="fade-in">
       <div class="section-label">
         <span class="section-label__text">Stack</span>
         <span class="section-label__line" aria-hidden="true"></span>
@@ -348,7 +334,7 @@
     <!-- ============================================================
         ELEMENT 5 — ABILITY CARD GRID
     ============================================================ -->
-    <section aria-label="E5: ABILITY CARD GRID" class="fade-in">
+    <section id="abilities" data-nav="Abilities" aria-label="Abilities" class="fade-in">
       <div class="section-label">
         <span class="section-label__text">Abilities</span>
         <span class="section-label__line" aria-hidden="true"></span>
@@ -517,7 +503,7 @@
     <!-- ============================================================
         ELEMENT 6 — WORKS CARD GRID
     ============================================================ -->
-    <section aria-label="E6: WORKS CARD GRID" class="fade-in">
+    <section id="works" data-nav="Works" aria-label="Works" class="fade-in">
       <div class="section-label">
         <span class="section-label__text">Works</span>
         <span class="section-label__line" aria-hidden="true"></span>
@@ -626,7 +612,7 @@
     <!-- ============================================================
         ELEMENT 7 — IN DEPTH ACCORDION
     ============================================================ -->
-    <section aria-label="E7: IN DEPTH ACCORDION" class="fade-in">
+    <section id="in-depth" data-nav="In-depth" aria-label="In-depth" class="fade-in">
       <div class="section-label">
         <span class="section-label__text">In Depth</span>
         <span class="section-label__line" aria-hidden="true"></span>

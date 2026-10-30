@@ -155,26 +155,12 @@
 
 <body>
 
-  <!-- ── STICKY NAV ─────────────────────────────────────────── -->
-  <nav class="site-nav" aria-label="Site navigation">
-    <div class="site-nav__inner">
-      <a href="/" class="site-nav__back" aria-label="Back to portfolio">
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <polyline points="15 18 9 12 15 6" />
-        </svg>
-        Portfolio
-      </a>
-      <span class="site-nav__title">DataSafari</span>
-      <div style="width:80px"></div>
-    </div>
-  </nav>
-
   <main class="main-content" role="main" data-page="exp-datasafari">
 
     <!-- ============================================================
         ELEMENT 1 — CONTEXT BLOCK
     ============================================================ -->
-    <section aria-label="E1 Context Block" class="fade-in">
+    <section id="intro" data-nav="Intro" aria-label="Intro" class="fade-in">
       <div class="context-block">
         <p>DataSafari is a Python library that simplifies complex data science tasks — compressing exploration, transformation, evaluation, and prediction into a single one-liner API. One import. One function call. One plain-English report.</p>
         <p>George built DataSafari to solve a specific problem he watched play out at university: data science curricula built around Stata, R, and SPSS — tools with decades of academic inertia — while Python's better-maintained, faster, and more capable ecosystem went largely untaught. The researcher who understands their domain deeply but doesn't want to spend two hours reading Scipy docs to run a single test was the exact person the existing tooling failed. DataSafari is the attempt to fix that: one import, one function call, one plain-English report.</p>
@@ -185,7 +171,7 @@
     <!-- ============================================================
         ELEMENT 2 — SNAPSHOT CARD
     ============================================================ -->
-    <section aria-label="E2 Snapshot Card" class="fade-in">
+    <section aria-label="Intro" class="fade-in">
       <div class="snapshot-card" data-domain="engineering">
         <div class="snapshot-card__meta">
           <!-- Prominent fields first -->
@@ -296,7 +282,7 @@
     <!-- ============================================================
         ELEMENT 3 — IN NUMBERS / STAT COUNTER
     ============================================================ -->
-    <section class="stat-counter-section fade-in" aria-label="E3 In Numbers">
+    <section aria-label="Intro" class="stat-counter-section fade-in">
       <div class="stat-counter">
         <div class="stat-counter__item" data-target="11" data-domain="data">
           <span class="stat-counter__number" aria-live="polite">0</span>
@@ -336,7 +322,7 @@
     <!-- ============================================================
             ELEMENT 4 — STACK BADGE GRID
     ============================================================ -->
-    <section aria-label="E4: STACK BADGE GRID" class="fade-in">
+    <section id="stack" data-nav="Stack" aria-label="Stack" class="fade-in">
       <div class="section-label">
         <span class="section-label__text">Stack</span>
         <span class="section-label__line" aria-hidden="true"></span>
@@ -514,7 +500,7 @@
     <!-- ============================================================
         ELEMENT 5 — ABILITY CARD GRID
     ============================================================ -->
-    <section aria-label="E5: ABILITY CARD GRID" class="fade-in">
+    <section id="abilities" data-nav="Abilities" aria-label="Abilities" class="fade-in">
       <div class="section-label">
         <span class="section-label__text">Abilities</span>
         <span class="section-label__line" aria-hidden="true"></span>
@@ -724,7 +710,7 @@
     <!-- ============================================================
         ELEMENT 6 — WORKS CARD GRID
     ============================================================ -->
-    <section aria-label="E6 Works Card Grid" class="fade-in">
+    <section id="works" data-nav="Works" aria-label="Works" class="fade-in">
 
       <div class="section-label">
         <span class="section-label__text">Works</span>
@@ -1053,7 +1039,7 @@
     <!-- ============================================================
         ELEMENT 7 — IN-DEPTH ACCORDION
     ============================================================ -->
-    <section aria-label="E7: IN DEPTH ACCORDION" class="fade-in">
+    <section id="in-depth" data-nav="In-depth" aria-label="In-depth" class="fade-in">
       <div class="section-label">
         <span class="section-label__text">In Depth</span>
         <span class="section-label__line" aria-hidden="true"></span>
@@ -1171,7 +1157,6 @@
 
       </div>
     </section>
-
 
   </main>
 
