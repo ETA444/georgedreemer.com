@@ -19,12 +19,39 @@
         }
     }
 
+    @keyframes sn-pop {
+        from {
+            opacity: 0;
+            transform: translateX(-50%) translateY(0.5rem) scale(0.96);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0) scale(1);
+        }
+    }
+
     /* Brief highlight when a link lands on a card or article. */
     article[id]:target {
         outline: 2px solid transparent;
         outline-offset: 4px;
         animation: sn-flash 1.6s ease-out;
     }
+}
+
+/* ── Glass material (shared by bar, menu, toast) ──────────── */
+.sn {
+    --sn-ease: cubic-bezier(0.22, 1, 0.36, 1);
+    --sn-glass-bg: color-mix(in srgb, var(--color-surface, #f9f8f5) 62%, transparent);
+    --sn-glass-border: color-mix(in srgb, var(--color-border, #d4d1ca) 55%, transparent);
+    --sn-glass-filter: blur(24px) saturate(180%);
+    --sn-glass-highlight:
+        inset 0 1px 0 color-mix(in srgb, white 55%, transparent),
+        inset 0 -1px 0 color-mix(in srgb, black 5%, transparent);
+    --sn-glass-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.06),
+        0 8px 24px rgba(0, 0, 0, 0.10),
+        0 20px 48px rgba(0, 0, 0, 0.08);
 }
 
 /* ── Floating toolbar ─────────────────────────────────────── */
@@ -36,14 +63,17 @@
     max-width: calc(100vw - 1.5rem);
     opacity: 0;
     visibility: hidden;
-    transform: translate(-50%, 0.75rem);
-    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0s linear 0.2s;
+    transform: translate(-50%, 1rem) scale(0.96);
+    transition:
+        opacity 0.3s var(--sn-ease),
+        transform 0.4s var(--sn-ease),
+        visibility 0s linear 0.3s;
 }
 
 .sn.is-visible {
     opacity: 1;
     visibility: visible;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 0) scale(1);
     transition-delay: 0s;
 }
 
@@ -53,14 +83,14 @@
     align-items: center;
     gap: var(--space-1, 0.25rem);
     width: clamp(15rem, 40vw, 19rem);
-    padding: var(--space-1, 0.25rem);
+    padding: 5px;
     overflow: hidden;
-    border: 1px solid var(--color-border, #d4d1ca);
+    border: 1px solid var(--sn-glass-border);
     border-radius: var(--radius-full, 9999px);
-    background: color-mix(in srgb, var(--color-surface, #f9f8f5) 90%, transparent);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    box-shadow: var(--shadow-lg, 0 12px 32px rgba(0, 0, 0, 0.12));
+    background: var(--sn-glass-bg);
+    -webkit-backdrop-filter: var(--sn-glass-filter);
+    backdrop-filter: var(--sn-glass-filter);
+    box-shadow: var(--sn-glass-highlight), var(--sn-glass-shadow);
 }
 
 .sn__step {
@@ -75,16 +105,27 @@
     background: transparent;
     color: var(--color-text, #28251d);
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition:
+        background-color 0.2s ease,
+        transform 0.25s var(--sn-ease),
+        opacity 0.2s ease;
+}
+
+.sn__step:not(:disabled):active {
+    transform: scale(0.9);
+    background: color-mix(in srgb, var(--color-text, #28251d) 10%, transparent);
 }
 
 .sn__step:disabled {
-    opacity: 0.35;
+    opacity: 0.3;
     cursor: default;
 }
 
 .sn__step svg {
     width: 1rem;
     height: 1rem;
+    stroke-width: 2.25;
 }
 
 .sn__current {
@@ -96,19 +137,30 @@
     min-height: 44px;
     padding: 0 var(--space-3, 0.75rem);
     border: 0;
+    border-radius: var(--radius-full, 9999px);
     background: transparent;
     color: var(--color-text, #28251d);
     font: inherit;
     font-size: var(--text-sm, 0.875rem);
     font-weight: 600;
+    letter-spacing: -0.01em;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.2s ease, transform 0.25s var(--sn-ease);
+}
+
+.sn__current:active {
+    transform: scale(0.97);
 }
 
 .sn__count {
     flex: 0 0 auto;
+    padding: 2px 7px;
+    border-radius: var(--radius-full, 9999px);
+    background: color-mix(in srgb, var(--color-text, #28251d) 7%, transparent);
     color: var(--color-text-muted, #7a7974);
     font-size: var(--text-xs, 0.75rem);
-    font-weight: 500;
+    font-weight: 600;
     font-variant-numeric: tabular-nums;
     white-space: nowrap;
 }
@@ -117,22 +169,27 @@
     flex: 1 1 auto;
     min-width: 0;
     overflow: hidden;
+    text-align: left;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
+/* Thin progress line along the bottom edge of the pill */
 .sn__progress {
     position: absolute;
-    right: 14px;
-    bottom: 2px;
-    left: 14px;
+    right: 22px;
+    bottom: 3px;
+    left: 22px;
     height: 2px;
-    background: var(--color-border, #d4d1ca);
+    overflow: hidden;
+    border-radius: var(--radius-full, 9999px);
+    background: color-mix(in srgb, var(--color-text, #28251d) 10%, transparent);
 }
 
 .sn__progress>span {
     display: block;
     height: 100%;
+    border-radius: inherit;
     background: var(--sn-accent);
     transform: scaleX(0);
     transform-origin: left;
@@ -141,19 +198,30 @@
 /* ── Section menu ─────────────────────────────────────────── */
 .sn__list {
     position: absolute;
-    bottom: calc(100% + var(--space-2, 0.5rem));
+    bottom: calc(100% + var(--space-3, 0.75rem));
     left: 50%;
     width: min(18rem, calc(100vw - 1.5rem));
     max-height: min(60vh, 26rem);
     margin: 0;
-    padding: var(--space-2, 0.5rem);
+    padding: 6px;
     overflow: auto;
-    border: 1px solid var(--color-border, #d4d1ca);
-    border-radius: var(--radius-lg, 0.75rem);
-    background: var(--color-surface, #f9f8f5);
-    box-shadow: var(--shadow-lg, 0 12px 32px rgba(0, 0, 0, 0.12));
+    overscroll-behavior: contain;
+    border: 1px solid var(--sn-glass-border);
+    border-radius: 1.25rem;
+    background: color-mix(in srgb, var(--color-surface, #f9f8f5) 72%, transparent);
+    -webkit-backdrop-filter: var(--sn-glass-filter);
+    backdrop-filter: var(--sn-glass-filter);
+    box-shadow: var(--sn-glass-highlight), var(--sn-glass-shadow);
     list-style: none;
     transform: translateX(-50%);
+    transform-origin: bottom center;
+    scrollbar-width: thin;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .sn__list {
+        animation: sn-pop 0.28s var(--sn-ease);
+    }
 }
 
 .sn__list a {
@@ -162,20 +230,22 @@
     gap: var(--space-3, 0.75rem);
     min-height: 44px;
     padding: 0 var(--space-3, 0.75rem);
-    border-radius: var(--radius-md, 0.5rem);
+    border-radius: 0.875rem;
     color: var(--color-text-muted, #7a7974);
     font-size: var(--text-sm, 0.875rem);
     text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .sn__num {
+    min-width: 1.25rem;
     color: var(--color-text-muted, #7a7974);
     font-size: var(--text-xs, 0.75rem);
     font-variant-numeric: tabular-nums;
 }
 
 .sn__list a[aria-current] {
-    background: color-mix(in srgb, var(--sn-accent) 12%, transparent);
+    background: color-mix(in srgb, var(--sn-accent) 14%, transparent);
     color: var(--color-text, #28251d);
     font-weight: 600;
 }
@@ -195,6 +265,11 @@
     color: var(--color-text-muted, #7a7974);
     opacity: 0.6;
     text-decoration: none;
+    transition: opacity 0.2s ease, color 0.2s ease, transform 0.25s var(--sn-ease);
+}
+
+.sn-anchor:active {
+    transform: scale(0.92);
 }
 
 .sn-anchor svg {
@@ -210,20 +285,25 @@
     z-index: 901;
     max-width: calc(100vw - 2rem);
     padding: var(--space-2, 0.5rem) var(--space-4, 1rem);
+    border: 1px solid color-mix(in srgb, white 12%, transparent);
     border-radius: var(--radius-full, 9999px);
-    background: var(--color-text, #28251d);
+    background: color-mix(in srgb, var(--color-text, #28251d) 82%, transparent);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    backdrop-filter: blur(16px) saturate(160%);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
     color: var(--color-bg, #f7f6f2);
     font-size: var(--text-xs, 0.75rem);
     font-weight: 600;
+    letter-spacing: -0.005em;
     opacity: 0;
     pointer-events: none;
-    transform: translate(-50%, 0.5rem);
-    transition: opacity 0.2s ease, transform 0.2s ease;
+    transform: translate(-50%, 0.5rem) scale(0.96);
+    transition: opacity 0.25s var(--sn-ease), transform 0.35s var(--sn-ease);
 }
 
 .sn-toast.is-on {
     opacity: 1;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 0) scale(1);
 }
 
 /* ── Optional on-page contents chips: <nav data-sn-toc></nav> ─ */
@@ -247,9 +327,10 @@
     font-size: var(--text-xs, 0.75rem);
     font-weight: 600;
     text-decoration: none;
+    transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
 }
 
-/* ── Focus, hover, print ──────────────────────────────────── */
+/* ── Focus, hover ─────────────────────────────────────────── */
 .sn button:focus-visible,
 .sn a:focus-visible,
 .sn-anchor:focus-visible,
@@ -259,11 +340,14 @@
 }
 
 @media (hover: hover) {
-
     .sn__step:not(:disabled):hover,
-    .sn__current:hover,
+    .sn__current:hover {
+        background: color-mix(in srgb, var(--color-text, #28251d) 7%, transparent);
+    }
+
     .sn__list a:hover {
         background: color-mix(in srgb, var(--sn-accent) 10%, transparent);
+        color: var(--color-text, #28251d);
     }
 
     .sn-anchor:hover {
@@ -277,16 +361,50 @@
     }
 }
 
-@media (prefers-reduced-motion: reduce) {
+/* ── Fallbacks & accessibility ────────────────────────────── */
+/* No backdrop-filter support: use a near-opaque surface so text stays readable. */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .sn {
+        --sn-glass-bg: var(--color-surface, #f9f8f5);
+    }
 
-    .sn,
+    .sn__list {
+        background: var(--color-surface, #f9f8f5);
+    }
+
     .sn-toast {
+        background: var(--color-text, #28251d);
+    }
+}
+
+/* Users who ask for less transparency get solid surfaces. */
+@media (prefers-reduced-transparency: reduce) {
+    .sn {
+        --sn-glass-bg: var(--color-surface, #f9f8f5);
+        --sn-glass-filter: none;
+    }
+
+    .sn__list {
+        background: var(--color-surface, #f9f8f5);
+    }
+
+    .sn-toast {
+        background: var(--color-text, #28251d);
+    }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    .sn,
+    .sn-toast,
+    .sn__step,
+    .sn__current,
+    .sn-anchor {
         transition: none;
     }
 }
 
 @media print {
-
     .sn,
     .sn-toast,
     .sn-anchor {
