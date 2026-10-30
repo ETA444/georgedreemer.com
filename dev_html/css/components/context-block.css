@@ -1,0 +1,54 @@
+/* Context block */
+/* Opening multi-paragraph block used across experience and education pages */
+.context-block {
+    border-left: none;
+    padding-left: 0;
+    margin-inline: auto;
+    position: relative;
+    padding-top: var(--space-10);
+}
+
+.context-block::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 3px;
+    background: var(--color-primary);
+    margin-bottom: var(--space-5);
+}
+
+.context-block p {
+    font-size: var(--text-lg);
+    font-weight: 300;
+    color: var(--color-text);
+    line-height: 1.7;
+}
+
+.context-block p:first-of-type {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: var(--text-xl);
+    color: var(--color-text);
+    line-height: 1.4;
+}
+
+.context-block p:not(:first-of-type) {
+    font-size: var(--text-lg);
+    font-weight: 300;
+    color: var(--color-text);
+    line-height: 1.7;
+    max-width: 70ch;
+    padding-top: var(--space-4);
+}
+
+.context-block p:last-of-type {
+    color: var(--color-text-muted);
+    padding: 0;
+    max-width: 67ch;
+}
+
+.context-block p+p {
+    margin-top: var(--space-4);
+    font-size: var(--text-base);
+    color: var(--color-text-muted);
+}
