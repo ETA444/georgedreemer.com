@@ -2,30 +2,33 @@
 <html lang="en">
 
 <head>
+  <!-- Core document setup -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SkipSchoolMakeMoney — Streetwear Brand · George Dreemer</title>
 
-  <!-- SEO Meta Data (source: seo/meta.html) -->
+  <!-- SEO -->
   <meta name="description"
     content="SkipSchoolMakeMoney (SSMM) was a streetwear brand founded by George Dreemer in 2016 — growing to 12,000+ followers, 20+ collections, and orders across three continents. Collaborators included Lil Peep, Pouya, and Fat Nick.">
   <meta name="keywords"
     content="SkipSchoolMakeMoney, SSMM, George Dreemer, streetwear brand, underground streetwear, meme marketing, Clout Cards, Shopify store, brand founder, e-commerce entrepreneur, self-taught entrepreneur">
   <link rel="canonical" href="https://georgedreemer.com/skipschoolmakemoney">
+
+  <!-- Social sharing -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://georgedreemer.com/skipschoolmakemoney">
   <meta property="og:title" content="SkipSchoolMakeMoney — Streetwear Brand · George Dreemer">
   <meta property="og:description"
     content="SkipSchoolMakeMoney (SSMM) was a streetwear brand founded by George Dreemer in 2016 — growing to 12,000+ followers, 20+ collections, and orders across three continents. Collaborators included Lil Peep, Pouya, and Fat Nick.">
   <meta property="og:image" content="https://georgedreemer.com/ncsitebuilder/gallery/dxyz-ssmm-thumb.png">
+
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="SkipSchoolMakeMoney — Streetwear Brand · George Dreemer">
   <meta name="twitter:description"
     content="SkipSchoolMakeMoney (SSMM) was a streetwear brand founded by George Dreemer in 2016 — growing to 12,000+ followers, 20+ collections, and orders across three continents. Collaborators included Lil Peep, Pouya, and Fat Nick.">
   <meta name="twitter:image" content="https://georgedreemer.com/ncsitebuilder/gallery/dxyz-ssmm-thumb.png">
 
-
-  <!-- SEO Schema JSON (source: seo/schema/ssmm_schema.json) -->
+  <!-- Structured data -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -114,22 +117,12 @@
     }
   </script>
 
-
-  <!-- Preconnect to Google Fonts & Pull Nunito, Playfair Display -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- Pull Lucide icons -->
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
-
-  <!-- Pull Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-  <!-- Instagram Embed Instance -->
-  <script async src="https://www.instagram.com/embed.js"></script>
-
-  <!-- Main Styles-->
+  <!-- Styles (WIP) -->
   <style>
     :root {
       --font-body: "Nunito", "Helvetica Neue", sans-serif;
@@ -1711,6 +1704,287 @@
       }
     }
 
+    /* ── E9: CONTENT ARCHIVE — YOUTUBE CHANNEL SCROLLERS ─────────────── */
+    .content-archive__channel {
+      margin-bottom: var(--space-10);
+    }
+
+    .content-archive__channel:last-child {
+      margin-bottom: 0;
+    }
+
+    .content-archive__channel-label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-3);
+      margin-bottom: var(--space-3);
+    }
+
+    .content-archive__channel-label-left {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      min-width: 0;
+    }
+
+    .content-archive__channel-nav {
+      display: flex;
+      gap: var(--space-2);
+      flex-shrink: 0;
+    }
+
+    .content-archive__channel-pfp {
+      width: 32px;
+      height: 32px;
+      border-radius: var(--radius-full);
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 1px solid var(--color-border);
+    }
+
+    .content-archive__channel-name {
+      font-size: var(--text-sm);
+      font-weight: 700;
+      color: var(--color-text);
+      letter-spacing: .01em;
+    }
+
+    .content-archive__channel-meta {
+      font-size: var(--text-xs);
+      color: var(--color-text-faint);
+      font-weight: 500;
+    }
+
+    .yt-scroller {
+      position: relative;
+    }
+
+    .yt-scroller__track {
+      display: flex;
+      gap: var(--space-4);
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-padding-inline: var(--space-4);
+      padding: var(--space-2) var(--space-4) var(--space-1);
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .yt-scroller__track::-webkit-scrollbar {
+      display: none;
+    }
+
+    .yt-scroller::before,
+    .yt-scroller::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: var(--space-4);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .yt-scroller::before {
+      left: 0;
+      background: linear-gradient(to right, var(--color-bg), transparent);
+    }
+
+    .yt-scroller::after {
+      right: 0;
+      background: linear-gradient(to left, var(--color-bg), transparent);
+    }
+
+    .yt-scroller__item {
+      flex: 0 0 auto;
+      --yt-h: clamp(150px, 16vw, 190px);
+      width: calc(var(--yt-h) * 16 / 9);
+      scroll-snap-align: start;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+    }
+
+    .yt-scroller__item[data-orientation="portrait"] {
+      width: calc(var(--yt-h) * 9 / 16);
+    }
+
+    .yt-scroller__embed {
+      position: relative;
+      width: 100%;
+      height: var(--yt-h);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      background: #0e0e0e;
+      transition: box-shadow var(--transition);
+    }
+
+    .yt-scroller__embed:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    .yt-scroller__embed iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    .yt-scroller__thumb-btn {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      padding: 0;
+      border: 0;
+    }
+
+    .yt-scroller__thumb-btn img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .yt-scroller__play-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.55);
+      backdrop-filter: blur(2px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background var(--transition), transform var(--transition);
+    }
+
+    .yt-scroller__thumb-btn:hover .yt-scroller__play-icon {
+      background: rgba(0, 0, 0, 0.85);
+      transform: translate(-50%, -50%) scale(1.08);
+    }
+
+    .yt-scroller__play-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: #fff;
+      display: block;
+    }
+
+    .yt-scroller__caption {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      padding-inline: var(--space-1);
+    }
+
+    .yt-scroller__nav-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--color-border);
+      background: var(--color-surface);
+      color: var(--color-text);
+      cursor: pointer;
+      transition: background var(--transition), border-color var(--transition);
+    }
+
+    .yt-scroller__nav-btn:hover {
+      background: var(--color-surface-2);
+      border-color: var(--color-primary);
+    }
+
+    .yt-scroller__nav-btn svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .content-archive__channel-nav .yt-scroller__nav-btn {
+      width: 32px;
+      height: 32px;
+    }
+
+    .content-archive__channel-nav .yt-scroller__nav-btn svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    @media (hover: none) {
+      .content-archive__channel-nav {
+        display: none;
+      }
+    }
+
+    /* Square-format items (shorts YouTube tags as vertical but actual frame is 1:1) */
+    .yt-scroller__item[data-orientation="square"] {
+      width: var(--yt-h);
+    }
+
+    /* Locked / private teaser variant — thumbnail visible, no public playback */
+    .yt-scroller__thumb-btn--locked {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .yt-scroller__thumb-btn--locked img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: grayscale(0.35) brightness(0.55);
+      transition: filter var(--transition);
+    }
+
+    .yt-scroller__thumb-btn--locked:hover img {
+      filter: grayscale(0.2) brightness(0.45);
+    }
+
+    .yt-scroller__lock-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(2px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background var(--transition), transform var(--transition);
+    }
+
+    .yt-scroller__thumb-btn--locked:hover .yt-scroller__lock-icon {
+      background: rgba(0, 0, 0, 0.85);
+      transform: translate(-50%, -50%) scale(1.08);
+    }
+
+    .yt-scroller__lock-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: #fff;
+      display: block;
+    }
+
+    .yt-scroller__caption--locked {
+      color: var(--color-text-faint);
+      font-style: italic;
+    }
+
     /* ── SCROLL REVEAL ─────────────────────────────────────── */
     @supports(animation-timeline:scroll()) {
       .fade-in {
@@ -1819,6 +2093,14 @@
       }
     }
   </style>
+
+  <!-- Third-party scripts -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script async src="https://www.instagram.com/embed.js"></script>
+
+  <!-- Page behavior -->
+  <script type="module" src="../js/pages/experience/skipschoolmakemoney.js"></script>
 </head>
 
 <body>
@@ -1837,7 +2119,7 @@
     </div>
   </nav>
 
-  <main class="experience-page" role="main">
+  <main class="preview-page" role="main">
 
     <!-- ============================================================
         ELEMENT 1 — CONTEXT BLOCK
@@ -3443,190 +3725,7 @@
       </div>
     </section>
 
-
-
   </main>
-
-  <script>
-    // ── Lucide icons ──────────────────────────────────────────────
-    (function () {
-      if (typeof lucide !== 'undefined') {
-        lucide.createIcons();
-        return;
-      }
-
-      const lucideScript = document.querySelector('script[src*="lucide"]');
-      if (lucideScript) {
-        lucideScript.addEventListener('load', () => {
-          if (typeof lucide !== 'undefined') lucide.createIcons();
-        });
-      }
-    })();
-
-    // ── Slideshow ──────────────────────────────────────────────
-    document.querySelectorAll('.evidence-card__slides').forEach(slider => {
-      const slides = slider.querySelectorAll('.evidence-card__slide');
-      const dots = slider.querySelectorAll('.evidence-card__slide-dot');
-      if (!slides.length || !dots.length) return;
-
-      let current = 0;
-      let timer;
-
-      function goTo(n) {
-        slides[current].classList.remove('is-active');
-        dots[current].classList.remove('is-active');
-        current = (n + slides.length) % slides.length;
-        slides[current].classList.add('is-active');
-        dots[current].classList.add('is-active');
-      }
-
-      function start() {
-        if (slides.length > 1) timer = setInterval(() => goTo(current + 1), 4000);
-      }
-
-      function stop() {
-        clearInterval(timer);
-      }
-
-      dots.forEach((dot, i) => {
-        dot.addEventListener('click', () => {
-          stop();
-          goTo(i);
-          start();
-        });
-      });
-
-      slider.addEventListener('mouseenter', stop);
-      slider.addEventListener('mouseleave', start);
-      start();
-    });
-
-
-    // ── Sound toggle (YouTube iframes) ─────────────────────────
-    document.querySelectorAll('[data-sound-toggle]').forEach(btn => {
-      let muted = true;
-      const iframe = btn.closest('.evidence-card__video')?.querySelector('iframe');
-      if (!iframe) return;
-
-      btn.addEventListener('click', () => {
-        muted = !muted;
-        const src = iframe.src;
-        iframe.src = muted
-          ? src.replace('&mute=0', '&mute=1')
-          : src.replace('&mute=1', '&mute=0');
-
-        const svg = btn.querySelector('svg');
-        if (!svg) return;
-
-        svg.innerHTML = muted
-          ? `<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15" class="mute-line"/><line x1="17" y1="9" x2="23" y2="15" class="mute-line"/>`
-          : `<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>`;
-      });
-    });
-
-    // ── Accordion ─────────────────────────────────────────────────
-    document.querySelectorAll('.story-accordion').forEach(accordion => {
-      const triggers = accordion.querySelectorAll('.story-accordion__trigger');
-
-      triggers.forEach(btn => {
-        btn.addEventListener('click', () => {
-          const panelId = btn.getAttribute('aria-controls');
-          const panel = panelId ? document.getElementById(panelId) : null;
-          const isOpen = btn.getAttribute('aria-expanded') === 'true';
-
-          triggers.forEach(otherBtn => {
-            const otherPanelId = otherBtn.getAttribute('aria-controls');
-            const otherPanel = otherPanelId ? document.getElementById(otherPanelId) : null;
-
-            otherBtn.setAttribute('aria-expanded', 'false');
-            if (otherPanel) otherPanel.setAttribute('aria-hidden', 'true');
-          });
-
-          if (!isOpen) {
-            btn.setAttribute('aria-expanded', 'true');
-            if (panel) panel.setAttribute('aria-hidden', 'false');
-          }
-        });
-      });
-    });
-
-    // ── Stat counter animation ────────────────────────────────────
-    (function () {
-      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-      function easeOut(t) {
-        return 1 - Math.pow(1 - t, 3);
-      }
-
-      function animateCounter(item) {
-        const numberEl = item.querySelector('.stat-counter__number');
-        const target = parseInt(item.dataset.target, 10);
-        const prefix = item.dataset.prefix || '';
-        const suffix = item.dataset.suffix || '';
-        const duration = 1200;
-        const start = performance.now();
-
-        if (!numberEl || Number.isNaN(target)) return;
-
-        if (prefersReduced) {
-          numberEl.textContent = prefix + target + suffix;
-          return;
-        }
-
-        function tick(now) {
-          const elapsed = now - start;
-          const progress = Math.min(elapsed / duration, 1);
-          const value = Math.round(easeOut(progress) * target);
-          numberEl.textContent = prefix + value + suffix;
-
-          if (progress < 1) {
-            requestAnimationFrame(tick);
-          }
-        }
-
-        requestAnimationFrame(tick);
-      }
-
-      const items = document.querySelectorAll('.stat-counter__item');
-      if (!items.length) return;
-
-      if (!('IntersectionObserver' in window)) {
-        items.forEach(item => {
-          item.classList.add('is-visible');
-          animateCounter(item);
-        });
-        return;
-      }
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting) return;
-
-          const item = entry.target;
-          item.classList.add('is-visible');
-          animateCounter(item);
-          observer.unobserve(item);
-        });
-      }, { threshold: 0.3 });
-
-      items.forEach(item => observer.observe(item));
-    })();
-
-    // ── Instagram scroller nav ──────────────────────────────────
-    document.querySelectorAll('[data-ig-track]').forEach(track => {
-      const section = track.closest('.ig-scroller');
-      const prevBtn = section.querySelector('[data-ig-prev]');
-      const nextBtn = section.querySelector('[data-ig-next]');
-      const scrollAmount = () => track.querySelector('.ig-scroller__item')?.offsetWidth + 16 || 360;
-
-      prevBtn?.addEventListener('click', () => {
-        track.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
-      });
-      nextBtn?.addEventListener('click', () => {
-        track.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
-      });
-    });
-  </script>
 
 </body>
 
