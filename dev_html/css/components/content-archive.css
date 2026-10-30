@@ -1,0 +1,281 @@
+/* Content archive */
+/* Used across experience pages such as dreemcorp */
+.content-archive__channel {
+    margin-bottom: var(--space-10);
+}
+
+.content-archive__channel:last-child {
+    margin-bottom: 0;
+}
+
+.content-archive__channel-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    margin-bottom: var(--space-3);
+}
+
+.content-archive__channel-label-left {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    min-width: 0;
+}
+
+.content-archive__channel-nav {
+    display: flex;
+    gap: var(--space-2);
+    flex-shrink: 0;
+}
+
+.content-archive__channel-pfp {
+    width: 32px;
+    height: 32px;
+    border-radius: var(--radius-full);
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 1px solid var(--color-border);
+}
+
+.content-archive__channel-name {
+    font-size: var(--text-sm);
+    font-weight: 700;
+    color: var(--color-text);
+    letter-spacing: .01em;
+}
+
+.content-archive__channel-meta {
+    font-size: var(--text-xs);
+    color: var(--color-text-faint);
+    font-weight: 500;
+}
+
+.yt-scroller {
+    position: relative;
+}
+
+.yt-scroller__track {
+    display: flex;
+    gap: var(--space-4);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--space-4);
+    padding: var(--space-2) var(--space-4) var(--space-1);
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.yt-scroller__track::-webkit-scrollbar {
+    display: none;
+}
+
+.yt-scroller::before,
+.yt-scroller::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: var(--space-4);
+    pointer-events: none;
+    z-index: 2;
+}
+
+.yt-scroller::before {
+    left: 0;
+    background: linear-gradient(to right, var(--color-bg), transparent);
+}
+
+.yt-scroller::after {
+    right: 0;
+    background: linear-gradient(to left, var(--color-bg), transparent);
+}
+
+.yt-scroller__item {
+    flex: 0 0 auto;
+    --yt-h: clamp(150px, 16vw, 190px);
+    width: calc(var(--yt-h) * 16 / 9);
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.yt-scroller__item[data-orientation="portrait"] {
+    width: calc(var(--yt-h) * 9 / 16);
+}
+
+.yt-scroller__embed {
+    position: relative;
+    width: 100%;
+    height: var(--yt-h);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    background: #0e0e0e;
+    transition: box-shadow var(--transition);
+}
+
+.yt-scroller__embed:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.yt-scroller__embed iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+.yt-scroller__thumb-btn {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    padding: 0;
+    border: 0;
+}
+
+.yt-scroller__thumb-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.yt-scroller__play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background var(--transition), transform var(--transition);
+}
+
+.yt-scroller__thumb-btn:hover .yt-scroller__play-icon {
+    background: rgba(0, 0, 0, 0.85);
+    transform: translate(-50%, -50%) scale(1.08);
+}
+
+.yt-scroller__play-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    display: block;
+}
+
+.yt-scroller__caption {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    padding-inline: var(--space-1);
+}
+
+.yt-scroller__nav-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-full);
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+    color: var(--color-text);
+    cursor: pointer;
+    transition: background var(--transition), border-color var(--transition);
+}
+
+.yt-scroller__nav-btn:hover {
+    background: var(--color-surface-2);
+    border-color: var(--color-primary);
+}
+
+.yt-scroller__nav-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.content-archive__channel-nav .yt-scroller__nav-btn {
+    width: 32px;
+    height: 32px;
+}
+
+.content-archive__channel-nav .yt-scroller__nav-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+@media (hover: none) {
+    .content-archive__channel-nav {
+        display: none;
+    }
+}
+
+/* Square-format items (shorts YouTube tags as vertical but actual frame is 1:1) */
+.yt-scroller__item[data-orientation="square"] {
+    width: var(--yt-h);
+}
+
+/* Locked / private teaser variant — thumbnail visible, no public playback */
+.yt-scroller__thumb-btn--locked {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.yt-scroller__thumb-btn--locked img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(0.35) brightness(0.55);
+    transition: filter var(--transition);
+}
+
+.yt-scroller__thumb-btn--locked:hover img {
+    filter: grayscale(0.2) brightness(0.45);
+}
+
+.yt-scroller__lock-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background var(--transition), transform var(--transition);
+}
+
+.yt-scroller__thumb-btn--locked:hover .yt-scroller__lock-icon {
+    background: rgba(0, 0, 0, 0.85);
+    transform: translate(-50%, -50%) scale(1.08);
+}
+
+.yt-scroller__lock-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    display: block;
+}
+
+.yt-scroller__caption--locked {
+    color: var(--color-text-faint);
+    font-style: italic;
+}
