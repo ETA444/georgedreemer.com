@@ -633,3 +633,16 @@
         transition: none;
     }
 }
+
+/* NC Site Builder Injection */
+/* note: this injection is designed to fix issues caused by Namecheap Sitebuilder */
+.evidence-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+}
+
+@media (max-width: 900px) {
+    .evidence-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
