@@ -38,9 +38,41 @@
     --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.05);
     --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
     --content-default: 860px;
+    --sn-accent: var(--color-text, #28251d);
 }
 
 /* Primary color alteration based on page */
-main[data-page="dreemcorp"] {
+
+/* edu */
+main[data-page="edu-hub"] {
+    --primary-color: #01696f;
+}
+
+main[data-page="edu-masters"] {
+    --primary-color: #970a00;
+}
+
+main[data-page="edu-bachelors"] {
+    --primary-color: #04440f;
+}
+
+/* exp */
+main[data-page="exp-dreemcorp"] {
     --primary-color: #c80d00;
+}
+
+main[data-page="exp-skipschoolmakemoney"] {
+    --primary-color: #6b009a;
+}
+
+main[data-page="exp-thoughtbubble"] {
+    --primary-color: #1db3bb;
+}
+
+main[data-page="exp-datasafari"] {
+    --primary-color: #4a1fae;
+}
+
+main[data-page="exp-cryptopandemic"] {
+    --primary-color: #be44ff;
 }
