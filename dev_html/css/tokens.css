@@ -9,7 +9,7 @@
     --color-text: #1a1814;
     --color-text-muted: #5a5750;
     --color-text-faint: #9a9590;
-    --color-primary: #01696f; /* changes based on brand, default is #01696f */
+    --color-primary: #01696f; /* changes based on page, default is #01696f */
     --color-domain-engineering: #014a6f;
     --color-domain-data: #00a59a;
     --color-domain-product: #d19900;
@@ -38,4 +38,9 @@
     --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.05);
     --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
     --content-default: 860px;
+}
+
+/* Primary color alteration based on page */
+main[data-page="dreemcorp"] {
+    --primary-color: #c80d00;
 }
