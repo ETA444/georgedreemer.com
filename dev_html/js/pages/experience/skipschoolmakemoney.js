@@ -5,15 +5,10 @@ import '../../site.js';
 
 import '../../components/stat-counter.js'; // used in intro section
 
-import '../../components/slideshow.js'; // used in works section
-import '../../components/youtube-sound-toggle.js'; // used in works section
+import '../../components/works-card.js'; // used in works section
 
-import '../../components/accordion.js'; // used in in-depth section
+import '../../components/indepth-accordion.js'; // used in in-depth section
 
 import '../../components/instagram-scroller.js'; // used in instagram section
-
-import '../../components/youtube-click-to-load.js'; // used in content archive section
-import '../../components/youtube-nav-buttons.js'; // used in content archive section
-
 
 // sections

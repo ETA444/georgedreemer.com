@@ -1,4 +1,4 @@
-// ── Accordion ─────────────────────────────────────────────────
+// ── In-depth Accordion ─────────────────────────────────────────────────
 // This script handles the functionality of the accordion component, allowing users to expand and collapse sections of content. It ensures that only one section is open at a time, enhancing the user experience and accessibility.
 document.querySelectorAll('.story-accordion').forEach(accordion => {
     const triggers = accordion.querySelectorAll('.story-accordion__trigger');

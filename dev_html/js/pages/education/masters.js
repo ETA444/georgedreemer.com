@@ -2,7 +2,7 @@
 import '../../site.js';
 
 // components
-import '../../components/mobile-tooltip.js'; // used for information icons
+import '../../components/info-tooltip.js'; // used for information icons
 
 // sections
 import '../../sections/msc-grades.js';

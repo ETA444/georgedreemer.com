@@ -1,4 +1,5 @@
-// ── Item Counter for Credential Sections ────────────────
+// Scripts used in Credential Cards
+// ── Item Counter ────────────────
 // This script serves as an item counter in the education hub / education.html in order to force "Show More" button after 3 items are present in a .stack-group--credentials section
 document.addEventListener('DOMContentLoaded', function () {
     const groups = document.querySelectorAll('.stack-group--credentials');
