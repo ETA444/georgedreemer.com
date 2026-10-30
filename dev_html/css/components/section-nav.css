@@ -1,0 +1,291 @@
+/* Section navigation */
+/* A hovering nav bar found across experience and education pages */
+[id] {
+    scroll-margin-top: var(--sn-offset, 72px);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    @keyframes sn-flash {
+        from {
+            outline-color: var(--sn-accent);
+        }
+
+        to {
+            outline-color: transparent;
+        }
+    }
+
+    /* Brief highlight when a link lands on a card or article. */
+    article[id]:target {
+        outline: 2px solid transparent;
+        outline-offset: 4px;
+        animation: sn-flash 1.6s ease-out;
+    }
+}
+
+/* ── Floating toolbar ─────────────────────────────────────── */
+.sn {
+    position: fixed;
+    left: 50%;
+    bottom: max(var(--space-4, 1rem), env(safe-area-inset-bottom));
+    z-index: 900;
+    max-width: calc(100vw - 1.5rem);
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, 0.75rem);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0s linear 0.2s;
+}
+
+.sn.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+    transition-delay: 0s;
+}
+
+.sn__bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: var(--space-1, 0.25rem);
+    padding: var(--space-1, 0.25rem);
+    overflow: hidden;
+    border: 1px solid var(--color-border, #d4d1ca);
+    border-radius: var(--radius-full, 9999px);
+    background: color-mix(in srgb, var(--color-surface, #f9f8f5) 90%, transparent);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-lg, 0 12px 32px rgba(0, 0, 0, 0.12));
+}
+
+.sn__step {
+    display: grid;
+    place-items: center;
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--color-text, #28251d);
+    cursor: pointer;
+}
+
+.sn__step:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+
+.sn__step svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.sn__current {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2, 0.5rem);
+    min-width: 0;
+    min-height: 44px;
+    padding: 0 var(--space-3, 0.75rem);
+    border: 0;
+    background: transparent;
+    color: var(--color-text, #28251d);
+    font: inherit;
+    font-size: var(--text-sm, 0.875rem);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.sn__count {
+    color: var(--color-text-muted, #7a7974);
+    font-size: var(--text-xs, 0.75rem);
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
+.sn__label {
+    overflow: hidden;
+    max-width: min(14rem, 45vw);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sn__progress {
+    position: absolute;
+    right: 14px;
+    bottom: 2px;
+    left: 14px;
+    height: 2px;
+    background: var(--color-border, #d4d1ca);
+}
+
+.sn__progress>span {
+    display: block;
+    height: 100%;
+    background: var(--sn-accent);
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+/* ── Section menu ─────────────────────────────────────────── */
+.sn__list {
+    position: absolute;
+    bottom: calc(100% + var(--space-2, 0.5rem));
+    left: 50%;
+    width: min(18rem, calc(100vw - 1.5rem));
+    max-height: min(60vh, 26rem);
+    margin: 0;
+    padding: var(--space-2, 0.5rem);
+    overflow: auto;
+    border: 1px solid var(--color-border, #d4d1ca);
+    border-radius: var(--radius-lg, 0.75rem);
+    background: var(--color-surface, #f9f8f5);
+    box-shadow: var(--shadow-lg, 0 12px 32px rgba(0, 0, 0, 0.12));
+    list-style: none;
+    transform: translateX(-50%);
+}
+
+.sn__list a {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3, 0.75rem);
+    min-height: 44px;
+    padding: 0 var(--space-3, 0.75rem);
+    border-radius: var(--radius-md, 0.5rem);
+    color: var(--color-text-muted, #7a7974);
+    font-size: var(--text-sm, 0.875rem);
+    text-decoration: none;
+}
+
+.sn__num {
+    color: var(--color-text-muted, #7a7974);
+    font-size: var(--text-xs, 0.75rem);
+    font-variant-numeric: tabular-nums;
+}
+
+.sn__list a[aria-current] {
+    background: color-mix(in srgb, var(--sn-accent) 12%, transparent);
+    color: var(--color-text, #28251d);
+    font-weight: 600;
+}
+
+.sn__list a[aria-current] .sn__num {
+    color: var(--sn-accent);
+}
+
+/* ── Copy-link icon in each section heading ───────────────── */
+.sn-anchor {
+    display: inline-grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: var(--radius-md, 0.5rem);
+    color: var(--color-text-muted, #7a7974);
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+.sn-anchor svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* ── Confirmation toast ───────────────────────────────────── */
+.sn-toast {
+    position: fixed;
+    left: 50%;
+    bottom: calc(5rem + env(safe-area-inset-bottom));
+    z-index: 901;
+    max-width: calc(100vw - 2rem);
+    padding: var(--space-2, 0.5rem) var(--space-4, 1rem);
+    border-radius: var(--radius-full, 9999px);
+    background: var(--color-text, #28251d);
+    color: var(--color-bg, #f7f6f2);
+    font-size: var(--text-xs, 0.75rem);
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, 0.5rem);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.sn-toast.is-on {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+/* ── Optional on-page contents chips: <nav data-sn-toc></nav> ─ */
+.sn-toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2, 0.5rem);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sn-toc a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 var(--space-3, 0.75rem);
+    border: 1px solid var(--color-border, #d4d1ca);
+    border-radius: var(--radius-full, 9999px);
+    color: var(--color-text-muted, #7a7974);
+    font-size: var(--text-xs, 0.75rem);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* ── Focus, hover, print ──────────────────────────────────── */
+.sn button:focus-visible,
+.sn a:focus-visible,
+.sn-anchor:focus-visible,
+.sn-toc a:focus-visible {
+    outline: 2px solid var(--sn-accent);
+    outline-offset: 2px;
+}
+
+@media (hover: hover) {
+
+    .sn__step:not(:disabled):hover,
+    .sn__current:hover,
+    .sn__list a:hover {
+        background: color-mix(in srgb, var(--sn-accent) 10%, transparent);
+    }
+
+    .sn-anchor:hover {
+        opacity: 1;
+        color: var(--sn-accent);
+    }
+
+    .sn-toc a:hover {
+        border-color: var(--sn-accent);
+        color: var(--sn-accent);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .sn,
+    .sn-toast {
+        transition: none;
+    }
+}
+
+@media print {
+
+    .sn,
+    .sn-toast,
+    .sn-anchor {
+        display: none !important;
+    }
+}
