@@ -9,6 +9,12 @@
     border-top-color: var(--color-primary);
 }
 
+@media(max-width:600px) {
+    .snapshot-card {
+        padding: var(--space-5);
+    }
+}
+
 /* Domain top-border — mirrors E5 card system
     .snapshot-card[data-domain="engineering"] {
       border-top-color: var(--color-domain-engineering);
