@@ -1,0 +1,109 @@
+/* Stack badges - tools and languages */
+.stack-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+
+.stack-group__label {
+    font-size: var(--text-xs);
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--color-text-faint);
+    margin-bottom: var(--space-3);
+}
+
+.stack-group__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+}
+
+.stack-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    padding: var(--space-1) var(--space-4) var(--space-1) var(--space-2);
+    transition: background var(--transition), box-shadow var(--transition);
+    cursor: default;
+}
+
+.stack-badge:hover {
+    background: var(--color-surface-2);
+    box-shadow: var(--shadow-sm);
+}
+
+.stack-badge img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    opacity: .80;
+}
+
+.stack-badge__name {
+    font-size: var(--text-xs);
+    font-weight: 600;
+    color: var(--color-text);
+    letter-spacing: .01em;
+}
+
+/* text-only badge (human languages, certifications) */
+.stack-badge--text {
+    padding: var(--space-1) var(--space-4);
+}
+
+/* ── Language badge: flag ────────────────────────────────── */
+.stack-badge__flag {
+    font-size: 1rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+/* ── Language badge: CEFR pill ───────────────────────────── */
+.stack-badge__cefr {
+    display: inline-flex;
+    align-items: center;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    line-height: 1.6;
+    color: #bf7bff;
+    background: rgba(191, 123, 255, 0.10);
+    border: 1px solid rgba(191, 123, 255, 0.30);
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+/* ── Language badge: layout ──────────────────────────────── */
+.stack-badge--lang {
+    min-width: 11rem;
+    gap: 6px;
+}
+
+/* ── Text-mark badge (tools with no icon) ────────────────── */
+.stack-badge--text {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.stack-badge__mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    font-size: 0.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #fff;
+    flex-shrink: 0;
+    line-height: 1;
+}
