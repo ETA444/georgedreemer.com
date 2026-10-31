@@ -3,10 +3,8 @@ import '../../site.js';
 
 // components
 import '../../components/stat-counter.js';
-import '../../components/info-tooltip.js'; // used for information icons
-import '../../components/works-card.js'; // used for works icons
-import '../../components/credential-card.js';
-import '../../components/indepth-accordion.js';
+import '../../components/info-tooltip.js';
+import '../../components/works-card.js';
 
 // sections
 import '../../sections/masters-grades.js';
