@@ -1,0 +1,228 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+        "@type": "WebPage",
+        "@id": "https://georgedreemer.com/education/bachelors#webpage",
+        "url": "https://georgedreemer.com/education/bachelors",
+        "name": "BA Marketing & Business — Hampshire College Coursework & Abilities · George Dreemer",
+        "description": "My BA at Hampshire College (2015–2019) was a four-year, self-designed program in marketing, business and entrepreneurship. Through the Five College Consortium it included accounting at Smith College and graduate-level coursework at UMass Amherst's Isenberg School of Management, alongside independent studies, a seat on Hampshire's student-run Seed Fund for Innovation, and the streetwear company I founded. This page traces the abilities behind that education to the courses, independent studies and student organisations that produced them.",
+        "isPartOf": {
+            "@type": "WebSite",
+            "@id": "https://georgedreemer.com/#website",
+            "url": "https://georgedreemer.com",
+            "name": "George Dreemer"
+        },
+        "about": { "@id": "https://georgedreemer.com/education/bachelors#ba-programme" },
+        "mainEntity": { "@id": "https://georgedreemer.com/education/bachelors#ba-degree" },
+        "author": { "@id": "https://georgedreemer.com/#person" },
+        "breadcrumb": { "@id": "https://georgedreemer.com/education/bachelors#breadcrumb" },
+        "hasPart": { "@id": "https://georgedreemer.com/education/bachelors#abilities" },
+        "mentions": [
+            { "@id": "https://georgedreemer.com/skipschoolmakemoney#project" },
+            { "@id": "https://www.fivecolleges.edu/#organization" },
+            { "@id": "https://www.umass.edu/#organization" }
+        ],
+        "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://georgedreemer.com/ncsitebuilder/gallery/dxyz-academic-thumb.png",
+            "width": 1200,
+            "height": 630
+        },
+        "dateModified": "2026-10-31",
+        "inLanguage": "en-US"
+        },
+        {
+        "@type": "BreadcrumbList",
+        "@id": "https://georgedreemer.com/education/bachelors#breadcrumb",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "George Dreemer", "item": "https://georgedreemer.com" },
+            { "@type": "ListItem", "position": 2, "name": "Education Hub", "item": "https://georgedreemer.com/education" },
+            { "@type": "ListItem", "position": 3, "name": "BA Marketing & Business", "item": "https://georgedreemer.com/education/bachelors" }
+        ]
+        },
+        {
+        "@type": "Person",
+        "@id": "https://georgedreemer.com/#person",
+        "name": "George Dreemer",
+        "url": "https://georgedreemer.com",
+        "alumniOf": { "@id": "https://www.hampshire.edu/#organization" },
+        "hasCredential": { "@id": "https://georgedreemer.com/education/bachelors#ba-degree" },
+        "memberOf": [
+            { "@id": "https://georgedreemer.com/education/bachelors#seed-fund" },
+            { "@id": "https://georgedreemer.com/education/bachelors#umass-entrepreneurship-club" },
+            { "@id": "https://georgedreemer.com/education/bachelors#berthiaume-student-innovators" }
+        ],
+        "founder": { "@id": "https://georgedreemer.com/skipschoolmakemoney#project" },
+        "knowsAbout": [
+            "Marketing Research", "Brand Positioning", "Digital Marketing", "Email Marketing",
+            "Campaign Strategy", "Customer Insight", "Text Mining for Marketing",
+            "International Marketing", "Entrepreneurship", "Venture Development",
+            "Early-Stage Venture Assessment", "Commercial Negotiation", "Business Law",
+            "E-commerce Operations", "Creative Direction", "Apparel Design",
+            "Public Speaking", "Investor Pitching", "Event Coordination", "Self-Directed Learning"
+        ]
+        },
+        {
+        "@type": "CollegeOrUniversity",
+        "@id": "https://www.hampshire.edu/#organization",
+        "name": "Hampshire College",
+        "url": "https://www.hampshire.edu",
+        "sameAs": "https://en.wikipedia.org/wiki/Hampshire_College",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Amherst",
+            "addressRegion": "MA",
+            "addressCountry": "US"
+        },
+        "memberOf": { "@id": "https://www.fivecolleges.edu/#organization" }
+        },
+        {
+        "@type": "Organization",
+        "@id": "https://www.fivecolleges.edu/#organization",
+        "name": "Five College Consortium",
+        "url": "https://www.fivecolleges.edu",
+        "sameAs": "https://en.wikipedia.org/wiki/Five_College_Consortium",
+        "description": "Consortium of Hampshire College, Amherst College, Mount Holyoke College, Smith College and the University of Massachusetts Amherst that lets students cross-register for courses at the other member institutions."
+        },
+        {
+        "@type": "CollegeOrUniversity",
+        "@id": "https://www.umass.edu/#organization",
+        "name": "University of Massachusetts Amherst",
+        "url": "https://www.umass.edu",
+        "sameAs": "https://en.wikipedia.org/wiki/University_of_Massachusetts_Amherst",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Amherst",
+            "addressRegion": "MA",
+            "addressCountry": "US"
+        },
+        "department": {
+            "@type": "CollegeOrUniversity",
+            "@id": "https://www.isenberg.umass.edu/#organization",
+            "name": "Isenberg School of Management",
+            "url": "https://www.isenberg.umass.edu",
+            "parentOrganization": { "@id": "https://www.umass.edu/#organization" }
+        }
+        },
+        {
+        "@type": "CollegeOrUniversity",
+        "@id": "https://www.smith.edu/#organization",
+        "name": "Smith College",
+        "url": "https://www.smith.edu",
+        "sameAs": "https://en.wikipedia.org/wiki/Smith_College",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Northampton",
+            "addressRegion": "MA",
+            "addressCountry": "US"
+        }
+        },
+        {
+        "@type": "EducationalOccupationalCredential",
+        "@id": "https://georgedreemer.com/education/bachelors#ba-degree",
+        "name": "Bachelor of Arts — Marketing & Business",
+        "description": "Bachelor of Arts from Hampshire College (2015–2019) in an individually designed concentration in marketing, business and entrepreneurship. Estimated cumulative GPA 3.81 / 4.0 across 126 credits. Hampshire evaluates coursework through written narrative evaluations and does not issue an official GPA, so this figure is an estimate that combines completed Hampshire courses with the letter grades earned through the Five College Consortium.",
+        "credentialCategory": "degree",
+        "educationalLevel": "Bachelor's degree",
+        "url": "https://www.hampshire.edu/academics/areas-of-study/entrepreneurship",
+        "recognizedBy": { "@id": "https://www.hampshire.edu/#organization" }
+        },
+        {
+        "@type": "EducationalOccupationalProgram",
+        "@id": "https://georgedreemer.com/education/bachelors#ba-programme",
+        "name": "BA — Marketing & Business (individually designed concentration)",
+        "url": "https://www.hampshire.edu/academics/areas-of-study/entrepreneurship",
+        "provider": { "@id": "https://www.hampshire.edu/#organization" },
+        "startDate": "2015",
+        "endDate": "2019",
+        "occupationalCredentialAwarded": { "@id": "https://georgedreemer.com/education/bachelors#ba-degree" },
+        "teaches": [
+            "Marketing research", "Advertising and promotion strategy", "Internet marketing",
+            "International marketing", "Text mining and analytics in marketing",
+            "Entrepreneurship and venture growth", "Negotiation and persuasion",
+            "Business law", "Financial accounting", "Economics",
+            "Public speaking and oral communication", "Interpersonal skills",
+            "Visual design and creative production"
+        ],
+        "hasCourse": [
+            { "@type": "Course", "name": "Social Entrepreneurship", "courseCode": "IA-0122", "provider": { "@id": "https://www.hampshire.edu/#organization" } },
+            { "@type": "Course", "name": "Leading Growth in New Ventures", "courseCode": "IA-0370", "provider": { "@id": "https://www.hampshire.edu/#organization" } },
+            { "@type": "Course", "name": "Enterprise Practicum", "courseCode": "IA-0354", "provider": { "@id": "https://www.hampshire.edu/#organization" } },
+            { "@type": "Course", "name": "Introduction to Economics", "courseCode": "CSI-0210", "provider": { "@id": "https://www.hampshire.edu/#organization" } },
+            { "@type": "Course", "name": "Financial Accounting", "courseCode": "ACC-223", "provider": { "@id": "https://www.smith.edu/#organization" } },
+            { "@type": "Course", "name": "Internet Marketing", "courseCode": "MARKETNG-455", "provider": { "@id": "https://www.umass.edu/#organization" } },
+            { "@type": "Course", "name": "Marketing Research", "courseCode": "MARKETNG-412", "provider": { "@id": "https://www.umass.edu/#organization" } },
+            { "@type": "Course", "name": "International Marketing", "courseCode": "MARKETNG-437", "provider": { "@id": "https://www.umass.edu/#organization" } },
+            { "@type": "Course", "name": "Advertising & Promotion Strategy", "courseCode": "MARKETNG-422", "provider": { "@id": "https://www.umass.edu/#organization" } },
+            { "@type": "Course", "name": "Text Mining & Analytics in Marketing", "courseCode": "MARKETNG-497T", "provider": { "@id": "https://www.umass.edu/#organization" } },
+            { "@type": "Course", "name": "Internet Business", "courseCode": "SCH-MGMT-597G", "educationalLevel": "Graduate", "provider": { "@id": "https://www.isenberg.umass.edu/#organization" } },
+            { "@type": "Course", "name": "Business Law", "courseCode": "SCH-MGMT-783", "educationalLevel": "Graduate", "provider": { "@id": "https://www.isenberg.umass.edu/#organization" } },
+            { "@type": "Course", "name": "Negotiation Theory & Practice", "courseCode": "SCH-MGMT-597L", "educationalLevel": "Graduate", "provider": { "@id": "https://www.isenberg.umass.edu/#organization" } },
+            { "@type": "Course", "name": "Interpersonal Skills", "courseCode": "MANAGMNT-491A", "provider": { "@id": "https://www.umass.edu/#organization" } },
+            { "@type": "Course", "name": "Mastering Oral Communication", "courseCode": "SCH-MGMT-292C", "provider": { "@id": "https://www.umass.edu/#organization" } },
+            { "@type": "Course", "name": "Public Speaking", "courseCode": "COMM-260", "provider": { "@id": "https://www.umass.edu/#organization" } },
+            { "@type": "Course", "name": "Social Psychology", "courseCode": "PSYCH-360", "provider": { "@id": "https://www.umass.edu/#organization" } }
+        ]
+        },
+        {
+        "@type": "Organization",
+        "@id": "https://georgedreemer.com/skipschoolmakemoney#project",
+        "name": "SkipSchoolMakeMoney",
+        "alternateName": "SSMM",
+        "description": "Streetwear company founded and run by George Dreemer, rooted in underground music and internet culture, with collections, creative production, e-commerce and fulfilment for customers on three continents.",
+        "url": "https://georgedreemer.com/skipschoolmakemoney",
+        "sameAs": "https://www.skipschoolmakemoney.com",
+        "foundingDate": "2016",
+        "founder": { "@id": "https://georgedreemer.com/#person" }
+        },
+        {
+        "@type": "Organization",
+        "@id": "https://georgedreemer.com/education/bachelors#seed-fund",
+        "name": "Seed Fund for Innovation",
+        "description": "Student-run $1 million venture fund at Hampshire College that invests in student and alumni startups. George served on its investment committee from 2016 to 2018.",
+        "url": "http://sfi.hampshire.edu/",
+        "parentOrganization": { "@id": "https://www.hampshire.edu/#organization" }
+        },
+        {
+        "@type": "Organization",
+        "@id": "https://georgedreemer.com/education/bachelors#umass-entrepreneurship-club",
+        "name": "UMass Entrepreneurship Club",
+        "description": "Student entrepreneurship community at the University of Massachusetts Amherst. George was a member from 2015 to 2017.",
+        "parentOrganization": { "@id": "https://www.umass.edu/#organization" }
+        },
+        {
+        "@type": "Organization",
+        "@id": "https://georgedreemer.com/education/bachelors#berthiaume-student-innovators",
+        "name": "Berthiaume Student Innovators",
+        "description": "Student innovator programme of the Berthiaume Center for Entrepreneurship at UMass Amherst, which runs the annual Innovation Challenge. George was a member and event organiser from 2015 to 2016.",
+        "parentOrganization": { "@id": "https://www.umass.edu/#organization" }
+        },
+        {
+        "@type": "ItemList",
+        "@id": "https://georgedreemer.com/education/bachelors#abilities",
+        "name": "Abilities developed through the BA, traced to courses, independent studies and student organisations",
+        "numberOfItems": 18,
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Market Research & Customer Insight" },
+            { "@type": "ListItem", "position": 2, "name": "Text Mining for Marketing" },
+            { "@type": "ListItem", "position": 3, "name": "Financial & Economic Reasoning" },
+            { "@type": "ListItem", "position": 4, "name": "Venture Design & Execution" },
+            { "@type": "ListItem", "position": 5, "name": "Early-Stage Venture Assessment" },
+            { "@type": "ListItem", "position": 6, "name": "Apparel & Visual Identity Design" },
+            { "@type": "ListItem", "position": 7, "name": "Creative Production & Art Direction" },
+            { "@type": "ListItem", "position": 8, "name": "Commerce Operations & Customer Experience" },
+            { "@type": "ListItem", "position": 9, "name": "Negotiation & Commercial Agreements" },
+            { "@type": "ListItem", "position": 10, "name": "Business Law & Intellectual Property Awareness" },
+            { "@type": "ListItem", "position": 11, "name": "Independent Research & Self-Directed Delivery" },
+            { "@type": "ListItem", "position": 12, "name": "Brand Positioning & Cultural Insight" },
+            { "@type": "ListItem", "position": 13, "name": "Digital Marketing & Campaign Strategy" },
+            { "@type": "ListItem", "position": 14, "name": "Organic Growth & Creator Partnerships" },
+            { "@type": "ListItem", "position": 15, "name": "Email Lifecycle & Customer Retention" },
+            { "@type": "ListItem", "position": 16, "name": "International Marketing & Cross-Cultural Communication" },
+            { "@type": "ListItem", "position": 17, "name": "Public Speaking & Investor Pitching" },
+            { "@type": "ListItem", "position": 18, "name": "Interpersonal Skills & Event Coordination" }
+        ]
+        }
+    ]
+}
