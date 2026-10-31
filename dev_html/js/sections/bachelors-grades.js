@@ -1,27 +1,29 @@
 // ── Grades Badges ────────────────
 (function () {
     /* ── Grades: single source of truth ─────────────────────
-        number  → shown as a numeric mini-badge (Dutch 1–10 scale)
-        string  → shown as a text badge, e.g. "Pass"
+        number  → shown as a numeric mini-badge
+        string  → shown as a text badge, e.g. "A", "B+"
         null    → no badge rendered (use until you fill it in)  */
     const GRADES = {
-        'data-engineering': 7,
-        'data-science-methods': 9,
-        'business-research-methods': 8,
-        'marketing-research': 8,
-        'research-paper': 8,
-        'statistical-learning': 8,
-        'companies-brands-consumers': 8,
-        'digital-marketing-intelligence': 8,
-        'digital-marketing-analytics': 8,
-        'market-models': 8,
-        'behavioural-decision-making': 7,
-        'organization-theory': 7,
-        'contemporary-theories': 6,
-        'strategic-management': 8,
-        'hrm': 8,
-        'business-ethics': 8,
-        'retail-omnichannel': 8
+        'social-entrepreneurship': 'A',
+        'leading-growth': 'A',
+        'enterprise-practicum': 'A',
+        'intro-economics': 'A',
+        'financial-accounting': 'B-',
+        'marketing-research': 'A',
+        'internet-marketing': 'C+',
+        'international-marketing': 'B+',
+        'advertising-promo': 'A-',
+        'text-mining': 'B',
+        'business-law': 'A',
+        'negotiation-theory': 'A',
+        'interpersonal-skills': 'A',
+        'oral-communication': 'A',
+        'public-speaking': 'A',
+        'social-psychology': 'A',
+        'streetwear-study': 'A',
+        'persuasion-negotiation': 'A',
+        'adobe-suite': 'A'
     };
 
     /* ── Render mini grade badges next to course titles ───── */
@@ -34,7 +36,7 @@
         badge.className = 'grade-badge grade-badge--mini' + (numeric ? '' : ' grade-badge--text');
         badge.textContent = String(g);
 
-        const label = numeric ? 'Grade: ' + g + ' out of 10' : 'Result: ' + g;
+        const label = numeric ? 'Grade: ' + g + ' out of 10' : 'Grade: ' + g;
         badge.setAttribute('aria-label', label);
         badge.title = label;
         el.appendChild(badge);
