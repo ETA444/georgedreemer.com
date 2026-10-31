@@ -31,56 +31,47 @@
     <meta name="twitter:image" content="https://georgedreemer.com/ncsitebuilder/gallery/dxyz-academic-thumb.png">
 
     <!-- Structured data -->
+    <!-- Structured data -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@graph": [
                 {
-                "@type": ["WebPage", "ProfilePage"],
-                "@id": "https://georgedreemer.com/education#webpage",
-                "url": "https://georgedreemer.com/education",
-                "name": "Education Hub — MSc Data Science, Degrees, Certifications & Stack · George Dreemer",
-                "description": "George Dreemer's Education Hub covering his MSc in Marketing Analytics & Data Science at the University of Groningen, BA in Marketing & Business at Hampshire College, certifications, awards, community leadership, and technical stack across Python, R, SQL, machine learning, and full-stack development.",
+                "@type": ["WebPage", "CollectionPage"],
+                "@id": "https://georgedreemer.com/education/masters#webpage",
+                "url": "https://georgedreemer.com/education/masters",
+                "name": "MSc Marketing Analytics & Data Science — Thesis, Reports & Code · George Dreemer",
+                "description": "George Dreemer's MSc in Marketing Analytics & Data Science at the University of Groningen: a thesis on willingness to share health data (discrete-choice experiment, latent class analysis), 13 public coursework reports with code in R, Python and SQL, the tools used, and the MADS Madlad study-notes catalogue.",
                 "isPartOf": {
                     "@type": "WebSite",
                     "@id": "https://georgedreemer.com/#website",
                     "url": "https://georgedreemer.com",
                     "name": "George Dreemer"
                 },
-                "about": {
-                    "@id": "https://georgedreemer.com/#person"
-                },
-                "mainEntity": {
-                    "@id": "https://georgedreemer.com/#person"
-                },
-                "breadcrumb": {
-                    "@id": "https://georgedreemer.com/education#breadcrumb"
-                },
+                "about": { "@id": "https://georgedreemer.com/education/masters#msc-programme" },
+                "mainEntity": { "@id": "https://georgedreemer.com/education/masters#msc-thesis" },
+                "author": { "@id": "https://georgedreemer.com/#person" },
+                "breadcrumb": { "@id": "https://georgedreemer.com/education/masters#breadcrumb" },
+                "hasPart": [
+                    { "@id": "https://georgedreemer.com/education/masters#coursework" },
+                    { "@id": "https://georgedreemer.com/education/masters#madsmadlad" }
+                ],
                 "primaryImageOfPage": {
                     "@type": "ImageObject",
                     "url": "https://georgedreemer.com/ncsitebuilder/gallery/dxyz-academic-thumb.png",
                     "width": 1200,
                     "height": 630
                 },
-                "dateModified": "2026-10-05",
+                "dateModified": "2026-10-31",
                 "inLanguage": "en-US"
                 },
                 {
                 "@type": "BreadcrumbList",
-                "@id": "https://georgedreemer.com/education#breadcrumb",
+                "@id": "https://georgedreemer.com/education/masters#breadcrumb",
                 "itemListElement": [
-                    {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "George Dreemer",
-                    "item": "https://georgedreemer.com"
-                    },
-                    {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Education Hub",
-                    "item": "https://georgedreemer.com/education"
-                    }
+                    { "@type": "ListItem", "position": 1, "name": "George Dreemer", "item": "https://georgedreemer.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Education Hub", "item": "https://georgedreemer.com/education" },
+                    { "@type": "ListItem", "position": 3, "name": "MSc Data Science", "item": "https://georgedreemer.com/education/masters" }
                 ]
                 },
                 {
@@ -88,181 +79,181 @@
                 "@id": "https://georgedreemer.com/#person",
                 "name": "George Dreemer",
                 "url": "https://georgedreemer.com",
-                "jobTitle": "Data Scientist & Developer",
-                "description": "Data scientist, developer, and entrepreneur with an MSc in Marketing Analytics & Data Science from the University of Groningen and a BA in Marketing & Business from Hampshire College.",
-                "alumniOf": [
-                    {
-                    "@type": "CollegeOrUniversity",
-                    "@id": "https://www.rug.nl/#organization",
-                    "name": "University of Groningen",
-                    "url": "https://www.rug.nl",
-                    "sameAs": "https://en.wikipedia.org/wiki/University_of_Groningen"
-                    },
-                    {
-                    "@type": "CollegeOrUniversity",
-                    "@id": "https://www.hampshire.edu/#organization",
-                    "name": "Hampshire College",
-                    "url": "https://www.hampshire.edu",
-                    "sameAs": "https://en.wikipedia.org/wiki/Hampshire_College"
-                    }
-                ],
-                "hasCredential": [
-                    {
-                    "@type": "EducationalOccupationalCredential",
-                    "name": "MSc Marketing Analytics & Data Science",
-                    "credentialCategory": "degree",
-                    "educationalLevel": "Master's degree",
-                    "recognizedBy": {
-                        "@id": "https://www.rug.nl/#organization"
-                    }
-                    },
-                    {
-                    "@type": "EducationalOccupationalCredential",
-                    "name": "BA Marketing & Business",
-                    "credentialCategory": "degree",
-                    "educationalLevel": "Bachelor's degree",
-                    "recognizedBy": {
-                        "@id": "https://www.hampshire.edu/#organization"
-                    }
-                    },
-                    {
-                    "@type": "EducationalOccupationalCredential",
-                    "name": "Professional Data Scientist",
-                    "credentialCategory": "certificate",
-                    "url": "https://www.datacamp.com/completed/statement-of-accomplishment/track/61c10c7c89eda0525178ea565d88fce131b33597",
-                    "recognizedBy": {
-                        "@type": "Organization",
-                        "name": "DataCamp",
-                        "url": "https://www.datacamp.com"
-                    }
-                    },
-                    {
-                    "@type": "EducationalOccupationalCredential",
-                    "name": "Associate Data Scientist",
-                    "credentialCategory": "certificate",
-                    "url": "https://www.datacamp.com/completed/statement-of-accomplishment/track/c9819562725564e717c762be83bee6db7dc90bf4",
-                    "recognizedBy": {
-                        "@type": "Organization",
-                        "name": "DataCamp",
-                        "url": "https://www.datacamp.com"
-                    }
-                    },
-                    {
-                    "@type": "EducationalOccupationalCredential",
-                    "name": "TOEFL iBT",
-                    "credentialCategory": "test score credential",
-                    "recognizedBy": {
-                        "@type": "Organization",
-                        "name": "Educational Testing Service",
-                        "url": "https://www.ets.org"
-                    }
-                    },
-                    {
-                    "@type": "EducationalOccupationalCredential",
-                    "name": "C1 Advanced (CAE)",
-                    "credentialCategory": "certificate",
-                    "recognizedBy": {
-                        "@type": "Organization",
-                        "name": "Cambridge Assessment English",
-                        "url": "https://www.cambridgeenglish.org"
-                    }
-                    }
-                ],
-                "award": [
-                    "Valley Venture Mentor's Startup Accelerator Award",
-                    "Harold Grinspoon Foundation's Recognition Award of Entrepreneurial Spirit",
-                    "Israeli-Bulgarian Institute's National Essay Award — Rescue of the Bulgarian Jews during WW II",
-                    "Rotary International's RYLA Award (RYLArian)",
-                    "Rotary International's RYLA Debate Winner Award"
-                ],
-                "memberOf": [
-                    {
-                    "@type": "Organization",
-                    "name": "Rotary International"
-                    },
-                    {
-                    "@type": "Organization",
-                    "name": "UMass Amherst Entrepreneurship Club"
-                    },
-                    {
-                    "@type": "Organization",
-                    "name": "Berthiaume Center for Entrepreneurship"
-                    },
-                    {
-                    "@type": "Organization",
-                    "name": "Seed Fund for Innovation"
-                    },
-                    {
-                    "@type": "Organization",
-                    "name": "Giving Back Den Haag"
-                    }
-                ],
+                "alumniOf": { "@id": "https://www.rug.nl/#organization" },
+                "hasCredential": { "@id": "https://georgedreemer.com/education/masters#msc-degree" },
                 "knowsAbout": [
-                    "Python",
-                    "R",
-                    "SQL",
-                    "JavaScript",
-                    "HTML",
-                    "CSS",
-                    "PHP",
-                    "Machine Learning",
-                    "Data Science",
-                    "Data Engineering",
-                    "Marketing Analytics",
-                    "Statistical Modeling",
-                    "Causal Inference",
-                    "Churn Modeling",
-                    "Text Mining",
-                    "Time-Series Analysis",
-                    "Cluster Analysis",
-                    "Full-Stack Web Development",
-                    "Stata",
-                    "SPSS",
-                    "Graphic Design",
-                    "Video Editing",
-                    "Adobe Illustrator",
-                    "Adobe Photoshop",
-                    "Adobe After Effects",
-                    "Affinity Studio",
-                    "DaVinci Resolve",
-                    "ComfyUI",
-                    "Stable Diffusion",
-                    "Google AI Studio",
-                    "MCP",
-                    "n8n"
+                    "Python", "R", "SQL", "Stata", "SPSS",
+                    "Data Science", "Data Engineering", "Statistical Learning", "Machine Learning",
+                    "Text Mining", "Sentiment Analysis", "Time-Series Analysis", "Market Modelling",
+                    "Omnichannel Marketing", "Consumer and Brand Analytics", "Discrete Choice Modelling",
+                    "Latent Class Analysis", "Propensity Score Matching", "Churn Prediction", "Customer Segmentation",
+                    "pandas", "NumPy", "SciPy", "scikit-learn", "Matplotlib", "seaborn", "Plotly", "statsmodels",
+                    "ggplot2", "dplyr", "caret", "randomForest", "gbm", "Jupyter", "RStudio",
+                    "Git", "GitHub", "Azure", "Google Analytics"
+                ]
+                },
+                {
+                "@type": "CollegeOrUniversity",
+                "@id": "https://www.rug.nl/#organization",
+                "name": "University of Groningen",
+                "alternateName": "Rijksuniversiteit Groningen",
+                "url": "https://www.rug.nl",
+                "sameAs": "https://en.wikipedia.org/wiki/University_of_Groningen",
+                "address": { "@type": "PostalAddress", "addressLocality": "Groningen", "addressCountry": "NL" },
+                "department": {
+                    "@type": "CollegeOrUniversity",
+                    "name": "Faculty of Economics and Business",
+                    "parentOrganization": { "@id": "https://www.rug.nl/#organization" }
+                }
+                },
+                {
+                "@type": "EducationalOccupationalCredential",
+                "@id": "https://georgedreemer.com/education/masters#msc-degree",
+                "name": "MSc Marketing Analytics & Data Science",
+                "description": "Master of Science at the Faculty of Economics and Business, University of Groningen (2022–2024), covering applied statistics, machine learning, data science and data engineering. Programme average grade: 8 on the Dutch 10-point scale. Thesis grade: 8.",
+                "credentialCategory": "degree",
+                "educationalLevel": "Master's degree",
+                "url": "https://www.rug.nl/masters/msc-marketing-marketing-analytics-and-data-science/?lang=en",
+                "recognizedBy": { "@id": "https://www.rug.nl/#organization" }
+                },
+                {
+                "@type": "EducationalOccupationalProgram",
+                "@id": "https://georgedreemer.com/education/masters#msc-programme",
+                "name": "MSc Marketing – Marketing Analytics and Data Science",
+                "url": "https://www.rug.nl/masters/msc-marketing-marketing-analytics-and-data-science/?lang=en",
+                "provider": { "@id": "https://www.rug.nl/#organization" },
+                "startDate": "2022",
+                "endDate": "2024",
+                "occupationalCredentialAwarded": { "@id": "https://georgedreemer.com/education/masters#msc-degree" },
+                "teaches": [
+                    "Statistical analysis", "Supervised learning", "Customer segmentation",
+                    "Text mining and sentiment analysis", "Time-series analysis", "Market modelling",
+                    "Retail and omnichannel marketing", "Data engineering with SQL",
+                    "Research design", "Business ethics"
+                ]
+                },
+                {
+                "@type": "ScholarlyArticle",
+                "@id": "https://georgedreemer.com/education/masters#msc-thesis",
+                "headline": "Willingness to Share Health Data in Italy: Investigation under a Multi-context Paradigm with DCE Data",
+                "name": "MSc Thesis — Willingness to Share Health Data in Italy",
+                "description": "MSc thesis (grade 8/10) analysing the accept/reject choices of 329 respondents in Italy on secondary use of health data across five contextual attributes, using a two-class latent class model (46.5% / 53.5%) with a conditional logit as secondary check, in R and Stata 17.",
+                "abstract": "How do different data-sharing arrangements influence willingness to allow the secondary use of health data? Discrete-choice-experiment data from 329 participants in Italy were analysed across five attributes: original data collector, new data user, purpose of reuse, information and consent, and external review. Respondents leaned toward not sharing. Two preference groups ranked attribute importance identically (new data user, reason for use, information and consent, review, original collector) but preferred different levels within attributes. Transparency and some form of external review were common ground.",
+                "author": { "@id": "https://georgedreemer.com/#person" },
+                "publisher": { "@id": "https://www.rug.nl/#organization" },
+                "datePublished": "2024",
+                "inLanguage": "en",
+                "url": "https://georgedreemer.com/downloads/academic/georgedreemer-msc-thesis_paper.pdf",
+                "encoding": {
+                    "@type": "MediaObject",
+                    "contentUrl": "https://georgedreemer.com/downloads/academic/georgedreemer-msc-thesis_paper.pdf",
+                    "encodingFormat": "application/pdf"
+                },
+                "associatedMedia": {
+                    "@type": "MediaObject",
+                    "name": "MSc thesis defence slides",
+                    "contentUrl": "https://georgedreemer.com/downloads/academic/georgedreemer-msc-thesis_defenseslides.pdf",
+                    "encodingFormat": "application/pdf"
+                },
+                "image": "https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure6.png",
+                "isPartOf": { "@id": "https://georgedreemer.com/education/masters#msc-programme" },
+                "about": [
+                    "Health data sharing", "Secondary use of health data", "Discrete choice experiment",
+                    "Latent class analysis", "Conditional logit", "Data governance"
                 ],
-                "knowsLanguage": [
-                    {
-                    "@type": "Language",
-                    "name": "English"
-                    },
-                    {
-                    "@type": "Language",
-                    "name": "Bulgarian"
-                    },
-                    {
-                    "@type": "Language",
-                    "name": "Dutch"
-                    },
-                    {
-                    "@type": "Language",
-                    "name": "Russian"
-                    },
-                    {
-                    "@type": "Language",
-                    "name": "Hebrew"
-                    }
-                ],
+                "keywords": "health data sharing, discrete choice experiment, latent class model, conditional logit, Italy, R, Stata",
+                "spatialCoverage": { "@type": "Country", "name": "Italy" },
+                "hasPart": {
+                    "@type": "SoftwareSourceCode",
+                    "name": "MSc thesis analysis code",
+                    "url": "https://github.com/ETA444/msc_mads/tree/main/theses",
+                    "codeRepository": "https://github.com/ETA444/msc_mads"
+                }
+                },
+                {
+                "@type": "ScholarlyArticle",
+                "@id": "https://georgedreemer.com/education/masters#premsc-thesis",
+                "headline": "Pre-MSc Thesis — Earnings Call Sentiment and Stock Volatility",
+                "description": "Tests whether earnings-call sentiment (178 transcripts, 10 NASDAQ-listed firms, 2016–2020, scored with NLTK VADER) predicts post-call stock volatility using multiple linear regression. Volatility rose after 87% of calls, but sentiment was not a statistically significant predictor.",
+                "author": { "@id": "https://georgedreemer.com/#person" },
+                "inLanguage": "en",
+                "url": "https://georgedreemer.com/downloads/academic/georgedreemer-premsc-thesis_paper.pdf",
+                "about": ["Sentiment analysis", "Stock volatility", "Earnings calls", "Linear regression"],
+                "hasPart": {
+                    "@type": "SoftwareSourceCode",
+                    "name": "Pre-MSc thesis analysis code",
+                    "url": "https://github.com/ETA444/msc_mads/blob/main/theses/premsc-thesis.py",
+                    "codeRepository": "https://github.com/ETA444/msc_mads",
+                    "programmingLanguage": "Python"
+                }
+                },
+                {
+                "@type": "SoftwareSourceCode",
+                "@id": "https://georgedreemer.com/education/masters#code",
+                "name": "msc_mads — MSc coursework and thesis code",
+                "description": "Public repository with the R, SQL and Python code behind the MSc theses and coursework reports.",
+                "codeRepository": "https://github.com/ETA444/msc_mads",
+                "url": "https://github.com/ETA444/msc_mads",
+                "programmingLanguage": ["R", "SQL", "Python"],
+                "author": { "@id": "https://georgedreemer.com/#person" }
+                },
+                {
+                "@type": "ItemList",
+                "@id": "https://georgedreemer.com/education/masters#coursework",
+                "name": "MSc coursework: visual and written reports",
+                "description": "Thirteen public coursework reports from the MSc in Marketing Analytics & Data Science, each with a PDF and, where applicable, public code.",
+                "numberOfItems": 13,
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "item": { "@type": "Report", "name": "Text Mining, Sentiment Analysis & Propensity Score Matching", "description": "Text mining and sentiment analysis of online campaign wording, with propensity score matching to compare campaigns like-for-like.", "url": "https://georgedreemer.com/downloads/academic/Text%20mining%2C%20Sentiment%20analysis%20%26%20Propensity%20score%20matching.pdf", "author": { "@id": "https://georgedreemer.com/#person" }, "isBasedOn": "https://github.com/ETA444/msc_mads/blob/main/analyses/text-mining.R" } },
+                    { "@type": "ListItem", "position": 2, "item": { "@type": "Report", "name": "Google Analytics & Exploratory Analysis: Wehkamp AR App", "description": "Exploratory analysis of whether Wehkamp's augmented-reality app users differed in repeat purchases, customer value, repurchases, revenue and transaction frequency.", "url": "https://georgedreemer.com/downloads/academic/Google%20Analytics%20%26%20Exploratory%20Analysis.pdf", "author": { "@id": "https://georgedreemer.com/#person" }, "isBasedOn": "https://github.com/ETA444/msc_mads/blob/main/analyses/google-analytics.R" } },
+                    { "@type": "ListItem", "position": 3, "item": { "@type": "Report", "name": "Time-Series Analysis: Redstar vs. Competitors", "description": "Time-series comparison of Redstar's marketing mix (product, price, place, promotion) against competing brands.", "url": "https://georgedreemer.com/downloads/academic/Time-series%20Analysis.pdf", "author": { "@id": "https://georgedreemer.com/#person" }, "isBasedOn": "https://github.com/ETA444/msc_mads/blob/main/analyses/timeseries-analysis.R" } },
+                    { "@type": "ListItem", "position": 4, "item": { "@type": "Report", "name": "Cluster Analysis: Car-Buying Preferences", "description": "Hierarchical and non-hierarchical clustering of survey data to segment car buyers by priorities.", "url": "https://georgedreemer.com/downloads/academic/Cluster%20Analysis.pdf", "author": { "@id": "https://georgedreemer.com/#person" }, "isBasedOn": "https://github.com/ETA444/msc_mads/blob/main/analyses/cluster-analysis.R" } },
+                    { "@type": "ListItem", "position": 5, "item": { "@type": "Report", "name": "Factor Analysis: Attitudes Towards Sustainable Clothing", "description": "Factor analysis reducing many survey questions to the underlying dimensions of attitudes towards sustainable clothing.", "url": "https://georgedreemer.com/downloads/academic/Factor%20Analysis.pdf", "author": { "@id": "https://georgedreemer.com/#person" }, "isBasedOn": "https://github.com/ETA444/msc_mads/blob/main/analyses/factor-analysis.R" } },
+                    { "@type": "ListItem", "position": 6, "item": { "@type": "Report", "name": "Retail Mix Tactics for Kruidvat NL", "description": "Retail-mix strategy for Kruidvat's makeup category in the Netherlands, grounded in internal and external market analysis.", "url": "https://georgedreemer.com/downloads/academic/Retail%20Mix%20Tactics%20for%20Kruidvat%20NL.pdf", "author": { "@id": "https://georgedreemer.com/#person" } } },
+                    { "@type": "ListItem", "position": 7, "item": { "@type": "Report", "name": "Omnichannel Strategy Proposal for L'Oréal NL", "description": "Omnichannel strategy for L'Oréal in the Netherlands, built on internal data and external market analysis.", "url": "https://georgedreemer.com/downloads/academic/Omnichannel%20Strategy%20Proposal%20for%20L%27Oreal%20NL.pdf", "author": { "@id": "https://georgedreemer.com/#person" } } },
+                    { "@type": "ListItem", "position": 8, "item": { "@type": "Report", "name": "Exploratory Analysis: Consumer Attitudes Towards Meal Kits", "description": "Exploratory analysis of survey data on consumer attitudes towards meal kits.", "url": "https://georgedreemer.com/downloads/academic/Exploratory%20Analysis.pdf", "author": { "@id": "https://georgedreemer.com/#person" } } },
+                    { "@type": "ListItem", "position": 9, "item": { "@type": "Report", "name": "Churn Prediction Modeling", "description": "Customer churn modelled with traditional statistics, decision trees, bagging, boosting and neural networks, compared out-of-sample.", "url": "https://georgedreemer.com/downloads/academic/Churn%20Prediction%20Modeling.pdf", "author": { "@id": "https://georgedreemer.com/#person" }, "isBasedOn": "https://github.com/ETA444/msc_mads/blob/main/analyses/churn-modelling.R" } },
+                    { "@type": "ListItem", "position": 10, "item": { "@type": "Report", "name": "Market Modeling 1: Dutch Lemonade Market", "description": "Regression model of the Dutch lemonade market across retailers (e.g. Albert Heijn, Jumbo) and brands (e.g. Raak, Karvan Cevitam).", "url": "https://georgedreemer.com/downloads/academic/Market%20Modeling%201.pdf", "author": { "@id": "https://georgedreemer.com/#person" }, "isBasedOn": "https://github.com/ETA444/msc_mads/blob/main/analyses/market-modelling1.R" } },
+                    { "@type": "ListItem", "position": 11, "item": { "@type": "Report", "name": "Market Modeling 2: Dutch Lemonade Market", "description": "Second part of the lemonade market regression modelling, extending the same retailer and brand context.", "url": "https://georgedreemer.com/downloads/academic/Market%20Modeling%202.pdf", "author": { "@id": "https://georgedreemer.com/#person" }, "isBasedOn": "https://github.com/ETA444/msc_mads/blob/main/analyses/market-modelling2.R" } },
+                    { "@type": "ListItem", "position": 12, "item": { "@type": "Report", "name": "Conversion Rate Optimization Analysis", "description": "Drivers of online-retail conversion: SQL extraction and preparation, then statistical modelling in R.", "url": "https://georgedreemer.com/downloads/academic/Conversion%20Rate%20Optimization%20Analysis.pdf", "author": { "@id": "https://georgedreemer.com/#person" }, "isBasedOn": [
+                        "https://github.com/ETA444/msc_mads/blob/main/analyses/conversionrate-modelling.sql",
+                        "https://github.com/ETA444/msc_mads/blob/main/analyses/conversionrate-modelling.R"
+                    ] } },
+                    { "@type": "ListItem", "position": 13, "item": { "@type": "Report", "name": "Ethical Analysis: Food Waste, Salary Transparency, Gig Work", "description": "Three research-led ethical analyses of food waste, salary transparency and platform-based gig work.", "url": "https://georgedreemer.com/downloads/academic/Ethical%20Analysis%20Food%20Waste%2C%20Salary%20Transparency%2C%20Gig%20Work.pdf", "author": { "@id": "https://georgedreemer.com/#person" } } }
+                ]
+                },
+                {
+                "@type": "Organization",
+                "@id": "https://georgedreemer.com/education/masters#madsmadlad",
+                "name": "MADS Madlad",
+                "description": "A catalogue of detailed MSc course summaries written during the MSc in Marketing Analytics & Data Science (1,594 pages across 22 documents), sold through Stuvia and Knoowy, with seven free sample editions.",
+                "founder": { "@id": "https://georgedreemer.com/#person" },
+                "url": "https://georgedreemer.com/education/masters#mads-madlad",
                 "sameAs": [
-                    "https://www.linkedin.com/in/georgedreemer",
-                    "https://github.com/ETA444",
-                    "https://x.com/444eta",
-                    "https://www.dreemer.xyz"
+                    "https://www.stuvia.com/user/madsmadlad",
+                    "https://knoowy.nl/user/132765/madsmadlad"
+                ],
+                "subjectOf": { "@id": "https://georgedreemer.com/education/masters#madsmadlad-free-editions" }
+                },
+                {
+                "@type": "ItemList",
+                "@id": "https://georgedreemer.com/education/masters#madsmadlad-free-editions",
+                "name": "MADS Madlad free sample editions",
+                "numberOfItems": 7,
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "item": { "@type": "DigitalDocument", "name": "MADS Madlad — Data Science Methods (Free Edition)", "url": "https://georgedreemer.com/downloads/academic/madsmadlad/MM-DSMM-FreeEdition.pdf", "encodingFormat": "application/pdf", "isAccessibleForFree": true, "author": { "@id": "https://georgedreemer.com/#person" }, "publisher": { "@id": "https://georgedreemer.com/education/masters#madsmadlad" } } },
+                    { "@type": "ListItem", "position": 2, "item": { "@type": "DigitalDocument", "name": "MADS Madlad — Market Models (Free Edition)", "url": "https://georgedreemer.com/downloads/academic/madsmadlad/MM-MM-FreeEdition.pdf", "encodingFormat": "application/pdf", "isAccessibleForFree": true, "author": { "@id": "https://georgedreemer.com/#person" }, "publisher": { "@id": "https://georgedreemer.com/education/masters#madsmadlad" } } },
+                    { "@type": "ListItem", "position": 3, "item": { "@type": "DigitalDocument", "name": "MADS Madlad — Digital Marketing Intelligence (Free Edition)", "url": "https://georgedreemer.com/downloads/academic/madsmadlad/MM-DMI-FreeEdition.pdf", "encodingFormat": "application/pdf", "isAccessibleForFree": true, "author": { "@id": "https://georgedreemer.com/#person" }, "publisher": { "@id": "https://georgedreemer.com/education/masters#madsmadlad" } } },
+                    { "@type": "ListItem", "position": 4, "item": { "@type": "DigitalDocument", "name": "MADS Madlad — Retail Omnichannel Marketing (Free Edition)", "url": "https://georgedreemer.com/downloads/academic/madsmadlad/MM-ROM-FreeEdition.pdf", "encodingFormat": "application/pdf", "isAccessibleForFree": true, "author": { "@id": "https://georgedreemer.com/#person" }, "publisher": { "@id": "https://georgedreemer.com/education/masters#madsmadlad" } } },
+                    { "@type": "ListItem", "position": 5, "item": { "@type": "DigitalDocument", "name": "MADS Madlad — Data Engineering (Free Edition)", "url": "https://georgedreemer.com/downloads/academic/madsmadlad/MM-DEM-FreeEdition.pdf", "encodingFormat": "application/pdf", "isAccessibleForFree": true, "author": { "@id": "https://georgedreemer.com/#person" }, "publisher": { "@id": "https://georgedreemer.com/education/masters#madsmadlad" } } },
+                    { "@type": "ListItem", "position": 6, "item": { "@type": "DigitalDocument", "name": "MADS Madlad — Statistical Learning in Marketing (Free Edition)", "url": "https://georgedreemer.com/downloads/academic/madsmadlad/MM-SLM-FreeEdition.pdf", "encodingFormat": "application/pdf", "isAccessibleForFree": true, "author": { "@id": "https://georgedreemer.com/#person" }, "publisher": { "@id": "https://georgedreemer.com/education/masters#madsmadlad" } } },
+                    { "@type": "ListItem", "position": 7, "item": { "@type": "DigitalDocument", "name": "MADS Madlad — Companies, Brands & Consumers (Free Edition)", "url": "https://georgedreemer.com/downloads/academic/madsmadlad/MM-CBC-FreeEdition.pdf", "encodingFormat": "application/pdf", "isAccessibleForFree": true, "author": { "@id": "https://georgedreemer.com/#person" }, "publisher": { "@id": "https://georgedreemer.com/education/masters#madsmadlad" } } }
                 ]
                 }
             ]
         }
     </script>
+
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
