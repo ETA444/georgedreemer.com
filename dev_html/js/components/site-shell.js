@@ -428,7 +428,9 @@
         }
 
         /* Shell theme: no storage access, no page-component overrides. */
-        let explicitTheme = root.getAttribute("data-gd-theme");
+        let explicitTheme =
+            root.getAttribute("data-theme") ||
+            root.getAttribute("data-gd-theme");
 
         function applyTheme() {
             const theme = explicitTheme === "light" || explicitTheme === "dark"
@@ -436,12 +438,13 @@
                 : (systemDark.matches ? "dark" : "light");
 
             root.setAttribute("data-gd-theme", theme);
+            root.setAttribute("data-theme", theme);
 
             $$("[data-gd-theme-toggle]").forEach((button) => {
                 button.hidden = false;
                 button.setAttribute(
                     "aria-label",
-                    `Switch navigation to ${theme === "dark" ? "light" : "dark"} mode`
+                    `Switch to ${theme === "dark" ? "light" : "dark"} mode`
                 );
                 button.title = button.getAttribute("aria-label");
                 $("[data-gd-theme-icon]", button).innerHTML =
