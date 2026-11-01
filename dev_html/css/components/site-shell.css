@@ -1225,3 +1225,25 @@ html[data-gd-theme="dark"] .gd-route-mark[data-tone="white"] img {
         gap: var(--gd-s1);
     }
 }
+
+/* ============================================================
+   OPTIONAL ORGANIC HEADER EDGE
+
+   Remove data-gd-edge="paper" to disable it.
+   No image asset, JavaScript, or hosting dependency.
+============================================================ */
+
+.gd-header[data-gd-edge="paper"] {
+    border-bottom-color: transparent;
+}
+
+.gd-header[data-gd-edge="paper"]::after {
+    content: "";
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    width: 100%;
+    height: 14px;
+    pointer-events: none;
+    background: url("https://georgedreemer.com/gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png") repeat-x center top / auto 100%;
+}
