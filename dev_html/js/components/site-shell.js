@@ -40,6 +40,9 @@
 
         let sections = [];
         let activeSection = 0;
+        let sectionMotion = null;
+        let sectionMotionFrame = 0;
+        let sectionScrollStyle = null;
         let currentKind = "";
         let opener = null;
         let lockSnapshot = null;
@@ -685,27 +688,230 @@
 
         $("[data-gd-close]").addEventListener("click", () => requestClose());
 
-        /* Explicit section navigation only; passive scrolling never rewrites URL. */
-        function jumpTo(index) {
-            const section = sections[index];
-            if (!section) return;
+        /* ------------------------------------------------------------
+        * Section navigation:
+        * - Logical destination updates immediately.
+        * - Rapid clicks advance from that destination, not an old scroll position.
+        * - A new request replaces the animation already running.
+        * - User scrolling can interrupt the animation.
+        * ---------------------------------------------------------- */
 
+        function sectionInset() {
+            return (
+                desktop.matches
+                    ? Math.max(0, header.getBoundingClientRect().bottom)
+                    : 0
+            ) + 24;
+        }
+
+        function sectionDestination(index) {
+            const section = sections[index];
+            if (!section) return window.scrollY;
+
+            const desired =
+                window.scrollY +
+                section.getBoundingClientRect().top -
+                sectionInset();
+
+            const maximum = Math.max(
+                0,
+                document.documentElement.scrollHeight - window.innerHeight
+            );
+
+            return Math.max(0, Math.min(desired, maximum));
+        }
+
+        function paintSectionControls(index) {
+            if (!sections.length) return;
+
+            activeSection = Math.max(0, Math.min(index, sections.length - 1));
+
+            const label =
+                sections[activeSection].dataset.nav ||
+                sections[activeSection].id;
+
+            const count = $("[data-gd-count]");
+            const sectionLabel = $("[data-gd-section-label]");
+
+            if (count) {
+                count.textContent = `${activeSection + 1} / ${sections.length}`;
+            }
+
+            if (sectionLabel) {
+                sectionLabel.textContent = label;
+            }
+
+            $$("[data-gd-step]").forEach((button) => {
+                const destination =
+                    activeSection + Number(button.dataset.gdStep);
+
+                button.disabled =
+                    destination < 0 ||
+                    destination >= sections.length;
+            });
+
+            $$("[data-gd-page-control]").forEach((button) => {
+                button.setAttribute(
+                    "aria-label",
+                    `Sections — ${label}, ${activeSection + 1} of ${sections.length}`
+                );
+            });
+
+            $$("[data-gd-section-index]", dialog).forEach((anchor) => {
+                if (Number(anchor.dataset.gdSectionIndex) === activeSection) {
+                    anchor.setAttribute("aria-current", "location");
+                } else {
+                    anchor.removeAttribute("aria-current");
+                }
+            });
+        }
+
+        function restoreSectionScrollStyle() {
+            if (!sectionScrollStyle) return;
+
+            const { value, priority } = sectionScrollStyle;
+
+            if (value) {
+                root.style.setProperty("scroll-behavior", value, priority);
+            } else {
+                root.style.removeProperty("scroll-behavior");
+            }
+
+            sectionScrollStyle = null;
+        }
+
+        function stopSectionMotion() {
+            if (sectionMotionFrame) {
+                cancelAnimationFrame(sectionMotionFrame);
+            }
+
+            sectionMotionFrame = 0;
+            sectionMotion = null;
+            restoreSectionScrollStyle();
+        }
+
+        function jumpTo(index) {
+            if (
+                dialog.open ||
+                index < 0 ||
+                index >= sections.length
+            ) {
+                return;
+            }
+
+            const replacingMotion = Boolean(sectionMotion);
+
+            stopSectionMotion();
+
+            /* Update first: the next click now advances from this destination. */
+            paintSectionControls(index);
+
+            const section = sections[index];
             const url = new URL(location.href);
             url.hash = section.id;
 
             if (url.href !== location.href) {
                 try {
-                    history.pushState(mergedHistoryState(null), "", url.href);
+                    /*
+                    * Coalesce a burst of rapid clicks into one navigation action.
+                    * A later, separate navigation still creates a history entry.
+                    */
+                    if (replacingMotion) {
+                        history.replaceState(
+                            mergedHistoryState(null),
+                            "",
+                            url.href
+                        );
+                    } else {
+                        history.pushState(
+                            mergedHistoryState(null),
+                            "",
+                            url.href
+                        );
+                    }
                 } catch {
-                    location.hash = section.id;
+                    /* Scrolling still works where History API access is restricted. */
                 }
             }
 
             focusElement(section);
-            section.scrollIntoView({
-                behavior: reducedMotion.matches ? "auto" : "smooth",
-                block: "start"
-            });
+
+            sectionScrollStyle = {
+                value: root.style.getPropertyValue("scroll-behavior"),
+                priority: root.style.getPropertyPriority("scroll-behavior")
+            };
+
+            /*
+            * Disable CSS smooth scrolling while the animation controls the position.
+            * Otherwise two scrolling mechanisms can compete.
+            */
+            root.style.setProperty("scroll-behavior", "auto", "important");
+
+            const startY = window.scrollY;
+            const destination = sectionDestination(index);
+            const distance = destination - startY;
+
+            if (reducedMotion.matches || Math.abs(distance) < 2) {
+                window.scrollTo(window.scrollX, destination);
+                restoreSectionScrollStyle();
+                return;
+            }
+
+            const motion = {
+                index,
+                startY,
+                startedAt: performance.now(),
+                duration: Math.min(
+                    460,
+                    Math.max(220, Math.abs(distance) * 0.16)
+                )
+            };
+
+            sectionMotion = motion;
+
+            function animate(now) {
+                if (sectionMotion !== motion) return;
+
+                const progress = Math.min(
+                    1,
+                    (now - motion.startedAt) / motion.duration
+                );
+
+                const eased = 1 - Math.pow(1 - progress, 3);
+
+                /*
+                * Recalculate the destination in case an image or disclosure changes
+                * layout while the animation is running.
+                */
+                const targetY = sectionDestination(motion.index);
+
+                window.scrollTo(
+                    window.scrollX,
+                    motion.startY + (targetY - motion.startY) * eased
+                );
+
+                if (progress < 1) {
+                    sectionMotionFrame = requestAnimationFrame(animate);
+                    return;
+                }
+
+                window.scrollTo(window.scrollX, targetY);
+
+                sectionMotion = null;
+                sectionMotionFrame = 0;
+
+                restoreSectionScrollStyle();
+                paintSectionControls(motion.index);
+            }
+
+            sectionMotionFrame = requestAnimationFrame(animate);
+        }
+
+        function interruptSectionMotion() {
+            if (!sectionMotion) return;
+
+            stopSectionMotion();
+            syncActiveSection();
         }
 
         async function copyValue(value, success) {
