@@ -508,10 +508,30 @@
         /* Sheet rendering: clone the manifest, not a second hard-coded menu. */
         function cloneGroup(source) {
             const clone = source.cloneNode(true);
+
             clone.removeAttribute("id");
-            $$("[id]", clone).forEach((node) => node.removeAttribute("id"));
+
+            $$("[id]", clone).forEach((node) => {
+                node.removeAttribute("id");
+            });
+
             clone.classList.remove("gd-network");
             clone.classList.add("gd-menu-group");
+
+            $$("a", clone).forEach((anchor) => {
+                const label = document.createElement("span");
+                label.className = "gd-menu-link__label";
+
+                while (anchor.firstChild) {
+                    label.append(anchor.firstChild);
+                }
+
+                anchor.append(
+                    makeNavigationMark(anchor),
+                    label
+                );
+            });
+
             return clone;
         }
 
