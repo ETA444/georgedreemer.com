@@ -582,6 +582,10 @@
             if (closing || waitingForBack) return;
             if (kind === "page" && sections.length < 2) return;
 
+            /* Stop at the actual reading position before locking the page. */
+            stopSectionMotion();
+            syncActiveSection();
+
             const wasOpen = dialog.open;
 
             if (!wasOpen) {
@@ -1055,6 +1059,50 @@
             }).observe(header);
         }
 
+        window.addEventListener(
+            "wheel",
+            interruptSectionMotion,
+            { passive: true }
+        );
+
+        window.addEventListener(
+            "touchmove",
+            interruptSectionMotion,
+            { passive: true }
+        );
+
+        document.addEventListener("keydown", (event) => {
+            if (
+                event.defaultPrevented ||
+                event.metaKey ||
+                event.ctrlKey ||
+                event.altKey
+            ) {
+                return;
+            }
+
+            const editable = event.target instanceof Element &&
+                event.target.closest(
+                    'input, textarea, select, [contenteditable="true"]'
+                );
+
+            if (editable) return;
+
+            if (
+                [
+                    "ArrowUp",
+                    "ArrowDown",
+                    "PageUp",
+                    "PageDown",
+                    "Home",
+                    "End",
+                    " "
+                ].includes(event.key)
+            ) {
+                interruptSectionMotion();
+            }
+        });
+
         /* Keyboard heuristic: hide the dock while editing on a small screen.
            Pinch zoom alone does not trigger it. */
         function checkKeyboard() {
@@ -1077,6 +1125,7 @@
         /* Avoid a locked page being stored in the browser's back-forward cache. */
         window.addEventListener("pagehide", () => {
             if (dialog.open) {
+                stopSectionMotion();
                 dialog.close();
                 unlockScroll();
                 currentKind = "";
