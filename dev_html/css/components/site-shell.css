@@ -837,3 +837,391 @@ html.gd-keyboard-open .gd-dock {
         padding: var(--gd-s4);
     }
 }
+
+/* ============================================================
+   SITE SHELL — REFINEMENTS
+============================================================ */
+
+:root {
+    --gd-pill: var(--gd-radius);
+}
+
+/* ------------------------------------------------------------
+   1. A single native anchor offset.
+
+   scroll-padding remains on the document.
+   Do not apply the same offset again to every target.
+------------------------------------------------------------ */
+
+html[data-gd-ready] main [id][data-nav] {
+    scroll-margin-top: 0;
+    scroll-margin-block-start: 0;
+}
+
+/* ------------------------------------------------------------
+   2. Stable reader geometry.
+
+   Both arrows stay in fixed columns. Long names truncate rather
+   than widening the island and moving the next button.
+------------------------------------------------------------ */
+
+.gd-reader {
+    width: min(24rem, calc(100vw - var(--gd-s8)));
+    max-width: none;
+    border-radius: var(--gd-radius);
+}
+
+.gd-reader:not([hidden]) {
+    grid-template-columns: 44px minmax(0, 1fr) 44px;
+    gap: var(--gd-s1);
+}
+
+.gd-reader>.gd-icon-button {
+    width: 44px;
+    min-width: 44px;
+}
+
+.gd-reader .gd-reader__current {
+    display: grid;
+    grid-template-columns: 5ch minmax(0, 1fr) 20px;
+    gap: var(--gd-s2);
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    padding-inline: var(--gd-s2);
+}
+
+.gd-reader__count {
+    text-align: left;
+}
+
+.gd-reader__label {
+    min-width: 0;
+    text-align: left;
+}
+
+.gd-reader__current[aria-expanded="true"] {
+    background: var(--gd-selected);
+    color: var(--gd-accent);
+}
+
+/* Preserve the existing mobile rule: no second floating bar. */
+@media (min-width: 60rem) {
+    .gd-reader:not([hidden]) {
+        display: grid;
+    }
+}
+
+/* ------------------------------------------------------------
+   3. Center dialogs without transform-based positioning.
+
+   The existing translateY animations remain free to animate.
+------------------------------------------------------------ */
+
+.gd-sheet {
+    inset: 0;
+    width: min(56rem, calc(100% - var(--gd-s8)));
+    height: fit-content;
+    max-height: calc(100dvh - var(--gd-s8));
+    margin: auto;
+    border: 1px solid var(--gd-border);
+    border-radius: var(--gd-radius);
+}
+
+.gd-sheet[data-kind="contact"],
+.gd-sheet[data-kind="page"],
+.gd-sheet[data-kind="work"],
+.gd-sheet[data-kind="education"] {
+    width: min(36rem, calc(100% - var(--gd-s8)));
+}
+
+.gd-sheet__header {
+    flex-shrink: 0;
+}
+
+.gd-sheet__body {
+    min-height: 0;
+    padding-bottom: var(--gd-s6);
+}
+
+@media (max-width: 39.999rem) {
+
+    .gd-sheet,
+    .gd-sheet[data-kind] {
+        width: calc(100% - var(--gd-s4));
+        max-height: calc(100dvh - var(--gd-s4));
+    }
+}
+
+/* ------------------------------------------------------------
+   4. Breathing room between adjacent interactive surfaces.
+
+   Grid gap creates real space: neighbouring hover and active
+   backgrounds cannot merge.
+------------------------------------------------------------ */
+
+.gd-page-list,
+.gd-directory-group ul {
+    display: grid;
+    gap: var(--gd-s1);
+}
+
+.gd-network ul {
+    display: flex;
+    column-gap: var(--gd-s8);
+    row-gap: var(--gd-s1);
+}
+
+.gd-dock {
+    gap: var(--gd-s1);
+}
+
+.gd-nav-pair {
+    gap: var(--gd-s1);
+}
+
+.gd-page-list a,
+.gd-menu-group a {
+    border-radius: var(--gd-radius);
+}
+
+/* A clear active state, not the old inset box-shadow underline. */
+.gd-desktop-nav [data-gd-active] {
+    color: var(--gd-accent);
+    background: var(--gd-selected);
+    box-shadow: none;
+}
+
+.gd-desktop-nav>a,
+.gd-nav-pair>a {
+    border: 1px solid transparent;
+}
+
+.gd-desktop-nav a[data-gd-active] {
+    border-color: color-mix(in srgb,
+            var(--gd-accent) 24%,
+            transparent);
+}
+
+.gd-desktop-nav a[data-gd-active]:hover {
+    background: var(--gd-selected);
+}
+
+/* Keep selected entries selected, even while hovered. */
+.gd-page-list a[aria-current="location"]:hover,
+.gd-dock [data-gd-active]:hover,
+.gd-dock [aria-expanded="true"]:hover {
+    background: var(--gd-selected);
+    color: var(--gd-accent);
+}
+
+/* Sequential navigation inside the Sections dialog. */
+.gd-section-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--gd-s2);
+    margin-bottom: var(--gd-s4);
+}
+
+.gd-section-actions button {
+    justify-content: flex-start;
+    padding: var(--gd-s3);
+    background: var(--gd-raised);
+    font-size: var(--gd-sm);
+}
+
+/* ------------------------------------------------------------
+   5. Signature and contextual identity.
+------------------------------------------------------------ */
+
+.gd-identity {
+    display: flex;
+    align-items: center;
+    gap: var(--gd-s2);
+    min-width: 0;
+    margin-right: auto;
+}
+
+.gd-identity .gd-brand {
+    min-width: 0;
+    margin-right: 0;
+}
+
+.gd-brand__signature {
+    display: block;
+    width: clamp(7rem, 32vw, 10rem);
+    height: auto;
+    max-height: 3.5rem;
+    object-fit: contain;
+    background: transparent;
+    filter: brightness(0);
+}
+
+html[data-gd-theme="dark"] .gd-brand__signature {
+    filter: brightness(0) invert(1);
+}
+
+.gd-brand__fallback {
+    font-size: var(--gd-base);
+    font-weight: 800;
+}
+
+.gd-context {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gd-s2);
+    min-width: 44px;
+    min-height: 44px;
+    padding-inline: var(--gd-s1);
+    border-radius: var(--gd-radius);
+}
+
+.gd-context__separator {
+    color: var(--gd-muted);
+    font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+    font-size: var(--gd-lg);
+    line-height: 1;
+}
+
+.gd-context__mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ------------------------------------------------------------
+   6. Visual markers in Explore.
+
+   Fixed-size slots reserve space even when an image fails.
+   Real logos keep their original colours.
+------------------------------------------------------------ */
+
+.gd-route-mark {
+    display: inline-flex;
+    flex: 0 0 28px;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+    border: 1px solid var(--gd-border);
+    border-radius: var(--gd-s1);
+    color: var(--gd-text);
+    background: var(--gd-bg);
+    font-size: var(--gd-xs);
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -.02em;
+}
+
+.gd-route-mark img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    max-width: 100%;
+    object-fit: contain;
+    background: transparent;
+}
+
+.gd-route-mark svg {
+    width: 17px;
+    height: 17px;
+}
+
+.gd-route-mark[data-tone="white"] img {
+    filter: brightness(0);
+}
+
+html[data-gd-theme="dark"] .gd-route-mark[data-tone="white"] img {
+    filter: brightness(0) invert(1);
+}
+
+.gd-menu-group a {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: var(--gd-s3);
+}
+
+.gd-menu-link__label {
+    display: block;
+    min-width: 0;
+    padding-top: var(--gd-s1);
+    overflow-wrap: anywhere;
+}
+
+.gd-context .gd-route-mark {
+    border-color: transparent;
+    background: transparent;
+}
+
+/* ------------------------------------------------------------
+   7. Breadcrumbs with a restrained code-path character.
+
+   This is intentionally not an invented approximation of your
+   family crest. The real crest can replace the separator later.
+------------------------------------------------------------ */
+
+.gd-breadcrumb ol {
+    column-gap: var(--gd-s3);
+}
+
+.gd-breadcrumb li+li::before {
+    content: "›";
+    color: var(--gd-accent);
+    font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+    font-size: var(--gd-base);
+    font-weight: 700;
+    line-height: 1;
+}
+
+.gd-breadcrumb a {
+    border-radius: var(--gd-s1);
+}
+
+.gd-breadcrumb [aria-current="page"] {
+    color: var(--gd-text);
+    font-weight: 800;
+}
+
+/* ------------------------------------------------------------
+   8. Extremely narrow screens only.
+
+   Normal 320px+ phone widths keep all labels.
+   Below 300px, accessible names remain through aria-label.
+------------------------------------------------------------ */
+
+.gd-dock> :where(a, button) {
+    min-width: 44px;
+}
+
+@media (max-width: 18.749rem) {
+    .gd-dock {
+        align-items: center;
+        overflow-x: auto;
+    }
+
+    .gd-dock .gd-dock__label {
+        display: none;
+    }
+
+    .gd-dock> :where(a, button) {
+        min-width: 44px;
+        min-height: 48px;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .gd-dock [data-gd-icon] svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .gd-brand__signature {
+        width: 6rem;
+    }
+
+    .gd-context {
+        gap: var(--gd-s1);
+    }
+}
