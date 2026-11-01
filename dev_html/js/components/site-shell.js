@@ -229,6 +229,154 @@
             $(".gd-breadcrumb").hidden = false;
         }
 
+        /* ------------------------------------------------------------
+        * Route identity
+        * Optional footer-link attributes:
+        *
+        * data-gd-logo="actual image URL"
+        * data-gd-logo-tone="original" | "white"
+        * data-gd-mark="DS"
+        * data-gd-symbol="education"
+        *
+        * Do not use data-gd-icon on an anchor: the existing icon loader
+        * treats that attribute as an icon-only placeholder.
+        * ---------------------------------------------------------- */
+
+        const routeMarks = {
+            datasafari: "DS",
+            cryptopandemic: "CP",
+            dreemcorp: "D",
+            skipschoolmakemoney: "SS",
+            thoughtbubble: "tb"
+        };
+
+        const currentRouteAnchor = $$("[data-gd-route]", footer).find(
+            (anchor) => anchor.dataset.gdRoute === currentID
+        );
+
+        /*
+        * Reuse the logo already present on this page.
+        * Explicit manifest metadata always wins.
+        */
+        const snapshotLogo = $(".snapshot-card__tab-logo img", main);
+
+        if (
+            currentRouteAnchor &&
+            !currentRouteAnchor.dataset.gdLogo &&
+            snapshotLogo
+        ) {
+            const source =
+                snapshotLogo.currentSrc ||
+                snapshotLogo.getAttribute("src");
+
+            if (source) {
+                currentRouteAnchor.dataset.gdLogo =
+                    new URL(source, document.baseURI).href;
+            }
+        }
+
+        function makeNavigationMark(anchor) {
+            const mark = document.createElement("span");
+            mark.className = "gd-route-mark";
+            mark.setAttribute("aria-hidden", "true");
+
+            const routeID = anchor.dataset.gdRoute;
+            const group = anchor.closest("[data-gd-group]")?.dataset.gdGroup;
+
+            const monogram =
+                anchor.dataset.gdMark ||
+                routeMarks[routeID];
+
+            const symbol =
+                anchor.dataset.gdSymbol ||
+                (
+                    group === "education" ? "education" :
+                    group === "contact" ? "contact" :
+                    group === "work" ? "work" :
+                    "page"
+                );
+
+            function showFallback() {
+                mark.removeAttribute("data-tone");
+                mark.replaceChildren();
+
+                if (monogram) {
+                    mark.textContent = monogram;
+                } else {
+                    mark.innerHTML = icon(symbol);
+                }
+            }
+
+            showFallback();
+
+            const source = anchor.dataset.gdLogo;
+
+            if (source) {
+                const image = document.createElement("img");
+
+                image.alt = "";
+                image.width = 24;
+                image.height = 24;
+                image.loading = "lazy";
+                image.decoding = "async";
+
+                image.addEventListener("error", showFallback, { once: true });
+
+                mark.dataset.tone =
+                    anchor.dataset.gdLogoTone || "original";
+
+                mark.replaceChildren(image);
+                image.src = source;
+            }
+
+            return mark;
+        }
+
+        /* Brand image failure should leave a usable Home link. */
+        const signatureImage = $(".gd-brand__signature", header);
+        const signatureFallback = $(".gd-brand__fallback", header);
+
+        function showSignatureFallback() {
+            if (signatureImage) signatureImage.hidden = true;
+            if (signatureFallback) signatureFallback.hidden = false;
+        }
+
+        if (signatureImage) {
+            signatureImage.addEventListener(
+                "error",
+                showSignatureFallback,
+                { once: true }
+            );
+
+            if (
+                signatureImage.complete &&
+                signatureImage.naturalWidth === 0
+            ) {
+                showSignatureFallback();
+            }
+        }
+
+        /* A company/university identity beside the signature. */
+        const contextLink = $("[data-gd-context]", header);
+
+        if (
+            contextLink &&
+            currentRouteAnchor &&
+            ["work", "education"].includes(current?.group) &&
+            currentID !== "home"
+        ) {
+            $("[data-gd-context-mark]", contextLink).replaceChildren(
+                makeNavigationMark(currentRouteAnchor)
+            );
+
+            $("[data-gd-context-label]", contextLink).textContent =
+                `${current.label} — return to the page introduction`;
+
+            contextLink.href = `#${encodeURIComponent(main.id)}`;
+            contextLink.title = current.label;
+            contextLink.hidden = false;
+        }
+
         /* Contextual links: editorial relationships, not random suggestions. */
         const relationships = {
             masters: [
