@@ -654,6 +654,34 @@
                 list.append(li);
             });
 
+            const navigation = document.createElement("div");
+            navigation.className = "gd-section-actions";
+
+            [
+                [-1, "Previous section", "chevron-up"],
+                [1, "Next section", "chevron-down"]
+            ].forEach(([direction, label, symbol]) => {
+                const button = document.createElement("button");
+
+                button.type = "button";
+                button.dataset.gdStep = String(direction);
+
+                button.disabled =
+                    activeSection + direction < 0 ||
+                    activeSection + direction >= sections.length;
+
+                const image = document.createElement("span");
+                image.setAttribute("aria-hidden", "true");
+                image.innerHTML = icon(symbol);
+
+                const text = document.createElement("span");
+                text.textContent = label;
+
+                button.append(image, text);
+                navigation.append(button);
+            });
+
+            content.append(navigation);
             nav.append(list);
             content.append(nav);
 
@@ -1132,6 +1160,23 @@
             }
 
             const step = event.target.closest("[data-gd-step]");
+
+            if (step) {
+                event.preventDefault();
+
+                if (step.disabled) return;
+
+                const destination =
+                    activeSection + Number(step.dataset.gdStep);
+
+                if (dialog.open) {
+                    requestClose(() => jumpTo(destination));
+                } else {
+                    jumpTo(destination);
+                }
+
+                return;
+            }
 
             if (step && !step.disabled) {
                 jumpTo(activeSection + Number(step.dataset.gdStep));
