@@ -986,27 +986,29 @@
             }
         });
 
-        /* Page-section tracking. */
         function syncActiveSection() {
-            if (!sections.length || dialog.open) return;
+            if (
+                !sections.length ||
+                dialog.open ||
+                sectionMotion
+            ) {
+                return;
+            }
 
-            const offset = desktop.matches ? header.getBoundingClientRect().height + 24 : 24;
             let index = 0;
 
-            sections.forEach((section, i) => {
-                if (section.getBoundingClientRect().top <= offset) index = i;
+            sections.forEach((section, candidate) => {
+                /*
+                * Compare against the same clamped destination used for navigation.
+                * This also handles sections too close to the bottom to reach the
+                * normal header offset.
+                */
+                if (sectionDestination(candidate) <= window.scrollY + 2) {
+                    index = candidate;
+                }
             });
 
-            activeSection = index;
-
-            $("[data-gd-count]").textContent = `${index + 1} / ${sections.length}`;
-            $("[data-gd-section-label]").textContent =
-                sections[index].dataset.nav || sections[index].id;
-
-            $$("[data-gd-step]").forEach((button) => {
-                const next = index + Number(button.dataset.gdStep);
-                button.disabled = next < 0 || next >= sections.length;
-            });
+            paintSectionControls(index);
         }
 
         function scheduleSectionUpdate() {
