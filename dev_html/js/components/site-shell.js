@@ -79,6 +79,21 @@
             node.innerHTML = icon(node.dataset.gdIcon);
         });
 
+        $$(".gd-dock > a, .gd-dock > button").forEach((control) => {
+            const label = control.lastElementChild;
+
+            if (label?.tagName === "SPAN") {
+                label.classList.add("gd-dock__label");
+
+                if (!control.hasAttribute("aria-label")) {
+                    control.setAttribute(
+                        "aria-label",
+                        label.textContent.trim()
+                    );
+                }
+            }
+        });
+
         /* The footer is the manifest. Production hrefs remain in HTML. */
         const mode = header.dataset.gdMode || "auto";
         const isLocal = mode === "local" || (
