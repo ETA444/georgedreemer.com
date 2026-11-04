@@ -1033,7 +1033,6 @@ html[data-gd-ready] main [id][data-nav] {
 .gd-identity {
     display: flex;
     align-items: center;
-    gap: var(--gd-s2);
     min-width: 0;
     margin-right: auto;
 }
