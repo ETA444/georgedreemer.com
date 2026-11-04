@@ -1227,23 +1227,45 @@ html[data-gd-theme="dark"] .gd-route-mark[data-tone="white"] img {
 }
 
 /* ============================================================
-   OPTIONAL ORGANIC HEADER EDGE
-
-   Remove data-gd-edge="paper" to disable it.
-   No image asset, JavaScript, or hosting dependency.
+   HEADER PAPER EDGE (mask-based)
+   Remove data-gd-edge="paper" on the header to disable.
 ============================================================ */
 
 .gd-header[data-gd-edge="paper"] {
+    --gd-edge-h: 14px;
+    /* displayed height of the tear */
     border-bottom-color: transparent;
 }
 
+/* Shared mask: both layers cut the same shape */
+.gd-header[data-gd-edge="paper"]::before,
 .gd-header[data-gd-edge="paper"]::after {
     content: "";
     position: absolute;
-    top: calc(100% - 1px);
     left: 0;
     width: 100%;
-    height: 14px;
+    height: var(--gd-edge-h);
     pointer-events: none;
-    background: url("https://georgedreemer.com/gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png") repeat-x center top / auto 100%;
+
+    -webkit-mask-image: url("https://georgedreemer.com/public_img/general/paperborders/paperborder-bw.svg");
+    mask-image: url("https://georgedreemer.com/public_img/general/paperborders/paperborder-bw.svg");
+
+    -webkit-mask-repeat: repeat-x;
+    mask-repeat: repeat-x;
+    -webkit-mask-size: auto var(--gd-edge-h);
+    mask-size: auto var(--gd-edge-h);
+    -webkit-mask-position: left top;
+    mask-position: left top;
+}
+
+/* Back layer: soft outline so the tear reads on any background */
+.gd-header[data-gd-edge="paper"]::before {
+    top: calc(100% + 1px);
+    background: color-mix(in srgb, var(--gd-text) 24%, transparent);
+}
+
+/* Front layer: the paper, always in the header's current colour */
+.gd-header[data-gd-edge="paper"]::after {
+    top: calc(100% - 1px);
+    background: var(--gd-bg);
 }
