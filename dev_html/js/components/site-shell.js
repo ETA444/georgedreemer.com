@@ -54,7 +54,7 @@
         const paths = {
             work: '<rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v3h4v-3"/>',
             education: '<path d="m2 9 10-5 10 5-10 5L2 9Zm4 2v6c3 3 9 3 12 0v-6M22 9v7"/>',
-            page: '<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/>',
+            onThisPage: '<path d="m8 8 4-4 4 4"/><path d="m8 16 4 4 4-4"/>',
             contact: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/>',
             menu: '<path d="M4 6h16M4 12h16M4 18h16"/>',
             close: '<path d="m6 6 12 12M18 6 6 18"/>',
