@@ -8,16 +8,18 @@
  */
 
 :root {
-    --gd-bg: #faf9f6;
-    --gd-surface: #ffffff;
-    --gd-raised: #f0efeb;
-    --gd-text: #282722;
-    --gd-muted: #615f58;
-    --gd-border: rgb(40 39 34 / 16%);
-    --gd-accent: #17676b;
-    --gd-selected: #e5efed;
-    --gd-overlay: rgb(20 22 20 / 38%);
-    --gd-shadow: 0 8px 32px rgb(35 32 24 / 12%);
+    --gd-bg: #000000;
+    --gd-surface: #000000;
+    --gd-raised: #191919;
+
+    --gd-text: #f0efe8;
+    --gd-muted: #b8b8ab;
+    --gd-border: rgb(240 239 232 / 18%);
+
+    --gd-accent: #8ac8c5;
+    --gd-selected: #18312e;
+    --gd-overlay: rgb(0 0 0 / 60%);
+    --gd-shadow: 0 8px 32px rgb(0 0 0 / 28%);
 
     --gd-font: "Nunito", system-ui, sans-serif;
     --gd-display: "Playfair Display", Georgia, serif;
@@ -49,19 +51,6 @@
     --gd-anchor-offset: 1rem;
     --gd-bottom-space: 0px;
     --gd-ease: 180ms cubic-bezier(.2, .7, .2, 1);
-}
-
-html[data-gd-theme="dark"] {
-    --gd-bg: #000000;
-    --gd-surface: #000000;
-    --gd-raised: #2c2e28;
-    --gd-text: #f0efe8;
-    --gd-muted: #b8b8ab;
-    --gd-border: rgb(240 239 232 / 18%);
-    --gd-accent: #8ac8c5;
-    --gd-selected: #263d39;
-    --gd-overlay: rgb(0 0 0 / 60%);
-    --gd-shadow: 0 8px 32px rgb(0 0 0 / 28%);
 }
 
 html[data-gd-ready] {
@@ -400,6 +389,13 @@ html[data-gd-ready] main [id][data-nav] {
     max-width: var(--gd-width);
     margin: var(--gd-s16) auto 0;
     padding-inline: var(--gd-s4);
+    --gd-text: #282722;
+    --gd-muted: #615f58;
+    --gd-border: rgb(40 39 34 / 16%);
+    --gd-accent: #17676b;
+    --gd-selected: #e5efed;
+
+    color-scheme: light;
 }
 
 .gd-related h2 {
@@ -1057,8 +1053,8 @@ html[data-gd-ready] main [id][data-nav] {
     filter: brightness(0);
 }
 
-html[data-gd-theme="dark"] .gd-brand__signature {
-    filter: brightness(0) invert(1);
+.gd-brand__signature {
+    filter: none;
 }
 
 .gd-brand__fallback {
@@ -1130,11 +1126,7 @@ html[data-gd-theme="dark"] .gd-brand__signature {
 }
 
 .gd-route-mark[data-tone="white"] img {
-    filter: brightness(0);
-}
-
-html[data-gd-theme="dark"] .gd-route-mark[data-tone="white"] img {
-    filter: brightness(0) invert(1);
+    filter: none;
 }
 
 .gd-menu-group a {
@@ -1215,10 +1207,6 @@ html[data-gd-theme="dark"] .gd-route-mark[data-tone="white"] img {
     .gd-dock [data-gd-icon] svg {
         width: 24px;
         height: 24px;
-    }
-
-    .gd-brand__signature {
-        width: 6rem;
     }
 
     .gd-context {

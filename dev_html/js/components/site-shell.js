@@ -22,7 +22,6 @@
         const $$ = (selector, context = document) => [...context.querySelectorAll(selector)];
         const desktop = matchMedia("(min-width: 60rem)");
         const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
-        const systemDark = matchMedia("(prefers-color-scheme: dark)");
 
         const dock = $(".gd-dock");
         const reader = $(".gd-reader");
@@ -441,45 +440,6 @@
         if (relatedList.children.length) {
             $("[data-gd-related]").hidden = false;
         }
-
-        /* Shell theme: no storage access, no page-component overrides. */
-        let explicitTheme =
-            root.getAttribute("data-theme") ||
-            root.getAttribute("data-gd-theme");
-
-        function applyTheme() {
-            const theme = explicitTheme === "light" || explicitTheme === "dark"
-                ? explicitTheme
-                : (systemDark.matches ? "dark" : "light");
-
-            root.setAttribute("data-gd-theme", theme);
-            root.setAttribute("data-theme", theme);
-
-            $$("[data-gd-theme-toggle]").forEach((button) => {
-                button.hidden = false;
-                button.setAttribute(
-                    "aria-label",
-                    `Switch to ${theme === "dark" ? "light" : "dark"} mode`
-                );
-                button.title = button.getAttribute("aria-label");
-                $("[data-gd-theme-icon]", button).innerHTML =
-                    icon(theme === "dark" ? "sun" : "moon");
-            });
-
-            document.dispatchEvent(new CustomEvent("gd:theme", {
-                detail: { theme }
-            }));
-        }
-
-        $$("[data-gd-theme-toggle]").forEach((button) => {
-            button.addEventListener("click", () => {
-                explicitTheme = root.dataset.gdTheme === "dark" ? "light" : "dark";
-                applyTheme();
-            });
-        });
-
-        systemDark.addEventListener("change", applyTheme);
-        applyTheme();
 
         /* Escape potentially restrictive Sitebuilder component ancestors.
            The footer stays in document flow; fixed controls/dialog become
