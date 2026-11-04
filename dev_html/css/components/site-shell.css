@@ -1241,7 +1241,9 @@ html[data-gd-theme="dark"] .gd-route-mark[data-tone="white"] img {
 .gd-header[data-gd-edge="paper"]::before,
 .gd-header[data-gd-edge="paper"]::after,
 .gd-footer[data-gd-edge="paper"]::before,
-.gd-footer[data-gd-edge="paper"]::after{
+.gd-footer[data-gd-edge="paper"]::after,
+.gd-dock[data-gd-edge="paper"]::before,
+.gd-dock[data-gd-edge="paper"]::after{
     content: "";
     position: absolute;
     left: 0;
@@ -1307,6 +1309,49 @@ html[data-gd-theme="dark"] .gd-route-mark[data-tone="white"] img {
 
     .gd-footer[data-gd-edge="paper"]::before,
     .gd-footer[data-gd-edge="paper"]::after {
+        display: none;
+    }
+}
+
+/* ============================================================
+   MOBILE DOCK — SUBTLE PAPER EDGE
+   Same mask as the footer; smaller, quieter treatment.
+============================================================ */
+
+.gd-dock[data-gd-edge="paper"] {
+    --gd-edge-h: 8px;
+
+    border-top: 0;
+    box-shadow: none;
+}
+
+/* Paper below, torn edge facing upward. */
+.gd-dock[data-gd-edge="paper"]::before,
+.gd-dock[data-gd-edge="paper"]::after {
+    transform: scale(-1, -1);
+}
+
+/* A restrained outline beyond the paper. */
+.gd-dock[data-gd-edge="paper"]::before {
+    bottom: 100%;
+    background: color-mix(in srgb,
+            var(--gd-text) 18%,
+            transparent);
+}
+
+/* Match the dock's background, not the page background. */
+.gd-dock[data-gd-edge="paper"]::after {
+    bottom: calc(100% - 1px);
+    background: var(--gd-surface);
+}
+
+@media (max-width: 18.749rem) {
+    .gd-dock[data-gd-edge="paper"] {
+        border-top: 1px solid var(--gd-border);
+    }
+
+    .gd-dock[data-gd-edge="paper"]::before,
+    .gd-dock[data-gd-edge="paper"]::after {
         display: none;
     }
 }
