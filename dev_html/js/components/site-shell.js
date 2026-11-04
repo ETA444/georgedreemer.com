@@ -103,6 +103,20 @@
             )
         );
 
+        const identities = {
+            home:                { logo: "", tone: "original", mark: "GD", symbol: "page" },
+            thoughtbubble:       { logo: "", tone: "original", mark: "tb", symbol: "work" },
+            datasafari:          { logo: "", tone: "original", mark: "DS", symbol: "work" },
+            cryptopandemic:      { logo: "", tone: "original", mark: "CP", symbol: "work" },
+            dreemcorp:           { logo: "", tone: "white",    mark: "D",  symbol: "work" },
+            skipschoolmakemoney: { logo: "", tone: "original", mark: "SS", symbol: "work" },
+            masters:           { logo: "", tone: "original", mark: "UG", symbol: "education" },
+            bachelors:           { logo: "", tone: "original", mark: "HC", symbol: "education" },
+            education:           { logo: "", tone: "original", mark: "",   symbol: "education" },
+            linkedin:            { logo: "", tone: "original", mark: "in", symbol: "contact" },
+            github:             { logo: "", tone: "original", mark: "GH", symbol: "contact" }
+        };
+
         const routes = new Map();
 
         $$("[data-gd-route]", footer).forEach((anchor) => {
@@ -116,6 +130,8 @@
             }
 
             anchor.href = href;
+            const identityID = anchor.dataset.gdIdentity || anchor.dataset.gdRoute;
+            const identity = identities[identityID] || null;
 
             routes.set(anchor.dataset.gdRoute, {
                 id: anchor.dataset.gdRoute,
@@ -123,7 +139,9 @@
                 href: anchor.href,
                 liveURL,
                 description: anchor.dataset.gdDescription || "",
-                group: anchor.closest("[data-gd-group]")?.dataset.gdGroup || "general"
+                group: anchor.closest("[data-gd-group]")?.dataset.gdGroup || "general",
+                identityID,
+                identity
             });
         });
 
@@ -256,97 +274,49 @@
         * treats that attribute as an icon-only placeholder.
         * ---------------------------------------------------------- */
 
-        const routeMarks = {
-            datasafari: "DS",
-            cryptopandemic: "CP",
-            dreemcorp: "D",
-            skipschoolmakemoney: "SS",
-            thoughtbubble: "tb"
-        };
-
-        const currentRouteAnchor = $$("[data-gd-route]", footer).find(
-            (anchor) => anchor.dataset.gdRoute === currentID
-        );
-
-        /*
-        * Reuse the logo already present on this page.
-        * Explicit manifest metadata always wins.
-        */
-        const snapshotLogo = $(".snapshot-card__tab-logo img", main);
-
-        if (
-            currentRouteAnchor &&
-            !currentRouteAnchor.dataset.gdLogo &&
-            snapshotLogo
-        ) {
-            const source =
-                snapshotLogo.currentSrc ||
-                snapshotLogo.getAttribute("src");
-
-            if (source) {
-                currentRouteAnchor.dataset.gdLogo =
-                    new URL(source, document.baseURI).href;
-            }
-        }
-
+        /* Identity marks: every logo comes from the catalogue above. */
         function makeNavigationMark(anchor) {
             const mark = document.createElement("span");
             mark.className = "gd-route-mark";
             mark.setAttribute("aria-hidden", "true");
 
-            const routeID = anchor.dataset.gdRoute;
+            const identity =
+                identities[anchor.dataset.gdIdentity || anchor.dataset.gdRoute] || null;
             const group = anchor.closest("[data-gd-group]")?.dataset.gdGroup;
 
-            const monogram =
-                anchor.dataset.gdMark ||
-                routeMarks[routeID];
-
-            const symbol =
-                anchor.dataset.gdSymbol ||
-                (
-                    group === "education" ? "education" :
-                    group === "contact" ? "contact" :
-                    group === "work" ? "work" :
-                    "page"
-                );
+            const symbol = identity?.symbol || (
+                group === "education" ? "education" :
+                group === "contact" ? "contact" :
+                group === "work" ? "work" : "page"
+            );
 
             function showFallback() {
                 mark.removeAttribute("data-tone");
                 mark.replaceChildren();
-
-                if (monogram) {
-                    mark.textContent = monogram;
-                } else {
-                    mark.innerHTML = icon(symbol);
-                }
+                if (identity?.mark) mark.textContent = identity.mark;
+                else mark.innerHTML = icon(symbol);
             }
 
             showFallback();
 
-            const source = anchor.dataset.gdLogo;
-
-            if (source) {
+            if (identity?.logo) {
                 const image = document.createElement("img");
-
                 image.alt = "";
                 image.width = 24;
                 image.height = 24;
                 image.loading = "lazy";
                 image.decoding = "async";
-
                 image.addEventListener("error", showFallback, { once: true });
 
-                mark.dataset.tone =
-                    anchor.dataset.gdLogoTone || "original";
-
+                mark.dataset.tone = identity.tone || "original";
                 mark.replaceChildren(image);
-                image.src = source;
+                image.src = identity.logo;
             }
 
             return mark;
         }
 
-        /* Brand image failure should leave a usable Home link. */
+        /* Signature image failure should leave a usable Home link. */
         const signatureImage = $(".gd-brand__signature", header);
         const signatureFallback = $(".gd-brand__fallback", header);
 
@@ -356,21 +326,16 @@
         }
 
         if (signatureImage) {
-            signatureImage.addEventListener(
-                "error",
-                showSignatureFallback,
-                { once: true }
-            );
-
-            if (
-                signatureImage.complete &&
-                signatureImage.naturalWidth === 0
-            ) {
+            signatureImage.addEventListener("error", showSignatureFallback, { once: true });
+            if (signatureImage.complete && signatureImage.naturalWidth === 0) {
                 showSignatureFallback();
             }
         }
 
-        /* A company/university identity beside the signature. */
+        /* Contextual mark beside the signature. */
+        const currentRouteAnchor = $$("[data-gd-route]", footer).find(
+            (anchor) => anchor.dataset.gdRoute === currentID
+        );
         const contextLink = $("[data-gd-context]", header);
 
         if (
@@ -382,10 +347,8 @@
             $("[data-gd-context-mark]", contextLink).replaceChildren(
                 makeNavigationMark(currentRouteAnchor)
             );
-
             $("[data-gd-context-label]", contextLink).textContent =
                 `${current.label} — return to the page introduction`;
-
             contextLink.href = `#${encodeURIComponent(main.id)}`;
             contextLink.title = current.label;
             contextLink.hidden = false;
