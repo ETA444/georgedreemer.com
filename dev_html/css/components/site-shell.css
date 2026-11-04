@@ -1239,7 +1239,9 @@ html[data-gd-theme="dark"] .gd-route-mark[data-tone="white"] img {
 
 /* Shared mask: both layers cut the same shape */
 .gd-header[data-gd-edge="paper"]::before,
-.gd-header[data-gd-edge="paper"]::after {
+.gd-header[data-gd-edge="paper"]::after,
+.gd-footer[data-gd-edge="paper"]::before,
+.gd-footer[data-gd-edge="paper"]::after{
     content: "";
     position: absolute;
     left: 0;
@@ -1247,8 +1249,8 @@ html[data-gd-theme="dark"] .gd-route-mark[data-tone="white"] img {
     height: var(--gd-edge-h);
     pointer-events: none;
 
-    -webkit-mask-image: url("https://georgedreemer.com/public_img/general/paperborders/paperborder-bw.svg");
-    mask-image: url("https://georgedreemer.com/public_img/general/paperborders/paperborder-bw.svg");
+    -webkit-mask-image: url("https://georgedreemer.com/public_img/general/paperborders/paperborder.svg");
+    mask-image: url("https://georgedreemer.com/public_img/general/paperborders/paperborder.svg");
 
     -webkit-mask-repeat: repeat-x;
     mask-repeat: repeat-x;
@@ -1268,4 +1270,43 @@ html[data-gd-theme="dark"] .gd-route-mark[data-tone="white"] img {
 .gd-header[data-gd-edge="paper"]::after {
     top: calc(100% - 1px);
     background: var(--gd-bg);
+}
+
+/* ============================================================
+   FOOTER PAPER EDGE (same mask, flipped)
+   Remove data-gd-edge="paper" on the footer to disable.
+============================================================ */
+
+.gd-footer[data-gd-edge="paper"] {
+    --gd-edge-h: 14px;
+    position: relative;
+    border-top: 0;
+    /* the tear replaces the straight line */
+}
+
+/* Rotate the header's shape 180°: paper below, ragged edge on top */
+.gd-footer[data-gd-edge="paper"]::before,
+.gd-footer[data-gd-edge="paper"]::after {
+    transform: scale(-1, -1);
+}
+
+/* Back layer: outline peeking out 2px beyond the tear */
+.gd-footer[data-gd-edge="paper"]::before {
+    bottom: calc(100% + 1px);
+    background: color-mix(in srgb, var(--gd-text) 24%, transparent);
+}
+
+/* Front layer: paper in the footer's current colour */
+.gd-footer[data-gd-edge="paper"]::after {
+    bottom: calc(100% - 1px);
+    /* 1px overlap prevents a hairline gap */
+    background: var(--gd-bg);
+}
+
+@media print {
+
+    .gd-footer[data-gd-edge="paper"]::before,
+    .gd-footer[data-gd-edge="paper"]::after {
+        display: none;
+    }
 }
