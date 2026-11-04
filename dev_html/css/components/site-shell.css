@@ -1128,6 +1128,16 @@ html[data-gd-ready] main [id][data-nav] {
     filter: none;
 }
 
+/* Full-colour logos sit on a light tile; white logos keep the dark tile. */
+.gd-route-mark[data-tone="original"] {
+    background: #ffffff;
+    border-color: transparent;
+}
+
+.gd-context .gd-route-mark[data-tone="original"] {
+    border-color: transparent;
+}
+
 .gd-menu-group a {
     flex-wrap: nowrap;
     align-items: flex-start;
