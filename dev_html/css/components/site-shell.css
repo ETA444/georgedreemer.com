@@ -16,8 +16,8 @@
     --gd-muted: #b8b8ab;
     --gd-border: rgb(240 239 232 / 18%);
 
-    --gd-accent: #8ac8c5;
-    --gd-selected: #18312e;
+    --gd-accent: color-mix(in oklab, var(--gd-page-primary, #01696f) 50%, white);
+    --gd-selected: color-mix(in srgb, var(--gd-accent) 18%, #000);
     --gd-overlay: rgb(0 0 0 / 60%);
     --gd-shadow: 0 8px 32px rgb(0 0 0 / 28%);
 
@@ -393,8 +393,8 @@ html[data-gd-ready] main [id][data-nav] {
     --gd-text: #282722;
     --gd-muted: #615f58;
     --gd-border: rgb(40 39 34 / 16%);
-    --gd-accent: #17676b;
-    --gd-selected: #e5efed;
+    --gd-accent: color-mix(in oklab, var(--gd-page-primary, #01696f) 78%, black);
+    --gd-selected: color-mix(in srgb, var(--gd-page-primary, #01696f) 12%, #fff);
 
     color-scheme: light;
 }
@@ -1414,5 +1414,12 @@ html[data-gd-nav="enhanced"] .gd-footer__closing {
 @media print {
     .gd-footer__actions {
         display: none !important;
+    }
+}
+
+/* PAGE ACCENT: keeps hue and saturation, guarantees readable lightness */
+@supports (color: oklch(from red l c h)) {
+    :root {
+        --gd-accent: oklch(from var(--gd-page-primary, #01696f) max(l, 0.75) c h);
     }
 }

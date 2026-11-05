@@ -18,6 +18,15 @@
             return;
         }
 
+        /* Page accent: tokens.css owns the colour; the shell mirrors it. */
+        const pagePrimary = getComputedStyle(main)
+            .getPropertyValue("--color-primary")
+            .trim();
+
+        if (pagePrimary) {
+            root.style.setProperty("--gd-page-primary", pagePrimary);
+        }
+
         const $ = (selector, context = document) => context.querySelector(selector);
         const $$ = (selector, context = document) => [...context.querySelectorAll(selector)];
         const desktop = matchMedia("(min-width: 60rem)");
