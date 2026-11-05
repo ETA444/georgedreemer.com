@@ -240,7 +240,7 @@
             const list = $("[data-gd-breadcrumb]");
             const items = [{ label: "Home", href: routes.get("home")?.href || "/" }];
 
-            if (current.group === "work" && currentID !== "works") {
+            if (current.group === "works" && currentID !== "works") {
                 items.push({
                     label: "Work",
                     href: routes.get("works")?.href || "/works"
@@ -295,7 +295,7 @@
             const symbol = identity?.symbol || (
                 group === "education" ? "education" :
                 group === "contact" ? "contact" :
-                group === "work" ? "work" : "page"
+                group === "works" ? "works" : "page"
             );
 
             function showFallback() {
@@ -349,7 +349,7 @@
         if (
             contextLink &&
             currentRouteAnchor &&
-            ["work", "education"].includes(current?.group) &&
+            ["works", "education"].includes(current?.group) &&
             currentID !== "home"
         ) {
             $("[data-gd-context-mark]", contextLink).replaceChildren(
@@ -638,7 +638,7 @@
 
             const labels = {
                 site: ["Explore the site", "Work, education, interests, and elsewhere."],
-                work: ["Work", "Explore the individual case studies."],
+                works: ["Work", "Explore the individual case studies."],
                 education: ["Education", "Degrees and the wider academic background."],
                 page: ["On this page", current?.label || $("h1", main)?.textContent.trim() || "Page sections"],
                 contact: ["Get in touch", "Choose the route that works for you."]
@@ -1322,7 +1322,7 @@
         window.GDShell = Object.freeze({
             refresh: refreshSections,
             open: (kind = "site") => {
-                if (["site", "work", "education", "page", "contact"].includes(kind)) {
+                if (["site", "works", "education", "page", "contact"].includes(kind)) {
                     showSheet(kind, document.activeElement);
                 }
             },
