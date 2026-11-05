@@ -2,9 +2,19 @@
     "use strict";
 
     const ownScript = document.currentScript;
-    const localRoot = ownScript?.src
-        ? new URL("../../", ownScript.src)
-        : new URL("./", location.href);
+
+    /* Local previews resolve data-gd-local from the dev root */
+    const localRoot = (() => {
+        const match = location.href.match(
+            /^(.*\/)(?:work|education)\//
+        );
+
+        if (match) return new URL(match[1]);
+
+        return ownScript?.src
+            ? new URL("../../", ownScript.src)
+            : new URL("./", location.href);
+    })();
 
     /* ------------------------------------------------------------
     * Shell markup lives here once, so pages only need <main>.
@@ -55,11 +65,11 @@
                 <nav class="gd-desktop-nav" aria-label="Primary navigation">
 
                     <div class="gd-nav-pair">
-                        <a href="/works" data-gd-primary="works">Work</a>
+                        <a href="/work" data-gd-link="work" data-gd-primary="work">Work</a>
                         <button
                             type="button"
                             class="gd-icon-button"
-                            data-gd-open="works"
+                            data-gd-open="work"
                             aria-label="Browse work"
                             aria-haspopup="dialog"
                             aria-controls="gd-sheet"
@@ -129,48 +139,48 @@
 
             <nav class="gd-directory" aria-label="Footer navigation">
 
-                <section class="gd-directory-group" id="gd-work-directory" data-gd-group="works" data-gd-group-label="Works">
+                <section class="gd-directory-group" id="gd-work-directory" data-gd-group="work" data-gd-group-label="work">
                 <h3>Work</h3>
                 <ul>
                     <li>
-                    <a href="/works" data-gd-route="works" data-gd-local="works.html"
+                    <a href="/work" data-gd-route="work" data-gd-local="work/work.html"
                         data-gd-description="Every venture and project in one place.">
                         Work overview
                     </a>
                     </li>
 
                     <li>
-                    <a href="/datasafari" data-gd-route="datasafari" data-gd-local="datasafari.html"
+                    <a href="/work/datasafari" data-gd-route="datasafari" data-gd-local="work/datasafari.html"
                         data-gd-description="A Python library for more accessible data-science workflows.">
                         Data Safari
                     </a>
                     </li>
 
                     <li>
-                    <a href="/cryptopandemic" data-gd-route="cryptopandemic"
-                        data-gd-local="cryptopandemic.html"
+                    <a href="/work/cryptopandemic" data-gd-route="cryptopandemic"
+                        data-gd-local="work/cryptopandemic.html"
                         data-gd-description="Explore the CryptoPandemic case study.">
                         Crypto Pandemic
                     </a>
                     </li>
 
                     <li>
-                    <a href="/dreemcorp" data-gd-route="dreemcorp" data-gd-local="dreemcorp.html"
+                    <a href="/work/dreemcorp" data-gd-route="dreemcorp" data-gd-local="work/dreemcorp.html"
                         data-gd-description="Creative production, collaboration, and agency work.">
                         DREEMCORP
                     </a>
                     </li>
 
                     <li>
-                    <a href="/skipschoolmakemoney" data-gd-route="skipschoolmakemoney"
-                        data-gd-local="skipschoolmakemoney.html"
+                    <a href="/work/skipschoolmakemoney" data-gd-route="skipschoolmakemoney"
+                        data-gd-local="work/skipschoolmakemoney.html"
                         data-gd-description="The apparel venture connecting brand, commerce, and creative production.">
                         SkipSchoolMakeMoney
                     </a>
                     </li>
 
                     <li>
-                    <a href="/thoughtbubble" data-gd-route="thoughtbubble" data-gd-local="thoughtbubble.html"
+                    <a href="/work/thoughtbubble" data-gd-route="thoughtbubble" data-gd-local="work/thoughtbubble.html"
                         data-gd-description="A social product connecting development, product design, and community.">
                         thoughtbubble
                     </a>
@@ -182,19 +192,19 @@
                 <h3>Education</h3>
                 <ul>
                     <li>
-                    <a href="/education" data-gd-route="education" data-gd-local="../education-pages/education.html"
+                    <a href="/education" data-gd-route="education" data-gd-local="education/education.html"
                         data-gd-description="Degrees, further learning, and the wider academic background.">
                         Education overview
                     </a>
                     </li>
                     <li>
-                    <a href="/education/masters" data-gd-route="masters" data-gd-local="../education-pages/masters.html"
+                    <a href="/education/masters" data-gd-route="masters" data-gd-local="education/masters.html"
                         data-gd-description="Marketing analytics, data science, and the work behind the degree.">
                         Master’s
                     </a>
                     </li>
                     <li>
-                    <a href="/education/bachelors" data-gd-route="bachelors" data-gd-local="../education-pages/bachelors.html"
+                    <a href="/education/bachelors" data-gd-route="bachelors" data-gd-local="education/bachelors.html"
                         data-gd-description="A self-designed education connecting business, entrepreneurship, and practice.">
                         Bachelor’s
                     </a>
@@ -271,8 +281,8 @@
         <!-- Mobile: the only persistent navigation surface. -->
         <nav class="gd-shell gd-dock" aria-label="Mobile navigation" data-gd-edge="paper" hidden>
 
-            <a href="/works" data-gd-primary="works">
-            <span data-gd-icon="works" aria-hidden="true"></span>
+            <a href="/work" data-gd-primary="work">
+            <span data-gd-icon="work" aria-hidden="true"></span>
             <span>Work</span>
             </a>
 
@@ -429,7 +439,7 @@
 
         /* Small inline outline icons: no icon-loader dependency. */
         const paths = {
-            works: '<rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v3h4v-3"/>',
+            work: '<rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v3h4v-3"/>',
             education: '<path d="m2 9 10-5 10 5-10 5L2 9Zm4 2v6c3 3 9 3 12 0v-6M22 9v7"/>',
             onThisPage: '<path d="m8 8 4-4 4 4"/><path d="m8 16 4 4 4-4"/>',
             contact: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/>',
@@ -484,12 +494,12 @@
 
         const identities = {
             home:                { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/home.svg", tone: "borderless", mark: "GD", symbol: "page" },
-            works: { logo: "", tone: "borderless", mark: "", symbol: "works" },
-            thoughtbubble:       { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/thoughtbubble.svg", tone: "borderless", mark: "tb", symbol: "works" },
-            datasafari:          { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/datasafari.svg", tone: "borderless", mark: "DS", symbol: "works" },
-            cryptopandemic:      { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/cryptopandemic.png", tone: "borderless", mark: "CP", symbol: "works" },
-            dreemcorp:           { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/dreemcorp.png", tone: "borderless",    mark: "D",  symbol: "works" },
-            skipschoolmakemoney: { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/skipschoolmakemoney.png", tone: "borderless", mark: "SS", symbol: "works" },
+            work: { logo: "", tone: "borderless", mark: "", symbol: "work" },
+            thoughtbubble:       { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/thoughtbubble.svg", tone: "borderless", mark: "tb", symbol: "work" },
+            datasafari:          { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/datasafari.svg", tone: "borderless", mark: "DS", symbol: "work" },
+            cryptopandemic:      { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/cryptopandemic.png", tone: "borderless", mark: "CP", symbol: "work" },
+            dreemcorp:           { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/dreemcorp.png", tone: "borderless",    mark: "D",  symbol: "work" },
+            skipschoolmakemoney: { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/skipschoolmakemoney.png", tone: "borderless", mark: "SS", symbol: "work" },
             education:           { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/education.svg", tone: "borderless", mark: "",   symbol: "education" },
             masters:           { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/masters.svg", tone: "white-bgd", mark: "UG", symbol: "education" },
             bachelors:           { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/bachelors.svg", tone: "white-bgd", mark: "HC", symbol: "education" },
@@ -612,8 +622,8 @@
         const inferredPage = [...routes.values()].find((route) => {
             const localFile = route.id === "masters" || route.id === "bachelors" ||
                 route.id === "education"
-                ? `/education-pages/${route.id}.html`
-                : `/experience-pages/${route.id}.html`;
+                ? `/education/${route.id}.html`
+                : `/work/${route.id}.html`;
 
             return normalPath(location.pathname) === normalPath(route.liveURL.pathname) ||
                 location.pathname.endsWith(localFile);
@@ -691,10 +701,10 @@
             const list = $("[data-gd-breadcrumb]");
             const items = [{ label: "Home", href: routes.get("home")?.href || "/" }];
 
-            if (current.group === "works" && currentID !== "works") {
+            if (current.group === "work" && currentID !== "work") {
                 items.push({
                     label: "Work",
-                    href: routes.get("works")?.href || "/works"
+                    href: routes.get("work")?.href || "/work"
                 });
             } else if (current.group === "education" && currentID !== "education") {
                 items.push({
@@ -746,7 +756,7 @@
             const symbol = identity?.symbol || (
                 group === "education" ? "education" :
                 group === "contact" ? "contact" :
-                group === "works" ? "works" : "page"
+                group === "work" ? "work" : "page"
             );
 
             function showFallback() {
@@ -824,7 +834,7 @@
         if (
             contextLink &&
             currentRouteAnchor &&
-            ["works", "education"].includes(current?.group) &&
+            ["work", "education"].includes(current?.group) &&
             currentID !== "home"
         ) {
             $("[data-gd-context-mark]", contextLink).replaceChildren(
@@ -848,7 +858,7 @@
                 ["skipschoolmakemoney", "Explore the other venture connecting product, brand, and audience."],
                 ["bachelors", "See the academic context surrounding this period."],
                 ["dreemcorp", "Continue into the creative-production work."],
-                ["works", "Return to the complete overview of my work."]
+                ["work", "Return to the complete overview of my work."]
             ],
             bachelors: [
                 ["skipschoolmakemoney", "See the apparel venture behind the brand and commerce work."],
@@ -1113,7 +1123,7 @@
 
             const labels = {
                 site: ["Explore the site", "Work, education, interests, and elsewhere."],
-                works: ["Work", "Explore the individual case studies."],
+                work: ["Work", "Explore the individual case studies."],
                 education: ["Education", "Degrees and the wider academic background."],
                 page: ["On this page", current?.label || $("h1", main)?.textContent.trim() || "Page sections"],
                 contact: ["Get in touch", "Choose the route that works for you."]
@@ -1798,7 +1808,7 @@
         window.GDShell = Object.freeze({
             refresh: refreshSections,
             open: (kind = "site") => {
-                if (["site", "works", "education", "page", "contact"].includes(kind)) {
+                if (["site", "work", "education", "page", "contact"].includes(kind)) {
                     showSheet(kind, document.activeElement);
                 }
             },

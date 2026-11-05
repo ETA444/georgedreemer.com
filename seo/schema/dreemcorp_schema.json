@@ -3,8 +3,8 @@
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://georgedreemer.com/dreemcorp#webpage",
-      "url": "https://georgedreemer.com/dreemcorp",
+      "@id": "https://georgedreemer.com/work/dreemcorp#webpage",
+      "url": "https://georgedreemer.com/work/dreemcorp",
       "name": "DREEMCORP — Creative Studio & Venture Lab",
       "description": "DREEMCORP is George Dreemer's creative studio and venture lab, producing video, content, and creative direction for artists, athletes, and brands.",
       "isPartOf": {
@@ -14,10 +14,10 @@
         "name": "George Dreemer"
       },
       "about": {
-        "@id": "https://georgedreemer.com/dreemcorp#organization"
+        "@id": "https://georgedreemer.com/work/dreemcorp#organization"
       },
       "mainEntity": {
-        "@id": "https://georgedreemer.com/dreemcorp#organization"
+        "@id": "https://georgedreemer.com/work/dreemcorp#organization"
       },
       "primaryImageOfPage": {
         "@type": "ImageObject",
@@ -29,10 +29,10 @@
     },
     {
       "@type": "Organization",
-      "@id": "https://georgedreemer.com/dreemcorp#organization",
+      "@id": "https://georgedreemer.com/work/dreemcorp#organization",
       "name": "DREEMCORP",
       "alternateName": "DREEMCORP Creative Studio",
-      "url": "https://georgedreemer.com/dreemcorp",
+      "url": "https://georgedreemer.com/work/dreemcorp",
       "description": "A creative studio and venture lab founded by George Dreemer, delivering video editing, content strategy, and creative direction for musicians, athletes, and brands — and the umbrella for visual ventures including anabolic musick and CoolSouls.",
       "image": {
         "@type": "ImageObject",

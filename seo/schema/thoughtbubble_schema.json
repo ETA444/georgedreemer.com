@@ -3,8 +3,8 @@
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://georgedreemer.com/thoughtbubble#webpage",
-      "url": "https://georgedreemer.com/thoughtbubble",
+      "@id": "https://georgedreemer.com/work/thoughtbubble#webpage",
+      "url": "https://georgedreemer.com/work/thoughtbubble",
       "name": "thoughtbubble — Knowledge-First Social Network",
       "description": "thoughtbubble was a knowledge-first social network co-founded by George Dreemer and Nikolay Stanchev, built from scratch in high school and launched to around 900 registered users.",
       "isPartOf": {
@@ -14,10 +14,10 @@
         "name": "George Dreemer"
       },
       "about": {
-        "@id": "https://georgedreemer.com/thoughtbubble#project"
+        "@id": "https://georgedreemer.com/work/thoughtbubble#project"
       },
       "mainEntity": {
-        "@id": "https://georgedreemer.com/thoughtbubble#project"
+        "@id": "https://georgedreemer.com/work/thoughtbubble#project"
       },
       "primaryImageOfPage": {
         "@type": "ImageObject",
@@ -29,10 +29,10 @@
     },
     {
       "@type": "CreativeWork",
-      "@id": "https://georgedreemer.com/thoughtbubble#project",
+      "@id": "https://georgedreemer.com/work/thoughtbubble#project",
       "name": "thoughtbubble",
       "alternateName": "thoughtbubble social network",
-      "url": "https://georgedreemer.com/thoughtbubble",
+      "url": "https://georgedreemer.com/work/thoughtbubble",
       "description": "A knowledge-first social network co-founded by George Dreemer and Nikolay Stanchev, designed and built from scratch in high school.",
       "image": {
         "@type": "ImageObject",
