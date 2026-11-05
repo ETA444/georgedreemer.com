@@ -1315,6 +1315,7 @@
         }
 
         root.setAttribute("data-gd-ready", "");
+        root.setAttribute("data-gd-nav", "enhanced");
         refreshSections();
         window.addEventListener("load", refreshSections, { once: true });
 

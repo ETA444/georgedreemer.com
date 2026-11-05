@@ -1358,3 +1358,61 @@ html[data-gd-ready] main [id][data-nav] {
         display: none;
     }
 }
+
+/* ============================================================
+   COMPACT FOOTER
+   The sitemap-style list is replaced by Explore once the shell
+   has fully initialised (data-gd-nav="enhanced" is set last).
+   Without JavaScript the list stays visible as a fallback.
+   Only the footer's own list is hidden; the menu clones live
+   inside the dialog and are unaffected.
+============================================================ */
+
+html[data-gd-nav="enhanced"] .gd-footer .gd-directory,
+html[data-gd-nav="enhanced"] .gd-footer .gd-network {
+    display: none;
+}
+
+html[data-gd-nav="enhanced"] .gd-footer__inner {
+    padding-top: var(--gd-s10);
+}
+
+html[data-gd-nav="enhanced"] .gd-footer__closing {
+    padding-top: var(--gd-s6);
+}
+
+/* Utility row: desktop only. The mobile dock already provides both. */
+.gd-footer__actions {
+    display: none;
+}
+
+.gd-footer__actions button {
+    border: 1px solid var(--gd-border);
+    font-size: var(--gd-sm);
+    font-weight: 700;
+}
+
+@media (min-width: 60rem) {
+    html[data-gd-nav="enhanced"] .gd-footer__actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--gd-s2);
+    }
+
+    html[data-gd-nav="enhanced"] .gd-footer__closing {
+        padding-top: var(--gd-s10);
+    }
+}
+
+@media (hover: hover) {
+    .gd-footer__actions button:hover {
+        background: var(--gd-raised);
+    }
+}
+
+@media print {
+    .gd-footer__actions {
+        display: none !important;
+    }
+}
