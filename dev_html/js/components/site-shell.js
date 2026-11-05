@@ -791,6 +791,30 @@
             }
         }
 
+        /* Keep the contextual mark exactly as tall as the signature. */
+        function syncLogoHeight() {
+            if (!signatureImage || signatureImage.hidden) return;
+
+            const height = signatureImage.getBoundingClientRect().height;
+
+            if (height > 0) {
+                header.style.setProperty(
+                    "--gd-logo-h",
+                    `${Math.round(height * 100) / 100}px`
+                );
+            }
+        }
+
+        if (signatureImage) {
+            signatureImage.addEventListener("load", syncLogoHeight);
+
+            if ("ResizeObserver" in window) {
+                new ResizeObserver(syncLogoHeight).observe(signatureImage);
+            }
+
+            syncLogoHeight();
+        }
+
         /* Contextual mark beside the signature. */
         const currentRouteAnchor = $$("[data-gd-route]", footer).find(
             (anchor) => anchor.dataset.gdRoute === currentID
