@@ -664,7 +664,9 @@
             while (document.getElementById(id)) id = `page-content-${suffix++}`;
             main.id = id;
         }
-        $("#gd-skip").href = `#${encodeURIComponent(main.id)}`;
+
+        const skipLink = $("#gd-skip");
+        if (skipLink) skipLink.href = `#${encodeURIComponent(main.id)}`;
 
         function focusElement(node) {
             if (!node) return;
@@ -682,7 +684,7 @@
             node.focus({ preventScroll: true });
         }
 
-        $("#gd-skip").addEventListener("click", () => focusElement(main));
+        skipLink?.addEventListener("click", () => focusElement(main));
 
         /* Breadcrumbs are structural links, not fake browser Back buttons. */
         if (current && currentID !== "home") {
@@ -865,7 +867,7 @@
         /* Escape potentially restrictive Sitebuilder component ancestors.
            The footer stays in document flow; fixed controls/dialog become
            direct body children. No generated elements are deleted. */
-        document.body.prepend($("#gd-skip"), header);
+        document.body.prepend(...[skipLink, header].filter(Boolean));
         [dock, reader, dialog].forEach((node) => {
             if (node) document.body.append(node);
         });
