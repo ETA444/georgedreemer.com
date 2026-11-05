@@ -195,6 +195,7 @@ html[data-gd-ready] main [id][data-nav] {
     width: 100%;
     background: var(--gd-bg);
     border-bottom: 1px solid var(--gd-border);
+    padding-top: 0.5em;
 }
 
 .gd-header__inner {
