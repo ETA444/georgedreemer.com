@@ -1112,8 +1112,8 @@ html[data-gd-ready] main [id][data-nav] {
 
 .gd-route-mark img {
     display: block;
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     max-width: 100%;
     object-fit: contain;
     background: transparent;
@@ -1124,13 +1124,18 @@ html[data-gd-ready] main [id][data-nav] {
     height: 17px;
 }
 
-.gd-route-mark[data-tone="white"] img {
+.gd-route-mark[data-tone="white-bgd"] img {
     filter: none;
 }
 
 /* Full-colour logos sit on a light tile; white logos keep the dark tile. */
-.gd-route-mark[data-tone="original"] {
+.gd-route-mark[data-tone="white-bgd"] {
     background: #ffffff;
+    border-color: transparent;
+}
+
+.gd-route-mark[data-tone="borderless"] {
+    background: transparent;
     border-color: transparent;
 }
 

@@ -104,17 +104,19 @@
         );
 
         const identities = {
-            home:                { logo: "", tone: "original", mark: "GD", symbol: "page" },
-            thoughtbubble:       { logo: "", tone: "original", mark: "tb", symbol: "work" },
-            datasafari:          { logo: "", tone: "original", mark: "DS", symbol: "work" },
-            cryptopandemic:      { logo: "", tone: "original", mark: "CP", symbol: "work" },
-            dreemcorp:           { logo: "", tone: "white",    mark: "D",  symbol: "work" },
-            skipschoolmakemoney: { logo: "", tone: "original", mark: "SS", symbol: "work" },
-            masters:           { logo: "", tone: "original", mark: "UG", symbol: "education" },
-            bachelors:           { logo: "", tone: "original", mark: "HC", symbol: "education" },
-            education:           { logo: "", tone: "original", mark: "",   symbol: "education" },
-            linkedin:            { logo: "", tone: "original", mark: "in", symbol: "contact" },
-            github:             { logo: "", tone: "original", mark: "GH", symbol: "contact" }
+            home:                { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/home.svg", tone: "borderless", mark: "GD", symbol: "page" },
+            thoughtbubble:       { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/thoughtbubble.svg", tone: "borderless", mark: "tb", symbol: "work" },
+            datasafari:          { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/datasafari.svg", tone: "borderless", mark: "DS", symbol: "work" },
+            cryptopandemic:      { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/cryptopandemic.png", tone: "borderless", mark: "CP", symbol: "work" },
+            dreemcorp:           { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/dreemcorp.png", tone: "borderless",    mark: "D",  symbol: "work" },
+            skipschoolmakemoney: { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/skipschoolmakemoney.png", tone: "borderless", mark: "SS", symbol: "work" },
+            masters:           { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/masters.svg", tone: "white-bgd", mark: "UG", symbol: "education" },
+            bachelors:           { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/bachelors.svg", tone: "white-bgd", mark: "HC", symbol: "education" },
+            education:           { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/education.svg", tone: "borderless", mark: "",   symbol: "education" },
+            linkedin:            { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/linkedin.svg", tone: "borderless", mark: "in", symbol: "contact" },
+            github:             { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/github.svg", tone: "borderless", mark: "GH", symbol: "contact" },
+            email:             { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/email.svg", tone: "borderless", mark: "EM", symbol: "contact" },
+            x:             { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/x.svg", tone: "borderless", mark: "X", symbol: "contact" },
         };
 
         const routes = new Map();
@@ -302,8 +304,8 @@
             if (identity?.logo) {
                 const image = document.createElement("img");
                 image.alt = "";
-                image.width = 24;
-                image.height = 24;
+                image.width = 30;
+                image.height = 30;
                 image.loading = "lazy";
                 image.decoding = "async";
                 image.addEventListener("error", showFallback, { once: true });
