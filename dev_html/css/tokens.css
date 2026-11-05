@@ -45,35 +45,35 @@
 /* Primary color alteration based on page */
 
 /* edu */
-main[data-page="edu-hub"] {
+main[data-page="education"] {
     --color-primary: #01696f;
 }
 
-main[data-page="edu-masters"] {
+main[data-page="masters"] {
     --color-primary: #970a00;
 }
 
-main[data-page="edu-bachelors"] {
+main[data-page="bachelors"] {
     --color-primary: #148126;
 }
 
 /* exp */
-main[data-page="exp-dreemcorp"] {
+main[data-page="dreemcorp"] {
     --color-primary: #c80d00;
 }
 
-main[data-page="exp-skipschoolmakemoney"] {
+main[data-page="skipschoolmakemoney"] {
     --color-primary: #6b009a;
 }
 
-main[data-page="exp-thoughtbubble"] {
+main[data-page="thoughtbubble"] {
     --color-primary: #1db3bb;
 }
 
-main[data-page="exp-datasafari"] {
+main[data-page="datasafari"] {
     --color-primary: #4a1fae;
 }
 
-main[data-page="exp-cryptopandemic"] {
+main[data-page="cryptopandemic"] {
     --color-primary: #be44ff;
 }
