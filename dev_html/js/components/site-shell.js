@@ -847,24 +847,198 @@
             contextLink.hidden = false;
         }
 
-        /* Contextual links: editorial relationships, not random suggestions. */
+        /* Contextual links: editorial relationships, not random suggestions.
+        *
+        * Order:
+        *   1. The strongest connection to the current page.
+        *   2. A complementary project or academic foundation.
+        *   3. An additional connection where it adds something distinct.
+        *   4. The parent overview, always last on detail pages.
+        *
+        * Hub pages offer selected starting points and a cross-link
+        * between Work and Education.
+        */
         const relationships = {
-            masters: [
-                ["datasafari", "Continue into the data-science library case study."],
-                ["bachelors", "See the earlier business and entrepreneurial foundation."],
-                ["education", "Return to the complete education overview."]
+
+            /* =========================================================
+            WORK — OVERVIEW
+            ========================================================= */
+
+            work: [
+                [
+                    "datasafari",
+                    "Explore the Python library built to simplify data-science workflows."
+                ],
+                [
+                    "thoughtbubble",
+                    "See the development and product decisions behind a custom-built social network."
+                ],
+                [
+                    "dreemcorp",
+                    "Explore the creative-production and collaboration side of my work."
+                ],
+                [
+                    "education",
+                    "See the academic background behind my technical and business skills."
+                ]
             ],
+
+            /* =========================================================
+            WORK — CASE STUDIES
+            ========================================================= */
+
+            datasafari: [
+                [
+                    "masters",
+                    "Explore the statistics, modelling, and research work behind my data-science education."
+                ],
+                [
+                    "thoughtbubble",
+                    "Compare building a reusable library with developing a complete web application."
+                ],
+                [
+                    "work",
+                    "Browse all projects and ventures."
+                ]
+            ],
+
+            cryptopandemic: [
+                [
+                    "datasafari",
+                    "Explore the data-science and Python-development side of my work."
+                ],
+                [
+                    "skipschoolmakemoney",
+                    "Compare this project with building and running a consumer brand."
+                ],
+                [
+                    "dreemcorp",
+                    "See more of my work in creative production and media."
+                ],
+                [
+                    "work",
+                    "Browse all projects and ventures."
+                ]
+            ],
+
+            dreemcorp: [
+                [
+                    "skipschoolmakemoney",
+                    "See brand identity, photography, and campaign production applied to my own clothing brand."
+                ],
+                [
+                    "thoughtbubble",
+                    "Explore the product-design and development side of my work."
+                ],
+                [
+                    "bachelors",
+                    "See the business, marketing, and communication studies that complement this creative work."
+                ],
+                [
+                    "work",
+                    "Browse all projects and ventures."
+                ]
+            ],
+
+            skipschoolmakemoney: [
+                [
+                    "dreemcorp",
+                    "Explore more of my work in visual storytelling and creative production."
+                ],
+                [
+                    "bachelors",
+                    "See the business and marketing studies I pursued alongside building the brand."
+                ],
+                [
+                    "thoughtbubble",
+                    "Compare a commerce-led venture with building a social product and its early community."
+                ],
+                [
+                    "work",
+                    "Browse all projects and ventures."
+                ]
+            ],
+
             thoughtbubble: [
-                ["skipschoolmakemoney", "Explore the other venture connecting product, brand, and audience."],
-                ["bachelors", "See the academic context surrounding this period."],
-                ["dreemcorp", "Continue into the creative-production work."],
-                ["work", "Return to the complete overview of my work."]
+                [
+                    "skipschoolmakemoney",
+                    "See how I approached product, brand, and audience development in a clothing business."
+                ],
+                [
+                    "bachelors",
+                    "Explore the business and entrepreneurship studies that overlapped with this venture."
+                ],
+                [
+                    "datasafari",
+                    "Compare developing a social platform with building a reusable Python library."
+                ],
+                [
+                    "work",
+                    "Browse all projects and ventures."
+                ]
             ],
+
+            /* =========================================================
+            EDUCATION — OVERVIEW
+            ========================================================= */
+
+            education: [
+                [
+                    "masters",
+                    "Explore the analytical coursework, theses, and projects behind my MSc."
+                ],
+                [
+                    "bachelors",
+                    "See how a self-designed degree connected business study with building ventures."
+                ],
+                [
+                    "datasafari",
+                    "See applied data-science work in a reusable Python library."
+                ],
+                [
+                    "work",
+                    "Explore the projects and ventures that connect this education to practice."
+                ]
+            ],
+
+            /* =========================================================
+            EDUCATION — DEGREES
+            ========================================================= */
+
+            masters: [
+                [
+                    "datasafari",
+                    "See my data-science and programming skills applied to a reusable Python library."
+                ],
+                [
+                    "bachelors",
+                    "Explore the earlier business and marketing foundation behind this analytical specialisation."
+                ],
+                [
+                    "education",
+                    "Browse my degrees and wider learning background."
+                ]
+            ],
+
             bachelors: [
-                ["skipschoolmakemoney", "See the apparel venture behind the brand and commerce work."],
-                ["thoughtbubble", "Explore the social product behind the development and product work."],
-                ["masters", "Continue into the later analytical and research work."]
+                [
+                    "skipschoolmakemoney",
+                    "See the clothing venture behind the brand, commerce, and creative-production work described here."
+                ],
+                [
+                    "thoughtbubble",
+                    "Explore the social product behind the development and early-community work described here."
+                ],
+                [
+                    "masters",
+                    "Follow the progression from business and marketing into analytics and data science."
+                ],
+                [
+                    "education",
+                    "Browse my degrees and wider learning background."
+                ]
             ]
+
         };
 
         const relatedItems = relationships[currentID] || [];
