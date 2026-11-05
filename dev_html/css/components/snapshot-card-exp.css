@@ -153,3 +153,39 @@
 .achievement-chip[data-domain="growth"] {
     border-color: color-mix(in srgb, var(--color-domain-growth) 20%, transparent);
 }
+
+/* A stable footprint before loading and if a logo fails. */
+.snapshot-card__tab-logo[data-gd-identity-logo] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    min-width: 28px;
+    min-height: 28px;
+}
+
+.snapshot-card__tab-logo[data-gd-identity-logo]>img {
+    display: block;
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.snapshot-card__logo-fallback {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    color: inherit;
+    font: inherit;
+    font-size: 0.75rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.snapshot-card__logo-fallback>svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+}

@@ -131,6 +131,62 @@
             email:             { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/email.svg", tone: "borderless", mark: "EM", symbol: "contact" }
         };
 
+        /* Snapshot bookmark logos share the shell's identity catalogue. */
+        $$("[data-gd-identity-logo]").forEach((container) => {
+            const identityID = container.dataset.gdIdentityLogo;
+            const identity = identities[identityID];
+
+            if (!identity) {
+                console.warn(
+                    `[GDShell] Unknown bookmark identity: "${identityID}"`
+                );
+                return;
+            }
+
+            function showFallback() {
+                container.replaceChildren();
+
+                const fallback = document.createElement("span");
+                fallback.className = "snapshot-card__logo-fallback";
+
+                if (identity.mark) {
+                    fallback.textContent = identity.mark;
+                } else {
+                    const symbol = identity.symbol;
+
+                    /*
+                    * Use a known icon only. This avoids relying on the generic
+                    * "page" fallback, which is absent from your current paths map.
+                    */
+                    if (symbol && paths[symbol]) {
+                        fallback.innerHTML = icon(symbol);
+                    } else {
+                        fallback.textContent = "•";
+                    }
+                }
+
+                container.append(fallback);
+            }
+
+            if (!identity.logo) {
+                showFallback();
+                return;
+            }
+
+            const image = document.createElement("img");
+
+            image.alt = "";
+            image.width = 28;
+            image.height = 28;
+            image.loading = "lazy";
+            image.decoding = "async";
+
+            image.addEventListener("error", showFallback, { once: true });
+
+            container.replaceChildren(image);
+            image.src = identity.logo;
+        });
+
         const routes = new Map();
 
         $$("[data-gd-route]", footer).forEach((anchor) => {
