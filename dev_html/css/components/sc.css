@@ -267,7 +267,11 @@
 }
 
 @media (max-width: 480px) {
-    .rank-pill__src { display: none; }   /* "#84 World" only on phones */
+    .rank-pill__src {
+        display: none;
+    }
+
+    /* "#84 World" only on phones */
 }
 
 /* A stable footprint before loading and if a logo fails. */
