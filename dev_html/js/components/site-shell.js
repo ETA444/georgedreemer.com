@@ -52,7 +52,7 @@
 
         /* Small inline outline icons: no icon-loader dependency. */
         const paths = {
-            work: '<rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v3h4v-3"/>',
+            works: '<rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v3h4v-3"/>',
             education: '<path d="m2 9 10-5 10 5-10 5L2 9Zm4 2v6c3 3 9 3 12 0v-6M22 9v7"/>',
             onThisPage: '<path d="m8 8 4-4 4 4"/><path d="m8 16 4 4 4-4"/>',
             contact: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/>',
@@ -107,18 +107,19 @@
 
         const identities = {
             home:                { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/home.svg", tone: "borderless", mark: "GD", symbol: "page" },
-            thoughtbubble:       { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/thoughtbubble.svg", tone: "borderless", mark: "tb", symbol: "work" },
-            datasafari:          { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/datasafari.svg", tone: "borderless", mark: "DS", symbol: "work" },
-            cryptopandemic:      { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/cryptopandemic.png", tone: "borderless", mark: "CP", symbol: "work" },
-            dreemcorp:           { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/dreemcorp.png", tone: "borderless",    mark: "D",  symbol: "work" },
-            skipschoolmakemoney: { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/skipschoolmakemoney.png", tone: "borderless", mark: "SS", symbol: "work" },
+            works: { logo: "", tone: "borderless", mark: "", symbol: "works" },
+            thoughtbubble:       { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/thoughtbubble.svg", tone: "borderless", mark: "tb", symbol: "works" },
+            datasafari:          { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/datasafari.svg", tone: "borderless", mark: "DS", symbol: "works" },
+            cryptopandemic:      { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/cryptopandemic.png", tone: "borderless", mark: "CP", symbol: "works" },
+            dreemcorp:           { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/dreemcorp.png", tone: "borderless",    mark: "D",  symbol: "works" },
+            skipschoolmakemoney: { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/skipschoolmakemoney.png", tone: "borderless", mark: "SS", symbol: "works" },
+            education:           { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/education.svg", tone: "borderless", mark: "",   symbol: "education" },
             masters:           { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/masters.svg", tone: "white-bgd", mark: "UG", symbol: "education" },
             bachelors:           { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/bachelors.svg", tone: "white-bgd", mark: "HC", symbol: "education" },
-            education:           { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/education.svg", tone: "borderless", mark: "",   symbol: "education" },
-            linkedin:            { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/linkedin.svg", tone: "borderless", mark: "in", symbol: "contact" },
-            github:             { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/github.svg", tone: "borderless", mark: "GH", symbol: "contact" },
-            email:             { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/email.svg", tone: "borderless", mark: "EM", symbol: "contact" },
             x:             { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/x.svg", tone: "borderless", mark: "X", symbol: "contact" },
+            github:             { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/github.svg", tone: "borderless", mark: "GH", symbol: "contact" },
+            linkedin:            { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/linkedin.svg", tone: "borderless", mark: "in", symbol: "contact" },
+            email:             { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/email.svg", tone: "borderless", mark: "EM", symbol: "contact" }
         };
 
         const routes = new Map();
@@ -185,7 +186,7 @@
         $$("[data-gd-primary]").forEach((node) => {
             if (node.dataset.gdPrimary === primaryGroup) {
                 node.setAttribute("data-gd-active", "");
-                if (currentID === "education" && node.dataset.gdLink === "education") {
+                if (node.dataset.gdLink && node.dataset.gdLink === currentID) {
                     node.setAttribute("aria-current", "page");
                 }
             }
@@ -239,8 +240,11 @@
             const list = $("[data-gd-breadcrumb]");
             const items = [{ label: "Home", href: routes.get("home")?.href || "/" }];
 
-            if (current.group === "work") {
-                items.push({ label: "Work", href: "#gd-work-directory" });
+            if (current.group === "work" && currentID !== "works") {
+                items.push({
+                    label: "Work",
+                    href: routes.get("works")?.href || "/works"
+                });
             } else if (current.group === "education" && currentID !== "education") {
                 items.push({
                     label: "Education",
@@ -368,7 +372,8 @@
             thoughtbubble: [
                 ["skipschoolmakemoney", "Explore the other venture connecting product, brand, and audience."],
                 ["bachelors", "See the academic context surrounding this period."],
-                ["dreemcorp", "Continue into the creative-production work."]
+                ["dreemcorp", "Continue into the creative-production work."],
+                ["works", "Return to the complete overview of my work."]
             ],
             bachelors: [
                 ["skipschoolmakemoney", "See the apparel venture behind the brand and commerce work."],
