@@ -131,6 +131,22 @@
             email:             { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/email.svg", tone: "borderless", mark: "EM", symbol: "contact" }
         };
 
+        /*
+        * Bump this when publishing updated identity artwork.
+        * Keep it stable between updates so images can still be cached.
+        */
+        const IDENTITY_ASSET_VERSION = "2";
+
+        Object.values(identities).forEach((identity) => {
+            if (!identity.logo) return;
+
+            const url = new URL(identity.logo, document.baseURI);
+
+            url.searchParams.set("v", IDENTITY_ASSET_VERSION);
+
+            identity.logo = url.href;
+        });
+
         /* Snapshot bookmark logos share the shell's identity catalogue. */
         $$("[data-gd-identity-logo]").forEach((container) => {
             const identityID = container.dataset.gdIdentityLogo;
