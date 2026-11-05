@@ -103,6 +103,8 @@
             )
         );
 
+        const SITE_EMAIL = "eta444@pm.me";   // edit here once for the whole site
+
         const identities = {
             home:                { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/home.svg", tone: "borderless", mark: "GD", symbol: "page" },
             thoughtbubble:       { logo: "https://georgedreemer.com/public_img/general/logos/identitylogos/thoughtbubble.svg", tone: "borderless", mark: "tb", symbol: "work" },
@@ -190,7 +192,7 @@
         });
 
         /* Optional email: only enabled when supplied by the site owner. */
-        const email = (header.dataset.gdEmail || "").trim();
+        const email = (header.dataset.gdEmail || SITE_EMAIL).trim();
         const hasEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
         if (hasEmail) {
