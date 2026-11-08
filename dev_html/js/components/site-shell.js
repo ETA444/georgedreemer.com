@@ -123,12 +123,6 @@
                 <section class="gd-directory-group" id="gd-work-directory" data-gd-group="work" data-gd-group-label="work">
                 <h3>Work</h3>
                 <ul>
-                    <li>
-                    <a href="/work" data-gd-route="work" data-gd-local="work/work.html"
-                        data-gd-description="Every venture and project in one place.">
-                        Work overview
-                    </a>
-                    </li>
 
                     <li>
                     <a href="/work/datasafari" data-gd-route="datasafari" data-gd-local="work/datasafari.html"
@@ -172,12 +166,6 @@
                 <section class="gd-directory-group" data-gd-group="education" data-gd-group-label="Education">
                 <h3>Education</h3>
                 <ul>
-                    <li>
-                    <a href="/education" data-gd-route="education" data-gd-local="education/education.html"
-                        data-gd-description="Degrees, further learning, and the wider academic background.">
-                        Education overview
-                    </a>
-                    </li>
                     <li>
                     <a href="/education/masters" data-gd-route="masters" data-gd-local="education/masters.html"
                         data-gd-description="Marketing analytics, data science, and the work behind the degree.">
