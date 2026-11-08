@@ -65,36 +65,17 @@
                 <nav class="gd-desktop-nav" aria-label="Primary navigation">
 
                     <div class="gd-nav-pair">
-                        <a href="/work" data-gd-link="work" data-gd-primary="work">Work</a>
-                        <button
-                            type="button"
-                            class="gd-icon-button"
-                            data-gd-open="work"
-                            aria-label="Browse work"
-                            aria-haspopup="dialog"
-                            aria-controls="gd-sheet"
-                            aria-expanded="false"
-                            hidden
-                        >
-                            <span data-gd-icon="chevron-down" aria-hidden="true"></span>
-                        </button>
+                        <a href="#gd-directory" data-gd-open="work" data-gd-primary="work"
+                            aria-haspopup="dialog" aria-controls="gd-sheet" aria-expanded="false">
+                            Work <span data-gd-icon="chevron-down" aria-hidden="true"></span>
+                        </a>
                     </div>
 
                     <div class="gd-nav-pair">
-                        <a href="/education" data-gd-link="education"
-                            data-gd-primary="education">Education</a>
-                        <button
-                            type="button"
-                            class="gd-icon-button"
-                            data-gd-open="education"
-                            aria-label="Browse education"
-                            aria-haspopup="dialog"
-                            aria-controls="gd-sheet"
-                            aria-expanded="false"
-                            hidden
-                        >
-                            <span data-gd-icon="chevron-down" aria-hidden="true"></span>
-                        </button>
+                        <a href="#gd-directory" data-gd-open="education" data-gd-primary="education"
+                            aria-haspopup="dialog" aria-controls="gd-sheet" aria-expanded="false">
+                            Education <span data-gd-icon="chevron-down" aria-hidden="true"></span>
+                        </a>
                     </div>
 
                     <a href="#gd-directory" data-gd-open="site"

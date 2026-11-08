@@ -233,9 +233,9 @@ html[data-gd-ready] main [id][data-nav] {
 }
 
 .gd-nav-pair {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 0;
+    gap: var(--gd-s1);
 }
 
 .gd-desktop-nav a {
@@ -970,10 +970,6 @@ html[data-gd-ready] main [id][data-nav] {
 }
 
 .gd-dock {
-    gap: var(--gd-s1);
-}
-
-.gd-nav-pair {
     gap: var(--gd-s1);
 }
 
