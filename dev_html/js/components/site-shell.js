@@ -820,38 +820,13 @@
         /* Contextual links: editorial relationships, not random suggestions.
         *
         * Order:
-        *   1. The strongest connection to the current page.
-        *   2. A complementary project or academic foundation.
-        *   3. An additional connection where it adds something distinct.
-        *   4. The parent overview, always last on detail pages.
+        * 1. The strongest connection to the current page.
+        * 2. A complementary project or academic foundation.
+        * 3. An additional connection where it adds something distinct.
         *
-        * Hub pages offer selected starting points and a cross-link
-        * between Work and Education.
+        * Overview pages no longer exist; Explore and the footer cover browsing.
         */
         const relationships = {
-
-            /* =========================================================
-            WORK — OVERVIEW
-            ========================================================= */
-
-            work: [
-                [
-                    "datasafari",
-                    "Explore the Python library built to simplify data-science workflows."
-                ],
-                [
-                    "thoughtbubble",
-                    "See the development and product decisions behind a custom-built social network."
-                ],
-                [
-                    "dreemcorp",
-                    "Explore the creative-production and collaboration side of my work."
-                ],
-                [
-                    "education",
-                    "See the academic background behind my technical and business skills."
-                ]
-            ],
 
             /* =========================================================
             WORK — CASE STUDIES
@@ -867,8 +842,8 @@
                     "Compare building a reusable library with developing a complete web application."
                 ],
                 [
-                    "work",
-                    "Browse all projects and ventures."
+                    "skipschoolmakemoney",
+                    "Compare this project with building and running a consumer brand."
                 ]
             ],
 
@@ -884,10 +859,6 @@
                 [
                     "dreemcorp",
                     "See more of my work in creative production and media."
-                ],
-                [
-                    "work",
-                    "Browse all projects and ventures."
                 ]
             ],
 
@@ -903,10 +874,6 @@
                 [
                     "bachelors",
                     "See the business, marketing, and communication studies that complement this creative work."
-                ],
-                [
-                    "work",
-                    "Browse all projects and ventures."
                 ]
             ],
 
@@ -922,10 +889,6 @@
                 [
                     "thoughtbubble",
                     "Compare a commerce-led venture with building a social product and its early community."
-                ],
-                [
-                    "work",
-                    "Browse all projects and ventures."
                 ]
             ],
 
@@ -941,33 +904,6 @@
                 [
                     "datasafari",
                     "Compare developing a social platform with building a reusable Python library."
-                ],
-                [
-                    "work",
-                    "Browse all projects and ventures."
-                ]
-            ],
-
-            /* =========================================================
-            EDUCATION — OVERVIEW
-            ========================================================= */
-
-            education: [
-                [
-                    "masters",
-                    "Explore the analytical coursework, theses, and projects behind my MSc."
-                ],
-                [
-                    "bachelors",
-                    "See how a self-designed degree connected business study with building ventures."
-                ],
-                [
-                    "datasafari",
-                    "See applied data-science work in a reusable Python library."
-                ],
-                [
-                    "work",
-                    "Explore the projects and ventures that connect this education to practice."
                 ]
             ],
 
@@ -983,10 +919,6 @@
                 [
                     "bachelors",
                     "Explore the earlier business and marketing foundation behind this analytical specialisation."
-                ],
-                [
-                    "education",
-                    "Browse my degrees and wider learning background."
                 ]
             ],
 
@@ -1002,10 +934,6 @@
                 [
                     "masters",
                     "Follow the progression from business and marketing into analytics and data science."
-                ],
-                [
-                    "education",
-                    "Browse my degrees and wider learning background."
                 ]
             ]
 
