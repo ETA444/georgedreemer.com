@@ -589,10 +589,9 @@
         };
 
         const inferredPage = [...routes.values()].find((route) => {
-            const localFile = route.id === "masters" || route.id === "bachelors" ||
-                route.id === "education"
-                ? `/education/${route.id}.html`
-                : `/work/${route.id}.html`;
+            const localFile = route.group === "education"
+            ? `/education/${route.id}.html`
+            : `/work/${route.id}.html`;
 
             return normalPath(location.pathname) === normalPath(route.liveURL.pathname) ||
                 location.pathname.endsWith(localFile);
