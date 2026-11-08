@@ -664,38 +664,40 @@
 
         skipLink?.addEventListener("click", () => focusElement(main));
 
-        /* Breadcrumbs are structural links, not fake browser Back buttons. */
+        /* Breadcrumbs: Home is a link; Work/Education open their nav sheet. */
         if (current && currentID !== "home") {
-            const list = $("[data-gd-breadcrumb]");
-            const items = [{ label: "Home", href: routes.get("home")?.href || "/" }];
+        const list = $("[data-gd-breadcrumb]");
+        const items = [{ label: "Home", href: routes.get("home")?.href || "/" }];
 
-            if (current.group === "work" && currentID !== "work") {
-                items.push({
-                    label: "Work",
-                    href: routes.get("work")?.href || "/work"
-                });
-            } else if (current.group === "education" && currentID !== "education") {
-                items.push({
-                    label: "Education",
-                    href: routes.get("education")?.href || "/education"
-                });
+        if (current.group === "work") {
+            items.push({ label: "Work", open: "work" });
+        } else if (current.group === "education") {
+            items.push({ label: "Education", open: "education" });
+        }
+
+        items.push({ label: current.label });
+
+        items.forEach((item) => {
+            const li = document.createElement("li");
+            const node = document.createElement(item.href || item.open ? "a" : "span");
+            node.textContent = item.label;
+
+            if (item.href) {
+            node.href = item.href;
+            } else if (item.open) {
+            node.href = "#gd-directory";
+            node.dataset.gdOpen = item.open;
+            node.setAttribute("aria-haspopup", "dialog");
+            node.setAttribute("aria-controls", "gd-sheet");
+            } else {
+            node.setAttribute("aria-current", "page");
             }
 
-            items.push({ label: current.label });
+            li.append(node);
+            list.append(li);
+        });
 
-            items.forEach((item) => {
-                const li = document.createElement("li");
-                const node = document.createElement(item.href ? "a" : "span");
-                node.textContent = item.label;
-
-                if (item.href) node.href = item.href;
-                else node.setAttribute("aria-current", "page");
-
-                li.append(node);
-                list.append(li);
-            });
-
-            $(".gd-breadcrumb").hidden = false;
+        $(".gd-breadcrumb").hidden = false;
         }
 
         /* ------------------------------------------------------------
