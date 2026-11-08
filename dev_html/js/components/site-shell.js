@@ -214,9 +214,9 @@
                 <section class="gd-directory-group" data-gd-group="general" data-gd-group-label="Explore">
                 <ul>
                     <li>
-                    <a href="/" data-gd-route="home" data-gd-description="A starting point for my work, background, and interests.">
-                        Home
-                    </a>
+                        <a href="/" data-gd-route="home" data-gd-description="The full overview: skills, work, education, certifications and awards.">
+                            Home
+                        </a>
                     </li>
                 </ul>
                 </section>
