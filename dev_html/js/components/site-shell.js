@@ -262,14 +262,14 @@
         <!-- Mobile: the only persistent navigation surface. -->
         <nav class="gd-shell gd-dock" aria-label="Mobile navigation" data-gd-edge="paper" hidden>
 
-            <a href="/work" data-gd-primary="work">
-            <span data-gd-icon="work" aria-hidden="true"></span>
-            <span>Work</span>
+            <a href="#gd-directory" data-gd-open="work" data-gd-primary="work">
+                <span data-gd-icon="work" aria-hidden="true"></span>
+                <span>Work</span>
             </a>
 
-            <a href="/education" data-gd-link="education" data-gd-primary="education">
-            <span data-gd-icon="education" aria-hidden="true"></span>
-            <span>Education</span>
+            <a href="#gd-directory" data-gd-open="education" data-gd-primary="education">
+                <span data-gd-icon="education" aria-hidden="true"></span>
+                <span>Education</span>
             </a>
 
             <button type="button"
