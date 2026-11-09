@@ -22,6 +22,18 @@ builds systems that are repeatable and scalable.
 - Email: available via https://georgedreemer.com
 
 
+## Site Map
+
+- Overview (skills, work, education, certifications, awards): https://georgedreemer.com/
+- DataSafari: https://georgedreemer.com/work/datasafari
+- CryptoPandemic: https://georgedreemer.com/work/cryptopandemic
+- DREEMCORP: https://georgedreemer.com/work/dreemcorp
+- SkipSchoolMakeMoney: https://georgedreemer.com/work/skipschoolmakemoney
+- thoughtbubble: https://georgedreemer.com/work/thoughtbubble
+- MSc Data Science (thesis, reports, code): https://georgedreemer.com/education/masters
+- BA Marketing & Business (coursework, abilities): https://georgedreemer.com/education/bachelors
+
+
 ## Ventures & Projects
 
 ### DREEMCORP
@@ -65,7 +77,7 @@ builds systems that are repeatable and scalable.
   Massachusetts, the UK, and China.
 
 ### thoughtbubble
-- URL: https://georgedreemer.com/thoughtbubble
+- URL: https://georgedreemer.com/work/thoughtbubble
 - Role: Co-Founder & Full-Stack Developer
 - A knowledge-first social network co-founded with Nikolay Stanchev and built
   from scratch in high school. Designed to shift social media away from
@@ -77,14 +89,21 @@ builds systems that are repeatable and scalable.
 
 ### MSc — Marketing Analytics & Data Science
 - Institution: University of Groningen, Netherlands
-- Portfolio: https://georgedreemer.com/academic-portfolio
+- Portfolio: https://georgedreemer.com/education/masters
 - Focus: data science projects, statistical analysis, machine learning,
   marketing analytics, Python, R
-- Notable: Reached an GPA of ~ 8.00 and was a contributor to a research paper
+- Notable: Reached a GPA of ~ 8.00 and was a contributor to a research paper
 
 ### BA — Hampshire College, Massachusetts, USA
+- Portfolio: https://georgedreemer.com/education/bachelors
 - Notable: founded SkipSchoolMakeMoney during studies; received entrepreneurial
   recognition and funding while enrolled; achieved a GPA of 3.8
+
+
+## Certification and Awards (todo)
+
+
+## Organizations and Community (todo)
 
 
 ## Technical Stack
@@ -94,7 +113,6 @@ builds systems that are repeatable and scalable.
 - Data & ML: pandas, NumPy, scikit-learn, Jupyter, DataSafari
 - Web3: Solana analytics, on-chain strategy, blockchain marketing
 - Tools: Git, VS Code, RStudio, Namecheap/cPanel
-- Machine: MacBook Air M4 (2025), macOS, zsh + Oh My Zsh
 
 
 ## Career Target

@@ -37,8 +37,7 @@
         "@id": "https://georgedreemer.com/education/bachelors#breadcrumb",
         "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "George Dreemer", "item": "https://georgedreemer.com" },
-            { "@type": "ListItem", "position": 2, "name": "Education Hub", "item": "https://georgedreemer.com/education" },
-            { "@type": "ListItem", "position": 3, "name": "BA Marketing & Business", "item": "https://georgedreemer.com/education/bachelors" }
+            { "@type": "ListItem", "position": 2, "name": "BA Marketing & Business", "item": "https://georgedreemer.com/education/bachelors" }
         ]
         },
         {

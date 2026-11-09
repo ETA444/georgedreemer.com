@@ -82,6 +82,8 @@ ErrorDocument 404 "Not Found"
 </IfModule>
 RewriteBase /
 
+RewriteRule ^(work|education)/?$ / [R=301,L]
+
 # Remove .html extension
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
@@ -100,6 +102,6 @@ RewriteRule ^\.well-known/.+ - [L]
 # ── Site Builder Passthrough ───────────────────────────────────
 DirectoryIndex index.php index.cgi index.html
 RewriteCond %{REQUEST_FILENAME} !-f [OR]
-RewriteCond %{REQUEST_URI} ^\/(js\/(main\.js|bootstrap\.min\.js)|css\/([0-9a-f]+\.css|common\.css|site\.css|bootstrap\.min\.css)|sitemap\.xml)$
+RewriteCond %{REQUEST_URI} ^\/(js\/(main\.js|bootstrap\.min\.js)|css\/([0-9a-f]+\.css|common\.css|site\.css|bootstrap\.min\.css))$
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ ncsitebuilder/$1 [L,QSA]
