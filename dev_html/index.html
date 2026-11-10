@@ -168,18 +168,24 @@
 <body>
     <main class="main-content" role="main" data-page="index">
 
-        <!-- == Hero ================================================ -->
+        <!-- == Hero ============================================ -->
         <section class="hero" id="hero" aria-labelledby="hero-title">
             <h1 class="hero__title" id="hero-title">
                 George Dreemer, Data Scientist, Developer and Entrepreneur
             </h1>
 
-            <p class="hero__motto">
-                <span class="hero__line" style="--i: 0">
-                    <span class="hero__line-inner">Excellence through action.</span>
+            <p class="hero__motto" data-hero-motto>
+                <span class="hero__line">
+                    <span class="hero__sr">Excellence through action.</span>
+                    <span aria-hidden="true">
+                        <span class="hero__done">Excellence through action.</span><span class="hero__cursor"></span><span class="hero__rest"></span>
+                    </span>
                 </span>
-                <span class="hero__line hero__line--soft" style="--i: 1">
-                    <span class="hero__line-inner">Creatio Perpetua.</span>
+                <span class="hero__line hero__line--soft">
+                    <span class="hero__sr">Creatio Perpetua.</span>
+                    <span aria-hidden="true">
+                        <span class="hero__done">Creatio Perpetua.</span><span class="hero__cursor"></span><span class="hero__rest"></span>
+                    </span>
                 </span>
             </p>
         </section>
