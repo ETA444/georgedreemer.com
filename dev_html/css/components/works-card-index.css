@@ -69,6 +69,11 @@
     border-bottom: 1px solid var(--color-divider);
 }
 
+/* Lets <picture> wrappers sit transparently inside the media box */
+.work-card__media picture {
+    display: contents;
+}
+
 /* Sits behind the image; also serves as an intentional fallback. */
 
 .work-card__fallback {
@@ -282,6 +287,11 @@
 
     .work-card--featured .work-card__title {
         font-size: var(--text-xl);
+    }
+
+    .work-card--featured .work-card__image {
+        object-fit: cover;
+        object-position: center;
     }
 }
 

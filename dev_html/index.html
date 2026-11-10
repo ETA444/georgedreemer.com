@@ -822,14 +822,18 @@
                 <div class="work-grid">
 
                     <!-- DataSafari — featured -->
-                    <a class="work-card work-card--featured" href="/work/datasafari" data-gd-link="datasafari"
-                        aria-label="Explore DataSafari">
+                    <a class="work-card work-card--featured" href="/work/datasafari" data-gd-link="datasafari" aria-label="Explore DataSafari">
                         <div class="work-card__media" aria-hidden="true">
                             <span class="work-card__fallback">DataSafari</span>
 
-                            <img class="work-card__image"
-                                src="https://datasafari.dev/ncsitebuilder/gallery/ds-branding-thumb-main-web.png" alt=""
-                                width="1200" height="630" loading="lazy" decoding="async" />
+                            <picture>
+                                <!-- Desktop / tablet: near-square art -->
+                                <source media="(min-width: 46rem)" srcset="https://datasafari.dev/ncsitebuilder/gallery/ds-branding-thumb-main-web.png" width="1200" height="1200" />
+
+                                <!-- Mobile (default): 1200x630 landscape -->
+                                <img class="work-card__image" src="https://datasafari.dev/ncsitebuilder/gallery/ds-branding-thumb-main-web.png" alt="" width="1200" height="630"
+                                    loading="lazy" decoding="async" />
+                            </picture>
                         </div>
 
                         <div class="work-card__body">
@@ -885,7 +889,7 @@
                             <ul class="work-card__skills" role="list" aria-label="Capabilities">
                                 <li>Wallet Behaviour Profiling</li>
                                 <li>Generative AI Pipelines</li>
-                                <li>Web3 Brand Strategy</li>
+                                <li>Content Production</li>
                                 <li>Community Growth</li>
                             </ul>
 
@@ -922,7 +926,7 @@
                                 <li>Creative Direction</li>
                                 <li>Brand Visual Systems</li>
                                 <li>Production Pipeline Management</li>
-                                <li>Platform Optimisation</li>
+                                <li>Content Production</li>
                             </ul>
 
                             <span class="work-card__cta">
@@ -956,9 +960,9 @@
 
                             <ul class="work-card__skills" role="list" aria-label="Capabilities">
                                 <li>E-commerce Operations</li>
-                                <li>Organic Growth Strategy</li>
-                                <li>Performance Analytics</li>
-                                <li>Fulfilment Coordination</li>
+                                <li>Creative Direction</li>
+                                <li>Social Media Management</li>
+                                <li>Fulfilment Logistics</li>
                             </ul>
 
                             <span class="work-card__cta">
@@ -994,8 +998,8 @@
                             <ul class="work-card__skills" role="list" aria-label="Capabilities">
                                 <li>Back-End Architecture</li>
                                 <li>Relational Schema Design</li>
-                                <li>Product Analytics</li>
-                                <li>Organic User Acquisition</li>
+                                <li>UI/UX Design</li>
+                                <li>Front-End Development</li>
                             </ul>
 
                             <span class="work-card__cta">
