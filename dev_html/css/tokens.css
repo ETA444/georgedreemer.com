@@ -44,6 +44,11 @@
 
 /* Primary color alteration based on page */
 
+/* index/landing */
+main[data-page="index"] {
+    --color-primary: #3c1f5f;
+}
+
 /* edu */
 main[data-page="education"] {
     --color-primary: #01696f;
