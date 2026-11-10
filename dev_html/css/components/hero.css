@@ -1,0 +1,200 @@
+/* ============================================================
+   HERO
+   Full-bleed black motto stage with a torn-paper bottom edge.
+   Sits inside <main> so it renders after the shell header.
+   ============================================================ */
+
+.hero {
+    --hero-bg: var(--gd-bg, #000);
+    --hero-edge-h: clamp(18px, 2.4vw, 34px);
+    --hero-top: 0px;
+    --hero-edge-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 40' preserveAspectRatio='none'%3E%3Cpath d='M0,0H1600V22L1598,23.3L1590,19.9L1584,20.8L1574,25L1548,34L1540,34.9L1534,30.4L1526,33.3L1508,32.5L1500,27.8L1482,25.5L1474,30.0L1456,31.6L1442,34L1436,33.9L1422,29.2L1408,27.0L1404,24.4L1396,21.6L1370,22.5L1352,19.6L1342,20.9L1334,18.9L1326,14.5L1320,13.9L1306,12L1288,10L1284,13.9L1278,12L1272,13.0L1246,12L1232,12.5L1214,10L1204,17.4L1198,14.1L1190,13.8L1182,12L1168,12L1142,12L1134,12L1116,12L1090,10.4L1076,16.3L1072,21.0L1046,17.0L1040,20.7L1022,21.6L1018,22.6L1004,26.1L978,20.2L968,19.2L962,20.9L936,23.2L926,18.9L916,15.0L908,15.6L898,15.4L872,12L862,12L844,13.0L830,14.0L824,16.1L818,12L792,10L784,13.6L774,16.5L766,20.9L748,18.9L740,16.4L726,13.3L708,14.0L702,13.8L684,12.4L676,17.3L666,20.5L648,23.4L622,24.1L596,23.9L592,20.5L574,16.3L570,13.5L552,10L534,19.0L528,23.4L514,24.0L506,20.9L502,16.4L476,20.8L468,18.8L462,15.7L452,13.5L438,21.7L434,20.9L416,21.6L410,25.0L406,17.5L398,22.1L384,34L380,34.8L374,28.2L364,27.3L338,25.9L328,27.4L302,30.1L292,25.6L284,28.2L278,25.0L252,26.3L244,29.6L240,34L214,34L210,34L206,36L192,25L188,34L180,34L176,36L162,30.2L156,32.8L152,32.5L144,34L138,32.1L132,33.1L122,29.2L114,27.9L106,28.9L88,33.3L80,33.2L72,30.1L68,28.2L50,24.5L44,23.2L34,27.5L16,23.5L8,19.9L0,22Z' fill='black'/%3E%3C/svg%3E");
+
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Full-bleed escape from the 860px content column */
+    width: 100vw;
+    margin-inline: calc(50% - 50vw);
+
+    min-height: clamp(30rem, 86svh, 56rem);
+    padding: calc(var(--space-12) + var(--hero-top)) var(--space-6) var(--space-12);
+
+    background: var(--hero-bg);
+    color: #fff;
+    text-align: center;
+}
+
+/* clip (not hidden) keeps the sticky header working */
+body {
+    overflow-x: clip;
+}
+
+.main-content:has(> .hero) {
+    padding-top: 0 !important;
+}
+
+
+/* Screen-reader h1: the motto stays the only visible text */
+
+.hero__title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+
+/* Motto */
+
+.hero__motto {
+    display: grid;
+    gap: 0.12em;
+    max-width: 18ch;
+    margin: 0;
+
+    color: #fff;
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 1rem + 6.4vw, 6.75rem);
+    font-weight: 600;
+    line-height: 1.04;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+}
+
+.hero__line {
+    display: block;
+    overflow: hidden;
+    /* room for descenders inside the reveal mask */
+    padding-bottom: 0.12em;
+    margin-bottom: -0.12em;
+}
+
+.hero__line-inner {
+    display: block;
+    transform: translateY(112%);
+    opacity: 0;
+    animation: hero-rise 1.15s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-delay: calc(0.3s + var(--i, 0) * 0.28s);
+}
+
+/* Second line recedes for contrast; remove the class if unwanted */
+.hero__line--soft {
+    color: rgba(255, 255, 255, 0.58);
+}
+
+@keyframes hero-rise {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/* Torn-paper edge: a real element so JS can measure it.
+   Mask + background means it always matches --hero-bg. */
+
+.hero__edge {
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    right: 0;
+    height: var(--hero-edge-h);
+    pointer-events: none;
+
+    background: var(--hero-bg);
+    -webkit-mask: var(--hero-edge-mask) repeat-x 0 0 / 1600px 100%;
+    mask: var(--hero-edge-mask) repeat-x 0 0 / 1600px 100%;
+}
+
+
+/* ============================================================
+   HEADER x HERO
+   Hero pages start with the shell header merged into the black
+   stage. Desktop: the header turns solid (and regains its paper
+   edge) once the hero's torn edge has passed behind it.
+   Mobile: the header scrolls away, so it stays merged.
+   ============================================================ */
+
+@property --hero-solid {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 0%;
+}
+
+/* Merged state (default on hero pages, before and without JS) */
+html:has(.hero):not([data-hero-header="solid"]) .gd-header {
+    background: var(--gd-bg, #000) !important;
+    border-bottom-color: transparent !important;
+    box-shadow: none !important;
+    -webkit-mask: none !important;
+    mask: none !important;
+    clip-path: inset(-8px -8px 0 -8px);
+}
+
+html:has(.hero):not([data-hero-header="solid"]) .gd-header::before,
+html:has(.hero):not([data-hero-header="solid"]) .gd-header::after {
+    opacity: 0 !important;
+}
+
+@media (min-width: 60rem) {
+
+    /* Hero starts at the very top, behind the sticky header */
+    .hero {
+        --hero-top: var(--gd-header-height, 4.5rem);
+        margin-top: calc(var(--gd-header-height, 4.5rem) * -1);
+    }
+
+    /* Merged: black at the top fading to 0% at the bottom */
+    html:has(.hero):not([data-hero-header="solid"]) .gd-header {
+        --hero-solid: 0%;
+        background: linear-gradient(to bottom,
+                var(--gd-bg, #000) 0%,
+                var(--gd-bg, #000) var(--hero-solid),
+                color-mix(in srgb, var(--gd-bg, #000) 0%, transparent) 100%) !important;
+    }
+
+    /* Solid: gradient fully opaque; the header's own paper edge returns */
+    html:has(.hero)[data-hero-header="solid"] .gd-header {
+        --hero-solid: 100%;
+        background: linear-gradient(to bottom,
+                var(--gd-bg, #000) 0%,
+                var(--gd-bg, #000) var(--hero-solid),
+                color-mix(in srgb, var(--gd-bg, #000) 0%, transparent) 100%) !important;
+        clip-path: inset(-8px -8px -80px -8px);
+    }
+
+    /* Animate only after the first state is applied (no load flash) */
+    html[data-hero-ready] .gd-header {
+        transition:
+            --hero-solid 280ms ease,
+            clip-path 280ms ease;
+    }
+
+    html[data-hero-ready] .gd-header::before,
+    html[data-hero-ready] .gd-header::after {
+        transition: opacity 280ms ease;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero__line-inner {
+        transform: none;
+        opacity: 1;
+        animation: none;
+    }
+
+    html[data-hero-ready] .gd-header,
+    html[data-hero-ready] .gd-header::before,
+    html[data-hero-ready] .gd-header::after {
+        transition: none;
+    }
+}
