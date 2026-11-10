@@ -151,10 +151,10 @@
     <link rel="stylesheet" href="css/components/info-tooltip.css" />
 
     <link rel="stylesheet" href="css/components/context-block.css" />
+    <link rel="stylesheet" href="css/components/stack-badge.css" />
+    <link rel="stylesheet" href="css/components/works-card-index.css" />
     <link rel="stylesheet" href="css/components/degree-card.css" />
     <link rel="stylesheet" href="css/components/credential-card.css" />
-    <link rel="stylesheet" href="css/components/ability-card-edu.css" />
-    <link rel="stylesheet" href="css/components/stack-badge.css" />
 
     <!-- Third-party scripts -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
@@ -808,8 +808,205 @@
             </section>
 
             <!-- == Work ============================================ -->
-            <section class="fade-in" id="work" data-nav="Work" aria-label="Work">
+            <section class="work-section fade-in" id="work" data-nav="Work" aria-label="Work">
+                <div class="section-label">
+                    <h2 class="section-label__text">Work</h2>
+                    <span class="section-label__line" aria-hidden="true"></span>
+                </div>
 
+                <p class="section-lead">
+                    Different ventures. The same instinct: build something,
+                    bring it to people, and make it work.
+                </p>
+
+                <div class="work-grid">
+
+                    <!-- DataSafari — featured -->
+                    <a class="work-card work-card--featured" href="/work/datasafari" data-gd-link="datasafari"
+                        aria-label="Explore DataSafari">
+                        <div class="work-card__media" aria-hidden="true">
+                            <span class="work-card__fallback">DataSafari</span>
+
+                            <img class="work-card__image"
+                                src="https://datasafari.dev/ncsitebuilder/gallery/ds-branding-thumb-main-web.png" alt=""
+                                width="1200" height="630" loading="lazy" decoding="async" />
+                        </div>
+
+                        <div class="work-card__body">
+                            <span class="work-card__tag">Data Science</span>
+
+                            <h3 class="work-card__title">DataSafari</h3>
+
+                            <p class="work-card__desc">
+                                Complex data science, one function call.
+                                An open-source Python library that brings exploration,
+                                data preparation, statistical testing, and
+                                machine-learning workflows into a consistent,
+                                one-line API.
+                            </p>
+
+                            <ul class="work-card__skills" role="list" aria-label="Capabilities">
+                                <li>API Design</li>
+                                <li>ML Pipeline Design</li>
+                                <li>Test Engineering</li>
+                                <li>CI/CD</li>
+                            </ul>
+
+                            <span class="work-card__cta">
+                                <span>Explore DataSafari</span>
+                                <span class="work-card__arrow" aria-hidden="true">→</span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <!-- CryptoPandemic -->
+                    <a class="work-card" href="/work/cryptopandemic" data-gd-link="cryptopandemic"
+                        aria-label="Explore CryptoPandemic">
+                        <div class="work-card__media" aria-hidden="true">
+                            <span class="work-card__fallback">CryptoPandemic</span>
+
+                            <img class="work-card__image" src="https://cryptopandemic.com/images/landing/og-image.png" alt=""
+                                width="1200" height="630" loading="lazy" decoding="async" />
+                        </div>
+
+                        <div class="work-card__body">
+                            <span class="work-card__tag">Web3 Analytics</span>
+
+                            <h3 class="work-card__title">CryptoPandemic</h3>
+
+                            <p class="work-card__desc">
+                                Cold on-chain analytics. Warm creative storytelling.
+                                A Web3 brand engine combining holder research,
+                                AI-powered production, and community-native campaigns
+                                to turn audience insight into cultural relevance.
+                            </p>
+
+                            <ul class="work-card__skills" role="list" aria-label="Capabilities">
+                                <li>Wallet Behaviour Profiling</li>
+                                <li>Generative AI Pipelines</li>
+                                <li>Web3 Brand Strategy</li>
+                                <li>Community Growth</li>
+                            </ul>
+
+                            <span class="work-card__cta">
+                                <span>Explore CryptoPandemic</span>
+                                <span class="work-card__arrow" aria-hidden="true">→</span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <!-- DREEMCORP -->
+                    <a class="work-card" href="/work/dreemcorp" data-gd-link="dreemcorp" aria-label="Explore DREEMCORP">
+                        <div class="work-card__media" aria-hidden="true">
+                            <span class="work-card__fallback">DREEMCORP</span>
+
+                            <img class="work-card__image" src="https://dreemcorp.com/images/landing/og-image.png" alt=""
+                                width="1200" height="630" loading="lazy" decoding="async" />
+                        </div>
+
+                        <div class="work-card__body">
+                            <span class="work-card__tag">Content Marketing</span>
+
+                            <h3 class="work-card__title">DREEMCORP</h3>
+
+                            <p class="work-card__desc">
+                                A creative studio turning raw footage and brand ideas
+                                into platform-native content—delivering 100+ assignments
+                                for artists, athletes, and consumer brands,
+                                with 1M+ views.
+                            </p>
+
+                            <ul class="work-card__skills" role="list" aria-label="Capabilities">
+                                <li>Creative Direction</li>
+                                <li>Brand Visual Systems</li>
+                                <li>Production Pipeline Management</li>
+                                <li>Platform Optimisation</li>
+                            </ul>
+
+                            <span class="work-card__cta">
+                                <span>Explore DREEMCORP</span>
+                                <span class="work-card__arrow" aria-hidden="true">→</span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <!-- SkipSchoolMakeMoney -->
+                    <a class="work-card" href="/work/skipschoolmakemoney" data-gd-link="skipschoolmakemoney"
+                        aria-label="Explore SkipSchoolMakeMoney">
+                        <div class="work-card__media" aria-hidden="true">
+                            <span class="work-card__fallback">SkipSchoolMakeMoney</span>
+
+                            <img class="work-card__image" src="https://georgedreemer.com/ncsitebuilder/gallery/dxyz-ssmm-thumb.png"
+                                alt="" width="1200" height="630" loading="lazy" decoding="async" />
+                        </div>
+
+                        <div class="work-card__body">
+                            <span class="work-card__tag">E-commerce</span>
+
+                            <h3 class="work-card__title">SkipSchoolMakeMoney</h3>
+
+                            <p class="work-card__desc">
+                                Underground streetwear built into an international
+                                e-commerce business: 20+ collections, 12,000+ followers,
+                                and customers across three continents—from product
+                                design to the storefront and fulfilment.
+                            </p>
+
+                            <ul class="work-card__skills" role="list" aria-label="Capabilities">
+                                <li>E-commerce Operations</li>
+                                <li>Organic Growth Strategy</li>
+                                <li>Performance Analytics</li>
+                                <li>Fulfilment Coordination</li>
+                            </ul>
+
+                            <span class="work-card__cta">
+                                <span>Explore SkipSchoolMakeMoney</span>
+                                <span class="work-card__arrow" aria-hidden="true">→</span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <!-- thoughtbubble -->
+                    <a class="work-card" href="/work/thoughtbubble" data-gd-link="thoughtbubble" aria-label="Explore thoughtbubble">
+                        <div class="work-card__media" aria-hidden="true">
+                            <span class="work-card__fallback">thoughtbubble</span>
+
+                            <img class="work-card__image"
+                                src="https://georgedreemer.com/ncsitebuilder/gallery/dxyz-thoughtbubble-thumb.png" alt=""
+                                width="1200" height="630" loading="lazy" decoding="async" />
+                        </div>
+
+                        <div class="work-card__body">
+                            <span class="work-card__tag">Full-Stack Development</span>
+
+                            <h3 class="work-card__title">thoughtbubble</h3>
+
+                            <p class="work-card__desc">
+                                A knowledge-first social network, built from scratch
+                                in high school. Custom social features, authentication,
+                                and database architecture brought the platform to
+                                around 900 registered users.
+                            </p>
+
+                            <ul class="work-card__skills" role="list" aria-label="Capabilities">
+                                <li>Back-End Architecture</li>
+                                <li>Relational Schema Design</li>
+                                <li>Product Analytics</li>
+                                <li>Organic User Acquisition</li>
+                            </ul>
+
+                            <span class="work-card__cta">
+                                <span>Explore thoughtbubble</span>
+                                <span class="work-card__arrow" aria-hidden="true">→</span>
+                            </span>
+                        </div>
+                    </a>
+
+                </div>
             </section>
 
             <!-- == Education (Degrees + Certificates) ============== -->
