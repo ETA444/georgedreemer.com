@@ -9,7 +9,7 @@
         "description": "DataSafari is a Python library by George Dreemer that simplifies complex data science tasks, compressing the full data workflow into a one-liner API across 11 functions and 4 subpackages. Available on PyPI.",
         "isPartOf": {
             "@type": "WebSite",
-            "@id": "https://georgedreemer.com/#website",
+            "@id": "https://georgedreemer.com/work/#website",
             "url": "https://georgedreemer.com",
             "name": "George Dreemer"
         },
@@ -20,8 +20,7 @@
             "url": "https://datasafari.dev/ncsitebuilder/gallery/ds-branding-thumb-main-web.png",
             "width": 1200,
             "height": 630
-        },
-        "inLanguage": "en-US"
+        }
         },
         {
         "@type": "SoftwareSourceCode",
@@ -82,9 +81,7 @@
             "https://datasafari.dev/docs",
             "https://github.com/ETA444/datasafari",
             "https://pypi.org/project/datasafari/"
-        ],
-        "dateModified": "2026-08-19",
-        "inLanguage": "en-US"
+        ]
         }
     ]
 }

@@ -26,16 +26,15 @@
             "url": "https://georgedreemer.com/ncsitebuilder/gallery/dxyz-academic-thumb.png",
             "width": 1200,
             "height": 630
-        },
-        "dateModified": "2026-10-31",
-        "inLanguage": "en-US"
+        }
         },
         {
         "@type": "BreadcrumbList",
         "@id": "https://georgedreemer.com/education/masters#breadcrumb",
         "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "George Dreemer", "item": "https://georgedreemer.com" },
-            { "@type": "ListItem", "position": 2, "name": "MSc Data Science", "item": "https://georgedreemer.com/education/masters" }
+            { "@type": "ListItem", "position": 2, "name": "Education Hub", "item": "https://georgedreemer.com/education" },
+            { "@type": "ListItem", "position": 3, "name": "MSc Data Science", "item": "https://georgedreemer.com/education/masters" }
         ]
         },
         {
@@ -74,7 +73,7 @@
         "@type": "EducationalOccupationalCredential",
         "@id": "https://georgedreemer.com/education/masters#msc-degree",
         "name": "MSc Marketing Analytics & Data Science",
-        "description": "Master of Science at the Faculty of Economics and Business, University of Groningen (2022–2024), covering applied statistics, machine learning, data science and data engineering. Programme average grade: 8 on the Dutch 10-point scale. Thesis grade: 8.",
+        "description": "Master of Science at the Faculty of Economics and Business, University of Groningen, covering applied statistics, machine learning, data science and data engineering. Programme average grade: 8 on the Dutch 10-point scale. Thesis grade: 8.",
         "credentialCategory": "degree",
         "educationalLevel": "Master's degree",
         "url": "https://www.rug.nl/masters/msc-marketing-marketing-analytics-and-data-science/?lang=en",
@@ -86,8 +85,6 @@
         "name": "MSc Marketing – Marketing Analytics and Data Science",
         "url": "https://www.rug.nl/masters/msc-marketing-marketing-analytics-and-data-science/?lang=en",
         "provider": { "@id": "https://www.rug.nl/#organization" },
-        "startDate": "2022",
-        "endDate": "2024",
         "occupationalCredentialAwarded": { "@id": "https://georgedreemer.com/education/masters#msc-degree" },
         "teaches": [
             "Statistical analysis", "Supervised learning", "Customer segmentation",
@@ -105,7 +102,6 @@
         "abstract": "How do different data-sharing arrangements influence willingness to allow the secondary use of health data? Discrete-choice-experiment data from 329 participants in Italy were analysed across five attributes: original data collector, new data user, purpose of reuse, information and consent, and external review. Respondents leaned toward not sharing. Two preference groups ranked attribute importance identically (new data user, reason for use, information and consent, review, original collector) but preferred different levels within attributes. Transparency and some form of external review were common ground.",
         "author": { "@id": "https://georgedreemer.com/#person" },
         "publisher": { "@id": "https://www.rug.nl/#organization" },
-        "datePublished": "2024",
         "inLanguage": "en",
         "url": "https://georgedreemer.com/downloads/academic/georgedreemer-msc-thesis_paper.pdf",
         "encoding": {
@@ -138,7 +134,7 @@
         "@type": "ScholarlyArticle",
         "@id": "https://georgedreemer.com/education/masters#premsc-thesis",
         "headline": "Pre-MSc Thesis — Earnings Call Sentiment and Stock Volatility",
-        "description": "Tests whether earnings-call sentiment (178 transcripts, 10 NASDAQ-listed firms, 2016–2020, scored with NLTK VADER) predicts post-call stock volatility using multiple linear regression. Volatility rose after 87% of calls, but sentiment was not a statistically significant predictor.",
+        "description": "Tests whether earnings-call sentiment (178 transcripts, 10 NASDAQ-listed firms, scored with NLTK VADER) predicts post-call stock volatility using multiple linear regression. Volatility rose after 87% of calls, but sentiment was not a statistically significant predictor.",
         "author": { "@id": "https://georgedreemer.com/#person" },
         "inLanguage": "en",
         "url": "https://georgedreemer.com/downloads/academic/georgedreemer-premsc-thesis_paper.pdf",

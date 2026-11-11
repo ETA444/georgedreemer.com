@@ -24,8 +24,7 @@
         "url": "https://dreemcorp.com/images/landing/og-image.png",
         "width": 1200,
         "height": 630
-      },
-      "inLanguage": "en-US"
+      }
     },
     {
       "@type": "Organization",
@@ -41,8 +40,6 @@
         "height": 630
       },
       "slogan": "Creatio perpetua",
-      "sameAs": ["https://dreemcorp.com"],
-      "foundingDate": "2020",
       "genre": [
         "Creative studio",
         "Venture lab",
@@ -92,9 +89,7 @@
             "name": "Brand & Creative Direction"
           }
         }
-      ],
-      "dateModified": "2026-08-05",
-      "inLanguage": "en-US"
+      ]
     }
   ]
 }

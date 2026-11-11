@@ -24,8 +24,7 @@
         "url": "https://cryptopandemic.com/images/landing/og-image.png",
         "width": 1200,
         "height": 630
-      },
-      "inLanguage": "en-US"
+      }
     },
     {
       "@type": "Organization",
@@ -41,7 +40,6 @@
         "width": 1200,
         "height": 630
       },
-      "foundingDate": "2026",
       "genre": [
         "Web3 brand studio",
         "Crypto marketing",
@@ -112,9 +110,7 @@
       ],
       "sameAs": [
         "https://cryptopandemic.com"
-      ],
-      "dateModified": "2026-09-02",
-      "inLanguage": "en-US"
+      ]
     }
   ]
 }
