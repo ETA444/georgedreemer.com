@@ -279,21 +279,23 @@ html:has(.hero) .gd-header::after {
     }
 
     /* Animate only after the first state is applied (no load flash).
-       Going back to merged is quick; the rip is the showpiece. */
+    Going back to merged is quick; the rip is the showpiece. */
     html[data-hero-ready] .gd-header {
-        transition: --tear 220ms ease-in;
+        transition: --tear 180ms ease-out;
     }
 
     html[data-hero-ready][data-hero-header="solid"] .gd-header {
-        transition: --tear 620ms cubic-bezier(0.7, 0, 0.2, 1);
+        transition: --tear 360ms cubic-bezier(0.2, 0.7, 0.2, 1);
     }
 
-    /* Stop-start rhythm, like paper catching as it tears */
+    /* Stop-start rhythm, like paper catching as it tears.
+       Front-loaded: nearly half the rip happens in the first 12%. */
     @supports (transition-timing-function: linear(0, 1)) {
         html[data-hero-ready][data-hero-header="solid"] .gd-header {
-            transition-duration: 111ms;
-            transition-timing-function: linear(0, 0.10 5%, 0.14 9%, 0.40 24%, 0.45 29%,
-                    0.66 46%, 0.69 51%, 0.90 74%, 0.93 79%, 1);
+            transition-duration: 400ms;
+            transition-timing-function: linear(
+                0, 0.42 10%, 0.47 16%, 0.72 40%, 0.77 48%, 0.93 72%, 0.96 80%, 1
+            );
         }
     }
 
