@@ -311,17 +311,8 @@ html:has(.hero) .gd-header::after {
         margin-top: calc(var(--gd-header-height) * -1);
     }
 
-    /* Merged: black fading to 0% at the bottom, with a fill layer
-       (growing with --tear) on top that performs the takeover */
     html:has(.hero)[data-hero-header="solid"] .gd-header {
         --tear: 100%;
-    }
-
-    /* Optional: keep the section reader out of the hero's way */
-    html:has(.hero):not([data-hero-header="solid"]) .gd-reader {
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
     }
 
     /* Animate only after the first state is applied (no load flash).
@@ -367,5 +358,38 @@ html:has(.hero) .gd-header::after {
 @media print {
     .hero {
         display: none;
+    }
+}
+
+/* ============================================================
+   DOCK VIEWPORT
+   Below the shell's desktop breakpoint only.
+   ============================================================ */
+
+@media (width < 60rem) {
+    .hero {
+        /*
+         * Defaults cover the initial paint.
+         * hero.js replaces them with actual shell measurements.
+         */
+        --hero-top: var(--hero-shell-height, 4.5625rem);
+
+        margin-top: calc(var(--hero-top) * -1);
+
+        /*
+         * The negative margin brings the hero behind the header.
+         * Therefore, do not subtract the header height again.
+         *
+         * The torn edge extends outside the hero box, so reserve
+         * its height before the dock begins.
+         */
+        min-height: calc(100vh - var(--hero-dock-height,
+                    calc(4.5rem + env(safe-area-inset-bottom, 0px))) - var(--gd-edge-h));
+
+        min-height: calc(100dvh - var(--hero-dock-height,
+                    calc(4.5rem + env(safe-area-inset-bottom, 0px))) - var(--gd-edge-h));
+
+        /* Breathing room for the scroll cue below the motto. */
+        padding-bottom: var(--space-20);
     }
 }

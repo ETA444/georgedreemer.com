@@ -194,3 +194,133 @@ if (motto) {
         run();
     }
 }
+
+/* ============================================================
+   HERO SHELL MEASUREMENTS + SCROLL CUE
+   Independent of the existing typewriter and desktop takeover.
+   ============================================================ */
+
+(() => {
+    const initHeroViewport = () => {
+        const hero = document.querySelector('.hero');
+
+        if (!hero) return;
+
+        const root = document.documentElement;
+        const observed = new WeakSet();
+
+        let measureFrame = 0;
+        let lastScrolled = null;
+
+        const setPixels = (property, value) => {
+            const next = `${Math.round(value * 100) / 100}px`;
+
+            if (root.style.getPropertyValue(property) !== next) {
+                root.style.setProperty(property, next);
+            }
+        };
+
+        const updateScrollCue = () => {
+            // Preserve state while a shell dialog locks the page.
+            if (document.body.style.position === 'fixed') return;
+
+            const scrolled = window.scrollY > 24;
+
+            if (scrolled === lastScrolled) return;
+
+            hero.toggleAttribute('data-hero-scrolled', scrolled);
+            lastScrolled = scrolled;
+        };
+
+        const measureChrome = () => {
+            measureFrame = 0;
+
+            const header = document.getElementById('gd-header');
+            const dock = document.querySelector('.gd-dock');
+
+            if (header) {
+                setPixels(
+                    '--hero-shell-height',
+                    header.getBoundingClientRect().height
+                );
+            }
+
+            if (dock) {
+                // display:none returns a height of zero on desktop.
+                setPixels(
+                    '--hero-dock-height',
+                    dock.getBoundingClientRect().height
+                );
+            }
+
+            for (const element of [header, dock]) {
+                if (
+                    element &&
+                    resizeObserver &&
+                    !observed.has(element)
+                ) {
+                    resizeObserver.observe(element);
+                    observed.add(element);
+                }
+            }
+
+            if (header && dock) {
+                mountObserver.disconnect();
+            }
+
+            updateScrollCue();
+        };
+
+        function scheduleMeasure() {
+            if (measureFrame) return;
+
+            measureFrame = requestAnimationFrame(measureChrome);
+        }
+
+        const resizeObserver = 'ResizeObserver' in window
+            ? new ResizeObserver(scheduleMeasure)
+            : null;
+
+        /*
+         * Also works if the shell mounts after this module.
+         * Observe direct body children only—not typewriter updates.
+         */
+        const mountObserver = new MutationObserver(scheduleMeasure);
+
+        mountObserver.observe(document.body, {
+            childList: true
+        });
+
+        window.addEventListener('resize', scheduleMeasure, {
+            passive: true
+        });
+
+        window.visualViewport?.addEventListener(
+            'resize',
+            scheduleMeasure,
+            { passive: true }
+        );
+
+        window.addEventListener('scroll', updateScrollCue, {
+            passive: true
+        });
+
+        window.addEventListener('load', scheduleMeasure, {
+            once: true
+        });
+
+        window.addEventListener('pageshow', scheduleMeasure);
+
+        measureChrome();
+    };
+
+    if (document.readyState === 'loading') {
+        document.addEventListener(
+            'DOMContentLoaded',
+            initHeroViewport,
+            { once: true }
+        );
+    } else {
+        initHeroViewport();
+    }
+})();
