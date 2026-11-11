@@ -10,13 +10,17 @@ if (hero) {
     const desktop = window.matchMedia('(min-width: 60rem)');
     let frame = 0;
 
-    // Shift the takeover moment in px. Positive = earlier, negative = later.
-    // Later gives a longer fade but nav text may sit over page content.
-    const TAKEOVER_OFFSET = 0;
+    // The takeover starts when the hero's edge reaches the header's bottom edge
+    // (where both torn edges coincide, so the swap is seamless). While scrolling
+    // down quickly it starts a little earlier, to cancel frame + paint latency.
+    const LEAD_MS = 90;      // how far ahead of the scroll we start (ms of travel)
+    const LEAD_MAX = 110;    // never start more than this many px early
+    const HOLD_SLACK = 8;    // hysteresis so the state can't flicker
 
-    // Total reach of the torn edge below the hero (14px mask + 1px outline offset)
-    const edgeReach = () =>
-        (parseFloat(getComputedStyle(hero).getPropertyValue('--gd-edge-h')) || 14) + 1;
+    let lastY = window.scrollY;
+    let lastT = performance.now();
+    let velocity = 0;        // px/ms, positive = scrolling down
+    let heldLead = 0;
 
     const update = () => {
         frame = 0;
@@ -25,15 +29,27 @@ if (hero) {
         // Positions are meaningless then, so keep the current state.
         if (document.body.style.position === 'fixed') return;
 
+        const now = performance.now();
+        const y = window.scrollY;
+        const dt = now - lastT;
+        if (dt > 0) velocity = velocity * 0.5 + ((y - lastY) / dt) * 0.5;
+        lastY = y;
+        lastT = now;
+
         const header = document.getElementById('gd-header');
         let state = 'merged';
 
         if (header && desktop.matches) {
             const headerBottom = header.getBoundingClientRect().bottom;
             const heroBottom = hero.getBoundingClientRect().bottom;
+            const lead = Math.min(LEAD_MAX, Math.max(0, velocity * LEAD_MS));
 
-            if (heroBottom + edgeReach() + TAKEOVER_OFFSET <= headerBottom) {
+            if (root.dataset.heroHeader === 'solid') {
+                // Stay solid until the hero's edge is clearly back below the header.
+                state = heroBottom > headerBottom + heldLead + HOLD_SLACK ? 'merged' : 'solid';
+            } else if (heroBottom <= headerBottom + lead) {
                 state = 'solid';
+                heldLead = lead;
             }
         }
 
