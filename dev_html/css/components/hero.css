@@ -362,35 +362,46 @@ html:has(.hero) .gd-header::after {
 }
 
 /* ============================================================
-   DOCK VIEWPORT
-   Below the shell's desktop breakpoint only.
+   DOCK FIT + OPTICAL CENTRING
+   Replaces the earlier "DOCK VIEWPORT" block.
    ============================================================ */
+
+.hero {
+    /* Must exceed the torn-edge height (--gd-edge-h: 14px) */
+    --hero-dock-overlap: 1.25rem;
+
+    /* Optical lift for the motto (see section 2) */
+    --hero-lift: 0.09em;
+
+    /* Symmetric: the motto centres in the whole black stage */
+    padding-block: calc(var(--space-12) + var(--hero-top));
+
+    /* Safety strip above the hero: a sub-pixel header mismatch
+       can no longer reveal the white page */
+    box-shadow: 0 calc(var(--space-4) * -1) 0 0 var(--hero-bg);
+}
+
+.hero__motto {
+    translate: 0 calc(var(--hero-lift) * -1);
+}
 
 @media (width < 60rem) {
     .hero {
-        /*
-         * Defaults cover the initial paint.
-         * hero.js replaces them with actual shell measurements.
-         */
         --hero-top: var(--hero-shell-height, 4.5625rem);
-
         margin-top: calc(var(--hero-top) * -1);
 
-        /*
-         * The negative margin brings the hero behind the header.
-         * Therefore, do not subtract the header height again.
-         *
-         * The torn edge extends outside the hero box, so reserve
-         * its height before the dock begins.
-         */
-        min-height: calc(100vh - var(--hero-dock-height,
-                    calc(4.5rem + env(safe-area-inset-bottom, 0px))) - var(--gd-edge-h));
+        /* Fill the visible screen, then tuck under the dock.
+           svh avoids resizing when the browser toolbar collapses. */
+        min-height: calc(100vh - var(--hero-dock-height, calc(4.5rem + env(safe-area-inset-bottom, 0px))) + var(--hero-dock-overlap));
+        min-height: calc(100svh - var(--hero-dock-height, calc(4.5rem + env(safe-area-inset-bottom, 0px))) + var(--hero-dock-overlap));
 
-        min-height: calc(100dvh - var(--hero-dock-height,
-                    calc(4.5rem + env(safe-area-inset-bottom, 0px))) - var(--gd-edge-h));
+        /* Centre the motto in the part you can actually see */
+        padding-bottom: calc(var(--space-12) + var(--hero-top) + var(--hero-dock-overlap));
+    }
 
-        /* Breathing room for the scroll cue below the motto. */
-        padding-bottom: var(--space-20);
+    /* Keep the cue clear of the dock */
+    .hero__scroll {
+        bottom: calc(var(--hero-dock-overlap) + var(--space-4));
     }
 }
 
@@ -407,7 +418,7 @@ html:has(.hero) .gd-header::after {
     .hero__scroll {
         position: absolute;
         left: 50%;
-        bottom: var(--space-4);
+        bottom: var(--space-8);
         z-index: 2;
 
         display: inline-flex;
