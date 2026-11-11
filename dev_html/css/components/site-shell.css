@@ -1444,3 +1444,62 @@ html[data-gd-nav="enhanced"] .gd-footer__closing {
     width: 56%;
     height: 56%;
 }
+
+/* ============================================================
+   SHELL ARRIVAL
+   The shell is injected by JavaScript, so without this it pops in
+   after the page has already painted. A short fade makes it arrive
+   instead of appear. Opacity only: nothing is moved or resized.
+   ============================================================ */
+
+@keyframes gd-shell-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.gd-header,
+.gd-dock,
+.gd-reader,
+.gd-footer,
+.gd-related {
+    animation: gd-shell-in 420ms ease-out backwards;
+}
+
+/* Reserve the header's space until the shell mounts, so content
+   does not jump down when it appears. The spacer disappears in the
+   same frame the header is inserted (data-gd-ready), and releases
+   itself after 2.5s if the shell never mounts. */
+html:not([data-gd-ready]) body::before {
+    content: "";
+    display: block;
+    height: 4.5625rem;
+    animation: gd-spacer-release 0s linear 2.5s forwards;
+}
+
+@media (min-width: 60rem) {
+    html:not([data-gd-ready]) body::before {
+        height: 4.625rem;
+    }
+}
+
+@keyframes gd-spacer-release {
+    to {
+        height: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .gd-header,
+    .gd-dock,
+    .gd-reader,
+    .gd-footer,
+    .gd-related {
+        animation: none;
+    }
+}
