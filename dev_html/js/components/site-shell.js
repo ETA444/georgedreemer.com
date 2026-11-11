@@ -236,7 +236,7 @@
 
             <div class="gd-footer__closing">
                 <p class="gd-declaration" lang="he" dir="rtl">
-                    <span class="gd-sr-only">אין עוד מלבדו</span>
+                    <span class="gd-sr-only">אֵין עוֹד מִלְבַדּוֹ</span>
 
                     <svg
                         class="gd-declaration__curve"
@@ -256,7 +256,7 @@
 
                         <text
                             fill="currentColor"
-                            font-size="32"
+                            font-size="33.3"
                             text-anchor="middle"
                             direction="rtl"
                             unicode-bidi="embed"
@@ -264,7 +264,7 @@
                             <textPath
                                 href="#gd-declaration-arc"
                                 startOffset="50%"
-                            >אין עוד מלבדו</textPath>
+                            >אֵין עוֹד מִלְבַדּוֹ</textPath>
                         </text>
                     </svg>
                 </p>
