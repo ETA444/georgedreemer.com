@@ -275,10 +275,21 @@ body {
     initial-value: 0%;
 }
 
-/* Merged (default on hero pages, before and without JS) */
+/* Merged on every viewport. The solid fill grows across the gradient on desktop takeover. */
 html:has(.hero) .gd-header {
     --tear: 0%;
-    background: var(--gd-bg, #000) !important;
+
+    background:
+        linear-gradient(
+            var(--gd-bg, #000),
+            var(--gd-bg, #000)
+        ) left top / var(--tear) 100% no-repeat,
+
+        linear-gradient(
+            to bottom,
+            var(--gd-bg, #000) 0%,
+            transparent 100%
+        ) !important;
 }
 
 /* The header's paper edge is revealed by the same value as the fill */
@@ -302,14 +313,6 @@ html:has(.hero) .gd-header::after {
 
     /* Merged: black fading to 0% at the bottom, with a fill layer
        (growing with --tear) on top that performs the takeover */
-    html:has(.hero) .gd-header {
-        background:
-            linear-gradient(var(--gd-bg, #000), var(--gd-bg, #000)) left top / var(--tear) 100% no-repeat,
-            linear-gradient(to bottom,
-                var(--gd-bg, #000) 0%,
-                color-mix(in srgb, var(--gd-bg, #000) 0%, transparent) 100%) !important;
-    }
-
     html:has(.hero)[data-hero-header="solid"] .gd-header {
         --tear: 100%;
     }
