@@ -1503,3 +1503,44 @@ html:not([data-gd-ready]) body::before {
         animation: none;
     }
 }
+
+/* ============================================================
+   CLOSING DECLARATION + CREST
+   An arched declaration, then a small editorial full stop.
+   ============================================================ */
+
+.gd-footer__closing .gd-declaration {
+    margin: 0;
+    color: var(--gd-text);
+}
+
+/*
+ * Override the shell's general 20px SVG sizing.
+ * The SVG text inherits the declaration's Hebrew font.
+ */
+.gd-shell .gd-declaration__curve {
+    display: block;
+    width: clamp(16rem, 70vw, 21rem);
+    max-width: 100%;
+    height: auto;
+    margin-inline: auto;
+    overflow: visible;
+
+    font-family: var(--gd-hebrew);
+    font-weight: 400;
+    letter-spacing: normal;
+}
+
+.gd-footer__seal {
+    width: var(--gd-s10);
+    height: var(--gd-s10);
+    margin: var(--gd-s2) auto var(--gd-s5);
+}
+
+.gd-footer__seal img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0.85;
+}

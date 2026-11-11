@@ -236,11 +236,52 @@
 
             <div class="gd-footer__closing">
                 <p class="gd-declaration" lang="he" dir="rtl">
-                אֵין עוֹד מִלְּבַדּוֹ
+                    <span class="gd-sr-only">אין עוד מלבדו</span>
+
+                    <svg
+                        class="gd-declaration__curve"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 360 110"
+                        width="360"
+                        height="110"
+                        aria-hidden="true"
+                        focusable="false"
+                    >
+                        <defs>
+                            <path
+                                id="gd-declaration-arc"
+                                d="M 18 82 Q 180 12 342 82"
+                            />
+                        </defs>
+
+                        <text
+                            fill="currentColor"
+                            font-size="32"
+                            text-anchor="middle"
+                            direction="rtl"
+                            unicode-bidi="embed"
+                        >
+                            <textPath
+                                href="#gd-declaration-arc"
+                                startOffset="50%"
+                            >אין עוד מלבדו</textPath>
+                        </text>
+                    </svg>
                 </p>
-                <div class="gd-footer__rule" aria-hidden="true"></div>
+
+                <div class="gd-footer__seal" aria-hidden="true">
+                    <img
+                        src="/public_img/general/logos/dreemcorp-crest-placeholder.svg"
+                        alt=""
+                        width="42"
+                        height="42"
+                        loading="lazy"
+                        decoding="async"
+                    />
+                </div>
+
                 <p class="gd-copyright">
-                © <span data-gd-year></span> George Dreemer
+                    © <span data-gd-year></span> George Dreemer
                 </p>
             </div>
 
