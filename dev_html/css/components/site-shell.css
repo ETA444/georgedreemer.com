@@ -30,7 +30,7 @@
     --gd-base: clamp(1rem, .97rem + .15vw, 1.0625rem);
     --gd-lg: clamp(1.125rem, 1.05rem + .3vw, 1.375rem);
     --gd-title: clamp(1.5rem, 1.3rem + .8vw, 2rem);
-    --gd-sacred: clamp(2rem, 1.65rem + 1.4vw, 3rem);
+    --gd-sacred: clamp(1.5rem, 1.24125rem + 1.15vw, 2.1rem);
 
     --gd-s1: .25rem;
     --gd-s2: .5rem;
