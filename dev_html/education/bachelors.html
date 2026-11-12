@@ -287,6 +287,8 @@
 
     <main class="main-content" role="main" data-page="bachelors">
 
+        <h1 class="screenreader-only">George's BA in Marketing & Business at Hampshire College</h1>
+
         <section id="intro" data-nav="Intro" aria-label="Intro" class="fade-in">
             <div class="context-block">
                 <p>
@@ -302,6 +304,7 @@
         </section>
 
         <section aria-label="Snapshot" class="fade-in">
+            <h2 class="screenreader-only">Degree Snapshot</h2>
             <div class="snapshot-card" data-domain="product">
 
                 <div class="snapshot-card__tab tip-host">
@@ -341,28 +344,28 @@
                     </div>
                 </div>
 
-                <div class="snapshot-card__meta">
+                <dl class="snapshot-card__meta">
 
                     <!-- Prominent fields first -->
                     <div class="snapshot-item snapshot-item--prominent">
-                        <p class="snapshot-item__key">Degree</p>
-                        <p class="snapshot-item__value">Marketing &amp; Business</p>
+                        <dt class="snapshot-item__key">Degree</dt>
+                        <dd class="snapshot-item__value">Marketing &amp; Business</dd>
                     </div>
 
                     <div class="snapshot-item snapshot-item--prominent">
-                        <p class="snapshot-item__key">Type</p>
-                        <p class="snapshot-item__value">Bachelor of Arts (BA)</p>
+                        <dt class="snapshot-item__key">Type</dt>
+                        <dd class="snapshot-item__value">Bachelor of Arts (BA)</dd>
                     </div>
 
                     <div class="snapshot-item snapshot-item--prominent snapshot-item--result tip-host">
-                        <p class="snapshot-item__key">Result</p>
-                        <p class="grade-badge">
+                        <dt class="snapshot-item__key">Result</dt>
+                        <dd class="grade-badge">
                             3.81 / 4.0
                             <button type="button" class="info-tip" aria-label="About this estimated GPA"
                                 aria-expanded="false" aria-controls="tip-grade">
                                 <i class="bi bi-info-circle" aria-hidden="true"></i>
                             </button>
-                        </p>
+                        </dd>
 
                         <div class="info-tip__panel" id="tip-grade">
                             <p class="info-tip__title">Estimated GPA</p>
@@ -387,13 +390,13 @@
                     <!-- Standard fields -->
 
                     <div class="snapshot-item">
-                        <p class="snapshot-item__key">Location</p>
-                        <p class="snapshot-item__value">Amherst, Massachusetts, USA</p>
+                        <dt class="snapshot-item__key">Location</dt>
+                        <dd class="snapshot-item__value">Amherst, Massachusetts, USA</dd>
                     </div>
 
                     <div class="snapshot-item">
-                        <p class="snapshot-item__key">Links</p>
-                        <p class="snapshot-item__value">
+                        <dt class="snapshot-item__key">Links</dt>
+                        <dd class="snapshot-item__value">
                             <a href="https://www.hampshire.edu/academics/areas-of-study/entrepreneurship"
                                 target="_blank" rel="noopener noreferrer">
                                 <i class="bi bi-mortarboard" aria-hidden="true"></i> Official study-area page
@@ -407,63 +410,63 @@
                                 target="_blank" rel="noopener noreferrer">
                                 <i class="bi bi-building" aria-hidden="true"></i> Five College Consortium
                             </a>
-                        </p>
+                        </dd>
                     </div>
 
-                </div>
+                </dl>
 
                 <div class="snapshot-card__divider"></div>
 
-                <p class="snapshot-card__highlights-label">Topics Covered</p>
-                <div class="snapshot-card__chips">
+                <h3 class="snapshot-card__highlights-label">Topics Covered</h3>
+                <ul class="snapshot-card__chips">
 
-                    <span class="achievement-chip" data-domain="data">
+                    <li class="achievement-chip" data-domain="data">
                         <span class="achievement-chip__dot"></span>Marketing Research
-                    </span>
+                    </li>
 
-                    <span class="achievement-chip" data-domain="data">
+                    <li class="achievement-chip" data-domain="data">
                         <span class="achievement-chip__dot"></span>Text Analytics
-                    </span>
+                    </li>
 
-                    <span class="achievement-chip" data-domain="product">
+                    <li class="achievement-chip" data-domain="product">
                         <span class="achievement-chip__dot"></span>Entrepreneurship
-                    </span>
+                    </li>
 
-                    <span class="achievement-chip" data-domain="product">
+                    <li class="achievement-chip" data-domain="product">
                         <span class="achievement-chip__dot"></span>Business Fundamentals
-                    </span>
+                    </li>
 
-                    <span class="achievement-chip" data-domain="product">
+                    <li class="achievement-chip" data-domain="product">
                         <span class="achievement-chip__dot"></span>Visual Communication
-                    </span>
+                    </li>
 
-                    <span class="achievement-chip" data-domain="growth">
+                    <li class="achievement-chip" data-domain="growth">
                         <span class="achievement-chip__dot"></span>Marketing Strategy
-                    </span>
+                    </li>
 
-                    <span class="achievement-chip" data-domain="growth">
+                    <li class="achievement-chip" data-domain="growth">
                         <span class="achievement-chip__dot"></span>Consumer Behaviour
-                    </span>
+                    </li>
 
-                    <span class="achievement-chip" data-domain="growth">
+                    <li class="achievement-chip" data-domain="growth">
                         <span class="achievement-chip__dot"></span>Negotiation
-                    </span>
+                    </li>
 
-                </div>
+                </ul>
             </div>
         </section>
 
         <section id="tools" data-nav="Tools" aria-label="Tools" class="fade-in">
             <div class="section-label">
-                <span class="section-label__text">Tools</span>
+                <h2 class="section-label__text">Tools</h2>
                 <span class="section-label__line" aria-hidden="true"></span>
             </div>
 
             <div class="stack-grid">
 
-                <!-- ── Languages ─────────────────────────────────────── -->
+                <!-- ── Code ─────────────────────────────────────── -->
                 <div class="stack-group">
-                    <p class="stack-group__label">Languages</p>
+                    <h3 class="stack-group__label">Code</h3>
                     <div class="stack-group__items">
 
                         <span class="stack-badge">
@@ -483,7 +486,7 @@
 
                 <!-- ── Dev Tools & IDEs ──────────────────────────────── -->
                 <div class="stack-group">
-                    <p class="stack-group__label">Dev Tools &amp; IDEs</p>
+                    <h3 class="stack-group__label">Dev Tools &amp; IDEs</h3>
                     <div class="stack-group__items">
 
                         <span class="stack-badge">
@@ -497,7 +500,7 @@
 
                 <!-- ── Platforms & Infra ─────────────────────────────── -->
                 <div class="stack-group">
-                    <p class="stack-group__label">Platforms &amp; Infra</p>
+                    <h3 class="stack-group__label">Platforms &amp; Infra</h3>
                     <div class="stack-group__items">
 
                         <span class="stack-badge">
@@ -554,7 +557,7 @@
 
                 <!-- ── Web & Commerce ────────────────────────────────── -->
                 <div class="stack-group">
-                    <p class="stack-group__label">Web &amp; Commerce</p>
+                    <h3 class="stack-group__label">Web &amp; Commerce</h3>
                     <div class="stack-group__items">
 
                         <span class="stack-badge">
@@ -574,7 +577,7 @@
 
                 <!-- ── Design & Creative ─────────────────────────────── -->
                 <div class="stack-group">
-                    <p class="stack-group__label">Design &amp; Creative</p>
+                    <h3 class="stack-group__label">Design &amp; Creative</h3>
                     <div class="stack-group__items">
 
                         <span class="stack-badge stack-badge--text">
@@ -627,7 +630,7 @@
         <section id="abilities" data-nav="Abilities" aria-label="Abilities" class="fade-in">
 
             <div class="section-label">
-                <span class="section-label__text">Abilities</span>
+                <h2 class="section-label__text">Abilities</h2>
                 <span class="section-label__line" aria-hidden="true"></span>
             </div>
 
