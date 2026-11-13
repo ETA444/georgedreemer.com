@@ -173,113 +173,100 @@
         ELEMENT 2 — SNAPSHOT CARD
     ============================================================ -->
     <section aria-label="Intro" class="fade-in">
+
       <h2 class="screenreader-only">Experience Snapshot</h2>
+
       <div class="snapshot-card" data-domain="engineering">
+
         <div class="snapshot-card__tab">
           <span class="snapshot-card__tab-logo" data-gd-identity-logo="datasafari" aria-hidden="true"></span>
-
           <span class="snapshot-card__tab-text">
             <span class="snapshot-card__tab-name">Data Safari</span>
           </span>
         </div>
 
-        <div class="snapshot-card__meta">
-          <!-- Prominent fields first -->
+        <dl class="snapshot-card__meta">
           <div class="snapshot-item snapshot-item--prominent">
-            <p class="snapshot-item__key">Role</p>
-            <p class="snapshot-item__value">Creator &amp; Maintainer</p>
+            <dt class="snapshot-item__key">Role</dt>
+            <dd class="snapshot-item__value">Creator &amp; Maintainer</dd>
           </div>
           <div class="snapshot-item snapshot-item--prominent">
-            <p class="snapshot-item__key">Type</p>
-            <p class="snapshot-item__value">Data Science Python Library</p>
+            <dt class="snapshot-item__key">Type</dt>
+            <dd class="snapshot-item__value">Data Science Python Library</dd>
           </div>
           <div class="snapshot-item">
-            <p class="snapshot-item__key">Links</p>
-            <p class="snapshot-item__value">
+            <dt class="snapshot-item__key">Links</dt>
+            <dd class="snapshot-item__value">
               <a href="https://datasafari.dev" target="_blank" rel="noopener noreferrer">
                 <i class="bi bi-globe"></i> Website
               </a>
-            </p>
-            <p style="padding-bottom: 6px"></p>
-            <p class="snapshot-item__value">
+              <br>
               <a href="https://datasafari.dev/docs" target="_blank" rel="noopener noreferrer">
                 <i class="bi bi-book"></i> Docs
               </a>
-            </p>
-            <p style="padding-bottom: 6px"></p>
-            <p class="snapshot-item__value">
+              <br>
               <a href="https://github.com/ETA444/datasafari" target="_blank" rel="noopener noreferrer">
                 <i class="bi bi-github"></i> GitHub
               </a>
-            </p>
-            <p style="padding-bottom: 6px"></p>
-            <p class="snapshot-item__value">
+              <br>
               <a href="https://pypi.org/project/datasafari/" target="_blank" rel="noopener noreferrer">
                 <i class="bi bi-box-seam"></i> PyPI
               </a>
-            </p>
+            </dd>
           </div>
-        </div>
+        </dl>
 
         <div class="snapshot-card__divider"></div>
 
-        <p class="snapshot-card__highlights-label">Highlights</p>
-        <div class="snapshot-card__chips">
+        <h3 class="snapshot-card__highlights-label">Highlights</h3>
 
-          <!-- Architecture — the what -->
-          <span class="achievement-chip" data-domain="engineering">
+        <ul class="snapshot-card__chips">
+          <li class="achievement-chip" data-domain="engineering">
             <span class="achievement-chip__dot"></span>Architected 4-subpackage API from scratch: Explorer · Transformer · Evaluator · Predictor
-          </span>
-
-          <!-- Data science depth — the substance -->
-          <span class="achievement-chip" data-domain="data">
+          </li>
+          <li class="achievement-chip" data-domain="data">
             <span class="achievement-chip__dot"></span>Unified 10 scientific libraries — NumPy, pandas, scikit-learn, scipy, statsmodels &amp; more — into a single one-liner workflow
-          </span>
-          <span class="achievement-chip" data-domain="data">
+          </li>
+          <li class="achievement-chip" data-domain="data">
             <span class="achievement-chip__dot"></span>Implemented automatic statistical test routing in predict_hypothesis() — detects variable types, checks assumptions, selects and runs the correct test
-          </span>
-          <span class="achievement-chip" data-domain="data">
+          </li>
+          <li class="achievement-chip" data-domain="data">
             <span class="achievement-chip__dot"></span>Built composite-score ML model evaluation engine with automated hyperparameter tuning in predict_ml()
-          </span>
-          <span class="achievement-chip" data-domain="data">
+          </li>
+          <li class="achievement-chip" data-domain="data">
             <span class="achievement-chip__dot"></span>Implemented statistical assumption checking across normality, variance, dtype, and contingency in Evaluator
-          </span>
-          <span class="achievement-chip" data-domain="data">
+          </li>
+          <li class="achievement-chip" data-domain="data">
             <span class="achievement-chip__dot"></span>Designed multi-method outlier detection covering Z-score, IQR &amp; Mahalanobis distance in Explorer
-          </span>
-
-          <!-- Engineering craft — the how -->
-          <span class="achievement-chip" data-domain="engineering">
+          </li>
+          <li class="achievement-chip" data-domain="engineering">
             <span class="achievement-chip__dot"></span>Engineered 250+ pytest tests across 11 test files covering all 4 subpackages
-          </span>
-          <span class="achievement-chip" data-domain="engineering">
+          </li>
+          <li class="achievement-chip" data-domain="engineering">
             <span class="achievement-chip__dot"></span>Built full GitHub Actions CI/CD pipeline: lint · test · security scan · build · docs deploy · publish
-          </span>
-          <span class="achievement-chip" data-domain="engineering">
+          </li>
+          <li class="achievement-chip" data-domain="engineering">
             <span class="achievement-chip__dot"></span>Configured CI matrix to run across Python 3.9, 3.10, 3.11 &amp; 3.12 in parallel
-          </span>
-          <span class="achievement-chip" data-domain="engineering">
+          </li>
+          <li class="achievement-chip" data-domain="engineering">
             <span class="achievement-chip__dot"></span>Secured codebase with Bandit static scanning and SafetyCLI dependency auditing
-          </span>
-          <span class="achievement-chip" data-domain="engineering">
+          </li>
+          <li class="achievement-chip" data-domain="engineering">
             <span class="achievement-chip__dot"></span>Tracked and closed 136 GitHub issues across the full development lifecycle
-          </span>
-
-          <!-- Product delivery — the finish -->
-          <span class="achievement-chip" data-domain="engineering">
+          </li>
+          <li class="achievement-chip" data-domain="engineering">
             <span class="achievement-chip__dot"></span>Packaged and published to PyPI via an automated Poetry + Twine pipeline
-          </span>
-          <span class="achievement-chip" data-domain="product">
+          </li>
+          <li class="achievement-chip" data-domain="product">
             <span class="achievement-chip__dot"></span>Automated Sphinx docs build and live-server deployment via rsync over SSH on every push
-          </span>
-          <span class="achievement-chip" data-domain="product">
+          </li>
+          <li class="achievement-chip" data-domain="product">
             <span class="achievement-chip__dot"></span>Authored full Sphinx documentation site with custom Furo theme at datasafari.dev/docs
-          </span>
-          <span class="achievement-chip" data-domain="product">
+          </li>
+          <li class="achievement-chip" data-domain="product">
             <span class="achievement-chip__dot"></span>Designed and launched dedicated product website at datasafari.dev
-          </span>
-
-        </div>
+          </li>
+        </ul>
 
       </div>
     </section>
