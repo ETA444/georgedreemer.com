@@ -235,7 +235,7 @@
             </div>
 
             <div class="gd-footer__closing">
-                <p class="gd-declaration" lang="he" dir="rtl">
+                <!-- p class="gd-declaration" lang="he" dir="rtl">
                     <span class="gd-sr-only">אֵין עוֹד מִלְבַדּוֹ</span>
 
                     <svg
@@ -267,7 +267,7 @@
                             >אֵין עוֹד מִלְבַדּוֹ</textPath>
                         </text>
                     </svg>
-                </p>
+                </p-->
 
                 <div class="gd-footer__seal" aria-hidden="true">
                     <img
