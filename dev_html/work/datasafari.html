@@ -575,6 +575,10 @@
             Ability description:
           </p>
           <p class="ability-card__desc">Designed the library from scratch as a four-subpackage system: Explorers, Transformers, Evaluators, and Predictors. The structure reflects the natural data science workflow. Built a consistent public API around a one-liner philosophy, making complex operations available through a single function with sensible defaults and room for deep customisation.</p>
+
+          <p class="screenreader-only">
+              Skills developed through this ability:
+          </p>
           <ul class="ability-card__tags">
             <li class="ability-tag">Package Architecture</li>
             <li class="ability-tag">API Design</li>
@@ -591,6 +595,10 @@
             Ability description:
           </p>
           <p class="ability-card__desc">Managed the full open-source release lifecycle, from project scaffolding with Poetry and Setuptools to versioned PyPI distribution. Configured <code>pyproject.toml</code>, package metadata, and dependencies to produce reproducible builds that users can install with a single pip command.</p>
+
+          <p class="screenreader-only">
+              Skills developed through this ability:
+          </p>
           <ul class="ability-card__tags">
             <li class="ability-tag">Release Management</li>
             <li class="ability-tag">Dependency Management</li>
@@ -607,6 +615,10 @@
             Ability description:
           </p>
           <p class="ability-card__desc">Built a test suite of more than 250 tests covering edge cases, input validation, and statistical output correctness across all subpackages. Configured tox to run the suite across multiple Python environments, helping datasafari work for as many users as possible.</p>
+
+          <p class="screenreader-only">
+              Skills developed through this ability:
+          </p>
           <ul class="ability-card__tags">
             <li class="ability-tag">Test Engineering</li>
             <li class="ability-tag">Quality Assurance</li>
@@ -623,6 +635,10 @@
             Ability description:
           </p>
           <p class="ability-card__desc">Designed and built a 12-step GitHub Actions pipeline that runs automatically on every push. It performs lint checks, runs the full tox test matrix, and publishes to PyPI when a release is tagged. Closed 136 issues over the life of the project, validating every fix through the pipeline before merge.</p>
+
+          <p class="screenreader-only">
+              Skills developed through this ability:
+          </p>
           <ul class="ability-card__tags">
             <li class="ability-tag">Continuous Integration</li>
             <li class="ability-tag">Automated Deployment</li>
@@ -639,6 +655,10 @@
             Ability description:
           </p>
           <p class="ability-card__desc">Built the complete datasafari documentation system, including Sphinx source authoring, an automated build pipeline, and a custom public site at datasafari.dev. Wrote every page of the documentation: installation guides, function references, usage examples, and conceptual explanations for all 11 modules.</p>
+
+          <p class="screenreader-only">
+              Skills developed through this ability:
+          </p>
           <ul class="ability-card__tags">
             <li class="ability-tag">Documentation Systems</li>
             <li class="ability-tag">Technical Writing</li>
@@ -655,6 +675,10 @@
             Ability description:
           </p>
           <p class="ability-card__desc">Implemented rigorous input validation and error handling across all 11 public functions. Each accepts DataFrames, column names, and optional parameter combinations that can fail silently in naive code. I built runtime branching logic to detect data types, sample sizes, and edge cases, then route execution to the correct algorithm path. Every error message is written for the caller, not the developer. In an API, the message <em>is</em> the UI &amp; UX together.</p>
+
+          <p class="screenreader-only">
+              Skills developed through this ability:
+          </p>
           <ul class="ability-card__tags">
             <li class="ability-tag">Defensive Programming</li>
             <li class="ability-tag">Runtime Type Handling</li>
@@ -671,6 +695,10 @@
             Ability description:
           </p>
           <p class="ability-card__desc">Designed and implemented the full Explorers subpackage. <code>explore_df()</code> profiles datasets, <code>explore_num()</code> performs numerical analysis including outlier detection via Z-score, IQR, and Mahalanobis distance, and <code>explore_cat()</code> profiles categorical data, including Shannon entropy to quantify diversity.</p>
+
+          <p class="screenreader-only">
+              Skills developed through this ability:
+          </p>
           <ul class="ability-card__tags">
             <li class="ability-tag">Exploratory Analysis</li>
             <li class="ability-tag">Outlier Detection</li>
@@ -687,6 +715,10 @@
             Ability description:
           </p>
           <p class="ability-card__desc">Built the Evaluators subpackage to automate the assumption checks that data scientists typically perform before analysis. <code>evaluate_normality()</code> selects an appropriate test, such as Shapiro-Wilk or Anderson-Darling, based on the sample; <code>evaluate_variance()</code> dynamically applies Levene's, Bartlett's, or Fligner's test; and <code>evaluate_contingency_table()</code> checks whether Chi-square conditions are met.</p>
+
+          <p class="screenreader-only">
+              Skills developed through this ability:
+          </p>
           <ul class="ability-card__tags">
             <li class="ability-tag">Assumption Testing</li>
             <li class="ability-tag">Statistical Inference</li>
@@ -703,6 +735,10 @@
             Ability description:
           </p>
           <p class="ability-card__desc"><code>predict_hypothesis()</code> takes a DataFrame, a grouping variable, and a target variable — and autonomously selects and executes the correct statistical test. The function detects variable types, verifies normality and variance homogeneity, chooses between Chi-square, Fisher's exact, t-test, ANOVA, Mann-Whitney, Kruskal-Wallis, and others, then outputs test statistics, p-values, and a plain-language interpretation.</p>
+
+          <p class="screenreader-only">
+              Skills developed through this ability:
+          </p>
           <ul class="ability-card__tags">
             <li class="ability-tag">Hypothesis Testing</li>
             <li class="ability-tag">Automated Inference</li>
@@ -719,6 +755,10 @@
             Ability description:
           </p>
           <p class="ability-card__desc"><code>predict_ml()</code> orchestrates the complete machine learning workflow in one call — automatic preprocessing (scaling, encoding, vectorisation), multi-model evaluation using a user-configurable composite score weighted across multiple metrics, and automated hyperparameter tuning via grid search, random search, or Bayesian optimisation. Returns ranked, tuned models with full performance breakdowns.</p>
+
+          <p class="screenreader-only">
+              Skills developed through this ability:
+          </p>
           <ul class="ability-card__tags">
             <li class="ability-tag">ML Pipeline Design</li>
             <li class="ability-tag">Hyperparameter Optimisation</li>
@@ -735,6 +775,10 @@
             Ability description:
           </p>
           <p class="ability-card__desc">Implemented the Transformers subpackage to handle the full data preparation stage. <code>transform_num()</code> covers standardisation, min-max scaling, log and power transforms, winsorisation, and interaction term creation. <code>transform_cat()</code> handles label encoding, one-hot encoding, target encoding, and ML-based category cleaning — all chainable and parameterised for reproducible pipelines.</p>
+
+          <p class="screenreader-only">
+              Skills developed through this ability:
+          </p>
           <ul class="ability-card__tags">
             <li class="ability-tag">Feature Engineering</li>
             <li class="ability-tag">Data Cleaning</li>
@@ -751,6 +795,10 @@
             Ability description:
           </p>
           <p class="ability-card__desc">Built datasafari around a deliberate developer experience philosophy — consistent naming across all 11 functions, predictable argument patterns, and sensible defaults that make the library immediately usable without reading the docs. Complex workflows like full ML pipelines and hypothesis testing are exposed as single function calls, hiding implementation complexity behind a clean interface.</p>
+
+          <p class="screenreader-only">
+              Skills developed through this ability:
+          </p>
           <ul class="ability-card__tags">
             <li class="ability-tag">Interface Design</li>
             <li class="ability-tag">Developer Experience</li>
@@ -767,6 +815,10 @@
             Ability description:
           </p>
           <p class="ability-card__desc">Designed and hand-coded datasafari.dev — the public documentation and landing site for the library. Built with custom HTML, CSS, and JavaScript, the site presents the library's philosophy, quick-start guides, and full API reference in a clean, readable format. Integrated with Sphinx and Read the Docs for automated doc generation, while the landing experience was crafted entirely from scratch.</p>
+
+          <p class="screenreader-only">
+              Skills developed through this ability:
+          </p>
           <ul class="ability-card__tags">
             <li class="ability-tag">Web Development</li>
             <li class="ability-tag">Information Architecture</li>
@@ -783,6 +835,10 @@
             Ability description:
           </p>
           <p class="ability-card__desc">Managed datasafari as a solo product owner, from its initial concept and roadmap through versioned releases, issue tracking, and ongoing maintenance. Closed 136 issues while balancing engineering quality, user-facing documentation, and public discoverability. Built systems that kept the project sustainable and reproducible beyond any single release.</p>
+
+          <p class="screenreader-only">
+              Skills developed through this ability:
+          </p>
           <ul class="ability-card__tags">
             <li class="ability-tag">Product Ownership</li>
             <li class="ability-tag">Roadmap Execution</li>
@@ -799,6 +855,10 @@
             Ability description:
           </p>
           <p class="ability-card__desc">Created the complete visual identity for datasafari, including the logo, banner artwork, icon set, and graphic assets used across GitHub, PyPI, and the documentation site. Designed every visual touchpoint a user encounters when discovering the library, giving an independent open-source project a coherent, professional brand from day one.</p>
+
+          <p class="screenreader-only">
+              Skills developed through this ability:
+          </p>
           <ul class="ability-card__tags">
             <li class="ability-tag">Brand Design</li>
             <li class="ability-tag">Visual Identity</li>
