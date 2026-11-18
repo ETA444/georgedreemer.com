@@ -564,189 +564,249 @@
         </li>
       </ul>
 
-      <div class="ability-grid">
+      <ul class="ability-grid" id="e5-ability-grid" role="list">
 
         <!-- 1 · Python Library Architecture · Engineering -->
-        <div class="ability-card fade-in" data-domain="engineering">
+        <li class="ability-card fade-in" data-domain="engineering">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="layers"></i></div>
           <h3 class="ability-card__title">Python Library Architecture</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
           <p class="ability-card__desc">Designed the library from scratch as a four-subpackage system: Explorers, Transformers, Evaluators, and Predictors. The structure reflects the natural data science workflow. Built a consistent public API around a one-liner philosophy, making complex operations available through a single function with sensible defaults and room for deep customisation.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Package Architecture</span>
             <span class="ability-tag">API Design</span>
             <span class="ability-tag">Open-Source Engineering</span>
           </div>
-        </div>
+        </li>
 
         <!-- 2 · OSS Release Engineering · Engineering -->
-        <div class="ability-card fade-in" data-domain="engineering">
+        <li class="ability-card fade-in" data-domain="engineering">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="package"></i></div>
           <h3 class="ability-card__title">OSS Release Engineering</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
           <p class="ability-card__desc">Managed the full open-source release lifecycle, from project scaffolding with Poetry and Setuptools to versioned PyPI distribution. Configured <code>pyproject.toml</code>, package metadata, and dependencies to produce reproducible builds that users can install with a single pip command.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Release Management</span>
             <span class="ability-tag">Dependency Management</span>
             <span class="ability-tag">Distribution Engineering</span>
           </div>
-        </div>
+        </li>
 
         <!-- 3 · Automated Test Suite Design · Engineering -->
-        <div class="ability-card fade-in" data-domain="engineering">
+        <li class="ability-card fade-in" data-domain="engineering">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="check-square"></i></div>
           <h3 class="ability-card__title">Automated Test Suite Design</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
           <p class="ability-card__desc">Built a test suite of more than 250 tests covering edge cases, input validation, and statistical output correctness across all subpackages. Configured tox to run the suite across multiple Python environments, helping datasafari work for as many users as possible.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Test Engineering</span>
             <span class="ability-tag">Quality Assurance</span>
             <span class="ability-tag">Multi-Environment Testing</span>
           </div>
-        </div>
+        </li>
 
         <!-- 4 · CI/CD Pipeline Construction · Engineering -->
-        <div class="ability-card fade-in" data-domain="engineering">
+        <li class="ability-card fade-in" data-domain="engineering">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="git-merge"></i></div>
           <h3 class="ability-card__title">CI/CD Pipeline Construction</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
           <p class="ability-card__desc">Designed and built a 12-step GitHub Actions pipeline that runs automatically on every push. It performs lint checks, runs the full tox test matrix, and publishes to PyPI when a release is tagged. Closed 136 issues over the life of the project, validating every fix through the pipeline before merge.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Continuous Integration</span>
             <span class="ability-tag">Automated Deployment</span>
             <span class="ability-tag">Pipeline Design</span>
           </div>
-        </div>
+        </li>
 
         <!-- 5 · Technical Documentation Engineering · Engineering -->
-        <div class="ability-card fade-in" data-domain="engineering">
+        <li class="ability-card fade-in" data-domain="engineering">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="file-text"></i></div>
           <h3 class="ability-card__title">Technical Documentation Engineering</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
           <p class="ability-card__desc">Built the complete datasafari documentation system, including Sphinx source authoring, an automated build pipeline, and a custom public site at datasafari.dev. Wrote every page of the documentation: installation guides, function references, usage examples, and conceptual explanations for all 11 modules.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Documentation Systems</span>
             <span class="ability-tag">Technical Writing</span>
             <span class="ability-tag">Developer Experience</span>
           </div>
-        </div>
+        </li>
 
         <!-- 6 · Defensive Python & Input Validation · Engineering -->
-        <div class="ability-card fade-in" data-domain="engineering">
+        <li class="ability-card fade-in" data-domain="engineering">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="shield"></i></div>
           <h3 class="ability-card__title">Defensive Python & Input Validation</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
           <p class="ability-card__desc">Implemented rigorous input validation and error handling across all 11 public functions. Each accepts DataFrames, column names, and optional parameter combinations that can fail silently in naive code. I built runtime branching logic to detect data types, sample sizes, and edge cases, then route execution to the correct algorithm path. Every error message is written for the caller, not the developer. In an API, the message <em>is</em> the UI &amp; UX together.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Defensive Programming</span>
             <span class="ability-tag">Runtime Type Handling</span>
             <span class="ability-tag">Error Design</span>
           </div>
-        </div>
+        </li>
 
         <!-- 7 · Exploratory Data Analysis Systems · Data -->
-        <div class="ability-card fade-in" data-domain="data">
+        <li class="ability-card fade-in" data-domain="data">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="search"></i></div>
           <h3 class="ability-card__title">Exploratory Data Analysis Systems</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
           <p class="ability-card__desc">Designed and implemented the full Explorers subpackage. <code>explore_df()</code> profiles datasets, <code>explore_num()</code> performs numerical analysis including outlier detection via Z-score, IQR, and Mahalanobis distance, and <code>explore_cat()</code> profiles categorical data, including Shannon entropy to quantify diversity.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Exploratory Analysis</span>
             <span class="ability-tag">Outlier Detection</span>
             <span class="ability-tag">Statistical Profiling</span>
           </div>
-        </div>
+        </li>
 
         <!-- 8 · Statistical Assumption Verification · Data -->
-        <div class="ability-card fade-in" data-domain="data">
+        <li class="ability-card fade-in" data-domain="data">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="shield-check"></i></div>
           <h3 class="ability-card__title">Statistical Assumption Verification</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
           <p class="ability-card__desc">Built the Evaluators subpackage to automate the assumption checks that data scientists typically perform before analysis. <code>evaluate_normality()</code> selects an appropriate test, such as Shapiro-Wilk or Anderson-Darling, based on the sample; <code>evaluate_variance()</code> dynamically applies Levene's, Bartlett's, or Fligner's test; and <code>evaluate_contingency_table()</code> checks whether Chi-square conditions are met.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Assumption Testing</span>
             <span class="ability-tag">Statistical Inference</span>
             <span class="ability-tag">Dynamic Test Selection</span>
           </div>
-        </div>
+        </li>
 
         <!-- 9 · Automated Hypothesis Testing · Data -->
-        <div class="ability-card fade-in" data-domain="data">
+        <li class="ability-card fade-in" data-domain="data">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="bar-chart-2"></i></div>
           <h3 class="ability-card__title">Automated Hypothesis Testing</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
           <p class="ability-card__desc"><code>predict_hypothesis()</code> takes a DataFrame, a grouping variable, and a target variable — and autonomously selects and executes the correct statistical test. The function detects variable types, verifies normality and variance homogeneity, chooses between Chi-square, Fisher's exact, t-test, ANOVA, Mann-Whitney, Kruskal-Wallis, and others, then outputs test statistics, p-values, and a plain-language interpretation.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Hypothesis Testing</span>
             <span class="ability-tag">Automated Inference</span>
             <span class="ability-tag">Statistical Interpretation</span>
           </div>
-        </div>
+        </li>
 
         <!-- 10 · End-to-End ML Pipeline Automation · Data -->
-        <div class="ability-card fade-in" data-domain="data">
+        <li class="ability-card fade-in" data-domain="data">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="cpu"></i></div>
           <h3 class="ability-card__title">End-to-End ML Pipeline Automation</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
           <p class="ability-card__desc"><code>predict_ml()</code> orchestrates the complete machine learning workflow in one call — automatic preprocessing (scaling, encoding, vectorisation), multi-model evaluation using a user-configurable composite score weighted across multiple metrics, and automated hyperparameter tuning via grid search, random search, or Bayesian optimisation. Returns ranked, tuned models with full performance breakdowns.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">ML Pipeline Design</span>
             <span class="ability-tag">Hyperparameter Optimisation</span>
             <span class="ability-tag">Model Selection</span>
           </div>
-        </div>
+        </li>
 
         <!-- 11 · Data Transformation Engineering · Data -->
-        <div class="ability-card fade-in" data-domain="data">
+        <li class="ability-card fade-in" data-domain="data">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="shuffle"></i></div>
           <h3 class="ability-card__title">Data Transformation Engineering</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
           <p class="ability-card__desc">Implemented the Transformers subpackage to handle the full data preparation stage. <code>transform_num()</code> covers standardisation, min-max scaling, log and power transforms, winsorisation, and interaction term creation. <code>transform_cat()</code> handles label encoding, one-hot encoding, target encoding, and ML-based category cleaning — all chainable and parameterised for reproducible pipelines.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Feature Engineering</span>
             <span class="ability-tag">Data Cleaning</span>
             <span class="ability-tag">Preprocessing Pipeline Design</span>
           </div>
-        </div>
+        </li>
 
         <!-- 12 · Developer API & UX Design · Product -->
-        <div class="ability-card fade-in" data-domain="product">
+        <li class="ability-card fade-in" data-domain="product">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="pen-tool"></i></div>
           <h3 class="ability-card__title">Developer API &amp; UX Design</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
           <p class="ability-card__desc">Built datasafari around a deliberate developer experience philosophy — consistent naming across all 11 functions, predictable argument patterns, and sensible defaults that make the library immediately usable without reading the docs. Complex workflows like full ML pipelines and hypothesis testing are exposed as single function calls, hiding implementation complexity behind a clean interface.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Interface Design</span>
             <span class="ability-tag">Developer Experience</span>
             <span class="ability-tag">Abstraction Design</span>
           </div>
-        </div>
+        </li>
 
         <!-- 13 · Documentation Site Development · Product -->
-        <div class="ability-card fade-in" data-domain="product">
+        <li class="ability-card fade-in" data-domain="product">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="layout"></i></div>
           <h3 class="ability-card__title">Documentation Site Development</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
           <p class="ability-card__desc">Designed and hand-coded datasafari.dev — the public documentation and landing site for the library. Built with custom HTML, CSS, and JavaScript, the site presents the library's philosophy, quick-start guides, and full API reference in a clean, readable format. Integrated with Sphinx and Read the Docs for automated doc generation, while the landing experience was crafted entirely from scratch.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Web Development</span>
             <span class="ability-tag">Information Architecture</span>
             <span class="ability-tag">Content Strategy</span>
           </div>
-        </div>
+        </li>
 
         <!-- 14 · Open-Source Product Lifecycle Management · Product -->
-        <div class="ability-card fade-in" data-domain="product">
+        <li class="ability-card fade-in" data-domain="product">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="list-checks"></i></div>
           <h3 class="ability-card__title">Open-Source Product Lifecycle Management</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
           <p class="ability-card__desc">Managed datasafari as a solo product owner, from its initial concept and roadmap through versioned releases, issue tracking, and ongoing maintenance. Closed 136 issues while balancing engineering quality, user-facing documentation, and public discoverability. Built systems that kept the project sustainable and reproducible beyond any single release.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Product Ownership</span>
             <span class="ability-tag">Roadmap Execution</span>
             <span class="ability-tag">Solo Founding</span>
           </div>
-        </div>
+        </li>
 
         <!-- 15 · Brand Identity & Visual Systems · Growth -->
-        <div class="ability-card fade-in" data-domain="growth">
+        <li class="ability-card fade-in" data-domain="growth">
           <div class="ability-card__icon" aria-hidden="true"><i data-lucide="feather"></i></div>
           <h3 class="ability-card__title">Brand Identity &amp; Visual Systems</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
           <p class="ability-card__desc">Created the complete visual identity for datasafari, including the logo, banner artwork, icon set, and graphic assets used across GitHub, PyPI, and the documentation site. Designed every visual touchpoint a user encounters when discovering the library, giving an independent open-source project a coherent, professional brand from day one.</p>
           <div class="ability-card__tags">
             <span class="ability-tag">Brand Design</span>
             <span class="ability-tag">Visual Identity</span>
             <span class="ability-tag">Graphic Asset Production</span>
           </div>
-        </div>
+        </li>
 
-      </div>
+      </ul>
     </section>
 
     <!-- ============================================================
