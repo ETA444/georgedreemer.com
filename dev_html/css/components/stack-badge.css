@@ -12,6 +12,7 @@
     text-transform: uppercase;
     color: var(--color-text-faint);
     margin-top: var(--space-3) .75rem;
+    padding-bottom: var(--space-1);
 }
 
 .stack-group__items {

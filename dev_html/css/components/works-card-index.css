@@ -19,11 +19,6 @@
     text-wrap: pretty;
 }
 
-.section-label+.section-lead {
-    margin-top: var(--space-3);
-}
-
-
 /* Grid */
 
 .work-grid {
