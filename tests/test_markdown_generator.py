@@ -13,14 +13,25 @@ spec.loader.exec_module(mod)
 
 
 class RendererTests(unittest.TestCase):
-    def render(self, html):
-        r = mod.Renderer("https://example.com/work/project")
+    def render(self, html, anchors=False):
+        r = mod.Renderer("https://example.com/work/project", anchors)
         return mod.clean(r.render(mod.BeautifulSoup(html, "html.parser"))), r
 
     def test_heading(self):
         s, _ = self.render('<h1 class="screenreader-only">Title</h1><h2>Details</h2>')
         self.assertIn("# Title", s)
         self.assertIn("## Details", s)
+
+    def test_no_raw_html_anchors_by_default(self):
+        s, _ = self.render(
+            '<section id="intro"><h2 id="tools">Tools</h2><p>Text</p></section>'
+        )
+        self.assertNotIn("<a", s)
+        self.assertIn("## Tools", s)
+
+    def test_anchor_opt_in(self):
+        s, _ = self.render('<section id="intro"><p>Text</p></section>', anchors=True)
+        self.assertIn('<a id="intro"></a>', s)
 
     def test_decorative(self):
         s, _ = self.render(
@@ -100,7 +111,7 @@ class RendererTests(unittest.TestCase):
 
     def test_instagram(self):
         s, _ = self.render(
-            '<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/abc/"><p>View post on Instagram junk</p></blockquote>'
+            '<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/abc/"><p>junk</p></blockquote>'
         )
         self.assertIn("[Instagram post]", s)
         self.assertNotIn("junk", s)
@@ -131,7 +142,7 @@ class BuildTests(unittest.TestCase):
         self.src = self.root / "dev_html"
         self.src.mkdir()
         self.out = self.root / "generated"
-        self.html = '<html lang="en"><head><link rel="canonical" href="https://example.com/"><meta name="description" content="A &amp; B"></head><body><main><h1>Test</h1><p>Body</p></main></body></html>'
+        self.html = '<html lang="en"><head><link rel="canonical" href="https://example.com/"><meta name="description" content="A &amp; B"></head><body><main><h1>Test</h1><section id="intro"><p>Body</p></section></main></body></html>'
         (self.src / "index.html").write_text(self.html)
 
     def run_build(self, *args):
@@ -158,6 +169,18 @@ class BuildTests(unittest.TestCase):
         self.assertEqual(stat, (self.out / "index.md").stat().st_mtime_ns)
         self.assertEqual(self.run_build("--check").returncode, 0)
 
+    def test_default_output_has_no_raw_html_and_manifest_keeps_sections(self):
+        self.assertEqual(self.run_build().returncode, 0)
+        self.assertNotIn("<a id=", (self.out / "index.md").read_text())
+        m = json.loads((self.out / "manifest.json").read_text())
+        self.assertEqual(
+            m["pages"][0]["sections"][0]["url"], "https://example.com/#intro"
+        )
+
+    def test_anchor_flag(self):
+        self.assertEqual(self.run_build("--anchors").returncode, 0)
+        self.assertIn('<a id="intro"></a>', (self.out / "index.md").read_text())
+
     def test_dry_run(self):
         self.assertEqual(self.run_build("--dry-run").returncode, 0)
         self.assertFalse(self.out.exists())
@@ -175,8 +198,9 @@ class BuildTests(unittest.TestCase):
         (self.src / "archive").mkdir()
         (self.src / "archive" / "bad.html").write_text("Ignore me")
         self.assertEqual(self.run_build().returncode, 0)
-        manifest = json.loads((self.out / "manifest.json").read_text())
-        self.assertEqual(len(manifest["pages"]), 1)
+        self.assertEqual(
+            len(json.loads((self.out / "manifest.json").read_text())["pages"]), 1
+        )
 
     def test_delete_only_owned(self):
         extra = self.src / "extra.html"
@@ -191,7 +215,7 @@ class BuildTests(unittest.TestCase):
         self.assertTrue((self.out / "manual.md").exists())
 
     def test_overlap(self):
-        result = subprocess.run(
+        r = subprocess.run(
             [
                 sys.executable,
                 str(SCRIPT),
@@ -202,7 +226,7 @@ class BuildTests(unittest.TestCase):
             ],
             capture_output=True,
         )
-        self.assertEqual(result.returncode, 2)
+        self.assertEqual(r.returncode, 2)
 
 
 if __name__ == "__main__":
