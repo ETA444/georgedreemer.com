@@ -1,0 +1,31 @@
+<!-- dev_html/index.html -->
+<link rel="alternate" type="text/markdown" href="https://georgedreemer.com/index.md">
+<link rel="describedby" href="https://georgedreemer.com/llms.txt">
+
+<!-- dev_html/education/bachelors.html -->
+<link rel="alternate" type="text/markdown" href="https://georgedreemer.com/education/bachelors.md">
+<link rel="describedby" href="https://georgedreemer.com/llms.txt">
+
+<!-- dev_html/education/masters.html -->
+<link rel="alternate" type="text/markdown" href="https://georgedreemer.com/education/masters.md">
+<link rel="describedby" href="https://georgedreemer.com/llms.txt">
+
+<!-- dev_html/work/cryptopandemic.html -->
+<link rel="alternate" type="text/markdown" href="https://georgedreemer.com/work/cryptopandemic.md">
+<link rel="describedby" href="https://georgedreemer.com/llms.txt">
+
+<!-- dev_html/work/datasafari.html -->
+<link rel="alternate" type="text/markdown" href="https://georgedreemer.com/work/datasafari.md">
+<link rel="describedby" href="https://georgedreemer.com/llms.txt">
+
+<!-- dev_html/work/dreemcorp.html -->
+<link rel="alternate" type="text/markdown" href="https://georgedreemer.com/work/dreemcorp.md">
+<link rel="describedby" href="https://georgedreemer.com/llms.txt">
+
+<!-- dev_html/work/skipschoolmakemoney.html -->
+<link rel="alternate" type="text/markdown" href="https://georgedreemer.com/work/skipschoolmakemoney.md">
+<link rel="describedby" href="https://georgedreemer.com/llms.txt">
+
+<!-- dev_html/work/thoughtbubble.html -->
+<link rel="alternate" type="text/markdown" href="https://georgedreemer.com/work/thoughtbubble.md">
+<link rel="describedby" href="https://georgedreemer.com/llms.txt">
