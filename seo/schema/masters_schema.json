@@ -9,7 +9,7 @@
       "@id": "https://georgedreemer.com/education/masters#webpage",
       "url": "https://georgedreemer.com/education/masters",
       "name": "MSc Marketing Analytics & Data Science — University of Groningen",
-      "description": "George's MSc in Marketing Analytics &amp; Data Science at the University of Groningen brought research, statistics and machine learning into practical business questions. Explore the work behind it: from preparing data and comparing models to interpreting findings, with public code, reports and a thesis on willingness to share health data.",
+      "description": "George's MSc in Marketing Analytics and Data Science at the University of Groningen brought research, statistics and machine learning into practical business questions. Explore the work behind it: from preparing data and comparing models to interpreting findings, with public code, reports and a thesis on willingness to share health data.",
       "isPartOf": {
         "@id": "https://georgedreemer.com/#website"
       },
