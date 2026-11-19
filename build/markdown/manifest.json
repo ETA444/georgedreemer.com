@@ -1,0 +1,1935 @@
+{
+  "generator": "build-markdown",
+  "version": "1.0.0",
+  "pages": [
+    {
+      "title": "BA Marketing & Business — Hampshire College",
+      "description": "Inside George's BA at Hampshire College: a self-designed education in marketing, business and entrepreneurship, with graduate-level coursework at UMass Isenberg.",
+      "url": "https://georgedreemer.com/education/bachelors",
+      "markdown_url": "https://georgedreemer.com/education/bachelors.md",
+      "language": "en",
+      "source": "dev_html/education/bachelors.html",
+      "source_sha256": "b569af426ccc9702af9d8bbf75a565f10943f18c85cf91414aa4db17271019c1",
+      "output": "education/bachelors.md",
+      "characters": 12985,
+      "words": 1653,
+      "headings": [
+        {
+          "level": 1,
+          "text": "BA Marketing & Business — Hampshire College",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Degree Snapshot",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Topics Covered",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Tools",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Code",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Dev Tools & IDEs",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Platforms & Infra",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Web & Commerce",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Design & Creative",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Abilities",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Market Research & Customer Insight",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Text Mining for Marketing",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Financial & Economic Reasoning",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Venture Design & Execution",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Early-Stage Venture Assessment",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Apparel & Visual Identity Design",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Creative Production & Art Direction",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Commerce Operations & Customer Experience",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Negotiation & Commercial Agreements",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Business Law & Intellectual Property Awareness",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Independent Research & Self-Directed Delivery",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Brand Positioning & Cultural Insight",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Digital Marketing & Campaign Strategy",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Organic Growth & Creator Partnerships",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Email Lifecycle & Customer Retention",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "International Marketing & Cross-Cultural Communication",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Public Speaking & Investor Pitching",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Interpersonal Skills & Event Coordination",
+          "id": null
+        }
+      ],
+      "sections": [
+        {
+          "id": "intro",
+          "label": "Intro: Context",
+          "url": "https://georgedreemer.com/education/bachelors#intro"
+        },
+        {
+          "id": "tools",
+          "label": "Tools",
+          "url": "https://georgedreemer.com/education/bachelors#tools"
+        },
+        {
+          "id": "abilities",
+          "label": "Abilities",
+          "url": "https://georgedreemer.com/education/bachelors#abilities"
+        }
+      ],
+      "media_counts": {},
+      "warnings": [
+        "Course names retained; grades injected by JavaScript are not inferred."
+      ]
+    },
+    {
+      "title": "MSc Marketing Analytics & Data Science — University of Groningen",
+      "description": "Inside George's MSc in Marketing Analytics & Data Science at Groningen: turning research questions into models, insights and decisions with Python, R and SQL.",
+      "url": "https://georgedreemer.com/education/masters",
+      "markdown_url": "https://georgedreemer.com/education/masters.md",
+      "language": "en",
+      "source": "dev_html/education/masters.html",
+      "source_sha256": "f7620ec1fe180db241273df2ea911961d7fb5b891d0b5ea11105ff791f79f6ba",
+      "output": "education/masters.md",
+      "characters": 45368,
+      "words": 5321,
+      "headings": [
+        {
+          "level": 1,
+          "text": "MSc Marketing Analytics & Data Science — University of Groningen",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Degree Snapshot",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Topics Covered",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Tools",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Code",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Python Libraries",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Abilities",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Data Pipeline & Relational Extraction",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Reproducible Analytical Workflows",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Applied Research Design",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Supervised Learning & Churn Prediction",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Segmentation & Latent Structure",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Text, Sentiment & Causal Comparison",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Time-Series & Competitive Trend Analysis",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Behavioural & Choice Modelling",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Market Response Modelling",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Exploratory Customer Analytics",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Evidence-Led Organisational Strategy",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Ethical Business Decision-Making",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Retail & Omnichannel Strategy",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Conversion & Digital Performance Analytics",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Consumer & Brand Opportunity Analysis",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Works",
+          "id": "masters-works-heading"
+        },
+        {
+          "level": 3,
+          "text": "Visual reports",
+          "id": null
+        },
+        {
+          "level": 4,
+          "text": "Text Mining, Sentiment Analysis & Propensity Score Matching",
+          "id": "w-text"
+        },
+        {
+          "level": 4,
+          "text": "Google Analytics & Exploratory Analysis: Wehkamp's AR App",
+          "id": "w-ga"
+        },
+        {
+          "level": 4,
+          "text": "Time-series Analysis: Redstar vs. Competitors",
+          "id": "w-ts"
+        },
+        {
+          "level": 4,
+          "text": "Cluster Analysis: Car-Buying Preferences",
+          "id": "w-cluster"
+        },
+        {
+          "level": 4,
+          "text": "Factor Analysis: Attitudes Towards Sustainable Clothing",
+          "id": "w-factor"
+        },
+        {
+          "level": 4,
+          "text": "Retail Mix Tactics: Kruidvat NL",
+          "id": "w-kruidvat"
+        },
+        {
+          "level": 4,
+          "text": "Omnichannel Strategy: L'Oréal NL",
+          "id": "w-loreal"
+        },
+        {
+          "level": 4,
+          "text": "Exploratory Analysis: Consumer Attitudes Towards Meal Kits",
+          "id": "w-explore"
+        },
+        {
+          "level": 3,
+          "text": "Written reports",
+          "id": null
+        },
+        {
+          "level": 4,
+          "text": "Earnings Call Sentiment & Stock Volatility",
+          "id": "w-premsc"
+        },
+        {
+          "level": 4,
+          "text": "Churn Prediction Modelling",
+          "id": "w-churn"
+        },
+        {
+          "level": 4,
+          "text": "Market Modelling 1/2: Dutch Lemonade Market",
+          "id": "w-mm1"
+        },
+        {
+          "level": 4,
+          "text": "Market Modelling 2/2: Dutch Lemonade Market",
+          "id": "w-mm2"
+        },
+        {
+          "level": 4,
+          "text": "Conversion Rate Optimization Analysis",
+          "id": "w-conv"
+        },
+        {
+          "level": 4,
+          "text": "Ethical Analysis: Food Waste, Salary Transparency & Gig Work",
+          "id": "w-ethics"
+        },
+        {
+          "level": 2,
+          "text": "Thesis",
+          "id": "masters-theses-heading"
+        },
+        {
+          "level": 3,
+          "text": "Willingness to Share Health Data in Italy: Investigation under a Multi-context Paradigm with DCE Data",
+          "id": "msc-thesis-title"
+        },
+        {
+          "level": 4,
+          "text": "Same health data. Different sharing context.",
+          "id": "msc-context-heading"
+        },
+        {
+          "level": 4,
+          "text": "Two groups agreed on what matters, and disagreed on what they prefer.",
+          "id": "msc-findings-heading"
+        },
+        {
+          "level": 4,
+          "text": "One country, two contrasting preference patterns.",
+          "id": "msc-groups-heading"
+        },
+        {
+          "level": 5,
+          "text": "New data user · importance rank 1 of 5",
+          "id": null
+        },
+        {
+          "level": 5,
+          "text": "Reason for new data use · importance rank 2 of 5",
+          "id": null
+        },
+        {
+          "level": 5,
+          "text": "Information & consent · importance rank 3 of 5",
+          "id": null
+        },
+        {
+          "level": 5,
+          "text": "External review · importance rank 4 of 5",
+          "id": null
+        },
+        {
+          "level": 5,
+          "text": "Original data collector · importance rank 5 of 5",
+          "id": null
+        },
+        {
+          "level": 4,
+          "text": "Plan for different audiences, not one average citizen.",
+          "id": "msc-implications-heading"
+        },
+        {
+          "level": 4,
+          "text": "Research decisions and supporting evidence",
+          "id": "msc-evidence-heading"
+        },
+        {
+          "level": 2,
+          "text": "MADS Madlad",
+          "id": "mm-heading"
+        },
+        {
+          "level": 3,
+          "text": "Stuvia",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Knoowy",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Browse the free editions",
+          "id": "mm-library-heading"
+        },
+        {
+          "level": 4,
+          "text": "Data Science Methods",
+          "id": "mm-doc-dsmm"
+        },
+        {
+          "level": 4,
+          "text": "Market Models",
+          "id": "mm-doc-mm"
+        },
+        {
+          "level": 4,
+          "text": "Digital Marketing Intelligence",
+          "id": "mm-doc-dmi"
+        },
+        {
+          "level": 4,
+          "text": "Retail & Omnichannel Marketing",
+          "id": "mm-doc-rom"
+        },
+        {
+          "level": 4,
+          "text": "Data Engineering",
+          "id": "mm-doc-dem"
+        },
+        {
+          "level": 4,
+          "text": "Statistical Learning in Marketing",
+          "id": "mm-doc-slm"
+        },
+        {
+          "level": 4,
+          "text": "Companies, Brands & Consumers",
+          "id": "mm-doc-cbc"
+        }
+      ],
+      "sections": [
+        {
+          "id": "intro",
+          "label": "Intro: Context",
+          "url": "https://georgedreemer.com/education/masters#intro"
+        },
+        {
+          "id": "tools",
+          "label": "Tools",
+          "url": "https://georgedreemer.com/education/masters#tools"
+        },
+        {
+          "id": "abilities",
+          "label": "Abilities",
+          "url": "https://georgedreemer.com/education/masters#abilities"
+        },
+        {
+          "id": "works",
+          "label": "Works",
+          "url": "https://georgedreemer.com/education/masters#works"
+        },
+        {
+          "id": "thesis",
+          "label": "Thesis",
+          "url": "https://georgedreemer.com/education/masters#thesis"
+        },
+        {
+          "id": "mads-madlad",
+          "label": "MADS Madlad",
+          "url": "https://georgedreemer.com/education/masters#mads-madlad"
+        }
+      ],
+      "media_counts": {
+        "iframe": 22,
+        "image": 10
+      },
+      "warnings": [
+        "Embedded media has no static src: iframe",
+        "Course names retained; grades injected by JavaScript are not inferred.",
+        "Interactive graphics retained as surrounding static text/media only; no visual/JS inference."
+      ]
+    },
+    {
+      "title": "George Dreemer — Data Scientist, Developer and Entrepreneur",
+      "description": "George is a data scientist, developer and serial entrepreneur with work experience in all things data,  programming, and web3. Explore his skills, projects, certifications and awards.",
+      "url": "https://georgedreemer.com/",
+      "markdown_url": "https://georgedreemer.com/index.md",
+      "language": "en",
+      "source": "dev_html/index.html",
+      "source_sha256": "76147a4f986d0fab93a5e1f1b8f1de96cebf31994b2eef988fe8553819279f53",
+      "output": "index.md",
+      "characters": 16173,
+      "words": 1998,
+      "headings": [
+        {
+          "level": 1,
+          "text": "George Dreemer — Data Scientist, Developer and Entrepreneur",
+          "id": "hero-title"
+        },
+        {
+          "level": 2,
+          "text": "Stack",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Code",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Python Libraries",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "R Libraries",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Dev Toolchain",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Databases",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Dev Tools & IDEs",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "AI & Automation",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Web3 & On-Chain",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Platforms & Infra",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Web & Commerce",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Design & Creative",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Marketing & Growth",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Languages",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Work",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "DataSafari",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "CryptoPandemic",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "SkipSchoolMakeMoney",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "DREEMCORP",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "thoughtbubble",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Academic Degrees",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "MSc Marketing Analytics & Data Science",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "BA Marketing & Business",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Certifications",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Professional Data Scientist",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Associate Data Scientist",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Google Analytics for Beginners",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "TOEFL iBT",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "C1 Advanced (CAE)",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Authorship",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Conflict of Interest",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Data Management",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Internet-based Research",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Plagiarism",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Privacy and Confidentiality",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Research Involving Human Subjects",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Research Misconduct",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Awards",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "VVM Startup Accelerator Award",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Recognition Award of Entrepreneurial Spirit",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "National Essay Award — \"Rescue of the Bulgarian Jews during WW II\"",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "RYLA Award (RYLArian)",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "RYLA Debate Winner Award",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Organizations & Community",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Rotaract \"Plovdiv-Puldin\"",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Seed Fund for Innovation",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "UMass Entrepreneurship Club",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Berthiaume Student Innovators",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Giving Back",
+          "id": null
+        }
+      ],
+      "sections": [
+        {
+          "id": "hero",
+          "label": null,
+          "url": "https://georgedreemer.com/#hero"
+        },
+        {
+          "id": "intro",
+          "label": "Intro",
+          "url": "https://georgedreemer.com/#intro"
+        },
+        {
+          "id": "stack",
+          "label": "Stack",
+          "url": "https://georgedreemer.com/#stack"
+        },
+        {
+          "id": "work",
+          "label": "Work",
+          "url": "https://georgedreemer.com/#work"
+        },
+        {
+          "id": "education",
+          "label": "Education",
+          "url": "https://georgedreemer.com/#education"
+        },
+        {
+          "id": "recognition",
+          "label": "Recognition",
+          "url": "https://georgedreemer.com/#recognition"
+        }
+      ],
+      "media_counts": {
+        "image": 2
+      },
+      "warnings": []
+    },
+    {
+      "title": "CryptoPandemic — Web3 Marketing & On-Chain Analytics on Solana",
+      "description": "CryptoPandemic is George Dreemer's Web3 brand studio engineering contagious crypto experiences — on-chain analytics fused with cryptoon storytelling. Drove BULLISH to a $13M peak market cap on Solana.",
+      "url": "https://georgedreemer.com/work/cryptopandemic",
+      "markdown_url": "https://georgedreemer.com/work/cryptopandemic.md",
+      "language": "en",
+      "source": "dev_html/work/cryptopandemic.html",
+      "source_sha256": "cada85c283968c588fdb3f65700281edbd70fcd969014c17b9d4a60f3487fa0a",
+      "output": "work/cryptopandemic.md",
+      "characters": 14455,
+      "words": 1891,
+      "headings": [
+        {
+          "level": 1,
+          "text": "CryptoPandemic — Web3 Marketing & On-Chain Analytics on Solana",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Experience Snapshot",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Highlights",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "In Numbers",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Stack",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Code",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "AI & Automation",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Design & Creative",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Web3 & On-Chain",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Marketing & Growth",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Dev Tools",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Abilities",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Holder Portfolio Profiling",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "On-Chain Market Attribution",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Content Performance Analytics",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Sentiment-Anchored Story Strategy",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "AI-Generative Content Pipelines",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Cryptoon Production & Motion Design",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Brand Tool Engineering",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Meme Coin Brand Architecture",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Bag Worker Asset Systems",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Sentiment Manufacturing",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Crypto-Native Community Building",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Cross-Platform Content Editing",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Works",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "On-Chain Research System",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Cryptoons: Analytics-defined Storytelling",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Content Engineering & Production",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Community Brand Tools",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Market Cap and Social Uplift",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Bag Worker Asset System",
+          "id": null
+        }
+      ],
+      "sections": [
+        {
+          "id": "intro",
+          "label": "Intro: Experience Context",
+          "url": "https://georgedreemer.com/work/cryptopandemic#intro"
+        },
+        {
+          "id": "stack",
+          "label": "Stack",
+          "url": "https://georgedreemer.com/work/cryptopandemic#stack"
+        },
+        {
+          "id": "abilities",
+          "label": "Abilities",
+          "url": "https://georgedreemer.com/work/cryptopandemic#abilities"
+        },
+        {
+          "id": "works",
+          "label": "Works",
+          "url": "https://georgedreemer.com/work/cryptopandemic#works"
+        }
+      ],
+      "media_counts": {
+        "iframe": 1,
+        "image": 19
+      },
+      "warnings": [
+        "Omitted interactive controls (buttons); no JavaScript is executed."
+      ]
+    },
+    {
+      "title": "DataSafari — Open-Source Python Library for Data Science",
+      "description": "DataSafari is a Python library by George Dreemer that simplifies complex data science tasks — compressing the full data workflow into a one-liner API across 11 functions, 4 subpackages, and 250+ tests. Available on PyPI.",
+      "url": "https://georgedreemer.com/work/datasafari",
+      "markdown_url": "https://georgedreemer.com/work/datasafari.md",
+      "language": "en",
+      "source": "dev_html/work/datasafari.html",
+      "source_sha256": "3f26ad4c00d6796a01e258ad344cca0e374081d6cd8d4999ee2dced08296b54e",
+      "output": "work/datasafari.md",
+      "characters": 29386,
+      "words": 3744,
+      "headings": [
+        {
+          "level": 1,
+          "text": "DataSafari — Open-Source Python Library for Data Science",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Experience Snapshot",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Highlights",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "In Numbers",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Stack",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Code",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Python Libraries",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Dev Toolchain",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Dev Tools & IDEs",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Platforms & Infra",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Design & Creative",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Abilities",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Python Library Architecture",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "OSS Release Engineering",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Automated Test Suite Design",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "CI/CD Pipeline Construction",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Technical Documentation Engineering",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Defensive Python & Input Validation",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Exploratory Data Analysis Systems",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Statistical Assumption Verification",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Automated Hypothesis Testing",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "End-to-End ML Pipeline Automation",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Data Transformation Engineering",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Developer API & UX Design",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Documentation Site Development",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Open-Source Product Lifecycle Management",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Brand Identity & Visual Systems",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Works",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "CI/CD Pipeline Architecture",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Issue Tracking & Milestone System",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Test Suite & Quality Gates",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "4-Subpackage Library Architecture",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Automated EDA — explore_num()",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "End-to-End ML Pipeline — predict_ml()",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Website & Documentation",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Brand Identity & Open-Source Presence",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "In Depth",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Built for the Professor Who Doesn't Have Time to Learn Python",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Input Engineering: Ask Less, Do More",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Error Handling as User Experience",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "The Hidden 80%: What It Actually Takes to Ship a Python Package",
+          "id": null
+        }
+      ],
+      "sections": [
+        {
+          "id": "intro",
+          "label": "Intro: Experience Context",
+          "url": "https://georgedreemer.com/work/datasafari#intro"
+        },
+        {
+          "id": "stack",
+          "label": "Stack",
+          "url": "https://georgedreemer.com/work/datasafari#stack"
+        },
+        {
+          "id": "abilities",
+          "label": "Abilities",
+          "url": "https://georgedreemer.com/work/datasafari#abilities"
+        },
+        {
+          "id": "works",
+          "label": "Works",
+          "url": "https://georgedreemer.com/work/datasafari#works"
+        },
+        {
+          "id": "in-depth",
+          "label": "In-depth",
+          "url": "https://georgedreemer.com/work/datasafari#in-depth"
+        }
+      ],
+      "media_counts": {
+        "image": 28
+      },
+      "warnings": [
+        "Omitted interactive controls (buttons); no JavaScript is executed."
+      ]
+    },
+    {
+      "title": "DREEMCORP — Creative Studio & Venture Lab",
+      "description": "DREEMCORP is George Dreemer's creative studio and venture lab, producing video, content, and creative direction for artists, athletes, and brands. Clients include Amira Tahri, Najib Amhali, Nabil Haryouli, and Immersive Studios.",
+      "url": "https://georgedreemer.com/work/dreemcorp",
+      "markdown_url": "https://georgedreemer.com/work/dreemcorp.md",
+      "language": "en",
+      "source": "dev_html/work/dreemcorp.html",
+      "source_sha256": "aa45d52a7f2507fdeed5dac581cc1423f17e601be90db80d510c909dd4c9ac13",
+      "output": "work/dreemcorp.md",
+      "characters": 15926,
+      "words": 1867,
+      "headings": [
+        {
+          "level": 1,
+          "text": "DREEMCORP — Creative Studio & Venture Lab",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Experience Snapshot",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Highlights",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "In Numbers",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Stack",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Video & Editing",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Design & Creative",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Platforms & Distribution",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Marketing & Growth",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Abilities",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "High-Volume Footage Triage",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Audio Post-Production",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Color Correction & Grading",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Codec & Export Pipeline Management",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Custom Motion & Transitions",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Narrative Structuring from Raw Footage",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Branding Packages & Visual Identity",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Multi-Platform Content Adaptation",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Creative Delivery at Scale",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Works",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Long-Form YouTube Editing",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Short-Form Reels & TikTok Editing",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Personal & Social Media Branding",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Commercial & Brand Ad Spots",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Animated Visualizers & Audio Mixing",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "YouTube Channel Development",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "On Instagram",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Content Archive",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Amira Tahri",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "CoolSouls",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "anabolic musick",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Nabil Haryouli",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Various Channels",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Immersive Studios",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "92Minerals",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Sully Bull",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Various Companies",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "China Dash Authority",
+          "id": null
+        }
+      ],
+      "sections": [
+        {
+          "id": "intro",
+          "label": "Intro: Experience Context",
+          "url": "https://georgedreemer.com/work/dreemcorp#intro"
+        },
+        {
+          "id": "stack",
+          "label": "Stack",
+          "url": "https://georgedreemer.com/work/dreemcorp#stack"
+        },
+        {
+          "id": "abilities",
+          "label": "Abilities",
+          "url": "https://georgedreemer.com/work/dreemcorp#abilities"
+        },
+        {
+          "id": "works",
+          "label": "Works",
+          "url": "https://georgedreemer.com/work/dreemcorp#works"
+        },
+        {
+          "id": "instagram",
+          "label": "Instagram",
+          "url": "https://georgedreemer.com/work/dreemcorp#instagram"
+        },
+        {
+          "id": "content-archive",
+          "label": "Content Archive",
+          "url": "https://georgedreemer.com/work/dreemcorp#content-archive"
+        }
+      ],
+      "media_counts": {
+        "iframe": 4,
+        "image": 34
+      },
+      "warnings": [
+        "Omitted interactive controls (buttons); no JavaScript is executed."
+      ]
+    },
+    {
+      "title": "SkipSchoolMakeMoney — Streetwear Brand",
+      "description": "SkipSchoolMakeMoney (SSMM) was a streetwear brand founded by George Dreemer — growing to 12,000+ followers, 20+ collections, and 1000s of orders across three continents. Collaborators included Lil Peep, Pouya, and Fat Nick.",
+      "url": "https://georgedreemer.com/work/skipschoolmakemoney",
+      "markdown_url": "https://georgedreemer.com/work/skipschoolmakemoney.md",
+      "language": "en",
+      "source": "dev_html/work/skipschoolmakemoney.html",
+      "source_sha256": "c709f0169c3777c823261dbab7102e2c0f7fa622e6c40d9132ad990f5a72fd60",
+      "output": "work/skipschoolmakemoney.md",
+      "characters": 30123,
+      "words": 3276,
+      "headings": [
+        {
+          "level": 1,
+          "text": "SkipSchoolMakeMoney — Streetwear Brand",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Experience Snapshot",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Highlights",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "In Numbers",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Stack",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Design & Creative",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Marketing & Growth",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Web & Commerce",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Code",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Abilities",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Brand & Collection Design",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Viral Growth & Audience Building",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Influencer, Music & Culture Positioning",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Creative Direction & Content Production",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Storefronts, Fulfillment & Commerce Ops",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Campaign Tracking & Iteration",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Works",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Collection Design System",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Lookbooks, Shoots & Visual Worldbuilding",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Meme Marketing & Viral Growth Loops",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Influencer & Music-Culture Positioning",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Storefront Builds & Commerce Stack",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Manufacturing, Fulfillment & Logistics",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Analytics, CRM & Launch Optimisation",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Awards, Funding & External Validation",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "In Depth",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "The Graduation Photo that Started a Movement",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Baseball Cards for the Internet Age",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "The Meeting I Missed to a Flat Tire",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Alone in Times Square with Two Suitcases Full of Clothes",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "On Instagram",
+          "id": null
+        }
+      ],
+      "sections": [
+        {
+          "id": "intro",
+          "label": "Intro: Context",
+          "url": "https://georgedreemer.com/work/skipschoolmakemoney#intro"
+        },
+        {
+          "id": "stack",
+          "label": "Stack",
+          "url": "https://georgedreemer.com/work/skipschoolmakemoney#stack"
+        },
+        {
+          "id": "abilities",
+          "label": "Abilities",
+          "url": "https://georgedreemer.com/work/skipschoolmakemoney#abilities"
+        },
+        {
+          "id": "works",
+          "label": "Works",
+          "url": "https://georgedreemer.com/work/skipschoolmakemoney#works"
+        },
+        {
+          "id": "in-depth",
+          "label": "In-depth",
+          "url": "https://georgedreemer.com/work/skipschoolmakemoney#in-depth"
+        },
+        {
+          "id": "instagram",
+          "label": "Instagram",
+          "url": "https://georgedreemer.com/work/skipschoolmakemoney#instagram"
+        }
+      ],
+      "media_counts": {
+        "iframe": 1,
+        "image": 67
+      },
+      "warnings": [
+        "Omitted interactive controls (buttons); no JavaScript is executed."
+      ]
+    },
+    {
+      "title": "thoughtbubble — Knowledge-First Social Network",
+      "description": "How George Dreemer and Nikolay Stanchev built thoughtbubble, a knowledge-first social network designed, coded, and launched from scratch — growing to around 900 registered users with no framework, funding, or team.",
+      "url": "https://georgedreemer.com/work/thoughtbubble",
+      "markdown_url": "https://georgedreemer.com/work/thoughtbubble.md",
+      "language": "en",
+      "source": "dev_html/work/thoughtbubble.html",
+      "source_sha256": "96e0a1e802c808ab39ac3665c0b0acdaa2ac71ce5f8420c3cfe5696de2112956",
+      "output": "work/thoughtbubble.md",
+      "characters": 12125,
+      "words": 1770,
+      "headings": [
+        {
+          "level": 1,
+          "text": "thoughtbubble — Knowledge-First Social Network",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Experience Snapshot",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Highlights",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "In Numbers",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Stack",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Code",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Databases",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Dev Tools",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Design & Creative",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Abilities",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Full-Stack Web Development",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Auth & Security Systems",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Real-Time Notifications",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Product Design & UX",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Product Vision & Positioning",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Organic User Acquisition",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Metrics & Behaviour Tracking",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Database Architecture",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "Works",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Social Systems",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "User Account Systems & Controls",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "User Feedback Analysis",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Pitching, Networking & Legal Coordination",
+          "id": null
+        },
+        {
+          "level": 2,
+          "text": "In Depth",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "Built from scratch & self-taught",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "The idea that was early",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "How we got 900 users without spending a dollar",
+          "id": null
+        },
+        {
+          "level": 3,
+          "text": "We got ripped off by a lawyer - got the copyright anyway",
+          "id": null
+        }
+      ],
+      "sections": [
+        {
+          "id": "intro",
+          "label": "Intro: Context",
+          "url": "https://georgedreemer.com/work/thoughtbubble#intro"
+        },
+        {
+          "id": "stack",
+          "label": "Stack",
+          "url": "https://georgedreemer.com/work/thoughtbubble#stack"
+        },
+        {
+          "id": "abilities",
+          "label": "Abilities",
+          "url": "https://georgedreemer.com/work/thoughtbubble#abilities"
+        },
+        {
+          "id": "works",
+          "label": "Works",
+          "url": "https://georgedreemer.com/work/thoughtbubble#works"
+        },
+        {
+          "id": "in-depth",
+          "label": "In-depth",
+          "url": "https://georgedreemer.com/work/thoughtbubble#in-depth"
+        }
+      ],
+      "media_counts": {
+        "image": 4,
+        "video": 1
+      },
+      "warnings": [
+        "Omitted interactive controls (buttons); no JavaScript is executed."
+      ]
+    }
+  ]
+}
