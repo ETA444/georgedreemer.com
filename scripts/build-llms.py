@@ -12,7 +12,7 @@ import json
 import re
 import sys
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
 MD_DIR, SRC, REPORTS = (
@@ -20,6 +20,9 @@ MD_DIR, SRC, REPORTS = (
     ROOT / "seo" / "llms.txt",
     ROOT / "build" / "reports",
 )
+ASSET_ROOT = ROOT / "public_html"  # static files (PDFs, images) are checked on disk
+ASSET_EXT = re.compile(r"\.(?:pdf|png|jpe?g|webp|svg|gif|zip|csv)$", re.IGNORECASE)
+URL = re.compile(r"https?://\S+")
 YEAR = re.compile(r"\b(?:19|20)\d{2}\b")
 MONTH = re.compile(
     r"\b(?:January|February|March|April|June|July|August|September|October|November|December)\b"
@@ -30,7 +33,7 @@ EXTRA_INTERNAL = {
     "llms-full.txt",
     "downloads/",
 }  # internal paths allowed in llms.txt besides page .md files
-MAX_WORDS = 900
+MAX_WORDS = 2500  # a long, accurate llms.txt is a deliberate choice; warn only on runaway growth
 
 
 def split_front(text):
@@ -39,6 +42,9 @@ def split_front(text):
 
 
 def privacy_hits(text):
+    text = URL.sub(
+        "", text
+    )  # dates inside URLs (e.g. a source article's slug) are not copy
     return sorted(
         set(
             YEAR.findall(text)
@@ -63,18 +69,30 @@ def validate(text, pages, origin):
             errs.append(f"line {n}: only H2 headings allowed")
         if l.startswith("## "):
             h2 = True
-        elif h2 and l.strip() and not re.match(r"- \[[^\]]+\]\(\S+\)(: .+)?$", l):
-            errs.append(f"line {n}: file lists need '- [name](url): note'")
+        elif h2 and "](" in l and not re.match(r"- \[[^\]]+\]\(\S+\)(: .+)?$", l):
+            # Only lines that contain a link must follow the llms.txt link format.
+            # Plain bullets and prose in any section are valid Markdown and allowed.
+            errs.append(f"line {n}: links must be written '- [name](url): note'")
     allowed = {p["markdown_url"] for p in pages} | {
         origin + "/" + e for e in EXTRA_INTERNAL
     }
-    linked = set()
+    linked, seen = set(), {}
     for url in re.findall(r"\]\((\S+?)\)", text):
         linked.add(url)
-        if url.startswith(origin) and not any(
-            url == a or (a.endswith("/") and url.startswith(a)) for a in allowed
-        ):
+        seen[url] = seen.get(url, 0) + 1
+        if not url.startswith(origin):
+            continue
+        path = unquote(urlsplit(url).path)
+        if any(url == a or (a.endswith("/") and url.startswith(a)) for a in allowed):
+            continue
+        if ASSET_EXT.search(path):  # a static file, not a page: it must exist on disk
+            if not (ASSET_ROOT / path.lstrip("/")).is_file():
+                errs.append("linked file not found under public_html/: " + path)
+        else:
             errs.append("internal link not in manifest (typo or page removed): " + url)
+    for url, count in seen.items():
+        if count > 1:
+            warns.append(f"same link used {count}x (copy-paste slip?): {url}")
     for p in pages:
         if p["markdown_url"] not in linked:
             errs.append("page missing from llms.txt: " + p["markdown_url"])
