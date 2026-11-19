@@ -27,7 +27,7 @@
       }
     },
     {
-      "@type": "CreativeWork",
+      "@type": "Organization",
       "@id": "https://georgedreemer.com/work/skipschoolmakemoney#project",
       "name": "SkipSchoolMakeMoney",
       "alternateName": "SSMM",
@@ -39,40 +39,12 @@
         "width": 1200,
         "height": 630
       },
-      "genre": [
-        "Streetwear brand",
-        "Fashion label",
-        "E-commerce brand",
-        "Portfolio project",
-        "Entrepreneurship project"
-      ],
       "keywords": [
-        "SkipSchoolMakeMoney",
-        "SSMM",
-        "George Dreemer",
-        "streetwear brand",
-        "underground streetwear",
-        "meme marketing",
-        "Clout Cards",
-        "Lil Peep",
-        "Pouya",
-        "Fat Nick",
-        "Shopify",
-        "e-commerce",
-        "brand founder"
+        "SkipSchoolMakeMoney", "SSMM", "George Dreemer", "streetwear brand",
+        "underground streetwear", "fashion label", "e-commerce brand", "meme marketing",
+        "Clout Cards", "Lil Peep", "Pouya", "Fat Nick", "Shopify", "e-commerce", "brand founder"
       ],
-      "creator": {
-        "@type": "Person",
-        "@id": "https://georgedreemer.com/#person",
-        "name": "George Dreemer",
-        "url": "https://georgedreemer.com"
-      },
-      "author": {
-        "@type": "Person",
-        "@id": "https://georgedreemer.com/#person",
-        "name": "George Dreemer",
-        "url": "https://georgedreemer.com"
-      },
+      "founder": { "@id": "https://georgedreemer.com/#person" },
       "sameAs": [
         "https://www.skipschoolmakemoney.com",
         "https://www.instagram.com/skipschoolmakemoney"
