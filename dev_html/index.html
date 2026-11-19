@@ -36,20 +36,30 @@
         "@context": "https://schema.org",
         "@graph": [
           {
-            "@type": ["WebPage", "ProfilePage"],
+            "@type": [
+              "WebPage",
+              "ProfilePage"
+            ],
             "@id": "https://georgedreemer.com/#webpage",
             "url": "https://georgedreemer.com/",
-            "name": "George Dreemer — Data Scientist, Developer & Entrepreneur",
+            "name": "George Dreemer — Data Scientist, Developer and Entrepreneur",
             "description": "Data scientist, developer and entrepreneur: creator of DataSafari, founder of CryptoPandemic. MSc from Groningen — skills, projects, certifications and awards.",
-            "isPartOf": { "@id": "https://georgedreemer.com/#website" },
-            "about": { "@id": "https://georgedreemer.com/#person" },
-            "mainEntity": { "@id": "https://georgedreemer.com/#person" },
+            "isPartOf": {
+              "@id": "https://georgedreemer.com/#website"
+            },
+            "about": {
+              "@id": "https://georgedreemer.com/#person"
+            },
+            "mainEntity": {
+              "@id": "https://georgedreemer.com/#person"
+            },
             "primaryImageOfPage": {
               "@type": "ImageObject",
               "url": "https://georgedreemer.com/ncsitebuilder/gallery/dxyz-main.png",
               "width": 1200,
               "height": 630
-            }
+            },
+            "inLanguage": "en"
           },
           {
             "@type": "WebSite",
@@ -57,7 +67,9 @@
             "url": "https://georgedreemer.com",
             "name": "George Dreemer",
             "description": "Personal portfolio and brand hub of George Dreemer — data scientist, developer, and entrepreneur.",
-            "publisher": { "@id": "https://georgedreemer.com/#person" }
+            "publisher": {
+              "@id": "https://georgedreemer.com/#person"
+            }
           },
           {
             "@type": "Person",
@@ -92,7 +104,9 @@
                 "name": "MSc Marketing Analytics & Data Science",
                 "credentialCategory": "degree",
                 "educationalLevel": "Master's degree",
-                "recognizedBy": { "@id": "https://www.rug.nl/#organization" }
+                "recognizedBy": {
+                  "@id": "https://www.rug.nl/#organization"
+                }
               },
               {
                 "@type": "EducationalOccupationalCredential",
@@ -154,7 +168,10 @@
               "Rotary International's RYLA Debate Winner Award"
             ],
             "memberOf": [
-              { "@type": "Organization", "name": "Rotary International" },
+              {
+                "@type": "Organization",
+                "name": "Rotary International"
+              },
               {
                 "@type": "Organization",
                 "name": "UMass Amherst Entrepreneurship Club"
@@ -163,8 +180,14 @@
                 "@type": "Organization",
                 "name": "Berthiaume Center for Entrepreneurship"
               },
-              { "@type": "Organization", "name": "Seed Fund for Innovation" },
-              { "@type": "Organization", "name": "Giving Back Den Haag" }
+              {
+                "@type": "Organization",
+                "name": "Seed Fund for Innovation"
+              },
+              {
+                "@type": "Organization",
+                "name": "Giving Back Den Haag"
+              }
             ],
             "knowsAbout": [
               "Python",
@@ -206,30 +229,25 @@
               "n8n"
             ],
             "knowsLanguage": [
-              { "@type": "Language", "name": "English" },
-              { "@type": "Language", "name": "Bulgarian" },
-              { "@type": "Language", "name": "Dutch" },
-              { "@type": "Language", "name": "Russian" },
-              { "@type": "Language", "name": "Hebrew" }
-            ],
-            "founder": [
               {
-                "@type": "Organization",
-                "name": "DREEMCORP",
-                "url": "https://dreemcorp.com",
-                "description": "Creative studio and venture lab behind DataSafari, CryptoPandemic, and SkipSchoolMakeMoney."
+                "@type": "Language",
+                "name": "English"
               },
               {
-                "@type": "Organization",
-                "name": "CryptoPandemic",
-                "url": "https://cryptopandemic.com",
-                "description": "Web3 brand studio combining on-chain analytics with creative storytelling for Solana projects."
+                "@type": "Language",
+                "name": "Bulgarian"
               },
               {
-                "@type": "Organization",
-                "name": "SkipSchoolMakeMoney",
-                "url": "https://skipschoolmakemoney.com",
-                "description": "Streetwear brand  growing to 12,000+ followers and 20+ collections across three continents with thousands of orders."
+                "@type": "Language",
+                "name": "Dutch"
+              },
+              {
+                "@type": "Language",
+                "name": "Russian"
+              },
+              {
+                "@type": "Language",
+                "name": "Hebrew"
               }
             ],
             "sameAs": [
@@ -237,6 +255,22 @@
               "https://www.linkedin.com/in/georgedreemer",
               "https://x.com/444eta",
               "https://www.dreemer.xyz"
+            ],
+            "worksFor": [
+              {
+                "@type": "Organization",
+                "@id": "https://georgedreemer.com/work/dreemcorp#organization",
+                "name": "DREEMCORP",
+                "url": "https://dreemcorp.com",
+                "description": "Creative studio and venture lab behind DataSafari, CryptoPandemic, and SkipSchoolMakeMoney."
+              },
+              {
+                "@type": "Organization",
+                "@id": "https://georgedreemer.com/work/cryptopandemic#organization",
+                "name": "CryptoPandemic",
+                "url": "https://cryptopandemic.com",
+                "description": "Web3 brand studio combining on-chain analytics with creative storytelling for Solana projects."
+              }
             ]
           }
         ]
