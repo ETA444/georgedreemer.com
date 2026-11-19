@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import html
 import json
 import re
 import sys
@@ -16,9 +17,8 @@ try:
 except ImportError:
     raise SystemExit("Missing beautifulsoup4. Run: bash scripts/build-markdown.sh")
 
-VERSION = "1.0.0"
+VERSION = "1.1.0"
 ROOT = Path(__file__).resolve().parent.parent
-URL_SAFE = ":/?#[]@!$&'()*+,;=%~-._"
 SKIP_TAGS = {
     "script",
     "style",
@@ -71,7 +71,6 @@ def escaped(s):
 
 
 def clean(s):
-    # Strip whitespace-only lines without touching fenced code or list indentation.
     lines, fence = [], False
     for line in s.splitlines():
         if re.match(r"^\s*`{3,}", line):
@@ -85,16 +84,13 @@ def classes(t):
 
 
 def quoted(s):
-    # A JSON string is also a valid YAML quoted scalar.
     return json.dumps(str(s), ensure_ascii=False)
 
 
 class Renderer:
-    def __init__(self, url):
-        self.url = url
-        self.warnings = []
-        self.media = []
-        self.anchors = set()
+    def __init__(self, url, keep_anchors=False):
+        self.url, self.keep_anchors = url, keep_anchors
+        self.warnings, self.media, self.anchors = [], [], set()
 
     def warn(self, s):
         if s not in self.warnings:
@@ -114,18 +110,19 @@ class Renderer:
         url = self.link_url(href)
         if not url:
             return label
-        return f"[{label}](<{quote(url, safe=URL_SAFE)}>)"
+        return (
+            f"[{label}](<{quote(url, safe=':/?#[]@!$&' + chr(39) + '()*+,;=%~-._')}>)"
+        )
 
     def children(self, t):
         return "".join(self.render(x) for x in t.children)
 
     def anchor(self, t):
+        # Raw HTML anchors are opt-in (--anchors); default output is pure Markdown.
         value = t.get("id")
-        if not value or value in self.anchors:
+        if not self.keep_anchors or not value or value in self.anchors:
             return ""
         self.anchors.add(value)
-        import html
-
         return '\n\n<a id="' + html.escape(value, quote=True) + '"></a>\n\n'
 
     def block(self, text):
@@ -144,8 +141,6 @@ class Renderer:
             return ""
         if name in SKIP_TAGS or cs & SKIP_CLASSES:
             return ""
-        # Collapsed content and off-screen slides are still substantive content.
-        # aria-hidden on small decoration is different from a hidden panel.
         if t.get("aria-hidden") == "true" and not (
             name in {"section", "article"}
             or any("panel" in c or "slide" in c or "accordion__body" in c for c in cs)
@@ -203,7 +198,6 @@ class Renderer:
             return ""
         if name == "img":
             alt = compact(t.get("alt", ""))
-            # Icon labels already appear as adjacent text; do not repeat them.
             badge_parent = t.find_parent(
                 class_=lambda c: (
                     c and ("stack-badge" in c or "credential-card__icon" in c)
@@ -215,7 +209,6 @@ class Renderer:
             if not href or href.startswith("data:"):
                 return escaped(alt)
             self.media.append("image")
-            # A linked image must not produce nested Markdown links.
             if t.find_parent("a"):
                 return escaped(alt)
             return self.block("Image: " + self.link(escaped(alt), href))
@@ -233,8 +226,9 @@ class Renderer:
                 if code
                 else ""
             )
-            lang = re.sub(r"[^\w+-]", "", lang)
-            return self.block(fence + lang + "\n" + raw + "\n" + fence)
+            return self.block(
+                fence + re.sub(r"[^\w+-]", "", lang) + "\n" + raw + "\n" + fence
+            )
         if name == "code":
             raw = compact(t.get_text())
             fence = "`" * max(
@@ -298,23 +292,23 @@ class Renderer:
                 )
                 number += 1
             preceding = t.find_previous_sibling()
-            already_labelled = preceding and re.search(
+            already = preceding and re.search(
                 r"courses|sources", preceding.get_text(), re.IGNORECASE
             )
             label = (
                 "Sources (courses):\n\n"
-                if "ability-card__source" in cs and not already_labelled
+                if "ability-card__source" in cs and not already
                 else ""
             )
             return anchor + self.block(label + "\n".join(lines).rstrip())
         if name == "dl":
-            # Process only direct terms and grouping divs; nested dl handled recursively.
-            groups = t.find_all(recursive=False)
             out = []
-            for group in groups:
+            for group in t.find_all(recursive=False):
                 if group.name == "div":
-                    terms = group.find_all("dt", recursive=False)
-                    values = group.find_all("dd", recursive=False)
+                    terms, values = (
+                        group.find_all("dt", recursive=False),
+                        group.find_all("dd", recursive=False),
+                    )
                     extra = [
                         x
                         for x in group.find_all(recursive=False)
@@ -324,17 +318,15 @@ class Renderer:
                     val = "\n\n".join(clean(self.children(x)) for x in values)
                     if terms:
                         out.append(self.block("**" + term + ":** " + val))
+                        out.extend(self.render(x) for x in extra)
                     else:
                         out.append(self.children(group))
-                    if terms:
-                        out.extend(self.render(x) for x in extra)
                 elif group.name == "dt":
                     out.append(self.block("**" + compact(self.children(group)) + ":**"))
                 else:
                     out.append(self.render(group))
             return anchor + "".join(out)
         if name == "table":
-            # Plain lists avoid depending on a specific Markdown table extension.
             rows = t.find_all("tr")
             headings = (
                 [
@@ -344,9 +336,7 @@ class Renderer:
                 if rows
                 else []
             )
-            parts = []
-            if t.caption:
-                parts.append(self.children(t.caption))
+            parts = [self.children(t.caption)] if t.caption else []
             for row in rows:
                 cells = row.find_all(["td", "th"], recursive=False)
                 if headings and all(x.name == "th" for x in cells):
@@ -366,7 +356,6 @@ class Renderer:
             )
         text = self.children(t)
         if "ability-card" in cs and t.get("data-domain"):
-            # Expose the semantic domain without interpreting colour.
             domain = "Domain: " + escaped(t["data-domain"])
             text = re.sub(
                 r"(### [^\n]+\n)", lambda m: m[1] + "\n" + domain + "\n", text, count=1
@@ -376,7 +365,7 @@ class Renderer:
         return text
 
 
-def convert(path, source, site):
+def convert(path, source, site, keep_anchors=False):
     raw = path.read_bytes()
     soup = BeautifulSoup(raw.decode("utf-8"), "html.parser")
     mains = soup.find_all("main")
@@ -384,12 +373,7 @@ def convert(path, source, site):
         raise ValueError(f"expected one <main>, found {len(mains)}")
     rel = path.relative_to(source)
     stem = rel.with_suffix("").as_posix()
-    route = (
-        "/"
-        if stem == "index"
-        else "/"
-        + (stem[:-5] if stem.endswith("index") and stem.endswith("/index") else stem)
-    )
+    route = "/" if stem == "index" else "/" + stem
     canonical = soup.find("link", rel="canonical")
     url = canonical.get("href", "") if canonical else ""
     if not url:
@@ -404,7 +388,7 @@ def convert(path, source, site):
     h1 = mains[0].find_all("h1")
     if len(h1) != 1:
         raise ValueError(f"expected one h1 in main, found {len(h1)}")
-    r = Renderer(url)
+    r = Renderer(url, keep_anchors)
     body = clean(r.render(mains[0]))
     title = compact(h1[0].get_text(" ", strip=True))
     md_path = "/" + rel.with_suffix(".md").as_posix()
@@ -418,7 +402,6 @@ def convert(path, source, site):
         "source": "dev_html/" + rel.as_posix(),
         "source_sha256": hashlib.sha256(raw).hexdigest(),
     }
-    # Do not invent 'updated' dates from local mtimes or export time.
     modified = soup.find(
         "meta", attrs={"property": "article:modified_time"}
     ) or soup.find("meta", attrs={"name": "dateModified"})
@@ -427,8 +410,6 @@ def convert(path, source, site):
     head = (
         "---\n" + "\n".join(k + ": " + quoted(v) for k, v in data.items()) + "\n---\n\n"
     )
-    content = head + body + "\n"
-    # Make omissions and JS-only evidence discoverable without parsing or executing JS.
     if mains[0].select("[data-course]"):
         r.warn("Course names retained; grades injected by JavaScript are not inferred.")
     if mains[0].select("canvas, [data-context-explorer]"):
@@ -450,16 +431,16 @@ def convert(path, source, site):
         ],
         "sections": [
             {
-                "id": sec.get("id"),
-                "label": sec.get("aria-label") or sec.get("data-nav"),
-                "url": url + "#" + sec["id"],
+                "id": s.get("id"),
+                "label": s.get("aria-label") or s.get("data-nav"),
+                "url": url + "#" + s["id"],
             }
-            for sec in mains[0].find_all("section", id=True)
+            for s in mains[0].find_all("section", id=True)
         ],
         "media_counts": {k: r.media.count(k) for k in sorted(set(r.media))},
         "warnings": r.warnings,
     }
-    return content, entry
+    return head + body + "\n", entry
 
 
 def main(argv=None):
@@ -479,6 +460,11 @@ def main(argv=None):
         "--site",
         default="https://georgedreemer.com",
         help="Fallback origin if canonical is missing",
+    )
+    p.add_argument(
+        "--anchors",
+        action="store_true",
+        help="Also write raw <a id> anchors (not pure Markdown)",
     )
     p.add_argument(
         "--check",
@@ -507,7 +493,7 @@ def main(argv=None):
     expected, entries, errors = {}, [], []
     for path in paths:
         try:
-            content, entry = convert(path, source, args.site)
+            content, entry = convert(path, source, args.site, args.anchors)
             if any(e["url"] == entry["url"] for e in entries):
                 raise ValueError("duplicate canonical URL: " + entry["url"])
             expected[entry["output"]] = content
@@ -516,15 +502,18 @@ def main(argv=None):
             errors.append(f"{path.relative_to(source)}: {e}")
     if errors:
         print("BUILD FAILED; no outputs changed", file=sys.stderr)
-        for error in errors:
-            print("  " + error, file=sys.stderr)
+        for e in errors:
+            print("  " + e, file=sys.stderr)
         return 2
-    manifest = {"generator": "build-markdown", "version": VERSION, "pages": entries}
     expected["manifest.json"] = (
-        json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"
+        json.dumps(
+            {"generator": "build-markdown", "version": VERSION, "pages": entries},
+            ensure_ascii=False,
+            indent=2,
+        )
+        + "\n"
     )
-    stale = []
-    previous = output / "manifest.json"
+    stale, previous = [], output / "manifest.json"
     if previous.exists():
         try:
             old = json.loads(previous.read_text(encoding="utf-8"))
@@ -559,9 +548,8 @@ def main(argv=None):
             print("STALE  " + rel)
             if not args.check and not args.dry_run:
                 dest.unlink()
-    warnings = sum(len(e["warnings"]) for e in entries)
     print(
-        f"\n{len(entries)} page(s), {changes} changed file(s), {warnings} informational warning(s)."
+        f"\n{len(entries)} page(s), {changes} changed file(s), {sum(len(e['warnings']) for e in entries)} informational warning(s)."
     )
     print("Warnings and source mapping are in manifest.json; HTML is never modified.")
     return 1 if args.check and changes else 0
