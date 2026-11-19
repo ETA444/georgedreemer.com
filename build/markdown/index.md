@@ -5,7 +5,7 @@ url: "https://georgedreemer.com/"
 markdown_url: "https://georgedreemer.com/index.md"
 language: "en"
 source: "dev_html/index.html"
-source_sha256: "81a04527981e0e05e543315b47702459c831e90f9045d2c6305c6d6816b0dfbe"
+source_sha256: "3bcd4eb73f406e4df7eb9f97c3a83620ab3174d666b6cd8afefcc73851f056e3"
 ---
 
 # George Dreemer — Data Scientist, Developer and Entrepreneur
@@ -728,7 +728,7 @@ Category:
 
 Public Speaking
 
-[View award ↗](<https://georgedreemer.com/public_img/education/certifications/rotary/rotary-rylarian-certificate.pdf>)
+[View award ↗](<https://georgedreemer.com/public_img/education/certifications/rotary/rotary-ryla_debate-certificate.pdf>)
 
 ## Organizations & Community
 

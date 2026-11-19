@@ -5,7 +5,7 @@ url: "https://georgedreemer.com/work/datasafari"
 markdown_url: "https://georgedreemer.com/work/datasafari.md"
 language: "en"
 source: "dev_html/work/datasafari.html"
-source_sha256: "3f26ad4c00d6796a01e258ad344cca0e374081d6cd8d4999ee2dced08296b54e"
+source_sha256: "4ed1dc470458681aea3d786267c50074076a7e45066f7f1b8506565fcdb62853"
 ---
 
 # DataSafari — Open-Source Python Library for Data Science

@@ -5,7 +5,7 @@ url: "https://georgedreemer.com/education/masters"
 markdown_url: "https://georgedreemer.com/education/masters.md"
 language: "en"
 source: "dev_html/education/masters.html"
-source_sha256: "f7620ec1fe180db241273df2ea911961d7fb5b891d0b5ea11105ff791f79f6ba"
+source_sha256: "0b5cba102c8549db7b35f40a5182f0c3ee94cef6301f53960eb00f37cd10f8ce"
 ---
 
 # MSc Marketing Analytics & Data Science — University of Groningen

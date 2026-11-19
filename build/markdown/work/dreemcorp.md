@@ -5,7 +5,7 @@ url: "https://georgedreemer.com/work/dreemcorp"
 markdown_url: "https://georgedreemer.com/work/dreemcorp.md"
 language: "en"
 source: "dev_html/work/dreemcorp.html"
-source_sha256: "aa45d52a7f2507fdeed5dac581cc1423f17e601be90db80d510c909dd4c9ac13"
+source_sha256: "15b83b1d23e74486cd0e26532bf4b5a635bbc6ebd5bb813bc0e84c01eaffb7f3"
 ---
 
 # DREEMCORP — Creative Studio & Venture Lab

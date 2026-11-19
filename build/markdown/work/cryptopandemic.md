@@ -5,7 +5,7 @@ url: "https://georgedreemer.com/work/cryptopandemic"
 markdown_url: "https://georgedreemer.com/work/cryptopandemic.md"
 language: "en"
 source: "dev_html/work/cryptopandemic.html"
-source_sha256: "cada85c283968c588fdb3f65700281edbd70fcd969014c17b9d4a60f3487fa0a"
+source_sha256: "58441e2b9ad0b5a53c49d9f360da3789891cf77910e76fd983218066d591d304"
 ---
 
 # CryptoPandemic — Web3 Marketing & On-Chain Analytics on Solana
