@@ -10,8 +10,6 @@ source_sha256: "b569af426ccc9702af9d8bbf75a565f10943f18c85cf91414aa4db17271019c1
 
 # BA Marketing & Business — Hampshire College
 
-<a id="intro"></a>
-
 George's BA at Hampshire College was a four-year, self-designed program focused on marketing, business, and entrepreneurship.
 
 The curriculum connected marketing and consumer behaviour, business fundamentals, and persuasive communication: learning to research markets, assess business opportunities, negotiate agreements, and develop the strategy and visual identity behind a venture.
@@ -21,8 +19,6 @@ Through the Five College Consortium, George took accounting at Smith College and
 ## Degree Snapshot
 
 Hampshire College   \#6 Entrepreneurship (Forbes)
-
-<a id="tip-rank"></a>
 
 Hampshire College — entrepreneurship
 
@@ -37,8 +33,6 @@ Historical institution-level ranking. Source: [Hampshire College](<https://www.h
 **Type:** Bachelor of Arts (BA)
 
 **Result:** 3.81 / 4.0
-
-<a id="tip-grade"></a>
 
 Estimated GPA
 
@@ -71,8 +65,6 @@ Source: [Hampshire's guidance on estimated GPAs](<https://www.hampshire.edu/site
 - Consumer Behaviour
 
 - Negotiation
-
-<a id="tools"></a>
 
 ## Tools
 
@@ -123,8 +115,6 @@ Source: [Hampshire's guidance on estimated GPAs](<https://www.hampshire.edu/site
 - Audition
 
 - DaVinci Resolve
-
-<a id="abilities"></a>
 
 ## Abilities
 

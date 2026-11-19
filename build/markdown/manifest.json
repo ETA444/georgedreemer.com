@@ -1,6 +1,6 @@
 {
   "generator": "build-markdown",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "pages": [
     {
       "title": "BA Marketing & Business — Hampshire College",
@@ -11,8 +11,8 @@
       "source": "dev_html/education/bachelors.html",
       "source_sha256": "b569af426ccc9702af9d8bbf75a565f10943f18c85cf91414aa4db17271019c1",
       "output": "education/bachelors.md",
-      "characters": 12985,
-      "words": 1653,
+      "characters": 12874,
+      "words": 1643,
       "headings": [
         {
           "level": 1,
@@ -186,8 +186,8 @@
       "source": "dev_html/education/masters.html",
       "source_sha256": "f7620ec1fe180db241273df2ea911961d7fb5b891d0b5ea11105ff791f79f6ba",
       "output": "education/masters.md",
-      "characters": 45368,
-      "words": 5321,
+      "characters": 44025,
+      "words": 5219,
       "headings": [
         {
           "level": 1,
@@ -551,8 +551,8 @@
       "source": "dev_html/index.html",
       "source_sha256": "76147a4f986d0fab93a5e1f1b8f1de96cebf31994b2eef988fe8553819279f53",
       "output": "index.md",
-      "characters": 16173,
-      "words": 1998,
+      "characters": 15942,
+      "words": 1978,
       "headings": [
         {
           "level": 1,
@@ -851,8 +851,8 @@
       "source": "dev_html/work/cryptopandemic.html",
       "source_sha256": "cada85c283968c588fdb3f65700281edbd70fcd969014c17b9d4a60f3487fa0a",
       "output": "work/cryptopandemic.md",
-      "characters": 14455,
-      "words": 1891,
+      "characters": 14371,
+      "words": 1883,
       "headings": [
         {
           "level": 1,
@@ -1049,8 +1049,8 @@
       "source": "dev_html/work/datasafari.html",
       "source_sha256": "3f26ad4c00d6796a01e258ad344cca0e374081d6cd8d4999ee2dced08296b54e",
       "output": "work/datasafari.md",
-      "characters": 29386,
-      "words": 3744,
+      "characters": 29167,
+      "words": 3726,
       "headings": [
         {
           "level": 1,
@@ -1301,8 +1301,8 @@
       "source": "dev_html/work/dreemcorp.html",
       "source_sha256": "aa45d52a7f2507fdeed5dac581cc1423f17e601be90db80d510c909dd4c9ac13",
       "output": "work/dreemcorp.md",
-      "characters": 15926,
-      "words": 1867,
+      "characters": 15788,
+      "words": 1855,
       "headings": [
         {
           "level": 1,
@@ -1544,8 +1544,8 @@
       "source": "dev_html/work/skipschoolmakemoney.html",
       "source_sha256": "c709f0169c3777c823261dbab7102e2c0f7fa622e6c40d9132ad990f5a72fd60",
       "output": "work/skipschoolmakemoney.md",
-      "characters": 30123,
-      "words": 3276,
+      "characters": 29880,
+      "words": 3256,
       "headings": [
         {
           "level": 1,
@@ -1752,8 +1752,8 @@
       "source": "dev_html/work/thoughtbubble.html",
       "source_sha256": "96e0a1e802c808ab39ac3665c0b0acdaa2ac71ce5f8420c3cfe5696de2112956",
       "output": "work/thoughtbubble.md",
-      "characters": 12125,
-      "words": 1770,
+      "characters": 11906,
+      "words": 1752,
       "headings": [
         {
           "level": 1,

@@ -10,8 +10,6 @@ source_sha256: "cada85c283968c588fdb3f65700281edbd70fcd969014c17b9d4a60f3487fa0a
 
 # CryptoPandemic — Web3 Marketing & On-Chain Analytics on Solana
 
-<a id="intro"></a>
-
 CryptoPandemic is a Web3 brand engine built on one conviction: the projects that spread are not the ones with the best technology. They are the ones with the strongest story, the sharpest identity, and content that moves at the speed of the culture.
 
 CryptoPandemic brings together two seemingly opposite forces: cold on-chain analytics and warm creative storytelling. The on-chain data acts as the "KYC", revealing exactly who your holders are, which coins they move, and what makes them act. The creative work responds to that data through a crypto cartoon series and visual identity built around the people already in your corner.
@@ -53,8 +51,6 @@ Crypto Pandemic
 **5K+:** Daily mentions
 
 **50+:** Branded assets created
-
-<a id="stack"></a>
 
 ## Stack
 
@@ -123,8 +119,6 @@ Crypto Pandemic
 - Git
 
 - GitHub
-
-<a id="abilities"></a>
 
 ## Abilities
 
@@ -329,8 +323,6 @@ Skills developed through this ability:
 - Platform-Native Formatting
 
 - Organic Distribution Strategy
-
-<a id="works"></a>
 
 ## Works
 

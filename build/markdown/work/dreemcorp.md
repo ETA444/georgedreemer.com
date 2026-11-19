@@ -10,8 +10,6 @@ source_sha256: "aa45d52a7f2507fdeed5dac581cc1423f17e601be90db80d510c909dd4c9ac13
 
 # DREEMCORP — Creative Studio & Venture Lab
 
-<a id="intro"></a>
-
 DREEMCORP is a creative studio specialized in photo and video editing, graphic design, personal branding, and social media strategy. George has worked with 12+ clients and brands and completed 100+ creative and marketing assignments.
 
 The content across clients has been diverse, ranging from long-form YouTube edits to short-form TikTok and Instagram content, and from brand identity packages to social media strategy and consulting. Some of the clients include entertainers and athletes such as Najib Amhali, Amira Tahri, Alistair Overeem, and Frenna, alongside consumer brands like 92Minerals, Immersive Studios, and CoolSouls.
@@ -61,8 +59,6 @@ DREEMCORP
 
 **100K+:** Likes & Comments
 
-<a id="stack"></a>
-
 ## Stack
 
 ### Video & Editing
@@ -106,8 +102,6 @@ DREEMCORP
 - Mailchimp
 
 - Buffer
-
-<a id="abilities"></a>
 
 ## Abilities
 
@@ -265,8 +259,6 @@ Skills developed through this ability:
 
 - Deadline Management
 
-<a id="works"></a>
-
 ## Works
 
 [Vlog edited for Amira Tahri's collaboration with Najib Amhali - filmed by Younes Belguebli at Immersive Studios in The Hague, Netherlands](<https://www.youtube.com/watch?v=CwlsSpUbkAY>)
@@ -383,8 +375,6 @@ Growth
 
 - Edited eye-catching thumbnails with consistent branding and messaging
 
-<a id="instagram"></a>
-
 ## On Instagram
 
 - [Instagram post](<https://www.instagram.com/p/COfy4XHBOa0/?utm_source=ig_embed&utm_campaign=loading>)
@@ -402,8 +392,6 @@ Growth
 - [Instagram post](<https://www.instagram.com/p/COpu2ygDhkx/?utm_source=ig_embed&utm_campaign=loading>)
 
   BerraCuts Barbershop, Den Haag — promo ad, visited by rapper Frenna, shot by Younes Belguebli
-
-<a id="content-archive"></a>
 
 ## Content Archive
 

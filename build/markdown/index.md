@@ -8,23 +8,15 @@ source: "dev_html/index.html"
 source_sha256: "76147a4f986d0fab93a5e1f1b8f1de96cebf31994b2eef988fe8553819279f53"
 ---
 
-<a id="hero"></a>
-
-<a id="hero-title"></a>
-
 # George Dreemer — Data Scientist, Developer and Entrepreneur
 
 Excellence through action.    Creatio Perpetua.
-
-<a id="intro"></a>
 
 George Dreemer is a serial entrepreneur working across full-stack development, data science, and business. His ventures range from an open-source Python library and a knowledge-first social network to an underground streetwear brand with thousands of fans.
 
 That range is reflected in his toolkit: multi-language development, statistical modelling and machine learning, alongside years of hands-on work with Adobe, e-commerce platforms, and marketing analytics. He connects the technical build with the product, brand, and business around it.
 
 His education spans Europe and the US, with an MSc in Marketing Analytics & Data Science and a BA in Marketing & Business. Completed tracks and certificates from DataCamp, Google, and research-training programmes complement that foundation.
-
-<a id="stack"></a>
 
 ## Stack
 
@@ -250,8 +242,6 @@ His education spans Europe and the US, with an MSc in Marketing Analytics & Data
 
 - Hebrew A1
 
-<a id="work"></a>
-
 ## Work
 
 A curated selection of projects and collaborations that demonstrate my skills, creativity, and problem-solving abilities across various domains.
@@ -346,8 +336,6 @@ Applied capabilities:
 
 [Explore thoughtbubble](<https://georgedreemer.com/work/thoughtbubble>)
 
-<a id="education"></a>
-
 ## Academic Degrees
 
 University of Groningen
@@ -403,8 +391,6 @@ GPA 3.81 / 4.0
 [Explore BA Marketing & Business](<https://georgedreemer.com/education/bachelors>)
 
 ## Certifications
-
-<a id="certifications"></a>
 
 ### Professional Data Scientist
 
@@ -638,13 +624,9 @@ Areas of expertise:
 
 - Research Integrity
 
-<a id="recognition"></a>
-
 ## Awards
 
 Recognition for entrepreneurial initiative, ideas, and leadership.
-
-<a id="awards"></a>
 
 ### VVM Startup Accelerator Award
 
@@ -751,8 +733,6 @@ Public Speaking
 ## Organizations & Community
 
 Serving the community, fellow entrepreneurs, and students.
-
-<a id="organizations"></a>
 
 ### Rotaract "Plovdiv-Puldin"
 

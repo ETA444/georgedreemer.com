@@ -10,8 +10,6 @@ source_sha256: "3f26ad4c00d6796a01e258ad344cca0e374081d6cd8d4999ee2dced08296b54e
 
 # DataSafari — Open-Source Python Library for Data Science
 
-<a id="intro"></a>
-
 DataSafari is a Python library that simplifies complex data science tasks — compressing exploration, transformation, evaluation, and prediction into a single one-liner API. One import. One function call. One plain-English report.
 
 George built DataSafari to solve a specific problem he watched play out at university: data science curricula built around Stata, R, and SPSS — tools with decades of academic inertia — while Python's better-maintained, faster, and more capable ecosystem went largely untaught. The researcher who understands their domain deeply but doesn't want to spend two hours reading Scipy docs to run a single test was the exact person the existing tooling failed. DataSafari is the attempt to fix that: one import, one function call, one plain-English report.
@@ -80,8 +78,6 @@ Data Safari
 **250+:** Pytest tests written
 
 **136:** Issues closed
-
-<a id="stack"></a>
 
 ## Stack
 
@@ -164,8 +160,6 @@ Data Safari
 - Illustrator
 
 - Photoshop
-
-<a id="abilities"></a>
 
 ## Abilities
 
@@ -419,8 +413,6 @@ Skills developed through this ability:
 
 - Graphic Asset Production
 
-<a id="works"></a>
-
 ## Works
 
 Image: [GitHub Actions showing full CI/CD pipeline overview](<https://www.georgedreemer.com/public_img/datasafari/datasafari-lib_cioverview.jpg>)
@@ -561,13 +553,9 @@ Growth
 
 - Maintained a professional open-source presence: README, changelog, issue labels, and a coherent brand that makes a solo-built library read as a production-grade tool
 
-<a id="in-depth"></a>
-
 ## In Depth
 
 #### Built for the Professor Who Doesn't Have Time to Learn Python
-
-<a id="story-panel-1"></a>
 
 At RUG, the standard data science curriculum ran on Stata, R, and SPSS. These tools have decades of academic inertia behind them, not necessarily because they are better, but because professors mastered them before Python became a serious data science platform and have not had time to switch. As a result, students graduate knowing tools that industry has largely moved beyond, while Python's better-maintained, faster, free, and more capable ecosystem goes untaught. Professors and other departmental staff have too much on their hands for a full curriculum redesign.
 
@@ -579,8 +567,6 @@ That philosophy drove every product decision. It's why `method='all'` is the def
 
 #### Input Engineering: Ask Less, Do More
 
-<a id="story-panel-2"></a>
-
 The hardest design constraint in DataSafari was self-imposed: a user should be able to call any function with just a DataFrame and a column list and get something genuinely useful back. No configuration, statistical expertise, or output parsing should be required. The library decides the rest.
 
 Making that work means every function carries a significant amount of internal decision-making that the user never sees. `explore_num()` takes a single `method` parameter that defaults to `'all'` — which means it runs correlation analysis, distribution analysis, three separate outlier detection algorithms (Z-score, IQR, and Mahalanobis distance), and a multicollinearity check in one call. The user passed two arguments. The library ran seven analyses and printed a structured plain-English report. That ratio — minimal input to maximal output — is the whole product.
@@ -589,8 +575,6 @@ But the API was also designed not to limit experts. Every function offers a full
 
 #### Error Handling as User Experience
 
-<a id="story-panel-3"></a>
-
 A Python traceback is the last thing a researcher wants to see at 11pm before a deadline. Every public function in DataSafari raises structured, specific errors before it does any computation — and the error messages are written for the person calling the function, not for the developer who wrote it.
 
 The error handling layer sits entirely above the statistical logic. Before `explore_num()` touches a single column, it checks: is `df` actually a DataFrame? Is `numerical_variables` a list? Are the strings in that list real column names that exist in `df`? Are those columns actually numerical? Is the list non-empty? Is the DataFrame non-empty? Is `method` one of the seven valid options? Is `output` one of the two valid options? Is `threshold_z` a number? That's nine distinct failure modes caught and surfaced with a clear message and a correct-usage example — before a single line of analysis runs. Every one of those checks exists because someone, at some point during development and testing, made exactly that mistake.
@@ -598,8 +582,6 @@ The error handling layer sits entirely above the statistical logic. Before `expl
 The discipline behind this is that a library function has no UI. The error message *is* the UI. If a user passes a string where a list is expected and gets back `TypeError: 'str' object is not iterable`, that's a failed product moment — they have to reverse-engineer what went wrong from a generic Python exception. If they get back `"explore_num(): The numerical_variables parameter must be a list of variable names. Example: var_list = ['var1', 'var2', 'var3']"`, they fix it in ten seconds and move on. That difference is entirely a writing problem, not a coding one, and it took as much time to get right as the statistical methods themselves.
 
 #### The Hidden 80%: What It Actually Takes to Ship a Python Package
-
-<a id="story-panel-4"></a>
 
 The data science code, including the statistical methods, ML pipeline, and EDA logic, represents perhaps 20% of what it took to ship DataSafari. The other 80% consists of infrastructure decisions that tutorials rarely cover and that took weeks of research to get right.
 

@@ -10,8 +10,6 @@ source_sha256: "f7620ec1fe180db241273df2ea911961d7fb5b891d0b5ea11105ff791f79f6ba
 
 # MSc Marketing Analytics & Data Science — University of Groningen
 
-<a id="intro"></a>
-
 George's MSc in Marketing Analytics & Data Science at the University of Groningen was a graduate program focused on applied statistics, machine learning, data science, and data engineering.
 
 The program covered the full path from research design and data preparation to modelling, evaluation, and communication: statistical analysis, supervised learning, segmentation, text mining, sentiment analysis, time-series work, and business-facing decision support across consumer and retail contexts.
@@ -23,8 +21,6 @@ In practice, George used Python and R for modelling, data wrangling, and automat
 University of Groningen
 
 University of Groningen   \#84 World (ARWU)   \#46 Business (ARWU)
-
-<a id="tip-rank"></a>
 
 University of Groningen — world rankings
 
@@ -41,8 +37,6 @@ University-level rankings, not specific to this programme. Source: [RUG](<https:
 **Type:** Master of Science (MSc)
 
 **Result:** 8 / 10
-
-<a id="tip-grade"></a>
 
 Dutch grading scale
 
@@ -77,8 +71,6 @@ Source: [RUG](<https://www.rug.nl/education/student-blog/what-dutch-grades-actua
 - Omnichannel Marketing
 
 - Consumer & Brand Analytics
-
-<a id="tools"></a>
 
 ## Tools
 
@@ -159,8 +151,6 @@ Design & Creative
 - After Effects
 
 - Canva
-
-<a id="abilities"></a>
 
 ## Abilities
 
@@ -490,13 +480,7 @@ Skills developed through this ability:
 
 - Evidence-Led Positioning
 
-<a id="works"></a>
-
-<a id="masters-works-heading"></a>
-
 ## Works
-
-<a id="masters-works-grid"></a>
 
 ### Visual reports
 
@@ -505,8 +489,6 @@ Presentation-format reports built around data visualisation and storytelling.
 [Text Mining, Sentiment Analysis and Propensity Score Matching](<https://www.canva.com/design/DAF00PgC88w/view?embed>)
 
 Data
-
-<a id="w-text"></a>
 
 #### Text Mining, Sentiment Analysis & Propensity Score Matching
 
@@ -526,8 +508,6 @@ Coursework
 
 Growth
 
-<a id="w-ga"></a>
-
 #### Google Analytics & Exploratory Analysis: Wehkamp's AR App
 
 - Analysed the impact of Wehkamp's augmented-reality app on its customers, asking whether people who used it behaved differently from those who did not.
@@ -545,8 +525,6 @@ Coursework
 [Time-series Analysis of Redstar versus competitors](<https://www.canva.com/design/DAF00Go7oNk/view?embed>)
 
 Data
-
-<a id="w-ts"></a>
 
 #### Time-series Analysis: Redstar vs. Competitors
 
@@ -566,8 +544,6 @@ Coursework
 
 Data
 
-<a id="w-cluster"></a>
-
 #### Cluster Analysis: Car-Buying Preferences
 
 - Investigated what consumers want when buying a car, working from survey data to find groups of buyers with similar priorities.
@@ -585,8 +561,6 @@ Coursework
 [Factor Analysis of attitudes towards sustainable clothing](<https://www.canva.com/design/DAF05nELmIc/view?embed>)
 
 Data
-
-<a id="w-factor"></a>
 
 #### Factor Analysis: Attitudes Towards Sustainable Clothing
 
@@ -606,8 +580,6 @@ Coursework
 
 Growth
 
-<a id="w-kruidvat"></a>
-
 #### Retail Mix Tactics: Kruidvat NL
 
 - Proposed a retail mix strategy for Kruidvat in the Netherlands, focused on the makeup category.
@@ -626,8 +598,6 @@ Coursework
 
 Growth
 
-<a id="w-loreal"></a>
-
 #### Omnichannel Strategy: L'Oréal NL
 
 - Proposed an omnichannel strategy for L'Oréal in the Netherlands.
@@ -645,8 +615,6 @@ Coursework
 [Exploratory Analysis of consumer attitudes towards meal kits](<https://www.canva.com/design/DAF00D8MWFA/view?embed>)
 
 Growth
-
-<a id="w-explore"></a>
 
 #### Exploratory Analysis: Consumer Attitudes Towards Meal Kits
 
@@ -670,8 +638,6 @@ Documents showcasing academic and corporate reporting.
 
 Data Pre-MSc Thesis
 
-<a id="w-premsc"></a>
-
 #### Earnings Call Sentiment & Stock Volatility
 
 - Asked whether the sentiment of an earnings call shapes how volatile a stock is afterwards, using 178 call transcripts from 10 NASDAQ-listed firms.
@@ -689,8 +655,6 @@ Coursework
 [Churn Prediction Modelling report](<https://www.canva.com/design/DAF05cR6CW8/view?embed>)
 
 Data
-
-<a id="w-churn"></a>
 
 #### Churn Prediction Modelling
 
@@ -710,8 +674,6 @@ Coursework
 
 Data
 
-<a id="w-mm1"></a>
-
 #### Market Modelling 1/2: Dutch Lemonade Market
 
 - Built a regression model of the Dutch lemonade retail market, working with data from retailers such as Albert Heijn and Jumbo.
@@ -729,8 +691,6 @@ Coursework
 [Market Modelling 2 of 2 report](<https://www.canva.com/design/DAF05T7o0LE/view?embed>)
 
 Data
-
-<a id="w-mm2"></a>
 
 #### Market Modelling 2/2: Dutch Lemonade Market
 
@@ -750,8 +710,6 @@ Coursework
 
 Engineering
 
-<a id="w-conv"></a>
-
 #### Conversion Rate Optimization Analysis
 
 - Investigated what drives conversion for an online retailer's product category, starting from the question of how the data should be extracted.
@@ -770,8 +728,6 @@ Coursework
 
 Product
 
-<a id="w-ethics"></a>
-
 #### Ethical Analysis: Food Waste, Salary Transparency & Gig Work
 
 - Analysed three live business issues through an ethical lens: food waste, salary transparency and platform-based gig work.
@@ -786,15 +742,9 @@ Coursework
 
 [PDF](<https://georgedreemer.com/downloads/academic/Ethical%20Analysis%20Food%20Waste%2C%20Salary%20Transparency%2C%20Gig%20Work.pdf>) [Enlarge](<https://www.canva.com/design/DAF00Bs9Blc/view>)
 
-<a id="thesis"></a>
-
-<a id="masters-theses-heading"></a>
-
 ## Thesis
 
 MSc thesis · University of Groningen · Grade: 8 / 10
-
-<a id="msc-thesis-title"></a>
 
 ### Willingness to Share Health Data in Italy: Investigation under a Multi-context Paradigm with DCE Data
 
@@ -852,8 +802,6 @@ Yet they preferred different options within each attribute. On who reuses the da
 
 Inside the experiment
 
-<a id="msc-context-heading"></a>
-
 #### Same health data. Different sharing context.
 
 A willingness-to-share decision involves more than the data itself. Change who collected it, who wants to reuse it, why, and under which safeguards. These were the five contextual attributes examined together in the research.
@@ -894,8 +842,6 @@ Educational reconstruction using the study’s attribute levels—not a reproduc
 
 What the analysis revealed
 
-<a id="msc-findings-heading"></a>
-
 #### Two groups agreed on what matters, and disagreed on what they prefer.
 
 Overall, respondents leaned toward not sharing. Willingness depended on the arrangement, and the five attributes did not carry equal weight.
@@ -914,8 +860,6 @@ Importance of the five attributes
 
 Ranking based on average relative attribute importance in the primary two-class latent class model. Both modelled groups shared the same attribute-importance order, while differing in their preferred levels within several attributes.
 
-<a id="msc-fig-6-cap"></a>
-
 Figure 6 Average relative attribute importance
 
 Image: [Figure 6. Average relative importance of the five contextual attributes.](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure6.png>)
@@ -929,8 +873,6 @@ An expectation challenged
 I expected information & consent to be the most influential attribute and the reason for reuse to rank second. The second expectation held; the first did not. The new data user ranked first and information & consent third, so who receives the data mattered more than how consent is organised.
 
 Inside the two groups
-
-<a id="msc-groups-heading"></a>
 
 #### One country, two contrasting preference patterns.
 
@@ -1040,8 +982,6 @@ Group 2 53.5% of respondents
 
 Levels are ordered by each group’s estimated utility. The order does not show how large the gaps are or whether neighbouring levels differ significantly; those details are in Table 4. For the original collector, new data user, and external review attributes, the groups displayed substantially contrasting orderings. Group 1 placed technological companies first as the new data user, a pattern that differs from much earlier research but resembles a Southern European subgroup reported by Biasiotto et al.
 
-<a id="msc-tab-4-cap"></a>
-
 Table 4 2-class latent class model with initial values
 
 Image: [Table 4. Results of the 2-class latent class model estimated with initial values.](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-table4.png>)
@@ -1051,8 +991,6 @@ Scroll sideways to see the full table.
  [Open full size ↗](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-table4.png>)
 
 What it suggests
-
-<a id="msc-implications-heading"></a>
 
 #### Plan for different audiences, not one average citizen.
 
@@ -1068,8 +1006,6 @@ These are research-informed considerations, not a tested intervention or a demon
 
 For a closer look
 
-<a id="msc-evidence-heading"></a>
-
 #### Research decisions and supporting evidence
 
 Explore how the sample was prepared, how the preference models were specified, and where the interpretation needs care.
@@ -1084,23 +1020,17 @@ The final sample had a mean age of 50.83 years (SD 14.55), was 53% female and 47
 
 Fieldwork, recruitment and the experimental design were carried out by the source research team.
 
-<a id="msc-fig-3-cap"></a>
-
 Figure 3 Missing-value summary
 
 Image: [Figure 3. Summary of missing values in the dataset.](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure3.png>)
 
  [Open full size ↗](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure3.png>)
 
-<a id="msc-fig-4-cap"></a>
-
 Figure 4 Education level by gender
 
 Image: [Figure 4. Respondents' education levels, shown by gender.](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure4.png>)
 
  [Open full size ↗](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure4.png>)
-
-<a id="msc-fig-5-cap"></a>
 
 Figure 5 Health-related descriptives
 
@@ -1118,8 +1048,6 @@ This structure enabled the analysis to examine contextual trade-offs across the 
 
 Sixteen decisions per participant are repeated observations from the same people—not sixteen independent respondents.
 
-<a id="msc-fig-2-cap"></a>
-
 Figure 2 Example choice task
 
 Image: [Figure 2. Example choice task from the study: a table showing one data-sharing scenario with a level for each of the five attributes, which participants accepted or rejected.](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure2-choicetask.png>)
@@ -1131,8 +1059,6 @@ Scroll sideways to see the full figure.
 Model selection and attribute importance
 
 After checking correlations between the independent variables for multicollinearity, I fitted five models of three types in Stata 17: three latent class models (one class; two classes without starting values; two classes with starting values from the one-class model), a conditional logit, and a logistic regression. I compared them by AIC and log-likelihood.
-
-<a id="msc-tab-3-cap"></a>
 
 Table 3 AIC and log-likelihood for the five models
 
@@ -1150,8 +1076,6 @@ Average relative attribute importance was computed in three steps:
 
 3. Average the values across the two classes.
 
-<a id="msc-eq-lcm-cap"></a>
-
 Equation Latent class model
 
 Image: [Equation for the latent class model, as specified in the thesis.](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-equation-latentclassmodel.png>)
@@ -1159,8 +1083,6 @@ Image: [Equation for the latent class model, as specified in the thesis.](<https
 Scroll sideways to see the full equation.
 
  [Open full size ↗](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-equation-latentclassmodel.png>)
-
-<a id="msc-eq-clm-cap"></a>
 
 Equation Conditional logit model
 
@@ -1198,8 +1120,6 @@ Eight of the thirteen estimated levels were significant (pseudo R² 0.111; LR ch
 
 Conditional logit coefficients give direction, not the size of differences between levels, so this model corroborates the latent class results without replacing them.
 
-<a id="msc-tab-5-cap"></a>
-
 Table 5 Conditional logit results
 
 Image: [Table 5. Results of the conditional logit model.](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-table5-conditionallogitmodel.png>)
@@ -1223,10 +1143,6 @@ Limitations and what comes next
 See the defence slides
 
 The slides I used to present the research question, modelling approach, and findings to the Committee at my Thesis Defence.
-
-<a id="mads-madlad"></a>
-
-<a id="mm-heading"></a>
 
 ## MADS Madlad
 
@@ -1266,21 +1182,15 @@ The notes outlasted the exams. Students are still buying them through Stuvia and
 
 [Explore Knoowy](<https://knoowy.nl/user/132765/madsmadlad>)
 
-<a id="mm-library-heading"></a>
-
 ### Browse the free editions
 
 Seven samples from the catalogue. Browse inside each document, open it full size, or read the PDF. Full editions are available through the storefronts.
 
 Scroll sideways to explore the shelf.
 
-<a id="mm-summary-rail"></a>
-
 [Data Science Methods — free edition](<https://www.canva.com/design/DAF1AmW5MZc/view?embed>)
 
 Free edition · 01 / 07
-
-<a id="mm-doc-dsmm"></a>
 
 #### Data Science Methods
 
@@ -1290,8 +1200,6 @@ Free edition · 01 / 07
 
 Free edition · 02 / 07
 
-<a id="mm-doc-mm"></a>
-
 #### Market Models
 
 [PDF](<https://georgedreemer.com/downloads/academic/madsmadlad/MM-MM-FreeEdition.pdf>) [Enlarge](<https://www.canva.com/design/DAF1Ai3jqeI/view>)
@@ -1299,8 +1207,6 @@ Free edition · 02 / 07
 [Digital Marketing Intelligence — free edition](<https://www.canva.com/design/DAF1AtUOMXM/view?embed>)
 
 Free edition · 03 / 07
-
-<a id="mm-doc-dmi"></a>
 
 #### Digital Marketing Intelligence
 
@@ -1310,8 +1216,6 @@ Free edition · 03 / 07
 
 Free edition · 04 / 07
 
-<a id="mm-doc-rom"></a>
-
 #### Retail & Omnichannel Marketing
 
 [PDF](<https://georgedreemer.com/downloads/academic/madsmadlad/MM-ROM-FreeEdition.pdf>) [Enlarge](<https://www.canva.com/design/DAF1AofYEL4/view>)
@@ -1319,8 +1223,6 @@ Free edition · 04 / 07
 [Data Engineering — free edition](<https://www.canva.com/design/DAF1AqBQB9M/view?embed>)
 
 Free edition · 05 / 07
-
-<a id="mm-doc-dem"></a>
 
 #### Data Engineering
 
@@ -1330,8 +1232,6 @@ Free edition · 05 / 07
 
 Free edition · 06 / 07
 
-<a id="mm-doc-slm"></a>
-
 #### Statistical Learning in Marketing
 
 [PDF](<https://georgedreemer.com/downloads/academic/madsmadlad/MM-SLM-FreeEdition.pdf>) [Enlarge](<https://www.canva.com/design/DAF1AiFrKpc/view>)
@@ -1339,8 +1239,6 @@ Free edition · 06 / 07
 [Companies, Brands and Consumers — free edition](<https://www.canva.com/design/DAF1AmPV-po/view?embed>)
 
 Free edition · 07 / 07
-
-<a id="mm-doc-cbc"></a>
 
 #### Companies, Brands & Consumers
 

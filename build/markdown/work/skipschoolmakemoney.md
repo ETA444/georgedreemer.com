@@ -10,8 +10,6 @@ source_sha256: "c709f0169c3777c823261dbab7102e2c0f7fa622e6c40d9132ad990f5a72fd60
 
 # SkipSchoolMakeMoney — Streetwear Brand
 
-<a id="intro"></a>
-
 SkipSchoolMakeMoney (SSMM) was a streetwear brand born out of evening shifts at the Hampshire College media lab — no funding, no team, no formula. It grew from one hand-drawn logo into a cult-like following spanning three continents & hundreds of orders per collection.
 
 SSMM was never just a clothing line. It was underground streetwear built on story, community, and relentless self-taught hustle — design, manufacturing, marketing, and logistics, all run by one person with a vision.
@@ -75,8 +73,6 @@ SkipSchoolMakeMoney
 
 **1000+:** Orders fulfilled
 
-<a id="stack"></a>
-
 ## Stack
 
 ### Design & Creative
@@ -122,8 +118,6 @@ SkipSchoolMakeMoney
 - HTML
 
 - CSS
-
-<a id="abilities"></a>
 
 ## Abilities
 
@@ -234,8 +228,6 @@ Skills developed through this ability:
 - Feedback Loop Optimization
 
 - Campaign Strategy
-
-<a id="works"></a>
 
 ## Works
 
@@ -451,13 +443,9 @@ Growth
 
 - Proved the project had enough commercial and cultural traction to be taken seriously by startup institutions
 
-<a id="in-depth"></a>
-
 ## In Depth
 
 #### The Graduation Photo that Started a Movement
-
-<a id="story-panel-1"></a>
 
 One of our earliest supporters wore an SSMM hoodie under his graduation gown and took his entire set of graduation photos in it — cap, gown, tassel, and a brand nobody had heard of hiding underneath. Someone posted the photos with the caption "this boy got a bright future ahead of him," and within days it was circulating across dozens of meme pages, splitting comment sections between people laughing and people genuinely offended on the kid's behalf.
 
@@ -470,8 +458,6 @@ Image: [SkipSchoolMakeMoney Fan wears SSMM Internet Tour Crewneck at his Graduat
 Looking back, this is where the meme marketing engine actually started. Not from a campaign I planned, but from fans finding ways to insert the brand into their own lives that were funnier and more absurd than anything I could have scripted. Every future giveaway and meme push was really just me trying to feed that same energy back to the community that had already proven it existed.
 
 #### Baseball Cards for the Internet Age
-
-<a id="story-panel-2"></a>
 
 At the peak of its run, I'd had the chance to meet and work with a growing list of names in the underground scene — Pouya, Fat Nick, Ghostemane, Lil Peep, TooPoor (Layla), Rae Sremmurd, and others. Somewhere in the middle of all that, an old childhood obsession resurfaced: I used to collect Yu-Gi-Oh cards, and something about the format stuck with me long after I'd stopped playing.
 
@@ -491,8 +477,6 @@ Image: [SkipSchoolMakeMoney Clout Card featuring Tai Lopez and Gary Vaynerchuk](
 
 #### The Meeting I Missed to a Flat Tire
 
-<a id="story-panel-3"></a>
-
 Not every connection worked out, and this one still stings. I'd lined up a meeting with Tycho Burwell, a director who went on to shoot music videos for artists like Nettspend and Trippie Redd. On the drive down, I got a flat tire — and because I young guy in the US without a phone plan, I had no way to call Tycho to explain, and no way to call my insurance for help either.
 
 A state trooper happened to stop, realized how far over my head I was, and helped me change the tire himself. He was kind about it, but he also told me straight: don't push on to New York on a spare, turn around and go home. So I did — heartbroken, because there was no way to salvage the meeting from the side of a highway with no working phone.
@@ -500,8 +484,6 @@ A state trooper happened to stop, realized how far over my head I was, and helpe
 Tycho took the no-show personally, and understandably so from where he was sitting — we never spoke again. It's a small story in the grand scheme of the brand, but it's an honest one: running something alone means the gap between "almost" and "actually" sometimes comes down to things completely outside your control, like a tire and a phone plan you couldn't yet afford.
 
 #### Alone in Times Square with Two Suitcases Full of Clothes
-
-<a id="story-panel-4"></a>
 
 My first solo trip to New York City was for a photoshoot. I had just moved to the US and barely knew my way around, and I drove three and a half hours from a small college town straight into Times Square traffic with two suitcases full of clothes in the back seat. I found street parking on a busy Brooklyn block — next to a fire hydrant, because it was the only open spot. Only later did I find out why fire hydrant spots aren't taken once I saw the ticket.
 
@@ -514,8 +496,6 @@ Image: [SkipSchoolMakeMoney New York City photoshoot](<https://georgedreemer.com
 Image: [SkipSchoolMakeMoney New York City photoshoot](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_4.jpg>)
 
 Image: [SkipSchoolMakeMoney New York City photoshoot](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_5.jpg>)
-
-<a id="instagram"></a>
 
 ## On Instagram
 

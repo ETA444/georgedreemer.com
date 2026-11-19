@@ -10,8 +10,6 @@ source_sha256: "96e0a1e802c808ab39ac3665c0b0acdaa2ac71ce5f8420c3cfe5696de2112956
 
 # thoughtbubble — Knowledge-First Social Network
 
-<a id="intro"></a>
-
 A knowledge-first social network, built from scratch by two self-taught developers. Just a love for web development, zero budget, launched in the USA and expanded to reach 900+ users across the world.
 
 thoughtbubble was designed to shift social media away from entertainment toward sharing ideas, insights, and self-improvement content.
@@ -60,8 +58,6 @@ thoughtbubble
 
 **7:** Relational DBs managed
 
-<a id="stack"></a>
-
 ## Stack
 
 ### Code
@@ -93,8 +89,6 @@ thoughtbubble
 - Illustrator
 
 - Photoshop
-
-<a id="abilities"></a>
 
 ## Abilities
 
@@ -236,8 +230,6 @@ Skills developed through this ability:
 
 - Scalable Content Structures
 
-<a id="works"></a>
-
 ## Works
 
 Image: [thoughtbubble feed with expanded side menu showing followers, settings, bug report, and log out](<https://georgedreemer.com/public_img/thoughtbubble/thoughtbubble-feed1_alpha-min.png>)
@@ -298,13 +290,9 @@ Growth
 
 - Coordinated the legal side of the business — secured copyright, registered entity & filed necessary paperwork
 
-<a id="in-depth"></a>
-
 ## In Depth
 
 #### Built from scratch & self-taught
-
-<a id="story-panel-1"></a>
 
 Nikolay and I built thoughtbubble in PHP, JavaScript, and MySQL. There was no framework, no CMS, no boilerplate — we'd hit wall after wall and just keep watching web development videos until it clicked. I built the full back-end of thoughtbubble and co-developed the front-end, while also designing the full icon set and logo in Adobe Illustrator.
 
@@ -334,8 +322,6 @@ We scaled to nearly a thousand users, and every line of it was ours. Every featu
 
 #### The idea that was early
 
-<a id="story-panel-2"></a>
-
 The pitch was simple: a social network where your feed only teaches you things. No vacation photos, no cat videos — just insights from books, actionable quotes, and self-improvement content. We built it inspired by the rise of Gary Vaynerchuk and Tai Lopez and the audiences forming around them. People were already sharing nuggets from books, videos, and articles — but existing platforms weren't built to hold that kind of content well. We saw a clear gap: entertainment-first platforms simply weren't built to support information-rich content.
 
 So we set out to build something different. We envisioned posts where the UI would include things like book titles, author, and reference material. A category system built around four pillars of self-improvement: health, wealth, relationships, and fulfillment. The user profile would read more like a personal development journal — with pinned posts, categorized content, and a space for reflection.
@@ -346,15 +332,11 @@ Looking at how much that space has grown, there's real satisfaction in knowing t
 
 #### How we got 900 users without spending a dollar
 
-<a id="story-panel-3"></a>
-
 We didn't run ads. We didn't have a budget. The growth strategy was entirely manual: reach out directly to people who were already creating self-improvement content on YouTube or Instagram, show them the platform, and get them to seed it with their content. We identified early that a knowledge-first feed is only as good as the content in it — if the first 50 users post junk, the product is dead on arrival.
 
 We tracked registrations, session counts, and engagement metrics in MySQL and used those numbers to prioritise what to build next. The most-used features got more polish. The least-used ones got cut or rethought. We didn't call it a data-driven product loop at the time, but that's exactly what it was.
 
 #### We got ripped off by a lawyer - got the copyright anyway
-
-<a id="story-panel-4"></a>
 
 At some point, two first-time founders decided their app needed real legal protection — because apparently "two guys with a login page" doesn't hold up as a legal entity on its own. So we hired a copyright lawyer, nodded confidently at documents we barely understood, and paid real money to learn what a retainer is the hard way. He did the bare minimum, billed like he'd written us a constitution, and left us wondering if we'd just been the world's greenest, most polite scam victims.
 
