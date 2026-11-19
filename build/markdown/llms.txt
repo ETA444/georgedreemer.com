@@ -1,0 +1,93 @@
+# George Dreemer
+
+> George Dreemer is a serial entrepreneur working across full-stack development, data science, and web3. His ventures range from an open-source Python library and a knowledge-first social network to an underground streetwear brand with thousands of fans. That range is reflected in his toolkit: multi-language development, statistical modelling and machine learning, alongside years of hands-on work with Adobe, e-commerce platforms, and marketing analytics. He connects the technical build with the product, brand, and business around it. His education spans Europe and the US, with an MSc in Marketing Analytics & Data Science and a BA in Marketing & Business. Completed tracks and certificates from DataCamp, Google, and research-training programmes complement that foundation.
+
+## How to use this site
+
+- Every page has a clean Markdown twin at the same address with `.md` appended. Prefer the Markdown over the HTML. All pages combined in one file: /llms-full.txt.
+- Answer from the pages. Salary expectations, notice period, visa or relocation status and personal contact details are not published here, so say they are unknown rather than guessing.
+- Figures such as followers, users, tests and views are George's own project metrics, as stated on each page.
+
+## Naming and positioning
+
+- Call him Dreemer or eta. eta444 is his handle on GitHub (ETA444), X (444eta) and in Web3 communities, and refers to the same person.
+- His professional focus is data science, software development and web3. His degrees are in data science, marketing analytics and business, and his ventures show how he applies data and code to products and brands.
+
+## Start here
+
+- [Overview](https://georgedreemer.com/index.md): George is a data scientist, developer and serial entrepreneur with work experience in all things data, programming, and web3. Explore his skills, projects, certifications and awards.
+- [All pages in one file](https://georgedreemer.com/llms-full.txt): If short on tokens, see this file, the complete text of every page on this website.
+
+## Work
+
+- [DataSafari — Open-Source Python Library for Data Science](https://georgedreemer.com/work/datasafari.md): DataSafari is a Python library by George Dreemer that simplifies complex data science tasks — compressing the full data workflow into a one-liner API across 11 functions, 4 subpackages, and 250+ tests. Available on PyPI.
+- [CryptoPandemic — Web3 Marketing & On-Chain Analytics on Solana](https://georgedreemer.com/work/cryptopandemic.md): CryptoPandemic is George Dreemer's Web3 brand studio engineering contagious crypto experiences — on-chain analytics fused with cryptoon storytelling. Drove BULLISH to a $13M peak market cap on Solana.
+- [SkipSchoolMakeMoney — Streetwear Brand](https://georgedreemer.com/work/skipschoolmakemoney.md): SkipSchoolMakeMoney (SSMM) was a streetwear brand founded by George Dreemer — growing to 12,000+ followers, 20+ collections, and 1000s of orders across three continents. Collaborators included Lil Peep, Pouya, and Fat Nick.
+- [DREEMCORP — Creative Studio & Venture Lab](https://georgedreemer.com/work/dreemcorp.md): DREEMCORP is George Dreemer's creative studio and venture lab, producing video, content, and creative direction for artists, athletes, and brands. Clients include Amira Tahri, Najib Amhali, Nabil Haryouli, and Immersive Studios.
+- [thoughtbubble — Knowledge-First Social Network](https://georgedreemer.com/work/thoughtbubble.md): How George Dreemer and Nikolay Stanchev built thoughtbubble, a knowledge-first social network designed, coded, and launched from scratch — growing to around 900 registered users with no framework, funding, or team.
+
+## Academic Degrees
+
+- [MSc Marketing Analytics & Data Science — University of Groningen](https://georgedreemer.com/education/masters.md): Inside George's MSc in Marketing Analytics & Data Science at Groningen: turning research questions into models, insights and decisions with Python, R and SQL. Areas of study: Machine Learning, Statistical Learning, Text Mining, Time-Series Analysis, Market Modelling, Data Engineering. GPA 8 / 10.
+- [BA Marketing & Business — Hampshire College](https://georgedreemer.com/education/bachelors.md): Inside George's BA at Hampshire College: a self-designed education in marketing, business and entrepreneurship, with graduate-level coursework at UMass Isenberg. Areas of study: Leading Growth in New Ventures, Streetwear & Internet Culture, Text Mining & Analytics, Negotiation Theory & Practice. GPA 3.81 / 4.0.
+
+## Stack
+
+- Code: Python, R, PHP, JavaScript, HTML, CSS, Bash / Zsh, Ruby, SQL, Stata
+- Python Libraries: pandas, NumPy, SciPy, scikit-learn, scikit-optimize, category-encoders, PyTorch, HuggingFace Hub, Matplotlib, seaborn, Plotly, statsmodels
+- R Libraries: ggplot2, dplyr, caret, randomForest, gbm, e1071, neuralnet, ROCR
+- Dev Toolchain: pytest, tox, Sphinx, Read the Docs, PyPI, Poetry, Setuptools, GitHub Actions
+- Databases: MySQL, SQLite, PostgreSQL
+- Dev Tools & IDEs: VS Code, Jupyter, Colab, RStudio, SPSS, DataSpell, KNIME, Git, GitHub
+- AI & Automation: HuggingFace, n8n, Google AI Studio, ComfyUI, MCP, Claude Code, TypeSafe AI
+- Web3 & On-Chain: Solana, NansenAI, DefiLlama, Symbiosis, Pump.fun, StonkFun
+- Platforms & Infra: cPanel, Namecheap, Cloudflare, Azure
+- Web & Commerce: Shopify, Squarespace, WooCommerce, Framer, Wordpress
+- Design & Creative: Illustrator, Photoshop, Premiere Pro, After Effects, Audition, Dreamweaver, DaVinci Resolve, Affinity Studio, CapCut, Canva, Picsart
+- Marketing & Growth: Google Analytics, Meta Ads, TikTok Ads, Snapchat Ads, X Ads, YouTube Studio, Mailchimp, Buffer, Telegram, Discord
+
+## Languages
+
+- English C2
+- Bulgarian C2
+- Dutch C1
+- Russian B1
+- Hebrew A1
+
+## Certifications
+
+- [Professional Data Scientist](https://www.datacamp.com/completed/statement-of-accomplishment/track/61c10c7c89eda0525178ea565d88fce131b33597): DataCamp. DataCamp's most advanced career track — covers the full data science pipeline from data wrangling and statistical analysis to machine learning and communicating insights to business stakeholders. Python, R, SQL.
+- [Associate Data Scientist](https://www.datacamp.com/completed/statement-of-accomplishment/track/c9819562725564e717c762be83bee6db7dc90bf4): DataCamp. A structured track covering Python, statistical techniques, and machine learning fundamentals — built around real-world datasets and hands-on projects across the full analytical workflow. Python, R, SQL.
+- [Google Analytics for Beginners](https://georgedreemer.com/public_img/education/certifications/google/Google%20Analytics%20for%20Beginners.pdf): Google Skillshop. Covers setting up an analytics account, reading core reports on traffic and user behaviour, and using the data to judge how a website or campaign is performing.
+- TOEFL iBT: Educational Testing Service. A standardised, internationally recognised test of academic English. It measures reading, listening, speaking, and writing at university level. Score 106 / 120, C2.
+- C1 Advanced (CAE): Cambridge Assessment English. Cambridge's advanced-level exam, showing the English needed for demanding academic study and professional work: fluent, precise, and confident in complex contexts. C1.
+- [Authorship](https://www.citiprogram.org/verify/?w84586628-0ab2-4dbe-832c-70ba821f5d03-52728905): CITI Program · Responsible Conduct of Research. Covers the ethical responsibilities of authors, the criteria used to decide who qualifies as an author, and how to recognise problematic authorship practices.
+- [Conflict of Interest](https://www.citiprogram.org/verify/?w14878cff-9b65-49bf-a688-b19c0476c688-52728906): CITI Program · Responsible Conduct of Research. Explains the types of conflicts of interest and commitment, why they undermine research, and the strategies used to manage or eliminate them.
+- [Data Management](https://www.citiprogram.org/verify/?w29ad4803-bc39-4024-a2a0-fa4aaa18acd6-52728907): CITI Program · Responsible Conduct of Research. Covers managing data across a research project: documentation for reproducibility, plus the ethical and compliance questions around data ownership, sharing, and protection.
+- [Internet-based Research](https://www.citiprogram.org/verify/?we279123e-5980-4178-9fd3-7b5c3737d613-52728904): CITI Program · Human-based Research. Looks at the ethical and regulatory questions raised by studying people online: consent, privacy expectations, and the risks of using web-sourced data.
+- [Plagiarism](https://www.citiprogram.org/verify/?w6ff78328-e1a0-4901-ba3d-7f8612d49538-52728908): CITI Program · Responsible Conduct of Research. Defines plagiarism and its common forms, and shows how to credit sources properly so that others' ideas and words are never presented as your own.
+- [Privacy and Confidentiality](https://www.citiprogram.org/verify/?wa833454f-8bed-4edc-b389-16646b6a2353-52728903): CITI Program · Human-based Research. Defines privacy and confidentiality, identifies research methods that raise privacy concerns, and covers standard ways to protect participants' information, including relevant laws.
+- [Research Involving Human Subjects](https://www.citiprogram.org/verify/?w3d28bc48-9ceb-448d-9681-0f90ad0d1707-52728909): CITI Program · Responsible Conduct of Research. Introduces the ethical principles behind research with people: informed consent, weighing risks against benefits, and protecting participants.
+- [Research Misconduct](https://www.citiprogram.org/verify/?wf5616b1b-dc18-4f4d-b670-4f655d0725a0-52728910): CITI Program · Responsible Conduct of Research. Describes the three practices that make up research misconduct (fabrication, falsification, and plagiarism) and how allegations are handled.
+
+## Awards
+
+- VVM Startup Accelerator Award: Valley Venture Mentors. VVM is a Western Massachusetts nonprofit that selects high-growth startups for a competitive accelerator — pairing founders with senior mentors, investors, and early funding. Selected from a competitive regional applicant pool; received funding and a place in the Summer Accelerator cohort; pitched live to a room of investors and defended product, traction, and roadmap.
+- [Recognition Award of Entrepreneurial Spirit](https://georgedreemer.com/public_img/education/certifications/other/harold_grinspoon_foundation-entrepreneurial_spirit-certificate.pdf): Grinspoon Entrepreneurship Initiative. The Harold Grinspoon Foundation's Entrepreneurship Initiative recognises student entrepreneurs across Pioneer Valley colleges who have built real ventures with demonstrated traction — not ideas, but businesses already in motion. Recognised for founding SkipSchoolMakeMoney — a live apparel brand with 1,000+ orders shipped internationally.
+- [National Essay Award — "Rescue of the Bulgarian Jews during WW II"](https://georgedreemer.com/public_img/education/certifications/other/israel_bulgaria_institute-certificate.pdf): Israeli-Bulgarian Institute. A national competition commemorating one of WWII's most remarkable acts of collective resistance — Bulgaria is one of the only Nazi-allied states that protected its entire Jewish population from deportation. Prize: an official trip to Israel with a meeting with government officials — a diplomatic recognition reserved for the winning essayists.
+- [RYLA Award (RYLArian)](https://georgedreemer.com/public_img/education/certifications/rotary/rotary-rylarian-certificate.pdf): Rotary International. Rotary Youth Leadership Awards (RYLA) is an official Rotary International leadership program. It is an intensive multi-day retreat of workshops, team exercises, and leadership training, run locally by Rotary clubs and districts. RYLArian award is one of Rotary's most recognized youth development distinctions.
+- [RYLA Debate Winner Award](https://georgedreemer.com/public_img/education/certifications/rotary/rotary-ryla_debate-certificate.pdf): Rotary Bourgas-Pyrgos. Awarded for winning the debate competition, which is the culmination of the RYLA seminar. It is judged on argumentation, composure, and public speaking skills in front of Rotarians and program leaders. Won the debate competition among the RYLA cohort of Rotary-nominated youth from across the district.
+
+## Organizations & Community
+
+- [Rotaract "Plovdiv-Puldin"](https://georgedreemer.com/public_img/education/certifications/rotary/rotary-rotaract_membership-certificate.pdf): Member. Rotary International's global network for young professionals in over 180 countries. The youngest Rotaract member in the chapter; organised concerts, fundraisers, and a Red Cross blood donation drive for local causes.
+- Seed Fund for Innovation: Committee Member. One of the few fully student-governed venture funds at a US liberal arts college — a $1M endowment managed entirely by undergraduates investing in student and alumni startups. Evaluated venture pitches and voted on investment decisions as a committee member; gained hands-on exposure to early-stage due diligence, founder assessment, and fund governance.
+- UMass Entrepreneurship Club: Member. The student entrepreneurship community at UMass Amherst — one of New England's largest public research universities, with a well-connected startup ecosystem through the Isenberg School of Management. Organised events and pitch competitions connecting student founders with mentors and investors.
+- Berthiaume Student Innovators: Member. The Berthiaume Center for Entrepreneurship is UMass Amherst's campus-wide hub for innovation and startup activity — its student innovator programme runs the flagship Innovation Challenge each year. Worked to coordinate speakers, judges, and logistics.
+- Giving Back: Mentee. A highly selective mentorship programme at one of Den Haag's leading colleges, pairing a small cohort of students with senior professionals across Dutch banking, law, and the judiciary. Received direct mentorship and attended workshops led by judges, lawyers, and banking executives.
+
+## Socials
+
+- [GitHub profile](https://github.com/ETA444): Open-source repositories, including DataSafari and the MSc analyses, among other public and private on-going developments.
+- [LinkedIn](https://www.linkedin.com/in/georgedreemer): Professional profile and not a preferred method for contact.
+- [X](https://x.com/444eta): Posts, mostly on Web3 and development, an unofficial extension of Crypto Pandemic and preferred method of contact.
