@@ -5,6 +5,10 @@ config.php
 wp-config.php
 configuration.php
 
+# Python
+.venv-markdown/
+__pycache__/
+
 # cPanel-specific
 .htpasswd
 .cpanel/
