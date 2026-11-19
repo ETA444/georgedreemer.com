@@ -5,14 +5,14 @@ url: "https://georgedreemer.com/"
 markdown_url: "https://georgedreemer.com/index.md"
 language: "en"
 source: "dev_html/index.html"
-source_sha256: "76147a4f986d0fab93a5e1f1b8f1de96cebf31994b2eef988fe8553819279f53"
+source_sha256: "81a04527981e0e05e543315b47702459c831e90f9045d2c6305c6d6816b0dfbe"
 ---
 
 # George Dreemer — Data Scientist, Developer and Entrepreneur
 
 Excellence through action.    Creatio Perpetua.
 
-George Dreemer is a serial entrepreneur working across full-stack development, data science, and business. His ventures range from an open-source Python library and a knowledge-first social network to an underground streetwear brand with thousands of fans.
+George Dreemer is a serial entrepreneur working across full-stack development, data science, and web3. His ventures range from an open-source Python library and a knowledge-first social network to an underground streetwear brand with thousands of fans.
 
 That range is reflected in his toolkit: multi-language development, statistical modelling and machine learning, alongside years of hands-on work with Adobe, e-commerce platforms, and marketing analytics. He connects the technical build with the product, brand, and business around it.
 
