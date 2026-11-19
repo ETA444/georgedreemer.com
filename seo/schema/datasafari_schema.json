@@ -1,87 +1,116 @@
 {
-    "@context": "https://schema.org",
-    "@graph": [
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://georgedreemer.com/work/datasafari#webpage",
+      "url": "https://georgedreemer.com/work/datasafari",
+      "name": "DataSafari — Open-Source Python Library for Data Science",
+      "description": "DataSafari is a Python library by George Dreemer that simplifies complex data science tasks, compressing the full data workflow into a one-liner API across 11 functions and 4 subpackages. Available on PyPI.",
+      "isPartOf": {
+        "@id": "https://georgedreemer.com/#website"
+      },
+      "about": {
+        "@id": "https://georgedreemer.com/work/datasafari#project"
+      },
+      "mainEntity": {
+        "@id": "https://georgedreemer.com/work/datasafari#project"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://datasafari.dev/ncsitebuilder/gallery/ds-branding-thumb-main-web.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "en",
+      "breadcrumb": {
+        "@id": "https://georgedreemer.com/work/datasafari#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://georgedreemer.com/work/datasafari#breadcrumb",
+      "itemListElement": [
         {
-        "@type": "WebPage",
-        "@id": "https://georgedreemer.com/work/datasafari#webpage",
-        "url": "https://georgedreemer.com/work/datasafari",
-        "name": "DataSafari — Data Science Python Library",
-        "description": "DataSafari is a Python library by George Dreemer that simplifies complex data science tasks, compressing the full data workflow into a one-liner API across 11 functions and 4 subpackages. Available on PyPI.",
-        "isPartOf": {
-            "@type": "WebSite",
-            "@id": "https://georgedreemer.com/work/#website",
-            "url": "https://georgedreemer.com",
-            "name": "George Dreemer"
-        },
-        "about": { "@id": "https://georgedreemer.com/work/datasafari#project" },
-        "mainEntity": { "@id": "https://georgedreemer.com/work/datasafari#project" },
-        "primaryImageOfPage": {
-            "@type": "ImageObject",
-            "url": "https://datasafari.dev/ncsitebuilder/gallery/ds-branding-thumb-main-web.png",
-            "width": 1200,
-            "height": 630
-        }
+          "@type": "ListItem",
+          "position": 1,
+          "name": "George Dreemer",
+          "item": "https://georgedreemer.com"
         },
         {
-        "@type": "SoftwareSourceCode",
-        "@id": "https://georgedreemer.com/work/datasafari#project",
-        "name": "DataSafari",
-        "url": "https://georgedreemer.com/work/datasafari",
-        "description": "An open-source Python library that simplifies complex data science tasks — compressing the full data workflow (exploration, transformation, evaluation, and prediction) into a clean one-liner API. Built and maintained solo by George Dreemer.",
-        "image": {
-            "@type": "ImageObject",
-            "url": "https://datasafari.dev/ncsitebuilder/gallery/ds-branding-thumb-main-web.png",
-            "width": 1200,
-            "height": 630
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Work",
+          "item": "https://georgedreemer.com/#work"
         },
-        "programmingLanguage": "Python",
-        "runtimePlatform": "Python 3.9, 3.10, 3.11, 3.12",
-        "codeRepository": "https://github.com/ETA444/datasafari",
-        "downloadUrl": "https://pypi.org/project/datasafari/",
-        "keywords": [
-            "DataSafari",
-            "George Dreemer",
-            "Python library",
-            "data science",
-            "machine learning",
-            "automated EDA",
-            "hypothesis testing",
-            "ML pipeline automation",
-            "data science workflow",
-            "data transformation",
-            "scikit-learn",
-            "pandas",
-            "scipy",
-            "statsmodels",
-            "PyPI",
-            "open source",
-            "one-liner API"
-        ],
-        "genre": [
-            "Data science library",
-            "Machine learning library",
-            "Open-source Python package",
-            "Portfolio project",
-            "Engineering project"
-        ],
-        "creator": {
-            "@type": "Person",
-            "@id": "https://georgedreemer.com/#person",
-            "name": "George Dreemer",
-            "url": "https://georgedreemer.com"
-        },
-        "author": {
-            "@type": "Person",
-            "@id": "https://georgedreemer.com/#person",
-            "name": "George Dreemer",
-            "url": "https://georgedreemer.com"
-        },
-        "sameAs": [
-            "https://datasafari.dev",
-            "https://datasafari.dev/docs",
-            "https://github.com/ETA444/datasafari",
-            "https://pypi.org/project/datasafari/"
-        ]
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "DataSafari",
+          "item": "https://georgedreemer.com/work/datasafari"
         }
-    ]
+      ]
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://georgedreemer.com/work/datasafari#project",
+      "name": "DataSafari",
+      "url": "https://georgedreemer.com/work/datasafari",
+      "description": "An open-source Python library that simplifies complex data science tasks — compressing the full data workflow (exploration, transformation, evaluation, and prediction) into a clean one-liner API. Built and maintained solo by George Dreemer.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://datasafari.dev/ncsitebuilder/gallery/ds-branding-thumb-main-web.png",
+        "width": 1200,
+        "height": 630
+      },
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python 3.9, 3.10, 3.11, 3.12",
+      "codeRepository": "https://github.com/ETA444/datasafari",
+      "downloadUrl": "https://pypi.org/project/datasafari/",
+      "keywords": [
+        "DataSafari",
+        "George Dreemer",
+        "Python library",
+        "data science",
+        "machine learning",
+        "automated EDA",
+        "hypothesis testing",
+        "ML pipeline automation",
+        "data science workflow",
+        "data transformation",
+        "scikit-learn",
+        "pandas",
+        "scipy",
+        "statsmodels",
+        "PyPI",
+        "open source",
+        "one-liner API"
+      ],
+      "genre": [
+        "Data science library",
+        "Machine learning library",
+        "Open-source Python package",
+        "Portfolio project",
+        "Engineering project"
+      ],
+      "creator": {
+        "@type": "Person",
+        "@id": "https://georgedreemer.com/#person",
+        "name": "George Dreemer",
+        "url": "https://georgedreemer.com"
+      },
+      "author": {
+        "@type": "Person",
+        "@id": "https://georgedreemer.com/#person",
+        "name": "George Dreemer",
+        "url": "https://georgedreemer.com"
+      },
+      "sameAs": [
+        "https://datasafari.dev",
+        "https://datasafari.dev/docs",
+        "https://github.com/ETA444/datasafari",
+        "https://pypi.org/project/datasafari/"
+      ]
+    }
+  ]
 }
