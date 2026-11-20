@@ -763,8 +763,8 @@ def build_faq(cv, origin):
     out = [
         "# Recruiter FAQ — George Dreemer",
         "",
-        f"> Answers generated from the site's own pages ({origin}). "
-        "Nothing here is added from outside the site. "
+        f"> Answers generated from the site's own pages ({origin}). ",
+        "Nothing here is added from outside the site. ",
         f"Source of truth: [llms-full.txt]({origin}/llms-full.txt).",
         "",
     ]
