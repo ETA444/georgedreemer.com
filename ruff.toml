@@ -3,3 +3,4 @@ line-length = 100
 [lint]
 select = ["E", "F", "W", "I", "B", "RUF"]
 ignore = ["E501"]
+allowed-confusables = ["–"]
