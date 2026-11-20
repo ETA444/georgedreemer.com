@@ -1,0 +1,1954 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "George Dreemer",
+    "label": "Data Scientist & Developer",
+    "url": "https://georgedreemer.com",
+    "summary": "George Dreemer is a serial entrepreneur working across full-stack development, data science, and web3. His ventures range from an open-source Python library and a knowledge-first social network to an underground streetwear brand with thousands of fans. That range is reflected in his toolkit: multi-language development, statistical modelling and machine learning, alongside years of hands-on work with Adobe, e-commerce platforms, and marketing analytics. He connects the technical build with the product, brand, and business around it. His education spans Europe and the US, with an MSc in Marketing Analytics & Data Science and a BA in Marketing & Business. Completed tracks and certificates from DataCamp, Google, and research-training programmes complement that foundation.",
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "ETA444",
+        "url": "https://github.com/ETA444"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "georgedreemer",
+        "url": "https://www.linkedin.com/in/georgedreemer"
+      },
+      {
+        "network": "X",
+        "username": "444eta",
+        "url": "https://x.com/444eta"
+      }
+    ],
+    "x-contact": {
+      "note": "Email, phone, location, salary, notice period and visa status are not published on the site.",
+      "channels": {
+        "GitHub": {
+          "url": "https://github.com/ETA444",
+          "note": "Open-source repositories, including DataSafari and the MSc analyses, among other public and private on-going developments."
+        },
+        "LinkedIn": {
+          "url": "https://www.linkedin.com/in/georgedreemer",
+          "note": "Professional profile and not a preferred method for contact."
+        },
+        "X": {
+          "url": "https://x.com/444eta",
+          "note": "Posts, mostly on Web3 and development, an unofficial extension of Crypto Pandemic and preferred method of contact."
+        }
+      }
+    }
+  },
+  "work": [
+    {
+      "name": "DataSafari",
+      "position": "Creator & Maintainer",
+      "url": "https://georgedreemer.com/work/datasafari",
+      "summary": "Complex data science, one function call. An open-source Python library that brings exploration, data preparation, statistical testing, and machine-learning workflows into a consistent, one-line API.",
+      "highlights": [
+        "Architected 4-subpackage API from scratch: Explorer · Transformer · Evaluator · Predictor",
+        "Unified 10 scientific libraries — NumPy, pandas, scikit-learn, scipy, statsmodels & more — into a single one-liner workflow",
+        "Implemented automatic statistical test routing in predict_hypothesis() — detects variable types, checks assumptions, selects and runs the correct test",
+        "Built composite-score ML model evaluation engine with automated hyperparameter tuning in predict_ml()",
+        "Implemented statistical assumption checking across normality, variance, dtype, and contingency in Evaluator",
+        "Designed multi-method outlier detection covering Z-score, IQR & Mahalanobis distance in Explorer",
+        "Engineered 250+ pytest tests across 11 test files covering all 4 subpackages",
+        "Built full GitHub Actions CI/CD pipeline: lint · test · security scan · build · docs deploy · publish",
+        "Configured CI matrix to run across Python 3.9, 3.10, 3.11 & 3.12 in parallel",
+        "Secured codebase with Bandit static scanning and SafetyCLI dependency auditing",
+        "Tracked and closed 136 GitHub issues across the full development lifecycle",
+        "Packaged and published to PyPI via an automated Poetry + Twine pipeline",
+        "Automated Sphinx docs build and live-server deployment via rsync over SSH on every push",
+        "Authored full Sphinx documentation site with custom Furo theme at datasafari.dev/docs",
+        "Designed and launched dedicated product website at datasafari.dev"
+      ],
+      "x-type": "Data Science Python Library",
+      "x-category": "Data Science",
+      "x-metrics": [
+        {
+          "value": "11",
+          "label": "Functions shipped"
+        },
+        {
+          "value": "10",
+          "label": "Libraries unified into one API"
+        },
+        {
+          "value": "7",
+          "label": "Decisions automated per hypothesis test"
+        },
+        {
+          "value": "10+",
+          "label": "Pipeline decisions automated per ML run"
+        },
+        {
+          "value": "666",
+          "label": "Commits pushed"
+        },
+        {
+          "value": "12",
+          "label": "Automated steps per CI run"
+        },
+        {
+          "value": "250+",
+          "label": "Pytest tests written"
+        },
+        {
+          "value": "136",
+          "label": "Issues closed"
+        }
+      ],
+      "x-capabilities": [
+        "Statistical Inference",
+        "ML Pipeline Design",
+        "API Design",
+        "CI/CD"
+      ],
+      "x-stack": {
+        "Code": [
+          "Python",
+          "HTML",
+          "CSS",
+          "Bash / Zsh"
+        ],
+        "Python Libraries": [
+          "pandas",
+          "NumPy",
+          "SciPy",
+          "scikit-learn",
+          "scikit-optimize",
+          "category-encoders",
+          "PyTorch",
+          "HuggingFace",
+          "Matplotlib",
+          "seaborn",
+          "Plotly",
+          "statsmodels"
+        ],
+        "Dev Toolchain": [
+          "pytest",
+          "tox",
+          "Sphinx",
+          "Read the Docs",
+          "PyPI",
+          "Poetry",
+          "Setuptools",
+          "GitHub Actions"
+        ],
+        "Dev Tools & IDEs": [
+          "VS Code",
+          "Jupyter",
+          "DataSpell",
+          "Git",
+          "GitHub"
+        ],
+        "Platforms & Infra": [
+          "cPanel",
+          "Namecheap",
+          "Cloudflare"
+        ],
+        "Design & Creative": [
+          "Illustrator",
+          "Photoshop"
+        ]
+      },
+      "x-abilities": [
+        {
+          "name": "Python Library Architecture",
+          "domain": "engineering",
+          "description": "Designed the library from scratch as a four-subpackage system: Explorers, Transformers, Evaluators, and Predictors. The structure reflects the natural data science workflow. Built a consistent public API around a one-liner philosophy, making complex operations available through a single function with sensible defaults and room for deep customisation.",
+          "skills": [
+            "Package Architecture",
+            "API Design",
+            "Open-Source Engineering"
+          ]
+        },
+        {
+          "name": "OSS Release Engineering",
+          "domain": "engineering",
+          "description": "Managed the full open-source release lifecycle, from project scaffolding with Poetry and Setuptools to versioned PyPI distribution. Configured `pyproject.toml`, package metadata, and dependencies to produce reproducible builds that users can install with a single pip command.",
+          "skills": [
+            "Release Management",
+            "Dependency Management",
+            "Distribution Engineering"
+          ]
+        },
+        {
+          "name": "Automated Test Suite Design",
+          "domain": "engineering",
+          "description": "Built a test suite of more than 250 tests covering edge cases, input validation, and statistical output correctness across all subpackages. Configured tox to run the suite across multiple Python environments, helping datasafari work for as many users as possible.",
+          "skills": [
+            "Test Engineering",
+            "Quality Assurance",
+            "Multi-Environment Testing"
+          ]
+        },
+        {
+          "name": "CI/CD Pipeline Construction",
+          "domain": "engineering",
+          "description": "Designed and built a 12-step GitHub Actions pipeline that runs automatically on every push. It performs lint checks, runs the full tox test matrix, and publishes to PyPI when a release is tagged. Closed 136 issues over the life of the project, validating every fix through the pipeline before merge.",
+          "skills": [
+            "Continuous Integration",
+            "Automated Deployment",
+            "Pipeline Design"
+          ]
+        },
+        {
+          "name": "Technical Documentation Engineering",
+          "domain": "engineering",
+          "description": "Built the complete datasafari documentation system, including Sphinx source authoring, an automated build pipeline, and a custom public site at datasafari.dev. Wrote every page of the documentation: installation guides, function references, usage examples, and conceptual explanations for all 11 modules.",
+          "skills": [
+            "Documentation Systems",
+            "Technical Writing",
+            "Developer Experience"
+          ]
+        },
+        {
+          "name": "Defensive Python & Input Validation",
+          "domain": "engineering",
+          "description": "Implemented rigorous input validation and error handling across all 11 public functions. Each accepts DataFrames, column names, and optional parameter combinations that can fail silently in naive code. I built runtime branching logic to detect data types, sample sizes, and edge cases, then route execution to the correct algorithm path. Every error message is written for the caller, not the developer. In an API, the message is the UI & UX together.",
+          "skills": [
+            "Defensive Programming",
+            "Runtime Type Handling",
+            "Error Design"
+          ]
+        },
+        {
+          "name": "Exploratory Data Analysis Systems",
+          "domain": "data",
+          "description": "Designed and implemented the full Explorers subpackage. `explore_df()` profiles datasets, `explore_num()` performs numerical analysis including outlier detection via Z-score, IQR, and Mahalanobis distance, and `explore_cat()` profiles categorical data, including Shannon entropy to quantify diversity.",
+          "skills": [
+            "Exploratory Analysis",
+            "Outlier Detection",
+            "Statistical Profiling"
+          ]
+        },
+        {
+          "name": "Statistical Assumption Verification",
+          "domain": "data",
+          "description": "Built the Evaluators subpackage to automate the assumption checks that data scientists typically perform before analysis. `evaluate_normality()` selects an appropriate test, such as Shapiro-Wilk or Anderson-Darling, based on the sample; `evaluate_variance()` dynamically applies Levene's, Bartlett's, or Fligner's test; and `evaluate_contingency_table()` checks whether Chi-square conditions are met.",
+          "skills": [
+            "Assumption Testing",
+            "Statistical Inference",
+            "Dynamic Test Selection"
+          ]
+        },
+        {
+          "name": "Automated Hypothesis Testing",
+          "domain": "data",
+          "description": "`predict_hypothesis()` takes a DataFrame, a grouping variable, and a target variable — and autonomously selects and executes the correct statistical test. The function detects variable types, verifies normality and variance homogeneity, chooses between Chi-square, Fisher's exact, t-test, ANOVA, Mann-Whitney, Kruskal-Wallis, and others, then outputs test statistics, p-values, and a plain-language interpretation.",
+          "skills": [
+            "Hypothesis Testing",
+            "Automated Inference",
+            "Statistical Interpretation"
+          ]
+        },
+        {
+          "name": "End-to-End ML Pipeline Automation",
+          "domain": "data",
+          "description": "`predict_ml()` orchestrates the complete machine learning workflow in one call — automatic preprocessing (scaling, encoding, vectorisation), multi-model evaluation using a user-configurable composite score weighted across multiple metrics, and automated hyperparameter tuning via grid search, random search, or Bayesian optimisation. Returns ranked, tuned models with full performance breakdowns.",
+          "skills": [
+            "ML Pipeline Design",
+            "Hyperparameter Optimisation",
+            "Model Selection"
+          ]
+        },
+        {
+          "name": "Data Transformation Engineering",
+          "domain": "data",
+          "description": "Implemented the Transformers subpackage to handle the full data preparation stage. `transform_num()` covers standardisation, min-max scaling, log and power transforms, winsorisation, and interaction term creation. `transform_cat()` handles label encoding, one-hot encoding, target encoding, and ML-based category cleaning — all chainable and parameterised for reproducible pipelines.",
+          "skills": [
+            "Feature Engineering",
+            "Data Cleaning",
+            "Preprocessing Pipeline Design"
+          ]
+        },
+        {
+          "name": "Developer API & UX Design",
+          "domain": "product",
+          "description": "Built datasafari around a deliberate developer experience philosophy — consistent naming across all 11 functions, predictable argument patterns, and sensible defaults that make the library immediately usable without reading the docs. Complex workflows like full ML pipelines and hypothesis testing are exposed as single function calls, hiding implementation complexity behind a clean interface.",
+          "skills": [
+            "Interface Design",
+            "Developer Experience",
+            "Abstraction Design"
+          ]
+        },
+        {
+          "name": "Documentation Site Development",
+          "domain": "product",
+          "description": "Designed and hand-coded datasafari.dev — the public documentation and landing site for the library. Built with custom HTML, CSS, and JavaScript, the site presents the library's philosophy, quick-start guides, and full API reference in a clean, readable format. Integrated with Sphinx and Read the Docs for automated doc generation, while the landing experience was crafted entirely from scratch.",
+          "skills": [
+            "Web Development",
+            "Information Architecture",
+            "Content Strategy"
+          ]
+        },
+        {
+          "name": "Open-Source Product Lifecycle Management",
+          "domain": "product",
+          "description": "Managed datasafari as a solo product owner, from its initial concept and roadmap through versioned releases, issue tracking, and ongoing maintenance. Closed 136 issues while balancing engineering quality, user-facing documentation, and public discoverability. Built systems that kept the project sustainable and reproducible beyond any single release.",
+          "skills": [
+            "Product Ownership",
+            "Roadmap Execution",
+            "Solo Founding"
+          ]
+        },
+        {
+          "name": "Brand Identity & Visual Systems",
+          "domain": "growth",
+          "description": "Created the complete visual identity for datasafari, including the logo, banner artwork, icon set, and graphic assets used across GitHub, PyPI, and the documentation site. Designed every visual touchpoint a user encounters when discovering the library, giving an independent open-source project a coherent, professional brand from day one.",
+          "skills": [
+            "Brand Design",
+            "Visual Identity",
+            "Graphic Asset Production"
+          ]
+        }
+      ],
+      "x-links": [
+        {
+          "label": "Website",
+          "url": "https://datasafari.dev"
+        },
+        {
+          "label": "Docs",
+          "url": "https://datasafari.dev/docs"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/ETA444/datasafari"
+        },
+        {
+          "label": "PyPI",
+          "url": "https://pypi.org/project/datasafari/"
+        }
+      ],
+      "x-markdown": "https://georgedreemer.com/work/datasafari.md"
+    },
+    {
+      "name": "CryptoPandemic",
+      "position": "Founder & Creative Director",
+      "url": "https://georgedreemer.com/work/cryptopandemic",
+      "summary": "Cold on-chain analytics. Warm creative storytelling. A Web3 brand engine combining holder research, AI-powered production, and community-native campaigns to turn audience insight into cultural relevance.",
+      "highlights": [
+        "Profiled on-chain holder behaviour to identify the most effective branding styles and content formats",
+        "Tracked X sentiment and news cycles to time and shape cryptoon storylines",
+        "Coined the \"cryptoon\" format — narrative-driven crypto animations built on sentiment and on-chain data",
+        "Created 50+ branded assets adopted by the community across X, Telegram, and Discord",
+        "Drove Bullish from ~$6M to $13M peak market cap through coordinated cryptoon drops and brand strategy",
+        "Drove 250K+ cross-platform impressions and 5K+ daily mentions",
+        "Built AI-generative content pipelines and brand tools using Google AI Studio"
+      ],
+      "x-type": "Web3 Brand Studio",
+      "x-category": "Web3 Analytics",
+      "x-metrics": [
+        {
+          "value": "~$5M",
+          "label": "Estimated $BULLISH market cap uplift"
+        },
+        {
+          "value": "250K+",
+          "label": "Content impressions"
+        },
+        {
+          "value": "5K+",
+          "label": "Daily mentions"
+        },
+        {
+          "value": "50+",
+          "label": "Branded assets created"
+        }
+      ],
+      "x-capabilities": [
+        "Audience Profiling",
+        "Attribution Analytics",
+        "Generative AI Pipelines",
+        "Narrative Design"
+      ],
+      "x-stack": {
+        "Code": [
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "Python"
+        ],
+        "AI & Automation": [
+          "HuggingFace",
+          "n8n",
+          "Google AI Studio",
+          "ComfyUI"
+        ],
+        "Design & Creative": [
+          "Illustrator",
+          "Photoshop",
+          "Premiere Pro",
+          "After Effects",
+          "DaVinci Resolve",
+          "Figma"
+        ],
+        "Web3 & On-Chain": [
+          "Solana",
+          "Pump.fun",
+          "CoinGecko",
+          "DexScreener"
+        ],
+        "Marketing & Growth": [
+          "X",
+          "TikTok",
+          "YouTube Studio",
+          "Buffer",
+          "Telegram",
+          "Discord"
+        ],
+        "Dev Tools": [
+          "VS Code",
+          "Git",
+          "GitHub"
+        ]
+      },
+      "x-abilities": [
+        {
+          "name": "Holder Portfolio Profiling",
+          "domain": "data",
+          "description": "Analysed on-chain wallet data to understand what else a project's holders own, building profiles of their wider crypto interests, cultural references, and community affiliations. These profiles inform branding and content decisions. The aim is not to copy adjacent projects, but to help the coin speak a language its holders already understand. Culture fit, not culture theft.",
+          "skills": [
+            "Wallet Behaviour Profiling",
+            "Community Culture Mapping",
+            "Insight-Led Brand Strategy"
+          ]
+        },
+        {
+          "name": "On-Chain Market Attribution",
+          "domain": "data",
+          "description": "Tracked project performance with on-chain analytics tools to connect creative output with market movement. This made it possible to identify when the needle moved, why it moved, and which content contributed to the shift. It closes a feedback loop that many Web3 creative teams leave open by measuring how content affects the chart, not just the timeline.",
+          "skills": [
+            "Market Movement Analysis",
+            "Content-to-Chart Attribution",
+            "Performance Measurement"
+          ]
+        },
+        {
+          "name": "Content Performance Analytics",
+          "domain": "data",
+          "description": "Used platform analytics across X, TikTok, and Instagram to track impressions, engagement rate, share velocity, and audience growth, then fed those signals into the next content cycle. In a fast-moving environment where a post has a half-life of hours, understanding what performed and why is what separates a studio that compounds its reach from one that stays flat.",
+          "skills": [
+            "Engagement Analysis",
+            "Reach Optimisation",
+            "Data-Driven Iteration"
+          ]
+        },
+        {
+          "name": "Sentiment-Anchored Story Strategy",
+          "domain": "data",
+          "description": "Built content strategy around a character who lives inside the holder's world. It is not a mascot disconnected from reality, but a character whose storylines come directly from live X sentiment, news cycles, and on-chain talking points. If the community is discussing Fed rate hikes, that week's cryptoon reflects it. Culture relevance is engineered, not guessed.",
+          "skills": [
+            "Real-Time Sentiment Scripting",
+            "Character-Led Narrative Design",
+            "Content Series Architecture"
+          ]
+        },
+        {
+          "name": "AI-Generative Content Pipelines",
+          "domain": "engineering",
+          "description": "Built production-ready generative pipelines for crypto-native visual content, combining speed with consistent creative direction. Each workflow is tailored to a coin's identity, including its ticker, mascot, and lore, so the output feels made for that project rather than like a generic AI pass.",
+          "skills": [
+            "Generative Workflow Design",
+            "Brand-Consistent AI Output",
+            "Visual Pipeline Architecture"
+          ]
+        },
+        {
+          "name": "Cryptoon Production & Motion Design",
+          "domain": "engineering",
+          "description": "Coined and developed the cryptoon format: short animated films where the storyline is built from the world the holder already lives in. The character’s arc is mapped against live community sentiment, cultural references pulled from holder portfolio data, and the news cycle the audience is actually following. The result is a character who feels like part of the holder’s world.",
+          "skills": [
+            "Motion Graphics & Animation",
+            "Cinematic Editing",
+            "Narrative Sequencing"
+          ]
+        },
+        {
+          "name": "Brand Tool Engineering",
+          "domain": "engineering",
+          "description": "Designed the architecture for community-facing brand tools: AI-powered experiences that define a coin's visual style and let holders create on-brand content themselves. This compounds reach without compounding spend. Built with HTML, CSS, JavaScript, Python, and AI API integrations.",
+          "skills": [
+            "Full-Stack Web Development",
+            "AI API Integration",
+            "Community Tool Design"
+          ]
+        },
+        {
+          "name": "Meme Coin Brand Architecture",
+          "domain": "product",
+          "description": "Built complete brand systems for meme coin projects, covering visual identity, character lore, content tone, and community language from the ground up. In a market where hundreds of coins launch every week, a coherent brand is the only durable moat. The work for Bullish, from the first edit to the graphic asset library deployed across CT replies, shows what a complete Web3 brand system looks like in practice.",
+          "skills": [
+            "Visual Identity Design",
+            "Character & Lore Development",
+            "Web3 Brand Strategy"
+          ]
+        },
+        {
+          "name": "Bag Worker Asset Systems",
+          "domain": "product",
+          "description": "Produced libraries of on-brand graphic assets, including stickers, reaction images, reply cards, and banner sets. These were built for bag workers to pick up and deploy across X, Telegram, and Discord. A coin without a proper asset system is cooked: holders want to shill but have nothing to post. Hundreds of Bullish assets were actively used across CT threads, driving awareness at scale with zero distribution budget.",
+          "skills": [
+            "Community Asset Production",
+            "Bag Worker Enablement",
+            "Viral-Ready Graphic Design"
+          ]
+        },
+        {
+          "name": "Sentiment Manufacturing",
+          "domain": "growth",
+          "description": "The skill is not simply posting content. It is engineering content that shifts how a community feels about a coin at the moment it matters. During the period of active production, Bullish's market cap moved from roughly $6M to $13M. In meme coin markets, sentiment is price. Manufacturing the right sentiment at the right time is a lever with a measurable output on the chart.",
+          "skills": [
+            "CT Sentiment Engineering",
+            "Narrative-Driven Market Influence",
+            "Coordinated Campaign Timing"
+          ]
+        },
+        {
+          "name": "Crypto-Native Community Building",
+          "domain": "growth",
+          "description": "Built and activated communities across X, Telegram, and Discord by finding the right early members, sharing content at the right cadence, and creating moments that make a group feel like a movement. One hundred passionate bag workers will outperform any overpaid KOL. The goal is always to build a community that markets itself.",
+          "skills": [
+            "Community Seeding & Activation",
+            "Organic Amplification",
+            "Retention-Focused Growth"
+          ]
+        },
+        {
+          "name": "Cross-Platform Content Editing",
+          "domain": "growth",
+          "description": "Took long-form source material, including full cryptoon episodes, brand sessions, and raw footage, and cut it into platform-native formats for X clips, TikTok, Instagram Reels, and YouTube Shorts. Each edit is re-paced, re-hooked, and restructured for the platform's specific audience behaviour.",
+          "skills": [
+            "Long-Form to Short-Form Editing",
+            "Platform-Native Formatting",
+            "Organic Distribution Strategy"
+          ]
+        }
+      ],
+      "x-links": [
+        {
+          "label": "cryptopandemic.com",
+          "url": "https://cryptopandemic.com"
+        }
+      ],
+      "x-markdown": "https://georgedreemer.com/work/cryptopandemic.md"
+    },
+    {
+      "name": "SkipSchoolMakeMoney",
+      "position": "Founder, Designer & Operator",
+      "url": "https://georgedreemer.com/work/skipschoolmakemoney",
+      "summary": "Underground streetwear built into an international e-commerce business: 20+ collections, 12,000+ followers, and 1000s of customers across three continents.",
+      "highlights": [
+        "Designed 20+ collections, amounting to 200+ individual designs",
+        "Directed 25+ photo & video shoots across 6 countries — collaborating with photographers, models, and musicians",
+        "Grew Instagram to 12,000+ followers at peak, driving 100s comments and 1000s of likes/post",
+        "Pioneered guerilla Instagram growth strategies — including meme marketing, viral giveaways and influencer collaborations",
+        "Ran paid ad campaigns across Instagram, Twitter, YouTube, and Snapchat",
+        "Built and grew multiple Mailchimp mailing lists to 1000s of subscribers",
+        "Negotiated promotional deals with influencers, media, and creators",
+        "Managed manufacturing across the US West and East coasts, later expanding to the UK and China",
+        "Organized supply chain, packaging, and shipping to serve customers across 3 continents",
+        "Built 3 complete redesigns of the Shopify storefront end-to-end",
+        "Built 2 complete redesigns of the Squarespace storefront end-to-end",
+        "Integrated manufacturing and shipping APIs to automate order fulfillment and tracking",
+        "Streamlined customer communications for abandoned carts, post-purchase follow-ups, and product launches",
+        "Set up and maintained Shopify, Mailchimp, and Google Analytics for marketing, sales, and analytics",
+        "Won the VVM Startup Accelerator Award, earning funding, mentorship, and resources",
+        "Won the Grinspoon Recognition Award for Entrepreneurial Spirit"
+      ],
+      "x-type": "Streetwear Apparel Brand",
+      "x-category": "E-commerce",
+      "x-location": "Amherst, MA, United States",
+      "x-metrics": [
+        {
+          "value": "200+",
+          "label": "Designs released"
+        },
+        {
+          "value": "12K+",
+          "label": "Instagram followers at peak"
+        },
+        {
+          "value": "100K+",
+          "label": "Engagements generated"
+        },
+        {
+          "value": "1000+",
+          "label": "Orders fulfilled"
+        }
+      ],
+      "x-capabilities": [
+        "Product Development",
+        "Guerilla Marketing",
+        "Supply Chain Management",
+        "Performance Analytics"
+      ],
+      "x-stack": {
+        "Design & Creative": [
+          "Illustrator",
+          "Photoshop",
+          "After Effects",
+          "DaVinci Resolve",
+          "Premiere Pro",
+          "Audition"
+        ],
+        "Marketing & Growth": [
+          "Google Analytics",
+          "Meta Ads",
+          "Snapchat Ads",
+          "Twitter Ads",
+          "YouTube Studio",
+          "TikTok Ads (Beta)",
+          "Mailchimp",
+          "Buffer"
+        ],
+        "Web & Commerce": [
+          "Shopify",
+          "Squarespace"
+        ],
+        "Code": [
+          "HTML",
+          "CSS"
+        ]
+      },
+      "x-abilities": [
+        {
+          "name": "Brand & Collection Design",
+          "domain": "product",
+          "description": "Built the SSMM identity from a single front-and-back logo into a full underground streetwear universe, designing and releasing 20+ collections that grew into several hundred individual graphics, garments, and visual concepts. Every drop had to feel culturally sharp, visually distinct, and native to the world of underground fashion, music, and meme culture.",
+          "skills": [
+            "Apparel Graphic Design",
+            "Collection Development",
+            "Production Coordination"
+          ]
+        },
+        {
+          "name": "Viral Growth & Audience Building",
+          "domain": "growth",
+          "description": "Grew SSMM to 12,000+ Instagram followers at peak by pioneering aggressive organic growth strategies built on meme marketing, giveaways, influencer collaborations, and constant experimentation with what actually triggered engagement. The result was a highly active audience that drove hundreds to thousands of comments per post, thousands of likes, and real demand across multiple drops.",
+          "skills": [
+            "Organic Growth Strategy",
+            "Meme & Culture Marketing",
+            "Campaign Automation"
+          ]
+        },
+        {
+          "name": "Influencer, Music & Culture Positioning",
+          "domain": "growth",
+          "description": "Built relationships across the underground creative scene, working with musicians, influencers, photographers, and content creators whose audiences aligned with the brand’s identity. Collaborations and organic placements with names like Lil Peep, Pouya, Fat Nick, CA$HRINA, Lil Johnnie, and others helped position SSMM inside the cultural conversation rather than outside it as just another apparel shop.",
+          "skills": [
+            "Influencer Outreach",
+            "Partnership Development",
+            "Cultural Positioning"
+          ]
+        },
+        {
+          "name": "Creative Direction & Content Production",
+          "domain": "product",
+          "description": "Directed 25+ photo and video shoots across six countries, coordinating photographers, models, locations, styling, and deliverables to give each collection a world around it. This turned SSMM from a product catalog into a lifestyle brand with visuals strong enough to travel across feeds, campaigns, and fan communities.",
+          "skills": [
+            "Production Coordination",
+            "Photo & Video Editing",
+            "Product Photography",
+            "Campaign Asset Production"
+          ]
+        },
+        {
+          "name": "Storefronts, Fulfillment & Commerce Ops",
+          "domain": "engineering",
+          "description": "Built and rebuilt the storefront stack across Squarespace and Shopify, creating five end-to-end site redesigns while handling the operational layer behind the scenes. On the back end, I coordinated manufacturing across the US East and West coasts before expanding into the UK and China, and managed packaging, shipping, and customer fulfillment for orders reaching three continents.",
+          "skills": [
+            "E-commerce Operations",
+            "Fulfillment Coordination",
+            "Customer Experience Management"
+          ]
+        },
+        {
+          "name": "Campaign Tracking & Iteration",
+          "domain": "data",
+          "description": "Used platform analytics, mailing lists, storefront behavior, and campaign feedback loops to make SSMM more intelligent over time — what to launch, how to message it, where to push it, and what audiences were responding. That included maintaining Shopify, Mailchimp, and Google Analytics as the decision layer behind launches, promotions, post-purchase communication, and customer retention.",
+          "skills": [
+            "Performance Analytics",
+            "Feedback Loop Optimization",
+            "Campaign Strategy"
+          ]
+        }
+      ],
+      "x-links": [
+        {
+          "label": "Official Webstore",
+          "url": "https://www.skipschoolmakemoney.com"
+        },
+        {
+          "label": "Instagram Page",
+          "url": "https://www.instagram.com/skipschoolmakemoney"
+        }
+      ],
+      "x-markdown": "https://georgedreemer.com/work/skipschoolmakemoney.md"
+    },
+    {
+      "name": "DREEMCORP",
+      "position": "Founder & Creative Director",
+      "url": "https://georgedreemer.com/work/dreemcorp",
+      "summary": "A creative studio turning raw footage and brand ideas into platform-native content—delivering 100+ assignments for artists, athletes, and consumer brands, with 1M+ views.",
+      "highlights": [
+        "Edited long-form YouTube vlogs, pacing shots and story beats for viewer retention",
+        "Edited short-form Reels & TikToks with custom transitions, color correction & SFX",
+        "Cut promotional and commercial spots for consumer brands",
+        "Produced music visualizers with custom animation and SFX",
+        "Mixed and mastered audio for vlogs and music content in Adobe Audition",
+        "Designed full personal-branding packages — profile art, channel covers & outros — for clients like Amira Tahri",
+        "Designed logos and brand assets in Adobe Illustrator",
+        "Delivered content for 12+ clients & brands, including Najib Amhali, Amira Tahri, Alistair Overeem & Frenna",
+        "Helped launch and shape the early content strategy of multiple client YouTube channels"
+      ],
+      "x-type": "Creative Studio & Venture Lab",
+      "x-category": "Content Marketing",
+      "x-location": "Europe / Online",
+      "x-metrics": [
+        {
+          "value": "12+",
+          "label": "Clients & Brands served"
+        },
+        {
+          "value": "100+",
+          "label": "Creative & Marketing works"
+        },
+        {
+          "value": "1M+",
+          "label": "Views"
+        },
+        {
+          "value": "100K+",
+          "label": "Likes & Comments"
+        }
+      ],
+      "x-capabilities": [
+        "Video Production",
+        "Creative Direction",
+        "Multi-Platform Content",
+        "Client Delivery"
+      ],
+      "x-stack": {
+        "Video & Editing": [
+          "Premiere Pro",
+          "After Effects",
+          "Audition",
+          "DaVinci Resolve"
+        ],
+        "Design & Creative": [
+          "Illustrator",
+          "Photoshop",
+          "Canva",
+          "Picsart"
+        ],
+        "Platforms & Distribution": [
+          "YouTube",
+          "Instagram",
+          "TikTok"
+        ],
+        "Marketing & Growth": [
+          "Google Analytics",
+          "Meta Ads",
+          "TikTok Ads",
+          "YouTube Studio",
+          "Mailchimp",
+          "Buffer"
+        ]
+      },
+      "x-abilities": [
+        {
+          "name": "High-Volume Footage Triage",
+          "domain": "engineering",
+          "description": "Cut raw multicam footage — often 6+ hours per project — down to a single 15–20 minute narrative, managing 700+ individual timeline edits along the way.",
+          "skills": [
+            "Non-Linear Editing",
+            "Footage Triage",
+            "Timeline Management"
+          ]
+        },
+        {
+          "name": "Audio Post-Production",
+          "domain": "engineering",
+          "description": "Cleaned dialogue, balanced music beds, and layered SFX across every delivery — leveling, noise reduction, and mixing done by ear, not preset.",
+          "skills": [
+            "Audio Mixing",
+            "Noise Reduction",
+            "Sound Design"
+          ]
+        },
+        {
+          "name": "Color Correction & Grading",
+          "domain": "engineering",
+          "description": "Matched exposure and white balance across mixed-lighting, multicam footage, then graded for a consistent visual tone across an entire edit.",
+          "skills": [
+            "Color Correction",
+            "Color Grading",
+            "Visual Consistency"
+          ]
+        },
+        {
+          "name": "Codec & Export Pipeline Management",
+          "domain": "engineering",
+          "description": "Handled footage across mixed codecs, frame rates, and resolutions, then exported per-platform deliverables tuned for bitrate, aspect ratio, and compression artifacts.",
+          "skills": [
+            "Video Encoding",
+            "Format Optimization",
+            "Export Pipeline Management"
+          ]
+        },
+        {
+          "name": "Custom Motion & Transitions",
+          "domain": "engineering",
+          "description": "Hand-built transitions, motion graphics, and title cards from scratch instead of templated presets — designed frame-by-frame to match each project's tone.",
+          "skills": [
+            "Motion Design",
+            "Custom Transitions",
+            "Visual Branding"
+          ]
+        },
+        {
+          "name": "Narrative Structuring from Raw Footage",
+          "domain": "product",
+          "description": "Built pacing, sequencing, and emotional arc from unscripted raw footage with no shot list or story outline provided — the story was found, not handed over.",
+          "skills": [
+            "Story Structuring",
+            "Narrative Pacing",
+            "Creative Direction"
+          ]
+        },
+        {
+          "name": "Branding Packages & Visual Identity",
+          "domain": "product",
+          "description": "Designed full branding packages — thumbnails, caption styling, lower thirds, and channel-consistent visual language — beyond the edit itself.",
+          "skills": [
+            "Brand Visual Systems",
+            "Thumbnail Design",
+            "Caption Design"
+          ]
+        },
+        {
+          "name": "Multi-Platform Content Adaptation",
+          "domain": "growth",
+          "description": "Recut a single footage set into long-form YouTube, vertical Shorts, Reels, and TikTok — each edited for that platform's native pacing, not resized from one master cut.",
+          "skills": [
+            "Multi-Platform Editing",
+            "Vertical-First Editing",
+            "Platform Optimization"
+          ]
+        },
+        {
+          "name": "Creative Delivery at Scale",
+          "domain": "growth",
+          "description": "Delivered 100+ creative assignments across 12+ clients — musicians, athletes, and brands — managing client feedback loops and deadlines end to end.",
+          "skills": [
+            "Client Delivery",
+            "Production Pipeline Management",
+            "Deadline Management"
+          ]
+        }
+      ],
+      "x-links": [
+        {
+          "label": "Direct Contact",
+          "url": "https://www.dreemcorp.com"
+        },
+        {
+          "label": "Video Archive",
+          "url": "https://www.youtube.com/@dreemcorp"
+        }
+      ],
+      "x-markdown": "https://georgedreemer.com/work/dreemcorp.md"
+    },
+    {
+      "name": "thoughtbubble",
+      "position": "Co-Founder & Full-Stack Developer",
+      "url": "https://georgedreemer.com/work/thoughtbubble",
+      "summary": "A knowledge-first social network, built from scratch: UI/UX, back end, and database. After multiple pivots and betas, it evolved to 900 registered users across the US and Europe.",
+      "highlights": [
+        "Built full back-end in PHP + MySQL — database, API, and server-side logic",
+        "Co-built front-end in HTML, CSS, and Javascript — AJAX interactions, dynamic content, and responsive design",
+        "Built all social features — feed, posts, comments, likes, pins, notifications, and profiles",
+        "Built registration, login, and account management system",
+        "Collected and analyzed user data to improve engagement and retention",
+        "Co-designed UX — feed, profiles, and post system",
+        "Iterated on UI based on direct user feedback",
+        "Presented product to investors and potential partners at local startup events",
+        "Grew to 900+ registered users with zero ad spend",
+        "Secured copyright for the platform and managed legal procedures"
+      ],
+      "x-type": "Social Network Startup",
+      "x-category": "Full-Stack Development",
+      "x-location": "Amherst, MA, United States",
+      "x-metrics": [
+        {
+          "value": "76+",
+          "label": "Major updates shipped"
+        },
+        {
+          "value": "~900",
+          "label": "Registered users"
+        },
+        {
+          "value": "7",
+          "label": "Back-end systems built"
+        },
+        {
+          "value": "7",
+          "label": "Relational DBs managed"
+        }
+      ],
+      "x-capabilities": [
+        "UI/UX Design",
+        "Back-End Architecture",
+        "Database Architecture",
+        "Visual Identity"
+      ],
+      "x-stack": {
+        "Code": [
+          "PHP",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "SQL"
+        ],
+        "Databases": [
+          "MySQL"
+        ],
+        "Dev Tools": [
+          "Dreamweaver",
+          "cPanel",
+          "Namecheap"
+        ],
+        "Design & Creative": [
+          "Illustrator",
+          "Photoshop"
+        ]
+      },
+      "x-abilities": [
+        {
+          "name": "Full-Stack Web Development",
+          "domain": "engineering",
+          "description": "Designed and built every layer of the platform without a framework — routing, session handling, database schema, AJAX interactions, and all front-end rendering.",
+          "skills": [
+            "Back-End Architecture",
+            "Front-End Engineering",
+            "Database-Driven Development"
+          ]
+        },
+        {
+          "name": "Auth & Security Systems",
+          "domain": "engineering",
+          "description": "Built custom user authentication from scratch, including the registration, native & Facebook login, session management, password hashing, and access control.",
+          "skills": [
+            "Authentication Engineering",
+            "Session Management",
+            "Access Control"
+          ]
+        },
+        {
+          "name": "Real-Time Notifications",
+          "domain": "engineering",
+          "description": "Engineered a live notification system using AJAX polling — likes, comments, follows, and system alerts delivered without a page reload.",
+          "skills": [
+            "Asynchronous UX Flows",
+            "Event-Driven Logic",
+            "Notification Systems"
+          ]
+        },
+        {
+          "name": "Product Design & UX",
+          "domain": "product",
+          "description": "Owned the full UX, from information architecture to pixel-level UI. Designed the feed, post types, user profiles, settings flows, and iteratively improved them based on user feedback from our early adopter community.",
+          "skills": [
+            "UX Design",
+            "Interface Architecture",
+            "Feedback-Driven Iteration"
+          ]
+        },
+        {
+          "name": "Product Vision & Positioning",
+          "domain": "product",
+          "description": "Identified a clear gap in the market and built a product positioned around it — a curated, knowledge-first social feed before mainstream platforms pivoted toward that format.",
+          "skills": [
+            "Product Strategy",
+            "Market Positioning",
+            "Category Insight"
+          ]
+        },
+        {
+          "name": "Organic User Acquisition",
+          "domain": "growth",
+          "description": "Grew the platform to ~900 registered users through word-of-mouth and direct outreach, with zero paid advertising. Learned early that product quality and community seeding beat any ad budget.",
+          "skills": [
+            "Community Seeding",
+            "Organic Growth Strategy",
+            "Creator Outreach"
+          ]
+        },
+        {
+          "name": "Metrics & Behaviour Tracking",
+          "domain": "data",
+          "description": "Instrumented the platform to track user sign-ups, engagement rates, post frequency — the first time I built a product loop from data to decision.",
+          "skills": [
+            "Product Analytics",
+            "Behavior Tracking",
+            "Retention Strategy"
+          ]
+        },
+        {
+          "name": "Database Architecture",
+          "domain": "engineering",
+          "description": "Designed a relational MySQL schema capable of supporting users, posts, comments, likes, pins, notifications, hashtags, and categories simultaneously.",
+          "skills": [
+            "Relational Schema Design",
+            "Data Modeling",
+            "Scalable Content Structures"
+          ]
+        }
+      ],
+      "x-markdown": "https://georgedreemer.com/work/thoughtbubble.md"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Rotaract \"Plovdiv-Puldin\"",
+      "position": "Member",
+      "summary": "Rotary International's global network for young professionals in over 180 countries.",
+      "highlights": [
+        "The youngest Rotaract member in the chapter",
+        "Organised concerts, fundraisers, and a Red Cross blood donation drive for local causes"
+      ],
+      "url": "https://georgedreemer.com/public_img/education/certifications/rotary/rotary-rotaract_membership-certificate.pdf",
+      "x-skills": [
+        "Charity",
+        "Event Coordination",
+        "Community Building",
+        "Leadership"
+      ]
+    },
+    {
+      "organization": "Seed Fund for Innovation",
+      "position": "Committee Member",
+      "summary": "One of the few fully student-governed venture funds at a US liberal arts college — a $1M endowment managed entirely by undergraduates investing in student and alumni startups.",
+      "highlights": [
+        "Evaluated venture pitches and voted on investment decisions as a committee member",
+        "Gained hands-on exposure to early-stage due diligence, founder assessment, and fund governance"
+      ],
+      "x-skills": [
+        "Leadership",
+        "Funding Allocation",
+        "Venture Assessment"
+      ]
+    },
+    {
+      "organization": "UMass Entrepreneurship Club",
+      "position": "Member",
+      "summary": "The student entrepreneurship community at UMass Amherst — one of New England's largest public research universities, with a well-connected startup ecosystem through the Isenberg School of Management.",
+      "highlights": [
+        "Organised events and pitch competitions connecting student founders with mentors and investors"
+      ],
+      "x-skills": [
+        "Entrepreneurship",
+        "Pitching",
+        "Networking"
+      ]
+    },
+    {
+      "organization": "Berthiaume Student Innovators",
+      "position": "Member",
+      "summary": "The Berthiaume Center for Entrepreneurship is UMass Amherst's campus-wide hub for innovation and startup activity — its student innovator programme runs the flagship Innovation Challenge each year.",
+      "highlights": [
+        "Worked to coordinate speakers, judges, and logistics"
+      ],
+      "x-skills": [
+        "Entrepreneurship",
+        "Event Coordination"
+      ]
+    },
+    {
+      "organization": "Giving Back",
+      "position": "Mentee",
+      "summary": "A highly selective mentorship programme at one of Den Haag's leading colleges, pairing a small cohort of students with senior professionals across Dutch banking, law, and the judiciary.",
+      "highlights": [
+        "Received direct mentorship and attended workshops led by judges, lawyers, and banking executives"
+      ],
+      "x-skills": [
+        "Debating",
+        "Networking",
+        "Leadership"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Hampshire College #6 Entrepreneurship (Forbes)",
+      "area": "Marketing & Business",
+      "studyType": "Bachelor of Arts (BA)",
+      "score": "3.81 / 4.0",
+      "url": "https://georgedreemer.com/education/bachelors",
+      "courses": [
+        "Marketing Research",
+        "Text Analytics",
+        "Entrepreneurship",
+        "Business Fundamentals",
+        "Visual Communication",
+        "Marketing Strategy",
+        "Consumer Behaviour",
+        "Negotiation"
+      ],
+      "x-location": "Amherst, Massachusetts, USA",
+      "x-links": [
+        {
+          "label": "Official study-area page",
+          "url": "https://www.hampshire.edu/academics/areas-of-study/entrepreneurship"
+        },
+        {
+          "label": "Isenberg official portal",
+          "url": "https://www.isenberg.umass.edu/"
+        },
+        {
+          "label": "Five College Consortium",
+          "url": "https://www.hampshire.edu/academics/five-college-consortium"
+        }
+      ],
+      "x-tools": {
+        "Code": [
+          "HTML",
+          "CSS"
+        ],
+        "Dev Tools & IDEs": [
+          "KNIME"
+        ],
+        "Platforms & Infra": [
+          "Google Analytics",
+          "Facebook Ads",
+          "Snapchat Ads",
+          "Twitter Ads",
+          "YouTube Studio",
+          "TikTok Ads (Beta)",
+          "Mailchimp",
+          "Buffer"
+        ],
+        "Web & Commerce": [
+          "Shopify",
+          "Squarespace"
+        ],
+        "Design & Creative": [
+          "Illustrator",
+          "Photoshop",
+          "After Effects",
+          "Premiere Pro",
+          "Audition",
+          "DaVinci Resolve"
+        ]
+      },
+      "x-abilities": [
+        {
+          "name": "Market Research & Customer Insight",
+          "domain": "data",
+          "description": "Learned to turn marketing questions into decisions about what evidence to collect, whose perspective matters, and how findings should inform action. Applied that thinking to a live brand, using customer reactions and audience behaviour to decide what to design, say, and release next.",
+          "skills": [
+            "Research Question Framing",
+            "Customer Insight Development",
+            "Evidence Interpretation"
+          ]
+        },
+        {
+          "name": "Text Mining for Marketing",
+          "domain": "data",
+          "description": "Studied how unstructured language can be organised and analysed to answer marketing questions. Developed a foundation in identifying patterns across text and interpreting those patterns as evidence about audiences, communication, and market interests.",
+          "skills": [
+            "Text Analysis",
+            "Unstructured Data Interpretation",
+            "Marketing Insight Development"
+          ]
+        },
+        {
+          "name": "Financial & Economic Reasoning",
+          "domain": "data",
+          "description": "Developed a foundation in interpreting financial statements and reasoning about costs, incentives, resource constraints, and commercial trade-offs. Brought that perspective into running a small venture and discussing funding decisions on a student investment committee.",
+          "skills": [
+            "Financial Statement Interpretation",
+            "Economic Reasoning",
+            "Commercial Judgement"
+          ]
+        },
+        {
+          "name": "Venture Design & Execution",
+          "domain": "product",
+          "description": "Connected entrepreneurial study with the practical work of founding and running an apparel brand. Worked across audience definition, value proposition, collection launches, customer feedback, and day-to-day execution rather than stopping at a venture proposal.",
+          "skills": [
+            "Venture Development",
+            "Business Model Design",
+            "Cross-Functional Execution"
+          ]
+        },
+        {
+          "name": "Early-Stage Venture Assessment",
+          "domain": "product",
+          "description": "Evaluated venture pitches and voted on funding decisions as a member of Hampshire's student-run investment committee. Considered the founder, business proposition, and supporting evidence while discussing which ventures merited limited funding.",
+          "skills": [
+            "Early-Stage Due Diligence",
+            "Founder Assessment",
+            "Funding Allocation"
+          ]
+        },
+        {
+          "name": "Apparel & Visual Identity Design",
+          "domain": "product",
+          "description": "Developed a streetwear identity across logos, garment graphics, collections, packaging, and digital presentation. Connected independent study in visual production and internet culture with the practical demands of making designs coherent, recognisable, and suitable for production.",
+          "skills": [
+            "Visual Identity Development",
+            "Apparel Graphic Design",
+            "Collection Development"
+          ]
+        },
+        {
+          "name": "Creative Production & Art Direction",
+          "domain": "product",
+          "description": "Turned collection ideas into photo and video productions by coordinating photographers, models, styling, locations, and finished assets. Combined visual editing and motion work with production planning so the creative concept carried through to usable campaign material.",
+          "skills": [
+            "Art Direction",
+            "Creative Production Planning",
+            "Visual Storytelling"
+          ]
+        },
+        {
+          "name": "Commerce Operations & Customer Experience",
+          "domain": "product",
+          "description": "Managed the operational chain behind each clothing release: manufacturing across several regions, packaging, shipping, order tracking, and customer communication. Rebuilt the online storefront several times to make products easier to find and the path to purchase easier to follow.",
+          "skills": [
+            "Production Coordination",
+            "Fulfilment Management",
+            "Customer Journey Improvement"
+          ]
+        },
+        {
+          "name": "Negotiation & Commercial Agreements",
+          "domain": "product",
+          "description": "Studied how interests, alternatives, persuasion, and relationship dynamics shape an agreement. Applied that foundation when negotiating promotional arrangements with creators, influencers, and media partners.",
+          "skills": [
+            "Negotiation Preparation",
+            "Commercial Negotiation",
+            "Stakeholder Alignment"
+          ]
+        },
+        {
+          "name": "Business Law & Intellectual Property Awareness",
+          "domain": "product",
+          "description": "Studied the legal foundations of business decisions and developed greater awareness of rights, obligations, and commercial risk. Carried that awareness into venture work, including handling copyright procedures for a digital platform.",
+          "skills": [
+            "Legal Issue Identification",
+            "Intellectual Property Awareness",
+            "Commercial Risk Awareness"
+          ]
+        },
+        {
+          "name": "Independent Research & Self-Directed Delivery",
+          "domain": "product",
+          "description": "Built a coherent course of study through independent inquiry, critical reading, and practical skill development rather than following a fixed departmental sequence. Set my own learning priorities, worked with faculty across different subjects, and connected research with ongoing venture and creative work.",
+          "skills": [
+            "Self-Directed Learning",
+            "Critical Interpretation",
+            "Independent Project Delivery"
+          ]
+        },
+        {
+          "name": "Brand Positioning & Cultural Insight",
+          "domain": "growth",
+          "description": "Defined a distinct identity for a streetwear brand rooted in underground music and internet culture. Connected audience interests, language, visual style, and product choices so the brand stood for something recognisable rather than looking like another apparel shop.",
+          "skills": [
+            "Brand Positioning",
+            "Cultural Audience Insight",
+            "Value Proposition Development"
+          ]
+        },
+        {
+          "name": "Digital Marketing & Campaign Strategy",
+          "domain": "growth",
+          "description": "Connected digital-marketing and advertising study with live paid and organic campaigns across several channels. Adapted creative and messaging to each channel, then tracked audience responses and storefront behaviour to decide what to repeat, change, or stop.",
+          "skills": [
+            "Digital Campaign Planning",
+            "Campaign Performance Analysis",
+            "Campaign Iteration"
+          ]
+        },
+        {
+          "name": "Organic Growth & Creator Partnerships",
+          "domain": "growth",
+          "description": "Grew an audience through memes, giveaways, and audience-created content, and built relationships with musicians, photographers, models, and influencers whose followers matched the brand. Aimed to turn an initial group of supporters into an active community rather than treating follower count as the goal.",
+          "skills": [
+            "Organic Acquisition",
+            "Creator Partnership Development",
+            "Community Building"
+          ]
+        },
+        {
+          "name": "Email Lifecycle & Customer Retention",
+          "domain": "growth",
+          "description": "Built mailing lists and organised communication around product launches, abandoned carts, and post-purchase follow-ups. Connected acquisition with the next customer interaction so a collection launch could lead to an ongoing relationship rather than a single transaction.",
+          "skills": [
+            "Lifecycle Communication",
+            "Email Campaign Planning",
+            "Customer Retention"
+          ]
+        },
+        {
+          "name": "International Marketing & Cross-Cultural Communication",
+          "domain": "growth",
+          "description": "Studied how market context and cultural differences influence positioning, communication, and commercial decisions. Applied that perspective while serving customers on three continents and working with creative collaborators around a brand built in the United States.",
+          "skills": [
+            "International Marketing",
+            "Cross-Cultural Communication",
+            "Market Adaptation"
+          ]
+        },
+        {
+          "name": "Public Speaking & Investor Pitching",
+          "domain": "growth",
+          "description": "Developed structured oral communication through formal speaking courses and live venture presentations. Presented product ideas, explained traction and next steps, and responded to questions from investors, mentors, and potential partners.",
+          "skills": [
+            "Public Speaking",
+            "Investor Pitching",
+            "Live Question Handling"
+          ]
+        },
+        {
+          "name": "Interpersonal Skills & Event Coordination",
+          "domain": "growth",
+          "description": "Studied how people interpret situations, influence one another, and work together. Applied that perspective organising entrepreneurship events and pitch competitions, including the Innovation Challenge, coordinating speakers, judges, and logistics, and connecting student founders with mentors and investors.",
+          "skills": [
+            "Event Coordination",
+            "Stakeholder Coordination",
+            "Entrepreneurial Network Building"
+          ]
+        }
+      ],
+      "x-markdown": "https://georgedreemer.com/education/bachelors.md",
+      "x-score-note": "Estimated GPA Hampshire evaluates its courses through written narrative evaluations, not letter grades, and does not issue an official GPA."
+    },
+    {
+      "institution": "University of Groningen",
+      "area": "Marketing Analytics & Data Science",
+      "studyType": "Master of Science (MSc)",
+      "score": "8 / 10",
+      "url": "https://georgedreemer.com/education/masters",
+      "courses": [
+        "Data Science",
+        "Data Engineering",
+        "Statistical Learning",
+        "Machine Learning",
+        "Text Mining",
+        "Time-Series Analysis",
+        "Market Modelling",
+        "Omnichannel Marketing",
+        "Consumer & Brand Analytics"
+      ],
+      "x-location": "Groningen, Netherlands",
+      "x-faculty": "Faculty of Economics and Business",
+      "x-links": [
+        {
+          "label": "Official program page",
+          "url": "https://www.rug.nl/masters/msc-marketing-marketing-analytics-and-data-science/?lang=en"
+        }
+      ],
+      "x-tools": {
+        "Code": [
+          "Python",
+          "R",
+          "SQL",
+          "Stata"
+        ],
+        "Python Libraries": [
+          "pandas",
+          "NumPy",
+          "SciPy",
+          "scikit-learn",
+          "Matplotlib",
+          "seaborn",
+          "Plotly",
+          "statsmodels",
+          "R Libraries",
+          "ggplot2",
+          "dplyr",
+          "caret",
+          "randomForest",
+          "gbm",
+          "e1071",
+          "neuralnet",
+          "ROCR",
+          "Dev Tools & IDEs",
+          "Jupyter",
+          "Colab",
+          "RStudio",
+          "SPSS",
+          "DataSpell",
+          "Git",
+          "GitHub",
+          "Platforms",
+          "Azure",
+          "Google Analytics",
+          "Design & Creative",
+          "Illustrator",
+          "Photoshop",
+          "After Effects",
+          "Canva"
+        ]
+      },
+      "x-abilities": [
+        {
+          "name": "Data Pipeline & Relational Extraction",
+          "domain": "engineering",
+          "description": "Built structured extraction workflows that join, filter, and aggregate relational data into analysis-ready datasets. Applied this process to an online retail project in which the extraction layer fed directly into conversion-rate modelling.",
+          "skills": [
+            "Data Pipeline Design",
+            "Relational Data Extraction",
+            "Analytical Dataset Construction"
+          ]
+        },
+        {
+          "name": "Reproducible Analytical Workflows",
+          "domain": "engineering",
+          "description": "Structured analyses as repeatable workflows moving from data ingestion and cleaning through transformation, modelling, evaluation, visualisation, and reporting. Preserved the underlying thesis and project code in a public repository so the analytical process remains inspectable and reproducible.",
+          "skills": [
+            "Reproducible Analysis",
+            "Workflow Design",
+            "Data Preparation"
+          ]
+        },
+        {
+          "name": "Applied Research Design",
+          "domain": "data",
+          "description": "Translated business questions into researchable problems by defining constructs, hypotheses, measurements, sampling decisions, and suitable analytical methods. Carried that structure through literature review, empirical analysis, interpretation, and formal research reporting.",
+          "skills": [
+            "Research Design",
+            "Measurement Design",
+            "Evidence Synthesis"
+          ]
+        },
+        {
+          "name": "Supervised Learning & Churn Prediction",
+          "domain": "data",
+          "description": "Modelled customer churn using conventional statistical methods alongside decision trees, bagging, boosting, and neural networks. Compared alternative classifiers through out-of-sample performance rather than relying only on in-sample fit.",
+          "skills": [
+            "Supervised Model Evaluation",
+            "Churn Prediction",
+            "Ensemble Learning"
+          ]
+        },
+        {
+          "name": "Segmentation & Latent Structure",
+          "domain": "data",
+          "description": "Used hierarchical and non-hierarchical clustering to identify consumer segments from car-buying preference data, and factor analysis to uncover the underlying dimensions of attitudes toward sustainable clothing. Turned multivariable survey data into interpretable consumer structures.",
+          "skills": [
+            "Customer Segmentation",
+            "Latent Structure Discovery",
+            "Survey Analytics"
+          ]
+        },
+        {
+          "name": "Text, Sentiment & Causal Comparison",
+          "domain": "data",
+          "description": "Analysed marketing communication through text mining and sentiment analysis, then used propensity-score matching to construct more comparable treatment and control groups. Combined unstructured language data with quasi-experimental evaluation rather than treating sentiment as an isolated score.",
+          "skills": [
+            "Text Feature Engineering",
+            "Sentiment Analysis",
+            "Propensity Score Matching"
+          ]
+        },
+        {
+          "name": "Time-Series & Competitive Trend Analysis",
+          "domain": "data",
+          "description": "Investigated how marketing variables evolved over time by comparing Redstar with competing brands across the marketing mix. Separated temporal movement from cross-brand differences and communicated the resulting patterns through a visual analytical report.",
+          "skills": [
+            "Time-Series Modelling",
+            "Competitive Trend Analysis",
+            "Marketing-Mix Measurement"
+          ]
+        },
+        {
+          "name": "Behavioural & Choice Modelling",
+          "domain": "data",
+          "description": "Examined how people make decisions under competing attributes, trade-offs, and behavioural constraints. Applied this capability in the MSc thesis by modelling willingness to share health data through a discrete-choice experiment and latent-class analysis.",
+          "skills": [
+            "Discrete-Choice Modelling",
+            "Preference Estimation",
+            "Decision Analysis"
+          ]
+        },
+        {
+          "name": "Market Response Modelling",
+          "domain": "data",
+          "description": "Built regression-based models of the Dutch lemonade market using observations across retailers and competing brands. Assessed how market and marketing variables related to commercial outcomes, then translated the coefficients and diagnostics into business-facing interpretation.",
+          "skills": [
+            "Regression Modelling",
+            "Market Response Analysis",
+            "Model Diagnostics"
+          ]
+        },
+        {
+          "name": "Exploratory Customer Analytics",
+          "domain": "data",
+          "description": "Investigated the effect of Wehkamp’s augmented-reality experience on customer behaviour using transaction-level measures including repeat purchases, customer value, revenue, and purchase frequency. Used exploratory analysis to determine which behavioural differences warranted deeper modelling.",
+          "skills": [
+            "Customer Behaviour Analysis",
+            "KPI Interpretation",
+            "Exploratory Analysis"
+          ]
+        },
+        {
+          "name": "Evidence-Led Organisational Strategy",
+          "domain": "product",
+          "description": "Applied organisational, strategic, and people-management frameworks to diagnose business problems and evaluate possible interventions. Connected external market conditions with internal structure, capabilities, incentives, and execution rather than treating strategy as an isolated planning exercise.",
+          "skills": [
+            "Strategic Analysis",
+            "Organisational Diagnosis",
+            "Evidence-Based Management"
+          ]
+        },
+        {
+          "name": "Ethical Business Decision-Making",
+          "domain": "product",
+          "description": "Evaluated food waste, salary transparency, and platform-based gig work through three research-led ethical analyses. Used established ethical theory and literature review to identify affected stakeholders, competing obligations, and defensible courses of action.",
+          "skills": [
+            "Stakeholder Analysis",
+            "Ethical Reasoning",
+            "Policy Evaluation"
+          ]
+        },
+        {
+          "name": "Retail & Omnichannel Strategy",
+          "domain": "growth",
+          "description": "Developed a retail-mix proposal for Kruidvat and an omnichannel strategy for L’Oréal by combining internal evidence with external market analysis. Connected assortment, pricing, promotion, channel roles, and customer experience into implementable commercial recommendations.",
+          "skills": [
+            "Omnichannel Strategy",
+            "Retail-Mix Design",
+            "Commercial Recommendation"
+          ]
+        },
+        {
+          "name": "Conversion & Digital Performance Analytics",
+          "domain": "growth",
+          "description": "Investigated the drivers of conversion for an online retailer’s product category by connecting extracted behavioural data with statistical modelling. Identified the variables most closely associated with conversion and translated the findings into optimisation priorities.",
+          "skills": [
+            "Conversion Modelling",
+            "Funnel Analysis",
+            "Growth Optimisation"
+          ]
+        },
+        {
+          "name": "Consumer & Brand Opportunity Analysis",
+          "domain": "growth",
+          "description": "Used consumer evidence to investigate attitudes, identify meaningful preference patterns, and assess brand-growth opportunities. Projects included analysing sustainable-clothing attitudes and developing a market-supported brand-extension proposal for Volkswagen.",
+          "skills": [
+            "Consumer Insight",
+            "Brand Opportunity Assessment",
+            "Evidence-Led Positioning"
+          ]
+        }
+      ],
+      "x-markdown": "https://georgedreemer.com/education/masters.md",
+      "x-score-note": "Dutch grading scale Average grade across the whole programme. The separate thesis grade is an 8.",
+      "x-thesis": {
+        "title": "Willingness to Share Health Data in Italy: Investigation under a Multi-context Paradigm with DCE Data",
+        "links": [
+          {
+            "label": "Read the full paper",
+            "url": "https://georgedreemer.com/downloads/academic/georgedreemer-msc-thesis_paper.pdf"
+          },
+          {
+            "label": "Defence slides",
+            "url": "https://georgedreemer.com/downloads/academic/georgedreemer-msc-thesis_defenseslides.pdf"
+          },
+          {
+            "label": "Equation for the latent class model, as specified in the thesis.",
+            "url": "https://georgedreemer.com/public_img/education/mscthesis/mscthesis-equation-latentclassmodel.png"
+          },
+          {
+            "label": "Equation for the conditional logit model, as specified in the thesis.",
+            "url": "https://georgedreemer.com/public_img/education/mscthesis/mscthesis-equation-conditionallogitmodel.png"
+          }
+        ]
+      }
+    }
+  ],
+  "awards": [
+    {
+      "title": "VVM Startup Accelerator Award",
+      "awarder": "Valley Venture Mentors",
+      "summary": "VVM is a Western Massachusetts nonprofit that selects high-growth startups for a competitive accelerator — pairing founders with senior mentors, investors, and early funding.",
+      "x-details": [
+        "Selected from a competitive regional applicant pool",
+        "Received funding and a place in the Summer Accelerator cohort",
+        "Pitched live to a room of investors and defended product, traction, and roadmap"
+      ],
+      "x-category": "Funding & Mentorship"
+    },
+    {
+      "title": "Recognition Award of Entrepreneurial Spirit",
+      "awarder": "Grinspoon Entrepreneurship Initiative",
+      "summary": "The Harold Grinspoon Foundation's Entrepreneurship Initiative recognises student entrepreneurs across Pioneer Valley colleges who have built real ventures with demonstrated traction — not ideas, but businesses already in motion.",
+      "url": "https://georgedreemer.com/public_img/education/certifications/other/harold_grinspoon_foundation-entrepreneurial_spirit-certificate.pdf",
+      "x-details": [
+        "Recognised for founding SkipSchoolMakeMoney — a live apparel brand with 1,000+ orders shipped internationally"
+      ],
+      "x-category": "Entrepreneurship"
+    },
+    {
+      "title": "National Essay Award — \"Rescue of the Bulgarian Jews during WW II\"",
+      "awarder": "Israeli-Bulgarian Institute",
+      "summary": "A national competition commemorating one of WWII's most remarkable acts of collective resistance — Bulgaria is one of the only Nazi-allied states that protected its entire Jewish population from deportation.",
+      "url": "https://georgedreemer.com/public_img/education/certifications/other/israel_bulgaria_institute-certificate.pdf",
+      "x-details": [
+        "Prize: an official trip to Israel with a meeting with government officials — a diplomatic recognition reserved for the winning essayists"
+      ],
+      "x-category": "Diplomacy"
+    },
+    {
+      "title": "RYLA Award (RYLArian)",
+      "awarder": "Rotary International",
+      "summary": "Rotary Youth Leadership Awards (RYLA) is an official Rotary International leadership program. It is an intensive multi-day retreat of workshops, team exercises, and leadership training, run locally by Rotary clubs and districts.",
+      "url": "https://georgedreemer.com/public_img/education/certifications/rotary/rotary-rylarian-certificate.pdf",
+      "x-details": [
+        "RYLArian award is one of Rotary's most recognized youth development distinctions"
+      ],
+      "x-category": "Leadership"
+    },
+    {
+      "title": "RYLA Debate Winner Award",
+      "awarder": "Rotary Bourgas-Pyrgos",
+      "summary": "Awarded for winning the debate competition, which is the culmination of the RYLA seminar. It is judged on argumentation, composure, and public speaking skills in front of Rotarians and program leaders.",
+      "url": "https://georgedreemer.com/public_img/education/certifications/rotary/rotary-ryla_debate-certificate.pdf",
+      "x-details": [
+        "Won the debate competition among the RYLA cohort of Rotary-nominated youth from across the district"
+      ],
+      "x-category": "Public Speaking"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Professional Data Scientist",
+      "issuer": "DataCamp",
+      "url": "https://www.datacamp.com/completed/statement-of-accomplishment/track/61c10c7c89eda0525178ea565d88fce131b33597",
+      "x-description": "DataCamp's most advanced career track — covers the full data science pipeline from data wrangling and statistical analysis to machine learning and communicating insights to business stakeholders.",
+      "x-expertise": [
+        "Python",
+        "R",
+        "SQL"
+      ]
+    },
+    {
+      "name": "Associate Data Scientist",
+      "issuer": "DataCamp",
+      "x-description": "A structured track covering Python, statistical techniques, and machine learning fundamentals — built around real-world datasets and hands-on projects across the full analytical workflow.",
+      "x-expertise": [
+        "Python",
+        "R",
+        "SQL"
+      ]
+    },
+    {
+      "name": "Google Analytics for Beginners",
+      "issuer": "Google Skillshop",
+      "url": "https://georgedreemer.com/public_img/education/certifications/google/Google%20Analytics%20for%20Beginners.pdf",
+      "x-description": "Covers setting up an analytics account, reading core reports on traffic and user behaviour, and using the data to judge how a website or campaign is performing.",
+      "x-expertise": [
+        "Web Analytics",
+        "Reporting"
+      ]
+    },
+    {
+      "name": "TOEFL iBT",
+      "issuer": "Educational Testing Service",
+      "x-description": "A standardised, internationally recognised test of academic English. It measures reading, listening, speaking, and writing at university level.",
+      "x-score": [
+        "106 / 120",
+        "C2"
+      ]
+    },
+    {
+      "name": "C1 Advanced (CAE)",
+      "issuer": "Cambridge Assessment English",
+      "x-description": "Cambridge's advanced-level exam, showing the English needed for demanding academic study and professional work: fluent, precise, and confident in complex contexts.",
+      "x-score": [
+        "C1"
+      ]
+    },
+    {
+      "name": "Authorship",
+      "issuer": "CITI Program",
+      "url": "https://www.citiprogram.org/verify/?w84586628-0ab2-4dbe-832c-70ba821f5d03-52728905",
+      "x-description": "Covers the ethical responsibilities of authors, the criteria used to decide who qualifies as an author, and how to recognise problematic authorship practices.",
+      "x-expertise": [
+        "RCR",
+        "Publication Ethics"
+      ],
+      "x-department": "Responsible Conduct of Research"
+    },
+    {
+      "name": "Conflict of Interest",
+      "issuer": "CITI Program",
+      "url": "https://www.citiprogram.org/verify/?w14878cff-9b65-49bf-a688-b19c0476c688-52728906",
+      "x-description": "Explains the types of conflicts of interest and commitment, why they undermine research, and the strategies used to manage or eliminate them.",
+      "x-expertise": [
+        "RCR",
+        "Research Integrity"
+      ],
+      "x-department": "Responsible Conduct of Research"
+    },
+    {
+      "name": "Data Management",
+      "issuer": "CITI Program",
+      "url": "https://www.citiprogram.org/verify/?w29ad4803-bc39-4024-a2a0-fa4aaa18acd6-52728907",
+      "x-description": "Covers managing data across a research project: documentation for reproducibility, plus the ethical and compliance questions around data ownership, sharing, and protection.",
+      "x-expertise": [
+        "RCR",
+        "Reproducibility",
+        "Data Governance"
+      ],
+      "x-department": "Responsible Conduct of Research"
+    },
+    {
+      "name": "Internet-based Research",
+      "issuer": "CITI Program",
+      "url": "https://www.citiprogram.org/verify/?we279123e-5980-4178-9fd3-7b5c3737d613-52728904",
+      "x-description": "Looks at the ethical and regulatory questions raised by studying people online: consent, privacy expectations, and the risks of using web-sourced data.",
+      "x-expertise": [
+        "Human Research",
+        "Online Data Ethics"
+      ],
+      "x-department": "Human-based Research"
+    },
+    {
+      "name": "Plagiarism",
+      "issuer": "CITI Program",
+      "url": "https://www.citiprogram.org/verify/?w6ff78328-e1a0-4901-ba3d-7f8612d49538-52728908",
+      "x-description": "Defines plagiarism and its common forms, and shows how to credit sources properly so that others' ideas and words are never presented as your own.",
+      "x-expertise": [
+        "RCR",
+        "Citation Practice"
+      ],
+      "x-department": "Responsible Conduct of Research"
+    },
+    {
+      "name": "Privacy and Confidentiality",
+      "issuer": "CITI Program",
+      "url": "https://www.citiprogram.org/verify/?wa833454f-8bed-4edc-b389-16646b6a2353-52728903",
+      "x-description": "Defines privacy and confidentiality, identifies research methods that raise privacy concerns, and covers standard ways to protect participants' information, including relevant laws.",
+      "x-expertise": [
+        "Human Research",
+        "Data Protection"
+      ],
+      "x-department": "Human-based Research"
+    },
+    {
+      "name": "Research Involving Human Subjects",
+      "issuer": "CITI Program",
+      "url": "https://www.citiprogram.org/verify/?w3d28bc48-9ceb-448d-9681-0f90ad0d1707-52728909",
+      "x-description": "Introduces the ethical principles behind research with people: informed consent, weighing risks against benefits, and protecting participants.",
+      "x-expertise": [
+        "RCR",
+        "Informed Consent"
+      ],
+      "x-department": "Responsible Conduct of Research"
+    },
+    {
+      "name": "Research Misconduct",
+      "issuer": "CITI Program",
+      "url": "https://www.citiprogram.org/verify/?wf5616b1b-dc18-4f4d-b670-4f655d0725a0-52728910",
+      "x-description": "Describes the three practices that make up research misconduct (fabrication, falsification, and plagiarism) and how allegations are handled.",
+      "x-expertise": [
+        "RCR",
+        "Research Integrity"
+      ],
+      "x-department": "Responsible Conduct of Research"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Code",
+      "keywords": [
+        "Python",
+        "R",
+        "PHP",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Bash / Zsh",
+        "Ruby",
+        "SQL",
+        "Stata"
+      ]
+    },
+    {
+      "name": "Python Libraries",
+      "keywords": [
+        "pandas",
+        "NumPy",
+        "SciPy",
+        "scikit-learn",
+        "scikit-optimize",
+        "category-encoders",
+        "PyTorch",
+        "HuggingFace Hub",
+        "Matplotlib",
+        "seaborn",
+        "Plotly",
+        "statsmodels"
+      ]
+    },
+    {
+      "name": "R Libraries",
+      "keywords": [
+        "ggplot2",
+        "dplyr",
+        "caret",
+        "randomForest",
+        "gbm",
+        "e1071",
+        "neuralnet",
+        "ROCR"
+      ]
+    },
+    {
+      "name": "Dev Toolchain",
+      "keywords": [
+        "pytest",
+        "tox",
+        "Sphinx",
+        "Read the Docs",
+        "PyPI",
+        "Poetry",
+        "Setuptools",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "name": "Databases",
+      "keywords": [
+        "MySQL",
+        "SQLite",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "name": "Dev Tools & IDEs",
+      "keywords": [
+        "VS Code",
+        "Jupyter",
+        "Colab",
+        "RStudio",
+        "SPSS",
+        "DataSpell",
+        "KNIME",
+        "Git",
+        "GitHub"
+      ]
+    },
+    {
+      "name": "AI & Automation",
+      "keywords": [
+        "HuggingFace",
+        "n8n",
+        "Google AI Studio",
+        "ComfyUI",
+        "MCP",
+        "Claude Code",
+        "TypeSafe AI"
+      ]
+    },
+    {
+      "name": "Web3 & On-Chain",
+      "keywords": [
+        "Solana",
+        "NansenAI",
+        "DefiLlama",
+        "Symbiosis",
+        "Pump.fun",
+        "StonkFun"
+      ]
+    },
+    {
+      "name": "Platforms & Infra",
+      "keywords": [
+        "cPanel",
+        "Namecheap",
+        "Cloudflare",
+        "Azure"
+      ]
+    },
+    {
+      "name": "Web & Commerce",
+      "keywords": [
+        "Shopify",
+        "Squarespace",
+        "WooCommerce",
+        "Framer",
+        "Wordpress"
+      ]
+    },
+    {
+      "name": "Design & Creative",
+      "keywords": [
+        "Illustrator",
+        "Photoshop",
+        "Premiere Pro",
+        "After Effects",
+        "Audition",
+        "Dreamweaver",
+        "DaVinci Resolve",
+        "Affinity Studio",
+        "CapCut",
+        "Canva",
+        "Picsart"
+      ]
+    },
+    {
+      "name": "Marketing & Growth",
+      "keywords": [
+        "Google Analytics",
+        "Meta Ads",
+        "TikTok Ads",
+        "Snapchat Ads",
+        "X Ads",
+        "YouTube Studio",
+        "Mailchimp",
+        "Buffer",
+        "Telegram",
+        "Discord"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "C2"
+    },
+    {
+      "language": "Bulgarian",
+      "fluency": "C2"
+    },
+    {
+      "language": "Dutch",
+      "fluency": "C1"
+    },
+    {
+      "language": "Russian",
+      "fluency": "B1"
+    },
+    {
+      "language": "Hebrew",
+      "fluency": "A1"
+    }
+  ],
+  "meta": {
+    "canonical": "https://georgedreemer.com/cv.json",
+    "version": "1.0.0",
+    "generator": "scripts/build-agent-files.py",
+    "note": "Undated by design. Employment dates, contact details and compensation live in the private CV file, not here."
+  }
+}
