@@ -15,7 +15,7 @@ output (they belong in your private CV file).
   python3 scripts/build-agent-files.py --check    # write nothing; exit 1 if stale
 
 Standard library only.
-""" # noqa: EXE001
+"""  # noqa: EXE001
 
 import argparse
 import json
@@ -41,7 +41,7 @@ MONTH = re.compile(
 )
 LINK = re.compile(r"\[([^\]]*)\]\(<?([^)>\s]+)>?\)")
 LINK_ONLY = re.compile(r"\[[^\]]+\]\(<?[^)>\s]+>?\)")
-BOLD = re.compile(r"^\*\*(.+?):\*\*\s*(.*)$", re.S)
+BOLD = re.compile(r"^\*\*(.+?):\*\*\s*(.*)$", re.DOTALL)
 LABEL = re.compile(r"^(?!\*\*)([A-Z][^:\n]{1,60}):$")
 INLINE = re.compile(r"^(Domain): (.+)$")
 LINK_VERBS = re.compile(r"(View|Verify|Explore|Read|Open)")
@@ -63,7 +63,7 @@ def links(text):
 
 
 def strip_front(text):
-    match = re.match(r"---\n.*?\n---\n\n?", text, re.S)
+    match = re.match(r"---\n.*?\n---\n\n?", text, re.DOTALL)
     if not match:
         return text
     start = match.end()
@@ -307,7 +307,7 @@ def parse_index(page):
     if not section:
         WARN.append("index.md: no 'languages' section")
     for text in group_items(section or []):
-        match = re.match(r"^(.*?)\s+([ABC])$", text)[12]
+        match = re.match(r"^(.*?)\s+([ABC])$", text)
         language = (match.group(1) if match else text).strip()
         out["languages"].append(
             {"language": language, "fluency": match.group(2) if match else ""}
@@ -338,8 +338,7 @@ def parse_index(page):
             continue
         _, items = split_level(section, 3)
         out[key] = [
-            (unmd(title), parse_item(lines), "\n".join(lines))
-            for title, lines in items
+            (unmd(title), parse_item(lines), "\n".join(lines)) for title, lines in items
         ]
     return out
 
@@ -436,14 +435,10 @@ def build_work(manifest, pages, idx):
                 "x-category": card.get("kicker", ""),
                 "x-location": fields.get("location", ""),
                 "x-metrics": parse_numbers(parsed),
-                "x-capabilities": listify(
-                    pick(card_item["f"], "applied capabilities")
-                ),
+                "x-capabilities": listify(pick(card_item["f"], "applied capabilities")),
                 "x-stack": parse_stack(parsed),
                 "x-abilities": parse_abilities(parsed),
-                "x-links": [
-                    {"label": t, "url": u} for t, u in snap.get("links", [])
-                ],
+                "x-links": [{"label": t, "url": u} for t, u in snap.get("links", [])],
                 "x-markdown": page["markdown_url"],
             }
         )
@@ -461,7 +456,7 @@ def build_work(manifest, pages, idx):
 
 def build_education(manifest, pages):
     education = []
-    thesis_words = re.compile(r"paper|thesis|slides|feedback", re.I)
+    thesis_words = re.compile(r"paper|thesis|slides|feedback", re.IGNORECASE)
     for page in manifest["pages"]:
         if not page["output"].startswith("education/"):
             continue
@@ -663,7 +658,7 @@ def build_faq(cv, origin):
             for w in cv["work"]
         ),
     )
-    topical = re.compile(r"data|analytic|statist|machine", re.I)
+    topical = re.compile(r"data|analytic|statist|machine", re.IGNORECASE)
     credentials = []
     for edu in cv["education"]:
         haystack = edu["area"] + " " + " ".join(edu["courses"])
@@ -831,7 +826,9 @@ def main():
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
     )
     ap.add_argument(
-        "--check", action="store_true", help="write nothing; exit 1 if outputs are stale"
+        "--check",
+        action="store_true",
+        help="write nothing; exit 1 if outputs are stale",
     )
     args = ap.parse_args()
     manifest_path = MD / "manifest.json"
