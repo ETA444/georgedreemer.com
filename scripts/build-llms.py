@@ -8,7 +8,7 @@ Writes : build/markdown/llms.txt, build/markdown/llms-full.txt (publish these)
          build/reports/htaccess-markdown.conf,
          build/reports/head-links.txt (copy/paste once)
 Stdlib only:  python3 scripts/build-llms.py   [--check]
-"""
+"""  # noqa: EXE001
 
 import argparse
 import json
@@ -65,17 +65,17 @@ def validate(text, pages, origin):
     lines = text.splitlines()
     if not lines or not re.match(r"# \S", lines[0]):
         errs.append("line 1 must be '# Site name' (the only required element)")
-    if sum(1 for l in lines if re.match(r"# ", l)) != 1:
+    if sum(1 for line in lines if re.match(r"# ", line)) != 1:
         errs.append("exactly one H1 allowed")
-    if not any(l.startswith("> ") for l in lines[:6]):
+    if not any(line.startswith("> ") for line in lines[:6]):
         errs.append("add a '> summary' blockquote right after the H1")
     h2 = False
-    for n, l in enumerate(lines, 1):
-        if re.match(r"##+ ", l) and not l.startswith("## "):
+    for n, line in enumerate(lines, 1):
+        if re.match(r"##+ ", line) and not line.startswith("## "):
             errs.append(f"line {n}: only H2 headings allowed")
-        if l.startswith("## "):
+        if line.startswith("## "):
             h2 = True
-        elif h2 and "](" in l and not re.match(r"- \[[^\]]+\]\(\S+\)(: .+)?$", l):
+        elif h2 and "](" in line and not re.match(r"- \[[^\]]+\]\(\S+\)(: .+)?$", line):
             # Only lines that contain a link must follow the llms.txt link format.
             # Plain bullets and prose in any section are valid Markdown and allowed.
             errs.append(f"line {n}: links must be written '- [name](url): note'")

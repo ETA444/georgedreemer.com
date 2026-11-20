@@ -13,7 +13,7 @@ written ONLY by --embed (only the JSON-LD <script> block is replaced).
   python3 scripts/schema.py --embed --write       apply it
 
 Standard library only.
-"""
+"""  # noqa: EXE001
 
 import argparse
 import copy
@@ -432,7 +432,9 @@ def embed_text(p):
 
     m = blocks[0]
     line_start = text.rfind("\n", 0, m.start()) + 1
-    indent = re.match(r"\s*", text[line_start : m.start()]).group(0)
+    indent_match = re.match(r"\s*", text[line_start : m.start()])
+    assert indent_match is not None
+    indent = indent_match.group(0)
     lines = [(indent + "  " + line) if line else line for line in new.splitlines()]
     body = "\n" + "\n".join(lines) + "\n" + indent
     body_start, body_end = m.start("body"), m.end("body")
