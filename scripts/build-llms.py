@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
-"""build-llms.py: validate seo/llms.txt and build llms-full.txt + deploy snippets.
+"""build-llms.py: validate seo/llms.txt and build llms-full.txt + deploy
+snippets.
 
-Reads  : seo/llms.txt (hand-written), build/markdown/manifest.json + *.md (from build-markdown)
-Writes : build/markdown/llms.txt, build/markdown/llms-full.txt   (publish these)
-         build/reports/htaccess-markdown.conf, build/reports/head-links.txt   (copy/paste once)
+Reads  : seo/llms.txt (hand-written), build/markdown/manifest.json + *.md
+         (from build-markdown)
+Writes : build/markdown/llms.txt, build/markdown/llms-full.txt (publish these)
+         build/reports/htaccess-markdown.conf,
+         build/reports/head-links.txt (copy/paste once)
 Stdlib only:  python3 scripts/build-llms.py   [--check]
 """
 
@@ -20,7 +23,8 @@ MD_DIR, SRC, REPORTS = (
     ROOT / "seo" / "llms.txt",
     ROOT / "build" / "reports",
 )
-ASSET_ROOT = ROOT / "public_html"  # static files (PDFs, images) are checked on disk
+# static files (PDFs, images) are checked on disk
+ASSET_ROOT = ROOT / "public_html"
 ASSET_EXT = re.compile(r"\.(?:pdf|png|jpe?g|webp|svg|gif|zip|csv)$", re.IGNORECASE)
 URL = re.compile(r"https?://\S+")
 YEAR = re.compile(r"\b(?:19|20)\d{2}\b")
