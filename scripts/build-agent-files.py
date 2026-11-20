@@ -345,7 +345,8 @@ def parse_index(page):
 
 # ---------- assemble cv.json ----------
 def site_origin(manifest):
-    parts = urlsplit(manifest["pages"]["url"])[0]
+    first, *_ = manifest["pages"]
+    parts = urlsplit(first["url"])
     return f"{parts.scheme}://{parts.netloc}"
 
 
