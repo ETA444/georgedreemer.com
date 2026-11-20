@@ -188,8 +188,10 @@ def reattach_kickers(pre, items):
     """A short plain line before '### X' belongs to X (category label)."""
     kick = {}
     chain = [("", pre)] + [(title, lines) for title, lines in items]
-    for i in range(len(chain) - 1):
-        parts = blocks(chain[i])[1]
+    for current, following in zip(chain, chain[1:]):
+        _, current_lines = current
+        next_title, _ = following
+        parts = blocks(current_lines)
         if not parts:
             continue
         last = parts[-1]
@@ -201,9 +203,8 @@ def reattach_kickers(pre, items):
             and len(last) < 50
         )
         if plain:
-            kick[chain[i + 1]] = unmd(last)[0]
-            lines = chain[i][1]
-            del lines[len(lines) - 1 - lines[::-1].index(last)]
+            kick[next_title] = unmd(last)
+            current_lines[:] = [x for x in current_lines if x != last]
     return kick
 
 
