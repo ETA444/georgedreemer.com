@@ -8,6 +8,8 @@ from pathlib import Path
 
 SCRIPT = Path(__file__).resolve().parents[1] / "scripts" / "build-markdown.py"
 spec = importlib.util.spec_from_file_location("exporter", SCRIPT)
+if spec is None or spec.loader is None:
+    raise ImportError(f"Cannot load exporter from {SCRIPT}")
 mod = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(mod)
 
