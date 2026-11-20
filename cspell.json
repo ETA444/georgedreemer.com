@@ -1,0 +1,9 @@
+{
+    "version": "0.2",
+    "ignorePaths": [],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": [],
+    "ignoreWords": ["llms", "LLMS", "unmd", "Dreemer", "listify", "abilit", "datasafari", "dreemcorp", "georgedreemer", "cpanel", "htmllib", "skipschoolmakemoney", "cryptopandemic", "CEFR", "describedby"],
+    "import": []
+}
