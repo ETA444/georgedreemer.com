@@ -202,7 +202,8 @@ def reattach_kickers(pre, items):
         )
         if plain:
             kick[chain[i + 1]] = unmd(last)[0]
-            chain[i][:] = [x for x in chain[i] if x != last][1]
+            lines = chain[i][1]
+            del lines[len(lines) - 1 - lines[::-1].index(last)]
     return kick
 
 
