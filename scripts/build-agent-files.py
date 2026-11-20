@@ -21,6 +21,7 @@ import argparse
 import json
 import re
 import sys
+from itertools import pairwise
 from pathlib import Path
 from urllib.parse import urlsplit
 
@@ -188,7 +189,7 @@ def reattach_kickers(pre, items):
     """A short plain line before '### X' belongs to X (category label)."""
     kick = {}
     chain = [("", pre)] + [(title, lines) for title, lines in items]
-    for current, following in zip(chain, chain[1:]):
+    for current, following in pairwise(chain):
         _, current_lines = current
         next_title, _ = following
         parts = blocks(current_lines)
