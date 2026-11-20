@@ -1,11 +1,11 @@
 ---
 title: "George Dreemer — Data Scientist, Developer and Entrepreneur"
-description: "George is a data scientist, developer and serial entrepreneur with work experience in all things data,  programming, and web3. Explore his skills, projects, certifications and awards."
+description: "Data scientist, developer and serial entrepreneur with work experience in all things data,  programming, and web3. Explore his skills, projects, certifications and awards."
 url: "https://georgedreemer.com/"
 markdown_url: "https://georgedreemer.com/index.md"
 language: "en"
 source: "dev_html/index.html"
-source_sha256: "3bcd4eb73f406e4df7eb9f97c3a83620ab3174d666b6cd8afefcc73851f056e3"
+source_sha256: "34a1d2e349cc9fb83046a6a4ccd3987fb489eff90083d71c916e6ace7f8ae3ce"
 ---
 
 # George Dreemer — Data Scientist, Developer and Entrepreneur
@@ -752,7 +752,13 @@ Details:
 
 Abilities developed:
 
-Charity Event Coordination Community Building Leadership
+- Charity
+
+- Event Coordination
+
+- Community Building
+
+- Leadership
 
 [Verify membership ↗](<https://georgedreemer.com/public_img/education/certifications/rotary/rotary-rotaract_membership-certificate.pdf>)
 
@@ -772,9 +778,13 @@ Details:
 
 - Gained hands-on exposure to early-stage due diligence, founder assessment, and fund governance
 
-Abilities develiped:
+Abilities developed:
 
-Leadership Funding Allocation Venture Assessment
+- Leadership
+
+- Funding Allocation
+
+- Venture Assessment
 
 ### UMass Entrepreneurship Club
 
@@ -792,7 +802,11 @@ Details:
 
 Abilities developed:
 
-Entrepreneurship Pitching Networking
+- Entrepreneurship
+
+- Pitching
+
+- Networking
 
 ### Berthiaume Student Innovators
 
@@ -810,7 +824,9 @@ Details:
 
 Abilities developed:
 
-Entrepreneurship Event Coordination
+- Entrepreneurship
+
+- Event Coordination
 
 ### Giving Back
 
@@ -828,4 +844,8 @@ Details:
 
 Abilities developed:
 
-Debating Networking Leadership
+- Debating
+
+- Networking
+
+- Leadership

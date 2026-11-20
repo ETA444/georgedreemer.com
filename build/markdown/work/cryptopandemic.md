@@ -1,11 +1,11 @@
 ---
 title: "CryptoPandemic — Web3 Marketing & On-Chain Analytics on Solana"
-description: "CryptoPandemic is George Dreemer's Web3 brand studio engineering contagious crypto experiences — on-chain analytics fused with cryptoon storytelling. Drove BULLISH to a $13M peak market cap on Solana."
+description: "CryptoPandemic engineers contagious Web3 experiences — from brand identity to on-chain strategy. We don't help projects grow. We make them spread."
 url: "https://georgedreemer.com/work/cryptopandemic"
 markdown_url: "https://georgedreemer.com/work/cryptopandemic.md"
 language: "en"
 source: "dev_html/work/cryptopandemic.html"
-source_sha256: "58441e2b9ad0b5a53c49d9f360da3789891cf77910e76fd983218066d591d304"
+source_sha256: "7b120560611df49eb31a7a56fc248136d188d456d7fb81272581e06be981927a"
 ---
 
 # CryptoPandemic — Web3 Marketing & On-Chain Analytics on Solana

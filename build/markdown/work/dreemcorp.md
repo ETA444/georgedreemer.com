@@ -1,11 +1,11 @@
 ---
 title: "DREEMCORP — Creative Studio & Venture Lab"
-description: "DREEMCORP is George Dreemer's creative studio and venture lab, producing video, content, and creative direction for artists, athletes, and brands. Clients include Amira Tahri, Najib Amhali, Nabil Haryouli, and Immersive Studios."
+description: "DREEMCORP is George Dreemer's creative studio and venture lab, producing video, content, and creative direction for artists, athletes, and brands."
 url: "https://georgedreemer.com/work/dreemcorp"
 markdown_url: "https://georgedreemer.com/work/dreemcorp.md"
 language: "en"
 source: "dev_html/work/dreemcorp.html"
-source_sha256: "15b83b1d23e74486cd0e26532bf4b5a635bbc6ebd5bb813bc0e84c01eaffb7f3"
+source_sha256: "2bf5b52ba3745bb7b7c2281c681dcab0d9d646c3d02ed595a2915129c4ab7be0"
 ---
 
 # DREEMCORP — Creative Studio & Venture Lab

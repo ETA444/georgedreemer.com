@@ -1,11 +1,11 @@
 ---
 title: "SkipSchoolMakeMoney — Streetwear Brand"
-description: "SkipSchoolMakeMoney (SSMM) was a streetwear brand founded by George Dreemer — growing to 12,000+ followers, 20+ collections, and 1000s of orders across three continents. Collaborators included Lil Peep, Pouya, and Fat Nick."
+description: "SkipSchoolMakeMoney (SSMM) was a streetwear brand founded by George Dreemer, growing to 12,000+ Instagram followers, 20+ collections, and 1000s of orders across three continents."
 url: "https://georgedreemer.com/work/skipschoolmakemoney"
 markdown_url: "https://georgedreemer.com/work/skipschoolmakemoney.md"
 language: "en"
 source: "dev_html/work/skipschoolmakemoney.html"
-source_sha256: "f2badc67004080ae83c8434dbfe2598cc983ccf0806788abdd623c851f23607b"
+source_sha256: "57874733903f32a91ff6ac87ea088a43afe2c7891d4919cc16cf507a2561e744"
 ---
 
 # SkipSchoolMakeMoney — Streetwear Brand

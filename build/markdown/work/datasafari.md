@@ -1,11 +1,11 @@
 ---
 title: "DataSafari — Open-Source Python Library for Data Science"
-description: "DataSafari is a Python library by George Dreemer that simplifies complex data science tasks — compressing the full data workflow into a one-liner API across 11 functions, 4 subpackages, and 250+ tests. Available on PyPI."
+description: "DataSafari is a Python library by George Dreemer that simplifies complex data science tasks, compressing the full data workflow into a one-liner API across 11 functions and 4 subpackages. Available on PyPI."
 url: "https://georgedreemer.com/work/datasafari"
 markdown_url: "https://georgedreemer.com/work/datasafari.md"
 language: "en"
 source: "dev_html/work/datasafari.html"
-source_sha256: "4ed1dc470458681aea3d786267c50074076a7e45066f7f1b8506565fcdb62853"
+source_sha256: "f7a78f10a64e9af057e1b9fe729cf4cc320bc08a920042baf9bae36ea5cc5f9d"
 ---
 
 # DataSafari — Open-Source Python Library for Data Science
@@ -101,39 +101,39 @@ Data Safari
 
 - scikit-learn
 
-  scikit-optimize
+- scikit-optimize
 
-  category-encoders
+- category-encoders
 
-  PyTorch
+- PyTorch
 
-  HuggingFace
+- HuggingFace
 
-  Matplotlib
+- Matplotlib
 
-  seaborn
+- seaborn
 
-  Plotly
+- Plotly
 
-  statsmodels
+- statsmodels
 
 ### Dev Toolchain
 
 - pytest
 
-  tox
+- tox
 
-  Sphinx
+- Sphinx
 
-  Read the Docs
+- Read the Docs
 
-  PyPI
+- PyPI
 
-  Poetry
+- Poetry
 
-  Setuptools
+- Setuptools
 
-  GitHub Actions
+- GitHub Actions
 
 ### Dev Tools & IDEs
 

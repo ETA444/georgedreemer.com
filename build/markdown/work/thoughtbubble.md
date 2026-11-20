@@ -1,11 +1,11 @@
 ---
 title: "thoughtbubble — Knowledge-First Social Network"
-description: "How George Dreemer and Nikolay Stanchev built thoughtbubble, a knowledge-first social network designed, coded, and launched from scratch — growing to around 900 registered users with no framework, funding, or team."
+description: "thoughtbubble was a knowledge-first social network co-founded by George Dreemer and Nikolay Stanchev, built from scratch and launched to around 900 registered users across the US and Europe."
 url: "https://georgedreemer.com/work/thoughtbubble"
 markdown_url: "https://georgedreemer.com/work/thoughtbubble.md"
 language: "en"
 source: "dev_html/work/thoughtbubble.html"
-source_sha256: "d6729b87fb9393a4f0d03151a7bca658cc00a07dad5aa5feb4e0fb0ae7355c46"
+source_sha256: "efedc22fb47995b7f1c4d1c51b479d83f8e04f5329a913799257f1a443224f48"
 ---
 
 # thoughtbubble — Knowledge-First Social Network

@@ -1,11 +1,11 @@
 ---
 title: "MSc Marketing Analytics & Data Science — University of Groningen"
-description: "Inside George's MSc in Marketing Analytics & Data Science at Groningen: turning research questions into models, insights and decisions with Python, R and SQL."
+description: "George's MSc in Marketing Analytics and Data Science at the University of Groningen brought research, statistics and machine learning into practical business questions. Explore the work behind it: from preparing data and comparing models to interpreting findings, with public code, reports and a thesis on willingness to share health data."
 url: "https://georgedreemer.com/education/masters"
 markdown_url: "https://georgedreemer.com/education/masters.md"
 language: "en"
 source: "dev_html/education/masters.html"
-source_sha256: "0b5cba102c8549db7b35f40a5182f0c3ee94cef6301f53960eb00f37cd10f8ce"
+source_sha256: "5b1873510c0fef40491c8977ce35ae01516eea1f34c1c5b9503fc323328c854b"
 ---
 
 # MSc Marketing Analytics & Data Science — University of Groningen
