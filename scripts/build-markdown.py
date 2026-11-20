@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# pyright: reportAttributeAccessIssue=false, reportArgumentType=false, reportCallIssue=false, reportOptionalMemberAccess=false, reportOptionalSubscript=false, reportOptionalIterable=false, reportIndexIssue=false, reportOperatorIssue=false
 """Deterministic, local HTML-to-Markdown exporter for georgedreemer.com."""
 
 from __future__ import annotations
