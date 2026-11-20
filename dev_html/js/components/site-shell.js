@@ -269,16 +269,16 @@
                     </svg>
                 </p-->
 
-                <div class="gd-footer__seal" aria-hidden="true">
+                <!-- div class="gd-footer__seal" aria-hidden="true">
                     <img
-                        src="/public_img/general/logos/dreemcorp-crest-placeholder.svg"
-                        alt=""
+                        src="https://georgedreemer.com/public_img/general/logos/footerlogo.svg"
+                        alt="George Dreemer Official Logo called DREEMCREST"
                         width="42"
                         height="42"
                         loading="lazy"
                         decoding="async"
                     />
-                </div>
+                </div-->
 
                 <p class="gd-copyright">
                     © <span data-gd-year></span> George Dreemer
