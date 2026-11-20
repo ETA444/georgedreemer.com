@@ -60,6 +60,16 @@ def attrs(tag):
     }
 
 
+def plain(text):
+    text = re.sub(r"<[^>]+>", "", text)
+    return re.sub(r"\s+", " ", htmllib.unescape(text)).strip()
+
+
+def add(items, message):
+    if message not in items:
+        items.append(message)
+
+
 def html_info(text):
     h1 = re.search(r"<h1\b[^>]*>(.*?)</h1>", text, re.DOTALL | re.IGNORECASE)
     canonical = description = None
@@ -69,9 +79,6 @@ def html_info(text):
     for t in re.findall(r"<meta\b[^>]*>", text, re.IGNORECASE):
         if attrs(t).get("name") == "description":
             description = attrs(t).get("content")
-    plain = lambda s: re.sub(
-        r"\s+", " ", htmllib.unescape(re.sub(r"<[^>]+>", "", s))
-    ).strip()
     lang = re.search(r"<html\b[^>]*\blang=\"([^\"]+)\"", text, re.IGNORECASE)
     return {
         "h1": plain(h1.group(1)) if h1 else "",
@@ -102,8 +109,12 @@ def types(n):
     return [t] if isinstance(t, str) else list(t)
 
 
-is_def = lambda d: "@id" in d and "@type" in d
-is_ref = lambda d: "@id" in d and "@type" not in d
+def is_def(node):
+    return "@id" in node and "@type" in node
+
+
+def is_ref(node):
+    return "@id" in node and "@type" not in node
 
 
 def discover():
@@ -261,7 +272,7 @@ def fix(p, routes):
 def check(p, routes, pages, defs):
     errs, warns = [], []
     doc, info, g = p["doc"], p["info"], nodes(p["doc"])
-    add = lambda lst, m: lst.append(m) if m not in lst else None
+
     if doc.get("@context") not in (
         "https://schema.org",
         "https://schema.org/",
