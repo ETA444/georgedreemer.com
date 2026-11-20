@@ -32,6 +32,8 @@ FORBIDDEN = []  # extra private strings that must never appear, e.g. ["Springfie
 EXTRA_INTERNAL = {
     "llms-full.txt",
     "downloads/",
+    "cv.json",
+    "faq.md",
 }  # internal paths allowed in llms.txt besides page .md files
 MAX_WORDS = 2500  # a long, accurate llms.txt is a deliberate choice; warn only on runaway growth
 
