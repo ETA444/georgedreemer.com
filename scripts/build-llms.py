@@ -8,7 +8,7 @@ Writes : build/markdown/llms.txt, build/markdown/llms-full.txt (publish these)
          build/reports/htaccess-markdown.conf,
          build/reports/head-links.txt (copy/paste once)
 Stdlib only:  python3 scripts/build-llms.py   [--check]
-"""  # noqa: EXE001
+"""
 
 import argparse
 import json
@@ -48,9 +48,7 @@ def split_front(text):
 
 
 def privacy_hits(text):
-    text = URL.sub(
-        "", text
-    )  # dates inside URLs (e.g. a source article's slug) are not copy
+    text = URL.sub("", text)  # dates inside URLs (e.g. a source article's slug) are not copy
     return sorted(
         set(
             YEAR.findall(text)
@@ -79,9 +77,7 @@ def validate(text, pages, origin):
             # Only lines that contain a link must follow the llms.txt link format.
             # Plain bullets and prose in any section are valid Markdown and allowed.
             errs.append(f"line {n}: links must be written '- [name](url): note'")
-    allowed = {p["markdown_url"] for p in pages} | {
-        origin + "/" + e for e in EXTRA_INTERNAL
-    }
+    allowed = {p["markdown_url"] for p in pages} | {origin + "/" + e for e in EXTRA_INTERNAL}
     linked, seen = set(), {}
     for url in re.findall(r"\]\((\S+?)\)", text):
         linked.add(url)
@@ -132,9 +128,7 @@ def build(args):
     for p in order:
         body = split_front((MD_DIR / p["output"]).read_text(encoding="utf-8")).strip()
         for hit in privacy_hits(body):
-            notes.append(
-                f"{p['output']}: date-like text '{hit}' (review the HTML copy)"
-            )
+            notes.append(f"{p['output']}: date-like text '{hit}' (review the HTML copy)")
         full += [
             "---",
             "",
@@ -183,13 +177,10 @@ def build(args):
             else ""
         )
         if not html:
-            notes.append(
-                p["source"] + ": source HTML not found; head-link check skipped"
-            )
+            notes.append(p["source"] + ": source HTML not found; head-link check skipped")
         elif not all(t.split(" href=")[1] in html for t in tags):
             notes.append(
-                p["source"]
-                + ": add the two <link> tags from build/reports/head-links.txt"
+                p["source"] + ": add the two <link> tags from build/reports/head-links.txt"
             )
     out[REPORTS / "htaccess-markdown.conf"] = "\n".join(ht)
     out[REPORTS / "head-links.txt"] = "\n".join(heads)

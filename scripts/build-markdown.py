@@ -110,9 +110,7 @@ class Renderer:
         url = self.link_url(href)
         if not url:
             return label
-        return (
-            f"[{label}](<{quote(url, safe=':/?#[]@!$&' + chr(39) + '()*+,;=%~-._')}>)"
-        )
+        return f"[{label}](<{quote(url, safe=':/?#[]@!$&' + chr(39) + '()*+,;=%~-._')}>)"
 
     def children(self, t):
         return "".join(self.render(x) for x in t.children)
@@ -162,9 +160,7 @@ class Renderer:
             label = t.select_one(".story-accordion__trigger-label")
             if label:
                 return self.block("#### " + compact(self.children(label)))
-            self.warn(
-                "Omitted interactive controls (buttons); no JavaScript is executed."
-            )
+            self.warn("Omitted interactive controls (buttons); no JavaScript is executed.")
             return ""
         if "instagram-media" in cs:
             href = t.get("data-instgrm-permalink")
@@ -189,9 +185,7 @@ class Renderer:
             label = (
                 t.get("title")
                 or t.get("aria-label")
-                or {"iframe": "Embedded resource", "video": "Video", "audio": "Audio"}[
-                    name
-                ]
+                or {"iframe": "Embedded resource", "video": "Video", "audio": "Audio"}[name]
             )
             return self.block(self.link(escaped(compact(label)), href))
         if name == "source":
@@ -199,9 +193,7 @@ class Renderer:
         if name == "img":
             alt = compact(t.get("alt", ""))
             badge_parent = t.find_parent(
-                class_=lambda c: (
-                    c and ("stack-badge" in c or "credential-card__icon" in c)
-                )
+                class_=lambda c: c and ("stack-badge" in c or "credential-card__icon" in c)
             )
             if not alt or badge_parent:
                 return ""
@@ -214,9 +206,7 @@ class Renderer:
             return self.block("Image: " + self.link(escaped(alt), href))
         if name == "pre":
             raw = t.get_text().strip("\n")
-            fence = "`" * max(
-                3, max((len(x) + 1 for x in re.findall(r"`+", raw)), default=0)
-            )
+            fence = "`" * max(3, max((len(x) + 1 for x in re.findall(r"`+", raw)), default=0))
             code = t.find("code")
             lang = (
                 next(
@@ -226,14 +216,10 @@ class Renderer:
                 if code
                 else ""
             )
-            return self.block(
-                fence + re.sub(r"[^\w+-]", "", lang) + "\n" + raw + "\n" + fence
-            )
+            return self.block(fence + re.sub(r"[^\w+-]", "", lang) + "\n" + raw + "\n" + fence)
         if name == "code":
             raw = compact(t.get_text())
-            fence = "`" * max(
-                1, max((len(x) + 1 for x in re.findall(r"`+", raw)), default=0)
-            )
+            fence = "`" * max(1, max((len(x) + 1 for x in re.findall(r"`+", raw)), default=0))
             pad = " " if raw.startswith("`") or raw.endswith("`") else ""
             return fence + pad + raw + pad + fence
         if name == "br":
@@ -241,20 +227,14 @@ class Renderer:
         if name == "hr":
             return self.block("---")
         if re.fullmatch(r"h[1-6]", name):
-            return anchor + self.block(
-                "#" * int(name[1]) + " " + compact(self.children(t))
-            )
-        if name == "a" and t.find(
-            ["h1", "h2", "h3", "h4", "h5", "h6", "p", "ul", "ol"]
-        ):
+            return anchor + self.block("#" * int(name[1]) + " " + compact(self.children(t)))
+        if name == "a" and t.find(["h1", "h2", "h3", "h4", "h5", "h6", "p", "ul", "ol"]):
             content = self.children(t)
             heading = t.find(re.compile(r"^h[1-6]$"))
             label = "Explore " + (
                 compact(heading.get_text(" ", strip=True)) if heading else "linked page"
             )
-            return self.block(content) + self.block(
-                self.link(escaped(label), t.get("href", ""))
-            )
+            return self.block(content) + self.block(self.link(escaped(label), t.get("href", "")))
         if name == "a":
             label = compact(self.children(t)) or escaped(
                 t.get("aria-label") or t.get("title") or t.get("href", "Link")
@@ -268,16 +248,13 @@ class Renderer:
             return marker + text + marker
         if name in {"ul", "ol"}:
             if any(
-                item.find(re.compile(r"^h[1-6]$"))
-                for item in t.find_all("li", recursive=False)
+                item.find(re.compile(r"^h[1-6]$")) for item in t.find_all("li", recursive=False)
             ):
                 return anchor + "".join(
                     self.render(item) for item in t.find_all("li", recursive=False)
                 )
             lines = []
-            number = (
-                int(t.get("start", "1")) if str(t.get("start", "1")).isdigit() else 1
-            )
+            number = int(t.get("start", "1")) if str(t.get("start", "1")).isdigit() else 1
             for item in t.find_all("li", recursive=False):
                 rendered = clean(self.children(item))
                 if not rendered:
@@ -295,11 +272,7 @@ class Renderer:
             already = preceding and re.search(
                 r"courses|sources", preceding.get_text(), re.IGNORECASE
             )
-            label = (
-                "Sources (courses):\n\n"
-                if "ability-card__source" in cs and not already
-                else ""
-            )
+            label = "Sources (courses):\n\n" if "ability-card__source" in cs and not already else ""
             return anchor + self.block(label + "\n".join(lines).rstrip())
         if name == "dl":
             out = []
@@ -310,9 +283,7 @@ class Renderer:
                         group.find_all("dd", recursive=False),
                     )
                     extra = [
-                        x
-                        for x in group.find_all(recursive=False)
-                        if x.name not in {"dt", "dd"}
+                        x for x in group.find_all(recursive=False) if x.name not in {"dt", "dd"}
                     ]
                     term = "; ".join(compact(self.children(x)) for x in terms)
                     val = "\n\n".join(clean(self.children(x)) for x in values)
@@ -329,10 +300,7 @@ class Renderer:
         if name == "table":
             rows = t.find_all("tr")
             headings = (
-                [
-                    compact(self.children(x))
-                    for x in rows[0].find_all("th", recursive=False)
-                ]
+                [compact(self.children(x)) for x in rows[0].find_all("th", recursive=False)]
                 if rows
                 else []
             )
@@ -357,9 +325,7 @@ class Renderer:
         text = self.children(t)
         if "ability-card" in cs and t.get("data-domain"):
             domain = "Domain: " + escaped(t["data-domain"])
-            text = re.sub(
-                r"(### [^\n]+\n)", lambda m: m[1] + "\n" + domain + "\n", text, count=1
-            )
+            text = re.sub(r"(### [^\n]+\n)", lambda m: m[1] + "\n" + domain + "\n", text, count=1)
         if name == "p" or name in BLOCK_TAGS:
             return anchor + self.block(text)
         return text
@@ -402,14 +368,12 @@ def convert(path, source, site, keep_anchors=False):
         "source": "dev_html/" + rel.as_posix(),
         "source_sha256": hashlib.sha256(raw).hexdigest(),
     }
-    modified = soup.find(
-        "meta", attrs={"property": "article:modified_time"}
-    ) or soup.find("meta", attrs={"name": "dateModified"})
+    modified = soup.find("meta", attrs={"property": "article:modified_time"}) or soup.find(
+        "meta", attrs={"name": "dateModified"}
+    )
     if modified and modified.get("content"):
         data["date_modified"] = modified["content"]
-    head = (
-        "---\n" + "\n".join(k + ": " + quoted(v) for k, v in data.items()) + "\n---\n\n"
-    )
+    head = "---\n" + "\n".join(k + ": " + quoted(v) for k, v in data.items()) + "\n---\n\n"
     if mains[0].select("[data-course]"):
         r.warn("Course names retained; grades injected by JavaScript are not inferred.")
     if mains[0].select("canvas, [data-context-explorer]"):
@@ -447,9 +411,7 @@ def main(argv=None):
     p = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
-    p.add_argument(
-        "--source", type=Path, default=ROOT / "dev_html", help="HTML source directory"
-    )
+    p.add_argument("--source", type=Path, default=ROOT / "dev_html", help="HTML source directory")
     p.add_argument(
         "--output",
         type=Path,
@@ -471,9 +433,7 @@ def main(argv=None):
         action="store_true",
         help="Fail if generated files are missing/stale; write nothing",
     )
-    p.add_argument(
-        "--dry-run", action="store_true", help="Preview changes; write nothing"
-    )
+    p.add_argument("--dry-run", action="store_true", help="Preview changes; write nothing")
     args = p.parse_args(argv)
     source, output = args.source.resolve(), args.output.resolve()
     if not source.is_dir():
@@ -518,11 +478,7 @@ def main(argv=None):
         try:
             old = json.loads(previous.read_text(encoding="utf-8"))
             if old.get("generator") == "build-markdown":
-                stale = [
-                    e["output"]
-                    for e in old.get("pages", [])
-                    if e["output"] not in expected
-                ]
+                stale = [e["output"] for e in old.get("pages", []) if e["output"] not in expected]
         except (ValueError, KeyError):
             print("Warning: old manifest unreadable; no stale files will be removed.")
     changes = 0

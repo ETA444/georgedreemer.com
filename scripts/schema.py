@@ -13,7 +13,7 @@ written ONLY by --embed (only the JSON-LD <script> block is replaced).
   python3 scripts/schema.py --embed --write       apply it
 
 Standard library only.
-"""  # noqa: EXE001
+"""
 
 import argparse
 import copy
@@ -55,8 +55,7 @@ def dump(doc):
 
 def attrs(tag):
     return {
-        k.lower(): htmllib.unescape(v)
-        for k, v in re.findall(r"([\w:-]+)\s*=\s*\"([^\"]*)\"", tag)
+        k.lower(): htmllib.unescape(v) for k, v in re.findall(r"([\w:-]+)\s*=\s*\"([^\"]*)\"", tag)
     }
 
 
@@ -153,9 +152,7 @@ def build_breadcrumb(p):
     name = re.split(r"\s+[—–-]\s+", p["info"]["h1"] or parts[-1])[0]
     url = p["info"]["canonical"] or ORIGIN + p["route"]
     items = (
-        [("George Dreemer", ORIGIN)]
-        + ([(hub[0], ORIGIN + hub[1])] if hub else [])
-        + [(name, url)]
+        [("George Dreemer", ORIGIN)] + ([(hub[0], ORIGIN + hub[1])] if hub else []) + [(name, url)]
     )
     return {
         "@type": "BreadcrumbList",
@@ -183,11 +180,7 @@ def fix(p, routes):
                                 ORIGIN
                                 + pre
                                 + path
-                                + (
-                                    "#" + urlsplit(v).fragment
-                                    if urlsplit(v).fragment
-                                    else ""
-                                )
+                                + ("#" + urlsplit(v).fragment if urlsplit(v).fragment else "")
                             )
                             notes.append(f"{key} path repaired: {v} -> {d[key]}")
     g = nodes(doc)
@@ -245,25 +238,11 @@ def fix(p, routes):
                     left.append(f.get("name") or f.get("@id"))
             if ventures:
                 have = n.setdefault("worksFor", [])
-                have.extend(
-                    v for v in ventures if v["@id"] not in [h.get("@id") for h in have]
-                )
+                have.extend(v for v in ventures if v["@id"] not in [h.get("@id") for h in have])
             msg = "Person.founder removed (valid only on Organization)"
-            msg += (
-                f"; founder -> Person set on: {', '.join(map(str, moved))}"
-                if moved
-                else ""
-            )
-            msg += (
-                f"; worksFor added: {', '.join(v['name'] for v in ventures)}"
-                if ventures
-                else ""
-            )
-            msg += (
-                f"; left to their own pages: {', '.join(map(str, left))}"
-                if left
-                else ""
-            )
+            msg += f"; founder -> Person set on: {', '.join(map(str, moved))}" if moved else ""
+            msg += f"; worksFor added: {', '.join(v['name'] for v in ventures)}" if ventures else ""
+            msg += f"; left to their own pages: {', '.join(map(str, left))}" if left else ""
             notes.append(msg)
     return doc, list(dict.fromkeys(notes))
 
@@ -292,10 +271,7 @@ def check(p, routes, pages, defs):
             if isinstance(v, str) and v.startswith(ORIGIN):
                 path = urlsplit(v).path or "/"
                 if FILE.search(path):
-                    if (
-                        PUBLIC.is_dir()
-                        and not (PUBLIC / unquote(path).lstrip("/")).is_file()
-                    ):
+                    if PUBLIC.is_dir() and not (PUBLIC / unquote(path).lstrip("/")).is_file():
                         add(
                             warns,
                             f"linked file not found in public_html/ (sync first?): {path}",
@@ -346,9 +322,7 @@ def check(p, routes, pages, defs):
                 add(errs, "missing BreadcrumbList (--fix adds it)")
             else:
                 if (w.get("breadcrumb") or {}).get("@id") != bc[0].get("@id"):
-                    add(
-                        errs, "WebPage.breadcrumb does not reference the BreadcrumbList"
-                    )
+                    add(errs, "WebPage.breadcrumb does not reference the BreadcrumbList")
                 items = bc[0].get("itemListElement", [])
                 if len(items) < 2 or [i.get("position") for i in items] != list(
                     range(1, len(items) + 1)
@@ -363,9 +337,7 @@ def check(p, routes, pages, defs):
                             f"breadcrumb item is not a real page (redirect or typo): {it.get('item')}",
                         )
                     elif u.fragment and u.fragment not in pages[path]["info"]["ids"]:
-                        add(
-                            errs, f"breadcrumb anchor #{u.fragment} not found on {path}"
-                        )
+                        add(errs, f"breadcrumb anchor #{u.fragment} not found on {path}")
                 if items and items[-1].get("item") != can:
                     add(errs, "last breadcrumb item must be the page itself")
     for n in g:
@@ -397,13 +369,9 @@ def check(p, routes, pages, defs):
                     )
         if (
             p["route"].startswith("/work/")
-            and any(
-                t in ("Organization", "CreativeWork", "SoftwareSourceCode")
-                for t in types(n)
-            )
+            and any(t in ("Organization", "CreativeWork", "SoftwareSourceCode") for t in types(n))
             and str(n.get("@id", "")).startswith(info["canonical"] or "~")
-            and PERSON
-            not in json.dumps([n.get("founder"), n.get("creator"), n.get("author")])
+            and PERSON not in json.dumps([n.get("founder"), n.get("creator"), n.get("author")])
         ):
             add(
                 warns,
@@ -456,9 +424,7 @@ def main():
     ap = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
     )
-    ap.add_argument(
-        "--fix", action="store_true", help="repair seo/schema/*.json automatically"
-    )
+    ap.add_argument("--fix", action="store_true", help="repair seo/schema/*.json automatically")
     ap.add_argument(
         "--embed",
         action="store_true",
@@ -485,9 +451,7 @@ def main():
     known = {p["file"].name for p in pages.values()}
     for f in sorted(SCHEMA_DIR.glob("*_schema.json")):
         if f.name not in known:
-            print(
-                f"WARN  {f.relative_to(ROOT)} has no matching page in dev_html/ (ignored)"
-            )
+            print(f"WARN  {f.relative_to(ROOT)} has no matching page in dev_html/ (ignored)")
     if a.fix:
         for p in pages.values():
             new, notes = fix(p, routes)
@@ -530,9 +494,7 @@ def main():
         own = {d["@id"] for d in walk(p["doc"]) if is_def(d)}
         for i, t in defs.items():
             if len(t) > 1 and i.startswith(ORIGIN) and i in own:
-                errs.append(
-                    f"@id {i} is typed differently across pages: {sorted(map(list, t))}"
-                )
+                errs.append(f"@id {i} is typed differently across pages: {sorted(map(list, t))}")
         if not html_in_sync(p):
             errs.append(
                 f"{p['html'].relative_to(ROOT)} has different JSON-LD (run --embed --write)"

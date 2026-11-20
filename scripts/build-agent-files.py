@@ -15,7 +15,7 @@ output (they belong in your private CV file).
   python3 scripts/build-agent-files.py --check    # write nothing; exit 1 if stale
 
 Standard library only.
-"""  # noqa: EXE001
+"""
 
 import argparse
 import json
@@ -241,9 +241,7 @@ def parse_snapshot(page, where):
     item = parse_item(pre)
     fields = item["f"]
     name = " ".join(unmd(b) for b in item["pre"][:1])
-    score_key = next(
-        (k for k in ("result", "estimated gpa", "gpa", "grade") if k in fields), ""
-    )
+    score_key = next((k for k in ("result", "estimated gpa", "gpa", "grade") if k in fields), "")
     note = ""
     if score_key:
         note = " ".join(unmd(b) for b in item["extras"].get(score_key, [])).strip()
@@ -311,9 +309,7 @@ def parse_index(page):
     for text in group_items(section or []):
         match = re.match(r"^(.*?)\s+([ABC][1-2])$", text)
         language = (match.group(1) if match else text).strip()
-        out["languages"].append(
-            {"language": language, "fluency": match.group(2) if match else ""}
-        )
+        out["languages"].append({"language": language, "fluency": match.group(2) if match else ""})
     for key, name in (("work", "work"), ("degrees", "academic degrees")):
         section = find_sec(page, name)
         if not section:
@@ -339,9 +335,7 @@ def parse_index(page):
             WARN.append(f"index.md: no '{name}' section")
             continue
         _, items = split_level(section, 3)
-        out[key] = [
-            (unmd(title), parse_item(lines), "\n".join(lines)) for title, lines in items
-        ]
+        out[key] = [(unmd(title), parse_item(lines), "\n".join(lines)) for title, lines in items]
     return out
 
 
@@ -532,9 +526,7 @@ def build_awards(idx):
             (
                 u
                 for t, u in links(raw)
-                if "View award" in t
-                or "certificate" in u.lower()
-                or u.lower().endswith(".pdf")
+                if "View award" in t or "certificate" in u.lower() or u.lower().endswith(".pdf")
             ),
             "",
         )
@@ -573,8 +565,7 @@ def build_cv(manifest, pages, idx):
     origin = site_origin(manifest)
     return {
         "$schema": (
-            "https://raw.githubusercontent.com/jsonresume/resume-schema/"
-            "v1.0.0/schema.json"
+            "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json"
         ),
         "basics": build_basics(origin, pages),
         "work": build_work(manifest, pages, idx),
@@ -643,9 +634,7 @@ def build_faq(cv, origin):
     )
     safari = work.get("datasafari")
     if safari:
-        numbers = "; ".join(
-            f"{m['value']} {m['label'].lower()}" for m in safari["x-metrics"][:5]
-        )
+        numbers = "; ".join(f"{m['value']} {m['label'].lower()}" for m in safari["x-metrics"][:5])
         link_text = ", ".join(f"[{x['label']}]({x['url']})" for x in safari["x-links"])
         ask(
             "What is DataSafari?",
@@ -668,9 +657,7 @@ def build_faq(cv, origin):
         if topical.search(haystack):
             label = edu.get("x-score-label", "result").lower()
             score = f", {label} {edu['score']}" if edu["score"] else ""
-            credentials.append(
-                f"- {edu['area']} ({edu['studyType']}), {edu['institution']}{score}"
-            )
+            credentials.append(f"- {edu['area']} ({edu['studyType']}), {edu['institution']}{score}")
     credentials += [
         f"- {c['name']} ({c['issuer']})"
         for c in cv["certificates"]
@@ -697,8 +684,7 @@ def build_faq(cv, origin):
     ask(
         "Which certificates does he hold?",
         "\n".join(
-            f"- {c['name']} — {c['issuer']}"
-            + (f" ([verify]({c['url']}))" if c["url"] else "")
+            f"- {c['name']} — {c['issuer']}" + (f" ([verify]({c['url']}))" if c["url"] else "")
             for c in cv["certificates"]
         ),
     )
@@ -724,18 +710,14 @@ def build_faq(cv, origin):
         )
     studio = work.get("dreemcorp")
     if studio:
-        numbers = "; ".join(
-            f"{m['value']} {m['label'].lower()}" for m in studio["x-metrics"][:4]
-        )
+        numbers = "; ".join(f"{m['value']} {m['label'].lower()}" for m in studio["x-metrics"][:4])
         ask(
             "What creative and content-production experience does he have?",
             f"{studio['summary']} Role: {studio['position']}. Numbers: {numbers}. "
             f"[{studio['name']}]({studio['x-markdown']}).",
         )
     code_links = [
-        f"- {p['network']}: {p['url']}"
-        for p in basics["profiles"]
-        if p["network"] == "GitHub"
+        f"- {p['network']}: {p['url']}" for p in basics["profiles"] if p["network"] == "GitHub"
     ]
     wanted = ("github", "docs", "pypi")
     code_links += [
@@ -779,9 +761,7 @@ def build_faq(cv, origin):
 
 # ---------- AGENTS.md ----------
 def build_agents(manifest):
-    pages = "\n".join(
-        f"- `{p['source']}` -> `{p['output']}`" for p in manifest["pages"]
-    )
+    pages = "\n".join(f"- `{p['source']}` -> `{p['output']}`" for p in manifest["pages"])
     return f"""{MARK}
 # AGENTS.md
 
@@ -838,8 +818,7 @@ def main():
     manifest_path = MD / "manifest.json"
     if not manifest_path.exists():
         print(
-            "build/markdown/manifest.json missing: "
-            "run bash scripts/build-markdown.sh first",
+            "build/markdown/manifest.json missing: run bash scripts/build-markdown.sh first",
             file=sys.stderr,
         )
         return 2
@@ -864,8 +843,7 @@ def main():
         if path.name != "AGENTS.md":
             for hit in privacy(text):
                 NOTES.append(
-                    f"{path.name}: date-like text '{hit}' "
-                    "(check the page copy it came from)"
+                    f"{path.name}: date-like text '{hit}' (check the page copy it came from)"
                 )
     for warning in WARN:
         print("WARN  " + warning)

@@ -23,9 +23,7 @@ class RendererTests(unittest.TestCase):
         self.assertIn("## Details", s)
 
     def test_no_raw_html_anchors_by_default(self):
-        s, _ = self.render(
-            '<section id="intro"><h2 id="tools">Tools</h2><p>Text</p></section>'
-        )
+        s, _ = self.render('<section id="intro"><h2 id="tools">Tools</h2><p>Text</p></section>')
         self.assertNotIn("<a", s)
         self.assertIn("## Tools", s)
 
@@ -34,9 +32,7 @@ class RendererTests(unittest.TestCase):
         self.assertIn('<a id="intro"></a>', s)
 
     def test_decorative(self):
-        s, _ = self.render(
-            '<span aria-hidden="true">Tw</span><span>Twitter</span><svg>junk</svg>'
-        )
+        s, _ = self.render('<span aria-hidden="true">Tw</span><span>Twitter</span><svg>junk</svg>')
         self.assertEqual(s, "Twitter")
 
     def test_caveat(self):
@@ -73,9 +69,7 @@ class RendererTests(unittest.TestCase):
         self.assertEqual(s, "Run `a_b()`.")
 
     def test_sources(self):
-        s, _ = self.render(
-            '<ul class="ability-card__source"><li>Data Engineering</li></ul>'
-        )
+        s, _ = self.render('<ul class="ability-card__source"><li>Data Engineering</li></ul>')
         self.assertIn("Sources (courses):", s)
         self.assertIn("- Data Engineering", s)
 
@@ -173,9 +167,7 @@ class BuildTests(unittest.TestCase):
         self.assertEqual(self.run_build().returncode, 0)
         self.assertNotIn("<a id=", (self.out / "index.md").read_text())
         m = json.loads((self.out / "manifest.json").read_text())
-        self.assertEqual(
-            m["pages"][0]["sections"][0]["url"], "https://example.com/#intro"
-        )
+        self.assertEqual(m["pages"][0]["sections"][0]["url"], "https://example.com/#intro")
 
     def test_anchor_flag(self):
         self.assertEqual(self.run_build("--anchors").returncode, 0)
@@ -198,15 +190,11 @@ class BuildTests(unittest.TestCase):
         (self.src / "archive").mkdir()
         (self.src / "archive" / "bad.html").write_text("Ignore me")
         self.assertEqual(self.run_build().returncode, 0)
-        self.assertEqual(
-            len(json.loads((self.out / "manifest.json").read_text())["pages"]), 1
-        )
+        self.assertEqual(len(json.loads((self.out / "manifest.json").read_text())["pages"]), 1)
 
     def test_delete_only_owned(self):
         extra = self.src / "extra.html"
-        extra.write_text(
-            self.html.replace("https://example.com/", "https://example.com/extra")
-        )
+        extra.write_text(self.html.replace("https://example.com/", "https://example.com/extra"))
         self.assertEqual(self.run_build().returncode, 0)
         (self.out / "manual.md").write_text("Keep")
         extra.unlink()
