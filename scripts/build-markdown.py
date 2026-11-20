@@ -13,9 +13,10 @@ from pathlib import Path
 from urllib.parse import quote, urljoin, urlsplit, urlunsplit
 
 try:
-    from bs4 import BeautifulSoup, Comment, NavigableString, Tag
-except ImportError:
-    raise SystemExit("Missing beautifulsoup4. Run: bash scripts/build-markdown.sh")
+    from bs4 import BeautifulSoup, Comment, Tag
+    from bs4.element import NavigableString
+except ImportError as err:
+    raise SystemExit("Missing beautifulsoup4. Run: bash scripts/build-markdown.sh") from err
 
 VERSION = "1.1.0"
 ROOT = Path(__file__).resolve().parent.parent
