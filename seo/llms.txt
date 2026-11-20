@@ -18,6 +18,11 @@
 - [Overview](https://georgedreemer.com/index.md): George is a data scientist, developer and serial entrepreneur with work experience in all things data, programming, and web3. Explore his skills, projects, certifications and awards.
 - [All pages in one file](https://georgedreemer.com/llms-full.txt): If short on tokens, see this file, the complete text of every page on this website.
 
+## Structured data
+
+- [cv.json](https://georgedreemer.com/cv.json): Machine-readable profile in JSON Resume format: ventures with metrics and abilities, education, certificates, awards, skills, languages. Undated by design.
+- [faq.md](https://georgedreemer.com/faq.md): Answers to common recruiter questions, generated from the site's own pages.
+
 ## Work
 
 - [DataSafari — Open-Source Python Library for Data Science](https://georgedreemer.com/work/datasafari.md): DataSafari is a Python library by George Dreemer that simplifies complex data science tasks — compressing the full data workflow into a one-liner API across 11 functions, 4 subpackages, and 250+ tests. Available on PyPI.
