@@ -239,7 +239,7 @@ def parse_snapshot(page, where):
     pre, subs = split_level(section, 3)
     item = parse_item(pre)
     fields = item["f"]
-    name = unmd(item["pre"]) if item["pre"] else ""[0]
+    name = " ".join(unmd(b) for b in item["pre"][:1])
     score_key = next(
         (k for k in ("result", "estimated gpa", "gpa", "grade") if k in fields), ""
     )
@@ -255,7 +255,7 @@ def parse_snapshot(page, where):
         "fields": fields,
         "score_key": score_key,
         "note": note,
-        "links": links(link_blocks),
+        "links": links("\n".join(link_blocks)),
     }
     return snapshot, highlights, topics
 
