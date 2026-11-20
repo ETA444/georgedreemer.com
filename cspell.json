@@ -4,6 +4,6 @@
     "dictionaryDefinitions": [],
     "dictionaries": [],
     "words": [],
-    "ignoreWords": ["llms", "LLMS", "unmd", "Dreemer", "listify", "abilit", "datasafari", "dreemcorp", "georgedreemer", "cpanel", "htmllib", "skipschoolmakemoney", "cryptopandemic", "CEFR", "describedby"],
+    "ignoreWords": ["llms", "LLMS", "unmd", "Dreemer", "listify", "abilit", "datasafari", "dreemcorp", "georgedreemer", "cpanel", "htmllib", "skipschoolmakemoney", "cryptopandemic", "CEFR", "describedby", "venv"],
     "import": []
 }
