@@ -418,29 +418,26 @@ def embedded(p):
 
 
 def embed_text(p):
+    text = p["text"]
     new = dump(p["doc"]).rstrip("\n")
     blocks = embedded(p)
+
     if not blocks:
-        i = p["text"].lower().rfind("</head>")
+        i = text.lower().rfind("</head>")
         if i < 0:
             return None
-        return (
-            p["text"][:i]
-            + '  <script type="application/ld+json">\n'
-            + "\n".join("    " + l for l in new.splitlines())
-            + "\n  </script>\n"
-            + p["text"][i:]
-        )
+        body = "\n".join("    " + line for line in new.splitlines())
+        block = '  <script type="application/ld+json">\n' + body + "\n  </script>\n"
+        return text[:i] + block + text[i:]
+
     m = blocks[0]
-    start = p["text"].rfind("\n", 0, m.start()) + 1
-    indent = re.match(r"\s*", p["text"][start : m.start()]).group(0)
-    body = (
-        "\n"
-        + "\n".join((indent + "  " + l) if l else l for l in new.splitlines())
-        + "\n"
-        + indent
-    )
-    return p["text"][: m.start("body")] + body + p["text"][m.end("body") :]
+    line_start = text.rfind("\n", 0, m.start()) + 1
+    indent = re.match(r"\s*", text[line_start : m.start()]).group(0)
+    lines = [(indent + "  " + line) if line else line for line in new.splitlines()]
+    body = "\n" + "\n".join(lines) + "\n" + indent
+    body_start, body_end = m.start("body"), m.end("body")
+
+    return text[:body_start] + body + text[body_end:]
 
 
 def html_in_sync(p):
