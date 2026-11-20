@@ -15,7 +15,7 @@ output (they belong in your private CV file).
   python3 scripts/build-agent-files.py --check    # write nothing; exit 1 if stale
 
 Standard library only.
-"""
+""" # noqa: EXE001
 
 import argparse
 import json
@@ -85,7 +85,7 @@ def split_level(lines, level):
         elif current is None:
             pre.append(line)
         else:
-            current.append(line)[1]
+            current[1].append(line)
     return pre, items
 
 
