@@ -254,7 +254,7 @@ def parse_snapshot(page, where):
         "fields": fields,
         "score_key": score_key,
         "note": note,
-        "links": links(link_blocks),[0]
+        "links": links(link_blocks),
     }
     return snapshot, highlights, topics
 
