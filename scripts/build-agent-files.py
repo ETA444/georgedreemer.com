@@ -762,16 +762,15 @@ def build_faq(cv, origin):
                 naming = line[2:].strip()
                 break
     ask("How should he be addressed?", naming)
-    out = [
-        "# Recruiter FAQ — George Dreemer",
-        "",
-        (
-            f"> Answers generated from the site's own pages ({origin}). "
-            "Nothing here is added from outside the site. "
-            f"Source of truth: [llms-full.txt]({origin}/llms-full.txt)."
-        ),
-        "",
-    ]
+
+    note = (
+        f"> Answers generated from the site's own pages ({origin}). "
+        "Nothing here is added from outside the site. "
+        f"Source of truth: [llms-full.txt]({origin}/llms-full.txt)."
+    )
+
+    out = ["# Recruiter FAQ — George Dreemer", "", note, ""]
+
     for question, answer in qa:
         out += [f"## {question}", "", answer, ""]
     return "\n".join(out).rstrip() + "\n"
