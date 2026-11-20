@@ -308,7 +308,7 @@ def parse_index(page):
     if not section:
         WARN.append("index.md: no 'languages' section")
     for text in group_items(section or []):
-        match = re.match(r"^(.*?)\s+([ABC])$", text)
+        match = re.match(r"^(.*?)\s+([ABC][1-2])$", text)
         language = (match.group(1) if match else text).strip()
         out["languages"].append(
             {"language": language, "fluency": match.group(2) if match else ""}
