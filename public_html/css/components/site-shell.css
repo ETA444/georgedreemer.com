@@ -1,0 +1,1546 @@
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400&display=swap");
+
+/*
+ * Art direction: a connected portfolio with calm, app-like navigation.
+ * Existing Nunito / Playfair typography is preserved.
+ * Frank Ruhl Libre is reserved for the closing declaration.
+ * No framework, icon library, or Sitebuilder stylesheet is required.
+ */
+
+:root {
+    --gd-bg: #000000;
+    --gd-surface: #000000;
+    --gd-raised: #191919;
+
+    --gd-text: #f0efe8;
+    --gd-muted: #b8b8ab;
+    --gd-border: rgb(240 239 232 / 18%);
+
+    --gd-accent: color-mix(in oklab, var(--gd-page-primary, #01696f) 50%, white);
+    --gd-selected: color-mix(in srgb, var(--gd-accent) 18%, #000);
+    --gd-overlay: rgb(0 0 0 / 60%);
+    --gd-shadow: 0 8px 32px rgb(0 0 0 / 28%);
+
+    --gd-font: "Nunito", system-ui, sans-serif;
+    --gd-display: "Playfair Display", Georgia, serif;
+    --gd-hebrew: "Frank Ruhl Libre", "Noto Serif Hebrew", serif;
+
+    --gd-xs: clamp(.75rem, .73rem + .1vw, .8125rem);
+    --gd-sm: clamp(.875rem, .85rem + .1vw, .9375rem);
+    --gd-base: clamp(1rem, .97rem + .15vw, 1.0625rem);
+    --gd-lg: clamp(1.125rem, 1.05rem + .3vw, 1.375rem);
+    --gd-title: clamp(1.5rem, 1.3rem + .8vw, 2rem);
+    --gd-sacred: clamp(1.5rem, 1.24125rem + 1.15vw, 2.1rem);
+
+    --gd-s1: .25rem;
+    --gd-s2: .5rem;
+    --gd-s3: .75rem;
+    --gd-s4: 1rem;
+    --gd-s5: 1.25rem;
+    --gd-s6: 1.5rem;
+    --gd-s8: 2rem;
+    --gd-s10: 2.5rem;
+    --gd-s12: 3rem;
+    --gd-s16: 4rem;
+    --gd-s20: 5rem;
+
+    --gd-radius: .75rem;
+    --gd-pill: 0.75rem;
+    --gd-width: 75rem;
+    --gd-header-height: 0px;
+    --gd-anchor-offset: 1rem;
+    --gd-bottom-space: 0px;
+    --gd-ease: 180ms cubic-bezier(.2, .7, .2, 1);
+}
+
+html[data-gd-ready] {
+    scroll-padding-top: var(--gd-anchor-offset);
+    scroll-padding-bottom: var(--gd-bottom-space);
+}
+
+html[data-gd-ready] main [id][data-nav] {
+    scroll-margin-top: var(--gd-anchor-offset);
+}
+
+.gd-shell,
+.gd-shell *,
+.gd-shell *::before,
+.gd-shell *::after {
+    box-sizing: border-box;
+}
+
+.gd-shell {
+    font-family: var(--gd-font);
+    font-size: var(--gd-base);
+    line-height: 1.5;
+    color: var(--gd-text);
+    text-align: left;
+    -webkit-font-smoothing: antialiased;
+}
+
+.gd-shell [hidden],
+.gd-shell[hidden] {
+    display: none !important;
+}
+
+.gd-shell :where(h2, h3, p, ul, ol) {
+    margin: 0;
+}
+
+.gd-shell :where(ul, ol) {
+    padding: 0;
+    list-style: none;
+}
+
+.gd-shell :where(a, button, input) {
+    font: inherit;
+}
+
+.gd-shell a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.gd-shell button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gd-s2);
+    min-height: 44px;
+    margin: 0;
+    padding: var(--gd-s2) var(--gd-s3);
+    border: 0;
+    border-radius: var(--gd-radius);
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    line-height: 1.3;
+}
+
+.gd-shell :where(a, button, input) {
+    transition:
+        color var(--gd-ease),
+        background-color var(--gd-ease),
+        border-color var(--gd-ease);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.gd-shell :where(a, button, input):focus-visible {
+    outline: 2px solid var(--gd-accent);
+    outline-offset: 3px;
+}
+
+.gd-shell :where(a, button):active {
+    background-color: var(--gd-selected);
+}
+
+.gd-shell button:disabled {
+    opacity: .35;
+    cursor: default;
+}
+
+.gd-shell svg {
+    display: block;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.gd-shell [data-gd-icon],
+.gd-shell [data-gd-theme-icon] {
+    display: inline-flex;
+    flex-shrink: 0;
+}
+
+.gd-shell .gd-icon-button {
+    width: 44px;
+    min-width: 44px;
+    padding: 0;
+}
+
+.gd-sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip-path: inset(50%) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* Skip link */
+
+.gd-skip {
+    position: fixed;
+    inset: var(--gd-s3) auto auto var(--gd-s3);
+    z-index: 1100;
+    padding: var(--gd-s3) var(--gd-s4);
+    border-radius: var(--gd-radius);
+    background: var(--gd-surface);
+    box-shadow: var(--gd-shadow);
+    transform: translateY(-180%);
+}
+
+.gd-skip:focus {
+    transform: translateY(0);
+}
+
+/* Header */
+
+.gd-header {
+    position: relative;
+    z-index: 300;
+    width: 100%;
+    background: var(--gd-bg);
+    border-bottom: 1px solid var(--gd-border);
+    padding-top: 0.5em;
+}
+
+.gd-header__inner {
+    display: flex;
+    align-items: center;
+    gap: var(--gd-s3);
+    min-height: var(--gd-s16);
+    max-width: var(--gd-width);
+    margin-inline: auto;
+    padding-inline: var(--gd-s4);
+}
+
+.gd-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--gd-s3);
+    min-height: 44px;
+    margin-right: auto;
+    font-size: var(--gd-base);
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.gd-shell .gd-brand__mark {
+    width: 28px;
+    height: 28px;
+}
+
+.gd-desktop-nav {
+    display: none;
+    align-items: center;
+    gap: var(--gd-s4);
+    font-size: var(--gd-sm);
+    font-weight: 700;
+}
+
+.gd-nav-pair {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--gd-s1);
+}
+
+.gd-desktop-nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gd-s2);
+    min-height: 44px;
+    padding-inline: var(--gd-s3);
+    border-radius: var(--gd-radius);
+}
+
+.gd-desktop-nav [data-gd-active] {
+    color: var(--gd-accent);
+    box-shadow: inset 0 -2px 0 var(--gd-accent);
+}
+
+.gd-contact-link {
+    background: var(--gd-selected);
+}
+
+.gd-breadcrumb {
+    max-width: var(--gd-width);
+    margin-inline: auto;
+    padding: 0 var(--gd-s4) var(--gd-s2);
+    color: var(--gd-muted);
+    font-size: var(--gd-xs);
+}
+
+.gd-breadcrumb ol {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--gd-s2);
+}
+
+.gd-breadcrumb li {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--gd-s2);
+}
+
+.gd-breadcrumb li+li::before {
+    content: "/";
+    color: var(--gd-muted);
+}
+
+.gd-breadcrumb a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding-inline: var(--gd-s1);
+}
+
+/* Footer */
+
+.gd-footer {
+    margin-top: var(--gd-s16);
+    border-top: 1px solid var(--gd-border);
+    background: var(--gd-bg);
+}
+
+.gd-footer__inner {
+    max-width: var(--gd-width);
+    margin-inline: auto;
+    padding:
+        var(--gd-s12) var(--gd-s4) calc(var(--gd-s8) + var(--gd-bottom-space));
+}
+
+.gd-directory {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gd-s8);
+}
+
+.gd-directory-group h3,
+.gd-eyebrow {
+    margin-bottom: var(--gd-s3);
+    color: var(--gd-muted);
+    font-size: var(--gd-xs);
+    font-weight: 800;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+}
+
+.gd-directory-group a {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--gd-s2);
+    min-height: 44px;
+    padding-block: var(--gd-s2);
+    font-size: var(--gd-sm);
+    overflow-wrap: anywhere;
+}
+
+.gd-directory-group a[aria-current="page"] {
+    color: var(--gd-accent);
+    font-weight: 800;
+}
+
+.gd-network {
+    margin-top: var(--gd-s10);
+    padding-top: var(--gd-s6);
+    border-top: 1px solid var(--gd-border);
+}
+
+.gd-network ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: var(--gd-s8);
+    row-gap: var(--gd-s2);
+}
+
+.gd-network__description {
+    color: var(--gd-muted);
+    font-size: var(--gd-xs);
+}
+
+.gd-footer__closing {
+    padding-top: clamp(var(--gd-s12), 8vw, var(--gd-s20));
+    text-align: center;
+}
+
+.gd-declaration {
+    font-family: var(--gd-hebrew);
+    font-size: var(--gd-sacred);
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: normal;
+    color: var(--gd-text);
+    text-wrap: balance;
+}
+
+.gd-footer__rule {
+    width: var(--gd-s12);
+    height: 1px;
+    margin: var(--gd-s5) auto var(--gd-s4);
+    background: var(--gd-border);
+}
+
+.gd-copyright {
+    color: var(--gd-muted);
+    font-size: var(--gd-xs);
+}
+
+/* Contextual connections */
+
+.gd-related {
+    display: grid;
+    gap: var(--gd-s6);
+    max-width: var(--gd-width);
+    margin: var(--gd-s16) auto 0;
+    padding-inline: var(--gd-s4);
+    --gd-text: #282722;
+    --gd-muted: #615f58;
+    --gd-border: rgb(40 39 34 / 16%);
+    --gd-accent: color-mix(in oklab, var(--gd-page-primary, #01696f) 78%, black);
+    --gd-selected: color-mix(in srgb, var(--gd-page-primary, #01696f) 12%, #fff);
+
+    color-scheme: light;
+}
+
+.gd-related h2 {
+    font-family: var(--gd-display);
+    font-size: var(--gd-title);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.gd-related__list li {
+    border-bottom: 1px solid var(--gd-border);
+}
+
+.gd-related__list a {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: var(--gd-s2) var(--gd-s4);
+    padding-block: var(--gd-s5);
+    border-radius: 0;
+}
+
+.gd-related__name {
+    font-size: var(--gd-base);
+    font-weight: 800;
+}
+
+.gd-related__description {
+    grid-column: 1;
+    max-width: 60ch;
+    color: var(--gd-muted);
+    font-size: var(--gd-sm);
+}
+
+.gd-related__arrow {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    align-self: center;
+}
+
+/* Mobile dock */
+
+.gd-dock {
+    position: fixed;
+    inset: auto 0 0;
+    z-index: 400;
+    display: flex;
+    align-items: stretch;
+    padding:
+        var(--gd-s2) max(var(--gd-s2), env(safe-area-inset-right, 0px)) calc(var(--gd-s2) + env(safe-area-inset-bottom, 0px)) max(var(--gd-s2), env(safe-area-inset-left, 0px));
+    border-top: 1px solid var(--gd-border);
+    background: var(--gd-surface);
+    box-shadow: 0 -4px 20px rgb(20 20 15 / 6%);
+}
+
+.gd-dock> :where(a, button) {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gd-s1);
+    min-width: 0;
+    min-height: 52px;
+    padding: var(--gd-s1);
+    border-radius: var(--gd-radius);
+    font-size: var(--gd-xs);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.gd-dock [data-gd-active],
+.gd-dock [aria-expanded="true"] {
+    background: var(--gd-selected);
+    color: var(--gd-accent);
+    font-weight: 800;
+}
+
+html.gd-keyboard-open .gd-dock {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* Desktop reader */
+
+.gd-reader {
+    position: fixed;
+    inset: auto auto var(--gd-s4) 50%;
+    z-index: 350;
+    display: none;
+    align-items: center;
+    max-width: calc(100% - var(--gd-s8));
+    padding: var(--gd-s1);
+    border: 1px solid var(--gd-border);
+    border-radius: var(--gd-pill);
+    background: var(--gd-surface);
+    box-shadow: var(--gd-shadow);
+    transform: translateX(-50%);
+}
+
+.gd-reader__current {
+    min-width: 0;
+    max-width: 24rem;
+    font-size: var(--gd-sm);
+}
+
+.gd-reader__count {
+    color: var(--gd-muted);
+    font-size: var(--gd-xs);
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+}
+
+.gd-reader__label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 800;
+}
+
+/* Native dialog: compact desktop panel / mobile bottom sheet */
+
+.gd-sheet:not([open]) {
+    display: none;
+}
+
+.gd-sheet {
+    position: fixed;
+    inset: auto 0 0;
+    width: 100%;
+    max-width: none;
+    max-height: calc(100dvh - var(--gd-s4));
+    margin: 0;
+    padding: 0;
+    border: 1px solid var(--gd-border);
+    border-bottom: 0;
+    border-radius: var(--gd-s5) var(--gd-s5) 0 0;
+    background: var(--gd-surface);
+    color: var(--gd-text);
+    box-shadow: var(--gd-shadow);
+    overflow: hidden;
+}
+
+.gd-sheet[open] {
+    display: flex;
+    flex-direction: column;
+    animation: gd-sheet-in var(--gd-ease);
+}
+
+.gd-sheet::backdrop {
+    background: var(--gd-overlay);
+    animation: gd-backdrop-in var(--gd-ease);
+}
+
+.gd-sheet[data-closing] {
+    animation: gd-sheet-out 120ms ease-in forwards;
+}
+
+.gd-sheet[data-closing]::backdrop {
+    animation: gd-backdrop-out 120ms ease-in forwards;
+}
+
+.gd-sheet__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--gd-s4);
+    padding: var(--gd-s5);
+    border-bottom: 1px solid var(--gd-border);
+}
+
+.gd-sheet__header h2 {
+    margin: 0;
+    font-family: var(--gd-font);
+    font-size: var(--gd-lg);
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.gd-sheet__header p {
+    margin-top: var(--gd-s1);
+    color: var(--gd-muted);
+    font-size: var(--gd-sm);
+}
+
+.gd-sheet__close {
+    flex-shrink: 0;
+    font-size: var(--gd-sm) !important;
+}
+
+.gd-sheet__body {
+    min-height: 0;
+    padding:
+        var(--gd-s5) var(--gd-s5) calc(var(--gd-s6) + env(safe-area-inset-bottom, 0px));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+}
+
+.gd-menu-grid {
+    display: grid;
+    gap: var(--gd-s6);
+}
+
+.gd-menu-group a {
+    padding-inline: var(--gd-s2);
+    border-radius: var(--gd-radius);
+}
+
+.gd-search {
+    display: grid;
+    gap: var(--gd-s2);
+    margin-bottom: var(--gd-s6);
+}
+
+.gd-search label,
+.gd-sheet label {
+    color: var(--gd-muted);
+    font-size: var(--gd-sm);
+    font-weight: 700;
+}
+
+.gd-sheet input {
+    width: 100%;
+    min-height: 48px;
+    padding: var(--gd-s3) var(--gd-s4);
+    border: 1px solid var(--gd-border);
+    border-radius: var(--gd-radius);
+    background: var(--gd-bg);
+    color: var(--gd-text);
+    font-size: 1rem;
+}
+
+.gd-page-list a {
+    display: flex;
+    align-items: center;
+    gap: var(--gd-s4);
+    min-height: 52px;
+    padding: var(--gd-s3);
+    border-radius: var(--gd-radius);
+    font-size: var(--gd-base);
+}
+
+.gd-page-list a[aria-current="location"] {
+    background: var(--gd-selected);
+    color: var(--gd-accent);
+    font-weight: 800;
+}
+
+.gd-page-list__number {
+    min-width: var(--gd-s6);
+    color: var(--gd-muted);
+    font-size: var(--gd-xs);
+    font-variant-numeric: tabular-nums;
+}
+
+.gd-sheet-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gd-s2);
+    margin-top: var(--gd-s6);
+    padding-top: var(--gd-s4);
+    border-top: 1px solid var(--gd-border);
+}
+
+.gd-sheet-actions button {
+    background: var(--gd-raised);
+    font-size: var(--gd-sm);
+}
+
+.gd-notice:not(:empty) {
+    margin-top: var(--gd-s4);
+    color: var(--gd-muted);
+    font-size: var(--gd-sm);
+}
+
+.gd-sheet [data-gd-manual-copy] {
+    margin-top: var(--gd-s4);
+}
+
+/* Interaction */
+
+@media (hover: hover) {
+
+    .gd-shell a:hover,
+    .gd-shell button:not(:disabled):hover {
+        color: var(--gd-accent);
+    }
+
+    .gd-desktop-nav a:hover,
+    .gd-shell .gd-icon-button:hover,
+    .gd-dock> :where(a, button):hover,
+    .gd-menu-group a:hover,
+    .gd-page-list a:hover,
+    .gd-sheet__close:hover {
+        background: var(--gd-raised);
+    }
+}
+
+/* Responsive */
+
+@media (min-width: 40rem) {
+    .gd-directory {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .gd-related {
+        grid-template-columns: 1fr 2fr;
+        gap: var(--gd-s10);
+    }
+}
+
+@media (min-width: 60rem) {
+    .gd-header {
+        position: sticky;
+        top: 0;
+    }
+
+    .gd-header__inner,
+    .gd-breadcrumb,
+    .gd-footer__inner,
+    .gd-related {
+        padding-inline: var(--gd-s8);
+    }
+
+    .gd-desktop-nav {
+        display: flex;
+    }
+
+    .gd-dock {
+        display: none;
+    }
+
+    .gd-reader:not([hidden]) {
+        display: flex;
+    }
+
+    .gd-directory {
+        grid-template-columns: 1fr 1.3fr 1fr 1fr;
+        gap: var(--gd-s8);
+    }
+
+    .gd-sheet {
+        inset: var(--gd-s8) 0 auto;
+        width: min(56rem, calc(100% - var(--gd-s8)));
+        max-height: calc(100dvh - var(--gd-s16));
+        margin-inline: auto;
+        border: 1px solid var(--gd-border);
+        border-radius: var(--gd-radius);
+    }
+
+    .gd-sheet[data-kind="contact"],
+    .gd-sheet[data-kind="page"],
+    .gd-sheet[data-kind="work"],
+    .gd-sheet[data-kind="education"] {
+        width: min(36rem, calc(100% - var(--gd-s8)));
+    }
+
+    .gd-sheet[data-kind="site"] .gd-menu-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@keyframes gd-sheet-in {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes gd-sheet-out {
+    to {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+}
+
+@keyframes gd-backdrop-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes gd-backdrop-out {
+    to {
+        opacity: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .gd-shell *,
+    .gd-shell *::before,
+    .gd-shell *::after,
+    .gd-sheet::backdrop {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+
+    html[data-gd-ready] {
+        scroll-behavior: auto !important;
+    }
+}
+
+@media print {
+
+    .gd-header,
+    .gd-dock,
+    .gd-reader,
+    .gd-sheet,
+    .gd-skip,
+    .gd-related,
+    .gd-directory,
+    .gd-network {
+        display: none !important;
+    }
+
+    .gd-footer {
+        margin-top: var(--gd-s8);
+        border: 0;
+        background: transparent;
+    }
+
+    .gd-footer__inner,
+    .gd-footer__closing {
+        padding: var(--gd-s4);
+    }
+}
+
+/* ============================================================
+   SITE SHELL — REFINEMENTS
+============================================================ */
+
+:root {
+    --gd-pill: var(--gd-radius);
+}
+
+/* ------------------------------------------------------------
+   1. A single native anchor offset.
+
+   scroll-padding remains on the document.
+   Do not apply the same offset again to every target.
+------------------------------------------------------------ */
+
+html[data-gd-ready] main [id][data-nav] {
+    scroll-margin-top: 0;
+    scroll-margin-block-start: 0;
+}
+
+/* ------------------------------------------------------------
+   2. Stable reader geometry.
+
+   Both arrows stay in fixed columns. Long names truncate rather
+   than widening the island and moving the next button.
+------------------------------------------------------------ */
+
+.gd-reader {
+    width: min(24rem, calc(100vw - var(--gd-s8)));
+    max-width: none;
+    border-radius: var(--gd-radius);
+}
+
+.gd-reader:not([hidden]) {
+    grid-template-columns: 44px minmax(0, 1fr) 44px;
+    gap: var(--gd-s1);
+}
+
+.gd-reader>.gd-icon-button {
+    width: 44px;
+    min-width: 44px;
+}
+
+.gd-reader .gd-reader__current {
+    display: grid;
+    grid-template-columns: 5ch minmax(0, 1fr) 20px;
+    gap: var(--gd-s2);
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    padding-inline: var(--gd-s2);
+}
+
+.gd-reader__count {
+    text-align: left;
+}
+
+.gd-reader__label {
+    min-width: 0;
+    text-align: left;
+}
+
+.gd-reader__current[aria-expanded="true"] {
+    background: var(--gd-selected);
+    color: var(--gd-accent);
+}
+
+/* Preserve the existing mobile rule: no second floating bar. */
+@media (min-width: 60rem) {
+    .gd-reader:not([hidden]) {
+        display: grid;
+    }
+}
+
+/* ------------------------------------------------------------
+   3. Center dialogs without transform-based positioning.
+
+   The existing translateY animations remain free to animate.
+------------------------------------------------------------ */
+
+.gd-sheet {
+    inset: 0;
+    width: min(56rem, calc(100% - var(--gd-s8)));
+    height: fit-content;
+    max-height: calc(100dvh - var(--gd-s8));
+    margin: auto;
+    border: 1px solid var(--gd-border);
+    border-radius: var(--gd-radius);
+}
+
+.gd-sheet[data-kind="contact"],
+.gd-sheet[data-kind="page"],
+.gd-sheet[data-kind="work"],
+.gd-sheet[data-kind="education"] {
+    width: min(36rem, calc(100% - var(--gd-s8)));
+}
+
+.gd-sheet__header {
+    flex-shrink: 0;
+}
+
+.gd-sheet__body {
+    min-height: 0;
+    padding-bottom: var(--gd-s6);
+}
+
+@media (max-width: 39.999rem) {
+
+    .gd-sheet,
+    .gd-sheet[data-kind] {
+        width: calc(100% - var(--gd-s4));
+        max-height: calc(100dvh - var(--gd-s4));
+    }
+}
+
+/* ------------------------------------------------------------
+   4. Breathing room between adjacent interactive surfaces.
+
+   Grid gap creates real space: neighbouring hover and active
+   backgrounds cannot merge.
+------------------------------------------------------------ */
+
+.gd-page-list,
+.gd-directory-group ul {
+    display: grid;
+    gap: var(--gd-s1);
+}
+
+.gd-network ul {
+    display: flex;
+    column-gap: var(--gd-s8);
+    row-gap: var(--gd-s1);
+}
+
+.gd-dock {
+    gap: var(--gd-s1);
+}
+
+.gd-page-list a,
+.gd-menu-group a {
+    border-radius: var(--gd-radius);
+}
+
+/* A clear active state, not the old inset box-shadow underline. */
+.gd-desktop-nav [data-gd-active] {
+    color: var(--gd-accent);
+    background: var(--gd-selected);
+    box-shadow: none;
+}
+
+.gd-desktop-nav>a,
+.gd-nav-pair>a {
+    border: 1px solid transparent;
+}
+
+.gd-desktop-nav a[data-gd-active] {
+    border-color: color-mix(in srgb,
+            var(--gd-accent) 24%,
+            transparent);
+}
+
+.gd-desktop-nav a[data-gd-active]:hover {
+    background: var(--gd-selected);
+}
+
+/* Keep selected entries selected, even while hovered. */
+.gd-page-list a[aria-current="location"]:hover,
+.gd-dock [data-gd-active]:hover,
+.gd-dock [aria-expanded="true"]:hover {
+    background: var(--gd-selected);
+    color: var(--gd-accent);
+}
+
+/* Sequential navigation inside the Sections dialog. */
+.gd-section-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--gd-s2);
+    margin-bottom: var(--gd-s4);
+}
+
+.gd-section-actions button {
+    justify-content: flex-start;
+    padding: var(--gd-s3);
+    background: var(--gd-raised);
+    font-size: var(--gd-sm);
+}
+
+/* ------------------------------------------------------------
+   5. Signature and contextual identity.
+------------------------------------------------------------ */
+
+.gd-identity {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    margin-right: auto;
+}
+
+.gd-identity .gd-brand {
+    min-width: 0;
+    margin-right: 0;
+}
+
+.gd-brand__signature {
+    display: block;
+    width: clamp(7rem, 32vw, 10rem);
+    height: auto;
+    max-height: 3.5rem;
+    object-fit: contain;
+    background: transparent;
+    filter: brightness(0);
+}
+
+.gd-brand__signature {
+    filter: none;
+}
+
+.gd-brand__fallback {
+    font-size: var(--gd-base);
+    font-weight: 800;
+}
+
+.gd-context {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gd-s2);
+    min-width: 44px;
+    min-height: 44px;
+    padding-inline: var(--gd-s1);
+    border-radius: var(--gd-radius);
+}
+
+.gd-context__separator {
+    color: var(--gd-muted);
+    font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+    font-size: var(--gd-lg);
+    line-height: 1;
+}
+
+.gd-context__mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ------------------------------------------------------------
+   6. Visual markers in Explore.
+
+   Fixed-size slots reserve space even when an image fails.
+   Real logos keep their original colours.
+------------------------------------------------------------ */
+
+.gd-route-mark {
+    display: inline-flex;
+    flex: 0 0 28px;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+    border: 1px solid var(--gd-border);
+    border-radius: var(--gd-s1);
+    color: var(--gd-text);
+    background: var(--gd-bg);
+    font-size: var(--gd-xs);
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -.02em;
+}
+
+.gd-route-mark img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    max-width: 100%;
+    object-fit: contain;
+    background: transparent;
+}
+
+.gd-route-mark svg {
+    width: 17px;
+    height: 17px;
+}
+
+.gd-route-mark[data-tone="white-bgd"] img {
+    filter: none;
+}
+
+/* Full-colour logos sit on a light tile; white logos keep the dark tile. */
+.gd-route-mark[data-tone="white-bgd"] {
+    background: #ffffff;
+    border-color: transparent;
+}
+
+.gd-route-mark[data-tone="borderless"] {
+    background: transparent;
+    border-color: transparent;
+}
+
+.gd-context .gd-route-mark[data-tone="original"] {
+    border-color: transparent;
+}
+
+.gd-menu-group a {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: var(--gd-s3);
+}
+
+.gd-menu-link__label {
+    display: block;
+    min-width: 0;
+    padding-top: var(--gd-s1);
+    overflow-wrap: anywhere;
+}
+
+.gd-context .gd-route-mark {
+    border-color: transparent;
+    background: transparent;
+}
+
+/* ------------------------------------------------------------
+   7. Breadcrumbs with a restrained code-path character.
+
+   This is intentionally not an invented approximation of your
+   family crest. The real crest can replace the separator later.
+------------------------------------------------------------ */
+
+.gd-breadcrumb ol {
+    column-gap: var(--gd-s3);
+}
+
+.gd-breadcrumb li+li::before {
+    content: "›";
+    color: var(--gd-accent);
+    font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+    font-size: var(--gd-base);
+    font-weight: 700;
+    line-height: 1;
+}
+
+.gd-breadcrumb a {
+    border-radius: var(--gd-s1);
+}
+
+.gd-breadcrumb [aria-current="page"] {
+    color: var(--gd-text);
+    font-weight: 800;
+}
+
+/* ------------------------------------------------------------
+   8. Extremely narrow screens only.
+
+   Normal 320px+ phone widths keep all labels.
+   Below 300px, accessible names remain through aria-label.
+------------------------------------------------------------ */
+
+.gd-dock> :where(a, button) {
+    min-width: 44px;
+}
+
+@media (max-width: 18.749rem) {
+    .gd-dock {
+        align-items: center;
+        overflow-x: auto;
+    }
+
+    .gd-dock .gd-dock__label {
+        display: none;
+    }
+
+    .gd-dock> :where(a, button) {
+        min-width: 44px;
+        min-height: 48px;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .gd-dock [data-gd-icon] svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .gd-context {
+        gap: var(--gd-s1);
+    }
+}
+
+/* ============================================================
+   HEADER PAPER EDGE (mask-based)
+   Remove data-gd-edge="paper" on the header to disable.
+============================================================ */
+
+.gd-header[data-gd-edge="paper"] {
+    --gd-edge-h: 14px;
+    /* displayed height of the tear */
+    border-bottom-color: transparent;
+}
+
+/* Shared mask: both layers cut the same shape */
+.gd-header[data-gd-edge="paper"]::before,
+.gd-header[data-gd-edge="paper"]::after,
+.gd-footer[data-gd-edge="paper"]::before,
+.gd-footer[data-gd-edge="paper"]::after,
+.gd-dock[data-gd-edge="paper"]::before,
+.gd-dock[data-gd-edge="paper"]::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: var(--gd-edge-h);
+    pointer-events: none;
+
+    -webkit-mask-image: url("https://georgedreemer.com/public_img/general/paperborders/paperborder.svg");
+    mask-image: url("https://georgedreemer.com/public_img/general/paperborders/paperborder.svg");
+
+    -webkit-mask-repeat: repeat-x;
+    mask-repeat: repeat-x;
+    -webkit-mask-size: auto var(--gd-edge-h);
+    mask-size: auto var(--gd-edge-h);
+    -webkit-mask-position: left top;
+    mask-position: left top;
+}
+
+/* Back layer: soft outline so the tear reads on any background */
+.gd-header[data-gd-edge="paper"]::before {
+    top: calc(100% + 1px);
+    background: color-mix(in srgb, var(--gd-text) 24%, transparent);
+}
+
+/* Front layer: the paper, always in the header's current colour */
+.gd-header[data-gd-edge="paper"]::after {
+    top: calc(100% - 1px);
+    background: var(--gd-bg);
+}
+
+/* ============================================================
+   FOOTER PAPER EDGE (same mask, flipped)
+   Remove data-gd-edge="paper" on the footer to disable.
+============================================================ */
+
+.gd-footer[data-gd-edge="paper"] {
+    --gd-edge-h: 14px;
+    position: relative;
+    border-top: 0;
+    /* the tear replaces the straight line */
+}
+
+/* Rotate the header's shape 180°: paper below, ragged edge on top */
+.gd-footer[data-gd-edge="paper"]::before,
+.gd-footer[data-gd-edge="paper"]::after {
+    transform: scale(-1, -1);
+}
+
+/* Back layer: outline peeking out 2px beyond the tear */
+.gd-footer[data-gd-edge="paper"]::before {
+    bottom: calc(100% + 1px);
+    background: color-mix(in srgb, var(--gd-text) 24%, transparent);
+}
+
+/* Front layer: paper in the footer's current colour */
+.gd-footer[data-gd-edge="paper"]::after {
+    bottom: calc(100% - 1px);
+    /* 1px overlap prevents a hairline gap */
+    background: var(--gd-bg);
+}
+
+@media print {
+
+    .gd-footer[data-gd-edge="paper"]::before,
+    .gd-footer[data-gd-edge="paper"]::after {
+        display: none;
+    }
+}
+
+/* ============================================================
+   MOBILE DOCK — SUBTLE PAPER EDGE
+   Same mask as the footer; smaller, quieter treatment.
+============================================================ */
+
+.gd-dock[data-gd-edge="paper"] {
+    --gd-edge-h: 8px;
+
+    border-top: 0;
+    box-shadow: none;
+}
+
+/* Paper below, torn edge facing upward. */
+.gd-dock[data-gd-edge="paper"]::before,
+.gd-dock[data-gd-edge="paper"]::after {
+    transform: scale(-1, -1);
+}
+
+/* A restrained outline beyond the paper. */
+.gd-dock[data-gd-edge="paper"]::before {
+    bottom: 100%;
+    background: color-mix(in srgb,
+            var(--gd-text) 18%,
+            transparent);
+}
+
+/* Match the dock's background, not the page background. */
+.gd-dock[data-gd-edge="paper"]::after {
+    bottom: calc(100% - 1px);
+    background: var(--gd-surface);
+}
+
+@media (max-width: 18.749rem) {
+    .gd-dock[data-gd-edge="paper"] {
+        border-top: 1px solid var(--gd-border);
+    }
+
+    .gd-dock[data-gd-edge="paper"]::before,
+    .gd-dock[data-gd-edge="paper"]::after {
+        display: none;
+    }
+}
+
+/* ============================================================
+   COMPACT FOOTER
+   The sitemap-style list is replaced by Explore once the shell
+   has fully initialised (data-gd-nav="enhanced" is set last).
+   Without JavaScript the list stays visible as a fallback.
+   Only the footer's own list is hidden; the menu clones live
+   inside the dialog and are unaffected.
+============================================================ */
+
+html[data-gd-nav="enhanced"] .gd-footer .gd-directory,
+html[data-gd-nav="enhanced"] .gd-footer .gd-network {
+    display: none;
+}
+
+html[data-gd-nav="enhanced"] .gd-footer__inner {
+    padding-top: var(--gd-s10);
+}
+
+html[data-gd-nav="enhanced"] .gd-footer__closing {
+    padding-top: var(--gd-s6);
+}
+
+/* Utility row: desktop only. The mobile dock already provides both. */
+.gd-footer__actions {
+    display: none;
+}
+
+.gd-footer__actions button {
+    border: 1px solid var(--gd-border);
+    font-size: var(--gd-sm);
+    font-weight: 700;
+}
+
+@media (min-width: 60rem) {
+    html[data-gd-nav="enhanced"] .gd-footer__actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--gd-s2);
+    }
+
+    html[data-gd-nav="enhanced"] .gd-footer__closing {
+        padding-top: var(--gd-s10);
+    }
+}
+
+@media (hover: hover) {
+    .gd-footer__actions button:hover {
+        background: var(--gd-raised);
+    }
+}
+
+@media print {
+    .gd-footer__actions {
+        display: none !important;
+    }
+}
+
+/* PAGE ACCENT: keeps hue and saturation, guarantees readable lightness */
+@supports (color: oklch(from red l c h)) {
+    :root {
+        --gd-accent: oklch(from var(--gd-page-primary, #01696f) max(l, 0.75) c h);
+    }
+}
+
+/* ============================================================
+   CONTEXTUAL MARK: same height as the signature
+   --gd-logo-h is measured from the signature by site-shell.js.
+   Tune the relative size with --gd-context-scale (1 = identical).
+============================================================ */
+.gd-context .gd-route-mark {
+    --gd-context-size: calc(var(--gd-logo-h, 28px) * var(--gd-context-scale, 1));
+    flex: 0 0 auto;
+    border-width: 0;
+    /* the 1px border would shrink the logo */
+    width: var(--gd-context-size);
+    height: var(--gd-context-size);
+    font-size: calc(var(--gd-context-size) * .38);
+}
+
+.gd-context .gd-route-mark img {
+    width: 100%;
+    height: 100%;
+}
+
+.gd-context .gd-route-mark svg {
+    width: 56%;
+    height: 56%;
+}
+
+/* ============================================================
+   SHELL ARRIVAL
+   The shell is injected by JavaScript, so without this it pops in
+   after the page has already painted. A short fade makes it arrive
+   instead of appear. Opacity only: nothing is moved or resized.
+   ============================================================ */
+
+@keyframes gd-shell-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.gd-header,
+.gd-dock,
+.gd-reader,
+.gd-footer,
+.gd-related {
+    animation: gd-shell-in 420ms ease-out backwards;
+}
+
+/* Reserve the header's space until the shell mounts, so content
+   does not jump down when it appears. The spacer disappears in the
+   same frame the header is inserted (data-gd-ready), and releases
+   itself after 2.5s if the shell never mounts. */
+html:not([data-gd-ready]) body::before {
+    content: "";
+    display: block;
+    height: 4.5625rem;
+    animation: gd-spacer-release 0s linear 2.5s forwards;
+}
+
+@media (min-width: 60rem) {
+    html:not([data-gd-ready]) body::before {
+        height: 4.625rem;
+    }
+}
+
+@keyframes gd-spacer-release {
+    to {
+        height: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .gd-header,
+    .gd-dock,
+    .gd-reader,
+    .gd-footer,
+    .gd-related {
+        animation: none;
+    }
+}
+
+/* ============================================================
+   CLOSING DECLARATION + CREST
+   An arched declaration, then a small editorial full stop.
+   ============================================================ */
+
+.gd-footer__closing .gd-declaration {
+    margin: 0;
+    color: var(--gd-text);
+}
+
+/*
+ * Override the shell's general 20px SVG sizing.
+ * The SVG text inherits the declaration's Hebrew font.
+ */
+.gd-shell .gd-declaration__curve {
+    display: block;
+    width: clamp(16rem, 70vw, 21rem);
+    max-width: 100%;
+    height: auto;
+    margin-inline: auto;
+    overflow: visible;
+
+    font-family: var(--gd-hebrew);
+    font-weight: 400;
+    letter-spacing: normal;
+}
+
+.gd-footer__seal {
+    width: var(--gd-s10);
+    height: var(--gd-s10);
+    margin: var(--gd-s2) auto var(--gd-s5);
+}
+
+.gd-footer__seal img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0.85;
+}

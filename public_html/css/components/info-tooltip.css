@@ -1,0 +1,100 @@
+/* Info Tool Tip */
+/* Used across education pages */
+.info-tip {
+    position: relative;
+    display: inline-grid;
+    place-items: center;
+    margin-left: var(--space-1);
+    padding: 0;
+    color: var(--color-text-muted);
+    font-size: 15px;
+    line-height: 1;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.info-tip::after {
+    content: "";
+    position: absolute;
+    inset: -12px;
+}
+
+/* 44px touch target */
+.info-tip:hover,
+.info-tip[aria-expanded="true"] {
+    color: var(--color-primary);
+}
+
+.info-tip__panel {
+    position: absolute;
+    top: calc(100% + var(--space-2));
+    left: 0;
+    z-index: 20;
+    width: min(320px, calc(100vw - var(--space-12)));
+    padding: var(--space-4);
+    background: var(--color-surface-2, var(--color-surface));
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    font-size: var(--text-xs);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.5;
+    color: var(--color-text);
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4px);
+    transition: opacity 160ms ease, transform 160ms ease, visibility 160ms;
+}
+
+.info-tip__panel::before {
+    content: "";
+    position: absolute;
+    inset: -10px 0 auto 0;
+    height: 10px;
+}
+
+/* hover bridge */
+.info-tip__panel p+p,
+.info-tip__panel ul+p {
+    margin-top: var(--space-2);
+}
+
+.info-tip__title {
+    font-weight: 700;
+    font-size: var(--text-sm);
+}
+
+.info-tip__list {
+    list-style: none;
+    display: grid;
+    gap: var(--space-1);
+    margin-top: var(--space-2);
+}
+
+.info-tip__context {
+    color: var(--color-text);
+}
+
+.info-tip__note {
+    color: var(--color-text-muted);
+}
+
+.info-tip__panel a {
+    color: inherit;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.tip-host:has(.info-tip:hover) .info-tip__panel,
+.tip-host:has(.info-tip__panel:hover) .info-tip__panel,
+.tip-host:has(.info-tip:focus-visible) .info-tip__panel,
+.tip-host.is-open .info-tip__panel {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .info-tip__panel { transition: none; }
+}

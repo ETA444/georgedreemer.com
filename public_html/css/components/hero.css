@@ -1,0 +1,497 @@
+/* ============================================================
+   HERO
+   Full-bleed black motto stage. Its torn edge reuses the exact
+   paper-border mask from the shell (site-shell.css), so the header
+   can take over the boundary without a visible seam.
+   Sits inside <main> because the shell inserts the header
+   immediately before <main>.
+   ============================================================ */
+
+.hero {
+    --hero-descent: 0.251em; /* Playfair Display metrics: seats the cursor on the baseline */
+    --hero-cap: 0.708em;
+    --hero-bg: var(--gd-bg, #000);
+    --gd-edge-h: 14px; /* same as .gd-header[data-gd-edge="paper"] */
+    --hero-top: 0px;
+    --hero-cursor: var(--gd-accent, #4fb3ba);
+
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Full-bleed escape from the 860px content column */
+    width: 100vw;
+    margin-inline: calc(50% - 50vw);
+
+    min-height: clamp(28rem, 80svh, 52rem);
+    padding: calc(var(--space-12) + var(--hero-top)) var(--space-6) var(--space-12);
+
+    background-color: var(--hero-bg);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='g' x='0' y='0' width='100%' height='100%'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' seed='11' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.94  0 0 0 0 0.93  0 0 0 0 0.9  0.36 0 0 0 -0.15'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23g)'/%3E%3C/svg%3E");
+    background-size: 240px 240px;
+    animation: hero-grain 1s steps(1, end) infinite;
+
+    color: var(--gd-text, #f0efe8);
+    text-align: center;
+
+    /*
+     * The mask remains 84–100% opaque.
+     * This creates subtle ink variation, not holes in the letters.
+     */
+    --hero-ink-texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='ink' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='2' seed='19' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 .16 0 0 0 .84'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23ink)'/%3E%3C/svg%3E");
+}
+
+/* Paper grain: faint light speckle that shifts ~6 times a second */
+@keyframes hero-grain {
+    0%   { background-position: 0 0; }
+    17%  { background-position: -61px 37px; }
+    34%  { background-position: 83px -52px; }
+    51%  { background-position: -29px -97px; }
+    68%  { background-position: 112px 64px; }
+    85%  { background-position: -94px 18px; }
+}
+
+/* clip (not hidden) keeps the sticky header working */
+body {
+    overflow-x: clip;
+}
+
+.main-content:has(> .hero) {
+    padding-top: 0 !important;
+}
+
+
+/* Torn edge: same two-layer recipe as the header (outline + paper) */
+
+.hero::before,
+.hero::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: var(--gd-edge-h);
+    pointer-events: none;
+
+    -webkit-mask-image: url("https://georgedreemer.com/public_img/general/paperborders/paperborder.svg");
+    mask-image: url("https://georgedreemer.com/public_img/general/paperborders/paperborder.svg");
+    -webkit-mask-repeat: repeat-x;
+    mask-repeat: repeat-x;
+    -webkit-mask-size: auto var(--gd-edge-h);
+    mask-size: auto var(--gd-edge-h);
+    -webkit-mask-position: left top;
+    mask-position: left top;
+}
+
+.hero::before {
+    top: calc(100% + 1px);
+    background: color-mix(in srgb, var(--gd-text, #f0efe8) 24%, transparent);
+}
+
+.hero::after {
+    top: calc(100% - 1px);
+    background: var(--hero-bg);
+}
+
+
+/* Screen-reader h1: the motto stays the only visible text */
+
+.hero__title,
+.hero__sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+
+/* ============================================================
+   MOTTO (typewriter)
+   The full text is always laid out; the not-yet-typed part is
+   transparent. Nothing ever reflows, so the hero never jumps
+   and centred text never slides while typing.
+   ============================================================ */
+
+.hero__motto {
+    display: grid;
+    gap: 0.28em;
+    margin: 0;
+
+    color: inherit;
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 0.5rem + 4.4vw, 4.25rem);
+    font-weight: 600;
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+}
+
+/* Each line stays on one row from tablet up */
+@media (min-width: 48rem) {
+    .hero__motto {
+        white-space: nowrap;
+    }
+}
+
+.hero__line {
+    display: block;
+    min-height: 1.12em;
+}
+
+/* Secondary motto: quieter and smaller, still one line */
+.hero__line--soft {
+    font-size: 0.5em;
+    letter-spacing: 0.01em;
+    color: color-mix(in srgb, var(--gd-text, #f0efe8) 60%, transparent);
+}
+
+.hero__rest {
+    color: transparent;
+}
+
+/* Console-style block cursor, zero width so it can never cause a wrap.
+   Seated on the baseline (bottom = descent - drop), so it lines up with
+   the letters. Two layers: a soft phosphor glow and a grainy ink block. */
+.hero__cursor {
+    position: relative;
+    display: inline;
+}
+
+.hero__cursor::before,
+.hero__cursor::after {
+    content: "";
+    position: absolute;
+    left: 0.06em;
+    bottom: calc(var(--hero-descent) - 0.1em);
+    width: 0.5em;
+    height: calc(var(--hero-cap) + 0.16em);
+    background: var(--hero-cursor);
+    display: none;
+}
+
+/* glow */
+.hero__cursor::before {
+    filter: blur(0.22em);
+    opacity: 0.4;
+}
+
+/* ink: speckled like a worn typewriter slug, with slightly uneven edges */
+.hero__cursor::after {
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Cfilter id='n' x='0' y='0' width='100%' height='100%'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  3.0 0 0 0 -0.7'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23n)'/%3E%3C/svg%3E") 0 0 / 48px 48px;
+            mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Cfilter id='n' x='0' y='0' width='100%' height='100%'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  3.0 0 0 0 -0.7'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23n)'/%3E%3C/svg%3E") 0 0 / 48px 48px;
+    clip-path: polygon(2% 4%, 38% 0, 100% 3%, 97% 52%, 100% 96%, 55% 100%, 0 97%, 3% 48%);
+}
+
+.hero__line.is-active .hero__cursor::before,
+.hero__line.is-active .hero__cursor::after {
+    display: block;
+}
+
+/* Blink with a phosphor-style decay instead of a hard on/off */
+.hero__line.is-idle .hero__cursor::before,
+.hero__line.is-idle .hero__cursor::after {
+    animation: hero-blink 1.15s ease-in-out infinite;
+}
+
+@keyframes hero-blink {
+    0%, 42% { opacity: 1; }
+    58%, 92% { opacity: 0.06; }
+    100% { opacity: 1; }
+}
+
+.hero__line:not(.hero__line--soft) .hero__done {
+    -webkit-mask-image: var(--hero-ink-texture);
+    mask-image: var(--hero-ink-texture);
+
+    -webkit-mask-repeat: repeat;
+    mask-repeat: repeat;
+
+    -webkit-mask-size: 160px 160px;
+    mask-size: 160px 160px;
+
+    animation: hero-ink-drift 1.6s steps(1, end) infinite;
+}
+
+@keyframes hero-ink-drift {
+
+    0%,
+    100% {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+
+    25% {
+        -webkit-mask-position: -43px 29px;
+        mask-position: -43px 29px;
+    }
+
+    50% {
+        -webkit-mask-position: 61px -37px;
+        mask-position: 61px -37px;
+    }
+
+    75% {
+        -webkit-mask-position: -19px -71px;
+        mask-position: -19px -71px;
+    }
+}
+
+/* Until the script takes over: hidden, then shown anyway after 1.6s
+   so the motto still appears if JavaScript fails. */
+.hero__motto {
+    opacity: 0;
+    animation: hero-fallback 0.4s ease 1.6s forwards;
+}
+
+.hero.is-live .hero__motto {
+    opacity: 1;
+    animation: none;
+}
+
+@keyframes hero-fallback {
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* ============================================================
+   HEADER x HERO
+   Hero pages start with the shell header merged into the black
+   stage. Desktop: once the hero's torn edge has passed behind the
+   header, the header TEARS in left to right: black fill and its
+   paper edge are revealed together with a stop-start rip rhythm.
+   Mobile: the header scrolls away with the page, so it stays merged.
+   ============================================================ */
+
+@property --tear {
+    syntax: "<percentage>";
+    inherits: true;
+    initial-value: 0%;
+}
+
+/* Merged on every viewport. The solid fill grows across the gradient on desktop takeover. */
+html:has(.hero) .gd-header {
+    --tear: 0%;
+
+    background:
+        linear-gradient(
+            var(--gd-bg, #000),
+            var(--gd-bg, #000)
+        ) left top / var(--tear) 100% no-repeat,
+
+        linear-gradient(
+            to bottom,
+            var(--gd-bg, #000) 0%,
+            transparent 100%
+        ) !important;
+}
+
+/* The header's paper edge is revealed by the same value as the fill */
+html:has(.hero) .gd-header::before,
+html:has(.hero) .gd-header::after {
+    clip-path: inset(0 calc(100% - var(--tear)) 0 0);
+}
+
+@media (min-width: 60rem) {
+
+    /* Avoid a layout jump before the shell measures the header */
+    :root:not([data-gd-ready]) {
+        --gd-header-height: 4.625rem;
+    }
+
+    /* Hero starts at the very top, behind the sticky header */
+    .hero {
+        --hero-top: var(--gd-header-height);
+        margin-top: calc(var(--gd-header-height) * -1);
+    }
+
+    html:has(.hero)[data-hero-header="solid"] .gd-header {
+        --tear: 100%;
+    }
+
+    /* Animate only after the first state is applied (no load flash).
+    Going back to merged is quick; the rip is the showpiece. */
+    html[data-hero-ready] .gd-header {
+        transition: --tear 180ms ease-out;
+    }
+
+    html[data-hero-ready][data-hero-header="solid"] .gd-header {
+        transition: --tear 360ms cubic-bezier(0.2, 0.7, 0.2, 1);
+    }
+
+    /* Stop-start rhythm, like paper catching as it tears.
+       Front-loaded: nearly half the rip happens in the first 12%. */
+    @supports (transition-timing-function: linear(0, 1)) {
+        html[data-hero-ready][data-hero-header="solid"] .gd-header {
+            transition-duration: 400ms;
+            transition-timing-function: linear(
+                0, 0.42 10%, 0.47 16%, 0.72 40%, 0.77 48%, 0.93 72%, 0.96 80%, 1
+            );
+        }
+    }
+
+    html[data-hero-ready] .gd-reader {
+        transition: opacity 280ms ease, visibility 280ms;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    html[data-hero-ready] .gd-header,
+    html[data-hero-ready][data-hero-header="solid"] .gd-header,
+    html[data-hero-ready] .gd-reader {
+        transition: none;
+    }
+
+    .hero,
+    .hero__line:not(.hero__line--soft) .hero__done {
+        animation: none;
+    }
+}
+
+@media print {
+    .hero {
+        display: none;
+    }
+}
+
+/* ============================================================
+   DOCK FIT + OPTICAL CENTRING
+   Replaces the earlier "DOCK VIEWPORT" block.
+   ============================================================ */
+
+.hero {
+    /* Must exceed the torn-edge height (--gd-edge-h: 14px) */
+    --hero-dock-overlap: 1.25rem;
+
+    /* Optical lift for the motto (see section 2) */
+    --hero-lift: 0.09em;
+
+    /* Symmetric: the motto centres in the whole black stage */
+    padding-block: calc(var(--space-12) + var(--hero-top));
+
+    /* Safety strip above the hero: a sub-pixel header mismatch
+       can no longer reveal the white page */
+    box-shadow: 0 calc(var(--space-4) * -1) 0 0 var(--hero-bg);
+}
+
+.hero__motto {
+    translate: 0 calc(var(--hero-lift) * -1);
+}
+
+@media (width < 60rem) {
+    .hero {
+        --hero-top: var(--hero-shell-height, 4.5625rem);
+        margin-top: calc(var(--hero-top) * -1);
+
+        /* Fill the visible screen, then tuck under the dock.
+           svh avoids resizing when the browser toolbar collapses. */
+        min-height: calc(100vh - var(--hero-dock-height, calc(4.5rem + env(safe-area-inset-bottom, 0px))) + var(--hero-dock-overlap));
+        min-height: calc(100svh - var(--hero-dock-height, calc(4.5rem + env(safe-area-inset-bottom, 0px))) + var(--hero-dock-overlap));
+
+        /* Centre the motto in the part you can actually see */
+        padding-bottom: calc(var(--space-12) + var(--hero-top) + var(--hero-dock-overlap));
+    }
+
+    /* Keep the cue clear of the dock */
+    .hero__scroll {
+        bottom: calc(var(--hero-dock-overlap) + var(--space-4));
+    }
+}
+
+/* ============================================================
+   MOBILE / TABLET SCROLL CUE
+   Hidden on desktop. Never blocks ordinary scrolling.
+   ============================================================ */
+
+.hero__scroll {
+    display: none;
+}
+
+@media (width < 60rem) {
+    .hero__scroll {
+        position: absolute;
+        left: 50%;
+        bottom: var(--space-8);
+        z-index: 2;
+
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-1);
+
+        min-width: 44px;
+        min-height: 44px;
+        max-width: calc(100% - var(--space-8));
+
+        color: var(--gd-muted, #b8b8ab);
+        font-family: var(--gd-font);
+        font-size: var(--gd-xs);
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: 0.03em;
+        text-align: center;
+        text-decoration: none;
+
+        transform: translateX(-50%);
+
+        transition:
+            opacity 220ms ease,
+            visibility 220ms ease,
+            color var(--gd-ease);
+    }
+
+    .hero__scroll-arrow {
+        display: block;
+        font-size: var(--gd-lg);
+        line-height: 1;
+
+        /* Three gentle invitations, then rest. */
+        animation: hero-scroll-invite 2.2s ease-in-out 2s 3;
+    }
+
+    .hero__scroll:focus-visible {
+        outline: 2px solid var(--hero-cursor);
+        outline-offset: var(--space-1);
+        border-radius: var(--space-1);
+    }
+
+    .hero__scroll:active {
+        color: var(--gd-text);
+    }
+
+    .hero[data-hero-scrolled] .hero__scroll {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+@keyframes hero-scroll-invite {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    45% {
+        transform: translateY(4px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero__scroll-arrow {
+        animation: none;
+    }
+
+    .hero__scroll {
+        transition: none;
+    }
+}
