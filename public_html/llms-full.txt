@@ -1,0 +1,5047 @@
+# George Dreemer - complete site text
+
+> Every page of https://georgedreemer.com in one file, generated from the Markdown pages. Start with https://georgedreemer.com/llms.txt for the guided overview.
+
+---
+
+Source: https://georgedreemer.com/  (Markdown: https://georgedreemer.com/index.md)
+
+# George Dreemer — Data Scientist, Developer and Entrepreneur
+
+Excellence through action.    Creatio Perpetua.
+
+George Dreemer is a serial entrepreneur working across full-stack development, data science, and web3. His ventures range from an open-source Python library and a knowledge-first social network to an underground streetwear brand with thousands of fans.
+
+That range is reflected in his toolkit: multi-language development, statistical modelling and machine learning, alongside years of hands-on work with Adobe, e-commerce platforms, and marketing analytics. He connects the technical build with the product, brand, and business around it.
+
+His education spans Europe and the US, with an MSc in Marketing Analytics & Data Science and a BA in Marketing & Business. Completed tracks and certificates from DataCamp, Google, and research-training programmes complement that foundation.
+
+## Stack
+
+### Code
+
+- Python
+
+- R
+
+- PHP
+
+- JavaScript
+
+- HTML
+
+- CSS
+
+- Bash / Zsh
+
+- Ruby
+
+- SQL
+
+- Stata
+
+### Python Libraries
+
+- pandas
+
+- NumPy
+
+- SciPy
+
+- scikit-learn
+
+- scikit-optimize
+
+- category-encoders
+
+- PyTorch
+
+- HuggingFace Hub
+
+- Matplotlib
+
+- seaborn
+
+- Plotly
+
+- statsmodels
+
+### R Libraries
+
+- ggplot2
+
+- dplyr
+
+- caret
+
+- randomForest
+
+- gbm
+
+- e1071
+
+- neuralnet
+
+- ROCR
+
+### Dev Toolchain
+
+- pytest
+
+- tox
+
+- Sphinx
+
+- Read the Docs
+
+- PyPI
+
+- Poetry
+
+- Setuptools
+
+- GitHub Actions
+
+### Databases
+
+- MySQL
+
+- SQLite
+
+- PostgreSQL
+
+### Dev Tools & IDEs
+
+- VS Code
+
+- Jupyter
+
+- Colab
+
+- RStudio
+
+- SPSS
+
+- DataSpell
+
+- KNIME
+
+- Git
+
+- GitHub
+
+### AI & Automation
+
+- HuggingFace
+
+- n8n
+
+- Google AI Studio
+
+- ComfyUI
+
+- MCP
+
+- Claude Code
+
+- TypeSafe AI
+
+### Web3 & On-Chain
+
+- Solana
+
+- NansenAI
+
+- DefiLlama
+
+- Symbiosis
+
+- Pump.fun
+
+- StonkFun
+
+### Platforms & Infra
+
+- cPanel
+
+- Namecheap
+
+- Cloudflare
+
+- Azure
+
+### Web & Commerce
+
+- Shopify
+
+- Squarespace
+
+- WooCommerce
+
+- Framer
+
+- Wordpress
+
+### Design & Creative
+
+- Illustrator
+
+- Photoshop
+
+- Premiere Pro
+
+- After Effects
+
+- Audition
+
+- Dreamweaver
+
+- DaVinci Resolve
+
+- Affinity Studio
+
+- CapCut
+
+- Canva
+
+- Picsart
+
+### Marketing & Growth
+
+- Google Analytics
+
+- Meta Ads
+
+- TikTok Ads
+
+- Snapchat Ads
+
+- X Ads
+
+- YouTube Studio
+
+- Mailchimp
+
+- Buffer
+
+- Telegram
+
+- Discord
+
+## Languages
+
+- English C2
+
+- Bulgarian C2
+
+- Dutch C1
+
+- Russian B1
+
+- Hebrew A1
+
+## Work
+
+A curated selection of projects and collaborations that demonstrate my skills, creativity, and problem-solving abilities across various domains.
+
+Data Science
+
+### DataSafari
+
+Complex data science, one function call. An open-source Python library that brings exploration, data preparation, statistical testing, and machine-learning workflows into a consistent, one-line API.
+
+Applied capabilities:
+
+- Statistical Inference
+
+- ML Pipeline Design
+
+- API Design
+
+- CI/CD
+
+[Explore DataSafari](<https://georgedreemer.com/work/datasafari>)
+
+Web3 Analytics
+
+### CryptoPandemic
+
+Cold on-chain analytics. Warm creative storytelling. A Web3 brand engine combining holder research, AI-powered production, and community-native campaigns to turn audience insight into cultural relevance.
+
+Applied capabilities:
+
+- Audience Profiling
+
+- Attribution Analytics
+
+- Generative AI Pipelines
+
+- Narrative Design
+
+[Explore CryptoPandemic](<https://georgedreemer.com/work/cryptopandemic>)
+
+E-commerce
+
+### SkipSchoolMakeMoney
+
+Underground streetwear built into an international e-commerce business: 20+ collections, 12,000+ followers, and 1000s of customers across three continents.
+
+Applied capabilities:
+
+- Product Development
+
+- Guerilla Marketing
+
+- Supply Chain Management
+
+- Performance Analytics
+
+[Explore SkipSchoolMakeMoney](<https://georgedreemer.com/work/skipschoolmakemoney>)
+
+Content Marketing
+
+### DREEMCORP
+
+A creative studio turning raw footage and brand ideas into platform-native content—delivering 100+ assignments for artists, athletes, and consumer brands, with 1M+ views.
+
+Applied capabilities:
+
+- Video Production
+
+- Creative Direction
+
+- Multi-Platform Content
+
+- Client Delivery
+
+[Explore DREEMCORP](<https://georgedreemer.com/work/dreemcorp>)
+
+Full-Stack Development
+
+### thoughtbubble
+
+A knowledge-first social network, built from scratch: UI/UX, back end, and database. After multiple pivots and betas, it evolved to 900 registered users across the US and Europe.
+
+Applied capabilities:
+
+- UI/UX Design
+
+- Back-End Architecture
+
+- Database Architecture
+
+- Visual Identity
+
+[Explore thoughtbubble](<https://georgedreemer.com/work/thoughtbubble>)
+
+## Academic Degrees
+
+University of Groningen
+
+### MSc Marketing Analytics & Data Science
+
+University of Groningen · 🇳🇱 Groningen, NL
+
+Data science, machine learning, and marketing analytics — from causal inference to churn modeling.
+
+Areas of Study:
+
+- Machine Learning
+
+- Statistical Learning
+
+- Text Mining
+
+- Time-Series Analysis
+
+- Market Modelling
+
+- Data Engineering
+
+Grade:
+
+GPA 8 / 10
+
+[Explore MSc Marketing Analytics & Data Science](<https://georgedreemer.com/education/masters>)
+
+Hampshire College
+
+### BA Marketing & Business
+
+Hampshire College · 🇺🇸 Amherst, MA
+
+A self-directed curriculum blending business theory with hands-on entrepreneurial practice, including graduate-level coursework at UMass Amherst's Isenberg School of Management.
+
+Areas of Study:
+
+- Leading Growth in New Ventures
+
+- Streetwear & Internet Culture
+
+- Text Mining & Analytics
+
+- Negotiation Theory & Practice
+
+Grade:
+
+GPA 3.81 / 4.0
+
+[Explore BA Marketing & Business](<https://georgedreemer.com/education/bachelors>)
+
+## Certifications
+
+### Professional Data Scientist
+
+Issuer:
+
+DataCamp
+
+Description:
+
+DataCamp's most advanced career track — covers the full data science pipeline from data wrangling and statistical analysis to machine learning and communicating insights to business stakeholders.
+
+[View certificate ↗](<https://www.datacamp.com/completed/statement-of-accomplishment/track/61c10c7c89eda0525178ea565d88fce131b33597>)
+
+Areas of expertise:
+
+- Python
+
+- R
+
+- SQL
+
+### Associate Data Scientist
+
+Issuer:
+
+DataCamp
+
+Description:
+
+A structured track covering Python, statistical techniques, and machine learning fundamentals — built around real-world datasets and hands-on projects across the full analytical workflow.
+
+Areas of expertise:
+
+- Python
+
+- R
+
+- SQL
+
+### Google Analytics for Beginners
+
+Issuer:
+
+Google Skillshop
+
+Description:
+
+Covers setting up an analytics account, reading core reports on traffic and user behaviour, and using the data to judge how a website or campaign is performing.
+
+[View certificate ↗](<https://georgedreemer.com/public_img/education/certifications/google/Google%20Analytics%20for%20Beginners.pdf>)
+
+Areas of expertise:
+
+- Web Analytics
+
+- Reporting
+
+### TOEFL iBT
+
+Issuer:
+
+Educational Testing Service
+
+Description:
+
+A standardised, internationally recognised test of academic English. It measures reading, listening, speaking, and writing at university level.
+
+Score and Language level:
+
+- 106 / 120
+
+- C2
+
+### C1 Advanced (CAE)
+
+Issuer:
+
+Cambridge Assessment English
+
+Description:
+
+Cambridge's advanced-level exam, showing the English needed for demanding academic study and professional work: fluent, precise, and confident in complex contexts.
+
+Language level:
+
+- C1
+
+### Authorship
+
+Issuer and Department:
+
+CITI Program · Responsible Conduct of Research
+
+Description:
+
+Covers the ethical responsibilities of authors, the criteria used to decide who qualifies as an author, and how to recognise problematic authorship practices.
+
+[View certificate ↗](<https://www.citiprogram.org/verify/?w84586628-0ab2-4dbe-832c-70ba821f5d03-52728905>)
+
+Areas of expertise:
+
+- RCR
+
+- Publication Ethics
+
+### Conflict of Interest
+
+Issuer and Department:
+
+CITI Program · Responsible Conduct of Research
+
+Description:
+
+Explains the types of conflicts of interest and commitment, why they undermine research, and the strategies used to manage or eliminate them.
+
+[View certificate ↗](<https://www.citiprogram.org/verify/?w14878cff-9b65-49bf-a688-b19c0476c688-52728906>)
+
+Areas of expertise:
+
+- RCR
+
+- Research Integrity
+
+### Data Management
+
+Issuer and Department:
+
+CITI Program · Responsible Conduct of Research
+
+Description:
+
+Covers managing data across a research project: documentation for reproducibility, plus the ethical and compliance questions around data ownership, sharing, and protection.
+
+[View certificate ↗](<https://www.citiprogram.org/verify/?w29ad4803-bc39-4024-a2a0-fa4aaa18acd6-52728907>)
+
+Areas of expertise:
+
+- RCR
+
+- Reproducibility
+
+- Data Governance
+
+### Internet-based Research
+
+Issuer and Department:
+
+CITI Program · Human-based Research
+
+Description:
+
+Looks at the ethical and regulatory questions raised by studying people online: consent, privacy expectations, and the risks of using web-sourced data.
+
+[View certificate ↗](<https://www.citiprogram.org/verify/?we279123e-5980-4178-9fd3-7b5c3737d613-52728904>)
+
+Areas of expertise:
+
+- Human Research
+
+- Online Data Ethics
+
+### Plagiarism
+
+Issuer and Department:
+
+CITI Program · Responsible Conduct of Research
+
+Description:
+
+Defines plagiarism and its common forms, and shows how to credit sources properly so that others' ideas and words are never presented as your own.
+
+[View certificate ↗](<https://www.citiprogram.org/verify/?w6ff78328-e1a0-4901-ba3d-7f8612d49538-52728908>)
+
+Areas of expertise:
+
+- RCR
+
+- Citation Practice
+
+### Privacy and Confidentiality
+
+Issuer and Department:
+
+CITI Program · Human-based Research
+
+Description:
+
+Defines privacy and confidentiality, identifies research methods that raise privacy concerns, and covers standard ways to protect participants' information, including relevant laws.
+
+[View certificate ↗](<https://www.citiprogram.org/verify/?wa833454f-8bed-4edc-b389-16646b6a2353-52728903>)
+
+Areas of expertise:
+
+- Human Research
+
+- Data Protection
+
+### Research Involving Human Subjects
+
+Issuer and Department:
+
+CITI Program · Responsible Conduct of Research
+
+Description:
+
+Introduces the ethical principles behind research with people: informed consent, weighing risks against benefits, and protecting participants.
+
+[View certificate ↗](<https://www.citiprogram.org/verify/?w3d28bc48-9ceb-448d-9681-0f90ad0d1707-52728909>)
+
+Areas of expertise:
+
+- RCR
+
+- Informed Consent
+
+### Research Misconduct
+
+Issuer and Department:
+
+CITI Program · Responsible Conduct of Research
+
+Description:
+
+Describes the three practices that make up research misconduct (fabrication, falsification, and plagiarism) and how allegations are handled.
+
+[View certificate ↗](<https://www.citiprogram.org/verify/?wf5616b1b-dc18-4f4d-b670-4f655d0725a0-52728910>)
+
+Areas of expertise:
+
+- RCR
+
+- Research Integrity
+
+## Awards
+
+Recognition for entrepreneurial initiative, ideas, and leadership.
+
+### VVM Startup Accelerator Award
+
+Awarded by:
+
+Valley Venture Mentors
+
+Description:
+
+VVM is a Western Massachusetts nonprofit that selects high-growth startups for a competitive accelerator — pairing founders with senior mentors, investors, and early funding.
+
+Details:
+
+- Selected from a competitive regional applicant pool
+
+- Received funding and a place in the Summer Accelerator cohort
+
+- Pitched live to a room of investors and defended product, traction, and roadmap
+
+Category:
+
+Funding & Mentorship
+
+### Recognition Award of Entrepreneurial Spirit
+
+Awarded by:
+
+[Grinspoon Entrepreneurship Initiative](<https://hgf.org/>)
+
+Description:
+
+The Harold Grinspoon Foundation's Entrepreneurship Initiative recognises student entrepreneurs across Pioneer Valley colleges who have built real ventures with demonstrated traction — not ideas, but businesses already in motion.
+
+Details:
+
+- Recognised for founding SkipSchoolMakeMoney — a live apparel brand with 1,000+ orders shipped internationally
+
+Category:
+
+Entrepreneurship
+
+[View award ↗](<https://georgedreemer.com/public_img/education/certifications/other/harold_grinspoon_foundation-entrepreneurial_spirit-certificate.pdf>)
+
+### National Essay Award — "Rescue of the Bulgarian Jews during WW II"
+
+Awarded by:
+
+Israeli-Bulgarian Institute
+
+Description:
+
+A national competition commemorating one of WWII's most remarkable acts of collective resistance — Bulgaria is one of the only Nazi-allied states that protected its entire Jewish population from deportation.
+
+Details:
+
+- Prize: an official trip to Israel with a meeting with government officials — a diplomatic recognition reserved for the winning essayists
+
+Category:
+
+Diplomacy
+
+[View award ↗](<https://georgedreemer.com/public_img/education/certifications/other/israel_bulgaria_institute-certificate.pdf>)
+
+### RYLA Award (RYLArian)
+
+Awarded by:
+
+Rotary International
+
+Description:
+
+Rotary Youth Leadership Awards (RYLA) is an official Rotary International leadership program. It is an intensive multi-day retreat of workshops, team exercises, and leadership training, run locally by Rotary clubs and districts.
+
+Details:
+
+- RYLArian award is one of Rotary's most recognized youth development distinctions
+
+Category:
+
+Leadership
+
+[View award ↗](<https://georgedreemer.com/public_img/education/certifications/rotary/rotary-rylarian-certificate.pdf>)
+
+### RYLA Debate Winner Award
+
+Awarded by:
+
+Rotary Bourgas-Pyrgos
+
+Description:
+
+Awarded for winning the debate competition, which is the culmination of the RYLA seminar. It is judged on argumentation, composure, and public speaking skills in front of Rotarians and program leaders.
+
+Details:
+
+- Won the debate competition among the RYLA cohort of Rotary-nominated youth from across the district
+
+Category:
+
+Public Speaking
+
+[View award ↗](<https://georgedreemer.com/public_img/education/certifications/rotary/rotary-ryla_debate-certificate.pdf>)
+
+## Organizations & Community
+
+Serving the community, fellow entrepreneurs, and students.
+
+### Rotaract "Plovdiv-Puldin"
+
+Title:
+
+Member
+
+Description:
+
+Rotary International's global network for young professionals in over 180 countries.
+
+Details:
+
+- The youngest Rotaract member in the chapter
+
+- Organised concerts, fundraisers, and a Red Cross blood donation drive for local causes
+
+Abilities developed:
+
+- Charity
+
+- Event Coordination
+
+- Community Building
+
+- Leadership
+
+[Verify membership ↗](<https://georgedreemer.com/public_img/education/certifications/rotary/rotary-rotaract_membership-certificate.pdf>)
+
+### Seed Fund for Innovation
+
+Title:
+
+Committee Member
+
+Description:
+
+One of the few fully student-governed venture funds at a US liberal arts college — a $1M endowment managed entirely by undergraduates investing in student and alumni startups.
+
+Details:
+
+- Evaluated venture pitches and voted on investment decisions as a committee member
+
+- Gained hands-on exposure to early-stage due diligence, founder assessment, and fund governance
+
+Abilities developed:
+
+- Leadership
+
+- Funding Allocation
+
+- Venture Assessment
+
+### UMass Entrepreneurship Club
+
+Title:
+
+Member
+
+Description:
+
+The student entrepreneurship community at UMass Amherst — one of New England's largest public research universities, with a well-connected startup ecosystem through the Isenberg School of Management.
+
+Details:
+
+- Organised events and pitch competitions connecting student founders with mentors and investors
+
+Abilities developed:
+
+- Entrepreneurship
+
+- Pitching
+
+- Networking
+
+### Berthiaume Student Innovators
+
+Title:
+
+Member
+
+Description:
+
+The Berthiaume Center for Entrepreneurship is UMass Amherst's campus-wide hub for innovation and startup activity — its student innovator programme runs the flagship Innovation Challenge each year.
+
+Details:
+
+- Worked to coordinate speakers, judges, and logistics
+
+Abilities developed:
+
+- Entrepreneurship
+
+- Event Coordination
+
+### Giving Back
+
+Title:
+
+Mentee
+
+Description:
+
+A highly selective mentorship programme at one of Den Haag's leading colleges, pairing a small cohort of students with senior professionals across Dutch banking, law, and the judiciary.
+
+Details:
+
+- Received direct mentorship and attended workshops led by judges, lawyers, and banking executives
+
+Abilities developed:
+
+- Debating
+
+- Networking
+
+- Leadership
+
+---
+
+Source: https://georgedreemer.com/education/bachelors  (Markdown: https://georgedreemer.com/education/bachelors.md)
+
+# BA Marketing & Business — Hampshire College
+
+George's BA at Hampshire College was a four-year, self-designed program focused on marketing, business, and entrepreneurship.
+
+The curriculum connected marketing and consumer behaviour, business fundamentals, and persuasive communication: learning to research markets, assess business opportunities, negotiate agreements, and develop the strategy and visual identity behind a venture.
+
+Through the Five College Consortium, George took accounting at Smith College and graduate-level coursework in Internet Business, Business Law, and Negotiation Theory & Practice at UMass Amherst's Isenberg School of Management. Alongside coursework and independent studies, George built the streetwear brand SkipSchoolMakeMoney and served on Hampshire's student-run Seed Fund for Innovation, evaluating venture pitches and voting on funding decisions.
+
+## Degree Snapshot
+
+Hampshire College   \#6 Entrepreneurship (Forbes)
+
+Hampshire College — entrepreneurship
+
+- **\#6** in Forbes' most entrepreneurial colleges ranking.
+
+- Based on LinkedIn founder and business-owner counts relative to student-body size.
+
+Historical institution-level ranking. Source: [Hampshire College](<https://www.hampshire.edu/news/hampshire-sixth-forbes-list-most-entrepreneurial-colleges>).
+
+**Degree:** Marketing & Business
+
+**Type:** Bachelor of Arts (BA)
+
+**Result:** 3.81 / 4.0
+
+Estimated GPA
+
+Hampshire evaluates its courses through written narrative evaluations, not letter grades, and does not issue an official GPA.
+
+**Calculation:** My grade summary estimates a GPA by treating successfully completed Hampshire courses as A grades and combining them with the letter grades earned through the Five College Consortium.
+
+Source: [Hampshire's guidance on estimated GPAs](<https://www.hampshire.edu/sites/default/files/centralrecords/Info%20GPA%20application.pdf>).
+
+**Location:** Amherst, Massachusetts, USA
+
+**Links:** [Official study-area page](<https://www.hampshire.edu/academics/areas-of-study/entrepreneurship>)
+ [Isenberg official portal](<https://www.isenberg.umass.edu/>)
+ [Five College Consortium](<https://www.hampshire.edu/academics/five-college-consortium>)
+
+### Topics Covered
+
+- Marketing Research
+
+- Text Analytics
+
+- Entrepreneurship
+
+- Business Fundamentals
+
+- Visual Communication
+
+- Marketing Strategy
+
+- Consumer Behaviour
+
+- Negotiation
+
+## Tools
+
+### Code
+
+- HTML
+
+- CSS
+
+### Dev Tools & IDEs
+
+- KNIME
+
+### Platforms & Infra
+
+- Google Analytics
+
+- Facebook Ads
+
+- Snapchat Ads
+
+- Twitter Ads
+
+- YouTube Studio
+
+- TikTok Ads (Beta)
+
+- Mailchimp
+
+- Buffer
+
+### Web & Commerce
+
+- Shopify
+
+- Squarespace
+
+### Design & Creative
+
+- Illustrator
+
+- Photoshop
+
+- After Effects
+
+- Premiere Pro
+
+- Audition
+
+- DaVinci Resolve
+
+## Abilities
+
+Ability Domains
+
+- Product
+
+- Growth
+
+- Data
+
+### Market Research & Customer Insight
+
+Domain: data
+
+Courses contributing to this ability:
+
+- Marketing Research
+
+- Social Psychology
+
+Ability description:
+
+Learned to turn marketing questions into decisions about what evidence to collect, whose perspective matters, and how findings should inform action. Applied that thinking to a live brand, using customer reactions and audience behaviour to decide what to design, say, and release next.
+
+Skills developed through this ability:
+
+- Research Question Framing
+
+- Customer Insight Development
+
+- Evidence Interpretation
+
+### Text Mining for Marketing
+
+Domain: data
+
+Courses contributing to this ability:
+
+- Text Mining & Analytics
+
+Ability description:
+
+Studied how unstructured language can be organised and analysed to answer marketing questions. Developed a foundation in identifying patterns across text and interpreting those patterns as evidence about audiences, communication, and market interests.
+
+Skills developed through this ability:
+
+- Text Analysis
+
+- Unstructured Data Interpretation
+
+- Marketing Insight Development
+
+### Financial & Economic Reasoning
+
+Domain: data
+
+Courses contributing to this ability:
+
+- Financial Accounting
+
+- Introduction to Economics
+
+- Seed Fund for Innovation
+
+Ability description:
+
+Developed a foundation in interpreting financial statements and reasoning about costs, incentives, resource constraints, and commercial trade-offs. Brought that perspective into running a small venture and discussing funding decisions on a student investment committee.
+
+Skills developed through this ability:
+
+- Financial Statement Interpretation
+
+- Economic Reasoning
+
+- Commercial Judgement
+
+### Venture Design & Execution
+
+Domain: product
+
+Social Entrepreneurship Leading Growth in New Ventures Enterprise Practicum
+
+Ability description:
+
+Connected entrepreneurial study with the practical work of founding and running an apparel brand. Worked across audience definition, value proposition, collection launches, customer feedback, and day-to-day execution rather than stopping at a venture proposal.
+
+Skills developed through this ability:
+
+- Venture Development
+
+- Business Model Design
+
+- Cross-Functional Execution
+
+### Early-Stage Venture Assessment
+
+Domain: product
+
+Courses contributing to this ability:
+
+- Seed Fund for Innovation
+
+Ability description:
+
+Evaluated venture pitches and voted on funding decisions as a member of Hampshire's student-run investment committee. Considered the founder, business proposition, and supporting evidence while discussing which ventures merited limited funding.
+
+Skills developed through this ability:
+
+- Early-Stage Due Diligence
+
+- Founder Assessment
+
+- Funding Allocation
+
+### Apparel & Visual Identity Design
+
+Domain: product
+
+Courses contributing to this ability:
+
+- Streetwear & Internet Culture
+
+- Adobe Suite Professional
+
+Ability description:
+
+Developed a streetwear identity across logos, garment graphics, collections, packaging, and digital presentation. Connected independent study in visual production and internet culture with the practical demands of making designs coherent, recognisable, and suitable for production.
+
+Skills developed through this ability:
+
+- Visual Identity Development
+
+- Apparel Graphic Design
+
+- Collection Development
+
+### Creative Production & Art Direction
+
+Domain: product
+
+Courses contributing to this ability:
+
+- Adobe Suite Professional
+
+Ability description:
+
+Turned collection ideas into photo and video productions by coordinating photographers, models, styling, locations, and finished assets. Combined visual editing and motion work with production planning so the creative concept carried through to usable campaign material.
+
+Skills developed through this ability:
+
+- Art Direction
+
+- Creative Production Planning
+
+- Visual Storytelling
+
+### Commerce Operations & Customer Experience
+
+Domain: product
+
+Courses contributing to this ability:
+
+- Enterprise Practicum
+
+Ability description:
+
+Managed the operational chain behind each clothing release: manufacturing across several regions, packaging, shipping, order tracking, and customer communication. Rebuilt the online storefront several times to make products easier to find and the path to purchase easier to follow.
+
+Skills developed through this ability:
+
+- Production Coordination
+
+- Fulfilment Management
+
+- Customer Journey Improvement
+
+### Negotiation & Commercial Agreements
+
+Domain: product
+
+Courses contributing to this ability:
+
+- Persuasion & Negotiation
+
+- Negotiation Theory & Practice
+
+Ability description:
+
+Studied how interests, alternatives, persuasion, and relationship dynamics shape an agreement. Applied that foundation when negotiating promotional arrangements with creators, influencers, and media partners.
+
+Skills developed through this ability:
+
+- Negotiation Preparation
+
+- Commercial Negotiation
+
+- Stakeholder Alignment
+
+### Business Law & Intellectual Property Awareness
+
+Domain: product
+
+Courses contributing to this ability:
+
+- Business Law
+
+Ability description:
+
+Studied the legal foundations of business decisions and developed greater awareness of rights, obligations, and commercial risk. Carried that awareness into venture work, including handling copyright procedures for a digital platform.
+
+Skills developed through this ability:
+
+- Legal Issue Identification
+
+- Intellectual Property Awareness
+
+- Commercial Risk Awareness
+
+### Independent Research & Self-Directed Delivery
+
+Domain: product
+
+Courses contributing to this ability:
+
+- Streetwear & Internet Culture
+
+- Persuasion & Negotiation
+
+- Adobe Suite Professional
+
+- Social Psychology
+
+Ability description:
+
+Built a coherent course of study through independent inquiry, critical reading, and practical skill development rather than following a fixed departmental sequence. Set my own learning priorities, worked with faculty across different subjects, and connected research with ongoing venture and creative work.
+
+Skills developed through this ability:
+
+- Self-Directed Learning
+
+- Critical Interpretation
+
+- Independent Project Delivery
+
+### Brand Positioning & Cultural Insight
+
+Domain: growth
+
+Courses contributing to this ability:
+
+- Streetwear & Internet Culture
+
+- Advertising & Promo Strategy
+
+Ability description:
+
+Defined a distinct identity for a streetwear brand rooted in underground music and internet culture. Connected audience interests, language, visual style, and product choices so the brand stood for something recognisable rather than looking like another apparel shop.
+
+Skills developed through this ability:
+
+- Brand Positioning
+
+- Cultural Audience Insight
+
+- Value Proposition Development
+
+### Digital Marketing & Campaign Strategy
+
+Domain: growth
+
+Courses contributing to this ability:
+
+- Internet Marketing
+
+- Advertising & Promo Strategy
+
+Ability description:
+
+Connected digital-marketing and advertising study with live paid and organic campaigns across several channels. Adapted creative and messaging to each channel, then tracked audience responses and storefront behaviour to decide what to repeat, change, or stop.
+
+Skills developed through this ability:
+
+- Digital Campaign Planning
+
+- Campaign Performance Analysis
+
+- Campaign Iteration
+
+### Organic Growth & Creator Partnerships
+
+Domain: growth
+
+Courses contributing to this ability:
+
+- Persuasion & Negotiation
+
+Ability description:
+
+Grew an audience through memes, giveaways, and audience-created content, and built relationships with musicians, photographers, models, and influencers whose followers matched the brand. Aimed to turn an initial group of supporters into an active community rather than treating follower count as the goal.
+
+Skills developed through this ability:
+
+- Organic Acquisition
+
+- Creator Partnership Development
+
+- Community Building
+
+### Email Lifecycle & Customer Retention
+
+Domain: growth
+
+Courses contributing to this ability:
+
+- Internet Marketing
+
+Ability description:
+
+Built mailing lists and organised communication around product launches, abandoned carts, and post-purchase follow-ups. Connected acquisition with the next customer interaction so a collection launch could lead to an ongoing relationship rather than a single transaction.
+
+Skills developed through this ability:
+
+- Lifecycle Communication
+
+- Email Campaign Planning
+
+- Customer Retention
+
+### International Marketing & Cross-Cultural Communication
+
+Domain: growth
+
+Courses contributing to this ability:
+
+- International Marketing
+
+Ability description:
+
+Studied how market context and cultural differences influence positioning, communication, and commercial decisions. Applied that perspective while serving customers on three continents and working with creative collaborators around a brand built in the United States.
+
+Skills developed through this ability:
+
+- International Marketing
+
+- Cross-Cultural Communication
+
+- Market Adaptation
+
+### Public Speaking & Investor Pitching
+
+Domain: growth
+
+Courses contributing to this ability:
+
+- Public Speaking
+
+- Mastering Oral Communication
+
+- VVM accelerator
+
+Ability description:
+
+Developed structured oral communication through formal speaking courses and live venture presentations. Presented product ideas, explained traction and next steps, and responded to questions from investors, mentors, and potential partners.
+
+Skills developed through this ability:
+
+- Public Speaking
+
+- Investor Pitching
+
+- Live Question Handling
+
+### Interpersonal Skills & Event Coordination
+
+Domain: growth
+
+Courses contributing to this ability:
+
+- Interpersonal Skills
+
+- Social Psychology
+
+- UMass Entrepreneurship Club
+
+- Berthiaume Student Innovators
+
+Ability description:
+
+Studied how people interpret situations, influence one another, and work together. Applied that perspective organising entrepreneurship events and pitch competitions, including the Innovation Challenge, coordinating speakers, judges, and logistics, and connecting student founders with mentors and investors.
+
+Skills developed through this ability:
+
+- Event Coordination
+
+- Stakeholder Coordination
+
+- Entrepreneurial Network Building
+
+---
+
+Source: https://georgedreemer.com/education/masters  (Markdown: https://georgedreemer.com/education/masters.md)
+
+# MSc Marketing Analytics & Data Science — University of Groningen
+
+George's MSc in Marketing Analytics & Data Science at the University of Groningen was a graduate program focused on applied statistics, machine learning, data science, and data engineering.
+
+The program covered the full path from research design and data preparation to modelling, evaluation, and communication: statistical analysis, supervised learning, segmentation, text mining, sentiment analysis, time-series work, and business-facing decision support across consumer and retail contexts.
+
+In practice, George used Python and R for modelling, data wrangling, and automation, and Stata and SPSS for statistical testing and survey-style analysis. He used SQL for data engineering and extraction, and turned the results into data visualizations, written reports, and presentations. The code, reports, and slides behind the theses and projects are publicly browsable, with the programming linked through George's GitHub.
+
+## Degree Snapshot
+
+University of Groningen
+
+University of Groningen   \#84 World (ARWU)   \#46 Business (ARWU)
+
+University of Groningen — world rankings
+
+- **\#84** ARWU Shanghai Ranking; Business Administration **\#46**
+
+- **\#87** Times Higher Education; Business & Economics **\#69**
+
+- **\#6** UI GreenMetric, sustainability
+
+University-level rankings, not specific to this programme. Source: [RUG](<https://www.rug.nl/about-ug/profile/facts-and-figures/position-international-rankings?lang=en>)
+
+**Degree:** Marketing Analytics & Data Science
+
+**Type:** Master of Science (MSc)
+
+**Result:** 8 / 10
+
+Dutch grading scale
+
+Average grade across the whole programme. The separate thesis grade is an 8.
+
+**Context:** At UG only about 14% of single-grades awarded are an 8 and 2.7% are a 9.
+
+Source: [RUG](<https://www.rug.nl/education/student-blog/what-dutch-grades-actually-mean-24-01-2020?lang=en>).
+
+**Faculty:** Faculty of Economics and Business
+
+**Location:** Groningen, Netherlands
+
+**Links:** [Official program page](<https://www.rug.nl/masters/msc-marketing-marketing-analytics-and-data-science/?lang=en>)
+
+### Topics Covered
+
+- Data Science
+
+- Data Engineering
+
+- Statistical Learning
+
+- Machine Learning
+
+- Text Mining
+
+- Time-Series Analysis
+
+- Market Modelling
+
+- Omnichannel Marketing
+
+- Consumer & Brand Analytics
+
+## Tools
+
+### Code
+
+- Python
+
+- R
+
+- SQL
+
+- Stata
+
+### Python Libraries
+
+- pandas
+
+- NumPy
+
+- SciPy
+
+- scikit-learn
+
+- Matplotlib
+
+- seaborn
+
+- Plotly
+
+- statsmodels
+
+R Libraries
+
+- ggplot2
+
+- dplyr
+
+- caret
+
+- randomForest
+
+- gbm
+
+- e1071
+
+- neuralnet
+
+- ROCR
+
+Dev Tools & IDEs
+
+- Jupyter
+
+- Colab
+
+- RStudio
+
+- SPSS
+
+- DataSpell
+
+- Git
+
+- GitHub
+
+Platforms
+
+- Azure
+
+- Google Analytics
+
+Design & Creative
+
+- Illustrator
+
+- Photoshop
+
+- After Effects
+
+- Canva
+
+## Abilities
+
+Ability Domains
+
+- Engineering
+
+- Data
+
+- Product
+
+- Growth
+
+### Data Pipeline & Relational Extraction
+
+Domain: engineering
+
+Courses contributing to this ability:
+
+- Data Engineering
+
+Ability description:
+
+Built structured extraction workflows that join, filter, and aggregate relational data into analysis-ready datasets. Applied this process to an online retail project in which the extraction layer fed directly into conversion-rate modelling.
+
+Skills developed through this ability:
+
+- Data Pipeline Design
+
+- Relational Data Extraction
+
+- Analytical Dataset Construction
+
+### Reproducible Analytical Workflows
+
+Domain: engineering
+
+Courses contributing to this ability:
+
+- Data Engineering
+
+- Data Science Methods
+
+Ability description:
+
+Structured analyses as repeatable workflows moving from data ingestion and cleaning through transformation, modelling, evaluation, visualisation, and reporting. Preserved the underlying thesis and project code in a public repository so the analytical process remains inspectable and reproducible.
+
+Skills developed through this ability:
+
+- Reproducible Analysis
+
+- Workflow Design
+
+- Data Preparation
+
+### Applied Research Design
+
+Domain: data
+
+Courses contributing to this ability:
+
+- Business Research Methods
+
+- Marketing Research
+
+Ability description:
+
+Translated business questions into researchable problems by defining constructs, hypotheses, measurements, sampling decisions, and suitable analytical methods. Carried that structure through literature review, empirical analysis, interpretation, and formal research reporting.
+
+Skills developed through this ability:
+
+- Research Design
+
+- Measurement Design
+
+- Evidence Synthesis
+
+### Supervised Learning & Churn Prediction
+
+Domain: data
+
+Courses contributing to this ability:
+
+- Statistical Learning in Marketing
+
+Ability description:
+
+Modelled customer churn using conventional statistical methods alongside decision trees, bagging, boosting, and neural networks. Compared alternative classifiers through out-of-sample performance rather than relying only on in-sample fit.
+
+Skills developed through this ability:
+
+- Supervised Model Evaluation
+
+- Churn Prediction
+
+- Ensemble Learning
+
+### Segmentation & Latent Structure
+
+Domain: data
+
+Courses contributing to this ability:
+
+- Data Science Methods
+
+- Companies, Brands & Consumers
+
+Ability description:
+
+Used hierarchical and non-hierarchical clustering to identify consumer segments from car-buying preference data, and factor analysis to uncover the underlying dimensions of attitudes toward sustainable clothing. Turned multivariable survey data into interpretable consumer structures.
+
+Skills developed through this ability:
+
+- Customer Segmentation
+
+- Latent Structure Discovery
+
+- Survey Analytics
+
+### Text, Sentiment & Causal Comparison
+
+Domain: data
+
+Courses contributing to this ability:
+
+- Digital Marketing Intelligence
+
+- Digital Marketing Analytics
+
+Ability description:
+
+Analysed marketing communication through text mining and sentiment analysis, then used propensity-score matching to construct more comparable treatment and control groups. Combined unstructured language data with quasi-experimental evaluation rather than treating sentiment as an isolated score.
+
+Skills developed through this ability:
+
+- Text Feature Engineering
+
+- Sentiment Analysis
+
+- Propensity Score Matching
+
+### Time-Series & Competitive Trend Analysis
+
+Domain: data
+
+Courses contributing to this ability:
+
+- Data Science Methods
+
+- Market Models
+
+Ability description:
+
+Investigated how marketing variables evolved over time by comparing Redstar with competing brands across the marketing mix. Separated temporal movement from cross-brand differences and communicated the resulting patterns through a visual analytical report.
+
+Skills developed through this ability:
+
+- Time-Series Modelling
+
+- Competitive Trend Analysis
+
+- Marketing-Mix Measurement
+
+### Behavioural & Choice Modelling
+
+Domain: data
+
+Courses contributing to this ability:
+
+- Behavioural Decision Making
+
+Ability description:
+
+Examined how people make decisions under competing attributes, trade-offs, and behavioural constraints. Applied this capability in the MSc thesis by modelling willingness to share health data through a discrete-choice experiment and latent-class analysis.
+
+Skills developed through this ability:
+
+- Discrete-Choice Modelling
+
+- Preference Estimation
+
+- Decision Analysis
+
+### Market Response Modelling
+
+Domain: data
+
+Courses contributing to this ability:
+
+- Market Models
+
+Ability description:
+
+Built regression-based models of the Dutch lemonade market using observations across retailers and competing brands. Assessed how market and marketing variables related to commercial outcomes, then translated the coefficients and diagnostics into business-facing interpretation.
+
+Skills developed through this ability:
+
+- Regression Modelling
+
+- Market Response Analysis
+
+- Model Diagnostics
+
+### Exploratory Customer Analytics
+
+Domain: data
+
+Courses contributing to this ability:
+
+- Digital Marketing Analytics
+
+Ability description:
+
+Investigated the effect of Wehkamp’s augmented-reality experience on customer behaviour using transaction-level measures including repeat purchases, customer value, revenue, and purchase frequency. Used exploratory analysis to determine which behavioural differences warranted deeper modelling.
+
+Skills developed through this ability:
+
+- Customer Behaviour Analysis
+
+- KPI Interpretation
+
+- Exploratory Analysis
+
+### Evidence-Led Organisational Strategy
+
+Domain: product
+
+Courses contributing to this ability:
+
+- Organization Theory & Design
+
+- Business & Management Theory
+
+- Strategic Management
+
+- Human Resource Management
+
+Ability description:
+
+Applied organisational, strategic, and people-management frameworks to diagnose business problems and evaluate possible interventions. Connected external market conditions with internal structure, capabilities, incentives, and execution rather than treating strategy as an isolated planning exercise.
+
+Skills developed through this ability:
+
+- Strategic Analysis
+
+- Organisational Diagnosis
+
+- Evidence-Based Management
+
+### Ethical Business Decision-Making
+
+Domain: product
+
+Courses contributing to this ability:
+
+- Business Ethics
+
+Ability description:
+
+Evaluated food waste, salary transparency, and platform-based gig work through three research-led ethical analyses. Used established ethical theory and literature review to identify affected stakeholders, competing obligations, and defensible courses of action.
+
+Skills developed through this ability:
+
+- Stakeholder Analysis
+
+- Ethical Reasoning
+
+- Policy Evaluation
+
+### Retail & Omnichannel Strategy
+
+Domain: growth
+
+Courses contributing to this ability:
+
+- Retail & Omnichannel Marketing
+
+Ability description:
+
+Developed a retail-mix proposal for Kruidvat and an omnichannel strategy for L’Oréal by combining internal evidence with external market analysis. Connected assortment, pricing, promotion, channel roles, and customer experience into implementable commercial recommendations.
+
+Skills developed through this ability:
+
+- Omnichannel Strategy
+
+- Retail-Mix Design
+
+- Commercial Recommendation
+
+### Conversion & Digital Performance Analytics
+
+Domain: growth
+
+Courses contributing to this ability:
+
+- Digital Marketing Analytics
+
+Ability description:
+
+Investigated the drivers of conversion for an online retailer’s product category by connecting extracted behavioural data with statistical modelling. Identified the variables most closely associated with conversion and translated the findings into optimisation priorities.
+
+Skills developed through this ability:
+
+- Conversion Modelling
+
+- Funnel Analysis
+
+- Growth Optimisation
+
+### Consumer & Brand Opportunity Analysis
+
+Domain: growth
+
+Courses contributing to this ability:
+
+- Companies, Brands & Consumers
+
+Ability description:
+
+Used consumer evidence to investigate attitudes, identify meaningful preference patterns, and assess brand-growth opportunities. Projects included analysing sustainable-clothing attitudes and developing a market-supported brand-extension proposal for Volkswagen.
+
+Skills developed through this ability:
+
+- Consumer Insight
+
+- Brand Opportunity Assessment
+
+- Evidence-Led Positioning
+
+## Works
+
+### Visual reports
+
+Presentation-format reports built around data visualisation and storytelling.
+
+[Text Mining, Sentiment Analysis and Propensity Score Matching](<https://www.canva.com/design/DAF00PgC88w/view?embed>)
+
+Data
+
+#### Text Mining, Sentiment Analysis & Propensity Score Matching
+
+- Investigated how effective the communication in online marketing campaigns was, using text mining to turn campaign wording into data that could be analysed.
+
+- Combined traditional and machine-learning methods, adding sentiment analysis to measure the tone of the messaging.
+
+- Used propensity score matching to compare campaigns on a like-for-like basis, so differences in effectiveness were not read straight off raw group averages.
+
+Coursework
+
+- Digital Marketing Intelligence
+
+[PDF](<https://georgedreemer.com/downloads/academic/Text%20mining%2C%20Sentiment%20analysis%20%26%20Propensity%20score%20matching.pdf>) [Code](<https://github.com/ETA444/msc_mads/blob/main/analyses/text-mining.R>) [Enlarge](<https://www.canva.com/design/DAF00PgC88w/view>)
+
+[Google Analytics and Exploratory Analysis of Wehkamp's AR app](<https://www.canva.com/design/DAF00O38dCQ/view?embed>)
+
+Growth
+
+#### Google Analytics & Exploratory Analysis: Wehkamp's AR App
+
+- Analysed the impact of Wehkamp's augmented-reality app on its customers, asking whether people who used it behaved differently from those who did not.
+
+- Measured behaviour through five outcomes: repeat purchases, customer value, repurchases, revenue and transaction frequency.
+
+- Used exploratory analysis to judge which of those differences were worth interpreting, then presented them as a visual report.
+
+Coursework
+
+- Digital Marketing Analytics
+
+[PDF](<https://georgedreemer.com/downloads/academic/Google%20Analytics%20%26%20Exploratory%20Analysis.pdf>) [Code](<https://github.com/ETA444/msc_mads/blob/main/analyses/google-analytics.R>) [Enlarge](<https://www.canva.com/design/DAF00O38dCQ/view>)
+
+[Time-series Analysis of Redstar versus competitors](<https://www.canva.com/design/DAF00Go7oNk/view?embed>)
+
+Data
+
+#### Time-series Analysis: Redstar vs. Competitors
+
+- Investigated the 4Ps of marketing (product, price, place and promotion) for Redstar against its competitors, using time-series methods.
+
+- Treated each element of the mix as something that moves over time, so the question became how Redstar's trajectory compared with rival brands, not just how it ranked in one period.
+
+- Reported the results as a visual analytical report, with the Code public alongside it.
+
+Coursework
+
+- Data Science Methods for MADS
+
+[PDF](<https://georgedreemer.com/downloads/academic/Time-series%20Analysis.pdf>) [Code](<https://github.com/ETA444/msc_mads/blob/main/analyses/timeseries-analysis.R>) [Enlarge](<https://www.canva.com/design/DAF00Go7oNk/view>)
+
+[Cluster Analysis of car-buying preferences](<https://www.canva.com/design/DAF00IGcizI/view?embed>)
+
+Data
+
+#### Cluster Analysis: Car-Buying Preferences
+
+- Investigated what consumers want when buying a car, working from survey data to find groups of buyers with similar priorities.
+
+- Ran both hierarchical and non-hierarchical clustering, so the segmentation could be judged across two different approaches to grouping.
+
+- Reported the segments in a visual report that turns the statistical output into a readable picture of how the market divides.
+
+Coursework
+
+- Companies, Brands, and Consumers
+
+[PDF](<https://georgedreemer.com/downloads/academic/Cluster%20Analysis.pdf>) [Code](<https://github.com/ETA444/msc_mads/blob/main/analyses/cluster-analysis.R>) [Enlarge](<https://www.canva.com/design/DAF00IGcizI/view>)
+
+[Factor Analysis of attitudes towards sustainable clothing](<https://www.canva.com/design/DAF05nELmIc/view?embed>)
+
+Data
+
+#### Factor Analysis: Attitudes Towards Sustainable Clothing
+
+- Investigated which factors matter in people's attitudes towards sustainable clothing, starting from many separate survey questions.
+
+- Used factor analysis to find the smaller set of underlying dimensions those questions share, moving from individual answers to interpretable attitudes.
+
+- Presented the factors in a visual report that shows what each dimension represents.
+
+Coursework
+
+- Companies, Brands, and Consumers
+
+[PDF](<https://georgedreemer.com/downloads/academic/Factor%20Analysis.pdf>) [Code](<https://github.com/ETA444/msc_mads/blob/main/analyses/factor-analysis.R>) [Enlarge](<https://www.canva.com/design/DAF05nELmIc/view>)
+
+[Retail Mix Tactics for Kruidvat NL](<https://www.canva.com/design/DAF00P84WxU/view?embed>)
+
+Growth
+
+#### Retail Mix Tactics: Kruidvat NL
+
+- Proposed a retail mix strategy for Kruidvat in the Netherlands, focused on the makeup category.
+
+- Grounded the proposal in both internal and external market conditions, so the recommendations follow from the retailer's situation and the wider industry.
+
+- Delivered the proposal as a visual report built for a business audience.
+
+Coursework
+
+- Retail & Omnichannel Marketing
+
+[PDF](<https://georgedreemer.com/downloads/academic/Retail%20Mix%20Tactics%20for%20Kruidvat%20NL.pdf>) [Enlarge](<https://www.canva.com/design/DAF00P84WxU/view>)
+
+[Omnichannel Strategy Proposal for L'Oréal NL](<https://www.canva.com/design/DAF00KtmVOo/view?embed>)
+
+Growth
+
+#### Omnichannel Strategy: L'Oréal NL
+
+- Proposed an omnichannel strategy for L'Oréal in the Netherlands.
+
+- Built the proposal on two kinds of evidence: analysis of internal data and analysis of the external market.
+
+- Delivered the strategy as a visual report that ties the analysis to concrete recommendations.
+
+Coursework
+
+- Retail & Omnichannel Marketing
+
+[PDF](<https://georgedreemer.com/downloads/academic/Omnichannel%20Strategy%20Proposal%20for%20L%27Oreal%20NL.pdf>) [Enlarge](<https://www.canva.com/design/DAF00KtmVOo/view>)
+
+[Exploratory Analysis of consumer attitudes towards meal kits](<https://www.canva.com/design/DAF00D8MWFA/view?embed>)
+
+Growth
+
+#### Exploratory Analysis: Consumer Attitudes Towards Meal Kits
+
+- Investigated several aspects of consumer attitudes towards meal kits, working from survey data.
+
+- Used exploratory analysis to map the data before committing to any one question, surfacing the patterns that deserved a closer look.
+
+- Reported the results as a visual report that pairs each finding with a chart.
+
+Coursework
+
+- Companies, Brands, and Consumers
+
+[PDF](<https://georgedreemer.com/downloads/academic/Exploratory%20Analysis.pdf>) [Enlarge](<https://www.canva.com/design/DAF00D8MWFA/view>)
+
+### Written reports
+
+Documents showcasing academic and corporate reporting.
+
+[Pre-MSc thesis: Earnings call sentiment and stock volatility](<https://www.canva.com/design/DAF05sFmKwQ/view?embed>)
+
+Data Pre-MSc Thesis
+
+#### Earnings Call Sentiment & Stock Volatility
+
+- Asked whether the sentiment of an earnings call shapes how volatile a stock is afterwards, using 178 call transcripts from 10 NASDAQ-listed firms.
+
+- Cleaned the transcripts and scored them with NLTK's VADER, then scraped stock and NASDAQ index prices for the 10 days either side of each call to measure the change in volatility, and tested sentiment with multiple linear regression.
+
+- Volatility rose after 87% of calls, yet sentiment was not a statistically significant predictor. The paper reports this plainly and points to other factors worth testing, while showing the call itself is a decisive moment for volatility.
+
+Coursework
+
+- Pre-MSc Thesis
+
+[PDF](<https://georgedreemer.com/downloads/academic/georgedreemer-premsc-thesis_paper.pdf>) [Code](<https://github.com/ETA444/msc_mads/blob/main/theses/premsc-thesis.py>) [Collab](<https://colab.research.google.com/drive/1cHAWOr2hcSNUctMLjWbyRG5einhLjRqw?usp=sharing>) [https://www.canva.com/design/DAF05sFmKwQ/view](<https://www.canva.com/design/DAF05sFmKwQ/view>)
+
+[Churn Prediction Modelling report](<https://www.canva.com/design/DAF05cR6CW8/view?embed>)
+
+Data
+
+#### Churn Prediction Modelling
+
+- Modelled customer churn with traditional methods and with machine learning: tree models, bagging, boosting and neural networks.
+
+- Put the approaches side by side on the same problem, so the report reads as a comparison of how different modelling philosophies handle churn.
+
+- Documented the work as a written report with the full R workflow public, so each modelling choice can be traced to code.
+
+Coursework
+
+- Statistical Learning in Marketing
+
+[PDF](<https://georgedreemer.com/downloads/academic/Churn%20Prediction%20Modeling.pdf>) [Code](<https://github.com/ETA444/msc_mads/blob/main/analyses/churn-modelling.R>) [Enlarge](<https://www.canva.com/design/DAF05cR6CW8/view>)
+
+[Market Modelling 1 of 2 report](<https://www.canva.com/design/DAF05b9VXBc/view?embed>)
+
+Data
+
+#### Market Modelling 1/2: Dutch Lemonade Market
+
+- Built a regression model of the Dutch lemonade retail market, working with data from retailers such as Albert Heijn and Jumbo.
+
+- Covered competing brands, including Raak and Karvan Cevitam, so the model had to account for differences between brands as well as between retailers.
+
+- Reported it as a written report with the Code public, the first of two linked modelling assignments.
+
+Coursework
+
+- Market Models
+
+[PDF](<https://georgedreemer.com/downloads/academic/Market%20Modeling%201.pdf>) [Code](<https://github.com/ETA444/msc_mads/blob/main/analyses/market-modelling1.R>) [Enlarge](<https://www.canva.com/design/DAF05b9VXBc/view>)
+
+[Market Modelling 2 of 2 report](<https://www.canva.com/design/DAF05T7o0LE/view?embed>)
+
+Data
+
+#### Market Modelling 2/2: Dutch Lemonade Market
+
+- Continued the lemonade-market modelling from part one, extending the same retailer and brand context into a second written report.
+
+- Kept the analysis in the same regression-modelling framework, so the two reports can be read together as one body of work.
+
+- Published with its own R script, so part two can be inspected independently of part one.
+
+Coursework
+
+- Market Models
+
+[PDF](<https://georgedreemer.com/downloads/academic/Market%20Modeling%202.pdf>) [Code](<https://github.com/ETA444/msc_mads/blob/main/analyses/market-modelling2.R>) [Enlarge](<https://www.canva.com/design/DAF05T7o0LE/view>)
+
+[Conversion Rate Optimization Analysis report](<https://www.canva.com/design/DAF00GOZbvk/view?embed>)
+
+Engineering
+
+#### Conversion Rate Optimization Analysis
+
+- Investigated what drives conversion for an online retailer's product category, starting from the question of how the data should be extracted.
+
+- Wrote the extraction and preparation in SQL, then carried the dataset into R to model how the available variables relate to conversion.
+
+- Published both layers separately, so the route from raw data to model can be followed end to end.
+
+Coursework
+
+- Data Engineering for MADS
+
+[PDF](<https://georgedreemer.com/downloads/academic/Conversion%20Rate%20Optimization%20Analysis.pdf>) [SQL](<https://github.com/ETA444/msc_mads/blob/main/analyses/conversionrate-modelling.sql>) [Code](<https://github.com/ETA444/msc_mads/blob/main/analyses/conversionrate-modelling.R>) [https://www.canva.com/design/DAF00GOZbvk/view](<https://www.canva.com/design/DAF00GOZbvk/view>)
+
+[Ethical Analysis: Food Waste, Salary Transparency, Gig Work](<https://www.canva.com/design/DAF00Bs9Blc/view?embed>)
+
+Product
+
+#### Ethical Analysis: Food Waste, Salary Transparency & Gig Work
+
+- Analysed three live business issues through an ethical lens: food waste, salary transparency and platform-based gig work.
+
+- Used ethical theory and the research literature to identify who is affected by each issue and where their interests conflict.
+
+- Argued for a defensible position on each, treating ethics as part of the business decision.
+
+Coursework
+
+- Business Ethics
+
+[PDF](<https://georgedreemer.com/downloads/academic/Ethical%20Analysis%20Food%20Waste%2C%20Salary%20Transparency%2C%20Gig%20Work.pdf>) [Enlarge](<https://www.canva.com/design/DAF00Bs9Blc/view>)
+
+## Thesis
+
+MSc thesis · University of Groningen · Grade: 8 / 10
+
+### Willingness to Share Health Data in Italy: Investigation under a Multi-context Paradigm with DCE Data
+
+Synopsis:
+
+What makes people willing to share their health data beyond its original use? I analysed choices from 329 respondents in Italy to understand how the organisations involved, the intended use, consent arrangements, and external oversight shape that decision.
+
+[Read the full paper](<https://georgedreemer.com/downloads/academic/georgedreemer-msc-thesis_paper.pdf>) [Defence slides](<https://georgedreemer.com/downloads/academic/georgedreemer-msc-thesis_defenseslides.pdf>) [Analysis code](<https://github.com/ETA444/msc_mads/tree/main/theses>)
+
+**Participants:** 329 in Italy
+
+**Latent preference groups:** 2 46.5% / 53.5% of respondents
+
+**Contextual attributes:** 5 examined together
+
+**Analysis tools:** R & Stata 17
+
+**Research question:** How do different data-sharing arrangements influence willingness to allow the secondary use of health data?
+
+Five contextual attributes were examined together:
+
+- Original data collector
+
+- New data user
+
+- Purpose of reuse
+
+- Information & consent
+
+- External review
+
+**Analytical approach:** I analysed discrete-choice-experiment data supplied by Biasiotto and colleagues: 329 participants in Italy.
+
+1. Compared five models in Stata (three latent class specifications, a conditional logit, and a logistic regression), judging fit by AIC and log-likelihood.
+
+2. Interpreted a two-class latent class model as the primary analysis, with the conditional logit as a secondary check.
+
+3. Calculated average relative attribute importance from the primary model.
+
+**Finding & relevance:** Respondents leaned toward not sharing, but context shifted that.
+
+Two preference groups (46.5% and 53.5%) ranked the five attributes identically:
+
+1. Who reuses the data
+
+2. Purpose of reuse
+
+3. Information about sharing
+
+4. Review of the transfer
+
+5. Original data collector
+
+Yet they preferred different options within each attribute. On who reuses the data, their orders were contrasting. One-size-fits-all rules are therefore unlikely to fit, while transparency and some form of external review were common ground.
+
+Inside the experiment
+
+#### Same health data. Different sharing context.
+
+A willingness-to-share decision involves more than the data itself. Change who collected it, who wants to reuse it, why, and under which safeguards. These were the five contextual attributes examined together in the research.
+
+Build a sharing context
+
+Choose an option for each attribute. The context summary updates automatically.
+
+Original data collector
+
+New data user
+
+Purpose of reuse
+
+Information and consent
+
+External review
+
+Illustrative context
+
+Imagine your health data being reused under these arrangements:
+
+**Originally collected by:** Healthcare provider
+
+**Reused by:** National authority
+
+**Used for:** Quality evaluation
+
+**Information and consent:** Informed, with ability to opt in
+
+**External review:** Review of data transfer and use
+
+Would these arrangements change your willingness to share?
+
+The study asked participants to accept or reject sharing across varying contexts. This explorer illustrates the attributes; it does not record your answer or estimate a sharing probability.
+
+Educational reconstruction using the study’s attribute levels—not a reproduction of an original choice task. Combinations selected here are not necessarily among the scenarios administered in the study.
+
+What the analysis revealed
+
+#### Two groups agreed on what matters, and disagreed on what they prefer.
+
+Overall, respondents leaned toward not sharing. Willingness depended on the arrangement, and the five attributes did not carry equal weight.
+
+Importance of the five attributes
+
+1. New data user
+
+2. Reason for new data use
+
+3. Information & consent
+
+4. External review
+
+5. Original data collector
+
+Ranking based on average relative attribute importance in the primary two-class latent class model. Both modelled groups shared the same attribute-importance order, while differing in their preferred levels within several attributes.
+
+Figure 6 Average relative attribute importance
+
+Image: [Figure 6. Average relative importance of the five contextual attributes.](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure6.png>)
+
+As reported in the thesis: the new data user and the reason for reuse carry the most weight, followed by information and consent.
+
+ [Open full size ↗](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure6.png>)
+
+An expectation challenged
+
+I expected information & consent to be the most influential attribute and the reason for reuse to rank second. The second expectation held; the first did not. The new data user ranked first and information & consent third, so who receives the data mattered more than how consent is organised.
+
+Inside the two groups
+
+#### One country, two contrasting preference patterns.
+
+The latent class model split respondents into two groups, 46.5% and 53.5%. Pick an attribute to compare how each group ordered its levels, from highest to lowest estimated utility.
+
+##### New data user · importance rank 1 of 5
+
+Group 1 46.5% of respondents
+
+1. Technological company
+
+2. National authority reference level
+
+3. Pharmaceutical company
+
+4. Academic research project
+
+Group 2 53.5% of respondents
+
+1. Academic research project
+
+2. Pharmaceutical company
+
+3. National authority reference level
+
+4. Technological company
+
+##### Reason for new data use · importance rank 2 of 5
+
+Group 1 46.5% of respondents
+
+1. Investigating a policy initiative
+
+2. Quality evaluation reference level
+
+3. Promotion, advertising or marketing
+
+4. Developing a new product or service
+
+Group 2 53.5% of respondents
+
+1. Developing a new product or service
+
+2. Quality evaluation reference level
+
+3. Promotion, advertising or marketing
+
+4. Investigating a policy initiative
+
+##### Information & consent · importance rank 3 of 5
+
+Group 1 46.5% of respondents
+
+1. Informed only, no consent option
+
+2. Informed, with ability to opt in reference level
+
+3. Not informed
+
+4. Informed, with ability to opt out
+
+Group 2 53.5% of respondents
+
+1. Informed, with ability to opt out
+
+2. Informed, with ability to opt in reference level
+
+3. Informed only, no consent option
+
+4. Not informed
+
+##### External review · importance rank 4 of 5
+
+Group 1 46.5% of respondents
+
+1. Review of data transfer and use reference level
+
+2. No review
+
+3. Review of data transfer only
+
+Group 2 53.5% of respondents
+
+1. Review of data transfer only
+
+2. No review
+
+3. Review of data transfer and use reference level
+
+##### Original data collector · importance rank 5 of 5
+
+Group 1 46.5% of respondents
+
+1. Academic research project
+
+2. Technological company
+
+3. Healthcare provider reference level
+
+Group 2 53.5% of respondents
+
+1. Healthcare provider reference level
+
+2. Technological company
+
+3. Academic research project
+
+Levels are ordered by each group’s estimated utility. The order does not show how large the gaps are or whether neighbouring levels differ significantly; those details are in Table 4. For the original collector, new data user, and external review attributes, the groups displayed substantially contrasting orderings. Group 1 placed technological companies first as the new data user, a pattern that differs from much earlier research but resembles a Southern European subgroup reported by Biasiotto et al.
+
+Table 4 2-class latent class model with initial values
+
+Image: [Table 4. Results of the 2-class latent class model estimated with initial values.](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-table4.png>)
+
+Scroll sideways to see the full table.
+
+ [Open full size ↗](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-table4.png>)
+
+What it suggests
+
+#### Plan for different audiences, not one average citizen.
+
+The two groups' contrasting preferences sit alongside a shared emphasis on transparency and oversight.
+
+**Expect heterogeneity inside a country:** Within one Italian sample, two groups held contrasting preferences on most attributes. A single average preference would have hidden that.
+
+**Be cautious about one-size-fits-all rules:** Some results differ from larger multinational studies. That suggests data-reuse policy may not fit every European region equally, and that country-specific consideration and research are worthwhile.
+
+**Treat transparency and review as common ground:** Being informed and having some form of external review matched earlier research. In both groups, the most preferred information arrangement was an informed one, and the most preferred review option was some form of review. This supports transparency, clarity of purpose and independent oversight as institutional practice.
+
+These are research-informed considerations, not a tested intervention or a demonstrated increase in real-world sharing.
+
+For a closer look
+
+#### Research decisions and supporting evidence
+
+Explore how the sample was prepared, how the preference models were specified, and where the interpretation needs care.
+
+Sample, data checks, and descriptive analysis
+
+929 survey initiations, 362 completions, and 329 respondents after removing completions under five minutes.
+
+Before modelling I checked for missing values and outliers. No variable had more than 3.95% missing values, and none were independent variables. Thirty-four respondents had unusually long completion times (over 30 minutes). I reviewed their written feedback, found nothing abnormal, and discussed the pattern with my supervisor. The survey software let people pause and resume, so I did not treat the durations as a data-quality problem.
+
+The final sample had a mean age of 50.83 years (SD 14.55), was 53% female and 47% male, and was most often educated to high-school level (42.1%) or master's level (about 27%). 54.6% reported no chronic condition, and 32.1% had sufficient eHealth literacy (37.6% problematic, 30.3% inadequate).
+
+Fieldwork, recruitment and the experimental design were carried out by the source research team.
+
+Figure 3 Missing-value summary
+
+Image: [Figure 3. Summary of missing values in the dataset.](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure3.png>)
+
+ [Open full size ↗](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure3.png>)
+
+Figure 4 Education level by gender
+
+Image: [Figure 4. Respondents' education levels, shown by gender.](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure4.png>)
+
+ [Open full size ↗](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure4.png>)
+
+Figure 5 Health-related descriptives
+
+Image: [Figure 5. Descriptive statistics on respondents' health-related characteristics.](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure5.png>)
+
+ [Open full size ↗](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure5.png>)
+
+How the choice experiment worked
+
+The source experiment used 32 unique choice tasks, arranged into four blocks of eight. Each participant completed two sets of eight decisions, covering two assigned health-information themes from lifestyle, physical health, mental health, and genetic information.
+
+Each task presented a sharing context. Participants decided whether to accept or reject sharing under those arrangements, rather than selecting a favourite organisation or purpose in isolation.
+
+This structure enabled the analysis to examine contextual trade-offs across the five attributes. The health-information themes are part of the experimental setting; they are not an additional attribute in the five-factor explorer above.
+
+Sixteen decisions per participant are repeated observations from the same people—not sixteen independent respondents.
+
+Figure 2 Example choice task
+
+Image: [Figure 2. Example choice task from the study: a table showing one data-sharing scenario with a level for each of the five attributes, which participants accepted or rejected.](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure2-choicetask.png>)
+
+Scroll sideways to see the full figure.
+
+ [Open full size ↗](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure2-choicetask.png>)
+
+Model selection and attribute importance
+
+After checking correlations between the independent variables for multicollinearity, I fitted five models of three types in Stata 17: three latent class models (one class; two classes without starting values; two classes with starting values from the one-class model), a conditional logit, and a logistic regression. I compared them by AIC and log-likelihood.
+
+Table 3 AIC and log-likelihood for the five models
+
+Image: [Table 3. AIC and log-likelihood values for the five fitted models.](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-table3.png>)
+
+ [Open full size ↗](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-table3.png>)
+
+The two best-fitting models were the two-class latent class model with starting values and the conditional logit. I treated the former as the primary analysis and the latter as a secondary check. A latent class model divides respondents into classes by their expressed preferences instead of assuming one common pattern; the conditional logit assumes a common utility function, a limitation the latent class model addresses.
+
+Average relative attribute importance was computed in three steps:
+
+1. For each attribute, subtract its lowest level estimate from its highest to get a range.
+
+2. Divide each range by the largest range, giving relative importance per attribute within each class.
+
+3. Average the values across the two classes.
+
+Equation Latent class model
+
+Image: [Equation for the latent class model, as specified in the thesis.](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-equation-latentclassmodel.png>)
+
+Scroll sideways to see the full equation.
+
+ [Open full size ↗](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-equation-latentclassmodel.png>)
+
+Equation Conditional logit model
+
+Image: [Equation for the conditional logit model, as specified in the thesis.](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-equation-conditionallogitmodel.png>)
+
+Scroll sideways to see the full equation.
+
+ [Open full size ↗](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-equation-conditionallogitmodel.png>)
+
+Primary results: the two-class model
+
+All five attributes were statistically significant in the primary model. Estimated group shares were 46.5% and 53.5%. Both groups showed a general disutility for sharing, with positive rejection intercepts of 0.48 and 0.59 (both p \< 0.001).
+
+- **Shared ranking:** both groups gave the same importance ranking: new data user, reason, information & consent, review, original collector.
+
+- **Different levels:** groups differed on which level they preferred within each attribute, and their orders were exact reverses on collector, recipient and review.
+
+- **Common features:** neither group ranked opt-in consent first, and both groups' top review option was some form of review.
+
+Significance of individual levels within each group is reported in Table 4. Latent classes are model-based preference patterns, not observed personality types.
+
+Secondary results: the conditional logit check
+
+Eight of the thirteen estimated levels were significant (pseudo R² 0.111; LR chi² 410.87, p \< .001). Compared with the reference levels, and holding other variables constant:
+
+- **Original collector:** sharing was less likely when it was a technology company than a healthcare provider; an academic project was not significant (p = 0.970).
+
+- **New data user:** no level was significant.
+
+- **Reason:** product or service development raised the likelihood of sharing and marketing lowered it, relative to quality evaluation.
+
+- **Information & consent:** informed-only and informed-with-opt-out raised it relative to opt-in, and not being informed lowered it.
+
+- **Review:** review of transfer only raised it relative to review of transfer and use, and no review lowered it.
+
+Conditional logit coefficients give direction, not the size of differences between levels, so this model corroborates the latent class results without replacing them.
+
+Table 5 Conditional logit results
+
+Image: [Table 5. Results of the conditional logit model.](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-table5-conditionallogitmodel.png>)
+
+Scroll sideways to see the full table.
+
+ [Open full size ↗](<https://georgedreemer.com/public_img/education/mscthesis/mscthesis-table5-conditionallogitmodel.png>)
+
+Limitations and what comes next
+
+- **Sample composition:** education was uneven (42.1% high school, about 27% master's, other levels around 10% or less). Earlier research links education to data-sharing attitudes, so the preferences may mainly describe these education groups. A more balanced sample could yield more classes or different preferences.
+
+- **Timing:** fieldwork ran during the COVID-19 aftermath. Earlier research suggests the pandemic raised willingness to share, so comparisons across time periods would be useful.
+
+- **No covariates:** the latent class model includes none. Age, trust, and privacy and technology attitudes from the survey are natural next additions. One idea is to cluster respondents on trust and privacy attitudes and use those clusters as covariates.
+
+- **Stated choices:** the experiment measures decisions in described scenarios, not real transfers of health records.
+
+- **Scope:** the findings inform governance considerations; they are not a legal-compliance assessment or proof that a policy would increase sharing.
+
+See the defence slides
+
+The slides I used to present the research question, modelling approach, and findings to the Committee at my Thesis Defence.
+
+## MADS Madlad
+
+MADS Madlad
+
+Premium study materials
+
+The name is a joke. The page count isn’t.
+
+During my MSc, I took “write a summary” rather literally. The result was MADS Madlad: a catalogue of detailed course summaries that turned my study process into a small publishing venture.
+
+The notes outlasted the exams. Students are still buying them through Stuvia and Knoowy.
+
+**Pages written:** 1,594
+
+**Documents created:** 22
+
+### Stuvia
+
+   Bronze medal
+
+**Documents sold:** 35+
+
+**Reputation:** 89/100
+
+  Explore the storefront
+
+[Explore Stuvia](<https://www.stuvia.com/user/madsmadlad>)
+
+### Knoowy
+
+ @madsmadlad
+
+**Documents sold:** 20+
+
+  Explore the storefront
+
+[Explore Knoowy](<https://knoowy.nl/user/132765/madsmadlad>)
+
+### Browse the free editions
+
+Seven samples from the catalogue. Browse inside each document, open it full size, or read the PDF. Full editions are available through the storefronts.
+
+Scroll sideways to explore the shelf.
+
+[Data Science Methods — free edition](<https://www.canva.com/design/DAF1AmW5MZc/view?embed>)
+
+Free edition · 01 / 07
+
+#### Data Science Methods
+
+[PDF](<https://georgedreemer.com/downloads/academic/madsmadlad/MM-DSMM-FreeEdition.pdf>) [Enlarge](<https://www.canva.com/design/DAF1AmW5MZc/view>)
+
+[Market Models — free edition](<https://www.canva.com/design/DAF1Ai3jqeI/view?embed>)
+
+Free edition · 02 / 07
+
+#### Market Models
+
+[PDF](<https://georgedreemer.com/downloads/academic/madsmadlad/MM-MM-FreeEdition.pdf>) [Enlarge](<https://www.canva.com/design/DAF1Ai3jqeI/view>)
+
+[Digital Marketing Intelligence — free edition](<https://www.canva.com/design/DAF1AtUOMXM/view?embed>)
+
+Free edition · 03 / 07
+
+#### Digital Marketing Intelligence
+
+[PDF](<https://georgedreemer.com/downloads/academic/madsmadlad/MM-DMI-FreeEdition.pdf>) [Enlarge](<https://www.canva.com/design/DAF1AtUOMXM/view>)
+
+[Retail and Omnichannel Marketing — free edition](<https://www.canva.com/design/DAF1AofYEL4/view?embed>)
+
+Free edition · 04 / 07
+
+#### Retail & Omnichannel Marketing
+
+[PDF](<https://georgedreemer.com/downloads/academic/madsmadlad/MM-ROM-FreeEdition.pdf>) [Enlarge](<https://www.canva.com/design/DAF1AofYEL4/view>)
+
+[Data Engineering — free edition](<https://www.canva.com/design/DAF1AqBQB9M/view?embed>)
+
+Free edition · 05 / 07
+
+#### Data Engineering
+
+[PDF](<https://georgedreemer.com/downloads/academic/madsmadlad/MM-DEM-FreeEdition.pdf>) [Enlarge](<https://www.canva.com/design/DAF1AqBQB9M/view>)
+
+[Statistical Learning in Marketing — free edition](<https://www.canva.com/design/DAF1AiFrKpc/view?embed>)
+
+Free edition · 06 / 07
+
+#### Statistical Learning in Marketing
+
+[PDF](<https://georgedreemer.com/downloads/academic/madsmadlad/MM-SLM-FreeEdition.pdf>) [Enlarge](<https://www.canva.com/design/DAF1AiFrKpc/view>)
+
+[Companies, Brands and Consumers — free edition](<https://www.canva.com/design/DAF1AmPV-po/view?embed>)
+
+Free edition · 07 / 07
+
+#### Companies, Brands & Consumers
+
+[PDF](<https://georgedreemer.com/downloads/academic/madsmadlad/MM-CBC-FreeEdition.pdf>) [Enlarge](<https://www.canva.com/design/DAF1AmPV-po/view>)
+
+Free editions are samples, not the complete paid documents.
+
+---
+
+Source: https://georgedreemer.com/work/cryptopandemic  (Markdown: https://georgedreemer.com/work/cryptopandemic.md)
+
+# CryptoPandemic — Web3 Marketing & On-Chain Analytics on Solana
+
+CryptoPandemic is a Web3 brand engine built on one conviction: the projects that spread are not the ones with the best technology. They are the ones with the strongest story, the sharpest identity, and content that moves at the speed of the culture.
+
+CryptoPandemic brings together two seemingly opposite forces: cold on-chain analytics and warm creative storytelling. The on-chain data acts as the "KYC", revealing exactly who your holders are, which coins they move, and what makes them act. The creative work responds to that data through a crypto cartoon series and visual identity built around the people already in your corner.
+
+The approach was first applied to $BULLISH on Solana — crypto cartoon series, AI-generated content pipelines, 360° brand execution, on-chain market research — all deployed in tandem. The result was a market cap move from ~$6–7M to a peak of ~$13M, 5K+ daily mentions across Crypto Twitter, and 250K+ impressions across content.
+
+## Experience Snapshot
+
+Crypto Pandemic
+
+**Role:** Founder & Creative Director
+
+**Type:** Web3 Brand Studio
+
+**Links:** [cryptopandemic.com](<https://cryptopandemic.com>)
+
+### Highlights
+
+- Profiled on-chain holder behaviour to identify the most effective branding styles and content formats
+
+- Tracked X sentiment and news cycles to time and shape cryptoon storylines
+
+- Coined the "cryptoon" format — narrative-driven crypto animations built on sentiment and on-chain data
+
+- Created 50+ branded assets adopted by the community across X, Telegram, and Discord
+
+- Drove Bullish from ~$6M to $13M peak market cap through coordinated cryptoon drops and brand strategy
+
+- Drove 250K+ cross-platform impressions and 5K+ daily mentions
+
+- Built AI-generative content pipelines and brand tools using Google AI Studio
+
+## In Numbers
+
+**~$5M:** Estimated $BULLISH market cap uplift
+
+**250K+:** Content impressions
+
+**5K+:** Daily mentions
+
+**50+:** Branded assets created
+
+## Stack
+
+### Code
+
+- JavaScript
+
+- HTML
+
+- CSS
+
+- Python
+
+### AI & Automation
+
+- HuggingFace
+
+- n8n
+
+- Google AI Studio
+
+- ComfyUI
+
+### Design & Creative
+
+- Illustrator
+
+- Photoshop
+
+- Premiere Pro
+
+- After Effects
+
+- DaVinci Resolve
+
+- Figma
+
+### Web3 & On-Chain
+
+- Solana
+
+- Pump.fun
+
+- CoinGecko
+
+- DexScreener
+
+### Marketing & Growth
+
+- X
+
+- TikTok
+
+- YouTube Studio
+
+- Buffer
+
+- Telegram
+
+- Discord
+
+### Dev Tools
+
+- VS Code
+
+- Git
+
+- GitHub
+
+## Abilities
+
+Ability Domains
+
+- Engineering
+
+- Product
+
+- Growth
+
+- Data
+
+### Holder Portfolio Profiling
+
+Domain: data
+
+Ability description:
+
+Analysed on-chain wallet data to understand what else a project's holders own, building profiles of their wider crypto interests, cultural references, and community affiliations. These profiles inform branding and content decisions. The aim is not to copy adjacent projects, but to help the coin speak a language its holders already understand. Culture fit, not culture theft.
+
+Skills developed through this ability:
+
+- Wallet Behaviour Profiling
+
+- Community Culture Mapping
+
+- Insight-Led Brand Strategy
+
+### On-Chain Market Attribution
+
+Domain: data
+
+Ability description:
+
+Tracked project performance with on-chain analytics tools to connect creative output with market movement. This made it possible to identify when the needle moved, why it moved, and which content contributed to the shift. It closes a feedback loop that many Web3 creative teams leave open by measuring how content affects the chart, not just the timeline.
+
+Skills developed through this ability:
+
+- Market Movement Analysis
+
+- Content-to-Chart Attribution
+
+- Performance Measurement
+
+### Content Performance Analytics
+
+Domain: data
+
+Ability description:
+
+Used platform analytics across X, TikTok, and Instagram to track impressions, engagement rate, share velocity, and audience growth, then fed those signals into the next content cycle. In a fast-moving environment where a post has a half-life of hours, understanding what performed and why is what separates a studio that compounds its reach from one that stays flat.
+
+Skills developed through this ability:
+
+- Engagement Analysis
+
+- Reach Optimisation
+
+- Data-Driven Iteration
+
+### Sentiment-Anchored Story Strategy
+
+Domain: data
+
+Ability description:
+
+Built content strategy around a character who lives inside the holder's world. It is not a mascot disconnected from reality, but a character whose storylines come directly from live X sentiment, news cycles, and on-chain talking points. If the community is discussing Fed rate hikes, that week's cryptoon reflects it. Culture relevance is engineered, not guessed.
+
+Skills developed through this ability:
+
+- Real-Time Sentiment Scripting
+
+- Character-Led Narrative Design
+
+- Content Series Architecture
+
+### AI-Generative Content Pipelines
+
+Domain: engineering
+
+Ability description:
+
+Built production-ready generative pipelines for crypto-native visual content, combining speed with consistent creative direction. Each workflow is tailored to a coin's identity, including its ticker, mascot, and lore, so the output feels made for that project rather than like a generic AI pass.
+
+Skills developed through this ability:
+
+- Generative Workflow Design
+
+- Brand-Consistent AI Output
+
+- Visual Pipeline Architecture
+
+### Cryptoon Production & Motion Design
+
+Domain: engineering
+
+Ability description:
+
+Coined and developed the cryptoon format: short animated films where the storyline is built from the world the holder already lives in. The character’s arc is mapped against live community sentiment, cultural references pulled from holder portfolio data, and the news cycle the audience is actually following. The result is a character who feels like part of the holder’s world.
+
+Skills developed through this ability:
+
+- Motion Graphics & Animation
+
+- Cinematic Editing
+
+- Narrative Sequencing
+
+### Brand Tool Engineering
+
+Domain: engineering
+
+Ability description:
+
+Designed the architecture for community-facing brand tools: AI-powered experiences that define a coin's visual style and let holders create on-brand content themselves. This compounds reach without compounding spend. Built with HTML, CSS, JavaScript, Python, and AI API integrations.
+
+Skills developed through this ability:
+
+- Full-Stack Web Development
+
+- AI API Integration
+
+- Community Tool Design
+
+### Meme Coin Brand Architecture
+
+Domain: product
+
+Ability description:
+
+Built complete brand systems for meme coin projects, covering visual identity, character lore, content tone, and community language from the ground up. In a market where hundreds of coins launch every week, a coherent brand is the only durable moat. The work for Bullish, from the first edit to the graphic asset library deployed across CT replies, shows what a complete Web3 brand system looks like in practice.
+
+Skills developed through this ability:
+
+- Visual Identity Design
+
+- Character & Lore Development
+
+- Web3 Brand Strategy
+
+### Bag Worker Asset Systems
+
+Domain: product
+
+Ability description:
+
+Produced libraries of on-brand graphic assets, including stickers, reaction images, reply cards, and banner sets. These were built for bag workers to pick up and deploy across X, Telegram, and Discord. A coin without a proper asset system is cooked: holders want to shill but have nothing to post. Hundreds of Bullish assets were actively used across CT threads, driving awareness at scale with zero distribution budget.
+
+Skills developed through this ability:
+
+- Community Asset Production
+
+- Bag Worker Enablement
+
+- Viral-Ready Graphic Design
+
+### Sentiment Manufacturing
+
+Domain: growth
+
+Ability description:
+
+The skill is not simply posting content. It is engineering content that shifts how a community feels about a coin at the moment it matters. During the period of active production, Bullish's market cap moved from roughly $6M to $13M. In meme coin markets, sentiment is price. Manufacturing the right sentiment at the right time is a lever with a measurable output on the chart.
+
+Skills developed through this ability:
+
+- CT Sentiment Engineering
+
+- Narrative-Driven Market Influence
+
+- Coordinated Campaign Timing
+
+### Crypto-Native Community Building
+
+Domain: growth
+
+Ability description:
+
+Built and activated communities across X, Telegram, and Discord by finding the right early members, sharing content at the right cadence, and creating moments that make a group feel like a movement. One hundred passionate bag workers will outperform any overpaid KOL. The goal is always to build a community that markets itself.
+
+Skills developed through this ability:
+
+- Community Seeding & Activation
+
+- Organic Amplification
+
+- Retention-Focused Growth
+
+### Cross-Platform Content Editing
+
+Domain: growth
+
+Ability description:
+
+Took long-form source material, including full cryptoon episodes, brand sessions, and raw footage, and cut it into platform-native formats for X clips, TikTok, Instagram Reels, and YouTube Shorts. Each edit is re-paced, re-hooked, and restructured for the platform's specific audience behaviour.
+
+Skills developed through this ability:
+
+- Long-Form to Short-Form Editing
+
+- Platform-Native Formatting
+
+- Organic Distribution Strategy
+
+## Works
+
+Image: [Step 1 — Project to holder mapping: who holds $BULLISH and what does that tell us](<https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-ocrs_1.png>)
+
+Image: [Step 2 — Holder to portfolio mapping: decoding culture through what holders also hold](<https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-ocrs_2.png>)
+
+Image: [Step 3 — Peer project intelligence: building profiles of the ecosystem we live in](<https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-ocrs_3.png>)
+
+Data
+
+### On-Chain Research System
+
+- Mapped holder wallets and behavior to understand their affiliations, culture, and communities
+
+- Profiled what holders own across the ecosystem to reveal our audience's shared narrative and visual language
+
+- Profiled peer projects, including their branding, communities, and positioning, so we understand the ecosystem we operate in
+
+- Compared content releases with chart movements to identify what creates real growth
+
+Image: [Concept visual showing on-chain data, sentiment signals, and news cycles distilled into a cryptoon storyline](<https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-cryptoons_1.png>)
+
+Image: [Defining facts: using sentiment data, meme velocity, narrative shifts and talking points to define our script](<https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-cryptoons_2.png>)
+
+Image: [Turning the script into a storyboard of scenes and then animating them](<https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-cryptoons_3.png>)
+
+Data
+
+### Cryptoons: Analytics-defined Storytelling
+
+- Created cryptoons - short animated films shaped by holder wallet profiling, X sentiment and news narratives
+
+- Profiled on-chain wallet data to understand what holders own, which communities they move in, and which cultural references resonate with them
+
+- Tracked X sentiment and news cycles to shape the world of our characters in a way that matches the world of the holders
+
+[Bullish Degen Cryptoon Episode 1 by Crypto Pandemic](<https://www.youtube.com/watch?v=ITv25lqWsAE>)
+
+Engineering
+
+### Content Engineering & Production
+
+- Built AI workflows for consistent characters, scenes, and visual style — each tailored to the coin’s identity so the output felt native, not generated
+
+- Edited in After Effects with a focus on cinematic pacing with custom soundtrack, color-editing, transitions and voice-acting
+
+Image: [CryptoPandemic brand tool concept — community meme generator with brand-governed parameters](<https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-cbt_1.png>)
+
+Engineering
+
+### Community Brand Tools
+
+- Designed AI-powered, brand-governed generators that let holders create on-brand content within clear creative parameters. Reach compounds while spend does not
+
+- Turned the holder base into a content engine. One hundred passionate bag workers can outperform any overpaid KOL
+
+Image: [$BULLISH market cap chart showing growth from ~$6M to ~$13M peak during CryptoPandemic campaign period](<https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-chart_1.png>)
+
+Growth
+
+### Market Cap and Social Uplift
+
+- Documented an estimated $5M increase in $BULLISH market cap during the active production period
+
+- Drove more than 250K cross-platform impressions and engagements during the campaign
+
+- Recorded more than 5K daily mentions on X at the campaign's peak
+
+Image: [Bullish x Avici Finance collaboration branded graphics](<https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_1.png>)
+
+Image: [Bullish gold price crash meme](<https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_2.png>)
+
+Image: [Bullish x Kraken collaboration branded graphics](<https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_3.png>)
+
+Image: [Bullish S-1 ETF Application Meme](<https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_4.png>)
+
+Image: [Bullish x Solana Foundation collaboration branded graphics](<https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_5.png>)
+
+Image: [Bullish Everything is Fine Meme](<https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_6.png>)
+
+Image: [Bullish x George/eta444 editor meme](<https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_7.png>)
+
+Image: [Bullish x OnlyFans collaboration branded graphics](<https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_8.png>)
+
+Image: [Bullish You Dropped This Crown Meme](<https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_9.png>)
+
+Image: [Bullish on Jetski Meme](<https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_10.png>)
+
+Image: [Bullish Sorcery for Green Candles Meme](<https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_11.png>)
+
+Product
+
+### Bag Worker Asset System
+
+- Produced 50+ branded assets purpose-built for bag workers to deploy across X
+
+- Provided a system of visual assets for easy access and sharing, turning coin holders into content deployers
+
+- Assets were formatted for instant deploy, ready to drop into any X thread or reply
+
+---
+
+Source: https://georgedreemer.com/work/datasafari  (Markdown: https://georgedreemer.com/work/datasafari.md)
+
+# DataSafari — Open-Source Python Library for Data Science
+
+DataSafari is a Python library that simplifies complex data science tasks — compressing exploration, transformation, evaluation, and prediction into a single one-liner API. One import. One function call. One plain-English report.
+
+George built DataSafari to solve a specific problem he watched play out at university: data science curricula built around Stata, R, and SPSS — tools with decades of academic inertia — while Python's better-maintained, faster, and more capable ecosystem went largely untaught. The researcher who understands their domain deeply but doesn't want to spend two hours reading Scipy docs to run a single test was the exact person the existing tooling failed. DataSafari is the attempt to fix that: one import, one function call, one plain-English report.
+
+The library spans four subpackages — Explorer, Transformer, Evaluator, Predictor — mirroring the natural stages of any data workflow. Every function handles its stage end-to-end: automatic statistical method selection, dynamic assumption validation, composite-score model evaluation. Each call returns a plain-language report with findings and actionable recommendations — results that are interpretable, not just computed.
+
+## Experience Snapshot
+
+Data Safari
+
+**Role:** Creator & Maintainer
+
+**Type:** Data Science Python Library
+
+**Links:** [Website](<https://datasafari.dev>)
+ [Docs](<https://datasafari.dev/docs>)
+ [GitHub](<https://github.com/ETA444/datasafari>)
+ [PyPI](<https://pypi.org/project/datasafari/>)
+
+### Highlights
+
+- Architected 4-subpackage API from scratch: Explorer · Transformer · Evaluator · Predictor
+
+- Unified 10 scientific libraries — NumPy, pandas, scikit-learn, scipy, statsmodels & more — into a single one-liner workflow
+
+- Implemented automatic statistical test routing in predict\_hypothesis() — detects variable types, checks assumptions, selects and runs the correct test
+
+- Built composite-score ML model evaluation engine with automated hyperparameter tuning in predict\_ml()
+
+- Implemented statistical assumption checking across normality, variance, dtype, and contingency in Evaluator
+
+- Designed multi-method outlier detection covering Z-score, IQR & Mahalanobis distance in Explorer
+
+- Engineered 250+ pytest tests across 11 test files covering all 4 subpackages
+
+- Built full GitHub Actions CI/CD pipeline: lint · test · security scan · build · docs deploy · publish
+
+- Configured CI matrix to run across Python 3.9, 3.10, 3.11 & 3.12 in parallel
+
+- Secured codebase with Bandit static scanning and SafetyCLI dependency auditing
+
+- Tracked and closed 136 GitHub issues across the full development lifecycle
+
+- Packaged and published to PyPI via an automated Poetry + Twine pipeline
+
+- Automated Sphinx docs build and live-server deployment via rsync over SSH on every push
+
+- Authored full Sphinx documentation site with custom Furo theme at datasafari.dev/docs
+
+- Designed and launched dedicated product website at datasafari.dev
+
+## In Numbers
+
+**11:** Functions shipped
+
+**10:** Libraries unified into one API
+
+**7:** Decisions automated per hypothesis test
+
+**10+:** Pipeline decisions automated per ML run
+
+**666:** Commits pushed
+
+**12:** Automated steps per CI run
+
+**250+:** Pytest tests written
+
+**136:** Issues closed
+
+## Stack
+
+### Code
+
+- Python
+
+- HTML
+
+- CSS
+
+- Bash / Zsh
+
+### Python Libraries
+
+- pandas
+
+- NumPy
+
+- SciPy
+
+- scikit-learn
+
+- scikit-optimize
+
+- category-encoders
+
+- PyTorch
+
+- HuggingFace
+
+- Matplotlib
+
+- seaborn
+
+- Plotly
+
+- statsmodels
+
+### Dev Toolchain
+
+- pytest
+
+- tox
+
+- Sphinx
+
+- Read the Docs
+
+- PyPI
+
+- Poetry
+
+- Setuptools
+
+- GitHub Actions
+
+### Dev Tools & IDEs
+
+- VS Code
+
+- Jupyter
+
+- DataSpell
+
+- Git
+
+- GitHub
+
+### Platforms & Infra
+
+- cPanel
+
+- Namecheap
+
+- Cloudflare
+
+### Design & Creative
+
+- Illustrator
+
+- Photoshop
+
+## Abilities
+
+Ability Domains
+
+- Engineering
+
+- Product
+
+- Growth
+
+- Data
+
+### Python Library Architecture
+
+Domain: engineering
+
+Ability description:
+
+Designed the library from scratch as a four-subpackage system: Explorers, Transformers, Evaluators, and Predictors. The structure reflects the natural data science workflow. Built a consistent public API around a one-liner philosophy, making complex operations available through a single function with sensible defaults and room for deep customisation.
+
+Skills developed through this ability:
+
+- Package Architecture
+
+- API Design
+
+- Open-Source Engineering
+
+### OSS Release Engineering
+
+Domain: engineering
+
+Ability description:
+
+Managed the full open-source release lifecycle, from project scaffolding with Poetry and Setuptools to versioned PyPI distribution. Configured `pyproject.toml`, package metadata, and dependencies to produce reproducible builds that users can install with a single pip command.
+
+Skills developed through this ability:
+
+- Release Management
+
+- Dependency Management
+
+- Distribution Engineering
+
+### Automated Test Suite Design
+
+Domain: engineering
+
+Ability description:
+
+Built a test suite of more than 250 tests covering edge cases, input validation, and statistical output correctness across all subpackages. Configured tox to run the suite across multiple Python environments, helping datasafari work for as many users as possible.
+
+Skills developed through this ability:
+
+- Test Engineering
+
+- Quality Assurance
+
+- Multi-Environment Testing
+
+### CI/CD Pipeline Construction
+
+Domain: engineering
+
+Ability description:
+
+Designed and built a 12-step GitHub Actions pipeline that runs automatically on every push. It performs lint checks, runs the full tox test matrix, and publishes to PyPI when a release is tagged. Closed 136 issues over the life of the project, validating every fix through the pipeline before merge.
+
+Skills developed through this ability:
+
+- Continuous Integration
+
+- Automated Deployment
+
+- Pipeline Design
+
+### Technical Documentation Engineering
+
+Domain: engineering
+
+Ability description:
+
+Built the complete datasafari documentation system, including Sphinx source authoring, an automated build pipeline, and a custom public site at datasafari.dev. Wrote every page of the documentation: installation guides, function references, usage examples, and conceptual explanations for all 11 modules.
+
+Skills developed through this ability:
+
+- Documentation Systems
+
+- Technical Writing
+
+- Developer Experience
+
+### Defensive Python & Input Validation
+
+Domain: engineering
+
+Ability description:
+
+Implemented rigorous input validation and error handling across all 11 public functions. Each accepts DataFrames, column names, and optional parameter combinations that can fail silently in naive code. I built runtime branching logic to detect data types, sample sizes, and edge cases, then route execution to the correct algorithm path. Every error message is written for the caller, not the developer. In an API, the message *is* the UI & UX together.
+
+Skills developed through this ability:
+
+- Defensive Programming
+
+- Runtime Type Handling
+
+- Error Design
+
+### Exploratory Data Analysis Systems
+
+Domain: data
+
+Ability description:
+
+Designed and implemented the full Explorers subpackage. `explore_df()` profiles datasets, `explore_num()` performs numerical analysis including outlier detection via Z-score, IQR, and Mahalanobis distance, and `explore_cat()` profiles categorical data, including Shannon entropy to quantify diversity.
+
+Skills developed through this ability:
+
+- Exploratory Analysis
+
+- Outlier Detection
+
+- Statistical Profiling
+
+### Statistical Assumption Verification
+
+Domain: data
+
+Ability description:
+
+Built the Evaluators subpackage to automate the assumption checks that data scientists typically perform before analysis. `evaluate_normality()` selects an appropriate test, such as Shapiro-Wilk or Anderson-Darling, based on the sample; `evaluate_variance()` dynamically applies Levene's, Bartlett's, or Fligner's test; and `evaluate_contingency_table()` checks whether Chi-square conditions are met.
+
+Skills developed through this ability:
+
+- Assumption Testing
+
+- Statistical Inference
+
+- Dynamic Test Selection
+
+### Automated Hypothesis Testing
+
+Domain: data
+
+Ability description:
+
+`predict_hypothesis()` takes a DataFrame, a grouping variable, and a target variable — and autonomously selects and executes the correct statistical test. The function detects variable types, verifies normality and variance homogeneity, chooses between Chi-square, Fisher's exact, t-test, ANOVA, Mann-Whitney, Kruskal-Wallis, and others, then outputs test statistics, p-values, and a plain-language interpretation.
+
+Skills developed through this ability:
+
+- Hypothesis Testing
+
+- Automated Inference
+
+- Statistical Interpretation
+
+### End-to-End ML Pipeline Automation
+
+Domain: data
+
+Ability description:
+
+`predict_ml()` orchestrates the complete machine learning workflow in one call — automatic preprocessing (scaling, encoding, vectorisation), multi-model evaluation using a user-configurable composite score weighted across multiple metrics, and automated hyperparameter tuning via grid search, random search, or Bayesian optimisation. Returns ranked, tuned models with full performance breakdowns.
+
+Skills developed through this ability:
+
+- ML Pipeline Design
+
+- Hyperparameter Optimisation
+
+- Model Selection
+
+### Data Transformation Engineering
+
+Domain: data
+
+Ability description:
+
+Implemented the Transformers subpackage to handle the full data preparation stage. `transform_num()` covers standardisation, min-max scaling, log and power transforms, winsorisation, and interaction term creation. `transform_cat()` handles label encoding, one-hot encoding, target encoding, and ML-based category cleaning — all chainable and parameterised for reproducible pipelines.
+
+Skills developed through this ability:
+
+- Feature Engineering
+
+- Data Cleaning
+
+- Preprocessing Pipeline Design
+
+### Developer API & UX Design
+
+Domain: product
+
+Ability description:
+
+Built datasafari around a deliberate developer experience philosophy — consistent naming across all 11 functions, predictable argument patterns, and sensible defaults that make the library immediately usable without reading the docs. Complex workflows like full ML pipelines and hypothesis testing are exposed as single function calls, hiding implementation complexity behind a clean interface.
+
+Skills developed through this ability:
+
+- Interface Design
+
+- Developer Experience
+
+- Abstraction Design
+
+### Documentation Site Development
+
+Domain: product
+
+Ability description:
+
+Designed and hand-coded datasafari.dev — the public documentation and landing site for the library. Built with custom HTML, CSS, and JavaScript, the site presents the library's philosophy, quick-start guides, and full API reference in a clean, readable format. Integrated with Sphinx and Read the Docs for automated doc generation, while the landing experience was crafted entirely from scratch.
+
+Skills developed through this ability:
+
+- Web Development
+
+- Information Architecture
+
+- Content Strategy
+
+### Open-Source Product Lifecycle Management
+
+Domain: product
+
+Ability description:
+
+Managed datasafari as a solo product owner, from its initial concept and roadmap through versioned releases, issue tracking, and ongoing maintenance. Closed 136 issues while balancing engineering quality, user-facing documentation, and public discoverability. Built systems that kept the project sustainable and reproducible beyond any single release.
+
+Skills developed through this ability:
+
+- Product Ownership
+
+- Roadmap Execution
+
+- Solo Founding
+
+### Brand Identity & Visual Systems
+
+Domain: growth
+
+Ability description:
+
+Created the complete visual identity for datasafari, including the logo, banner artwork, icon set, and graphic assets used across GitHub, PyPI, and the documentation site. Designed every visual touchpoint a user encounters when discovering the library, giving an independent open-source project a coherent, professional brand from day one.
+
+Skills developed through this ability:
+
+- Brand Design
+
+- Visual Identity
+
+- Graphic Asset Production
+
+## Works
+
+Image: [GitHub Actions showing full CI/CD pipeline overview](<https://www.georgedreemer.com/public_img/datasafari/datasafari-lib_cioverview.jpg>)
+
+Image: [GitHub Actions showing build process steps](<https://www.georgedreemer.com/public_img/datasafari/datasafari-lib_cibuild.jpg>)
+
+Engineering
+
+### CI/CD Pipeline Architecture
+
+- Built a 12-step GitHub Actions pipeline covering linting, the test matrix, security scanning, and conditional PyPI publishing on tagged releases
+
+- Configured tox to run the full pytest suite in parallel across Python 3.9, 3.10, 3.11, and 3.12 on every push
+
+- Automated Sphinx docs build and live deployment to datasafari.dev via rsync over SSH, triggered on every merge to main
+
+- Closed 136 GitHub issues over the development lifecycle, each fix validated through the pipeline before merge
+
+Image: [DataSafari GitHub issues list showing 136 issues with labels, milestones, and status tags across the development lifecycle](<https://www.georgedreemer.com/public_img/datasafari/datasafari-github_1.jpg>)
+
+Image: [DataSafari GitHub milestones page showing structured development phases with issue counts and completion progress](<https://www.georgedreemer.com/public_img/datasafari/datasafari-github_2.jpg>)
+
+Image: [DataSafari GitHub issue showing detailed problem description with context, expected behaviour, and reproduction steps](<https://www.georgedreemer.com/public_img/datasafari/datasafari-github_3.jpg>)
+
+Image: [DataSafari GitHub issue showing solution description with implementation notes and closing commit reference](<https://www.georgedreemer.com/public_img/datasafari/datasafari-github_4.jpg>)
+
+Image: [DataSafari GitHub labels page showing full tagging taxonomy: bug, enhancement, documentation, and domain labels](<https://www.georgedreemer.com/public_img/datasafari/datasafari-github_5.jpg>)
+
+Image: [DataSafari GitHub showing issue linked to milestone and pull request with full traceability](<https://www.georgedreemer.com/public_img/datasafari/datasafari-github_6.jpg>)
+
+Engineering
+
+### Issue Tracking & Milestone System
+
+- Filed and closed 136 GitHub issues across the full development lifecycle — each with a structured problem description, reproduction context, and a written solution note on close
+
+- Organised work into versioned milestones mapping issues to release targets, giving every fix a traceable path from report to merged commit
+
+- Built a full label taxonomy — bug type, domain, priority, and status — so the issue board reads as a professional engineering backlog, not a personal to-do list
+
+Image: [Terminal output showing pytest run: 250+ tests passed](<https://www.georgedreemer.com/public_img/datasafari/datasafari-lib_pytest.jpg>)
+
+Engineering
+
+### Test Suite & Quality Gates
+
+- Wrote 250+ pytest tests across 11 test files, covering edge cases, input validation, and statistical output correctness for all four subpackages
+
+- Integrated Bandit for static security scanning and SafetyCLI for dependency vulnerability auditing — both run automatically on every push
+
+- Configured tox to enforce test-passing across all supported Python versions before any release is tagged
+
+Image: [DataSafari library structure showing four subpackages: explorer, transformer, evaluator, predictor](<https://www.georgedreemer.com/public_img/datasafari/datasafari-lib_subpackages.jpg>)
+
+Engineering
+
+### 4-Subpackage Library Architecture
+
+- Designed the full package structure from scratch: `explorer/`, `transformer/`, `evaluator/`, `predictor/` — each a self-contained module with its own public API surface
+
+- Every public function follows a consistent interface contract: DataFrame in, structured report out — one-liner by design, full depth available via parameters
+
+- Configured Poetry, Setuptools, and `pyproject.toml` for reproducible builds and one-command PyPI distribution
+
+Image: [explore\_num output showing structured report with outlier detection, normality testing, and multicollinearity analysis](<https://www.georgedreemer.com/public_img/datasafari/datasafari-lib_explorenum.jpg>)
+
+Data
+
+### Automated EDA — `explore_num()`
+
+- Single function call produces full numerical profiling: outlier detection via Z-score, IQR, and Mahalanobis distance, normality testing, skewness, kurtosis, and multicollinearity
+
+- Output is a structured plain-English report with findings and actionable recommendations — not raw numbers
+
+- Automatically selects the correct statistical method based on sample size and data characteristics at runtime
+
+Image: [predict\_ml output showing ranked model comparison table with composite scores](<https://www.georgedreemer.com/public_img/datasafari/datasafari-lib_predictml.jpg>)
+
+Data
+
+### End-to-End ML Pipeline — `predict_ml()`
+
+- One call handles preprocessing, multi-model training, composite-score-based evaluation weighted across user-configurable metrics, and ranked output
+
+- Automated hyperparameter tuning via grid search, random search, or Bayesian optimisation — user selects strategy, library handles execution
+
+- 10 pipeline decisions automated per ML run: encoding, scaling, model selection, tuning strategy, evaluation weighting, and recommendation generation
+
+Image: [DataSafari website landing page at datasafari.dev showing slogan, code animation and branding artwork](<https://www.georgedreemer.com/public_img/datasafari/datasafari-website_1.jpg>)
+
+Image: [DataSafari website showing package philosophy with clear parallel between data science workflow and library subpackage structure](<https://www.georgedreemer.com/public_img/datasafari/datasafari-website_5.jpg>)
+
+Image: [DataSafari website showing installation instructions](<https://www.georgedreemer.com/public_img/datasafari/datasafari-website_2.jpg>)
+
+Image: [DataSafari website showing simple usage example and documentation prompt for further exploration](<https://www.georgedreemer.com/public_img/datasafari/datasafari-website_3.jpg>)
+
+Image: [DataSafari documentation welcome page at datasafari.dev/docs in light mode, showing quick-start guide and function reference links](<https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_0.jpg>)
+
+Image: [DataSafari documentation welcome page at datasafari.dev/docs in dark mode, showing quick-start guide and function reference links](<https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_1.jpg>)
+
+Image: [DataSafari documentation showing installation instructions and pip install command](<https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_6.jpg>)
+
+Image: [DataSafari documentation quick start guide showing explorers subpackage overview and example usage](<https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_2.jpg>)
+
+Image: [DataSafari documentation quick start guide showing transformers subpackage overview and example usage](<https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_3.jpg>)
+
+Image: [DataSafari documentation quick start guide showing evaluators subpackage overview and example usage](<https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_4.jpg>)
+
+Image: [DataSafari documentation quick start guide showing predictors subpackage overview and example usage](<https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_5.jpg>)
+
+Image: [DataSafari quick start guide showing example usage of one-line hypothesis testing function with automatic test selection and output interpretation](<https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_7.jpg>)
+
+Image: [DataSafari quick start guide showing example usage of one-line predict\_ml function with automatic preprocessing, model selection, and hyperparameter tuning](<https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_8.jpg>)
+
+Product
+
+### Website & Documentation
+
+- Hand-coded the full landing site at datasafari.dev — custom HTML, CSS, and JavaScript, designed from scratch to communicate the library's philosophy and quick-start path
+
+- Authored every page of the Sphinx-generated API docs: installation guides, function references, usage examples, and conceptual explanations for all 11 modules
+
+- Integrated automated docs build and live-server deployment into the CI/CD pipeline — docs update on every push to main without manual intervention
+
+Image: [DataSafari github repository banner showing logo and tagline 'Complex Workflows, Simple Solutions.' on a desert landscape background](<https://camo.githubusercontent.com/8dd84d085f9831fccd31bebe8e468cb7eb3d767b798dd706a4c8ae9801d9838f/68747470733a2f2f7777772e646174617361666172692e6465762f646f63732f5f7374617469632f7468756d62732f64732d6272616e64696e672d7468756d622d6d61696e2d7765622e706e67>)
+
+Image: [DataSafari light and dark mode logo variations on clean backgrounds](<https://www.georgedreemer.com/public_img/datasafari/datasafari-branding_2.jpg>)
+
+Image: [DataSafari mini logo used for favicon and library icon, on coding background](<https://www.georgedreemer.com/public_img/datasafari/datasafari-branding_3.jpg>)
+
+Growth
+
+### Brand Identity & Open-Source Presence
+
+- Created the complete DataSafari visual identity from scratch: logo, banner artwork, icon set, and all graphic assets across GitHub, PyPI, and the documentation site
+
+- Published to PyPI with automated versioning and structured release notes, making the library publicly installable via `pip install datasafari`
+
+- Maintained a professional open-source presence: README, changelog, issue labels, and a coherent brand that makes a solo-built library read as a production-grade tool
+
+## In Depth
+
+#### Built for the Professor Who Doesn't Have Time to Learn Python
+
+At RUG, the standard data science curriculum ran on Stata, R, and SPSS. These tools have decades of academic inertia behind them, not necessarily because they are better, but because professors mastered them before Python became a serious data science platform and have not had time to switch. As a result, students graduate knowing tools that industry has largely moved beyond, while Python's better-maintained, faster, free, and more capable ecosystem goes untaught. Professors and other departmental staff have too much on their hands for a full curriculum redesign.
+
+DataSafari started as a direct response to that gap. The hypothesis was simple: bring Python's best statistical and ML libraries together under a single interface that requires no configuration and produces plain-English output. That removes the adoption barrier for the person who most needs it: a researcher who knows their field, understands what a normality test is, but doesn't want to spend two hours reading `scipy.stats` documentation to run one. One import, one function call, and one readable report.
+
+The iPhone analogy is imperfect but directionally useful. R is like Android: powerful, flexible, and beloved by people willing to configure it. DataSafari aims to provide an iOS-like layer on top of Python's underlying ecosystem.
+
+That philosophy drove every product decision. It's why `method='all'` is the default rather than a required argument. It's why output is printed in plain English with interpretive tips instead of being returned as a raw matrix. It's why the function names are verbs such as `explore`, `transform`, `evaluate`, and `predict`. They describe what the user wants to do, not what the statistics are called. The target user was never a Python expert. It was someone who needed to do real data science work without letting the tooling become the hardest part of the day.
+
+#### Input Engineering: Ask Less, Do More
+
+The hardest design constraint in DataSafari was self-imposed: a user should be able to call any function with just a DataFrame and a column list and get something genuinely useful back. No configuration, statistical expertise, or output parsing should be required. The library decides the rest.
+
+Making that work means every function carries a significant amount of internal decision-making that the user never sees. `explore_num()` takes a single `method` parameter that defaults to `'all'` — which means it runs correlation analysis, distribution analysis, three separate outlier detection algorithms (Z-score, IQR, and Mahalanobis distance), and a multicollinearity check in one call. The user passed two arguments. The library ran seven analyses and printed a structured plain-English report. That ratio — minimal input to maximal output — is the whole product.
+
+But the API was also designed not to limit experts. Every function offers a full set of parameters for users who want to go deeper: `method='outliers_iqr'` to isolate a single analysis, `output='return'` to get structured DataFrames instead of printed text, and `threshold_z=2` to tighten the Z-score cutoff for a stricter definition of an outlier. The one-liner is the entry point; the parameters are the escape hatches. Designing that layered experience, where simple stays simple and complexity remains possible, required thinking through every plausible user intent before writing a single line of logic, then ensuring the implementation served them all without conflict.
+
+#### Error Handling as User Experience
+
+A Python traceback is the last thing a researcher wants to see at 11pm before a deadline. Every public function in DataSafari raises structured, specific errors before it does any computation — and the error messages are written for the person calling the function, not for the developer who wrote it.
+
+The error handling layer sits entirely above the statistical logic. Before `explore_num()` touches a single column, it checks: is `df` actually a DataFrame? Is `numerical_variables` a list? Are the strings in that list real column names that exist in `df`? Are those columns actually numerical? Is the list non-empty? Is the DataFrame non-empty? Is `method` one of the seven valid options? Is `output` one of the two valid options? Is `threshold_z` a number? That's nine distinct failure modes caught and surfaced with a clear message and a correct-usage example — before a single line of analysis runs. Every one of those checks exists because someone, at some point during development and testing, made exactly that mistake.
+
+The discipline behind this is that a library function has no UI. The error message *is* the UI. If a user passes a string where a list is expected and gets back `TypeError: 'str' object is not iterable`, that's a failed product moment — they have to reverse-engineer what went wrong from a generic Python exception. If they get back `"explore_num(): The numerical_variables parameter must be a list of variable names. Example: var_list = ['var1', 'var2', 'var3']"`, they fix it in ten seconds and move on. That difference is entirely a writing problem, not a coding one, and it took as much time to get right as the statistical methods themselves.
+
+#### The Hidden 80%: What It Actually Takes to Ship a Python Package
+
+The data science code, including the statistical methods, ML pipeline, and EDA logic, represents perhaps 20% of what it took to ship DataSafari. The other 80% consists of infrastructure decisions that tutorials rarely cover and that took weeks of research to get right.
+
+The production configuration alone spans a dozen files beyond the package source itself:
+
+- `pyproject.toml:` unified build, dependency, and tool configuration via Poetry and Setuptools
+
+- `bumpversion.cfg:` automated semantic versioning with bump2version, wired to the CI pipeline to auto-increment on tagged releases
+
+- `tox.ini:` multi-environment test runner across Python 3.9 to 3.12, so no version-specific regression ships undetected
+
+- `setup.cfg` and `MANIFEST.in:` package inclusion rules to control exactly what ends up in the wheel and sdist
+
+- `pyproject.toml:` Bandit config block, with the static security scan tuned to ignore specific false-positive patterns in the codebase
+
+- `LICENSE:` GPL-3.0, chosen deliberately: use it freely, but derivatives stay open
+
+- `Sphinx's conf.py:` the full documentation build configuration, including the Napoleon extension for Google-style docstrings, the Furo theme, and cross-reference resolution
+
+Every one of those files required learning a tool I hadn't used before, reading its documentation, making it work with the others, and then making the entire stack reproducible in GitHub Actions. The CI pipeline didn't run cleanly on the first push or even the tenth. Over the development lifecycle, 136 issues were filed and closed, most of them documenting this kind of integration friction and its solution.
+
+Documentation was another substantial layer of the work, especially the documentation users encounter inside the library: the `docstrings`. Every public function in DataSafari has a complete docstring with typed parameters, return types, raised exceptions, and a working code example that produces real output. More than 20 functions, including non-public ones, are documented to the point that `help(ds.explore_num)` gives a new user everything needed to use the function correctly without opening a browser. Writing that documentation took longer than writing some of the functions themselves.
+
+---
+
+Source: https://georgedreemer.com/work/dreemcorp  (Markdown: https://georgedreemer.com/work/dreemcorp.md)
+
+# DREEMCORP — Creative Studio & Venture Lab
+
+DREEMCORP is a creative studio specialized in photo and video editing, graphic design, personal branding, and social media strategy. George has worked with 12+ clients and brands and completed 100+ creative and marketing assignments.
+
+The content across clients has been diverse, ranging from long-form YouTube edits to short-form TikTok and Instagram content, and from brand identity packages to social media strategy and consulting. Some of the clients include entertainers and athletes such as Najib Amhali, Amira Tahri, Alistair Overeem, and Frenna, alongside consumer brands like 92Minerals, Immersive Studios, and CoolSouls.
+
+Across all platforms, these creations have reached 1M+ views and 100K+ likes and comments. George had the pleasure of working alongside visionary Younes Belguebli of YBI Media, an award-winning marketing and media agency in the Netherlands.
+
+## Experience Snapshot
+
+DREEMCORP
+
+**Role:** Founder & Creative Director
+
+**Type:** Creative Studio & Venture Lab
+
+**Location:** Europe / Online
+
+**Links:** [Direct Contact](<https://www.dreemcorp.com>)
+ [Video Archive](<https://www.youtube.com/@dreemcorp>)
+
+### Highlights
+
+- Edited long-form YouTube vlogs, pacing shots and story beats for viewer retention
+
+- Edited short-form Reels & TikToks with custom transitions, color correction & SFX
+
+- Cut promotional and commercial spots for consumer brands
+
+- Produced music visualizers with custom animation and SFX
+
+- Mixed and mastered audio for vlogs and music content in Adobe Audition
+
+- Designed full personal-branding packages — profile art, channel covers & outros — for clients like Amira Tahri
+
+- Designed logos and brand assets in Adobe Illustrator
+
+- Delivered content for 12+ clients & brands, including Najib Amhali, Amira Tahri, Alistair Overeem & Frenna
+
+- Helped launch and shape the early content strategy of multiple client YouTube channels
+
+## In Numbers
+
+**12+:** Clients & Brands served
+
+**100+:** Creative & Marketing works
+
+**1M+:** Views
+
+**100K+:** Likes & Comments
+
+## Stack
+
+### Video & Editing
+
+- Premiere Pro
+
+- After Effects
+
+- Audition
+
+- DaVinci Resolve
+
+### Design & Creative
+
+- Illustrator
+
+- Photoshop
+
+- Canva
+
+- Picsart
+
+### Platforms & Distribution
+
+- YouTube
+
+- Instagram
+
+- TikTok
+
+### Marketing & Growth
+
+- Google Analytics
+
+- Meta Ads
+
+- TikTok Ads
+
+- YouTube Studio
+
+- Mailchimp
+
+- Buffer
+
+## Abilities
+
+Ability Domains
+
+- Engineering
+
+- Product
+
+- Growth
+
+- Data
+
+### High-Volume Footage Triage
+
+Domain: engineering
+
+Ability description:
+
+Cut raw multicam footage — often 6+ hours per project — down to a single 15–20 minute narrative, managing 700+ individual timeline edits along the way.
+
+Skills developed through this ability:
+
+- Non-Linear Editing
+
+- Footage Triage
+
+- Timeline Management
+
+### Audio Post-Production
+
+Domain: engineering
+
+Ability description:
+
+Cleaned dialogue, balanced music beds, and layered SFX across every delivery — leveling, noise reduction, and mixing done by ear, not preset.
+
+Skills developed through this ability:
+
+- Audio Mixing
+
+- Noise Reduction
+
+- Sound Design
+
+### Color Correction & Grading
+
+Domain: engineering
+
+Ability description:
+
+Matched exposure and white balance across mixed-lighting, multicam footage, then graded for a consistent visual tone across an entire edit.
+
+Skills developed through this ability:
+
+- Color Correction
+
+- Color Grading
+
+- Visual Consistency
+
+### Codec & Export Pipeline Management
+
+Domain: engineering
+
+Ability description:
+
+Handled footage across mixed codecs, frame rates, and resolutions, then exported per-platform deliverables tuned for bitrate, aspect ratio, and compression artifacts.
+
+Skills developed through this ability:
+
+- Video Encoding
+
+- Format Optimization
+
+- Export Pipeline Management
+
+### Custom Motion & Transitions
+
+Domain: engineering
+
+Ability description:
+
+Hand-built transitions, motion graphics, and title cards from scratch instead of templated presets — designed frame-by-frame to match each project's tone.
+
+Skills developed through this ability:
+
+- Motion Design
+
+- Custom Transitions
+
+- Visual Branding
+
+### Narrative Structuring from Raw Footage
+
+Domain: product
+
+Ability description:
+
+Built pacing, sequencing, and emotional arc from unscripted raw footage with no shot list or story outline provided — the story was found, not handed over.
+
+Skills developed through this ability:
+
+- Story Structuring
+
+- Narrative Pacing
+
+- Creative Direction
+
+### Branding Packages & Visual Identity
+
+Domain: product
+
+Ability description:
+
+Designed full branding packages — thumbnails, caption styling, lower thirds, and channel-consistent visual language — beyond the edit itself.
+
+Skills developed through this ability:
+
+- Brand Visual Systems
+
+- Thumbnail Design
+
+- Caption Design
+
+### Multi-Platform Content Adaptation
+
+Domain: growth
+
+Ability description:
+
+Recut a single footage set into long-form YouTube, vertical Shorts, Reels, and TikTok — each edited for that platform's native pacing, not resized from one master cut.
+
+Skills developed through this ability:
+
+- Multi-Platform Editing
+
+- Vertical-First Editing
+
+- Platform Optimization
+
+### Creative Delivery at Scale
+
+Domain: growth
+
+Ability description:
+
+Delivered 100+ creative assignments across 12+ clients — musicians, athletes, and brands — managing client feedback loops and deadlines end to end.
+
+Skills developed through this ability:
+
+- Client Delivery
+
+- Production Pipeline Management
+
+- Deadline Management
+
+## Works
+
+[Vlog edited for Amira Tahri's collaboration with Najib Amhali - filmed by Younes Belguebli at Immersive Studios in The Hague, Netherlands](<https://www.youtube.com/watch?v=CwlsSpUbkAY>)
+
+Engineering
+
+### Long-Form YouTube Editing
+
+- Cut multi-hour raw footage into cohesive long-form vlogs for Amira Tahri, including this collab with comedian Najib Amhali, Dutch Performante & Numidia
+
+- Built custom transitions from scratch, as well as used established plugins, such as those by MotionBro
+
+- Handled color correction and SFX across every long-form delivery
+
+- Mixed and mastered audio for consistent and easy to understand speech, as well as music to keep pace and engagement
+
+[Short-form video showing BTS and promotional content for CoolSouls clothing brand in Sofia, Bulgaria](<https://www.youtube.com/watch?v=Xp_beKsBz_g>)
+
+Engineering
+
+### Short-Form Reels & TikTok Editing
+
+- Shot and edited photoshoot BTS for CoolSouls
+
+- Edited short-form pieces for Nabil Haryouli
+
+- Produced a run of shorts for Amira Tahri — some as vlog excerpts, others standalone with custom SFX
+
+- Fast-turnaround color correction and SFX tuned for vertical, sub-60-second formats
+
+[Video outro edited for Amira Tahri's YouTube Channel](<https://www.youtube.com/watch?v=GBXdeckga3Y>)
+
+Product
+
+### Personal & Social Media Branding
+
+- Designed a full personal-branding package for Amira Tahri — profile pictures, channel cover, and animated intro/outro
+
+- Extended the same visual identity across YouTube, Instagram, and TikTok for a consistent cross-platform presence
+
+- Built a recognizable branding pattern — color, logo, motion & messaging
+
+Image: [Immersive Studios x Ta Joela celebrity workout collaboration, shot by Younes Belguebli in Immersive Studio Gym in The Hague, The Netherlands](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ads_1.jpg>)
+
+Image: [Immersive Studios Leg workout class ad, shot by Younes Belguebli in Immersive Studio Gym in The Hague, The Netherlands](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ads_2.jpg>)
+
+Image: [Fitnessfloors.nl showcase building process of Sin City Boxing Gym's interior, shot by Younes Belguebli in Amsterdam, The Netherlands](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ads_3.jpg>)
+
+Image: [BerraCuts Barbershop promotional video visited by rapper Frenna, shot by Younes Belguebli in The Hague, The Netherlands](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ads_4.jpg>)
+
+Growth
+
+### Commercial & Brand Ad Spots
+
+- Edited an ad for 92Minerals x Ertugrul Bayrak's "Ramadan Special" product promo
+
+- Created various video ads for Immersive Studios for workout classes, including the collaboration with TaJoela
+
+- Edited a video ad for BerraCuts Barbershop of The Hague
+
+- Edited a video ad for FitnessFloors.nl x SinCity Boxing Amsterdam
+
+[Music visualizers for anabolic musick channel, produced by George Dreemer, music by Tevvez](<https://www.youtube.com/watch?v=yQDT8a8HjZ0>)
+
+Engineering
+
+### Animated Visualizers & Audio Mixing
+
+- Produced custom animated visualizers for the anabolic musick channel
+
+- Synced motion graphics and SFX to track structure and beat timing
+
+- Curated and mixed audio tracks from Epidemic Sound into themed playlists
+
+Image: [Rich Piana music mix thumbnail for anabolic musick](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_1.png>)
+
+Image: [OAF1 music mix thumbnail for anabolic musick](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_2.jpg>)
+
+Image: [Zyzz and Tevvez music mix thumbnail for anabolic musick](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_3.jpg>)
+
+Image: [Primeagen Drum and Bass music mix for coding thumbnail for anabolic musick](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_4.png>)
+
+Image: [DJ Trumpstep Donald Trump Dubstep music mix thumbnail for anabolic musick](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_5.png>)
+
+Image: [Steve Jobs music mix for coding thumbnail for anabolic musick](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_6.png>)
+
+Image: [Elon Musk Downtempo music mix thumbnail for anabolic musick](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_7.png>)
+
+Image: [Storror Parkour Drum and Bass music mix thumbnail for anabolic musick](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_8.png>)
+
+Image: [Zyzz Trance gym music mix thumbnail for anabolic musick](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_9.png>)
+
+Image: [Connor Murphy Trance gym music mix thumbnail for anabolic musick](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_10.png>)
+
+Image: [Dark Metal gym music mix thumbnail for anabolic musick](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_11.png>)
+
+Image: [Heavy metal gym music mix thumbnail for anabolic musick](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_12.png>)
+
+Image: [Dubstep gym music mix thumbnail for anabolic musick](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_13.png>)
+
+Image: [Chestbrah vocal trance gym music mix thumbnail for anabolic musick](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_14.png>)
+
+Image: [2hollis music mix thumbnail for anabolic musick](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_15.png>)
+
+Image: [TrenTwins heavy metal gym music mix thumbnail for anabolic musick](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_16.png>)
+
+Growth
+
+### YouTube Channel Development
+
+- Built the anabolic musick channel from scratch — branding, upload structure, and content strategy
+
+- Wrote consistent titles, descriptions, and keyword tags across every upload for discoverability
+
+- Edited eye-catching thumbnails with consistent branding and messaging
+
+## On Instagram
+
+- [Instagram post](<https://www.instagram.com/p/COfy4XHBOa0/?utm_source=ig_embed&utm_campaign=loading>)
+
+  Immersive Studios × Ta Joela — celebrity workout class ad, shot by Younes Belguebli in The Hague
+- [Instagram post](<https://www.instagram.com/reel/CLw5XlfJbhQ/?utm_source=ig_embed&utm_campaign=loading>)
+
+  Amira Tahri — Instagram reel edit
+- [Instagram post](<https://www.instagram.com/p/CPJfbcdh2ad/?utm_source=ig_embed&utm_campaign=loading>)
+
+  Immersive Studios — gym booty class promo, shot by Younes Belguebli in The Hague
+- [Instagram post](<https://www.instagram.com/p/CPpvicZllW0/?utm_source=ig_embed&utm_campaign=loading>)
+
+  FitnessFloors.nl × SinCity Boxing Amsterdam — gym build-out promo, shot by Younes Belguebli
+- [Instagram post](<https://www.instagram.com/p/COpu2ygDhkx/?utm_source=ig_embed&utm_campaign=loading>)
+
+  BerraCuts Barbershop, Den Haag — promo ad, visited by rapper Frenna, shot by Younes Belguebli
+
+## Content Archive
+
+Image: [Amira Tahri](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_1.jpg>)
+
+### Amira Tahri
+
+Vlogs & Shorts
+
+- Vlog with Dutch Performante
+
+- Sparring with Dutch Performante
+
+- Amira shadow boxing
+
+- Skit with Dutch Performante
+
+- Vlog with Numidia
+
+- Vlog with Najib Amhali
+
+- Boxing short
+
+- HIIT on the beach
+
+- Channel intro/outro
+
+Image: [CoolSouls Logo](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_2.jpg>)
+
+### CoolSouls
+
+Shorts
+
+- Photoshoot BTS I
+
+- Photoshoot BTS II
+
+- Photoshoot BTS III
+
+- Photoshoot BTS IV
+
+- Photoshoot BTS V
+
+- Photoshoot BTS VI
+
+Image: [anabolic musick](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_4.jpg>)
+
+### anabolic musick
+
+Music Visualizers
+
+- Zyzz Tribute Mix (feat. Tevvez & Chestbrah)
+
+- oaf1 Discography Mix
+
+- ThePrimeagen Coding Mix (Drum and Bass)
+
+- 2hollis Deleted Discography Mix
+
+- Tren Twins Tribute Mix (Heavy Metal)
+
+- Donald Trump Meme Mix (Dubstep)
+
+- Steve Jobs Tribute (Coding Mix)
+
+- Terry Davis Tribute (Psytrance Mix)
+
+- STORROR Tribute (Drum & Bass Mix)
+
+- Elon Musk Tribute (Downtempo Mix)
+
+- Anabolic Aliens Club Meme (Dubstep Mix)
+
+Image: [Nabil Haryouli](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_3.jpg>)
+
+### Nabil Haryouli
+
+Shorts
+
+- Gym workout
+
+- Outdoor workout
+
+- Outdoor workout II
+
+Image: [YouTube Logo](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_5.jpg>)
+
+### Various Channels
+
+Outros
+
+- CryptoPandemic outro
+
+- The Chyna Plug outro
+
+- China Dash Authority outro
+
+- Spooli Snail outro
+
+- Internet Scrapyard outro
+
+Image: [Immersive Studios Logo](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_6.jpg>)
+
+### Immersive Studios
+
+Commercials
+
+- Booty Class Commercial
+
+- TaJoela — DRILLUH Song Promo
+
+Image: [92Minerals Logo](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_7.jpg>)
+
+### 92Minerals
+
+Commercials
+
+- Ramadan Commercial
+
+- [92Minerals commercial featuring Alistair Overeem, private on request](<mailto:penpal@dreemcorp.com?subject=Private%20request%3A%2092Minerals%20x%20Alistair%20Overeem%20commercial>)
+
+  Commercial with Alistair Overeem (private)
+
+Image: [Sully Bull](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_8.jpg>)
+
+### Sully Bull
+
+Vlogs
+
+- [Day in the life of Sully Bull, pro MMA fighter, private on request](<mailto:penpal@dreemcorp.com?subject=Private%20request%3A%20Sully%20Bull%20vlog%201>)
+
+  Day in the life I (private)
+- [Day in the life of Sully Bull, pro MMA fighter, part two, private on request](<mailto:penpal@dreemcorp.com?subject=Private%20request%3A%20Sully%20Bull%20vlog%202>)
+
+  Day in the life II (private)
+
+Image: [Fitness Floors Logo](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_9.jpg>)
+
+Image: [Berra Cuts Logo](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_10.jpg>)
+
+### Various Companies
+
+Commercials
+
+- Fitness Floor NL × SinCity Boxing
+
+- Berra Cuts ft. Frenna
+
+Image: [China Dash Authority Logo](<https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_13.jpg>)
+
+### China Dash Authority
+
+Various Content
+
+- Scooter fall, oncoming car
+
+- BMW flips highway crash
+
+- Truck vs. scooter, cop nearby
+
+- Car through pedestrian walkway
+
+- Zhengzhou flood I
+
+- Daughter falls, scooter intersection
+
+- Deadly empty-intersection accident
+
+- Zhengzhou flood II
+
+- Driver hits bike race
+
+---
+
+Source: https://georgedreemer.com/work/skipschoolmakemoney  (Markdown: https://georgedreemer.com/work/skipschoolmakemoney.md)
+
+# SkipSchoolMakeMoney — Streetwear Brand
+
+SkipSchoolMakeMoney (SSMM) was a streetwear brand born out of evening shifts at the Hampshire College media lab — no funding, no team, no formula. It grew from one hand-drawn logo into a cult-like following spanning three continents & hundreds of orders per collection.
+
+SSMM was never just a clothing line. It was underground streetwear built on story, community, and relentless self-taught hustle — design, manufacturing, marketing, and logistics, all run by one person with a vision.
+
+George designed and released 20+ collections, pioneered viral marketing methods amassing 12,000+ followers, and managed manufacturing pipelines spanning the US, UK, and China — earning recognition awards from startup accelerators and putting SSMM on the map of underground streetwear, music and meme culture.
+
+## Experience Snapshot
+
+SkipSchoolMakeMoney
+
+**Role:** Founder, Designer & Operator
+
+**Type:** Streetwear Apparel Brand
+
+**Location:** Amherst, MA, United States
+
+**Links:** [Official Webstore](<https://www.skipschoolmakemoney.com>)
+ [Instagram Page](<https://www.instagram.com/skipschoolmakemoney>)
+
+### Highlights
+
+- Designed 20+ collections, amounting to 200+ individual designs
+
+- Directed 25+ photo & video shoots across 6 countries — collaborating with photographers, models, and musicians
+
+- Grew Instagram to 12,000+ followers at peak, driving 100s comments and 1000s of likes/post
+
+- Pioneered guerilla Instagram growth strategies — including meme marketing, viral giveaways and influencer collaborations
+
+- Ran paid ad campaigns across Instagram, Twitter, YouTube, and Snapchat
+
+- Built and grew multiple Mailchimp mailing lists to 1000s of subscribers
+
+- Negotiated promotional deals with influencers, media, and creators
+
+- Managed manufacturing across the US West and East coasts, later expanding to the UK and China
+
+- Organized supply chain, packaging, and shipping to serve customers across 3 continents
+
+- Built 3 complete redesigns of the Shopify storefront end-to-end
+
+- Built 2 complete redesigns of the Squarespace storefront end-to-end
+
+- Integrated manufacturing and shipping APIs to automate order fulfillment and tracking
+
+- Streamlined customer communications for abandoned carts, post-purchase follow-ups, and product launches
+
+- Set up and maintained Shopify, Mailchimp, and Google Analytics for marketing, sales, and analytics
+
+- Won the VVM Startup Accelerator Award, earning funding, mentorship, and resources
+
+- Won the Grinspoon Recognition Award for Entrepreneurial Spirit
+
+## In Numbers
+
+**200+:** Designs released
+
+**12K+:** Instagram followers at peak
+
+**100K+:** Engagements generated
+
+**1000+:** Orders fulfilled
+
+## Stack
+
+### Design & Creative
+
+- Illustrator
+
+- Photoshop
+
+- After Effects
+
+- DaVinci Resolve
+
+- Premiere Pro
+
+- Audition
+
+### Marketing & Growth
+
+- Google Analytics
+
+- Meta Ads
+
+- Snapchat Ads
+
+- Twitter Ads
+
+- YouTube Studio
+
+- TikTok Ads (Beta)
+
+- Mailchimp
+
+- Buffer
+
+### Web & Commerce
+
+- Shopify
+
+- Squarespace
+
+### Code
+
+- HTML
+
+- CSS
+
+## Abilities
+
+Ability Domains
+
+- Engineering
+
+- Product
+
+- Growth
+
+- Data
+
+### Brand & Collection Design
+
+Domain: product
+
+Ability description:
+
+Built the SSMM identity from a single front-and-back logo into a full underground streetwear universe, designing and releasing 20+ collections that grew into several hundred individual graphics, garments, and visual concepts. Every drop had to feel culturally sharp, visually distinct, and native to the world of underground fashion, music, and meme culture.
+
+Skills developed through this ability:
+
+- Apparel Graphic Design
+
+- Collection Development
+
+- Production Coordination
+
+### Viral Growth & Audience Building
+
+Domain: growth
+
+Ability description:
+
+Grew SSMM to 12,000+ Instagram followers at peak by pioneering aggressive organic growth strategies built on meme marketing, giveaways, influencer collaborations, and constant experimentation with what actually triggered engagement. The result was a highly active audience that drove hundreds to thousands of comments per post, thousands of likes, and real demand across multiple drops.
+
+Skills developed through this ability:
+
+- Organic Growth Strategy
+
+- Meme & Culture Marketing
+
+- Campaign Automation
+
+### Influencer, Music & Culture Positioning
+
+Domain: growth
+
+Ability description:
+
+Built relationships across the underground creative scene, working with musicians, influencers, photographers, and content creators whose audiences aligned with the brand’s identity. Collaborations and organic placements with names like Lil Peep, Pouya, Fat Nick, CA$HRINA, Lil Johnnie, and others helped position SSMM inside the cultural conversation rather than outside it as just another apparel shop.
+
+Skills developed through this ability:
+
+- Influencer Outreach
+
+- Partnership Development
+
+- Cultural Positioning
+
+### Creative Direction & Content Production
+
+Domain: product
+
+Ability description:
+
+Directed 25+ photo and video shoots across six countries, coordinating photographers, models, locations, styling, and deliverables to give each collection a world around it. This turned SSMM from a product catalog into a lifestyle brand with visuals strong enough to travel across feeds, campaigns, and fan communities.
+
+Skills developed through this ability:
+
+- Production Coordination
+
+- Photo & Video Editing
+
+- Product Photography
+
+- Campaign Asset Production
+
+### Storefronts, Fulfillment & Commerce Ops
+
+Domain: engineering
+
+Ability description:
+
+Built and rebuilt the storefront stack across Squarespace and Shopify, creating five end-to-end site redesigns while handling the operational layer behind the scenes. On the back end, I coordinated manufacturing across the US East and West coasts before expanding into the UK and China, and managed packaging, shipping, and customer fulfillment for orders reaching three continents.
+
+Skills developed through this ability:
+
+- E-commerce Operations
+
+- Fulfillment Coordination
+
+- Customer Experience Management
+
+### Campaign Tracking & Iteration
+
+Domain: data
+
+Ability description:
+
+Used platform analytics, mailing lists, storefront behavior, and campaign feedback loops to make SSMM more intelligent over time — what to launch, how to message it, where to push it, and what audiences were responding. That included maintaining Shopify, Mailchimp, and Google Analytics as the decision layer behind launches, promotions, post-purchase communication, and customer retention.
+
+Skills developed through this ability:
+
+- Performance Analytics
+
+- Feedback Loop Optimization
+
+- Campaign Strategy
+
+## Works
+
+Image: [SkipSchoolMakeMoney collection graphics and apparel designs](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_1.jpg>)
+
+Image: [SkipSchoolMakeMoney collection graphics and apparel designs](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_2.jpg>)
+
+Image: [SkipSchoolMakeMoney collection graphics and apparel designs](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_12.jpg>)
+
+Image: [SkipSchoolMakeMoney collection graphics and apparel designs](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_6.jpg>)
+
+Image: [SkipSchoolMakeMoney collection graphics and apparel designs](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_15.jpg>)
+
+Image: [SkipSchoolMakeMoney collection graphics and apparel designs](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_16.jpg>)
+
+Image: [SkipSchoolMakeMoney collection graphics and apparel designs](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_9.jpg>)
+
+Image: [SkipSchoolMakeMoney collection graphics and apparel designs](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_10.jpg>)
+
+Image: [SkipSchoolMakeMoney collection graphics and apparel designs](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_11.jpg>)
+
+Image: [SkipSchoolMakeMoney collection graphics and apparel designs](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_3.jpg>)
+
+Image: [SkipSchoolMakeMoney collection graphics and apparel designs](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_7.jpg>)
+
+Image: [SkipSchoolMakeMoney collection graphics and apparel designs](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_8.jpg>)
+
+Image: [SkipSchoolMakeMoney collection graphics and apparel designs](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_14.jpg>)
+
+Image: [SkipSchoolMakeMoney collection graphics and apparel designs](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_13.jpg>)
+
+Product
+
+### Collection Design System
+
+- Designed and released 20 collections, amounting to roughly 200 individual designs across the brand's lifetime
+
+- Built SSMM from a single logo into a full underground streetwear identity with recurring visual language and drop narratives
+
+- Created apparel graphics, product concepts, and release themes tailored to underground fashion, music, and meme culture
+
+- Turned each drop into a distinct world rather than a disconnected set of garments
+
+Image: [SkipSchoolMakeMoney photoshoot sample from Dreemland - Realistic Expectation, Unrealistic Results](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_10.jpg>)
+
+Image: [SkipSchoolMakeMoney photoshoot sample from Dreemland - Realistic Expectation, Unrealistic Results](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_11.jpg>)
+
+Image: [SkipSchoolMakeMoney photoshoot sample from Cxltures Photoshoot in Virginia](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_8.jpg>)
+
+Image: [SkipSchoolMakeMoney photoshoot sample from Cxltures Photoshoot in Virginia](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_9.jpg>)
+
+Image: [SkipSchoolMakeMoney photoshoot sample from Hidden Potential collection in Bulgaria](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_6.jpg>)
+
+Image: [SkipSchoolMakeMoney photoshoot sample from New York City photoshoot](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_5.jpg>)
+
+Image: [SkipSchoolMakeMoney photoshoot sample from New York City photoshoot](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_4.jpg>)
+
+Image: [SkipSchoolMakeMoney photoshoot sample from New York City photoshoot](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_3.jpg>)
+
+Image: [SkipSchoolMakeMoney photoshoot sample from Drop\_1 Photoshoot shot by Dominic Sanchez in Amherst, MA, modeled by Yichao](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_1.jpg>)
+
+Image: [SkipSchoolMakeMoney photoshoot sample from Drop\_1 Photoshoot shot by Dominic Sanchez in Massachusetts, modeled by Yichao](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_2.jpg>)
+
+Image: [SkipSchoolMakeMoney photoshoot sample from Drop\_1 Photoshoot shot by Emanuelfromjanuary in California](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_7.jpg>)
+
+Product
+
+### Lookbooks, Shoots & Visual Worldbuilding
+
+- Directed 25 photo and video shoots across 6 countries with photographers, models, musicians, and local creatives
+
+- Built campaign visuals that made SSMM feel like a lifestyle brand, not just an online store
+
+- Coordinated locations, styling, deliverables, and creative direction across international collaborators
+
+- Created assets strong enough to carry launches across feeds, ads, website pages, and fan reposts
+
+Image: [SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_6.jpg>)
+
+Image: [SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_1.jpg>)
+
+Image: [SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_9.jpg>)
+
+Image: [SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_2.jpg>)
+
+Image: [SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_11.jpg>)
+
+Image: [SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_3.jpg>)
+
+Image: [SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_10.jpg>)
+
+Image: [SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_4.jpg>)
+
+Image: [SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_5.jpg>)
+
+Image: [SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_8.jpg>)
+
+Growth
+
+### Meme Marketing & Viral Growth Loops
+
+- Pioneered guerrilla Instagram growth strategies built on meme pages, giveaways, and high-frequency experimentation
+
+- Helped drive the brand from a few thousand followers to a peak above 12,000 on Instagram
+
+- Generated hundreds to thousands of comments per post and thousands of likes through culturally native content
+
+- Used fan participation and internet in-jokes as part of the actual brand engine, not just as promotion
+
+Image: [SkipSchoolMakeMoney showcases pioneering marketing strategy - Clout Cards, the baseball cards of rap culture - featuring rappers, musicians and influencers](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_1.jpg>)
+
+Image: [SkipSchoolMakeMoney showcases pioneering marketing strategy - Clout Cards, the baseball cards of rap culture - featuring rappers, musicians and influencers](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_2.jpg>)
+
+Image: [SkipSchoolMakeMoney showcases pioneering marketing strategy - Celebrities, showcasing various celebrities from the brand's social media presence](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-celebs_3.jpg>)
+
+Image: [SkipSchoolMakeMoney showcases pioneering marketing strategy - Clout Cards, the baseball cards of rap culture - featuring rappers, musicians and influencers](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_3.jpg>)
+
+Image: [SkipSchoolMakeMoney showcases pioneering marketing strategy - Celebrities, showcasing various celebrities from the brand's social media presence](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-celebs_1.jpg>)
+
+Image: [SkipSchoolMakeMoney showcases pioneering marketing strategy - Clout Cards, the baseball cards of rap culture - featuring rappers, musicians and influencers](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_4.jpg>)
+
+Image: [SkipSchoolMakeMoney showcases pioneering marketing strategy - Clout Cards, the baseball cards of rap culture - featuring rappers, musicians and influencers](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_5.jpg>)
+
+Image: [SkipSchoolMakeMoney showcases pioneering marketing strategy - Celebrities, showcasing various celebrities from the brand's social media presence](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-celebs_2.jpg>)
+
+Image: [SkipSchoolMakeMoney showcases pioneering marketing strategy - Clout Cards, the baseball cards of rap culture - featuring rappers, musicians and influencers](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_6.jpg>)
+
+Image: [SkipSchoolMakeMoney showcases pioneering marketing strategy - Clout Cards, the baseball cards of rap culture - featuring rappers, musicians and influencers](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_7.jpg>)
+
+Growth
+
+### Influencer & Music-Culture Positioning
+
+- Built relationships with musicians, influencers, photographers, and creators whose audiences matched the SSMM identity
+
+- Negotiated promotional deals and organic placements with names including Lil Peep, Pouya, Fat Nick, and others
+
+- Positioned SSMM inside the underground streetwear conversation rather than outside it as a generic apparel shop
+
+- Used collaborations as trust-transfer mechanisms that moved both awareness and demand
+
+Image: [SkipSchoolMakeMoney Shopify and Squarespace storefront design and e-commerce setup](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-website_1.jpg>)
+
+Image: [SkipSchoolMakeMoney Shopify and Squarespace storefront design and e-commerce setup](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-website_3.jpg>)
+
+Image: [SkipSchoolMakeMoney Shopify and Squarespace storefront design and e-commerce setup](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-website_2.jpg>)
+
+Image: [SkipSchoolMakeMoney Shopify and Squarespace storefront design and e-commerce setup](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-website_4.jpg>)
+
+Image: [SkipSchoolMakeMoney Shopify and Squarespace storefront design and e-commerce setup](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-website_5.jpg>)
+
+Image: [SkipSchoolMakeMoney Shopify and Squarespace storefront design and e-commerce setup](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-website_6.jpg>)
+
+Image: [SkipSchoolMakeMoney Shopify and Squarespace storefront design and e-commerce setup](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-website_7.jpg>)
+
+Image: [SkipSchoolMakeMoney Shopify and Squarespace storefront design and e-commerce setup](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-website_8.jpg>)
+
+Engineering
+
+### Storefront Builds & Commerce Stack
+
+- Built 3 full Shopify redesigns and 2 complete Squarespace redesigns end-to-end
+
+- Created and managed the custom SSMM webstore as the operational center for launches, sales, and customer experience
+
+- Integrated e-commerce flows to support launches, cart recovery, post-purchase communication, and order tracking
+
+- Handled the technical layer of making a culture brand actually transact cleanly online
+
+Image: [SkipSchoolMakeMoney manufacturing, packaging, shipping, and fulfillment operations extended across three continents, with manufacturing partners in the US, UK, and China](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-shipping_1.jpg>)
+
+Image: [SkipSchoolMakeMoney manufacturing, packaging, shipping, and fulfillment operations extended across three continents, with manufacturing partners in the US, UK, and China](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-shipping_2.jpg>)
+
+Engineering
+
+### Manufacturing, Fulfillment & Logistics
+
+- Managed production across the US West Coast and East Coast before expanding manufacturing relationships into the UK and China
+
+- Organized packaging, shipping, and customer fulfillment for roughly 1,000 orders worldwide
+
+- Built supply paths capable of serving customers across North America, Europe, and beyond
+
+- Translated a one-person brand into repeatable real-world operations across multiple production partners
+
+[SkipSchoolMakeMoney x YLLW Productions Collection Promo Video, shot in Calgary, Alberta, Canada](<https://www.youtube.com/watch?v=IrQYk78ExIY>)
+
+Data
+
+### Analytics, CRM & Launch Optimisation
+
+- Maintained Shopify, Mailchimp, and Google Analytics as the decision layer behind launches, promotions, and retention
+
+- Built and grew multiple mailing lists to thousands of subscribers
+
+- Tracked storefront behaviour, campaign response, and customer signals to refine messaging, timing, and offer structure
+
+- Used analytics to make launches smarter over time instead of relying on instinct alone
+
+Image: [SkipSchoolMakeMoney entrepreneurial awards, startup recognition, and accelerator acceptance](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-awards_1.jpg>)
+
+Image: [SkipSchoolMakeMoney entrepreneurial awards, startup recognition, and accelerator acceptance](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-awards_2.jpg>)
+
+Growth
+
+### Awards, Funding & External Validation
+
+- Won the VVM Startup Accelerator Award, earning funding, mentorship, and business resources
+
+- Received the Grinspoon Recognition Award for Entrepreneurial Spirit
+
+- Used external validation to strengthen brand credibility beyond the immediate streetwear niche
+
+- Proved the project had enough commercial and cultural traction to be taken seriously by startup institutions
+
+## In Depth
+
+#### The Graduation Photo that Started a Movement
+
+One of our earliest supporters wore an SSMM hoodie under his graduation gown and took his entire set of graduation photos in it — cap, gown, tassel, and a brand nobody had heard of hiding underneath. Someone posted the photos with the caption "this boy got a bright future ahead of him," and within days it was circulating across dozens of meme pages, splitting comment sections between people laughing and people genuinely offended on the kid's behalf.
+
+Image: [SkipSchoolMakeMoney Fan wears SSMM Internet Tour Crewneck at his Graduation - photo meme that helped start SSMM meme marketing](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_originals_1.jpg>)
+
+That single post did something I didn't fully understand until later: it turned SSMM into a meme format rather than just a brand people wore. A second person wore SSMM in his yearbook photos, which spawned its own meme. Someone else wrapped their newborn baby brother in an SSMM hoodie and posted it, and the internet did the rest. I didn't write a single one of these memes — the audience did, on their own, unprompted.
+
+Image: [SkipSchoolMakeMoney Fan wears SSMM Internet Tour Crewneck at his Graduation - photo meme that helped start SSMM meme marketing](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_originals_2.jpg>)
+
+Looking back, this is where the meme marketing engine actually started. Not from a campaign I planned, but from fans finding ways to insert the brand into their own lives that were funnier and more absurd than anything I could have scripted. Every future giveaway and meme push was really just me trying to feed that same energy back to the community that had already proven it existed.
+
+#### Baseball Cards for the Internet Age
+
+At the peak of its run, I'd had the chance to meet and work with a growing list of names in the underground scene — Pouya, Fat Nick, Ghostemane, Lil Peep, TooPoor (Layla), Rae Sremmurd, and others. Somewhere in the middle of all that, an old childhood obsession resurfaced: I used to collect Yu-Gi-Oh cards, and something about the format stuck with me long after I'd stopped playing.
+
+Image: [SkipSchoolMakeMoney Clout Cards - The Baseball Cards of Internet Culture](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_1.jpg>)
+
+I pitched an idea to our biggest supporters: free "Clout Card" booster packs inside every order. Each card followed the classic trading-card layout — a candid or funny photo of a rapper, musician, or influencer on the front, with a set of "superpowers" underneath describing, in a hyperbolic and slightly sarcastic tone, what that person was actually known for in real life.
+
+Image: [SkipSchoolMakeMoney Clout Card featuring Lil Peep](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_2.jpg>)
+
+Image: [SkipSchoolMakeMoney Clout Card featuring Matt Ox](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_3.jpg>)
+
+What started as a joke between a handful of superfans grew into a full set — cards for the artists above, plus names like Gary Vee, Tai Lopez, and Ice Poseidon, and eventually cards for people inside the SSMM universe itself: our photographers, our models, and the meme pages that had helped build the brand's early audience. It turned every order into a small collectible moment, gave fans a reason to talk to each other about who they'd pulled, and folded the brand's own community into the same mythology as the celebrities it referenced.
+
+Image: [SkipSchoolMakeMoney Clout Card featuring Pouya](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_6.jpg>)
+
+Image: [SkipSchoolMakeMoney Clout Card featuring Tai Lopez and Gary Vaynerchuk](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_5.jpg>)
+
+#### The Meeting I Missed to a Flat Tire
+
+Not every connection worked out, and this one still stings. I'd lined up a meeting with Tycho Burwell, a director who went on to shoot music videos for artists like Nettspend and Trippie Redd. On the drive down, I got a flat tire — and because I young guy in the US without a phone plan, I had no way to call Tycho to explain, and no way to call my insurance for help either.
+
+A state trooper happened to stop, realized how far over my head I was, and helped me change the tire himself. He was kind about it, but he also told me straight: don't push on to New York on a spare, turn around and go home. So I did — heartbroken, because there was no way to salvage the meeting from the side of a highway with no working phone.
+
+Tycho took the no-show personally, and understandably so from where he was sitting — we never spoke again. It's a small story in the grand scheme of the brand, but it's an honest one: running something alone means the gap between "almost" and "actually" sometimes comes down to things completely outside your control, like a tire and a phone plan you couldn't yet afford.
+
+#### Alone in Times Square with Two Suitcases Full of Clothes
+
+My first solo trip to New York City was for a photoshoot. I had just moved to the US and barely knew my way around, and I drove three and a half hours from a small college town straight into Times Square traffic with two suitcases full of clothes in the back seat. I found street parking on a busy Brooklyn block — next to a fire hydrant, because it was the only open spot. Only later did I find out why fire hydrant spots aren't taken once I saw the ticket.
+
+No food, no water, no local contacts, and a budget too tight to absorb surprises. But I met Alexis Conti, the photographer, and her model — who turned out to be an incredible musician in his own right. Alexis was great friends and the photographer for rising NYC rapper CASHRINA. So, I was quietly starstruck the entire shoot while trying to act like directing a shoot in Times Square was a completely normal Tuesday for me.
+
+Despite every logistical thing working against it, the shoot itself was one of the best days of the brand's run. The photos from that day are still some of the strongest in SSMM's entire catalog — proof that resourcefulness and a good eye can outperform budget, connections, and experience combined.
+
+Image: [SkipSchoolMakeMoney New York City photoshoot](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_3.jpg>)
+
+Image: [SkipSchoolMakeMoney New York City photoshoot](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_4.jpg>)
+
+Image: [SkipSchoolMakeMoney New York City photoshoot](<https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_5.jpg>)
+
+## On Instagram
+
+- [Instagram post](<https://www.instagram.com/reel/BvaBTEkA1kP/?utm_source=ig_embed&utm_campaign=loading>)
+
+- [Instagram post](<https://www.instagram.com/p/BgZPR__g-m5/?utm_source=ig_embed&utm_campaign=loading>)
+
+- [Instagram post](<https://www.instagram.com/p/BmWaOtflhVd/?utm_source=ig_embed&utm_campaign=loading>)
+
+- [Instagram post](<https://www.instagram.com/p/BnMRJspFUfz/?utm_source=ig_embed&utm_campaign=loading>)
+
+- [Instagram post](<https://www.instagram.com/p/Boe8KrZBntP/?utm_source=ig_embed&utm_campaign=loading>)
+
+- [Instagram post](<https://www.instagram.com/p/BmEfHpBF0q2/?utm_source=ig_embed&utm_campaign=loading>)
+
+- [Instagram post](<https://www.instagram.com/p/Bno7-yRFQFZ/?utm_source=ig_embed&utm_campaign=loading>)
+
+- [Instagram post](<https://www.instagram.com/p/BgRiuS8Adlv/?utm_source=ig_embed&utm_campaign=loading>)
+
+- [Instagram post](<https://www.instagram.com/p/BeoGFN3h-Hk/?utm_source=ig_embed&utm_campaign=loading>)
+
+- [Instagram post](<https://www.instagram.com/p/BaHgM8nh5Pp/?utm_source=ig_embed&utm_campaign=loading>)
+
+- [Instagram post](<https://www.instagram.com/p/BZl5723hZPZ/?utm_source=ig_embed&utm_campaign=loading>)
+
+- [Instagram post](<https://www.instagram.com/p/BZ9Qw4Mhf5X/?utm_source=ig_embed&utm_campaign=loading>)
+
+- [Instagram post](<https://www.instagram.com/p/BZjsrEghRjG/?utm_source=ig_embed&utm_campaign=loading>)
+
+- [Instagram post](<https://www.instagram.com/p/BS4HPQzhaa3/?utm_source=ig_embed&utm_campaign=loading>)
+
+- [Instagram post](<https://www.instagram.com/p/BQYtm1DgEHp/?utm_source=ig_embed&utm_campaign=loading>)
+
+---
+
+Source: https://georgedreemer.com/work/thoughtbubble  (Markdown: https://georgedreemer.com/work/thoughtbubble.md)
+
+# thoughtbubble — Knowledge-First Social Network
+
+A knowledge-first social network, built from scratch by two self-taught developers. Just a love for web development, zero budget, launched in the USA and expanded to reach 900+ users across the world.
+
+thoughtbubble was designed to shift social media away from entertainment toward sharing ideas, insights, and self-improvement content.
+
+We built it to alpha in under a year, hand-coding every layer ourselves custom authentication, MySQL architecture, real-time notifications, and the full social product without a framework, CMS, or boilerplate.
+
+## Experience Snapshot
+
+thoughtbubble
+
+**Role:** Co-Founder & Full-Stack Developer
+
+**Type:** Social Network Startup
+
+**Location:** Amherst, MA, United States
+
+### Highlights
+
+- Built full back-end in PHP + MySQL — database, API, and server-side logic
+
+- Co-built front-end in HTML, CSS, and Javascript — AJAX interactions, dynamic content, and responsive design
+
+- Built all social features — feed, posts, comments, likes, pins, notifications, and profiles
+
+- Built registration, login, and account management system
+
+- Collected and analyzed user data to improve engagement and retention
+
+- Co-designed UX — feed, profiles, and post system
+
+- Iterated on UI based on direct user feedback
+
+- Presented product to investors and potential partners at local startup events
+
+- Grew to 900+ registered users with zero ad spend
+
+- Secured copyright for the platform and managed legal procedures
+
+## In Numbers
+
+**76+:** Major updates shipped
+
+**~900:** Registered users
+
+**7:** Back-end systems built
+
+**7:** Relational DBs managed
+
+## Stack
+
+### Code
+
+- PHP
+
+- JavaScript
+
+- HTML
+
+- CSS
+
+- SQL
+
+### Databases
+
+- MySQL
+
+### Dev Tools
+
+- Dreamweaver
+
+- cPanel
+
+- Namecheap
+
+### Design & Creative
+
+- Illustrator
+
+- Photoshop
+
+## Abilities
+
+Ability Domains
+
+- Engineering
+
+- Product
+
+- Growth
+
+- Data
+
+### Full-Stack Web Development
+
+Domain: engineering
+
+Ability description:
+
+Designed and built every layer of the platform without a framework — routing, session handling, database schema, AJAX interactions, and all front-end rendering.
+
+Skills developed through this ability:
+
+- Back-End Architecture
+
+- Front-End Engineering
+
+- Database-Driven Development
+
+### Auth & Security Systems
+
+Domain: engineering
+
+Ability description:
+
+Built custom user authentication from scratch, including the registration, native & Facebook login, session management, password hashing, and access control.
+
+Skills developed through this ability:
+
+- Authentication Engineering
+
+- Session Management
+
+- Access Control
+
+### Real-Time Notifications
+
+Domain: engineering
+
+Ability description:
+
+Engineered a live notification system using AJAX polling — likes, comments, follows, and system alerts delivered without a page reload.
+
+Skills developed through this ability:
+
+- Asynchronous UX Flows
+
+- Event-Driven Logic
+
+- Notification Systems
+
+### Product Design & UX
+
+Domain: product
+
+Ability description:
+
+Owned the full UX, from information architecture to pixel-level UI. Designed the feed, post types, user profiles, settings flows, and iteratively improved them based on user feedback from our early adopter community.
+
+Skills developed through this ability:
+
+- UX Design
+
+- Interface Architecture
+
+- Feedback-Driven Iteration
+
+### Product Vision & Positioning
+
+Domain: product
+
+Ability description:
+
+Identified a clear gap in the market and built a product positioned around it — a curated, knowledge-first social feed before mainstream platforms pivoted toward that format.
+
+Skills developed through this ability:
+
+- Product Strategy
+
+- Market Positioning
+
+- Category Insight
+
+### Organic User Acquisition
+
+Domain: growth
+
+Ability description:
+
+Grew the platform to ~900 registered users through word-of-mouth and direct outreach, with zero paid advertising. Learned early that product quality and community seeding beat any ad budget.
+
+Skills developed through this ability:
+
+- Community Seeding
+
+- Organic Growth Strategy
+
+- Creator Outreach
+
+### Metrics & Behaviour Tracking
+
+Domain: data
+
+Ability description:
+
+Instrumented the platform to track user sign-ups, engagement rates, post frequency — the first time I built a product loop from data to decision.
+
+Skills developed through this ability:
+
+- Product Analytics
+
+- Behavior Tracking
+
+- Retention Strategy
+
+### Database Architecture
+
+Domain: engineering
+
+Ability description:
+
+Designed a relational MySQL schema capable of supporting users, posts, comments, likes, pins, notifications, hashtags, and categories simultaneously.
+
+Skills developed through this ability:
+
+- Relational Schema Design
+
+- Data Modeling
+
+- Scalable Content Structures
+
+## Works
+
+Image: [thoughtbubble feed with expanded side menu showing followers, settings, bug report, and log out](<https://georgedreemer.com/public_img/thoughtbubble/thoughtbubble-feed1_alpha-min.png>)
+
+Image: [thoughtbubble feed in default view without menu expanded](<https://georgedreemer.com/public_img/thoughtbubble/thoughtbubble-feed2_alpha-min.png>)
+
+Engineering
+
+### Social Systems
+
+- Built all social systems — posts, likes, comments, pins
+
+- Developed a hashtag system & search for content curation & discovery
+
+- Implemented real-time feed & notification system for social interactions
+
+- Designed & built user profiles with various customizations
+
+Image: [thoughtbubble login screen with email login and Facebook login option](<https://georgedreemer.com/public_img/thoughtbubble/thoughtbubble-login_alpha-min.png>)
+
+Engineering
+
+### User Account Systems & Controls
+
+- Built native registration and login system
+
+- Integrated Facebook OAuth login alongside native accounts
+
+- Developed various user control systems — settings, bug reporting, & account controls
+
+- Implemented a secure session management system with hashed passwords and access control
+
+[Video](<https://georgedreemer.com/public_img/thoughtbubble/thoughtbubble-iterations-loop.mp4>)
+
+Data
+
+### User Feedback Analysis
+
+- Tracked user engagement, sign-ups, and feature usage directly via MySQL queries
+
+- Collected and reviewed user feedback to identify recurring pain points and requests
+
+- Used engagement patterns to prioritize which features to build or cut
+
+- Shipped 76+ major updates, largely guided by this feedback loop
+
+Image: [Thoughtbubble copyright paperwork scatted on the desk](<https://georgedreemer.com/public_img/thoughtbubble/thoughtbubble-lawyerdesk-min.png>)
+
+Growth
+
+### Pitching, Networking & Legal Coordination
+
+- Presented the platform at local startup events & shark tanks
+
+- Actively networked across regional entrepreneurship communities and mentor programs
+
+- Handled the business-facing side of the company solo while co-building the product
+
+- Coordinated the legal side of the business — secured copyright, registered entity & filed necessary paperwork
+
+## In Depth
+
+#### Built from scratch & self-taught
+
+Nikolay and I built thoughtbubble in PHP, JavaScript, and MySQL. There was no framework, no CMS, no boilerplate — we'd hit wall after wall and just keep watching web development videos until it clicked. I built the full back-end of thoughtbubble and co-developed the front-end, while also designing the full icon set and logo in Adobe Illustrator.
+
+I built the back-end systems below, and co-developed the front-end and social feed logic with Nikolay:
+
+- Authentication and session management
+
+- News feed with custom sorting logic
+
+- Post types — text, photo, video
+
+- Likes, pins, and comments
+
+- Hashtags and categories
+
+- Notifications
+
+- Profile customisation and account settings
+
+- A user feedback pipeline
+
+We shipped 76 major updates between the closed alpha and public launch.
+
+The infrastructure ran on shared hosting with a manually configured MySQL database. There was no version control beyond file backups, no CI, no staging environment. It was scrappy by any standard, but it worked.
+
+We scaled to nearly a thousand users, and every line of it was ours. Every feature or bug fix was a new learning experience and a sleepless night.
+
+#### The idea that was early
+
+The pitch was simple: a social network where your feed only teaches you things. No vacation photos, no cat videos — just insights from books, actionable quotes, and self-improvement content. We built it inspired by the rise of Gary Vaynerchuk and Tai Lopez and the audiences forming around them. People were already sharing nuggets from books, videos, and articles — but existing platforms weren't built to hold that kind of content well. We saw a clear gap: entertainment-first platforms simply weren't built to support information-rich content.
+
+So we set out to build something different. We envisioned posts where the UI would include things like book titles, author, and reference material. A category system built around four pillars of self-improvement: health, wealth, relationships, and fulfillment. The user profile would read more like a personal development journal — with pinned posts, categorized content, and a space for reflection.
+
+What we were describing — a curated, knowledge-first feed with social mechanics — is close to what Twitter's long-form threads, Substack, and LinkedIn's creator-focused pivot eventually became. We were two self-taught devs with no funding and no network, so the timing didn't matter in the end. But the product instinct was right.
+
+Looking at how much that space has grown, there's real satisfaction in knowing two founders with no prior experience, no funding, and no network saw it coming early. I sometimes wonder what we could have built with even a fraction of the resources those platforms eventually had — but that experience taught me that the desired outcome isn't always the best outcome. There's a deeper plan at work, and life had other things in store beyond scaling thoughtbubble to its full potential.
+
+#### How we got 900 users without spending a dollar
+
+We didn't run ads. We didn't have a budget. The growth strategy was entirely manual: reach out directly to people who were already creating self-improvement content on YouTube or Instagram, show them the platform, and get them to seed it with their content. We identified early that a knowledge-first feed is only as good as the content in it — if the first 50 users post junk, the product is dead on arrival.
+
+We tracked registrations, session counts, and engagement metrics in MySQL and used those numbers to prioritise what to build next. The most-used features got more polish. The least-used ones got cut or rethought. We didn't call it a data-driven product loop at the time, but that's exactly what it was.
+
+#### We got ripped off by a lawyer - got the copyright anyway
+
+At some point, two first-time founders decided their app needed real legal protection — because apparently "two guys with a login page" doesn't hold up as a legal entity on its own. So we hired a copyright lawyer, nodded confidently at documents we barely understood, and paid real money to learn what a retainer is the hard way. He did the bare minimum, billed like he'd written us a constitution, and left us wondering if we'd just been the world's greenest, most polite scam victims.
+
+Classic story. We pushed through it anyway, filed everything properly ourselves where we could, and got the copyright registered. It cost more than it should have and took longer than it should have — but it's ours, on paper, forever, which is more than I can say for the money we spent on that lawyer.
+
+In hindsight, it was my first real lesson in the unglamorous side of building something — the admin, the fine print, the people who see inexperience as an opportunity rather than something to protect. Nobody warns you that "founding a startup" sometimes means arguing about an invoice with a man in a blazer. I'd handle it very differently now. But we got the copyright — and honestly, that's a better ending than most first-lawyer stories get.
