@@ -18,7 +18,7 @@
       },
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "url": "https://datasafari.dev/ncsitebuilder/gallery/ds-branding-thumb-main-web.png",
+        "url": "https://georgedreemer.com/public_img/general/ogimages/datasafari-v2.png",
         "width": 1200,
         "height": 630
       },
@@ -59,7 +59,7 @@
       "description": "An open-source Python library that simplifies complex data science tasks — compressing the full data workflow (exploration, transformation, evaluation, and prediction) into a clean one-liner API. Built and maintained solo by George Dreemer.",
       "image": {
         "@type": "ImageObject",
-        "url": "https://datasafari.dev/ncsitebuilder/gallery/ds-branding-thumb-main-web.png",
+        "url": "https://georgedreemer.com/public_img/general/ogimages/datasafari-v2.png",
         "width": 1200,
         "height": 630
       },

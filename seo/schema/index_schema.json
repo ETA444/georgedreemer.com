@@ -21,7 +21,7 @@
       },
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "url": "https://georgedreemer.com/ncsitebuilder/gallery/dxyz-main.png",
+        "url": "https://georgedreemer.com/public_img/general/ogimages/georgedreemer-v1.png",
         "width": 1200,
         "height": 630
       },
@@ -44,7 +44,7 @@
       "url": "https://georgedreemer.com",
       "image": {
         "@type": "ImageObject",
-        "url": "https://georgedreemer.com/ncsitebuilder/gallery/dxyz-main.png",
+        "url": "https://georgedreemer.com/public_img/general/ogimages/georgedreemer-v1.png",
         "width": 1200,
         "height": 630
       },
