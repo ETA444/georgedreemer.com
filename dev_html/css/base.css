@@ -45,16 +45,6 @@ button {
     font: inherit;
 }
 
-/* NC Site Builder Injection */
-/* note: this injection is designed to fix issues caused by Namecheap Sitebuilder */
-html {
-    font-size: 100% !important;
-}
-
-body {
-    font-size: 16px !important;
-}
-
 .screenreader-only {
     position: absolute;
         width: 1px;
@@ -67,4 +57,3 @@ body {
         border: 0;
         clip-path: inset(50%);
 }
-

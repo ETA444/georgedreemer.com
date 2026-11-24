@@ -13,11 +13,3 @@
         gap: var(--space-8);
     }
 }
-
-/* NC Site Builder Injection */
-/* note: this injection is designed to fix issues caused by Namecheap Sitebuilder */
-@media (max-width: 560px) {
-    .main-content {
-        padding: 0 16px 72px !important;
-    }
-}
