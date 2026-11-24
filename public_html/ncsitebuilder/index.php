@@ -339,7 +339,7 @@ class PluginDescriptorHandler {
 	$langs = null;
 	$def_lang = null;
 	$base_lang = 'en';
-	$site_id = 'b1b29c54';
+	$site_id = 'c2db7bb1';
 	${'sitemapUrls'} = array(
 		'https://georgedreemer.com/',
 		'https://georgedreemer.com/work/thoughtbubble',
