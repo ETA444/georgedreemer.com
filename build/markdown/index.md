@@ -5,7 +5,7 @@ url: "https://georgedreemer.com/"
 markdown_url: "https://georgedreemer.com/index.md"
 language: "en"
 source: "dev_html/index.html"
-source_sha256: "34a1d2e349cc9fb83046a6a4ccd3987fb489eff90083d71c916e6ace7f8ae3ce"
+source_sha256: "f51e8fd6ff92634848c259a0fa32ec4eda7d8130fac1950c1b0f5ef2549f11e6"
 ---
 
 # George Dreemer — Data Scientist, Developer and Entrepreneur

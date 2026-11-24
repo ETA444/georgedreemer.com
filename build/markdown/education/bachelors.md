@@ -5,7 +5,7 @@ url: "https://georgedreemer.com/education/bachelors"
 markdown_url: "https://georgedreemer.com/education/bachelors.md"
 language: "en"
 source: "dev_html/education/bachelors.html"
-source_sha256: "6c55095a3b07639cd5400f3eebcae892440a49bdf5004eb8a59b83ce941e4166"
+source_sha256: "694fc1b45a8795b06bdd426ccab69fb130a54701e0f634ecfd669ae8cb035b00"
 ---
 
 # BA Marketing & Business — Hampshire College

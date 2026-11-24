@@ -5,7 +5,7 @@ url: "https://georgedreemer.com/work/thoughtbubble"
 markdown_url: "https://georgedreemer.com/work/thoughtbubble.md"
 language: "en"
 source: "dev_html/work/thoughtbubble.html"
-source_sha256: "efedc22fb47995b7f1c4d1c51b479d83f8e04f5329a913799257f1a443224f48"
+source_sha256: "aee7befceb2b388986641c923d0d7f6bf54b10953e59d9f8467b21a157ee8408"
 ---
 
 # thoughtbubble — Knowledge-First Social Network

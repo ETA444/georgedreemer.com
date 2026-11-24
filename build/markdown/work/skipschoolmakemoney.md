@@ -5,7 +5,7 @@ url: "https://georgedreemer.com/work/skipschoolmakemoney"
 markdown_url: "https://georgedreemer.com/work/skipschoolmakemoney.md"
 language: "en"
 source: "dev_html/work/skipschoolmakemoney.html"
-source_sha256: "57874733903f32a91ff6ac87ea088a43afe2c7891d4919cc16cf507a2561e744"
+source_sha256: "37ab6bf414633820a612e1aff7c81ad2ba6b577faee399edec6524841e5ea7e5"
 ---
 
 # SkipSchoolMakeMoney — Streetwear Brand
