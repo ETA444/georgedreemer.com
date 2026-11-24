@@ -1,0 +1,95 @@
+/* =========================================================
+    SITEBUILDER OVERRIDES
+========================================================= */
+
+/* --- Base --- */
+html {
+    font-size: 100% !important;
+}
+
+body {
+    font-size: 16px !important;
+}
+
+/* Layout */
+@media (max-width: 560px) {
+    .main-content {
+        padding: 0 16px 72px !important;
+    }
+}
+
+/* --- Sitebuilder generates these regardless if the canvas is blank --- */
+#wb_root .wb_sbg,
+#wb_root [id^="wb_header_"],
+#wb_root [id^="wb_footer_"] {
+  display: none !important;
+}
+
+#wb_root [id^="wb_main_"] {
+  min-height: 0 !important;
+  height: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#wb_root [id^="wb_main_"] .wb_content {
+  min-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* --- Stat Counter (stat-counter.css) --- */
+.stat-counter {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+}
+
+.stat-counter__number {
+    font-size: clamp(2rem, 5vw, 4rem) !important;
+    line-height: 1 !important;
+}
+
+.stat-counter__label {
+    margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+    .stat-counter {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 560px) {
+    .stat-counter {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* --- Works Cards Edu (works-card-edu.css) --- */
+/* RETURNED THIS TO COMPONENT CSS
+.evidence-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+}
+
+@media (max-width: 900px) {
+    .evidence-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+*/
+
+
+/* --- Works Cards Exp (works-card-exp.css) --- */
+/* RETURNED THIS TO COMPONENT CSS
+.evidence-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+}
+
+@media (max-width: 900px) {
+    .evidence-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+*/

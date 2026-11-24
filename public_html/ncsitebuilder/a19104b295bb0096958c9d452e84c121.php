@@ -25,21 +25,20 @@
 						<meta name="viewport" content="width=device-width, initial-scale=1" />
 					<meta name="description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "Welcome to George Dreemer's blog! Read an engaging showcase of various projects and activities that he has been up to recently."); ?>" />
 			<meta name="keywords" content="<?php echo htmlspecialchars((isset($seoKeywords) && $seoKeywords !== "") ? $seoKeywords : "George Dreemer,entrepreneur blog,tech innovations,creative projects,professional portfolio,interactive CV,web development insights,data science analysis,marketing strategies,multimedia editing techniques,entrepreneurship insights,technology blog"); ?>" />
-				<meta property="og:site_name" content="George Dreemer — Data Scientist, Developer & Entrepreneur">
-	
+			
 	<!-- Facebook Open Graph -->
 		<meta property="og:title" content="<?php echo htmlspecialchars((isset($seoTitle) && $seoTitle !== "") ? $seoTitle : "George Dreemer’s Blog: Stories Behind the Motion"); ?>" />
 			<meta property="og:description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "Welcome to George Dreemer's blog! Read an engaging showcase of various projects and activities that he has been up to recently."); ?>" />
-			<meta property="og:image" content="<?php echo htmlspecialchars((isset($seoImage) && $seoImage !== "") ? "{{base_url}}".$seoImage : "{{base_url}}gallery_gen/f119e2be82f43b8529124ed91dddcd0e_fit.png"); ?>" />
+			<meta property="og:image" content="<?php echo htmlspecialchars((isset($seoImage) && $seoImage !== "") ? "{{base_url}}".$seoImage : ""); ?>" />
 			<meta property="og:type" content="article" />
 			<meta property="og:url" content="__wb_curr_url__" />
 		<!-- Facebook Open Graph end -->
 
 			<?php if (empty($wbWhitelabel)): ?>	<meta name="generator" content="Site.pro Builder" />
 	<?php else: ?>	<meta name="generator" content="Website Builder" />
-	<?php endif; ?>			<link href="css/common-bundle.css?ts=20261124203811" rel="preload" type="text/css" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
+	<?php endif; ?>			<link href="css/common-bundle.css?ts=20261124214324" rel="preload" type="text/css" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese" rel="preload" type="text/css" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
-	<link href="css/a19104b295bb0096958c9d452e84c121-bundle.css?ts=20261124203811" rel="preload" type="text/css" id="wb-page-stylesheet" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
+	<link href="css/a19104b295bb0096958c9d452e84c121-bundle.css?ts=20261124214324" rel="preload" type="text/css" id="wb-page-stylesheet" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
 	<ga-code/><!-- Global: identity & crawling -->
 <meta name="author" content="George Dreemer">
 <meta name="robots" content="max-image-preview:large, max-snippet:-1">
@@ -101,7 +100,7 @@
 </head>
 
 
-<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a19104b295bb0096958c9d452e84c121" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a19104b297f900cfb56a18a542a39a07" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a19104b297fb00f099e2b20322236084" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a19104b297fb013ebeec25a5fc6d0d38" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1795545494"></a></div></div></div><div id="a19104b297fc05c7503b1531936ef786" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a19104b297fb02611e7f82618ef0ab6b" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1795545494"></a></div></div></div></div></div><div id="a19127dc957501172ca5b5acb76d0e61" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a19104b295bb0096958c9d452e84c121" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a19104b297f900cfb56a18a542a39a07" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a19104b297fb00f099e2b20322236084" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a19104b297fb013ebeec25a5fc6d0d38" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1795549406"></a></div></div></div><div id="a19104b297fc05c7503b1531936ef786" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a19104b297fb02611e7f82618ef0ab6b" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1795549406"></a></div></div></div></div></div><div id="a19127dc957501172ca5b5acb76d0e61" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
@@ -134,7 +133,7 @@
 				),
 				(object) array(
 					'id' => 6,
-					'href' => 'thoughtbubble',
+					'href' => 'work/thoughtbubble',
 					'name' => 'thoughtbubble',
 					'class' => '',
 					'children' => array()
@@ -183,14 +182,18 @@
 			'children' => array()
 		)
 	)
-)); ?><div class="clearfix"></div></div></div></div><div id="a19104b297fb045c162416e4f478d746" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a19104b297f901a71a995e3f350db093" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"></div></div></div></div><div id="a19104b297fc07bdcf309e0864388204" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1795545494"></div></div></div></div></div></div></div><div id="wb_main_a19104b295bb0096958c9d452e84c121" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a19104b297f90363b4cd601e1b565b6a" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a19104b297f904892dab545f57437828" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a19104b297f9050f25c8f41d046b04e2" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">STORIES </span></strong><span style="color:rgba(0,0,0,1);">BEHIND THE MOTION</span></h1>
+)); ?><div class="clearfix"></div></div></div></div><div id="a19104b297fb045c162416e4f478d746" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a19104b297f901a71a995e3f350db093" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"></div></div></div></div><div id="a19104b297fc07bdcf309e0864388204" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1795549406"></div></div></div></div></div><div id="a1a20eed7e9900acd3cf1e1a7b06d068" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+	'type' => 'hmenu',
+	'dir' => 'ltr',
+	'items' => array()
+)); ?><div class="clearfix"></div></div></div></div><div id="wb_main_a19104b295bb0096958c9d452e84c121" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a19104b297f90363b4cd601e1b565b6a" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a19104b297f904892dab545f57437828" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a19104b297f9050f25c8f41d046b04e2" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h1 class="wb-stl-heading1" style="text-align: center;"><strong><span style="color:rgba(0,0,0,1);">STORIES </span></strong><span style="color:rgba(0,0,0,1);">BEHIND THE MOTION</span></h1>
 </div><div id="a19104b297fb05dc68183c7c5d8727d7" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-normal" style="text-align: center;"><span style="color:#000000;">Welcome to the blog! Read an engaging showcase of various projects and activities that I have been up to recently. I have set up a comment section under each article, I would love to hear your thoughts and feedback!</span></p>
 </div><div id="a19104b297fc086e9e543fe925ead9dd" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"></div></div><div id="a19104b48f810001bdd7baa0a856ad31" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a19104b48f860005ad978b00eb5db909" class="wb_element wb-prevent-layout-click wb_gallery" data-plugin="Gallery"><script type="text/javascript">
 			window._spDefer.add(function() {
 				$(function() {
 					(function(GalleryLib) {
 						var el = document.getElementById("a19104b48f860005ad978b00eb5db909");
-						var lib = new GalleryLib({"id":"a19104b48f860005ad978b00eb5db909","height":240,"type":"slideshow","trackResize":true,"interval":10,"speed":400,"images":[{"thumb":"gallery_gen\/9c27828c53a20bed562a45c5c042e510_711x474_fill.jpg","src":"gallery_gen\/e1bc8df28f5622092dc2a9c07a0cfdb2_fit.jpg?ts=1795545494","width":1200,"height":800,"title":"","link":null,"description":"","address":""},{"thumb":"gallery_gen\/c9781615f0cce00421f313240692cb6a_711x474_fill.jpg","src":"gallery_gen\/85f3625711da223c42bb82834be9fae7_fit.jpg?ts=1795545494","width":1200,"height":800,"title":"","link":null,"description":"","address":""},{"thumb":"gallery_gen\/9a360d3f58d67e4ac5cc5745ae34f04c_711x474_fill.jpg","src":"gallery_gen\/7b6a3abd10d0cd87dcab02e15d0a2655_fit.jpg?ts=1795545494","width":1200,"height":800,"title":"","link":null,"description":"","address":""}],"border":{"border":"0px none #000000"},"padding":0,"thumbWidth":290,"thumbHeight":290,"thumbAlign":"center","thumbPadding":6,"thumbAnim":"","thumbShadow":"","imageCover":false,"disablePopup":true,"controlsArrow":"circles","controlsArrowSize":17,"controlsArrowStyle":{"normal":{"color":"#FFFFFF","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#000000","forText":true,"css":{"text-shadow":"0px 0px 1px #000000"}}},"hover":{"color":"#DDDDDD","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#222222","forText":true,"css":{"text-shadow":"0px 0px 1px #222222"}}},"active":{"color":"#FFFFFF","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#000000","forText":true,"css":{"text-shadow":"0px 0px 1px #000000"}}}},"slideOpacity":100,"showPictureCaption":"none","captionIncludeDescription":false,"captionPosition":"center bottom","mapTypeId":"","markerIconTypeId":"","zoom":16,"mapCenter":"","key":"AIzaSyD-9xtp38UunEmx7XfJ7eBh-K4w8qQ6SEw","theme":"default","color":"#eeeeee","showSatellite":true,"showZoom":true,"showStreetView":true,"showFullscreen":true,"allowDragging":true,"showRoads":true,"showLandmarks":true,"showLabels":true,"locale":"en_US","pauseOnHover":false});
+						var lib = new GalleryLib({"id":"a19104b48f860005ad978b00eb5db909","height":240,"type":"slideshow","trackResize":true,"interval":10,"speed":400,"images":[{"thumb":"gallery_gen\/9c27828c53a20bed562a45c5c042e510_711x474_fill.jpg","src":"gallery_gen\/e1bc8df28f5622092dc2a9c07a0cfdb2_fit.jpg?ts=1795549406","width":1200,"height":800,"title":"","link":null,"description":"","address":""},{"thumb":"gallery_gen\/c9781615f0cce00421f313240692cb6a_711x474_fill.jpg","src":"gallery_gen\/85f3625711da223c42bb82834be9fae7_fit.jpg?ts=1795549406","width":1200,"height":800,"title":"","link":null,"description":"","address":""},{"thumb":"gallery_gen\/9a360d3f58d67e4ac5cc5745ae34f04c_711x474_fill.jpg","src":"gallery_gen\/7b6a3abd10d0cd87dcab02e15d0a2655_fit.jpg?ts=1795549406","width":1200,"height":800,"title":"","link":null,"description":"","address":""}],"border":{"border":"0px none #000000"},"padding":0,"thumbWidth":290,"thumbHeight":290,"thumbAlign":"center","thumbPadding":6,"thumbAnim":"","thumbShadow":"","imageCover":false,"disablePopup":true,"controlsArrow":"circles","controlsArrowSize":17,"controlsArrowStyle":{"normal":{"color":"#FFFFFF","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#000000","forText":true,"css":{"text-shadow":"0px 0px 1px #000000"}}},"hover":{"color":"#DDDDDD","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#222222","forText":true,"css":{"text-shadow":"0px 0px 1px #222222"}}},"active":{"color":"#FFFFFF","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#000000","forText":true,"css":{"text-shadow":"0px 0px 1px #000000"}}}},"slideOpacity":100,"showPictureCaption":"none","captionIncludeDescription":false,"captionPosition":"center bottom","mapTypeId":"","markerIconTypeId":"","zoom":16,"mapCenter":"","key":"AIzaSyD-9xtp38UunEmx7XfJ7eBh-K4w8qQ6SEw","theme":"default","color":"#eeeeee","showSatellite":true,"showZoom":true,"showStreetView":true,"showFullscreen":true,"allowDragging":true,"showRoads":true,"showLandmarks":true,"showLabels":true,"locale":"en_US","pauseOnHover":false});
 						lib.appendTo(el);
 					})(window.wbmodGalleryLib);
 				});
@@ -203,7 +206,7 @@
 				$(function() {
 					(function(GalleryLib) {
 						var el = document.getElementById("a19104ba977f002ad981241a4411c128");
-						var lib = new GalleryLib({"id":"a19104ba977f002ad981241a4411c128","height":240,"type":"slideshow","trackResize":true,"interval":10,"speed":400,"images":[{"thumb":"gallery_gen\/9c27828c53a20bed562a45c5c042e510_711x474_fill.jpg","src":"gallery_gen\/e1bc8df28f5622092dc2a9c07a0cfdb2_fit.jpg?ts=1795545494","width":1200,"height":800,"title":"","link":null,"description":"","address":""},{"thumb":"gallery_gen\/c9781615f0cce00421f313240692cb6a_711x474_fill.jpg","src":"gallery_gen\/85f3625711da223c42bb82834be9fae7_fit.jpg?ts=1795545494","width":1200,"height":800,"title":"","link":null,"description":"","address":""},{"thumb":"gallery_gen\/9a360d3f58d67e4ac5cc5745ae34f04c_711x474_fill.jpg","src":"gallery_gen\/7b6a3abd10d0cd87dcab02e15d0a2655_fit.jpg?ts=1795545494","width":1200,"height":800,"title":"","link":null,"description":"","address":""}],"border":{"border":"0px none #000000"},"padding":0,"thumbWidth":290,"thumbHeight":290,"thumbAlign":"center","thumbPadding":6,"thumbAnim":"","thumbShadow":"","imageCover":false,"disablePopup":true,"controlsArrow":"circles","controlsArrowSize":17,"controlsArrowStyle":{"normal":{"color":"#FFFFFF","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#000000","forText":true,"css":{"text-shadow":"0px 0px 1px #000000"}}},"hover":{"color":"#DDDDDD","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#222222","forText":true,"css":{"text-shadow":"0px 0px 1px #222222"}}},"active":{"color":"#FFFFFF","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#000000","forText":true,"css":{"text-shadow":"0px 0px 1px #000000"}}}},"slideOpacity":100,"showPictureCaption":"none","captionIncludeDescription":false,"captionPosition":"center bottom","mapTypeId":"","markerIconTypeId":"","zoom":16,"mapCenter":"","key":"AIzaSyD-9xtp38UunEmx7XfJ7eBh-K4w8qQ6SEw","theme":"default","color":"#eeeeee","showSatellite":true,"showZoom":true,"showStreetView":true,"showFullscreen":true,"allowDragging":true,"showRoads":true,"showLandmarks":true,"showLabels":true,"locale":"en_US","pauseOnHover":false});
+						var lib = new GalleryLib({"id":"a19104ba977f002ad981241a4411c128","height":240,"type":"slideshow","trackResize":true,"interval":10,"speed":400,"images":[{"thumb":"gallery_gen\/9c27828c53a20bed562a45c5c042e510_711x474_fill.jpg","src":"gallery_gen\/e1bc8df28f5622092dc2a9c07a0cfdb2_fit.jpg?ts=1795549406","width":1200,"height":800,"title":"","link":null,"description":"","address":""},{"thumb":"gallery_gen\/c9781615f0cce00421f313240692cb6a_711x474_fill.jpg","src":"gallery_gen\/85f3625711da223c42bb82834be9fae7_fit.jpg?ts=1795549406","width":1200,"height":800,"title":"","link":null,"description":"","address":""},{"thumb":"gallery_gen\/9a360d3f58d67e4ac5cc5745ae34f04c_711x474_fill.jpg","src":"gallery_gen\/7b6a3abd10d0cd87dcab02e15d0a2655_fit.jpg?ts=1795549406","width":1200,"height":800,"title":"","link":null,"description":"","address":""}],"border":{"border":"0px none #000000"},"padding":0,"thumbWidth":290,"thumbHeight":290,"thumbAlign":"center","thumbPadding":6,"thumbAnim":"","thumbShadow":"","imageCover":false,"disablePopup":true,"controlsArrow":"circles","controlsArrowSize":17,"controlsArrowStyle":{"normal":{"color":"#FFFFFF","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#000000","forText":true,"css":{"text-shadow":"0px 0px 1px #000000"}}},"hover":{"color":"#DDDDDD","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#222222","forText":true,"css":{"text-shadow":"0px 0px 1px #222222"}}},"active":{"color":"#FFFFFF","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#000000","forText":true,"css":{"text-shadow":"0px 0px 1px #000000"}}}},"slideOpacity":100,"showPictureCaption":"none","captionIncludeDescription":false,"captionPosition":"center bottom","mapTypeId":"","markerIconTypeId":"","zoom":16,"mapCenter":"","key":"AIzaSyD-9xtp38UunEmx7XfJ7eBh-K4w8qQ6SEw","theme":"default","color":"#eeeeee","showSatellite":true,"showZoom":true,"showStreetView":true,"showFullscreen":true,"allowDragging":true,"showRoads":true,"showLandmarks":true,"showLabels":true,"locale":"en_US","pauseOnHover":false});
 						lib.appendTo(el);
 					})(window.wbmodGalleryLib);
 				});
@@ -216,7 +219,7 @@
 				$(function() {
 					(function(GalleryLib) {
 						var el = document.getElementById("a19104bb32b400d06aa67ecbd27c06f2");
-						var lib = new GalleryLib({"id":"a19104bb32b400d06aa67ecbd27c06f2","height":240,"type":"slideshow","trackResize":true,"interval":10,"speed":400,"images":[{"thumb":"gallery_gen\/9c27828c53a20bed562a45c5c042e510_711x474_fill.jpg","src":"gallery_gen\/e1bc8df28f5622092dc2a9c07a0cfdb2_fit.jpg?ts=1795545494","width":1200,"height":800,"title":"","link":null,"description":"","address":""},{"thumb":"gallery_gen\/c9781615f0cce00421f313240692cb6a_711x474_fill.jpg","src":"gallery_gen\/85f3625711da223c42bb82834be9fae7_fit.jpg?ts=1795545494","width":1200,"height":800,"title":"","link":null,"description":"","address":""},{"thumb":"gallery_gen\/9a360d3f58d67e4ac5cc5745ae34f04c_711x474_fill.jpg","src":"gallery_gen\/7b6a3abd10d0cd87dcab02e15d0a2655_fit.jpg?ts=1795545494","width":1200,"height":800,"title":"","link":null,"description":"","address":""}],"border":{"border":"0px none #000000"},"padding":0,"thumbWidth":290,"thumbHeight":290,"thumbAlign":"center","thumbPadding":6,"thumbAnim":"","thumbShadow":"","imageCover":false,"disablePopup":true,"controlsArrow":"circles","controlsArrowSize":17,"controlsArrowStyle":{"normal":{"color":"#FFFFFF","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#000000","forText":true,"css":{"text-shadow":"0px 0px 1px #000000"}}},"hover":{"color":"#DDDDDD","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#222222","forText":true,"css":{"text-shadow":"0px 0px 1px #222222"}}},"active":{"color":"#FFFFFF","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#000000","forText":true,"css":{"text-shadow":"0px 0px 1px #000000"}}}},"slideOpacity":100,"showPictureCaption":"none","captionIncludeDescription":false,"captionPosition":"center bottom","mapTypeId":"","markerIconTypeId":"","zoom":16,"mapCenter":"","key":"AIzaSyD-9xtp38UunEmx7XfJ7eBh-K4w8qQ6SEw","theme":"default","color":"#eeeeee","showSatellite":true,"showZoom":true,"showStreetView":true,"showFullscreen":true,"allowDragging":true,"showRoads":true,"showLandmarks":true,"showLabels":true,"locale":"en_US","pauseOnHover":false});
+						var lib = new GalleryLib({"id":"a19104bb32b400d06aa67ecbd27c06f2","height":240,"type":"slideshow","trackResize":true,"interval":10,"speed":400,"images":[{"thumb":"gallery_gen\/9c27828c53a20bed562a45c5c042e510_711x474_fill.jpg","src":"gallery_gen\/e1bc8df28f5622092dc2a9c07a0cfdb2_fit.jpg?ts=1795549406","width":1200,"height":800,"title":"","link":null,"description":"","address":""},{"thumb":"gallery_gen\/c9781615f0cce00421f313240692cb6a_711x474_fill.jpg","src":"gallery_gen\/85f3625711da223c42bb82834be9fae7_fit.jpg?ts=1795549406","width":1200,"height":800,"title":"","link":null,"description":"","address":""},{"thumb":"gallery_gen\/9a360d3f58d67e4ac5cc5745ae34f04c_711x474_fill.jpg","src":"gallery_gen\/7b6a3abd10d0cd87dcab02e15d0a2655_fit.jpg?ts=1795549406","width":1200,"height":800,"title":"","link":null,"description":"","address":""}],"border":{"border":"0px none #000000"},"padding":0,"thumbWidth":290,"thumbHeight":290,"thumbAlign":"center","thumbPadding":6,"thumbAnim":"","thumbShadow":"","imageCover":false,"disablePopup":true,"controlsArrow":"circles","controlsArrowSize":17,"controlsArrowStyle":{"normal":{"color":"#FFFFFF","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#000000","forText":true,"css":{"text-shadow":"0px 0px 1px #000000"}}},"hover":{"color":"#DDDDDD","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#222222","forText":true,"css":{"text-shadow":"0px 0px 1px #222222"}}},"active":{"color":"#FFFFFF","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#000000","forText":true,"css":{"text-shadow":"0px 0px 1px #000000"}}}},"slideOpacity":100,"showPictureCaption":"none","captionIncludeDescription":false,"captionPosition":"center bottom","mapTypeId":"","markerIconTypeId":"","zoom":16,"mapCenter":"","key":"AIzaSyD-9xtp38UunEmx7XfJ7eBh-K4w8qQ6SEw","theme":"default","color":"#eeeeee","showSatellite":true,"showZoom":true,"showStreetView":true,"showFullscreen":true,"allowDragging":true,"showRoads":true,"showLandmarks":true,"showLabels":true,"locale":"en_US","pauseOnHover":false});
 						lib.appendTo(el);
 					})(window.wbmodGalleryLib);
 				});
@@ -229,7 +232,7 @@
 				$(function() {
 					(function(GalleryLib) {
 						var el = document.getElementById("a19104bb4bf100f13ff07ebd7813609e");
-						var lib = new GalleryLib({"id":"a19104bb4bf100f13ff07ebd7813609e","height":240,"type":"slideshow","trackResize":true,"interval":10,"speed":400,"images":[{"thumb":"gallery_gen\/9c27828c53a20bed562a45c5c042e510_711x474_fill.jpg","src":"gallery_gen\/e1bc8df28f5622092dc2a9c07a0cfdb2_fit.jpg?ts=1795545494","width":1200,"height":800,"title":"","link":null,"description":"","address":""},{"thumb":"gallery_gen\/c9781615f0cce00421f313240692cb6a_711x474_fill.jpg","src":"gallery_gen\/85f3625711da223c42bb82834be9fae7_fit.jpg?ts=1795545494","width":1200,"height":800,"title":"","link":null,"description":"","address":""},{"thumb":"gallery_gen\/9a360d3f58d67e4ac5cc5745ae34f04c_711x474_fill.jpg","src":"gallery_gen\/7b6a3abd10d0cd87dcab02e15d0a2655_fit.jpg?ts=1795545494","width":1200,"height":800,"title":"","link":null,"description":"","address":""}],"border":{"border":"0px none #000000"},"padding":0,"thumbWidth":290,"thumbHeight":290,"thumbAlign":"center","thumbPadding":6,"thumbAnim":"","thumbShadow":"","imageCover":false,"disablePopup":true,"controlsArrow":"circles","controlsArrowSize":17,"controlsArrowStyle":{"normal":{"color":"#FFFFFF","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#000000","forText":true,"css":{"text-shadow":"0px 0px 1px #000000"}}},"hover":{"color":"#DDDDDD","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#222222","forText":true,"css":{"text-shadow":"0px 0px 1px #222222"}}},"active":{"color":"#FFFFFF","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#000000","forText":true,"css":{"text-shadow":"0px 0px 1px #000000"}}}},"slideOpacity":100,"showPictureCaption":"none","captionIncludeDescription":false,"captionPosition":"center bottom","mapTypeId":"","markerIconTypeId":"","zoom":16,"mapCenter":"","key":"AIzaSyD-9xtp38UunEmx7XfJ7eBh-K4w8qQ6SEw","theme":"default","color":"#eeeeee","showSatellite":true,"showZoom":true,"showStreetView":true,"showFullscreen":true,"allowDragging":true,"showRoads":true,"showLandmarks":true,"showLabels":true,"locale":"en_US","pauseOnHover":false});
+						var lib = new GalleryLib({"id":"a19104bb4bf100f13ff07ebd7813609e","height":240,"type":"slideshow","trackResize":true,"interval":10,"speed":400,"images":[{"thumb":"gallery_gen\/9c27828c53a20bed562a45c5c042e510_711x474_fill.jpg","src":"gallery_gen\/e1bc8df28f5622092dc2a9c07a0cfdb2_fit.jpg?ts=1795549406","width":1200,"height":800,"title":"","link":null,"description":"","address":""},{"thumb":"gallery_gen\/c9781615f0cce00421f313240692cb6a_711x474_fill.jpg","src":"gallery_gen\/85f3625711da223c42bb82834be9fae7_fit.jpg?ts=1795549406","width":1200,"height":800,"title":"","link":null,"description":"","address":""},{"thumb":"gallery_gen\/9a360d3f58d67e4ac5cc5745ae34f04c_711x474_fill.jpg","src":"gallery_gen\/7b6a3abd10d0cd87dcab02e15d0a2655_fit.jpg?ts=1795549406","width":1200,"height":800,"title":"","link":null,"description":"","address":""}],"border":{"border":"0px none #000000"},"padding":0,"thumbWidth":290,"thumbHeight":290,"thumbAlign":"center","thumbPadding":6,"thumbAnim":"","thumbShadow":"","imageCover":false,"disablePopup":true,"controlsArrow":"circles","controlsArrowSize":17,"controlsArrowStyle":{"normal":{"color":"#FFFFFF","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#000000","forText":true,"css":{"text-shadow":"0px 0px 1px #000000"}}},"hover":{"color":"#DDDDDD","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#222222","forText":true,"css":{"text-shadow":"0px 0px 1px #222222"}}},"active":{"color":"#FFFFFF","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#000000","forText":true,"css":{"text-shadow":"0px 0px 1px #000000"}}}},"slideOpacity":100,"showPictureCaption":"none","captionIncludeDescription":false,"captionPosition":"center bottom","mapTypeId":"","markerIconTypeId":"","zoom":16,"mapCenter":"","key":"AIzaSyD-9xtp38UunEmx7XfJ7eBh-K4w8qQ6SEw","theme":"default","color":"#eeeeee","showSatellite":true,"showZoom":true,"showStreetView":true,"showFullscreen":true,"allowDragging":true,"showRoads":true,"showLandmarks":true,"showLabels":true,"locale":"en_US","pauseOnHover":false});
 						lib.appendTo(el);
 					})(window.wbmodGalleryLib);
 				});
@@ -242,7 +245,7 @@
 				$(function() {
 					(function(GalleryLib) {
 						var el = document.getElementById("a19104bc8f8d005841373af64a256e09");
-						var lib = new GalleryLib({"id":"a19104bc8f8d005841373af64a256e09","height":240,"type":"slideshow","trackResize":true,"interval":10,"speed":400,"images":[{"thumb":"gallery_gen\/9c27828c53a20bed562a45c5c042e510_711x474_fill.jpg","src":"gallery_gen\/e1bc8df28f5622092dc2a9c07a0cfdb2_fit.jpg?ts=1795545494","width":1200,"height":800,"title":"","link":null,"description":"","address":""},{"thumb":"gallery_gen\/c9781615f0cce00421f313240692cb6a_711x474_fill.jpg","src":"gallery_gen\/85f3625711da223c42bb82834be9fae7_fit.jpg?ts=1795545494","width":1200,"height":800,"title":"","link":null,"description":"","address":""},{"thumb":"gallery_gen\/9a360d3f58d67e4ac5cc5745ae34f04c_711x474_fill.jpg","src":"gallery_gen\/7b6a3abd10d0cd87dcab02e15d0a2655_fit.jpg?ts=1795545494","width":1200,"height":800,"title":"","link":null,"description":"","address":""}],"border":{"border":"0px none #000000"},"padding":0,"thumbWidth":290,"thumbHeight":290,"thumbAlign":"center","thumbPadding":6,"thumbAnim":"","thumbShadow":"","imageCover":false,"disablePopup":true,"controlsArrow":"circles","controlsArrowSize":17,"controlsArrowStyle":{"normal":{"color":"#FFFFFF","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#000000","forText":true,"css":{"text-shadow":"0px 0px 1px #000000"}}},"hover":{"color":"#DDDDDD","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#222222","forText":true,"css":{"text-shadow":"0px 0px 1px #222222"}}},"active":{"color":"#FFFFFF","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#000000","forText":true,"css":{"text-shadow":"0px 0px 1px #000000"}}}},"slideOpacity":100,"showPictureCaption":"none","captionIncludeDescription":false,"captionPosition":"center bottom","mapTypeId":"","markerIconTypeId":"","zoom":16,"mapCenter":"","key":"AIzaSyD-9xtp38UunEmx7XfJ7eBh-K4w8qQ6SEw","theme":"default","color":"#eeeeee","showSatellite":true,"showZoom":true,"showStreetView":true,"showFullscreen":true,"allowDragging":true,"showRoads":true,"showLandmarks":true,"showLabels":true,"locale":"en_US","pauseOnHover":false});
+						var lib = new GalleryLib({"id":"a19104bc8f8d005841373af64a256e09","height":240,"type":"slideshow","trackResize":true,"interval":10,"speed":400,"images":[{"thumb":"gallery_gen\/9c27828c53a20bed562a45c5c042e510_711x474_fill.jpg","src":"gallery_gen\/e1bc8df28f5622092dc2a9c07a0cfdb2_fit.jpg?ts=1795549406","width":1200,"height":800,"title":"","link":null,"description":"","address":""},{"thumb":"gallery_gen\/c9781615f0cce00421f313240692cb6a_711x474_fill.jpg","src":"gallery_gen\/85f3625711da223c42bb82834be9fae7_fit.jpg?ts=1795549406","width":1200,"height":800,"title":"","link":null,"description":"","address":""},{"thumb":"gallery_gen\/9a360d3f58d67e4ac5cc5745ae34f04c_711x474_fill.jpg","src":"gallery_gen\/7b6a3abd10d0cd87dcab02e15d0a2655_fit.jpg?ts=1795549406","width":1200,"height":800,"title":"","link":null,"description":"","address":""}],"border":{"border":"0px none #000000"},"padding":0,"thumbWidth":290,"thumbHeight":290,"thumbAlign":"center","thumbPadding":6,"thumbAnim":"","thumbShadow":"","imageCover":false,"disablePopup":true,"controlsArrow":"circles","controlsArrowSize":17,"controlsArrowStyle":{"normal":{"color":"#FFFFFF","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#000000","forText":true,"css":{"text-shadow":"0px 0px 1px #000000"}}},"hover":{"color":"#DDDDDD","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#222222","forText":true,"css":{"text-shadow":"0px 0px 1px #222222"}}},"active":{"color":"#FFFFFF","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#000000","forText":true,"css":{"text-shadow":"0px 0px 1px #000000"}}}},"slideOpacity":100,"showPictureCaption":"none","captionIncludeDescription":false,"captionPosition":"center bottom","mapTypeId":"","markerIconTypeId":"","zoom":16,"mapCenter":"","key":"AIzaSyD-9xtp38UunEmx7XfJ7eBh-K4w8qQ6SEw","theme":"default","color":"#eeeeee","showSatellite":true,"showZoom":true,"showStreetView":true,"showFullscreen":true,"allowDragging":true,"showRoads":true,"showLandmarks":true,"showLabels":true,"locale":"en_US","pauseOnHover":false});
 						lib.appendTo(el);
 					})(window.wbmodGalleryLib);
 				});
@@ -255,7 +258,7 @@
 				$(function() {
 					(function(GalleryLib) {
 						var el = document.getElementById("a19104bca8c400fd343211bc6efbd046");
-						var lib = new GalleryLib({"id":"a19104bca8c400fd343211bc6efbd046","height":240,"type":"slideshow","trackResize":true,"interval":10,"speed":400,"images":[{"thumb":"gallery_gen\/9c27828c53a20bed562a45c5c042e510_711x474_fill.jpg","src":"gallery_gen\/e1bc8df28f5622092dc2a9c07a0cfdb2_fit.jpg?ts=1795545494","width":1200,"height":800,"title":"","link":null,"description":"","address":""},{"thumb":"gallery_gen\/c9781615f0cce00421f313240692cb6a_711x474_fill.jpg","src":"gallery_gen\/85f3625711da223c42bb82834be9fae7_fit.jpg?ts=1795545494","width":1200,"height":800,"title":"","link":null,"description":"","address":""},{"thumb":"gallery_gen\/9a360d3f58d67e4ac5cc5745ae34f04c_711x474_fill.jpg","src":"gallery_gen\/7b6a3abd10d0cd87dcab02e15d0a2655_fit.jpg?ts=1795545494","width":1200,"height":800,"title":"","link":null,"description":"","address":""}],"border":{"border":"0px none #000000"},"padding":0,"thumbWidth":290,"thumbHeight":290,"thumbAlign":"center","thumbPadding":6,"thumbAnim":"","thumbShadow":"","imageCover":false,"disablePopup":true,"controlsArrow":"circles","controlsArrowSize":17,"controlsArrowStyle":{"normal":{"color":"#FFFFFF","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#000000","forText":true,"css":{"text-shadow":"0px 0px 1px #000000"}}},"hover":{"color":"#DDDDDD","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#222222","forText":true,"css":{"text-shadow":"0px 0px 1px #222222"}}},"active":{"color":"#FFFFFF","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#000000","forText":true,"css":{"text-shadow":"0px 0px 1px #000000"}}}},"slideOpacity":100,"showPictureCaption":"none","captionIncludeDescription":false,"captionPosition":"center bottom","mapTypeId":"","markerIconTypeId":"","zoom":16,"mapCenter":"","key":"AIzaSyD-9xtp38UunEmx7XfJ7eBh-K4w8qQ6SEw","theme":"default","color":"#eeeeee","showSatellite":true,"showZoom":true,"showStreetView":true,"showFullscreen":true,"allowDragging":true,"showRoads":true,"showLandmarks":true,"showLabels":true,"locale":"en_US","pauseOnHover":false});
+						var lib = new GalleryLib({"id":"a19104bca8c400fd343211bc6efbd046","height":240,"type":"slideshow","trackResize":true,"interval":10,"speed":400,"images":[{"thumb":"gallery_gen\/9c27828c53a20bed562a45c5c042e510_711x474_fill.jpg","src":"gallery_gen\/e1bc8df28f5622092dc2a9c07a0cfdb2_fit.jpg?ts=1795549406","width":1200,"height":800,"title":"","link":null,"description":"","address":""},{"thumb":"gallery_gen\/c9781615f0cce00421f313240692cb6a_711x474_fill.jpg","src":"gallery_gen\/85f3625711da223c42bb82834be9fae7_fit.jpg?ts=1795549406","width":1200,"height":800,"title":"","link":null,"description":"","address":""},{"thumb":"gallery_gen\/9a360d3f58d67e4ac5cc5745ae34f04c_711x474_fill.jpg","src":"gallery_gen\/7b6a3abd10d0cd87dcab02e15d0a2655_fit.jpg?ts=1795549406","width":1200,"height":800,"title":"","link":null,"description":"","address":""}],"border":{"border":"0px none #000000"},"padding":0,"thumbWidth":290,"thumbHeight":290,"thumbAlign":"center","thumbPadding":6,"thumbAnim":"","thumbShadow":"","imageCover":false,"disablePopup":true,"controlsArrow":"circles","controlsArrowSize":17,"controlsArrowStyle":{"normal":{"color":"#FFFFFF","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#000000","forText":true,"css":{"text-shadow":"0px 0px 1px #000000"}}},"hover":{"color":"#DDDDDD","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#222222","forText":true,"css":{"text-shadow":"0px 0px 1px #222222"}}},"active":{"color":"#FFFFFF","shadow":{"angle":135,"distance":0,"size":0,"blur":1,"color":"#000000","forText":true,"css":{"text-shadow":"0px 0px 1px #000000"}}}},"slideOpacity":100,"showPictureCaption":"none","captionIncludeDescription":false,"captionPosition":"center bottom","mapTypeId":"","markerIconTypeId":"","zoom":16,"mapCenter":"","key":"AIzaSyD-9xtp38UunEmx7XfJ7eBh-K4w8qQ6SEw","theme":"default","color":"#eeeeee","showSatellite":true,"showZoom":true,"showStreetView":true,"showFullscreen":true,"allowDragging":true,"showRoads":true,"showLandmarks":true,"showLabels":true,"locale":"en_US","pauseOnHover":false});
 						lib.appendTo(el);
 					})(window.wbmodGalleryLib);
 				});
@@ -263,109 +266,7 @@
 		</script></div><div id="a19104bca8c80041164c53ad62248bbb" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a19104bca8cb00eaaf930ece653aa5fd" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom20"><strong>DataSafari</strong></p>
 </div><div id="a19104bca8d00009abf409d72047e00a" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><h2 class="wb-stl-custom21">Introducing DataSafari!</h2>
 </div><div id="a19104bca8d3002b6a2df2613f4a3533" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-custom22">Replace this text with information about you and your business or add information that will be useful for your customers.</p>
-</div><div id="a19104bca8d8005ef6ab04998e6c421e" class="wb_element" data-plugin="Button"><a class="wb_button"><span>Read more</span></a></div></div></div></div></div></div></div></div></div><div id="a19104b297fc0477f19b8fa3c8b661c0" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1795545494"></div></div></div></div></div><div id="wb_footer_a19104b295bb0096958c9d452e84c121" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a28f644d700467a092774" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a18bddd77e4a29482ca99ceaa3d4d1bc" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2abb12b0e1f6fa5cbe90" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2bcd8ea946907bd71b2d" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
-	'type' => 'hmenu',
-	'dir' => 'ltr',
-	'items' => array(
-		(object) array(
-			'id' => 9,
-			'href' => '{{base_url}}',
-			'name' => 'Home',
-			'class' => '',
-			'children' => array()
-		),
-		(object) array(
-			'id' => null,
-			'name' => 'Education',
-			'class' => '',
-			'children' => array(
-				(object) array(
-					'id' => 12,
-					'href' => 'm',
-					'name' => 'Academic Portfolio',
-					'class' => '',
-					'children' => array()
-				),
-				(object) array(
-					'id' => null,
-					'name' => 'Recognitions',
-					'class' => '',
-					'children' => array()
-				)
-			)
-		),
-		(object) array(
-			'id' => null,
-			'name' => 'Work',
-			'class' => '',
-			'children' => array(
-				(object) array(
-					'id' => 13,
-					'href' => 'https://www.datasafari.dev',
-					'target' => '_blank',
-					'name' => 'DataSafari',
-					'class' => '',
-					'children' => array()
-				),
-				(object) array(
-					'id' => 14,
-					'href' => 'skipschoolmakemoney',
-					'name' => 'SSMM',
-					'class' => '',
-					'children' => array()
-				),
-				(object) array(
-					'id' => 15,
-					'href' => 'thoughtbubble',
-					'name' => 'thoughtbubble',
-					'class' => '',
-					'children' => array()
-				),
-				(object) array(
-					'id' => 16,
-					'href' => 'dreemcorp',
-					'name' => 'DREEMCORP',
-					'class' => '',
-					'children' => array()
-				)
-			)
-		),
-		(object) array(
-			'id' => 10,
-			'href' => 'blog',
-			'name' => 'Blog',
-			'class' => 'wb_this_page_menu_item active',
-			'children' => array()
-		),
-		(object) array(
-			'id' => 11,
-			'href' => '#contacts',
-			'name' => 'Contact',
-			'class' => '',
-			'children' => array()
-		)
-	)
-)); ?><div class="clearfix"></div></div></div></div><div id="a18bddd77e4a2c6aeed0be64266481ff" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2d6f09a042a1d1d71e54" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a2e5b543facb3feeac864" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a18bddd77e4a2fe57f7708250a5f3d45" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: right;">Thank you for taking the time to check out my portfolio.<br>
-- George</p>
-</div><div id="a19128c48c8900fe1aac133c014f46be" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: right;">Thank you for taking the time to check out my portfolio.<br>
-- George</p>
-</div><div id="a19128c168ff0056a1c5065f830e628f" class="wb_element wb-elm-orient-horizontal" data-plugin="Line"><div class="wb-elm-line"></div></div><div id="a18bddd77e4a31423e1d18279dd263c7" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: center;">Related Domains:</p>
-
-<p class="wb-stl-footer" style="text-align: center;"><a href="https://www.dreemer.xyz">dreemer.xyz</a></p>
-
-<p class="wb-stl-footer" style="text-align: center;"><a href="https://www.georgedreemer.com">georgedreemer.com</a></p>
-
-<p class="wb-stl-footer" style="text-align: center;"><a href="https://www.dreemcorp.com">dreemcorp.com</a></p>
-
-<p class="wb-stl-footer" style="text-align: center;"><a href="https://www.skipschoolmakemoney.com">skipschoolmakemoney.com</a></p>
-
-<p class="wb-stl-footer" style="text-align: center;"><a data-_="Link" href="https://www.datasafari.dev" target="_blank" title="DataSafari Official Website">datasafari.dev</a></p>
-
-<p class="wb-stl-footer" style="text-align: center;"><a data-_="Link" href="https://www.cryptopandemic.com" target="_blank" title="CryptoPandemic Official Website">cryptopandemic.com</a></p>
-
-<p class="wb-stl-footer" style="text-align: center;"><a data-_="Link" href="anabolickmusick.com" target="_blank" title="anabolic musick's official website">anabolickmusick.com</a></p>
-</div><div id="a18bddd77e4a320a360cd08aa5891d23" class="wb_element wb_text_element" data-plugin="TextArea" style=" line-height: normal;"><p class="wb-stl-footer" style="text-align: center;"><span style="color:rgba(255,255,255,1);">© 2024 <a href="https://www.georgedreemer.com">G</a><a href="https://www.dreemer.xyz">eorge Dreemer</a></span></p>
-</div></div></div><div id="a18bddd77e4b00f630a15cb11ea05cad" class="wb_element wb_element_picture" data-plugin="Picture" title="George Dreemer's Official Website"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="George Dreemer's Official Website" src="gallery_gen/6742db93b980c975748be6c57a3e7e48_66x70_fit.png?ts=1795545494"></a></div></div></div></div></div></div></div><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
+</div><div id="a19104bca8d8005ef6ab04998e6c421e" class="wb_element" data-plugin="Button"><a class="wb_button"><span>Read more</span></a></div></div></div></div></div></div></div></div></div><div id="a19104b297fc0477f19b8fa3c8b661c0" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1795549406"></div></div></div></div></div><div id="wb_footer_a19104b295bb0096958c9d452e84c121" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
 			$(function() {
 				var footer = $(".wb_footer");
 				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
@@ -376,12 +277,8 @@
 				}
 			});
 			});</script></div></div></div></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
-	<script src="js/common-bundle.js?ts=20261124203811" type="text/javascript" defer></script>
-	<script src="js/a19104b295bb0096958c9d452e84c121-bundle.js?ts=20261124203811" type="text/javascript" defer></script>{{hr_out}}<style>
-.image-height-mod {
-height: 100%;
-}
-</style>
+	<script src="js/common-bundle.js?ts=20261124214324" type="text/javascript" defer></script>
+	<script src="js/a19104b295bb0096958c9d452e84c121-bundle.js?ts=20261124214324" type="text/javascript" defer></script>{{hr_out}}
 <div class="wb_pswp" tabindex="-1" role="dialog" aria-hidden="true">
 </div>
 <script>

@@ -23,23 +23,22 @@
 	<?php echo isset($sitemapUrls) ? (generateCanonicalUrl($sitemapUrls)."\n") : ""; ?>	
 	
 						<meta name="viewport" content="width=device-width, initial-scale=1" />
-					<meta name="description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "Data scientist, developer, and entrepreneur. Creator of DataSafari, founder of CryptoPandemic. MSc in Marketing Analytics & Data Science, University of Groningen. - Custom 404 page"); ?>" />
-			<meta name="keywords" content="<?php echo htmlspecialchars((isset($seoKeywords) && $seoKeywords !== "") ? $seoKeywords : "george dreemer,data scientist,python developer,entrepreneur,web3 marketer,solana analytics,datasafari,cryptopandemic,dreemcorp,open source python,machine learning engineer,data engineer,marketing analytics,university of groningen,msc data science,dubai data scientist,data science portfolio,ml portfolio,georgedreemer,Custom 404 page"); ?>" />
+					<meta name="description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "Custom 404 page"); ?>" />
+			<meta name="keywords" content="<?php echo htmlspecialchars((isset($seoKeywords) && $seoKeywords !== "") ? $seoKeywords : "Custom 404 page"); ?>" />
 			<meta name="robots" content="noindex" />
-			<meta property="og:site_name" content="George Dreemer — Data Scientist, Developer & Entrepreneur">
-	
+		
 	<!-- Facebook Open Graph -->
 		<meta property="og:title" content="<?php echo htmlspecialchars((isset($seoTitle) && $seoTitle !== "") ? $seoTitle : "Custom 404 page"); ?>" />
-			<meta property="og:description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "Data scientist, developer, and entrepreneur. Creator of DataSafari, founder of CryptoPandemic. MSc in Marketing Analytics & Data Science, University of Groningen. - Custom 404 page"); ?>" />
-			<meta property="og:image" content="<?php echo htmlspecialchars((isset($seoImage) && $seoImage !== "") ? "{{base_url}}".$seoImage : "{{base_url}}gallery_gen/f119e2be82f43b8529124ed91dddcd0e_fit.png"); ?>" />
+			<meta property="og:description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "Custom 404 page"); ?>" />
+			<meta property="og:image" content="<?php echo htmlspecialchars((isset($seoImage) && $seoImage !== "") ? "{{base_url}}".$seoImage : ""); ?>" />
 			<meta property="og:type" content="article" />
 			<meta property="og:url" content="__wb_curr_url__" />
 		<!-- Facebook Open Graph end -->
 
 			<?php if (empty($wbWhitelabel)): ?>	<meta name="generator" content="Site.pro Builder" />
 	<?php else: ?>	<meta name="generator" content="Website Builder" />
-	<?php endif; ?>			<link href="css/common-bundle.css?ts=20261124203811" rel="preload" type="text/css" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
-	<link href="css/a18bddd8aa5900272be5f7d0b8bcd1fd-bundle.css?ts=20261124203811" rel="preload" type="text/css" id="wb-page-stylesheet" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
+	<?php endif; ?>			<link href="css/common-bundle.css?ts=20261124214324" rel="preload" type="text/css" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
+	<link href="css/a18bddd8aa5900272be5f7d0b8bcd1fd-bundle.css?ts=20261124214324" rel="preload" type="text/css" id="wb-page-stylesheet" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
 	<ga-code/><!-- Global: identity & crawling -->
 <meta name="author" content="George Dreemer">
 <meta name="robots" content="max-image-preview:large, max-snippet:-1">
@@ -112,11 +111,7 @@
 				}
 			});
 			});</script></div></div></div></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
-	<script src="js/common-bundle.js?ts=20261124203811" type="text/javascript" defer></script>{{hr_out}}<style>
-.image-height-mod {
-height: 100%;
-}
-</style><script>
+	<script src="js/common-bundle.js?ts=20261124214324" type="text/javascript" defer></script>{{hr_out}}<script>
     document.addEventListener('DOMContentLoaded', function () {
         window._spDefer.done();
     });

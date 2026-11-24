@@ -172,7 +172,7 @@ class PluginDescriptorHandler {
 		),
 		array(
 			'id' => 'a18bddd8a85d05531bf2b97cfabf9ffd',
-			'alias' => 'thoughtbubble',
+			'alias' => 'work/thoughtbubble',
 			'file' => 'a18bddd8a85d05531bf2b97cfabf9ffd.php',
 			'controllers' => array(),
 			'type' => 0,
@@ -339,10 +339,10 @@ class PluginDescriptorHandler {
 	$langs = null;
 	$def_lang = null;
 	$base_lang = 'en';
-	$site_id = '14a7e81b';
+	$site_id = 'b1b29c54';
 	${'sitemapUrls'} = array(
 		'https://georgedreemer.com/',
-		'https://georgedreemer.com/thoughtbubble',
+		'https://georgedreemer.com/work/thoughtbubble',
 		'https://georgedreemer.com/skipschoolmakemoney',
 		'https://georgedreemer.com/dreemcorp',
 		'https://georgedreemer.com/datasafari',
