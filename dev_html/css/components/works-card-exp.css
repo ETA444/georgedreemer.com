@@ -295,3 +295,15 @@
     border-radius: 50%;
     background: var(--color-text-faint);
 }
+
+/* Sitebuilder Specific Style Fix (see sitebuilder-overrides.css:line 84 */
+.evidence-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+}
+
+@media (max-width: 900px) {
+    .evidence-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
