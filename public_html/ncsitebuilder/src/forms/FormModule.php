@@ -98,6 +98,12 @@ class FormModule
 	 */
 	public static function logForm($attachmentsLogDir, $pageId, $formId, $formDef, $formData)
 	{
+		// $formId comes from the request and is used as a directory name below
+		if (!is_string($formId) || !preg_match('#^[a-zA-Z0-9_-]{1,64}$#', $formId)) {
+			error_log('[Form error]: Invalid form id');
+			return;
+		}
+
 		$fields = array();
 
 		$movedFiles = array();

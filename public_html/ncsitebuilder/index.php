@@ -10,7 +10,8 @@
 	require_once dirname(__FILE__).'/polyfill.php';
 	$siteState = (object) array(
 	'hostingPlan' => 'full',
-	'upgradeUrl' => ''
+	'upgradeUrl' => '',
+	'whitelabel' => true
 );
 
 
@@ -31,7 +32,7 @@ class PluginDescriptorHandler {
 	}
 
 	/**
-	 * @param object{hostingPlan:string,upgradeUrl:string} $siteState
+	 * @param object{hostingPlan:string,upgradeUrl:string,whitelabel:bool} $siteState
 	 * @return bool
 	 */
 	public function load($siteState) {
@@ -338,7 +339,7 @@ class PluginDescriptorHandler {
 	$langs = null;
 	$def_lang = null;
 	$base_lang = 'en';
-	$site_id = '04dfd234';
+	$site_id = '14a7e81b';
 	${'sitemapUrls'} = array(
 		'https://georgedreemer.com/',
 		'https://georgedreemer.com/thoughtbubble',
@@ -541,6 +542,7 @@ class MenuElement {
 			${'seoKeywords'} = $requestInfo->{'keywords'};
 			${'seoImage'} = $requestInfo->{'image'};
 			if (isset($_GET['wbPopupMode']) && $_GET['wbPopupMode'] == 1) { $wbPopupMode = true; }
+			${'wbWhitelabel'} = !empty($siteState->{'whitelabel'});
 			if (!$pd->load($siteState)) die('Data is corrupted');
 			MenuElement::setMax($pd->getMaxMenuItems());
 			ob_start();

@@ -32,41 +32,41 @@
 		<meta property="og:title" content="<?php echo htmlspecialchars((isset($seoTitle) && $seoTitle !== "") ? $seoTitle : "Custom Maintenance page"); ?>" />
 			<meta property="og:description" content="<?php echo htmlspecialchars((isset($seoDescription) && $seoDescription !== "") ? $seoDescription : "Data scientist, developer, and entrepreneur. Creator of DataSafari, founder of CryptoPandemic. MSc in Marketing Analytics & Data Science, University of Groningen. - Custom Maintenance page"); ?>" />
 			<meta property="og:image" content="<?php echo htmlspecialchars((isset($seoImage) && $seoImage !== "") ? "{{base_url}}".$seoImage : "{{base_url}}gallery_gen/f119e2be82f43b8529124ed91dddcd0e_fit.png"); ?>" />
-				<meta property="og:url" content="__wb_curr_url__" />
+			<meta property="og:type" content="article" />
+			<meta property="og:url" content="__wb_curr_url__" />
 		<!-- Facebook Open Graph end -->
 
-		<meta name="generator" content="Website Builder" />
-			<link href="css/common-bundle.css?ts=20261030173609" rel="stylesheet" type="text/css" />
-	<link href="css/a18bddd8aa6701458d7b22ab910322e9-bundle.css?ts=20261030173609" rel="stylesheet" type="text/css" id="wb-page-stylesheet" />
-	<ga-code/><!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-     SECTION 1 — GLOBAL
-     Settings → Meta Tags (site-wide, always present)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+			<?php if (empty($wbWhitelabel)): ?>	<meta name="generator" content="Site.pro Builder" />
+	<?php else: ?>	<meta name="generator" content="Website Builder" />
+	<?php endif; ?>			<link href="css/common-bundle.css?ts=20261124203811" rel="preload" type="text/css" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
+	<link href="css/a18bddd8aa6701458d7b22ab910322e9-bundle.css?ts=20261124203811" rel="preload" type="text/css" id="wb-page-stylesheet" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
+	<ga-code/><!-- Global: identity & crawling -->
 <meta name="author" content="George Dreemer">
-<meta name="robots" content="index, follow">
-<meta name="subject" content="Personal portfolio and brand hub of George Dreemer">
-<meta name="classification" content="Portfolio">
-<meta name="category" content="Technology, Data Science, Entrepreneurship">
-<meta name="coverage" content="Worldwide">
-<meta name="distribution" content="Global">
-<meta name="rating" content="General">
-<meta name="revisit-after" content="7 days">
-<meta name="language" content="English">
+<meta name="robots" content="max-image-preview:large, max-snippet:-1">
+
+<!-- Global: appearance -->
 <meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="format-detection" content="telephone=no">
-<meta property="og:type" content="profile">
+
+<!-- Global: social -->
 <meta property="og:site_name" content="George Dreemer">
 <meta property="og:locale" content="en_US">
-<meta property="profile:first_name" content="George">
-<meta property="profile:last_name" content="Dreemer">
-<meta property="profile:username" content="georgedreemer">
-<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@444eta">
 <meta name="twitter:creator" content="@444eta">
-<meta name="twitter:label1" content="Ventures">
-<meta name="twitter:data1" content="DataSafari · CryptoPandemic · DREEMCORP">
-<meta name="twitter:label2" content="Based in">
-<meta name="twitter:data2" content="Europe → Dubai"><link rel="shortcut icon" href="gallery/favicons/favicon.ico" type="image/x-icon">
+<meta name="twitter:label1" content="Role">
+<meta name="twitter:data1" content="Data Scientist &amp; Developer">
+<meta name="twitter:label2" content="Open to">
+<meta name="twitter:data2" content="Data, ML &amp; AI roles · Dubai, UAE">
+
+<!-- Global: icons -->
+<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png?v=20261124" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg?v=20261124" />
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=20261124" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=20261124" />
+<meta name="apple-mobile-web-app-title" content="ETA!" />
+<link rel="manifest" href="/favicon/site.webmanifest?v=20261124" />
 	<script type="text/javascript">
 	window.useTrailingSlashes = false;
 	window.disableRightClick = false;
@@ -112,7 +112,7 @@
 				}
 			});
 			});</script></div></div></div></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
-	<script src="js/common-bundle.js?ts=20261030173609" type="text/javascript" defer></script>{{hr_out}}<style>
+	<script src="js/common-bundle.js?ts=20261124203811" type="text/javascript" defer></script>{{hr_out}}<style>
 .image-height-mod {
 height: 100%;
 }
