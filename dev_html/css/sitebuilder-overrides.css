@@ -66,6 +66,7 @@ body {
 }
 
 /* --- Works Cards Edu (works-card-edu.css) --- */
+/* RETURNED THIS TO COMPONENT CSS
 .evidence-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     gap: 24px !important;
@@ -76,9 +77,11 @@ body {
         grid-template-columns: 1fr !important;
     }
 }
+*/
 
 
 /* --- Works Cards Exp (works-card-exp.css) --- */
+/* RETURNED THIS TO COMPONENT CSS
 .evidence-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     gap: 24px !important;
@@ -89,3 +92,4 @@ body {
         grid-template-columns: 1fr !important;
     }
 }
+*/
