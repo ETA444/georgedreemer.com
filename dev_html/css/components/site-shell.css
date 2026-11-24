@@ -190,12 +190,20 @@ html[data-gd-ready] main [id][data-nav] {
 /* Header */
 
 .gd-header {
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 300;
     width: 100%;
     background: var(--gd-bg);
     border-bottom: 1px solid var(--gd-border);
     padding-top: calc(env(safe-area-inset-top) + 0.5em);
+}
+
+@media (max-width: 59.999rem) {
+    body:has(.gd-home-page) .gd-header {
+        position: relative;
+        top: auto;
+    }
 }
 
 .gd-header__inner {
