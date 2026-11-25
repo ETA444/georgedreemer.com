@@ -51,14 +51,14 @@
                     </a>
 
                     <!-- Populated only when the page has a relevant identity. -->
-                    <a class="gd-context" href="#page-content" data-gd-context hidden>
+                    <span class="gd-context" data-gd-context hidden>
 
-                    <span class="gd-context__separator" aria-hidden="true">›</span>
+                    <span class="gd-context__separator" aria-hidden="true" style="pointer-events: none;">›</span>
 
-                    <span class="gd-context__mark" data-gd-context-mark aria-hidden="true"></span>
+                    <span class="gd-context__mark" data-gd-context-mark aria-hidden="true" data-gd-open="page" aria-haspopup="dialog" aria-controls="gd-sheet" aria-expanded="false" style="cursor: pointer;"></span>
 
                     <span class="gd-sr-only" data-gd-context-label></span>
-                    </a>
+                    </span>
 
                 </div>
 

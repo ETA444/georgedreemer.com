@@ -1,0 +1,3719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript">
+	window._spDefer = {
+		queue: [],
+		ready: false,
+		add: function(fn) {
+			if (this.ready) { fn(); }
+			else { this.queue.push(fn); }
+		},
+		done: function() {
+			this.ready = true;
+			var fns = this.queue;
+			this.queue = [];
+			for (var i = 0; i < fns.length; i++) { fns[i](); }
+		}
+	};
+	</script>
+			<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title><?php echo htmlspecialchars((isset($seoTitle) && $seoTitle !== "") ? $seoTitle : "MSc Marketing Analytics & Data Science — Thesis, Reports & Code · George Dreemer"); ?></title>
+	<base href="{{base_url}}" />
+	<?php echo isset($sitemapUrls) ? (generateCanonicalUrl($sitemapUrls)."\n") : ""; ?>	
+	
+					
+	<!-- Facebook Open Graph -->
+						<!-- Facebook Open Graph end -->
+
+			<?php if (empty($wbWhitelabel)): ?>	<meta name="generator" content="Site.pro Builder" />
+	<?php else: ?>	<meta name="generator" content="Website Builder" />
+	<?php endif; ?>			<link href="css/common-bundle.css?ts=20261125222641" rel="preload" type="text/css" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
+	<link href="css/a1a2145d188d0044e688f0a1b6dde831-bundle.css?ts=20261125222641" rel="preload" type="text/css" id="wb-page-stylesheet" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
+	<ga-code/><!-- Global: identity & crawling -->
+<meta name="author" content="George Dreemer">
+<meta name="robots" content="max-image-preview:large, max-snippet:-1">
+
+<!-- Global: appearance -->
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="format-detection" content="telephone=no">
+
+<!-- Global: social -->
+<meta property="og:site_name" content="George Dreemer">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:site" content="@444eta">
+<meta name="twitter:creator" content="@444eta">
+<meta name="twitter:label1" content="Role">
+<meta name="twitter:data1" content="Data Scientist &amp; Developer">
+<meta name="twitter:label2" content="Open to">
+<meta name="twitter:data2" content="Data, ML &amp; AI roles · Dubai, UAE">
+
+<!-- Global: icons -->
+<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png?v=20261124" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg?v=20261124" />
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=20261124" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=20261124" />
+<meta name="apple-mobile-web-app-title" content="ETA!" />
+<link rel="manifest" href="/favicon/site.webmanifest?v=20261124" />
+	<script type="text/javascript">
+	window.useTrailingSlashes = false;
+	window.disableRightClick = false;
+	window.currLang = 'en';
+</script>
+	<!-- Core document setup -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<!-- SEO -->
+<title>MSc Marketing Analytics &amp; Data Science — Thesis, Reports &amp; Code · George Dreemer</title>
+<meta name="description" content="George's MSc in Marketing Analytics and Data Science at the University of Groningen brought research, statistics and machine learning into practical business questions. Explore the work behind it: from preparing data and comparing models to interpreting findings, with public code, reports and a thesis on willingness to share health data.">
+<meta name="keywords" content="george dreemer msc, msc marketing analytics data science, university of groningen msc, faculty of economics and business groningen, msc thesis health data sharing, discrete choice experiment, latent class analysis, conditional logit, stata, churn prediction, customer segmentation, cluster analysis, factor analysis, text mining, sentiment analysis, propensity score matching, time-series analysis, market modelling, omnichannel marketing, data engineering sql, r programming, python data science, data science portfolio, mads madlad, stuvia, knoowy, george dreemer education">
+<link rel="canonical" href="https://georgedreemer.com/education/masters">
+<link rel="alternate" type="text/markdown" href="https://georgedreemer.com/education/masters.md">
+<link rel="describedby" href="https://georgedreemer.com/llms.txt">
+
+<!-- Social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://georgedreemer.com/education/masters">
+<meta property="og:title" content="MSc Marketing Analytics &amp; Data Science — Thesis, Reports &amp; Code · George Dreemer">
+<meta property="og:description" content="George's MSc in Marketing Analytics and Data Science at the University of Groningen brought research, statistics and machine learning into practical business questions. Explore the work behind it: from preparing data and comparing models to interpreting findings, with public code, reports and a thesis on willingness to share health data.">
+<meta property="og:image" content="https://georgedreemer.com/public_img/general/ogimages/education-v1.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Visual showcase of George Dreemer's Masters Degree">
+<meta name="twitter:image:alt" content="Visual showcase of George Dreemer's Masters Degree">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MSc Marketing Analytics &amp; Data Science — Thesis, Reports &amp; Code · George Dreemer">
+<meta name="twitter:description" content="George's MSc in Marketing Analytics and Data Science at the University of Groningen brought research, statistics and machine learning into practical business questions. Explore the work behind it: from preparing data and comparing models to interpreting findings, with public code, reports and a thesis on willingness to share health data.">
+<meta name="twitter:image" content="https://georgedreemer.com/public_img/general/ogimages/education-v1.png">
+
+<!-- Structured data -->
+<script data-custom-script="true" type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": [
+          "WebPage",
+          "CollectionPage"
+        ],
+        "@id": "https://georgedreemer.com/education/masters#webpage",
+        "url": "https://georgedreemer.com/education/masters",
+        "name": "MSc Marketing Analytics & Data Science — University of Groningen",
+        "description": "George's MSc in Marketing Analytics and Data Science at the University of Groningen brought research, statistics and machine learning into practical business questions. Explore the work behind it: from preparing data and comparing models to interpreting findings, with public code, reports and a thesis on willingness to share health data.",
+        "isPartOf": {
+          "@id": "https://georgedreemer.com/#website"
+        },
+        "about": {
+          "@id": "https://georgedreemer.com/education/masters#msc-programme"
+        },
+        "mainEntity": {
+          "@id": "https://georgedreemer.com/education/masters#msc-thesis"
+        },
+        "author": {
+          "@id": "https://georgedreemer.com/#person"
+        },
+        "breadcrumb": {
+          "@id": "https://georgedreemer.com/education/masters#breadcrumb"
+        },
+        "hasPart": [
+          {
+            "@id": "https://georgedreemer.com/education/masters#coursework"
+          },
+          {
+            "@id": "https://georgedreemer.com/education/masters#madsmadlad"
+          }
+        ],
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://georgedreemer.com/public_img/general/ogimages/education-v1.png",
+          "width": 1200,
+          "height": 630
+        },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://georgedreemer.com/education/masters#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "George Dreemer",
+            "item": "https://georgedreemer.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Education",
+            "item": "https://georgedreemer.com/#education"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "MSc Marketing Analytics & Data Science",
+            "item": "https://georgedreemer.com/education/masters"
+          }
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://georgedreemer.com/#person",
+        "name": "George Dreemer",
+        "url": "https://georgedreemer.com",
+        "alumniOf": {
+          "@id": "https://www.rug.nl/#organization"
+        },
+        "hasCredential": {
+          "@id": "https://georgedreemer.com/education/masters#msc-degree"
+        },
+        "knowsAbout": [
+          "Python",
+          "R",
+          "SQL",
+          "Stata",
+          "SPSS",
+          "Data Science",
+          "Data Engineering",
+          "Statistical Learning",
+          "Machine Learning",
+          "Text Mining",
+          "Sentiment Analysis",
+          "Time-Series Analysis",
+          "Market Modelling",
+          "Omnichannel Marketing",
+          "Consumer and Brand Analytics",
+          "Discrete Choice Modelling",
+          "Latent Class Analysis",
+          "Propensity Score Matching",
+          "Churn Prediction",
+          "Customer Segmentation",
+          "pandas",
+          "NumPy",
+          "SciPy",
+          "scikit-learn",
+          "Matplotlib",
+          "seaborn",
+          "Plotly",
+          "statsmodels",
+          "ggplot2",
+          "dplyr",
+          "caret",
+          "randomForest",
+          "gbm",
+          "Jupyter",
+          "RStudio",
+          "Git",
+          "GitHub",
+          "Azure",
+          "Google Analytics"
+        ]
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "@id": "https://www.rug.nl/#organization",
+        "name": "University of Groningen",
+        "alternateName": "Rijksuniversiteit Groningen",
+        "url": "https://www.rug.nl",
+        "sameAs": "https://en.wikipedia.org/wiki/University_of_Groningen",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Groningen",
+          "addressCountry": "NL"
+        },
+        "department": {
+          "@type": "CollegeOrUniversity",
+          "name": "Faculty of Economics and Business",
+          "parentOrganization": {
+            "@id": "https://www.rug.nl/#organization"
+          }
+        }
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "@id": "https://georgedreemer.com/education/masters#msc-degree",
+        "name": "MSc Marketing Analytics & Data Science",
+        "description": "Master of Science at the Faculty of Economics and Business, University of Groningen, covering applied statistics, machine learning, data science and data engineering. Programme average grade: 8 on the Dutch 10-point scale. Thesis grade: 8.",
+        "credentialCategory": "degree",
+        "educationalLevel": "Master's degree",
+        "url": "https://www.rug.nl/masters/msc-marketing-marketing-analytics-and-data-science/?lang=en",
+        "recognizedBy": {
+          "@id": "https://www.rug.nl/#organization"
+        }
+      },
+      {
+        "@type": "EducationalOccupationalProgram",
+        "@id": "https://georgedreemer.com/education/masters#msc-programme",
+        "name": "MSc Marketing – Marketing Analytics and Data Science",
+        "url": "https://www.rug.nl/masters/msc-marketing-marketing-analytics-and-data-science/?lang=en",
+        "provider": {
+          "@id": "https://www.rug.nl/#organization"
+        },
+        "occupationalCredentialAwarded": {
+          "@id": "https://georgedreemer.com/education/masters#msc-degree"
+        },
+        "teaches": [
+          "Statistical analysis",
+          "Supervised learning",
+          "Customer segmentation",
+          "Text mining and sentiment analysis",
+          "Time-series analysis",
+          "Market modelling",
+          "Retail and omnichannel marketing",
+          "Data engineering with SQL",
+          "Research design",
+          "Business ethics"
+        ]
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://georgedreemer.com/education/masters#msc-thesis",
+        "headline": "Willingness to Share Health Data in Italy: Investigation under a Multi-context Paradigm with DCE Data",
+        "name": "MSc Thesis — Willingness to Share Health Data in Italy",
+        "description": "MSc thesis (grade 8/10) analysing the accept/reject choices of 329 respondents in Italy on secondary use of health data across five contextual attributes, using a two-class latent class model (46.5% / 53.5%) with a conditional logit as secondary check, in R and Stata 17.",
+        "abstract": "How do different data-sharing arrangements influence willingness to allow the secondary use of health data? Discrete-choice-experiment data from 329 participants in Italy were analysed across five attributes: original data collector, new data user, purpose of reuse, information and consent, and external review. Respondents leaned toward not sharing. Two preference groups ranked attribute importance identically (new data user, reason for use, information and consent, review, original collector) but preferred different levels within attributes. Transparency and some form of external review were common ground.",
+        "author": {
+          "@id": "https://georgedreemer.com/#person"
+        },
+        "publisher": {
+          "@id": "https://www.rug.nl/#organization"
+        },
+        "inLanguage": "en",
+        "url": "https://georgedreemer.com/downloads/academic/georgedreemer-msc-thesis_paper.pdf",
+        "encoding": {
+          "@type": "MediaObject",
+          "contentUrl": "https://georgedreemer.com/downloads/academic/georgedreemer-msc-thesis_paper.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        "associatedMedia": {
+          "@type": "MediaObject",
+          "name": "MSc thesis defence slides",
+          "contentUrl": "https://georgedreemer.com/downloads/academic/georgedreemer-msc-thesis_defenseslides.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        "image": "https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure6.png",
+        "isPartOf": {
+          "@id": "https://georgedreemer.com/education/masters#msc-programme"
+        },
+        "about": [
+          "Health data sharing",
+          "Secondary use of health data",
+          "Discrete choice experiment",
+          "Latent class analysis",
+          "Conditional logit",
+          "Data governance"
+        ],
+        "keywords": "health data sharing, discrete choice experiment, latent class model, conditional logit, Italy, R, Stata",
+        "spatialCoverage": {
+          "@type": "Country",
+          "name": "Italy"
+        },
+        "hasPart": {
+          "@type": "SoftwareSourceCode",
+          "name": "MSc thesis analysis code",
+          "url": "https://github.com/ETA444/msc_mads/tree/main/theses",
+          "codeRepository": "https://github.com/ETA444/msc_mads"
+        }
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://georgedreemer.com/education/masters#premsc-thesis",
+        "headline": "Pre-MSc Thesis — Earnings Call Sentiment and Stock Volatility",
+        "description": "Tests whether earnings-call sentiment (178 transcripts, 10 NASDAQ-listed firms, scored with NLTK VADER) predicts post-call stock volatility using multiple linear regression. Volatility rose after 87% of calls, but sentiment was not a statistically significant predictor.",
+        "author": {
+          "@id": "https://georgedreemer.com/#person"
+        },
+        "inLanguage": "en",
+        "url": "https://georgedreemer.com/downloads/academic/georgedreemer-premsc-thesis_paper.pdf",
+        "about": [
+          "Sentiment analysis",
+          "Stock volatility",
+          "Earnings calls",
+          "Linear regression"
+        ],
+        "hasPart": {
+          "@type": "SoftwareSourceCode",
+          "name": "Pre-MSc thesis analysis code",
+          "url": "https://github.com/ETA444/msc_mads/blob/main/theses/premsc-thesis.py",
+          "codeRepository": "https://github.com/ETA444/msc_mads",
+          "programmingLanguage": "Python"
+        }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://georgedreemer.com/education/masters#code",
+        "name": "msc_mads — MSc coursework and thesis code",
+        "description": "Public repository with the R, SQL and Python code behind the MSc theses and coursework reports.",
+        "codeRepository": "https://github.com/ETA444/msc_mads",
+        "url": "https://github.com/ETA444/msc_mads",
+        "programmingLanguage": [
+          "R",
+          "SQL",
+          "Python"
+        ],
+        "author": {
+          "@id": "https://georgedreemer.com/#person"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://georgedreemer.com/education/masters#coursework",
+        "name": "MSc coursework: visual and written reports",
+        "description": "Thirteen public coursework reports from the MSc in Marketing Analytics & Data Science, each with a PDF and, where applicable, public code.",
+        "numberOfItems": 13,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Report",
+              "name": "Text Mining, Sentiment Analysis & Propensity Score Matching",
+              "description": "Text mining and sentiment analysis of online campaign wording, with propensity score matching to compare campaigns like-for-like.",
+              "url": "https://georgedreemer.com/downloads/academic/Text%20mining%2C%20Sentiment%20analysis%20%26%20Propensity%20score%20matching.pdf",
+              "author": {
+                "@id": "https://georgedreemer.com/#person"
+              },
+              "isBasedOn": "https://github.com/ETA444/msc_mads/blob/main/analyses/text-mining.R"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Report",
+              "name": "Google Analytics & Exploratory Analysis: Wehkamp AR App",
+              "description": "Exploratory analysis of whether Wehkamp's augmented-reality app users differed in repeat purchases, customer value, repurchases, revenue and transaction frequency.",
+              "url": "https://georgedreemer.com/downloads/academic/Google%20Analytics%20%26%20Exploratory%20Analysis.pdf",
+              "author": {
+                "@id": "https://georgedreemer.com/#person"
+              },
+              "isBasedOn": "https://github.com/ETA444/msc_mads/blob/main/analyses/google-analytics.R"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "Report",
+              "name": "Time-Series Analysis: Redstar vs. Competitors",
+              "description": "Time-series comparison of Redstar's marketing mix (product, price, place, promotion) against competing brands.",
+              "url": "https://georgedreemer.com/downloads/academic/Time-series%20Analysis.pdf",
+              "author": {
+                "@id": "https://georgedreemer.com/#person"
+              },
+              "isBasedOn": "https://github.com/ETA444/msc_mads/blob/main/analyses/timeseries-analysis.R"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "Report",
+              "name": "Cluster Analysis: Car-Buying Preferences",
+              "description": "Hierarchical and non-hierarchical clustering of survey data to segment car buyers by priorities.",
+              "url": "https://georgedreemer.com/downloads/academic/Cluster%20Analysis.pdf",
+              "author": {
+                "@id": "https://georgedreemer.com/#person"
+              },
+              "isBasedOn": "https://github.com/ETA444/msc_mads/blob/main/analyses/cluster-analysis.R"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "Report",
+              "name": "Factor Analysis: Attitudes Towards Sustainable Clothing",
+              "description": "Factor analysis reducing many survey questions to the underlying dimensions of attitudes towards sustainable clothing.",
+              "url": "https://georgedreemer.com/downloads/academic/Factor%20Analysis.pdf",
+              "author": {
+                "@id": "https://georgedreemer.com/#person"
+              },
+              "isBasedOn": "https://github.com/ETA444/msc_mads/blob/main/analyses/factor-analysis.R"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@type": "Report",
+              "name": "Retail Mix Tactics for Kruidvat NL",
+              "description": "Retail-mix strategy for Kruidvat's makeup category in the Netherlands, grounded in internal and external market analysis.",
+              "url": "https://georgedreemer.com/downloads/academic/Retail%20Mix%20Tactics%20for%20Kruidvat%20NL.pdf",
+              "author": {
+                "@id": "https://georgedreemer.com/#person"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@type": "Report",
+              "name": "Omnichannel Strategy Proposal for L'Oréal NL",
+              "description": "Omnichannel strategy for L'Oréal in the Netherlands, built on internal data and external market analysis.",
+              "url": "https://georgedreemer.com/downloads/academic/Omnichannel%20Strategy%20Proposal%20for%20L%27Oreal%20NL.pdf",
+              "author": {
+                "@id": "https://georgedreemer.com/#person"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "item": {
+              "@type": "Report",
+              "name": "Exploratory Analysis: Consumer Attitudes Towards Meal Kits",
+              "description": "Exploratory analysis of survey data on consumer attitudes towards meal kits.",
+              "url": "https://georgedreemer.com/downloads/academic/Exploratory%20Analysis.pdf",
+              "author": {
+                "@id": "https://georgedreemer.com/#person"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "item": {
+              "@type": "Report",
+              "name": "Churn Prediction Modeling",
+              "description": "Customer churn modelled with traditional statistics, decision trees, bagging, boosting and neural networks, compared out-of-sample.",
+              "url": "https://georgedreemer.com/downloads/academic/Churn%20Prediction%20Modeling.pdf",
+              "author": {
+                "@id": "https://georgedreemer.com/#person"
+              },
+              "isBasedOn": "https://github.com/ETA444/msc_mads/blob/main/analyses/churn-modelling.R"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "item": {
+              "@type": "Report",
+              "name": "Market Modeling 1: Dutch Lemonade Market",
+              "description": "Regression model of the Dutch lemonade market across retailers (e.g. Albert Heijn, Jumbo) and brands (e.g. Raak, Karvan Cevitam).",
+              "url": "https://georgedreemer.com/downloads/academic/Market%20Modeling%201.pdf",
+              "author": {
+                "@id": "https://georgedreemer.com/#person"
+              },
+              "isBasedOn": "https://github.com/ETA444/msc_mads/blob/main/analyses/market-modelling1.R"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "item": {
+              "@type": "Report",
+              "name": "Market Modeling 2: Dutch Lemonade Market",
+              "description": "Second part of the lemonade market regression modelling, extending the same retailer and brand context.",
+              "url": "https://georgedreemer.com/downloads/academic/Market%20Modeling%202.pdf",
+              "author": {
+                "@id": "https://georgedreemer.com/#person"
+              },
+              "isBasedOn": "https://github.com/ETA444/msc_mads/blob/main/analyses/market-modelling2.R"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 12,
+            "item": {
+              "@type": "Report",
+              "name": "Conversion Rate Optimization Analysis",
+              "description": "Drivers of online-retail conversion: SQL extraction and preparation, then statistical modelling in R.",
+              "url": "https://georgedreemer.com/downloads/academic/Conversion%20Rate%20Optimization%20Analysis.pdf",
+              "author": {
+                "@id": "https://georgedreemer.com/#person"
+              },
+              "isBasedOn": [
+                "https://github.com/ETA444/msc_mads/blob/main/analyses/conversionrate-modelling.sql",
+                "https://github.com/ETA444/msc_mads/blob/main/analyses/conversionrate-modelling.R"
+              ]
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 13,
+            "item": {
+              "@type": "Report",
+              "name": "Ethical Analysis: Food Waste, Salary Transparency, Gig Work",
+              "description": "Three research-led ethical analyses of food waste, salary transparency and platform-based gig work.",
+              "url": "https://georgedreemer.com/downloads/academic/Ethical%20Analysis%20Food%20Waste%2C%20Salary%20Transparency%2C%20Gig%20Work.pdf",
+              "author": {
+                "@id": "https://georgedreemer.com/#person"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://georgedreemer.com/education/masters#madsmadlad",
+        "name": "MADS Madlad",
+        "description": "A catalogue of detailed MSc course summaries written during the MSc in Marketing Analytics & Data Science (1,594 pages across 22 documents), sold through Stuvia and Knoowy, with seven free sample editions.",
+        "founder": {
+          "@id": "https://georgedreemer.com/#person"
+        },
+        "url": "https://georgedreemer.com/education/masters#mads-madlad",
+        "sameAs": [
+          "https://www.stuvia.com/user/madsmadlad",
+          "https://knoowy.nl/user/132765/madsmadlad"
+        ],
+        "subjectOf": {
+          "@id": "https://georgedreemer.com/education/masters#madsmadlad-free-editions"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://georgedreemer.com/education/masters#madsmadlad-free-editions",
+        "name": "MADS Madlad free sample editions",
+        "numberOfItems": 7,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "DigitalDocument",
+              "name": "MADS Madlad — Data Science Methods (Free Edition)",
+              "url": "https://georgedreemer.com/downloads/academic/madsmadlad/MM-DSMM-FreeEdition.pdf",
+              "encodingFormat": "application/pdf",
+              "isAccessibleForFree": true,
+              "author": {
+                "@id": "https://georgedreemer.com/#person"
+              },
+              "publisher": {
+                "@id": "https://georgedreemer.com/education/masters#madsmadlad"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "DigitalDocument",
+              "name": "MADS Madlad — Market Models (Free Edition)",
+              "url": "https://georgedreemer.com/downloads/academic/madsmadlad/MM-MM-FreeEdition.pdf",
+              "encodingFormat": "application/pdf",
+              "isAccessibleForFree": true,
+              "author": {
+                "@id": "https://georgedreemer.com/#person"
+              },
+              "publisher": {
+                "@id": "https://georgedreemer.com/education/masters#madsmadlad"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "DigitalDocument",
+              "name": "MADS Madlad — Digital Marketing Intelligence (Free Edition)",
+              "url": "https://georgedreemer.com/downloads/academic/madsmadlad/MM-DMI-FreeEdition.pdf",
+              "encodingFormat": "application/pdf",
+              "isAccessibleForFree": true,
+              "author": {
+                "@id": "https://georgedreemer.com/#person"
+              },
+              "publisher": {
+                "@id": "https://georgedreemer.com/education/masters#madsmadlad"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "DigitalDocument",
+              "name": "MADS Madlad — Retail Omnichannel Marketing (Free Edition)",
+              "url": "https://georgedreemer.com/downloads/academic/madsmadlad/MM-ROM-FreeEdition.pdf",
+              "encodingFormat": "application/pdf",
+              "isAccessibleForFree": true,
+              "author": {
+                "@id": "https://georgedreemer.com/#person"
+              },
+              "publisher": {
+                "@id": "https://georgedreemer.com/education/masters#madsmadlad"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "DigitalDocument",
+              "name": "MADS Madlad — Data Engineering (Free Edition)",
+              "url": "https://georgedreemer.com/downloads/academic/madsmadlad/MM-DEM-FreeEdition.pdf",
+              "encodingFormat": "application/pdf",
+              "isAccessibleForFree": true,
+              "author": {
+                "@id": "https://georgedreemer.com/#person"
+              },
+              "publisher": {
+                "@id": "https://georgedreemer.com/education/masters#madsmadlad"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@type": "DigitalDocument",
+              "name": "MADS Madlad — Statistical Learning in Marketing (Free Edition)",
+              "url": "https://georgedreemer.com/downloads/academic/madsmadlad/MM-SLM-FreeEdition.pdf",
+              "encodingFormat": "application/pdf",
+              "isAccessibleForFree": true,
+              "author": {
+                "@id": "https://georgedreemer.com/#person"
+              },
+              "publisher": {
+                "@id": "https://georgedreemer.com/education/masters#madsmadlad"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@type": "DigitalDocument",
+              "name": "MADS Madlad — Companies, Brands & Consumers (Free Edition)",
+              "url": "https://georgedreemer.com/downloads/academic/madsmadlad/MM-CBC-FreeEdition.pdf",
+              "encodingFormat": "application/pdf",
+              "isAccessibleForFree": true,
+              "author": {
+                "@id": "https://georgedreemer.com/#person"
+              },
+              "publisher": {
+                "@id": "https://georgedreemer.com/education/masters#madsmadlad"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+</script>
+
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Styles -->
+<!-- Global -->
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/sitebuilder-overrides.css">
+
+<!-- Components -->
+<link rel="stylesheet" href="../css/components/fade-in.css">
+<link rel="stylesheet" href="../css/components/section-label.css">
+<link rel="stylesheet" href="../css/components/site-shell.css">
+<link rel="stylesheet" href="../css/components/info-tooltip.css">
+
+<link rel="stylesheet" href="../css/components/context-block.css">
+<link rel="stylesheet" href="../css/components/sc.css">
+<link rel="stylesheet" href="../css/components/stack-badge.css">
+<link rel="stylesheet" href="../css/components/ability-card-edu.css">
+<link rel="stylesheet" href="../css/components/works-card-edu.css">
+
+<!-- Sections -->
+<link rel="stylesheet" href="../css/sections/masters-thesis.css">
+<link rel="stylesheet" href="../css/sections/masters-madsmadlad.css">
+
+<!-- Third-party scripts -->
+<script data-custom-script="true" src="https://unpkg.com/lucide@1.72.0/dist/umd/lucide.js" defer></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- Page behavior -->
+<script data-custom-script="true" type="module" src="../js/pages/education/masters.js?v=10"></script>	
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<![endif]-->
+
+		<script type="text/javascript">
+		window._spDefer.add(function() {
+<?php $wb_form_send_success = popSessionOrGlobalVar("wb_form_send_success"); ?>
+<?php if (($wb_form_send_state = popSessionOrGlobalVar("wb_form_send_state"))) { ?>
+	<?php if (($wb_form_popup_mode = popSessionOrGlobalVar("wb_form_popup_mode")) && (isset($wbPopupMode) && $wbPopupMode)) { ?>
+		if (window !== window.parent && window.parent.postMessage) {
+			var data = {
+				event: "wb_contact_form_sent",
+				data: {
+					state: "<?php echo str_replace('"', '\"', $wb_form_send_state); ?>",
+					type: "<?php echo $wb_form_send_success ? "success" : "danger"; ?>"
+				}
+			};
+			window.parent.postMessage(data, "<?php echo str_replace('"', '\"', popSessionOrGlobalVar("wb_target_origin")); ?>");
+		}
+	<?php $wb_form_send_success = false; $wb_form_send_state = null; $wb_form_popup_mode = false; ?>
+	<?php } else { ?>
+		wb_show_alert("<?php echo str_replace(array('"', "\r", "\n"), array('\"', "", "<br/>"), $wb_form_send_state); ?>", "<?php echo $wb_form_send_success ? "success" : "danger"; ?>");
+	<?php } ?>
+<?php } ?>
+});    </script>
+</head>
+
+
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><main class="main-content" role="main" data-page="masters">
+
+    <h1 class="screenreader-only">
+        MSc Marketing Analytics &amp; Data Science — University of Groningen
+    </h1>
+
+    <!-- ============================================================
+        CONTEXT BLOCK
+    ================================================================ -->
+    <section id="intro" data-nav="Intro" aria-label="Intro: Context" class="fade-in">
+        <div class="context-block">
+            <p>
+                George's MSc in Marketing Analytics &amp; Data Science at the University of Groningen was a graduate
+                program focused on applied statistics, machine learning, data science, and data engineering.
+            </p>
+            <p>
+                The program covered the full path from research design and data preparation to modelling,
+                evaluation, and communication: statistical analysis, supervised learning, segmentation, text mining,
+                sentiment analysis, time-series work, and business-facing decision support across consumer and
+                retail contexts.
+            </p>
+            <p>
+                In practice, George used Python and R for modelling, data wrangling, and automation, and Stata and
+                SPSS for statistical testing and survey-style analysis. He used SQL for data engineering and
+                extraction, and turned the results into data visualizations, written reports, and presentations. The
+                code, reports, and slides behind the theses and projects are publicly browsable, with the
+                programming linked through George's GitHub.
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================================================
+        SNAPSHOT CARD
+    ================================================================ -->
+    <section aria-label="Intro: Education Snapshot" class="fade-in">
+        <h2 class="screenreader-only">Degree Snapshot</h2>
+        <div class="snapshot-card" data-domain="engineering">
+
+            <div class="snapshot-card__tab">
+                <span class="snapshot-card__tab-logo" data-gd-identity-logo="masters" aria-hidden="true"></span>
+                <span class="snapshot-card__tab-text">
+                    <span class="snapshot-card__tab-name">University of Groningen</span>
+                </span>
+            </div>
+
+            <div class="snapshot-card__tab tip-host">
+                <span class="snapshot-card__tab-logo" data-gd-identity-logo="masters" aria-hidden="true"></span>
+                <span class="snapshot-card__tab-text">
+                    <span class="snapshot-card__tab-name">University of Groningen</span>
+                    <span class="snapshot-card__ranks">
+                        <span class="rank-pill rank-pill--world">
+                            <i class="bi bi-trophy-fill" aria-hidden="true"></i>#84 World<span class="rank-pill__src"> (ARWU)</span>
+                        </span>
+                        <span class="rank-pill rank-pill--green">
+                            <i class="bi bi-leaf-fill" aria-hidden="true"></i>#46 Business<span class="rank-pill__src"> (ARWU)</span>
+                        </span>
+                        <button type="button" class="info-tip" aria-label="About these rankings" aria-expanded="false" aria-controls="tip-rank">
+                            <i class="bi bi-info-circle" aria-hidden="true"></i>
+                        </button>
+                    </span>
+                </span>
+
+                <div class="info-tip__panel" id="tip-rank">
+                    <p class="info-tip__title">University of Groningen — world rankings</p>
+                    <ul class="info-tip__list">
+                        <li><strong>#84</strong> ARWU Shanghai Ranking; Business Administration <strong>#46</strong>
+                        </li>
+                        <li><strong>#87</strong> Times Higher Education; Business &amp; Economics
+                            <strong>#69</strong>
+                        </li>
+                        <li><strong>#6</strong> UI GreenMetric, sustainability</li>
+                    </ul>
+                    <p class="info-tip__note">University-level rankings, not specific to this programme.
+                        Source: <a href="https://www.rug.nl/about-ug/profile/facts-and-figures/position-international-rankings?lang=en" target="_blank" rel="noopener noreferrer">RUG</a></p>
+                </div>
+            </div>
+
+            <dl class="snapshot-card__meta">
+
+                <!-- Prominent fields first -->
+                <div class="snapshot-item snapshot-item--prominent">
+                    <dt class="snapshot-item__key">Degree</dt>
+                    <dd class="snapshot-item__value">Marketing Analytics &amp; Data Science</dd>
+                </div>
+
+                <div class="snapshot-item snapshot-item--prominent">
+                    <dt class="snapshot-item__key">Type</dt>
+                    <dd class="snapshot-item__value">Master of Science (MSc)</dd>
+                </div>
+
+                <div class="snapshot-item snapshot-item--prominent snapshot-item--result tip-host">
+                    <dt class="snapshot-item__key">Result</dt>
+                    <dd class="grade-badge">
+                        8 / 10
+                        <button type="button" class="info-tip" aria-label="About this grade" aria-expanded="false" aria-controls="tip-grade">
+                            <i class="bi bi-info-circle" aria-hidden="true"></i>
+                        </button>
+                    </dd>
+
+                    <div class="info-tip__panel" id="tip-grade">
+                        <p class="info-tip__title">Dutch grading scale</p>
+                        <p>Average grade across the whole programme. The separate thesis grade is an 8.</p>
+                        <p class="info-tip__context">
+                            <strong>Context:</strong>
+                            At UG only about 14% of single-grades awarded are an 8 and 2.7% are a 9.
+                        </p>
+                        <p class="info-tip__note">
+                            Source: <a href="https://www.rug.nl/education/student-blog/what-dutch-grades-actually-mean-24-01-2020?lang=en" target="_blank" rel="noopener noreferrer">RUG</a>.</p>
+                    </div>
+                </div>
+
+                <!-- Standard fields -->
+                <div class="snapshot-item">
+                    <dt class="snapshot-item__key">Faculty</dt>
+                    <dd class="snapshot-item__value">Faculty of Economics and Business</dd>
+                </div>
+
+                <div class="snapshot-item">
+                    <dt class="snapshot-item__key">Location</dt>
+                    <dd class="snapshot-item__value">Groningen, Netherlands</dd>
+                </div>
+
+                <div class="snapshot-item">
+                    <dt class="snapshot-item__key">Links</dt>
+                    <dd class="snapshot-item__value">
+                        <a href="https://www.rug.nl/masters/msc-marketing-marketing-analytics-and-data-science/?lang=en" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-mortarboard"></i> Official program page
+                        </a>
+                    </dd>
+                </div>
+
+            </dl>
+
+            <div class="snapshot-card__divider"></div>
+
+            <h3 class="snapshot-card__highlights-label">Topics Covered</h3>
+            <ul class="snapshot-card__chips">
+
+                <li class="achievement-chip" data-domain="engineering">
+                    <span class="achievement-chip__dot"></span>Data Science
+                </li>
+
+                <li class="achievement-chip" data-domain="engineering">
+                    <span class="achievement-chip__dot"></span>Data Engineering
+                </li>
+
+                <li class="achievement-chip" data-domain="data">
+                    <span class="achievement-chip__dot"></span>Statistical Learning
+                </li>
+
+                <li class="achievement-chip" data-domain="data">
+                    <span class="achievement-chip__dot"></span>Machine Learning
+                </li>
+
+                <li class="achievement-chip" data-domain="data">
+                    <span class="achievement-chip__dot"></span>Text Mining
+                </li>
+
+                <li class="achievement-chip" data-domain="data">
+                    <span class="achievement-chip__dot"></span>Time-Series Analysis
+                </li>
+
+                <li class="achievement-chip" data-domain="product">
+                    <span class="achievement-chip__dot"></span>Market Modelling
+                </li>
+
+                <li class="achievement-chip" data-domain="product">
+                    <span class="achievement-chip__dot"></span>Omnichannel Marketing
+                </li>
+
+                <li class="achievement-chip" data-domain="growth">
+                    <span class="achievement-chip__dot"></span>Consumer &amp; Brand Analytics
+                </li>
+
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================================
+        STACK BADGE GRID
+    ================================================================ -->
+    <section id="tools" data-nav="Tools" aria-label="Tools" class="fade-in">
+        <div class="section-label">
+            <h2 class="section-label__text">Tools</h2>
+            <span class="section-label__line" aria-hidden="true"></span>
+        </div>
+
+        <div class="stack-grid">
+
+            <!-- ── Code ──────────────────────────── -->
+            <div class="stack-group">
+                <h3 class="stack-group__label">Code</h3>
+                <ul class="stack-group__items">
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/python/3776ab" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">Python</span>
+                    </li>
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/r/276dc3" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">R</span>
+                    </li>
+                    <li class="stack-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                            <!-- Top ellipse (lighter) -->
+                            <ellipse cx="12" cy="6" rx="7" ry="2.5" fill="#0078d4"></ellipse>
+                            <!-- Middle band -->
+                            <path d="M5 8.5v4c0 1.38 3.13 2.5 7 2.5s7-1.12 7-2.5v-4c0 1.38-3.13 2.5-7 2.5S5 9.88 5 8.5z" fill="#005a9e"></path>
+                            <!-- Bottom band -->
+                            <path d="M5 13.5v3c0 1.38 3.13 2.5 7 2.5s7-1.12 7-2.5v-3c0 1.38-3.13 2.5-7 2.5S5 14.88 5 13.5z" fill="#00457a"></path>
+                            <!-- Side outline for depth -->
+                            <path d="M5 6.5v9c0 1.38 3.13 2.5 7 2.5s7-1.12 7-2.5v-9" fill="none" stroke="#00355a" stroke-width="1.2"></path>
+                        </svg>
+                        <span class="stack-badge__name">SQL</span>
+                    </li>
+                    <li class="stack-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                            <!-- Background rounded square -->
+                            <rect x="3" y="3" width="18" height="18" rx="4" fill="#1f5f8b"></rect>
+                            <!-- Stylized "S" made of bars -->
+                            <path d="M7 8h10a2 2 0 0 1 0 4H9a2 2 0 0 0 0 4h8" fill="none" stroke="#4dc2a8" stroke-width="2.2" stroke-linecap="round"></path>
+                        </svg>
+                        <span class="stack-badge__name">Stata</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- ── Python Libraries ──────────────────────────────── -->
+            <div class="stack-group">
+                <h3 class="stack-group__label">Python Libraries</h3>
+                <ul class="stack-group__items">
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/pandas/150458" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">pandas</span>
+                    </li>
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/numpy/013243" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">NumPy</span>
+                    </li>
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/scipy/8caae6" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">SciPy</span>
+                    </li>
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/scikitlearn/f7931e" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">scikit-learn</span>
+                    </li>
+                    <li class="stack-badge stack-badge--text">
+                        <span class="stack-badge__mark" style="background:#423cb9;" aria-hidden="true">mpl</span>
+                        <span class="stack-badge__name">Matplotlib</span>
+                    </li>
+                    <li class="stack-badge stack-badge--text">
+                        <span class="stack-badge__mark" style="background:#76b7b2;" aria-hidden="true">sb</span>
+                        <span class="stack-badge__name">seaborn</span>
+                    </li>
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/plotly/3f4f75" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">Plotly</span>
+                    </li>
+                    <li class="stack-badge stack-badge--text">
+                        <span class="stack-badge__mark" style="background:#3a6fa0;" aria-hidden="true">sm</span>
+                        <span class="stack-badge__name">statsmodels</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- ── R Libraries ──────────────────────────────────── -->
+            <div class="stack-group">
+                <p class="stack-group__label">R Libraries</p>
+                <ul class="stack-group__items">
+
+                    <li class="stack-badge stack-badge--text">
+                        <span class="stack-badge__mark" style="background:#276dc3;" aria-hidden="true">R</span>
+                        <span class="stack-badge__name">ggplot2</span>
+                    </li>
+                    <li class="stack-badge stack-badge--text">
+                        <span class="stack-badge__mark" style="background:#276dc3;" aria-hidden="true">R</span>
+                        <span class="stack-badge__name">dplyr</span>
+                    </li>
+                    <li class="stack-badge stack-badge--text">
+                        <span class="stack-badge__mark" style="background:#276dc3;" aria-hidden="true">R</span>
+                        <span class="stack-badge__name">caret</span>
+                    </li>
+                    <li class="stack-badge stack-badge--text">
+                        <span class="stack-badge__mark" style="background:#276dc3;" aria-hidden="true">R</span>
+                        <span class="stack-badge__name">randomForest</span>
+                    </li>
+                    <li class="stack-badge stack-badge--text">
+                        <span class="stack-badge__mark" style="background:#276dc3;" aria-hidden="true">R</span>
+                        <span class="stack-badge__name">gbm</span>
+                    </li>
+                    <li class="stack-badge stack-badge--text">
+                        <span class="stack-badge__mark" style="background:#276dc3;" aria-hidden="true">R</span>
+                        <span class="stack-badge__name">e1071</span>
+                    </li>
+                    <li class="stack-badge stack-badge--text">
+                        <span class="stack-badge__mark" style="background:#276dc3;" aria-hidden="true">R</span>
+                        <span class="stack-badge__name">neuralnet</span>
+                    </li>
+                    <li class="stack-badge stack-badge--text">
+                        <span class="stack-badge__mark" style="background:#276dc3;" aria-hidden="true">R</span>
+                        <span class="stack-badge__name">ROCR</span>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- ── Dev Tools & IDEs ───────────────────────────────── -->
+            <div class="stack-group">
+                <p class="stack-group__label">Dev Tools &amp; IDEs</p>
+                <ul class="stack-group__items">
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/jupyter/f37626" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">Jupyter</span>
+                    </li>
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/googlecolab" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">Colab</span>
+                    </li>
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/rstudioide" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">RStudio</span>
+                    </li>
+                    <li class="stack-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                            <!-- Background rounded square -->
+                            <rect x="3" y="3" width="18" height="18" rx="4" fill="#005eb8"></rect>
+                            <!-- Stylized "bar chart" / stats motif -->
+                            <rect x="6" y="10" width="2.6" height="6" fill="#ffffff" rx="0.6"></rect>
+                            <rect x="9.7" y="7" width="2.6" height="9" fill="#ffffff" rx="0.6"></rect>
+                            <rect x="13.4" y="12" width="2.6" height="4" fill="#ffffff" rx="0.6"></rect>
+                            <rect x="17.1" y="9" width="2.6" height="7" fill="#ffffff" rx="0.6"></rect>
+                        </svg>
+                        <span class="stack-badge__name">SPSS</span>
+                    </li>
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/jetbrains" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">DataSpell</span>
+                    </li>
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/git/f05032" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">Git</span>
+                    </li>
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/github/181717" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">GitHub</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- ── Platforms ──────────────────────────────── -->
+            <div class="stack-group">
+                <p class="stack-group__label">Platforms</p>
+                <ul class="stack-group__items">
+                    <li class="stack-badge">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">Azure</span>
+                    </li>
+
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/googleanalytics/e37400" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">Google Analytics</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- ── Design & Creative ──────────────────────────────── -->
+            <div class="stack-group">
+                <p class="stack-group__label">Design &amp; Creative</p>
+                <ul class="stack-group__items">
+
+                    <!-- Adobe Illustrator -->
+                    <li class="stack-badge">
+                        <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%23330000%22/%3E%3Ctext%20x%3D%2252%22%20y%3D%22164%22%20font-size%3D%22104%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%23FF9A00%22%3EAi%3C/text%3E%3C/svg%3E" alt="Adobe Illustrator" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">Illustrator</span>
+                    </li>
+
+                    <!-- Adobe Photoshop -->
+                    <li class="stack-badge">
+                        <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%23001E36%22/%3E%3Ctext%20x%3D%2252%22%20y%3D%22164%22%20font-size%3D%22104%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%2331A8FF%22%3EPs%3C/text%3E%3C/svg%3E" alt="Adobe Photoshop" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">Photoshop</span>
+                    </li>
+
+                    <!-- Adobe After Effects -->
+                    <li class="stack-badge">
+                        <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%2300005B%22/%3E%3Ctext%20x%3D%2252%22%20y%3D%22164%22%20font-size%3D%22104%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%239999FF%22%3EAe%3C/text%3E%3C/svg%3E" alt="Adobe After Effects" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">After Effects</span>
+                    </li>
+
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/calibreweb/07B9CE" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">Canva</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+        ABILITY CARD GRID (COURSE → SKILL TRANSLATION)
+    ================================================================ -->
+    <section id="abilities" data-nav="Abilities" aria-label="Abilities" class="fade-in">
+
+        <div class="section-label">
+            <h2 class="section-label__text">Abilities</h2>
+            <span class="section-label__line" aria-hidden="true"></span>
+        </div>
+
+        <p class="screenreader-only">Ability Domains</p>
+        <!-- Legend -->
+        <ul class="ability-legend" aria-label="Ability domains">
+
+            <li class="ability-legend__item ability-legend__item--engineering">
+                <span class="ability-legend__dot" aria-hidden="true"></span>
+                Engineering
+            </li>
+
+            <li class="ability-legend__item ability-legend__item--data">
+                <span class="ability-legend__dot" aria-hidden="true"></span>
+                Data
+            </li>
+
+            <li class="ability-legend__item ability-legend__item--product">
+                <span class="ability-legend__dot" aria-hidden="true"></span>
+                Product
+            </li>
+
+            <li class="ability-legend__item ability-legend__item--growth">
+                <span class="ability-legend__dot" aria-hidden="true"></span>
+                Growth
+            </li>
+
+            <button type="button" class="lens-toggle" role="switch" aria-checked="false" aria-controls="e5-ability-grid" data-lens-toggle data-lens-note="e5-lens-note">
+                <span class="lens-toggle__track" aria-hidden="true"><span class="lens-toggle__thumb"></span></span>
+                <span class="lens-toggle__label">Show courses</span>
+            </button>
+
+        </ul>
+
+        <p class="ability-lens-note" id="e5-lens-note" hidden>
+            <i class="bi bi-info-circle"></i>
+            Each ability is traced to the courses behind it. Grades use the same Dutch 10-point scale as the Result
+            in the snapshot above.
+        </p>
+
+        <ul class="ability-grid" id="e5-ability-grid">
+
+            <!-- =====================================================
+                ENGINEERING
+            ====================================================== -->
+
+            <!-- 1 · Data Pipeline & Relational Extraction -->
+            <li class="ability-card fade-in" data-domain="engineering">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="database"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Data Pipeline &amp; Relational Extraction
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="data-engineering">Data Engineering</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Built structured extraction workflows that join, filter, and
+                    aggregate relational data into analysis-ready datasets. Applied
+                    this process to an online retail project in which the extraction
+                    layer fed directly into conversion-rate modelling.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Data Pipeline Design</li>
+                    <li class="ability-tag">Relational Data Extraction</li>
+                    <li class="ability-tag">Analytical Dataset Construction</li>
+                </ul>
+            </li>
+
+
+            <!-- 2 · Reproducible Analytical Workflows -->
+            <li class="ability-card fade-in" data-domain="engineering">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="workflow"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Reproducible Analytical Workflows
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="data-engineering">Data Engineering</li>
+                    <li class="course" data-course="data-science-methods">Data Science Methods</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Structured analyses as repeatable workflows moving from data
+                    ingestion and cleaning through transformation, modelling,
+                    evaluation, visualisation, and reporting. Preserved the
+                    underlying thesis and project code in a public repository so
+                    the analytical process remains inspectable and reproducible.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Reproducible Analysis</li>
+                    <li class="ability-tag">Workflow Design</li>
+                    <li class="ability-tag">Data Preparation</li>
+                </ul>
+            </li>
+
+
+            <!-- =====================================================
+                DATA
+            ====================================================== -->
+
+            <!-- 3 · Applied Research Design -->
+            <li class="ability-card fade-in" data-domain="data">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="flask-conical"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Applied Research Design
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="business-research-methods">Business Research Methods</li>
+                    <li class="course" data-course="marketing-research">Marketing Research</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Translated business questions into researchable problems by
+                    defining constructs, hypotheses, measurements, sampling
+                    decisions, and suitable analytical methods. Carried that
+                    structure through literature review, empirical analysis,
+                    interpretation, and formal research reporting.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Research Design</li>
+                    <li class="ability-tag">Measurement Design</li>
+                    <li class="ability-tag">Evidence Synthesis</li>
+                </ul>
+            </li>
+
+
+
+            <!-- 4 · Supervised Learning & Churn Prediction -->
+            <li class="ability-card fade-in" data-domain="data">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="brain-circuit"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Supervised Learning &amp; Churn Prediction
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="statistical-learning">Statistical Learning in Marketing</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Modelled customer churn using conventional statistical methods
+                    alongside decision trees, bagging, boosting, and neural
+                    networks. Compared alternative classifiers through
+                    out-of-sample performance rather than relying only on
+                    in-sample fit.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Supervised Model Evaluation</li>
+                    <li class="ability-tag">Churn Prediction</li>
+                    <li class="ability-tag">Ensemble Learning</li>
+                </ul>
+            </li>
+
+
+            <!-- 5 · Segmentation & Latent Structure -->
+            <li class="ability-card fade-in" data-domain="data">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="git-branch"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Segmentation &amp; Latent Structure
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="data-science-methods">Data Science Methods</li>
+                    <li class="course" data-course="companies-brands-consumers">Companies, Brands &amp; Consumers
+                    </li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Used hierarchical and non-hierarchical clustering to identify
+                    consumer segments from car-buying preference data, and factor
+                    analysis to uncover the underlying dimensions of attitudes
+                    toward sustainable clothing. Turned multivariable survey data
+                    into interpretable consumer structures.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Customer Segmentation</li>
+                    <li class="ability-tag">Latent Structure Discovery</li>
+                    <li class="ability-tag">Survey Analytics</li>
+                </ul>
+            </li>
+
+
+            <!-- 6 · Text, Sentiment & Causal Comparison -->
+            <li class="ability-card fade-in" data-domain="data">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="message-square-text"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Text, Sentiment &amp; Causal Comparison
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="digital-marketing-intelligence">Digital Marketing Intelligence
+                    </li>
+                    <li class="course" data-course="digital-marketing-analytics">Digital Marketing Analytics</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Analysed marketing communication through text mining and
+                    sentiment analysis, then used propensity-score matching to
+                    construct more comparable treatment and control groups.
+                    Combined unstructured language data with quasi-experimental
+                    evaluation rather than treating sentiment as an isolated score.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Text Feature Engineering</li>
+                    <li class="ability-tag">Sentiment Analysis</li>
+                    <li class="ability-tag">Propensity Score Matching</li>
+                </ul>
+            </li>
+
+
+            <!-- 7 · Time-Series & Competitive Trend Analysis -->
+            <li class="ability-card fade-in" data-domain="data">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="chart-no-axes-combined"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Time-Series &amp; Competitive Trend Analysis
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="data-science-methods">Data Science Methods</li>
+                    <li class="course" data-course="market-models">Market Models</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Investigated how marketing variables evolved over time by
+                    comparing Redstar with competing brands across the marketing
+                    mix. Separated temporal movement from cross-brand differences
+                    and communicated the resulting patterns through a visual
+                    analytical report.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Time-Series Modelling</li>
+                    <li class="ability-tag">Competitive Trend Analysis</li>
+                    <li class="ability-tag">Marketing-Mix Measurement</li>
+                </ul>
+            </li>
+
+
+            <!-- 8 · Behavioural & Choice Modelling -->
+            <li class="ability-card fade-in" data-domain="data">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="route"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Behavioural &amp; Choice Modelling
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="behavioural-decision-making">Behavioural Decision Making</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Examined how people make decisions under competing attributes,
+                    trade-offs, and behavioural constraints. Applied this
+                    capability in the MSc thesis by modelling willingness to share
+                    health data through a discrete-choice experiment and
+                    latent-class analysis.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Discrete-Choice Modelling</li>
+                    <li class="ability-tag">Preference Estimation</li>
+                    <li class="ability-tag">Decision Analysis</li>
+                </ul>
+            </li>
+
+
+            <!-- 9 · Market Response Modelling -->
+            <li class="ability-card fade-in" data-domain="data">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="chart-line"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Market Response Modelling
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="market-models">Market Models</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Built regression-based models of the Dutch lemonade market
+                    using observations across retailers and competing brands.
+                    Assessed how market and marketing variables related to
+                    commercial outcomes, then translated the coefficients and
+                    diagnostics into business-facing interpretation.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Regression Modelling</li>
+                    <li class="ability-tag">Market Response Analysis</li>
+                    <li class="ability-tag">Model Diagnostics</li>
+                </ul>
+            </li>
+
+
+            <!-- 10 · Exploratory Customer Analytics -->
+            <li class="ability-card fade-in" data-domain="data">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="search"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Exploratory Customer Analytics
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="digital-marketing-analytics">Digital Marketing Analytics</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Investigated the effect of Wehkamp’s augmented-reality
+                    experience on customer behaviour using transaction-level
+                    measures including repeat purchases, customer value, revenue,
+                    and purchase frequency. Used exploratory analysis to determine
+                    which behavioural differences warranted deeper modelling.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Customer Behaviour Analysis</li>
+                    <li class="ability-tag">KPI Interpretation</li>
+                    <li class="ability-tag">Exploratory Analysis</li>
+                </ul>
+            </li>
+
+
+            <!-- =====================================================
+                PRODUCT
+            ====================================================== -->
+
+            <!-- 11 · Evidence-Led Organisational Strategy -->
+            <li class="ability-card fade-in" data-domain="product">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="compass"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Evidence-Led Organisational Strategy
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="organization-theory">Organization Theory &amp; Design</li>
+                    <li class="course" data-course="contemporary-theories">Business &amp; Management Theory</li>
+                    <li class="course" data-course="strategic-management">Strategic Management</li>
+                    <li class="course" data-course="hrm">Human Resource Management</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Applied organisational, strategic, and people-management
+                    frameworks to diagnose business problems and evaluate possible
+                    interventions. Connected external market conditions with
+                    internal structure, capabilities, incentives, and execution
+                    rather than treating strategy as an isolated planning exercise.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Strategic Analysis</li>
+                    <li class="ability-tag">Organisational Diagnosis</li>
+                    <li class="ability-tag">Evidence-Based Management</li>
+                </ul>
+            </li>
+
+
+            <!-- 12 · Ethical Business Decision-Making -->
+            <li class="ability-card fade-in" data-domain="product">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="scale"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Ethical Business Decision-Making
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="business-ethics">Business Ethics</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Evaluated food waste, salary transparency, and platform-based
+                    gig work through three research-led ethical analyses. Used
+                    established ethical theory and literature review to identify
+                    affected stakeholders, competing obligations, and defensible
+                    courses of action.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Stakeholder Analysis</li>
+                    <li class="ability-tag">Ethical Reasoning</li>
+                    <li class="ability-tag">Policy Evaluation</li>
+                </ul>
+            </li>
+
+
+            <!-- =====================================================
+                GROWTH
+            ====================================================== -->
+
+            <!-- 13 · Retail & Omnichannel Strategy -->
+            <li class="ability-card fade-in" data-domain="growth">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="store"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Retail &amp; Omnichannel Strategy
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="retail-omnichannel">Retail &amp; Omnichannel Marketing</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Developed a retail-mix proposal for Kruidvat and an omnichannel
+                    strategy for L’Oréal by combining internal evidence with
+                    external market analysis. Connected assortment, pricing,
+                    promotion, channel roles, and customer experience into
+                    implementable commercial recommendations.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Omnichannel Strategy</li>
+                    <li class="ability-tag">Retail-Mix Design</li>
+                    <li class="ability-tag">Commercial Recommendation</li>
+                </ul>
+            </li>
+
+
+            <!-- 14 · Conversion & Digital Performance Analytics -->
+            <li class="ability-card fade-in" data-domain="growth">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="mouse-pointer-click"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Conversion &amp; Digital Performance Analytics
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="digital-marketing-analytics">Digital Marketing Analytics</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Investigated the drivers of conversion for an online
+                    retailer’s product category by connecting extracted behavioural
+                    data with statistical modelling. Identified the variables most
+                    closely associated with conversion and translated the findings
+                    into optimisation priorities.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Conversion Modelling</li>
+                    <li class="ability-tag">Funnel Analysis</li>
+                    <li class="ability-tag">Growth Optimisation</li>
+                </ul>
+            </li>
+
+
+            <!-- 15 · Consumer & Brand Opportunity Analysis -->
+            <li class="ability-card fade-in" data-domain="growth">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="megaphone"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Consumer &amp; Brand Opportunity Analysis
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="companies-brands-consumers">Companies, Brands &amp; Consumers
+                    </li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Used consumer evidence to investigate attitudes, identify
+                    meaningful preference patterns, and assess brand-growth
+                    opportunities. Projects included analysing sustainable-clothing
+                    attitudes and developing a market-supported brand-extension
+                    proposal for Volkswagen.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Consumer Insight</li>
+                    <li class="ability-tag">Brand Opportunity Assessment</li>
+                    <li class="ability-tag">Evidence-Led Positioning</li>
+                </ul>
+            </li>
+
+        </ul>
+    </section>
+
+    <!-- ============================================================
+        WORKS CARD GRID
+    ================================================================ -->
+    <section id="works" data-nav="Works" aria-label="Works" class="works-section fade-in">
+
+        <div class="section-label">
+            <h2 id="masters-works-heading" class="section-label__text">Works</h2>
+            <span class="section-label__line" aria-hidden="true"></span>
+        </div>
+
+        <div class="works-toolbar">
+            <button type="button" class="lens-toggle" role="switch" aria-checked="false" aria-controls="masters-works-grid" data-lens-toggle>
+                <span class="lens-toggle__track" aria-hidden="true"><span class="lens-toggle__thumb"></span></span>
+                <span>Show courses</span>
+            </button>
+        </div>
+
+        <div id="masters-works-grid">
+
+            <!-- ═════════ VISUAL REPORTS (landscape) ═════════ -->
+            <div class="works-group">
+                <h3 class="works-group__title">Visual reports</h3>
+                <p class="works-group__intro">Presentation-format reports built around data visualisation and
+                    storytelling.</p>
+
+                <div class="evidence-grid evidence-grid--works">
+
+                    <!-- Text mining, sentiment & PSM -->
+                    <article class="evidence-card" data-domain="data" aria-labelledby="w-text">
+                        <div class="evidence-card__canva" data-orientation="landscape">
+                            <iframe src="https://www.canva.com/design/DAF00PgC88w/view?embed" title="Text Mining, Sentiment Analysis and Propensity Score Matching" width="1600" height="900" loading="lazy" allow="fullscreen"></iframe>
+                        </div>
+                        <div class="evidence-card__body">
+                            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data</span>
+                            <h4 id="w-text" class="evidence-card__title">Text Mining, Sentiment Analysis &amp;
+                                Propensity Score Matching</h4>
+                            <ul class="evidence-card__bullets">
+                                <li>Investigated how effective the communication in online marketing campaigns was,
+                                    using text mining to turn campaign wording into data that could be analysed.
+                                </li>
+                                <li>Combined traditional and machine-learning methods, adding sentiment analysis to
+                                    measure the tone of the messaging.</li>
+                                <li>Used propensity score matching to compare campaigns on a like-for-like basis, so
+                                    differences in effectiveness were not read straight off raw group averages.</li>
+                            </ul>
+                            <div class="evidence-card__courses">
+                                <p class="evidence-card__courses-label">Coursework</p>
+                                <ul class="evidence-card__course-list">
+                                    <li data-course="digital-marketing-intelligence">Digital Marketing Intelligence
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="evidence-card__actions" role="group" aria-label="Text mining project resources">
+                                <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Text%20mining%2C%20Sentiment%20analysis%20%26%20Propensity%20score%20matching.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/text-mining.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>Code</a>
+                                <a class="evidence-card__action" href="https://www.canva.com/design/DAF00PgC88w/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Enlarge</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Wehkamp AR -->
+                    <article class="evidence-card" data-domain="growth" aria-labelledby="w-ga">
+                        <div class="evidence-card__canva" data-orientation="landscape">
+                            <iframe src="https://www.canva.com/design/DAF00O38dCQ/view?embed" title="Google Analytics and Exploratory Analysis of Wehkamp's AR app" width="1600" height="900" loading="lazy" allow="fullscreen"></iframe>
+                        </div>
+                        <div class="evidence-card__body">
+                            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Growth</span>
+                            <h4 id="w-ga" class="evidence-card__title">Google Analytics &amp; Exploratory Analysis:
+                                Wehkamp's AR App</h4>
+                            <ul class="evidence-card__bullets">
+                                <li>Analysed the impact of Wehkamp's augmented-reality app on its customers, asking
+                                    whether people who used it behaved differently from those who did not.</li>
+                                <li>Measured behaviour through five outcomes: repeat purchases, customer value,
+                                    repurchases, revenue and transaction frequency.</li>
+                                <li>Used exploratory analysis to judge which of those differences were worth
+                                    interpreting, then presented them as a visual report.</li>
+                            </ul>
+                            <div class="evidence-card__courses">
+                                <p class="evidence-card__courses-label">Coursework</p>
+                                <ul class="evidence-card__course-list">
+                                    <li data-course="digital-marketing-analytics">Digital Marketing Analytics</li>
+                                </ul>
+                            </div>
+                            <div class="evidence-card__actions" role="group" aria-label="Wehkamp AR project resources">
+                                <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Google%20Analytics%20%26%20Exploratory%20Analysis.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/google-analytics.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>Code</a>
+                                <a class="evidence-card__action" href="https://www.canva.com/design/DAF00O38dCQ/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Enlarge</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Time series -->
+                    <article class="evidence-card" data-domain="data" aria-labelledby="w-ts">
+                        <div class="evidence-card__canva" data-orientation="landscape">
+                            <iframe src="https://www.canva.com/design/DAF00Go7oNk/view?embed" title="Time-series Analysis of Redstar versus competitors" width="1600" height="900" loading="lazy" allow="fullscreen"></iframe>
+                        </div>
+                        <div class="evidence-card__body">
+                            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data</span>
+                            <h4 id="w-ts" class="evidence-card__title">Time-series Analysis: Redstar vs. Competitors
+                            </h4>
+                            <ul class="evidence-card__bullets">
+                                <li>Investigated the 4Ps of marketing (product, price, place and promotion) for
+                                    Redstar against its competitors, using time-series methods.</li>
+                                <li>Treated each element of the mix as something that moves over time, so the
+                                    question became how Redstar's trajectory compared with rival brands, not just
+                                    how it ranked in one period.</li>
+                                <li>Reported the results as a visual analytical report, with the Code public
+                                    alongside it.</li>
+                            </ul>
+                            <div class="evidence-card__courses">
+                                <p class="evidence-card__courses-label">Coursework</p>
+                                <ul class="evidence-card__course-list">
+                                    <li data-course="data-science-methods">Data Science Methods for MADS</li>
+                                </ul>
+                            </div>
+                            <div class="evidence-card__actions" role="group" aria-label="Time-series project resources">
+                                <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Time-series%20Analysis.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/timeseries-analysis.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>Code</a>
+                                <a class="evidence-card__action" href="https://www.canva.com/design/DAF00Go7oNk/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Enlarge</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Cluster -->
+                    <article class="evidence-card" data-domain="data" aria-labelledby="w-cluster">
+                        <div class="evidence-card__canva" data-orientation="landscape">
+                            <iframe src="https://www.canva.com/design/DAF00IGcizI/view?embed" title="Cluster Analysis of car-buying preferences" width="1600" height="900" loading="lazy" allow="fullscreen"></iframe>
+                        </div>
+                        <div class="evidence-card__body">
+                            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data</span>
+                            <h4 id="w-cluster" class="evidence-card__title">Cluster Analysis: Car-Buying Preferences
+                            </h4>
+                            <ul class="evidence-card__bullets">
+                                <li>Investigated what consumers want when buying a car, working from survey data to
+                                    find groups of buyers with similar priorities.</li>
+                                <li>Ran both hierarchical and non-hierarchical clustering, so the segmentation could
+                                    be judged across two different approaches to grouping.</li>
+                                <li>Reported the segments in a visual report that turns the statistical output into
+                                    a readable picture of how the market divides.</li>
+                            </ul>
+                            <div class="evidence-card__courses">
+                                <p class="evidence-card__courses-label">Coursework</p>
+                                <ul class="evidence-card__course-list">
+                                    <li data-course="companies-brands-consumers">Companies, Brands, and Consumers
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="evidence-card__actions" role="group" aria-label="Cluster analysis resources">
+                                <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Cluster%20Analysis.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/cluster-analysis.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>Code</a>
+                                <a class="evidence-card__action" href="https://www.canva.com/design/DAF00IGcizI/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Enlarge</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Factor -->
+                    <article class="evidence-card" data-domain="data" aria-labelledby="w-factor">
+                        <div class="evidence-card__canva" data-orientation="landscape">
+                            <iframe src="https://www.canva.com/design/DAF05nELmIc/view?embed" title="Factor Analysis of attitudes towards sustainable clothing" width="1600" height="900" loading="lazy" allow="fullscreen"></iframe>
+                        </div>
+                        <div class="evidence-card__body">
+                            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data</span>
+                            <h4 id="w-factor" class="evidence-card__title">Factor Analysis: Attitudes Towards
+                                Sustainable Clothing</h4>
+                            <ul class="evidence-card__bullets">
+                                <li>Investigated which factors matter in people's attitudes towards sustainable
+                                    clothing, starting from many separate survey questions.</li>
+                                <li>Used factor analysis to find the smaller set of underlying dimensions those
+                                    questions share, moving from individual answers to interpretable attitudes.</li>
+                                <li>Presented the factors in a visual report that shows what each dimension
+                                    represents.</li>
+                            </ul>
+                            <div class="evidence-card__courses">
+                                <p class="evidence-card__courses-label">Coursework</p>
+                                <ul class="evidence-card__course-list">
+                                    <li data-course="companies-brands-consumers">Companies, Brands, and Consumers
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="evidence-card__actions" role="group" aria-label="Factor analysis resources">
+                                <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Factor%20Analysis.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/factor-analysis.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>Code</a>
+                                <a class="evidence-card__action" href="https://www.canva.com/design/DAF05nELmIc/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Enlarge</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Kruidvat -->
+                    <article class="evidence-card" data-domain="growth" aria-labelledby="w-kruidvat">
+                        <div class="evidence-card__canva" data-orientation="landscape">
+                            <iframe src="https://www.canva.com/design/DAF00P84WxU/view?embed" title="Retail Mix Tactics for Kruidvat NL" width="1600" height="900" loading="lazy" allow="fullscreen"></iframe>
+                        </div>
+                        <div class="evidence-card__body">
+                            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Growth</span>
+                            <h4 id="w-kruidvat" class="evidence-card__title">Retail Mix Tactics: Kruidvat NL</h4>
+                            <ul class="evidence-card__bullets">
+                                <li>Proposed a retail mix strategy for Kruidvat in the Netherlands, focused on the
+                                    makeup category.</li>
+                                <li>Grounded the proposal in both internal and external market conditions, so the
+                                    recommendations follow from the retailer's situation and the wider industry.
+                                </li>
+                                <li>Delivered the proposal as a visual report built for a business audience.</li>
+                            </ul>
+                            <div class="evidence-card__courses">
+                                <p class="evidence-card__courses-label">Coursework</p>
+                                <ul class="evidence-card__course-list">
+                                    <li data-course="retail-omnichannel">Retail &amp; Omnichannel Marketing</li>
+                                </ul>
+                            </div>
+                            <div class="evidence-card__actions" role="group" aria-label="Kruidvat proposal resources">
+                                <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Retail%20Mix%20Tactics%20for%20Kruidvat%20NL.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                <a class="evidence-card__action" href="https://www.canva.com/design/DAF00P84WxU/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Enlarge</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- L'Oréal -->
+                    <article class="evidence-card" data-domain="growth" aria-labelledby="w-loreal">
+                        <div class="evidence-card__canva" data-orientation="landscape">
+                            <iframe src="https://www.canva.com/design/DAF00KtmVOo/view?embed" title="Omnichannel Strategy Proposal for L'Oréal NL" width="1600" height="900" loading="lazy" allow="fullscreen"></iframe>
+                        </div>
+                        <div class="evidence-card__body">
+                            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Growth</span>
+                            <h4 id="w-loreal" class="evidence-card__title">Omnichannel Strategy: L'Oréal NL</h4>
+                            <ul class="evidence-card__bullets">
+                                <li>Proposed an omnichannel strategy for L'Oréal in the Netherlands.</li>
+                                <li>Built the proposal on two kinds of evidence: analysis of internal data and
+                                    analysis of the external market.</li>
+                                <li>Delivered the strategy as a visual report that ties the analysis to concrete
+                                    recommendations.</li>
+                            </ul>
+                            <div class="evidence-card__courses">
+                                <p class="evidence-card__courses-label">Coursework</p>
+                                <ul class="evidence-card__course-list">
+                                    <li data-course="retail-omnichannel">Retail &amp; Omnichannel Marketing</li>
+                                </ul>
+                            </div>
+                            <div class="evidence-card__actions" role="group" aria-label="L'Oréal proposal resources">
+                                <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Omnichannel%20Strategy%20Proposal%20for%20L%27Oreal%20NL.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                <a class="evidence-card__action" href="https://www.canva.com/design/DAF00KtmVOo/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Enlarge</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Exploratory: meal kits (no code link on the old page) -->
+                    <article class="evidence-card" data-domain="growth" aria-labelledby="w-explore">
+                        <div class="evidence-card__canva" data-orientation="landscape">
+                            <iframe src="https://www.canva.com/design/DAF00D8MWFA/view?embed" title="Exploratory Analysis of consumer attitudes towards meal kits" width="1600" height="900" loading="lazy" allow="fullscreen"></iframe>
+                        </div>
+                        <div class="evidence-card__body">
+                            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Growth</span>
+                            <h4 id="w-explore" class="evidence-card__title">Exploratory Analysis: Consumer Attitudes
+                                Towards Meal Kits</h4>
+                            <ul class="evidence-card__bullets">
+                                <li>Investigated several aspects of consumer attitudes towards meal kits, working
+                                    from survey data.</li>
+                                <li>Used exploratory analysis to map the data before committing to any one question,
+                                    surfacing the patterns that deserved a closer look.</li>
+                                <li>Reported the results as a visual report that pairs each finding with a chart.
+                                </li>
+                            </ul>
+                            <div class="evidence-card__courses">
+                                <p class="evidence-card__courses-label">Coursework</p>
+                                <ul class="evidence-card__course-list">
+                                    <li data-course="companies-brands-consumers">Companies, Brands, and Consumers
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="evidence-card__actions" role="group" aria-label="Meal kit analysis resources">
+                                <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Exploratory%20Analysis.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                <a class="evidence-card__action" href="https://www.canva.com/design/DAF00D8MWFA/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Enlarge</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- ═════════ WRITTEN REPORTS (portrait) ═════════ -->
+            <div class="works-group">
+                <h3 class="works-group__title">Written reports</h3>
+                <p class="works-group__intro">Documents showcasing academic and corporate reporting.</p>
+
+                <div class="evidence-grid evidence-grid--works">
+
+                    <!-- Pre-MSc thesis -->
+                    <article class="evidence-card" data-domain="data" aria-labelledby="w-premsc">
+                        <div class="evidence-card__canva" data-orientation="portrait">
+                            <iframe src="https://www.canva.com/design/DAF05sFmKwQ/view?embed" title="Pre-MSc thesis: Earnings call sentiment and stock volatility" width="850" height="1100" loading="lazy" allow="fullscreen"></iframe>
+                        </div>
+                        <div class="evidence-card__body">
+                            <div class="evidence-card__tagrow">
+                                <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data</span>
+                                <span class="evidence-card__badge">Pre-MSc Thesis</span>
+                            </div>
+                            <h4 id="w-premsc" class="evidence-card__title">Earnings Call Sentiment &amp; Stock
+                                Volatility</h4>
+                            <ul class="evidence-card__bullets">
+                                <li>Asked whether the sentiment of an earnings call shapes how volatile a stock is
+                                    afterwards, using 178 call transcripts from 10 NASDAQ-listed firms.</li>
+                                <li>Cleaned the transcripts and scored them with NLTK's VADER, then scraped stock
+                                    and NASDAQ index prices for the 10 days either side of each call to measure the
+                                    change in volatility, and tested sentiment with multiple linear regression.</li>
+                                <li>Volatility rose after 87% of calls, yet sentiment was not a statistically
+                                    significant predictor. The paper reports this plainly and points to other
+                                    factors worth testing, while showing the call itself is a decisive moment for
+                                    volatility.</li>
+                            </ul>
+                            <div class="evidence-card__courses">
+                                <p class="evidence-card__courses-label">Coursework</p>
+                                <ul class="evidence-card__course-list">
+                                    <li data-course="research-paper">Pre-MSc Thesis</li>
+                                </ul>
+                            </div>
+                            <div class="evidence-card__actions" role="group" aria-label="Pre-MSc thesis resources">
+                                <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/georgedreemer-premsc-thesis_paper.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/theses/premsc-thesis.py" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>Code</a>
+                                <a class="evidence-card__action" href="https://colab.research.google.com/drive/1cHAWOr2hcSNUctMLjWbyRG5einhLjRqw?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="bi bi-journal-code" aria-hidden="true"></i>Collab</a>
+                                <a class="evidence-card__action" href="https://www.canva.com/design/DAF05sFmKwQ/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Churn -->
+                    <article class="evidence-card" data-domain="data" aria-labelledby="w-churn">
+                        <div class="evidence-card__canva" data-orientation="portrait">
+                            <iframe src="https://www.canva.com/design/DAF05cR6CW8/view?embed" title="Churn Prediction Modelling report" width="850" height="1100" loading="lazy" allow="fullscreen"></iframe>
+                        </div>
+                        <div class="evidence-card__body">
+                            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data</span>
+                            <h4 id="w-churn" class="evidence-card__title">Churn Prediction Modelling</h4>
+                            <ul class="evidence-card__bullets">
+                                <li>Modelled customer churn with traditional methods and with machine learning: tree
+                                    models, bagging, boosting and neural networks.</li>
+                                <li>Put the approaches side by side on the same problem, so the report reads as a
+                                    comparison of how different modelling philosophies handle churn.</li>
+                                <li>Documented the work as a written report with the full R workflow public, so each
+                                    modelling choice can be traced to code.</li>
+                            </ul>
+                            <div class="evidence-card__courses">
+                                <p class="evidence-card__courses-label">Coursework</p>
+                                <ul class="evidence-card__course-list">
+                                    <li data-course="statistical-learning">Statistical Learning in Marketing</li>
+                                </ul>
+                            </div>
+                            <div class="evidence-card__actions" role="group" aria-label="Churn modelling resources">
+                                <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Churn%20Prediction%20Modeling.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/churn-modelling.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>Code</a>
+                                <a class="evidence-card__action" href="https://www.canva.com/design/DAF05cR6CW8/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Enlarge</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Market Modelling 1 -->
+                    <article class="evidence-card" data-domain="data" aria-labelledby="w-mm1">
+                        <div class="evidence-card__canva" data-orientation="portrait">
+                            <iframe src="https://www.canva.com/design/DAF05b9VXBc/view?embed" title="Market Modelling 1 of 2 report" width="850" height="1100" loading="lazy" allow="fullscreen"></iframe>
+                        </div>
+                        <div class="evidence-card__body">
+                            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data</span>
+                            <h4 id="w-mm1" class="evidence-card__title">Market Modelling 1/2: Dutch Lemonade Market
+                            </h4>
+                            <ul class="evidence-card__bullets">
+                                <li>Built a regression model of the Dutch lemonade retail market, working with data
+                                    from retailers such as Albert Heijn and Jumbo.</li>
+                                <li>Covered competing brands, including Raak and Karvan Cevitam, so the model had to
+                                    account for differences between brands as well as between retailers.</li>
+                                <li>Reported it as a written report with the Code public, the first of two linked
+                                    modelling assignments.</li>
+                            </ul>
+                            <div class="evidence-card__courses">
+                                <p class="evidence-card__courses-label">Coursework</p>
+                                <ul class="evidence-card__course-list">
+                                    <li data-course="market-models">Market Models</li>
+                                </ul>
+                            </div>
+                            <div class="evidence-card__actions" role="group" aria-label="Market Modelling 1 resources">
+                                <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Market%20Modeling%201.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/market-modelling1.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>Code</a>
+                                <a class="evidence-card__action" href="https://www.canva.com/design/DAF05b9VXBc/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Enlarge</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Market Modelling 2 -->
+                    <article class="evidence-card" data-domain="data" aria-labelledby="w-mm2">
+                        <div class="evidence-card__canva" data-orientation="portrait-tall">
+                            <iframe src="https://www.canva.com/design/DAF05T7o0LE/view?embed" title="Market Modelling 2 of 2 report" width="800" height="1100" loading="lazy" allow="fullscreen"></iframe>
+                        </div>
+                        <div class="evidence-card__body">
+                            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data</span>
+                            <h4 id="w-mm2" class="evidence-card__title">Market Modelling 2/2: Dutch Lemonade Market
+                            </h4>
+                            <ul class="evidence-card__bullets">
+                                <li>Continued the lemonade-market modelling from part one, extending the same
+                                    retailer and brand context into a second written report.</li>
+                                <li>Kept the analysis in the same regression-modelling framework, so the two reports
+                                    can be read together as one body of work.</li>
+                                <li>Published with its own R script, so part two can be inspected independently of
+                                    part one.</li>
+                            </ul>
+                            <div class="evidence-card__courses">
+                                <p class="evidence-card__courses-label">Coursework</p>
+                                <ul class="evidence-card__course-list">
+                                    <li data-course="market-models">Market Models</li>
+                                </ul>
+                            </div>
+                            <div class="evidence-card__actions" role="group" aria-label="Market Modelling 2 resources">
+                                <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Market%20Modeling%202.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/market-modelling2.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>Code</a>
+                                <a class="evidence-card__action" href="https://www.canva.com/design/DAF05T7o0LE/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Enlarge</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Conversion -->
+                    <article class="evidence-card" data-domain="engineering" aria-labelledby="w-conv">
+                        <div class="evidence-card__canva" data-orientation="portrait-patch">
+                            <iframe src="https://www.canva.com/design/DAF00GOZbvk/view?embed" title="Conversion Rate Optimization Analysis report" width="800" height="1100" loading="lazy" allow="fullscreen"></iframe>
+                        </div>
+                        <div class="evidence-card__body">
+                            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Engineering</span>
+                            <h4 id="w-conv" class="evidence-card__title">Conversion Rate Optimization Analysis</h4>
+                            <ul class="evidence-card__bullets">
+                                <li>Investigated what drives conversion for an online retailer's product category,
+                                    starting from the question of how the data should be extracted.</li>
+                                <li>Wrote the extraction and preparation in SQL, then carried the dataset into R to
+                                    model how the available variables relate to conversion.</li>
+                                <li>Published both layers separately, so the route from raw data to model can be
+                                    followed end to end.</li>
+                            </ul>
+                            <div class="evidence-card__courses">
+                                <p class="evidence-card__courses-label">Coursework</p>
+                                <ul class="evidence-card__course-list">
+                                    <li data-course="data-engineering">Data Engineering for MADS</li>
+                                </ul>
+                            </div>
+                            <div class="evidence-card__actions" role="group" aria-label="Conversion analysis resources">
+                                <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Conversion%20Rate%20Optimization%20Analysis.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/conversionrate-modelling.sql" target="_blank" rel="noopener noreferrer"><i class="bi bi-database" aria-hidden="true"></i>SQL</a>
+                                <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/blob/main/analyses/conversionrate-modelling.R" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i>Code</a>
+                                <a class="evidence-card__action" href="https://www.canva.com/design/DAF00GOZbvk/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Ethics -->
+                    <article class="evidence-card" data-domain="product" aria-labelledby="w-ethics">
+                        <div class="evidence-card__canva" data-orientation="portrait-patch">
+                            <iframe src="https://www.canva.com/design/DAF00Bs9Blc/view?embed" title="Ethical Analysis: Food Waste, Salary Transparency, Gig Work" width="800" height="1100" loading="lazy" allow="fullscreen"></iframe>
+                        </div>
+                        <div class="evidence-card__body">
+                            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Product</span>
+                            <h4 id="w-ethics" class="evidence-card__title">Ethical Analysis: Food Waste, Salary
+                                Transparency &amp; Gig Work</h4>
+                            <ul class="evidence-card__bullets">
+                                <li>Analysed three live business issues through an ethical lens: food waste, salary
+                                    transparency and platform-based gig work.</li>
+                                <li>Used ethical theory and the research literature to identify who is affected by
+                                    each issue and where their interests conflict.</li>
+                                <li>Argued for a defensible position on each, treating ethics as part of the
+                                    business decision.</li>
+                            </ul>
+                            <div class="evidence-card__courses">
+                                <p class="evidence-card__courses-label">Coursework</p>
+                                <ul class="evidence-card__course-list">
+                                    <li data-course="business-ethics">Business Ethics</li>
+                                </ul>
+                            </div>
+                            <div class="evidence-card__actions" role="group" aria-label="Ethics report resources">
+                                <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/Ethical%20Analysis%20Food%20Waste%2C%20Salary%20Transparency%2C%20Gig%20Work.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>PDF</a>
+                                <a class="evidence-card__action" href="https://www.canva.com/design/DAF00Bs9Blc/view" target="_blank" rel="noopener noreferrer"><i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Enlarge</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+        E6–THESES — RESEARCH SHOWCASE
+    =============================================================== -->
+    <section id="thesis" data-nav="Thesis" aria-label="Thesis" class="theses-section">
+        <div class="section-label">
+            <h2 id="masters-theses-heading" class="section-label__text">
+                Thesis
+            </h2>
+
+            <span class="section-label__line" aria-hidden="true"></span>
+        </div>
+
+
+        <!-- ── MSc thesis ─────────────────────────────────────── -->
+
+        <article class="thesis-feature fade-in" aria-labelledby="msc-thesis-title">
+            
+
+                <p class="thesis-feature__eyebrow">
+                    MSc thesis · University of Groningen · Grade: 8 / 10
+                </p>
+
+                <h3 id="msc-thesis-title" class="thesis-feature__title">
+                    Willingness to Share Health Data in Italy:
+                    Investigation under a Multi-context Paradigm with DCE Data
+                </h3>
+
+                <p class="screenreader-only">
+                    Synopsis:
+                </p>
+                <p class="thesis-feature__synopsis">
+                    What makes people willing to share their health data beyond
+                    its original use? I analysed choices from 329 respondents
+                    in Italy to understand how the organisations involved,
+                    the intended use, consent arrangements, and external
+                    oversight shape that decision.
+                </p>
+            
+
+            <nav class="thesis-toolbar" aria-label="MSc thesis source documents">
+                <a class="evidence-card__action evidence-card__action--primary" href="https://georgedreemer.com/downloads/academic/georgedreemer-msc-thesis_paper.pdf" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-file-earmark-text" aria-hidden="true"></i>
+                    Read the full paper
+                </a>
+
+                <a class="evidence-card__action" href="https://georgedreemer.com/downloads/academic/georgedreemer-msc-thesis_defenseslides.pdf" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-easel" aria-hidden="true"></i>
+                    Defence slides
+                </a>
+
+                <a class="evidence-card__action" href="https://github.com/ETA444/msc_mads/tree/main/theses" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github" aria-hidden="true"></i>
+                    Analysis code
+                </a>
+            </nav>
+
+            <div class="thesis-expose">
+                <dl class="thesis-expose__facts" aria-label="Research at a glance">
+                    <div>
+                        <dt>Participants</dt>
+                        <dd>329 <span>in Italy</span></dd>
+                    </div>
+
+                    <div>
+                        <dt>Latent preference groups</dt>
+                        <dd>2 <span>46.5% / 53.5% of respondents</span></dd>
+                    </div>
+
+                    <div>
+                        <dt>Contextual attributes</dt>
+                        <dd>5 <span>examined together</span></dd>
+                    </div>
+
+                    <div>
+                        <dt>Analysis tools</dt>
+                        <dd>R <span>&amp; Stata 17</span></dd>
+                    </div>
+                </dl>
+
+            </div>
+
+            <dl class="thesis-feature__research">
+
+                <div>
+                    <dt>Research question</dt>
+                    <dd>
+                        <p class="thesis-feature__lead">
+                            How do different data-sharing arrangements influence
+                            willingness to allow the secondary use of health data?
+                        </p>
+
+                        <p class="thesis-feature__sub">
+                            Five contextual attributes were examined together:
+                        </p>
+
+                        <ul class="thesis-feature__chips">
+                            <li>Original data collector</li>
+                            <li>New data user</li>
+                            <li>Purpose of reuse</li>
+                            <li>Information &amp; consent</li>
+                            <li>External review</li>
+                        </ul>
+                    </dd>
+                </div>
+
+                <div>
+                    <dt>Analytical approach</dt>
+                    <dd>
+                        <p class="thesis-feature__lead">
+                            I analysed discrete-choice-experiment data supplied by
+                            Biasiotto and colleagues: 329 participants in Italy.
+                        </p>
+
+                        <ol class="thesis-feature__steps">
+                            <li>
+                                Compared five models in Stata (three latent class
+                                specifications, a conditional logit, and a logistic
+                                regression), judging fit by AIC and log-likelihood.
+                            </li>
+                            <li>
+                                Interpreted a two-class latent class model as the
+                                primary analysis, with the conditional logit as a
+                                secondary check.
+                            </li>
+                            <li>
+                                Calculated average relative attribute importance
+                                from the primary model.
+                            </li>
+                        </ol>
+                    </dd>
+                </div>
+
+                <div>
+                    <dt>Finding &amp; relevance</dt>
+                    <dd>
+                        <p class="thesis-feature__lead">
+                            Respondents leaned toward not sharing, but context
+                            shifted that.
+                        </p>
+
+                        <p class="thesis-feature__sub">
+                            Two preference groups (46.5% and 53.5%) ranked the five
+                            attributes identically:
+                        </p>
+
+                        <ol class="thesis-feature__ranking">
+                            <li>Who reuses the data</li>
+                            <li>Purpose of reuse</li>
+                            <li>Information about sharing</li>
+                            <li>Review of the transfer</li>
+                            <li>Original data collector</li>
+                        </ol>
+
+                        <p class="thesis-feature__sub">
+                            Yet they preferred different options within each
+                            attribute. On who reuses the data, their orders were
+                            contrasting. One-size-fits-all rules are therefore
+                            unlikely to fit, while transparency and some form of
+                            external review were common ground.
+                        </p>
+                    </dd>
+                </div>
+
+            </dl>
+
+            <div class="thesis-expose">
+
+                <!-- ── 1. Understand the research by exploring a context ── -->
+
+                <section class="thesis-expose__section" aria-labelledby="msc-context-heading">
+                    <div class="thesis-expose__section-head">
+                        <p class="thesis-expose__eyebrow">
+                            Inside the experiment
+                        </p>
+
+                        <h4 id="msc-context-heading">
+                            Same health data. Different sharing context.
+                        </h4>
+
+                        <p>
+                            A willingness-to-share decision involves more than
+                            the data itself. Change who collected it, who wants
+                            to reuse it, why, and under which safeguards.
+                            These were the five contextual attributes examined
+                            together in the research.
+                        </p>
+                    </div>
+
+                    <div class="thesis-expose__explorer" data-context-explorer>
+                        <form class="thesis-expose__context-form" aria-label="Explore an illustrative health-data-sharing context">
+                            <fieldset>
+                                <legend>Build a sharing context</legend>
+
+                                <p class="thesis-expose__helper">
+                                    Choose an option for each attribute.
+                                    The context summary updates automatically.
+                                </p>
+
+                                <div class="thesis-expose__fields">
+
+                                    <div class="thesis-expose__field">
+                                        <label for="msc-context-collector">
+                                            Original data collector
+                                        </label>
+
+                                        <select id="msc-context-collector" name="collector">
+                                            <option value="healthcare">
+                                                Healthcare provider
+                                            </option>
+                                            <option value="technology">
+                                                Technological company
+                                            </option>
+                                            <option value="academic">
+                                                Academic research project
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="thesis-expose__field">
+                                        <label for="msc-context-recipient">
+                                            New data user
+                                        </label>
+
+                                        <select id="msc-context-recipient" name="recipient">
+                                            <option value="authority">
+                                                National authority
+                                            </option>
+                                            <option value="technology">
+                                                Technological company
+                                            </option>
+                                            <option value="pharmaceutical">
+                                                Pharmaceutical company
+                                            </option>
+                                            <option value="academic">
+                                                Academic research project
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="thesis-expose__field">
+                                        <label for="msc-context-purpose">
+                                            Purpose of reuse
+                                        </label>
+
+                                        <select id="msc-context-purpose" name="purpose">
+                                            <option value="quality">
+                                                Quality evaluation
+                                            </option>
+                                            <option value="development">
+                                                Development of a new product or service
+                                            </option>
+                                            <option value="marketing">
+                                                Promotion, advertising, or marketing
+                                            </option>
+                                            <option value="policy">
+                                                Investigation of a policy initiative
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="thesis-expose__field">
+                                        <label for="msc-context-consent">
+                                            Information and consent
+                                        </label>
+
+                                        <select id="msc-context-consent" name="consent">
+                                            <option value="opt-in">
+                                                Informed, with ability to opt in
+                                            </option>
+                                            <option value="opt-out">
+                                                Informed, with ability to opt out
+                                            </option>
+                                            <option value="information-only">
+                                                Informed, without a consent option
+                                            </option>
+                                            <option value="not-informed">
+                                                Not informed
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="thesis-expose__field">
+                                        <label for="msc-context-review">
+                                            External review
+                                        </label>
+
+                                        <select id="msc-context-review" name="review">
+                                            <option value="transfer-and-use">
+                                                Review of data transfer and use
+                                            </option>
+                                            <option value="transfer-only">
+                                                Review of data transfer only
+                                            </option>
+                                            <option value="none">
+                                                No review
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <button type="reset" class="thesis-expose__reset">
+                                    Reset context
+                                </button>
+                            </fieldset>
+                        </form>
+
+                        <div class="thesis-expose__context-preview">
+                            <p class="thesis-expose__eyebrow">
+                                Illustrative context
+                            </p>
+
+                            <p class="thesis-expose__preview-intro">
+                                Imagine your health data being reused
+                                under these arrangements:
+                            </p>
+
+                            <dl class="thesis-expose__context-summary">
+                                <div>
+                                    <dt>Originally collected by</dt>
+                                    <dd data-context-value="collector">
+                                        Healthcare provider
+                                    </dd>
+                                </div>
+
+                                <div>
+                                    <dt>Reused by</dt>
+                                    <dd data-context-value="recipient">
+                                        National authority
+                                    </dd>
+                                </div>
+
+                                <div>
+                                    <dt>Used for</dt>
+                                    <dd data-context-value="purpose">
+                                        Quality evaluation
+                                    </dd>
+                                </div>
+
+                                <div>
+                                    <dt>Information and consent</dt>
+                                    <dd data-context-value="consent">
+                                        Informed, with ability to opt in
+                                    </dd>
+                                </div>
+
+                                <div>
+                                    <dt>External review</dt>
+                                    <dd data-context-value="review">
+                                        Review of data transfer and use
+                                    </dd>
+                                </div>
+                            </dl>
+
+                            <p class="thesis-expose__preview-question">
+                                Would these arrangements change your
+                                willingness to share?
+                            </p>
+
+                            <p class="thesis-expose__helper">
+                                The study asked participants to accept or reject
+                                sharing across varying contexts. This explorer
+                                illustrates the attributes; it does not record
+                                your answer or estimate a sharing probability.
+                            </p>
+
+                            <p class="thesis-expose__sr-only" role="status" aria-live="polite" aria-atomic="true" data-context-status></p>
+                        </div>
+                    </div>
+
+                    <p class="thesis-expose__boundary">
+                        Educational reconstruction using the study’s attribute
+                        levels—not a reproduction of an original choice task.
+                        Combinations selected here are not necessarily among
+                        the scenarios administered in the study.
+                    </p>
+
+                    <noscript>
+                        <p class="thesis-expose__boundary">
+                            The example context is shown above. JavaScript enables
+                            automatic updates when you change an attribute.
+                        </p>
+                    </noscript>
+                </section>
+
+
+                <!-- ── 2. Findings that deserve more than one sentence ──── -->
+
+                <section class="thesis-expose__section" aria-labelledby="msc-findings-heading">
+                    <div class="thesis-expose__section-head">
+                        <p class="thesis-expose__eyebrow">What the analysis revealed</p>
+                        <h4 id="msc-findings-heading">
+                            Two groups agreed on what matters, and disagreed on what they prefer.
+                        </h4>
+                        <p>
+                            Overall, respondents leaned toward not sharing. Willingness
+                            depended on the arrangement, and the five attributes did not
+                            carry equal weight.
+                        </p>
+                    </div>
+
+                    <div class="thesis-expose__ranking-block">
+                        <p class="thesis-expose__finding-label">
+                            Importance of the five attributes
+                        </p>
+
+                        <ol class="thesis-expose__ranking">
+                            <li>New data user</li>
+                            <li>Reason for new data use</li>
+                            <li>Information &amp; consent</li>
+                            <li>External review</li>
+                            <li>Original data collector</li>
+                        </ol>
+
+                        <p class="thesis-expose__boundary">
+                            Ranking based on average relative attribute importance in the
+                            primary two-class latent class model. Both modelled groups shared
+                            the same attribute-importance order, while differing in their
+                            preferred levels within several attributes.
+                        </p>
+
+                        <!-- ═══ FIGURE 6 · Relative attribute importance ═══ -->
+                        <figure class="thesis-expose__table-slot">
+                            <figcaption id="msc-fig-6-cap">
+                                <span class="thesis-expose__figure-label">Figure 6</span>
+                                <span class="thesis-expose__figure-title">Average relative attribute
+                                    importance</span>
+                            </figcaption>
+                            <div class="thesis-expose__figure-media">
+                                <img src="https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure6.png" alt="Figure 6. Average relative importance of the five contextual attributes." width="1734px" height="896px" loading="lazy" decoding="async">
+                            </div>
+                            <p class="thesis-expose__figure-note">
+                                As reported in the thesis: the new data user and the reason for reuse
+                                carry the most weight, followed by information and consent.
+                            </p>
+                            <a class="thesis-expose__figure-link" target="_blank" rel="noopener noreferrer" href="https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure6.png" aria-label="Open Figure 6, average relative attribute importance, at full size">Open
+                                full size ↗</a>
+                        </figure>
+                    </div>
+
+                    <div class="thesis-expose__finding">
+                        <p class="thesis-expose__finding-label">An expectation challenged</p>
+                        <p>
+                            I expected information &amp; consent to be the most influential
+                            attribute and the reason for reuse to rank second. The second
+                            expectation held; the first did not. The new data user ranked
+                            first and information &amp; consent third, so who receives the
+                            data mattered more than how consent is organised.
+                        </p>
+                    </div>
+                </section>
+
+
+                <section class="thesis-expose__section" aria-labelledby="msc-groups-heading">
+                    <div class="thesis-expose__section-head">
+                        <p class="thesis-expose__eyebrow">Inside the two groups</p>
+                        <h4 id="msc-groups-heading">One country, two contrasting preference patterns.</h4>
+                        <p>
+                            The latent class model split respondents into two groups,
+                            46.5% and 53.5%. Pick an attribute to compare how each group
+                            ordered its levels, from highest to lowest estimated utility.
+                        </p>
+                    </div>
+
+                    <div class="thesis-expose__groups" data-group-compare>
+
+                        <fieldset class="thesis-expose__picker" data-group-picker hidden>
+                            <legend>Compare the groups on</legend>
+                            <div class="thesis-expose__segmented">
+                                <input type="radio" id="msc-attr-recipient" name="msc-attribute" value="recipient" checked>
+                                <label for="msc-attr-recipient">1 · New data user</label>
+
+                                <input type="radio" id="msc-attr-reason" name="msc-attribute" value="reason">
+                                <label for="msc-attr-reason">2 · Reason for use</label>
+
+                                <input type="radio" id="msc-attr-consent" name="msc-attribute" value="consent">
+                                <label for="msc-attr-consent">3 · Information &amp; consent</label>
+
+                                <input type="radio" id="msc-attr-review" name="msc-attribute" value="review">
+                                <label for="msc-attr-review">4 · External review</label>
+
+                                <input type="radio" id="msc-attr-collector" name="msc-attribute" value="collector">
+                                <label for="msc-attr-collector">5 · Original collector</label>
+                            </div>
+                        </fieldset>
+
+                        <!-- Without JavaScript, all five panels simply display in sequence. -->
+
+                        <div class="thesis-expose__group-panel" data-group-panel="recipient">
+                            <h5>New data user <span>· importance rank 1 of 5</span></h5>
+                            <div class="thesis-expose__group-columns">
+                                <div>
+                                    <p class="thesis-expose__group-title">Group 1 <span>46.5% of respondents</span>
+                                    </p>
+                                    <ol class="thesis-expose__group-list">
+                                        <li>Technological company</li>
+                                        <li>National authority <span class="thesis-expose__ref">reference
+                                                level</span></li>
+                                        <li>Pharmaceutical company</li>
+                                        <li>Academic research project</li>
+                                    </ol>
+                                </div>
+                                <div>
+                                    <p class="thesis-expose__group-title">Group 2 <span>53.5% of respondents</span>
+                                    </p>
+                                    <ol class="thesis-expose__group-list">
+                                        <li>Academic research project</li>
+                                        <li>Pharmaceutical company</li>
+                                        <li>National authority <span class="thesis-expose__ref">reference
+                                                level</span></li>
+                                        <li>Technological company</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="thesis-expose__group-panel" data-group-panel="reason">
+                            <h5>Reason for new data use <span>· importance rank 2 of 5</span></h5>
+                            <div class="thesis-expose__group-columns">
+                                <div>
+                                    <p class="thesis-expose__group-title">Group 1 <span>46.5% of respondents</span>
+                                    </p>
+                                    <ol class="thesis-expose__group-list">
+                                        <li>Investigating a policy initiative</li>
+                                        <li>Quality evaluation <span class="thesis-expose__ref">reference
+                                                level</span></li>
+                                        <li>Promotion, advertising or marketing</li>
+                                        <li>Developing a new product or service</li>
+                                    </ol>
+                                </div>
+                                <div>
+                                    <p class="thesis-expose__group-title">Group 2 <span>53.5% of respondents</span>
+                                    </p>
+                                    <ol class="thesis-expose__group-list">
+                                        <li>Developing a new product or service</li>
+                                        <li>Quality evaluation <span class="thesis-expose__ref">reference
+                                                level</span></li>
+                                        <li>Promotion, advertising or marketing</li>
+                                        <li>Investigating a policy initiative</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="thesis-expose__group-panel" data-group-panel="consent">
+                            <h5>Information &amp; consent <span>· importance rank 3 of 5</span></h5>
+                            <div class="thesis-expose__group-columns">
+                                <div>
+                                    <p class="thesis-expose__group-title">Group 1 <span>46.5% of respondents</span>
+                                    </p>
+                                    <ol class="thesis-expose__group-list">
+                                        <li>Informed only, no consent option</li>
+                                        <li>Informed, with ability to opt in <span class="thesis-expose__ref">reference level</span>
+                                        </li>
+                                        <li>Not informed</li>
+                                        <li>Informed, with ability to opt out</li>
+                                    </ol>
+                                </div>
+                                <div>
+                                    <p class="thesis-expose__group-title">Group 2 <span>53.5% of respondents</span>
+                                    </p>
+                                    <ol class="thesis-expose__group-list">
+                                        <li>Informed, with ability to opt out</li>
+                                        <li>Informed, with ability to opt in <span class="thesis-expose__ref">reference level</span>
+                                        </li>
+                                        <li>Informed only, no consent option</li>
+                                        <li>Not informed</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="thesis-expose__group-panel" data-group-panel="review">
+                            <h5>External review <span>· importance rank 4 of 5</span></h5>
+                            <div class="thesis-expose__group-columns">
+                                <div>
+                                    <p class="thesis-expose__group-title">Group 1 <span>46.5% of respondents</span>
+                                    </p>
+                                    <ol class="thesis-expose__group-list">
+                                        <li>Review of data transfer and use <span class="thesis-expose__ref">reference level</span></li>
+                                        <li>No review</li>
+                                        <li>Review of data transfer only</li>
+                                    </ol>
+                                </div>
+                                <div>
+                                    <p class="thesis-expose__group-title">Group 2 <span>53.5% of respondents</span>
+                                    </p>
+                                    <ol class="thesis-expose__group-list">
+                                        <li>Review of data transfer only</li>
+                                        <li>No review</li>
+                                        <li>Review of data transfer and use <span class="thesis-expose__ref">reference level</span></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="thesis-expose__group-panel" data-group-panel="collector">
+                            <h5>Original data collector <span>· importance rank 5 of 5</span></h5>
+                            <div class="thesis-expose__group-columns">
+                                <div>
+                                    <p class="thesis-expose__group-title">Group 1 <span>46.5% of respondents</span>
+                                    </p>
+                                    <ol class="thesis-expose__group-list">
+                                        <li>Academic research project</li>
+                                        <li>Technological company</li>
+                                        <li>Healthcare provider <span class="thesis-expose__ref">reference
+                                                level</span></li>
+                                    </ol>
+                                </div>
+                                <div>
+                                    <p class="thesis-expose__group-title">Group 2 <span>53.5% of respondents</span>
+                                    </p>
+                                    <ol class="thesis-expose__group-list">
+                                        <li>Healthcare provider <span class="thesis-expose__ref">reference
+                                                level</span></li>
+                                        <li>Technological company</li>
+                                        <li>Academic research project</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="thesis-expose__sr-only" role="status" aria-live="polite" aria-atomic="true" data-group-status></p>
+                    </div>
+
+                    <p class="thesis-expose__boundary">
+                        Levels are ordered by each group’s estimated utility. The order
+                        does not show how large the gaps are or whether neighbouring levels
+                        differ significantly; those details are in Table 4. For the original
+                        collector, new data user, and external review attributes, the groups
+                        displayed substantially contrasting orderings. Group 1 placed
+                        technological companies first as the new data user, a pattern that
+                        differs from much earlier research but resembles a Southern European
+                        subgroup reported by Biasiotto et al.
+                    </p>
+
+                    <!-- ═══ TABLE 4 · 2-class latent class model (scroll variant) ═══ -->
+                    <figure class="thesis-expose__table-slot thesis-expose__table-slot--scroll" style="--figure-min: 42rem">
+                        <figcaption id="msc-tab-4-cap">
+                            <span class="thesis-expose__figure-label">Table 4</span>
+                            <span class="thesis-expose__figure-title">2-class latent class model with initial
+                                values</span>
+                        </figcaption>
+                        <div class="thesis-expose__figure-media" role="region" aria-labelledby="msc-tab-4-cap" tabindex="0">
+                            <img src="https://georgedreemer.com/public_img/education/mscthesis/mscthesis-table4.png" alt="Table 4. Results of the 2-class latent class model estimated with initial values." width="929px" height="1194px" loading="lazy" decoding="async">
+                        </div>
+                        <p class="thesis-expose__figure-hint">Scroll sideways to see the full table.</p>
+                        <a class="thesis-expose__figure-link" target="_blank" rel="noopener noreferrer" href="https://georgedreemer.com/public_img/education/mscthesis/mscthesis-table4.png" aria-label="Open Table 4, latent class model results, at full size">Open full size ↗</a>
+                    </figure>
+                </section>
+
+
+                <section class="thesis-expose__section" aria-labelledby="msc-implications-heading">
+                    <div class="thesis-expose__section-head">
+                        <p class="thesis-expose__eyebrow">What it suggests</p>
+                        <h4 id="msc-implications-heading">
+                            Plan for different audiences, not one average citizen.
+                        </h4>
+                        <p>
+                            The two groups' contrasting preferences sit alongside a shared
+                            emphasis on transparency and oversight.
+                        </p>
+                    </div>
+
+                    <dl class="thesis-expose__implications">
+                        <div>
+                            <dt>Expect heterogeneity inside a country</dt>
+                            <dd>
+                                Within one Italian sample, two groups held contrasting
+                                preferences on most attributes. A single average preference
+                                would have hidden that.
+                            </dd>
+                        </div>
+
+                        <div>
+                            <dt>Be cautious about one-size-fits-all rules</dt>
+                            <dd>
+                                Some results differ from larger multinational studies. That
+                                suggests data-reuse policy may not fit every European region
+                                equally, and that country-specific consideration and research
+                                are worthwhile.
+                            </dd>
+                        </div>
+
+                        <div>
+                            <dt>Treat transparency and review as common ground</dt>
+                            <dd>
+                                Being informed and having some form of external review
+                                matched earlier research. In both groups, the most preferred
+                                information arrangement was an informed one, and the most
+                                preferred review option was some form of review. This
+                                supports transparency, clarity of purpose and independent
+                                oversight as institutional practice.
+                            </dd>
+                        </div>
+                    </dl>
+
+                    <p class="thesis-expose__boundary">
+                        These are research-informed considerations, not a tested
+                        intervention or a demonstrated increase in real-world sharing.
+                    </p>
+                </section>
+
+                <!-- ── 3. Progressive disclosure for technical readers ──── -->
+
+                <section class="thesis-expose__section" aria-labelledby="msc-evidence-heading">
+                    <div class="thesis-expose__section-head">
+                        <p class="thesis-expose__eyebrow">
+                            For a closer look
+                        </p>
+
+                        <h4 id="msc-evidence-heading">
+                            Research decisions and supporting evidence
+                        </h4>
+
+                        <p>
+                            Explore how the sample was prepared, how the
+                            preference models were specified, and where
+                            the interpretation needs care.
+                        </p>
+                    </div>
+
+                    <div class="thesis-expose__disclosures">
+
+                        <!-- A. Sample and preparation -->
+                        <details class="thesis-expose__detail">
+                            <summary>Sample, data checks, and descriptive analysis</summary>
+                            <div class="thesis-expose__detail-body">
+                                <p>
+                                    929 survey initiations, 362 completions, and 329 respondents after removing
+                                    completions under five minutes.
+                                </p>
+                                <p>
+                                    Before modelling I checked for missing values and outliers.
+                                    No variable had more than 3.95% missing values, and none were
+                                    independent variables. Thirty-four respondents had unusually
+                                    long completion times (over 30 minutes). I reviewed their
+                                    written feedback, found nothing abnormal, and discussed the
+                                    pattern with my supervisor. The survey software let people pause
+                                    and resume, so I did not treat the durations as a data-quality
+                                    problem.
+                                </p>
+                                <p>
+                                    The final sample had a mean age of 50.83 years (SD 14.55), was
+                                    53% female and 47% male, and was most often educated to
+                                    high-school level (42.1%) or master's level (about 27%).
+                                    54.6% reported no chronic condition, and 32.1% had sufficient
+                                    eHealth literacy (37.6% problematic, 30.3% inadequate).
+                                </p>
+                                <p class="thesis-expose__boundary">
+                                    Fieldwork, recruitment and the experimental design were carried
+                                    out by the source research team.
+                                </p>
+
+                                <!-- ═══ FIGURES 3–5 · Descriptive analysis (three separate figures) ═══ -->
+                                <div class="thesis-expose__figure-stack" role="group" aria-label="Descriptive analysis figures 3 to 5">
+
+                                    <figure class="thesis-expose__table-slot">
+                                        <figcaption id="msc-fig-3-cap">
+                                            <span class="thesis-expose__figure-label">Figure 3</span>
+                                            <span class="thesis-expose__figure-title">Missing-value summary</span>
+                                        </figcaption>
+                                        <div class="thesis-expose__figure-media">
+                                            <img src="https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure3.png" alt="Figure 3. Summary of missing values in the dataset." width="1138px" height="782px" loading="lazy" decoding="async">
+                                        </div>
+                                        <a class="thesis-expose__figure-link" target="_blank" rel="noopener noreferrer" href="https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure3.png" aria-label="Open Figure 3, missing-value summary, at full size">Open
+                                            full size ↗</a>
+                                    </figure>
+
+                                    <figure class="thesis-expose__table-slot">
+                                        <figcaption id="msc-fig-4-cap">
+                                            <span class="thesis-expose__figure-label">Figure 4</span>
+                                            <span class="thesis-expose__figure-title">Education level by
+                                                gender</span>
+                                        </figcaption>
+                                        <div class="thesis-expose__figure-media">
+                                            <img src="https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure4.png" alt="Figure 4. Respondents' education levels, shown by gender." width="1138px" height="828px" loading="lazy" decoding="async">
+                                        </div>
+                                        <a class="thesis-expose__figure-link" target="_blank" rel="noopener noreferrer" href="https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure4.png" aria-label="Open Figure 4, education level by gender, at full size">Open
+                                            full size ↗</a>
+                                    </figure>
+
+                                    <figure class="thesis-expose__table-slot">
+                                        <figcaption id="msc-fig-5-cap">
+                                            <span class="thesis-expose__figure-label">Figure 5</span>
+                                            <span class="thesis-expose__figure-title">Health-related
+                                                descriptives</span>
+                                        </figcaption>
+                                        <div class="thesis-expose__figure-media">
+                                            <img src="https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure5.png" alt="Figure 5. Descriptive statistics on respondents' health-related characteristics." width="1731px" height="2030px" loading="lazy" decoding="async">
+                                        </div>
+                                        <a class="thesis-expose__figure-link" target="_blank" rel="noopener noreferrer" href="https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure5.png" aria-label="Open Figure 5, health-related descriptives, at full size">Open
+                                            full size ↗</a>
+                                    </figure>
+                                </div>
+                            </div>
+                        </details>
+
+
+                        <!-- B. Experiment -->
+                        <details class="thesis-expose__detail">
+                            <summary>
+                                How the choice experiment worked
+                            </summary>
+
+                            <div class="thesis-expose__detail-body">
+                                <p>
+                                    The source experiment used 32 unique choice
+                                    tasks, arranged into four blocks of eight.
+                                    Each participant completed two sets of eight
+                                    decisions, covering two assigned health-information
+                                    themes from lifestyle, physical health,
+                                    mental health, and genetic information.
+                                </p>
+
+                                <p>
+                                    Each task presented a sharing context.
+                                    Participants decided whether to accept or
+                                    reject sharing under those arrangements,
+                                    rather than selecting a favourite organisation
+                                    or purpose in isolation.
+                                </p>
+
+                                <p>
+                                    This structure enabled the analysis to examine
+                                    contextual trade-offs across the five attributes.
+                                    The health-information themes are part of the
+                                    experimental setting; they are not an additional
+                                    attribute in the five-factor explorer above.
+                                </p>
+
+                                <p class="thesis-expose__boundary">
+                                    Sixteen decisions per participant are repeated
+                                    observations from the same people—not sixteen
+                                    independent respondents.
+                                </p>
+
+                                <!-- ═══ FIGURE 2 · Example choice task (scroll variant) ═══ -->
+                                <figure class="thesis-expose__table-slot thesis-expose__table-slot--scroll" style="--figure-min: 40rem">
+                                    <figcaption id="msc-fig-2-cap">
+                                        <span class="thesis-expose__figure-label">Figure 2</span>
+                                        <span class="thesis-expose__figure-title">Example choice task</span>
+                                    </figcaption>
+
+                                    <div class="thesis-expose__figure-media" role="region" aria-labelledby="msc-fig-2-cap" tabindex="0">
+                                        <img src="https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure2-choicetask.png" alt="Figure 2. Example choice task from the study: a table showing one data-sharing scenario with a level for each of the five attributes, which participants accepted or rejected." width="2048px" height="1072px" loading="lazy" decoding="async">
+                                    </div>
+
+                                    <p class="thesis-expose__figure-hint">Scroll sideways to see the full figure.
+                                    </p>
+                                    <a class="thesis-expose__figure-link" target="_blank" rel="noopener noreferrer" href="https://georgedreemer.com/public_img/education/mscthesis/mscthesis-figure2-choicetask.png" aria-label="Open Figure 2, example choice task, at full size">Open full size
+                                        ↗</a>
+                                </figure>
+                            </div>
+                        </details>
+
+
+                        <!-- C. Modelling -->
+                        <details class="thesis-expose__detail">
+                            <summary>Model selection and attribute importance</summary>
+                            <div class="thesis-expose__detail-body">
+                                <p>
+                                    After checking correlations between the independent variables
+                                    for multicollinearity, I fitted five models of three types in
+                                    Stata 17: three latent class models (one class; two classes
+                                    without starting values; two classes with starting values from
+                                    the one-class model), a conditional logit, and a logistic
+                                    regression. I compared them by AIC and log-likelihood.
+                                </p>
+                                <!-- ═══ TABLE 3 · Model fit ═══ -->
+                                <figure class="thesis-expose__table-slot">
+                                    <figcaption id="msc-tab-3-cap">
+                                        <span class="thesis-expose__figure-label">Table 3</span>
+                                        <span class="thesis-expose__figure-title">AIC and log-likelihood for the
+                                            five models</span>
+                                    </figcaption>
+                                    <div class="thesis-expose__figure-media">
+                                        <img src="https://georgedreemer.com/public_img/education/mscthesis/mscthesis-table3.png" alt="Table 3. AIC and log-likelihood values for the five fitted models." width="754px" height="215px" loading="lazy" decoding="async">
+                                    </div>
+                                    <a class="thesis-expose__figure-link" target="_blank" rel="noopener noreferrer" href="https://georgedreemer.com/public_img/education/mscthesis/mscthesis-table3.png" aria-label="Open Table 3, model fit, at full size">Open full size ↗</a>
+                                </figure>
+                                <p>
+                                    The two best-fitting models were the two-class latent class model
+                                    with starting values and the conditional logit. I treated the
+                                    former as the primary analysis and the latter as a secondary
+                                    check. A latent class model divides respondents into classes by
+                                    their expressed preferences instead of assuming one common
+                                    pattern; the conditional logit assumes a common utility function,
+                                    a limitation the latent class model addresses.
+                                </p>
+                                <p>Average relative attribute importance was computed in three steps:</p>
+                                <ol class="thesis-expose__list">
+                                    <li>For each attribute, subtract its lowest level estimate from its highest to
+                                        get a range.</li>
+                                    <li>Divide each range by the largest range, giving relative importance per
+                                        attribute within each class.</li>
+                                    <li>Average the values across the two classes.</li>
+                                </ol>
+                                <!-- ═══ EQUATIONS · Model specifications (scroll variant) ═══ -->
+                                <div class="thesis-expose__figure-stack" role="group" aria-label="Model equations">
+
+                                    <figure class="thesis-expose__table-slot thesis-expose__table-slot--scroll" style="--figure-min: 28rem">
+                                        <figcaption id="msc-eq-lcm-cap">
+                                            <span class="thesis-expose__figure-label">Equation</span>
+                                            <span class="thesis-expose__figure-title">Latent class model</span>
+                                        </figcaption>
+                                        <div class="thesis-expose__figure-media" role="region" aria-labelledby="msc-eq-lcm-cap" tabindex="0">
+                                            <img src="https://georgedreemer.com/public_img/education/mscthesis/mscthesis-equation-latentclassmodel.png" alt="Equation for the latent class model, as specified in the thesis." width="1265px" height="189px" loading="lazy" decoding="async">
+                                        </div>
+                                        <p class="thesis-expose__figure-hint">Scroll sideways to see the full
+                                            equation.</p>
+                                        <a class="thesis-expose__figure-link" target="_blank" rel="noopener noreferrer" href="https://georgedreemer.com/public_img/education/mscthesis/mscthesis-equation-latentclassmodel.png" aria-label="Open the latent class model equation at full size">Open full
+                                            size ↗</a>
+                                    </figure>
+
+                                    <figure class="thesis-expose__table-slot thesis-expose__table-slot--scroll" style="--figure-min: 28rem">
+                                        <figcaption id="msc-eq-clm-cap">
+                                            <span class="thesis-expose__figure-label">Equation</span>
+                                            <span class="thesis-expose__figure-title">Conditional logit model</span>
+                                        </figcaption>
+                                        <div class="thesis-expose__figure-media" role="region" aria-labelledby="msc-eq-clm-cap" tabindex="0">
+                                            <img src="https://georgedreemer.com/public_img/education/mscthesis/mscthesis-equation-conditionallogitmodel.png" alt="Equation for the conditional logit model, as specified in the thesis." width="1146px" height="180px" loading="lazy" decoding="async">
+                                        </div>
+                                        <p class="thesis-expose__figure-hint">Scroll sideways to see the full
+                                            equation.</p>
+                                        <a class="thesis-expose__figure-link" target="_blank" rel="noopener noreferrer" href="https://georgedreemer.com/public_img/education/mscthesis/mscthesis-equation-conditionallogitmodel.png" aria-label="Open the conditional logit model equation at full size">Open
+                                            full size ↗</a>
+                                    </figure>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- D. Result interpretation -->
+                        <details class="thesis-expose__detail">
+                            <summary>Primary results: the two-class model</summary>
+                            <div class="thesis-expose__detail-body">
+                                <p>
+                                    All five attributes were statistically significant in the primary
+                                    model. Estimated group shares were 46.5% and 53.5%. Both groups
+                                    showed a general disutility for sharing, with positive rejection
+                                    intercepts of 0.48 and 0.59 (both p &lt; 0.001).
+                                </p>
+                                <ul class="thesis-expose__list">
+                                    <li><strong>Shared ranking:</strong> both groups gave the same importance
+                                        ranking: new data user, reason,
+                                        information &amp; consent, review, original collector.</li>
+                                    <li><strong>Different levels:</strong> groups differed on which level they
+                                        preferred within each attribute,
+                                        and their orders were exact reverses on collector, recipient and review.
+                                    </li>
+                                    <li><strong>Common features:</strong> neither group ranked opt-in consent first,
+                                        and both groups' top review
+                                        option was some form of review.</li>
+                                </ul>
+                                <p class="thesis-expose__boundary">
+                                    Significance of individual levels within each group is reported
+                                    in Table 4. Latent classes are model-based preference patterns,
+                                    not observed personality types.
+                                </p>
+                            </div>
+                        </details>
+
+                        <details class="thesis-expose__detail">
+                            <summary>Secondary results: the conditional logit check</summary>
+                            <div class="thesis-expose__detail-body">
+                                <p>
+                                    Eight of the thirteen estimated levels were significant (pseudo
+                                    R² 0.111; LR chi² 410.87, p &lt; .001). Compared with the reference
+                                    levels, and holding other variables constant:
+                                </p>
+                                <ul class="thesis-expose__list">
+                                    <li><strong>Original collector:</strong> sharing was less likely when it was a
+                                        technology company than a
+                                        healthcare provider; an academic project was not significant (p = 0.970).
+                                    </li>
+                                    <li><strong>New data user:</strong> no level was significant.</li>
+                                    <li><strong>Reason:</strong> product or service development raised the
+                                        likelihood of sharing and marketing
+                                        lowered it, relative to quality evaluation.</li>
+                                    <li><strong>Information &amp; consent:</strong> informed-only and
+                                        informed-with-opt-out raised it relative
+                                        to opt-in, and not being informed lowered it.</li>
+                                    <li><strong>Review:</strong> review of transfer only raised it relative to
+                                        review of transfer and use, and
+                                        no review lowered it.</li>
+                                </ul>
+                                <p>
+                                    Conditional logit coefficients give direction, not the size of
+                                    differences between levels, so this model corroborates the
+                                    latent class results without replacing them.
+                                </p>
+                                <!-- ═══ TABLE 5 · Conditional logit (scroll variant) ═══ -->
+                                <figure class="thesis-expose__table-slot thesis-expose__table-slot--scroll" style="--figure-min: 38rem">
+                                    <figcaption id="msc-tab-5-cap">
+                                        <span class="thesis-expose__figure-label">Table 5</span>
+                                        <span class="thesis-expose__figure-title">Conditional logit results</span>
+                                    </figcaption>
+                                    <div class="thesis-expose__figure-media" role="region" aria-labelledby="msc-tab-5-cap" tabindex="0">
+                                        <img src="https://georgedreemer.com/public_img/education/mscthesis/mscthesis-table5-conditionallogitmodel.png" alt="Table 5. Results of the conditional logit model." width="1004px" height="1200px" loading="lazy" decoding="async">
+                                    </div>
+                                    <p class="thesis-expose__figure-hint">Scroll sideways to see the full table.</p>
+                                    <a class="thesis-expose__figure-link" target="_blank" rel="noopener noreferrer" href="https://georgedreemer.com/public_img/education/mscthesis/mscthesis-table5-conditionallogitmodel.png" aria-label="Open Table 5, conditional logit results, at full size">Open full
+                                        size ↗</a>
+                                </figure>
+                            </div>
+                        </details>
+
+                        <details class="thesis-expose__detail">
+                            <summary>Limitations and what comes next</summary>
+                            <div class="thesis-expose__detail-body">
+                                <ul class="thesis-expose__list">
+                                    <li><strong>Sample composition:</strong> education was uneven (42.1% high
+                                        school, about 27% master's, other
+                                        levels around 10% or less). Earlier research links education to data-sharing
+                                        attitudes, so the
+                                        preferences may mainly describe these education groups. A more balanced
+                                        sample could yield more classes
+                                        or different preferences.</li>
+                                    <li><strong>Timing:</strong> fieldwork ran during the COVID-19 aftermath.
+                                        Earlier
+                                        research suggests the pandemic raised willingness to share, so comparisons
+                                        across time periods would be
+                                        useful.</li>
+                                    <li><strong>No covariates:</strong> the latent class model includes none. Age,
+                                        trust, and privacy and
+                                        technology attitudes from the survey are natural next additions. One idea is
+                                        to cluster respondents on
+                                        trust and privacy attitudes and use those clusters as covariates.</li>
+                                    <li><strong>Stated choices:</strong> the experiment measures decisions in
+                                        described scenarios, not real
+                                        transfers of health records.</li>
+                                    <li><strong>Scope:</strong> the findings inform governance considerations; they
+                                        are not a legal-compliance
+                                        assessment or proof that a policy would increase sharing.</li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <details class="thesis-expose__detail thesis-defence" data-defence-slides>
+                            <summary>See the defence slides</summary>
+
+                            <div class="thesis-expose__detail-body">
+                                <p>
+                                    The slides I used to present the research question, modelling
+                                    approach, and findings to the Committee at my Thesis Defence.
+                                </p>
+
+                                <div class="evidence-card__canva" data-orientation="landscape">
+                                    <iframe data-src="https://www.canva.com/design/XXXX/view?embed" title="MSc thesis — defence presentation" width="1600" height="900" allow="fullscreen"></iframe>
+                                </div>
+                            </div>
+                        </details>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </article>
+
+    </section>
+
+    <!-- ============================================================
+         MADS MADLAD — STUDY MATERIALS & MICRO-PUBLISHING
+    =============================================================== -->
+    <section id="mads-madlad" data-nav="MADS Madlad" aria-label="MADS Madlad" class="mm-section fade-in">
+        <div class="section-label">
+            <h2 id="mm-heading" class="section-label__text">
+                MADS Madlad
+            </h2>
+            <span class="section-label__line" aria-hidden="true"></span>
+        </div>
+
+        <!-- ── Identity, introduction, and catalogue scale ─────── -->
+        <div class="mm-intro">
+            <div class="mm-intro__copy">
+
+                <div class="mm-identity">
+                    <span class="mm-avatar" aria-hidden="true">
+                        <span>MM</span>
+                        <img src="https://www.stuvia.com/avatars/user_avatar_1359896_63dfb2e8523fe.png" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </span>
+
+                    <div>
+                        <p class="mm-identity__name">MADS Madlad</p>
+                        <p class="mm-identity__tagline">
+                            Premium study materials
+                        </p>
+                    </div>
+                </div>
+
+                <p class="mm-intro__headline">
+                    The name is a joke. The page count isn’t.
+                </p>
+
+                <p class="mm-intro__text">
+                    During my MSc, I took “write a summary” rather
+                    literally. The result was MADS Madlad: a catalogue
+                    of detailed course summaries that turned my study
+                    process into a small publishing venture.
+                </p>
+
+                <p class="mm-intro__text">
+                    The notes outlasted the exams. Students are still
+                    buying them through Stuvia and Knoowy.
+                </p>
+
+            </div>
+
+            <dl class="mm-stats" aria-label="Full study-material catalogue">
+                <div>
+                    <dt>Pages written</dt>
+                    <dd>1,594</dd>
+                </div>
+                <div>
+                    <dt>Documents created</dt>
+                    <dd>22</dd>
+                </div>
+            </dl>
+        </div>
+
+
+        <!-- ── Storefronts: concrete evidence, not an invented rank ── -->
+
+        <div class="mm-storefronts">
+
+            <a class="mm-storefront" href="https://www.stuvia.com/user/madsmadlad" target="_blank" rel="noopener noreferrer" aria-label="Visit the MADS Madlad storefront on Stuvia">
+                <div class="mm-storefront__header">
+                    <h3 class="mm-storefront__name">Stuvia</h3>
+
+                    <span class="mm-medal">
+                        <i class="bi bi-award" aria-hidden="true"></i>
+                        Bronze medal
+                    </span>
+                </div>
+
+                <dl class="mm-storefront__metrics">
+                    <div>
+                        <dt>Documents sold</dt>
+                        <dd>35+</dd>
+                    </div>
+                    <div>
+                        <dt>Reputation</dt>
+                        <dd>89<span>/100</span></dd>
+                    </div>
+                </dl>
+
+                <span class="mm-storefront__footer">
+                    Explore the storefront
+                    <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                </span>
+            </a>
+
+            <a class="mm-storefront" href="https://knoowy.nl/user/132765/madsmadlad" target="_blank" rel="noopener noreferrer" aria-label="Visit the MADS Madlad storefront on Knoowy">
+                <div class="mm-storefront__header">
+                    <h3 class="mm-storefront__name">Knoowy</h3>
+                    <span class="mm-storefront__handle">@madsmadlad</span>
+                </div>
+
+                <dl class="mm-storefront__metrics">
+                    <div>
+                        <dt>Documents sold</dt>
+                        <dd>20+</dd>
+                    </div>
+                </dl>
+
+                <span class="mm-storefront__footer">
+                    Explore the storefront
+                    <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                </span>
+            </a>
+
+        </div>
+
+
+        <!-- ── Sample shelf ────────────────────────────────────── -->
+
+        <div class="mm-library" data-mm-library>
+
+            <div class="mm-library__header">
+                <div>
+                    <h3 id="mm-library-heading" class="mm-library__title">
+                        Browse the free editions
+                    </h3>
+
+                    <p id="mm-library-help" class="mm-library__intro">
+                        Seven samples from the catalogue. Browse inside
+                        each document, open it full size, or read the PDF.
+                        Full editions are available through the storefronts.
+                    </p>
+                </div>
+
+                <!-- Hidden without JS; native scrolling still works. -->
+                <div class="mm-library__controls" role="group" aria-label="Browse summary samples" data-mm-controls hidden>
+                    <button type="button" class="mm-library__arrow" aria-label="Previous summaries" aria-controls="mm-summary-rail" data-mm-prev>
+                        <i class="bi bi-arrow-left" aria-hidden="true"></i>
+                    </button>
+
+                    <button type="button" class="mm-library__arrow" aria-label="Next summaries" aria-controls="mm-summary-rail" data-mm-next>
+                        <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+
+            <p class="mm-library__hint">
+                Scroll sideways to explore the shelf.
+            </p>
+
+            <div id="mm-summary-rail" class="mm-rail" role="region" aria-labelledby="mm-library-heading" aria-describedby="mm-library-help" tabindex="0" data-mm-rail>
+
+                <!-- 1 · Data Science Methods -->
+                <article class="mm-doc" aria-labelledby="mm-doc-dsmm">
+                    <div class="mm-doc__preview">
+                        <iframe src="https://www.canva.com/design/DAF1AmW5MZc/view?embed" title="Data Science Methods — free edition" width="840" height="1188" loading="lazy" allow="fullscreen"></iframe>
+                    </div>
+
+                    <div class="mm-doc__body">
+                        <p class="mm-doc__edition">Free edition · 01 / 07</p>
+                        <h4 id="mm-doc-dsmm" class="mm-doc__title">
+                            Data Science Methods
+                        </h4>
+
+                        <div class="mm-doc__actions" role="group" aria-label="Data Science Methods sample resources">
+                            <a href="https://georgedreemer.com/downloads/academic/madsmadlad/MM-DSMM-FreeEdition.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>
+                                PDF
+                            </a>
+                            <a href="https://www.canva.com/design/DAF1AmW5MZc/view" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>
+                                Enlarge
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- 2 · Market Models -->
+                <article class="mm-doc" aria-labelledby="mm-doc-mm">
+                    <div class="mm-doc__preview">
+                        <iframe src="https://www.canva.com/design/DAF1Ai3jqeI/view?embed" title="Market Models — free edition" width="840" height="1188" loading="lazy" allow="fullscreen"></iframe>
+                    </div>
+
+                    <div class="mm-doc__body">
+                        <p class="mm-doc__edition">Free edition · 02 / 07</p>
+                        <h4 id="mm-doc-mm" class="mm-doc__title">
+                            Market Models
+                        </h4>
+
+                        <div class="mm-doc__actions" role="group" aria-label="Market Models sample resources">
+                            <a href="https://georgedreemer.com/downloads/academic/madsmadlad/MM-MM-FreeEdition.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>
+                                PDF
+                            </a>
+                            <a href="https://www.canva.com/design/DAF1Ai3jqeI/view" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>
+                                Enlarge
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- 3 · Digital Marketing Intelligence -->
+                <article class="mm-doc" aria-labelledby="mm-doc-dmi">
+                    <div class="mm-doc__preview">
+                        <iframe src="https://www.canva.com/design/DAF1AtUOMXM/view?embed" title="Digital Marketing Intelligence — free edition" width="840" height="1188" loading="lazy" allow="fullscreen"></iframe>
+                    </div>
+
+                    <div class="mm-doc__body">
+                        <p class="mm-doc__edition">Free edition · 03 / 07</p>
+                        <h4 id="mm-doc-dmi" class="mm-doc__title">
+                            Digital Marketing Intelligence
+                        </h4>
+
+                        <div class="mm-doc__actions" role="group" aria-label="Digital Marketing Intelligence sample resources">
+                            <a href="https://georgedreemer.com/downloads/academic/madsmadlad/MM-DMI-FreeEdition.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>
+                                PDF
+                            </a>
+                            <a href="https://www.canva.com/design/DAF1AtUOMXM/view" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>
+                                Enlarge
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- 4 · Retail & Omnichannel Marketing -->
+                <article class="mm-doc" aria-labelledby="mm-doc-rom">
+                    <div class="mm-doc__preview">
+                        <iframe src="https://www.canva.com/design/DAF1AofYEL4/view?embed" title="Retail and Omnichannel Marketing — free edition" width="840" height="1188" loading="lazy" allow="fullscreen"></iframe>
+                    </div>
+
+                    <div class="mm-doc__body">
+                        <p class="mm-doc__edition">Free edition · 04 / 07</p>
+                        <h4 id="mm-doc-rom" class="mm-doc__title">
+                            Retail &amp; Omnichannel Marketing
+                        </h4>
+
+                        <div class="mm-doc__actions" role="group" aria-label="Retail and Omnichannel Marketing sample resources">
+                            <a href="https://georgedreemer.com/downloads/academic/madsmadlad/MM-ROM-FreeEdition.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>
+                                PDF
+                            </a>
+                            <a href="https://www.canva.com/design/DAF1AofYEL4/view" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>
+                                Enlarge
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- 5 · Data Engineering -->
+                <article class="mm-doc" aria-labelledby="mm-doc-dem">
+                    <div class="mm-doc__preview">
+                        <iframe src="https://www.canva.com/design/DAF1AqBQB9M/view?embed" title="Data Engineering — free edition" width="840" height="1188" loading="lazy" allow="fullscreen"></iframe>
+                    </div>
+
+                    <div class="mm-doc__body">
+                        <p class="mm-doc__edition">Free edition · 05 / 07</p>
+                        <h4 id="mm-doc-dem" class="mm-doc__title">
+                            Data Engineering
+                        </h4>
+
+                        <div class="mm-doc__actions" role="group" aria-label="Data Engineering sample resources">
+                            <a href="https://georgedreemer.com/downloads/academic/madsmadlad/MM-DEM-FreeEdition.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>
+                                PDF
+                            </a>
+                            <a href="https://www.canva.com/design/DAF1AqBQB9M/view" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>
+                                Enlarge
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- 6 · Statistical Learning in Marketing -->
+                <article class="mm-doc" aria-labelledby="mm-doc-slm">
+                    <div class="mm-doc__preview">
+                        <iframe src="https://www.canva.com/design/DAF1AiFrKpc/view?embed" title="Statistical Learning in Marketing — free edition" width="840" height="1188" loading="lazy" allow="fullscreen"></iframe>
+                    </div>
+
+                    <div class="mm-doc__body">
+                        <p class="mm-doc__edition">Free edition · 06 / 07</p>
+                        <h4 id="mm-doc-slm" class="mm-doc__title">
+                            Statistical Learning in Marketing
+                        </h4>
+
+                        <div class="mm-doc__actions" role="group" aria-label="Statistical Learning in Marketing sample resources">
+                            <a href="https://georgedreemer.com/downloads/academic/madsmadlad/MM-SLM-FreeEdition.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>
+                                PDF
+                            </a>
+                            <a href="https://www.canva.com/design/DAF1AiFrKpc/view" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>
+                                Enlarge
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- 7 · Companies, Brands & Consumers -->
+                <article class="mm-doc" aria-labelledby="mm-doc-cbc">
+                    <div class="mm-doc__preview">
+                        <iframe src="https://www.canva.com/design/DAF1AmPV-po/view?embed" title="Companies, Brands and Consumers — free edition" width="840" height="1188" loading="lazy" allow="fullscreen"></iframe>
+                    </div>
+
+                    <div class="mm-doc__body">
+                        <p class="mm-doc__edition">Free edition · 07 / 07</p>
+                        <h4 id="mm-doc-cbc" class="mm-doc__title">
+                            Companies, Brands &amp; Consumers
+                        </h4>
+
+                        <div class="mm-doc__actions" role="group" aria-label="Companies, Brands and Consumers sample resources">
+                            <a href="https://georgedreemer.com/downloads/academic/madsmadlad/MM-CBC-FreeEdition.pdf" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>
+                                PDF
+                            </a>
+                            <a href="https://www.canva.com/design/DAF1AmPV-po/view" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>
+                                Enlarge
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="mm-library__footnote">
+                Free editions are samples, not the complete paid documents.
+            </p>
+
+        </div>
+    </section>
+</main><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a1a2145d188d0044e688f0a1b6dde831" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"></div></div><div id="wb_main_a1a2145d188d0044e688f0a1b6dde831" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"></div></div><div id="wb_footer_a1a2145d188d0044e688f0a1b6dde831" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
+			$(function() {
+				var footer = $(".wb_footer");
+				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
+				if (!html) {
+					footer.parent().remove();
+					footer = $("#footer, #footer .wb_cont_inner");
+					footer.css({height: ""});
+				}
+			});
+			});</script></div></div></div></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
+	<script src="js/common-bundle.js?ts=20261125222641" type="text/javascript" defer></script>{{hr_out}}<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        window._spDefer.done();
+    });
+</script>
+</body>
+</html>

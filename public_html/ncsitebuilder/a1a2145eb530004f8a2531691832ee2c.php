@@ -1,0 +1,1776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript">
+	window._spDefer = {
+		queue: [],
+		ready: false,
+		add: function(fn) {
+			if (this.ready) { fn(); }
+			else { this.queue.push(fn); }
+		},
+		done: function() {
+			this.ready = true;
+			var fns = this.queue;
+			this.queue = [];
+			for (var i = 0; i < fns.length; i++) { fns[i](); }
+		}
+	};
+	</script>
+			<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title><?php echo htmlspecialchars((isset($seoTitle) && $seoTitle !== "") ? $seoTitle : "BA Marketing & Business — Hampshire College Coursework & Abilities · George Dreemer"); ?></title>
+	<base href="{{base_url}}" />
+	<?php echo isset($sitemapUrls) ? (generateCanonicalUrl($sitemapUrls)."\n") : ""; ?>	
+	
+					
+	<!-- Facebook Open Graph -->
+						<!-- Facebook Open Graph end -->
+
+			<?php if (empty($wbWhitelabel)): ?>	<meta name="generator" content="Site.pro Builder" />
+	<?php else: ?>	<meta name="generator" content="Website Builder" />
+	<?php endif; ?>			<link href="css/common-bundle.css?ts=20261125222641" rel="preload" type="text/css" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
+	<link href="css/a1a2145eb530004f8a2531691832ee2c-bundle.css?ts=20261125222641" rel="preload" type="text/css" id="wb-page-stylesheet" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
+	<ga-code/><!-- Global: identity & crawling -->
+<meta name="author" content="George Dreemer">
+<meta name="robots" content="max-image-preview:large, max-snippet:-1">
+
+<!-- Global: appearance -->
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="format-detection" content="telephone=no">
+
+<!-- Global: social -->
+<meta property="og:site_name" content="George Dreemer">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:site" content="@444eta">
+<meta name="twitter:creator" content="@444eta">
+<meta name="twitter:label1" content="Role">
+<meta name="twitter:data1" content="Data Scientist &amp; Developer">
+<meta name="twitter:label2" content="Open to">
+<meta name="twitter:data2" content="Data, ML &amp; AI roles · Dubai, UAE">
+
+<!-- Global: icons -->
+<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png?v=20261124" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg?v=20261124" />
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=20261124" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=20261124" />
+<meta name="apple-mobile-web-app-title" content="ETA!" />
+<link rel="manifest" href="/favicon/site.webmanifest?v=20261124" />
+	<script type="text/javascript">
+	window.useTrailingSlashes = false;
+	window.disableRightClick = false;
+	window.currLang = 'en';
+</script>
+	<!-- Core document setup -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<!-- SEO -->
+<title>BA Marketing &amp; Business — Hampshire College Coursework &amp; Abilities · George Dreemer</title>
+<meta name="description" content="Inside George's BA at Hampshire College: a self-designed education in marketing, business and entrepreneurship, with graduate-level coursework at UMass Isenberg.">
+<meta name="keywords" content="george dreemer ba, hampshire college ba, marketing and business degree, self-designed degree, individually designed concentration, five college consortium, umass amherst isenberg school of management, graduate-level coursework undergraduate, smith college financial accounting, entrepreneurship education, seed fund for innovation, skipschoolmakemoney, streetwear brand founder, brand strategy, digital marketing, email marketing, negotiation, business law, international marketing, text mining marketing, public speaking, investor pitching, george dreemer education">
+<link rel="canonical" href="https://georgedreemer.com/education/bachelors">
+<link rel="alternate" type="text/markdown" href="https://georgedreemer.com/education/bachelors.md">
+<link rel="describedby" href="https://georgedreemer.com/llms.txt">
+
+<!-- Social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://georgedreemer.com/education/bachelors">
+<meta property="og:title" content="BA Marketing &amp; Business — Hampshire College Coursework &amp; Abilities · George Dreemer">
+<meta property="og:description" content="Inside George's BA at Hampshire College: a self-designed education in marketing, business and entrepreneurship, with graduate-level coursework at UMass Isenberg.">
+<meta property="og:image" content="https://georgedreemer.com/public_img/general/ogimages/education-v1.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Visual showcase of George Dreemer's Bachelor Degree">
+<meta name="twitter:image:alt" content="Visual showcase of George Dreemer's Bachelor Degree">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BA Marketing &amp; Business — Hampshire College Coursework &amp; Abilities · George Dreemer">
+<meta name="twitter:description" content="Inside George's BA at Hampshire College: a self-designed education in marketing, business and entrepreneurship, with graduate-level coursework at UMass Isenberg.">
+<meta name="twitter:image" content="https://georgedreemer.com/public_img/general/ogimages/education-v1.png">
+
+<!-- Structured data -->
+<script data-custom-script="true" type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://georgedreemer.com/education/bachelors#webpage",
+        "url": "https://georgedreemer.com/education/bachelors",
+        "name": "BA Marketing & Business — Hampshire College",
+        "description": "Inside George's BA at Hampshire College: a self-designed education in marketing, business and entrepreneurship, with graduate-level coursework at UMass Isenberg.",
+        "isPartOf": {
+          "@id": "https://georgedreemer.com/#website"
+        },
+        "about": {
+          "@id": "https://georgedreemer.com/education/bachelors#ba-programme"
+        },
+        "mainEntity": {
+          "@id": "https://georgedreemer.com/education/bachelors#ba-degree"
+        },
+        "author": {
+          "@id": "https://georgedreemer.com/#person"
+        },
+        "breadcrumb": {
+          "@id": "https://georgedreemer.com/education/bachelors#breadcrumb"
+        },
+        "hasPart": {
+          "@id": "https://georgedreemer.com/education/bachelors#abilities"
+        },
+        "mentions": [
+          {
+            "@id": "https://georgedreemer.com/work/skipschoolmakemoney#project"
+          },
+          {
+            "@id": "https://www.fivecolleges.edu/#organization"
+          },
+          {
+            "@id": "https://www.umass.edu/#organization"
+          }
+        ],
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://georgedreemer.com/public_img/general/ogimages/education-v1.png",
+          "width": 1200,
+          "height": 630
+        },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://georgedreemer.com/education/bachelors#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "George Dreemer",
+            "item": "https://georgedreemer.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Education",
+            "item": "https://georgedreemer.com/#education"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "BA Marketing & Business",
+            "item": "https://georgedreemer.com/education/bachelors"
+          }
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://georgedreemer.com/#person",
+        "name": "George Dreemer",
+        "url": "https://georgedreemer.com",
+        "alumniOf": {
+          "@id": "https://www.hampshire.edu/#organization"
+        },
+        "hasCredential": {
+          "@id": "https://georgedreemer.com/education/bachelors#ba-degree"
+        },
+        "memberOf": [
+          {
+            "@id": "https://georgedreemer.com/education/bachelors#seed-fund"
+          },
+          {
+            "@id": "https://georgedreemer.com/education/bachelors#umass-entrepreneurship-club"
+          },
+          {
+            "@id": "https://georgedreemer.com/education/bachelors#berthiaume-student-innovators"
+          }
+        ],
+        "knowsAbout": [
+          "Marketing Research",
+          "Brand Positioning",
+          "Digital Marketing",
+          "Email Marketing",
+          "Campaign Strategy",
+          "Customer Insight",
+          "Text Mining for Marketing",
+          "International Marketing",
+          "Entrepreneurship",
+          "Venture Development",
+          "Early-Stage Venture Assessment",
+          "Commercial Negotiation",
+          "Business Law",
+          "E-commerce Operations",
+          "Creative Direction",
+          "Apparel Design",
+          "Public Speaking",
+          "Investor Pitching",
+          "Event Coordination",
+          "Self-Directed Learning"
+        ]
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "@id": "https://www.hampshire.edu/#organization",
+        "name": "Hampshire College",
+        "url": "https://www.hampshire.edu",
+        "sameAs": "https://en.wikipedia.org/wiki/Hampshire_College",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Amherst",
+          "addressRegion": "MA",
+          "addressCountry": "US"
+        },
+        "memberOf": {
+          "@id": "https://www.fivecolleges.edu/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.fivecolleges.edu/#organization",
+        "name": "Five College Consortium",
+        "url": "https://www.fivecolleges.edu",
+        "sameAs": "https://en.wikipedia.org/wiki/Five_College_Consortium",
+        "description": "Consortium of Hampshire College, Amherst College, Mount Holyoke College, Smith College and the University of Massachusetts Amherst that lets students cross-register for courses at the other member institutions."
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "@id": "https://www.umass.edu/#organization",
+        "name": "University of Massachusetts Amherst",
+        "url": "https://www.umass.edu",
+        "sameAs": "https://en.wikipedia.org/wiki/University_of_Massachusetts_Amherst",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Amherst",
+          "addressRegion": "MA",
+          "addressCountry": "US"
+        },
+        "department": {
+          "@type": "CollegeOrUniversity",
+          "@id": "https://www.isenberg.umass.edu/#organization",
+          "name": "Isenberg School of Management",
+          "url": "https://www.isenberg.umass.edu",
+          "parentOrganization": {
+            "@id": "https://www.umass.edu/#organization"
+          }
+        }
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "@id": "https://www.smith.edu/#organization",
+        "name": "Smith College",
+        "url": "https://www.smith.edu",
+        "sameAs": "https://en.wikipedia.org/wiki/Smith_College",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Northampton",
+          "addressRegion": "MA",
+          "addressCountry": "US"
+        }
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "@id": "https://georgedreemer.com/education/bachelors#ba-degree",
+        "name": "Bachelor of Arts — Marketing & Business",
+        "description": "Bachelor of Arts from Hampshire College with a concentration in marketing, business and entrepreneurship. Estimated cumulative GPA 3.81 / 4.0 across 126 credits. Hampshire evaluates coursework through written narrative evaluations and does not issue an official GPA, so this figure is an estimate that combines completed Hampshire courses with the letter grades earned through the Five College Consortium.",
+        "credentialCategory": "degree",
+        "educationalLevel": "Bachelor's degree",
+        "url": "https://www.hampshire.edu/academics/areas-of-study/entrepreneurship",
+        "recognizedBy": {
+          "@id": "https://www.hampshire.edu/#organization"
+        }
+      },
+      {
+        "@type": "EducationalOccupationalProgram",
+        "@id": "https://georgedreemer.com/education/bachelors#ba-programme",
+        "name": "BA — Marketing & Business (individually designed concentration)",
+        "url": "https://www.hampshire.edu/academics/areas-of-study/entrepreneurship",
+        "provider": {
+          "@id": "https://www.hampshire.edu/#organization"
+        },
+        "occupationalCredentialAwarded": {
+          "@id": "https://georgedreemer.com/education/bachelors#ba-degree"
+        },
+        "teaches": [
+          "Marketing research",
+          "Advertising and promotion strategy",
+          "Internet marketing",
+          "International marketing",
+          "Text mining and analytics in marketing",
+          "Entrepreneurship and venture growth",
+          "Negotiation and persuasion",
+          "Business law",
+          "Financial accounting",
+          "Economics",
+          "Public speaking and oral communication",
+          "Interpersonal skills",
+          "Visual design and creative production"
+        ],
+        "hasCourse": [
+          {
+            "@type": "Course",
+            "name": "Social Entrepreneurship",
+            "courseCode": "IA-0122",
+            "provider": {
+              "@id": "https://www.hampshire.edu/#organization"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "Leading Growth in New Ventures",
+            "courseCode": "IA-0370",
+            "provider": {
+              "@id": "https://www.hampshire.edu/#organization"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "Enterprise Practicum",
+            "courseCode": "IA-0354",
+            "provider": {
+              "@id": "https://www.hampshire.edu/#organization"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "Introduction to Economics",
+            "courseCode": "CSI-0210",
+            "provider": {
+              "@id": "https://www.hampshire.edu/#organization"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "Financial Accounting",
+            "courseCode": "ACC-223",
+            "provider": {
+              "@id": "https://www.smith.edu/#organization"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "Internet Marketing",
+            "courseCode": "MARKETNG-455",
+            "provider": {
+              "@id": "https://www.umass.edu/#organization"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "Marketing Research",
+            "courseCode": "MARKETNG-412",
+            "provider": {
+              "@id": "https://www.umass.edu/#organization"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "International Marketing",
+            "courseCode": "MARKETNG-437",
+            "provider": {
+              "@id": "https://www.umass.edu/#organization"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "Advertising & Promotion Strategy",
+            "courseCode": "MARKETNG-422",
+            "provider": {
+              "@id": "https://www.umass.edu/#organization"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "Text Mining & Analytics in Marketing",
+            "courseCode": "MARKETNG-497T",
+            "provider": {
+              "@id": "https://www.umass.edu/#organization"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "Internet Business",
+            "courseCode": "SCH-MGMT-597G",
+            "educationalLevel": "Graduate",
+            "provider": {
+              "@id": "https://www.isenberg.umass.edu/#organization"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "Business Law",
+            "courseCode": "SCH-MGMT-783",
+            "educationalLevel": "Graduate",
+            "provider": {
+              "@id": "https://www.isenberg.umass.edu/#organization"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "Negotiation Theory & Practice",
+            "courseCode": "SCH-MGMT-597L",
+            "educationalLevel": "Graduate",
+            "provider": {
+              "@id": "https://www.isenberg.umass.edu/#organization"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "Interpersonal Skills",
+            "courseCode": "MANAGMNT-491A",
+            "provider": {
+              "@id": "https://www.umass.edu/#organization"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "Mastering Oral Communication",
+            "courseCode": "SCH-MGMT-292C",
+            "provider": {
+              "@id": "https://www.umass.edu/#organization"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "Public Speaking",
+            "courseCode": "COMM-260",
+            "provider": {
+              "@id": "https://www.umass.edu/#organization"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "Social Psychology",
+            "courseCode": "PSYCH-360",
+            "provider": {
+              "@id": "https://www.umass.edu/#organization"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://georgedreemer.com/work/skipschoolmakemoney#project",
+        "name": "SkipSchoolMakeMoney",
+        "alternateName": "SSMM",
+        "description": "Streetwear company founded and run by George Dreemer, rooted in underground music and internet culture, with collections, creative production, e-commerce and fulfilment for customers on three continents.",
+        "url": "https://georgedreemer.com/work/skipschoolmakemoney",
+        "sameAs": "https://www.skipschoolmakemoney.com",
+        "founder": {
+          "@id": "https://georgedreemer.com/#person"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://georgedreemer.com/education/bachelors#seed-fund",
+        "name": "Seed Fund for Innovation",
+        "description": "Student-run $1 million venture fund at Hampshire College that invests in student and alumni startups. George served on its investment committee.",
+        "url": "http://sfi.hampshire.edu/",
+        "parentOrganization": {
+          "@id": "https://www.hampshire.edu/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://georgedreemer.com/education/bachelors#umass-entrepreneurship-club",
+        "name": "UMass Entrepreneurship Club",
+        "description": "Student entrepreneurship community at the University of Massachusetts Amherst. George was a member and event organizer.",
+        "parentOrganization": {
+          "@id": "https://www.umass.edu/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://georgedreemer.com/education/bachelors#berthiaume-student-innovators",
+        "name": "Berthiaume Student Innovators",
+        "description": "Student innovator programme of the Berthiaume Center for Entrepreneurship at UMass Amherst, which runs the annual Innovation Challenge. George was a member and event organiser.",
+        "parentOrganization": {
+          "@id": "https://www.umass.edu/#organization"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://georgedreemer.com/education/bachelors#abilities",
+        "name": "Abilities developed through the BA, traced to courses, independent studies and student organisations",
+        "numberOfItems": 18,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Market Research & Customer Insight"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Text Mining for Marketing"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Financial & Economic Reasoning"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Venture Design & Execution"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Early-Stage Venture Assessment"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Apparel & Visual Identity Design"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "Creative Production & Art Direction"
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "Commerce Operations & Customer Experience"
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "name": "Negotiation & Commercial Agreements"
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "name": "Business Law & Intellectual Property Awareness"
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "name": "Independent Research & Self-Directed Delivery"
+          },
+          {
+            "@type": "ListItem",
+            "position": 12,
+            "name": "Brand Positioning & Cultural Insight"
+          },
+          {
+            "@type": "ListItem",
+            "position": 13,
+            "name": "Digital Marketing & Campaign Strategy"
+          },
+          {
+            "@type": "ListItem",
+            "position": 14,
+            "name": "Organic Growth & Creator Partnerships"
+          },
+          {
+            "@type": "ListItem",
+            "position": 15,
+            "name": "Email Lifecycle & Customer Retention"
+          },
+          {
+            "@type": "ListItem",
+            "position": 16,
+            "name": "International Marketing & Cross-Cultural Communication"
+          },
+          {
+            "@type": "ListItem",
+            "position": 17,
+            "name": "Public Speaking & Investor Pitching"
+          },
+          {
+            "@type": "ListItem",
+            "position": 18,
+            "name": "Interpersonal Skills & Event Coordination"
+          }
+        ]
+      }
+    ]
+  }
+</script>
+
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Styles -->
+<!-- Global -->
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/sitebuilder-overrides.css">
+
+<!-- Components -->
+<link rel="stylesheet" href="../css/components/fade-in.css">
+<link rel="stylesheet" href="../css/components/section-label.css">
+<link rel="stylesheet" href="../css/components/site-shell.css">
+<link rel="stylesheet" href="../css/components/info-tooltip.css">
+
+<link rel="stylesheet" href="../css/components/context-block.css">
+<link rel="stylesheet" href="../css/components/sc.css">
+<link rel="stylesheet" href="../css/components/stack-badge.css">
+<link rel="stylesheet" href="../css/components/ability-card-edu.css">
+
+<!-- Third-party scripts -->
+<script data-custom-script="true" src="https://unpkg.com/lucide@1.72.0/dist/umd/lucide.js" defer></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- Page behavior -->
+<script data-custom-script="true" type="module" src="../js/pages/education/bachelors.js?v=10"></script>	
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<![endif]-->
+
+		<script type="text/javascript">
+		window._spDefer.add(function() {
+<?php $wb_form_send_success = popSessionOrGlobalVar("wb_form_send_success"); ?>
+<?php if (($wb_form_send_state = popSessionOrGlobalVar("wb_form_send_state"))) { ?>
+	<?php if (($wb_form_popup_mode = popSessionOrGlobalVar("wb_form_popup_mode")) && (isset($wbPopupMode) && $wbPopupMode)) { ?>
+		if (window !== window.parent && window.parent.postMessage) {
+			var data = {
+				event: "wb_contact_form_sent",
+				data: {
+					state: "<?php echo str_replace('"', '\"', $wb_form_send_state); ?>",
+					type: "<?php echo $wb_form_send_success ? "success" : "danger"; ?>"
+				}
+			};
+			window.parent.postMessage(data, "<?php echo str_replace('"', '\"', popSessionOrGlobalVar("wb_target_origin")); ?>");
+		}
+	<?php $wb_form_send_success = false; $wb_form_send_state = null; $wb_form_popup_mode = false; ?>
+	<?php } else { ?>
+		wb_show_alert("<?php echo str_replace(array('"', "\r", "\n"), array('\"', "", "<br/>"), $wb_form_send_state); ?>", "<?php echo $wb_form_send_success ? "success" : "danger"; ?>");
+	<?php } ?>
+<?php } ?>
+});    </script>
+</head>
+
+
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><main class="main-content" role="main" data-page="bachelors">
+
+    <h1 class="screenreader-only">
+        BA Marketing &amp; Business — Hampshire College
+    </h1>
+
+    <!-- ============================================================
+        CONTEXT BLOCK
+    ================================================================ -->
+    <section id="intro" data-nav="Intro" aria-label="Intro: Context" class="fade-in">
+        <div class="context-block">
+            <p>
+                George's BA at Hampshire College was a four-year, self-designed program focused on marketing,
+                business, and entrepreneurship.
+            </p>
+            <p>
+                The curriculum connected marketing and consumer behaviour, business fundamentals, and persuasive
+                communication: learning to research markets, assess business opportunities, negotiate agreements,
+                and develop the strategy and visual identity behind a venture.
+            </p>
+            <p>
+                Through the Five College Consortium, George took accounting at Smith College and graduate-level
+                coursework in Internet Business, Business Law, and Negotiation Theory &amp; Practice at UMass
+                Amherst's Isenberg School of Management. Alongside coursework and independent studies, George built
+                the streetwear brand SkipSchoolMakeMoney and served on Hampshire's student-run Seed Fund for
+                Innovation, evaluating venture pitches and voting on funding decisions.
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================================================
+        SNAPSHOT CARD
+    ================================================================ -->
+    <section aria-label="Intro: Degree Snapshot" class="fade-in">
+        <h2 class="screenreader-only">Degree Snapshot</h2>
+        <div class="snapshot-card" data-domain="product">
+
+            <div class="snapshot-card__tab tip-host">
+                <span class="snapshot-card__tab-logo" data-gd-identity-logo="bachelors" aria-hidden="true"></span>
+
+                <span class="snapshot-card__tab-text">
+                    <span class="snapshot-card__tab-name">Hampshire College</span>
+                    <span class="snapshot-card__ranks">
+                        <span class="rank-pill rank-pill--world">
+                            <i class="bi bi-trophy-fill" aria-hidden="true"></i>#6 Entrepreneurship<span class="rank-pill__src"> (Forbes)</span>
+                        </span>
+
+                        <button type="button" class="info-tip" aria-label="About this ranking" aria-expanded="false" aria-controls="tip-rank">
+                            <i class="bi bi-info-circle" aria-hidden="true"></i>
+                        </button>
+                    </span>
+                </span>
+
+                <div class="info-tip__panel" id="tip-rank">
+                    <p class="info-tip__title">Hampshire College — entrepreneurship</p>
+                    <ul class="info-tip__list">
+                        <li>
+                            <strong>#6</strong> in Forbes' most entrepreneurial colleges ranking.
+                        </li>
+                        <li>
+                            Based on LinkedIn founder and business-owner counts relative to student-body size.
+                        </li>
+                    </ul>
+                    <p class="info-tip__note">
+                        Historical institution-level ranking.
+                        Source: <a href="https://www.hampshire.edu/news/hampshire-sixth-forbes-list-most-entrepreneurial-colleges" target="_blank" rel="noopener noreferrer">Hampshire College</a>.
+                    </p>
+                </div>
+            </div>
+
+            <dl class="snapshot-card__meta">
+
+                <!-- Prominent fields first -->
+                <div class="snapshot-item snapshot-item--prominent">
+                    <dt class="snapshot-item__key">Degree</dt>
+                    <dd class="snapshot-item__value">Marketing &amp; Business</dd>
+                </div>
+
+                <div class="snapshot-item snapshot-item--prominent">
+                    <dt class="snapshot-item__key">Type</dt>
+                    <dd class="snapshot-item__value">Bachelor of Arts (BA)</dd>
+                </div>
+
+                <div class="snapshot-item snapshot-item--prominent snapshot-item--result tip-host">
+                    <dt class="snapshot-item__key">Result</dt>
+                    <dd class="grade-badge">
+                        3.81 / 4.0
+                        <button type="button" class="info-tip" aria-label="About this estimated GPA" aria-expanded="false" aria-controls="tip-grade">
+                            <i class="bi bi-info-circle" aria-hidden="true"></i>
+                        </button>
+                    </dd>
+
+                    <div class="info-tip__panel" id="tip-grade">
+                        <p class="info-tip__title">Estimated GPA</p>
+                        <p>
+                            Hampshire evaluates its courses through written narrative evaluations,
+                            not letter grades, and does not issue an official GPA.
+                        </p>
+                        <p class="info-tip__context">
+                            <strong>Calculation:</strong>
+                            My grade summary estimates a GPA by treating successfully completed
+                            Hampshire courses as A grades and combining them with the letter
+                            grades earned through the Five College Consortium.
+                        </p>
+                        <p class="info-tip__note">
+                            Source: <a href="https://www.hampshire.edu/sites/default/files/centralrecords/Info%20GPA%20application.pdf" target="_blank" rel="noopener noreferrer">Hampshire's guidance on estimated
+                                GPAs</a>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Standard fields -->
+
+                <div class="snapshot-item">
+                    <dt class="snapshot-item__key">Location</dt>
+                    <dd class="snapshot-item__value">Amherst, Massachusetts, USA</dd>
+                </div>
+
+                <div class="snapshot-item">
+                    <dt class="snapshot-item__key">Links</dt>
+                    <dd class="snapshot-item__value">
+                        <a href="https://www.hampshire.edu/academics/areas-of-study/entrepreneurship" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-mortarboard" aria-hidden="true"></i> Official study-area page
+                        </a>
+                        <br>
+                        <a href="https://www.isenberg.umass.edu/" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-mortarboard" aria-hidden="true"></i> Isenberg official portal
+                        </a>
+                        <br>
+                        <a href="https://www.hampshire.edu/academics/five-college-consortium" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-building" aria-hidden="true"></i> Five College Consortium
+                        </a>
+                    </dd>
+                </div>
+
+            </dl>
+
+            <div class="snapshot-card__divider"></div>
+
+            <h3 class="snapshot-card__highlights-label">Topics Covered</h3>
+            <ul class="snapshot-card__chips">
+
+                <li class="achievement-chip" data-domain="data">
+                    <span class="achievement-chip__dot"></span>Marketing Research
+                </li>
+
+                <li class="achievement-chip" data-domain="data">
+                    <span class="achievement-chip__dot"></span>Text Analytics
+                </li>
+
+                <li class="achievement-chip" data-domain="product">
+                    <span class="achievement-chip__dot"></span>Entrepreneurship
+                </li>
+
+                <li class="achievement-chip" data-domain="product">
+                    <span class="achievement-chip__dot"></span>Business Fundamentals
+                </li>
+
+                <li class="achievement-chip" data-domain="product">
+                    <span class="achievement-chip__dot"></span>Visual Communication
+                </li>
+
+                <li class="achievement-chip" data-domain="growth">
+                    <span class="achievement-chip__dot"></span>Marketing Strategy
+                </li>
+
+                <li class="achievement-chip" data-domain="growth">
+                    <span class="achievement-chip__dot"></span>Consumer Behaviour
+                </li>
+
+                <li class="achievement-chip" data-domain="growth">
+                    <span class="achievement-chip__dot"></span>Negotiation
+                </li>
+
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================================
+        STACK BADGE GRID
+    ================================================================ -->
+    <section id="tools" data-nav="Tools" aria-label="Tools" class="fade-in">
+        <div class="section-label">
+            <h2 class="section-label__text">Tools</h2>
+            <span class="section-label__line" aria-hidden="true"></span>
+        </div>
+
+        <div class="stack-grid">
+
+            <!-- ── Code ─────────────────────────────────────── -->
+            <div class="stack-group">
+                <h3 class="stack-group__label">Code</h3>
+                <ul class="stack-group__items">
+
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/html5/e34f26" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">HTML</span>
+                    </li>
+
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/css/1572b6" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">CSS</span>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- ── Dev Tools & IDEs ──────────────────────────────── -->
+            <div class="stack-group">
+                <h3 class="stack-group__label">Dev Tools &amp; IDEs</h3>
+                <ul class="stack-group__items">
+
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/knime/fdd700" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">KNIME</span>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- ── Platforms & Infra ─────────────────────────────── -->
+            <div class="stack-group">
+                <h3 class="stack-group__label">Platforms &amp; Infra</h3>
+                <ul class="stack-group__items">
+
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/googleanalytics/e37400" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">Google Analytics</span>
+                    </li>
+
+                    <!-- Bachelor-era name; now part of Meta Ads. -->
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/meta/0081fb" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">Facebook Ads</span>
+                    </li>
+
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/snapchat/fffc00" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">Snapchat Ads</span>
+                    </li>
+
+                    <li class="stack-badge stack-badge--text">
+                        <span class="stack-badge__mark" style="background:#1da1f2;" aria-hidden="true">Tw</span>
+                        <span class="stack-badge__name">Twitter Ads</span>
+                    </li>
+
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/youtube/ff0000" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">YouTube Studio</span>
+                    </li>
+
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/tiktok/000000" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">TikTok Ads (Beta)</span>
+                    </li>
+
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/mailchimp/000000" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">Mailchimp</span>
+                    </li>
+
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/buffer/000000" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">Buffer</span>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- ── Web & Commerce ────────────────────────────────── -->
+            <div class="stack-group">
+                <h3 class="stack-group__label">Web &amp; Commerce</h3>
+                <ul class="stack-group__items">
+
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/shopify/96bf48" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">Shopify</span>
+                    </li>
+
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/squarespace/000000" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">Squarespace</span>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- ── Design & Creative ─────────────────────────────── -->
+            <div class="stack-group">
+                <h3 class="stack-group__label">Design &amp; Creative</h3>
+                <ul class="stack-group__items">
+
+                    <li class="stack-badge stack-badge--text">
+                        <span class="stack-badge__mark" style="background:#330000;color:#ff9a00;" aria-hidden="true">Ai</span>
+                        <span class="stack-badge__name">Illustrator</span>
+                    </li>
+
+                    <li class="stack-badge stack-badge--text">
+                        <span class="stack-badge__mark" style="background:#001e36;color:#31a8ff;" aria-hidden="true">Ps</span>
+                        <span class="stack-badge__name">Photoshop</span>
+                    </li>
+
+                    <li class="stack-badge stack-badge--text">
+                        <span class="stack-badge__mark" style="background:#00005b;color:#9999ff;" aria-hidden="true">Ae</span>
+                        <span class="stack-badge__name">After Effects</span>
+                    </li>
+
+                    <li class="stack-badge stack-badge--text">
+                        <span class="stack-badge__mark" style="background:#00005b;color:#9999ff;" aria-hidden="true">Pr</span>
+                        <span class="stack-badge__name">Premiere Pro</span>
+                    </li>
+
+                    <li class="stack-badge stack-badge--text">
+                        <span class="stack-badge__mark" style="background:#00005b;color:#9999ff;" aria-hidden="true">Au</span>
+                        <span class="stack-badge__name">Audition</span>
+                    </li>
+
+                    <li class="stack-badge">
+                        <img src="https://cdn.simpleicons.org/davinciresolve" alt="" width="18" height="18" loading="lazy">
+                        <span class="stack-badge__name">DaVinci Resolve</span>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================================================
+        ABILITY CARD GRID
+    ================================================================ -->
+    <section id="abilities" data-nav="Abilities" aria-label="Abilities" class="fade-in">
+
+        <div class="section-label">
+            <h2 class="section-label__text">Abilities</h2>
+            <span class="section-label__line" aria-hidden="true"></span>
+        </div>
+
+        <p class="screenreader-only">Ability Domains</p>
+        <!-- Legend: fixed site-wide order. Engineering omitted (zero cards). -->
+        <ul class="ability-legend" aria-label="Ability domains">
+
+            <li class="ability-legend__item ability-legend__item--product">
+                <span class="ability-legend__dot" aria-hidden="true"></span>
+                Product
+            </li>
+
+            <li class="ability-legend__item ability-legend__item--growth">
+                <span class="ability-legend__dot" aria-hidden="true"></span>
+                Growth
+            </li>
+
+            <li class="ability-legend__item ability-legend__item--data">
+                <span class="ability-legend__dot" aria-hidden="true"></span>
+                Data
+            </li>
+
+            <button type="button" class="lens-toggle" role="switch" aria-checked="false" aria-controls="e5-ability-grid" data-lens-toggle data-lens-note="e5-lens-note">
+                <span class="lens-toggle__track" aria-hidden="true">
+                    <span class="lens-toggle__thumb"></span>
+                </span>
+                <span class="lens-toggle__label">Show sources</span>
+            </button>
+
+        </ul>
+
+        <p class="ability-lens-note" id="e5-lens-note" hidden>
+            <i class="bi bi-info-circle" aria-hidden="true"></i>
+            Each ability is traced to its source: a formal course, an independent study, or a student organization.
+        </p>
+
+        <ul class="ability-grid" id="e5-ability-grid" role="list">
+
+            <!-- =====================================================
+                DATA
+            ====================================================== -->
+
+            <!-- 1 · Market Research & Customer Insight -->
+            <li class="ability-card fade-in" data-domain="data">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="search"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Market Research &amp; Customer Insight
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="marketing-research">Marketing Research</li>
+                    <li class="course" data-course="social-psychology">Social Psychology</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Learned to turn marketing questions into decisions about
+                    what evidence to collect, whose perspective matters, and
+                    how findings should inform action. Applied that thinking
+                    to a live brand, using customer reactions and audience
+                    behaviour to decide what to design, say, and release next.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Research Question Framing</li>
+                    <li class="ability-tag">Customer Insight Development</li>
+                    <li class="ability-tag">Evidence Interpretation</li>
+                </ul>
+            </li>
+
+
+            <!-- 2 · Text Mining for Marketing -->
+            <li class="ability-card fade-in" data-domain="data">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="message-square-text"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Text Mining for Marketing
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="text-mining">Text Mining &amp; Analytics</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Studied how unstructured language can be organised and
+                    analysed to answer marketing questions. Developed a
+                    foundation in identifying patterns across text and
+                    interpreting those patterns as evidence about audiences,
+                    communication, and market interests.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Text Analysis</li>
+                    <li class="ability-tag">Unstructured Data Interpretation</li>
+                    <li class="ability-tag">Marketing Insight Development</li>
+                </ul>
+            </li>
+
+
+            <!-- 3 · Financial & Economic Reasoning -->
+            <li class="ability-card fade-in" data-domain="data">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="calculator"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Financial &amp; Economic Reasoning
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="financial-accounting">Financial Accounting</li>
+                    <li class="course" data-course="intro-economics">Introduction to Economics</li>
+                    <li class="course" data-course="seed-fund">Seed Fund for Innovation</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Developed a foundation in interpreting financial
+                    statements and reasoning about costs, incentives, resource
+                    constraints, and commercial trade-offs. Brought that
+                    perspective into running a small venture and discussing
+                    funding decisions on a student investment committee.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Financial Statement Interpretation</li>
+                    <li class="ability-tag">Economic Reasoning</li>
+                    <li class="ability-tag">Commercial Judgement</li>
+                </ul>
+            </li>
+
+
+            <!-- =====================================================
+                PRODUCT
+            ====================================================== -->
+
+            <!-- 4 · Venture Design & Execution -->
+            <li class="ability-card fade-in" data-domain="product">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="rocket"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Venture Design &amp; Execution
+                </h3>
+
+                <div class="ability-card__source">
+                    <span class="course" data-course="social-entrepreneurship">Social Entrepreneurship</span>
+                    <span class="course" data-course="leading-growth">Leading Growth in New Ventures</span>
+                    <span class="course" data-course="enterprise-practicum">Enterprise Practicum</span>
+
+                </div>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Connected entrepreneurial study with the practical work
+                    of founding and running an apparel brand. Worked across
+                    audience definition, value proposition, collection
+                    launches, customer feedback, and day-to-day execution
+                    rather than stopping at a venture proposal.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Venture Development</li>
+                    <li class="ability-tag">Business Model Design</li>
+                    <li class="ability-tag">Cross-Functional Execution</li>
+                </ul>
+            </li>
+
+
+            <!-- 5 · Early-Stage Venture Assessment -->
+            <li class="ability-card fade-in" data-domain="product">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="clipboard-check"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Early-Stage Venture Assessment
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course">Seed Fund for Innovation</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Evaluated venture pitches and voted on funding decisions
+                    as a member of Hampshire's student-run investment committee.
+                    Considered the founder, business proposition, and supporting
+                    evidence while discussing which ventures merited limited
+                    funding.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Early-Stage Due Diligence</li>
+                    <li class="ability-tag">Founder Assessment</li>
+                    <li class="ability-tag">Funding Allocation</li>
+                </ul>
+            </li>
+
+
+            <!-- 6 · Apparel & Visual Identity Design -->
+            <li class="ability-card fade-in" data-domain="product">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="shirt"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Apparel &amp; Visual Identity Design
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="streetwear-study">Streetwear &amp; Internet Culture</li>
+                    <li class="course" data-course="adobe-suite">Adobe Suite Professional</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Developed a streetwear identity across logos, garment
+                    graphics, collections, packaging, and digital presentation.
+                    Connected independent study in visual production and
+                    internet culture with the practical demands of making
+                    designs coherent, recognisable, and suitable for production.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Visual Identity Development</li>
+                    <li class="ability-tag">Apparel Graphic Design</li>
+                    <li class="ability-tag">Collection Development</li>
+                </ul>
+            </li>
+
+
+            <!-- 7 · Creative Production & Art Direction -->
+            <li class="ability-card fade-in" data-domain="product">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="clapperboard"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Creative Production &amp; Art Direction
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="adobe-suite">Adobe Suite Professional</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Turned collection ideas into photo and video productions
+                    by coordinating photographers, models, styling, locations,
+                    and finished assets. Combined visual editing and motion
+                    work with production planning so the creative concept
+                    carried through to usable campaign material.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Art Direction</li>
+                    <li class="ability-tag">Creative Production Planning</li>
+                    <li class="ability-tag">Visual Storytelling</li>
+                </ul>
+            </li>
+
+
+            <!-- 8 · Commerce Operations & Customer Experience -->
+            <li class="ability-card fade-in" data-domain="product">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="package"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Commerce Operations &amp; Customer Experience
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="enterprise-practicum">Enterprise Practicum</li>
+                </ul>
+
+                
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Managed the operational chain behind each clothing release:
+                    manufacturing across several regions, packaging, shipping,
+                    order tracking, and customer communication. Rebuilt the
+                    online storefront several times to make products easier to
+                    find and the path to purchase easier to follow.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Production Coordination</li>
+                    <li class="ability-tag">Fulfilment Management</li>
+                    <li class="ability-tag">Customer Journey Improvement</li>
+                </ul>
+            </li>
+
+
+            <!-- 9 · Negotiation & Commercial Agreements -->
+            <li class="ability-card fade-in" data-domain="product">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="handshake"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Negotiation &amp; Commercial Agreements
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="persuasion-negotiation">Persuasion &amp; Negotiation</li>
+                    <li class="course" data-course="negotiation-theory">Negotiation Theory &amp; Practice</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Studied how interests, alternatives, persuasion, and
+                    relationship dynamics shape an agreement. Applied that
+                    foundation when negotiating promotional arrangements
+                    with creators, influencers, and media partners.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Negotiation Preparation</li>
+                    <li class="ability-tag">Commercial Negotiation</li>
+                    <li class="ability-tag">Stakeholder Alignment</li>
+                </ul>
+            </li>
+
+
+            <!-- 10 · Business Law & Intellectual Property Awareness -->
+            <li class="ability-card fade-in" data-domain="product">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="scale"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Business Law &amp; Intellectual Property Awareness
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="business-law">Business Law</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Studied the legal foundations of business decisions and
+                    developed greater awareness of rights, obligations, and
+                    commercial risk. Carried that awareness into venture work,
+                    including handling copyright procedures for a digital
+                    platform.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Legal Issue Identification</li>
+                    <li class="ability-tag">Intellectual Property Awareness</li>
+                    <li class="ability-tag">Commercial Risk Awareness</li>
+                </ul>
+            </li>
+
+
+            <!-- 11 · Independent Research & Self-Directed Delivery -->
+            <li class="ability-card fade-in" data-domain="product">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="compass"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Independent Research &amp; Self-Directed Delivery
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="streetwear-study">Streetwear &amp; Internet Culture</li>
+                    <li class="course" data-course="persuasion-negotiation">Persuasion &amp; Negotiation</li>
+                    <li class="course" data-course="adobe-suite">Adobe Suite Professional</li>
+                    <li class="course" data-course="social-psychology">Social Psychology</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Built a coherent course of study through independent
+                    inquiry, critical reading, and practical skill development
+                    rather than following a fixed departmental sequence.
+                    Set my own learning priorities, worked with faculty across
+                    different subjects, and connected research with ongoing
+                    venture and creative work.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Self-Directed Learning</li>
+                    <li class="ability-tag">Critical Interpretation</li>
+                    <li class="ability-tag">Independent Project Delivery</li>
+                </ul>
+            </li>
+
+
+            <!-- =====================================================
+                GROWTH
+            ====================================================== -->
+
+            <!-- 12 · Brand Positioning & Cultural Insight -->
+            <li class="ability-card fade-in" data-domain="growth">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="fingerprint"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Brand Positioning &amp; Cultural Insight
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="streetwear-study">Streetwear &amp; Internet Culture</li>
+                    <li class="course" data-course="advertising-promo">Advertising &amp; Promo Strategy</li>
+                </ul>
+
+                
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Defined a distinct identity for a streetwear brand rooted
+                    in underground music and internet culture. Connected
+                    audience interests, language, visual style, and product
+                    choices so the brand stood for something recognisable
+                    rather than looking like another apparel shop.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Brand Positioning</li>
+                    <li class="ability-tag">Cultural Audience Insight</li>
+                    <li class="ability-tag">Value Proposition Development</li>
+                </ul>
+            </li>
+
+
+            <!-- 13 · Digital Marketing & Campaign Strategy -->
+            <li class="ability-card fade-in" data-domain="growth">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="megaphone"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Digital Marketing &amp; Campaign Strategy
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="internet-marketing">Internet Marketing</li>
+                    <li class="course" data-course="advertising-promo">Advertising &amp; Promo Strategy</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Connected digital-marketing and advertising study with
+                    live paid and organic campaigns across several channels.
+                    Adapted creative and messaging to each channel, then
+                    tracked audience responses and storefront behaviour to
+                    decide what to repeat, change, or stop.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Digital Campaign Planning</li>
+                    <li class="ability-tag">Campaign Performance Analysis</li>
+                    <li class="ability-tag">Campaign Iteration</li>
+                </ul>
+            </li>
+
+
+            <!-- 14 · Organic Growth & Creator Partnerships -->
+            <li class="ability-card fade-in" data-domain="growth">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="sprout"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Organic Growth &amp; Creator Partnerships
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="persuasion-negotiation">Persuasion &amp; Negotiation</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Grew an audience through memes, giveaways, and
+                    audience-created content, and built relationships with
+                    musicians, photographers, models, and influencers whose
+                    followers matched the brand. Aimed to turn an initial
+                    group of supporters into an active community rather than
+                    treating follower count as the goal.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Organic Acquisition</li>
+                    <li class="ability-tag">Creator Partnership Development</li>
+                    <li class="ability-tag">Community Building</li>
+                </ul>
+            </li>
+
+
+            <!-- 15 · Email Lifecycle & Customer Retention -->
+            <li class="ability-card fade-in" data-domain="growth">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="mail"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Email Lifecycle &amp; Customer Retention
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="internet-marketing">Internet Marketing</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Built mailing lists and organised communication around
+                    product launches, abandoned carts, and post-purchase
+                    follow-ups. Connected acquisition with the next customer
+                    interaction so a collection launch could lead to an
+                    ongoing relationship rather than a single transaction.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Lifecycle Communication</li>
+                    <li class="ability-tag">Email Campaign Planning</li>
+                    <li class="ability-tag">Customer Retention</li>
+                </ul>
+            </li>
+
+
+            <!-- 16 · International Marketing & Cross-Cultural Communication -->
+            <li class="ability-card fade-in" data-domain="growth">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="globe"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    International Marketing &amp; Cross-Cultural Communication
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="international-marketing">International Marketing</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Studied how market context and cultural differences
+                    influence positioning, communication, and commercial
+                    decisions. Applied that perspective while serving
+                    customers on three continents and working with creative
+                    collaborators around a brand built in the United States.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">International Marketing</li>
+                    <li class="ability-tag">Cross-Cultural Communication</li>
+                    <li class="ability-tag">Market Adaptation</li>
+                </ul>
+            </li>
+
+
+            <!-- 17 · Public Speaking & Investor Pitching -->
+            <li class="ability-card fade-in" data-domain="growth">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="presentation"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Public Speaking &amp; Investor Pitching
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="public-speaking">Public Speaking</li>
+                    <li class="course" data-course="oral-communication">Mastering Oral Communication</li>
+                    <li class="course">VVM accelerator</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Developed structured oral communication through formal
+                    speaking courses and live venture presentations.
+                    Presented product ideas, explained traction and next
+                    steps, and responded to questions from investors,
+                    mentors, and potential partners.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Public Speaking</li>
+                    <li class="ability-tag">Investor Pitching</li>
+                    <li class="ability-tag">Live Question Handling</li>
+                </ul>
+            </li>
+
+
+            <!-- 18 · Interpersonal Skills & Event Coordination -->
+            <li class="ability-card fade-in" data-domain="growth">
+                <div class="ability-card__icon" aria-hidden="true">
+                    <i data-lucide="users"></i>
+                </div>
+
+                <h3 class="ability-card__title">
+                    Interpersonal Skills &amp; Event Coordination
+                </h3>
+
+                <p class="screenreader-only">
+                    Courses contributing to this ability:
+                </p>
+                <ul class="ability-card__source">
+                    <li class="course" data-course="interpersonal-skills">Interpersonal Skills</li>
+                    <li class="course" data-course="social-psychology">Social Psychology</li>
+                    <li class="course">UMass Entrepreneurship Club</li>
+                    <li class="course">Berthiaume Student Innovators</li>
+                </ul>
+
+                <p class="screenreader-only">
+                    Ability description:
+                </p>
+                <p class="ability-card__desc">
+                    Studied how people interpret situations, influence one
+                    another, and work together. Applied that perspective
+                    organising entrepreneurship events and pitch competitions,
+                    including the Innovation Challenge, coordinating speakers,
+                    judges, and logistics, and connecting student founders
+                    with mentors and investors.
+                </p>
+
+                <p class="screenreader-only">
+                    Skills developed through this ability:
+                </p>
+                <ul class="ability-card__tags">
+                    <li class="ability-tag">Event Coordination</li>
+                    <li class="ability-tag">Stakeholder Coordination</li>
+                    <li class="ability-tag">Entrepreneurial Network Building</li>
+                </ul>
+            </li>
+
+        </ul>
+
+    </section>
+
+</main><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a1a2145eb530004f8a2531691832ee2c" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"></div></div><div id="wb_main_a1a2145eb530004f8a2531691832ee2c" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"></div></div><div id="wb_footer_a1a2145eb530004f8a2531691832ee2c" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
+			$(function() {
+				var footer = $(".wb_footer");
+				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
+				if (!html) {
+					footer.parent().remove();
+					footer = $("#footer, #footer .wb_cont_inner");
+					footer.css({height: ""});
+				}
+			});
+			});</script></div></div></div></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
+	<script src="js/common-bundle.js?ts=20261125222641" type="text/javascript" defer></script>{{hr_out}}<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        window._spDefer.done();
+    });
+</script>
+</body>
+</html>

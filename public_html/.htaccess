@@ -35,7 +35,7 @@
 		Order allow,deny
 	</IfModule>
 </FilesMatch>
-ErrorDocument 401 "Unauthorized"
+ErrorDocument 401 default
 ErrorDocument 403 "Forbidden"
 <IfModule mod_negotiation.c>
 	#Options -MultiViews

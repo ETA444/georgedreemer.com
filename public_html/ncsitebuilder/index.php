@@ -163,57 +163,21 @@ class PluginDescriptorHandler {
 	$pd = PluginDescriptorHandler::fromPath(dirname(__FILE__).'/pd.json');
 	$pages = array(
 		array(
-			'id' => 'a18bddd8a85d00f1870d4bc44fd15f7b',
+			'id' => 'a18bddd8a85d044c01bbabaae5d84e6b',
+			'alias' => 'm',
+			'file' => 'a18bddd8a85d044c01bbabaae5d84e6b.php',
+			'controllers' => array(),
+			'type' => 0,
+			'auth' => array(
+				'login' => '4242',
+				'hash' => '$2y$10$UHx84HGewnM53ZHYFVunreaMvgeLVbPWQy2vTL.gqSnyaH2bhj10G',
+				'realm' => 'wb60e034e4d7'
+			)
+		),
+		array(
+			'id' => 'a1a20fda19b2000cf9270171a92a5587',
 			'alias' => '',
-			'file' => 'a18bddd8a85d00f1870d4bc44fd15f7b.php',
-			'controllers' => array(),
-			'type' => 0,
-			'auth' => null
-		),
-		array(
-			'id' => 'a18bddd8a85d05531bf2b97cfabf9ffd',
-			'alias' => 'work/thoughtbubble',
-			'file' => 'a18bddd8a85d05531bf2b97cfabf9ffd.php',
-			'controllers' => array(),
-			'type' => 0,
-			'auth' => null
-		),
-		array(
-			'id' => 'a18bddd8a85d011b0a2fe2a90c538c8d',
-			'alias' => 'skipschoolmakemoney',
-			'file' => 'a18bddd8a85d011b0a2fe2a90c538c8d.php',
-			'controllers' => array(),
-			'type' => 0,
-			'auth' => null
-		),
-		array(
-			'id' => 'a18bddd8a85d0259fb1585dbb509cff8',
-			'alias' => 'dreemcorp',
-			'file' => 'a18bddd8a85d0259fb1585dbb509cff8.php',
-			'controllers' => array(),
-			'type' => 0,
-			'auth' => null
-		),
-		array(
-			'id' => 'a1a01e5f44000071bc973da1ec13cbfc',
-			'alias' => 'datasafari',
-			'file' => 'a1a01e5f44000071bc973da1ec13cbfc.php',
-			'controllers' => array(),
-			'type' => 0,
-			'auth' => null
-		),
-		array(
-			'id' => 'a1a06787c97900e02e56b45a98c7fa9d',
-			'alias' => 'cryptopandemic',
-			'file' => 'a1a06787c97900e02e56b45a98c7fa9d.php',
-			'controllers' => array(),
-			'type' => 0,
-			'auth' => null
-		),
-		array(
-			'id' => 'a1a10ba37c9800b11f76098bcc91fa4b',
-			'alias' => 'education',
-			'file' => 'a1a10ba37c9800b11f76098bcc91fa4b.php',
+			'file' => 'a1a20fda19b2000cf9270171a92a5587.php',
 			'controllers' => array(),
 			'type' => 0,
 			'auth' => null
@@ -224,36 +188,16 @@ class PluginDescriptorHandler {
 			'file' => 'a18bddd8a85d031c03b1af770b1fc6b6.php',
 			'controllers' => array(),
 			'type' => 0,
-			'auth' => null
+			'auth' => array(
+				'login' => '4242',
+				'hash' => '$2y$10$UHx84HGewnM53ZHYFVunreaMvgeLVbPWQy2vTL.gqSnyaH2bhj10G',
+				'realm' => 'wb60e034e4d7'
+			)
 		),
 		array(
-			'id' => 'a18bddd8a85d044c01bbabaae5d84e6b',
-			'alias' => 'm',
-			'file' => 'a18bddd8a85d044c01bbabaae5d84e6b.php',
-			'controllers' => array(),
-			'type' => 0,
-			'auth' => null
-		),
-		array(
-			'id' => 'a19104b295bb0096958c9d452e84c121',
-			'alias' => 'blog',
-			'file' => 'a19104b295bb0096958c9d452e84c121.php',
-			'controllers' => array(),
-			'type' => 0,
-			'auth' => null
-		),
-		array(
-			'id' => 'a19104d04f1200a1171ff5a1dd1fd06a',
-			'alias' => 'blog/datasafari/introduction',
-			'file' => 'a19104d04f1200a1171ff5a1dd1fd06a.php',
-			'controllers' => array(),
-			'type' => 0,
-			'auth' => null
-		),
-		array(
-			'id' => 'a19f5ae42c81009e68be5623804df9af',
-			'alias' => 'testtt',
-			'file' => 'a19f5ae42c81009e68be5623804df9af.php',
+			'id' => 'a18bddd8a85d05531bf2b97cfabf9ffd',
+			'alias' => 'work/thoughtbubble',
+			'file' => 'a18bddd8a85d05531bf2b97cfabf9ffd.php',
 			'controllers' => array(),
 			'type' => 0,
 			'auth' => null
@@ -264,15 +208,127 @@ class PluginDescriptorHandler {
 			'file' => 'a19fc1fe9132006814d8c14872db06eb.php',
 			'controllers' => array(),
 			'type' => 0,
-			'auth' => null
+			'auth' => array(
+				'login' => '4242',
+				'hash' => '$2y$10$UHx84HGewnM53ZHYFVunreaMvgeLVbPWQy2vTL.gqSnyaH2bhj10G',
+				'realm' => 'wb60e034e4d7'
+			)
 		),
 		array(
-			'id' => 'a1a20fda19b2000cf9270171a92a5587',
-			'alias' => 't',
-			'file' => 'a1a20fda19b2000cf9270171a92a5587.php',
+			'id' => 'a18bddd8a85d011b0a2fe2a90c538c8d',
+			'alias' => 'OLD-skipschoolmakemoney-1',
+			'file' => 'a18bddd8a85d011b0a2fe2a90c538c8d.php',
+			'controllers' => array(),
+			'type' => 0,
+			'auth' => array(
+				'login' => '4242',
+				'hash' => '$2y$10$UHx84HGewnM53ZHYFVunreaMvgeLVbPWQy2vTL.gqSnyaH2bhj10G',
+				'realm' => 'wb60e034e4d7'
+			)
+		),
+		array(
+			'id' => 'a1a213afe21f008f4843ef0ce17d5b56',
+			'alias' => 'work/skipschoolmakemoney',
+			'file' => 'a1a213afe21f008f4843ef0ce17d5b56.php',
 			'controllers' => array(),
 			'type' => 0,
 			'auth' => null
+		),
+		array(
+			'id' => 'a18bddd8a85d0259fb1585dbb509cff8',
+			'alias' => 'OLD-DREEMCORP',
+			'file' => 'a18bddd8a85d0259fb1585dbb509cff8.php',
+			'controllers' => array(),
+			'type' => 0,
+			'auth' => null
+		),
+		array(
+			'id' => 'a1a21456ab8f0005d0723ee624ec2620',
+			'alias' => 'work/dreemcorp',
+			'file' => 'a1a21456ab8f0005d0723ee624ec2620.php',
+			'controllers' => array(),
+			'type' => 0,
+			'auth' => null
+		),
+		array(
+			'id' => 'a1a01e5f44000071bc973da1ec13cbfc',
+			'alias' => 'datasafari',
+			'file' => 'a1a01e5f44000071bc973da1ec13cbfc.php',
+			'controllers' => array(),
+			'type' => 0,
+			'auth' => array(
+				'login' => '4242',
+				'hash' => '$2y$10$UHx84HGewnM53ZHYFVunreaMvgeLVbPWQy2vTL.gqSnyaH2bhj10G',
+				'realm' => 'wb60e034e4d7'
+			)
+		),
+		array(
+			'id' => 'a1a21458671f00f27e4a1d03840650d1',
+			'alias' => 'work/datasafari',
+			'file' => 'a1a21458671f00f27e4a1d03840650d1.php',
+			'controllers' => array(),
+			'type' => 0,
+			'auth' => null
+		),
+		array(
+			'id' => 'a1a06787c97900e02e56b45a98c7fa9d',
+			'alias' => 'cryptopandemic',
+			'file' => 'a1a06787c97900e02e56b45a98c7fa9d.php',
+			'controllers' => array(),
+			'type' => 0,
+			'auth' => array(
+				'login' => '4242',
+				'hash' => '$2y$10$UHx84HGewnM53ZHYFVunreaMvgeLVbPWQy2vTL.gqSnyaH2bhj10G',
+				'realm' => 'wb60e034e4d7'
+			)
+		),
+		array(
+			'id' => 'a1a2145aeb00002c5a649aa5de5e0788',
+			'alias' => 'work/cryptopandemic',
+			'file' => 'a1a2145aeb00002c5a649aa5de5e0788.php',
+			'controllers' => array(),
+			'type' => 0,
+			'auth' => null
+		),
+		array(
+			'id' => 'a1a10ba37c9800b11f76098bcc91fa4b',
+			'alias' => 'education',
+			'file' => 'a1a10ba37c9800b11f76098bcc91fa4b.php',
+			'controllers' => array(),
+			'type' => 0,
+			'auth' => array(
+				'login' => '4242',
+				'hash' => '$2y$10$UHx84HGewnM53ZHYFVunreaMvgeLVbPWQy2vTL.gqSnyaH2bhj10G',
+				'realm' => 'wb60e034e4d7'
+			)
+		),
+		array(
+			'id' => 'a1a2145d188d0044e688f0a1b6dde831',
+			'alias' => 'education/masters',
+			'file' => 'a1a2145d188d0044e688f0a1b6dde831.php',
+			'controllers' => array(),
+			'type' => 0,
+			'auth' => null
+		),
+		array(
+			'id' => 'a1a2145eb530004f8a2531691832ee2c',
+			'alias' => 'education/bachelors',
+			'file' => 'a1a2145eb530004f8a2531691832ee2c.php',
+			'controllers' => array(),
+			'type' => 0,
+			'auth' => null
+		),
+		array(
+			'id' => 'a18bddd8a85d00f1870d4bc44fd15f7b',
+			'alias' => 'OLD-Landing-page',
+			'file' => 'a18bddd8a85d00f1870d4bc44fd15f7b.php',
+			'controllers' => array(),
+			'type' => 0,
+			'auth' => array(
+				'login' => '4242',
+				'hash' => '$2y$10$UHx84HGewnM53ZHYFVunreaMvgeLVbPWQy2vTL.gqSnyaH2bhj10G',
+				'realm' => 'wb60e034e4d7'
+			)
 		)
 	);
 	$forms = array(
@@ -347,20 +403,16 @@ class PluginDescriptorHandler {
 	$langs = null;
 	$def_lang = null;
 	$base_lang = 'en';
-	$site_id = 'c8fe6c40';
+	$site_id = '1ceeb77f';
 	${'sitemapUrls'} = array(
 		'https://georgedreemer.com/',
 		'https://georgedreemer.com/work/thoughtbubble',
-		'https://georgedreemer.com/skipschoolmakemoney',
-		'https://georgedreemer.com/dreemcorp',
-		'https://georgedreemer.com/datasafari',
-		'https://georgedreemer.com/cryptopandemic',
-		'https://georgedreemer.com/education',
-		'https://georgedreemer.com/m',
-		'https://georgedreemer.com/blog',
-		'https://georgedreemer.com/blog/datasafari/introduction',
-		'https://georgedreemer.com/testtt',
-		'https://georgedreemer.com/t'
+		'https://georgedreemer.com/work/skipschoolmakemoney',
+		'https://georgedreemer.com/work/dreemcorp',
+		'https://georgedreemer.com/work/datasafari',
+		'https://georgedreemer.com/work/cryptopandemic',
+		'https://georgedreemer.com/education/masters',
+		'https://georgedreemer.com/education/bachelors'
 	);
 	${'redirectItems'} = array();
 	$websiteUID = 'a6bf24d62389c5c29a904041a1dc6f8f9524fe4cc2e47b79f80bba06ae154069cfd05c7cbb53bf4c';
@@ -368,7 +420,7 @@ class PluginDescriptorHandler {
 	$base_url = '/';
 	$user_domain = 'georgedreemer.com';
 	$pretty_domain = 'georgedreemer.com';
-	$home_page = 'a18bddd8a85d00f1870d4bc44fd15f7b';
+	$home_page = 'a1a20fda19b2000cf9270171a92a5587';
 	$mod_rewrite = true;
 	$show_comments = false;
 	$ga_code = (is_file($ga_code_file = dirname(__FILE__).'/ga_code') ? file_get_contents($ga_code_file) : null);
@@ -400,6 +452,9 @@ class PluginDescriptorHandler {
 	SiteModule::setLang($requestInfo->{'lang'}, $base_lang);
 	SiteModule::initTranslations(array(
 		'-' => array(
+			'Edit Website' => 'Edit Website',
+			'Not found' => 'Not found',
+			'This plugin requires upgrade' => 'This plugin requires upgrade',
 			'There was a problem submitting your form. This can happen when you leave a page open for a long time. Please refresh and try again.' => 'There was a problem submitting your form. This can happen when you leave a page open for a long time. Please refresh and try again.',
 			'Form sending failed' => 'Form sending failed',
 			'Form was not sent, are you a robot?' => 'Form was not sent, are you a robot?',
@@ -418,10 +473,7 @@ class PluginDescriptorHandler {
 			'You exceed number of files' => 'You exceeded number of files',
 			'I\'m not a robot' => 'I\'m not a robot',
 			'Captcha is not available in preview' => 'Captcha is not available in preview',
-			'Submit' => 'Submit',
-			'Edit Website' => 'Edit Website',
-			'Not found' => 'Not found',
-			'This plugin requires upgrade' => 'This plugin requires upgrade'
+			'Submit' => 'Submit'
 		)
 	));
 	if (!isHttps() && !headers_sent()) {

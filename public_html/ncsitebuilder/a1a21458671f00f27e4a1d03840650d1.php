@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript">
+	window._spDefer = {
+		queue: [],
+		ready: false,
+		add: function(fn) {
+			if (this.ready) { fn(); }
+			else { this.queue.push(fn); }
+		},
+		done: function() {
+			this.ready = true;
+			var fns = this.queue;
+			this.queue = [];
+			for (var i = 0; i < fns.length; i++) { fns[i](); }
+		}
+	};
+	</script>
+			<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title><?php echo htmlspecialchars((isset($seoTitle) && $seoTitle !== "") ? $seoTitle : "DataSafari — Data Science Python Library · George Dreemer"); ?></title>
+	<base href="{{base_url}}" />
+	<?php echo isset($sitemapUrls) ? (generateCanonicalUrl($sitemapUrls)."\n") : ""; ?>	
+	
+					
+	<!-- Facebook Open Graph -->
+						<!-- Facebook Open Graph end -->
+
+			<?php if (empty($wbWhitelabel)): ?>	<meta name="generator" content="Site.pro Builder" />
+	<?php else: ?>	<meta name="generator" content="Website Builder" />
+	<?php endif; ?>			<link href="css/common-bundle.css?ts=20261125222641" rel="preload" type="text/css" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
+	<link href="css/a1a21458671f00f27e4a1d03840650d1-bundle.css?ts=20261125222641" rel="preload" type="text/css" id="wb-page-stylesheet" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
+	<ga-code/><!-- Global: identity & crawling -->
+<meta name="author" content="George Dreemer">
+<meta name="robots" content="max-image-preview:large, max-snippet:-1">
+
+<!-- Global: appearance -->
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="format-detection" content="telephone=no">
+
+<!-- Global: social -->
+<meta property="og:site_name" content="George Dreemer">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:site" content="@444eta">
+<meta name="twitter:creator" content="@444eta">
+<meta name="twitter:label1" content="Role">
+<meta name="twitter:data1" content="Data Scientist &amp; Developer">
+<meta name="twitter:label2" content="Open to">
+<meta name="twitter:data2" content="Data, ML &amp; AI roles · Dubai, UAE">
+
+<!-- Global: icons -->
+<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png?v=20261124" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg?v=20261124" />
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=20261124" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=20261124" />
+<meta name="apple-mobile-web-app-title" content="ETA!" />
+<link rel="manifest" href="/favicon/site.webmanifest?v=20261124" />
+	<script type="text/javascript">
+	window.useTrailingSlashes = false;
+	window.disableRightClick = false;
+	window.currLang = 'en';
+</script>
+	<!-- Core document setup -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<!-- SEO -->
+<title>DataSafari — Data Science Python Library · George Dreemer</title>
+<meta name="description" content="DataSafari is a Python library by George Dreemer that simplifies complex data science tasks, compressing the full data workflow into a one-liner API across 11 functions and 4 subpackages. Available on PyPI.">
+<meta name="keywords" content="DataSafari, datasafari, George Dreemer, Python library, data science library, machine learning library, automated EDA, hypothesis testing, ML pipeline, data science workflow, data transformation, PyPI package, open source Python, scikit-learn, pandas, scipy, statsmodels">
+<link rel="canonical" href="https://georgedreemer.com/work/datasafari">
+<link rel="alternate" type="text/markdown" href="https://georgedreemer.com/work/datasafari.md">
+<link rel="describedby" href="https://georgedreemer.com/llms.txt">
+
+
+<!-- Social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://georgedreemer.com/work/datasafari">
+<meta property="og:title" content="DataSafari — Data Science Python Library · George Dreemer">
+<meta property="og:description" content="DataSafari is a Python library by George Dreemer that simplifies complex data science tasks, compressing the full data workflow into a one-liner API across 11 functions and 4 subpackages. Available on PyPI.">
+<meta property="og:image" content="https://georgedreemer.com/public_img/general/ogimages/datasafari-v2.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Showcase of DataSafari branding and logo, made by George Dreemer">
+<meta name="twitter:image:alt" content="Showcase of DataSafari branding and logo, made by George Dreemer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DataSafari — Data Science Python Library · George Dreemer">
+<meta name="twitter:description" content="DataSafari is a Python library by George Dreemer that simplifies complex data science tasks, compressing the full data workflow into a one-liner API across 11 functions and 4 subpackages. Available on PyPI.">
+<meta name="twitter:image" content="https://georgedreemer.com/public_img/general/ogimages/datasafari-v2.png">
+
+<!-- Structured data -->
+<script data-custom-script="true" type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://georgedreemer.com/work/datasafari#webpage",
+      "url": "https://georgedreemer.com/work/datasafari",
+      "name": "DataSafari — Open-Source Python Library for Data Science",
+      "description": "DataSafari is a Python library by George Dreemer that simplifies complex data science tasks, compressing the full data workflow into a one-liner API across 11 functions and 4 subpackages. Available on PyPI.",
+      "isPartOf": {
+        "@id": "https://georgedreemer.com/#website"
+      },
+      "about": {
+        "@id": "https://georgedreemer.com/work/datasafari#project"
+      },
+      "mainEntity": {
+        "@id": "https://georgedreemer.com/work/datasafari#project"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://georgedreemer.com/public_img/general/ogimages/datasafari-v2.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "en",
+      "breadcrumb": {
+        "@id": "https://georgedreemer.com/work/datasafari#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://georgedreemer.com/work/datasafari#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "George Dreemer",
+          "item": "https://georgedreemer.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Work",
+          "item": "https://georgedreemer.com/#work"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "DataSafari",
+          "item": "https://georgedreemer.com/work/datasafari"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://georgedreemer.com/work/datasafari#project",
+      "name": "DataSafari",
+      "url": "https://georgedreemer.com/work/datasafari",
+      "description": "An open-source Python library that simplifies complex data science tasks — compressing the full data workflow (exploration, transformation, evaluation, and prediction) into a clean one-liner API. Built and maintained solo by George Dreemer.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://georgedreemer.com/public_img/general/ogimages/datasafari-v2.png",
+        "width": 1200,
+        "height": 630
+      },
+      "programmingLanguage": "Python",
+      "runtimePlatform": "Python 3.9, 3.10, 3.11, 3.12",
+      "codeRepository": "https://github.com/ETA444/datasafari",
+      "downloadUrl": "https://pypi.org/project/datasafari/",
+      "keywords": [
+        "DataSafari",
+        "George Dreemer",
+        "Python library",
+        "data science",
+        "machine learning",
+        "automated EDA",
+        "hypothesis testing",
+        "ML pipeline automation",
+        "data science workflow",
+        "data transformation",
+        "scikit-learn",
+        "pandas",
+        "scipy",
+        "statsmodels",
+        "PyPI",
+        "open source",
+        "one-liner API"
+      ],
+      "genre": [
+        "Data science library",
+        "Machine learning library",
+        "Open-source Python package",
+        "Portfolio project",
+        "Engineering project"
+      ],
+      "creator": {
+        "@type": "Person",
+        "@id": "https://georgedreemer.com/#person",
+        "name": "George Dreemer",
+        "url": "https://georgedreemer.com"
+      },
+      "author": {
+        "@type": "Person",
+        "@id": "https://georgedreemer.com/#person",
+        "name": "George Dreemer",
+        "url": "https://georgedreemer.com"
+      },
+      "sameAs": [
+        "https://datasafari.dev",
+        "https://datasafari.dev/docs",
+        "https://github.com/ETA444/datasafari",
+        "https://pypi.org/project/datasafari/"
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Styles -->
+<!-- Global -->
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/sitebuilder-overrides.css">
+
+<!-- Components -->
+<link rel="stylesheet" href="../css/components/fade-in.css">
+<link rel="stylesheet" href="../css/components/section-label.css">
+<link rel="stylesheet" href="../css/components/site-shell.css">
+
+<link rel="stylesheet" href="../css/components/context-block.css">
+<link rel="stylesheet" href="../css/components/sc.css">
+<link rel="stylesheet" href="../css/components/stat-counter.css">
+<link rel="stylesheet" href="../css/components/stack-badge.css">
+<link rel="stylesheet" href="../css/components/ability-card-exp.css">
+<link rel="stylesheet" href="../css/components/works-card-exp.css">
+<link rel="stylesheet" href="../css/components/indepth-accordion.css">
+
+<!-- Third-party scripts -->
+<script data-custom-script="true" src="https://unpkg.com/lucide@1.72.0/dist/umd/lucide.js" defer></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- Page behavior -->
+<script data-custom-script="true" type="module" src="../js/pages/work/datasafari.js?v=10"></script>	
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<![endif]-->
+
+		<script type="text/javascript">
+		window._spDefer.add(function() {
+<?php $wb_form_send_success = popSessionOrGlobalVar("wb_form_send_success"); ?>
+<?php if (($wb_form_send_state = popSessionOrGlobalVar("wb_form_send_state"))) { ?>
+	<?php if (($wb_form_popup_mode = popSessionOrGlobalVar("wb_form_popup_mode")) && (isset($wbPopupMode) && $wbPopupMode)) { ?>
+		if (window !== window.parent && window.parent.postMessage) {
+			var data = {
+				event: "wb_contact_form_sent",
+				data: {
+					state: "<?php echo str_replace('"', '\"', $wb_form_send_state); ?>",
+					type: "<?php echo $wb_form_send_success ? "success" : "danger"; ?>"
+				}
+			};
+			window.parent.postMessage(data, "<?php echo str_replace('"', '\"', popSessionOrGlobalVar("wb_target_origin")); ?>");
+		}
+	<?php $wb_form_send_success = false; $wb_form_send_state = null; $wb_form_popup_mode = false; ?>
+	<?php } else { ?>
+		wb_show_alert("<?php echo str_replace(array('"', "\r", "\n"), array('\"', "", "<br/>"), $wb_form_send_state); ?>", "<?php echo $wb_form_send_success ? "success" : "danger"; ?>");
+	<?php } ?>
+<?php } ?>
+});    </script>
+</head>
+
+
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><main class="main-content" role="main" data-page="datasafari">
+
+    <h1 class="screenreader-only">
+      DataSafari — Open-Source Python Library for Data Science
+    </h1>
+
+    <!-- ============================================================
+        ELEMENT 1 — CONTEXT BLOCK
+    ============================================================ -->
+    <section id="intro" data-nav="Intro" aria-label="Intro: Experience Context" class="fade-in">
+      <div class="context-block">
+        <p>DataSafari is a Python library that simplifies complex data science tasks — compressing exploration,
+          transformation, evaluation, and prediction into a single one-liner API. One import. One function call. One
+          plain-English report.</p>
+        <p>George built DataSafari to solve a specific problem he watched play out at university: data science curricula
+          built around Stata, R, and SPSS — tools with decades of academic inertia — while Python's better-maintained,
+          faster, and more capable ecosystem went largely untaught. The researcher who understands their domain deeply
+          but doesn't want to spend two hours reading Scipy docs to run a single test was the exact person the existing
+          tooling failed. DataSafari is the attempt to fix that: one import, one function call, one plain-English
+          report.</p>
+        <p>The library spans four subpackages — Explorer, Transformer, Evaluator, Predictor — mirroring the natural
+          stages of any data workflow. Every function handles its stage end-to-end: automatic statistical method
+          selection, dynamic assumption validation, composite-score model evaluation. Each call returns a plain-language
+          report with findings and actionable recommendations — results that are interpretable, not just computed.</p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+        ELEMENT 2 — SNAPSHOT CARD
+    ============================================================ -->
+    <section aria-label="Intro: Experience Snapshot" class="fade-in">
+
+      <h2 class="screenreader-only">Experience Snapshot</h2>
+
+      <div class="snapshot-card" data-domain="engineering">
+
+        <div class="snapshot-card__tab">
+          <span class="snapshot-card__tab-logo" data-gd-identity-logo="datasafari" aria-hidden="true"></span>
+          <span class="snapshot-card__tab-text">
+            <span class="snapshot-card__tab-name">Data Safari</span>
+          </span>
+        </div>
+
+        <dl class="snapshot-card__meta">
+          <div class="snapshot-item snapshot-item--prominent">
+            <dt class="snapshot-item__key">Role</dt>
+            <dd class="snapshot-item__value">Creator &amp; Maintainer</dd>
+          </div>
+          <div class="snapshot-item snapshot-item--prominent">
+            <dt class="snapshot-item__key">Type</dt>
+            <dd class="snapshot-item__value">Data Science Python Library</dd>
+          </div>
+          <div class="snapshot-item">
+            <dt class="snapshot-item__key">Links</dt>
+            <dd class="snapshot-item__value">
+              <a href="https://datasafari.dev" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-globe"></i> Website
+              </a>
+              <br>
+              <a href="https://datasafari.dev/docs" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-book"></i> Docs
+              </a>
+              <br>
+              <a href="https://github.com/ETA444/datasafari" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i> GitHub
+              </a>
+              <br>
+              <a href="https://pypi.org/project/datasafari/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-box-seam"></i> PyPI
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+        <div class="snapshot-card__divider"></div>
+
+        <h3 class="snapshot-card__highlights-label">Highlights</h3>
+
+        <ul class="snapshot-card__chips">
+          <li class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Architected 4-subpackage API from scratch: Explorer · Transformer
+            · Evaluator · Predictor
+          </li>
+          <li class="achievement-chip" data-domain="data">
+            <span class="achievement-chip__dot"></span>Unified 10 scientific libraries — NumPy, pandas, scikit-learn,
+            scipy, statsmodels &amp; more — into a single one-liner workflow
+          </li>
+          <li class="achievement-chip" data-domain="data">
+            <span class="achievement-chip__dot"></span>Implemented automatic statistical test routing in
+            predict_hypothesis() — detects variable types, checks assumptions, selects and runs the correct test
+          </li>
+          <li class="achievement-chip" data-domain="data">
+            <span class="achievement-chip__dot"></span>Built composite-score ML model evaluation engine with automated
+            hyperparameter tuning in predict_ml()
+          </li>
+          <li class="achievement-chip" data-domain="data">
+            <span class="achievement-chip__dot"></span>Implemented statistical assumption checking across normality,
+            variance, dtype, and contingency in Evaluator
+          </li>
+          <li class="achievement-chip" data-domain="data">
+            <span class="achievement-chip__dot"></span>Designed multi-method outlier detection covering Z-score, IQR
+            &amp; Mahalanobis distance in Explorer
+          </li>
+          <li class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Engineered 250+ pytest tests across 11 test files covering all 4
+            subpackages
+          </li>
+          <li class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Built full GitHub Actions CI/CD pipeline: lint · test · security
+            scan · build · docs deploy · publish
+          </li>
+          <li class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Configured CI matrix to run across Python 3.9, 3.10, 3.11 &amp;
+            3.12 in parallel
+          </li>
+          <li class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Secured codebase with Bandit static scanning and SafetyCLI
+            dependency auditing
+          </li>
+          <li class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Tracked and closed 136 GitHub issues across the full development
+            lifecycle
+          </li>
+          <li class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Packaged and published to PyPI via an automated Poetry + Twine
+            pipeline
+          </li>
+          <li class="achievement-chip" data-domain="product">
+            <span class="achievement-chip__dot"></span>Automated Sphinx docs build and live-server deployment via rsync
+            over SSH on every push
+          </li>
+          <li class="achievement-chip" data-domain="product">
+            <span class="achievement-chip__dot"></span>Authored full Sphinx documentation site with custom Furo theme at
+            datasafari.dev/docs
+          </li>
+          <li class="achievement-chip" data-domain="product">
+            <span class="achievement-chip__dot"></span>Designed and launched dedicated product website at datasafari.dev
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+        ELEMENT 3 — IN NUMBERS / STAT COUNTER
+    ============================================================ -->
+    <section aria-label="Intro: Experience In Numbers" class="stat-counter-section fade-in">
+
+      <h2 class="screenreader-only">In Numbers</h2>
+
+      <dl class="stat-counter">
+        <div class="stat-counter__item" data-target="11" data-domain="data">
+          <dt class="stat-counter__number" aria-live="polite">11</dt>
+          <dd class="stat-counter__label">Functions shipped</dd>
+        </div>
+        <div class="stat-counter__item" data-target="10" data-domain="data">
+          <dt class="stat-counter__number" aria-live="polite">10</dt>
+          <dd class="stat-counter__label">Libraries unified into one API</dd>
+        </div>
+        <div class="stat-counter__item" data-target="7" data-domain="data">
+          <dt class="stat-counter__number" aria-live="polite">7</dt>
+          <dd class="stat-counter__label">Decisions automated per hypothesis test</dd>
+        </div>
+        <div class="stat-counter__item" data-target="10" data-suffix="+" data-domain="data">
+          <dt class="stat-counter__number" aria-live="polite">10+</dt>
+          <dd class="stat-counter__label">Pipeline decisions automated per ML run</dd>
+        </div>
+        <div class="stat-counter__item" data-target="666" data-domain="engineering">
+          <dt class="stat-counter__number" aria-live="polite">666</dt>
+          <dd class="stat-counter__label">Commits pushed</dd>
+        </div>
+        <div class="stat-counter__item" data-target="12" data-domain="engineering">
+          <dt class="stat-counter__number" aria-live="polite">12</dt>
+          <dd class="stat-counter__label">Automated steps per CI run</dd>
+        </div>
+        <div class="stat-counter__item" data-target="250" data-suffix="+" data-domain="engineering">
+          <dt class="stat-counter__number" aria-live="polite">250+</dt>
+          <dd class="stat-counter__label">Pytest tests written</dd>
+        </div>
+        <div class="stat-counter__item" data-target="136" data-domain="engineering">
+          <dt class="stat-counter__number" aria-live="polite">136</dt>
+          <dd class="stat-counter__label">Issues closed</dd>
+        </div>
+      </dl>
+
+    </section>
+
+    <!-- ============================================================
+            ELEMENT 4 — STACK BADGE GRID
+    ============================================================ -->
+    <section id="stack" data-nav="Stack" aria-label="Stack" class="fade-in">
+      <div class="section-label">
+        <h2 class="section-label__text">Stack</h2>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+
+      <div class="stack-grid">
+
+        <!-- ── Code ─────────────────────────────────────── -->
+        <div class="stack-group">
+          <h3 class="stack-group__label">Code</h3>
+          <ul class="stack-group__items">
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/python/3776ab" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Python</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/html5/e34f26" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">HTML</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/css/1572b6" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">CSS</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/gnubash/4eaa25" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Bash / Zsh</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ── Python Libraries ──────────────────────────────── -->
+        <div class="stack-group">
+          <h3 class="stack-group__label">Python Libraries</h3>
+          <ul class="stack-group__items">
+
+            <!-- Core Data -->
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/pandas/150458" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">pandas</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/numpy/013243" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">NumPy</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/scipy/8caae6" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">SciPy</span>
+            </li>
+
+            <!-- ML -->
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/scikitlearn/f7931e" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">scikit-learn</span>
+            </li>
+            <li class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#3499cd;" aria-hidden="true">so</span>
+              <span class="stack-badge__name">scikit-optimize</span>
+            </li>
+            <li class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#ee4c2c;" aria-hidden="true">ce</span>
+              <span class="stack-badge__name">category-encoders</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/pytorch" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">PyTorch</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/huggingface/ffd21e" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">HuggingFace</span>
+            </li>
+
+            <!-- Viz -->
+            <li class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#423cb9;" aria-hidden="true">mpl</span>
+              <span class="stack-badge__name">Matplotlib</span>
+            </li>
+            <li class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#76b7b2;" aria-hidden="true">sb</span>
+              <span class="stack-badge__name">seaborn</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/plotly/3f4f75" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Plotly</span>
+            </li>
+
+            <!-- Stats -->
+            <li class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#3a6fa0;" aria-hidden="true">sm</span>
+              <span class="stack-badge__name">statsmodels</span>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- ── Dev Toolchain ────────────────────────────────── -->
+        <!--
+              Full OSS library release pipeline: pytest + tox for testing,
+              Sphinx + Read the Docs for documentation, Poetry + Setuptools
+              for packaging, PyPI for distribution, GitHub Actions for CI/CD.
+            -->
+        <div class="stack-group">
+          <h3 class="stack-group__label">Dev Toolchain</h3>
+          <ul class="stack-group__items">
+
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/pytest/0a9edc" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">pytest</span>
+            </li>
+            <li class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#da5c13;" aria-hidden="true">tx</span>
+              <span class="stack-badge__name">tox</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/sphinx/000000" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Sphinx</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/readthedocs/8ca1af" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Read the Docs</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/pypi/3775a9" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">PyPI</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/poetry/60a5fa" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Poetry</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/setuptools" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Setuptools</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/githubactions" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">GitHub Actions</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ── Dev Tools & IDEs ───────────────────────────────── -->
+        <div class="stack-group">
+          <h3 class="stack-group__label">Dev Tools &amp; IDEs</h3>
+          <ul class="stack-group__items">
+            <li class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#FFFFFF00;" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2500" height="1995" viewbox="0 0 59.242 47.271">
+                  <path fill="#0072c6" d="M32.368 0 14.9 15.145 0 41.895h13.437zm2.323 3.543-7.454 21.008 14.291 17.956L13.8 47.271h45.442z"></path>
+                </svg>
+              </span>
+              <span class="stack-badge__name">VS Code</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/jupyter/f37626" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Jupyter</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/jetbrains" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">DataSpell</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/git/f05032" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Git</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/github/181717" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">GitHub</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ── Platforms & Infra ──────────────────────────────── -->
+        <!--
+              datasafari.dev is hosted and served via Cloudflare CDN;
+              Namecheap + cPanel manage the domain and hosting respectively.
+            -->
+        <div class="stack-group">
+          <h3 class="stack-group__label">Platforms &amp; Infra</h3>
+          <ul class="stack-group__items">
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/cpanel/ff6c2c" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">cPanel</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/namecheap/de3723" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Namecheap</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/cloudflare/f38020" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Cloudflare</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ── Design & Creative ──────────────────────────────── -->
+        <!--
+              George designed all brand identity and graphic assets for
+              datasafari — logo, visual language, documentation site UI.
+              Figma for wireframing/UI; Illustrator + Photoshop for assets.
+            -->
+        <div class="stack-group">
+          <h3 class="stack-group__label">Design &amp; Creative</h3>
+          <ul class="stack-group__items">
+
+            <!-- Adobe Illustrator -->
+            <li class="stack-badge">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%23330000%22/%3E%3Ctext%20x%3D%2252%22%20y%3D%22164%22%20font-size%3D%22104%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%23FF9A00%22%3EAi%3C/text%3E%3C/svg%3E" alt="Adobe Illustrator" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Illustrator</span>
+            </li>
+
+            <!-- Adobe Photoshop -->
+            <li class="stack-badge">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%23001E36%22/%3E%3Ctext%20x%3D%2252%22%20y%3D%22164%22%20font-size%3D%22104%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%2331A8FF%22%3EPs%3C/text%3E%3C/svg%3E" alt="Adobe Photoshop" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Photoshop</span>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+        ELEMENT 5 — ABILITY CARD GRID
+    ============================================================ -->
+    <section id="abilities" data-nav="Abilities" aria-label="Abilities" class="fade-in">
+
+      <div class="section-label">
+        <h2 class="section-label__text">Abilities</h2>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+
+      <!-- Legend -->
+      <p class="screenreader-only">Ability Domains</p>
+      <ul class="ability-legend" aria-label="Ability domains">
+        <li class="ability-legend__item ability-legend__item--engineering">
+          <span class="ability-legend__dot"></span>Engineering
+        </li>
+        <li class="ability-legend__item ability-legend__item--product">
+          <span class="ability-legend__dot"></span>Product
+        </li>
+        <li class="ability-legend__item ability-legend__item--growth">
+          <span class="ability-legend__dot"></span>Growth
+        </li>
+        <li class="ability-legend__item ability-legend__item--data">
+          <span class="ability-legend__dot"></span>Data
+        </li>
+      </ul>
+
+      <ul class="ability-grid" id="e5-ability-grid" role="list">
+
+        <!-- 1 · Python Library Architecture · Engineering -->
+        <li class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="layers"></i></div>
+          <h3 class="ability-card__title">Python Library Architecture</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Designed the library from scratch as a four-subpackage system: Explorers,
+            Transformers, Evaluators, and Predictors. The structure reflects the natural data science workflow. Built a
+            consistent public API around a one-liner philosophy, making complex operations available through a single
+            function with sensible defaults and room for deep customisation.</p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Package Architecture</li>
+            <li class="ability-tag">API Design</li>
+            <li class="ability-tag">Open-Source Engineering</li>
+          </ul>
+        </li>
+
+        <!-- 2 · OSS Release Engineering · Engineering -->
+        <li class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="package"></i></div>
+          <h3 class="ability-card__title">OSS Release Engineering</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Managed the full open-source release lifecycle, from project scaffolding with
+            Poetry and Setuptools to versioned PyPI distribution. Configured <code>pyproject.toml</code>, package
+            metadata, and dependencies to produce reproducible builds that users can install with a single pip command.
+          </p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Release Management</li>
+            <li class="ability-tag">Dependency Management</li>
+            <li class="ability-tag">Distribution Engineering</li>
+          </ul>
+        </li>
+
+        <!-- 3 · Automated Test Suite Design · Engineering -->
+        <li class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="check-square"></i></div>
+          <h3 class="ability-card__title">Automated Test Suite Design</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Built a test suite of more than 250 tests covering edge cases, input validation,
+            and statistical output correctness across all subpackages. Configured tox to run the suite across multiple
+            Python environments, helping datasafari work for as many users as possible.</p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Test Engineering</li>
+            <li class="ability-tag">Quality Assurance</li>
+            <li class="ability-tag">Multi-Environment Testing</li>
+          </ul>
+        </li>
+
+        <!-- 4 · CI/CD Pipeline Construction · Engineering -->
+        <li class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="git-merge"></i></div>
+          <h3 class="ability-card__title">CI/CD Pipeline Construction</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Designed and built a 12-step GitHub Actions pipeline that runs automatically on
+            every push. It performs lint checks, runs the full tox test matrix, and publishes to PyPI when a release is
+            tagged. Closed 136 issues over the life of the project, validating every fix through the pipeline before
+            merge.</p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Continuous Integration</li>
+            <li class="ability-tag">Automated Deployment</li>
+            <li class="ability-tag">Pipeline Design</li>
+          </ul>
+        </li>
+
+        <!-- 5 · Technical Documentation Engineering · Engineering -->
+        <li class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="file-text"></i></div>
+          <h3 class="ability-card__title">Technical Documentation Engineering</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Built the complete datasafari documentation system, including Sphinx source
+            authoring, an automated build pipeline, and a custom public site at datasafari.dev. Wrote every page of the
+            documentation: installation guides, function references, usage examples, and conceptual explanations for all
+            11 modules.</p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Documentation Systems</li>
+            <li class="ability-tag">Technical Writing</li>
+            <li class="ability-tag">Developer Experience</li>
+          </ul>
+        </li>
+
+        <!-- 6 · Defensive Python & Input Validation · Engineering -->
+        <li class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="shield"></i></div>
+          <h3 class="ability-card__title">Defensive Python &amp; Input Validation</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Implemented rigorous input validation and error handling across all 11 public
+            functions. Each accepts DataFrames, column names, and optional parameter combinations that can fail silently
+            in naive code. I built runtime branching logic to detect data types, sample sizes, and edge cases, then
+            route execution to the correct algorithm path. Every error message is written for the caller, not the
+            developer. In an API, the message <em>is</em> the UI &amp; UX together.</p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Defensive Programming</li>
+            <li class="ability-tag">Runtime Type Handling</li>
+            <li class="ability-tag">Error Design</li>
+          </ul>
+        </li>
+
+        <!-- 7 · Exploratory Data Analysis Systems · Data -->
+        <li class="ability-card fade-in" data-domain="data">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="search"></i></div>
+          <h3 class="ability-card__title">Exploratory Data Analysis Systems</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Designed and implemented the full Explorers subpackage.
+            <code>explore_df()</code> profiles datasets, <code>explore_num()</code> performs numerical analysis
+            including outlier detection via Z-score, IQR, and Mahalanobis distance, and <code>explore_cat()</code>
+            profiles categorical data, including Shannon entropy to quantify diversity.
+          </p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Exploratory Analysis</li>
+            <li class="ability-tag">Outlier Detection</li>
+            <li class="ability-tag">Statistical Profiling</li>
+          </ul>
+        </li>
+
+        <!-- 8 · Statistical Assumption Verification · Data -->
+        <li class="ability-card fade-in" data-domain="data">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="shield-check"></i></div>
+          <h3 class="ability-card__title">Statistical Assumption Verification</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Built the Evaluators subpackage to automate the assumption checks that data
+            scientists typically perform before analysis. <code>evaluate_normality()</code> selects an appropriate test,
+            such as Shapiro-Wilk or Anderson-Darling, based on the sample; <code>evaluate_variance()</code> dynamically
+            applies Levene's, Bartlett's, or Fligner's test; and <code>evaluate_contingency_table()</code> checks
+            whether Chi-square conditions are met.</p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Assumption Testing</li>
+            <li class="ability-tag">Statistical Inference</li>
+            <li class="ability-tag">Dynamic Test Selection</li>
+          </ul>
+        </li>
+
+        <!-- 9 · Automated Hypothesis Testing · Data -->
+        <li class="ability-card fade-in" data-domain="data">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="bar-chart-2"></i></div>
+          <h3 class="ability-card__title">Automated Hypothesis Testing</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc"><code>predict_hypothesis()</code> takes a DataFrame, a grouping variable, and a
+            target variable — and autonomously selects and executes the correct statistical test. The function detects
+            variable types, verifies normality and variance homogeneity, chooses between Chi-square, Fisher's exact,
+            t-test, ANOVA, Mann-Whitney, Kruskal-Wallis, and others, then outputs test statistics, p-values, and a
+            plain-language interpretation.</p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Hypothesis Testing</li>
+            <li class="ability-tag">Automated Inference</li>
+            <li class="ability-tag">Statistical Interpretation</li>
+          </ul>
+        </li>
+
+        <!-- 10 · End-to-End ML Pipeline Automation · Data -->
+        <li class="ability-card fade-in" data-domain="data">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="cpu"></i></div>
+          <h3 class="ability-card__title">End-to-End ML Pipeline Automation</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc"><code>predict_ml()</code> orchestrates the complete machine learning workflow in
+            one call — automatic preprocessing (scaling, encoding, vectorisation), multi-model evaluation using a
+            user-configurable composite score weighted across multiple metrics, and automated hyperparameter tuning via
+            grid search, random search, or Bayesian optimisation. Returns ranked, tuned models with full performance
+            breakdowns.</p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">ML Pipeline Design</li>
+            <li class="ability-tag">Hyperparameter Optimisation</li>
+            <li class="ability-tag">Model Selection</li>
+          </ul>
+        </li>
+
+        <!-- 11 · Data Transformation Engineering · Data -->
+        <li class="ability-card fade-in" data-domain="data">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="shuffle"></i></div>
+          <h3 class="ability-card__title">Data Transformation Engineering</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Implemented the Transformers subpackage to handle the full data preparation
+            stage. <code>transform_num()</code> covers standardisation, min-max scaling, log and power transforms,
+            winsorisation, and interaction term creation. <code>transform_cat()</code> handles label encoding, one-hot
+            encoding, target encoding, and ML-based category cleaning — all chainable and parameterised for reproducible
+            pipelines.</p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Feature Engineering</li>
+            <li class="ability-tag">Data Cleaning</li>
+            <li class="ability-tag">Preprocessing Pipeline Design</li>
+          </ul>
+        </li>
+
+        <!-- 12 · Developer API & UX Design · Product -->
+        <li class="ability-card fade-in" data-domain="product">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="pen-tool"></i></div>
+          <h3 class="ability-card__title">Developer API &amp; UX Design</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Built datasafari around a deliberate developer experience philosophy —
+            consistent naming across all 11 functions, predictable argument patterns, and sensible defaults that make
+            the library immediately usable without reading the docs. Complex workflows like full ML pipelines and
+            hypothesis testing are exposed as single function calls, hiding implementation complexity behind a clean
+            interface.</p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Interface Design</li>
+            <li class="ability-tag">Developer Experience</li>
+            <li class="ability-tag">Abstraction Design</li>
+          </ul>
+        </li>
+
+        <!-- 13 · Documentation Site Development · Product -->
+        <li class="ability-card fade-in" data-domain="product">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="layout"></i></div>
+          <h3 class="ability-card__title">Documentation Site Development</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Designed and hand-coded datasafari.dev — the public documentation and landing
+            site for the library. Built with custom HTML, CSS, and JavaScript, the site presents the library's
+            philosophy, quick-start guides, and full API reference in a clean, readable format. Integrated with Sphinx
+            and Read the Docs for automated doc generation, while the landing experience was crafted entirely from
+            scratch.</p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Web Development</li>
+            <li class="ability-tag">Information Architecture</li>
+            <li class="ability-tag">Content Strategy</li>
+          </ul>
+        </li>
+
+        <!-- 14 · Open-Source Product Lifecycle Management · Product -->
+        <li class="ability-card fade-in" data-domain="product">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="list-checks"></i></div>
+          <h3 class="ability-card__title">Open-Source Product Lifecycle Management</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Managed datasafari as a solo product owner, from its initial concept and roadmap
+            through versioned releases, issue tracking, and ongoing maintenance. Closed 136 issues while balancing
+            engineering quality, user-facing documentation, and public discoverability. Built systems that kept the
+            project sustainable and reproducible beyond any single release.</p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Product Ownership</li>
+            <li class="ability-tag">Roadmap Execution</li>
+            <li class="ability-tag">Solo Founding</li>
+          </ul>
+        </li>
+
+        <!-- 15 · Brand Identity & Visual Systems · Growth -->
+        <li class="ability-card fade-in" data-domain="growth">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="feather"></i></div>
+          <h3 class="ability-card__title">Brand Identity &amp; Visual Systems</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Created the complete visual identity for datasafari, including the logo, banner
+            artwork, icon set, and graphic assets used across GitHub, PyPI, and the documentation site. Designed every
+            visual touchpoint a user encounters when discovering the library, giving an independent open-source project
+            a coherent, professional brand from day one.</p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Brand Design</li>
+            <li class="ability-tag">Visual Identity</li>
+            <li class="ability-tag">Graphic Asset Production</li>
+          </ul>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- ============================================================
+        ELEMENT 6 — WORKS CARD GRID
+    ============================================================ -->
+    <section id="works" data-nav="Works" aria-label="Works" class="fade-in">
+
+      <div class="section-label">
+        <h2 class="section-label__text">Works</h2>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+
+      <ul class="evidence-grid">
+
+        <!-- ─── CARD 1 · Engineering · CI/CD Pipeline Architecture ─── -->
+        <li class="evidence-card" data-domain="engineering">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-lib_cioverview.jpg" alt="GitHub Actions showing full CI/CD pipeline overview" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-lib_cibuild.jpg" alt="GitHub Actions showing build process steps" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <div class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Engineering
+            </div>
+            <h3 class="evidence-card__title">CI/CD Pipeline Architecture</h3>
+            <ul class="evidence-card__bullets">
+              <li>Built a 12-step GitHub Actions pipeline covering linting, the test matrix, security scanning, and
+                conditional PyPI publishing on tagged releases</li>
+              <li>Configured tox to run the full pytest suite in parallel across Python 3.9, 3.10, 3.11, and 3.12 on
+                every push</li>
+              <li>Automated Sphinx docs build and live deployment to datasafari.dev via rsync over SSH, triggered on
+                every merge to main</li>
+              <li>Closed 136 GitHub issues over the development lifecycle, each fix validated through the pipeline
+                before merge</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- ─── CARD 2 · Engineering · GitHub Issue & Milestone System ─── -->
+        <li class="evidence-card" data-domain="engineering">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-github_1.jpg" alt="DataSafari GitHub issues list showing 136 issues with labels, milestones, and status tags across the development lifecycle" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-github_2.jpg" alt="DataSafari GitHub milestones page showing structured development phases with issue counts and completion progress" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-github_3.jpg" alt="DataSafari GitHub issue showing detailed problem description with context, expected behaviour, and reproduction steps" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-github_4.jpg" alt="DataSafari GitHub issue showing solution description with implementation notes and closing commit reference" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-github_5.jpg" alt="DataSafari GitHub labels page showing full tagging taxonomy: bug, enhancement, documentation, and domain labels" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-github_6.jpg" alt="DataSafari GitHub showing issue linked to milestone and pull request with full traceability" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 4"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 5"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 6"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <div class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Engineering
+            </div>
+            <h3 class="evidence-card__title">Issue Tracking &amp; Milestone System</h3>
+            <ul class="evidence-card__bullets">
+              <li>Filed and closed 136 GitHub issues across the full development lifecycle — each with a structured
+                problem
+                description, reproduction context, and a written solution note on close</li>
+              <li>Organised work into versioned milestones mapping issues to release targets, giving every fix a
+                traceable path
+                from report to merged commit</li>
+              <li>Built a full label taxonomy — bug type, domain, priority, and status — so the issue board reads as a
+                professional engineering backlog, not a personal to-do list</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- ─── CARD 3 · Engineering · Test Suite & Quality Gates ─── -->
+        <li class="evidence-card" data-domain="engineering">
+          <div class="evidence-card__thumb">
+            <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-lib_pytest.jpg" alt="Terminal output showing pytest run: 250+ tests passed" loading="lazy">
+          </div>
+          <div class="evidence-card__body">
+            <div class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Engineering
+            </div>
+            <h3 class="evidence-card__title">Test Suite &amp; Quality Gates</h3>
+            <ul class="evidence-card__bullets">
+              <li>Wrote 250+ pytest tests across 11 test files, covering edge cases, input validation, and statistical
+                output correctness for all four subpackages</li>
+              <li>Integrated Bandit for static security scanning and SafetyCLI for dependency vulnerability auditing —
+                both run automatically on every push</li>
+              <li>Configured tox to enforce test-passing across all supported Python versions before any release is
+                tagged</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- ─── CARD 4 · Engineering · 4-Subpackage API Architecture ─── -->
+        <li class="evidence-card" data-domain="engineering">
+          <div class="evidence-card__thumb">
+            <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-lib_subpackages.jpg" alt="DataSafari library structure showing four subpackages: explorer, transformer, evaluator, predictor" loading="lazy">
+          </div>
+          <div class="evidence-card__body">
+            <div class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Engineering
+            </div>
+            <h3 class="evidence-card__title">4-Subpackage Library Architecture</h3>
+            <ul class="evidence-card__bullets">
+              <li>Designed the full package structure from scratch: <code>explorer/</code>, <code>transformer/</code>,
+                <code>evaluator/</code>, <code>predictor/</code> — each a self-contained module with its own public API
+                surface
+              </li>
+              <li>Every public function follows a consistent interface contract: DataFrame in, structured report out —
+                one-liner by design, full depth available via parameters</li>
+              <li>Configured Poetry, Setuptools, and <code>pyproject.toml</code> for reproducible builds and one-command
+                PyPI distribution</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- ─── CARD 5 · Data · Automated EDA Output ─── -->
+        <li class="evidence-card" data-domain="data">
+          <div class="evidence-card__thumb">
+            <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-lib_explorenum.jpg" alt="explore_num output showing structured report with outlier detection, normality testing, and multicollinearity analysis" loading="lazy">
+          </div>
+          <div class="evidence-card__body">
+            <div class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data
+            </div>
+            <h3 class="evidence-card__title">Automated EDA — <code>explore_num()</code></h3>
+            <ul class="evidence-card__bullets">
+              <li>Single function call produces full numerical profiling: outlier detection via Z-score, IQR, and
+                Mahalanobis distance, normality testing, skewness, kurtosis, and multicollinearity</li>
+              <li>Output is a structured plain-English report with findings and actionable recommendations — not raw
+                numbers</li>
+              <li>Automatically selects the correct statistical method based on sample size and data characteristics at
+                runtime</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- ─── CARD 6 · Data · predict_ml — Full ML Pipeline ─── -->
+        <li class="evidence-card" data-domain="data">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__thumb">
+              <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-lib_predictml.jpg" alt="predict_ml output showing ranked model comparison table with composite scores" loading="lazy">
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <div class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Data
+            </div>
+            <h3 class="evidence-card__title">End-to-End ML Pipeline — <code>predict_ml()</code></h3>
+            <ul class="evidence-card__bullets">
+              <li>One call handles preprocessing, multi-model training, composite-score-based evaluation weighted across
+                user-configurable metrics, and ranked output</li>
+              <li>Automated hyperparameter tuning via grid search, random search, or Bayesian optimisation — user
+                selects strategy, library handles execution</li>
+              <li>10 pipeline decisions automated per ML run: encoding, scaling, model selection, tuning strategy,
+                evaluation weighting, and recommendation generation</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- ─── CARD 7 · Product · Website & Documentation ─── -->
+        <li class="evidence-card" data-domain="product">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-website_1.jpg" alt="DataSafari website landing page at datasafari.dev showing slogan, code animation and branding artwork" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-website_5.jpg" alt="DataSafari website showing package philosophy with clear parallel between data science workflow and library subpackage structure" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-website_2.jpg" alt="DataSafari website showing installation instructions" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-website_3.jpg" alt="DataSafari website showing simple usage example and documentation prompt for further exploration" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_0.jpg" alt="DataSafari documentation welcome page at datasafari.dev/docs in light mode, showing quick-start guide and function reference links" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_1.jpg" alt="DataSafari documentation welcome page at datasafari.dev/docs in dark mode, showing quick-start guide and function reference links" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_6.jpg" alt="DataSafari documentation showing installation instructions and pip install command" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_2.jpg" alt="DataSafari documentation quick start guide showing explorers subpackage overview and example usage" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_3.jpg" alt="DataSafari documentation quick start guide showing transformers subpackage overview and example usage" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_4.jpg" alt="DataSafari documentation quick start guide showing evaluators subpackage overview and example usage" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_5.jpg" alt="DataSafari documentation quick start guide showing predictors subpackage overview and example usage" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_7.jpg" alt="DataSafari quick start guide showing example usage of one-line hypothesis testing function with automatic test selection and output interpretation" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-docs_8.jpg" alt="DataSafari quick start guide showing example usage of one-line predict_ml function with automatic preprocessing, model selection, and hyperparameter tuning" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 4"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 5"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 6"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 7"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 8"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 9"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 10"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 11"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 12"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 13"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <div class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Product
+            </div>
+            <h3 class="evidence-card__title">Website &amp; Documentation</h3>
+            <ul class="evidence-card__bullets">
+              <li>Hand-coded the full landing site at datasafari.dev — custom HTML, CSS, and JavaScript, designed from
+                scratch to communicate the library's philosophy and quick-start path</li>
+              <li>Authored every page of the Sphinx-generated API docs: installation guides, function references, usage
+                examples, and conceptual explanations for all 11 modules</li>
+              <li>Integrated automated docs build and live-server deployment into the CI/CD pipeline — docs update on
+                every push to main without manual intervention</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- ─── CARD 8 · Growth · Brand Identity & Open-Source Presence ─── -->
+        <li class="evidence-card" data-domain="growth">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://camo.githubusercontent.com/8dd84d085f9831fccd31bebe8e468cb7eb3d767b798dd706a4c8ae9801d9838f/68747470733a2f2f7777772e646174617361666172692e6465762f646f63732f5f7374617469632f7468756d62732f64732d6272616e64696e672d7468756d622d6d61696e2d7765622e706e67" alt="DataSafari github repository banner showing logo and tagline 'Complex Workflows, Simple Solutions.' on a desert landscape background" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-branding_2.jpg" alt="DataSafari light and dark mode logo variations on clean backgrounds" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://www.georgedreemer.com/public_img/datasafari/datasafari-branding_3.jpg" alt="DataSafari mini logo used for favicon and library icon, on coding background" loading="lazy">
+              </div>
+
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <div class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot" aria-hidden="true"></span>Growth
+            </div>
+            <h3 class="evidence-card__title">Brand Identity &amp; Open-Source Presence</h3>
+            <ul class="evidence-card__bullets">
+              <li>Created the complete DataSafari visual identity from scratch: logo, banner artwork, icon set, and all
+                graphic assets across GitHub, PyPI, and the documentation site</li>
+              <li>Published to PyPI with automated versioning and structured release notes, making the library publicly
+                installable via <code>pip install datasafari</code></li>
+              <li>Maintained a professional open-source presence: README, changelog, issue labels, and a coherent brand
+                that makes a solo-built library read as a production-grade tool</li>
+            </ul>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- ============================================================
+        ELEMENT 7 — IN-DEPTH ACCORDION
+    ============================================================ -->
+    <section id="in-depth" data-nav="In-depth" aria-label="In-depth" class="fade-in">
+      <div class="section-label">
+        <h2 class="section-label__text">In Depth</h2>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+
+      <ul class="story-accordion" role="list">
+
+        <!-- Item 1 · Data · The Why -->
+        <li class="story-accordion__item" data-domain="data" role="listitem">
+          <button class="story-accordion__trigger" aria-expanded="true" aria-controls="story-panel-1">
+            <span class="story-accordion__trigger-left">
+              <span class="story-accordion__domain-tag">
+                <span class="story-accordion__domain-dot"></span>Data
+              </span>
+              <h3 class="story-accordion__trigger-label">Built for the Professor Who Doesn't Have Time to Learn Python
+              </h3>
+            </span>
+            <svg class="story-accordion__chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="false">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="story-accordion__body" id="story-panel-1" aria-hidden="false">
+            <div class="story-accordion__inner">
+              <div class="story-accordion__content">
+                <p>At RUG, the standard data science curriculum ran on Stata, R, and SPSS. These tools have decades of
+                  academic inertia behind them, not necessarily because they are better, but because professors mastered
+                  them before Python became a serious data science platform and have not had time to switch. As a
+                  result, students graduate knowing tools that industry has largely moved beyond, while Python's
+                  better-maintained, faster, free, and more capable ecosystem goes untaught. Professors and other
+                  departmental staff have too much on their hands for a full curriculum redesign.</p>
+                <p>DataSafari started as a direct response to that gap. The hypothesis was simple: bring Python's best
+                  statistical and ML libraries together under a single interface that requires no configuration and
+                  produces plain-English output. That removes the adoption barrier for the person who most needs it: a
+                  researcher who knows their field, understands what a normality test is, but doesn't want to spend two
+                  hours reading <code>scipy.stats</code> documentation to run one. One import, one function call, and
+                  one readable report.</p>
+                <p>The iPhone analogy is imperfect but directionally useful. R is like Android: powerful, flexible, and
+                  beloved by people willing to configure it. DataSafari aims to provide an iOS-like layer on top of
+                  Python's underlying ecosystem.</p>
+                <p>That philosophy drove every product decision. It's why <code>method='all'</code> is the default
+                  rather than a required argument. It's why output is printed in plain English with interpretive tips
+                  instead of being returned as a raw matrix. It's why the function names are verbs such as
+                  <code>explore</code>, <code>transform</code>, <code>evaluate</code>, and <code>predict</code>. They
+                  describe what the user wants to do, not what the statistics are called. The target user was never a
+                  Python expert. It was someone who needed to do real data science work without letting the tooling
+                  become the hardest part of the day.
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Item 2 · Engineering · Input Engineering -->
+        <li class="story-accordion__item" data-domain="engineering" role="listitem">
+          <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-2">
+            <span class="story-accordion__trigger-left">
+              <span class="story-accordion__domain-tag">
+                <span class="story-accordion__domain-dot"></span>Engineering
+              </span>
+              <h3 class="story-accordion__trigger-label">Input Engineering: Ask Less, Do More</h3>
+            </span>
+            <svg class="story-accordion__chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="story-accordion__body" id="story-panel-2" aria-hidden="true">
+            <div class="story-accordion__inner">
+              <div class="story-accordion__content">
+                <p>The hardest design constraint in DataSafari was self-imposed: a user should be able to call any
+                  function with just a DataFrame and a column list and get something genuinely useful back. No
+                  configuration, statistical expertise, or output parsing should be required. The library decides the
+                  rest.</p>
+                <p>Making that work means every function carries a significant amount of internal decision-making that
+                  the user never sees. <code>explore_num()</code> takes a single <code>method</code> parameter that
+                  defaults to <code>'all'</code> — which means it runs correlation analysis, distribution analysis,
+                  three separate outlier detection algorithms (Z-score, IQR, and Mahalanobis distance), and a
+                  multicollinearity check in one call. The user passed two arguments. The library ran seven analyses and
+                  printed a structured plain-English report. That ratio — minimal input to maximal output — is the whole
+                  product.</p>
+                <p>But the API was also designed not to limit experts. Every function offers a full set of parameters
+                  for users who want to go deeper: <code>method='outliers_iqr'</code> to isolate a single analysis,
+                  <code>output='return'</code> to get structured DataFrames instead of printed text, and
+                  <code>threshold_z=2</code> to tighten the Z-score cutoff for a stricter definition of an outlier. The
+                  one-liner is the entry point; the parameters are the escape hatches. Designing that layered
+                  experience, where simple stays simple and complexity remains possible, required thinking through every
+                  plausible user intent before writing a single line of logic, then ensuring the implementation served
+                  them all without conflict.
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Item 3 · Engineering · Error Handling as UX -->
+        <li class="story-accordion__item" data-domain="engineering" role="listitem">
+          <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-3">
+            <span class="story-accordion__trigger-left">
+              <span class="story-accordion__domain-tag">
+                <span class="story-accordion__domain-dot"></span>Engineering
+              </span>
+              <h3 class="story-accordion__trigger-label">Error Handling as User Experience</h3>
+            </span>
+            <svg class="story-accordion__chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="story-accordion__body" id="story-panel-3" aria-hidden="true">
+            <div class="story-accordion__inner">
+              <div class="story-accordion__content">
+                <p>A Python traceback is the last thing a researcher wants to see at 11pm before a deadline. Every
+                  public function in DataSafari raises structured, specific errors before it does any computation — and
+                  the error messages are written for the person calling the function, not for the developer who wrote
+                  it.</p>
+                <p>The error handling layer sits entirely above the statistical logic. Before <code>explore_num()</code>
+                  touches a single column, it checks: is <code>df</code> actually a DataFrame? Is
+                  <code>numerical_variables</code> a list? Are the strings in that list real column names that exist in
+                  <code>df</code>? Are those columns actually numerical? Is the list non-empty? Is the DataFrame
+                  non-empty? Is <code>method</code> one of the seven valid options? Is <code>output</code> one of the
+                  two valid options? Is <code>threshold_z</code> a number? That's nine distinct failure modes caught and
+                  surfaced with a clear message and a correct-usage example — before a single line of analysis runs.
+                  Every one of those checks exists because someone, at some point during development and testing, made
+                  exactly that mistake.
+                </p>
+                <p>The discipline behind this is that a library function has no UI. The error message <em>is</em> the
+                  UI. If a user passes a string where a list is expected and gets back
+                  <code>TypeError: 'str' object is not iterable</code>, that's a failed product moment — they have to
+                  reverse-engineer what went wrong from a generic Python exception. If they get back
+                  <code>"explore_num(): The numerical_variables parameter must be a list of variable names. Example: var_list = ['var1', 'var2', 'var3']"</code>,
+                  they fix it in ten seconds and move on. That difference is entirely a writing problem, not a coding
+                  one, and it took as much time to get right as the statistical methods themselves.
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Item 4 · Engineering · The Hidden 80% -->
+        <li class="story-accordion__item" data-domain="engineering" role="listitem">
+          <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-4">
+            <span class="story-accordion__trigger-left">
+              <span class="story-accordion__domain-tag">
+                <span class="story-accordion__domain-dot"></span>Engineering
+              </span>
+              <h3 class="story-accordion__trigger-label">The Hidden 80%: What It Actually Takes to Ship a Python Package
+              </h3>
+            </span>
+            <svg class="story-accordion__chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="story-accordion__body" id="story-panel-4" aria-hidden="true">
+            <div class="story-accordion__inner">
+              <div class="story-accordion__content">
+                <p>The data science code, including the statistical methods, ML pipeline, and EDA logic, represents
+                  perhaps 20% of what it took to ship DataSafari. The other 80% consists of infrastructure decisions
+                  that tutorials rarely cover and that took weeks of research to get right.</p>
+                <p>The production configuration alone spans a dozen files beyond the package source itself:</p>
+                <ul>
+                  <li><code>pyproject.toml:</code> unified build, dependency, and tool configuration via Poetry and
+                    Setuptools</li>
+                  <li><code>bumpversion.cfg:</code> automated semantic versioning with bump2version, wired to the CI
+                    pipeline to auto-increment on tagged releases</li>
+                  <li><code>tox.ini:</code> multi-environment test runner across Python 3.9 to 3.12, so no
+                    version-specific regression ships undetected</li>
+                  <li><code>setup.cfg</code> and <code>MANIFEST.in:</code> package inclusion rules to control exactly
+                    what ends up in the wheel and sdist</li>
+                  <li><code>pyproject.toml:</code> Bandit config block, with the static security scan tuned to ignore
+                    specific false-positive patterns in the codebase</li>
+                  <li><code>LICENSE:</code> GPL-3.0, chosen deliberately: use it freely, but derivatives stay open</li>
+                  <li><code>Sphinx's conf.py:</code> the full documentation build configuration, including the Napoleon
+                    extension for Google-style docstrings, the Furo theme, and cross-reference resolution</li>
+                </ul>
+                <p></p>
+                <p>Every one of those files required learning a tool I hadn't used before, reading its documentation,
+                  making it work with the others, and then making the entire stack reproducible in GitHub Actions. The
+                  CI pipeline didn't run cleanly on the first push or even the tenth. Over the development lifecycle,
+                  136 issues were filed and closed, most of them documenting this kind of integration friction and its
+                  solution.</p>
+                <p>Documentation was another substantial layer of the work, especially the documentation users encounter
+                  inside the library: the <code>docstrings</code>. Every public function in DataSafari has a complete
+                  docstring with typed parameters, return types, raised exceptions, and a working code example that
+                  produces real output. More than 20 functions, including non-public ones, are documented to the point
+                  that <code>help(ds.explore_num)</code> gives a new user everything needed to use the function
+                  correctly without opening a browser. Writing that documentation took longer than writing some of the
+                  functions themselves.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+</main><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a1a21458671f00f27e4a1d03840650d1" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"></div></div><div id="wb_main_a1a21458671f00f27e4a1d03840650d1" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"></div></div><div id="wb_footer_a1a21458671f00f27e4a1d03840650d1" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
+			$(function() {
+				var footer = $(".wb_footer");
+				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
+				if (!html) {
+					footer.parent().remove();
+					footer = $("#footer, #footer .wb_cont_inner");
+					footer.css({height: ""});
+				}
+			});
+			});</script></div></div></div></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
+	<script src="js/common-bundle.js?ts=20261125222641" type="text/javascript" defer></script>{{hr_out}}<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        window._spDefer.done();
+    });
+</script>
+</body>
+</html>

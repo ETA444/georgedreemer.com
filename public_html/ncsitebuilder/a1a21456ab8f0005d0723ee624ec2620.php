@@ -1,0 +1,2180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript">
+	window._spDefer = {
+		queue: [],
+		ready: false,
+		add: function(fn) {
+			if (this.ready) { fn(); }
+			else { this.queue.push(fn); }
+		},
+		done: function() {
+			this.ready = true;
+			var fns = this.queue;
+			this.queue = [];
+			for (var i = 0; i < fns.length; i++) { fns[i](); }
+		}
+	};
+	</script>
+			<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title><?php echo htmlspecialchars((isset($seoTitle) && $seoTitle !== "") ? $seoTitle : "DREEMCORP — Creative Studio & Venture Lab · George Dreemer"); ?></title>
+	<base href="{{base_url}}" />
+	<?php echo isset($sitemapUrls) ? (generateCanonicalUrl($sitemapUrls)."\n") : ""; ?>	
+	
+					
+	<!-- Facebook Open Graph -->
+						<!-- Facebook Open Graph end -->
+
+			<?php if (empty($wbWhitelabel)): ?>	<meta name="generator" content="Site.pro Builder" />
+	<?php else: ?>	<meta name="generator" content="Website Builder" />
+	<?php endif; ?>			<link href="css/common-bundle.css?ts=20261125222641" rel="preload" type="text/css" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
+	<link href="css/a1a21456ab8f0005d0723ee624ec2620-bundle.css?ts=20261125222641" rel="preload" type="text/css" id="wb-page-stylesheet" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
+	<ga-code/><!-- Global: identity & crawling -->
+<meta name="author" content="George Dreemer">
+<meta name="robots" content="max-image-preview:large, max-snippet:-1">
+
+<!-- Global: appearance -->
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="format-detection" content="telephone=no">
+
+<!-- Global: social -->
+<meta property="og:site_name" content="George Dreemer">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:site" content="@444eta">
+<meta name="twitter:creator" content="@444eta">
+<meta name="twitter:label1" content="Role">
+<meta name="twitter:data1" content="Data Scientist &amp; Developer">
+<meta name="twitter:label2" content="Open to">
+<meta name="twitter:data2" content="Data, ML &amp; AI roles · Dubai, UAE">
+
+<!-- Global: icons -->
+<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png?v=20261124" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg?v=20261124" />
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=20261124" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=20261124" />
+<meta name="apple-mobile-web-app-title" content="ETA!" />
+<link rel="manifest" href="/favicon/site.webmanifest?v=20261124" />
+	<script type="text/javascript">
+	window.useTrailingSlashes = false;
+	window.disableRightClick = false;
+	window.currLang = 'en';
+</script>
+	<!-- Core document setup -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<!-- SEO -->
+<title>DREEMCORP — Creative Studio &amp; Venture Lab · George Dreemer</title>
+<meta name="description" content="DREEMCORP is George Dreemer's creative studio and venture lab, producing video, content, and creative direction for artists, athletes, and brands.">
+<meta name="keywords" content="dreemcorp, george dreemer dreemcorp, george dreemer creative studio, george dreemer venture lab, george dreemer portfolio, amira tahri, najib amhali, nabil haryouli, immersive studios, berracuts, tajoela, 92minerals, alistair overeem, dutch performante, numidia, coolsouls, anabolic musick, social media agency, video editing portfolio, personal branding, content creation, george dreemer founder">
+<link rel="canonical" href="https://georgedreemer.com/work/dreemcorp">
+<link rel="alternate" type="text/markdown" href="https://georgedreemer.com/work/dreemcorp.md">
+<link rel="describedby" href="https://georgedreemer.com/llms.txt">
+
+<!-- Social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://georgedreemer.com/work/dreemcorp">
+<meta property="og:title" content="DREEMCORP — Creative Studio &amp; Venture Lab · George Dreemer">
+<meta property="og:description" content="DREEMCORP is George Dreemer's creative studio and venture lab, producing video, content, and creative direction for artists, athletes, and brands.">
+<meta property="og:image" content="https://georgedreemer.com/public_img/general/ogimages/dreemcorp-v1.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Visual showcase of DREEMCORP's works for various clients">
+<meta name="twitter:image:alt" content="Visual showcase of DREEMCORP's works for various clients">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DREEMCORP — Creative Studio &amp; Venture Lab · George Dreemer">
+<meta name="twitter:description" content="DREEMCORP is George Dreemer's creative studio and venture lab, producing video, content, and creative direction for artists, athletes, and brands.">
+<meta name="twitter:image" content="https://georgedreemer.com/public_img/general/ogimages/dreemcorp-v1.png">
+
+
+<!-- Structured data -->
+<script data-custom-script="true" type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://georgedreemer.com/work/dreemcorp#webpage",
+      "url": "https://georgedreemer.com/work/dreemcorp",
+      "name": "DREEMCORP — Creative Studio & Venture Lab",
+      "description": "DREEMCORP is George Dreemer's creative studio and venture lab, producing video, content, and creative direction for artists, athletes, and brands.",
+      "isPartOf": {
+        "@id": "https://georgedreemer.com/#website"
+      },
+      "about": {
+        "@id": "https://georgedreemer.com/work/dreemcorp#organization"
+      },
+      "mainEntity": {
+        "@id": "https://georgedreemer.com/work/dreemcorp#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://georgedreemer.com/public_img/general/ogimages/dreemcorp-v1.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "en",
+      "breadcrumb": {
+        "@id": "https://georgedreemer.com/work/dreemcorp#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://georgedreemer.com/work/dreemcorp#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "George Dreemer",
+          "item": "https://georgedreemer.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Work",
+          "item": "https://georgedreemer.com/#work"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "DREEMCORP",
+          "item": "https://georgedreemer.com/work/dreemcorp"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://georgedreemer.com/work/dreemcorp#organization",
+      "name": "DREEMCORP",
+      "alternateName": "DREEMCORP Creative Studio",
+      "url": "https://georgedreemer.com/work/dreemcorp",
+      "description": "A creative studio and venture lab founded by George Dreemer, delivering video editing, content strategy, and creative direction for musicians, athletes, and brands — and the umbrella for visual ventures including anabolic musick and CoolSouls.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://georgedreemer.com/public_img/general/ogimages/dreemcorp-v1.png",
+        "width": 1200,
+        "height": 630
+      },
+      "slogan": "Creatio perpetua",
+      "genre": [
+        "Creative studio",
+        "Venture lab",
+        "Video production",
+        "Content strategy",
+        "Portfolio project"
+      ],
+      "keywords": [
+        "DREEMCORP",
+        "George Dreemer",
+        "creative studio",
+        "venture lab",
+        "video editing",
+        "content strategy",
+        "Amira Tahri",
+        "Najib Amhali",
+        "Nabil Haryouli",
+        "Immersive Studios",
+        "anabolic musick",
+        "CoolSouls"
+      ],
+      "founder": {
+        "@type": "Person",
+        "@id": "https://georgedreemer.com/#person",
+        "name": "George Dreemer",
+        "url": "https://georgedreemer.com"
+      },
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Video Editing & Long-Form Content Production"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Social Media & Content Strategy"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Brand & Creative Direction"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Styles -->
+<!-- Global -->
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/sitebuilder-overrides.css">
+
+<!-- Components -->
+<link rel="stylesheet" href="../css/components/fade-in.css">
+<link rel="stylesheet" href="../css/components/section-label.css">
+<link rel="stylesheet" href="../css/components/site-shell.css">
+
+<link rel="stylesheet" href="../css/components/context-block.css">
+<link rel="stylesheet" href="../css/components/sc.css">
+<link rel="stylesheet" href="../css/components/stat-counter.css">
+<link rel="stylesheet" href="../css/components/stack-badge.css">
+<link rel="stylesheet" href="../css/components/ability-card-exp.css">
+<link rel="stylesheet" href="../css/components/works-card-exp.css">
+<link rel="stylesheet" href="../css/components/instagram-scroller.css">
+<link rel="stylesheet" href="../css/components/content-archive.css">
+
+<!-- Third-party scripts -->
+<script data-custom-script="true" src="https://unpkg.com/lucide@1.72.0/dist/umd/lucide.js" defer></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<script data-custom-script="true" async src="https://www.instagram.com/embed.js"></script>
+
+<!-- Page behavior -->
+<script data-custom-script="true" type="module" src="../js/pages/work/dreemcorp.js?v=10"></script>	
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<![endif]-->
+
+		<script type="text/javascript">
+		window._spDefer.add(function() {
+<?php $wb_form_send_success = popSessionOrGlobalVar("wb_form_send_success"); ?>
+<?php if (($wb_form_send_state = popSessionOrGlobalVar("wb_form_send_state"))) { ?>
+	<?php if (($wb_form_popup_mode = popSessionOrGlobalVar("wb_form_popup_mode")) && (isset($wbPopupMode) && $wbPopupMode)) { ?>
+		if (window !== window.parent && window.parent.postMessage) {
+			var data = {
+				event: "wb_contact_form_sent",
+				data: {
+					state: "<?php echo str_replace('"', '\"', $wb_form_send_state); ?>",
+					type: "<?php echo $wb_form_send_success ? "success" : "danger"; ?>"
+				}
+			};
+			window.parent.postMessage(data, "<?php echo str_replace('"', '\"', popSessionOrGlobalVar("wb_target_origin")); ?>");
+		}
+	<?php $wb_form_send_success = false; $wb_form_send_state = null; $wb_form_popup_mode = false; ?>
+	<?php } else { ?>
+		wb_show_alert("<?php echo str_replace(array('"', "\r", "\n"), array('\"', "", "<br/>"), $wb_form_send_state); ?>", "<?php echo $wb_form_send_success ? "success" : "danger"; ?>");
+	<?php } ?>
+<?php } ?>
+});    </script>
+</head>
+
+
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><main class="main-content" role="main" data-page="dreemcorp">
+
+    <h1 class="screenreader-only">
+      DREEMCORP — Creative Studio &amp; Venture Lab
+    </h1>
+    
+    <!-- ============================================================
+        ELEMENT 1 — CONTEXT BLOCK
+    ============================================================ -->
+    <section id="intro" data-nav="Intro" aria-label="Intro: Experience Context" class="fade-in">
+      <div class="context-block">
+        <p>
+          DREEMCORP is a creative studio specialized in photo and video editing, graphic design, personal
+          branding, and social media strategy. George has worked with 12+ clients and brands and
+          completed 100+ creative and marketing assignments.
+        </p>
+        <p>
+          The content across clients has been diverse, ranging from long-form YouTube edits to short-form TikTok
+          and Instagram content, and from brand identity packages to social media strategy and consulting. Some
+          of the clients include entertainers and athletes such as Najib Amhali, Amira Tahri, Alistair Overeem,
+          and Frenna, alongside consumer brands like 92Minerals, Immersive Studios, and CoolSouls.
+        </p>
+        <p>
+          Across all platforms, these creations have reached 1M+ views and 100K+ likes and comments. George had
+          the pleasure of working alongside visionary Younes Belguebli of YBI Media, an award-winning marketing
+          and media agency in the Netherlands.
+        </p>
+      </div>
+    </section>
+    
+    <!-- ============================================================
+        ELEMENT 2 — SNAPSHOT CARD
+    ============================================================ -->
+    <section aria-label="Intro: Experience Snapshot" class="fade-in">
+    
+      <h2 class="screenreader-only">Experience Snapshot</h2>
+    
+      <div class="snapshot-card" data-domain="engineering">
+        <div class="snapshot-card__tab">
+          <span class="snapshot-card__tab-logo" data-gd-identity-logo="dreemcorp" aria-hidden="true"></span>
+          <span class="snapshot-card__tab-text">
+            <span class="snapshot-card__tab-name">DREEMCORP</span>
+          </span>
+        </div>
+    
+        <dl class="snapshot-card__meta">
+          <div class="snapshot-item snapshot-item--prominent">
+            <dt class="snapshot-item__key">Role</dt>
+            <dd class="snapshot-item__value">Founder &amp; Creative Director</dd>
+          </div>
+          <div class="snapshot-item snapshot-item--prominent">
+            <dt class="snapshot-item__key">Type</dt>
+            <dd class="snapshot-item__value">Creative Studio &amp; Venture Lab</dd>
+          </div>
+          <div class="snapshot-item">
+            <dt class="snapshot-item__key">Location</dt>
+            <dd class="snapshot-item__value">Europe / Online</dd>
+          </div>
+          <div class="snapshot-item">
+            <dt class="snapshot-item__key">Links</dt>
+            <dd class="snapshot-item__value">
+              <a href="https://www.dreemcorp.com" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-globe2"></i> Direct Contact
+              </a>
+              <br>
+              <a href="https://www.youtube.com/@dreemcorp" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-youtube"></i> Video Archive
+              </a>
+            </dd>
+          </div>
+        </dl>
+    
+        <div class="snapshot-card__divider"></div>
+    
+        <h3 class="snapshot-card__highlights-label">Highlights</h3>
+    
+        <ul class="snapshot-card__chips">
+          <li class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Edited long-form YouTube vlogs, pacing shots and story beats for
+            viewer retention
+          </li>
+          <li class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Edited short-form Reels &amp; TikToks with custom transitions, color
+            correction &amp; SFX
+          </li>
+          <li class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Cut promotional and commercial spots for consumer brands
+          </li>
+          <li class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Produced music visualizers with custom animation and SFX
+          </li>
+          <li class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Mixed and mastered audio for vlogs and music content in Adobe
+            Audition
+          </li>
+          <li class="achievement-chip" data-domain="product">
+            <span class="achievement-chip__dot"></span>Designed full personal-branding packages — profile art, channel
+            covers &amp; outros — for clients like Amira Tahri
+          </li>
+          <li class="achievement-chip" data-domain="product">
+            <span class="achievement-chip__dot"></span>Designed logos and brand assets in Adobe Illustrator
+          </li>
+          <li class="achievement-chip" data-domain="growth">
+            <span class="achievement-chip__dot"></span>Delivered content for 12+ clients &amp; brands, including Najib
+            Amhali, Amira Tahri, Alistair Overeem &amp; Frenna
+          </li>
+          <li class="achievement-chip" data-domain="growth">
+            <span class="achievement-chip__dot"></span>Helped launch and shape the early content strategy of multiple
+            client YouTube channels
+          </li>
+        </ul>
+    
+      </div>
+    </section>
+    
+    <!-- ============================================================
+            ELEMENT 3 — IN NUMBERS / STAT COUNTER
+    ============================================================ -->
+    <section aria-label="Intro: Experience In Numbers" class="stat-counter-section fade-in">
+    
+      <h2 class="screenreader-only">In Numbers</h2>
+    
+      <dl class="stat-counter">
+        <div class="stat-counter__item" data-target="12" data-suffix="+" data-domain="product">
+          <dt class="stat-counter__number" aria-live="polite">12+</dt>
+          <dd class="stat-counter__label">Clients &amp; Brands served</dd>
+        </div>
+        <div class="stat-counter__item" data-target="100" data-suffix="+" data-domain="product">
+          <dt class="stat-counter__number" aria-live="polite">100+</dt>
+          <dd class="stat-counter__label">Creative &amp; Marketing works</dd>
+        </div>
+        <div class="stat-counter__item" data-target="1" data-suffix="M+" data-domain="growth">
+          <dt class="stat-counter__number" aria-live="polite">1M+</dt>
+          <dd class="stat-counter__label">Views</dd>
+        </div>
+        <div class="stat-counter__item" data-target="100" data-suffix="K+" data-domain="growth">
+          <dt class="stat-counter__number" aria-live="polite">100K+</dt>
+          <dd class="stat-counter__label">Likes &amp; Comments</dd>
+        </div>
+      </dl>
+    
+    </section>
+    
+    <!-- ============================================================
+            ELEMENT 4 — STACK BADGE GRID
+    ============================================================ -->
+    <section id="stack" data-nav="Stack" aria-label="Stack" class="fade-in">
+      <div class="section-label">
+        <h2 class="section-label__text">Stack</h2>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+      <div class="stack-grid">
+        <!-- Video & Editing -->
+        <div class="stack-group">
+          <h3 class="stack-group__label">Video &amp; Editing</h3>
+          <ul class="stack-group__items">
+            <li class="stack-badge">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Crect%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%224%22%20fill%3D%22%2300005B%22%2F%3E%3Ctext%20x%3D%225%22%20y%3D%2216%22%20font-size%3D%2210%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%239999FF%22%3EPr%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Adobe Premiere Pro" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Premiere Pro</span>
+            </li>
+            <li class="stack-badge">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Crect%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%224%22%20fill%3D%22%2300005B%22%2F%3E%3Ctext%20x%3D%225%22%20y%3D%2216%22%20font-size%3D%2210%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%239999FF%22%3EAe%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Adobe After Effects" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">After Effects</span>
+            </li>
+            <li class="stack-badge">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Crect%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%224%22%20fill%3D%22%2300005B%22%2F%3E%3Ctext%20x%3D%225%22%20y%3D%2216%22%20font-size%3D%2210%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%2300E4BB%22%3EAu%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Adobe Audition" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Audition</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/davinciresolve" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">DaVinci Resolve</span>
+            </li>
+          </ul>
+        </div>
+    
+        <!-- Design & Creative -->
+        <div class="stack-group">
+          <h3 class="stack-group__label">Design &amp; Creative</h3>
+          <ul class="stack-group__items">
+            <li class="stack-badge">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Crect%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%224%22%20fill%3D%22%23330000%22%2F%3E%3Ctext%20x%3D%225%22%20y%3D%2216%22%20font-size%3D%2210%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%23FF9A00%22%3EAi%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Adobe Illustrator" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Illustrator</span>
+            </li>
+            <li class="stack-badge">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Crect%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%224%22%20fill%3D%22%23001E36%22%2F%3E%3Ctext%20x%3D%225%22%20y%3D%2216%22%20font-size%3D%2210%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%2331A8FF%22%3EPs%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Adobe Photoshop" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Photoshop</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/calibreweb/07B9CE" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Canva</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/picsart" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Picsart</span>
+            </li>
+          </ul>
+        </div>
+    
+        <!-- Platforms & Distribution -->
+        <div class="stack-group">
+          <h3 class="stack-group__label">Platforms &amp; Distribution</h3>
+          <ul class="stack-group__items">
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/youtube/FF0000" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">YouTube</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/instagram" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Instagram</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/tiktok" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">TikTok</span>
+            </li>
+          </ul>
+        </div>
+    
+        <!-- Marketing & Growth -->
+        <div class="stack-group">
+          <h3 class="stack-group__label">Marketing &amp; Growth</h3>
+          <ul class="stack-group__items">
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/googleanalytics/E37400" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Google Analytics</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/meta/0081FB" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Meta Ads</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/tiktok/000000" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">TikTok Ads</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/youtube/FF0000" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">YouTube Studio</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/mailchimp/000000" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Mailchimp</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/buffer/000000" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Buffer</span>
+            </li>
+          </ul>
+        </div>
+    
+      </div>
+    </section>
+    
+    <!-- ============================================================
+            ELEMENT 5 — ABILITY CARD GRID
+    ============================================================ -->
+    <section id="abilities" data-nav="Abilities" aria-label="Abilities" class="fade-in">
+    
+      <div class="section-label">
+        <h2 class="section-label__text">Abilities</h2>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+    
+      <!-- Legend -->
+      <p class="screenreader-only">Ability Domains</p>
+      <ul class="ability-legend" aria-label="Ability domains">
+        <li class="ability-legend__item ability-legend__item--engineering">
+          <span class="ability-legend__dot"></span>Engineering
+        </li>
+        <li class="ability-legend__item ability-legend__item--product">
+          <span class="ability-legend__dot"></span>Product
+        </li>
+        <li class="ability-legend__item ability-legend__item--growth">
+          <span class="ability-legend__dot"></span>Growth
+        </li>
+        <li class="ability-legend__item ability-legend__item--data">
+          <span class="ability-legend__dot"></span>Data
+        </li>
+      </ul>
+    
+      <ul class="ability-grid" id="e5-ability-grid" role="list">
+    
+        <!-- ENGINEERING -->
+        <li class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="scissors"></i></div>
+          <h3 class="ability-card__title">High-Volume Footage Triage</h3>
+    
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Cut raw multicam footage — often 6+ hours per project — down to a single 15–20
+            minute narrative, managing 700+ individual timeline edits along the way.</p>
+    
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Non-Linear Editing</li>
+            <li class="ability-tag">Footage Triage</li>
+            <li class="ability-tag">Timeline Management</li>
+          </ul>
+        </li>
+    
+        <li class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="audio-lines"></i></div>
+          <h3 class="ability-card__title">Audio Post-Production</h3>
+    
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Cleaned dialogue, balanced music beds, and layered SFX across every delivery —
+            leveling, noise reduction, and mixing done by ear, not preset.</p>
+    
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Audio Mixing</li>
+            <li class="ability-tag">Noise Reduction</li>
+            <li class="ability-tag">Sound Design</li>
+          </ul>
+        </li>
+    
+        <li class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="sliders-horizontal"></i></div>
+          <h3 class="ability-card__title">Color Correction &amp; Grading</h3>
+    
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Matched exposure and white balance across mixed-lighting, multicam footage, then
+            graded for a consistent visual tone across an entire edit.</p>
+    
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Color Correction</li>
+            <li class="ability-tag">Color Grading</li>
+            <li class="ability-tag">Visual Consistency</li>
+          </ul>
+        </li>
+    
+        <li class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="file-cog"></i></div>
+          <h3 class="ability-card__title">Codec &amp; Export Pipeline Management</h3>
+    
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Handled footage across mixed codecs, frame rates, and resolutions, then exported
+            per-platform deliverables tuned for bitrate, aspect ratio, and compression artifacts.</p>
+    
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Video Encoding</li>
+            <li class="ability-tag">Format Optimization</li>
+            <li class="ability-tag">Export Pipeline Management</li>
+          </ul>
+        </li>
+    
+        <li class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="wand-2"></i></div>
+          <h3 class="ability-card__title">Custom Motion &amp; Transitions</h3>
+    
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Hand-built transitions, motion graphics, and title cards from scratch instead of
+            templated presets — designed frame-by-frame to match each project's tone.</p>
+    
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Motion Design</li>
+            <li class="ability-tag">Custom Transitions</li>
+            <li class="ability-tag">Visual Branding</li>
+          </ul>
+        </li>
+    
+        <!-- PRODUCT -->
+        <li class="ability-card fade-in" data-domain="product">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="book-open"></i></div>
+          <h3 class="ability-card__title">Narrative Structuring from Raw Footage</h3>
+    
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Built pacing, sequencing, and emotional arc from unscripted raw footage with no
+            shot list or story outline provided — the story was found, not handed over.</p>
+    
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Story Structuring</li>
+            <li class="ability-tag">Narrative Pacing</li>
+            <li class="ability-tag">Creative Direction</li>
+          </ul>
+        </li>
+    
+        <li class="ability-card fade-in" data-domain="product">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="layout-template"></i></div>
+          <h3 class="ability-card__title">Branding Packages &amp; Visual Identity</h3>
+    
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Designed full branding packages — thumbnails, caption styling, lower thirds, and
+            channel-consistent visual language — beyond the edit itself.</p>
+    
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Brand Visual Systems</li>
+            <li class="ability-tag">Thumbnail Design</li>
+            <li class="ability-tag">Caption Design</li>
+          </ul>
+        </li>
+    
+        <!-- GROWTH -->
+        <li class="ability-card fade-in" data-domain="growth">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="smartphone"></i></div>
+          <h3 class="ability-card__title">Multi-Platform Content Adaptation</h3>
+    
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Recut a single footage set into long-form YouTube, vertical Shorts, Reels, and
+            TikTok — each edited for that platform's native pacing, not resized from one master cut.</p>
+    
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Multi-Platform Editing</li>
+            <li class="ability-tag">Vertical-First Editing</li>
+            <li class="ability-tag">Platform Optimization</li>
+          </ul>
+        </li>
+    
+        <li class="ability-card fade-in" data-domain="growth">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="briefcase"></i></div>
+          <h3 class="ability-card__title">Creative Delivery at Scale</h3>
+    
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Delivered 100+ creative assignments across 12+ clients — musicians, athletes,
+            and brands — managing client feedback loops and deadlines end to end.</p>
+    
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Client Delivery</li>
+            <li class="ability-tag">Production Pipeline Management</li>
+            <li class="ability-tag">Deadline Management</li>
+          </ul>
+        </li>
+    
+      </ul>
+    </section>
+    
+    <!-- ============================================================
+            ELEMENT 6 — WORKS CARD GRID
+    ============================================================ -->
+    <section id="works" data-nav="Works" aria-label="Works" class="fade-in">
+      <div class="section-label">
+        <h2 class="section-label__text">Works</h2>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+    
+      <ul class="evidence-grid">
+    
+        <!-- Card 1: Long-Form YouTube Editing (YouTube video card) -->
+        <li class="evidence-card" data-domain="engineering">
+          <div class="evidence-card__video">
+            <iframe src="https://www.youtube.com/embed/CwlsSpUbkAY?si=UbPPjiDIHqoxJYcH&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=CwlsSpUbkAY&amp;controls=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" title="Vlog edited for Amira Tahri's collaboration with Najib Amhali - filmed by Younes Belguebli at Immersive Studios in The Hague, Netherlands" aria-label="Vlog edited for Amira Tahri's collaboration with Najib Amhali - filmed by Younes Belguebli at Immersive Studios in The Hague, Netherlands" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <button class="evidence-card__sound-btn" data-sound-toggle aria-label="Toggle sound">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <line x1="23" y1="9" x2="17" y2="15" class="mute-line"></line>
+                <line x1="17" y1="9" x2="23" y2="15" class="mute-line"></line>
+              </svg>
+            </button>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"></span>Engineering</span>
+            <h3 class="evidence-card__title">Long-Form YouTube Editing</h3>
+            <ul class="evidence-card__bullets">
+              <li>Cut multi-hour raw footage into cohesive long-form vlogs for Amira Tahri, including this collab with
+                comedian Najib Amhali, Dutch Performante &amp; Numidia</li>
+              <li>Built custom transitions from scratch, as well as used established plugins, such as those by MotionBro
+              </li>
+              <li>Handled color correction and SFX across every long-form delivery</li>
+              <li>Mixed and mastered audio for consistent and easy to understand speech, as well as music to keep pace
+                and engagement</li>
+            </ul>
+          </div>
+        </li>
+    
+        <!-- Card 2: Short-Form Reels & TikTok (portrait YouTube/short video card) -->
+        <li class="evidence-card" data-domain="engineering">
+          <div class="evidence-card__video" data-orientation="portrait">
+            <iframe src="https://www.youtube.com/embed/Xp_beKsBz_g?si=iASrW1ZJ7NYm1loH&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=Xp_beKsBz_g&amp;controls=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" title="Short-form video showing BTS and promotional content for CoolSouls clothing brand in Sofia, Bulgaria" aria-label="Short-form video showing BTS and promotional content for CoolSouls clothing brand in Sofia, Bulgaria" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <button class="evidence-card__sound-btn" data-sound-toggle aria-label="Toggle sound">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <line x1="23" y1="9" x2="17" y2="15" class="mute-line"></line>
+                <line x1="17" y1="9" x2="23" y2="15" class="mute-line"></line>
+              </svg>
+            </button>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"></span>Engineering</span>
+            <h3 class="evidence-card__title">Short-Form Reels &amp; TikTok Editing</h3>
+            <ul class="evidence-card__bullets">
+              <li>Shot and edited photoshoot BTS for CoolSouls</li>
+              <li>Edited short-form pieces for Nabil Haryouli</li>
+              <li>Produced a run of shorts for Amira Tahri — some as vlog excerpts,
+                others standalone with custom SFX</li>
+              <li>Fast-turnaround color correction and SFX tuned for vertical, sub-60-second formats</li>
+            </ul>
+          </div>
+        </li>
+    
+        <!-- Card 3: Personal & Social Media Branding -->
+        <li class="evidence-card" data-domain="product">
+          <div class="evidence-card__video">
+            <iframe src="https://www.youtube.com/embed/GBXdeckga3Y?si=OkyW3L9R_x_LFXfR&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=GBXdeckga3Y&amp;controls=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" title="Video outro edited for Amira Tahri's YouTube Channel" aria-label="Video outro edited for Amira Tahri's YouTube Channel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <button class="evidence-card__sound-btn" data-sound-toggle aria-label="Toggle sound">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <line x1="23" y1="9" x2="17" y2="15" class="mute-line"></line>
+                <line x1="17" y1="9" x2="23" y2="15" class="mute-line"></line>
+              </svg>
+            </button>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"></span>Product</span>
+            <h3 class="evidence-card__title">Personal &amp; Social Media Branding</h3>
+            <ul class="evidence-card__bullets">
+              <li>Designed a full personal-branding package for Amira Tahri — profile pictures, channel cover, and
+                animated intro/outro
+              </li>
+              <li>Extended the same visual identity across YouTube, Instagram, and TikTok for a consistent
+                cross-platform
+                presence</li>
+              <li>Built a recognizable branding pattern — color, logo, motion &amp; messaging</li>
+            </ul>
+          </div>
+        </li>
+    
+        <!-- Card 4: Commercial & Brand Ad Spots (slideshow of IG ad screenshots) -->
+        <li class="evidence-card" data-domain="growth">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ads_1.jpg" alt="Immersive Studios x Ta Joela celebrity workout collaboration, shot by Younes Belguebli in Immersive Studio Gym in The Hague, The Netherlands" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ads_2.jpg" alt="Immersive Studios Leg workout class ad, shot by Younes Belguebli in Immersive Studio Gym in The Hague, The Netherlands" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ads_3.jpg" alt="Fitnessfloors.nl showcase building process of Sin City Boxing Gym's interior, shot by Younes Belguebli in Amsterdam, The Netherlands" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ads_4.jpg" alt="BerraCuts Barbershop promotional video visited by rapper Frenna, shot by Younes Belguebli in The Hague, The Netherlands" width="600" height="338" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 4"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"></span>Growth</span>
+            <h3 class="evidence-card__title">Commercial &amp; Brand Ad Spots</h3>
+            <ul class="evidence-card__bullets">
+              <li>Edited an ad for 92Minerals x Ertugrul Bayrak's "Ramadan Special" product promo</li>
+              <li>Created various video ads for Immersive Studios for workout classes, including the collaboration with
+                TaJoela</li>
+              <li>Edited a video ad for BerraCuts Barbershop of The Hague</li>
+              <li>Edited a video ad for FitnessFloors.nl x SinCity Boxing Amsterdam</li>
+            </ul>
+          </div>
+        </li>
+    
+        <!-- Card 5: Music Visualizers (anabolic musick) -->
+        <li class="evidence-card" data-domain="engineering">
+          <div class="evidence-card__video" data-orientation="landscape">
+            <iframe src="https://www.youtube.com/embed/yQDT8a8HjZ0?si=D6tLZir_YnX2gVug&amp;start=83&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=yQDT8a8HjZ0&amp;controls=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" title="Music visualizers for anabolic musick channel, produced by George Dreemer, music by Tevvez" aria-label="Music visualizers for anabolic musick channel, produced by George Dreemer, music by Tevvez" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <button class="evidence-card__sound-btn" data-sound-toggle aria-label="Toggle sound">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <line x1="23" y1="9" x2="17" y2="15" class="mute-line"></line>
+                <line x1="17" y1="9" x2="23" y2="15" class="mute-line"></line>
+              </svg>
+            </button>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"></span>Engineering</span>
+            <h3 class="evidence-card__title">Animated Visualizers &amp; Audio Mixing</h3>
+            <ul class="evidence-card__bullets">
+              <li>Produced custom animated visualizers for the anabolic musick channel</li>
+              <li>Synced motion graphics and SFX to track structure and beat timing</li>
+              <li>Curated and mixed audio tracks from Epidemic Sound into themed playlists</li>
+            </ul>
+          </div>
+        </li>
+    
+        <!-- Card 6: Full YouTube Channel Build-->
+        <li class="evidence-card" data-domain="growth">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_1.png" alt="Rich Piana music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_2.jpg" alt="OAF1 music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_3.jpg" alt="Zyzz and Tevvez music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_4.png" alt="Primeagen Drum and Bass music mix for coding thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_5.png" alt="DJ Trumpstep Donald Trump Dubstep music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_6.png" alt="Steve Jobs music mix for coding thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_7.png" alt="Elon Musk Downtempo music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_8.png" alt="Storror Parkour Drum and Bass music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_9.png" alt="Zyzz Trance gym music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_10.png" alt="Connor Murphy Trance gym music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_11.png" alt="Dark Metal gym music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_12.png" alt="Heavy metal gym music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_13.png" alt="Dubstep gym music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_14.png" alt="Chestbrah vocal trance gym music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_15.png" alt="2hollis music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-thumbnails_16.png" alt="TrenTwins heavy metal gym music mix thumbnail for anabolic musick" width="600" height="338" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 4"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 5"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 6"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 7"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 8"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 9"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 10"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 11"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 12"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 13"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 14"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 15"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 16"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag"><span class="evidence-card__domain-tag-dot"></span>Growth</span>
+            <h3 class="evidence-card__title">YouTube Channel Development</h3>
+            <ul class="evidence-card__bullets">
+              <li>Built the anabolic musick channel from scratch — branding, upload structure, and content strategy</li>
+              <li>Wrote consistent titles, descriptions, and keyword tags across every upload for discoverability</li>
+              <li>Edited eye-catching thumbnails with consistent branding and messaging</li>
+            </ul>
+          </div>
+        </li>
+    
+      </ul>
+    </section>
+    
+    <!-- ============================================================
+            ELEMENT 8 — INSTAGRAM SCROLLER
+    ============================================================ -->
+    <section id="instagram" data-nav="Instagram" aria-label="Instagram" class="fade-in">
+      <div class="section-label">
+        <h2 class="section-label__text">On Instagram</h2>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+    
+      <div class="ig-scroller">
+        <ul class="ig-scroller__track" data-ig-track>
+    
+          <li class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/COfy4XHBOa0/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/COfy4XHBOa0/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/p/COfy4XHBOa0/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Immersive Studio's (@immersive.studios)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <p class="ig-scroller__caption">Immersive Studios × Ta Joela — celebrity workout class ad, shot by Younes
+              Belguebli in The Hague</p>
+          </li>
+    
+          <li class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/CLw5XlfJbhQ/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/reel/CLw5XlfJbhQ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/reel/CLw5XlfJbhQ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by AMIRA TAHRI🇳🇱🇲🇦 (@amiratahriofficial)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <p class="ig-scroller__caption">Amira Tahri — Instagram reel edit</p>
+          </li>
+    
+          <li class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CPJfbcdh2ad/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/CPJfbcdh2ad/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/p/CPJfbcdh2ad/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Immersive Studio's (@immersive.studios)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <p class="ig-scroller__caption">Immersive Studios — gym booty class promo, shot by Younes Belguebli in The
+              Hague
+            </p>
+          </li>
+    
+          <li class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CPpvicZllW0/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/CPpvicZllW0/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/p/CPpvicZllW0/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Fitnessfloor.nl (@fitnessfloor.nl)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <p class="ig-scroller__caption">FitnessFloors.nl × SinCity Boxing Amsterdam — gym build-out promo, shot by
+              Younes Belguebli</p>
+          </li>
+    
+          <li class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/COpu2ygDhkx/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/COpu2ygDhkx/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/p/COpu2ygDhkx/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by ʙᴇʀʀᴀᴄᴜᴛs ʙᴀʀʙᴇʀsʜᴏᴘ 📍 (@berracuts.barbershop)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <p class="ig-scroller__caption">BerraCuts Barbershop, Den Haag — promo ad, visited by rapper Frenna, shot by
+              Younes Belguebli</p>
+          </li>
+    
+        </ul>
+    
+        <div class="ig-scroller__nav">
+          <button class="ig-scroller__nav-btn" data-ig-prev aria-label="Scroll to previous post">
+            <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="ig-scroller__nav-btn" data-ig-next aria-label="Scroll to next post">
+            <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ============================================================
+            ELEMENT 9 — CONTENT ARCHIVE
+    ============================================================ -->
+    <section id="content-archive" data-nav="Content Archive" aria-label="Content Archive" class="fade-in">
+      <div class="section-label">
+        <h2 class="section-label__text">Content Archive</h2>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+    
+      <!-- ── Channel: Amira Tahri ────────────────────────────────── -->
+      <div class="content-archive__channel">
+        <div class="content-archive__channel-label">
+          <div class="content-archive__channel-label-left">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_1.jpg" alt="Amira Tahri" class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <h3 class="content-archive__channel-name">Amira Tahri</h3>
+            <p class="content-archive__channel-meta">Vlogs &amp; Shorts
+          </p></div>
+          <div class="content-archive__channel-nav">
+            <button class="yt-scroller__nav-btn" data-yt-prev aria-label="Scroll to previous video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="yt-scroller__nav-btn" data-yt-next aria-label="Scroll to next video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+    
+        <div class="yt-scroller">
+          <ul class="yt-scroller__track" data-yt-track>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="VbYZxelf_XA" data-yt-title="Vlog: Amira Tahri collaborates with Dutch Performante" aria-label="Play vlog: Amira Tahri collaborates with Dutch Performante">
+                  <img src="https://img.youtube.com/vi/VbYZxelf_XA/hqdefault.jpg" alt="Amira Tahri vlog with Dutch Performante" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Vlog with Dutch Performante</p>
+            </li>
+    
+            <li class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="6HkURhlXpQc" data-yt-title="Short: promo for Amira Tahri x Dutch Performante vlog" aria-label="Play short: promo for Dutch Performante vlog">
+                  <img src="https://img.youtube.com/vi/6HkURhlXpQc/hqdefault.jpg" alt="Amira Tahri short promoting the Dutch Performante vlog" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Sparring with Dutch Performante</p>
+            </li>
+    
+            <li class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="mVRCOktSokY" data-yt-title="Short: Amira Tahri sparring with Dutch Performante" aria-label="Play short: Amira Tahri spars with Dutch Performante on the beach">
+                  <img src="https://img.youtube.com/vi/mVRCOktSokY/hqdefault.jpg" alt="Amira Tahri sparring with Dutch Performante on the beach" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Amira shadow boxing</p>
+            </li>
+    
+            <li class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="dIOPWXdkieI" data-yt-title="Short: Amira Tahri skit with Dutch Performante" aria-label="Play short: Amira Tahri skit with Dutch Performante">
+                  <img src="https://img.youtube.com/vi/dIOPWXdkieI/hqdefault.jpg" alt="Amira Tahri comedy skit with Dutch Performante in The Hague" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Skit with Dutch Performante</p>
+            </li>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="9KyOwCLUeoM" data-yt-title="Vlog: Amira Tahri collaborates with Numidia" aria-label="Play vlog: Amira Tahri collaborates with Numidia">
+                  <img src="https://img.youtube.com/vi/9KyOwCLUeoM/hqdefault.jpg" alt="Amira Tahri vlog with Numidia" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Vlog with Numidia</p>
+            </li>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="E7td0FRqj2Q" data-yt-title="Vlog edited for Amira Tahri's collaboration with Najib Amhali — filmed by Younes Belguebli at Immersive Studios in The Hague, Netherlands" aria-label="Play vlog: Amira Tahri collaborates with Najib Amhali">
+                  <img src="https://img.youtube.com/vi/E7td0FRqj2Q/hqdefault.jpg" alt="Amira Tahri vlog with Najib Amhali" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Vlog with Najib Amhali</p>
+            </li>
+    
+            <li class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="_B-E_FRqaU0" data-yt-title="Short: Amira Tahri boxing" aria-label="Play short: Amira Tahri boxing">
+                  <img src="https://img.youtube.com/vi/_B-E_FRqaU0/hqdefault.jpg" alt="Amira Tahri boxing short" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Boxing short</p>
+            </li>
+    
+            <li class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="gB9fIiprCKM" data-yt-title="Short: Amira Tahri HIIT on the beach" aria-label="Play short: Amira Tahri HIIT on the beach in The Hague">
+                  <img src="https://img.youtube.com/vi/gB9fIiprCKM/hqdefault.jpg" alt="Amira Tahri doing HIIT training on the beach in The Hague" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">HIIT on the beach</p>
+            </li>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="GBXdeckga3Y" data-yt-title="Amira Tahri channel Intro/Outro" aria-label="Play video: Amira Tahri channel intro and outro">
+                  <img src="https://img.youtube.com/vi/GBXdeckga3Y/hqdefault.jpg" alt="Amira Tahri channel intro and outro thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Channel intro/outro</p>
+            </li>
+    
+          </ul>
+        </div>
+      </div>
+    
+      <!-- ── Channel: CoolSouls ───────────────────────────────────── -->
+      <div class="content-archive__channel">
+        <div class="content-archive__channel-label">
+          <div class="content-archive__channel-label-left">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_2.jpg" alt="CoolSouls Logo" class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <h3 class="content-archive__channel-name">CoolSouls</h3>
+            <p class="content-archive__channel-meta">Shorts</p>
+          </div>
+          <div class="content-archive__channel-nav">
+            <button class="yt-scroller__nav-btn" data-yt-prev aria-label="Scroll to previous video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="yt-scroller__nav-btn" data-yt-next aria-label="Scroll to next video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+    
+        <div class="yt-scroller">
+          <ul class="yt-scroller__track" data-yt-track>
+    
+            <li class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="olmoByPT39w" data-yt-title="Short: CoolSouls behind the scenes 1" aria-label="Play short: CoolSouls behind the scenes, part one">
+                  <img src="https://img.youtube.com/vi/olmoByPT39w/hqdefault.jpg" alt="CoolSouls behind the scenes, part one" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Photoshoot BTS I</p>
+            </li>
+    
+            <li class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="A9TuOx51EK8" data-yt-title="Short: CoolSouls behind the scenes 2" aria-label="Play short: CoolSouls behind the scenes, part two">
+                  <img src="https://img.youtube.com/vi/A9TuOx51EK8/hqdefault.jpg" alt="CoolSouls behind the scenes, part two" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Photoshoot BTS II</p>
+            </li>
+    
+            <li class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="A5b2Tu-CbDU" data-yt-title="Short: CoolSouls behind the scenes 3" aria-label="Play short: CoolSouls behind the scenes, part three">
+                  <img src="https://img.youtube.com/vi/A5b2Tu-CbDU/hqdefault.jpg" alt="CoolSouls behind the scenes, part three" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Photoshoot BTS III</p>
+            </li>
+    
+            <li class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="rB6t9efuKr8" data-yt-title="Short: CoolSouls behind the scenes 4" aria-label="Play short: CoolSouls behind the scenes, part four">
+                  <img src="https://img.youtube.com/vi/rB6t9efuKr8/hqdefault.jpg" alt="CoolSouls behind the scenes, part four" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Photoshoot BTS IV</p>
+            </li>
+    
+            <li class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="U856jwnmAOo" data-yt-title="Short: CoolSouls behind the scenes 5" aria-label="Play short: CoolSouls behind the scenes, part five">
+                  <img src="https://img.youtube.com/vi/U856jwnmAOo/hqdefault.jpg" alt="CoolSouls behind the scenes, part five" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Photoshoot BTS V</p>
+            </li>
+    
+            <li class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="DQESdVCpVnA" data-yt-title="Short: CoolSouls behind the scenes 6" aria-label="Play short: CoolSouls behind the scenes, part six">
+                  <img src="https://img.youtube.com/vi/DQESdVCpVnA/hqdefault.jpg" alt="CoolSouls behind the scenes, part six" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Photoshoot BTS VI</p>
+            </li>
+    
+          </ul>
+        </div>
+      </div>
+    
+      <!-- ── Channel: anabolic musick ─────────────────────────────── -->
+      <div class="content-archive__channel">
+        <div class="content-archive__channel-label">
+          <div class="content-archive__channel-label-left">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_4.jpg" alt="anabolic musick" class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <h3 class="content-archive__channel-name">anabolic musick</h3>
+            <p class="content-archive__channel-meta">Music Visualizers</p>
+          </div>
+          <div class="content-archive__channel-nav">
+            <button class="yt-scroller__nav-btn" data-yt-prev aria-label="Scroll to previous video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="yt-scroller__nav-btn" data-yt-next aria-label="Scroll to next video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+    
+        <div class="yt-scroller">
+          <ul class="yt-scroller__track" data-yt-track>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="yQDT8a8HjZ0" data-yt-title="anabolic musick: Zyzz trance mix" aria-label="Play mix: Zyzz trance mix">
+                  <img src="https://img.youtube.com/vi/yQDT8a8HjZ0/hqdefault.jpg" alt="Zyzz trance mix thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Zyzz Tribute Mix (feat. Tevvez &amp; Chestbrah)</p>
+            </li>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="LTU_wIIHy-8" data-yt-title="anabolic musick: oaf1 mix" aria-label="Play mix: oaf1 mix">
+                  <img src="https://img.youtube.com/vi/LTU_wIIHy-8/hqdefault.jpg" alt="oaf1 mix thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">oaf1 Discography Mix</p>
+            </li>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="QML-X13cgh0" data-yt-title="anabolic musick: ThePrimeagen drum and bass mix" aria-label="Play mix: ThePrimeagen drum and bass mix">
+                  <img src="https://img.youtube.com/vi/QML-X13cgh0/hqdefault.jpg" alt="ThePrimeagen drum and bass mix thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">ThePrimeagen Coding Mix (Drum and Bass)</p>
+            </li>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="o5bzZIuGoqk" data-yt-title="anabolic musick: 2hollis mix" aria-label="Play mix: 2hollis mix">
+                  <img src="https://img.youtube.com/vi/o5bzZIuGoqk/hqdefault.jpg" alt="2hollis mix thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">2hollis Deleted Discography Mix</p>
+            </li>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="yParcfawsEw" data-yt-title="anabolic musick: Tren Twins heavy metal mix" aria-label="Play mix: Tren Twins heavy metal mix">
+                  <img src="https://img.youtube.com/vi/yParcfawsEw/hqdefault.jpg" alt="Tren Twins heavy metal mix thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Tren Twins Tribute Mix (Heavy Metal)</p>
+            </li>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="YwlVN5BpU2I" data-yt-title="anabolic musick: Donald Trump dubstep mix" aria-label="Play mix: Donald Trump dubstep mix">
+                  <img src="https://img.youtube.com/vi/YwlVN5BpU2I/hqdefault.jpg" alt="Donald Trump dubstep mix thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Donald Trump Meme Mix (Dubstep)</p>
+            </li>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="umXcc1_57vc" data-yt-title="anabolic musick: Steve Jobs coding mix" aria-label="Play mix: Steve Jobs coding mix">
+                  <img src="https://img.youtube.com/vi/umXcc1_57vc/hqdefault.jpg" alt="Steve Jobs coding mix thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Steve Jobs Tribute (Coding Mix)</p>
+            </li>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="61ERSDD8QVk" data-yt-title="anabolic musick: Terry Davis psytrance mix" aria-label="Play mix: Terry Davis psytrance mix">
+                  <img src="https://img.youtube.com/vi/61ERSDD8QVk/hqdefault.jpg" alt="Terry Davis psytrance mix thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Terry Davis Tribute (Psytrance Mix)</p>
+            </li>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="cA9kj1LJM-0" data-yt-title="anabolic musick: STORROR parkour drum and bass mix" aria-label="Play mix: STORROR parkour drum and bass mix">
+                  <img src="https://img.youtube.com/vi/cA9kj1LJM-0/hqdefault.jpg" alt="STORROR parkour drum and bass mix thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">STORROR Tribute (Drum &amp; Bass Mix)</p>
+            </li>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="bPcj8SLzxV0" data-yt-title="anabolic musick: Elon Musk Mars gym mix" aria-label="Play mix: Elon Musk Mars gym mix">
+                  <img src="https://img.youtube.com/vi/bPcj8SLzxV0/hqdefault.jpg" alt="Elon Musk Mars gym mix thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Elon Musk Tribute (Downtempo Mix)</p>
+            </li>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="GzdN91wSiUY" data-yt-title="anabolic musick: Anabolic Aliens Club dubstep mix" aria-label="Play mix: Anabolic Aliens Club dubstep mix">
+                  <img src="https://img.youtube.com/vi/GzdN91wSiUY/hqdefault.jpg" alt="Anabolic Aliens Club dubstep mix thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Anabolic Aliens Club Meme (Dubstep Mix)</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    
+      <!-- ── Channel: Nabil Haryouli ──────────────────────────────── -->
+      <div class="content-archive__channel">
+        <div class="content-archive__channel-label">
+          <div class="content-archive__channel-label-left">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_3.jpg" alt="Nabil Haryouli" class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <h3 class="content-archive__channel-name">Nabil Haryouli</h3>
+            <p class="content-archive__channel-meta">Shorts</p>
+          </div>
+          <div class="content-archive__channel-nav">
+            <button class="yt-scroller__nav-btn" data-yt-prev aria-label="Scroll to previous video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="yt-scroller__nav-btn" data-yt-next aria-label="Scroll to next video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+    
+        <div class="yt-scroller">
+          <ul class="yt-scroller__track" data-yt-track>
+    
+            <li class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="toM1KkRnVyI" data-yt-title="Short: Nabil Haryouli gym workout" aria-label="Play short: Nabil Haryouli gym workout">
+                  <img src="https://img.youtube.com/vi/toM1KkRnVyI/hqdefault.jpg" alt="Nabil Haryouli working out at the gym" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Gym workout</p>
+            </li>
+    
+            <li class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="uP59xbGe4Pw" data-yt-title="Short: Nabil Haryouli outdoor workout" aria-label="Play short: Nabil Haryouli outdoor workout">
+                  <img src="https://img.youtube.com/vi/uP59xbGe4Pw/hqdefault.jpg" alt="Nabil Haryouli outdoor workout" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Outdoor workout</p>
+            </li>
+    
+            <li class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="eayZttGY4E0" data-yt-title="Short: Nabil Haryouli outdoor workout 2" aria-label="Play short: Nabil Haryouli outdoor workout, part two">
+                  <img src="https://img.youtube.com/vi/eayZttGY4E0/hqdefault.jpg" alt="Nabil Haryouli outdoor workout, second short" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Outdoor workout II</p>
+            </li>
+    
+          </ul>
+        </div>
+      </div>
+    
+      <!-- ── Channel: Various YouTube Channels ──────────────────────────────── -->
+      <div class="content-archive__channel">
+        <div class="content-archive__channel-label">
+          <div class="content-archive__channel-label-left">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_5.jpg" alt="YouTube Logo" class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <h3 class="content-archive__channel-name">Various Channels</h3>
+            <p class="content-archive__channel-meta">Outros</p>
+          </div>
+          <div class="content-archive__channel-nav">
+            <button class="yt-scroller__nav-btn" data-yt-prev aria-label="Scroll to previous video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="yt-scroller__nav-btn" data-yt-next aria-label="Scroll to next video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+    
+        <div class="yt-scroller">
+          <ul class="yt-scroller__track" data-yt-track>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="dpjCwqt94uY" data-yt-title="Channel outro edited for CryptoPandemic" aria-label="Play video: channel outro edited for CryptoPandemic">
+                  <img src="https://img.youtube.com/vi/dpjCwqt94uY/hqdefault.jpg" alt="CryptoPandemic channel outro thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">CryptoPandemic outro</p>
+            </li>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="N72-RHIsmCU" data-yt-title="Channel outro edited for the Chyna Plug" aria-label="Play video: channel outro edited for the Chyna Plug">
+                  <img src="https://img.youtube.com/vi/N72-RHIsmCU/hqdefault.jpg" alt="The Chyna Plug channel outro thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">The Chyna Plug outro</p>
+            </li>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="qs-e5H2tjwA" data-yt-title="Channel outro edited for China Dash Authority" aria-label="Play video: channel outro edited for China Dash Authority">
+                  <img src="https://img.youtube.com/vi/qs-e5H2tjwA/hqdefault.jpg" alt="China Dash Authority channel outro thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">China Dash Authority outro</p>
+            </li>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="CgeiICEtx8c" data-yt-title="Channel outro edited for Spooli Snail" aria-label="Play video: channel outro edited for Spooli Snail">
+                  <img src="https://img.youtube.com/vi/CgeiICEtx8c/hqdefault.jpg" alt="Spooli Snail channel outro thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Spooli Snail outro</p>
+            </li>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="fJHEl5cQRyw" data-yt-title="Channel outro edited for Internet Scrapyard" aria-label="Play video: channel outro edited for Internet Scrapyard">
+                  <img src="https://img.youtube.com/vi/fJHEl5cQRyw/hqdefault.jpg" alt="Internet Scrapyard channel outro thumbnail" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Internet Scrapyard outro</p>
+            </li>
+    
+          </ul>
+        </div>
+      </div>
+    
+      <!-- ── Channel: Immersive Studios ──────────────────────────────── -->
+      <div class="content-archive__channel">
+        <div class="content-archive__channel-label">
+          <div class="content-archive__channel-label-left">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_6.jpg" alt="Immersive Studios Logo" class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <h3 class="content-archive__channel-name">Immersive Studios</h3>
+            <p class="content-archive__channel-meta">Commercials</p>
+          </div>
+          <div class="content-archive__channel-nav">
+            <button class="yt-scroller__nav-btn" data-yt-prev aria-label="Scroll to previous video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="yt-scroller__nav-btn" data-yt-next aria-label="Scroll to next video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+    
+        <div class="yt-scroller">
+          <ul class="yt-scroller__track" data-yt-track>
+    
+            <li class="yt-scroller__item" data-orientation="square">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="AZBxop0x4FE" data-yt-title="Commercial for Immersive Studios' Booty Class" aria-label="Play video: commercial for Immersive Studios' Booty Class">
+                  <img src="https://img.youtube.com/vi/AZBxop0x4FE/hqdefault.jpg" alt="Immersive Studios Booty Class commercial thumbnail" width="360" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Booty Class Commercial</p>
+            </li>
+    
+            <li class="yt-scroller__item" data-orientation="square">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="-_EuJxBtrtk" data-yt-title="Song promo for TaJoel — DRILLUH, filmed at Immersive Studios" aria-label="Play video: song promo for Dutch rapper TaJoel, DRILLUH, filmed at Immersive Studios">
+                  <img src="https://img.youtube.com/vi/-_EuJxBtrtk/hqdefault.jpg" alt="TaJoel DRILLUH song promo thumbnail, filmed at Immersive Studios" width="360" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">TaJoela — DRILLUH Song Promo</p>
+            </li>
+    
+          </ul>
+        </div>
+      </div>
+    
+      <!-- ── Channel: 92Minerals ──────────────────────────────── -->
+      <div class="content-archive__channel">
+        <div class="content-archive__channel-label">
+          <div class="content-archive__channel-label-left">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_7.jpg" alt="92Minerals Logo" class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <h3 class="content-archive__channel-name">92Minerals</h3>
+            <p class="content-archive__channel-meta">Commercials</p>
+          </div>
+          <div class="content-archive__channel-nav">
+            <button class="yt-scroller__nav-btn" data-yt-prev aria-label="Scroll to previous video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="yt-scroller__nav-btn" data-yt-next aria-label="Scroll to next video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+    
+        <div class="yt-scroller">
+          <ul class="yt-scroller__track" data-yt-track>
+    
+            <li class="yt-scroller__item" data-orientation="square">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="w7ov-Z2OCRU" data-yt-title="92Minerals Ramadan commercial" aria-label="Play video: 92Minerals Ramadan commercial">
+                  <img src="https://img.youtube.com/vi/w7ov-Z2OCRU/hqdefault.jpg" alt="92Minerals Ramadan commercial thumbnail" width="360" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Ramadan Commercial</p>
+            </li>
+    
+            <li class="yt-scroller__item" data-orientation="square">
+              <div class="yt-scroller__embed">
+                <a class="yt-scroller__thumb-btn yt-scroller__thumb-btn--locked" href="mailto:penpal@dreemcorp.com?subject=Private%20request%3A%2092Minerals%20x%20Alistair%20Overeem%20commercial" aria-label="Request private access: 92Minerals commercial featuring Alistair Overeem">
+                  <img src="https://img.youtube.com/vi/vNHPIawLlMY/hqdefault.jpg" alt="92Minerals commercial featuring Alistair Overeem, private on request" width="360" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__lock-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="5" y="11" width="14" height="9" rx="1.5"></rect>
+                      <path d="M8 11V7a4 4 0 0 1 8 0v4"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <p class="yt-scroller__caption yt-scroller__caption--locked">Commercial with Alistair Overeem (private)
+              </p>
+            </li>
+    
+          </ul>
+        </div>
+      </div>
+    
+      <!-- ── Channel: Sully Bull ──────────────────────────────── -->
+      <div class="content-archive__channel">
+        <div class="content-archive__channel-label">
+          <div class="content-archive__channel-label-left">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_8.jpg" alt="Sully Bull" class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <h3 class="content-archive__channel-name">Sully Bull</h3>
+            <p class="content-archive__channel-meta">Vlogs</p>
+          </div>
+          <div class="content-archive__channel-nav">
+            <button class="yt-scroller__nav-btn" data-yt-prev aria-label="Scroll to previous video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="yt-scroller__nav-btn" data-yt-next aria-label="Scroll to next video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+    
+        <div class="yt-scroller">
+          <ul class="yt-scroller__track" data-yt-track>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <a class="yt-scroller__thumb-btn yt-scroller__thumb-btn--locked" href="mailto:penpal@dreemcorp.com?subject=Private%20request%3A%20Sully%20Bull%20vlog%201" aria-label="Request private access: day in the life of Sully Bull, pro MMA fighter">
+                  <img src="https://img.youtube.com/vi/twFlIjWJ2nI/hqdefault.jpg" alt="Day in the life of Sully Bull, pro MMA fighter, private on request" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__lock-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="5" y="11" width="14" height="9" rx="1.5"></rect>
+                      <path d="M8 11V7a4 4 0 0 1 8 0v4"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <p class="yt-scroller__caption yt-scroller__caption--locked">Day in the life I (private)</p>
+            </li>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <a class="yt-scroller__thumb-btn yt-scroller__thumb-btn--locked" href="mailto:penpal@dreemcorp.com?subject=Private%20request%3A%20Sully%20Bull%20vlog%202" aria-label="Request private access: day in the life of Sully Bull, pro MMA fighter, part two">
+                  <img src="https://img.youtube.com/vi/-nw1YmcociY/hqdefault.jpg" alt="Day in the life of Sully Bull, pro MMA fighter, part two, private on request" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__lock-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="5" y="11" width="14" height="9" rx="1.5"></rect>
+                      <path d="M8 11V7a4 4 0 0 1 8 0v4"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <p class="yt-scroller__caption yt-scroller__caption--locked">Day in the life II (private)</p>
+            </li>
+    
+          </ul>
+        </div>
+      </div>
+    
+      <!-- ── Channel: Various Company Clients ──────────────────────────────── -->
+      <div class="content-archive__channel">
+        <div class="content-archive__channel-label">
+          <div class="content-archive__channel-label-left">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_9.jpg" alt="Fitness Floors Logo" class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_10.jpg" alt="Berra Cuts Logo" class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <h3 class="content-archive__channel-name">Various Companies</h3>
+            <p class="content-archive__channel-meta">Commercials</p>
+          </div>
+          <div class="content-archive__channel-nav">
+            <button class="yt-scroller__nav-btn" data-yt-prev aria-label="Scroll to previous video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="yt-scroller__nav-btn" data-yt-next aria-label="Scroll to next video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+    
+        <div class="yt-scroller">
+          <ul class="yt-scroller__track" data-yt-track>
+    
+            <li class="yt-scroller__item" data-orientation="square">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="ulO26FwMECg" data-yt-title="Fitness Floor NL builds SinCity Boxing Amsterdam" aria-label="Play video: Fitness Floor NL builds SinCity Boxing Amsterdam commercial">
+                  <img src="https://img.youtube.com/vi/ulO26FwMECg/hqdefault.jpg" alt="Fitness Floor NL builds SinCity Boxing Amsterdam commercial thumbnail" width="360" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Fitness Floor NL × SinCity Boxing</p>
+            </li>
+    
+            <li class="yt-scroller__item" data-orientation="square">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="dhKtYCcr9TA" data-yt-title="Commercial for Berra Cuts Barbershop featuring Frenna" aria-label="Play video: commercial for Berra Cuts Barbershop in The Hague, featuring Frenna">
+                  <img src="https://img.youtube.com/vi/dhKtYCcr9TA/hqdefault.jpg" alt="Berra Cuts Barbershop commercial featuring Frenna, thumbnail" width="360" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Berra Cuts ft. Frenna</p>
+            </li>
+    
+          </ul>
+        </div>
+      </div>
+    
+      <!-- ── Channel: China Dash Authority ──────────────────────────────── -->
+      <div class="content-archive__channel">
+        <div class="content-archive__channel-label">
+          <div class="content-archive__channel-label-left">
+            <img src="https://georgedreemer.com/public_img/dreemcorp/dreemcorp-ca_pfps_13.jpg" alt="China Dash Authority Logo" class="content-archive__channel-pfp" width="32" height="32" loading="lazy" decoding="async">
+            <h3 class="content-archive__channel-name">China Dash Authority</h3>
+            <p class="content-archive__channel-meta">Various Content</p>
+          </div>
+          <div class="content-archive__channel-nav">
+            <button class="yt-scroller__nav-btn" data-yt-prev aria-label="Scroll to previous video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="yt-scroller__nav-btn" data-yt-next aria-label="Scroll to next video">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+    
+        <div class="yt-scroller">
+          <ul class="yt-scroller__track" data-yt-track>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="ATv2jctxLcs" data-yt-title="Child on a Scooter Falls Under Oncoming Car" aria-label="Play video: Child on a Scooter Falls Under Oncoming Car">
+                  <img src="https://img.youtube.com/vi/ATv2jctxLcs/hqdefault.jpg" alt="Dashcam footage: child on a scooter falls under an oncoming car" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Scooter fall, oncoming car</p>
+            </li>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="UTeAxXBMQ8o" data-yt-title="BMW effortlessly withstands impact and flips car on the highway" aria-label="Play video: BMW withstands impact and flips car on the highway">
+                  <img src="https://img.youtube.com/vi/UTeAxXBMQ8o/hqdefault.jpg" alt="Dashcam footage: BMW withstands impact and flips another car on the highway" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">BMW flips highway crash</p>
+            </li>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="DCyKmvOaOa8" data-yt-title="Big truck runs over a scooter rider in front of a cop" aria-label="Play video: big truck runs over a scooter rider in front of a cop">
+                  <img src="https://img.youtube.com/vi/DCyKmvOaOa8/hqdefault.jpg" alt="Dashcam footage: truck runs over a scooter rider in front of a police officer" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Truck vs. scooter, cop nearby</p>
+            </li>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="IubslcZ_DvM" data-yt-title="Car goes straight through residential pedestrian walkway" aria-label="Play video: car goes straight through residential pedestrian walkway">
+                  <img src="https://img.youtube.com/vi/IubslcZ_DvM/hqdefault.jpg" alt="Dashcam footage: car drives through a residential pedestrian walkway" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Car through pedestrian walkway</p>
+            </li>
+    
+            <li class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="uuVk2EBOQrQ" data-yt-title="Unseen Footage From Flood in Zhengzhou China" aria-label="Play short: unseen footage from the flood in Zhengzhou, China">
+                  <img src="https://img.youtube.com/vi/uuVk2EBOQrQ/hqdefault.jpg" alt="Unseen footage from the flood in Zhengzhou, China" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Zhengzhou flood I</p>
+            </li>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="mohDKDOgIeU" data-yt-title="His daughter fell from the back of his scooter at an intersection, see how he reacted..." aria-label="Play video: his daughter fell from the back of his scooter at an intersection">
+                  <img src="https://img.youtube.com/vi/mohDKDOgIeU/hqdefault.jpg" alt="Dashcam footage: daughter falls from the back of a scooter at an intersection" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Daughter falls, scooter intersection</p>
+            </li>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="Oap_ULZ47tg" data-yt-title="How to create a deadly accident on a mostly empty intersection..." aria-label="Play video: how to create a deadly accident on a mostly empty intersection">
+                  <img src="https://img.youtube.com/vi/Oap_ULZ47tg/hqdefault.jpg" alt="Dashcam footage: deadly accident on a mostly empty intersection" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Deadly empty-intersection accident</p>
+            </li>
+    
+            <li class="yt-scroller__item" data-orientation="portrait">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="8Zd8HxY5gW0" data-yt-title="Footage From Inside The Metro During Zhengzhou Flood" aria-label="Play short: footage from inside the metro during the Zhengzhou flood">
+                  <img src="https://img.youtube.com/vi/8Zd8HxY5gW0/hqdefault.jpg" alt="Footage from inside the metro during the Zhengzhou flood" width="270" height="480" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Zhengzhou flood II</p>
+            </li>
+    
+            <li class="yt-scroller__item">
+              <div class="yt-scroller__embed">
+                <button class="yt-scroller__thumb-btn" data-yt-thumb data-yt-id="ILOVS6ZahI0" data-yt-title="Clueless Driver Hits Cyclists In a Bike Race" aria-label="Play video: clueless driver hits cyclists in a bike race">
+                  <img src="https://img.youtube.com/vi/ILOVS6ZahI0/hqdefault.jpg" alt="Dashcam footage: clueless driver hits cyclists in a bike race" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="yt-scroller__play-icon" aria-hidden="true">
+                    <svg viewbox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <p class="yt-scroller__caption">Driver hits bike race</p>
+            </li>
+    
+          </ul>
+        </div>
+      </div>
+    
+    
+    </section>
+
+</main><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a1a21456ab8f0005d0723ee624ec2620" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"></div></div><div id="wb_main_a1a21456ab8f0005d0723ee624ec2620" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"></div></div><div id="wb_footer_a1a21456ab8f0005d0723ee624ec2620" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
+			$(function() {
+				var footer = $(".wb_footer");
+				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
+				if (!html) {
+					footer.parent().remove();
+					footer = $("#footer, #footer .wb_cont_inner");
+					footer.css({height: ""});
+				}
+			});
+			});</script></div></div></div></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
+	<script src="js/common-bundle.js?ts=20261125222641" type="text/javascript" defer></script>{{hr_out}}<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        window._spDefer.done();
+    });
+</script>
+</body>
+</html>

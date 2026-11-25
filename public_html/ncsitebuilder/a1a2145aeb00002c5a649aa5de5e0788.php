@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript">
+	window._spDefer = {
+		queue: [],
+		ready: false,
+		add: function(fn) {
+			if (this.ready) { fn(); }
+			else { this.queue.push(fn); }
+		},
+		done: function() {
+			this.ready = true;
+			var fns = this.queue;
+			this.queue = [];
+			for (var i = 0; i < fns.length; i++) { fns[i](); }
+		}
+	};
+	</script>
+			<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title><?php echo htmlspecialchars((isset($seoTitle) && $seoTitle !== "") ? $seoTitle : "CryptoPandemic — Viral Web3 Marketing & On-Chain Analytics · George Dreemer"); ?></title>
+	<base href="{{base_url}}" />
+	<?php echo isset($sitemapUrls) ? (generateCanonicalUrl($sitemapUrls)."\n") : ""; ?>	
+	
+					
+	<!-- Facebook Open Graph -->
+						<!-- Facebook Open Graph end -->
+
+			<?php if (empty($wbWhitelabel)): ?>	<meta name="generator" content="Site.pro Builder" />
+	<?php else: ?>	<meta name="generator" content="Website Builder" />
+	<?php endif; ?>			<link href="css/common-bundle.css?ts=20261125222641" rel="preload" type="text/css" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
+	<link href="css/a1a2145aeb00002c5a649aa5de5e0788-bundle.css?ts=20261125222641" rel="preload" type="text/css" id="wb-page-stylesheet" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
+	<ga-code/><!-- Global: identity & crawling -->
+<meta name="author" content="George Dreemer">
+<meta name="robots" content="max-image-preview:large, max-snippet:-1">
+
+<!-- Global: appearance -->
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="format-detection" content="telephone=no">
+
+<!-- Global: social -->
+<meta property="og:site_name" content="George Dreemer">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:site" content="@444eta">
+<meta name="twitter:creator" content="@444eta">
+<meta name="twitter:label1" content="Role">
+<meta name="twitter:data1" content="Data Scientist &amp; Developer">
+<meta name="twitter:label2" content="Open to">
+<meta name="twitter:data2" content="Data, ML &amp; AI roles · Dubai, UAE">
+
+<!-- Global: icons -->
+<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png?v=20261124" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg?v=20261124" />
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=20261124" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=20261124" />
+<meta name="apple-mobile-web-app-title" content="ETA!" />
+<link rel="manifest" href="/favicon/site.webmanifest?v=20261124" />
+	<script type="text/javascript">
+	window.useTrailingSlashes = false;
+	window.disableRightClick = false;
+	window.currLang = 'en';
+</script>
+	<!-- Core document setup -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<!-- SEO -->
+<title>CryptoPandemic — Viral Web3 Marketing &amp; On-Chain Analytics · George Dreemer</title>
+<meta name="description" content="CryptoPandemic engineers contagious Web3 experiences — from brand identity to on-chain strategy. We don't help projects grow. We make them spread.">
+<meta name="keywords" content="cryptopandemic, george dreemer cryptopandemic, web3 marketing, solana marketing, crypto marketing agency, blockchain analytics, web3 design, on-chain strategy, solana growth, brand identity web3, crypto brand strategy, holder profiling, cryptoons, crypto cartoon series, bullish solana, ai content pipeline, meme coin marketing, crypto twitter growth, founder creative director">
+<link rel="canonical" href="https://georgedreemer.com/work/cryptopandemic">
+<link rel="alternate" type="text/markdown" href="https://georgedreemer.com/work/cryptopandemic.md">
+<link rel="describedby" href="https://georgedreemer.com/llms.txt">
+
+<!-- Social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://georgedreemer.com/work/cryptopandemic">
+<meta property="og:title" content="CryptoPandemic — Viral Web3 Marketing &amp; Analytics on Solana">
+<meta property="og:description" content="CryptoPandemic engineers contagious Web3 experiences — from brand identity to on-chain strategy. We don't help projects grow. We make them spread. Drove BULLISH to a $13M peak on Solana.">
+<meta property="og:image" content="https://georgedreemer.com/public_img/general/ogimages/cryptopandemic-v1.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Showcase of Crypto Pandemic branding and logo, made by George Dreemer">
+<meta name="twitter:image:alt" content="Showcase of Crypto Pandemic branding and logo, made by George Dreemer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CryptoPandemic — Viral Web3 Marketing &amp; Analytics on Solana">
+<meta name="twitter:description" content="CryptoPandemic engineers contagious Web3 experiences — from brand identity to on-chain strategy. We don't help projects grow. We make them spread.">
+<meta name="twitter:image" content="https://georgedreemer.com/public_img/general/ogimages/cryptopandemic-v1.png">
+
+<!-- Structured data -->
+<script data-custom-script="true" type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://georgedreemer.com/work/cryptopandemic#webpage",
+      "url": "https://georgedreemer.com/work/cryptopandemic",
+      "name": "CryptoPandemic — Web3 Marketing & On-Chain Analytics on Solana",
+      "description": "CryptoPandemic engineers contagious Web3 experiences — from brand identity to on-chain strategy. We don't help projects grow. We make them spread.",
+      "isPartOf": {
+        "@id": "https://georgedreemer.com/#website"
+      },
+      "about": {
+        "@id": "https://georgedreemer.com/work/cryptopandemic#organization"
+      },
+      "mainEntity": {
+        "@id": "https://georgedreemer.com/work/cryptopandemic#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://georgedreemer.com/public_img/general/ogimages/cryptopandemic-v1.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "en",
+      "breadcrumb": {
+        "@id": "https://georgedreemer.com/work/cryptopandemic#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://georgedreemer.com/work/cryptopandemic#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "George Dreemer",
+          "item": "https://georgedreemer.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Work",
+          "item": "https://georgedreemer.com/#work"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "CryptoPandemic",
+          "item": "https://georgedreemer.com/work/cryptopandemic"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://georgedreemer.com/work/cryptopandemic#organization",
+      "name": "CryptoPandemic",
+      "alternateName": "CryptoPandemic Web3 Brand Studio",
+      "url": "https://georgedreemer.com/work/cryptopandemic",
+      "description": "A Web3 brand studio founded by George Dreemer that engineers contagious crypto experiences by fusing cold on-chain analytics with warm creative storytelling. On-chain data reveals who a project's holders are and what moves them; the creative work responds through a crypto cartoon series ('cryptoons') and full visual identity built around the people already in the community. First applied to BULLISH on Solana, driving a market cap move from $6-7M to a $13M peak, 5K daily mentions across Crypto Twitter, and 250K cross-platform content impressions.",
+      "slogan": "We don't help projects grow. We make them spread.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://georgedreemer.com/public_img/general/ogimages/cryptopandemic-v1.png",
+        "width": 1200,
+        "height": 630
+      },
+      "genre": [
+        "Web3 brand studio",
+        "Crypto marketing",
+        "Viral marketing",
+        "On-chain analytics",
+        "Creative direction",
+        "Portfolio project"
+      ],
+      "keywords": [
+        "CryptoPandemic",
+        "George Dreemer",
+        "Web3 marketing",
+        "Solana marketing",
+        "crypto marketing agency",
+        "blockchain analytics",
+        "Web3 design",
+        "on-chain strategy",
+        "Solana growth",
+        "brand identity Web3",
+        "crypto brand strategy",
+        "cryptoons",
+        "holder profiling",
+        "BULLISH",
+        "AI content pipeline"
+      ],
+      "founder": {
+        "@type": "Person",
+        "@id": "https://georgedreemer.com/#person",
+        "name": "George Dreemer",
+        "url": "https://georgedreemer.com"
+      },
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "On-Chain Research & Holder Profiling"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Cryptoon Animated Storytelling"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Content Engineering & Production"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Community Brand Tools"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Web3 Brand Strategy & Execution"
+          }
+        }
+      ],
+      "sameAs": [
+        "https://cryptopandemic.com"
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Styles -->
+<!-- Global -->
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/sitebuilder-overrides.css">
+
+<!-- Components -->
+<link rel="stylesheet" href="../css/components/fade-in.css">
+<link rel="stylesheet" href="../css/components/section-label.css">
+<link rel="stylesheet" href="../css/components/site-shell.css">
+
+<link rel="stylesheet" href="../css/components/context-block.css">
+<link rel="stylesheet" href="../css/components/sc.css">
+<link rel="stylesheet" href="../css/components/stat-counter.css">
+<link rel="stylesheet" href="../css/components/stack-badge.css">
+<link rel="stylesheet" href="../css/components/ability-card-exp.css">
+<link rel="stylesheet" href="../css/components/works-card-exp.css">
+
+<!-- Third-party scripts -->
+<script data-custom-script="true" src="https://unpkg.com/lucide@1.72.0/dist/umd/lucide.js" defer></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- Page behavior -->
+<script data-custom-script="true" type="module" src="../js/pages/work/cryptopandemic.js?v=10"></script>	
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<![endif]-->
+
+		<script type="text/javascript">
+		window._spDefer.add(function() {
+<?php $wb_form_send_success = popSessionOrGlobalVar("wb_form_send_success"); ?>
+<?php if (($wb_form_send_state = popSessionOrGlobalVar("wb_form_send_state"))) { ?>
+	<?php if (($wb_form_popup_mode = popSessionOrGlobalVar("wb_form_popup_mode")) && (isset($wbPopupMode) && $wbPopupMode)) { ?>
+		if (window !== window.parent && window.parent.postMessage) {
+			var data = {
+				event: "wb_contact_form_sent",
+				data: {
+					state: "<?php echo str_replace('"', '\"', $wb_form_send_state); ?>",
+					type: "<?php echo $wb_form_send_success ? "success" : "danger"; ?>"
+				}
+			};
+			window.parent.postMessage(data, "<?php echo str_replace('"', '\"', popSessionOrGlobalVar("wb_target_origin")); ?>");
+		}
+	<?php $wb_form_send_success = false; $wb_form_send_state = null; $wb_form_popup_mode = false; ?>
+	<?php } else { ?>
+		wb_show_alert("<?php echo str_replace(array('"', "\r", "\n"), array('\"', "", "<br/>"), $wb_form_send_state); ?>", "<?php echo $wb_form_send_success ? "success" : "danger"; ?>");
+	<?php } ?>
+<?php } ?>
+});    </script>
+</head>
+
+
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><main class="main-content" role="main" data-page="cryptopandemic">
+
+    <h1 class="screenreader-only">
+      CryptoPandemic — Web3 Marketing &amp; On-Chain Analytics on Solana
+    </h1>
+
+    <!-- ============================================================
+        ELEMENT 1 — CONTEXT BLOCK
+    ============================================================ -->
+    <section id="intro" data-nav="Intro" aria-label="Intro: Experience Context" class="fade-in">
+      <div class="context-block">
+        <p>CryptoPandemic is a Web3 brand engine built on one conviction: the projects that spread are not the ones with
+          the best technology. They are the ones with the strongest story, the sharpest identity, and content that moves
+          at the speed of the culture.</p>
+        <p>CryptoPandemic brings together two seemingly opposite forces: cold on-chain analytics and warm creative
+          storytelling. The on-chain data acts as the "KYC", revealing exactly who your holders are, which coins they
+          move, and what makes them act. The creative work responds to that data through a crypto cartoon series and
+          visual identity built around the people already in your corner.</p>
+        <p>The approach was first applied to $BULLISH on Solana — crypto cartoon series, AI-generated content pipelines,
+          360° brand execution, on-chain market research — all deployed in tandem. The result was a market cap move from
+          ~$6–7M to a peak of ~$13M, 5K+ daily mentions across Crypto Twitter, and 250K+ impressions across content.</p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+        ELEMENT 2 — SNAPSHOT CARD
+    ============================================================ -->
+    <section aria-label="Intro: Experience Snapshot" class="fade-in">
+
+      <h2 class="screenreader-only">Experience Snapshot</h2>
+
+      <div class="snapshot-card" data-domain="growth">
+
+        <div class="snapshot-card__tab">
+          <span class="snapshot-card__tab-logo" data-gd-identity-logo="cryptopandemic" aria-hidden="true"></span>
+          <span class="snapshot-card__tab-text">
+            <span class="snapshot-card__tab-name">Crypto Pandemic</span>
+          </span>
+        </div>
+
+        <dl class="snapshot-card__meta">
+          <div class="snapshot-item snapshot-item--prominent">
+            <dt class="snapshot-item__key">Role</dt>
+            <dd class="snapshot-item__value">Founder &amp; Creative Director</dd>
+          </div>
+          <div class="snapshot-item snapshot-item--prominent">
+            <dt class="snapshot-item__key">Type</dt>
+            <dd class="snapshot-item__value">Web3 Brand Studio</dd>
+          </div>
+          <div class="snapshot-item">
+            <dt class="snapshot-item__key">Links</dt>
+            <dd class="snapshot-item__value">
+              <a href="https://cryptopandemic.com" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-globe2"></i> cryptopandemic.com
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+        <div class="snapshot-card__divider"></div>
+
+        <h3 class="snapshot-card__highlights-label">Highlights</h3>
+
+        <ul class="snapshot-card__chips">
+          <li class="achievement-chip" data-domain="data">
+            <span class="achievement-chip__dot"></span>Profiled on-chain holder behaviour to identify the most effective
+            branding styles and content formats
+          </li>
+          <li class="achievement-chip" data-domain="data">
+            <span class="achievement-chip__dot"></span>Tracked X sentiment and news cycles to time and shape cryptoon
+            storylines
+          </li>
+          <li class="achievement-chip" data-domain="product">
+            <span class="achievement-chip__dot"></span>Coined the "cryptoon" format — narrative-driven crypto animations
+            built on sentiment and on-chain data
+          </li>
+          <li class="achievement-chip" data-domain="product">
+            <span class="achievement-chip__dot"></span>Created 50+ branded assets adopted by the community across X,
+            Telegram, and Discord
+          </li>
+          <li class="achievement-chip" data-domain="growth">
+            <span class="achievement-chip__dot"></span>Drove Bullish from ~$6M to $13M peak market cap through
+            coordinated cryptoon drops and brand strategy
+          </li>
+          <li class="achievement-chip" data-domain="growth">
+            <span class="achievement-chip__dot"></span>Drove 250K+ cross-platform impressions and 5K+ daily mentions
+          </li>
+          <li class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Built AI-generative content pipelines and brand tools using
+            Google AI Studio
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+        ELEMENT 3 — IN-NUMBERS
+    ============================================================ -->
+    <section aria-label="Intro: Experience In Numbers" class="stat-counter-section fade-in">
+
+      <h2 class="screenreader-only">In Numbers</h2>
+
+      <dl class="stat-counter">
+        <div class="stat-counter__item" data-target="5" data-prefix="~$" data-suffix="M" data-domain="growth">
+          <dt class="stat-counter__number" aria-live="polite">~$5M</dt>
+          <dd class="stat-counter__label">Estimated $BULLISH market cap uplift</dd>
+        </div>
+
+        <div class="stat-counter__item" data-target="250" data-suffix="K+" data-domain="growth">
+          <dt class="stat-counter__number" aria-live="polite">250K+</dt>
+          <dd class="stat-counter__label">Content impressions</dd>
+        </div>
+
+        <div class="stat-counter__item" data-target="5" data-suffix="K+" data-domain="data">
+          <dt class="stat-counter__number" aria-live="polite">5K+</dt>
+          <dd class="stat-counter__label">Daily mentions</dd>
+        </div>
+
+        <div class="stat-counter__item" data-target="50" data-suffix="+" data-domain="product">
+          <dt class="stat-counter__number" aria-live="polite">50+</dt>
+          <dd class="stat-counter__label">Branded assets created</dd>
+        </div>
+      </dl>
+
+    </section>
+
+    <!-- ============================================================
+        ELEMENT 4 — STACK BADGE GRID
+    ============================================================ -->
+    <section id="stack" data-nav="Stack" aria-label="Stack" class="fade-in">
+      <div class="section-label">
+        <h2 class="section-label__text">Stack</h2>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+
+      <div class="stack-grid">
+
+        <!-- ── Code ─────────────────────────────────────── -->
+        <div class="stack-group">
+          <h3 class="stack-group__label">Code</h3>
+          <ul class="stack-group__items">
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/javascript/f7df1e" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">JavaScript</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/html5/e34f26" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">HTML</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/css/1572b6" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">CSS</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/python/3776ab" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Python</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ── AI & Automation ────────────────────────────────── -->
+        <div class="stack-group">
+          <h3 class="stack-group__label">AI &amp; Automation</h3>
+          <ul class="stack-group__items">
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/huggingface/ffd21e" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">HuggingFace</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/n8n/ea4b71" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">n8n</span>
+            </li>
+
+            <li class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#4285f4;" aria-hidden="true">G</span>
+              <span class="stack-badge__name">Google AI Studio</span>
+            </li>
+
+            <li class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#222;" aria-hidden="true">
+                <svg width="84" height="84" viewbox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="84" height="84" fill="#172DD7"></rect>
+                  <path d="M28.5899 69.2727C27.3242 69.2727 26.303 68.8023 25.637 67.9128C24.9524 66.9989 24.774 65.723 25.1471 64.4133L26.6455 59.1518C26.765 58.7329 26.6818 58.2821 26.4212 57.9336C26.1606 57.5858 25.7529 57.381 25.3198 57.381H21.0116C19.7453 57.381 18.724 56.9112 18.0583 56.0218C17.3738 55.1072 17.1953 53.8314 17.5687 52.5216L22.7163 34.5286L23.2847 32.5517C24.0487 29.869 26.8349 27.6888 29.4966 27.6888H34.6517C35.2668 27.6888 35.8079 27.2787 35.9773 26.6835L37.6821 20.6987C38.4453 18.0187 41.2316 15.8385 43.8933 15.8385L54.9181 15.8189L62.9891 15.8182C64.2551 15.8182 65.2763 16.288 65.942 17.1774C66.6265 18.0913 66.805 19.3672 66.4319 20.6769L64.124 28.7803C63.3611 31.4595 60.5748 33.6391 57.9131 33.6391L46.8637 33.6601H41.7104C41.0959 33.6601 40.5555 34.0695 40.3851 34.6641L36.0883 49.6722C35.9681 50.0919 36.0513 50.5441 36.3126 50.8925C36.5732 51.2403 36.9809 51.445 37.4136 51.445L44.7152 51.4308H52.7622C54.0282 51.4308 55.0494 51.9006 55.7151 52.7901C56.3996 53.7046 56.5781 54.9805 56.2047 56.2902L53.8969 64.3923C53.1339 67.0722 50.3476 69.2517 47.686 69.2517L36.6369 69.2727H28.5899Z" fill="#F0FF41"></path>
+                </svg>
+              </span>
+              <span class="stack-badge__name">ComfyUI</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ── Design & Creative ──────────────────────────────── -->
+        <div class="stack-group">
+          <h3 class="stack-group__label">Design &amp; Creative</h3>
+          <ul class="stack-group__items">
+
+            <li class="stack-badge">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%23330000%22/%3E%3Ctext%20x%3D%2252%22%20y%3D%22164%22%20font-size%3D%22104%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%23FF9A00%22%3EAi%3C/text%3E%3C/svg%3E" alt="Adobe Illustrator" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Illustrator</span>
+            </li>
+
+            <li class="stack-badge">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%23001E36%22/%3E%3Ctext%20x%3D%2252%22%20y%3D%22164%22%20font-size%3D%22104%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%2331A8FF%22%3EPs%3C/text%3E%3C/svg%3E" alt="Adobe Photoshop" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Photoshop</span>
+            </li>
+
+            <li class="stack-badge">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%2300005B%22/%3E%3Ctext%20x%3D%2252%22%20y%3D%22164%22%20font-size%3D%22104%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%239999FF%22%3EPr%3C/text%3E%3C/svg%3E" alt="Adobe Premiere Pro" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Premiere Pro</span>
+            </li>
+
+            <li class="stack-badge">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%2300005B%22/%3E%3Ctext%20x%3D%2252%22%20y%3D%22164%22%20font-size%3D%22104%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%239999FF%22%3EAe%3C/text%3E%3C/svg%3E" alt="Adobe After Effects" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">After Effects</span>
+            </li>
+
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/davinciresolve" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">DaVinci Resolve</span>
+            </li>
+
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/figma" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Figma</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ── Web3 & On-Chain ───────────────────────────────── -->
+        <div class="stack-group">
+          <h3 class="stack-group__label">Web3 &amp; On-Chain</h3>
+          <ul class="stack-group__items">
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/solana/9945ff" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Solana</span>
+            </li>
+
+            <li class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#21d727; color:#ffffff;" aria-hidden="true">P</span>
+              <span class="stack-badge__name">Pump.fun</span>
+            </li>
+
+            <li class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#8dc63f; color:#111111;" aria-hidden="true">CG</span>
+              <span class="stack-badge__name">CoinGecko</span>
+            </li>
+
+            <li class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#00d4ff; color:#111111;" aria-hidden="true">Dx</span>
+              <span class="stack-badge__name">DexScreener</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ── Marketing & Growth ─────────────────────────────── -->
+        <div class="stack-group">
+          <h3 class="stack-group__label">Marketing &amp; Growth</h3>
+          <ul class="stack-group__items">
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/x/000000" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">X</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/tiktok/000000" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">TikTok</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/youtube/ff0000" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">YouTube Studio</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/buffer/000000" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Buffer</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/telegram" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Telegram</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/discord" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Discord</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ── Dev Tools ──────────────────────────────────────── -->
+        <div class="stack-group">
+          <h3 class="stack-group__label">Dev Tools</h3>
+          <ul class="stack-group__items">
+            <li class="stack-badge stack-badge--text">
+              <span class="stack-badge__mark" style="background:#FFFFFF00;" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2500" height="1995" viewbox="0 0 59.242 47.271">
+                  <path fill="#0072c6" d="M32.368 0 14.9 15.145 0 41.895h13.437zm2.323 3.543-7.454 21.008 14.291 17.956L13.8 47.271h45.442z"></path>
+                </svg>
+              </span>
+              <span class="stack-badge__name">VS Code</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/git/f05032" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Git</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/github/181717" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">GitHub</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+        ELEMENT 5 — ABILITY CARD GRID
+    ============================================================ -->
+    <section id="abilities" data-nav="Abilities" aria-label="Abilities" class="fade-in">
+
+      <div class="section-label">
+        <h2 class="section-label__text">Abilities</h2>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+
+      <p class="screenreader-only">Ability Domains</p>
+      <ul class="ability-legend" aria-label="Ability domains">
+        <li class="ability-legend__item ability-legend__item--engineering">
+          <span class="ability-legend__dot"></span>Engineering
+        </li>
+        <li class="ability-legend__item ability-legend__item--product">
+          <span class="ability-legend__dot"></span>Product
+        </li>
+        <li class="ability-legend__item ability-legend__item--growth">
+          <span class="ability-legend__dot"></span>Growth
+        </li>
+        <li class="ability-legend__item ability-legend__item--data">
+          <span class="ability-legend__dot"></span>Data
+        </li>
+      </ul>
+
+      <ul class="ability-grid" id="e5-ability-grid" role="list">
+
+        <!-- ── DATA ── -->
+        <li class="ability-card fade-in" data-domain="data">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="users"></i></div>
+          <h3 class="ability-card__title">Holder Portfolio Profiling</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Analysed on-chain wallet data to understand what else a project's
+            holders own, building profiles of their wider crypto interests, cultural references, and community
+            affiliations. These profiles inform branding and content decisions. The aim is not to copy adjacent
+            projects, but to help the coin speak a language its holders already understand. Culture fit, not
+            culture theft.</p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Wallet Behaviour Profiling</li>
+            <li class="ability-tag">Community Culture Mapping</li>
+            <li class="ability-tag">Insight-Led Brand Strategy</li>
+          </ul>
+        </li>
+
+        <li class="ability-card fade-in" data-domain="data">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="line-chart"></i></div>
+          <h3 class="ability-card__title">On-Chain Market Attribution</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Tracked project performance with on-chain analytics tools to connect
+            creative output with market movement. This made it possible to identify when the needle moved, why
+            it moved, and which content contributed to the shift. It closes a feedback loop that many Web3
+            creative teams leave open by measuring how content affects the chart, not just the timeline.</p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Market Movement Analysis</li>
+            <li class="ability-tag">Content-to-Chart Attribution</li>
+            <li class="ability-tag">Performance Measurement</li>
+          </ul>
+        </li>
+
+        <li class="ability-card fade-in" data-domain="data">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="bar-chart-3"></i></div>
+          <h3 class="ability-card__title">Content Performance Analytics</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Used platform analytics across X, TikTok, and Instagram to track
+            impressions, engagement rate, share velocity, and audience growth, then fed those signals into the
+            next content cycle. In a fast-moving environment where a post has a half-life of hours, understanding
+            what performed and why is what separates a studio that compounds its reach from one that stays flat.</p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Engagement Analysis</li>
+            <li class="ability-tag">Reach Optimisation</li>
+            <li class="ability-tag">Data-Driven Iteration</li>
+          </ul>
+        </li>
+
+        <li class="ability-card fade-in" data-domain="data">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="book-open"></i></div>
+          <h3 class="ability-card__title">Sentiment-Anchored Story Strategy</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Built content strategy around a character who lives inside the holder's
+            world. It is not a mascot disconnected from reality, but a character whose storylines come directly
+            from live X sentiment, news cycles, and on-chain talking points. If the community is discussing Fed
+            rate hikes, that week's cryptoon reflects it. Culture relevance is engineered, not guessed.</p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Real-Time Sentiment Scripting</li>
+            <li class="ability-tag">Character-Led Narrative Design</li>
+            <li class="ability-tag">Content Series Architecture</li>
+          </ul>
+        </li>
+
+        <!-- ── ENGINEERING ── -->
+        <li class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="wand-2"></i></div>
+          <h3 class="ability-card__title">AI-Generative Content Pipelines</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Built production-ready generative pipelines for crypto-native visual
+            content, combining speed with consistent creative direction. Each workflow is tailored to a coin's
+            identity, including its ticker, mascot, and lore, so the output feels made for that project rather
+            than like a generic AI pass.</p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Generative Workflow Design</li>
+            <li class="ability-tag">Brand-Consistent AI Output</li>
+            <li class="ability-tag">Visual Pipeline Architecture</li>
+          </ul>
+        </li>
+
+        <li class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="film"></i></div>
+          <h3 class="ability-card__title">Cryptoon Production &amp; Motion Design</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Coined and developed the cryptoon format: short animated films where the
+            storyline is built from the world the holder already lives in. The character’s arc is mapped against live
+            community sentiment, cultural references pulled from holder portfolio data, and the news cycle the audience
+            is actually following. The result is a character who feels like part of the holder’s world.</p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Motion Graphics &amp; Animation</li>
+            <li class="ability-tag">Cinematic Editing</li>
+            <li class="ability-tag">Narrative Sequencing</li>
+          </ul>
+        </li>
+
+        <li class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="code-2"></i></div>
+          <h3 class="ability-card__title">Brand Tool Engineering</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Designed the architecture for community-facing brand tools: AI-powered
+            experiences that define a coin's visual style and let holders create on-brand content themselves.
+            This compounds reach without compounding spend. Built with HTML, CSS, JavaScript, Python, and AI API
+            integrations.</p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Full-Stack Web Development</li>
+            <li class="ability-tag">AI API Integration</li>
+            <li class="ability-tag">Community Tool Design</li>
+          </ul>
+        </li>
+
+        <!-- ── PRODUCT ── -->
+        <li class="ability-card fade-in" data-domain="product">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="layers"></i></div>
+          <h3 class="ability-card__title">Meme Coin Brand Architecture</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Built complete brand systems for meme coin projects, covering visual
+            identity, character lore, content tone, and community language from the ground up. In a market where
+            hundreds of coins launch every week, a coherent brand is the only durable moat. The work for Bullish,
+            from the first edit to the graphic asset library deployed across CT replies, shows what a complete
+            Web3 brand system looks like in practice.</p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Visual Identity Design</li>
+            <li class="ability-tag">Character &amp; Lore Development</li>
+            <li class="ability-tag">Web3 Brand Strategy</li>
+          </ul>
+        </li>
+
+        <li class="ability-card fade-in" data-domain="product">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="layout-template"></i></div>
+          <h3 class="ability-card__title">Bag Worker Asset Systems</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Produced libraries of on-brand graphic assets, including stickers,
+            reaction images, reply cards, and banner sets. These were built for bag workers to pick up and deploy
+            across X, Telegram, and Discord. A coin without a proper asset system is cooked: holders want to shill
+            but have nothing to post. Hundreds of Bullish assets were actively used across CT threads, driving
+            awareness at scale with zero distribution budget.</p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Community Asset Production</li>
+            <li class="ability-tag">Bag Worker Enablement</li>
+            <li class="ability-tag">Viral-Ready Graphic Design</li>
+          </ul>
+        </li>
+
+        <!-- ── GROWTH ── -->
+        <li class="ability-card fade-in" data-domain="growth">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="trending-up"></i></div>
+          <h3 class="ability-card__title">Sentiment Manufacturing</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">The skill is not simply posting content. It is engineering content that
+            shifts how a community feels about a coin at the moment it matters. During the period of active
+            production, Bullish's market cap moved from roughly $6M to $13M. In meme coin markets, sentiment is
+            price. Manufacturing the right sentiment at the right time is a lever with a measurable output on
+            the chart.</p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">CT Sentiment Engineering</li>
+            <li class="ability-tag">Narrative-Driven Market Influence</li>
+            <li class="ability-tag">Coordinated Campaign Timing</li>
+          </ul>
+        </li>
+
+        <li class="ability-card fade-in" data-domain="growth">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="megaphone"></i></div>
+          <h3 class="ability-card__title">Crypto-Native Community Building</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Built and activated communities across X, Telegram, and Discord by
+            finding the right early members, sharing content at the right cadence, and creating moments that make
+            a group feel like a movement. One hundred passionate bag workers will outperform any overpaid KOL. The
+            goal is always to build a community that markets itself.</p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Community Seeding &amp; Activation</li>
+            <li class="ability-tag">Organic Amplification</li>
+            <li class="ability-tag">Retention-Focused Growth</li>
+          </ul>
+        </li>
+
+        <li class="ability-card fade-in" data-domain="growth">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="scissors"></i></div>
+          <h3 class="ability-card__title">Cross-Platform Content Editing</h3>
+
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Took long-form source material, including full cryptoon episodes, brand
+            sessions, and raw footage, and cut it into platform-native formats for X clips, TikTok, Instagram
+            Reels, and YouTube Shorts. Each edit is re-paced, re-hooked, and restructured for the platform's
+            specific audience behaviour.</p>
+
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Long-Form to Short-Form Editing</li>
+            <li class="ability-tag">Platform-Native Formatting</li>
+            <li class="ability-tag">Organic Distribution Strategy</li>
+          </ul>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- ============================================================
+        ELEMENT 6 — WORKS CARD GRID
+    ============================================================ -->
+    <section id="works" data-nav="Works" aria-label="Works" class="fade-in">
+
+      <div class="section-label">
+        <h2 class="section-label__text">Works</h2>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+
+      <ul class="evidence-grid">
+
+        <!-- ─────────────────────────────────────────────────────────
+            CARD 1 — On-Chain Research System
+        ───────────────────────────────────────────────────────────── -->
+        <li class="evidence-card" data-domain="data">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-ocrs_1.png" alt="Step 1 — Project to holder mapping: who holds $BULLISH and what does that tell us" width="560" height="315" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-ocrs_2.png" alt="Step 2 — Holder to portfolio mapping: decoding culture through what holders also hold" width="560" height="315" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-ocrs_3.png" alt="Step 3 — Peer project intelligence: building profiles of the ecosystem we live in" width="560" height="315" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Data
+            </span>
+            <h3 class="evidence-card__title">On-Chain Research System</h3>
+            <ul class="evidence-card__bullets">
+              <li>Mapped holder wallets and behavior to understand their affiliations, culture, and communities</li>
+              <li>Profiled what holders own across the ecosystem to reveal our audience's shared narrative and visual
+                language</li>
+              <li>Profiled peer projects, including their branding, communities, and positioning, so we understand the
+                ecosystem we operate in</li>
+              <li>Compared content releases with chart movements to identify what creates real growth</li>
+            </ul>
+          </div>
+        </li>
+
+
+        <!-- ─────────────────────────────────────────────────────────
+            CARD 2 — Analytics-defined Storytelling
+        ───────────────────────────────────────────────────────────── -->
+        <li class="evidence-card" data-domain="data">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-cryptoons_1.png" alt="Concept visual showing on-chain data, sentiment signals, and news cycles distilled into a cryptoon storyline" width="560" height="315" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-cryptoons_2.png" alt="Defining facts: using sentiment data, meme velocity, narrative shifts and talking points to define our script" width="560" height="315" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-cryptoons_3.png" alt="Turning the script into a storyboard of scenes and then animating them" width="560" height="315" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Data
+            </span>
+            <h3 class="evidence-card__title">Cryptoons: Analytics-defined Storytelling</h3>
+            <ul class="evidence-card__bullets">
+              <li>Created cryptoons - short animated films shaped by holder wallet profiling, X sentiment and news
+                narratives</li>
+              <li>Profiled on-chain wallet data to understand what holders own, which communities they move in, and
+                which cultural references resonate with them</li>
+              <li>Tracked X sentiment and news cycles to shape the world of our characters in a way that matches the
+                world of the holders</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- ─────────────────────────────────────────────────────────
+            CARD 3 — Content Engineering & Production
+        ───────────────────────────────────────────────────────────── -->
+        <li class="evidence-card" data-domain="engineering">
+          <div class="evidence-card__video">
+            <iframe src="https://www.youtube.com/embed/ITv25lqWsAE?si=rQK1-IZKlyPGAMch&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=ITv25lqWsAE&amp;controls=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" title="Bullish Degen Cryptoon Episode 1 by Crypto Pandemic" aria-label="Bullish Degen Cryptoon Episode 1 by Crypto Pandemic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <button class="evidence-card__sound-btn" data-sound-toggle aria-label="Toggle sound">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <line x1="23" y1="9" x2="17" y2="15" class="mute-line"></line>
+                <line x1="17" y1="9" x2="23" y2="15" class="mute-line"></line>
+              </svg>
+            </button>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Engineering
+            </span>
+            <h3 class="evidence-card__title">Content Engineering &amp; Production</h3>
+            <ul class="evidence-card__bullets">
+              <li>Built AI workflows for consistent characters, scenes, and visual style — each tailored to the coin’s
+                identity so the output felt native, not generated</li>
+              <li>Edited in After Effects with a focus on cinematic pacing with custom soundtrack, color-editing,
+                transitions and voice-acting</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- ─────────────────────────────────────────────────────────
+            CARD 4 — Community Brand Tools
+        ───────────────────────────────────────────────────────────── -->
+        <li class="evidence-card" data-domain="engineering">
+          <div class="evidence-card__thumb">
+            <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-cbt_1.png" alt="CryptoPandemic brand tool concept — community meme generator with brand-governed parameters" width="560" height="315" loading="lazy">
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Engineering
+            </span>
+            <h3 class="evidence-card__title">Community Brand Tools</h3>
+            <ul class="evidence-card__bullets">
+              <li>Designed AI-powered, brand-governed generators that let holders create on-brand content within clear
+                creative parameters. Reach compounds while spend does not</li>
+              <li>Turned the holder base into a content engine. One hundred passionate bag workers can outperform any
+                overpaid KOL</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- ─────────────────────────────────────────────────────────
+            CARD 5 — Market Cap and Social Uplift
+        ───────────────────────────────────────────────────────────── -->
+        <li class="evidence-card" data-domain="growth">
+          <div class="evidence-card__thumb">
+            <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-chart_1.png" alt="$BULLISH market cap chart showing growth from ~$6M to ~$13M peak during CryptoPandemic campaign period" width="560" height="315" loading="lazy">
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Growth
+            </span>
+            <h3 class="evidence-card__title">Market Cap and Social Uplift</h3>
+            <ul class="evidence-card__bullets">
+              <li>Documented an estimated $5M increase in $BULLISH market cap during the active production period</li>
+              <li>Drove more than 250K cross-platform impressions and engagements during the campaign</li>
+              <li>Recorded more than 5K daily mentions on X at the campaign's peak</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- ─────────────────────────────────────────────────────────
+            CARD 6 — Bag Worker Asset System
+        ───────────────────────────────────────────────────────────── -->
+        <li class="evidence-card" data-domain="product">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_1.png" alt="Bullish x Avici Finance collaboration branded graphics" width="560" height="315" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_2.png" alt="Bullish gold price crash meme" width="560" height="315" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_3.png" alt="Bullish x Kraken collaboration branded graphics" width="560" height="315" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_4.png" alt="Bullish S-1 ETF Application Meme" width="560" height="315" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_5.png" alt="Bullish x Solana Foundation collaboration branded graphics" width="560" height="315" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_6.png" alt="Bullish Everything is Fine Meme" width="560" height="315" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_7.png" alt="Bullish x George/eta444 editor meme" width="560" height="315" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_8.png" alt="Bullish x OnlyFans collaboration branded graphics" width="560" height="315" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_9.png" alt="Bullish You Dropped This Crown Meme" width="560" height="315" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_10.png" alt="Bullish on Jetski Meme" width="560" height="315" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/cryptopandemic/cryptopandemic-bwas_11.png" alt="Bullish Sorcery for Green Candles Meme" width="560" height="315" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 4"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 5"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 6"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 7"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 8"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 9"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 10"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 11"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Product
+            </span>
+            <h3 class="evidence-card__title">Bag Worker Asset System</h3>
+            <ul class="evidence-card__bullets">
+              <li>Produced 50+ branded assets purpose-built for bag workers to deploy across X</li>
+              <li>Provided a system of visual assets for easy access and sharing, turning coin holders into content
+                deployers</li>
+              <li>Assets were formatted for instant deploy, ready to drop into any X thread or reply</li>
+            </ul>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+</main><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a1a2145aeb00002c5a649aa5de5e0788" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"></div></div><div id="wb_main_a1a2145aeb00002c5a649aa5de5e0788" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"></div></div><div id="wb_footer_a1a2145aeb00002c5a649aa5de5e0788" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
+			$(function() {
+				var footer = $(".wb_footer");
+				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
+				if (!html) {
+					footer.parent().remove();
+					footer = $("#footer, #footer .wb_cont_inner");
+					footer.css({height: ""});
+				}
+			});
+			});</script></div></div></div></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
+	<script src="js/common-bundle.js?ts=20261125222641" type="text/javascript" defer></script>{{hr_out}}<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        window._spDefer.done();
+    });
+</script>
+</body>
+</html>

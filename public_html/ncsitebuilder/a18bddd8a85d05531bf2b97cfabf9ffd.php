@@ -28,8 +28,8 @@
 
 			<?php if (empty($wbWhitelabel)): ?>	<meta name="generator" content="Site.pro Builder" />
 	<?php else: ?>	<meta name="generator" content="Website Builder" />
-	<?php endif; ?>			<link href="css/common-bundle.css?ts=20261125022239" rel="preload" type="text/css" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
-	<link href="css/a18bddd8a85d05531bf2b97cfabf9ffd-bundle.css?ts=20261125022239" rel="preload" type="text/css" id="wb-page-stylesheet" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
+	<?php endif; ?>			<link href="css/common-bundle.css?ts=20261125222641" rel="preload" type="text/css" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
+	<link href="css/a18bddd8a85d05531bf2b97cfabf9ffd-bundle.css?ts=20261125222641" rel="preload" type="text/css" id="wb-page-stylesheet" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
 	<ga-code/><!-- Global: identity & crawling -->
 <meta name="author" content="George Dreemer">
 <meta name="robots" content="max-image-preview:large, max-snippet:-1">
@@ -225,7 +225,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 <!-- Page behavior -->
-<script data-custom-script="true" type="module" src="../js/pages/work/thoughtbubble.js"></script>	
+<script data-custom-script="true" type="module" src="../js/pages/work/thoughtbubble.js?v=10"></script>	
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.min.js"></script>
 	<![endif]-->
@@ -985,7 +985,7 @@
 				}
 			});
 			});</script></div></div></div></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
-	<script src="js/common-bundle.js?ts=20261125022239" type="text/javascript" defer></script>{{hr_out}}<script>
+	<script src="js/common-bundle.js?ts=20261125222641" type="text/javascript" defer></script>{{hr_out}}<script>
     document.addEventListener('DOMContentLoaded', function () {
         window._spDefer.done();
     });

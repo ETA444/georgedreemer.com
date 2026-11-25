@@ -1,0 +1,1761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript">
+	window._spDefer = {
+		queue: [],
+		ready: false,
+		add: function(fn) {
+			if (this.ready) { fn(); }
+			else { this.queue.push(fn); }
+		},
+		done: function() {
+			this.ready = true;
+			var fns = this.queue;
+			this.queue = [];
+			for (var i = 0; i < fns.length; i++) { fns[i](); }
+		}
+	};
+	</script>
+			<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title><?php echo htmlspecialchars((isset($seoTitle) && $seoTitle !== "") ? $seoTitle : "SkipSchoolMakeMoney — Streetwear Brand · George Dreemer"); ?></title>
+	<base href="{{base_url}}" />
+	<?php echo isset($sitemapUrls) ? (generateCanonicalUrl($sitemapUrls)."\n") : ""; ?>	
+	
+					
+	<!-- Facebook Open Graph -->
+						<!-- Facebook Open Graph end -->
+
+			<?php if (empty($wbWhitelabel)): ?>	<meta name="generator" content="Site.pro Builder" />
+	<?php else: ?>	<meta name="generator" content="Website Builder" />
+	<?php endif; ?>			<link href="css/common-bundle.css?ts=20261125222641" rel="preload" type="text/css" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
+	<link href="css/a1a213afe21f008f4843ef0ce17d5b56-bundle.css?ts=20261125222641" rel="preload" type="text/css" id="wb-page-stylesheet" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
+	<ga-code/><!-- Global: identity & crawling -->
+<meta name="author" content="George Dreemer">
+<meta name="robots" content="max-image-preview:large, max-snippet:-1">
+
+<!-- Global: appearance -->
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="format-detection" content="telephone=no">
+
+<!-- Global: social -->
+<meta property="og:site_name" content="George Dreemer">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:site" content="@444eta">
+<meta name="twitter:creator" content="@444eta">
+<meta name="twitter:label1" content="Role">
+<meta name="twitter:data1" content="Data Scientist &amp; Developer">
+<meta name="twitter:label2" content="Open to">
+<meta name="twitter:data2" content="Data, ML &amp; AI roles · Dubai, UAE">
+
+<!-- Global: icons -->
+<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png?v=20261124" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg?v=20261124" />
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=20261124" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=20261124" />
+<meta name="apple-mobile-web-app-title" content="ETA!" />
+<link rel="manifest" href="/favicon/site.webmanifest?v=20261124" />
+	<script type="text/javascript">
+	window.useTrailingSlashes = false;
+	window.disableRightClick = false;
+	window.currLang = 'en';
+</script>
+	<!-- Core document setup -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<!-- SEO -->
+<title>SkipSchoolMakeMoney — Streetwear Brand · George Dreemer</title>
+<meta name="description" content="SkipSchoolMakeMoney (SSMM) was a streetwear brand founded by George Dreemer, growing to 12,000+ Instagram followers, 20+ collections, and 1000s of orders across three continents.">
+<meta name="keywords" content="SkipSchoolMakeMoney, SSMM, George Dreemer, streetwear brand, underground streetwear, meme marketing, Clout Cards, Shopify store, brand founder, e-commerce entrepreneur, self-taught entrepreneur">
+<link rel="canonical" href="https://georgedreemer.com/work/skipschoolmakemoney">
+<link rel="alternate" type="text/markdown" href="https://georgedreemer.com/work/skipschoolmakemoney.md">
+<link rel="describedby" href="https://georgedreemer.com/llms.txt">
+
+<!-- Social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://georgedreemer.com/work/skipschoolmakemoney">
+<meta property="og:title" content="SkipSchoolMakeMoney — Streetwear Brand · George Dreemer">
+<meta property="og:description" content="SkipSchoolMakeMoney (SSMM) was a streetwear brand founded by George Dreemer, growing to 12,000+ Instagram followers, 20+ collections, and 1000s of orders across three continents.">
+<meta property="og:image" content="https://georgedreemer.com/public_img/general/ogimages/skipschoolmakemoney-v1.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Showcase of SkipSchoolMakeMoney branding and logo, made by George Dreemer">
+<meta name="twitter:image:alt" content="Showcase of SkipSchoolMakeMoney branding and logo, made by George Dreemer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SkipSchoolMakeMoney — Streetwear Brand · George Dreemer">
+<meta name="twitter:description" content="SkipSchoolMakeMoney (SSMM) was a streetwear brand founded by George Dreemer, growing to 12,000+ Instagram followers, 20+ collections, and 1000s of orders across three continents.">
+<meta name="twitter:image" content="https://georgedreemer.com/public_img/general/ogimages/skipschoolmakemoney-v1.png">
+
+<!-- Structured data -->
+<script data-custom-script="true" type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://georgedreemer.com/work/skipschoolmakemoney#webpage",
+      "url": "https://georgedreemer.com/work/skipschoolmakemoney",
+      "name": "SkipSchoolMakeMoney — Streetwear Brand",
+      "description": "SkipSchoolMakeMoney (SSMM) was a streetwear brand founded by George Dreemer, growing to 12,000+ Instagram followers, 20+ collections, and 1000s of orders across three continents.",
+      "isPartOf": {
+        "@id": "https://georgedreemer.com/#website"
+      },
+      "about": {
+        "@id": "https://georgedreemer.com/work/skipschoolmakemoney#project"
+      },
+      "mainEntity": {
+        "@id": "https://georgedreemer.com/work/skipschoolmakemoney#project"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://georgedreemer.com/public_img/general/ogimages/skipschoolmakemoney-v1.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "en",
+      "breadcrumb": {
+        "@id": "https://georgedreemer.com/work/skipschoolmakemoney#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://georgedreemer.com/work/skipschoolmakemoney#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "George Dreemer",
+          "item": "https://georgedreemer.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Work",
+          "item": "https://georgedreemer.com/#work"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "SkipSchoolMakeMoney",
+          "item": "https://georgedreemer.com/work/skipschoolmakemoney"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://georgedreemer.com/work/skipschoolmakemoney#project",
+      "name": "SkipSchoolMakeMoney",
+      "alternateName": "SSMM",
+      "url": "https://georgedreemer.com/work/skipschoolmakemoney",
+      "description": "An underground streetwear brand founded by George Dreemer, spanning design, manufacturing, e-commerce, and viral marketing across three continents.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://georgedreemer.com/public_img/general/ogimages/skipschoolmakemoney-v1.png",
+        "width": 1200,
+        "height": 630
+      },
+      "keywords": [
+        "SkipSchoolMakeMoney",
+        "SSMM",
+        "George Dreemer",
+        "streetwear brand",
+        "underground streetwear",
+        "fashion label",
+        "e-commerce brand",
+        "meme marketing",
+        "Clout Cards",
+        "Lil Peep",
+        "Pouya",
+        "Fat Nick",
+        "Shopify",
+        "e-commerce",
+        "brand founder"
+      ],
+      "founder": {
+        "@id": "https://georgedreemer.com/#person"
+      },
+      "sameAs": [
+        "https://www.skipschoolmakemoney.com",
+        "https://www.instagram.com/skipschoolmakemoney"
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Styles -->
+<!-- Global -->
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/sitebuilder-overrides.css">
+
+<!-- Components -->
+<link rel="stylesheet" href="../css/components/fade-in.css">
+<link rel="stylesheet" href="../css/components/section-label.css">
+<link rel="stylesheet" href="../css/components/site-shell.css">
+
+<link rel="stylesheet" href="../css/components/context-block.css">
+<link rel="stylesheet" href="../css/components/sc.css">
+<link rel="stylesheet" href="../css/components/stat-counter.css">
+<link rel="stylesheet" href="../css/components/stack-badge.css">
+<link rel="stylesheet" href="../css/components/ability-card-exp.css">
+<link rel="stylesheet" href="../css/components/works-card-exp.css">
+<link rel="stylesheet" href="../css/components/indepth-accordion.css">
+<link rel="stylesheet" href="../css/components/instagram-scroller.css">
+
+<!-- Third-party scripts -->
+<script data-custom-script="true" src="https://unpkg.com/lucide@1.72.0/dist/umd/lucide.js" defer></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<script data-custom-script="true" async src="https://www.instagram.com/embed.js"></script>
+
+<!-- Page behavior -->
+<script data-custom-script="true" type="module" src="../js/pages/work/skipschoolmakemoney.js?v=10"></script>	
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<![endif]-->
+
+		<script type="text/javascript">
+		window._spDefer.add(function() {
+<?php $wb_form_send_success = popSessionOrGlobalVar("wb_form_send_success"); ?>
+<?php if (($wb_form_send_state = popSessionOrGlobalVar("wb_form_send_state"))) { ?>
+	<?php if (($wb_form_popup_mode = popSessionOrGlobalVar("wb_form_popup_mode")) && (isset($wbPopupMode) && $wbPopupMode)) { ?>
+		if (window !== window.parent && window.parent.postMessage) {
+			var data = {
+				event: "wb_contact_form_sent",
+				data: {
+					state: "<?php echo str_replace('"', '\"', $wb_form_send_state); ?>",
+					type: "<?php echo $wb_form_send_success ? "success" : "danger"; ?>"
+				}
+			};
+			window.parent.postMessage(data, "<?php echo str_replace('"', '\"', popSessionOrGlobalVar("wb_target_origin")); ?>");
+		}
+	<?php $wb_form_send_success = false; $wb_form_send_state = null; $wb_form_popup_mode = false; ?>
+	<?php } else { ?>
+		wb_show_alert("<?php echo str_replace(array('"', "\r", "\n"), array('\"', "", "<br/>"), $wb_form_send_state); ?>", "<?php echo $wb_form_send_success ? "success" : "danger"; ?>");
+	<?php } ?>
+<?php } ?>
+});    </script>
+</head>
+
+
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><main class="main-content" role="main" data-page="skipschoolmakemoney">
+    
+    <h1 class="screenreader-only">
+      SkipSchoolMakeMoney — Streetwear Brand
+    </h1>
+    
+    <!-- ============================================================
+        ELEMENT 1 — CONTEXT BLOCK
+    ============================================================ -->
+    <section id="intro" data-nav="Intro" aria-label="Intro: Context" class="fade-in">
+      <div class="context-block">
+        <p>SkipSchoolMakeMoney (SSMM) was a streetwear brand born out of evening shifts at the
+          Hampshire College media lab — no funding, no team, no formula. It grew
+          from one hand-drawn logo into a cult-like following spanning three continents &amp; hundreds of
+          orders per collection.</p>
+        <p>SSMM was never just a clothing line. It was underground streetwear built on story,
+          community, and relentless self-taught hustle — design, manufacturing, marketing, and
+          logistics, all run by one person with a vision.</p>
+        <p>George designed and released 20+ collections, pioneered viral marketing methods amassing 12,000+ followers,
+          and managed manufacturing pipelines spanning the US, UK, and China — earning
+          recognition awards from startup accelerators and putting SSMM on the map of underground
+          streetwear, music and meme culture.</p>
+      </div>
+    </section>
+    
+    <!-- ============================================================
+        ELEMENT 2 — SNAPSHOT CARD
+    ============================================================ -->
+    <section aria-label="Intro: Experience Snapshot" class="fade-in">
+    
+      <h2 class="screenreader-only">Experience Snapshot</h2>
+    
+      <div class="snapshot-card" data-domain="growth">
+    
+        <div class="snapshot-card__tab">
+          <span class="snapshot-card__tab-logo" style="background:black; filter: invert(1);" data-gd-identity-logo="skipschoolmakemoney" aria-hidden="true"></span>
+          <span class="snapshot-card__tab-text">
+            <span class="snapshot-card__tab-name">SkipSchoolMakeMoney</span>
+          </span>
+        </div>
+    
+        <dl class="snapshot-card__meta">
+          <div class="snapshot-item snapshot-item--prominent">
+            <dt class="snapshot-item__key">Role</dt>
+            <dd class="snapshot-item__value">Founder, Designer &amp; Operator</dd>
+          </div>
+          <div class="snapshot-item snapshot-item--prominent">
+            <dt class="snapshot-item__key">Type</dt>
+            <dd class="snapshot-item__value">Streetwear Apparel Brand</dd>
+          </div>
+          <div class="snapshot-item">
+            <dt class="snapshot-item__key">Location</dt>
+            <dd class="snapshot-item__value">Amherst, MA, United States</dd>
+          </div>
+          <div class="snapshot-item">
+            <dt class="snapshot-item__key">Links</dt>
+            <dd class="snapshot-item__value">
+              <a href="https://www.skipschoolmakemoney.com" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-globe2"></i> Official Webstore
+              </a>
+              <br>
+              <a href="https://www.instagram.com/skipschoolmakemoney" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-instagram"></i> Instagram Page
+              </a>
+            </dd>
+          </div>
+        </dl>
+    
+        <div class="snapshot-card__divider"></div>
+    
+        <h3 class="snapshot-card__highlights-label">Highlights</h3>
+    
+        <ul class="snapshot-card__chips">
+          <li class="achievement-chip" data-domain="product">
+            <span class="achievement-chip__dot"></span>Designed 20+ collections, amounting to 200+ individual designs
+          </li>
+          <li class="achievement-chip" data-domain="product">
+            <span class="achievement-chip__dot"></span>Directed 25+ photo &amp; video shoots across 6 countries —
+            collaborating with photographers, models, and musicians
+          </li>
+          <li class="achievement-chip" data-domain="growth">
+            <span class="achievement-chip__dot"></span>Grew Instagram to 12,000+ followers at peak, driving 100s
+            comments and 1000s of likes/post
+          </li>
+          <li class="achievement-chip" data-domain="growth">
+            <span class="achievement-chip__dot"></span>Pioneered guerilla Instagram growth strategies — including meme
+            marketing, viral giveaways and influencer collaborations
+          </li>
+          <li class="achievement-chip" data-domain="growth">
+            <span class="achievement-chip__dot"></span>Ran paid ad campaigns across Instagram, Twitter, YouTube, and
+            Snapchat
+          </li>
+          <li class="achievement-chip" data-domain="growth">
+            <span class="achievement-chip__dot"></span>Built and grew multiple Mailchimp mailing lists to 1000s of
+            subscribers
+          </li>
+          <li class="achievement-chip" data-domain="growth">
+            <span class="achievement-chip__dot"></span>Negotiated promotional deals with influencers, media, and
+            creators
+          </li>
+          <li class="achievement-chip" data-domain="product">
+            <span class="achievement-chip__dot"></span>Managed manufacturing across the US West and East coasts, later
+            expanding to the UK and China
+          </li>
+          <li class="achievement-chip" data-domain="product">
+            <span class="achievement-chip__dot"></span>Organized supply chain, packaging, and shipping to serve
+            customers across 3 continents
+          </li>
+          <li class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Built 3 complete redesigns of the Shopify storefront end-to-end
+          </li>
+          <li class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Built 2 complete redesigns of the Squarespace storefront
+            end-to-end
+          </li>
+          <li class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Integrated manufacturing and shipping APIs to automate order
+            fulfillment and tracking
+          </li>
+          <li class="achievement-chip" data-domain="engineering">
+            <span class="achievement-chip__dot"></span>Streamlined customer communications for abandoned carts,
+            post-purchase follow-ups, and product launches
+          </li>
+          <li class="achievement-chip" data-domain="data">
+            <span class="achievement-chip__dot"></span>Set up and maintained Shopify, Mailchimp, and Google Analytics
+            for marketing, sales, and analytics
+          </li>
+          <li class="achievement-chip" data-domain="growth">
+            <span class="achievement-chip__dot"></span>Won the VVM Startup Accelerator Award, earning funding,
+            mentorship, and resources
+          </li>
+          <li class="achievement-chip" data-domain="growth">
+            <span class="achievement-chip__dot"></span>Won the Grinspoon Recognition Award for Entrepreneurial Spirit
+          </li>
+        </ul>
+    
+      </div>
+    </section>
+    
+    <!-- ============================================================
+        ELEMENT 3 — IN NUMBERS / STAT COUNTER
+    ============================================================ -->
+    <section aria-label="Intro: Experience In Numbers" class="stat-counter-section fade-in">
+    
+      <h2 class="screenreader-only">In Numbers</h2>
+    
+      <dl class="stat-counter">
+        <div class="stat-counter__item" data-target="200" data-suffix="+" data-domain="product">
+          <dt class="stat-counter__number" aria-live="polite">200+</dt>
+          <dd class="stat-counter__label">Designs released</dd>
+        </div>
+        <div class="stat-counter__item" data-target="12" data-suffix="K+" data-domain="growth">
+          <dt class="stat-counter__number" aria-live="polite">12K+</dt>
+          <dd class="stat-counter__label">Instagram followers at peak</dd>
+        </div>
+        <div class="stat-counter__item" data-target="100" data-suffix="K+" data-domain="growth">
+          <dt class="stat-counter__number" aria-live="polite">100K+</dt>
+          <dd class="stat-counter__label">Engagements generated</dd>
+        </div>
+        <div class="stat-counter__item" data-target="1000" data-suffix="+" data-domain="engineering">
+          <dt class="stat-counter__number" aria-live="polite">1000+</dt>
+          <dd class="stat-counter__label">Orders fulfilled</dd>
+        </div>
+      </dl>
+    
+    </section>
+    
+    <!-- ============================================================
+        ELEMENT 4 — STACK BADGE GRID
+    ============================================================ -->
+    <section id="stack" data-nav="Stack" aria-label="Stack" class="fade-in">
+      <div class="section-label">
+        <h2 class="section-label__text">Stack</h2>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+      <div class="stack-grid">
+    
+        <!-- Design & Creative -->
+        <div class="stack-group">
+          <h3 class="stack-group__label">Design &amp; Creative</h3>
+          <ul class="stack-group__items">
+            <li class="stack-badge">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Crect%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%224%22%20fill%3D%22%23330000%22%2F%3E%3Ctext%20x%3D%225%22%20y%3D%2216%22%20font-size%3D%2210%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%23FF9A00%22%3EAi%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Adobe Illustrator" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Illustrator</span>
+            </li>
+            <li class="stack-badge">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Crect%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%224%22%20fill%3D%22%23001E36%22%2F%3E%3Ctext%20x%3D%225%22%20y%3D%2216%22%20font-size%3D%2210%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%2331A8FF%22%3EPs%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Adobe Photoshop" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Photoshop</span>
+            </li>
+            <li class="stack-badge">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Crect%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%224%22%20fill%3D%22%2300005B%22%2F%3E%3Ctext%20x%3D%225%22%20y%3D%2216%22%20font-size%3D%2210%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%239999FF%22%3EAe%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Adobe After Effects" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">After Effects</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/davinciresolve" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">DaVinci Resolve</span>
+            </li>
+            <li class="stack-badge">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%2300005B%22/%3E%3Ctext%20x%3D%2252%22%20y%3D%22164%22%20font-size%3D%22104%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%239999FF%22%3EPr%3C/text%3E%3C/svg%3E" alt="Adobe Premiere Pro" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Premiere Pro</span>
+            </li>
+            <li class="stack-badge">
+              <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Crect%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%224%22%20fill%3D%22%2300005B%22%2F%3E%3Ctext%20x%3D%225%22%20y%3D%2216%22%20font-size%3D%2210%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%239999FF%22%3EAu%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Adobe Audition" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Audition</span>
+            </li>
+          </ul>
+        </div>
+    
+        <!-- Marketing & Growth -->
+        <div class="stack-group">
+          <h3 class="stack-group__label">Marketing &amp; Growth</h3>
+          <ul class="stack-group__items">
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/googleanalytics/e37400" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Google Analytics</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/meta/0081fb" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Meta Ads</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/snapchat" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Snapchat Ads</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/x/000000" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Twitter Ads</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/youtube/ff0000" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">YouTube Studio</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/tiktok/000000" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">TikTok Ads (Beta)</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/mailchimp/000000" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Mailchimp</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/buffer/000000" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Buffer</span>
+            </li>
+          </ul>
+        </div>
+    
+        <!-- Web & Commerce -->
+        <div class="stack-group">
+          <h3 class="stack-group__label">Web &amp; Commerce</h3>
+          <ul class="stack-group__items">
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/shopify/96bf48" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Shopify</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/squarespace/000000" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">Squarespace</span>
+            </li>
+          </ul>
+        </div>
+    
+        <!-- Code -->
+        <div class="stack-group">
+          <h3 class="stack-group__label">Code</h3>
+          <ul class="stack-group__items">
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/html5/e34f26" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">HTML</span>
+            </li>
+            <li class="stack-badge">
+              <img src="https://cdn.simpleicons.org/css/1572b6" alt="" width="18" height="18" loading="lazy">
+              <span class="stack-badge__name">CSS</span>
+            </li>
+          </ul>
+        </div>
+    
+      </div>
+    </section>
+    
+    <!-- ============================================================
+         ELEMENT 5 — ABILITY CARD GRID
+    ============================================================ -->
+    <section id="abilities" data-nav="Abilities" aria-label="Abilities" class="fade-in">
+    
+      <div class="section-label">
+        <h2 class="section-label__text">Abilities</h2>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+    
+      <p class="screenreader-only">Ability Domains</p>
+      <ul class="ability-legend" aria-label="Ability domains">
+        <li class="ability-legend__item ability-legend__item--engineering">
+          <span class="ability-legend__dot"></span>Engineering
+        </li>
+        <li class="ability-legend__item ability-legend__item--product">
+          <span class="ability-legend__dot"></span>Product
+        </li>
+        <li class="ability-legend__item ability-legend__item--growth">
+          <span class="ability-legend__dot"></span>Growth
+        </li>
+        <li class="ability-legend__item ability-legend__item--data">
+          <span class="ability-legend__dot"></span>Data
+        </li>
+      </ul>
+    
+      <ul class="ability-grid" id="e5-ability-grid" role="list">
+    
+        <li class="ability-card fade-in" data-domain="product">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="shirt"></i></div>
+          <h3 class="ability-card__title">Brand &amp; Collection Design</h3>
+    
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Built the SSMM identity from a single front-and-back logo into a full
+            underground streetwear universe, designing and releasing 20+ collections that grew into several hundred
+            individual graphics, garments, and visual concepts. Every drop had to feel culturally sharp, visually
+            distinct, and native to the world of underground fashion, music, and meme culture.</p>
+    
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Apparel Graphic Design</li>
+            <li class="ability-tag">Collection Development</li>
+            <li class="ability-tag">Production Coordination</li>
+          </ul>
+        </li>
+    
+        <li class="ability-card fade-in" data-domain="growth">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="trending-up"></i></div>
+          <h3 class="ability-card__title">Viral Growth &amp; Audience Building</h3>
+    
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Grew SSMM to 12,000+ Instagram followers at peak by pioneering aggressive
+            organic growth strategies built on meme marketing, giveaways, influencer collaborations, and constant
+            experimentation with what actually triggered engagement. The result was a highly active audience that drove
+            hundreds to thousands of comments per post, thousands of likes, and real demand across multiple drops.</p>
+    
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Organic Growth Strategy</li>
+            <li class="ability-tag">Meme &amp; Culture Marketing</li>
+            <li class="ability-tag">Campaign Automation</li>
+          </ul>
+        </li>
+    
+        <li class="ability-card fade-in" data-domain="growth">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="megaphone"></i></div>
+          <h3 class="ability-card__title">Influencer, Music &amp; Culture Positioning</h3>
+    
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Built relationships across the underground creative scene, working with
+            musicians, influencers, photographers, and content creators whose audiences aligned with the brand’s
+            identity. Collaborations and organic placements with names like Lil Peep, Pouya, Fat Nick, CA$HRINA, Lil
+            Johnnie, and others helped position SSMM inside the cultural conversation rather than outside it as just
+            another apparel shop.</p>
+    
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Influencer Outreach</li>
+            <li class="ability-tag">Partnership Development</li>
+            <li class="ability-tag">Cultural Positioning</li>
+          </ul>
+        </li>
+    
+        <li class="ability-card fade-in" data-domain="product">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="camera"></i></div>
+          <h3 class="ability-card__title">Creative Direction &amp; Content Production</h3>
+    
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Directed 25+ photo and video shoots across six countries, coordinating
+            photographers, models, locations, styling, and deliverables to give each collection a world around it. This
+            turned SSMM from a product catalog into a lifestyle brand with visuals strong enough to travel across feeds,
+            campaigns, and fan communities.</p>
+    
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Production Coordination</li>
+            <li class="ability-tag">Photo &amp; Video Editing</li>
+            <li class="ability-tag">Product Photography</li>
+            <li class="ability-tag">Campaign Asset Production</li>
+          </ul>
+        </li>
+    
+        <li class="ability-card fade-in" data-domain="engineering">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="shopping-bag"></i></div>
+          <h3 class="ability-card__title">Storefronts, Fulfillment &amp; Commerce Ops</h3>
+    
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Built and rebuilt the storefront stack across Squarespace and Shopify, creating
+            five end-to-end site redesigns while handling the operational layer behind the scenes. On the back end, I
+            coordinated manufacturing across the US East and West coasts before expanding into the UK and China, and
+            managed packaging, shipping, and customer fulfillment for orders reaching three continents.</p>
+    
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">E-commerce Operations</li>
+            <li class="ability-tag">Fulfillment Coordination</li>
+            <li class="ability-tag">Customer Experience Management</li>
+          </ul>
+        </li>
+    
+        <li class="ability-card fade-in" data-domain="data">
+          <div class="ability-card__icon" aria-hidden="true"><i data-lucide="bar-chart-3"></i></div>
+          <h3 class="ability-card__title">Campaign Tracking &amp; Iteration</h3>
+    
+          <p class="screenreader-only">
+            Ability description:
+          </p>
+          <p class="ability-card__desc">Used platform analytics, mailing lists, storefront behavior, and campaign
+            feedback loops to make SSMM more intelligent over time — what to launch, how to message it, where to push
+            it, and what audiences were responding. That included maintaining Shopify, Mailchimp, and Google Analytics
+            as the decision layer behind launches, promotions, post-purchase communication, and customer retention.</p>
+    
+          <p class="screenreader-only">
+            Skills developed through this ability:
+          </p>
+          <ul class="ability-card__tags">
+            <li class="ability-tag">Performance Analytics</li>
+            <li class="ability-tag">Feedback Loop Optimization</li>
+            <li class="ability-tag">Campaign Strategy</li>
+          </ul>
+        </li>
+    
+      </ul>
+    </section>
+    
+    <!-- ============================================================
+        ELEMENT 6 — WORKS CARD GRID
+    ============================================================ -->
+    <section id="works" data-nav="Works" aria-label="Works" class="fade-in">
+      <div class="section-label">
+        <h2 class="section-label__text">Works</h2>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+    
+      <ul class="evidence-grid">
+    
+        <!-- Card 1 — Product / collections -->
+        <li class="evidence-card" data-domain="product">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_1.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_2.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_12.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_6.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_15.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_16.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_9.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_10.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_11.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_3.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_7.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_8.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_14.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-collections_13.jpg" alt="SkipSchoolMakeMoney collection graphics and apparel designs" width="600" height="338" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 4"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 5"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 6"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 7"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 8"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 9"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 10"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 11"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 12"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 13"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 14"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Product
+            </span>
+            <h3 class="evidence-card__title">Collection Design System</h3>
+            <ul class="evidence-card__bullets">
+              <li>Designed and released 20 collections, amounting to roughly 200 individual designs across the brand's
+                lifetime</li>
+              <li>Built SSMM from a single logo into a full underground streetwear identity with recurring visual
+                language and drop narratives</li>
+              <li>Created apparel graphics, product concepts, and release themes tailored to underground fashion, music,
+                and meme culture</li>
+              <li>Turned each drop into a distinct world rather than a disconnected set of garments</li>
+            </ul>
+          </div>
+        </li>
+    
+        <!-- Card 2 — Product / creative direction -->
+        <li class="evidence-card" data-domain="product">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_10.jpg" alt="SkipSchoolMakeMoney photoshoot sample from Dreemland - Realistic Expectation, Unrealistic Results" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_11.jpg" alt="SkipSchoolMakeMoney photoshoot sample from Dreemland - Realistic Expectation, Unrealistic Results" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_8.jpg" alt="SkipSchoolMakeMoney photoshoot sample from Cxltures Photoshoot in Virginia" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_9.jpg" alt="SkipSchoolMakeMoney photoshoot sample from Cxltures Photoshoot in Virginia" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_6.jpg" alt="SkipSchoolMakeMoney photoshoot sample from Hidden Potential collection in Bulgaria" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_5.jpg" alt="SkipSchoolMakeMoney photoshoot sample from New York City photoshoot" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_4.jpg" alt="SkipSchoolMakeMoney photoshoot sample from New York City photoshoot" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_3.jpg" alt="SkipSchoolMakeMoney photoshoot sample from New York City photoshoot" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_1.jpg" alt="SkipSchoolMakeMoney photoshoot sample from Drop_1 Photoshoot shot by Dominic Sanchez in Amherst, MA, modeled by Yichao" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_2.jpg" alt="SkipSchoolMakeMoney photoshoot sample from Drop_1 Photoshoot shot by Dominic Sanchez in Massachusetts, modeled by Yichao" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_7.jpg" alt="SkipSchoolMakeMoney photoshoot sample from Drop_1 Photoshoot shot by Emanuelfromjanuary in California" width="600" height="338" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 4"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 5"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 6"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 7"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 8"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 9"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 10"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 11"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Product
+            </span>
+            <h3 class="evidence-card__title">Lookbooks, Shoots &amp; Visual Worldbuilding</h3>
+            <ul class="evidence-card__bullets">
+              <li>Directed 25 photo and video shoots across 6 countries with photographers, models, musicians, and local
+                creatives</li>
+              <li>Built campaign visuals that made SSMM feel like a lifestyle brand, not just an online store</li>
+              <li>Coordinated locations, styling, deliverables, and creative direction across international
+                collaborators</li>
+              <li>Created assets strong enough to carry launches across feeds, ads, website pages, and fan reposts</li>
+            </ul>
+          </div>
+        </li>
+    
+        <!-- Card 3 — Growth / meme marketing -->
+        <li class="evidence-card" data-domain="growth">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_6.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_1.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_9.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_2.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_11.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_3.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_10.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_4.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_5.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_8.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Meme Marketing, showcasing various memes from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 4"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 5"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 6"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 7"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 8"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 9"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 10"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Growth
+            </span>
+            <h3 class="evidence-card__title">Meme Marketing &amp; Viral Growth Loops</h3>
+            <ul class="evidence-card__bullets">
+              <li>Pioneered guerrilla Instagram growth strategies built on meme pages, giveaways, and high-frequency
+                experimentation</li>
+              <li>Helped drive the brand from a few thousand followers to a peak above 12,000 on Instagram</li>
+              <li>Generated hundreds to thousands of comments per post and thousands of likes through culturally native
+                content</li>
+              <li>Used fan participation and internet in-jokes as part of the actual brand engine, not just as promotion
+              </li>
+            </ul>
+          </div>
+        </li>
+    
+        <!-- Card 4 — Growth / influencer positioning -->
+        <li class="evidence-card" data-domain="growth">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_1.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Clout Cards, the baseball cards of rap culture - featuring rappers, musicians and influencers" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_2.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Clout Cards, the baseball cards of rap culture - featuring rappers, musicians and influencers" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-celebs_3.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Celebrities, showcasing various celebrities from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_3.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Clout Cards, the baseball cards of rap culture - featuring rappers, musicians and influencers" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-celebs_1.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Celebrities, showcasing various celebrities from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_4.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Clout Cards, the baseball cards of rap culture - featuring rappers, musicians and influencers" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_5.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Clout Cards, the baseball cards of rap culture - featuring rappers, musicians and influencers" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-celebs_2.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Celebrities, showcasing various celebrities from the brand's social media presence" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_6.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Clout Cards, the baseball cards of rap culture - featuring rappers, musicians and influencers" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_7.jpg" alt="SkipSchoolMakeMoney showcases pioneering marketing strategy - Clout Cards, the baseball cards of rap culture - featuring rappers, musicians and influencers" width="600" height="338" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 4"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 5"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 6"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 7"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 8"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 9"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 10"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Growth
+            </span>
+            <h3 class="evidence-card__title">Influencer &amp; Music-Culture Positioning</h3>
+            <ul class="evidence-card__bullets">
+              <li>Built relationships with musicians, influencers, photographers, and creators whose audiences matched
+                the SSMM identity</li>
+              <li>Negotiated promotional deals and organic placements with names including Lil Peep, Pouya, Fat Nick,
+                and others</li>
+              <li>Positioned SSMM inside the underground streetwear conversation rather than outside it as a generic
+                apparel shop</li>
+              <li>Used collaborations as trust-transfer mechanisms that moved both awareness and demand</li>
+            </ul>
+          </div>
+        </li>
+    
+        <!-- Card 5 — Engineering / storefronts -->
+        <li class="evidence-card" data-domain="engineering">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-website_1.jpg" alt="SkipSchoolMakeMoney Shopify and Squarespace storefront design and e-commerce setup" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-website_3.jpg" alt="SkipSchoolMakeMoney Shopify and Squarespace storefront design and e-commerce setup" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-website_2.jpg" alt="SkipSchoolMakeMoney Shopify and Squarespace storefront design and e-commerce setup" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-website_4.jpg" alt="SkipSchoolMakeMoney Shopify and Squarespace storefront design and e-commerce setup" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-website_5.jpg" alt="SkipSchoolMakeMoney Shopify and Squarespace storefront design and e-commerce setup" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-website_6.jpg" alt="SkipSchoolMakeMoney Shopify and Squarespace storefront design and e-commerce setup" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-website_7.jpg" alt="SkipSchoolMakeMoney Shopify and Squarespace storefront design and e-commerce setup" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-website_8.jpg" alt="SkipSchoolMakeMoney Shopify and Squarespace storefront design and e-commerce setup" width="600" height="338" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 3"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 4"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 5"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 6"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 7"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 8"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Engineering
+            </span>
+            <h3 class="evidence-card__title">Storefront Builds &amp; Commerce Stack</h3>
+            <ul class="evidence-card__bullets">
+              <li>Built 3 full Shopify redesigns and 2 complete Squarespace redesigns end-to-end</li>
+              <li>Created and managed the custom SSMM webstore as the operational center for launches, sales, and
+                customer experience</li>
+              <li>Integrated e-commerce flows to support launches, cart recovery, post-purchase communication, and order
+                tracking</li>
+              <li>Handled the technical layer of making a culture brand actually transact cleanly online</li>
+            </ul>
+          </div>
+        </li>
+    
+        <!-- Card 6 — Engineering / operations -->
+        <li class="evidence-card" data-domain="engineering">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-shipping_1.jpg" alt="SkipSchoolMakeMoney manufacturing, packaging, shipping, and fulfillment operations extended across three continents, with manufacturing partners in the US, UK, and China" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-shipping_2.jpg" alt="SkipSchoolMakeMoney manufacturing, packaging, shipping, and fulfillment operations extended across three continents, with manufacturing partners in the US, UK, and China" width="600" height="338" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Engineering
+            </span>
+            <h3 class="evidence-card__title">Manufacturing, Fulfillment &amp; Logistics</h3>
+            <ul class="evidence-card__bullets">
+              <li>Managed production across the US West Coast and East Coast before expanding manufacturing
+                relationships into
+                the UK and China</li>
+              <li>Organized packaging, shipping, and customer fulfillment for roughly 1,000 orders worldwide</li>
+              <li>Built supply paths capable of serving customers across North America, Europe, and beyond</li>
+              <li>Translated a one-person brand into repeatable real-world operations across multiple production
+                partners</li>
+            </ul>
+          </div>
+        </li>
+    
+        <!-- Card 7 — Data -->
+        <li class="evidence-card" data-domain="data">
+          <div class="evidence-card__video">
+            <iframe src="https://www.youtube.com/embed/IrQYk78ExIY?si=57HdRotiCbDuZPu3&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=IrQYk78ExIY&amp;controls=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" title="SkipSchoolMakeMoney x YLLW Productions Collection Promo Video, shot in Calgary, Alberta, Canada" aria-label="SkipSchoolMakeMoney x YLLW Productions Collection Promo Video, shot in Calgary, Alberta, Canada" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <button class="evidence-card__sound-btn" data-sound-toggle aria-label="Toggle sound">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <line x1="23" y1="9" x2="17" y2="15" class="mute-line"></line>
+                <line x1="17" y1="9" x2="23" y2="15" class="mute-line"></line>
+              </svg>
+            </button>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Data
+            </span>
+            <h3 class="evidence-card__title">Analytics, CRM &amp; Launch Optimisation</h3>
+            <ul class="evidence-card__bullets">
+              <li>Maintained Shopify, Mailchimp, and Google Analytics as the decision layer behind launches, promotions,
+                and retention</li>
+              <li>Built and grew multiple mailing lists to thousands of subscribers</li>
+              <li>Tracked storefront behaviour, campaign response, and customer signals to refine messaging, timing, and
+                offer structure</li>
+              <li>Used analytics to make launches smarter over time instead of relying on instinct alone</li>
+            </ul>
+          </div>
+        </li>
+    
+        <!-- Card 8 — Growth / credibility -->
+        <li class="evidence-card" data-domain="growth">
+          <div class="evidence-card__slides">
+            <div class="evidence-card__slides-track">
+              <div class="evidence-card__slide is-active">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-awards_1.jpg" alt="SkipSchoolMakeMoney entrepreneurial awards, startup recognition, and accelerator acceptance" width="600" height="338" loading="lazy">
+              </div>
+              <div class="evidence-card__slide">
+                <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-awards_2.jpg" alt="SkipSchoolMakeMoney entrepreneurial awards, startup recognition, and accelerator acceptance" width="600" height="338" loading="lazy">
+              </div>
+            </div>
+            <div class="evidence-card__slide-dots">
+              <button class="evidence-card__slide-dot is-active" aria-label="Show slide 1"></button>
+              <button class="evidence-card__slide-dot" aria-label="Show slide 2"></button>
+            </div>
+          </div>
+          <div class="evidence-card__body">
+            <span class="evidence-card__domain-tag">
+              <span class="evidence-card__domain-tag-dot"></span>Growth
+            </span>
+            <h3 class="evidence-card__title">Awards, Funding &amp; External Validation</h3>
+            <ul class="evidence-card__bullets">
+              <li>Won the VVM Startup Accelerator Award, earning funding, mentorship, and business resources</li>
+              <li>Received the Grinspoon Recognition Award for Entrepreneurial Spirit</li>
+              <li>Used external validation to strengthen brand credibility beyond the immediate streetwear niche</li>
+              <li>Proved the project had enough commercial and cultural traction to be taken seriously by startup
+                institutions</li>
+            </ul>
+          </div>
+        </li>
+    
+      </ul>
+    </section>
+    
+    <!-- ============================================================
+        ELEMENT 7 — IN DEPTH ACCORDION
+    ============================================================ -->
+    <section id="in-depth" data-nav="In-depth" aria-label="In-depth" class="fade-in">
+      <div class="section-label">
+        <h2 class="section-label__text">In Depth</h2>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+    
+      <ul class="story-accordion" role="list">
+    
+        <!-- Item 1: Growth — origin of meme marketing -->
+        <li class="story-accordion__item" data-domain="growth" role="listitem">
+          <button class="story-accordion__trigger" aria-expanded="true" aria-controls="story-panel-1">
+            <span class="story-accordion__trigger-left">
+              <span class="story-accordion__domain-tag">
+                <span class="story-accordion__domain-dot"></span>Growth
+              </span>
+              <h3 class="story-accordion__trigger-label">The Graduation Photo that Started a Movement</h3>
+            </span>
+            <svg class="story-accordion__chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="story-accordion__body" id="story-panel-1" aria-hidden="false">
+            <div class="story-accordion__inner">
+              <div class="story-accordion__content">
+                <p>One of our earliest supporters wore an SSMM hoodie under his graduation gown and took his entire set
+                  of
+                  graduation photos in it — cap, gown, tassel, and a brand nobody had heard of hiding underneath.
+                  Someone
+                  posted the photos with the caption "this boy got a bright future ahead of him," and within days it was
+                  circulating across dozens of meme pages, splitting comment sections between people laughing and people
+                  genuinely offended on the kid's behalf.</p>
+                <p></p>
+                <div class="story-accordion__gallery">
+                  <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_originals_1.jpg" alt="SkipSchoolMakeMoney Fan wears SSMM Internet Tour Crewneck at his Graduation - photo meme that helped start SSMM meme marketing" width="100%" height="200" loading="lazy">
+                </div>
+                <p></p>
+                <p>That single post did something I didn't fully understand until later: it turned SSMM into a meme
+                  format
+                  rather than just a brand people wore. A second person wore SSMM in his yearbook photos, which spawned
+                  its
+                  own meme. Someone else wrapped their newborn baby brother in an SSMM hoodie and posted it, and the
+                  internet did the rest. I didn't write a single one of these memes — the audience did, on their own,
+                  unprompted.</p>
+                <p></p>
+                <div class="story-accordion__gallery">
+                  <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-memes_originals_2.jpg" alt="SkipSchoolMakeMoney Fan wears SSMM Internet Tour Crewneck at his Graduation - photo meme that helped start SSMM meme marketing" width="100%" height="200" loading="lazy">
+                </div>
+                <p></p>
+                <p>Looking back, this is where the meme marketing engine actually started. Not from a campaign I
+                  planned,
+                  but from fans finding ways to insert the brand into their own lives that were funnier and more absurd
+                  than
+                  anything I could have scripted. Every future giveaway and meme push was really just me trying to feed
+                  that
+                  same energy back to the community that had already proven it existed.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+    
+        <!-- Item 2: Product — Clout Cards -->
+        <li class="story-accordion__item" data-domain="product" role="listitem">
+          <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-2">
+            <span class="story-accordion__trigger-left">
+              <span class="story-accordion__domain-tag">
+                <span class="story-accordion__domain-dot"></span>Product
+              </span>
+              <h3 class="story-accordion__trigger-label">Baseball Cards for the Internet Age</h3>
+            </span>
+            <svg class="story-accordion__chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="story-accordion__body" id="story-panel-2" aria-hidden="true">
+            <div class="story-accordion__inner">
+              <div class="story-accordion__content">
+                <p>At the peak of its run, I'd had the chance to meet and work with a growing
+                  list of names in the underground scene — Pouya, Fat Nick, Ghostemane, Lil Peep, TooPoor (Layla), Rae
+                  Sremmurd, and others. Somewhere in the middle of all that, an old childhood obsession resurfaced: I
+                  used
+                  to collect Yu-Gi-Oh cards, and something about the format stuck with me long after I'd stopped
+                  playing.
+                </p>
+                <p></p>
+                <div class="story-accordion__gallery">
+                  <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_1.jpg" alt="SkipSchoolMakeMoney Clout Cards - The Baseball Cards of Internet Culture" width="100%" height="200" loading="lazy">
+                </div>
+                <p></p>
+                <p>I pitched an idea to our biggest supporters: free "Clout Card" booster packs inside every order. Each
+                  card followed the classic trading-card layout — a candid or funny photo of a rapper, musician, or
+                  influencer on the front, with a set of "superpowers" underneath describing, in a hyperbolic and
+                  slightly
+                  sarcastic tone, what that person was actually known for in real life.</p>
+                <p></p>
+                <div class="story-accordion__gallery">
+                  <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_2.jpg" alt="SkipSchoolMakeMoney Clout Card featuring Lil Peep" width="47%" height="200" loading="lazy">
+                  <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_3.jpg" alt="SkipSchoolMakeMoney Clout Card featuring Matt Ox" width="47%" height="200" loading="lazy">
+                </div>
+                <p></p>
+                <p>What started as a joke between a handful of superfans grew into a full set — cards for the artists
+                  above,
+                  plus names like Gary Vee, Tai Lopez, and Ice Poseidon, and eventually cards for people inside the SSMM
+                  universe itself: our photographers, our models, and the meme pages that had helped build the brand's
+                  early
+                  audience. It turned every order into a small collectible moment, gave fans a reason to talk to each
+                  other
+                  about who they'd pulled, and folded the brand's own community into the same mythology as the
+                  celebrities
+                  it referenced.</p>
+                <p></p>
+                <div class="story-accordion__gallery">
+                  <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_6.jpg" alt="SkipSchoolMakeMoney Clout Card featuring Pouya" width="47%" height="200" loading="lazy">
+                  <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-cloutcards_5.jpg" alt="SkipSchoolMakeMoney Clout Card featuring Tai Lopez and Gary Vaynerchuk" width="47%" height="200" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+    
+        <!-- Item 3: Growth — the missed meeting -->
+        <li class="story-accordion__item" data-domain="growth" role="listitem">
+          <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-3">
+            <span class="story-accordion__trigger-left">
+              <span class="story-accordion__domain-tag">
+                <span class="story-accordion__domain-dot"></span>Growth
+              </span>
+              <h3 class="story-accordion__trigger-label">The Meeting I Missed to a Flat Tire</h3>
+            </span>
+            <svg class="story-accordion__chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="story-accordion__body" id="story-panel-3" aria-hidden="true">
+            <div class="story-accordion__inner">
+              <div class="story-accordion__content">
+                <p>Not every connection worked out, and this one still stings. I'd lined up a meeting with Tycho
+                  Burwell, a director who went on to shoot music videos for artists like Nettspend and Trippie Redd. On
+                  the drive down, I got a flat tire — and because I young guy in the US without a phone plan, I had no
+                  way to call Tycho to explain, and no way to call my insurance for help either.</p>
+                <p>A state trooper happened to stop, realized how far over my head I was, and helped me change the tire
+                  himself. He was kind about it, but he also told me straight: don't push on to New York on a spare,
+                  turn
+                  around and go home. So I did — heartbroken, because there was no way to salvage the meeting from the
+                  side
+                  of a highway with no working phone.</p>
+                <p>Tycho took the no-show personally, and understandably so from where he was sitting — we never spoke
+                  again. It's a small story in the grand scheme of the brand, but it's an honest one: running something
+                  alone means the gap between "almost" and "actually" sometimes comes down to things completely outside
+                  your
+                  control, like a tire and a phone plan you couldn't yet afford.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+    
+        <!-- Item 4: Product — NYC photoshoot -->
+        <li class="story-accordion__item" data-domain="product" role="listitem">
+          <button class="story-accordion__trigger" aria-expanded="false" aria-controls="story-panel-4">
+            <span class="story-accordion__trigger-left">
+              <span class="story-accordion__domain-tag">
+                <span class="story-accordion__domain-dot"></span>Product
+              </span>
+              <h3 class="story-accordion__trigger-label">Alone in Times Square with Two Suitcases Full of Clothes</h3>
+            </span>
+            <svg class="story-accordion__chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="story-accordion__body" id="story-panel-4" aria-hidden="true">
+            <div class="story-accordion__inner">
+              <div class="story-accordion__content">
+                <p>My first solo trip to New York City was for a photoshoot. I had just moved to the US and barely knew
+                  my way around, and I drove three and a half hours from a small college town
+                  straight into Times Square traffic with two suitcases full of clothes in the back seat. I found street
+                  parking on a busy Brooklyn block — next to a fire hydrant, because it was the only open spot. Only
+                  later did I find out why fire hydrant spots aren't taken once I saw the ticket.</p>
+                <p>No food, no water, no local contacts, and a budget too tight to absorb surprises. But I met Alexis
+                  Conti,
+                  the photographer, and her model — who turned out to be an incredible musician in his own right. Alexis
+                  was
+                  great friends and the photographer for rising NYC rapper CASHRINA. So, I was quietly
+                  starstruck the entire shoot while trying to act like directing a shoot in Times Square was a
+                  completely
+                  normal Tuesday for me.</p>
+                <p>Despite every logistical thing working against it, the shoot itself was one of the best days of the
+                  brand's run. The photos from that day are still some of the strongest in SSMM's entire catalog — proof
+                  that resourcefulness and a good eye can outperform budget, connections, and experience combined.</p>
+                <div class="story-accordion__gallery">
+                  <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_3.jpg" alt="SkipSchoolMakeMoney New York City photoshoot" width="280" height="200" loading="lazy">
+                  <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_4.jpg" alt="SkipSchoolMakeMoney New York City photoshoot" width="280" height="200" loading="lazy">
+                  <img src="https://georgedreemer.com/public_img/ssmm/skipschoolmakemoney-photoshoots_5.jpg" alt="SkipSchoolMakeMoney New York City photoshoot" width="280" height="200" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+    
+      </ul>
+    </section>
+    
+    <!-- ============================================================
+            ELEMENT 8 — INSTAGRAM SCROLLER
+    ============================================================ -->
+    <section id="instagram" data-nav="Instagram" aria-label="Instagram" class="fade-in">
+      <div class="section-label">
+        <h2 class="section-label__text">On Instagram</h2>
+        <span class="section-label__line" aria-hidden="true"></span>
+      </div>
+    
+      <div class="ig-scroller">
+        <ul class="ig-scroller__track" data-ig-track>
+    
+          <li class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/BvaBTEkA1kP/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/reel/BvaBTEkA1kP/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/reel/BvaBTEkA1kP/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <!--p class="ig-scroller__caption">placeholder caption for BvaBTEkA1kP reel</p-->
+          </li>
+    
+          <li class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BgZPR__g-m5/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/BgZPR__g-m5/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/p/BgZPR__g-m5/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <!--p class="ig-scroller__caption">placeholder caption for BgZPR__g-m5</p-->
+          </li>
+    
+          <li class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BmWaOtflhVd/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/BmWaOtflhVd/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/p/BmWaOtflhVd/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <!--p class="ig-scroller__caption">placeholder caption for BmWaOtflhVd</p-->
+          </li>
+    
+          <li class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BnMRJspFUfz/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/BnMRJspFUfz/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/p/BnMRJspFUfz/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <!--p class="ig-scroller__caption">placeholder caption for BnMRJspFUfz</p-->
+          </li>
+    
+          <li class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/Boe8KrZBntP/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/Boe8KrZBntP/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/p/Boe8KrZBntP/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <!--p class="ig-scroller__caption">placeholder caption for Boe8KrZBntP</p-->
+          </li>
+    
+          <li class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BmEfHpBF0q2/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/BmEfHpBF0q2/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/p/BmEfHpBF0q2/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <!--p class="ig-scroller__caption">placeholder caption for BmEfHpBF0q2</p-->
+          </li>
+    
+          <li class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/Bno7-yRFQFZ/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/Bno7-yRFQFZ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/p/Bno7-yRFQFZ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <!--p class="ig-scroller__caption">placeholder caption for Bno7-yRFQFZ</p-->
+          </li>
+    
+          <li class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BgRiuS8Adlv/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/BgRiuS8Adlv/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/p/BgRiuS8Adlv/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <!--p class="ig-scroller__caption">placeholder caption for BgRiuS8Adlv</p-->
+          </li>
+    
+          <li class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BeoGFN3h-Hk/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/BeoGFN3h-Hk/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/p/BeoGFN3h-Hk/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <!--p class="ig-scroller__caption">placeholder caption for BeoGFN3h-Hk</p-->
+          </li>
+    
+          <li class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BaHgM8nh5Pp/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/BaHgM8nh5Pp/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/p/BaHgM8nh5Pp/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <!--p class="ig-scroller__caption">placeholder caption for BaHgM8nh5Pp</p-->
+          </li>
+    
+          <li class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BZl5723hZPZ/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/BZl5723hZPZ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/p/BZl5723hZPZ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <!--p class="ig-scroller__caption">placeholder caption for BZl5723hZPZ</p-->
+          </li>
+    
+          <li class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BZ9Qw4Mhf5X/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/BZ9Qw4Mhf5X/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/p/BZ9Qw4Mhf5X/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <!--p class="ig-scroller__caption">placeholder caption for BZ9Qw4Mhf5X</p-->
+          </li>
+    
+          <li class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BZjsrEghRjG/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/BZjsrEghRjG/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/p/BZjsrEghRjG/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <!--p class="ig-scroller__caption">placeholder caption for BZjsrEghRjG</p-->
+          </li>
+    
+          <li class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BS4HPQzhaa3/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/BS4HPQzhaa3/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/p/BS4HPQzhaa3/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <!--p class="ig-scroller__caption">placeholder caption for BS4HPQzhaa3</p-->
+          </li>
+    
+          <li class="ig-scroller__item">
+            <div class="ig-scroller__embed">
+              <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BQYtm1DgEHp/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/BQYtm1DgEHp/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                        </div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                    <a href="https://www.instagram.com/p/BQYtm1DgEHp/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by SkipSchoolMakeMoney (@skipschoolmakemoney)</a>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+            <!--p class="ig-scroller__caption">placeholder caption for BQYtm1DgEHp</p-->
+          </li>
+    
+        </ul>
+    
+        <div class="ig-scroller__nav">
+          <button class="ig-scroller__nav-btn" data-ig-prev aria-label="Scroll to previous post">
+            <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="ig-scroller__nav-btn" data-ig-next aria-label="Scroll to next post">
+            <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+</main><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a1a213afe21f008f4843ef0ce17d5b56" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"></div></div><div id="wb_main_a1a213afe21f008f4843ef0ce17d5b56" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"></div></div><div id="wb_footer_a1a213afe21f008f4843ef0ce17d5b56" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
+			$(function() {
+				var footer = $(".wb_footer");
+				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
+				if (!html) {
+					footer.parent().remove();
+					footer = $("#footer, #footer .wb_cont_inner");
+					footer.css({height: ""});
+				}
+			});
+			});</script></div></div></div></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
+	<script src="js/common-bundle.js?ts=20261125222641" type="text/javascript" defer></script>{{hr_out}}<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        window._spDefer.done();
+    });
+</script>
+</body>
+</html>

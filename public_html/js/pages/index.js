@@ -1,5 +1,5 @@
 // global
-import '../site.js';
+import '../site.js?v=5';
 
 // components
 import '../components/hero.js?v=2'; // used for the hero section

@@ -23,15 +23,16 @@
 	<?php echo isset($sitemapUrls) ? (generateCanonicalUrl($sitemapUrls)."\n") : ""; ?>	
 	
 						<meta name="viewport" content="width=device-width, initial-scale=1" />
-							
+							<meta name="robots" content="noindex" />
+		
 	<!-- Facebook Open Graph -->
 						<!-- Facebook Open Graph end -->
 
 			<?php if (empty($wbWhitelabel)): ?>	<meta name="generator" content="Site.pro Builder" />
 	<?php else: ?>	<meta name="generator" content="Website Builder" />
-	<?php endif; ?>			<link href="css/common-bundle.css?ts=20261125022239" rel="preload" type="text/css" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
+	<?php endif; ?>			<link href="css/common-bundle.css?ts=20261125222641" rel="preload" type="text/css" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese" rel="preload" type="text/css" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
-	<link href="css/a1a10ba37c9800b11f76098bcc91fa4b-bundle.css?ts=20261125022239" rel="preload" type="text/css" id="wb-page-stylesheet" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
+	<link href="css/a1a10ba37c9800b11f76098bcc91fa4b-bundle.css?ts=20261125222641" rel="preload" type="text/css" id="wb-page-stylesheet" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
 	<ga-code/><!-- Global: identity & crawling -->
 <meta name="author" content="George Dreemer">
 <meta name="robots" content="max-image-preview:large, max-snippet:-1">
@@ -2551,13 +2552,13 @@
 </head>
 
 
-<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a1a10ba37c9800b11f76098bcc91fa4b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dc00f4f3dc0e6ba03d8656" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dc02dd12dafd3d1f30a6a2" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a10ba380dd004673614261d8107db1" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1795566160"></a></div></div></div><div id="a1a10ba380de00e978c8c7c125f749d3" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a10ba380dd01c45f700d7f8fe12965" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1795566160"></a></div></div></div></div></div><div id="a1a10ba380e0003e6e0f918efa7529ad" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a1a10ba37c9800b11f76098bcc91fa4b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dc00f4f3dc0e6ba03d8656" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dc02dd12dafd3d1f30a6a2" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a10ba380dd004673614261d8107db1" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/cc312fb075b5939bdd6009ed9a947c47_502x176_fit.png?ts=1795638410"></a></div></div></div><div id="a1a10ba380de00e978c8c7c125f749d3" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a10ba380dd01c45f700d7f8fe12965" class="wb_element wb_element_picture" data-plugin="Picture" title="GeorgeDreemer.com"><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><a href="https://www.georgedreemer.com"><img loading="lazy" alt="GeorgeDreemer.com" src="gallery_gen/05e486d9ea9d35f61ede8fdf94b705e3_560x294_fit.png?ts=1795638410"></a></div></div></div></div></div><div id="a1a10ba380e0003e6e0f918efa7529ad" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array(
 		(object) array(
 			'id' => 1,
-			'href' => '{{base_url}}',
+			'href' => 'OLD-Landing-page',
 			'name' => 'Home',
 			'class' => '',
 			'children' => array()
@@ -2577,7 +2578,7 @@
 				),
 				(object) array(
 					'id' => 5,
-					'href' => 'skipschoolmakemoney',
+					'href' => 'OLD-skipschoolmakemoney-1',
 					'name' => 'SSMM',
 					'class' => '',
 					'children' => array()
@@ -2591,7 +2592,7 @@
 				),
 				(object) array(
 					'id' => 7,
-					'href' => 'dreemcorp',
+					'href' => 'OLD-DREEMCORP',
 					'name' => 'DREEMCORP',
 					'class' => '',
 					'children' => array()
@@ -2620,24 +2621,23 @@
 		),
 		(object) array(
 			'id' => 2,
-			'href' => 'blog',
 			'name' => 'Blog',
 			'class' => '',
 			'children' => array()
 		),
 		(object) array(
 			'id' => 3,
-			'href' => '#contacts',
+			'href' => 'OLD-Landing-page#contacts',
 			'name' => 'Contact',
 			'class' => '',
 			'children' => array()
 		)
 	)
-)); ?><div class="clearfix"></div></div></div></div><div id="a1a10ba380dd0555369775120f108bad" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a10ba380dd02870c776abc253ba46f" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dd03bd75c01d7395fd7cdc" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/5e99756a27cae83cb6befdeef656e13d_fit.png?ts=1795566160"></div></div></div></div></div></div></div></div></div><div id="a1a20eed7e96008ff93de86de35d36a7" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
+)); ?><div class="clearfix"></div></div></div></div><div id="a1a10ba380dd0555369775120f108bad" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-horizontal"><div id="a1a10ba380dd02870c776abc253ba46f" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dd03bd75c01d7395fd7cdc" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery_gen/5e99756a27cae83cb6befdeef656e13d_fit.png?ts=1795638410"></div></div></div></div></div></div></div></div></div><div id="a1a20eed7e96008ff93de86de35d36a7" class="wb_element wb-menu wb-prevent-layout-click wb-menu-mobile" data-plugin="Menu"><span class="btn btn-default btn-collapser"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span><?php MenuElement::render((object) array(
 	'type' => 'hmenu',
 	'dir' => 'ltr',
 	'items' => array()
-)); ?><div class="clearfix"></div></div></div></div><div id="wb_main_a1a10ba37c9800b11f76098bcc91fa4b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dc01af20b7b8795036ef3a" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1795566160"></div></div></div><div id="a1a10ba380df004411e5d21393b5f09f" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><main class="preview-page" role="main">
+)); ?><div class="clearfix"></div></div></div></div><div id="wb_main_a1a10ba37c9800b11f76098bcc91fa4b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="a1a10ba380dc01af20b7b8795036ef3a" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-4x_compressed-ts1661540570.png?ts=1795638410"></div></div></div><div id="a1a10ba380df004411e5d21393b5f09f" class="wb_element" data-plugin="CustomHtml"><div style="width: 100%; height: 100%;"><main class="preview-page" role="main">
     <!-- ============================================================
         ELEMENT 1 — CONTEXT BLOCK
     ============================================================ -->
@@ -3723,7 +3723,7 @@
 
         </div><!-- /.stack-grid -->
     </section>
-</main></div></div><div id="a1a10ba380df02e9759bf9807cfb042f" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1795566160"></div></div></div></div></div><div id="wb_footer_a1a10ba37c9800b11f76098bcc91fa4b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
+</main></div></div><div id="a1a10ba380df02e9759bf9807cfb042f" class="wb_element wb_element_picture" data-plugin="Picture" title=""><div class="wb_picture_wrap"><div class="wb-picture-wrapper"><img loading="lazy" alt="" src="gallery/dxyz-landing-papertear-wb-4x-min-ts1662049006.png?ts=1795638410"></div></div></div></div></div><div id="wb_footer_a1a10ba37c9800b11f76098bcc91fa4b" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
 			$(function() {
 				var footer = $(".wb_footer");
 				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
@@ -3734,7 +3734,7 @@
 				}
 			});
 			});</script></div></div></div></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
-	<script src="js/common-bundle.js?ts=20261125022239" type="text/javascript" defer></script>{{hr_out}}<script data-custom-script="true">
+	<script src="js/common-bundle.js?ts=20261125222641" type="text/javascript" defer></script>{{hr_out}}<script data-custom-script="true">
     // ── Lucide icons ──────────────────────────────────────────────
     (function () {
         if (typeof lucide !== 'undefined') {
