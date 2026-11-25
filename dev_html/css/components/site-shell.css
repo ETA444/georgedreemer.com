@@ -199,13 +199,6 @@ html[data-gd-ready] main [id][data-nav] {
     padding-top: calc(env(safe-area-inset-top) + 0.5em);
 }
 
-@media (max-width: 59.999rem) {
-    body:has(.gd-home-page) .gd-header {
-        position: relative;
-        top: auto;
-    }
-}
-
 .gd-header__inner {
     display: flex;
     align-items: center;
