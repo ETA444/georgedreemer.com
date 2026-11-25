@@ -39,13 +39,12 @@ if (hero) {
         const header = document.getElementById('gd-header');
         let state = 'merged';
 
-        if (header && desktop.matches) {
+        if (header) {
             const headerBottom = header.getBoundingClientRect().bottom;
             const heroBottom = hero.getBoundingClientRect().bottom;
             const lead = Math.min(LEAD_MAX, Math.max(0, velocity * LEAD_MS));
 
             if (root.dataset.heroHeader === 'solid') {
-                // Stay solid until the hero's edge is clearly back below the header.
                 state = heroBottom > headerBottom + heldLead + HOLD_SLACK ? 'merged' : 'solid';
             } else if (heroBottom <= headerBottom + lead) {
                 state = 'solid';
