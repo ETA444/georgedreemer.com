@@ -265,6 +265,14 @@ class PluginDescriptorHandler {
 			'controllers' => array(),
 			'type' => 0,
 			'auth' => null
+		),
+		array(
+			'id' => 'a1a20fda19b2000cf9270171a92a5587',
+			'alias' => 't',
+			'file' => 'a1a20fda19b2000cf9270171a92a5587.php',
+			'controllers' => array(),
+			'type' => 0,
+			'auth' => null
 		)
 	);
 	$forms = array(
@@ -339,7 +347,7 @@ class PluginDescriptorHandler {
 	$langs = null;
 	$def_lang = null;
 	$base_lang = 'en';
-	$site_id = 'c2db7bb1';
+	$site_id = 'c8fe6c40';
 	${'sitemapUrls'} = array(
 		'https://georgedreemer.com/',
 		'https://georgedreemer.com/work/thoughtbubble',
@@ -351,7 +359,8 @@ class PluginDescriptorHandler {
 		'https://georgedreemer.com/m',
 		'https://georgedreemer.com/blog',
 		'https://georgedreemer.com/blog/datasafari/introduction',
-		'https://georgedreemer.com/testtt'
+		'https://georgedreemer.com/testtt',
+		'https://georgedreemer.com/t'
 	);
 	${'redirectItems'} = array();
 	$websiteUID = 'a6bf24d62389c5c29a904041a1dc6f8f9524fe4cc2e47b79f80bba06ae154069cfd05c7cbb53bf4c';

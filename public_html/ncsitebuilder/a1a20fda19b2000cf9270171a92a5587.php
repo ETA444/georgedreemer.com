@@ -1,0 +1,2246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript">
+	window._spDefer = {
+		queue: [],
+		ready: false,
+		add: function(fn) {
+			if (this.ready) { fn(); }
+			else { this.queue.push(fn); }
+		},
+		done: function() {
+			this.ready = true;
+			var fns = this.queue;
+			this.queue = [];
+			for (var i = 0; i < fns.length; i++) { fns[i](); }
+		}
+	};
+	</script>
+			<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title><?php echo htmlspecialchars((isset($seoTitle) && $seoTitle !== "") ? $seoTitle : "George Dreemer — Data Scientist, Developer & Entrepreneur"); ?></title>
+	<base href="{{base_url}}" />
+	<?php echo isset($sitemapUrls) ? (generateCanonicalUrl($sitemapUrls)."\n") : ""; ?>	
+	
+				<meta name="keywords" content="<?php echo htmlspecialchars((isset($seoKeywords) && $seoKeywords !== "") ? $seoKeywords : "Index Test"); ?>" />
+			
+	<!-- Facebook Open Graph -->
+						<!-- Facebook Open Graph end -->
+
+			<?php if (empty($wbWhitelabel)): ?>	<meta name="generator" content="Site.pro Builder" />
+	<?php else: ?>	<meta name="generator" content="Website Builder" />
+	<?php endif; ?>			<link href="css/common-bundle.css?ts=20261125022239" rel="preload" type="text/css" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
+	<link href="css/a1a20fda19b2000cf9270171a92a5587-bundle.css?ts=20261125022239" rel="preload" type="text/css" id="wb-page-stylesheet" as="style" onload="this.onload=null;this.rel=&#039;stylesheet&#039;" />
+	<ga-code/><!-- Global: identity & crawling -->
+<meta name="author" content="George Dreemer">
+<meta name="robots" content="max-image-preview:large, max-snippet:-1">
+
+<!-- Global: appearance -->
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="format-detection" content="telephone=no">
+
+<!-- Global: social -->
+<meta property="og:site_name" content="George Dreemer">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:site" content="@444eta">
+<meta name="twitter:creator" content="@444eta">
+<meta name="twitter:label1" content="Role">
+<meta name="twitter:data1" content="Data Scientist &amp; Developer">
+<meta name="twitter:label2" content="Open to">
+<meta name="twitter:data2" content="Data, ML &amp; AI roles · Dubai, UAE">
+
+<!-- Global: icons -->
+<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png?v=20261124" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg?v=20261124" />
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=20261124" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=20261124" />
+<meta name="apple-mobile-web-app-title" content="ETA!" />
+<link rel="manifest" href="/favicon/site.webmanifest?v=20261124" />
+	<script type="text/javascript">
+	window.useTrailingSlashes = false;
+	window.disableRightClick = false;
+	window.currLang = 'en';
+</script>
+	<!-- Core document setup -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<!-- SEO -->
+<title>George Dreemer — Data Scientist, Developer &amp; Entrepreneur</title>
+<meta name="description" content="Data scientist, developer and serial entrepreneur with work experience in all things data,  programming, and web3. Explore his skills, projects, certifications and awards.">
+<link rel="canonical" href="https://georgedreemer.com/">
+<link rel="alternate" type="text/markdown" href="https://georgedreemer.com/index.md">
+<link rel="describedby" href="https://georgedreemer.com/llms.txt">
+
+<!-- Social sharing -->
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://georgedreemer.com/">
+<meta property="og:title" content="George Dreemer — Data Scientist, Developer &amp; Entrepreneur">
+<meta property="og:description" content="Data scientist, developer and serial entrepreneur with work experience in all things data,  programming, and web3. Explore his skills, projects, certifications and awards.">
+<meta property="og:image" content="https://georgedreemer.com/public_img/general/ogimages/georgedreemer-v1.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Visual showcase of George Dreemer's works">
+<meta name="twitter:image:alt" content="Visual showcase of George Dreemer's works">
+<meta property="profile:first_name" content="George">
+<meta property="profile:last_name" content="Dreemer">
+<meta property="profile:username" content="georgedreemer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="George Dreemer — Data Scientist, Developer &amp; Entrepreneur">
+<meta name="twitter:description" content="Data scientist, developer and serial entrepreneur with work experience in all things data,  programming, and web3. Explore his skills, projects, certifications and awards.">
+<meta name="twitter:image" content="https://georgedreemer.com/public_img/general/ogimages/georgedreemer-v1.png">
+
+<!-- Structured data -->
+<script data-custom-script="true" type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": [
+          "WebPage",
+          "ProfilePage"
+        ],
+        "@id": "https://georgedreemer.com/#webpage",
+        "url": "https://georgedreemer.com/",
+        "name": "George Dreemer — Data Scientist, Developer and Entrepreneur",
+        "description": "Data scientist, developer and serial entrepreneur with work experience in all things data,  programming, and web3. Explore his skills, projects, certifications and awards.",
+        "isPartOf": {
+          "@id": "https://georgedreemer.com/#website"
+        },
+        "about": {
+          "@id": "https://georgedreemer.com/#person"
+        },
+        "mainEntity": {
+          "@id": "https://georgedreemer.com/#person"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://georgedreemer.com/public_img/general/ogimages/georgedreemer-v1.png",
+          "width": 1200,
+          "height": 630
+        },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://georgedreemer.com/#website",
+        "url": "https://georgedreemer.com",
+        "name": "George Dreemer",
+        "description": "Personal portfolio and brand hub of George Dreemer — data scientist, developer, and entrepreneur.",
+        "publisher": {
+          "@id": "https://georgedreemer.com/#person"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://georgedreemer.com/#person",
+        "name": "George Dreemer",
+        "url": "https://georgedreemer.com",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://georgedreemer.com/public_img/general/ogimages/georgedreemer-v1.png",
+          "width": 1200,
+          "height": 630
+        },
+        "jobTitle": "Data Scientist & Developer",
+        "description": "Data scientist, developer, and entrepreneur. Creator of DataSafari, founder of CryptoPandemic. MSc in Marketing Analytics & Data Science, University of Groningen; BA in Marketing & Business, Hampshire College.",
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "@id": "https://www.rug.nl/#organization",
+            "name": "University of Groningen",
+            "url": "https://www.rug.nl"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "@id": "https://www.hampshire.edu/#organization",
+            "name": "Hampshire College",
+            "url": "https://www.hampshire.edu"
+          }
+        ],
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "MSc Marketing Analytics & Data Science",
+            "credentialCategory": "degree",
+            "educationalLevel": "Master's degree",
+            "recognizedBy": {
+              "@id": "https://www.rug.nl/#organization"
+            }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "BA Marketing & Business",
+            "credentialCategory": "degree",
+            "educationalLevel": "Bachelor's degree",
+            "recognizedBy": {
+              "@id": "https://www.hampshire.edu/#organization"
+            }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Professional Data Scientist",
+            "credentialCategory": "certificate",
+            "url": "https://www.datacamp.com/completed/statement-of-accomplishment/track/61c10c7c89eda0525178ea565d88fce131b33597",
+            "recognizedBy": {
+              "@type": "Organization",
+              "name": "DataCamp",
+              "url": "https://www.datacamp.com"
+            }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Associate Data Scientist",
+            "credentialCategory": "certificate",
+            "url": "https://www.datacamp.com/completed/statement-of-accomplishment/track/c9819562725564e717c762be83bee6db7dc90bf4",
+            "recognizedBy": {
+              "@type": "Organization",
+              "name": "DataCamp",
+              "url": "https://www.datacamp.com"
+            }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "TOEFL iBT",
+            "credentialCategory": "test score credential",
+            "recognizedBy": {
+              "@type": "Organization",
+              "name": "Educational Testing Service",
+              "url": "https://www.ets.org"
+            }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "C1 Advanced (CAE)",
+            "credentialCategory": "certificate",
+            "recognizedBy": {
+              "@type": "Organization",
+              "name": "Cambridge Assessment English",
+              "url": "https://www.cambridgeenglish.org"
+            }
+          }
+        ],
+        "award": [
+          "Valley Venture Mentor's Startup Accelerator Award",
+          "Harold Grinspoon Foundation's Recognition Award of Entrepreneurial Spirit",
+          "Israeli-Bulgarian Institute's National Essay Award — Rescue of the Bulgarian Jews during WW II",
+          "Rotary International's RYLA Award (RYLArian)",
+          "Rotary International's RYLA Debate Winner Award"
+        ],
+        "memberOf": [
+          {
+            "@type": "Organization",
+            "name": "Rotary International"
+          },
+          {
+            "@type": "Organization",
+            "name": "UMass Amherst Entrepreneurship Club"
+          },
+          {
+            "@type": "Organization",
+            "name": "Berthiaume Center for Entrepreneurship"
+          },
+          {
+            "@type": "Organization",
+            "name": "Seed Fund for Innovation"
+          },
+          {
+            "@type": "Organization",
+            "name": "Giving Back Den Haag"
+          }
+        ],
+        "knowsAbout": [
+          "Python",
+          "R",
+          "SQL",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "PHP",
+          "Data Science",
+          "Machine Learning",
+          "Data Engineering",
+          "Marketing Analytics",
+          "Statistical Modeling",
+          "Causal Inference",
+          "Churn Modeling",
+          "Text Mining",
+          "Time-Series Analysis",
+          "Cluster Analysis",
+          "Stata",
+          "SPSS",
+          "Full-Stack Web Development",
+          "Open Source Software",
+          "Web3 Marketing",
+          "Solana Analytics",
+          "Entrepreneurship",
+          "Creative Direction",
+          "Graphic Design",
+          "Video Editing",
+          "Adobe Illustrator",
+          "Adobe Photoshop",
+          "Adobe After Effects",
+          "Affinity Studio",
+          "DaVinci Resolve",
+          "ComfyUI",
+          "Stable Diffusion",
+          "Google AI Studio",
+          "MCP",
+          "n8n"
+        ],
+        "knowsLanguage": [
+          {
+            "@type": "Language",
+            "name": "English"
+          },
+          {
+            "@type": "Language",
+            "name": "Bulgarian"
+          },
+          {
+            "@type": "Language",
+            "name": "Dutch"
+          },
+          {
+            "@type": "Language",
+            "name": "Russian"
+          },
+          {
+            "@type": "Language",
+            "name": "Hebrew"
+          }
+        ],
+        "sameAs": [
+          "https://github.com/ETA444",
+          "https://www.linkedin.com/in/georgedreemer",
+          "https://x.com/444eta",
+          "https://www.dreemer.xyz",
+          "https://www.eta444.com"
+        ],
+        "worksFor": [
+          {
+            "@type": "Organization",
+            "@id": "https://georgedreemer.com/work/dreemcorp#organization",
+            "name": "DREEMCORP",
+            "url": "https://dreemcorp.com",
+            "description": "Creative studio and venture lab behind DataSafari, CryptoPandemic, and SkipSchoolMakeMoney."
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://georgedreemer.com/work/cryptopandemic#organization",
+            "name": "CryptoPandemic",
+            "url": "https://cryptopandemic.com",
+            "description": "Web3 brand studio combining on-chain analytics with creative storytelling for Solana projects."
+          }
+        ]
+      }
+    ]
+  }
+</script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Styles -->
+<!-- Global -->
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/sitebuilder-overrides.css">
+
+<!-- Components -->
+<link rel="stylesheet" href="../css/components/fade-in.css">
+<link rel="stylesheet" href="../css/components/section-label.css">
+<link rel="stylesheet" href="../css/components/site-shell.css?v=6">
+<link rel="stylesheet" href="../css/components/hero.css?v=6">
+
+<link rel="stylesheet" href="../css/components/context-block.css">
+<link rel="stylesheet" href="../css/components/stack-badge.css">
+<link rel="stylesheet" href="../css/components/works-card-index.css">
+<link rel="stylesheet" href="../css/components/degree-card.css">
+<link rel="stylesheet" href="../css/components/credential-card.css">
+
+<!-- Third-party scripts -->
+<script data-custom-script="true" src="https://unpkg.com/lucide@1.72.0/dist/umd/lucide.js" defer></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- Page behavior -->
+<script data-custom-script="true" type="module" src="../js/pages/index.js?v=3"></script>	
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<![endif]-->
+
+		<script type="text/javascript">
+		window._spDefer.add(function() {
+<?php $wb_form_send_success = popSessionOrGlobalVar("wb_form_send_success"); ?>
+<?php if (($wb_form_send_state = popSessionOrGlobalVar("wb_form_send_state"))) { ?>
+	<?php if (($wb_form_popup_mode = popSessionOrGlobalVar("wb_form_popup_mode")) && (isset($wbPopupMode) && $wbPopupMode)) { ?>
+		if (window !== window.parent && window.parent.postMessage) {
+			var data = {
+				event: "wb_contact_form_sent",
+				data: {
+					state: "<?php echo str_replace('"', '\"', $wb_form_send_state); ?>",
+					type: "<?php echo $wb_form_send_success ? "success" : "danger"; ?>"
+				}
+			};
+			window.parent.postMessage(data, "<?php echo str_replace('"', '\"', popSessionOrGlobalVar("wb_target_origin")); ?>");
+		}
+	<?php $wb_form_send_success = false; $wb_form_send_state = null; $wb_form_popup_mode = false; ?>
+	<?php } else { ?>
+		wb_show_alert("<?php echo str_replace(array('"', "\r", "\n"), array('\"', "", "<br/>"), $wb_form_send_state); ?>", "<?php echo $wb_form_send_success ? "success" : "danger"; ?>");
+	<?php } ?>
+<?php } ?>
+});    </script>
+</head>
+
+
+<body class="site site-lang-en<?php if (isset($wbPopupMode) && $wbPopupMode) echo ' popup-mode'; ?> " <?php ?>><main class="main-content" role="main" data-page="index">
+<!-- == Hero ============================================ -->
+<section class="hero" id="hero" aria-labelledby="hero-title">
+  <h1 class="hero__title" id="hero-title">
+    George Dreemer — Data Scientist, Developer and Entrepreneur
+  </h1>
+
+  <p class="hero__motto" data-hero-motto>
+    <span class="hero__line">
+      <span class="hero__sr">Excellence through action.</span>
+      <span aria-hidden="true">
+        <span class="hero__done">Excellence through action.</span><span class="hero__cursor"></span><span class="hero__rest"></span>
+      </span>
+    </span>
+    <span class="hero__line hero__line--soft">
+      <span class="hero__sr">Creatio Perpetua.</span>
+      <span aria-hidden="true">
+        <span class="hero__done">Creatio Perpetua.</span><span class="hero__cursor"></span><span class="hero__rest"></span>
+      </span>
+    </span>
+  </p>
+
+  <a class="hero__scroll" href="#intro">
+    <span>Scroll to explore</span>
+    <span class="hero__scroll-arrow" aria-hidden="true">↓</span>
+  </a>
+</section>
+
+<!-- == Intro =============================================== -->
+<section id="intro" data-nav="Intro" aria-label="Intro" class="fade-in">
+  <div class="context-block">
+    <p>
+      George Dreemer is a serial entrepreneur working across full-stack
+      development, data science, and web3. His ventures range from an
+      open-source Python library and a knowledge-first social network to
+      an underground streetwear brand with thousands of fans.
+    </p>
+    <p>
+      That range is reflected in his toolkit: multi-language development,
+      statistical modelling and machine learning, alongside years of
+      hands-on work with Adobe, e-commerce platforms, and marketing
+      analytics. He connects the technical build with the product, brand,
+      and business around it.
+    </p>
+    <p>
+      His education spans Europe and the US, with an MSc in Marketing
+      Analytics &amp; Data Science and a BA in Marketing &amp; Business. Completed
+      tracks and certificates from DataCamp, Google, and research-training
+      programmes complement that foundation.
+    </p>
+  </div>
+</section>
+
+<div class="stack-grid">
+  <!-- == Stack + Languages =============================== -->
+  <section class="fade-in" id="stack" data-nav="Stack" aria-label="Stack">
+    <div class="section-label" style="padding-bottom: 1em">
+      <h2 class="section-label__text">Stack</h2>
+      <span class="section-label__line" aria-hidden="true"></span>
+    </div>
+
+    <div data-nav="Stack" aria-label="Stack"></div>
+
+    <div class="stack-grid">
+      <!-- ── Code ──────────────────────────── -->
+      <div class="stack-group">
+        <h3 class="stack-group__label">Code</h3>
+        <ul class="stack-group__items">
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/python/3776ab" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Python</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/r/276dc3" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">R</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/php/777bb4" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">PHP</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/javascript" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">JavaScript</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/html5/e34f26" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">HTML</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/css/1572b6" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">CSS</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/gnubash/4eaa25" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Bash / Zsh</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/ruby/cc342d" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Ruby</span>
+          </li>
+          <li class="stack-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <!-- Top ellipse (lighter) -->
+              <ellipse cx="12" cy="6" rx="7" ry="2.5" fill="#0078d4"></ellipse>
+              <!-- Middle band -->
+              <path d="M5 8.5v4c0 1.38 3.13 2.5 7 2.5s7-1.12 7-2.5v-4c0 1.38-3.13 2.5-7 2.5S5 9.88 5 8.5z" fill="#005a9e"></path>
+              <!-- Bottom band -->
+              <path d="M5 13.5v3c0 1.38 3.13 2.5 7 2.5s7-1.12 7-2.5v-3c0 1.38-3.13 2.5-7 2.5S5 14.88 5 13.5z" fill="#00457a"></path>
+              <!-- Side outline for depth -->
+              <path d="M5 6.5v9c0 1.38 3.13 2.5 7 2.5s7-1.12 7-2.5v-9" fill="none" stroke="#00355a" stroke-width="1.2"></path>
+            </svg>
+            <span class="stack-badge__name">SQL</span>
+          </li>
+          <li class="stack-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <!-- Background rounded square -->
+              <rect x="3" y="3" width="18" height="18" rx="4" fill="#1f5f8b"></rect>
+              <!-- Stylized "S" made of bars -->
+              <path d="M7 8h10a2 2 0 0 1 0 4H9a2 2 0 0 0 0 4h8" fill="none" stroke="#4dc2a8" stroke-width="2.2" stroke-linecap="round"></path>
+            </svg>
+            <span class="stack-badge__name">Stata</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ── Python Libraries ──────────────────────────────── -->
+      <div class="stack-group">
+        <h3 class="stack-group__label">Python Libraries</h3>
+        <ul class="stack-group__items">
+          <!-- Core Data -->
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/pandas/150458" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">pandas</span>
+          </li>
+
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/numpy/013243" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">NumPy</span>
+          </li>
+
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/scipy/8caae6" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">SciPy</span>
+          </li>
+
+          <!-- ML -->
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/scikitlearn/f7931e" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">scikit-learn</span>
+          </li>
+
+          <li class="stack-badge">
+            <span class="stack-badge__mark" style="background: #3499cd" aria-hidden="true">so</span>
+            <span class="stack-badge__name">scikit-optimize</span>
+          </li>
+
+          <li class="stack-badge">
+            <span class="stack-badge__mark" style="background: #ee4c2c" aria-hidden="true">ce</span>
+            <span class="stack-badge__name">category-encoders</span>
+          </li>
+
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/pytorch" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">PyTorch</span>
+          </li>
+
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/huggingface/ffd21e" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">HuggingFace Hub</span>
+          </li>
+
+          <!-- Viz -->
+          <li class="stack-badge stack-badge--text">
+            <span class="stack-badge__mark" style="background: #423cb9" aria-hidden="true">mpl</span>
+            <span class="stack-badge__name">Matplotlib</span>
+          </li>
+
+          <li class="stack-badge stack-badge--text">
+            <span class="stack-badge__mark" style="background: #76b7b2" aria-hidden="true">sb</span>
+            <span class="stack-badge__name">seaborn</span>
+          </li>
+
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/plotly/3f4f75" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Plotly</span>
+          </li>
+
+          <!-- Stats -->
+          <li class="stack-badge stack-badge--text">
+            <span class="stack-badge__mark" style="background: #3a6fa0" aria-hidden="true">sm</span>
+            <span class="stack-badge__name">statsmodels</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ── R Libraries ──────────────────────────────────── -->
+      <div class="stack-group">
+        <h3 class="stack-group__label">R Libraries</h3>
+        <ul class="stack-group__items">
+          <li class="stack-badge stack-badge--text">
+            <span class="stack-badge__mark" style="background: #276dc3" aria-hidden="true">R</span>
+            <span class="stack-badge__name">ggplot2</span>
+          </li>
+          <li class="stack-badge stack-badge--text">
+            <span class="stack-badge__mark" style="background: #276dc3" aria-hidden="true">R</span>
+            <span class="stack-badge__name">dplyr</span>
+          </li>
+          <li class="stack-badge stack-badge--text">
+            <span class="stack-badge__mark" style="background: #276dc3" aria-hidden="true">R</span>
+            <span class="stack-badge__name">caret</span>
+          </li>
+          <li class="stack-badge stack-badge--text">
+            <span class="stack-badge__mark" style="background: #276dc3" aria-hidden="true">R</span>
+            <span class="stack-badge__name">randomForest</span>
+          </li>
+          <li class="stack-badge stack-badge--text">
+            <span class="stack-badge__mark" style="background: #276dc3" aria-hidden="true">R</span>
+            <span class="stack-badge__name">gbm</span>
+          </li>
+          <li class="stack-badge stack-badge--text">
+            <span class="stack-badge__mark" style="background: #276dc3" aria-hidden="true">R</span>
+            <span class="stack-badge__name">e1071</span>
+          </li>
+          <li class="stack-badge stack-badge--text">
+            <span class="stack-badge__mark" style="background: #276dc3" aria-hidden="true">R</span>
+            <span class="stack-badge__name">neuralnet</span>
+          </li>
+          <li class="stack-badge stack-badge--text">
+            <span class="stack-badge__mark" style="background: #276dc3" aria-hidden="true">R</span>
+            <span class="stack-badge__name">ROCR</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ── Dev Toolchain ────────────────────────────────── -->
+      <div class="stack-group">
+        <h3 class="stack-group__label">Dev Toolchain</h3>
+        <ul class="stack-group__items">
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/pytest/0a9edc" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">pytest</span>
+          </li>
+          <li class="stack-badge stack-badge--text">
+            <span class="stack-badge__mark" style="background: #da5c13" aria-hidden="true">tx</span>
+            <span class="stack-badge__name">tox</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/sphinx/000000" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Sphinx</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/readthedocs/8ca1af" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Read the Docs</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/pypi/3775a9" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">PyPI</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/poetry/60a5fa" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Poetry</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/setuptools" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Setuptools</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/githubactions" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">GitHub Actions</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ── Databases ──────────────────────────────────────── -->
+      <div class="stack-group">
+        <h3 class="stack-group__label">Databases</h3>
+        <ul class="stack-group__items">
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/mysql/4479a1" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">MySQL</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/sqlite/003b57" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">SQLite</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/postgresql/336791" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">PostgreSQL</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ── Dev Tools & IDEs ───────────────────────────────── -->
+      <div class="stack-group">
+        <h3 class="stack-group__label">Dev Tools &amp; IDEs</h3>
+        <ul class="stack-group__items">
+          <li class="stack-badge stack-badge--text">
+            <span class="stack-badge__mark" style="background: #ffffff00" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 59.242 47.271">
+                <path fill="#0072c6" d="M32.368 0 14.9 15.145 0 41.895h13.437zm2.323 3.543-7.454 21.008 14.291 17.956L13.8 47.271h45.442z"></path>
+              </svg></span>
+            <span class="stack-badge__name">VS Code</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/jupyter/f37626" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Jupyter</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/googlecolab" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Colab</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/rstudioide" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">RStudio</span>
+          </li>
+          <li class="stack-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <!-- Background rounded square -->
+              <rect x="3" y="3" width="18" height="18" rx="4" fill="#005eb8"></rect>
+              <!-- Stylized "bar chart" / stats motif -->
+              <rect x="6" y="10" width="2.6" height="6" fill="#ffffff" rx="0.6"></rect>
+              <rect x="9.7" y="7" width="2.6" height="9" fill="#ffffff" rx="0.6"></rect>
+              <rect x="13.4" y="12" width="2.6" height="4" fill="#ffffff" rx="0.6"></rect>
+              <rect x="17.1" y="9" width="2.6" height="7" fill="#ffffff" rx="0.6"></rect>
+            </svg>
+            <span class="stack-badge__name">SPSS</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/jetbrains" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">DataSpell</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/knime/fdd700" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">KNIME</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/git/f05032" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Git</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/github/181717" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">GitHub</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ── AI & Automation ────────────────────────────────── -->
+      <div class="stack-group">
+        <h3 class="stack-group__label">AI &amp; Automation</h3>
+        <ul class="stack-group__items">
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/huggingface/ffd21e" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">HuggingFace</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/n8n/ea4b71" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">n8n</span>
+          </li>
+
+          <!-- Google AI Studio: no SimpleIcons entry -->
+          <li class="stack-badge stack-badge--text">
+            <span class="stack-badge__mark" style="background: #4285f4" aria-hidden="true">G</span>
+            <span class="stack-badge__name">Google AI Studio</span>
+          </li>
+          <!-- ComfyUI: no SimpleIcons entry -->
+          <li class="stack-badge stack-badge--text">
+            <span class="stack-badge__mark" style="background: #222" aria-hidden="true">
+              <svg width="84" height="84" viewbox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="84" height="84" fill="#172DD7" style="
+                      fill: #172dd7;
+                      fill: color(display-p3 0.0902 0.1765 0.8431);
+                      fill-opacity: 1;
+                    "></rect>
+                <path d="M28.5899 69.2727C27.3242 69.2727 26.303 68.8023 25.637 67.9128C24.9524 66.9989 24.774 65.723 25.1471 64.4133L26.6455 59.1518C26.765 58.7329 26.6818 58.2821 26.4212 57.9336C26.1606 57.5858 25.7529 57.381 25.3198 57.381H21.0116C19.7453 57.381 18.724 56.9112 18.0583 56.0218C17.3738 55.1072 17.1953 53.8314 17.5687 52.5216L22.7163 34.5286L23.2847 32.5517C24.0487 29.869 26.8349 27.6888 29.4966 27.6888H34.6517C35.2668 27.6888 35.8079 27.2787 35.9773 26.6835L37.6821 20.6987C38.4453 18.0187 41.2316 15.8385 43.8933 15.8385L54.9181 15.8189L62.9891 15.8182C64.2551 15.8182 65.2763 16.288 65.942 17.1774C66.6265 18.0913 66.805 19.3672 66.4319 20.6769L64.124 28.7803C63.3611 31.4595 60.5748 33.6391 57.9131 33.6391L46.8637 33.6601H41.7104C41.0959 33.6601 40.5555 34.0695 40.3851 34.6641L36.0883 49.6722C35.9681 50.0919 36.0513 50.5441 36.3126 50.8925C36.5732 51.2403 36.9809 51.445 37.4136 51.445L44.7152 51.4308H52.7622C54.0282 51.4308 55.0494 51.9006 55.7151 52.7901C56.3996 53.7046 56.5781 54.9805 56.2047 56.2902L53.8969 64.3923C53.1339 67.0722 50.3476 69.2517 47.686 69.2517L36.6369 69.2727H28.5899Z" fill="#F0FF41" style="
+                      fill: #f0ff41;
+                      fill: color(display-p3 0.9412 1 0.2549);
+                      fill-opacity: 1;
+                    "></path>
+              </svg>
+            </span>
+            <span class="stack-badge__name">ComfyUI</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/modelcontextprotocol/7c3aed" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">MCP</span>
+          </li>
+
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/Claude" alt="Claude Code" width="18" height="18" loading="lazy" style="
+                  display: inline-block;
+                  vertical-align: middle;
+                  margin-right: 6px;
+                ">
+            <span class="stack-badge__name">Claude Code</span>
+          </li>
+
+          <li class="stack-badge">
+            <svg width="18" height="18" viewbox="0 0 24 24" fill="none" xmlns="http://w3.org" style="
+                  display: inline-block;
+                  vertical-align: middle;
+                  margin-right: 6px;
+                ">
+              <path d="M12 2L4 7V17L12 22L20 17V7L12 2Z" stroke="#4a3728" stroke-width="2" stroke-linejoin="round"></path>
+              <path d="M12 2V12M12 22V12M4 7L12 12M20 7L12 12" stroke="#4a3728" stroke-width="1.5" stroke-linejoin="round"></path>
+              <circle cx="12" cy="12" r="2" fill="#D97757"></circle>
+            </svg>
+            <span class="stack-badge__name">TypeSafe AI</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ── Web3 & On-Chain ───────────────────────────────── -->
+      <div class="stack-group">
+        <h3 class="stack-group__label">Web3 &amp; On-Chain</h3>
+        <ul class="stack-group__items">
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/solana/9945ff" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Solana</span>
+          </li>
+          <li class="stack-badge">
+            <svg width="18" height="18" viewbox="0 0 24 24" fill="none" xmlns="http://w3.org" style="
+                  display: inline-block;
+                  vertical-align: middle;
+                  margin-right: 6px;
+                ">
+              <path d="M12 2L3.5 17.5L6.5 19L12 9L17.5 19L20.5 17.5L12 2Z" fill="#00FFA7"></path>
+              <path d="M12 9L6.5 19L9.5 20.5L12 16L14.5 20.5L17.5 19L12 9Z" fill="#09C385"></path>
+              <path d="M12 16L9.5 20.5L12 22L14.5 20.5L12 16Z" fill="#004182"></path>
+            </svg>
+            <span class="stack-badge__name">NansenAI</span>
+          </li>
+
+          <li class="stack-badge">
+            <svg width="18" height="18" viewbox="0 0 24 24" fill="none" xmlns="http://w3.org" style="
+                  display: inline-block;
+                  vertical-align: middle;
+                  margin-right: 6px;
+                ">
+              <rect width="24" height="24" rx="6" fill="#1e293b"></rect>
+              <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" fill="#0c4a6e"></path>
+              <path d="M7 19V14C7 12.8 7.4 11.5 8.2 10.7L9 7.8V4.5C9 3.8 9.6 3.2 10.3 3.2C11 3.2 11.6 3.8 11.6 4.5V6.1L12 6.5C13.2 6.5 14.4 7.3 14.8 8.5C15.2 9.7 14.4 11 13.2 11.4H11.6V14C11.6 15.6 10.4 17.9 9.1 19.1L8.7 19.5H7Z" fill="#FFFFFF"></path>
+              <path d="M11.2 6.9H14.4L14 8.1H11.6L11.2 6.9Z" fill="#0f172a"></path>
+            </svg>
+            <span class="stack-badge__name">DefiLlama</span>
+          </li>
+
+          <li class="stack-badge">
+            <svg width="18" height="18" viewbox="0 0 24 24" fill="none" xmlns="http://w3.org" style="
+                  display: inline-block;
+                  vertical-align: middle;
+                  margin-right: 6px;
+                ">
+              <path d="M12 2C7.58 2 4 5.58 4 10C4 12.3 5 14.3 6.6 15.8C5.5 16.9 4 18.2 2 18.5C4.5 19 6.5 18 8 16.8C9.2 17.6 10.6 18 12 18C13.4 18 14.8 17.6 16 16.8C17.5 18 19.5 19 22 18.5C20 18.2 18.5 16.9 17.4 15.8C19 14.3 20 12.3 20 10C20 5.58 16.42 2 12 2Z" fill="#8CFA32"></path>
+              <path d="M9.5 17.5C10.3 19.5 11.2 21.5 12 21.5C12.8 21.5 13.7 19.5 14.5 17.5" stroke="#8CFA32" stroke-width="2" stroke-linecap="round"></path>
+              <circle cx="9.5" cy="10" r="1.5" fill="#00371F"></circle>
+              <circle cx="14.5" cy="10" r="1.5" fill="#00371F"></circle>
+            </svg>
+            <span class="stack-badge__name">Symbiosis</span>
+          </li>
+
+          <li class="stack-badge">
+            <svg width="18" height="18" viewbox="0 0 24 24" fill="none" xmlns="http://w3.org" style="
+                  display: inline-block;
+                  vertical-align: middle;
+                  margin-right: 6px;
+                ">
+              <rect x="5" y="2" width="14" height="20" rx="7" transform="rotate(-30 12 12)" fill="#15161B"></rect>
+              <path d="M16.5 5.5 C18.5 7.5 18.5 10.5 16.5 12.5 L7.5 7.5 C9.5 5.5 12.5 5.5 14.5 5.5 Z" fill="#5FCB87"></path>
+              <path d="M16.5 12.5 L7.5 7.5 C5.5 9.5 5.5 12.5 7.5 14.5 C9.5 16.5 12.5 16.5 14.5 14.5 Z" fill="#FFFFFF"></path>
+              <line x1="7.5" y1="7.5" x2="16.5" y2="12.5" stroke="#15161B" stroke-width="1"></line>
+            </svg>
+            <span class="stack-badge__name">Pump.fun</span>
+          </li>
+
+          <li class="stack-badge">
+            <svg width="18" height="18" viewbox="0 0 24 24" fill="none" xmlns="http://w3.org" style="
+                  display: inline-block;
+                  vertical-align: middle;
+                  margin-right: 6px;
+                ">
+              <path d="M4 17L9 12L13 15L19 7.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M15 7.5H19V11.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M7 16C8.5 18.5 12.5 19.5 15.5 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+            <span class="stack-badge__name">StonkFun</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ── Platforms & Infra ──────────────────────────────── -->
+      <div class="stack-group">
+        <h3 class="stack-group__label">Platforms &amp; Infra</h3>
+        <ul class="stack-group__items">
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/cpanel/ff6c2c" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">cPanel</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/namecheap/de3723" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Namecheap</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/cloudflare/f38020" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Cloudflare</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Azure</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ── Web & Commerce ─────────────────────────────────── -->
+      <div class="stack-group">
+        <h3 class="stack-group__label">Web &amp; Commerce</h3>
+        <ul class="stack-group__items">
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/shopify/96bf48" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Shopify</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/squarespace/000000" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Squarespace</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/woo" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">WooCommerce</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/framer" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Framer</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/wordpress" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Wordpress</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ── Design & Creative ──────────────────────────────── -->
+      <div class="stack-group">
+        <h3 class="stack-group__label">Design &amp; Creative</h3>
+        <ul class="stack-group__items">
+          <!-- Adobe Illustrator -->
+          <li class="stack-badge">
+            <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%23330000%22/%3E%3Ctext%20x%3D%2252%22%20y%3D%22164%22%20font-size%3D%22104%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%23FF9A00%22%3EAi%3C/text%3E%3C/svg%3E" alt="Adobe Illustrator" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Illustrator</span>
+          </li>
+
+          <!-- Adobe Photoshop -->
+          <li class="stack-badge">
+            <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%23001E36%22/%3E%3Ctext%20x%3D%2252%22%20y%3D%22164%22%20font-size%3D%22104%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%2331A8FF%22%3EPs%3C/text%3E%3C/svg%3E" alt="Adobe Photoshop" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Photoshop</span>
+          </li>
+
+          <!-- Adobe Premiere Pro — Pr, purple on dark navy -->
+          <li class="stack-badge">
+            <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%2300005B%22/%3E%3Ctext%20x%3D%2252%22%20y%3D%22164%22%20font-size%3D%22104%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%239999FF%22%3EPr%3C/text%3E%3C/svg%3E" alt="Adobe Premiere Pro" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Premiere Pro</span>
+          </li>
+
+          <!-- Adobe After Effects -->
+          <li class="stack-badge">
+            <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%2300005B%22/%3E%3Ctext%20x%3D%2252%22%20y%3D%22164%22%20font-size%3D%22104%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%239999FF%22%3EAe%3C/text%3E%3C/svg%3E" alt="Adobe After Effects" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">After Effects</span>
+          </li>
+
+          <!-- Adobe Audition -->
+          <li class="stack-badge">
+            <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%2300005B%22/%3E%3Ctext%20x%3D%2252%22%20y%3D%22164%22%20font-size%3D%22104%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%239999FF%22%3EAu%3C/text%3E%3C/svg%3E" alt="Adobe Audition" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Audition</span>
+          </li>
+
+          <!-- Adobe Dreamweaver -->
+          <li class="stack-badge">
+            <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20234%22%3E%3Crect%20width%3D%22240%22%20height%3D%22234%22%20rx%3D%2242%22%20fill%3D%22%23470137%22/%3E%3Ctext%20x%3D%2252%22%20y%3D%22164%22%20font-size%3D%22104%22%20font-family%3D%22Arial%2C%20sans-serif%22%20fill%3D%22%23FF61F6%22%3EDw%3C/text%3E%3C/svg%3E" alt="Adobe Dreamweaver" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Dreamweaver</span>
+          </li>
+
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/davinciresolve" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">DaVinci Resolve</span>
+          </li>
+
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/affine/199900" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Affinity Studio</span>
+          </li>
+
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/kyocera/000" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">CapCut</span>
+          </li>
+
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/calibreweb/07B9CE" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Canva</span>
+          </li>
+
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/picsart" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Picsart</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ── Marketing & Growth ─────────────────────────────────── -->
+      <div class="stack-group">
+        <h3 class="stack-group__label">Marketing &amp; Growth</h3>
+        <ul class="stack-group__items">
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/googleanalytics/e37400" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Google Analytics</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/meta/0081fb" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Meta Ads</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/tiktok/000000" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">TikTok Ads</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/snapchat" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Snapchat Ads</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/x/000000" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">X Ads</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/youtube/ff0000" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">YouTube Studio</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/mailchimp/000000" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Mailchimp</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/buffer/000000" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Buffer</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/telegram" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Telegram</span>
+          </li>
+          <li class="stack-badge">
+            <img src="https://cdn.simpleicons.org/discord" alt="" width="18" height="18" loading="lazy">
+            <span class="stack-badge__name">Discord</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- == Languages ======================================== -->
+    <div class="section-label" style="padding-bottom: 1em">
+      <h2 class="section-label__text">Languages</h2>
+      <span class="section-label__line" aria-hidden="true"></span>
+    </div>
+
+    <div class="stack-group">
+      <ul class="stack-group__items">
+        <li class="stack-badge stack-badge--lang">
+          <span class="stack-badge__flag" aria-hidden="true">🇺🇸</span>
+          <span class="stack-badge__name">English</span>
+          <span class="stack-badge__cefr">C2</span>
+        </li>
+        <li class="stack-badge stack-badge--lang">
+          <span class="stack-badge__flag" aria-hidden="true">🇧🇬</span>
+          <span class="stack-badge__name">Bulgarian</span>
+          <span class="stack-badge__cefr">C2</span>
+        </li>
+        <li class="stack-badge stack-badge--lang">
+          <span class="stack-badge__flag" aria-hidden="true">🇳🇱</span>
+          <span class="stack-badge__name">Dutch</span>
+          <span class="stack-badge__cefr">C1</span>
+        </li>
+        <li class="stack-badge stack-badge--lang">
+          <span class="stack-badge__flag" aria-hidden="true">🇷🇺</span>
+          <span class="stack-badge__name">Russian</span>
+          <span class="stack-badge__cefr">B1</span>
+        </li>
+        <li class="stack-badge stack-badge--lang">
+          <span class="stack-badge__flag" aria-hidden="true">🇮🇱</span>
+          <span class="stack-badge__name">Hebrew</span>
+          <span class="stack-badge__cefr">A1</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- == Work ============================================ -->
+  <section class="work-section fade-in" id="work" data-nav="Work" aria-label="Work">
+    <div class="section-label">
+      <h2 class="section-label__text">Work</h2>
+      <span class="section-label__line" aria-hidden="true"></span>
+    </div>
+
+    <p class="section-lead">
+      A curated selection of projects and collaborations that demonstrate
+      my skills, creativity, and problem-solving abilities across various
+      domains.
+    </p>
+
+    <div class="work-grid">
+      <!-- DataSafari — featured -->
+      <a class="work-card work-card--featured" href="/work/datasafari" data-gd-link="datasafari" aria-label="Explore DataSafari">
+        <div class="work-card__media" aria-hidden="true">
+          <span class="work-card__fallback">DataSafari</span>
+
+          <picture>
+            <!-- Desktop / tablet: near-square art -->
+            <source media="(min-width: 46rem)" srcset="
+                  https://georgedreemer.com/public_img/general/ogimages/datasafari-v5.png
+                " width="1200" height="1200"></source>
+
+            <!-- Mobile (default): 1200x630 landscape -->
+            <img class="work-card__image" src="https://georgedreemer.com/public_img/general/ogimages/datasafari-v2.png" alt="" width="1200" height="630" loading="lazy" decoding="async">
+          </picture>
+        </div>
+
+        <div class="work-card__body">
+          <span class="work-card__tag">Data Science</span>
+
+          <h3 class="work-card__title">DataSafari</h3>
+
+          <p class="work-card__desc">
+            Complex data science, one function call. An open-source Python
+            library that brings exploration, data preparation, statistical
+            testing, and machine-learning workflows into a consistent,
+            one-line API.
+          </p>
+
+          <p class="screenreader-only">Applied capabilities:</p>
+          <ul class="work-card__skills" role="list" aria-label="Capabilities">
+            <li>Statistical Inference</li>
+            <li>ML Pipeline Design</li>
+            <li>API Design</li>
+            <li>CI/CD</li>
+          </ul>
+
+          <span class="work-card__cta">
+            <span>Explore DataSafari</span>
+            <span class="work-card__arrow" aria-hidden="true">→</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- CryptoPandemic -->
+      <a class="work-card" href="/work/cryptopandemic" data-gd-link="cryptopandemic" aria-label="Explore CryptoPandemic">
+        <div class="work-card__media" aria-hidden="true">
+          <span class="work-card__fallback">CryptoPandemic</span>
+
+          <img class="work-card__image" src="https://georgedreemer.com/public_img/general/ogimages/cryptopandemic-v1.png" alt="" width="1200" height="630" loading="lazy" decoding="async">
+        </div>
+
+        <div class="work-card__body">
+          <span class="work-card__tag">Web3 Analytics</span>
+
+          <h3 class="work-card__title">CryptoPandemic</h3>
+
+          <p class="work-card__desc">
+            Cold on-chain analytics. Warm creative storytelling. A Web3
+            brand engine combining holder research, AI-powered production,
+            and community-native campaigns to turn audience insight into
+            cultural relevance.
+          </p>
+
+          <p class="screenreader-only">Applied capabilities:</p>
+          <ul class="work-card__skills" role="list" aria-label="Capabilities">
+            <li>Audience Profiling</li>
+            <li>Attribution Analytics</li>
+            <li>Generative AI Pipelines</li>
+            <li>Narrative Design</li>
+          </ul>
+
+          <span class="work-card__cta">
+            <span>Explore CryptoPandemic</span>
+            <span class="work-card__arrow" aria-hidden="true">→</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- SkipSchoolMakeMoney -->
+      <a class="work-card" href="/work/skipschoolmakemoney" data-gd-link="skipschoolmakemoney" aria-label="Explore SkipSchoolMakeMoney">
+        <div class="work-card__media" aria-hidden="true">
+          <span class="work-card__fallback">SkipSchoolMakeMoney</span>
+
+          <img class="work-card__image" src="https://georgedreemer.com/public_img/general/ogimages/skipschoolmakemoney-v1.png" alt="" width="1200" height="630" loading="lazy" decoding="async">
+        </div>
+
+        <div class="work-card__body">
+          <span class="work-card__tag">E-commerce</span>
+
+          <h3 class="work-card__title">SkipSchoolMakeMoney</h3>
+
+          <p class="work-card__desc">
+            Underground streetwear built into an international e-commerce
+            business: 20+ collections, 12,000+ followers, and 1000s of
+            customers across three continents.
+          </p>
+
+          <p class="screenreader-only">Applied capabilities:</p>
+          <ul class="work-card__skills" role="list" aria-label="Capabilities">
+            <li>Product Development</li>
+            <li>Guerilla Marketing</li>
+            <li>Supply Chain Management</li>
+            <li>Performance Analytics</li>
+          </ul>
+
+          <span class="work-card__cta">
+            <span>Explore SkipSchoolMakeMoney</span>
+            <span class="work-card__arrow" aria-hidden="true">→</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- DREEMCORP -->
+      <a class="work-card" href="/work/dreemcorp" data-gd-link="dreemcorp" aria-label="Explore DREEMCORP">
+        <div class="work-card__media" aria-hidden="true">
+          <span class="work-card__fallback">DREEMCORP</span>
+
+          <img class="work-card__image" src="https://georgedreemer.com/public_img/general/ogimages/dreemcorp-v2.png" alt="" width="1200" height="630" loading="lazy" decoding="async">
+        </div>
+
+        <div class="work-card__body">
+          <span class="work-card__tag">Content Marketing</span>
+
+          <h3 class="work-card__title">DREEMCORP</h3>
+
+          <p class="work-card__desc">
+            A creative studio turning raw footage and brand ideas into
+            platform-native content—delivering 100+ assignments for
+            artists, athletes, and consumer brands, with 1M+ views.
+          </p>
+
+          <p class="screenreader-only">Applied capabilities:</p>
+          <ul class="work-card__skills" role="list" aria-label="Capabilities">
+            <li>Video Production</li>
+            <li>Creative Direction</li>
+            <li>Multi-Platform Content</li>
+            <li>Client Delivery</li>
+          </ul>
+
+          <span class="work-card__cta">
+            <span>Explore DREEMCORP</span>
+            <span class="work-card__arrow" aria-hidden="true">→</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- thoughtbubble -->
+      <a class="work-card" href="/work/thoughtbubble" data-gd-link="thoughtbubble" aria-label="Explore thoughtbubble">
+        <div class="work-card__media" aria-hidden="true">
+          <span class="work-card__fallback">thoughtbubble</span>
+
+          <img class="work-card__image" src="https://georgedreemer.com/public_img/general/ogimages/thoughtbubble-v1.png" alt="" width="1200" height="630" loading="lazy" decoding="async">
+        </div>
+
+        <div class="work-card__body">
+          <span class="work-card__tag">Full-Stack Development</span>
+
+          <h3 class="work-card__title">thoughtbubble</h3>
+
+          <p class="work-card__desc">
+            A knowledge-first social network, built from scratch: UI/UX,
+            back end, and database. After multiple pivots and betas, it
+            evolved to 900 registered users across the US and Europe.
+          </p>
+
+          <p class="screenreader-only">Applied capabilities:</p>
+          <ul class="work-card__skills" role="list" aria-label="Capabilities">
+            <li>UI/UX Design</li>
+            <li>Back-End Architecture</li>
+            <li>Database Architecture</li>
+            <li>Visual Identity</li>
+          </ul>
+
+          <span class="work-card__cta">
+            <span>Explore thoughtbubble</span>
+            <span class="work-card__arrow" aria-hidden="true">→</span>
+          </span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- == Education (Degrees + Certificates) ============== -->
+  <section class="fade-in" id="education" data-nav="Education" aria-label="Education">
+    <!-- == Academic Degrees ================================= -->
+    <div class="section-label" style="padding-bottom: 1em">
+      <h2 class="section-label__text">Academic Degrees</h2>
+      <span class="section-label__line" aria-hidden="true"></span>
+    </div>
+
+    <div class="degree-grid">
+      <a href="/education/masters" data-gd-link="masters" class="degree-card">
+        <div class="degree-card__header">
+          <div class="degree-card__icon">
+            <img src="https://www.rug.nl/about-ug/practical-matters/huisstijl/logobank-new/corporatelogo/corporatelogorood/rugr_logoenv_rood_rgb.png" alt="University of Groningen" width="28" height="28" loading="lazy">
+          </div>
+          <div>
+            <h3 class="degree-card__title">
+              MSc Marketing Analytics &amp; Data Science
+            </h3>
+            <p class="degree-card__sub">
+              University of Groningen · 🇳🇱 Groningen, NL
+            </p>
+          </div>
+        </div>
+
+        <p class="degree-card__desc">
+          Data science, machine learning, and marketing analytics — from
+          causal inference to churn modeling.
+        </p>
+
+        <p class="screenreader-only">Areas of Study:</p>
+        <ul class="degree-card__chips">
+          <li class="degree-card__chip">Machine Learning</li>
+          <li class="degree-card__chip">Statistical Learning</li>
+          <li class="degree-card__chip">Text Mining</li>
+          <li class="degree-card__chip">Time-Series Analysis</li>
+          <li class="degree-card__chip">Market Modelling</li>
+          <li class="degree-card__chip">Data Engineering</li>
+        </ul>
+
+        <p class="screenreader-only">Grade:</p>
+        <div class="degree-card__meta">
+          <p class="credential-pill credential-pill--gpa">GPA 8 / 10</p>
+        </div>
+
+        <span class="degree-card__cta">
+          See the full MSc breakdown
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+            <path d="M5 12h14M13 6l6 6-6 6"></path>
+          </svg>
+        </span>
+      </a>
+
+      <a href="/education/bachelors" data-gd-link="bachelors" class="degree-card">
+        <div class="degree-card__header">
+          <div class="degree-card__icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Hampshire_College_logo.svg" alt="Hampshire College" width="28" height="28" loading="lazy">
+          </div>
+          <div>
+            <h3 class="degree-card__title">
+              BA Marketing &amp; Business
+            </h3>
+            <p class="degree-card__sub">
+              Hampshire College · 🇺🇸 Amherst, MA
+            </p>
+          </div>
+        </div>
+
+        <p class="degree-card__desc">
+          A self-directed curriculum blending business theory with
+          hands-on entrepreneurial practice, including graduate-level
+          coursework at UMass Amherst's Isenberg School of Management.
+        </p>
+
+        <p class="screenreader-only">Areas of Study:</p>
+        <ul class="degree-card__chips">
+          <li class="degree-card__chip">
+            Leading Growth in New Ventures
+          </li>
+          <li class="degree-card__chip">
+            Streetwear &amp; Internet Culture
+          </li>
+          <li class="degree-card__chip">Text Mining &amp; Analytics</li>
+          <li class="degree-card__chip">
+            Negotiation Theory &amp; Practice
+          </li>
+        </ul>
+
+        <p class="screenreader-only">Grade:</p>
+        <div class="degree-card__meta">
+          <p class="credential-pill credential-pill--gpa">
+            GPA 3.81 / 4.0
+          </p>
+        </div>
+
+        <span class="degree-card__cta">
+          See the full BA breakdown
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+            <path d="M5 12h14M13 6l6 6-6 6"></path>
+          </svg>
+        </span>
+      </a>
+    </div>
+
+    <!-- == Certifications =================================== -->
+    <div class="section-label" style="padding-bottom: 1em">
+      <h2 class="section-label__text">Certifications</h2>
+      <span class="section-label__line" aria-hidden="true"></span>
+    </div>
+
+    <div class="stack-group stack-group--credentials" id="certifications" data-nav="Certifications" aria-label="Certifications">
+      <ul class="stack-group__items stack-group__items--credentials">
+        <!-- == DataCamp ======================================= -->
+        <li class="credential-card">
+          <div class="credential-card__icon credential-card__icon--img">
+            <img src="https://cdn.simpleicons.org/datacamp/03ef62" alt="DataCamp" width="20" height="20" loading="lazy">
+          </div>
+          <div class="credential-card__body">
+            <h3 class="credential-card__title">
+              Professional Data Scientist
+            </h3>
+
+            <p class="screenreader-only">Issuer:</p>
+            <p class="credential-card__sub">DataCamp</p>
+
+            <p class="screenreader-only">Description:</p>
+            <p class="credential-card__org-desc">
+              DataCamp's most advanced career track — covers the full data
+              science pipeline from data wrangling and statistical
+              analysis to machine learning and communicating insights to
+              business stakeholders. <br><br><a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/61c10c7c89eda0525178ea565d88fce131b33597" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+            </p>
+
+            <p class="screenreader-only">Areas of expertise:</p>
+            <ul class="credential-card__meta">
+              <li class="credential-pill credential-pill--cert">
+                Python
+              </li>
+              <li class="credential-pill credential-pill--score">R</li>
+              <li class="credential-pill credential-pill--gpa">SQL</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="credential-card">
+          <div class="credential-card__icon credential-card__icon--img">
+            <img src="https://cdn.simpleicons.org/datacamp/03ef62" alt="DataCamp" width="20" height="20" loading="lazy">
+          </div>
+          <div class="credential-card__body">
+            <h3 class="credential-card__title">
+              Associate Data Scientist
+            </h3>
+
+            <p class="screenreader-only">Issuer:</p>
+            <p class="credential-card__sub">DataCamp</p>
+
+            <p class="screenreader-only">Description:</p>
+            <p class="credential-card__org-desc">
+              A structured track covering Python, statistical techniques,
+              and machine learning fundamentals — built around real-world
+              datasets and hands-on projects across the full analytical
+              workflow.
+            </p>
+
+            <p class="screenreader-only">Areas of expertise:</p>
+            <ul class="credential-card__meta">
+              <li class="credential-pill credential-pill--cert">
+                Python
+              </li>
+              <li class="credential-pill credential-pill--score">R</li>
+              <li class="credential-pill credential-pill--gpa">SQL</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- == Google ============================================= -->
+
+        <li class="credential-card">
+          <div class="credential-card__icon credential-card__icon--img">
+            <img src="https://cdn.simpleicons.org/googleanalytics/E37400" alt="Google Analytics" width="20" height="20" loading="lazy">
+          </div>
+          <div class="credential-card__body">
+            <h3 class="credential-card__title">
+              Google Analytics for Beginners
+            </h3>
+
+            <p class="screenreader-only">Issuer:</p>
+            <p class="credential-card__sub">Google Skillshop</p>
+
+            <p class="screenreader-only">Description:</p>
+            <p class="credential-card__org-desc">
+              Covers setting up an analytics account, reading core reports
+              on traffic and user behaviour, and using the data to judge
+              how a website or campaign is performing.
+              <br><br><a href="https://georgedreemer.com/public_img/education/certifications/google/Google%20Analytics%20for%20Beginners.pdf" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+            </p>
+
+            <p class="screenreader-only">Areas of expertise:</p>
+            <ul class="credential-card__meta">
+              <li class="credential-pill credential-pill--cert">
+                Web Analytics
+              </li>
+              <li class="credential-pill credential-pill--score">
+                Reporting
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- == Language ========================================== -->
+
+        <li class="credential-card">
+          <div class="credential-card__icon credential-card__icon--img">
+            <img src="https://georgedreemer.com/public_img/general/misclogos/toefl.svg" alt="TOEFL Official Logo" width="35" height="35" loading="lazy">
+          </div>
+          <div class="credential-card__body">
+            <h3 class="credential-card__title">TOEFL iBT</h3>
+
+            <p class="screenreader-only">Issuer:</p>
+            <p class="credential-card__sub">
+              Educational Testing Service
+            </p>
+
+            <p class="screenreader-only">Description:</p>
+            <p class="credential-card__org-desc">
+              A standardised, internationally recognised test of academic
+              English. It measures reading, listening, speaking, and
+              writing at university level.
+            </p>
+
+            <p class="screenreader-only">Score and Language level:</p>
+            <ul class="credential-card__meta">
+              <li class="credential-pill credential-pill--score">
+                106 / 120
+              </li>
+              <li class="credential-pill credential-pill--cert">C2</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="credential-card">
+          <div class="credential-card__icon credential-card__icon--img">
+            <img src="https://georgedreemer.com/public_img/general/misclogos/cambridgeassesmentenglish.svg" alt="Cambridge Assessment English Official Logo" width="30" height="30" loading="lazy">
+          </div>
+          <div class="credential-card__body">
+            <h3 class="credential-card__title">C1 Advanced (CAE)</h3>
+
+            <p class="screenreader-only">Issuer:</p>
+            <p class="credential-card__sub">
+              Cambridge Assessment English
+            </p>
+
+            <p class="screenreader-only">Description:</p>
+            <p class="credential-card__org-desc">
+              Cambridge's advanced-level exam, showing the English needed
+              for demanding academic study and professional work: fluent,
+              precise, and confident in complex contexts.
+            </p>
+
+            <p class="screenreader-only">Language level:</p>
+            <ul class="credential-card__meta">
+              <li class="credential-pill credential-pill--cert">C1</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- == CITI Program ======================================= -->
+        <li class="credential-card">
+          <div class="credential-card__icon credential-card__icon--img">
+            <img src="https://georgedreemer.com/public_img/general/misclogos/citiprogram.svg" alt="CITI Program Official Logo" width="30" height="30" loading="lazy">
+          </div>
+          <div class="credential-card__body">
+            <h3 class="credential-card__title">Authorship</h3>
+
+            <p class="screenreader-only">Issuer and Department:</p>
+            <p class="credential-card__sub">
+              CITI Program · Responsible Conduct of Research
+            </p>
+
+            <p class="screenreader-only">Description:</p>
+            <p class="credential-card__org-desc">
+              Covers the ethical responsibilities of authors, the criteria
+              used to decide who qualifies as an author, and how to
+              recognise problematic authorship practices.
+              <br><br><a href="https://www.citiprogram.org/verify/?w84586628-0ab2-4dbe-832c-70ba821f5d03-52728905" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+            </p>
+
+            <p class="screenreader-only">Areas of expertise:</p>
+            <ul class="credential-card__meta">
+              <li class="credential-pill credential-pill--cert">RCR</li>
+              <li class="credential-pill credential-pill--score">
+                Publication Ethics
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="credential-card">
+          <div class="credential-card__icon credential-card__icon--img">
+            <img src="https://georgedreemer.com/public_img/general/misclogos/citiprogram.svg" alt="CITI Program Official Logo" width="30" height="30" loading="lazy">
+          </div>
+          <div class="credential-card__body">
+            <h3 class="credential-card__title">Conflict of Interest</h3>
+
+            <p class="screenreader-only">Issuer and Department:</p>
+            <p class="credential-card__sub">
+              CITI Program · Responsible Conduct of Research
+            </p>
+
+            <p class="screenreader-only">Description:</p>
+            <p class="credential-card__org-desc">
+              Explains the types of conflicts of interest and commitment,
+              why they undermine research, and the strategies used to
+              manage or eliminate them. <br><br><a href="https://www.citiprogram.org/verify/?w14878cff-9b65-49bf-a688-b19c0476c688-52728906" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+            </p>
+
+            <p class="screenreader-only">Areas of expertise:</p>
+            <ul class="credential-card__meta">
+              <li class="credential-pill credential-pill--cert">RCR</li>
+              <li class="credential-pill credential-pill--score">
+                Research Integrity
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="credential-card">
+          <div class="credential-card__icon credential-card__icon--img">
+            <img src="https://georgedreemer.com/public_img/general/misclogos/citiprogram.svg" alt="CITI Program Official Logo" width="30" height="30" loading="lazy">
+          </div>
+          <div class="credential-card__body">
+            <h3 class="credential-card__title">Data Management</h3>
+
+            <p class="screenreader-only">Issuer and Department:</p>
+            <p class="credential-card__sub">
+              CITI Program · Responsible Conduct of Research
+            </p>
+
+            <p class="screenreader-only">Description:</p>
+            <p class="credential-card__org-desc">
+              Covers managing data across a research project:
+              documentation for reproducibility, plus the ethical and
+              compliance questions around data ownership, sharing, and
+              protection. <br><br><a href="https://www.citiprogram.org/verify/?w29ad4803-bc39-4024-a2a0-fa4aaa18acd6-52728907" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+            </p>
+
+            <p class="screenreader-only">Areas of expertise:</p>
+            <ul class="credential-card__meta">
+              <li class="credential-pill credential-pill--cert">RCR</li>
+              <li class="credential-pill credential-pill--score">
+                Reproducibility
+              </li>
+              <li class="credential-pill credential-pill--gpa">
+                Data Governance
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="credential-card">
+          <div class="credential-card__icon credential-card__icon--img">
+            <img src="https://georgedreemer.com/public_img/general/misclogos/citiprogram.svg" alt="CITI Program Official Logo" width="30" height="30" loading="lazy">
+          </div>
+          <div class="credential-card__body">
+            <h3 class="credential-card__title">
+              Internet-based Research
+            </h3>
+
+            <p class="screenreader-only">Issuer and Department:</p>
+            <p class="credential-card__sub">
+              CITI Program · Human-based Research
+            </p>
+
+            <p class="screenreader-only">Description:</p>
+            <p class="credential-card__org-desc">
+              Looks at the ethical and regulatory questions raised by
+              studying people online: consent, privacy expectations, and
+              the risks of using web-sourced data.
+              <br><br><a href="https://www.citiprogram.org/verify/?we279123e-5980-4178-9fd3-7b5c3737d613-52728904" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+            </p>
+
+            <p class="screenreader-only">Areas of expertise:</p>
+            <ul class="credential-card__meta">
+              <li class="credential-pill credential-pill--cert">
+                Human Research
+              </li>
+              <li class="credential-pill credential-pill--score">
+                Online Data Ethics
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="credential-card">
+          <div class="credential-card__icon credential-card__icon--img">
+            <img src="https://georgedreemer.com/public_img/general/misclogos/citiprogram.svg" alt="CITI Program Official Logo" width="30" height="30" loading="lazy">
+          </div>
+          <div class="credential-card__body">
+            <h3 class="credential-card__title">Plagiarism</h3>
+
+            <p class="screenreader-only">Issuer and Department:</p>
+            <p class="credential-card__sub">
+              CITI Program · Responsible Conduct of Research
+            </p>
+
+            <p class="screenreader-only">Description:</p>
+            <p class="credential-card__org-desc">
+              Defines plagiarism and its common forms, and shows how to
+              credit sources properly so that others' ideas and words are
+              never presented as your own.
+              <br><br><a href="https://www.citiprogram.org/verify/?w6ff78328-e1a0-4901-ba3d-7f8612d49538-52728908" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+            </p>
+
+            <p class="screenreader-only">Areas of expertise:</p>
+            <ul class="credential-card__meta">
+              <li class="credential-pill credential-pill--cert">RCR</li>
+              <li class="credential-pill credential-pill--score">
+                Citation Practice
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="credential-card">
+          <div class="credential-card__icon credential-card__icon--img">
+            <img src="https://georgedreemer.com/public_img/general/misclogos/citiprogram.svg" alt="CITI Program Official Logo" width="35" height="35" loading="lazy">
+          </div>
+          <div class="credential-card__body">
+            <h3 class="credential-card__title">
+              Privacy and Confidentiality
+            </h3>
+
+            <p class="screenreader-only">Issuer and Department:</p>
+            <p class="credential-card__sub">
+              CITI Program · Human-based Research
+            </p>
+
+            <p class="screenreader-only">Description:</p>
+            <p class="credential-card__org-desc">
+              Defines privacy and confidentiality, identifies research
+              methods that raise privacy concerns, and covers standard
+              ways to protect participants' information, including
+              relevant laws. <br><br><a href="https://www.citiprogram.org/verify/?wa833454f-8bed-4edc-b389-16646b6a2353-52728903" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+            </p>
+
+            <p class="screenreader-only">Areas of expertise:</p>
+            <ul class="credential-card__meta">
+              <li class="credential-pill credential-pill--cert">
+                Human Research
+              </li>
+              <li class="credential-pill credential-pill--score">
+                Data Protection
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="credential-card">
+          <div class="credential-card__icon credential-card__icon--img">
+            <img src="https://georgedreemer.com/public_img/general/misclogos/citiprogram.svg" alt="CITI Program Official Logo" width="30" height="30" loading="lazy">
+          </div>
+          <div class="credential-card__body">
+            <h3 class="credential-card__title">
+              Research Involving Human Subjects
+            </h3>
+
+            <p class="screenreader-only">Issuer and Department:</p>
+            <p class="credential-card__sub">
+              CITI Program · Responsible Conduct of Research
+            </p>
+
+            <p class="screenreader-only">Description:</p>
+            <p class="credential-card__org-desc">
+              Introduces the ethical principles behind research with
+              people: informed consent, weighing risks against benefits,
+              and protecting participants. <br><br><a href="https://www.citiprogram.org/verify/?w3d28bc48-9ceb-448d-9681-0f90ad0d1707-52728909" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+            </p>
+
+            <p class="screenreader-only">Areas of expertise:</p>
+            <ul class="credential-card__meta">
+              <li class="credential-pill credential-pill--cert">RCR</li>
+              <li class="credential-pill credential-pill--score">
+                Informed Consent
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="credential-card">
+          <div class="credential-card__icon credential-card__icon--img">
+            <img src="https://georgedreemer.com/public_img/general/misclogos/citiprogram.svg" alt="CITI Program Official Logo" width="30" height="30" loading="lazy">
+          </div>
+          <div class="credential-card__body">
+            <h3 class="credential-card__title">Research Misconduct</h3>
+
+            <p class="screenreader-only">Issuer and Department:</p>
+            <p class="credential-card__sub">
+              CITI Program · Responsible Conduct of Research
+            </p>
+
+            <p class="screenreader-only">Description:</p>
+            <p class="credential-card__org-desc">
+              Describes the three practices that make up research
+              misconduct (fabrication, falsification, and plagiarism) and
+              how allegations are handled. <br><br><a href="https://www.citiprogram.org/verify/?wf5616b1b-dc18-4f4d-b670-4f655d0725a0-52728910" target="_blank" rel="noopener noreferrer" class="credential-card__link">View certificate ↗</a>
+            </p>
+
+            <p class="screenreader-only">Areas of expertise:</p>
+            <ul class="credential-card__meta">
+              <li class="credential-pill credential-pill--cert">RCR</li>
+              <li class="credential-pill credential-pill--score">
+                Research Integrity
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- == Recognition ==================================== -->
+  <section class="fade-in" id="recognition" data-nav="Recognition" aria-label="Recognition">
+    <!-- == Awards =========================================== -->
+    <div class="section-label">
+      <h2 class="section-label__text">Awards</h2>
+      <span class="section-label__line" aria-hidden="true"></span>
+    </div>
+
+    <p class="section-lead">
+      Recognition for entrepreneurial initiative, ideas, and leadership.
+    </p>
+
+    <div class="stack-group stack-group--credentials" id="awards" data-nav="Awards" aria-label="Awards">
+      <ul class="stack-group__items stack-group__items--credentials">
+        <li class="credential-card">
+          <div class="credential-card__icon credential-card__icon--img">
+            <img src="https://georgedreemer.com/public_img/general/misclogos/valleyventurementors.svg" alt="Valley Venture Mentors Official Logo" width="25" height="25" loading="lazy">
+          </div>
+          <div class="credential-card__body">
+            <h3 class="credential-card__title">
+              VVM Startup Accelerator Award
+            </h3>
+
+            <p class="screenreader-only">Awarded by:</p>
+            <p class="credential-card__sub">Valley Venture Mentors</p>
+
+            <p class="screenreader-only">Description:</p>
+            <p class="credential-card__org-desc">
+              VVM is a Western Massachusetts nonprofit that selects
+              high-growth startups for a competitive accelerator — pairing
+              founders with senior mentors, investors, and early funding.
+            </p>
+
+            <p class="screenreader-only">Details:</p>
+            <ul class="credential-card__bullets">
+              <li>Selected from a competitive regional applicant pool</li>
+              <li>
+                Received funding and a place in the Summer Accelerator
+                cohort
+              </li>
+              <li>
+                Pitched live to a room of investors and defended product,
+                traction, and roadmap
+              </li>
+            </ul>
+
+            <p class="screenreader-only">Category:</p>
+            <div class="credential-card__meta">
+              <p class="credential-pill credential-pill--award">
+                Funding &amp; Mentorship
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li class="credential-card">
+          <div class="credential-card__icon credential-card__icon--img">
+            <img src="https://georgedreemer.com/public_img/general/misclogos/haroldgrinspoonfoundation.svg" alt="Harold Grinspoon Foundation Official Logo" width="30" height="30" loading="lazy">
+          </div>
+          <div class="credential-card__body">
+            <h3 class="credential-card__title">
+              Recognition Award of Entrepreneurial Spirit
+            </h3>
+
+            <p class="screenreader-only">Awarded by:</p>
+            <p class="credential-card__sub">
+              <a href="https://hgf.org/" target="_blank" rel="noopener noreferrer" class="credential-card__link">Grinspoon Entrepreneurship Initiative</a>
+            </p>
+
+            <p class="screenreader-only">Description:</p>
+            <p class="credential-card__org-desc">
+              The Harold Grinspoon Foundation's Entrepreneurship
+              Initiative recognises student entrepreneurs across Pioneer
+              Valley colleges who have built real ventures with
+              demonstrated traction — not ideas, but businesses already in
+              motion.
+            </p>
+
+            <p class="screenreader-only">Details:</p>
+            <ul class="credential-card__bullets">
+              <li>
+                Recognised for founding SkipSchoolMakeMoney — a live
+                apparel brand with 1,000+ orders shipped internationally
+              </li>
+            </ul>
+
+            <p class="screenreader-only">Category:</p>
+            <div class="credential-card__meta">
+              <p class="credential-pill credential-pill--award">
+                Entrepreneurship
+              </p>
+            </div>
+            <p class="credential-card__org-desc" style="padding-top: 1em">
+              <a href="https://georgedreemer.com/public_img/education/certifications/other/harold_grinspoon_foundation-entrepreneurial_spirit-certificate.pdf" target="_blank" rel="noopener noreferrer" class="credential-card__link">View award ↗</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="credential-card">
+          <div class="credential-card__icon credential-card__icon--img">
+            <img src="https://georgedreemer.com/public_img/general/misclogos/yisrael.svg" alt="Israel Emblem" width="30" height="30" loading="lazy">
+          </div>
+          <div class="credential-card__body">
+            <h3 class="credential-card__title">
+              National Essay Award — "Rescue of the Bulgarian Jews during
+              WW II"
+            </h3>
+            <p class="screenreader-only">Awarded by:</p>
+            <p class="credential-card__sub">
+              Israeli-Bulgarian Institute
+            </p>
+
+            <p class="screenreader-only">Description:</p>
+            <p class="credential-card__org-desc">
+              A national competition commemorating one of WWII's most
+              remarkable acts of collective resistance — Bulgaria is one
+              of the only Nazi-allied states that protected its entire
+              Jewish population from deportation.
+            </p>
+
+            <p class="screenreader-only">Details:</p>
+            <ul class="credential-card__bullets">
+              <li>
+                Prize: an official trip to Israel with a meeting with
+                government officials — a diplomatic recognition reserved
+                for the winning essayists
+              </li>
+            </ul>
+
+            <p class="screenreader-only">Category:</p>
+            <div class="credential-card__meta">
+              <p class="credential-pill credential-pill--award">
+                Diplomacy
+              </p>
+            </div>
+            <p class="credential-card__org-desc" style="padding-top: 1em">
+              <a href="https://georgedreemer.com/public_img/education/certifications/other/israel_bulgaria_institute-certificate.pdf" target="_blank" rel="noopener noreferrer" class="credential-card__link">View award ↗</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="credential-card">
+          <div class="credential-card__icon credential-card__icon--img">
+            <img src="https://georgedreemer.com/public_img/general/misclogos/ryla.svg" alt="RYLA Rotary International Emblem" width="30" height="30" loading="lazy">
+          </div>
+          <div class="credential-card__body">
+            <h3 class="credential-card__title">RYLA Award (RYLArian)</h3>
+
+            <p class="screenreader-only">Awarded by:</p>
+            <p class="credential-card__sub">Rotary International</p>
+
+            <p class="screenreader-only">Description:</p>
+            <p class="credential-card__org-desc">
+              Rotary Youth Leadership Awards (RYLA) is an official Rotary
+              International leadership program. It is an intensive
+              multi-day retreat of workshops, team exercises, and
+              leadership training, run locally by Rotary clubs and
+              districts.
+            </p>
+
+            <p class="screenreader-only">Details:</p>
+            <ul class="credential-card__bullets">
+              <li>
+                RYLArian award is one of Rotary's most recognized youth
+                development distinctions
+              </li>
+            </ul>
+
+            <p class="screenreader-only">Category:</p>
+            <div class="credential-card__meta">
+              <p class="credential-pill credential-pill--award">
+                Leadership
+              </p>
+            </div>
+            <p class="credential-card__org-desc" style="padding-top: 1em">
+              <a href="https://georgedreemer.com/public_img/education/certifications/rotary/rotary-rylarian-certificate.pdf" target="_blank" rel="noopener noreferrer" class="credential-card__link">View award ↗</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="credential-card">
+          <div class="credential-card__icon credential-card__icon--img">
+            <img src="https://georgedreemer.com/public_img/general/misclogos/ryla.svg" alt="RYLA Rotary International Emblem" width="30" height="30" loading="lazy">
+          </div>
+          <div class="credential-card__body">
+            <h3 class="credential-card__title">
+              RYLA Debate Winner Award
+            </h3>
+
+            <p class="screenreader-only">Awarded by:</p>
+            <p class="credential-card__sub">Rotary Bourgas-Pyrgos</p>
+
+            <p class="screenreader-only">Description:</p>
+            <p class="credential-card__org-desc">
+              Awarded for winning the debate competition, which is the
+              culmination of the RYLA seminar. It is judged on
+              argumentation, composure, and public speaking skills in
+              front of Rotarians and program leaders.
+            </p>
+
+            <p class="screenreader-only">Details:</p>
+            <ul class="credential-card__bullets">
+              <li>
+                Won the debate competition among the RYLA cohort of
+                Rotary-nominated youth from across the district
+              </li>
+            </ul>
+
+            <p class="screenreader-only">Category:</p>
+            <div class="credential-card__meta">
+              <span class="credential-pill credential-pill--award">Public Speaking</span>
+            </div>
+            <p class="credential-card__org-desc" style="padding-top: 1em">
+              <a href="https://georgedreemer.com/public_img/education/certifications/rotary/rotary-ryla_debate-certificate.pdf" target="_blank" rel="noopener noreferrer" class="credential-card__link">View award ↗</a>
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- == Organizations & Community ======================== -->
+    <div class="section-label">
+      <h2 class="section-label__text">Organizations &amp; Community</h2>
+      <span class="section-label__line" aria-hidden="true"></span>
+    </div>
+
+    <p class="section-lead">
+      Serving the community, fellow entrepreneurs, and students.
+    </p>
+
+    <div class="stack-group stack-group--credentials" id="organizations" data-nav="Organizations" aria-label="Organizations">
+      <ul class="stack-group__items stack-group__items--credentials">
+        <li class="credential-card">
+          <div class="credential-card__icon credential-card__icon--img">
+            <img src="https://georgedreemer.com/public_img/general/misclogos/rotary.svg" alt="Rotary International Logo" width="25" height="25" loading="lazy">
+          </div>
+          <div class="credential-card__body">
+            <h3 class="credential-card__title">
+              Rotaract "Plovdiv-Puldin"
+            </h3>
+
+            <p class="screenreader-only">Title:</p>
+            <p class="credential-card__sub">Member</p>
+
+            <p class="screenreader-only">Description:</p>
+            <p class="credential-card__org-desc">
+              Rotary International's global network for young
+              professionals in over 180 countries.
+            </p>
+
+            <p class="screenreader-only">Details:</p>
+            <ul class="credential-card__bullets">
+              <li>The youngest Rotaract member in the chapter</li>
+              <li>
+                Organised concerts, fundraisers, and a Red Cross blood
+                donation drive for local causes
+              </li>
+            </ul>
+            <br>
+
+            <p class="screenreader-only">Abilities developed:</p>
+            <ul class="credential-card__meta">
+              <li class="credential-pill credential-pill--award">Charity</li>
+              <li class="credential-pill credential-pill--award">Event Coordination</li>
+              <li class="credential-pill credential-pill--award">Community Building</li>
+              <li class="credential-pill credential-pill--award">Leadership</li>
+            </ul>
+            <p class="credential-card__org-desc" style="padding-top: 1em">
+              <a href="https://georgedreemer.com/public_img/education/certifications/rotary/rotary-rotaract_membership-certificate.pdf" target="_blank" rel="noopener noreferrer" class="credential-card__link">Verify membership ↗</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="credential-card">
+          <div class="credential-card__icon credential-card__icon--img">
+            <img src="https://georgedreemer.com/public_img/general/misclogos/seedfundforinnovation.svg" alt="Seed Fund for Innovation Logo" width="25" height="25" loading="lazy">
+          </div>
+          <div class="credential-card__body">
+            <h3 class="credential-card__title">
+              Seed Fund for Innovation
+            </h3>
+
+            <p class="screenreader-only">Title:</p>
+            <p class="credential-card__sub">Committee Member</p>
+
+            <p class="screenreader-only">Description:</p>
+            <p class="credential-card__org-desc">
+              One of the few fully student-governed venture funds at a US
+              liberal arts college — a $1M endowment managed entirely by
+              undergraduates investing in student and alumni startups.
+            </p>
+
+            <p class="screenreader-only">Details:</p>
+            <ul class="credential-card__bullets">
+              <li>
+                Evaluated venture pitches and voted on investment
+                decisions as a committee member
+              </li>
+              <li>
+                Gained hands-on exposure to early-stage due diligence,
+                founder assessment, and fund governance
+              </li>
+            </ul>
+
+            <p class="screenreader-only">Abilities developed:</p>
+            <ul class="credential-card__meta">
+              <li class="credential-pill credential-pill--award">Leadership</li>
+              <li class="credential-pill credential-pill--award">Funding Allocation</li>
+              <li class="credential-pill credential-pill--award">Venture Assessment</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="credential-card">
+          <div class="credential-card__icon credential-card__icon--img">
+            <img src="https://georgedreemer.com/public_img/general/misclogos/umassentrepreneurshipclub.svg" alt="UMass Entrepreneurship Club Logo" width="25" height="25" loading="lazy">
+          </div>
+          <div class="credential-card__body">
+            <h3 class="credential-card__title">
+              UMass Entrepreneurship Club
+            </h3>
+
+            <p class="screenreader-only">Title:</p>
+            <p class="credential-card__sub">Member</p>
+
+            <p class="screenreader-only">Description:</p>
+            <p class="credential-card__org-desc">
+              The student entrepreneurship community at UMass Amherst —
+              one of New England's largest public research universities,
+              with a well-connected startup ecosystem through the Isenberg
+              School of Management.
+            </p>
+
+            <p class="screenreader-only">Details:</p>
+            <ul class="credential-card__bullets">
+              <li>
+                Organised events and pitch competitions connecting student
+                founders with mentors and investors
+              </li>
+            </ul>
+
+            <p class="screenreader-only">Abilities developed:</p>
+            <ul class="credential-card__meta">
+              <li class="credential-pill credential-pill--award">Entrepreneurship</li>
+              <li class="credential-pill credential-pill--award">Pitching</li>
+              <li class="credential-pill credential-pill--award">Networking</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="credential-card">
+          <div class="credential-card__icon credential-card__icon--img">
+            <img src="https://georgedreemer.com/public_img/general/misclogos/berthiaume.svg" alt="Berthiaume Center Logo" width="25" height="25" loading="lazy">
+          </div>
+          <div class="credential-card__body">
+            <h3 class="credential-card__title">
+              Berthiaume Student Innovators
+            </h3>
+
+            <p class="screenreader-only">Title:</p>
+            <p class="credential-card__sub">Member</p>
+
+            <p class="screenreader-only">Description:</p>
+            <p class="credential-card__org-desc">
+              The Berthiaume Center for Entrepreneurship is UMass
+              Amherst's campus-wide hub for innovation and startup
+              activity — its student innovator programme runs the flagship
+              Innovation Challenge each year.
+            </p>
+
+            <p class="screenreader-only">Details:</p>
+            <ul class="credential-card__bullets">
+              <li>
+                Worked to coordinate speakers, judges, and logistics
+              </li>
+            </ul>
+
+            <p class="screenreader-only">Abilities developed:</p>
+            <ul class="credential-card__meta">
+              <li class="credential-pill credential-pill--award">Entrepreneurship</li>
+              <li class="credential-pill credential-pill--award">Event Coordination</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="credential-card">
+          <div class="credential-card__icon credential-card__icon--img">
+            <img src="https://georgedreemer.com/public_img/general/misclogos/givingback.svg" alt="Giving Back Nederland Logo" width="25" height="25" loading="lazy">
+          </div>
+          <div class="credential-card__body">
+            <h3 class="credential-card__title">Giving Back</h3>
+
+            <p class="screenreader-only">Title:</p>
+            <p class="credential-card__sub">Mentee</p>
+
+            <p class="screenreader-only">Description:</p>
+            <p class="credential-card__org-desc">
+              A highly selective mentorship programme at one of Den Haag's
+              leading colleges, pairing a small cohort of students with
+              senior professionals across Dutch banking, law, and the
+              judiciary.
+            </p>
+
+            <p class="screenreader-only">Details:</p>
+            <ul class="credential-card__bullets">
+              <li>
+                Received direct mentorship and attended workshops led by
+                judges, lawyers, and banking executives
+              </li>
+            </ul>
+
+            <p class="screenreader-only">Abilities developed:</p>
+            <ul class="credential-card__meta">
+              <li class="credential-pill credential-pill--award">Debating</li>
+              <li class="credential-pill credential-pill--award">Networking</li>
+              <li class="credential-pill credential-pill--award">Leadership</li>
+              </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
+</main><div id="wb_root" class="root wb-layout-vertical"><div class="wb_sbg"></div><div id="wb_header_a1a20fda19b2000cf9270171a92a5587" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"></div></div><div id="wb_main_a1a20fda19b2000cf9270171a92a5587" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"></div></div><div id="wb_footer_a1a20fda19b2000cf9270171a92a5587" class="wb_element wb-layout-element" data-plugin="LayoutElement"><div class="wb_content wb-layout-vertical"><div id="wb_footer_c" class="wb_element" data-plugin="WB_Footer" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script>window._spDefer.add(function() {
+			$(function() {
+				var footer = $(".wb_footer");
+				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
+				if (!html) {
+					footer.parent().remove();
+					footer = $("#footer, #footer .wb_cont_inner");
+					footer.css({height: ""});
+				}
+			});
+			});</script></div></div></div></div><script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
+	<script src="js/common-bundle.js?ts=20261125022239" type="text/javascript" defer></script>{{hr_out}}<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        window._spDefer.done();
+    });
+</script>
+</body>
+</html>
