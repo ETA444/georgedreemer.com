@@ -1,5 +1,5 @@
 // global
-import '../../site.js';
+import '../../site.js?v=5';
 
 // components
 import '../../components/stat-counter.js';
