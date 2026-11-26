@@ -170,8 +170,8 @@ class PluginDescriptorHandler {
 			'type' => 0,
 			'auth' => array(
 				'login' => '4242',
-				'hash' => '$2y$10$kCjRACIC6Cws8y99qG5kL.j2VXWyIiYDhhxptwmdZuqV0CY0TIvG.',
-				'realm' => 'wb215cf2ac49'
+				'hash' => '$2y$10$0iB8lSZnl9c6C9Bs1NQ4LeCuBQKaAmFehlrckOpgQSrZMHvHbxGDi',
+				'realm' => 'wbaee692ec34'
 			)
 		),
 		array(
@@ -190,8 +190,8 @@ class PluginDescriptorHandler {
 			'type' => 0,
 			'auth' => array(
 				'login' => '4242',
-				'hash' => '$2y$10$kCjRACIC6Cws8y99qG5kL.j2VXWyIiYDhhxptwmdZuqV0CY0TIvG.',
-				'realm' => 'wb215cf2ac49'
+				'hash' => '$2y$10$0iB8lSZnl9c6C9Bs1NQ4LeCuBQKaAmFehlrckOpgQSrZMHvHbxGDi',
+				'realm' => 'wbaee692ec34'
 			)
 		),
 		array(
@@ -210,8 +210,8 @@ class PluginDescriptorHandler {
 			'type' => 0,
 			'auth' => array(
 				'login' => '4242',
-				'hash' => '$2y$10$kCjRACIC6Cws8y99qG5kL.j2VXWyIiYDhhxptwmdZuqV0CY0TIvG.',
-				'realm' => 'wb215cf2ac49'
+				'hash' => '$2y$10$0iB8lSZnl9c6C9Bs1NQ4LeCuBQKaAmFehlrckOpgQSrZMHvHbxGDi',
+				'realm' => 'wbaee692ec34'
 			)
 		),
 		array(
@@ -222,8 +222,8 @@ class PluginDescriptorHandler {
 			'type' => 0,
 			'auth' => array(
 				'login' => '4242',
-				'hash' => '$2y$10$kCjRACIC6Cws8y99qG5kL.j2VXWyIiYDhhxptwmdZuqV0CY0TIvG.',
-				'realm' => 'wb215cf2ac49'
+				'hash' => '$2y$10$0iB8lSZnl9c6C9Bs1NQ4LeCuBQKaAmFehlrckOpgQSrZMHvHbxGDi',
+				'realm' => 'wbaee692ec34'
 			)
 		),
 		array(
@@ -258,8 +258,8 @@ class PluginDescriptorHandler {
 			'type' => 0,
 			'auth' => array(
 				'login' => '4242',
-				'hash' => '$2y$10$kCjRACIC6Cws8y99qG5kL.j2VXWyIiYDhhxptwmdZuqV0CY0TIvG.',
-				'realm' => 'wb215cf2ac49'
+				'hash' => '$2y$10$0iB8lSZnl9c6C9Bs1NQ4LeCuBQKaAmFehlrckOpgQSrZMHvHbxGDi',
+				'realm' => 'wbaee692ec34'
 			)
 		),
 		array(
@@ -278,8 +278,8 @@ class PluginDescriptorHandler {
 			'type' => 0,
 			'auth' => array(
 				'login' => '4242',
-				'hash' => '$2y$10$kCjRACIC6Cws8y99qG5kL.j2VXWyIiYDhhxptwmdZuqV0CY0TIvG.',
-				'realm' => 'wb215cf2ac49'
+				'hash' => '$2y$10$0iB8lSZnl9c6C9Bs1NQ4LeCuBQKaAmFehlrckOpgQSrZMHvHbxGDi',
+				'realm' => 'wbaee692ec34'
 			)
 		),
 		array(
@@ -298,8 +298,8 @@ class PluginDescriptorHandler {
 			'type' => 0,
 			'auth' => array(
 				'login' => '4242',
-				'hash' => '$2y$10$kCjRACIC6Cws8y99qG5kL.j2VXWyIiYDhhxptwmdZuqV0CY0TIvG.',
-				'realm' => 'wb215cf2ac49'
+				'hash' => '$2y$10$0iB8lSZnl9c6C9Bs1NQ4LeCuBQKaAmFehlrckOpgQSrZMHvHbxGDi',
+				'realm' => 'wbaee692ec34'
 			)
 		),
 		array(
@@ -326,8 +326,8 @@ class PluginDescriptorHandler {
 			'type' => 0,
 			'auth' => array(
 				'login' => '4242',
-				'hash' => '$2y$10$kCjRACIC6Cws8y99qG5kL.j2VXWyIiYDhhxptwmdZuqV0CY0TIvG.',
-				'realm' => 'wb215cf2ac49'
+				'hash' => '$2y$10$0iB8lSZnl9c6C9Bs1NQ4LeCuBQKaAmFehlrckOpgQSrZMHvHbxGDi',
+				'realm' => 'wbaee692ec34'
 			)
 		)
 	);
@@ -403,7 +403,7 @@ class PluginDescriptorHandler {
 	$langs = null;
 	$def_lang = null;
 	$base_lang = 'en';
-	$site_id = 'ba1722b9';
+	$site_id = 'c2c09322';
 	${'sitemapUrls'} = array(
 		'https://georgedreemer.com/',
 		'https://georgedreemer.com/work/thoughtbubble',
