@@ -1,9 +1,11 @@
 # robots.txt for georgedreemer.com
 
 # ── All crawlers ───────────────────────────────────────────────
-# Open access for search engines, AI answer engines and archives.
+# Open access for search engines, AI answer engines, archives,
+# and AI training under the Content Signals preferences below.
 User-agent: *
 Allow: /
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
 
 # ── AI training opt-out (currently opted in) ─────────
 # User-agent: GPTBot
