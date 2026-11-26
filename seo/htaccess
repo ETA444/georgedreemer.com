@@ -1,64 +1,64 @@
 # Powered by Website Builder
 
 <IfModule pagespeed_module>
-	ModPagespeed off
+    ModPagespeed off
 </IfModule>
 
 <IfModule mod_expires.c>
-	ExpiresActive On
-	ExpiresDefault A0
-	ExpiresByType image/gif A31536000
-	ExpiresByType image/png A31536000
-	ExpiresByType image/jpeg A31536000
-	ExpiresByType image/svg+xml A31536000
-	ExpiresByType image/webp A31536000
-	ExpiresByType text/css A31536000
-	ExpiresByType text/javascript A31536000
-	ExpiresByType application/javascript A31536000
-	ExpiresByType font/otf A31536000
-	ExpiresByType font/ttf A31536000
-	ExpiresByType font/woff A31536000
-	ExpiresByType font/woff2 A31536000
+    ExpiresActive On
+    ExpiresDefault A0
+    ExpiresByType image/gif A31536000
+    ExpiresByType image/png A31536000
+    ExpiresByType image/jpeg A31536000
+    ExpiresByType image/svg+xml A31536000
+    ExpiresByType image/webp A31536000
+    ExpiresByType text/css A31536000
+    ExpiresByType text/javascript A31536000
+    ExpiresByType application/javascript A31536000
+    ExpiresByType font/otf A31536000
+    ExpiresByType font/ttf A31536000
+    ExpiresByType font/woff A31536000
+    ExpiresByType font/woff2 A31536000
 </IfModule>
 
 <IfModule mod_headers.c>
-	<FilesMatch "\.(gif|png|jpe?g|svg|webp|css|js|otf|ttf|woff2?)$">
-		Header set Cache-Control "public, max-age=31536000, immutable"
-	</FilesMatch>
+    <FilesMatch "\.(gif|png|jpe?g|svg|webp|css|js|otf|ttf|woff2?)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
 </IfModule>
 
 <FilesMatch "^(web\.config|php_errors\.log|error_log)$">
-	<IfModule mod_authz_core.c>
-		Require all denied
-	</IfModule>
-	<IfModule !mod_authz_core.c>
-		Order allow,deny
-	</IfModule>
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+    </IfModule>
 </FilesMatch>
+
 ErrorDocument 401 "Unauthorized"
 ErrorDocument 403 "Forbidden"
+
 <IfModule mod_negotiation.c>
-	#Options -MultiViews
+    #Options -MultiViews
 </IfModule>
+
 RewriteEngine On
 RewriteBase /
+
 RewriteCond %{HTTP:Authorization} ^(.*)
 RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
+
 RewriteCond %{HTTP:X-Server-Addr} ^(.*)
 RewriteRule .* - [e=HTTP_X_SERVER_ADDR:%1]
+
 RewriteRule ^\.well-known/.+ - [L]
 
 
 #### CUSTOM RULES ####
 # georgedreemer.com .htaccess
 
-# ── Page Speed ─────────────────────────────────────────────────
-<IfModule pagespeed_module>
-    ModPagespeed off
-</IfModule>
-
 # ── Force HTTPS ────────────────────────────────────────────────
-RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
@@ -66,10 +66,11 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 RewriteCond %{HTTP_HOST} ^www\.georgedreemer\.com [NC]
 RewriteRule ^(.*)$ https://georgedreemer.com/$1 [R=301,L]
 
-# ── Browser Caching ────────────────────────────────────────────
+# ── Browser caching ────────────────────────────────────────────
 <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresDefault "access plus 2 days"
+
     ExpiresByType image/gif "access plus 1 year"
     ExpiresByType image/png "access plus 1 year"
     ExpiresByType image/jpeg "access plus 1 year"
@@ -86,7 +87,7 @@ RewriteRule ^(.*)$ https://georgedreemer.com/$1 [R=301,L]
     ExpiresByType font/woff2 "access plus 1 year"
 </IfModule>
 
-# ── GZIP Compression ───────────────────────────────────────────
+# ── GZIP compression ───────────────────────────────────────────
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/plain
     AddOutputFilterByType DEFLATE text/html
@@ -99,44 +100,50 @@ RewriteRule ^(.*)$ https://georgedreemer.com/$1 [R=301,L]
     AddOutputFilterByType DEFLATE application/x-javascript
     AddOutputFilterByType DEFLATE application/json
     AddOutputFilterByType DEFLATE image/svg+xml
+    AddOutputFilterByType DEFLATE text/markdown
 </IfModule>
 
-# ── Markdown & LLM files ──────────────────────────────────────
+# ── Markdown and LLM files ─────────────────────────────────────
 <IfModule mod_mime.c>
     AddType text/markdown .md
     AddCharset UTF-8 .md .txt
 </IfModule>
-<IfModule mod_deflate.c>
-    AddOutputFilterByType DEFLATE text/markdown
-</IfModule>
+
 <IfModule mod_headers.c>
     <Files "index.md">
         Header set Link "<https://georgedreemer.com/>; rel=\"canonical\", <https://georgedreemer.com/llms.txt>; rel=\"describedby\""
     </Files>
+
     <Files "datasafari.md">
         Header set Link "<https://georgedreemer.com/work/datasafari>; rel=\"canonical\", <https://georgedreemer.com/llms.txt>; rel=\"describedby\""
     </Files>
+
     <Files "cryptopandemic.md">
         Header set Link "<https://georgedreemer.com/work/cryptopandemic>; rel=\"canonical\", <https://georgedreemer.com/llms.txt>; rel=\"describedby\""
     </Files>
+
     <Files "skipschoolmakemoney.md">
         Header set Link "<https://georgedreemer.com/work/skipschoolmakemoney>; rel=\"canonical\", <https://georgedreemer.com/llms.txt>; rel=\"describedby\""
     </Files>
+
     <Files "dreemcorp.md">
         Header set Link "<https://georgedreemer.com/work/dreemcorp>; rel=\"canonical\", <https://georgedreemer.com/llms.txt>; rel=\"describedby\""
     </Files>
+
     <Files "thoughtbubble.md">
         Header set Link "<https://georgedreemer.com/work/thoughtbubble>; rel=\"canonical\", <https://georgedreemer.com/llms.txt>; rel=\"describedby\""
     </Files>
+
     <Files "masters.md">
         Header set Link "<https://georgedreemer.com/education/masters>; rel=\"canonical\", <https://georgedreemer.com/llms.txt>; rel=\"describedby\""
     </Files>
+
     <Files "bachelors.md">
         Header set Link "<https://georgedreemer.com/education/bachelors>; rel=\"canonical\", <https://georgedreemer.com/llms.txt>; rel=\"describedby\""
     </Files>
 </IfModule>
 
-# ── Security Headers ───────────────────────────────────────────
+# ── Security headers ───────────────────────────────────────────
 <IfModule mod_headers.c>
     Header always set X-Content-Type-Options "nosniff"
     Header always set X-Frame-Options "SAMEORIGIN"
@@ -145,7 +152,7 @@ RewriteRule ^(.*)$ https://georgedreemer.com/$1 [R=301,L]
     Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
 </IfModule>
 
-# ── Block Sensitive Files ──────────────────────────────────────
+# ── Block sensitive files ──────────────────────────────────────
 <FilesMatch "^(web\.config|\.env|config\.php|composer\.json|composer\.lock)$">
     <IfModule mod_authz_core.c>
         Require all denied
@@ -155,51 +162,41 @@ RewriteRule ^(.*)$ https://georgedreemer.com/$1 [R=301,L]
     </IfModule>
 </FilesMatch>
 
-# ── Block Directory Browsing ───────────────────────────────────
+# ── Disable directory browsing ─────────────────────────────────
 Options -Indexes
 
-# ── Custom Error Documents ─────────────────────────────────────
-ErrorDocument 401 "Unauthorized"
-ErrorDocument 403 "Forbidden"
+# ── Custom error documents ─────────────────────────────────────
 ErrorDocument 404 "Not Found"
 
-# ── URL Rewriting ──────────────────────────────────────────────
-<IfModule mod_negotiation.c>
-    #Options -MultiViews
-</IfModule>
-RewriteBase /
-
-# Remove .html extension
+# ── Clean URLs ─────────────────────────────────────────────────
+# Serve /page from page.html
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.+?)/?$ $1.html [L]
 
-# Redirect direct .html access to clean URL
+# Redirect direct .html access to the clean URL
 RewriteCond %{THE_REQUEST} \s(.+)\.html\s [NC]
 RewriteRule ^ %1 [R=301,L,NE]
 
-RewriteCond %{HTTP:Authorization} ^(.*)
-RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
-RewriteCond %{HTTP:X-Server-Addr} ^(.*)
-RewriteRule .* - [e=HTTP_X_SERVER_ADDR:%1]
-RewriteRule ^\.well-known/.+ - [L]
-
-# ── Homepage Markdown negotiation ──────────────────────────────
+# ── Markdown content negotiation ───────────────────────────────
+# Homepage: / -> index.md
 RewriteCond %{HTTP:Accept} text/markdown [NC]
 RewriteCond %{DOCUMENT_ROOT}/index.md -f
 RewriteRule ^$ index.md [L]
 
-# ── Markdown content negotiation ───────────────────────────────
+# Every other clean URL: /path -> path.md
 RewriteCond %{HTTP:Accept} text/markdown [NC]
 RewriteCond %{REQUEST_FILENAME}.md -f
 RewriteRule ^(.+?)/?$ $1.md [L]
 
-# ── Site Builder Passthrough ───────────────────────────────────
+# ── Site Builder passthrough ───────────────────────────────────
 DirectoryIndex index.php index.cgi index.html
+
 RewriteCond %{REQUEST_FILENAME} !-f [OR]
 RewriteCond %{REQUEST_URI} ^\/(js\/(main\.js|bootstrap\.min\.js)|css\/([0-9a-f]+\.css|common\.css|site\.css|bootstrap\.min\.css)|sitemap\.xml)$
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ ncsitebuilder/$1 [L,QSA]
+
 #### CUSTOM RULES END ####
 
 #### PERSISTENT CONTENT ####
