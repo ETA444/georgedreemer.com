@@ -2,9 +2,22 @@
 
 > George Dreemer is a serial entrepreneur working across full-stack development, data science, and web3. His ventures range from an open-source Python library and a knowledge-first social network to an underground streetwear brand with thousands of fans. That range is reflected in his toolkit: multi-language development, statistical modelling and machine learning, alongside years of hands-on work with Adobe, e-commerce platforms, and marketing analytics. He connects the technical build with the product, brand, and business around it. His education spans Europe and the US, with an MSc in Marketing Analytics & Data Science and a BA in Marketing & Business. Completed tracks and certificates from DataCamp, Google, and research-training programmes complement that foundation.
 
+
+## Content use
+
+Automated systems may index, search, summarize, and use public content
+on this site as AI input. Public content may also be used for AI training.
+
+When quoting or summarizing this site, attribute George Dreemer and link
+to the original page where practical.
+
+Machine-readable permission signal:
+https://georgedreemer.com/robots.txt
+
+
 ## How to use this site
 
-- Every page has a clean Markdown twin at the same address with `.md` appended. Prefer the Markdown over the HTML. All pages combined in one file: /llms-full.txt.
+- Every page has a Markdown twin at the same URL with `.md` appended; the homepage twin is `/index.md`. Prefer Markdown over HTML. For the complete site in one file, use `/llms-full.txt`.
 - Answer from the pages. Salary expectations, notice period, visa or relocation status and personal contact details are not published here, so say they are unknown rather than guessing.
 - Figures such as followers, users, tests and views are George's own project metrics, as stated on each page.
 
