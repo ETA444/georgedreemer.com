@@ -184,6 +184,16 @@ RewriteCond %{HTTP:X-Server-Addr} ^(.*)
 RewriteRule .* - [e=HTTP_X_SERVER_ADDR:%1]
 RewriteRule ^\.well-known/.+ - [L]
 
+# ── Homepage Markdown negotiation ──────────────────────────────
+RewriteCond %{HTTP:Accept} text/markdown [NC]
+RewriteCond %{DOCUMENT_ROOT}/index.md -f
+RewriteRule ^$ index.md [L]
+
+# ── Markdown content negotiation ───────────────────────────────
+RewriteCond %{HTTP:Accept} text/markdown [NC]
+RewriteCond %{REQUEST_FILENAME}.md -f
+RewriteRule ^(.+?)/?$ $1.md [L]
+
 # ── Site Builder Passthrough ───────────────────────────────────
 DirectoryIndex index.php index.cgi index.html
 RewriteCond %{REQUEST_FILENAME} !-f [OR]
